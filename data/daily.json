@@ -1,10 +1,35 @@
 {
   "date": "2026-10-31",
-  "updated_at": null,
-  "editor": "Startversion: noch keine tägliche Recherche durchgeführt",
-  "intro": "Die tägliche Börsenanalyse wird nach der Einrichtung der automatischen Aktualisierung hier angezeigt.",
-  "lesson_id": "etf",
-  "stories": [],
-  "learning_note": "Starte mit einem Welt-ETF und lerne, woran du Kosten, Risiken und Streuung erkennst.",
-  "important": "Nicht jede Kursbewegung ist ein Signal zum Kaufen oder Verkaufen."
+  "updated_at": "2026-10-30T23:57:02.386Z",
+  "editor": "ChatGPT: überprüfte Marktredaktion",
+  "intro": "Die US-Technologiebörse geriet am Freitag kräftig unter Druck. Für langfristige Anleger sind die Zinslage und die breite Streuung wichtiger als eine einzelne Kursschwankung.",
+  "lesson_id": "diversify",
+  "stories": [
+    {
+      "title": "US-Technologieaktien fallen deutlich",
+      "source": "Associated Press",
+      "url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
+      "published": "30.10.2026",
+      "why": "Der Nasdaq verlor am Freitag 2,9 %. Anleger hinterfragen, ob hohe KI-Ausgaben schnell genug Gewinne bringen.",
+      "impact": "Wer nur wenige Technologieaktien besitzt, trägt ein hohes Klumpenrisiko. Ein weltweit gestreuter ETF kann dieses Risiko verringern, aber nicht verhindern."
+    },
+    {
+      "title": "EZB lässt die Leitzinsen unverändert",
+      "source": "Deutsche Bundesbank / EZB",
+      "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-laesst-leitzinsen-unveraendert-1013492",
+      "published": "29.10.2026",
+      "why": "Höhere Energiekosten erschweren den Kampf gegen Inflation. Deshalb hält die EZB ihre Zinsen vorerst stabil.",
+      "impact": "Zinsen beeinflussen Sparzinsen, Kredite und die Bewertung von Aktien. Ein unveränderter Leitzins ist noch kein Kaufsignal."
+    },
+    {
+      "title": "Kommende Woche: Unternehmenszahlen und Arbeitsmarkt",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/legal/legalindustry/wall-st-week-ahead-midterm-us-elections-earnings-jobs-data-loom-ai-wary-market-2026-10-30/",
+      "published": "30.10.2026",
+      "why": "Weitere Technologieunternehmen veröffentlichen Ergebnisse; dazu kommen US-Arbeitsmarktdaten. Beides hilft, Wachstum und Zinsaussichten einzuordnen.",
+      "impact": "Achte darauf, was Unternehmen tatsächlich verdienen und welche Erwartungen der Aktienkurs schon enthält, statt nur auf Schlagzeilen."
+    }
+  ],
+  "learning_note": "Diversifikation bedeutet: nicht alles von wenigen Branchen oder Unternehmen abhängig machen. Ein breiter ETF streut – Kursverluste bleiben trotzdem möglich.",
+  "important": "Wochenendstand: Die letzten US-Börsenkurse stammen vom Freitag, 30.10.2026. Keine Anlageentscheidung allein aufgrund eines Tagesverlusts."
 }
