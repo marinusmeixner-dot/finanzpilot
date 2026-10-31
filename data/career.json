@@ -1,0 +1,185 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-31",
+  "note": "Read-only mastery-based career layer. No real or simulated currency, no purchasable items and no speculative reward claims.",
+  "ranks": [
+    {
+      "id": "kursfunke",
+      "name": "Kursfunke",
+      "minSkills": 0,
+      "description": "Dein erster Schritt in die Finanzwelt",
+      "perks": [
+        "Lernpfade",
+        "Marktüberblick"
+      ]
+    },
+    {
+      "id": "markt-scout",
+      "name": "Markt-Scout",
+      "minSkills": 1,
+      "description": "Du kennst die ersten Zusammenhänge",
+      "perks": [
+        "Neue Skillzweige erkunden"
+      ]
+    },
+    {
+      "id": "zahlenkundiger",
+      "name": "Zahlenkundiger",
+      "minSkills": 3,
+      "description": "Du liest die ersten Finanzdaten",
+      "perks": [
+        "Mehrstufige Firmenanalysen"
+      ]
+    },
+    {
+      "id": "bilanzspaeeher",
+      "name": "Bilanzspäher",
+      "minSkills": 5,
+      "description": "Du prüfst Zahlen kritisch",
+      "perks": [
+        "Research-Werkzeuge freischalten"
+      ]
+    },
+    {
+      "id": "renditeschmied",
+      "name": "Renditeschmied",
+      "minSkills": 7,
+      "description": "Du verbindest Bewertung und Geschäftsmodell",
+      "perks": [
+        "Spezialisierte Prüfungen"
+      ]
+    },
+    {
+      "id": "risikoarchitekt",
+      "name": "Risikoarchitekt",
+      "minSkills": 10,
+      "description": "Du verstehst Risiko und Bewertungsunsicherheit",
+      "perks": [
+        "Erweiterte Szenariovergleiche"
+      ]
+    },
+    {
+      "id": "szenarioarchitekt",
+      "name": "Szenarioarchitekt",
+      "minSkills": 12,
+      "description": "Du entwickelst prüfbare Investmentthesen",
+      "perks": [
+        "Meisterschafts-Dossiers"
+      ]
+    },
+    {
+      "id": "kapitalnavigator",
+      "name": "Kapitalnavigator",
+      "minSkills": 13,
+      "description": "Alle grundlegenden Skillzweige abgeschlossen",
+      "perks": [
+        "Abgeschlossener Wissensbaum der ersten Generation"
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "id": "margin",
+      "title": "Margen-Scanner",
+      "category": "Unternehmensanalyse",
+      "required": [
+        "ledger"
+      ],
+      "description": "Umsatzwachstum und operative Marge aus eigenen Zahlen berechnen",
+      "example": "Umsatz 8.522 Mio. € · EBIT 632,5 Mio. €",
+      "action": "margin"
+    },
+    {
+      "id": "orders",
+      "title": "Auftragslabor",
+      "category": "Industrierecherche",
+      "required": [],
+      "requiredTraining": {
+        "id": "aixtron-auftraege",
+        "minScore": 4
+      },
+      "description": "Book-to-Bill und die Bedeutung von Auftragseingang nachvollziehen",
+      "example": "Q3-Aufträge 274,9 Mio. € · Umsatz 183,6 Mio. €",
+      "action": "orders"
+    },
+    {
+      "id": "safety",
+      "title": "Sicherheitsmargen-Werkstatt",
+      "category": "Unternehmensbewertung",
+      "required": [
+        "cashflow",
+        "quality"
+      ],
+      "description": "Fairen Wert, Sicherheitsmarge und Kaufpreisgrenze vergleichen",
+      "example": "Beispiel fairer Wert 58,20 € · Kurs 33,27 €",
+      "action": "safety"
+    },
+    {
+      "id": "risk",
+      "title": "Portfolio-Stresstest",
+      "category": "Risikomanagement",
+      "required": [
+        "portfolio2"
+      ],
+      "description": "Gewichtete Kursverluste und Konzentrationsrisiko simulieren",
+      "example": "Zwei Positionen mit eigener Gewichtung und Kursveränderung",
+      "action": "risk"
+    },
+    {
+      "id": "dcf",
+      "title": "DCF-Szenarioarchiv",
+      "category": "Modellbewertung",
+      "required": [
+        "valuations"
+      ],
+      "description": "Fünfjährige KION-Cashflow-Prognose und WACC-Sensitivität",
+      "example": "Originalbericht + explizite Prognoseannahmen",
+      "action": "dcf"
+    }
+  ],
+  "collectibles": [
+    {
+      "id": "industrial-core",
+      "name": "Industrie-Kern",
+      "category": "Research-Relikt",
+      "symbol": "◈",
+      "description": "Für den vollständigen KION-Forschungsprozess und das dazugehörige Praxis-Training.",
+      "requiredCourses": {
+        "kion-deep-valuation-2026": 22
+      },
+      "requiredTraining": {
+        "kion-nachfrage": 4
+      }
+    },
+    {
+      "id": "silicon-lens",
+      "name": "Silizium-Linse",
+      "category": "Forschungsartefakt",
+      "symbol": "✧",
+      "description": "Du hast im AIXTRON-Training Auftragseingänge kritisch interpretiert.",
+      "requiredTraining": {
+        "aixtron-auftraege": 4
+      }
+    },
+    {
+      "id": "cloud-compass",
+      "name": "Cloud-Kompass",
+      "category": "Forschungsartefakt",
+      "symbol": "⌘",
+      "description": "Du hast in der Alphabet-Analyse Wachstum und Bewertung auseinandergehalten.",
+      "requiredTraining": {
+        "alphabet-cloud": 4
+      }
+    },
+    {
+      "id": "scenario-crystal",
+      "name": "Szenario-Kristall",
+      "category": "Meisterstück",
+      "symbol": "✺",
+      "description": "Alle erforderlichen Fähigkeiten des Szenarioarchitekten-Knotens gemeistert.",
+      "requiredSkills": [
+        "master"
+      ]
+    }
+  ]
+}
