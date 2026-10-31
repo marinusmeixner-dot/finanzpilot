@@ -48,9 +48,7 @@ const context=vm.createContext({window,document,localStorage,state,daily:{storie
 vm.runInContext(read('academy.js'),context,{filename:'academy.js'});
 assert(typeof listeners.DOMContentLoaded==='function');
 listeners.DOMContentLoaded();
-await Promise.resolve();
-await Promise.resolve();
-await Promise.resolve();
+for(let i=0;i<8;i++)await Promise.resolve();
 const app=window.FinanzPilotAcademy;
 assert(app);
 assert.equal(app.prerequisiteMet(advanced),false);
