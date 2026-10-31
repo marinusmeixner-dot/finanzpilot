@@ -1,0 +1,65 @@
+/* FinanzPilot v11 – eigenständiger verzweigter Skillbaum */
+.fp-skills-screen{display:grid;gap:18px;padding-bottom:24px}
+.fp-skill-intro{background:linear-gradient(125deg,#142d3a,#183a40);border:1px solid #345d5c;border-radius:20px;padding:21px}
+.fp-skill-intro h1{font-size:clamp(28px,4vw,37px);margin:11px 0}
+.fp-skill-intro p{color:#b9ced8;line-height:1.7;max-width:720px;font-size:13px}
+.fp-skill-totals{display:flex;gap:9px;flex-wrap:wrap;margin-top:17px}
+.fp-skill-totals span{display:flex;flex-direction:column;gap:3px;border:1px solid #3a5662;background:#1b3540;border-radius:12px;padding:11px 14px;color:#9fc0cd;font-size:11px}
+.fp-skill-totals b{font-size:16px;color:#dcfaf0}
+.fp-skill-legend{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.fp-skill-legend span{font-size:11px;display:flex;gap:6px;align-items:center;color:#c2d7dd}
+.fp-skill-legend i{width:9px;height:9px;display:inline-block;border-radius:99px;background:#485766}
+.fp-skill-legend i.mastered{background:#4cc498}.fp-skill-legend i.available{background:#e4c17d}
+.fp-skill-scroll{overflow-x:auto;overflow-y:hidden;-webkit-overflow-scrolling:touch;border:1px solid #2c4b5d;background:radial-gradient(circle at 35% 21%,#203d43 0,#102535 48%,#0c1b2d 100%);border-radius:18px;scrollbar-width:thin;touch-action:pan-x pan-y}
+.fp-skill-map{position:relative;min-width:920px}
+.fp-skill-map::before{content:'';position:absolute;inset:0;opacity:.1;pointer-events:none;background-image:linear-gradient(#9ddad0 1px,transparent 1px),linear-gradient(90deg,#9ddad0 1px,transparent 1px);background-size:46px 46px}
+.fp-skill-map svg{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.fp-skill-edge{fill:none;stroke:#486278;stroke-width:3;stroke-dasharray:5 7;opacity:.8}
+.fp-skill-edge.lit{stroke:#5fd7ac;stroke-width:3.8;stroke-dasharray:none;filter:drop-shadow(0 0 4px #4ac69c)}
+.fp-skill-node{position:absolute;transform:translate(-50%,-50%);width:148px;min-height:116px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;border:1px solid #3b6274;border-radius:18px;background:linear-gradient(140deg,#1b3444,#102839);box-shadow:0 10px 26px #0005;color:#c7dce5;text-align:center;padding:10px 8px;cursor:pointer;transition:transform .2s,border-color .2s,background .2s}
+.fp-skill-node:focus-visible{outline:3px solid #b1f6df;outline-offset:4px}
+.fp-skill-node:hover{transform:translate(-50%,-50%) scale(1.045);border-color:#8bbfb3}
+.fp-skill-node b{font-size:13px;color:#e5f4ef;line-height:1.2}
+.fp-skill-node small{font-size:10px;color:#91b5c5}
+.fp-skill-emblem{font-size:27px;line-height:1.1;color:#a2c4d5}
+.fp-node-state{font-size:10px;font-weight:800;letter-spacing:.1px}
+.fp-skill-node.mastered{background:linear-gradient(145deg,#235346,#163b39);border-color:#76d5ae;box-shadow:0 0 22px #3aad8942,0 11px 24px #0005}
+.fp-skill-node.mastered .fp-node-state,.fp-skill-node.mastered .fp-skill-emblem{color:#9df6ce}
+.fp-skill-node.available{border-color:#d8b878;background:linear-gradient(145deg,#3b373b,#192b3b)}
+.fp-skill-node.available .fp-node-state,.fp-skill-node.available .fp-skill-emblem{color:#efd591}
+.fp-skill-node.locked{opacity:.75;filter:saturate(.55)}
+.fp-skill-node.locked .fp-node-state{color:#a3afbf}
+.fp-skill-details{background:#152b3a;border:1px solid #395c6b;border-radius:16px;padding:18px;min-height:105px}
+.fp-skill-details h2{margin:0 0 8px;font-size:18px}
+.fp-skill-details p{color:#b9ccd6;font-size:13px;line-height:1.6;margin:9px 0}
+.fp-skill-detail-top{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.fp-skill-detail-top small{color:#9abfce;font-size:12px}
+.fp-skill-detail-icon{color:#c0e5d6;font-size:39px}
+.fp-skill-detail-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:15px}
+.fp-skill-hint{border:1px dashed #3b6670;background:#132936;color:#b8d0d9;padding:13px 15px;border-radius:13px;font-size:12px;line-height:1.65}
+.fp-skill-hint b{color:#d2eddf}
+/* Startseite: kompakte Listen, echte Nachrichten dürfen groß bleiben */
+.fp-home-hero{background:linear-gradient(130deg,#19383f,#1a2f43);border:1px solid #375e65;border-radius:18px;padding:21px;margin:4px 0 16px}
+.fp-home-hero h1{font-size:clamp(27px,4vw,38px);line-height:1.16;margin:10px 0}
+.fp-home-hero p{font-size:13px;color:#c1d9d9;line-height:1.6;max-width:680px}
+.fp-section-row{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:10px 0 12px}
+.fp-section-row h2{font-size:18px;margin:0}
+.fp-section-row>span{font-size:11px;color:#91adba}
+.fp-home-list{border:1px solid #2d4758;border-radius:16px;overflow:hidden;background:#112536}
+.fp-hub-row{display:flex;align-items:center;gap:13px;width:100%;text-align:left;color:#d9e9ed;background:transparent;border:0;border-bottom:1px solid #294356;padding:14px 16px;cursor:pointer;min-height:70px}
+.fp-hub-row:last-child{border-bottom:0}
+.fp-hub-row:hover{background:#1b3543}
+.fp-hub-row:focus-visible{outline:2px solid #91dfc8;outline-offset:-4px}
+.fp-hub-row-icon{display:grid;place-items:center;border:1px solid #41636d;background:#1d3a47;color:#8de3c5;font-size:21px;width:42px;height:42px;border-radius:13px;flex:none}
+.fp-hub-row-text{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
+.fp-hub-row-text b{font-size:14px}
+.fp-hub-row-text small{color:#9bb4c1;font-size:11px;line-height:1.35}
+.fp-hub-arrow{color:#8eb8ba;font-size:24px}
+.fp-home-news{margin:23px 0 30px}
+.fp-home-news-list{display:grid;gap:13px}
+.fp-home-news-list .news-item{background:#122534;border:1px solid #294556;border-radius:14px;padding:17px}
+.fp-progress-skill-link{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;background:#16343c;border:1px solid #345959;padding:15px;border-radius:14px;margin-bottom:17px}
+.fp-progress-skill-link>div{display:flex;flex-direction:column;gap:4px}
+.fp-progress-skill-link small{font-size:11px;color:#adc5d1}
+@media(max-width:700px){.fp-home-hero{padding:18px}.fp-skill-intro{padding:17px}.fp-skill-scroll{margin:0 -4px}.fp-skill-details{padding:14px}.fp-skill-detail-actions .btn{flex:1}}
+@media(prefers-reduced-motion:reduce){.fp-skill-node{transition:none}.fp-skill-node:hover{transform:translate(-50%,-50%)}}
