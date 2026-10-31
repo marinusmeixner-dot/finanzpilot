@@ -1,5 +1,5 @@
 {
-  "version": 31,
-  "release": "2026-10-31-v31",
-  "notes": "GuV course no longer rewinds on cloud import or traps completion; deeper margin/FCF analysis and abbreviations; clearer inventory wallet/artefact choices; ticker-specific editorial watchlist news"
+  "version": 32,
+  "release": "2026-10-31-v32",
+  "notes": "Stable academy course navigation without cloud rewind, better GuV and cashflow exercises, artifact redemption clarity and accurate EUR wallet; refreshed Depot and Markets watchlist with editor-sourced news at navigation"
 }
