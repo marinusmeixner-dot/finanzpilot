@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "2026-10-31",
+  "version": "2026-10-31-research-depth",
   "company": "Nordwerk AG – vollständig fiktives und konsistentes Lehrbeispiel, keine echte Aktie oder Börsendaten",
   "modules": [
     {
@@ -50,42 +50,42 @@
         {
           "type": "number",
           "title": "GuV sauber überleiten und hinterfragen",
-          "prompt": "Nordwerk meldet 1.000 Mio. € Umsatz, 620 Mio. € Herstellungskosten, 240 Mio. € weitere betriebliche Kosten und 40 Mio. € Abschreibungen. Wie hoch ist das EBIT (Mio. €)? Erkläre darunter in eigenen Worten, warum du Zinsen und Steuern hier noch NICHT abziehst und was du für die Liquidität zusätzlich wissen müsstest.",
+          "prompt": "Nordwerk AG berichtet im folgenden Geschäftsjahr 1.330 Mio. € Umsatz, 820 Mio. € Herstellungskosten, 290 Mio. € Vertrieb und Verwaltung, 70 Mio. € planmäßige Abschreibungen und zusätzlich 50 Mio. € Aufwand für Forschung. Der Zinsaufwand beträgt 35 Mio. €, die Ertragsteuer 13 Mio. €. Ermittle ausschließlich das EBIT (Mio. €). Begründe anschließend, welche Kosten darüber und welche Positionen darunter stehen, warum EBIT keine verfügbare Liquidität darstellt und welche Veränderungen bei Forderungen und Vorräten du zusätzlich prüfen würdest.",
           "answer": 100,
           "tolerance": 0.11,
-          "method": "Rechenweg: 1.000 − 620 − 240 − 40 = 100 Mio. € EBIT. Die operative Marge beträgt 100 / 1.000 = 10 %. Zinsaufwendungen (20 Mio. €) und Steuern (20 Mio. €) folgen erst unterhalb des EBIT. Jahresüberschuss: 60 Mio. €. Zur Beurteilung der Liquidität brauchst du Cashflow, Forderungen, Vorräte und Investitionszahlungen.",
-          "hint": "Rechne die operative Kostenbrücke. Prüfe die Reihenfolge: Umsatz → operativer Gewinn (EBIT) → Finanzergebnis → Steuer → Jahresüberschuss. Gewinn ist nicht automatisch Zahlungseingang.",
+          "method": "Operatives Ergebnis vor Zinsen und Steuern (EBIT) = 1.330 − 820 − 290 − 70 − 50 = 100 Mio. €. Operative Marge = 100/1.330 = 7,52 %. Zinsen 35 und Steuer 13 gehören unter das EBIT; rechnerisch blieben 52 Mio. € Jahresüberschuss. Der operative Gewinn ist nicht gleich Cashflow: Zahlungen, Abschreibungen, Vorräte, Forderungen, Verbindlichkeiten und Investitionen sind gesondert zu prüfen. Vergleiche die Marge mit den 10 % aus dem Vorjahr – der nominal identische Gewinn kann trotz höherem Umsatz eine schlechtere Ertragsqualität bedeuten.",
+          "hint": "Ordne die 70 Mio. € Abschreibung dem operativen Aufwand zu, nicht dem Zahlungsabfluss in diesem Jahr. Wende EBIT = Umsatz − operative Kosten an; vergleiche danach den Umsatz mit dem Vorjahr.",
           "reasoningRequired": true,
-          "reasoningQuestion": "Begründe deine Einordnung in mindestens einem vollständigen Satz: Wo stehen Zinsen und Steuern, und warum ist das EBIT nicht gleich verfügbarem Geld?"
+          "reasoningQuestion": "Warum sinkt die operative Marge im Vergleich zum Vorjahr trotz identischen EBIT, und weshalb sagt dieser Gewinn noch nichts über die Bankliquidität?"
         },
         {
           "type": "multi",
           "title": "Welche Aussagen sind wirklich belegbar?",
-          "prompt": "Prüfe die GuV der Nordwerk AG und entscheide, welche zwei Schlussfolgerungen durch die Daten tatsächlich gedeckt sind. Denke auch an den Unterschied zwischen Gewinn und Geldzufluss.",
+          "prompt": "Nordwerk: Vorjahr 1.000 Mio. € Umsatz, 100 Mio. € EBIT. Folgejahr 1.330 Mio. € Umsatz, wiederum 100 Mio. € EBIT, 35 Mio. € Zinsaufwand und 13 Mio. € Steuer. Prüfe zwei Aussagen, die sich zwingend aus diesen Zahlen ergeben, ohne unterstellte Zahlungsströme oder Prognosen.",
           "options": [
-            "EBIT liegt bei 100 Mio. €, Jahresüberschuss bei 60 Mio. €",
-            "EBITDA ist automatisch verfügbares Bargeld",
-            "Zinsen belasten den Jahresüberschuss, nicht das EBIT",
-            "Jeder Umsatzanstieg steigert zwingend den Gewinn"
+            "Die EBIT-Marge sinkt von 10 % auf rund 7,5 %, obwohl der Umsatz steigt.",
+            "Die jährlichen Zahlungseingänge müssen um exakt 330 Mio. € steigen, weil die Umsätze um diesen Betrag höher sind.",
+            "Der Gewinn nach Zinsen und Steuern beträgt rechnerisch 52 Mio. € (ohne zusätzliche Positionen).",
+            "Die Aktie ist bei steigenden Umsätzen automatisch günstiger bewertet als im Vorjahr."
           ],
           "correct": [
             0,
             2
           ],
-          "method": "Belegt sind 100 Mio. € operatives EBIT sowie 60 Mio. € Jahresüberschuss nach 20 Mio. € Zinsen und 20 Mio. € Steuern. EBIT ist vor Zinsen und Steuern. EBITDA und EBIT enthalten keine direkte Information über Erhaltungsinvestitionen, Forderungen oder tatsächlich eingegangene Zahlungen. Höhere Umsätze führen nur bei ausreichend kontrollierten Kosten zu höheren Gewinnen.",
+          "method": "100/1.000 = 10 %, 100/1.330 ≈ 7,52 %: Die operative Marge fällt um rund 2,48 Prozentpunkte. 100 − 35 − 13 = 52 Mio. € Jahresüberschuss bei den angegebenen Positionen. Forderungen oder Vorräte können Zahlungsströme verzögern. Weder Umsatzwachstum noch Marge belegen eine Unterbewertung ohne Aktienkurs, Prognose, Kapitalbedarf und Risiken.",
           "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
         },
         {
           "type": "decision",
           "title": "Einmaleffekt in der GuV erkennen",
-          "prompt": "Nordwerk verkauft eine alte Halle mit 80 Mio. € einmaligem Buchgewinn. Im selben Jahr fällt der wiederkehrende operative Gewinn unter 100 Mio. €. Wie gehst du vor, bevor du ein nachhaltiges Ergebnis bewertest?",
+          "prompt": "Nordwerk verkauft einmalig eine Fabrikhalle mit 80 Mio. € Buchgewinn. Gleichzeitig liegen Auftragseingang und wiederkehrendes operatives EBIT unter dem Vorjahr. Du willst eine langfristige Ergebnisprognose erstellen. Welcher nächste Schritt ist methodisch am besten?",
           "options": [
-            "Dauerhaft als normalen operativen Ertrag fortschreiben",
-            "Einmaleffekt vom wiederkehrenden Geschäft trennen",
-            "Das Unternehmen ohne weitere Zahlen kaufen"
+            "80 Mio. € zusätzlich für jedes künftige Jahr fortschreiben, bis das Gegenteil bewiesen ist.",
+            "Die Buchgewinne, wiederkehrende operative Marge sowie Zahlungseingang und Steuern getrennt analysieren und die Prognose danach aufbauen.",
+            "Den Buchgewinn direkt mit dem Aktienkurs gleichsetzen und aus dem Abstand eine Unterbewertung ableiten."
           ],
           "correct": 1,
-          "method": "Trenne einmalige Veräußerungsgewinne von wiederkehrenden operativen Erträgen. Prüfe, wo der Verkauf in der GuV ausgewiesen wurde, welche Steuerfolgen entstehen und ob der Mittelzufluss tatsächlich eingegangen ist. Für eine normalisierte Unternehmensbewertung darfst du diese 80 Mio. € nicht einfach jedes Jahr fortschreiben.",
+          "method": "Einmalige Gewinne sind nicht automatisch nachhaltig; zunächst die genaue GuV-Zuordnung prüfen, danach normalisiertes EBIT/EBITDA, künftige Margen und tatsächliche Cashflows getrennt modellieren. Ein Ertrag aus Veräußerung erhöht bei gewöhnlicher Bilanzierung ggf. das ausgewiesene Betriebsergebnis, aber nicht die fortlaufende Verkaufskraft des Kerngeschäfts.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
       ],
@@ -96,6 +96,93 @@
         "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
         "url": "#view=glossary"
       }
+    },
+    {
+      "id": "guv-gewinnqualitaet",
+      "title": "GuV vertiefen – Gewinnqualität und Cashflow",
+      "subtitle": "Von operativer Marge über Kapitalbindung zu freiem Cashflow",
+      "short": "Zahlungsströme, Kapitalbindung und Einmaleffekte in einer Bilanzanalyse verbinden",
+      "order": 11,
+      "minutes": 24,
+      "prerequisite": "guv",
+      "difficulty": "Vertiefung",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · fiktives Fallmodell mit konsistenten Zahlen",
+        "url": "#view=glossary"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Die Brücke von GuV zu Geld",
+          "text": "Die Gewinn- und Verlustrechnung (GuV) zeigt Erträge und Aufwendungen einer Periode. Jahresüberschuss ≠ Kassenbestand: Forderungen binden Kapital, wenn Kunden später zahlen; steigende Vorräte müssen eingekauft werden; höhere Lieferantenverbindlichkeiten können Zahlungen hinausschieben. Der operative Cashflow (CFO, Cash Flow from Operations) lässt sich in einem vereinfachten indirekten Modell berechnen: Jahresüberschuss + nicht zahlungswirksame Abschreibungen − Forderungsanstieg − Vorratsanstieg + Verbindlichkeitsanstieg. Der freie Cashflow (FCF, Free Cash Flow) zieht anschließend Sachinvestitionen (CapEx, Capital Expenditures) ab. Dieses vereinfachte Lehrbeispiel unterstellt keine weiteren Cashflow-Positionen und trennt Investitionsauszahlungen von Abschreibungen.",
+          "insight": "Ein positiver Jahresüberschuss ist kein Beweis für verfügbares Geld. Kapitalbindung und Investitionen können den freien Cashflow negativ machen.",
+          "visual": {
+            "labels": [
+              "Jahresüberschuss",
+              "Abschreibungen",
+              "Forderungsanstieg",
+              "Vorratsanstieg",
+              "Verbindlichkeitsanstieg"
+            ],
+            "values": [
+              60,
+              40,
+              85,
+              35,
+              20
+            ],
+            "unit": "Mio. €"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Cashflow berechnen – mit Gegenprobe",
+          "prompt": "Nordwerk erzielt 60 Mio. € Jahresüberschuss. Abschreibungen: +40 Mio. €, Forderungen gegenüber Kunden steigen um 85 Mio. €, Vorräte um 35 Mio. €, Verbindlichkeiten gegenüber Lieferanten um 20 Mio. €. Zusätzlich bezahlt Nordwerk neue Maschinen für 70 Mio. €. Alle Beträge in Mio. €, andere Cashflow-Positionen sind im Modell null. Wie groß ist der freie Cashflow (FCF) in Mio. €? Gib auch ein negatives Vorzeichen an und erläutere, ob die Zahlungsfähigkeit allein aus der GuV erkennbar wäre.",
+          "answer": -70,
+          "tolerance": 0.11,
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre den Effekt steigender Forderungen und Vorräte auf den operativen Cashflow und weshalb die Maschinenzahlung separat abgezogen wird.",
+          "method": "Operativer Cashflow = 60 + 40 − 85 − 35 + 20 = 0 Mio. €. Investitionen (CapEx) = 70 Mio. € ⇒ freier Cashflow = 0 − 70 = −70 Mio. €. Der Gewinn bleibt positiv, aber Kundenforderungen und Vorräte binden Zahlungsmittel. Ob Nordwerk zahlungsfähig bleibt, hängt zusätzlich von Bargeldbeständen und Finanzierungslinien ab.",
+          "hint": "Bilde zunächst den operativen Cashflow, indem du die Veränderungen des Working Capital richtig vorzeichnest. Ziehe erst danach die Investitionszahlung ab."
+        },
+        {
+          "type": "multi",
+          "title": "Welche Schlussfolgerungen hält eine Prüfung aus?",
+          "prompt": "Nordwerk hat im Beispiel 60 Mio. € Jahresüberschuss, aber −70 Mio. € freien Cashflow. Markiere genau zwei Aussagen, die aus den verfügbaren Daten folgen. Keine Prognose ist ausdrücklich garantiert.",
+          "options": [
+            "Nordwerk kann bilanziell profitabel sein und dennoch in dieser Periode Zahlungsmittel verbrauchen.",
+            "Negativer FCF beweist Insolvenz und die sichere Unmöglichkeit einer Kreditaufnahme.",
+            "Steigende Forderungen belasten bei indirekter Rechnung den operativen Cashflow, auch wenn die Umsätze bereits verbucht wurden.",
+            "Der Buchgewinn beim Hallenverkauf muss im nächsten Jahr automatisch wiederkehren."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Nur die erste und dritte Aussage sind aus GuV und Cashflow-Brücke gedeckt. Ein negativer freier Cashflow ist kein Beweis für Insolvenz: Finanzierungen, vorhandene Liquidität und Zeitpunkt von Investitionen entscheiden mit.",
+          "hint": "Frage bei jeder Aussage: Belegt ein einzelner Periodenwert diese Behauptung tatsächlich?"
+        },
+        {
+          "type": "sequence",
+          "title": "So würdest du ein Unternehmen systematisch prüfen",
+          "text": "Nordwerk hat steigende Umsätze, rückläufige Marge und negativen freien Cashflow. Bringe die Arbeitsschritte in eine sinnvolle Reihenfolge, bevor du ein Kursziel modellierst.",
+          "options": [
+            "Wiederkehrende Gewinne, Sonderfaktoren und Margenentwicklung prüfen",
+            "Umsatz, Segmente und GuV-Positionen mit Periodenvergleich aus dem Bericht lesen",
+            "Kapitalbindung, operativen Cashflow, Investitionen und Liquiditätsreserve überleiten",
+            "Mit geprüften Annahmen mehrere Szenarien und Risiken bewerten"
+          ],
+          "correct": [
+            1,
+            0,
+            2,
+            3
+          ],
+          "method": "Eine nachvollziehbare Analyse beginnt mit Originalzahlen (Umsatz, Segmente, GuV), bereinigt anschließend Sonderfaktoren, verbindet Ergebnis mit Cashflow und erstellt erst danach eine Bewertungsprognose samt Risiken.",
+          "hint": "Erst Daten sammeln, dann wiederkehrende Erträge prüfen, anschließend Zahlungströme und ganz am Ende das Bewertungsmodell."
+        }
+      ]
     },
     {
       "id": "margen",
