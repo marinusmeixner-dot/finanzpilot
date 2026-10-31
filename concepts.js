@@ -2,6 +2,8 @@
 'use strict';
 window.FinanzPilotConcepts=(()=>{
  const STORAGE='finanzpilot_concepts_v1';
+ const FULL={GuV:'Gewinn- und Verlustrechnung',EBIT:'Ergebnis vor Zinsen und Steuern (Earnings Before Interest and Taxes)',EBITDA:'Ergebnis vor Zinsen, Steuern und Abschreibungen',FCF:'Free Cashflow (freier Cashflow)',ROIC:'Return on Invested Capital (Rendite auf das investierte Kapital)',WACC:'Weighted Average Cost of Capital (gewichtete durchschnittliche Kapitalkosten)',EV:'Enterprise Value (Gesamtunternehmenswert)',KGV:'Kurs-Gewinn-Verhältnis',NOPAT:'Net Operating Profit After Taxes (operativer Gewinn nach Steuern)',DCF:'Discounted Cashflow (Barwert zukünftiger Zahlungsüberschüsse)',CFO:'Cashflow aus laufender Geschäftstätigkeit'};
+ const abbreviations=text=>[...new Set((String(text||'').match(/\b(?:EBITDA|EBIT|FCF|ROIC|WACC|GuV|NOPAT|DCF|CFO|KGV|EV)\b/g)||[]))].map(x=>'<li><b>'+x+'</b> = '+esc(FULL[x])+'</li>').join('');
  const DATA_URL='./data/terminology.json';
  let content={modules:[]},dataReady=false,loadError='';
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -62,7 +64,7 @@ window.FinanzPilotConcepts=(()=>{
   }).join('')+'</div><p class="fp-training-fine">Deine Antworten bleiben lokal und werden nach erfolgreicher Anmeldung zusätzlich synchronisiert. Alle Zahlen haben einen Berichtszeitpunkt.</p></div>';
  }
  function chooseUI(step,draft){
-  if(step.type==='number')return '<form id="fp-training-number-form" class="fp-training-number-form"><label for="fp-training-number-input">Dein Ergebnis ('+esc(step.unit||'')+')</label><input id="fp-training-number-input" name="value" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="z. B. -4,9 oder (845/930-1)*100" value="'+esc(draft??'')+'" />'+(window.FinanzPilotMath?.toolbar()||'')+'<button class="btn" type="submit">Ergebnis prüfen</button></form>';
+  if(step.type==='number')return '<form id="fp-training-number-form" class="fp-training-number-form"><label for="fp-training-number-input">Dein Ergebnis ('+esc(step.unit||'')+')</label><input id="fp-training-number-input" name="value" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="z. B. -4,9 oder (845/930-1)*100" value="'+esc(draft??'')+'" />'+(window.FinanzPilotMath?.toolbar()||'')+(step.reasoningRequired?'<label for="fp-training-reason">'+esc(step.reasoningQuestion||'Begründe deinen Rechenweg.')+'</label><textarea id="fp-training-reason" rows="3" minlength="45" maxlength="1200" required placeholder="Was bedeutet das Ergebnis wirtschaftlich?">'+esc(data.active?.mode==='review'?data.active.reasoning||'':session(data.active.id).drafts[(data.active.mode==='review'?data.active.step:session(data.active.id).step)+':reasoning']||'')+'</textarea>':'')+'<button class="btn" type="submit">Ergebnis und Erklärung prüfen</button></form>';
   if(step.type==='multi'||step.type==='decision'){
    const values=Array.isArray(draft)?draft:[];
    return '<div class="fp-training-options">'+step.options.map((o,i)=>'<button type="button" class="fp-training-option '+(values.includes(i)?'selected':'')+'" data-training-option="'+i+'" aria-pressed="'+values.includes(i)+'"><span>'+((step.type==='multi')?(values.includes(i)?'☑':'□'):(values.includes(i)?'◉':'◯'))+'</span><span>'+esc(o)+'</span></button>').join('')+'</div><button type="button" class="btn" data-training-submit>Antwort prüfen</button>';
@@ -82,7 +84,7 @@ window.FinanzPilotConcepts=(()=>{
   const draft=(active.mode==='review'?active.draft:s.drafts[idx])??(step.type==='sequence'?step.options.map((_,i)=>i):step.type==='multi'||step.type==='decision'?[]:'');
   const solved=Boolean(answer),head=active.mode==='review'?'GEZIELTE WIEDERHOLUNG':'SCHRITT '+(idx+1)+' VON '+m.steps.length;
   return '<div class="fp-training-work"><button type="button" class="fp-training-back" data-training-list>← Zur Akademie</button><div class="fp-training-top"><div><div class="eyebrow">'+head+'</div><h1>'+esc(m.title)+'</h1><p>'+esc(m.domain)+' · '+esc(m.difficulty)+'</p></div><div class="fp-training-percent">'+Math.round(100*idx/m.steps.length)+' %</div></div><div class="fp-training-progress"><i style="width:'+(100*idx/m.steps.length)+'%"></i></div>'+
-   '<section class="fp-training-case"><div class="fp-training-case-intro"><small>'+esc(step.type==='read'?'VERSTEHEN':step.type==='number'?'SELBST RECHNEN':step.type==='multi'?'MEHRERE AUSSAGEN PRÜFEN':step.type==='sequence'?'ANALYSEPROZESS ORDNEN':'ENTSCHEIDEN')+'</small><h2>'+esc(step.title)+'</h2><p>'+esc(step.text||step.prompt||'')+'</p></div>'+chart(step.visual)+
+   '<section class="fp-training-case"><div class="fp-training-case-intro"><small>'+esc(step.type==='read'?'VERSTEHEN':step.type==='number'?'SELBST RECHNEN':step.type==='multi'?'MEHRERE AUSSAGEN PRÜFEN':step.type==='sequence'?'ANALYSEPROZESS ORDNEN':'ENTSCHEIDEN')+'</small><h2>'+esc(step.title)+'</h2><p>'+esc(step.text||step.prompt||'')+'</p>'+(abbreviations(m.title+' '+step.title+' '+(step.text||step.prompt||'')+' '+(step.insight||''))?'<details class="fp-training-definitions" open><summary>Abkürzungen ausgeschrieben</summary><ul>'+abbreviations(m.title+' '+step.title+' '+(step.text||step.prompt||'')+' '+(step.insight||''))+'</ul></details>':'')+'</div>'+chart(step.visual)+
    (step.type==='read'?'<div class="fp-training-insight"><b>Das solltest du mitnehmen</b><p>'+esc(step.insight||'')+'</p></div><button type="button" class="btn" data-training-continue>Verstanden · Weiter →</button>':
     solved?'<div class="fp-training-result '+(answer.correct?'correct':'incorrect')+'"><div class="fp-training-result-title">'+(answer.correct?'✓ Richtig eingeordnet':'↻ Noch nicht ganz – hier ist die Analyse')+'</div><p>'+esc(step.method||'')+'</p><button class="btn" type="button" '+(answer.correct?'data-training-continue':'data-training-retry')+'>'+(answer.correct?(active.mode==='review'?'Wiederholung abschließen':'Nächster Schritt →'):'Jetzt noch einmal selbst lösen →')+'</button></div>':
     '<div class="fp-training-task"><div class="fp-training-task-title"><b>Deine Aufgabe</b><button type="button" data-training-hint aria-expanded="false">Hinweis anzeigen</button></div><p class="fp-training-hint" id="fp-training-hint" hidden>'+esc(step.hint||'Denke an Fakten, Prognosen und Gegenargumente.')+'</p>'+chooseUI(step,draft)+'<p class="fp-training-validation" id="fp-training-validation" role="alert"></p></div>')+
@@ -90,7 +92,7 @@ window.FinanzPilotConcepts=(()=>{
  }
  function finished(m){
   const s=session(m.id),stat=stats(m.id),points=scoredSteps(m).length;
-  return '<div class="fp-training-complete"><div class="fp-training-trophy">✧</div><div class="eyebrow">LERNSTUFE ABGESCHLOSSEN</div><h1>'+esc(m.title)+'</h1><div class="fp-training-score">'+stat.best+' / '+points+'</div><h2>'+(stat.mastered?'Lernstufe gemeistert':'Deine Analyse ist dokumentiert')+'</h2><p>'+ (stat.mastered?'Du hast alle drei Prüfungen richtig gelöst. Die nächste Stufe baut darauf auf; in einigen Tagen folgt die Wiederholung.':'Wiederhole die schwierigen Aufgaben, bis du alle drei Prüfungen sicher beherrschst.')+'</p><div class="fp-training-complete-actions"><button class="btn" data-training-list>Zur Akademie-Übersicht</button><button class="btn secondary" data-training-repeat="'+esc(m.id)+'">Stufe wiederholen</button><button class="btn secondary" data-training-skill>Skillbaum ansehen →</button>'+''+'</div><p class="fp-training-proof-note">Diese Lernstufen werden unabhängig von den Firmen-Praxisreihen gespeichert. Hier gibt es keine handelbaren Gegenstände oder virtuellen Guthaben.</p></div>';
+  return '<div class="fp-training-complete"><div class="fp-training-trophy">✧</div><div class="eyebrow">LERNSTUFE ABGESCHLOSSEN</div><h1>'+esc(m.title)+'</h1><div class="fp-training-score">'+stat.best+' / '+points+'</div><h2>'+(stat.mastered?'Lernstufe gemeistert':'Deine Analyse ist dokumentiert')+'</h2><p>'+ (stat.mastered?'Du hast die Fragen abgeschlossen. Die nächste Lernstufe baut auf deinem Verständnis auf; geplante Wiederholungen festigen es.':'Wiederhole die schwierigeren Fragen gezielt. Du kannst jederzeit zurück zur Übersicht.')+'</p><div class="fp-training-complete-actions"><button class="btn" data-training-list>Zur Akademie-Übersicht</button><button class="btn secondary" data-training-repeat="'+esc(m.id)+'">Stufe wiederholen</button><button class="btn secondary" data-training-skill>Skillbaum ansehen →</button>'+''+'</div><p class="fp-training-proof-note">Diese Lernstufen werden unabhängig von den Firmen-Praxisreihen gespeichert. Hier gibt es keine handelbaren Gegenstände oder virtuellen Guthaben.</p></div>';
  }
  function render(){
   if(!dataReady)return '<div class="fp-training"><h1>Trainingslabor</h1><p>'+esc(loadError||'Lernfälle werden geladen …')+'</p></div>';
@@ -110,6 +112,7 @@ window.FinanzPilotConcepts=(()=>{
   const a=data.active;if(!a)return;
   const m=module(a.id),s=session(a.id),idx=a.mode==='review'?a.step:s.step,step=m.steps[idx];
   const input=step.type==='number'?document.getElementById('fp-training-number-input')?.value:getDraft();
+  if(step.reasoningRequired){const reason=document.getElementById('fp-training-reason')?.value.trim()||'';if(reason.length<45){document.getElementById('fp-training-validation').textContent='Begründe die Rechnung bitte in einem vollständigen Satz (mindestens 45 Zeichen).';return}if(a.mode==='review')a.reasoning=reason;else s.drafts[idx+':reasoning']=reason}
   if(step.type==='number')updateDraft(input);
   const check=grade(step,input);
   if(!check.valid){document.getElementById('fp-training-validation').textContent=check.message||'Bitte zuerst eine Antwort auswählen.';return}
@@ -125,6 +128,7 @@ window.FinanzPilotConcepts=(()=>{
   const a=data.active;if(!a)return;
   if(a.mode==='review'){data.active=null;persist();window.render?.();return}
   const m=module(a.id),s=session(a.id);if(!m)return;
+  if(s.step>=m.steps.length){data.active=null;persist();window.render?.();return}
   s.step=Math.min(m.steps.length,s.step+1);
   if(s.step>=m.steps.length){
    const score=Object.values(s.answers).filter(x=>x.type!=='read'&&x.correct).length;
@@ -177,6 +181,7 @@ window.FinanzPilotConcepts=(()=>{
    updateDraft(order);window.render?.();
   }));
   root.querySelector('#fp-training-number-input')?.addEventListener('input',ev=>updateDraft(ev.target.value));
+  root.querySelector('#fp-training-reason')?.addEventListener('input',ev=>{const a=data.active;if(!a)return;const idx=a.mode==='review'?a.step:session(a.id).step;if(a.mode==='review')a.reasoning=ev.target.value;else session(a.id).drafts[idx+':reasoning']=ev.target.value;persist(false)});
   root.querySelector('#fp-training-number-form')?.addEventListener('submit',ev=>{ev.preventDefault();submit()});
   root.querySelectorAll('[data-training-submit]').forEach(x=>x.addEventListener('click',submit));
   root.querySelectorAll('[data-training-continue]').forEach(x=>x.addEventListener('click',advance));
