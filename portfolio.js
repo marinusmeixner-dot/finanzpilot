@@ -110,7 +110,7 @@
       const {error:e}=await client().from('fp_paper_watchlist').insert({user_id:user(),symbol:key});
       if(e&&e.code!=='23505')throw e;
     }
-    await load();if(goTrade)symbol=key;
+    if(goTrade)symbol=key;await load();
     notice=(saveToWatchlist?'Watchlist gespeichert. ':'')+out.quote.asset_name+' ('+key+') · geprüfter Schlusskurs '+out.quote.quote_date+' · '+fmt(out.quote.price,out.quote.currency)+'. Kein Livepreis.';
    }catch(e){notice='Wertpapier konnte nicht hinzugefügt werden: '+String(e.message||e)}
    finally{lookupBusy=false;viewRefresh();if(!notice.startsWith('Wertpapier konnte'))jump(goTrade?'fp-depot-order-panel':'fp-depot-watchlist')}
