@@ -14,3 +14,12 @@
 .fp-training-entry.fp-concept-locked .fp-training-entry-go{color:#839ca8}
 @media(max-width:700px){.fp-learning-guide{margin:18px 0}.fp-learning-guide-grid{grid-template-columns:1fr}.fp-learning-guide-grid>button{min-height:0;padding:16px;gap:6px}.fp-learning-guide-head{display:block}.fp-learning-guide-head p{margin-top:6px}}
 @media(prefers-reduced-motion:reduce){.fp-learning-guide-grid>button{transition:none}}
+
+/* v28: Explain every abbreviation and request an independent financial interpretation. */
+.fp-training-definitions{background:rgba(122,222,187,.08);border:1px solid rgba(133,223,182,.38);border-radius:12px;margin:14px 0;padding:12px 15px}
+.fp-training-definitions summary{font-size:13px;font-weight:760;cursor:pointer;color:#a9f4cb}
+.fp-training-definitions ul{padding-left:20px;margin:10px 0 0}
+.fp-training-definitions li{font-size:12px;color:#d2e8e1;line-height:1.65;margin:7px 0}
+.fp-training-number-form textarea{font:inherit;font-size:15px;line-height:1.6;min-height:100px;resize:vertical;width:100%;padding:13px;background:#102838;color:#e3f3e9;border:1px solid #52727a;border-radius:10px;box-sizing:border-box}
+.fp-training-number-form label[for="fp-training-reason"]{display:block;margin-top:16px;font-weight:740;line-height:1.6}
+.fp-training-number-form textarea:focus-visible{outline:2px solid #94efc6;outline-offset:2px}
