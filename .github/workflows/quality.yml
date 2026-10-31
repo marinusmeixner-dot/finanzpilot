@@ -42,5 +42,5 @@ jobs:
         run: node scripts/test_global_stock_v27.mjs
       - name: Test stable GuV lesson, no-reload sync, artifact capital and company news navigation
         run: node scripts/test_learning_watch_v28.mjs
-      - name: Regression: GuV course completion, cloud sync and editorial watchlist
+      - name: "Regression: GuV course completion, cloud sync and editorial watchlist"
         run: node scripts/test_course_sync_v31.mjs
