@@ -2,21 +2,22 @@
  'use strict';
  const KEY='finanzpilot_navigation_v6';
  const LEARNING_VIEWS=new Set(['learnpath','concepts','training','transfer','skills','glossary','foundations','academy','academycourse','labcase']);
- const ROOT_VIEWS=new Set(['home','learn','markets','research','progress']);
- const MAIN=['home','learn','markets','research','progress'];
+ const ROOT_VIEWS=new Set(['home','learn','markets','depot','progress','stockhub']);
+ const MAIN=['home','learn','markets','depot','progress'];
  const GROUPS={
  home:{label:'Start',links:[['home','Tagesübersicht','Dein täglicher FinanzPilot']]},
  learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Lernpfad','Lektionen und tägliche Übungen'],['concepts','Begriffs-Akademie','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['transfer','Transferwerkstatt','Größere Firmenfälle, Rechnungen und fundierte Entscheidungen'],['training','Praxis-Trainingslabor','Unternehmen analysieren und mit Zahlen rechnen'],['skills','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt']]},
- markets:{label:'Märkte',description:'News, Kurse, Indizes und eigene Einschätzungen',links:[['marketoverview','Marktüberblick','Nachrichten, Indizes und Charts analysieren'],['dailyreview','Tägliche Herausforderungen','Markt- und Aktienanalysen einreichen und morgiges Feedback ansehen'],['academymarket','Mein Markturteil','Marktentwicklungen bewerten und Schlussfolgerungen prüfen']]},
- research:{label:'Aktien',description:'Unternehmen recherchieren und fundiert bewerten',links:[['researchcatalog','Aktienanalysen','Umfassende Einzelaktien- und Unternehmensrecherchen'],['investmentcommittee','Investmentkomitee','Kursziele selbst modellieren und ein Investmenturteil erarbeiten'],['theses','Thesenjournal','Eigene Bewertungen prüfen, überarbeiten und über längere Zeit vergleichen'],['academy','Aktien-Intensivkurse','Vollständige Bewertungsprozesse Schritt für Schritt']]},
+ markets:{label:'Märkte',description:'News, Kurse, Indizes und eigene Einschätzungen',links:[['marketoverview','Marktüberblick','Nachrichten, Indizes und Charts analysieren'],['dailyreview','Tägliche Herausforderungen','Markt- und Aktienanalysen einreichen und morgiges Feedback ansehen'],['academymarket','Mein Markturteil','Marktentwicklungen bewerten und Schlussfolgerungen prüfen'],['stockhub','Aktien & Analysen','Unternehmen, Intensivkurse, Thesenjournal und Investmentkomitee']]},
+ stockhub:{label:'Aktien & Analysen',description:'Unternehmen recherchieren und fundiert bewerten',links:[['researchcatalog','Aktienanalysen','Umfassende Einzelaktien- und Unternehmensrecherchen'],['investmentcommittee','Investmentkomitee','Kursziele selbst modellieren und ein Investmenturteil erarbeiten'],['theses','Thesenjournal','Eigene Bewertungen prüfen, überarbeiten und über längere Zeit vergleichen'],['academy','Aktien-Intensivkurse','Vollständige Bewertungsprozesse Schritt für Schritt']]},
+ depot:{label:'Depot',description:'Deine virtuellen Aktienpositionen, Spielgeld und Transaktionen',links:[]},
  progress:{label:'Profil',description:'Dein Fortschritt, Karriere und Sammlerstücke',links:[['learningstats','Lernfortschritt','Ergebnisse, Lernhistorie und tägliche Fortschritte'],['career','Analystenkarriere & Werkzeuge','Ränge, Beförderungen und Research-Tools'],['inventory','Inventar & Belohnungen','Forschungspunkte, Artefakte und Spezialmissionen'],['account','Konto & Synchronisierung','Anmelden und Fortschritt sichern']]}
  };
- const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',transfer:'learn',learnpath:'learn',markets:'markets',marketoverview:'markets',dailyreview:'markets',academymarket:'markets',research:'research',researchcatalog:'research',investmentcommittee:'research',theses:'research',academy:'research',academycourse:'research',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
+ const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',transfer:'learn',learnpath:'learn',markets:'markets',marketoverview:'markets',dailyreview:'markets',academymarket:'markets',stockhub:'markets',research:'markets',depot:'depot',researchcatalog:'stockhub',investmentcommittee:'stockhub',theses:'stockhub',academy:'stockhub',academycourse:'stockhub',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
  const ICON={
   home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
   learn:'<path d="m3 4 9-2 9 2v16l-9 2-9-2z"/><path d="M12 2v20"/><path d="m6 9 4 1m4 0 4-1"/>',
   markets:'<path d="M3 17l6-6 4 3 7-8"/><path d="M15 6h5v5"/>',
-  research:'<rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 16l3-4 3 2 4-6"/>',
+  depot:'<rect x="3" y="6" width="18" height="15" rx="3"/><path d="M3 10h18M7 15h4M16 15h2"/>',
   progress:'<circle cx="12" cy="8" r="4"/><path d="M5 21a7 7 0 0 1 14 0"/>',
   menu:'<path d="M4 6h16M4 12h16M4 18h16"/>',
   close:'<path d="M5 5l14 14M19 5 5 19"/>',
@@ -26,8 +27,8 @@
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
  const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return {}}};
  let inRoute=false,restoring=false,previous='home',restoreTicket=0;
- const rootOf=view=>PARENT[view]||'home';
- const label=view=>Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[rootOf(view)].label;
+ const rootOf=view=>{let v=view;for(let i=0;i<4;i++){if(MAIN.includes(v))return v;v=PARENT[v];if(!v)break}return 'home'};
+ const label=view=>Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[view]?.label||GROUPS[rootOf(view)].label;
  function persist(view,y){
   if(restoring||!Object.prototype.hasOwnProperty.call(PARENT,view))return;
   try{
@@ -53,7 +54,7 @@
    });
   }));
  }
- const isHub=v=>MAIN.includes(v)&&v!=='home';
+ const isHub=v=>(MAIN.includes(v)&&v!=='home'&&v!=='depot')||v==='stockhub';
  function learningGuide(){
   const read=k=>{try{return JSON.parse(localStorage.getItem(k)||'{}')||{}}catch{return {}}};
   const concept=read('finanzpilot_concepts_v1'),transfer=read('finanzpilot_transfer_v1');
@@ -99,7 +100,7 @@
  }
  function header(){
   const root=document.getElementById('view-root');if(!root)return;
-  const group=rootOf(state.view),hub=(group===state.view);
+  const group=rootOf(state.view),hub=(group===state.view),back=PARENT[state.view]&&PARENT[state.view]!==state.view?PARENT[state.view]:group;
   root.querySelector(':scope > .fp-route-header')?.remove();
   root.querySelector(':scope > .fp-context-tabs')?.remove();
   root.querySelector(':scope > .fp-section-bar')?.remove();
@@ -107,12 +108,13 @@
   if(hub)existing?.remove();
   else if(!existing||existing.dataset.view!==state.view){
    existing?.remove();const el=document.createElement('div');el.className='fp-tab-crumb';el.dataset.view=state.view;
-   el.innerHTML='<button type="button" data-section-up="'+group+'">‹ '+esc(GROUPS[group].label)+'-Übersicht</button><span>'+esc(label(state.view))+'</span>';
+   el.innerHTML='<button type="button" data-section-up="'+back+'">‹ '+esc(GROUPS[back]?.label||label(back))+'-Übersicht</button><span>'+esc(label(state.view))+'</span>';
    root.prepend(el);
   }
   document.querySelectorAll('[data-section-main]').forEach(b=>{const on=b.dataset.sectionMain===group;b.classList.toggle('active',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
  }
  function route(to,remember=true){
+  if(to==='research')to='stockhub';
   if(inRoute||!Object.prototype.hasOwnProperty.call(PARENT,to))return;
   if(to==='account'){window.FinanzPilotCloud?.openLogin?.();return}
   if(to==='lesson'||to==='labcase')to='learnpath';
@@ -131,7 +133,9 @@
   build();
   const saved=load();
   const hash=new URLSearchParams(location.hash.replace(/^#/,'')),chosen=hash.get('view');
-  const initial=Object.prototype.hasOwnProperty.call(PARENT,chosen)?chosen:Object.prototype.hasOwnProperty.call(PARENT,saved.view)?saved.view:'home';
+  const candidate=chosen==='research'?'stockhub':chosen;
+  const fallback=saved.view==='research'?'stockhub':saved.view;
+  const initial=Object.prototype.hasOwnProperty.call(PARENT,candidate)?candidate:Object.prototype.hasOwnProperty.call(PARENT,fallback)?fallback:'home';
   if(initial!=='home'&&initial!=='account')chooseView(initial);
   previous=state.view;header();
   if(!location.hash||!hash.get('view'))history.replaceState(null,'',location.pathname+location.search+'#view='+encodeURIComponent(initial));
@@ -164,7 +168,7 @@
      const candidate=load().resume;
      const resume=LEARNING_VIEWS.has(candidate)?candidate:null;
      const acts=MAIN.filter(id=>id!=='home').map(id=>{
-      const d={learn:'Lektionen, Übungen und Skillentwicklung',markets:'Nachrichten, Indizes und Chartanalyse',research:'Unternehmen, Bewertungen und große Kurse',progress:'Karriere, Auszeichnungen und dein Konto'}[id];
+      const d={learn:'Lektionen, Übungen und Skillentwicklung',markets:'Nachrichten, Marktchecks und Aktienanalysen',depot:'Virtuelle Aktienkäufe, Wertentwicklung und Transaktionen',progress:'Karriere, Auszeichnungen und dein Konto'}[id];
       return '<button type="button" class="fp-hub-row" data-hub-view="'+id+'"><span class="fp-hub-row-icon">'+icon(id,22)+'</span><span class="fp-hub-row-text"><b>'+GROUPS[id].label+'</b><small>'+d+'</small></span><span class="fp-hub-arrow">'+icon('arrow',17)+'</span></button>';
      }).join('');
      let news='';
