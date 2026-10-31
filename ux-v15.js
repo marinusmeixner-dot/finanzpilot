@@ -115,6 +115,7 @@
  }
  function route(to,remember=true){
   if(to==='research')to='stockhub';
+   if(to==='marketwatch')to='marketoverview';
   if(inRoute||!Object.prototype.hasOwnProperty.call(PARENT,to))return;
   if(to==='account'){window.FinanzPilotCloud?.openLogin?.();return}
   if(to==='lesson'||to==='labcase')to='learnpath';
