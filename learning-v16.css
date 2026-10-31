@@ -1,0 +1,60 @@
+/* FinanzPilot 16 · zusammenhängende Begriffs-Akademie und zoombare Wissenswelt */
+.fp-concept-locked{opacity:.55!important;cursor:not-allowed!important;background:#13242e!important}
+.fp-concept-locked .fp-training-entry-go{color:#657982}
+.fp-world-hero{border:1px solid #3d6967;border-radius:19px;background:linear-gradient(125deg,#153a41,#1b2e42);padding:22px}
+.fp-world-hero h1{font-size:clamp(26px,4vw,35px);margin:10px 0}
+.fp-world-hero p{font-size:13px;color:#bfd4da;line-height:1.7;max-width:780px}
+.fp-world-stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:17px}
+.fp-world-stats>span{border-radius:11px;background:#203b45;border:1px solid #416671;display:flex;flex-direction:column;color:#a8c6ca;padding:10px 14px;font-size:11px}
+.fp-world-stats b{font-size:19px;color:#b8f6d8}
+.fp-skill-world{display:flex;flex-direction:column;gap:14px}
+.fp-world-toolbar{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.fp-world-legend{display:flex;align-items:center;gap:13px;flex-wrap:wrap;color:#a1bdc9;font-size:11px}
+.fp-world-legend span:first-child{color:#a1e4c2}
+.fp-world-legend span:nth-child(2){color:#f0cb91}
+.fp-world-zooms{display:flex;align-items:center;gap:7px;margin-left:auto}
+.fp-world-zooms button{border:1px solid #47766f;border-radius:10px;background:#183f43;color:#c9f7e8;min-width:40px;min-height:39px;font-size:18px;font-weight:700;padding:6px 10px;cursor:pointer}
+.fp-world-zooms button[data-world-fit]{font-size:11px}
+.fp-world-zooms span{min-width:47px;text-align:center;font-size:12px;color:#d1eee0;font-variant-numeric:tabular-nums}
+.fp-world-viewport{height:560px;overflow:auto;background:radial-gradient(circle at 50% 12%,#234344 0,#0d2434 52%,#0b1d2b 100%);border:1px solid #4c7472;border-radius:17px;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-x pan-y;scrollbar-width:thin}
+.fp-world-stage{position:relative}
+.fp-world-map{position:relative;overflow:hidden;min-width:2540px;min-height:1840px;background-image:linear-gradient(#74aeae12 1px,transparent 1px),linear-gradient(90deg,#74aeae12 1px,transparent 1px);background-size:64px 64px}
+.fp-world-map:before{content:'';position:absolute;inset:875px 0 0;background:linear-gradient(180deg,#45644d12,transparent 75%);pointer-events:none}
+.fp-world-lines{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.fp-world-lines path{fill:none;stroke:#456074;stroke-width:3;opacity:.58;stroke-dasharray:6 8}
+.fp-world-lines path.lit{stroke:#62b99b;stroke-width:3.6;opacity:.85;stroke-dasharray:none}
+.fp-world-band{position:absolute;left:60px;right:60px;border-top:1px dashed #528b7780;padding:11px 0;color:#78bcad;font-size:16px;font-weight:700;letter-spacing:2px;pointer-events:none}
+.fp-world-node{position:absolute;transform:translate(-50%,-50%);width:168px;min-height:117px;border:1px solid #446471;border-radius:17px;background:linear-gradient(140deg,#193b45,#142a3c);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;padding:10px 8px;color:#e0eaed;cursor:pointer;box-shadow:0 8px 20px #0005}
+.fp-world-node strong{font-size:13px;line-height:1.2}
+.fp-world-node small{font-size:11px;color:#a1becb}
+.fp-world-node em{font-size:10px;font-style:normal;color:#aac2d1}
+.fp-world-node .fp-world-icon{font-size:23px;line-height:1.1;color:#a4bbcf}
+.fp-world-node.available{border-color:#c9a879;background:linear-gradient(140deg,#414039,#243442)}
+.fp-world-node.available em,.fp-world-node.available .fp-world-icon{color:#f5d59b}
+.fp-world-node.mastered{border-color:#74caa3;background:linear-gradient(135deg,#205646,#1c3e43);box-shadow:0 0 23px #41b98b3a,0 7px 17px #0004}
+.fp-world-node.mastered .fp-world-icon,.fp-world-node.mastered em{color:#a9f7d2}
+.fp-world-node.locked{opacity:.7;filter:saturate(.58)}
+.fp-world-node.concept{width:161px;min-height:112px}
+.fp-world-node.bridge{width:156px;min-height:103px;border-radius:28px}
+.fp-world-node:focus-visible{outline:3px solid #c1fbdc;outline-offset:3px}
+.fp-world-map-footer{display:flex;gap:17px;align-items:center;border:1px solid #324d5b;background:#132b39;border-radius:14px;padding:13px}
+.fp-world-map-footer p{color:#b1cdd0;font-size:12px;line-height:1.6;max-width:540px}
+.fp-world-map-minimap{width:210px;height:155px;flex:none;border-radius:9px;overflow:hidden;background:#0d2030;border:1px solid #426069;cursor:crosshair}
+.fp-world-mini{width:100%;height:100%}
+.fp-world-detail{border-radius:16px;border:1px solid #3f6869;background:#183542;padding:19px;min-height:113px}
+.fp-world-detail h2{font-size:19px;margin:7px 0}
+.fp-world-detail p{color:#c1d6dc;font-size:13px;line-height:1.7;margin:8px 0}
+.fp-world-detail-top{display:flex;align-items:center;justify-content:space-between}
+.fp-world-detail-top strong{font-size:29px;color:#a0e8ca}
+.fp-world-detail button{margin-top:8px}
+@media(max-width:700px){
+ .fp-world-hero{padding:17px}
+ .fp-world-viewport{height:500px;margin:0 -5px}
+ .fp-world-zooms{width:100%;justify-content:flex-end}
+ .fp-world-map-footer{align-items:flex-start}
+ .fp-world-map-footer p{font-size:11px}
+ .fp-world-map-minimap{width:145px;height:108px}
+ .fp-world-stats b{font-size:15px}
+}
+@media(max-width:390px){.fp-world-map-footer{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.fp-world-node{box-shadow:none!important}}
