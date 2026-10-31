@@ -26,3 +26,5 @@ jobs:
         run: node scripts/test_mobile_v19.mjs
       - name: Check expanded skill-world and financial concepts curriculum
         run: node scripts/test_learning_v16.mjs
+      - name: Validate financial transfer cases, critical questions and skill prerequisites
+        run: node scripts/test_transfer_v20.mjs
