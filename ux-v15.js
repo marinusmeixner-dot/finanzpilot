@@ -1,6 +1,8 @@
 (function navV15(){
  'use strict';
  const KEY='finanzpilot_navigation_v6';
+ const LEARNING_VIEWS=new Set(['learnpath','concepts','training','skills','glossary','foundations','academy','academycourse','labcase']);
+ const ROOT_VIEWS=new Set(['home','learn','markets','research','progress']);
  const MAIN=['home','learn','markets','research','progress'];
  const GROUPS={
  home:{label:'Start',links:[['home','Tagesübersicht','Dein täglicher FinanzPilot']]},
@@ -23,15 +25,33 @@
  const icon=(key,size=21)=>'<svg width="'+size+'" height="'+size+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICON[key]||ICON.arrow)+'</svg>';
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
  const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return {}}};
- let inRoute=false,restoring=false,previous='home';
+ let inRoute=false,restoring=false,previous='home',restoreTicket=0;
  const rootOf=view=>PARENT[view]||'home';
  const label=view=>Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[rootOf(view)].label;
  function persist(view,y){
-  if(restoring)return;
-  try{const x=load(),pos={...(x.positions||{})};
-   pos[view]=Math.max(0,Math.floor(Number(y)||0));
-   localStorage.setItem(KEY,JSON.stringify({...x,view,resume:view==='home'?x.resume:view,positions:pos,scroll:pos[view],updated_at:Date.now()}));
+  if(restoring||!Object.prototype.hasOwnProperty.call(PARENT,view))return;
+  try{
+   const old=load(),positions={...(old.positions||{})};
+   // Hauptseiten immer am Anfang beginnen; nur in Lektionen und Detailansichten scrollen wir weiter.
+   const point=ROOT_VIEWS.has(view)?0:Math.max(0,Math.floor(Number(y)||0));
+   positions[view]=point;
+   const resume=LEARNING_VIEWS.has(view)?view:(LEARNING_VIEWS.has(old.resume)?old.resume:'learnpath');
+   localStorage.setItem(KEY,JSON.stringify({...old,view,resume,positions,scroll:point,updated_at:Date.now()}));
   }catch{}
+ }
+ function restoreScroll(view,at=0){
+  const ticket=++restoreTicket;
+  const destination=ROOT_VIEWS.has(view)?0:Math.max(0,Number(at)||0);
+  restoring=true;
+  // Safari/Standalone can restore stale scroll after DOMContentLoaded; override it on the next two paint frames.
+  requestAnimationFrame(()=>requestAnimationFrame(()=>{
+   if(ticket!==restoreTicket||state.view!==view){restoring=false;return}
+   window.scrollTo(0,destination);
+   requestAnimationFrame(()=>{
+    if(ticket===restoreTicket&&state.view===view)window.scrollTo(0,destination);
+    restoring=false;
+   });
+  }));
  }
  const isHub=v=>MAIN.includes(v)&&v!=='home';
  function renderHub(v){
@@ -45,7 +65,7 @@
   const side=document.querySelector('.sidebar');
   if(side)side.innerHTML='<div class="brand"><div class="brand-symbol">↗</div><div><b>FinanzPilot</b><small>WISSEN & ANALYSE</small></div></div><nav class="fp-side-main" aria-label="Hauptnavigation">'+MAIN.map(id=>
    '<button type="button" class="fp-main-link" data-section-main="'+id+'">'+icon(id,20)+'<span>'+GROUPS[id].label+'</span></button>'
-  ).join('')+'</nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP</small><small class="fp-version" id="fp-app-version">FinanzPilot v17</small></div>';
+  ).join('')+'</nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP</small><small class="fp-version" id="fp-app-version">FinanzPilot v19</small></div>';
   const bottom=document.querySelector('.bottom-nav');
   if(bottom)bottom.innerHTML=MAIN.map(id=>'<button type="button" data-section-main="'+id+'" aria-label="'+GROUPS[id].label+'">'+icon(id,22)+'<small>'+GROUPS[id].label+'</small></button>').join('');
   const top=document.querySelector('.topbar');
@@ -81,12 +101,12 @@
   if(to==='lesson'||to==='labcase')to='learnpath';
   const old=state.view;if(old===to)return;
   persist(old,window.scrollY);
-  const pos=load().positions||{},y=Number(pos[to]||0);
+  const pos=load().positions||{},y=ROOT_VIEWS.has(to)?0:Number(pos[to]||0);
   inRoute=true;previous=to;chooseView(to);header();
   if(remember)persist(to,y);
   const hash='#view='+encodeURIComponent(to);if(location.hash!==hash)history.replaceState(null,'',location.pathname+location.search+hash);
   inRoute=false;
-  requestAnimationFrame(()=>requestAnimationFrame(()=>{restoring=true;window.scrollTo({top:y,behavior:'instant'});restoring=false}));
+  restoreScroll(to,y);
  }
  function init(){
   if(typeof state==='undefined')return;
@@ -96,23 +116,23 @@
   const initial=Object.prototype.hasOwnProperty.call(PARENT,chosen)?chosen:Object.prototype.hasOwnProperty.call(PARENT,saved.view)?saved.view:'home';
   if(initial!=='home'&&initial!=='account')chooseView(initial);
   previous=state.view;header();
-  const y=Number(saved.positions?.[initial]||0);if(y>0)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo(0,y)));
+  restoreScroll(initial,ROOT_VIEWS.has(initial)?0:Number(saved.positions?.[initial]||0));
   document.addEventListener('click',ev=>{
    const t=ev.target.closest('[data-section-main],[data-section-route],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
    if(!t)return;
    if(t.matches('[data-section-account]')){ev.preventDefault();ev.stopImmediatePropagation();window.FinanzPilotCloud?.openLogin?.();return}
-   if(t.matches('[data-hub-continue]')){ev.preventDefault();ev.stopImmediatePropagation();route(load().resume||'learn');return}
+   if(t.matches('[data-hub-continue]')){ev.preventDefault();ev.stopImmediatePropagation();const target=load().resume;route(LEARNING_VIEWS.has(target)?target:'learnpath');return}
    const dest=t.dataset.sectionMain||t.dataset.sectionRoute||t.dataset.sectionUp||t.dataset.hubView||t.dataset.view;
    if(dest){ev.preventDefault();ev.stopImmediatePropagation();route(dest)}
   },true);
   const root=document.getElementById('view-root');
   if(root)new MutationObserver(()=>{
     if(typeof state==='undefined')return;
-    if(state.view!==previous){previous=state.view;persist(state.view,load().positions?.[state.view]||0)}
+    if(state.view!==previous){previous=state.view;persist(state.view,ROOT_VIEWS.has(state.view)?0:(load().positions?.[state.view]||0))}
     header();
   }).observe(root,{childList:true});
   let scrollTimer=null;
-  window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>persist(state.view,window.scrollY),180)},{passive:true});
+  window.addEventListener('scroll',()=>{if(restoring)return;clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>persist(state.view,window.scrollY),200)},{passive:true});
   document.addEventListener('visibilitychange',()=>{if(document.hidden)persist(state.view,window.scrollY)});
   window.addEventListener('pagehide',()=>persist(state.view,window.scrollY));
   window.addEventListener('hashchange',()=>{
@@ -122,7 +142,8 @@
   if(window.FinanzPilotLab){
     const oldHome=window.FinanzPilotLab.renderHome;
     window.FinanzPilotLab.renderHome=()=>{
-     const resume=load().resume;
+     const candidate=load().resume;
+     const resume=LEARNING_VIEWS.has(candidate)?candidate:null;
      const acts=MAIN.filter(id=>id!=='home').map(id=>{
       const d={learn:'Lektionen, Übungen und Skillentwicklung',markets:'Nachrichten, Indizes und Chartanalyse',research:'Unternehmen, Bewertungen und große Kurse',progress:'Karriere, Auszeichnungen und dein Konto'}[id];
       return '<button type="button" class="fp-hub-row" data-hub-view="'+id+'"><span class="fp-hub-row-icon">'+icon(id,22)+'</span><span class="fp-hub-row-text"><b>'+GROUPS[id].label+'</b><small>'+d+'</small></span><span class="fp-hub-arrow">'+icon('arrow',17)+'</span></button>';
@@ -137,7 +158,7 @@
     if(state.view==='home')render();
   }
   header();
-  window.FinanzPilotNavigation={route,renderHub,isHub,parentOf:rootOf,sections:GROUPS};if(isHub(state.view))render();
+  window.FinanzPilotNavigation={route,renderHub,isHub,parentOf:rootOf,sections:GROUPS,restoreScroll};if(isHub(state.view))render();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
