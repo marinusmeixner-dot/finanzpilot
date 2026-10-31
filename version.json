@@ -1,5 +1,5 @@
 {
-  "version": 17,
-  "release": "2026-10-31-v17",
-  "notes": "Four tab-home directory lists, Start screen unchanged, premium FP home-screen icon"
+  "version": 18,
+  "release": "2026-10-31-v18",
+  "notes": "Clear tab-level navigation without popup, unchanged Start, new native FP icon"
 }
