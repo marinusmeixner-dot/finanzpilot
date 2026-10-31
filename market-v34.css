@@ -78,3 +78,18 @@
  #view-root{scroll-margin-top:var(--fp34-header-height)!important;overflow-anchor:none}
  #fp-depot-watchlist,#fp-depot-order-panel,.fp34-news-company{scroll-margin-top:calc(var(--fp34-header-height) + 12px)!important}
 }
+
+/* v35 interactive chart: range buttons + pointer/touch historical price */
+.fp35-chart-header{width:100%;display:block;text-align:left;border:0;background:transparent;color:inherit;padding:0;margin:0 0 12px;cursor:pointer;font:inherit}
+.fp35-chart-header .fp34-title{display:flex;width:100%;margin:0}
+.fp35-chart-header:focus-visible{outline:2px solid #86e8bb;outline-offset:4px;border-radius:8px}
+.fp35-ranges{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.fp35-ranges button{padding:6px 9px;min-width:35px;border-radius:8px;border:1px solid #385866;color:#bdd2d6;background:#183342;font-size:12px;font-weight:650;cursor:pointer}
+.fp35-ranges button.active,.fp35-ranges button[aria-pressed=true]{background:#225b4c;color:#c6ffe1;border-color:#70d9aa}
+.fp35-plot{position:relative;isolation:isolate;margin:8px 0;overflow:visible}
+.fp35-plot svg{width:100%;height:auto;display:block;touch-action:pan-y;cursor:crosshair;outline-offset:3px}
+.fp35-crosshair{position:absolute;left:0;top:0;bottom:0;width:1px;border-left:1px dashed rgba(195,255,229,.88);pointer-events:none;opacity:0;z-index:2}
+.fp35-tooltip{position:absolute;top:2px;left:50%;transform:translateX(-50%);z-index:3;background:rgba(8,23,32,.96);border:1px solid #77d7b5;border-radius:7px;color:#e7fff2;padding:7px 9px;white-space:nowrap;min-width:110px;text-align:center;font-size:12px;opacity:0;pointer-events:none}
+.fp35-tooltip.visible,.fp35-crosshair.visible{opacity:1}
+.fp35-venue-note{font-size:12px!important;color:#f5d697!important;background:#473f2c;border-left:3px solid #dfbe75;padding:9px;border-radius:5px}
+@media(max-width:700px){.fp35-ranges{gap:4px}.fp35-ranges button{padding:7px 8px}.fp35-tooltip{font-size:11px;padding:6px 7px}}
