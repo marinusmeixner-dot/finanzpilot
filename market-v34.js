@@ -8,7 +8,9 @@ const client=()=>window.FinanzPilotCloud?.paperClient;
 const user=()=>window.FinanzPilotCloud?.user;
 const currency=(n,c)=>{try{return new Intl.NumberFormat('de-DE',{style:'currency',currency:c||'USD'}).format(Number(n))}catch{return String(n)}};
 let watch=[],quotes=[],editorial=[],feedDate='',active='',tab='general',newsFocus='',message='',busy=false,queued=false,lastRefresh=0;
-const historyCache=new Map(),newsCache=new Map(),pending=new Map();
+const historyCache=new Map(),newsCache=new Map(),pending=new Map(),ranges=new Map();
+const WINDOWS=[['1mo','1M'],['3mo','3M'],['6mo','6M'],['1y','1J'],['5y','5J'],['max','MAX']];
+const rangeOf=s=>ranges.get(s)||'6mo';
 const q=s=>quotes.find(x=>x.symbol===s)||null;
 const ui=()=>{if(typeof state!=='undefined'&&['marketoverview','marketdetail','marketnews'].includes(state.view))window.render?.()};
 const alias={MSFT:['microsoft'],AMZN:['amazon','aws'],AAPL:['apple'],GOOGL:['alphabet','google'],GOOG:['alphabet','google'],NVDA:['nvidia'],META:['meta','facebook'],BAYN:['bayer'],'BAYN.DE':['bayer'],BYW:['baywa'],'BYW.MU':['baywa'],SAP:['sap'],KGX:['kion'],INTC:['intel']};
@@ -26,18 +28,18 @@ async function fetchEditorial(force=false){
  const d=await response.json();if(!Array.isArray(d.stories))throw Error('Ungültiges Nachrichtenformat');
  editorial=d.stories;feedDate=d.date||'unbekannt';lastRefresh=Date.now();
 }
-const invoke=async(action,symbol)=>{const c=client();if(!c)throw Error('Bitte anmelden');const {data,error}=await c.functions.invoke('finanzpilot-stock-lookup',{body:{action,symbol}});if(error||data?.error)throw Error(error?.message||data?.error);return data};
-function getAsset(symbol,type,force=false){
- const cache=type==='history'?historyCache:newsCache;
- const key=type+':'+symbol;
- const entry=cache.get(symbol);
+const invoke=async(action,symbol,range)=>{const c=client();if(!c)throw Error('Bitte anmelden');const {data,error}=await c.functions.invoke('finanzpilot-stock-lookup',{body:{action,symbol,...(action==='history'?{range}: {})}});if(error||data?.error)throw Error(error?.message||data?.error);return data};
+function getAsset(symbol,type,force=false,range=rangeOf(symbol)){
+ const cache=type==='history'?historyCache:newsCache,id=type==='history'?symbol+':'+range:symbol,key=type+':'+id;
+ const entry=cache.get(id);
  if(!force&&entry&&Date.now()-entry.time<300000)return Promise.resolve(entry.data);
  if(pending.has(key))return pending.get(key);
- const p=invoke(type,symbol).then(d=>{cache.set(symbol,{time:Date.now(),data:d});return d})
- .catch(e=>{cache.set(symbol,{time:Date.now()-260000,data:null,error:String(e.message||e)});return null})
+ const p=invoke(type,symbol,range).then(data=>{cache.set(id,{time:Date.now(),data});return data})
+ .catch(e=>{cache.set(id,{time:Date.now()-260000,data:null,error:String(e.message||e)});return null})
  .finally(()=>{pending.delete(key);ui()});
  pending.set(key,p);return p;
 }
+
 async function refresh(force=false){
  if(busy){queued=true;return}
  busy=true;
@@ -75,21 +77,27 @@ async function loadWatchNews(){
  // No assumed background push or unsupported claim of daily chatbot access to private watchlists.
  for(let i=0;i<watch.length;i+=4)await Promise.all(watch.slice(i,i+4).map(item=>getAsset(item.symbol,'news')));
 }
-function points(symbol){const d=historyCache.get(symbol)?.data;return Array.isArray(d?.points)?d.points.filter(x=>Number(x.price)>0):[]}
-function chart(symbol){
- const data=points(symbol);if(data.length<2)return '<div class="fp34-chart-empty">'+(pending.has('history:'+symbol)?'Kursverlauf wird geladen …':'Noch keine überprüfte historische Kursreihe verfügbar.')+'</div>';
- const vals=data.map(p=>Number(p.price)),lo=Math.min(...vals),hi=Math.max(...vals),rng=Math.max(hi-lo,0.00001);
- const coords=vals.map((v,i)=>(12+(i/(vals.length-1))*696).toFixed(1)+','+(191-158*(v-lo)/rng).toFixed(1)).join(' ');
- const change=(vals.at(-1)/vals[0]-1)*100;
- const last=data.at(-1), first=data[0];
- return '<div class="fp34-chart"><div class="fp34-chart-top"><strong>'+esc(currency(last.price,historyCache.get(symbol)?.data?.currency||q(symbol)?.currency))+'</strong><span class="'+(change>=0?'fp-depot-pos':'fp-depot-neg')+'">'+(change>=0?'+':'')+change.toFixed(2).replace('.',',')+' % im dargestellten Zeitraum</span></div>'+
- '<svg role="img" aria-label="Historischer Kursverlauf '+esc(symbol)+'" viewBox="0 0 720 210"><polyline fill="none" stroke="#82deb5" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round" points="'+coords+'"/></svg><small>'+esc(first.date)+' – '+esc(last.date)+' · historische Schlusskurse, keine Livekurse · Anbieter: Yahoo Finance (inoffiziell)</small></div>';
+function entryFor(s){return historyCache.get(s+':'+rangeOf(s))}
+function points(s){return (entryFor(s)?.data?.points||[]).filter(x=>Number(x.price)>0&&Number.isFinite(Number(x.price)))}
+function chart(s){
+ const range=rangeOf(s),entry=entryFor(s),data=points(s);
+ const controls='<div class="fp35-ranges" role="group" aria-label="Zeitraum">'+WINDOWS.map(([r,l])=>'<button type="button" data-fp35-range="'+r+'" data-fp35-symbol="'+esc(s)+'" aria-pressed="'+(r===range)+'" class="'+(r===range?'active':'')+'">'+l+'</button>').join('')+'</div>';
+ if(data.length<2)return '<div class="fp34-chart">'+controls+'<div class="fp34-chart-empty">'+(pending.has('history:'+s+':'+range)?'Kursverlauf wird geladen …':esc(entry?.error||'Keine historischen Kursdaten für diesen Zeitraum verfügbar.'))+'</div></div>';
+ const vals=data.map(x=>Number(x.price)),min=Math.min(...vals),max=Math.max(...vals),span=Math.max(max-min,.00001);
+ const xy=vals.map((v,i)=>(12+696*i/(vals.length-1)).toFixed(1)+','+(190-157*(v-min)/span).toFixed(1)).join(' ');
+ const first=data[0],last=data.at(-1),change=(last.price/first.price-1)*100,source=entry.data;
+ return '<div class="fp34-chart" data-fp35-container="'+esc(s)+'">'+controls+
+ '<div class="fp34-chart-top"><strong>'+esc(currency(last.price,source.currency||q(s)?.currency))+'</strong><span class="'+(change>=0?'fp-depot-pos':'fp-depot-neg')+'">'+(change>=0?'+':'')+change.toFixed(2).replace('.',',')+' % im Zeitraum</span></div>'+
+ '<div class="fp35-plot"><svg data-fp35-scrub="'+esc(s)+'" role="img" tabindex="0" aria-label="Interaktiver Kursverlauf: Berühren oder Pfeiltasten verwenden" viewBox="0 0 720 210"><polyline fill="none" stroke="#82deb5" stroke-width="3.5" points="'+xy+'"/></svg><div class="fp35-crosshair"></div><output class="fp35-tooltip"></output></div>'+
+ '<small>'+esc(first.date)+' – '+esc(last.date)+' · '+esc(source.source||'Historische Schlusskurse')+'</small>'+
+ (source.is_alternative_venue?'<p class="fp35-venue-note">'+esc(source.venue_note)+'</p>':'')+'</div>';
 }
+
 function renderOverview(){
  if(!user())return '<div class="fp34"><h1>Marktüberblick</h1><p>Hier erscheinen ausschließlich die Charts deiner Watchlist. Bitte melde dich für die private Watchlist an.</p><button class="btn" data-fp34-login>Anmelden</button></div>';
  return '<div class="fp34"><div class="fp34-head"><div><span class="eyebrow">MÄRKTE · DEINE TITEL</span><h1>Marktüberblick</h1><p>Alle gemerkten Aktien als Charts. Tippe auf einen Kursverlauf für Details.</p></div><button class="btn secondary" data-fp34-refresh>Aktualisieren</button></div>'+
  (message?'<p role="status">'+esc(message)+'</p>':'')+
- (watch.length?'<div class="fp34-chart-grid">'+watch.map(w=>'<button type="button" class="fp34-chart-card" data-fp34-chart="'+esc(w.symbol)+'"><div class="fp34-title"><span><strong>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</strong><small>'+esc(w.symbol)+' · '+esc(q(w.symbol)?.quote_date||'Kursstand wird geladen')+'</small></span><span aria-hidden="true">›</span></div>'+chart(w.symbol)+'</button>').join('')+'</div>':'<div class="fp34-empty"><p>Deine Watchlist ist noch leer. Im Depot kannst du Aktien merken; sie erscheinen hier unmittelbar.</p><button class="btn secondary" data-fp34-depot>Zum Depot</button></div>')+'</div>';
+ (watch.length?'<div class="fp34-chart-grid">'+watch.map(w=>'<article class="fp34-chart-card"><button type="button" class="fp35-chart-header" data-fp34-chart="'+esc(w.symbol)+'"><span class="fp34-title"><span><strong>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</strong><small>'+esc(w.symbol)+' · '+esc(q(w.symbol)?.quote_date||'Kursstand wird geladen')+'</small></span><span aria-hidden="true">›</span></span></button>'+chart(w.symbol)+'</article>').join('')+'</div>':'<div class="fp34-empty"><p>Deine Watchlist ist noch leer. Im Depot kannst du Aktien merken; sie erscheinen hier unmittelbar.</p><button class="btn secondary" data-fp34-depot>Zum Depot</button></div>')+'</div>';
 }
 function renderDetail(){
  const s=active||watch[0]?.symbol||'',name=q(s)?.asset_name||s;
@@ -164,6 +172,29 @@ function request(s){
 }
 function bind(root=document){
  root.querySelectorAll('[data-fp34-chart]').forEach(b=>b.addEventListener('click',()=>stockDetail(b.dataset.fp34Chart)));
+
+ root.querySelectorAll('[data-fp35-range]').forEach(b=>b.addEventListener('click',()=>{
+  const symbol=b.dataset.fp35Symbol,range=b.dataset.fp35Range;if(!WINDOWS.some(x=>x[0]===range))return;
+  ranges.set(symbol,range);ui();getAsset(symbol,'history',false,range);
+ }));
+ root.querySelectorAll('[data-fp35-scrub]').forEach(svg=>{
+  const symbol=svg.dataset.fp35Scrub,root=svg.closest('[data-fp35-container]');
+  const box=root?.querySelector('.fp35-tooltip'),line=root?.querySelector('.fp35-crosshair');
+  const show=i=>{const a=points(symbol);if(!a.length||!box||!line)return;
+   i=Math.max(0,Math.min(i,a.length-1));const p=a[i],left=100*i/(a.length-1);
+   box.textContent=p.date+' · '+currency(p.price,entryFor(symbol)?.data?.currency||q(symbol)?.currency);
+   box.style.left=left+'%';line.style.left=left+'%';box.classList.add('visible');line.classList.add('visible');
+   svg.dataset.fp35Index=String(i);
+  };
+  const move=x=>{const r=svg.getBoundingClientRect();if(r.width)show(Math.round(Math.max(0,Math.min(1,(x-r.left)/r.width))*(points(symbol).length-1)))};
+  svg.addEventListener('pointerdown',e=>move(e.clientX));
+  svg.addEventListener('pointermove',e=>move(e.clientX));
+  svg.addEventListener('touchstart',e=>{if(e.touches?.[0])move(e.touches[0].clientX)},{passive:true});
+  svg.addEventListener('touchmove',e=>{if(e.touches?.[0])move(e.touches[0].clientX)},{passive:true});
+  svg.addEventListener('keydown',e=>{if(['ArrowLeft','ArrowRight'].includes(e.key)){e.preventDefault();show(Number(svg.dataset.fp35Index??(points(symbol).length-1))+(e.key==='ArrowRight'?1:-1))}});
+  svg.addEventListener('pointerleave',()=>{box?.classList.remove('visible');line?.classList.remove('visible')});
+ });
+
  root.querySelectorAll('[data-fp34-news-tab]').forEach(b=>b.addEventListener('click',()=>{tab=b.dataset.fp34NewsTab;newsFocus='';ui();if(tab==='watch')loadWatchNews()}));
  root.querySelectorAll('[data-fp34-stock-news]').forEach(b=>b.addEventListener('click',()=>openNews(b.dataset.fp34StockNews)));
  root.querySelectorAll('[data-fp34-add]').forEach(b=>b.addEventListener('click',()=>addStock(b.dataset.fp34Add)));
