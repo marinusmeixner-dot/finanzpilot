@@ -40,3 +40,5 @@ jobs:
         run: node scripts/test_portfolio_v26.mjs
       - name: Validate international stock search and private watchlist
         run: node scripts/test_global_stock_v27.mjs
+      - name: Test stable GuV lesson, no-reload sync, artifact capital and company news navigation
+        run: node scripts/test_learning_watch_v28.mjs
