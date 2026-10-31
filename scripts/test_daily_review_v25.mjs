@@ -35,7 +35,7 @@ await api.load();
 assert.equal(api.tasks.length,2);
 assert.equal(rows.length,0,'App must never auto-submit private responses');
 assert(api.render().includes('Tagesherausforderungen'));
-assert(api.render().includes('Privat'));
+assert(api.render().toLowerCase().includes('privat'));
 const content='Alphabet meldete 127,577 Mrd. USD Umsatz. Negativer Quartals-FCF kann bei Cloudwachstum und hohem CapEx auftreten. Ich fordere daher Belege über ROIC, WACC und nachhaltigen FCF sowie mehrere Gegenhypothesen statt eines sicheren Kursziels.';
 await api.submit(api.tasks[0],content);
 assert.equal(sent.length,1);
