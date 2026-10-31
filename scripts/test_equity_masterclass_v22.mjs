@@ -41,7 +41,7 @@ const document={
  querySelectorAll(){return[]},
  querySelector(){return null}
 };
-const window={location:{search:''},scrollTo(){},dispatchEvent(){},FinanzPilotMath:{calculate(raw){return Number(String(raw).replace(',','.'))}}};
+const window={location:{search:''},scrollTo(){},dispatchEvent(){},FinanzPilotMath:{calculate(raw){return Number(String(raw).replace(',','.'))},toolbar(){return ''},bind(){}}};
 const context=vm.createContext({window,document,localStorage,state,daily:{stories:[]},console,Date,Intl,Math,JSON,Number,String,URLSearchParams,URL,
  fetch:async()=>({ok:true,json:async()=>catalog}),Event:class Event{constructor(type){this.type=type}},
  requestAnimationFrame:fn=>fn()});
