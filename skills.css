@@ -63,3 +63,9 @@
 .fp-progress-skill-link small{font-size:11px;color:#adc5d1}
 @media(max-width:700px){.fp-home-hero{padding:18px}.fp-skill-intro{padding:17px}.fp-skill-scroll{margin:0 -4px}.fp-skill-details{padding:14px}.fp-skill-detail-actions .btn{flex:1}}
 @media(prefers-reduced-motion:reduce){.fp-skill-node{transition:none}.fp-skill-node:hover{transform:translate(-50%,-50%)}}
+
+/* Ein einheitlicher Rückweg auf sämtlichen Unterseiten, ohne Labyrinthnavigation. */
+.fp-route-header{display:flex;align-items:center;gap:12px;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid #2c4655;color:#a8c4ce;font-size:12px}
+.fp-route-header button{padding:8px 12px;color:#ccecdf;background:#203b43;border:1px solid #3e6869;border-radius:10px;font-weight:700;cursor:pointer}
+.fp-route-header button:hover{background:#285046}
+.fp-route-header button:focus-visible{outline:2px solid #a7e6d4;outline-offset:2px}
