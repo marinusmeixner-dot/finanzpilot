@@ -107,6 +107,19 @@ window.FinanzPilotTheses=(()=>{
   else{state.view='theses';window.render?.()}
   return true;
  }
+ function draftFromAcademy(course,step,text){
+  if(!course||!String(text||'').trim())return false;
+  store.draftAt=Date.now();store.editingFrom=null;editingFrom=null;
+  store.draft=clean({...empty(),company:course.symbol_name||course.title||'Unternehmen',
+    ticker:course.symbol||'',stance:'Beobachten',horizon:'1–2 Jahre',
+    thesis:String(text),sourceUrl:course.source_url||'',asof:course.date||'',
+    evidence:'',risk:'',invalidation:'',valuationMethod:'',assumptions:'',catalyst:''});
+  mode='form';status='Deine Abschlussüberlegung wurde aus dem Aktienkurs übernommen. Ergänze jetzt Belege, Modell, Gegenargumente und Widerlegungskriterien.';
+  persist();
+  if(window.FinanzPilotNavigation?.route)window.FinanzPilotNavigation.route('theses');
+  else{state.view='theses';window.render?.()}
+  return true;
+ }
  const prompt=e=>{
   const f=e.input,c=e.check;return 'Prüfe die folgende Investmentthese streng und quellenorientiert. Bewerte fachlich die tatsächliche Richtigkeit, nicht nur die Vollständigkeit. Prüfe alle Quellen/Zahlen unabhängig, unterscheide belegte Ist-Daten und Prognosen, untersuche DCF/Multiple, Kapitalstruktur, Risiken, Gegenargumente, WACC und Sensitivität. Gib 0–5 Punkte für Belegqualität, Modellplausibilität, Gegenargumente, Widerlegbarkeit und Entscheidungsrahmen; nenne konkrete Fehler und Verbesserungen. Trenne Marktpreis und hypothetischen Modellwert; keine garantierten Kursziele. \n\nUnternehmen: '+f.company+' ('+f.ticker+')\nHaltung: '+f.stance+' · Horizont '+f.horizon+'\nDatenstand: '+f.asof+'\nQuelle (noch nicht automatisch verifiziert): '+f.sourceUrl+'\nThese: '+f.thesis+'\nZahlen/Belege: '+f.evidence+'\nMethode: '+f.valuationMethod+'\nBear/Base/Bull: '+[f.bear,f.base,f.bull].join('/')+' · Gewichte: '+[f.bearWeight,f.baseWeight,f.bullWeight].join('/')+'\nAnnahmen: '+f.assumptions+'\nGegenargument: '+f.risk+'\nWiderlegungsbedingung: '+f.invalidation+'\nNächster Prüfpunkt: '+f.catalyst+'\nFormaler Vollständigkeitscheck (KEINE KI-Note): '+c.score+'/10. Die Analyse ist privat und wurde hier bewusst zur Prüfung kopiert.';
  };
@@ -128,5 +141,5 @@ window.FinanzPilotTheses=(()=>{
   root.querySelector('#fp-theses-external')?.addEventListener('submit',ev=>{ev.preventDefault();const x=entries().find(e=>e.id===store.selected);if(!x)return;const value=String(ev.currentTarget.elements.feedback.value||'').trim().slice(0,5000);if(value.length&&value.length<25){const el=root.querySelector('#fp-theses-status');if(el)el.textContent='Bitte das erhaltene Feedback ausführlicher dokumentieren.';return}
     x.externalFeedback=value?{text:value,at:Date.now(),origin:'Vom Nutzer aus ChatGPT übernommen'}:null;x.updatedAt=Date.now();persist();status=value?'Externes Feedback gespeichert.':'Externes Feedback-Feld geleert.';window.render?.()});
  }
- return{render,bind,evaluate,create,draftFromCommittee,prompt,get entries(){return entries()},get state(){return store}};
+ return{render,bind,evaluate,create,draftFromCommittee,draftFromAcademy,prompt,get entries(){return entries()},get state(){return store}};
 })();
