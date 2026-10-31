@@ -77,18 +77,39 @@ async function register(querySymbol:string){
  if(!post.ok)throw Error("Geprüfter Kurs konnte nicht gespeichert werden ("+post.status+")");
  return {quote:{symbol:actual,asset_name:name,currency,price,quote_date:date,source,adjusted:false},type:kind,provider:"Yahoo Finance (inoffiziell, kein Echtzeit-Handel)",notice:"Referenzschlusskurs – keine live ausführbare Börsenorder."};
 }
-async function history(symbol:string){
- const key=String(symbol).trim().toUpperCase();
- if(!valid(key))throw Error("Ungültiges Börsensymbol");
- const raw=await yahoo("/v8/finance/chart/"+encodeURIComponent(key)+"?range=6mo&interval=1d");
- const r=raw?.chart?.result?.[0];
- if(!r)throw Error("Keine historischen Kurse für dieses Wertpapier verfügbar");
- const closes=r.indicators?.quote?.[0]?.close||[],timestamps=r.timestamp||[];
- const meta=r.meta||{},currency=String(meta.currency||"").toUpperCase();
- const points=timestamps.map((t:number,i:number)=>({date:barDate(t,String(meta.exchangeTimezoneName||"UTC")),price:Number(closes[i])})).filter((p:{date:string,price:number})=>p.price>0&&Number.isFinite(p.price)).slice(-130);
- if(points.length<2)throw Error("Für dieses Wertpapier liegen noch nicht genug historische Kursdaten vor");
- return {symbol:key,currency,points,source:"Yahoo Finance – historische Tagesschlusskurse, unbereinigt",last_date:points.at(-1)?.date};
+// Valid chart windows. The Yahoo endpoint is unofficial and may be sparse for small venues.
+const CHART_RANGES:Record<string,string>={"1mo":"1d","3mo":"1d","6mo":"1d","1y":"1d","5y":"1wk","max":"1mo"};
+// This fallback is the same BayWa AG ordinary share on another venue, NOT the Munich quote.
+// Never use this reference chart for execution or for overwriting the chosen depot quote.
+const HISTORY_ALIASES:Record<string,string>={"BYW.MU":"BYW.DE"};
+async function history(symbol:string,rangeInput="6mo"){
+ const requested=String(symbol).trim().toUpperCase();
+ if(!valid(requested))throw Error("Ungültiges Börsensymbol");
+ const range=Object.prototype.hasOwnProperty.call(CHART_RANGES,rangeInput)?rangeInput:"6mo";
+ const interval=CHART_RANGES[range];
+ const venues=[requested,...(HISTORY_ALIASES[requested]?[HISTORY_ALIASES[requested]]:[])];
+ let lastError="";
+ for(const key of venues){
+  try{
+   const raw=await yahoo("/v8/finance/chart/"+encodeURIComponent(key)+"?range="+range+"&interval="+interval);
+   const r=raw?.chart?.result?.[0];if(!r)throw Error("Keine Kursdaten");
+   const timestamps=r.timestamp||[],closes=r.indicators?.quote?.[0]?.close||[],meta=r.meta||{};
+   const rawCurrency=String(meta.currency||"").toUpperCase();
+   const factor=1; // Chart values are not converted or used for orders.
+   const points=timestamps.map((t:number,i:number)=>({date:barDate(t,String(meta.exchangeTimezoneName||"UTC")),price:Number(closes[i])*factor}))
+    .filter((p:{date:string,price:number})=>p.price>0&&Number.isFinite(p.price)).slice(-850);
+   if(points.length<2)throw Error("Weniger als zwei gültige Kurswerte");
+   const alternative=key!==requested;
+   return {symbol:requested,source_symbol:key,currency:rawCurrency,points,range,interval,
+    is_alternative_venue:alternative,
+    venue_note:alternative?"Ersatzkursreihe von Xetra ("+key+"); dein Depotwert "+requested+" stammt von einem anderen Handelsplatz. Nicht als identischer Börsenkurs verwenden.":"",
+    source:"Yahoo Finance – historische "+(interval==="1d"?"Tages-":"Wochen-/Monats-")+"Schlusskurse (inoffiziell, unbereinigt)",
+    last_date:points.at(-1)?.date};
+  }catch(e){lastError=String(e instanceof Error?e.message:e)}
+ }
+ throw Error("Für "+requested+" ist über die verfügbaren Börsenplätze keine verlässliche historische Kursreihe abrufbar. "+lastError);
 }
+
 async function news(symbol:string){
  const key=String(symbol).trim().toUpperCase();if(!valid(key))throw Error("Ungültiges Börsensymbol");
  const q=await yahoo("/v1/finance/search?q="+encodeURIComponent(key)+"&newsCount=12&quotesCount=0");
@@ -111,7 +132,7 @@ Deno.serve(async(req:Request)=>{
   const action=String(body.action||"");
   if(action==="search")return send(await search(String(body.query||"").trim().slice(0,64)));
   if(action==="register")return send(await register(String(body.symbol||"")));
-  if(action==="history")return send(await history(String(body.symbol||"")));
+  if(action==="history")return send(await history(String(body.symbol||""),String(body.range||"6mo")));
   if(action==="news")return send(await news(String(body.symbol||"")));
   return send({error:"Unbekannte Aktion"},400);
  }catch(e){const message=String(e instanceof Error?e.message:e).slice(0,250);
