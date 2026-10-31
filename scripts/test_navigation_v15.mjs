@@ -95,7 +95,7 @@ assert.equal(nav.parentOf('inventory'),'progress');
 assert(sent.includes('fp-navigation'));
 assert(html.includes('mobile-layout-v19.css?v=20'));
 assert(html.includes('transfer.js?v=20'));
-assert(html.includes('learning-v20.css?v=20'));
+assert(html.includes('learning-v20.css?v=28'));
 assert(html.includes('investment-committee.js?v=23'));
 assert(html.includes('investment-committee.css?v=21'));
 assert(app.includes("state.view==='investmentcommittee'"));
