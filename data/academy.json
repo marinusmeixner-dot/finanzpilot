@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T08:12:00+01:00",
-  "editor_note": "Quellengestützter 10-Schritte-Deep-Dive zu Alphabet Q3 2026 ergänzt; historische Zahlen und hypothetische Bewertungsannahmen strikt getrennt.",
+  "updated_at": "2026-10-31",
+  "editor_note": "KION 20-stufige, primary-source-geprüfte Komplettbewertung und interaktives FCFF-Modell ergänzt. Analystenannahmen sichtbar; alte Kurse und Aufgaben bleiben erhalten. Quellen, Szenarien und Grenzen müssen bei neuen Berichten erneut geprüft werden.",
   "market_task": {
     "date": "2026-10-31",
     "title": "Alphabet: Rekord-Cloudwachstum und negativer Quartals-Cashflow – wie passt das zusammen?",
@@ -20,6 +20,254 @@
     "symbol": "NASDAQ:GOOGL"
   },
   "courses": [
+    {
+      "id": "kion-deep-valuation-2026",
+      "title": "KION: vom Geschäftsbericht zum belastbaren Kursziel",
+      "kind": "deep-dive",
+      "difficulty": "Profi · in 20 Etappen",
+      "duration": "100–160 Min. · auf mehrere Tage aufteilen",
+      "date": "2026-10-31",
+      "symbol": "XETR:KGX",
+      "symbol_name": "KION Group",
+      "summary": "Industrieautomation und Gabelstapler: Auftragseingang, Kapitalrendite, Cashflow und ein vollständiges 5-Jahres-DCF-Modell mit drei begründeten Szenarien (24,59–94,65 €).",
+      "evidence_note": "Stand 31.10.2026: 9M/Q3 2026 Originalberichte KION, Xetra-Schlusskurs 30.10.2026 33,27 €. 2027–2031 sind analystische Szenarioannahmen und keine Unternehmensprognosen. Leasing-/FCF-Definition begrenzt die Urteilssicherheit. Modell als Lern-Research, kein persönliches Handelssignal.",
+      "source_label": "KION Quartalsmitteilung Q3 2026",
+      "source_url": "https://reports.kiongroup.com/2026/ir/3/key-figures.html",
+      "steps": [
+        {
+          "type": "teach",
+          "title": "01 · Welches Unternehmen bewerte ich?",
+          "text": "KION ist kein reiner Robotikwert: Es verkauft und betreut Flurförderzeuge und entwickelt automatische Lagerlösungen. Industrie-Staplergeschäft (ITS) ist konjunkturabhängig; Intelligent Automation Solutions (IAS) hängt u. a. von Investitionszyklen der Lagerlogistik ab. Zwei Segmentdynamiken können sich gegenseitig verdecken.",
+          "takeaway": "Bewerte erst die wirtschaftlichen Ertragsquellen, dann den Börsenkurs."
+        },
+        {
+          "type": "visual",
+          "title": "02 · Welcher Bereich wächst?",
+          "text": "9M 2026: ITS 6.034 Mio. € Umsatz (Vorjahr 6.079); IAS 2.519 Mio. € (Vorjahr 2.154). Der Konzernumsatz beträgt 8.522 Mio. €. Einzelne Segmentsummen können wegen Konsolidierung vom Konzern abweichen.",
+          "chart": {
+            "type": "bars",
+            "unit": "Mio. Euro · neun Monate",
+            "labels": [
+              "ITS 9M25",
+              "ITS 9M26",
+              "IAS 9M25",
+              "IAS 9M26"
+            ],
+            "values": [
+              6079,
+              6034,
+              2154,
+              2519
+            ]
+          },
+          "question": "Warum wäre die Aussage „KION wächst zu 17 %“ trotz des IAS-Umsatzwachstums ein Analysefehler?",
+          "rubric": [
+            "Segmentwachstum nicht mit Konzernwachstum gleichsetzen",
+            "ITS-Stagnation bzw. -Rückgang berücksichtigen",
+            "Konzernwachstum 3,9 % nennen",
+            "Konsolidierung der Segmentumsätze erwähnen"
+          ],
+          "sample": "IAS wächst 16,9 %, doch ITS sinkt um 0,7 %. Der Konzern wächst nur 3,9 %. Für eine Gesamtbewertung muss ich jedes Geschäft nach Kapitalbedarf und Profitabilität analysieren."
+        },
+        {
+          "type": "calc",
+          "title": "03 · IAS-Wachstum berechnen",
+          "text": "IAS Umsatz 9M 2026: 2.519 Mio. €; 9M 2025: 2.154 Mio. €. Verwende den Vorjahresumsatz als Bezugswert.",
+          "question": "Umsatzwachstum IAS in Prozent? Auf eine Nachkommastelle.",
+          "answer": 16.9,
+          "tolerance": 0.15,
+          "unit": "%",
+          "method": "(2.519 − 2.154) / 2.154 × 100 = 16,9 %. Der prozentuale Anstieg ist real, aber nur eine Teilgröße der Unternehmensbewertung."
+        },
+        {
+          "type": "calc",
+          "title": "04 · Warum Auftragseingang entscheidend ist",
+          "text": "Der Auftragseingang lag 9M 2025 bei 8.882 Mio. € und 9M 2026 bei 8.445 Mio. €. Auftragseingang ist nicht dasselbe wie Umsatz: Er kann ein Frühindikator kommender Nachfrage sein.",
+          "question": "Wie viel Prozent änderte sich der Auftragseingang? Vorzeichen angeben.",
+          "answer": -4.9,
+          "tolerance": 0.15,
+          "unit": "%",
+          "method": "(8.445 − 8.882) / 8.882 × 100 = −4,92 %. Wenn bestehende Aufträge abgearbeitet werden, kann Umsatz steigen, während neue Bestellungen fallen."
+        },
+        {
+          "type": "choice",
+          "title": "05 · Zwei Kennzahlen im Konflikt",
+          "text": "9M-Umsatz +3,9 %, bereinigtes EBIT +9,9 %, Auftragseingang −4,9 %. Die IAS-Sparte expandiert, ITS kämpft mit schwacher Nachfrage.",
+          "question": "Welcher Schluss ist für die Prognose am besten begründet?",
+          "options": [
+            "Weil das EBIT steigt, muss der faire Aktienwert steigen.",
+            "Der rückläufige Auftragseingang beweist, dass 2027 ein Verlust entsteht.",
+            "Aktuell verbessert sich die Ertragslage, aber der schwache Auftragseingang erhöht das Prognoserisiko.",
+            "Die Lagerautomation gleicht alle konjunkturellen Risiken automatisch aus."
+          ],
+          "correct": 2,
+          "method": "Bewertungen beruhen auf zukünftigen Cashflows. Die beobachtete Ergebnisverbesserung ist echt; der Auftragseingang kann trotzdem auf eine spätere Verlangsamung hindeuten."
+        },
+        {
+          "type": "calc",
+          "title": "06 · Wie profitabel ist KION wirklich?",
+          "text": "9M 2026: Bereinigtes EBIT 632,5 Mio. € und Umsatz 8.522,0 Mio. €. Die bereinigte operative Marge vergleicht operatives Ergebnis mit Umsatz.",
+          "question": "Bereinigte EBIT-Marge in Prozent? Eine Nachkommastelle.",
+          "answer": 7.4,
+          "tolerance": 0.12,
+          "unit": "%",
+          "method": "632,5 / 8.522,0 × 100 = 7,42 %. Bereinigtes EBIT entfernt Sonderposten: Prüfe, ob diese wirklich einmalig sind."
+        },
+        {
+          "type": "teach",
+          "title": "07 · Gewinnprognose gekürzt – was bedeutet das?",
+          "text": "KION senkte die 2026er Guidance für bereinigtes EBIT von 880–980 auf 815–875 Mio. €. Auch die Free-Cashflow-Guidance wurde von 420–540 auf 400–500 Mio. € gesenkt. Die Ursache war vor allem der schwächere Auftragseingang im Staplergeschäft. Langfristige zweistellige Margen sieht der Vorstand erst nach 2027.",
+          "takeaway": "Eine Aktie reagiert auf die Veränderung der erwarteten Zukunft – selbst wenn die aktuellen Zahlen steigen."
+        },
+        {
+          "type": "calc",
+          "title": "08 · Wie groß ist der Guidance-Cut?",
+          "text": "Vergleiche das Mittel der früheren EBIT-Prognose (880–980 Mio. €) mit dem Mittel der neuen Prognose (815–875 Mio. €).",
+          "question": "Wie stark sinkt der Mittelwert in Prozent? Vorzeichen angeben.",
+          "answer": -9.1,
+          "tolerance": 0.15,
+          "unit": "%",
+          "method": "Alt: (880 + 980)/2 = 930. Neu: (815 + 875)/2 = 845. Veränderung: (845 − 930)/930 × 100 = −9,14 %. Das ist eine relevante Neubewertung der Gewinnbasis."
+        },
+        {
+          "type": "teach",
+          "title": "09 · Warum der Cashflow komplizierter ist als das EBIT",
+          "text": "KION meldet für 9M 2026 121,1 Mio. € Free Cashflow statt 392,8 Mio. € im Vorjahr. Wichtig: Die FCF-Definition wurde 2026 erweitert, damit Transaktionen zur Finanzierung des Leasing- und Mietgeschäfts wirtschaftlich korrekt zugeordnet werden. Die Mittel aus einer Unternehmensanleihe erhöhten den so angepassten Cashflow um 494,7 Mio. €. Für ein DCF-Modell darfst du den FCF deshalb nicht unkritisch als 'frei für Aktionäre' behandeln.",
+          "takeaway": "Finanzierungs-Cashflows, Leasing und Einmaleffekte sind eine zentrale Prüfstation der Bewertung."
+        },
+        {
+          "type": "calc",
+          "title": "10 · Der Schuldenaufbau",
+          "text": "Nettofinanzschulden: Ende 2025 584 Mio. €, 30.09.2026 1.196 Mio. €. Als Aktionär trägt man nicht nur operative Risiken, sondern auch die Finanzierung des Unternehmens.",
+          "question": "Wie viel Mio. € höher sind die Nettofinanzschulden?",
+          "answer": 612,
+          "tolerance": 0.1,
+          "unit": "Mio. €",
+          "method": "1.196 − 584 = 612 Mio. € höhere Nettofinanzschulden. Prüfe zusätzlich Leasing-/Mietverpflichtungen und den Verwendungszweck der Finanzierung."
+        },
+        {
+          "type": "choice",
+          "title": "11 · Kion-FCF gegen einen Modellfehler prüfen",
+          "text": "Der veröffentlichte FCF wurde wegen Leasing-/Mietfinanzierung angepasst. Ein Unternehmens-DCF benötigt sauber definierte Cashflows vor Finanzierung; der EV-to-Equity-Abzug muss zur Cashflow-Definition passen.",
+          "question": "Was ist die fachlich richtige Vorgehensweise?",
+          "options": [
+            "Den veröffentlichten FCF direkt mit 10 % diskontieren und sämtliche Leasing- und Finanzschulden beliebig abziehen.",
+            "Den veröffentlichten FCF als ungeprüften Startwert verwenden, weil er schon aus dem Bericht stammt.",
+            "Eine konsistente FCFF-Bridge aus EBIT, Steuern, Investitionen, Abschreibungen und Working Capital bauen und Finanzierungsabzüge abgleichen.",
+            "Die Schulden ignorieren, weil der DCF bereits die operativen Cashflows beinhaltet."
+          ],
+          "correct": 2,
+          "method": "EV-basierte DCFs brauchen konsistente unverschuldete Cashflows. Nur nicht schon im operativen Cashflow verrechnete Ansprüche werden im Equity-Bridge-Schritt abgezogen. Bei KION erfordert das wegen Leasing besondere Sorgfalt."
+        },
+        {
+          "type": "calc",
+          "title": "12 · Was kostet KION aktuell an der Börse?",
+          "text": "Xetra-Schluss 30.10.2026: 33,27 € je Aktie. Die gewichtete Aktienanzahl beträgt rund 131,1 Mio. Stück. Marktkapitalisierung ist Kurs × Aktienzahl.",
+          "question": "Wie hoch ist die Marktkapitalisierung in Mio. Euro? Runde auf eine Nachkommastelle.",
+          "answer": 4361.7,
+          "tolerance": 0.2,
+          "unit": "Mio. €",
+          "method": "33,27 × 131,1 Mio. = 4.361,697 Mio. € Marktwert. Der näherungsweise EV beträgt 4.361,7 + 1.196 = 5.557,7 Mio. € (vereinfachte Verschuldungsbrücke; Leasing beachten)."
+        },
+        {
+          "type": "teach",
+          "title": "13 · Unser Modell statt fremder Kursziele",
+          "text": "Wir rechnen mit einem FCFF-DCF (Free Cashflow to Firm): EBIT × (1 − Steuersatz) + Abschreibungen − CapEx − zusätzlicher Working-Capital-Aufbau und weitere modellierte Mittelbindungen. Die nächsten fünf Jahre werden einzeln prognostiziert. Danach kommt der Endwert mit dauerhaftem Wachstum, diskontiert mit dem WACC. Erst danach ziehen wir die Nettofinanzschulden ab und teilen durch 131,1 Mio. Aktien. Alle Zukunftszahlen sind explizite Modellannahmen, keine KION-Guidance.",
+          "takeaway": "Nur konsistente Zahlungsströme, Kapitalkosten und Finanzierung ergeben ein nachvollziehbares Kursziel."
+        },
+        {
+          "type": "calc",
+          "title": "14 · 2027 Free Cashflow to Firm selbst bauen",
+          "text": "Basisszenario 2027: Umsatz 11.948 Mio. €, bereinigte EBIT-Marge 7,6 %, Steuersatz 30 %, Abschreibungen 640 Mio. €, CapEx 460 Mio. €, Working-Capital-/sonstige Mittelbindung 235 Mio. €. Diese Größen sind Prognoseannahmen.",
+          "question": "Wie hoch ist der FCFF 2027 in Mio. €? Eine Nachkommastelle.",
+          "answer": 580.6,
+          "tolerance": 0.25,
+          "unit": "Mio. €",
+          "method": "11.948 × 0,076 = 908,048 EBIT. Nach 30 % Steuern 635,634. +640 Abschreibungen −460 CapEx −235 Mittelbindungen = 580,634 Mio. € FCFF."
+        },
+        {
+          "type": "choice",
+          "title": "15 · Fairer Wert ist kein fester Fakt",
+          "text": "Das Basis-DCF nimmt 2027–2031 leicht steigendes Umsatzwachstum, eine operative Margenverbesserung, 10,5 % WACC und 2,0 % langfristiges Wachstum an. Der Endwert macht im Basisszenario etwa 70 % des Unternehmenswerts aus.",
+          "question": "Welche Analyse ist bei diesem hohen Endwertanteil fachlich am wichtigsten?",
+          "options": [
+            "Das Kursziel auf den Cent genau als objektive Wahrheit präsentieren.",
+            "WACC, Terminalwachstum und nachhaltige Margen systematisch variieren und Gegenargumente testen.",
+            "Nur den schnellsten Jahresumsatz betrachten, da der Endwert den Rest ausgleicht.",
+            "Die größte positive Annahme wählen, da sonst langfristiges Wachstum unterschätzt wird."
+          ],
+          "correct": 1,
+          "method": "Ein großer Endwertanteil macht den fairen Wert sehr sensitiv. Mehrere WACC-/Wachstumskombinationen sowie ein konservativer Cashflow-Test sind zwingend."
+        },
+        {
+          "type": "teach",
+          "title": "16 · Dein echtes Bewertungsmodell",
+          "text": "Hier kannst du zwischen Negativ-, Basis- und Positivszenario wechseln, die fünf prognostizierten Jahres-Cashflows lesen und WACC sowie ewiges Wachstum verändern. Das Basismodell kommt unter seinen Annahmen auf etwa 58,20 €, das Negativszenario auf 24,59 €, das Positivszenario auf 94,65 €. Die Spanne ist groß: Die Grundlagen für die langfristige Marge und die Lease-/Cashflow-Bridge bestimmen deine Sicherheit. Das sind modellierte Forschungswerte, keine garantierten Preisprognosen.",
+          "chart": {
+            "type": "valuation"
+          },
+          "takeaway": "Ein gutes Kursziel zeigt sowohl den zentralen Schätzwert als auch seine Bandbreite und die Annahmen, die ihn verändern."
+        },
+        {
+          "type": "visual",
+          "title": "17 · Kursverlauf gegen Bewertung halten",
+          "text": "Betrachte den echten KION-Kursverlauf, soweit die verzögerten Börsendaten verfügbar sind. Am 30.10.2026 lag der Xetra-Schluss bei 33,27 €. Vom 14.10. stammt eine gesenkte Prognose. Ein Kursrückgang ist kein Beweis für Unterbewertung.",
+          "chart": {
+            "type": "live",
+            "symbol": "XETR:KGX"
+          },
+          "question": "Welche zusätzlichen Belege brauchst du, bevor du einen Kursrückgang nach einer Gewinnwarnung als mögliche Gelegenheit bewertest?",
+          "rubric": [
+            "Prüfung der revidierten Unternehmensprognose",
+            "Vergleich von Kurs und eigenem fairen Wert",
+            "Abschätzung einer Sicherheitsmarge und der Finanzierung",
+            "Zeithorizont und Falsifikationskriterien"
+          ],
+          "sample": "Ich trenne die Kursreaktion von den operativen Fakten. Erst nach Cashflow-Normalisierung, EBIT-Prognose, Szenariosensitivität und Vergleich zum Marktpreis kann ich eine Chancen/Risiken-Aussage machen."
+        },
+        {
+          "type": "reflect",
+          "title": "18 · Bull, Base, Bear wirklich abwägen",
+          "text": "Im Modell: Negativ 24,59 €, Basis 58,20 €, Positiv 94,65 € bei 33,27 € Xetra-Schluss. Prüfe Umsatzwachstum, Margen, Working Capital, Finanzierung und WACC. Ordne die Fälle plausibel ein, ohne erfundene Wahrscheinlichkeiten vorzutäuschen.",
+          "question": "Welches Szenario ist aus deiner Sicht am glaubwürdigsten? Begründe mit mindestens drei aktuellen Originalkennzahlen, zwei eigenen Annahmen und einem Indikator, der dich umstimmen würde.",
+          "rubric": [
+            "Quellenzahlen und Vorhersagen strikt getrennt",
+            "Cashflow-/Leasingdefinition korrekt thematisiert",
+            "Gegenthese, Schulden und Auftragseingang berücksichtigt",
+            "WACC/Terminalwert und Bewertungsunsicherheit erwähnt"
+          ],
+          "sample": "Ich setze vorläufig auf eine operative Erholung, halte sie aber nicht für gesichert. Mein Kursziel hängt besonders von einer Stabilisierung des Stapler-Auftragseingangs, nachhaltig positivem FCF und einem verifizierten Debt-Bridge ab."
+        },
+        {
+          "type": "choice",
+          "title": "19 · Eine These muss widerlegbar sein",
+          "text": "KION profitiert potenziell von Automatisierungsinvestitionen; gleichzeitig ist der Staplerbereich zyklisch und die Nettofinanzschulden stiegen.",
+          "question": "Welcher Befund würde die optimistische Wachstumsthese am stärksten gefährden?",
+          "options": [
+            "Ein einzelner schwacher Börsentag ohne Unternehmensmeldung.",
+            "Weiter schrumpfender ITS-Auftragseingang zusammen mit sinkender IAS-Marge und strukturell negativem FCF.",
+            "Eine geringfügige Kurserholung bei unveränderten Ergebnissen.",
+            "Ein niedriges historisches KGV allein."
+          ],
+          "correct": 1,
+          "method": "Eine These wird durch ihre wirtschaftlichen Kerntreiber widerlegt, nicht durch normale tägliche Kursschwankungen."
+        },
+        {
+          "type": "reflect",
+          "title": "20 · Dein finales Investment-Urteil",
+          "text": "Am Ende musst du eine Entscheidung treffen: Kaufkandidat, Beobachtungsliste oder nicht investierbar? Nutze Modellwert, Verlässlichkeit der Cashflows, Verschuldung, Alternativen und einen konkreten nächsten Quartalsdatenpunkt. Ein Recherche-Kurs darf zu 'weiter beobachten' führen, wenn noch wesentliche Daten ungeprüft sind.",
+          "question": "Schreibe dein finales Research-Urteil mit einem Kursziel-Korridor, dem Basiswert, einer eigenen Sicherheitsmarge, drei positiven Treibern, drei Risiken und zwei überprüfbaren Auslösern, die deine Ansicht ändern würden.",
+          "rubric": [
+            "Bedingtes Kursziel und Bandbreite sauber angegeben",
+            "Unterschied aktueller Preis / fairer Wert / Prognose erklärt",
+            "FCF-Qualität und Verschuldungs-Bridge offen ausgewiesen",
+            "Konkrete Katalysatoren und Falsifikationen benannt",
+            "Aktienvergleich und Opportunitätskosten bedacht"
+          ],
+          "sample": "Mein vorläufiges Research-Basisziel beträgt unter den dokumentierten Annahmen 58,20 €. Negativ/positiv: 24,59–94,65 €. Wegen des hohen Terminalwertanteils und der Leasing-FCF-Komplexität werte ich das nicht als final handelssicher. Entscheidung: Watchlist, bis die Cashflow-Bridge und 2027er Aufträge ausreichend belegt sind."
+        }
+      ]
+    },
     {
       "id": "microsoft-full-fy25",
       "title": "Microsoft: eine Aktie systematisch analysieren",
