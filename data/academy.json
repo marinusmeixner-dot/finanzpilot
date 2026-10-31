@@ -22,14 +22,14 @@
   "courses": [
     {
       "id": "kion-deep-valuation-2026",
-      "title": "KION: vom Geschäftsbericht zum belastbaren Kursziel",
+      "title": "KION: von den Originalzahlen zum Kursziel",
       "kind": "deep-dive",
-      "difficulty": "Profi · in 20 Etappen",
-      "duration": "100–160 Min. · auf mehrere Tage aufteilen",
+      "difficulty": "Fortgeschritten · Research",
+      "duration": "110–170 Min. · frei auf mehrere Tage verteilt",
       "date": "2026-10-31",
       "symbol": "XETR:KGX",
       "symbol_name": "KION Group",
-      "summary": "Industrieautomation und Gabelstapler: Auftragseingang, Kapitalrendite, Cashflow und ein vollständiges 5-Jahres-DCF-Modell mit drei begründeten Szenarien (24,59–94,65 €).",
+      "summary": "22 klar geführte Etappen: Geschäft, Quartalszahlen, Cashflow, 5-Jahres-DCF, 3 Kursziel-Szenarien, EV/EBIT-Plausibilisierung und eigene finale These.",
       "evidence_note": "Stand 31.10.2026: 9M/Q3 2026 Originalberichte KION, Xetra-Schlusskurs 30.10.2026 33,27 €. 2027–2031 sind analystische Szenarioannahmen und keine Unternehmensprognosen. Leasing-/FCF-Definition begrenzt die Urteilssicherheit. Modell als Lern-Research, kein persönliches Handelssignal.",
       "source_label": "KION Quartalsmitteilung Q3 2026",
       "source_url": "https://reports.kiongroup.com/2026/ir/3/key-figures.html",
@@ -226,8 +226,47 @@
           "sample": "Ich trenne die Kursreaktion von den operativen Fakten. Erst nach Cashflow-Normalisierung, EBIT-Prognose, Szenariosensitivität und Vergleich zum Marktpreis kann ich eine Chancen/Risiken-Aussage machen."
         },
         {
+          "type": "calc",
+          "title": "18 · EV/EBIT als Gegenprobe",
+          "text": "Wir testen die DCF-Schätzung anhand einer zweiten Methode. Bei einem Xetra-Kurs von 33,27 € und 131,1 Mio. Aktien beträgt die Marktkapitalisierung 4.361,7 Mio. €. Addiert man vereinfachend 1.196 Mio. € Nettoschulden, erhält man rund 5.557,7 Mio. € Enterprise Value. Die Mitte der 2026er bereinigten EBIT-Prognose beträgt 845 Mio. €.",
+          "question": "Wie hoch ist das implizite EV/bereinigtes EBIT 2026? Auf eine Nachkommastelle.",
+          "answer": 6.6,
+          "tolerance": 0.12,
+          "unit": "×",
+          "method": "EV ≈ 33,27 × 131,1 + 1.196 = 5.557,7 Mio. €. EV/EBIT ≈ 5.557,7 / 845 = 6,58x. Das ist eine aktuelle Marktkennzahl, noch kein Beweis für Unterbewertung."
+        },
+        {
+          "type": "visual",
+          "title": "19 · Wo DCF und Multiple auseinanderlaufen",
+          "text": "Der 5-Jahres-DCF-Basiswert 58,20 € setzt eine längerfristige Erholung voraus; gemessen an der 2026er EBIT-Guidance-Mitte entspricht er ungefähr einem EV/EBIT von 10,5. Bei einem rein illustrativen EV/EBIT von 8x auf den unveränderten 2026er EBIT-Mittelwert von 845 Mio. € wäre die Aktie dagegen nur rund 42,44 € wert. Das ist keine Peer-Bewertung: Ohne vergleichbare börsennotierte Unternehmen und zyklusbereinigte Gewinnzahlen kann ein Multiple nicht als objektiv gelten.",
+          "chart": {
+            "type": "bars",
+            "unit": "€ pro Aktie · illustrativer Modellvergleich",
+            "labels": [
+              "Marktkurs 30.10.",
+              "EV/EBIT 8x",
+              "DCF Basis",
+              "DCF Negativ"
+            ],
+            "values": [
+              33.27,
+              42.44,
+              58.2,
+              24.59
+            ]
+          },
+          "question": "Weshalb darfst du die 8x-Multiple-Rechnung nicht als endgültigen Widerlegungsbeweis gegen den DCF verwenden?",
+          "rubric": [
+            "2026 EBIT ist nicht zyklusnormalisiert",
+            "Multiples ohne Peer-Auswahl willkürlich",
+            "DCF enthält mehrjährige Ergebnisverbesserung",
+            "Unternehmenswert-Brücke und Cashflow-Definition müssen konsistent sein"
+          ],
+          "sample": "Ich würde historische und zukünftige EV/EBIT-Multiples vergleichbarer Hersteller prüfen. Eine 8x-Annahme auf 2026 ist nur ein Sensitivitätspunkt. Der DCF baut eine längere Margenerholung ein; ohne Rechnungsabgleich und Peer-Daten bleibt die Divergenz eine offene Frage."
+        },
+        {
           "type": "reflect",
-          "title": "18 · Bull, Base, Bear wirklich abwägen",
+          "title": "20 · Bull, Base, Bear wirklich abwägen",
           "text": "Im Modell: Negativ 24,59 €, Basis 58,20 €, Positiv 94,65 € bei 33,27 € Xetra-Schluss. Prüfe Umsatzwachstum, Margen, Working Capital, Finanzierung und WACC. Ordne die Fälle plausibel ein, ohne erfundene Wahrscheinlichkeiten vorzutäuschen.",
           "question": "Welches Szenario ist aus deiner Sicht am glaubwürdigsten? Begründe mit mindestens drei aktuellen Originalkennzahlen, zwei eigenen Annahmen und einem Indikator, der dich umstimmen würde.",
           "rubric": [
@@ -240,7 +279,7 @@
         },
         {
           "type": "choice",
-          "title": "19 · Eine These muss widerlegbar sein",
+          "title": "21 · Eine These muss widerlegbar sein",
           "text": "KION profitiert potenziell von Automatisierungsinvestitionen; gleichzeitig ist der Staplerbereich zyklisch und die Nettofinanzschulden stiegen.",
           "question": "Welcher Befund würde die optimistische Wachstumsthese am stärksten gefährden?",
           "options": [
@@ -254,7 +293,7 @@
         },
         {
           "type": "reflect",
-          "title": "20 · Dein finales Investment-Urteil",
+          "title": "22 · Dein finales Investment-Urteil",
           "text": "Am Ende musst du eine Entscheidung treffen: Kaufkandidat, Beobachtungsliste oder nicht investierbar? Nutze Modellwert, Verlässlichkeit der Cashflows, Verschuldung, Alternativen und einen konkreten nächsten Quartalsdatenpunkt. Ein Recherche-Kurs darf zu 'weiter beobachten' führen, wenn noch wesentliche Daten ungeprüft sind.",
           "question": "Schreibe dein finales Research-Urteil mit einem Kursziel-Korridor, dem Basiswert, einer eigenen Sicherheitsmarge, drei positiven Treibern, drei Risiken und zwei überprüfbaren Auslösern, die deine Ansicht ändern würden.",
           "rubric": [
