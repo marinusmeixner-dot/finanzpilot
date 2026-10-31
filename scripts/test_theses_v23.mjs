@@ -66,7 +66,7 @@ assert.equal(merged.entries.length,2);
 assert(merged.entries.find(x=>x.id===second.id).externalFeedback,'Newer review must survive sync');
 assert(merged.entries.some(x=>x.id===first.id),'Earlier version must survive sync');
 assert(merged.draft?.ticker==='TEST');
-assert(read('ux-v15.js').includes("theses:'research'"));
+assert(read('ux-v15.js').includes("theses:'stockhub'"));
 assert(read('app.js').includes("state.view==='theses'"));
 assert(read('investment-committee.js').includes("data-ic-to-journal"));
 assert(read('index.html').includes('theses.js?v=24'));
