@@ -56,13 +56,15 @@ async function register(querySymbol:string){
  if(!supported.has(kind))throw Error("Nur börsennotierte Aktien und ETFs werden unterstützt; Werttyp: "+(kind||"unbekannt"));
  const actual=String(meta.symbol||symbol).toUpperCase();
  if(!valid(actual))throw Error("Dieses Börsensymbol wird noch nicht unterstützt");
- const currency=String(meta.currency||"").toUpperCase();
+ const rawCurrency=String(meta.currency||"");
+ const subunit=rawCurrency==="GBp"||rawCurrency==="GBX"?0.01:rawCurrency==="ZAc"?0.01:1;
+ const currency=subunit===0.01?(rawCurrency.startsWith("GB")?"GBP":"ZAR"):rawCurrency.toUpperCase();
  if(!allowedCurrency.test(currency))throw Error("Handelswährung nicht zuverlässig identifiziert");
  const ts=result.timestamp||[],closes=result.indicators?.quote?.[0]?.close||[];
  let i=closes.length-1;
  while(i>=0&&(!Number.isFinite(Number(closes[i]))||Number(closes[i])<=0))i--;
  if(i<0||!Number.isFinite(Number(ts[i])))throw Error("Kein vollständiger historischer Schlusskurs verfügbar");
- const price=Math.round(Number(closes[i])*10000)/10000;
+ const price=Math.round(Number(closes[i])*subunit*10000)/10000;
  const date=barDate(ts[i],String(meta.exchangeTimezoneName||"UTC"));
  const age=(Date.now()-Date.parse(date+"T12:00:00Z"))/86400000;
  if(age>7.5||age< -1.5)throw Error("Letzter verifizierter Schlusskurs ist älter als sieben Tage");
