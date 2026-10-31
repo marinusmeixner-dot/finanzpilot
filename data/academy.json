@@ -638,6 +638,281 @@
           "sample": "Die Cloud-Marge ist stark, aber der Quartals-FCF −9,065 Mrd. USD. Ich würde abwarten, ob der hohe Capex in Folgequartalen zu wiederkehrenden Cashflows führt. Meine These wäre geschwächt, wenn Cloud-Wachstum und Cashflow trotz dauerhaft hoher Ausgaben gleichzeitig nachlassen."
         }
       ]
+    },
+    {
+      "id": "alphabet-q3-2026-research-masterclass",
+      "title": "Alphabet-Meisterkurs: vom Quartalsbericht zum Bewertungsurteil",
+      "kind": "deep-dive",
+      "difficulty": "Meisterklasse",
+      "duration": "70–110 Min. · mehrere Sessions",
+      "date": "2026-10-31",
+      "prerequisite_course_id": "alphabet-q3-2026-cashflow-valuation",
+      "symbol": "NASDAQ:GOOGL",
+      "symbol_name": "Alphabet (Google)",
+      "summary": "20 zusammenhängende Schritte: Segmentumsätze, Margen, Bilanzrisiken, FCF-Normalisierung und transparente Bear/Base/Bull-Bewertung bis zur eigenen widerlegbaren These.",
+      "evidence_note": "Primärdaten: SEC-Finanzbericht vom 28.10.2026 für Q3 bis 30.09.2026, in Mio. USD, wenn nicht ausdrücklich anders angegeben. Zukunftszahlen, Bewertungsmultiples und Modellwerte sind rein hypothetische Lehrannahmen. Keine aktuelle Aktie je Aktie bewertet; kein heutiger Kurs.",
+      "source_label": "Alphabet Q3 2026 SEC Exhibit 99.1 vom 28.10.2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "steps": [
+        {
+          "type": "teach",
+          "title": "01 · Erst das Geschäftsmodell, dann die Aktie",
+          "text": "Der Primärbericht trennt Google Services, Google Cloud, Other Bets und zentrale Alphabet-Kosten. Der Konzern meldete im dritten Quartal 2026 127.577 Mio. USD Umsatz. Services erzielte 96.302 Mio., Cloud 30.709 Mio. USD. Diese Segmente haben unterschiedliche Kostenstrukturen und Kapitalanforderungen. Ein Kursziel ist nur so gut wie deine Annahmen über genau diese Unterschiede.",
+          "takeaway": "Ein Unternehmenswachstum ist noch keine Investmentthese. Jede Annahme muss sich auf ein Segment und dessen Cash-Ertragskraft beziehen."
+        },
+        {
+          "type": "calc",
+          "title": "02 · Cloud-Wachstum wirklich quantifizieren",
+          "text": "Laut SEC Exhibit 99.1: Google Cloud erzielte in Q3 2025 15.157 Mio. USD Umsatz und in Q3 2026 30.709 Mio. USD.",
+          "question": "Wie hoch ist das Wachstum gegenüber Q3 2025 in Prozent? Gib auf eine Nachkommastelle gerundet an.",
+          "answer": 102.6,
+          "unit": "%",
+          "method": "(30.709−15.157)/15.157×100 = 102,61 %. Dieser Wert ist eine Quartalsvergleichsrate, keine sichere zukünftige Wachstumsrate.",
+          "tolerance": 0.15
+        },
+        {
+          "type": "calc",
+          "title": "03 · Die absolute Wachstumsquelle",
+          "text": "Google Services stieg von 87.052 auf 96.302 Mio. USD, Google Cloud von 15.157 auf 30.709 Mio. USD.",
+          "question": "Um wie viele Mio. USD nahm der Cloud-Umsatz absolut zu?",
+          "answer": 15552,
+          "unit": "Mio. USD",
+          "method": "30.709−15.157=15.552 Mio. USD. Services legte nur um 9.250 Mio. USD zu. Der absolute Cloud-Beitrag war damit größer als der Services-Beitrag.",
+          "tolerance": 0.1
+        },
+        {
+          "type": "visual",
+          "title": "04 · Umsatzanteile und Wachstumsbeiträge trennen",
+          "text": "Vergleiche die vier originalen Segmentzahlen, nicht nur Prozentwerte. Achte darauf, dass das Konzernwachstum auch Segment- und Währungseffekte enthalten kann.",
+          "question": "Warum hat das kleinere Cloud-Segment den größeren absoluten Umsatzanstieg? Rechne beide Veränderungen und diskutiere ihre Aussagekraft.",
+          "chart": {
+            "type": "bars",
+            "unit": "Mio. USD, Q3",
+            "labels": [
+              "Services 2025",
+              "Services 2026",
+              "Cloud 2025",
+              "Cloud 2026"
+            ],
+            "values": [
+              87052,
+              96302,
+              15157,
+              30709
+            ]
+          },
+          "rubric": [
+            "Services +9.250 Mio. USD",
+            "Cloud +15.552 Mio. USD",
+            "Quartalswachstum nicht dauerhaft fortschreiben",
+            "Kapitalintensität und Margen in den Vergleich einbeziehen"
+          ],
+          "sample": "Cloud +15.552 Mio. gegenüber Services +9.250 Mio. USD. Die höhere Wachstumsrate kann attraktiv sein, sofern zusätzliche Kapitalrenditen die Ausbaukosten übersteigen."
+        },
+        {
+          "type": "calc",
+          "title": "05 · Cloud-Marge nachrechnen",
+          "text": "Google Cloud: Q3 2026 Umsatz 30.709 Mio. USD, operatives Segmentergebnis 11.121 Mio. USD.",
+          "question": "Wie hoch war die operative Segmentmarge in Prozent?",
+          "answer": 36.2,
+          "unit": "%",
+          "method": "11.121/30.709×100=36,21 %. Alphabetweit betrug die operative Marge dagegen 40.576/127.577≈31,8 %. Die Segmentmarge ist nicht die Konzernmarge.",
+          "tolerance": 0.14
+        },
+        {
+          "type": "choice",
+          "title": "06 · Margen mit Vorsicht vergleichen",
+          "text": "Cloud erzielt mehr als 36 % operative Segmentmarge. Alphabetweit bestehen jedoch weitere operative Kosten, unter anderem für zentrale KI-Forschung.",
+          "question": "Welche Aussage ist mit dem Bericht und den Kostenabgrenzungen am besten vereinbar?",
+          "options": [
+            "Cloud-Marge = Gesamtmarge, da Alphabet nur ein Geschäftsmodell hat.",
+            "Cloud ist profitabel; Alphabet-weite Kosten und Infrastrukturinvestitionen können die Konzernergebnisse und FCF trotzdem belasten.",
+            "Die Cloud-Marge ist zugleich der Cashflow je umgesetztem Dollar.",
+            "Ein einmalig starkes Cloud-Quartal beweist eine dauerhaft konstante Cloud-Marge."
+          ],
+          "correct": 1,
+          "method": "Die Segmentmarge ist ein Ergebnismaß vor einigen zentralen Aktivitäten. Sie misst nicht automatisch den real erwirtschafteten Free Cashflow."
+        },
+        {
+          "type": "teach",
+          "title": "07 · Gewinn und Cashflow sind getrennte Konten",
+          "text": "Das operative Alphabet-Ergebnis lag bei 40.576 Mio. USD gegenüber 31.228 Mio. USD im Vorjahresquartal. Der Nettoertrag schwankte dagegen wegen nichtoperativer Beteiligungsbewertungen stark. Die Kapitalflussrechnung zeigt unabhängig davon, welche Zahlungen tatsächlich aus dem Geschäft kommen.",
+          "takeaway": "Trenne berichteten operativen Gewinn, nichtoperativen Gewinn/Verlust, operativen Cashflow und Investitionsauszahlungen in vier Zeilen."
+        },
+        {
+          "type": "calc",
+          "title": "08 · Operatives Gewinnwachstum statt Schlagzeilen",
+          "text": "Alphabet meldete operatives Ergebnis Q3 2025 von 31.228 Mio. USD, Q3 2026 von 40.576 Mio. USD.",
+          "question": "Wie hoch ist das operative Ergebniswachstum im Jahresvergleich in Prozent?",
+          "answer": 29.9,
+          "unit": "%",
+          "method": "(40.576−31.228)/31.228×100=29,94 %. Der Nettoertrag folgt einer anderen Logik, u. a. Beteiligungsänderungen.",
+          "tolerance": 0.15
+        },
+        {
+          "type": "calc",
+          "title": "09 · Die Investitionswucht beim FCF",
+          "text": "Im Q3 2026 betrug der operative Cashflow 42.290 Mio. USD. Käufe von Sachanlagen betrugen 51.355 Mio. USD.",
+          "question": "Wie hoch ist der berichtete Q3-Free-Cashflow in Mio. USD? Negative Werte ausdrücklich mit Minus eingeben.",
+          "answer": -9065,
+          "unit": "Mio. USD",
+          "method": "42.290−51.355=−9.065 Mio. USD. Der CapEx übersteigt den operativen Cashflow; ein hoher Gewinn erzeugt nicht automatisch hohe freie Zahlungsmittel.",
+          "tolerance": 0.1
+        },
+        {
+          "type": "visual",
+          "title": "10 · Vier Quartale FCF – ohne negative Balken verstecken",
+          "text": "Laut SEC-FCF-Überleitung: Q4 2025 +24.551, Q1 2026 +10.116, Q2 2026 −5.855 und Q3 2026 −9.065 Mio. USD. Das Diagramm zeigt die echte Nullachse.",
+          "question": "Wie kann das Quartal stark negativ und der TTM-FCF trotzdem positiv sein? Welche Annahmen zur Kapitalintensität sind zu prüfen?",
+          "chart": {
+            "type": "bars",
+            "unit": "Mio. USD FCF; +/-",
+            "labels": [
+              "Q4 2025",
+              "Q1 2026",
+              "Q2 2026",
+              "Q3 2026"
+            ],
+            "values": [
+              24551,
+              10116,
+              -5855,
+              -9065
+            ]
+          },
+          "rubric": [
+            "24.551 + 10.116 − 5.855 − 9.065 = 19.747 Mio. USD",
+            "FCF ist bereits nach Investitionen",
+            "Investitionszyklus gegen Ertrags- und Cashflowwachstum prüfen",
+            "Vier Quartale sind keine Garantie für den langfristigen Cashflow"
+          ],
+          "sample": "Die letzten beiden Quartale sind negativ; die starken positiven Vorquartale halten den TTM-FCF bei 19.747 Mio. USD. Der hohe Investitionsbedarf ist eine wesentliche Bewertungsunsicherheit."
+        },
+        {
+          "type": "calc",
+          "title": "11 · Trailing-Twelve-Months-Cashflow",
+          "text": "Die SEC weist für die letzten zwölf Monate operativen Cashflow von 179.551 Mio. USD und CapEx von 159.804 Mio. USD aus.",
+          "question": "Wie hoch ist der Free Cashflow für die letzten zwölf Monate (Mio. USD)?",
+          "answer": 19747,
+          "unit": "Mio. USD",
+          "method": "179.551−159.804=19.747 Mio. USD. Das ist keine geeignete dauerhafte Basis, bevor du Erhaltungs- und Wachstums-CapEx auseinanderhältst.",
+          "tolerance": 0.1
+        },
+        {
+          "type": "teach",
+          "title": "12 · Wie wurde das Wachstum finanziert?",
+          "text": "Das Q3-2026-Statement zeigt neben dem Cashflow auch Einnahmen aus Aktienausgaben und Schuldverschreibungen. Neue Kapitalzuflüsse sind nicht mit operativer Ertragskraft zu verwechseln. 2026 wurden laut Bericht im dritten Quartal 12.371 Mio. USD aus Common-Stock-Ausgaben und 28.996 Mio. USD aus neu begebenen Schulden erlöst. Gleichzeitig können neue Aktien Verwässerung erzeugen.",
+          "takeaway": "Eine Investition kann mit Fremd- oder Eigenkapital finanziert werden; der Free Cashflow bleibt eine betriebswirtschaftlich eigene Kennzahl."
+        },
+        {
+          "type": "choice",
+          "title": "13 · Finanzierung ist kein FCF",
+          "text": "Trotz −9.065 Mio. USD Quartals-FCF konnte Alphabet zusätzliches Kapital beschaffen. Welche Schlussfolgerung ist fachlich richtig?",
+          "question": "Welche Aussage ist am besten?",
+          "options": [
+            "Kapitalaufnahmen erhöhen automatisch den Free Cashflow aus laufendem Geschäft.",
+            "Finanzierungszuflüsse verbessern zunächst die Liquidität, müssen aber bei Schulden, Aktienzahl und Kapitalkosten berücksichtigt werden.",
+            "Ein positiver Mittelzufluss aus Schulden ist dasselbe wie operativer Gewinn.",
+            "Die 28.996 Mio. USD neue Schulden beweisen einen positiven Ertrag auf alle neuen Rechenzentren."
+          ],
+          "correct": 1,
+          "method": "Neu aufgenommene Schulden gehören zur Finanzierung, nicht zum operativen Cashflow. Neue Aktien können Anspruchsverhältnisse verändern."
+        },
+        {
+          "type": "teach",
+          "title": "14 · Szenarien dürfen keine versteckten Tatsachen sein",
+          "text": "Wir trennen nun Fakten und Modellannahmen: TTM-FCF 19,747 Mrd. USD ist aus dem Bericht. Für eine mechanische Lehrbewertung schätzen wir drei hypothetische langfristig normalisierte Eigenkapital-Cashflows: negativ 30 Mrd., Basis 70 Mrd. und positiv 105 Mrd. USD. Ebenfalls rein angenommen: P/FCF-Multiples 15× / 20× / 25×. Diese willkürlichen Lehrannahmen sind weder geprüfte Prognosen noch Unternehmenswert-Kursziele; der Bezugszeitraum, Finanzierungsansprüche, Aktienzahl und heute bezahlter Kurs fehlen.",
+          "takeaway": "Lerne den Unterschied: beobachteter TTM-FCF ≠ normalisierter künftiger Cashflow ≠ Marktkurs. Ohne weitere Quellen gibt es keinen seriösen Zielkurs je Aktie."
+        },
+        {
+          "type": "calc",
+          "title": "15 · Basisszenario als Rechenmodell",
+          "text": "Reine Modellannahme: ein normalisierter Cashflow von 70 Mrd. USD mit einem P/FCF-Multiple von 20×. Die Basis ist bewusst hypothetisch, um Bewertungsmechanik zu üben.",
+          "question": "Wie groß wäre der hypothetische Eigenkapitalwert in Mrd. USD?",
+          "answer": 1400,
+          "unit": "Mrd. USD",
+          "method": "70×20=1.400 Mrd. USD. Das Ergebnis ist eine angenommene Equity-Value-Größe, kein Kursziel je Aktie.",
+          "tolerance": 0.1
+        },
+        {
+          "type": "calc",
+          "title": "16 · Eintrittswahrscheinlichkeiten richtig gewichten",
+          "text": "Hypothetische Equity-Werte: Bear 450 Mrd. USD (30 %), Base 1.400 Mrd. USD (50 %), Bull 2.625 Mrd. USD (20 %).",
+          "question": "Wie hoch ist der probabilistisch gewichtete Lehrmodellwert in Mrd. USD?",
+          "answer": 1360,
+          "unit": "Mrd. USD",
+          "method": "450×0,30+1.400×0,50+2.625×0,20 = 135+700+525 = 1.360 Mrd. USD. Modellwahrscheinlichkeiten sind Annahmen.",
+          "tolerance": 0.1
+        },
+        {
+          "type": "visual",
+          "title": "17 · Die Szenarien sehen und hinterfragen",
+          "text": "Es handelt sich um 30×15=450, 70×20=1.400 und 105×25=2.625 Mrd. USD Equity-Modellwerte. Keiner davon ist ein heutiger Börsenkurs oder ein überprüfter Analystenkonsens.",
+          "question": "Warum steigt die Bewertung im positiven Szenario durch zwei Hebel, und weshalb ist diese Bandbreite kein belastbares Kaufargument?",
+          "chart": {
+            "type": "bars",
+            "unit": "Mrd. USD · reine Annahmen",
+            "labels": [
+              "Negativ",
+              "Basis",
+              "Positiv"
+            ],
+            "values": [
+              450,
+              1400,
+              2625
+            ]
+          },
+          "rubric": [
+            "Cashflow-Niveau und Multiple wirken multiplikativ",
+            "Ein hoher Marktpreis kann alle drei Szenarien bereits übersteigen",
+            "Eigenkapitalwert je Aktie verlangt Aktienzahl, Aktienklassen und Verwässerung",
+            "Wahrscheinlichkeiten und nachhaltiger FCF sind unsicher"
+          ],
+          "sample": "Das Bull-Modell unterstellt zugleich mehr normalisierten FCF und ein höheres Multiple. Beide Annahmen können falsch sein. Die Anzahl verwässerter Aktien fehlt – also bewusst kein Zielkurs je Aktie."
+        },
+        {
+          "type": "choice",
+          "title": "18 · Equity Value ist kein aktueller Aktienkurs",
+          "text": "Du hast drei hypothetische Equity Values, aber keine aus Quellen geprüfte heutige Aktienzahl, Kapitalstruktur und keinen aktuellen GOOGL-Kurs in diesem Modell.",
+          "question": "Welcher nächste Schritt ermöglicht erst einen seriösen Preisvergleich?",
+          "options": [
+            "Den gewichteten Konzernwert direkt als Aktienkurs in USD ausgeben.",
+            "Aktuelle Aktienzahl, ggf. Verwässerung, Equity-Ansprüche, normalisierte Cashflows und datierten Börsenkurs separat prüfen.",
+            "Das höchste Multiple als Kursziel benutzen, weil Cloud schnell wächst.",
+            "Die heutigen Kurse aus einem historischen Quartalsbericht extrapolieren."
+          ],
+          "correct": 1,
+          "method": "Unternehmens- und Eigenkapitalwerte benötigen vollständige Eigenkapitalbrücke und verwässerte Aktienzahl. Kurschancen erfordern einen zeitgleichen, verlässlichen Marktpreis."
+        },
+        {
+          "type": "reflect",
+          "title": "19 · Deine Gegenhypothese formulieren",
+          "text": "Setze bewusst eine andere Perspektive dagegen: Cloud-Ertragswachstum könnte anhalten, aber KI-Investitionen und Suchgeschäftsrisiko könnten freien Cashflow schwächen.",
+          "question": "Formuliere deine eigene Bear/Base/Bull-Hypothese. Nenne drei Q3/TTM-Fakten, zwei Annahmen, zwei Gegenargumente und was deine These widerlegen würde.",
+          "rubric": [
+            "Q3-Umsatz, Cloud-Ergebnis und Free Cashflow korrekt mit Stichtag nennen",
+            "Annahmen klar als Modellannahmen markieren",
+            "Nichtoperative Gewinndynamik und CapEx einbeziehen",
+            "Widerlegung durch konkrete beobachtbare Daten definieren"
+          ],
+          "sample": "Beobachtung: 127,577 Mrd. USD Umsatz, 11,121 Mrd. USD Cloud-EBIT, −9,065 Mrd. USD Q3-FCF. Annahme: Cloud-Umsätze wachsen, Cashflow normalisiert sich. Gefahr: Kapitalbedarf bleibt dauerhaft hoch. Meine These scheitert, falls Cloud-FCF und Kapitalrenditen trotz steigender Investitionen sinken."
+        },
+        {
+          "type": "reflect",
+          "title": "20 · Abschluss: Dein echter Investmentprozess",
+          "text": "Du hast 19 Etappen absolviert. Entscheide jetzt nicht aus Gewohnheit „kaufen“. Schreibe ein überprüfbares Research-Memo mit Quellen, Prognosen, Risikobeweisen, einem falsifizierbaren Kriterium und einer Liste fehlender Daten vor einem echten Kursziel.",
+          "question": "Würdest du Alphabet derzeit beobachten, hypothetisch kaufen oder vermeiden? Begründe mit mindestens vier überprüfbaren Zahlen, einem eigenen Modell und einem Gegenargument. Was muss vor einem echten Kursziel je Aktie noch recherchiert werden?",
+          "rubric": [
+            "Exakte Zahlen und Primärquellen nennen",
+            "Nachhaltigen FCF nicht aus dem Q3-Quartal allein extrapolieren",
+            "Bear/Base/Bull ohne Scheingenauigkeit erläutern",
+            "Aktienzahl, Kapitalstruktur und aktuellen Kurs als fehlende Bewertungsbasis benennen",
+            "Konkrete Auslöser für ein Überprüfen oder Verwerfen deiner These festlegen"
+          ],
+          "sample": "Meine Haltung: beobachten. Daten: Q3-Konzernumsatz 127,577 Mrd. USD, Cloud-Segment 30,709 Mrd. USD, operatives Konzernergebnis 40,576 Mrd. USD, Q3-FCF −9,065 Mrd. USD und TTM-FCF +19,747 Mrd. USD. Vor einem Kursziel will ich den nachhaltigen Investitionsbedarf, die Kapitalstruktur, Aktienzahl und den datierten Börsenpreis überprüfen."
+        }
+      ]
     }
   ]
 }
