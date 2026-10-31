@@ -127,9 +127,9 @@
     return out;
   }
   function saveLocal(payload){
-    let changed=false;
+    const changed=[];
     for(const k of KEYS){const incoming=payload[k]||{};if(JSON.stringify(localObject(k))!==JSON.stringify(incoming)){
-      try{localStorage.setItem(k,JSON.stringify(incoming));changed=true}catch{}
+      try{localStorage.setItem(k,JSON.stringify(incoming));changed.push(k)}catch{}
     }}
     return changed;
   }
@@ -280,9 +280,9 @@
       try{localStorage.setItem('finanzpilot_account_owner',user.id)}catch{}
       showAccount();
       setStatus(dirty?'Neue Änderungen werden gleich synchronisiert …':'Lernstand gespeichert und synchronisiert · '+new Date().toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'}),dirty?'pending':'success');
-      if(changed){
+      if(changed.length){
         // Import in bereits geladene Lernmodule übernehmen, ohne die laufende PWA-Seite neu zu laden.
-        window.dispatchEvent(new CustomEvent('fp-cloud-progress-imported',{detail:{keys:KEYS}}));
+        window.dispatchEvent(new CustomEvent('fp-cloud-progress-imported',{detail:{keys:changed}}));
         setStatus('Cloud-Fortschritt ohne Seitenwechsel übernommen','success');
       }
     }catch(err){
