@@ -20,3 +20,5 @@ jobs:
         run: node scripts/test_career.mjs
       - name: Check economy idempotency and rewards
         run: node scripts/test_economy.mjs
+      - name: Check navigation and automatic PWA upgrades
+        run: node scripts/test_navigation_v15.mjs
