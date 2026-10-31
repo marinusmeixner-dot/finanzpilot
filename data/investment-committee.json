@@ -1,0 +1,221 @@
+{
+  "schema": 1,
+  "updated": "2026-10-31",
+  "type": "guided-investment-committee",
+  "user_notice": "Finanzbildung. Keine personalisierte Anlageberatung. Firmenzahlen haben feste Berichtszeiträume, Modelle sind Annahmen; Kursdaten sind nicht automatisch live.",
+  "stages": [
+    "Unternehmen verstehen",
+    "Umsatz und Nachfrage",
+    "Gewinnqualität",
+    "Risiken und Gegenargumente",
+    "Investmentprozess",
+    "Szenariomodell",
+    "Modellkritik",
+    "Dein Investmenturteil"
+  ],
+  "cases": [
+    {
+      "id": "kion-2026",
+      "company": "KION Group",
+      "symbol": "XETR:KGX",
+      "currency": "EUR",
+      "kind": "dcf",
+      "level": "Fortgeschritten",
+      "duration": "60–95 Min. · in mehreren Sessions",
+      "date": "2026-10-30",
+      "quote": {
+        "price": 33.27,
+        "date": "2026-10-30",
+        "venue": "Xetra",
+        "isHistorical": true
+      },
+      "source": {
+        "title": "KION Q3/9M 2026, Kennzahlen",
+        "url": "https://reports.kiongroup.com/2026/ir/3/key-figures.html",
+        "date": "2026-10-29"
+      },
+      "modelSource": "./data/kion_model.json",
+      "summary": "Von den 9M-Zahlen zum eigenen DCF-Urteil: Nachfrage, Kapitalbindung, WACC, Terminal Value und Sicherheitsmarge.",
+      "thesisQuestion": "Sind die schwächere Staplernachfrage und steigende Nettoschulden ausreichend im Kurs reflektiert?",
+      "facts": {
+        "revenue2025": 8200.4,
+        "revenue2026": 8522,
+        "adjEbit": 632.5,
+        "reportedFcf": 121.1,
+        "order2025": 8882,
+        "order2026": 8445,
+        "netDebt": 1196,
+        "shares": 131.1,
+        "units": "Mio. EUR; 9M 2026"
+      },
+      "exercises": [
+        {
+          "title": "Aufträge gegen Umsatz",
+          "prompt": "Der 9M-Auftragseingang sinkt von 8.882 auf 8.445 Mio. €. Berechne die Veränderung in Prozent inklusive Vorzeichen.",
+          "answer": -4.92,
+          "tolerance": 0.18,
+          "method": "(8.445 − 8.882) / 8.882 × 100 = −4,92 %. Der Auftragseingang sinkt, obwohl die Umsätze noch wachsen.",
+          "hint": "Rechne mit Vorjahreswert im Nenner."
+        },
+        {
+          "title": "Profitabilität sauber ermitteln",
+          "prompt": "KION erzielt 632,5 Mio. € bereinigtes EBIT bei 8.522 Mio. € Umsatz in 9M 2026. Wie hoch ist die bereinigte EBIT-Marge in %?",
+          "answer": 7.42,
+          "tolerance": 0.15,
+          "method": "632,5 / 8.522 × 100 = 7,42 %. Bereinigtes EBIT ist nicht dasselbe wie unverändertes IFRS-EBIT.",
+          "hint": "Die Bezugsgröße ist der Konzernumsatz 9M."
+        }
+      ],
+      "critical": {
+        "prompt": "Welche ZWEI Aussagen zur KION-Analyse sind fachlich richtig?",
+        "options": [
+          "9M-Free-Cashflow 121,1 Mio. € kann ohne Bereinigung direkt als 2027–2031 FCFF verwendet werden.",
+          "KIONs berichteter Free Cashflow enthält Besonderheiten der Leasing-/Mietfinanzierung, die in einer Equity Bridge zu prüfen sind.",
+          "Höhere Nettoschulden können den Aktienwert bei gleichem Enterprise Value reduzieren.",
+          "Ein sinkender Auftragseingang garantiert fallenden Aktienkurs."
+        ],
+        "correct": [
+          1,
+          2
+        ],
+        "method": "Die Cashflow-Definition für das Leasing-/Mietgeschäft ist besonders. Die Eigenkapitalbrücke muss die Finanzierung konsistent berücksichtigen."
+      },
+      "decision": {
+        "prompt": "Das Basismodell liegt deutlich über dem historischen Marktpreis. Was musst du als Nächstes tun?",
+        "options": [
+          "Kauf empfehlen: Ein modellierter fairer Wert ist stets objektiv.",
+          "Endwertanteil, Leasing-Cashflow-Bridge und Margenannahmen kritisch testen und Gegenargumente dokumentieren.",
+          "Den WACC auf den niedrigsten möglichen Wert setzen."
+        ],
+        "correct": 1,
+        "method": "Die KION-Basisbewertung hängt stark von Terminal Value, WACC und langfristigen Margen ab. Ein hoher Modellaufschlag ist nicht automatisch eine sichere Rendite."
+      },
+      "postModel": {
+        "prompt": "Der Basiswert steigt bei niedrigerem WACC stark. Welche Schlussfolgerung ist fundiert?",
+        "options": [
+          "Das zeigt die Sensitivität; vor einem Investmenturteil braucht es Szenariogewichte und Sicherheitsmarge.",
+          "Der Modellwert ist deshalb garantiert erreichbar.",
+          "Niedrigere Kapitalkosten entstehen automatisch, sobald eine Aktie stark fällt."
+        ],
+        "correct": 0,
+        "method": "Das Bewertungsergebnis reagiert stark auf WACC und Terminalwachstum; die Annahmen sind zu begründen."
+      },
+      "review": [
+        "Marktpreis vom 30.10.2026 nicht als aktuellen Kurs ausgeben",
+        "Konsistente FCFF-/Leasing-Brücke angeben",
+        "Auftragseingang und Margenentwicklung unterscheiden",
+        "Terminal Value und WACC sensibel prüfen",
+        "Mindestens ein falsifizierbares Risiko definieren"
+      ]
+    },
+    {
+      "id": "msft-fy2026",
+      "company": "Microsoft",
+      "symbol": "NASDAQ:MSFT",
+      "currency": "USD",
+      "kind": "multiple",
+      "level": "Fortgeschritten",
+      "duration": "55–85 Min. · in mehreren Sessions",
+      "date": "2026-06-30",
+      "quote": null,
+      "source": {
+        "title": "Microsoft FY2026 Annual Report",
+        "url": "https://www.microsoft.com/investor/reports/ar26/",
+        "date": "2026-06-30"
+      },
+      "modelSource": null,
+      "summary": "Cloud-Umsatz, Margen und hohe KI-Investitionen bewerten – und aus bereinigtem EPS eigene Multiple-Szenarien ableiten.",
+      "thesisQuestion": "Wie viel zukünftiges Cloudwachstum und welche Kapitaleffizienz rechtfertigen ein hohes Bewertungsmultiple?",
+      "facts": {
+        "revenue2025": 281724,
+        "revenue2026": 331839,
+        "operatingIncome": 155237,
+        "adjDilutedEPS": 17.28,
+        "gaapEPS": 17.95,
+        "intelligentCloud2025": 106265,
+        "intelligentCloud2026": 137791,
+        "units": "Mio. USD; FY2026 bis 30.06.2026"
+      },
+      "model": {
+        "method": "Illustratives Trailing-EPS-Multiple (KEIN vollständiger DCF, KEINE Forward-Kursprognose)",
+        "eps": 17.28,
+        "options": [
+          {
+            "name": "Negativ",
+            "multiple": 20,
+            "why": "KI-Kapitalaufwand und Konkurrenz drücken den nachhaltigen Bewertungsaufschlag"
+          },
+          {
+            "name": "Basis",
+            "multiple": 27,
+            "why": "Cloud wächst, Margen bleiben stark, Bewertungsprämie moderat"
+          },
+          {
+            "name": "Positiv",
+            "multiple": 34,
+            "why": "Hohe Skaleneffekte und langes Cloud-Wachstum rechtfertigen eine hohe Prämie"
+          }
+        ]
+      },
+      "exercises": [
+        {
+          "title": "Konzernwachstum berechnen",
+          "prompt": "FY2025-Umsatz 281.724 Mio. USD, FY2026-Umsatz 331.839 Mio. USD. Wie hoch ist das Umsatzwachstum in Prozent?",
+          "answer": 17.79,
+          "tolerance": 0.18,
+          "method": "(331.839 − 281.724)/281.724 × 100 ≈ 17,79 %. Wichtig ist zusätzlich die Kosten- und Investitionsentwicklung.",
+          "hint": "Prozentuale Änderung mit 2025 als Basis."
+        },
+        {
+          "title": "Konzernmarge kritisch berechnen",
+          "prompt": "Operatives Ergebnis FY2026 155.237 Mio. USD und Umsatz 331.839 Mio. USD. Wie hoch ist die operative Marge in Prozent?",
+          "answer": 46.78,
+          "tolerance": 0.15,
+          "method": "155.237/331.839 × 100 ≈ 46,78 %. Hohe Margen sind kein Beweis für niedrigen künftigen Investitionsbedarf.",
+          "hint": "Operatives Ergebnis durch Umsatz dividieren."
+        }
+      ],
+      "critical": {
+        "prompt": "Welche ZWEI Aussagen sind mit dem Microsoft-FY2026-Bericht vereinbar?",
+        "options": [
+          "Der bereinigte verwässerte EPS-Wert 17,28 USD ist eine Non-GAAP-Größe und kann von GAAP-EPS 17,95 USD abweichen.",
+          "Hohe Cloud-Wachstumsraten bedeuten, dass jeder KGV-Ansatz gerechtfertigt ist.",
+          "Die steigenden Investitionen in KI-Infrastruktur machen die FCF- und Kapitalrenditeanalyse wichtig.",
+          "Für eine heutige Bewertung darf man das FY2026-EPS ungeprüft als garantiertes FY2027-EPS einsetzen."
+        ],
+        "correct": [
+          0,
+          2
+        ],
+        "method": "Non-GAAP-Bereinigungen und hoher Rechenzentrums-Capex verlangen eine sorgfältige Normalisierung. Historisches EPS ist keine sichere Prognose."
+      },
+      "decision": {
+        "prompt": "Cloud-Wachstum und EBIT-Marge sind stark, aber der Kurs könnte viel Zukunft eingepreist haben. Dein nächster Schritt?",
+        "options": [
+          "Allein aus dem Umsatzwachstum eine Kaufempfehlung ableiten.",
+          "Kursbewertung, zukünftige Cashflows, Investitionsbedarf und WACC/Szenarien gegenüberstellen.",
+          "Die GAAP-EPS-Zahl mit einem frei gewählten hohen Multiple multiplizieren und das Ergebnis als sicheren aktuellen Kurs bezeichnen."
+        ],
+        "correct": 1,
+        "method": "Ein gutes Investmenturteil muss zwischen operativer Qualität und bezahltetem Preis unterscheiden."
+      },
+      "postModel": {
+        "prompt": "Das EPS-Szenario liefert einen fairen Wertebereich, aber keinen aktuellen Börsenkurs. Wie beurteilst du das?",
+        "options": [
+          "Die Modellspanne ist ein Rechenrahmen; ohne aktuelle Kurs- und Cashflowdaten lässt sich kein sicheres Chance-Risiko-Verhältnis bestimmen.",
+          "Das mittlere Multiple ist gleich dem garantierten Börsenkurs im Jahr 2027.",
+          "Eine Multiple-Rechnung ist immer präziser als ein DCF."
+        ],
+        "correct": 0,
+        "method": "P/E-Szenarien sind vereinfachte Multiplikatoren auf historischen, bereinigten Gewinnen. Ein aktueller Preisvergleich braucht gesonderte, zeitgestempelte Börsendaten."
+      },
+      "review": [
+        "FY2026 ist historisch, kein Livebericht",
+        "Bereinigtes EPS 17,28 USD von GAAP-EPS 17,95 USD unterscheiden",
+        "Hohe KI-Capex und künftige Free-Cashflows berücksichtigen",
+        "Begründete Szenariomultiples statt garantierter Kursziele verwenden",
+        "Aktuellen Kurs gesondert beschaffen, bevor man konkrete Kaufchancen berechnet"
+      ]
+    }
+  ]
+}
