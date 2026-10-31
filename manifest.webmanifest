@@ -2,7 +2,7 @@
   "name": "FinanzPilot – Finanzwissen täglich",
   "short_name": "FinanzPilot",
   "id": "./",
-  "start_url": "./?v=16",
+  "start_url": "./?v=17",
   "scope": "./",
   "display": "standalone",
   "background_color": "#0b1420",
@@ -11,10 +11,16 @@
   "description": "Interaktive Finanzakademie mit Märkten, Aktienresearch und sicherer Lernstand-Synchronisierung",
   "icons": [
     {
-      "src": "./icon.svg",
+      "src": "./apple-touch-icon.png?v=17",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "./icon.svg?v=17",
       "sizes": "any",
       "type": "image/svg+xml",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ]
 }
