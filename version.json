@@ -1,5 +1,5 @@
 {
-  "version": 18,
-  "release": "2026-10-31-v18",
-  "notes": "Clear tab-level navigation without popup, unchanged Start, new native FP icon"
+  "version": 19,
+  "release": "2026-10-31-v19",
+  "notes": "Fix iOS safe-area header, per-tab navigation and scroll restoration, automatic cloud sync states"
 }
