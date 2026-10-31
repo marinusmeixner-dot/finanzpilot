@@ -1,0 +1,27 @@
+/* Personal market watchlist, desktop and iPhone */
+.fp-mw{max-width:1000px;margin:0 auto 55px;display:flex;flex-direction:column;gap:16px}
+.fp-mw header h1{font-size:clamp(26px,4vw,37px);margin:12px 0}
+.fp-mw p{font-size:13px;color:#b1cad0;line-height:1.7}
+.fp-mw-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.fp-mw-list-item{background:#173343;border:1px solid #375865;border-radius:12px;color:#dcefe7;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px;text-align:left;cursor:pointer}
+.fp-mw-list-item.selected{border-color:#91e8bb;background:#24483f}
+.fp-mw-list-item span{display:flex;flex-direction:column;gap:5px;min-width:0}
+.fp-mw-list-item span:last-child{text-align:right}
+.fp-mw-list-item b{font-size:13px;overflow-wrap:anywhere}
+.fp-mw-list-item small{font-size:11px;color:#a9c9cf}
+.fp-mw-detail{border:1px solid #375a66;border-radius:17px;padding:20px;background:#162f3c;display:flex;flex-direction:column;gap:14px}
+.fp-mw-detail-head{display:flex;justify-content:space-between;gap:15px;align-items:center;flex-wrap:wrap}
+.fp-mw-detail-head h2{margin:4px 0 0}
+.fp-mw-detail h2{font-size:20px}
+.fp-mw-chart{border:1px solid #446776;border-radius:13px;background:#0e2632;padding:15px}
+.fp-mw-chart>div{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fp-mw-chart b{font-size:24px;font-variant-numeric:tabular-nums}
+.fp-mw-chart svg{width:100%;height:auto;display:block;margin:9px 0}
+.fp-mw-chart small{font-size:11px;color:#a4c3ca}
+.fp-mw-news{display:flex;flex-direction:column;gap:10px}
+.fp-mw-news article{background:#1b3846;border:1px solid #355766;border-radius:11px;padding:14px}
+.fp-mw-news small{color:#a6c6cb;font-size:11px}
+.fp-mw-news h3{font-size:14px;line-height:1.5}
+.fp-mw-news a{color:#93e8c0;font-size:12px}
+#fp-depot-watchlist,#fp-depot-order-panel{scroll-margin-top:110px}
+@media(max-width:680px){.fp-mw-list{grid-template-columns:1fr}.fp-mw-detail{padding:14px}.fp-mw-detail-head .btn{width:100%}}
