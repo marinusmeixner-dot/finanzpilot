@@ -7,11 +7,11 @@ const updateSrc=fs.readFileSync('updates.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const version=JSON.parse(fs.readFileSync('version.json','utf8'));
 const page=fs.readFileSync('index.html','utf8');
-assert.equal(version.version,15);
+assert.equal(version.version,16);
 assert.equal(manifest.display,'standalone');
-assert(manifest.start_url.includes('v=15'));
-assert(page.includes('ux-v15.js?v=15'));
-assert(page.includes('updates.js?v=15'));
+assert(manifest.start_url.includes('v=16'));
+assert(page.includes('ux-v15.js?v=16'));
+assert(page.includes('updates.js?v=16'));
 assert(!page.includes('src="ux.js'));
 
 const events={};
@@ -65,8 +65,8 @@ assert(elements['[data-section-list]'].innerHTML.includes('Skillbaum'));
 assert(!elements['[data-section-list]'].innerHTML.includes('Analystenkarriere'));
 
 // Update marker loads from network; app does not reload when version is unchanged.
-let fresh=15,reloaded=null,syncCalls=0;
-const locV={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=15#view=training',hash:'#view=training',replace(url){reloaded=url}};
+let fresh=16,reloaded=null,syncCalls=0;
+const locV={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=16#view=training',hash:'#view=training',replace(url){reloaded=url}};
 const docV={readyState:'loading',addEventListener(){}};
 const updateWin={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateCtx=vm.createContext({
@@ -77,7 +77,7 @@ const updateCtx=vm.createContext({
 vm.runInContext(updateSrc,updateCtx,{filename:'updates.js'});
 await updateWin.FinanzPilotUpdate.check(true);
 assert.equal(reloaded,null);
-fresh=16;
+fresh=17;
 await updateWin.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
 assert(reloaded.includes('?v=16#view=training'));
