@@ -46,7 +46,7 @@ window.FinanzPilotConcepts=(()=>{
  function chart(v){
   if(!v||!Array.isArray(v.values))return '';
   const mx=Math.max(1,...v.values.map(Number));
-  return '<div class="fp-training-chart"><small>Quellenkennzahlen · '+esc(v.unit||'')+'</small>'+
+  return '<div class="fp-training-chart"><small>Zahlen des Lehrmodells · '+esc(v.unit||'')+'</small>'+
    v.values.map((n,i)=>'<div class="fp-training-bar"><span>'+esc(v.labels[i]||'')+'</span><div><i style="width:'+Math.max(1,Number(n)/mx*100)+'%"></i></div><b>'+human(n)+'</b></div>').join('')+'</div>';
  }
  function list(){
@@ -84,7 +84,7 @@ window.FinanzPilotConcepts=(()=>{
    (step.type==='read'?'<div class="fp-training-insight"><b>Das solltest du mitnehmen</b><p>'+esc(step.insight||'')+'</p></div><button type="button" class="btn" data-training-continue>Verstanden · Weiter →</button>':
     solved?'<div class="fp-training-result '+(answer.correct?'correct':'incorrect')+'"><div class="fp-training-result-title">'+(answer.correct?'✓ Richtig eingeordnet':'↻ Noch nicht ganz – hier ist die Analyse')+'</div><p>'+esc(step.method||'')+'</p><button class="btn" type="button" data-training-continue>'+(active.mode==='review'?'Wiederholung abschließen':'Nächster Schritt →')+'</button></div>':
     '<div class="fp-training-task"><div class="fp-training-task-title"><b>Deine Aufgabe</b><button type="button" data-training-hint aria-expanded="false">Hinweis anzeigen</button></div><p class="fp-training-hint" id="fp-training-hint" hidden>'+esc(step.hint||'Denke an Fakten, Prognosen und Gegenargumente.')+'</p>'+chooseUI(step,draft)+'<p class="fp-training-validation" id="fp-training-validation" role="alert"></p></div>')+
-   '</section><footer class="fp-training-source"><span>Quelle: '+esc(m.source.label)+'</span><a href="'+esc(m.source.url)+'" target="_blank" rel="noopener noreferrer">Originalmeldung ↗</a><span>Historische Daten, keine Anlageempfehlung.</span></footer></div>';
+   '</section><footer class="fp-training-source"><span>Lehrmodell: '+esc(m.source.label)+'</span><a href="'+esc(m.source.url)+'" target="_blank" rel="noopener noreferrer">Fachlexikon öffnen ↗</a><span>Fiktive Zahlen, keine aktuellen Börsendaten oder Anlageempfehlung.</span></footer></div>';
  }
  function finished(m){
   const s=session(m.id),stat=stats(m.id),points=scoredSteps(m).length;
