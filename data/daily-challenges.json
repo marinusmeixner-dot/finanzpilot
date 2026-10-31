@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "updated_at": "2026-10-31T19:00:00+01:00",
+  "editor": "FinanzPilot – redaktionell recherchierte Tagesaufgaben",
+  "explanation": "Bei Wochenenden beziehen sich Börsenaufgaben auf den letzten verfügbaren Bericht. Redaktionell datierte Informationen, keine Echtzeitkurse.",
+  "tasks": [
+    {
+      "id": "2026-10-31:market:alphabet",
+      "kind": "market",
+      "date": "2026-10-31",
+      "title": "Marktcheck: Alphabet – Cloudwachstum vs. freier Cashflow",
+      "context": "Fakten laut SEC-Meldung vom 28.10.2026: Q3-Umsatz 127,577 Mrd. USD (+25 %), Google Cloud 30,709 Mrd. USD (+103 %), operativer Gewinn 40,576 Mrd. USD, FCF Q3 −9,065 Mrd. USD und TTM-FCF +19,747 Mrd. USD. Offen sind die zukünftige Kapitalrendite, der nachhaltige FCF und die eingepreisten Erwartungen.",
+      "question": "Formuliere eine überprüfbare 2-Jahres-Investmentthese: Unter welchen Wachstums-, Capex- und Bewertungsannahmen ist die Cloud-Dynamik wertsteigernd? Welche Zahlen würden deine These widerlegen? Unterscheide operative Entwicklung, Sondereffekte im Nettogewinn und Marktpreis.",
+      "rubric": [
+        "Mindestens drei originale Q3-Zahlen mit Zeitraum und Einheiten korrekt",
+        "Q3-FCF −9,065 Mrd. von TTM-FCF +19,747 Mrd. unterscheiden",
+        "Mindestens zwei explizite Bewertungsannahmen und ein Gegenszenario",
+        "Konkretes Widerlegungskriterium und Beobachtungszeitraum",
+        "Keine erfundene aktuelle Kursnotierung oder sichere Rendite"
+      ],
+      "source": "Alphabet Q3 2026 SEC Exhibit 99.1",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "source_date": "2026-10-28",
+      "symbol": "NASDAQ:GOOGL"
+    },
+    {
+      "id": "2026-10-31:research:amazon",
+      "kind": "research",
+      "date": "2026-10-31",
+      "title": "Aktienchallenge: Amazon – AWS, Marge und Investitionen",
+      "context": "Amazon Q3 2026 (Bericht vom 29.10.): Umsatz 201,9 Mrd. USD, operativer Gewinn 28,1 Mrd. USD, operative Marge 13,9 %; AWS-Wachstum 39,3 %. Wachstum und Cloud-Boom sind nicht automatisch attraktive Aktienrenditen.",
+      "question": "Berechne Amazons operative Q3-Marge aus 28,1/201,9, erkläre, warum das AWS-Wachstum allein keine Kaufempfehlung ist, und entwickle eine Bear-/Base-/Bull-Skizze mit mindestens zwei Fakten, einem Gegenargument, einem Widerlegungskriterium und einem 12-Monats-Prüfpunkt. Trenne Q3-Daten, Prognosen und nicht verifizierte Kurserwartungen.",
+      "rubric": [
+        "Operative Marge mit Formel als 13,9 % nachvollziehbar",
+        "AWS-Wachstum 39,3 % von gesamter Konzernmarge unterscheiden",
+        "CapEx/Cashflow und eingepreiste Erwartungen kritisch diskutieren",
+        "Bear/Base/Bull sind klar als Annahmen gekennzeichnet",
+        "Konkretes Gegenargument, Widerlegung und Beobachtungsdatum nennen"
+      ],
+      "source": "Amazon Q3 2026 Earnings Release",
+      "source_url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+      "source_date": "2026-10-29",
+      "symbol": "NASDAQ:AMZN"
+    }
+  ]
+}
