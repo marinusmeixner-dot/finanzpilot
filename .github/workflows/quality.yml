@@ -30,3 +30,5 @@ jobs:
         run: node scripts/test_transfer_v20.mjs
       - name: Audit guided KION and Microsoft investment-committee analysis
         run: node scripts/test_investment_committee_v21.mjs
+      - name: Validate full 20-stage sourced Alphabet masterclass and research gating
+        run: node scripts/test_equity_masterclass_v22.mjs
