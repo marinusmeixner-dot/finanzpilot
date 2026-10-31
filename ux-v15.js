@@ -4,12 +4,12 @@
  const MAIN=['home','learn','markets','research','progress'];
  const GROUPS={
   home:{label:'Start',links:[['home','Tagesübersicht','Weitermachen, neue Inhalte und Tagesnachrichten']]},
-  learn:{label:'Lernen',links:[['learn','Lernpfad','Lerne in aufeinander aufbauenden Lektionen'],['training','Trainingslabor','Anspruchsvolle Praxisfälle mit Rechnungen'],['skills','Skillbaum','Fertigkeiten, Abhängigkeiten und Meisterprüfungen'],['glossary','Fachbegriffe','Finanzsprache und wichtige Konzepte verstehen'],['foundations','Grundlagenwissen','Grundwissen für vertiefende Kurse']]},
+  learn:{label:'Lernen',links:[['learn','Lernpfad','Lerne in aufeinander aufbauenden Lektionen'],['concepts','Begriffs-Akademie','Zehn zusammenhängende Stufen vom EBIT zum Kursziel'],['training','Trainingslabor','Anspruchsvolle Praxisfälle mit Rechnungen'],['skills','Skillbaum','Fertigkeiten, Abhängigkeiten und Meisterprüfungen'],['glossary','Fachbegriffe','Finanzsprache und wichtige Konzepte verstehen'],['foundations','Grundlagenwissen','Grundwissen für vertiefende Kurse']]},
   markets:{label:'Märkte',links:[['markets','Marktüberblick','Aktuelle Nachrichten, Indizes und Charts'],['academymarket','Mein Markturteil','Eigene Schlüsse ziehen und vergleichen']]},
   research:{label:'Aktien',links:[['research','Aktienkatalog','Unternehmen und Analysen entdecken'],['academy','Intensivkurse','Vollständige Unternehmens- und Bewertungsprozesse']]},
   progress:{label:'Profil',links:[['progress','Lernfortschritt','Deine Ergebnisse und Lernhistorie'],['career','Analystenkarriere','Ränge und freigeschaltete Research-Werkzeuge'],['inventory','Inventar & Belohnungen','Forschungspunkte, Items und Spezialwege'],['account','Konto & Datensicherung','Google-Login, Datenschutz und Fortschrittssync']]}
  };
- const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',markets:'markets',academymarket:'markets',research:'research',academy:'research',academycourse:'research',progress:'progress',career:'progress',inventory:'progress',account:'progress'};
+ const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',markets:'markets',academymarket:'markets',research:'research',academy:'research',academycourse:'research',progress:'progress',career:'progress',inventory:'progress',account:'progress'};
  const ICON={
   home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
   learn:'<path d="m3 4 9-2 9 2v16l-9 2-9-2z"/><path d="M12 2v20"/><path d="m6 9 4 1m4 0 4-1"/>',
