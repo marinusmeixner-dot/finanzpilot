@@ -1,5 +1,5 @@
 {
-  "version": 32,
-  "release": "2026-10-31-v32",
-  "notes": "Stable academy course navigation without cloud rewind, better GuV and cashflow exercises, artifact redemption clarity and accurate EUR wallet; refreshed Depot and Markets watchlist with editor-sourced news at navigation"
+  "version": 33,
+  "release": "2026-10-31-v33",
+  "notes": "GuV: acronym explanations and voluntary continuation after mistakes; prevent background lesson rerenders and cloud snapshot races; await portfolio navigation; cache watchlist charts without duplicate requests; open artifact training directly; regression checks extended"
 }
