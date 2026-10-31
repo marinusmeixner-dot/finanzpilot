@@ -196,3 +196,28 @@ Der Nutzer hat am 31.10.2026 nach eigenem Google-OAuth-Setup die **schrittweise 
 - XP, Belohnungen, virtuelle Euros, Inventar und Trades weiterhin nicht implementiert; die sichere Spielökonomie gehört zu einer späteren Etappe.
 - QA: JS-Syntax und 12 richtige/falsche Musterantwort-Paare simuliert und bestanden; App-Verknüpfung, Dateipfade und Schreib-Commits verifiziert. Echte Nutzeranmeldung und Anzeige auf iPhone noch nicht verifiziert.
 - Redaktion: bestehende tägliche Automations-Aufgabe wurde um Qualitätsvorgaben und Schutz der neuen Trainingsschema- und Fortschritts-IDs ergänzt.
+
+## Entwicklungsstand Version 13 – Analystenkarriere, Freischaltungen und Werkzeuge
+
+**31.10.2026: Auf GitHub main implementiert; Javascript-/Muster-Daten-Tests bestanden, echter iPhone-/Pages-Test ausstehend.**
+
+### Implementiert
+- `data/career.json`: acht Ränge auf Basis von 0/1/3/5/7/10/12/13 nachgewiesenen Fertigkeiten, keine clickfarmbaren Rangpunkte. Jeder weitere Rang eröffnet bei fachlicher Voraussetzung mindestens ein neues Recherchewerkzeug.
+- `career.js` / `career.css`: eigene Seite `career` über Startseite, Skillbaum, Profil und Mobilmenü. Kompakte Werkzeugliste, nachvollziehbare gesperrte Voraussetzungen, aktive Tools als eigene Unteransicht.
+- Sieben **funktionierende, mit eigenen Daten befüllbare** Kalkulatoren: operatives Umsatz-/EBIT-Margenprofil; Book-to-Bill; Sicherheitsmarge; Portfolio-Stress mit zwei Positionen und Cashgewicht; bestehendes KION-Szenario-DCF; EV/EBIT-Peer-Multiple-Gegenrechnung; subjektiv wahrscheinlichkeitsgewichteter Investment-Ausschuss.
+- Vier **nachweisbasiert einmalig pro Kursstand** erscheinende persönliche Kursartefakte: Industrie-Kern (KION-Kurs+Training), Silizium-Linse (AIXTRON-Training), Cloud-Kompass (Alphabet-Training), Szenario-Kristall (Skillbaum-Meister). Keine Erfindung von globaler Seltenheit, keine virtuelle Währung, kein Item-Handel oder -Verbrauch.
+- Die eigentlichen Abschlüsse bleiben in den **bestehenden synchronisierten Fortschritts-Keys** gespeichert; Rang und Artefakte werden daraus deterministisch abgeleitet. Belohnungsklicks können daher nichts doppelt ausschütten. Werkzeugwahl lokal in `finanzpilot_career_ui_v1` gespeichert (kein Lernfortschritt).
+- Alle numerischen Tools kontrollieren Eingaben und zeigen Formeln/Annahmegrenzen. Historische Beispielzahlen sind ausdrücklich kein aktueller Livekurs oder garantierte Kaufchance.
+- Bestehende UI, Auth und Kurse bleiben unverändert im Inhalt; keine Supabase-Tabellen- oder Geldtransaktionen.
+
+### Getestet
+- Vier JS-Dateien auf Syntax und Quellenpfade geprüft; Grundfall 0 Skills, Zwischenfall 7 Skills, Vollfall 13 Skills simuliert.
+- In 0-Skill-Profil keine Spezialwerkzeuge, im vollständigen Testprofil sieben Werkzeuge und vier Artefakte, bei teilweisem Lernstand nur die tatsächlich verdienten Unlocks.
+- Sechs selbstständige Modellrechnungen geprüft; KION-DCF-Anbindung aus bestehendem Quellcode übernommen.
+- Öffentliche GitHub-Pages-Auslieferung und echter iPhone-/Google-Login weiter nicht end-to-end bestätigt.
+
+### Nächster sicherer Schritt
+1. Echte iPhone-Navigation und Google-/Passwort-Anmeldung bestätigen.
+2. Eigenes **serverseitig gebuchtes Belohnungs-/Inventarsystem** entwerfen: pro einmaligem Ereignis (Kurs, Prüfung) eine idempotente Reward-ID, Transaktionen in Supabase mit RLS. Getrennte Forschungspunkte und virtuelle Depot-Euro; Umtausch nur mit klarer Bestätigung und atomischem Ledger.
+3. Animationen und Sounds erst nach sicheren Reward-Ereignissen anbinden, um Mehrfachbelohnungen und falsche Freischaltmeldungen zu vermeiden.
+4. Virtuelles Aktien-Depot erst nach belastbaren zeitgestempelten Kursen, serverseitiger Ordervalidierung und Cashflowbereinigter Performance.
