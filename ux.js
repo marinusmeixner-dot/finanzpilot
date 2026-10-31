@@ -25,13 +25,13 @@
   document.querySelectorAll('[data-menu-open]').forEach(el=>el.setAttribute('aria-expanded',String(document.body.classList.contains('fp-menu-open'))));
  }
  function closeDrawer(){document.body.classList.remove('fp-menu-open');updateMenu();}
- function route(v){
+ function route(v,goingBack=false){
   if(typeof state==='undefined'||routeBusy)return;
   let dest=clean(v);
   if(dest==='lesson'||dest==='labcase')dest='learn';
   if(dest==='academycourse'&&!window.FinanzPilotAcademy)dest='academy';
   const old=state.view;
-  if(old!==dest){backStack.push(old);if(backStack.length>20)backStack.shift()}
+  if(old!==dest&&!goingBack){backStack.push(old);if(backStack.length>20)backStack.shift()}
   store(old,window.scrollY);
   const targetY=Number(load().positions?.[dest]||0);
   routeBusy=true;
@@ -122,7 +122,7 @@
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
   document.addEventListener('click',event=>{
     const back=event.target.closest('[data-nav-back]');
-    if(back){event.preventDefault();event.stopImmediatePropagation();const v=backStack.pop()||'home';route(v);return}
+    if(back){event.preventDefault();event.stopImmediatePropagation();const v=backStack.pop()||'home';route(v,true);return}
     const btn=event.target.closest('[data-fp-tab],[data-view]');
     if(!btn)return;
     event.preventDefault();event.stopImmediatePropagation();
