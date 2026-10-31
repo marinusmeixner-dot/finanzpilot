@@ -9,8 +9,8 @@ const research=fs.readFileSync('research.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const current=JSON.parse(fs.readFileSync('version.json','utf8'));
 const updater=fs.readFileSync('updates.js','utf8');
-assert.equal(current.version,31);
-assert.equal(manifest.start_url,'./?v=31');
+assert.equal(current.version,32);
+assert.equal(manifest.start_url,'./?v=32');
 assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
@@ -19,7 +19,7 @@ assert(html.includes('ux-v15.js?v=30'));
 assert(html.includes('ux-v15.css?v=18'));
 assert(html.includes('app.js?v=30'));
 assert(html.includes('research.js?v=18'));
-assert(html.includes('updates.js?v=31'));
+assert(html.includes('updates.js?v=32'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
@@ -45,7 +45,7 @@ const document={
  body:{classList:{add(){},remove(){}}}
 };
 const scrolls=[];const sent=[];const w={scrollY:0,scrollTo(...args){scrolls.push(args)},dispatchEvent(ev){sent.push(ev.type)},addEventListener(){},FinanzPilotLab:null};
-const location={hash:'',pathname:'/finanzpilot/',search:'?v=31'};
+const location={hash:'',pathname:'/finanzpilot/',search:'?v=32'};
 const history={replaceState:(_,__,url)=>{location.hash=url.includes('#')?'#'+url.split('#')[1]:''}};
 const context=vm.createContext({window:w,document,localStorage:{getItem:k=>memory[k]??null,setItem:(k,v)=>memory[k]=v},state,chooseView:v=>{state.view=v},
  MutationObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),history,location,URLSearchParams,console,Date,JSON,
@@ -118,12 +118,12 @@ assert(app.includes("state.view==='marketoverview'?window.FinanzPilotLab.renderM
 assert(app.includes("state.view==='learningstats'?window.FinanzPilotLab.renderProgress()"));
 assert(app.includes("state.view==='researchcatalog'&&window.FinanzPilotResearch"));
 assert(app.includes("state.view==='depot'&&window.FinanzPilotPortfolio"));
-assert(html.includes('portfolio.js?v=30'));
+assert(html.includes('portfolio.js?v=32'));
 assert(html.includes('portfolio-v26.css?v=30'));
 assert(research.includes("state.view='researchcatalog'"));
 
-let serverVersion=31,replaced=null,syncCalls=0;
-const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=31#view=training',hash:'#view=training',
+let serverVersion=32,replaced=null,syncCalls=0;
+const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=32#view=training',hash:'#view=training',
  replace:url=>{replaced=url}};
 const updaterWindow={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateContext=vm.createContext({window:updaterWindow,document:{readyState:'loading',addEventListener(){}},
@@ -132,8 +132,8 @@ const updateContext=vm.createContext({window:updaterWindow,document:{readyState:
 vm.runInContext(updater,updateContext,{filename:'updates.js'});
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(replaced,null);
-serverVersion=32;
+serverVersion=33;
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
-assert(replaced.includes('?v=32#view=training'));
-console.log('Version 31 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
+assert(replaced.includes('?v=33#view=training'));
+console.log('Version 32 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
