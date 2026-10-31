@@ -1,0 +1,65 @@
+/* FinanzPilot v23: stock thesis journal, mobile-first; aligned with existing dark-finance design. */
+.fp-theses{max-width:910px;margin:0 auto;padding-bottom:48px;display:flex;flex-direction:column;gap:18px}
+.fp-theses-intro{padding:10px 0}
+.fp-theses-intro h1{margin:10px 0;font-size:clamp(27px,4vw,37px);font-weight:780;letter-spacing:-.8px}
+.fp-theses-intro p,.fp-theses-panel>p{color:#b4ccd4;font-size:13px;line-height:1.75}
+.fp-theses-intro>.btn{margin-top:16px}
+.fp-theses-metrics{display:flex;gap:13px;flex-wrap:wrap;margin-top:18px}
+.fp-theses-metrics>span{border:1px solid #365c65;border-radius:12px;background:#172e3b;min-width:155px;padding:12px;color:#a7c3cc;font-size:12px}
+.fp-theses-metrics strong{display:block;color:#e6f8ee;font-size:21px}
+.fp-theses-divider{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:2px 0}
+.fp-theses-divider h2{font-size:19px}
+.fp-theses-divider small{font-size:11px;color:#aec7d1}
+.fp-theses-list{display:flex;flex-direction:column;border:1px solid #365762;border-radius:16px;overflow:hidden}
+.fp-theses-entry{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;text-align:left;padding:17px 18px;border:0;border-bottom:1px solid #375864;background:#152c3b;color:#e2f0ed;cursor:pointer}
+.fp-theses-entry:last-child{border-bottom:0}
+.fp-theses-entry:hover{background:#25443f}
+.fp-theses-entry>span:first-child{min-width:0;display:flex;flex-direction:column;gap:5px}
+.fp-theses-entry strong{font-size:15px}
+.fp-theses-entry span span,.fp-theses-entry small{color:#9fbdc8;font-size:12px}
+.fp-theses-score{flex:none;display:flex;flex-direction:column;text-align:right;gap:4px}
+.fp-theses-score b{color:#a4f4ce;font-size:18px}
+.fp-theses-empty{padding:24px;border:1px dashed #41646b;border-radius:16px;background:#142e39;color:#abc8d0;font-size:13px;line-height:1.6}
+.fp-theses-disclaimer,.fp-theses-help{font-size:12px!important;line-height:1.7!important;color:#adc5cf!important}
+.fp-theses-back{align-self:flex-start;border:0;background:transparent;color:#a4e9c6;font-weight:740;font-size:13px;cursor:pointer;padding:9px 1px}
+.fp-theses-form{display:flex;flex-direction:column;gap:15px}
+.fp-theses-form section,.fp-theses-panel{background:#142d3b;border:1px solid #365762;border-radius:17px;padding:20px}
+.fp-theses-form section h2,.fp-theses-panel h2{font-size:19px;margin:0 0 16px}
+.fp-theses-form section p{margin:0 0 14px}
+.fp-theses-form label,.fp-theses-panel form label{display:flex;flex-direction:column;gap:8px;font-size:12px;font-weight:750;color:#d5e9e4;margin-bottom:16px;min-width:0}
+.fp-theses-form input,.fp-theses-form select,.fp-theses-form textarea,.fp-theses-panel textarea{font:inherit;font-size:15px!important;line-height:1.5;color:#ecf6f1;background:#0c2331;border:1px solid #426675;border-radius:10px;padding:12px;width:100%;box-sizing:border-box;max-width:100%}
+.fp-theses-form textarea,.fp-theses-panel textarea{resize:vertical;min-height:106px}
+.fp-theses-form input:focus,.fp-theses-form textarea:focus,.fp-theses-form select:focus,.fp-theses-panel textarea:focus{outline:2px solid #9aecd0;outline-offset:2px}
+.fp-theses-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.fp-theses-three{grid-template-columns:repeat(3,minmax(0,1fr))}
+.fp-theses-actions{display:flex;gap:11px;flex-wrap:wrap}
+.fp-theses-panel{display:flex;flex-direction:column;gap:13px}
+.fp-theses-panel h3{font-size:14px;margin:8px 0 0}
+.fp-theses-panel p{margin:0;white-space:pre-wrap;overflow-wrap:anywhere}
+.fp-theses-panel a{color:#92eac6}
+.fp-theses-panel form{border-top:1px solid #345865;padding-top:16px;display:flex;flex-direction:column;gap:13px}
+.fp-theses-grade{display:flex;align-items:center;gap:14px;padding:15px;background:#1b3942;border:1px solid #4c7c6a;border-radius:13px;margin-top:15px}
+.fp-theses-grade>strong{font-size:26px;color:#b4f8ce}
+.fp-theses-grade span{display:flex;flex-direction:column;gap:4px}
+.fp-theses-grade small{font-size:11px;color:#a8c7d0}
+.fp-theses-rubric{background:#183541;border:1px solid #345868;border-radius:12px;padding:13px}
+.fp-theses-rubric>div{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.fp-theses-rubric b{color:#a8f2cf}
+.fp-theses-rubric p{font-size:12px;margin:8px 0 0;line-height:1.65}
+.fp-theses-diff{background:#203b43;border-left:3px solid #86e1b9;border-radius:5px;padding:13px 15px;color:#d3e7dc;font-size:13px}
+.fp-theses-model{display:flex;flex-direction:column;gap:4px;padding:15px;background:#1c3d41;border-radius:12px}
+.fp-theses-model strong{font-size:26px;color:#b1ecc8;font-variant-numeric:tabular-nums}
+.fp-theses-model small{color:#acc2c9;font-size:11px}
+.fp-theses-scenario{display:flex;justify-content:space-between;gap:14px;border-bottom:1px solid #31515b;padding:8px 0;font-size:13px}
+.fp-theses-scenario b{font-variant-numeric:tabular-nums}
+.fp-theses-status{font-size:13px;color:#a4e6c9;line-height:1.6}
+@media(max-width:700px){
+ .fp-theses-form section,.fp-theses-panel{padding:15px}
+ .fp-theses-grid{grid-template-columns:1fr}
+ .fp-theses-three{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+ .fp-theses-three input{font-size:14px!important;padding:10px 8px}
+ .fp-theses-entry{padding:15px 13px}
+ .fp-theses-actions>*{width:100%}
+ .fp-theses-panel .btn{align-self:stretch}
+}
+@media(max-width:370px){.fp-theses-three{grid-template-columns:1fr}}
