@@ -18,3 +18,5 @@ jobs:
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
       - name: Check financial calculations and unlocks
         run: node scripts/test_career.mjs
+      - name: Check economy idempotency and rewards
+        run: node scripts/test_economy.mjs
