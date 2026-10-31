@@ -16,6 +16,12 @@ window.FinanzPilotResearch=(()=>{
    }else if(x.id==='nvidia'){
       rows.push(['Umsatzwachstum FY2026 ggü. FY2025',p((val('Umsatz FY2026')/val('Umsatz FY2025')-1)*100),'Historischer Umsatzvergleich']);
       rows.push(['Operative Marge FY2026',p(val('Operativer Gewinn FY2026')/val('Umsatz FY2026')*100),'Operativer Gewinn dividiert durch Umsatz']);
+   }else if(x.id==='alphabet'){
+      const revenue=val('Konzernumsatz Q3 2026'),operating=val('Operativer Konzerngewinn Q3 2026'),cloud=val('Google-Cloud-Umsatz Q3 2026');
+      const ocf=val('Operating Cashflow Q3 2026'),capex=val('Sachanlageinvestitionen Q3 2026');
+      rows.push(['Operative Konzernmarge Q3 2026',p(operating/revenue*100),'Operativer Gewinn / Umsatz; kein Segmentwert']);
+      rows.push(['Cloud-Anteil am Konzernumsatz',p(cloud/revenue*100),'Cloud-Umsatz / Konzernumsatz, Q3 2026']);
+      rows.push(['Free Cashflow Q3 2026',(Number.isFinite(ocf)&&Number.isFinite(capex)?(ocf-capex).toLocaleString('de-DE')+' Mio. USD':'nicht verfügbar'),'Operating Cashflow minus Sachanlageinvestitionen; negativer Wert möglich']);
    }else if(x.id==='siemens'){
       rows.push(['Umsatzwachstum FY2025 ggü. FY2024',p((val('Umsatz FY2025')/val('Umsatz FY2024')-1)*100),'Umsatzvergleich, kein aktuelles Geschäftsjahr']);
       rows.push(['FCF im Verhältnis zum Umsatz FY2025',p(val('Free Cashflow FY2025')/val('Umsatz FY2025')*100),'Nur eine Näherung, da der angegebene FCF gerundet ist']);
