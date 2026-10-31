@@ -65,3 +65,12 @@ Die App enthält jetzt den Reiter **Analysen**. Die Dateien `academy.js` und `da
 - **Grenzen:** Live-Charts kommen extern von TradingView und können verzögert sein; Website-Besucher können keine vertraulichen Bankdaten eingeben. GitHub-Issues sind öffentlich.
 
 Der Kurskatalog kann täglich wachsen, ohne App-Code ändern zu müssen. Bereits absolvierte Kurs-IDs bleiben stabil, damit der Fortschritt erhalten bleibt.
+## Version 5 – 31.10.2026
+
+- Übersichtliche Navigation: Start, Lernpfad, Märkte, Aktien, Fortschritt. Aktienprofile, Komplettanalysen und vertiefende Grundbegriffe sind direkt erreichbar.
+- 18 anspruchsvollere Konzepte mit Anwendungsbeispielen in glossary.js.
+- Aktueller Research-Katalog: Microsoft, NVIDIA und Siemens; mit datierten Originalquellen, Kennzahlen, Risiken und Rechenaufgaben.
+- Neue Rechenfelder mit normaler Tastatur, Klammern und +, −, ×, ÷ ohne eval.
+- Eigene interaktive Kurscharts aus data/prices.json, keine TradingView-Frames. Historische Tages-Schlusskurse, kein Live-Feed; genaue Quelle und Datenstand werden angezeigt.
+- Gratis-Datenabruf über yfinance und GitHub Actions; bei Quellenfehlern bleibt letzter verifizierter Stand erhalten, statt Kurszahlen zu erfinden.
+- Aktuelle Börsennachrichten mit mehr Einzelaktien, aktivem Lernpfad und ChatGPT-Tagesredaktion. Persönliche Antworten werden nicht automatisch an externe KI-Dienste übertragen.
