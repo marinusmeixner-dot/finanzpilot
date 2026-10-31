@@ -1,0 +1,47 @@
+
+/* FinanzPilot: mehrstufige Aktienbewertung & Research-Watchlist v9 */
+.fp-model{background:linear-gradient(150deg,#102638,#13242f);border:1px solid #305466;border-radius:18px;padding:18px;margin:18px 0}
+.fp-model-state{padding:25px;color:#b3c9d6;font-size:13px}
+.fp-model-cases{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.fp-model-cases button{border:1px solid #345569;background:#152b3b;border-radius:13px;color:#c6dae5;padding:12px;cursor:pointer;display:flex;flex-direction:column;gap:7px;text-align:left}
+.fp-model-cases button[aria-selected="true"]{border-color:#80dabd;background:#245043;color:#e1faee}
+.fp-model-cases button span{font-size:12px;font-weight:700}
+.fp-model-cases button b{font-size:20px;white-space:nowrap;font-weight:780}
+.fp-model-kpis{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:15px}
+.fp-model-kpis>div{background:#152c3a;border:1px solid #294755;padding:17px;border-radius:13px;display:flex;flex-direction:column;gap:9px}
+.fp-model-kpis span{font-size:12px;color:#aac2cf;line-height:1.4}
+.fp-model-kpis strong{font-size:clamp(22px,3.1vw,29px);font-weight:800;letter-spacing:-.5px;color:#a4efcf}
+.fp-model-kpis strong.neg{color:#f6a69f}.fp-model-kpis strong.pos{color:#a4efcf}
+.fp-model-driver{color:#b9cfda;font-size:13px;line-height:1.7;margin:16px 0}
+.fp-model-controls{display:grid;grid-template-columns:1fr 1fr;gap:13px;padding:15px;background:#1a3440;border-radius:13px}
+.fp-model-controls label{font-size:12px;color:#bdcfda;font-weight:600;display:flex;flex-direction:column;gap:12px}
+.fp-model-controls label b{font-size:20px;color:#edf8f5}
+.fp-model-controls input[type="range"]{width:100%;accent-color:#83e3c3;touch-action:pan-y}
+.fp-model-guide{color:#acbac2;font-size:12px;line-height:1.65;margin:15px 0;padding:13px;background:#112532;border-left:3px solid #66baa7;border-radius:8px}
+.fp-model-chart{margin-top:18px;border:1px solid #294352;background:#0e1c2c;border-radius:13px;padding:15px 12px}
+.fp-model-chart svg{display:block;width:100%;max-height:250px;margin-top:9px}
+.fp-model-details{margin-top:10px;border:1px solid #304b58;background:#132b38;border-radius:12px;padding:12px}
+.fp-model-details summary{cursor:pointer;color:#d4f0e4;font-weight:750;font-size:13px}
+.fp-model-details p{color:#bad0dc;font-size:12px;line-height:1.75;margin:10px 0}
+.fp-model-details ul{padding-left:19px;margin:13px 0}
+.fp-model-details li{font-size:12px;line-height:1.7}
+.fp-model-table-scroll{overflow-x:auto;margin-top:12px}
+.fp-model-details table{border-collapse:collapse;width:100%;min-width:500px;font-size:12px;color:#c7dbe5}
+.fp-model-details td,.fp-model-details th{border-bottom:1px solid #35515e;padding:9px 8px;text-align:right}
+.fp-model-details th:first-child,.fp-model-details td:first-child{text-align:left}
+.fp-model-matrix td{font-variant-numeric:tabular-nums}
+.fp-ideas{margin:25px 0}
+.fp-ideas-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px}
+.fp-idea{background:#112333;border:1px solid #29445a;border-radius:17px;padding:18px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.fp-idea-top{display:flex;justify-content:space-between;align-items:center;gap:7px}
+.fp-idea-date{font-size:11px;color:#84a4b7}
+.fp-idea h3{font-size:18px;line-height:1.3;margin:0}
+.fp-idea-sector{font-size:12px;color:#80e2c1;font-weight:650}
+.fp-idea p{font-size:12px;color:#bacbd5;line-height:1.65}
+.fp-idea details{padding:12px;background:#1a303f;border-radius:11px}
+.fp-idea details summary{font-size:12px;color:#c7e4ec;font-weight:720;cursor:pointer}
+.fp-idea details p{margin:8px 0}
+.fp-idea .btn{font-size:12px;margin-top:auto}
+.fp-idea-status{color:#8fa9bc;font-size:11px;line-height:1.5}
+@media(max-width:1050px){.fp-ideas-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:700px){.fp-model{padding:12px}.fp-model-cases button{padding:10px}.fp-model-cases button span{font-size:11px}.fp-model-cases button b{font-size:16px}.fp-model-kpis{grid-template-columns:1fr 1fr;gap:7px}.fp-model-kpis>div{padding:11px}.fp-model-kpis strong{font-size:21px}.fp-model-controls{grid-template-columns:1fr}.fp-ideas-grid{grid-template-columns:1fr}}
