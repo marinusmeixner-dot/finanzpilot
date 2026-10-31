@@ -77,6 +77,29 @@ async function register(querySymbol:string){
  if(!post.ok)throw Error("Geprüfter Kurs konnte nicht gespeichert werden ("+post.status+")");
  return {quote:{symbol:actual,asset_name:name,currency,price,quote_date:date,source,adjusted:false},type:kind,provider:"Yahoo Finance (inoffiziell, kein Echtzeit-Handel)",notice:"Referenzschlusskurs – keine live ausführbare Börsenorder."};
 }
+async function history(symbol:string){
+ const key=String(symbol).trim().toUpperCase();
+ if(!valid(key))throw Error("Ungültiges Börsensymbol");
+ const raw=await yahoo("/v8/finance/chart/"+encodeURIComponent(key)+"?range=6mo&interval=1d");
+ const r=raw?.chart?.result?.[0];
+ if(!r)throw Error("Keine historischen Kurse für dieses Wertpapier verfügbar");
+ const closes=r.indicators?.quote?.[0]?.close||[],timestamps=r.timestamp||[];
+ const meta=r.meta||{},currency=String(meta.currency||"").toUpperCase();
+ const points=timestamps.map((t:number,i:number)=>({date:barDate(t,String(meta.exchangeTimezoneName||"UTC")),price:Number(closes[i])})).filter((p:{date:string,price:number})=>p.price>0&&Number.isFinite(p.price)).slice(-130);
+ if(points.length<2)throw Error("Für dieses Wertpapier liegen noch nicht genug historische Kursdaten vor");
+ return {symbol:key,currency,points,source:"Yahoo Finance – historische Tagesschlusskurse, unbereinigt",last_date:points.at(-1)?.date};
+}
+async function news(symbol:string){
+ const key=String(symbol).trim().toUpperCase();if(!valid(key))throw Error("Ungültiges Börsensymbol");
+ const q=await yahoo("/v1/finance/search?q="+encodeURIComponent(key)+"&newsCount=12&quotesCount=0");
+ const list=(Array.isArray(q.news)?q.news:[]).slice(0,10).map((a:any)=>({
+  title:String(a.title||"").slice(0,250),
+  publisher:String(a.publisher||"").slice(0,120),
+  published:Number(a.providerPublishTime||0),
+  url:String(a.link||"")
+ })).filter((x:{title:string,published:number,url:string})=>x.title.length>5&&x.published>0&&/^https:\/\//.test(x.url));
+ return {symbol:key,news:list,source:"Yahoo Finance News – Drittanbieter-Schlagzeilen; Quelle vor Entscheidungen öffnen",asof:new Date().toISOString()};
+}
 Deno.serve(async(req:Request)=>{
  if(req.method==="OPTIONS")return new Response(null,{headers:cors});
  if(req.headers.get("origin")&&req.headers.get("origin")!==APP_ORIGIN)return send({error:"Origin nicht zugelassen"},403);
@@ -88,6 +111,8 @@ Deno.serve(async(req:Request)=>{
   const action=String(body.action||"");
   if(action==="search")return send(await search(String(body.query||"").trim().slice(0,64)));
   if(action==="register")return send(await register(String(body.symbol||"")));
+  if(action==="history")return send(await history(String(body.symbol||"")));
+  if(action==="news")return send(await news(String(body.symbol||"")));
   return send({error:"Unbekannte Aktion"},400);
  }catch(e){const message=String(e instanceof Error?e.message:e).slice(0,250);
   return send({error:message},/Anmeldung|abgelaufen/.test(message)?401:422);}
