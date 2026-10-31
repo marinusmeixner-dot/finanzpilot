@@ -4,7 +4,7 @@ window.FinanzPilotTheses=(()=>{
  const KEY='finanzpilot_theses_v1';
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
  const read=()=>{try{const x=JSON.parse(localStorage.getItem(KEY)||'{}');return x&&typeof x==='object'?x:{}}catch{return{}}};
- let store={entries:[],draft:null,selected:null,...read()},mode='list',status='',editingFrom=null;
+ let store={entries:[],draft:null,selected:null,...read()},mode=store.draft?'form':'list',status='',editingFrom=store.editingFrom||null;
  const entries=()=>Array.isArray(store.entries)?store.entries:[];
  const safeDate=x=>Number.isFinite(Number(x))?new Date(Number(x)).toLocaleDateString('de-DE',{day:'2-digit',month:'short',year:'numeric'}):'Unbekannt';
  const num=x=>{const s=String(x??'').trim().replace(/\s/g,'').replace(',','.');return s!==''&&/^-?\d+(?:\.\d+)?$/.test(s)?Number(s):null};
@@ -71,6 +71,11 @@ window.FinanzPilotTheses=(()=>{
    '<div class="fp-theses-actions"><button class="btn" type="submit">Qualitätscheck durchführen & Version speichern →</button><button type="button" class="btn secondary" data-thesis-home>Zur Übersicht</button></div></section>'+
    '</form><div class="fp-theses-status" role="status" id="fp-theses-status">'+esc(status)+'</div></div>';
  }
+ function timeline(entry){
+  const series=entries().filter(e=>e.input?.ticker===entry.input?.ticker).slice().sort((a,b)=>Number(a.createdAt)-Number(b.createdAt)).slice(-12);
+  if(series.length<2)return '';
+  return '<section class="fp-theses-panel"><h2>Deine Entwicklung im Verlauf</h2><p class="fp-theses-help">Historische Formalia-Prüfung deiner Analysen zu '+esc(entry.input?.ticker)+'. Keine Aussage über tatsächliche Rendite oder Kursziele.</p><div class="fp-theses-history">'+series.map(e=>'<div class="fp-theses-history-row"><span>'+esc(safeDate(e.createdAt))+'</span><div class="fp-theses-history-track"><i style="width:'+Math.max(0,Math.min(100,(Number(e.check?.score)||0)*10))+'%"></i></div><b>'+Number(e.check?.score||0)+'/10</b></div>').join('')+'</div></section>';
+ }
  function detail(){
   const x=entries().find(e=>e.id===store.selected);if(!x)return landing();
   const f=x.input,check=x.check||evaluate(f),comparison=compare(x);
@@ -80,14 +85,14 @@ window.FinanzPilotTheses=(()=>{
    '<section class="fp-theses-panel"><h2>Dein Investmenturteil</h2><p>'+esc(f.thesis)+'</p><h3>Belege</h3><p>'+esc(f.evidence||'Nicht angegeben')+'</p><h3>Gegenargument</h3><p>'+esc(f.risk||'Nicht angegeben')+'</p><h3>Widerlegungskriterium</h3><p>'+esc(f.invalidation||'Nicht angegeben')+'</p><h3>Nächster Prüfpunkt</h3><p>'+esc(f.catalyst||'Nicht angegeben')+'</p>'+(check.sourceSyntax?'<a href="'+esc(f.sourceUrl)+'" target="_blank" rel="noopener noreferrer">Eingetragene Quelle ansehen ↗</a>':'<small>Keine gültige HTTPS-Quelle hinterlegt.</small>')+'<p class="fp-theses-disclaimer">Eine angegebene Quelle wurde nicht automatisch gelesen oder verifiziert.</p></section>'+
    '<section class="fp-theses-panel"><h2>Bewertungsmodell</h2>'+(check.weighted===null?'<p>Kein vollständiges rechnerisch konsistentes Drei-Szenarien-Modell. Ohne gültige Werte und Wahrscheinlichkeiten wird kein erwarteter Modellwert dargestellt.</p>':'<div class="fp-theses-model"><span>Wahrscheinlichkeitsgewichteter hypothetischer Wert je Aktie</span><strong>'+format(check.weighted)+'</strong><small>In der angegebenen Aktienwährung · kein heutiger Börsenkurs oder Zielkurs</small></div>'+['bear','base','bull'].map((k,i)=>'<div class="fp-theses-scenario"><span>'+['Negativ','Basis','Positiv'][i]+' ('+esc(f[k+'Weight'])+' %)</span><b>'+format(num(f[k]))+'</b></div>').join(''))+'<p>Modellannahmen: '+esc(f.assumptions||'nicht dokumentiert')+'</p></section>'+
    '<section class="fp-theses-panel"><h2>Dein detaillierter Prüfbericht</h2><p class="fp-theses-help">Die Punkte messen nur nachweisbare Angaben, Quellenformat und Rechenkonsistenz. Sie prüfen weder die Wahrheit einer Quelle noch die Güte deiner Prognose.</p>'+report+'</section>'+
-   '<section class="fp-theses-panel"><h2>Vertiefte Prüfung durch ChatGPT</h2><p>Übertrage deine Analyse bewusst und lass Belege, Zahlen, Gegenhypothesen und Modellrisiken fachlich untersuchen. Ohne API kann die App dieses Urteil nicht selbst erzeugen.</p><button class="btn" data-thesis-copy>Prüfauftrag für ChatGPT kopieren</button><form id="fp-theses-external"><label>Erhaltenes KI-Feedback dokumentieren<textarea name="feedback" rows="5" maxlength="5000" placeholder="Füge die spätere Bewertung ein – sie wird nicht automatisch hierher übertragen.">'+esc(x.externalFeedback?.text||'')+'</textarea></label><button type="submit" class="btn secondary">KI-Feedback im Verlauf sichern</button></form></section>'+
+   timeline(x)+'<section class="fp-theses-panel"><h2>Vertiefte Prüfung durch ChatGPT</h2><p>Übertrage deine Analyse bewusst und lass Belege, Zahlen, Gegenhypothesen und Modellrisiken fachlich untersuchen. Ohne API kann die App dieses Urteil nicht selbst erzeugen.</p><button class="btn" data-thesis-copy>Prüfauftrag für ChatGPT kopieren</button><form id="fp-theses-external"><label>Erhaltenes KI-Feedback dokumentieren<textarea name="feedback" rows="5" maxlength="5000" placeholder="Füge die spätere Bewertung ein – sie wird nicht automatisch hierher übertragen.">'+esc(x.externalFeedback?.text||'')+'</textarea></label><button type="submit" class="btn secondary">KI-Feedback im Verlauf sichern</button></form></section>'+
    '<div class="fp-theses-actions"><button class="btn secondary" data-thesis-revise="'+esc(x.id)+'">Neue Version dieser Analyse erstellen</button></div><p class="fp-theses-status" id="fp-theses-status" role="status">'+esc(status)+'</p></div>';
  }
  function render(){if(mode==='form')return form();if(mode==='detail')return detail();return landing()}
  function create(input,revisionOf=null){
   const f=clean(input);if(!f.company.trim()||!f.ticker.trim()||f.thesis.trim().length<55)return{error:'Bitte Unternehmen, Ticker und eine nachvollziehbare These mit mindestens 55 Zeichen ausfüllen.'};
   const check=evaluate(f),e={id:makeId(),revisionOf,createdAt:Date.now(),updatedAt:Date.now(),input:f,check,externalFeedback:null};
-  store.entries=[...entries(),e];store.selected=e.id;store.draft=null;store.draftAt=Date.now();editingFrom=null;mode='detail';status='Analyse lokal gespeichert. Bei angemeldetem Konto läuft der Abgleich automatisch.';persist();return e;
+  store.entries=[...entries(),e];store.selected=e.id;store.draft=null;store.draftAt=Date.now();store.editingFrom=null;editingFrom=null;mode='detail';status='Analyse lokal gespeichert. Bei angemeldetem Konto läuft der Abgleich automatisch.';persist();return e;
  }
  function draftFromCommittee(c,s,value){
   if(!c||!s?.memo)return false;
@@ -97,7 +102,7 @@ window.FinanzPilotTheses=(()=>{
   const nums=(c.kind==='dcf'?['revenue2026','adjEbit','reportedFcf','netDebt']:['revenue2026','operatingIncome','adjDilutedEPS','gaapEPS'])
    .filter(k=>Number.isFinite(Number(c.facts?.[k]))).map(k=>k+': '+format(c.facts[k])+' (Stand '+c.date+')').join('; ');
   store.draftAt=Date.now();store.draft=clean({...empty(),company:c.company,ticker:c.symbol,stance:m.stance||'Beobachten',horizon:m.horizon||'1–2 Jahre',thesis:m.thesis||'',risk:m.risk||'',invalidation:'',sourceUrl:c.source?.url||'',asof:c.source?.date||c.date,evidence:nums,valuationMethod:c.kind==='dcf'?'FCFF-DCF, je Aktie ('+currency+')':'Bereinigtes EPS × angenommenes P/E ('+currency+')',bear:v?String(v.targets[0]):'',base:v?String(v.targets[1]):'',bull:v?String(v.targets[2]):'',bearWeight:String(model.bear??30),baseWeight:String(model.base??50),bullWeight:String(model.bull??20),assumptions:'Annahmen aus meinem Investmentkomitee-Modell übernehmen und begründen: '+(c.kind==='dcf'?'WACC '+(model.wacc??10.5)+' %, Terminalwachstum '+(model.g??2)+' %. Leasing und Kapitalstruktur gesondert prüfen.':'Bereinigtes historisches EPS und Basis-KGV '+(model.pe??27)+'. Kein Forward-Kursziel.'),catalyst:''});
-  editingFrom=null;mode='form';status='Entwurf aus dem Investmentkomitee übernommen. Prüfe insbesondere Widerlegungskriterium und nächsten Prüfpunkt.';persist();
+  editingFrom=null;store.editingFrom=null;mode='form';status='Entwurf aus dem Investmentkomitee übernommen. Prüfe insbesondere Widerlegungskriterium und nächsten Prüfpunkt.';persist();
   if(window.FinanzPilotNavigation?.route)window.FinanzPilotNavigation.route('theses');
   else{state.view='theses';window.render?.()}
   return true;
@@ -112,10 +117,10 @@ window.FinanzPilotTheses=(()=>{
     link.href=url;link.download='finanzpilot-thesenjournal-'+new Date().toISOString().slice(0,10)+'.json';
     document.body.append(link);link.click();link.remove();URL.revokeObjectURL(url);
   }catch{status='Export fehlgeschlagen. Versuch es im Browser erneut.';window.render?.()}}));
-  root.querySelectorAll('[data-thesis-new]').forEach(b=>b.addEventListener('click',()=>{editingFrom=null;store.draft=empty();store.draftAt=Date.now();mode='form';status='';persist();window.render?.()}));
+  root.querySelectorAll('[data-thesis-new]').forEach(b=>b.addEventListener('click',()=>{editingFrom=null;store.editingFrom=null;store.draft=empty();store.draftAt=Date.now();mode='form';status='';persist();window.render?.()}));
   root.querySelectorAll('[data-thesis-home]').forEach(b=>b.addEventListener('click',()=>{mode='list';status='';window.render?.()}));
   root.querySelectorAll('[data-thesis-view]').forEach(b=>b.addEventListener('click',()=>{store.selected=b.dataset.thesisView;mode='detail';status='';persist();window.render?.()}));
-  root.querySelectorAll('[data-thesis-revise]').forEach(b=>b.addEventListener('click',()=>{const e=entries().find(x=>x.id===b.dataset.thesisRevise);if(!e)return;editingFrom=e.id;store.draft={...e.input};store.draftAt=Date.now();mode='form';status='';persist();window.render?.()}));
+  root.querySelectorAll('[data-thesis-revise]').forEach(b=>b.addEventListener('click',()=>{const e=entries().find(x=>x.id===b.dataset.thesisRevise);if(!e)return;editingFrom=e.id;store.editingFrom=e.id;store.draft={...e.input};store.draftAt=Date.now();mode='form';status='';persist();window.render?.()}));
   const f=root.querySelector('#fp-theses-form');
   f?.addEventListener('input',()=>{store.draft=Object.fromEntries(new FormData(f).entries());store.draftAt=Date.now();try{localStorage.setItem(KEY,JSON.stringify(store))}catch{}});
   f?.addEventListener('submit',ev=>{ev.preventDefault();const result=create(Object.fromEntries(new FormData(f).entries()),editingFrom);if(result.error){const alert=root.querySelector('#fp-theses-status');if(alert)alert.textContent=result.error;return}window.render?.();window.scrollTo(0,0)});
