@@ -34,3 +34,5 @@ jobs:
         run: node scripts/test_equity_masterclass_v22.mjs
       - name: Test private thesis journal, scenario feedback, timeline and account merge
         run: node scripts/test_theses_v23.mjs
+      - name: Verify daily private review queue, opt-in consent, feedback history and task freshness
+        run: node scripts/test_daily_review_v25.mjs
