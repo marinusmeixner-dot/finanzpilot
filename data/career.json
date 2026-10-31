@@ -9,8 +9,7 @@
       "minSkills": 0,
       "description": "Dein erster Schritt in die Finanzwelt",
       "perks": [
-        "Lernpfade",
-        "Marktüberblick"
+        "Alle Grundlagen und aktuellen Marktinformationen bleiben frei zugänglich"
       ]
     },
     {
@@ -102,7 +101,7 @@
       "description": "Book-to-Bill und die Bedeutung von Auftragseingang nachvollziehen",
       "example": "Q3-Aufträge 274,9 Mio. € · Umsatz 183,6 Mio. €",
       "action": "orders",
-      "minRank": 1
+      "minRank": 2
     },
     {
       "id": "safety",
