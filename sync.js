@@ -8,7 +8,7 @@
   const PUBLISHABLE_KEY = 'sb_publishable_hXOPhMFpAD0RVAky9eonSQ_yiFoZps6';
   const CLOUD_TABLE = 'finanzpilot_progress';
   const APP_URL = 'https://marinusmeixner-dot.github.io/finanzpilot/';
-  const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1'];
+  const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1','finanzpilot_training_v1'];
   const escapeHtml = x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let client=null, user=null, enabled=false, ready=false, busy=false, timer=null, canAnalyze=false, lastStatus='Lokal gespeichert', recoveryMode=false;
   const localObject=k=>{try{const x=JSON.parse(localStorage.getItem(k)||'{}');return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}catch{return {}}};
@@ -42,10 +42,27 @@
     out.xp=anyMax(a.xp,b.xp);
     return out;
   }
+  function mergeTraining(main,remote){
+    const a=isObject(main)?main:{},b=isObject(remote)?remote:{};
+    const out={...b,...a,sessions:{},reviews:{}};
+    for(const id of new Set([...Object.keys(b.sessions||{}),...Object.keys(a.sessions||{})])){
+      const localSession=a.sessions?.[id],cloudSession=b.sessions?.[id];
+      const newer=!localSession?cloudSession:!cloudSession?localSession:(Number(localSession.updatedAt)||0)>=(Number(cloudSession.updatedAt)||0)?localSession:cloudSession;
+      const bestScore=anyMax(localSession?.bestScore,cloudSession?.bestScore);
+      out.sessions[id]={...newer,bestScore,completedAt:Math.max(Number(localSession?.completedAt)||0,Number(cloudSession?.completedAt)||0)};
+    }
+    for(const key of new Set([...Object.keys(b.reviews||{}),...Object.keys(a.reviews||{})])){
+      const l=a.reviews?.[key],c=b.reviews?.[key];
+      out.reviews[key]=!l?c:!c?l:(Number(l.updatedAt)||0)>=(Number(c.updatedAt)||0)?l:c;
+    }
+    out.active=a.active||b.active||null;
+    return out;
+  }
   function mergePayload(local,remote){
     const out={};
     for(const key of KEYS){const a=local?.[key]||{}, b=remote?.[key]||{};
       if(key==='fp_research_answers_v1')out[key]={...(isObject(b)?b:{}),...(isObject(a)?a:{})};
+      else if(key==='finanzpilot_training_v1')out[key]=mergeTraining(a,b);
       else out[key]=merge(a,b);
     }
     return out;
