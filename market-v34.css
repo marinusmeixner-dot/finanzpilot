@@ -1,0 +1,80 @@
+/* FinanzPilot v34 – dedicated market/news/learning layouts and anchored iOS chrome */
+.fp34{width:min(1020px,100%);margin:0 auto 42px;display:flex;flex-direction:column;gap:16px;color:#e5f4f1}
+.fp34 h1{font-size:clamp(27px,4.3vw,37px);line-height:1.12;margin:8px 0 10px}
+.fp34 h2{font-size:clamp(19px,3vw,25px);margin:0 0 9px}
+.fp34 h3{font-size:17px;line-height:1.35;margin:5px 0}
+.fp34 p{color:#a9c2c9;line-height:1.65;font-size:14px;margin:0}
+.fp34 a{color:#88e3b8;display:inline-flex;padding:5px 0;font-size:13px}
+.fp34-head{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.fp34-head .btn{flex-shrink:0}
+.fp34-chart-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}
+.fp34-chart-card,.fp34-learning-card{display:block;text-align:left;width:100%;border:1px solid #345663;background:#132b38;color:inherit;border-radius:18px;padding:16px;cursor:pointer;min-width:0}
+.fp34-chart-card:hover,.fp34-chart-card:focus-visible,.fp34-learning-card:hover{border-color:#86e8bb;outline-offset:2px}
+.fp34-title{display:flex;align-items:start;justify-content:space-between;gap:10px;margin-bottom:10px}
+.fp34-title span:first-child{display:grid;gap:6px;min-width:0}
+.fp34-title strong{font-size:17px;overflow-wrap:anywhere}
+.fp34-title small{font-size:12px;color:#a6c1c8}
+.fp34-title span:last-child{font-size:22px;color:#8bebc2}
+.fp34-chart{background:#0c212c;border:1px solid #284b59;border-radius:13px;padding:12px}
+.fp34-chart-top{display:flex;justify-content:space-between;align-items:center;gap:9px;flex-wrap:wrap}
+.fp34-chart-top strong{font-size:20px;font-variant-numeric:tabular-nums}
+.fp34-chart-top span{font-size:12px}
+.fp34-chart svg{display:block;width:100%;height:auto;margin:7px 0}
+.fp34-chart small{font-size:11px;color:#9dbbc3;display:block}
+.fp34-chart-empty{display:grid;place-items:center;min-height:125px;border:1px dashed #36535e;color:#aec1c7;font-size:13px;text-align:center;border-radius:13px;padding:13px}
+.fp34-detail-chart{background:#132b38;padding:14px;border-radius:18px}
+.fp34-detail-chart .fp34-chart{padding:18px}
+.fp34-actions{display:flex;gap:10px;flex-wrap:wrap}
+.fp34-empty,.fp34-request,.fp34-learning-context,.fp34-learning-task{background:#142d3a;border:1px solid #345563;padding:20px;border-radius:18px;display:flex;flex-direction:column;gap:12px}
+.fp34-request label{font-size:13px;color:#bad4d6;font-weight:600}
+.fp34-request select,.fp34-learning-task textarea{border-radius:11px;border:1px solid #49707b;background:#0f2531;color:#e8f8f2;padding:13px;width:100%;font:inherit}
+.fp34-request .btn{align-self:flex-start}
+.fp34-news-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.fp34-news-tabs button{border:1px solid #36596a;border-radius:100px;background:#18313e;color:#b8d0d0;padding:10px 16px;font-size:13px;cursor:pointer}
+.fp34-news-tabs button.selected{background:#234c40;color:#c6fadd;border-color:#81dbb2}
+.fp34-news-body{display:flex;flex-direction:column;gap:13px}
+.fp34-news-card{background:#142c3a;border:1px solid #31525f;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:9px}
+.fp34-news-card small{font-size:12px;color:#96bbc5}
+.fp34-news-card h3{font-size:17px;margin:0}
+.fp34-news-company{display:flex;flex-direction:column;gap:10px;border-top:1px solid #36515c;padding-top:20px;scroll-margin-top:115px}
+.fp34-news-company>header{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.fp34-news-company .btn{font-size:12px}
+.fp34-discover{background:#122b38;border:1px solid #37515c;border-radius:15px;padding:15px;display:flex;gap:12px;flex-direction:column}
+.fp34-discover>div:first-child{display:flex;gap:8px;align-items:baseline;flex-wrap:wrap}
+.fp34-discover>div:first-child small{font-size:12px;color:#a9c6cb}
+.fp34-discover>.btn{align-self:flex-start}
+.fp34-learning-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fp34-learning-card{display:flex;flex-direction:column;gap:10px}
+.fp34-learning-card small{color:#a0c0c5;font-size:12px}
+.fp34-learning-card strong{font-size:17px}
+.fp34-learning-card span{font-size:13px;color:#8eeac4}
+.fp34-learning-context{gap:11px}
+.fp34-learning-context h3{margin:11px 0 0}
+.fp34-learning-options{display:flex;flex-direction:column;gap:10px}
+.fp34-learning-options button{background:#1a3946;color:#e9f7f1;border:1px solid #426472;border-radius:11px;padding:14px;text-align:left;font-size:14px;line-height:1.5;cursor:pointer}
+.fp34-learning-options button.correct{border-color:#8ce9bd;background:#234a3e}
+.fp34-learning-options button.incorrect{border-color:#eaa3a3;background:#57343c}
+.fp34-learning-options button:disabled{cursor:default;opacity:.84}
+.fp34-learning-feedback{border-top:1px solid #42616c;padding-top:13px;display:flex;flex-direction:column;gap:10px}
+.fp34-learning-feedback .btn,.fp34-learning-task>.btn{align-self:flex-start}
+.fp34-learning-task details{border-top:1px solid #47616c;padding-top:13px}
+.fp34-learning-task ul{padding-left:20px;color:#c5d9d9;font-size:14px;line-height:1.7}
+.fp34-tap-row{cursor:pointer}
+.fp34-tap-row:hover{border-color:#83e7b4}
+@media(max-width:700px){
+ .fp34-chart-grid,.fp34-learning-list{grid-template-columns:1fr}
+ .fp34 .fp34-actions .btn{flex:1}
+ .fp34-news-company>header{flex-wrap:wrap}
+ .fp34-chart-card{padding:12px}
+ /* Fix both controls to the visual viewport, independent of nested app-content scroll. */
+ :root{--fp34-header-height:calc(68px + env(safe-area-inset-top,0px));--fp34-bottom-height:calc(63px + env(safe-area-inset-bottom,0px))}
+ html,body{min-height:100%;overflow-x:hidden;scroll-padding-top:var(--fp34-header-height)}
+ body{overscroll-behavior-y:auto}
+ .app-shell{min-height:100dvh!important}
+ .main-area{padding-top:var(--fp34-header-height)!important;padding-bottom:var(--fp34-bottom-height)!important;min-height:100dvh!important}
+ .main-area>.topbar,.topbar{position:fixed!important;top:0!important;left:0!important;right:0!important;width:100%!important;max-width:none!important;height:var(--fp34-header-height)!important;min-height:var(--fp34-header-height)!important;margin:0!important;padding:calc(8px + env(safe-area-inset-top,0px)) 15px 8px!important;box-sizing:border-box!important;transform:none!important;z-index:110!important;display:flex!important;align-items:center!important;background:rgba(12,27,39,.97)!important}
+ .bottom-nav{position:fixed!important;left:0!important;right:0!important;bottom:0!important;width:100%!important;height:var(--fp34-bottom-height)!important;min-height:var(--fp34-bottom-height)!important;margin:0!important;box-sizing:border-box!important;transform:none!important;z-index:111!important;display:flex!important;padding:7px 6px max(8px,env(safe-area-inset-bottom,0px))!important;align-items:center!important;background:rgba(13,28,41,.98)!important}
+ .site-footer{padding-bottom:25px!important}
+ #view-root{scroll-margin-top:var(--fp34-header-height)!important;overflow-anchor:none}
+ #fp-depot-watchlist,#fp-depot-order-panel,.fp34-news-company{scroll-margin-top:calc(var(--fp34-header-height) + 12px)!important}
+}
