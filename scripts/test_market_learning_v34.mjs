@@ -50,7 +50,7 @@ const stockClient={from:query,functions:{invoke:async(_,{body})=>({data:body.act
 const window={addEventListener:(k,fn)=>{events[k]=fn},dispatchEvent(){},render:()=>rendered.push(view),
  FinanzPilotCloud:{user:owner,paperClient:stockClient},
  FinanzPilotNavigation:{route:x=>{view=x;navTo.push(x)}}};
-const document={readyState:'loading',addEventListener(){}};
+const document={readyState:'loading',addEventListener(){},getElementById(){return null}};
 const context=vm.createContext({window,document,state,fetch:async()=>({ok:true,json:async()=>daily}),console,Date,Intl,URL,Map,Set,Promise,Number,Math,String,Array});
 vm.runInContext(read('market-v34.js'),context,{filename:'market-v34.js'});
 const ui=window.FinanzPilotMarkets;
