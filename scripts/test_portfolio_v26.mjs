@@ -28,7 +28,9 @@ let account='sample-user',calls=0;
 const fakeClient={
  from(t){
   const data=t==='fp_paper_quotes'?quotes:t==='fp_paper_wallets'?wallets:tradeRows;
-  return {select(){return {order(){return {limit:async()=>({data,error:null})}},eq(){return {order(){return {limit:async()=>({data,error:null})}}},then(done){return Promise.resolve({data,error:null}).then(done)}}}};
+  const result=()=>Promise.resolve({data,error:null});
+  const query={then(ok,fail){return result().then(ok,fail)},order(){return this},eq(){return this},limit(){return result()},range(){return result()}};
+  return {select(){return query}};
  },
  async rpc(fn,p){
   assert.equal(fn,'fp_paper_execute');
