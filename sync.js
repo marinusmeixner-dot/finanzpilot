@@ -7,9 +7,10 @@
   const PROJECT_URL = 'https://oqhwgksunlffvknaspmx.supabase.co';
   const PUBLISHABLE_KEY = 'sb_publishable_hXOPhMFpAD0RVAky9eonSQ_yiFoZps6';
   const CLOUD_TABLE = 'finanzpilot_progress';
+  const APP_URL = 'https://marinusmeixner-dot.github.io/finanzpilot/';
   const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1'];
   const escapeHtml = x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-  let client=null, user=null, enabled=false, ready=false, busy=false, timer=null, canAnalyze=false, lastStatus='Lokal gespeichert';
+  let client=null, user=null, enabled=false, ready=false, busy=false, timer=null, canAnalyze=false, lastStatus='Lokal gespeichert', recoveryMode=false;
   const localObject=k=>{try{const x=JSON.parse(localStorage.getItem(k)||'{}');return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}catch{return {}}};
   const snapshot=()=>Object.fromEntries(KEYS.map(k=>[k,localObject(k)]));
   const isObject=x=>x!==null&&typeof x==='object'&&!Array.isArray(x);
@@ -61,7 +62,9 @@
     const code=String(e?.code||'').toLowerCase(),msg=String(e?.message||'');
     if(code==='email_address_not_authorized'||/email address not authorized/i.test(msg))return 'Der kostenlose E-Mail-Versand erlaubt nur Projekt-Teamadressen. Bitte den Administrator um die Einrichtung eines SMTP-Dienstes.';
     if(code==='over_email_send_rate_limit'||/rate limit exceeded/i.test(msg))return 'Das E-Mail-Limit des Projekts ist erreicht (Standard: 2 E-Mails pro Stunde). Bitte nicht immer wieder registrieren; die Einrichtung eines eigenen Mailversands ist nötig.';
-    if(code==='invalid_credentials'||/invalid login credentials/i.test(msg))return 'E-Mail/Passwort stimmen nicht überein oder das Konto wurde noch nicht bestätigt. Prüfe bestehende Anmeldung statt erneut zu registrieren.';
+    if(code==='invalid_credentials'||/invalid login credentials/i.test(msg))return 'Das bestehende Konto akzeptiert dieses Passwort nicht. Nutze „Passwort zurücksetzen“ oder „Mit Google anmelden“, falls Google freigeschaltet ist.';
+    if(code==='provider_disabled'||/provider is not enabled|unsupported provider|google provider.*disabled/i.test(msg))return 'Google ist in Supabase noch nicht freigeschaltet. Der Administrator muss Google OAuth im Projekt einrichten.';
+    if(code==='email_not_confirmed'||/email not confirmed/i.test(msg))return 'Diese E-Mail ist noch nicht bestätigt. Der E-Mail-Versand des Projekts muss konfiguriert sein.';
     return msg||'Unbekannter Fehler';
   };
   function accountPanel(){
@@ -69,7 +72,7 @@
     const button=document.createElement('button');button.id='fp-account-button';button.className='settings-btn fp-account-trigger';button.type='button';button.textContent='Konto / Login';
     document.querySelector('.header-right')?.append(button);
     const modal=document.createElement('div');modal.id='fp-account-dialog';modal.className='fp-account-overlay';modal.hidden=true;
-    modal.innerHTML=`<section class="fp-account-window" role="dialog" aria-modal="true" aria-label="FinanzPilot Konto"><div class="fp-account-title"><h2>Dein FinanzPilot-Konto</h2><button id="fp-account-close" class="settings-btn" type="button" aria-label="Schließen">✕</button></div><p id="fp-account-state" aria-live="polite">Lokal gespeichert</p><div id="fp-account-guest"><p>Dein Lernstand bleibt ohne Konto lokal erhalten. Mit einem bestätigten Konto können Ergebnisse synchronisiert werden. Die Anmeldung ist freiwillig.</p><form id="fp-account-form"><label>E-Mail-Adresse<input id="fp-account-email" type="email" name="email" autocomplete="username" required maxlength="254" /></label><label>Passwort<input id="fp-account-password" type="password" name="password" autocomplete="current-password" required minlength="6" /></label><div class="fp-account-actions"><button class="btn" type="submit">Anmelden</button><button class="btn secondary" id="fp-account-signup" type="button">Neues Konto erstellen</button></div></form><div class="fp-mail-help"><strong>Keine Bestätigungs-E-Mail erhalten?</strong><p>Der eingebaute Supabase-Mailversand ist auf Teamadressen und sehr wenige Nachrichten begrenzt. Du kannst solange ohne Login weiterlernen und unten ein Backup speichern. Bei einer bereits registrierten Adresse bitte anmelden, statt erneut ein Konto anzulegen.</p><a href="https://supabase.com/dashboard/project/oqhwgksunlffvknaspmx/auth/providers" target="_blank" rel="noopener">Mail-Einstellungen öffnen ↗</a></div></div><div id="fp-account-signed" hidden><p>Angemeldet als <strong id="fp-account-user"></strong>. Dein Lernstand wird automatisch und verschlüsselt übertragen.</p><label class="fp-account-consent"><input id="fp-account-analysis" type="checkbox" /> Erlaube persönliche Lernstand-Analysen durch meinen verbundenen ChatGPT-Finanzcoach.</label><p>Ohne Freigabe werden deine Lernstatistiken nicht für ChatGPT-Auswertungen verwendet. Sie werden nicht auf GitHub veröffentlicht.</p><div class="fp-account-actions"><button id="fp-account-save" class="btn" type="button">Jetzt synchronisieren</button><button id="fp-account-logout" class="settings-btn" type="button">Abmelden</button></div></div><div class="fp-account-footer"><button class="settings-btn" id="fp-account-backup" type="button">Alle Lernstände als Backup speichern</button><small>Bei Kontowechsel oder Safari-Datenlöschung ist ein zusätzliches Backup sinnvoll.</small></div></section>`;
+    modal.innerHTML=`<section class="fp-account-window" role="dialog" aria-modal="true" aria-label="FinanzPilot Konto"><div class="fp-account-title"><h2>Dein FinanzPilot-Konto</h2><button id="fp-account-close" class="settings-btn" type="button" aria-label="Schließen">✕</button></div><p id="fp-account-state" aria-live="polite">Lokal gespeichert</p><div id="fp-account-guest"><p>Dein Lernstand bleibt ohne Konto lokal erhalten. Mit einem bestätigten Konto können Ergebnisse synchronisiert werden. Die Anmeldung ist freiwillig.</p><form id="fp-account-form"><label>E-Mail-Adresse<input id="fp-account-email" type="email" name="email" autocomplete="username" required maxlength="254" /></label><label>Passwort<input id="fp-account-password" type="password" name="password" autocomplete="current-password" required minlength="6" /></label><div class="fp-account-actions"><button class="btn" type="submit">Anmelden</button><button class="btn secondary" id="fp-account-signup" type="button">Neues Konto erstellen</button></div><button class="fp-account-forgot" id="fp-account-forgot" type="button">Passwort vergessen? Zurücksetzen</button></form><div class="fp-account-divider"><span>oder</span></div><button class="fp-account-google" type="button" id="fp-account-google"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.73-.07-1.45-.2-2.13H12v4.03h5.37a4.6 4.6 0 0 1-1.99 3.02v2.53h3.22c1.89-1.74 3-4.3 3-7.45Z"/><path fill="#34A853" d="M12 22c2.71 0 4.99-.9 6.6-2.32l-3.22-2.53c-.9.6-2.03.96-3.38.96a6.02 6.02 0 0 1-5.66-4.16H3.03v2.61A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.34 13.95A6 6 0 0 1 6 12c0-.68.12-1.34.34-1.95V7.44H3.03A10 10 0 0 0 2 12c0 1.64.4 3.19 1.03 4.56l3.31-2.61Z"/><path fill="#EA4335" d="M12 5.89c1.48 0 2.81.51 3.85 1.52l2.88-2.88A9.56 9.56 0 0 0 12 2a10 10 0 0 0-8.97 5.44l3.31 2.61A6.02 6.02 0 0 1 12 5.89Z"/></svg><span>Mit Google anmelden</span></button><p class="fp-account-google-note">Wähle nach Möglichkeit dieselbe Google-E-Mail wie beim bestehenden Konto, damit sich deine Lernstände nicht auf zwei Konten verteilen. Die Google-Anmeldung muss zunächst im Projekt aktiviert sein.</p><div class="fp-mail-help"><strong>Keine Bestätigungs-E-Mail erhalten?</strong><p>Der eingebaute Supabase-Mailversand ist auf Teamadressen und sehr wenige Nachrichten begrenzt. Du kannst solange ohne Login weiterlernen und unten ein Backup speichern. Bei einer bereits registrierten Adresse bitte anmelden, statt erneut ein Konto anzulegen.</p><a href="https://supabase.com/dashboard/project/oqhwgksunlffvknaspmx/auth/providers" target="_blank" rel="noopener">Mail-Einstellungen öffnen ↗</a></div></div><div id="fp-account-recovery" hidden><h3>Neues Passwort festlegen</h3><p>Du hast einen Wiederherstellungslink geöffnet. Wähle jetzt ein neues Passwort für dein bestehendes Konto.</p><form id="fp-account-recovery-form"><label>Neues Passwort<input type="password" id="fp-account-new-password" autocomplete="new-password" required minlength="8" maxlength="128" /></label><label>Passwort wiederholen<input type="password" id="fp-account-confirm-password" autocomplete="new-password" required minlength="8" maxlength="128" /></label><button type="submit" class="btn">Neues Passwort speichern</button></form></div><div id="fp-account-signed" hidden><p>Angemeldet als <strong id="fp-account-user"></strong>. Dein Lernstand wird automatisch und verschlüsselt übertragen.</p><label class="fp-account-consent"><input id="fp-account-analysis" type="checkbox" /> Erlaube persönliche Lernstand-Analysen durch meinen verbundenen ChatGPT-Finanzcoach.</label><p>Ohne Freigabe werden deine Lernstatistiken nicht für ChatGPT-Auswertungen verwendet. Sie werden nicht auf GitHub veröffentlicht.</p><div class="fp-account-actions"><button id="fp-account-save" class="btn" type="button">Jetzt synchronisieren</button><button id="fp-account-logout" class="settings-btn" type="button">Abmelden</button></div></div><div class="fp-account-footer"><button class="settings-btn" id="fp-account-backup" type="button">Alle Lernstände als Backup speichern</button><small>Bei Kontowechsel oder Safari-Datenlöschung ist ein zusätzliches Backup sinnvoll.</small></div></section>`;
     document.body.append(modal);
     button.addEventListener('click',()=>{modal.hidden=false;document.getElementById('fp-account-email')?.focus()});
     document.getElementById('fp-account-close').addEventListener('click',()=>modal.hidden=true);
@@ -77,6 +80,9 @@
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.hidden)modal.hidden=true});
     document.getElementById('fp-account-form').addEventListener('submit',async e=>{e.preventDefault();await signIn()});
     document.getElementById('fp-account-signup').addEventListener('click',signUp);
+    document.getElementById('fp-account-forgot').addEventListener('click',requestPasswordReset);
+    document.getElementById('fp-account-google').addEventListener('click',signInGoogle);
+    document.getElementById('fp-account-recovery-form').addEventListener('submit',finishPasswordReset);
     document.getElementById('fp-account-save').addEventListener('click',()=>sync(true));
     document.getElementById('fp-account-logout').addEventListener('click',async()=>{if(!client)return;await client.auth.signOut();user=null;ready=false;setStatus('Abgemeldet – Lernstand weiterhin lokal erhalten');showAccount()});
     document.getElementById('fp-account-analysis').addEventListener('change',toggleAnalysis);
@@ -87,11 +93,49 @@
   }
   function showAccount(){
     const guest=document.getElementById('fp-account-guest'),signed=document.getElementById('fp-account-signed');
-    if(guest)guest.hidden=Boolean(user);if(signed)signed.hidden=!user;
+    const recovery=document.getElementById('fp-account-recovery');
+    if(guest)guest.hidden=Boolean(user)||recoveryMode;
+    if(signed)signed.hidden=!user||recoveryMode;
+    if(recovery)recovery.hidden=!recoveryMode;
+    if(recoveryMode){setStatus('Bestätige dein neues Passwort.');return}
     if(user){document.getElementById('fp-account-user').textContent=user.email||'angemeldet';document.getElementById('fp-account-analysis').checked=canAnalyze}
     setStatus(user?(ready?'Lernstand in der Cloud gespeichert':'Anmeldung erkannt – synchronisiere …'):'Ohne Konto: nur auf diesem Gerät gespeichert');
   }
   const credentials=()=>({email:document.getElementById('fp-account-email').value.trim(),password:document.getElementById('fp-account-password').value});
+
+  async function requestPasswordReset(){
+    const address=document.getElementById('fp-account-email')?.value.trim()||'';
+    if(!address||!/^\S+@\S+\.\S+$/.test(address)){setStatus('Trage oben zuerst deine E-Mail-Adresse ein.');document.getElementById('fp-account-email')?.focus();return}
+    if(!client){setStatus('Passwortwiederherstellung nicht erreichbar. Lernfortschritt bleibt lokal erhalten.');return}
+    setStatus('Die Anfrage zur Passwortwiederherstellung wird geprüft …');
+    try{
+      const {error}=await client.auth.resetPasswordForEmail(address,{redirectTo:APP_URL});
+      if(error)throw error;
+      setStatus('Anfrage angenommen. Falls eine Wiederherstellungsmail zugestellt wird, öffne den Link auf diesem Gerät. Die Zustellung ist noch nicht bestätigt; im Projekt kann eine eigene SMTP-Konfiguration erforderlich sein.');
+    }catch(e){setStatus('Passwortwiederherstellung: '+statusMessage(e))}
+  }
+  async function finishPasswordReset(event){
+    event.preventDefault();
+    if(!client||!recoveryMode){setStatus('Kein gültiger Wiederherstellungsvorgang erkannt.');return}
+    const a=document.getElementById('fp-account-new-password')?.value||'',b=document.getElementById('fp-account-confirm-password')?.value||'';
+    if(a.length<8||a!==b){setStatus('Beide Passwörter müssen identisch sein und mindestens 8 Zeichen haben.');return}
+    try{
+      const {error}=await client.auth.updateUser({password:a});
+      if(error)throw error;
+      document.getElementById('fp-account-new-password').value='';
+      document.getElementById('fp-account-confirm-password').value='';
+      recoveryMode=false;showAccount();setStatus('Passwort geändert. Dein bisheriger Lernstand bleibt erhalten.');
+      if(user)await sync(true);
+    }catch(e){setStatus('Passwortänderung: '+statusMessage(e))}
+  }
+  async function signInGoogle(){
+    if(!client){setStatus('Google-Anmeldung nicht erreichbar.');return}
+    setStatus('Google-Anmeldung wird vorbereitet …');
+    try{
+      const {error}=await client.auth.signInWithOAuth({provider:'google',options:{redirectTo:APP_URL}});
+      if(error)throw error;
+    }catch(e){setStatus('Google-Anmeldung: '+statusMessage(e))}
+  }
   async function signIn(){if(!client){setStatus('Anmeldung zurzeit nicht erreichbar. Deine Daten bleiben lokal.');return}setStatus('Anmeldung wird geprüft …');try{const {error}=await client.auth.signInWithPassword(credentials());if(error)throw error;setStatus('Angemeldet. Fortschritte werden abgeglichen …')}catch(e){setStatus('Anmeldung: '+statusMessage(e))}}
   async function signUp(){if(!client){setStatus('Anmeldung zurzeit nicht erreichbar.');return}
     const {email,password}=credentials();if(!email||password.length<6){setStatus('Bitte E-Mail und Passwort mit mindestens sechs Zeichen eintragen.');return}
@@ -134,7 +178,16 @@
   function schedule(){if(!user||!ready||busy)return;clearTimeout(timer);timer=setTimeout(()=>sync(false),1200)}
   function init(){accountPanel();if(!window.supabase?.createClient){setStatus('Login-Bibliothek nicht erreichbar. Lokales Lernen funktioniert weiterhin.');return}
     try{client=window.supabase.createClient(PROJECT_URL,PUBLISHABLE_KEY,{auth:{autoRefreshToken:true,persistSession:true,detectSessionInUrl:true}})}catch(e){setStatus('Login nicht verfügbar: '+statusMessage(e));return}
-    client.auth.onAuthStateChange((event,session)=>{if(event==='SIGNED_OUT'){user=null;ready=false;showAccount()}else if(event==='SIGNED_IN'||event==='INITIAL_SESSION'){setTimeout(()=>signedIn(session),0)}});
+    client.auth.onAuthStateChange((event,session)=>{
+      if(event==='PASSWORD_RECOVERY'){
+        user=session?.user||user;recoveryMode=true;
+        const modal=document.getElementById('fp-account-dialog');if(modal)modal.hidden=false;
+        showAccount();document.getElementById('fp-account-new-password')?.focus();
+      }else if(event==='SIGNED_OUT'){user=null;ready=false;recoveryMode=false;showAccount()}
+      else if(event==='SIGNED_IN'||event==='INITIAL_SESSION'){
+        if(!recoveryMode)setTimeout(()=>signedIn(session),0);
+      }
+    });
     window.addEventListener('fp-progress-change',schedule);
     window.addEventListener('storage',event=>{if(KEYS.includes(event.key))schedule()});
     window.addEventListener('pagehide',()=>{if(user&&ready)clearTimeout(timer)});
