@@ -13,8 +13,8 @@ assert(sql.includes("quote_date<(now() at time zone 'Europe/Berlin')::date-7"),'
 assert(sql.includes('grant execute on function public.fp_paper_execute'));
 assert(!sql.includes('grant insert on public.fp_paper_trades'));
 assert(!sql.includes('grant update on public.fp_paper_wallets'));
-assert(html.includes('portfolio.js?v=28')&&html.includes('portfolio-v26.css?v=28'));
-assert(html.includes('app.js?v=28')&&html.includes('ux-v15.js?v=28'));
+assert(html.includes('portfolio.js?v=29')&&html.includes('portfolio-v26.css?v=29'));
+assert(html.includes('app.js?v=29')&&html.includes('ux-v15.js?v=29'));
 assert(read('ux-v15.js').includes("['stockhub','Aktien & Analysen'"));
 assert(read('ux-v15.js').includes("depot:{label:'Depot'"));
 assert(read('sync.js').includes('get paperClient()'));
