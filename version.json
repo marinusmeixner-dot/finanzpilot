@@ -1,5 +1,5 @@
 {
-  "version": 33,
-  "release": "2026-10-31-v33",
-  "notes": "GuV: acronym explanations and voluntary continuation after mistakes; prevent background lesson rerenders and cloud snapshot races; await portfolio navigation; cache watchlist charts without duplicate requests; open artifact training directly; regression checks extended"
+  "version": 34,
+  "release": "2026-11-01-v34",
+  "notes": "Märkte contains only Watchlist-Charts and a 3-desk newsroom (general, by private watchlist, sourced discoveries). Depot stock-row navigation opens selected chart and can return to stock, jump to its news or request research. Daily advanced learning news moved to Lernen, progress synced. Fixed iOS top/bottom bars. Daily editorial and v34 QA updated."
 }
