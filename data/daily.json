@@ -1,8 +1,8 @@
 {
   "date": "2026-10-31",
-  "updated_at": "2026-10-31T01:21:03.183418+00:00",
-  "editor": "ChatGPT: quellengestützte Marktredaktion",
-  "intro": "Der Fokus liegt Ende Oktober auf der Rentabilität von KI-Investitionen. Die hier ausgewählten Unternehmenszahlen und Quellen sind datiert; ein guter Bericht muss Kursreaktion und Erwartungen getrennt prüfen.",
+  "updated_at": "2026-10-31T08:12:00+01:00",
+  "editor": "ChatGPT: quellengestützte Marktredaktion (Primärquellenprüfung 31.10.2026)",
+  "intro": "Wochenendüberblick: Tech-Gewinnsaison, KI-Investitionsbedarf und Cashflow; dazu neue Konjunktur- und Inflationsdaten aus offiziellen Quellen. Berichts- und Handelstage sind datiert, keine Wochenend-Livekurse.",
   "lesson_id": "valuation",
   "stories": [
     {
@@ -76,8 +76,35 @@
       "why": "Die kommende Woche verbindet große Unternehmensberichte und Arbeitsmarktdaten.",
       "impact": "Unterscheide einen angekündigten Termin von schon veröffentlichten Ergebnissen; keine Zahlen vorab annehmen.",
       "category": "Ausblick"
+    },
+    {
+      "title": "US-Wirtschaft wächst im dritten Quartal annualisiert um 3,4 %",
+      "source": "U.S. Bureau of Economic Analysis",
+      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
+      "published": "29.10.2026",
+      "why": "Fakt: Die erste Schätzung des realen US-BIP für Q3 2026 beträgt +3,4 % annualisiert, nach +2,2 % in Q2. Interpretation: Investitionen und Konsum stützen die Konjunktur. Gegenargument: Die Zahl ist annualisiert, vorläufig und nicht direkt mit europäischen Quartalsraten vergleichbar.",
+      "impact": "Prüfe die Umrechnung von annualisiertem auf einfaches Quartalswachstum und warum starkes Wachstum zugleich Zinssenkungserwartungen dämpfen kann.",
+      "category": "Wirtschaft"
+    },
+    {
+      "title": "Deutschland: BIP steigt im dritten Quartal nur um 0,2 %",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_381_811.html",
+      "published": "30.10.2026",
+      "why": "Fakt: Das preis-, saison- und kalenderbereinigte BIP legte in Q3 2026 um 0,2 % zum Vorquartal zu. Interpretation: Die Erholung hält an. Gegenargument: Vorläufige Daten deuten auf sinkende Investitionen und schwächere Exportdynamik hin.",
+      "impact": "Unterscheide BIP-Niveau, Quartalswachstum und Vorjahresrate (+1,2 % kalenderbereinigt), bevor du Schlüsse für DAX- oder ETF-Anlagen ziehst.",
+      "category": "Wirtschaft"
+    },
+    {
+      "title": "Deutschland: Inflation sinkt im Oktober vorläufig auf 2,8 %",
+      "source": "Statistisches Bundesamt (Destatis)",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html",
+      "published": "30.10.2026",
+      "why": "Fakt: Die vorläufige Jahresinflation liegt im Oktober bei 2,8 % nach 3,3 % im September; die Kernrate bei 2,1 %. Interpretation: Der Preisdruck lässt nach. Gegenargument: Energiepreise liegen immer noch 12,2 % über Vorjahr; die Daten sind vorläufig.",
+      "impact": "Trenne sinkende Inflationsrate von fallenden Preisen und erkläre, weshalb ein ETF-Investor reale statt nominale Renditen betrachtet.",
+      "category": "Wirtschaft"
     }
   ],
-  "learning_note": "Wichtig bei der Gewinnsaison: tatsächlicher Gewinn minus erwarteter Gewinn, Ausblick, Cashflow und aktuelle Bewertung. Eine gute Zahl kann enttäuschen, wenn der Markt mehr erwartet hatte.",
-  "important": "Wochenendstand 31.10.2026. US-Kurse zuletzt vom 30.10.2026; keine Wochenend-Livekurse oder automatischen Kaufsignale."
+  "learning_note": "Neue Lernaufgabe: Alphabet meldet +103 % Cloud-Wachstum, aber −9,065 Mrd. USD Quartals-FCF. Trenne Gewinn, Investitionen, freien Cashflow, Erwartungen und hypothetische Bewertung. Dazu: US-BIP +3,4 % annualisiert ≠ +3,4 % gegenüber dem Vorquartal.",
+  "important": "Stand 31.10.2026, 08:12 MEZ; US-Börsenschluss zuletzt 30.10.2026. Zahlen aus Originalmeldungen vom 28.–30.10.2026. Keine Livekurse oder automatischen Kauf-/Verkaufssignale."
 }
