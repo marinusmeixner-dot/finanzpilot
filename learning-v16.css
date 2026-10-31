@@ -58,3 +58,11 @@
 }
 @media(max-width:390px){.fp-world-map-footer{flex-direction:column}}
 @media(prefers-reduced-motion:reduce){.fp-world-node{box-shadow:none!important}}
+
+.fp-concepts-quick{display:flex;align-items:center;gap:13px;width:100%;margin-bottom:17px;text-align:left;border-radius:15px;border:1px solid #628e7c;background:linear-gradient(115deg,#254e44,#1b3a49);padding:16px;color:#e8faed;cursor:pointer}
+.fp-concepts-quick-icon{display:grid;place-items:center;flex:none;font-size:24px;width:45px;height:45px;background:#306d57;border:1px solid #8fbea7;border-radius:13px;color:#cff9e1}
+.fp-concepts-quick>span:last-child{display:flex;flex-direction:column;gap:5px}
+.fp-concepts-quick strong{font-size:15px}
+.fp-concepts-quick small{font-size:12px;color:#bcd8d2;line-height:1.5}
+.fp-concepts-quick:focus-visible{outline:3px solid #cbf5df;outline-offset:2px}
+.fp-concepts-quick:hover{background:#2c5c4f}
