@@ -1,0 +1,55 @@
+/* iPhone/iPad Safari and installed PWA: stable top controls, notch insets and accessible sync indicator. */
+html{scroll-padding-top:82px}
+body{min-height:100dvh}
+.app-shell{min-height:100dvh}
+.main-area{min-height:100dvh}
+.topbar{position:sticky;top:0;z-index:65;background:rgba(11,24,35,.97);flex-shrink:0}
+#view-root{overflow-anchor:none}
+#fp-quick-sync{position:relative}
+#fp-quick-sync:after{content:'';position:absolute;right:3px;bottom:3px;width:7px;height:7px;border-radius:50%;border:1.5px solid #132d37;background:#8ca8b0;opacity:1}
+#fp-quick-sync[data-sync-state="success"]:after{background:#81f0b5}
+#fp-quick-sync[data-sync-state="pending"]:after{background:#ffd08b}
+#fp-quick-sync[data-sync-state="error"]:after{background:#f5a2a2}
+#fp-quick-sync[data-sync-state="offline"]:after{background:#8c9eaa}
+#fp-quick-sync[data-sync-state="guest"]:after{background:#7f9bba}
+.fp-sync-a11y{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:700px){
+ html{scroll-padding-top:calc(69px + env(safe-area-inset-top,0px))}
+ body{overscroll-behavior-y:auto}
+ .app-shell{min-height:100dvh}
+ .main-area{min-height:100dvh;padding-top:0!important}
+ .topbar{
+  position:sticky!important;
+  top:0!important;
+  min-height:calc(65px + env(safe-area-inset-top,0px));
+  height:auto!important;
+  padding-top:calc(7px + env(safe-area-inset-top,0px))!important;
+  padding-bottom:8px!important;
+  padding-left:15px;
+  padding-right:15px;
+  margin-left:-15px;
+  margin-right:-15px;
+  box-sizing:border-box;
+  display:flex!important;
+  z-index:65!important;
+  background:rgba(12,28,40,.97)!important;
+  border-bottom:1px solid #30515a;
+  -webkit-backdrop-filter:blur(18px);
+  backdrop-filter:blur(18px);
+  transform:none!important;
+  flex-shrink:0;
+ }
+ .topbar .fp-mobile-brand{min-width:0;flex:1}
+ .topbar .header-right{flex:none}
+ .topbar .fp-topbar-sync{flex:none;min-width:39px;min-height:39px}
+ #view-root{padding-top:16px}
+ .bottom-nav{padding-bottom:max(10px,env(safe-area-inset-bottom,0px));z-index:66}
+ .fp-account-overlay{z-index:100}
+ .fp-account-window{max-height:calc(100dvh - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px) - 22px)}
+}
+@supports(-webkit-touch-callout:none){
+ .topbar{-webkit-transform:translateZ(0)}
+}
+@media(min-width:701px){
+ .topbar{top:0}
+}
