@@ -19,7 +19,9 @@ DEST = ROOT / 'data' / 'daily.json'
 FEEDS = [
     ('Tagesschau Wirtschaft', 'https://www.tagesschau.de/wirtschaft/index~rss2.xml'),
     ('CNBC Markets', 'https://www.cnbc.com/id/10000664/device/rss/rss.html'),
+    ('Google News Aktien', 'https://news.google.com/rss/search?q=Microsoft%20Nvidia%20Siemens%20Aktie%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade'),
     ('Google News Finanzen', 'https://news.google.com/rss/search?q=Aktien%20ETF%20EZB%20B%C3%B6rse%20when%3A1d&hl=de&gl=DE&ceid=DE%3Ade'),
+    ('Google News Bilanzberichte', 'https://news.google.com/rss/search?q=Unternehmenszahlen%20Gewinn%20Quartal%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade'),
 ]
 
 def get_feed(label, url):
@@ -77,10 +79,10 @@ def main():
         'updated_at':now.isoformat(),
         'editor':'RSS-Fallback; keine redaktionelle KI-Einordnung',
         'intro':'Aktuelle Überschriften aus öffentlichen Quellen. Erst die Quellen öffnen und prüfen, bevor daraus eine Anlageentscheidung abgeleitet wird.',
-        'stories':unique[:9],
+        'stories':unique[:15],
         'important':'Öffentliche Schlagzeilen sind keine Kaufempfehlungen. Wichtiger ist, was ein Ereignis langfristig verändert.'
     })
     DEST.write_text(json.dumps(prior,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(f'{len(unique[:9])} Nachrichten gespeichert.')
+    print(f'{len(unique[:15])} Nachrichten gespeichert.')
 
 if __name__=='__main__':main()
