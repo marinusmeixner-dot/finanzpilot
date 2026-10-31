@@ -101,7 +101,7 @@
     document.getElementById('fp-account-google').addEventListener('click',signInGoogle);
     document.getElementById('fp-account-recovery-form').addEventListener('submit',finishPasswordReset);
     document.getElementById('fp-account-save').addEventListener('click',()=>sync(true));
-    document.getElementById('fp-account-logout').addEventListener('click',async()=>{if(!client)return;await client.auth.signOut();user=null;ready=false;setStatus('Abgemeldet – Lernstand weiterhin lokal erhalten');showAccount()});
+    document.getElementById('fp-account-logout').addEventListener('click',async()=>{if(!client)return;await client.auth.signOut();user=null;ready=false;setStatus('Abgemeldet – Lernstand weiterhin lokal erhalten');showAccount();window.dispatchEvent(new Event('fp-auth-change'))});
     document.getElementById('fp-account-analysis').addEventListener('change',toggleAnalysis);
     document.getElementById('fp-account-backup').addEventListener('click',()=>{
       const blob=new Blob([JSON.stringify({version:1,exported_at:new Date().toISOString(),progress:snapshot()},null,2)],{type:'application/json'});
@@ -167,7 +167,7 @@
     if(error){e.target.checked=!next;setStatus('Freigabe konnte nicht gespeichert werden: '+statusMessage(error))}else{canAnalyze=next;setStatus(next?'Analysefreigabe aktiviert':'Analysefreigabe ausgeschaltet')}
   }
   async function signedIn(session){if(!session?.user){user=null;ready=false;canAnalyze=false;showAccount();return}
-    if(user?.id===session.user.id&&ready)return;user=session.user;ready=false;showAccount();await sync(true)
+    if(user?.id===session.user.id&&ready)return;user=session.user;ready=false;showAccount();window.dispatchEvent(new Event('fp-auth-change'));await sync(true)
   }
   async function sync(force=false){if(!client||!user||busy)return;if(!force&&!ready)return;
     busy=true;setStatus('Lernstand wird abgeglichen …');
@@ -200,7 +200,7 @@
         user=session?.user||user;recoveryMode=true;
         const modal=document.getElementById('fp-account-dialog');if(modal)modal.hidden=false;
         showAccount();document.getElementById('fp-account-new-password')?.focus();
-      }else if(event==='SIGNED_OUT'){user=null;ready=false;recoveryMode=false;showAccount()}
+      }else if(event==='SIGNED_OUT'){user=null;ready=false;recoveryMode=false;showAccount();window.dispatchEvent(new Event('fp-auth-change'))}
       else if(event==='SIGNED_IN'||event==='INITIAL_SESSION'){
         if(!recoveryMode)setTimeout(()=>signedIn(session),0);
       }
@@ -210,6 +210,24 @@
     window.addEventListener('pagehide',()=>{if(user&&ready)clearTimeout(timer)});
     client.auth.getSession().then(({data,error})=>{if(error){setStatus('Anmeldung nicht verfügbar: '+statusMessage(error));return}signedIn(data?.session)}).catch(()=>{});
   }
-  window.FinanzPilotCloud={get user(){return user?.id||null},get ready(){return ready},sync:()=>sync(true),backup:snapshot};
+  window.FinanzPilotCloud={
+    get user(){return user?.id||null},get ready(){return ready},
+    sync:()=>sync(true),backup:snapshot,
+    async economyRpc(name,args){
+      if(!client||!user)throw Error('Bitte zuerst bei FinanzPilot anmelden.');
+      if(!['fp_submit_training_answer','fp_redeem_artifact','fp_purchase_reward'].includes(name))throw Error('Unbekannte Funktion');
+      const {data,error}=await client.rpc(name,args);
+      if(error)throw error;
+      return data;
+    },
+    async economyRead(table){
+      if(!client||!user)throw Error('Bitte zuerst anmelden.');
+      if(!['fp_economy_accounts','fp_verified_training','fp_reward_claims','fp_reward_perks','fp_reward_ledger'].includes(table))throw Error('Unbekannte Tabelle');
+      const {data,error}=await client.from(table).select('*').eq('user_id',user.id);
+      if(error)throw error;
+      return data||[];
+    },
+    openLogin:()=>document.getElementById('fp-account-button')?.click()
+  };
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
