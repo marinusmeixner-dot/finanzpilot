@@ -1,35 +1,83 @@
 {
   "date": "2026-10-31",
-  "updated_at": "2026-10-30T23:57:02.386Z",
-  "editor": "ChatGPT: überprüfte Marktredaktion",
-  "intro": "Die US-Technologiebörse geriet am Freitag kräftig unter Druck. Für langfristige Anleger sind die Zinslage und die breite Streuung wichtiger als eine einzelne Kursschwankung.",
-  "lesson_id": "diversify",
+  "updated_at": "2026-10-31T01:21:03.183418+00:00",
+  "editor": "ChatGPT: quellengestützte Marktredaktion",
+  "intro": "Der Fokus liegt Ende Oktober auf der Rentabilität von KI-Investitionen. Die hier ausgewählten Unternehmenszahlen und Quellen sind datiert; ein guter Bericht muss Kursreaktion und Erwartungen getrennt prüfen.",
+  "lesson_id": "valuation",
   "stories": [
     {
-      "title": "US-Technologieaktien fallen deutlich",
+      "title": "US-Technologiebörse fällt deutlich",
+      "source": "Reuters",
+      "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "published": "30.10.2026",
+      "why": "Der Nasdaq gab am Freitag laut Reuters um rund 2,9 % nach. Anleger hinterfragen die Rendite hoher KI-Investitionen.",
+      "impact": "Vergleiche die Kursreaktion mit langfristigen Gewinnerwartungen und dem Bewertungsniveau, statt den Rückgang als automatisches Kaufsignal zu sehen.",
+      "category": "Markt"
+    },
+    {
+      "title": "Microsoft: Quartalsumsatz steigt auf 92,3 Milliarden Dollar",
+      "source": "Microsoft Investor Relations",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+      "published": "28.10.2026",
+      "why": "Microsoft berichtet für das Quartal bis September 2026 19 % Umsatzwachstum und 21 % operatives Gewinnwachstum.",
+      "impact": "Berechne die operative Marge und prüfe, wie stark zukünftige Cloud-Gewinne hohe Investitionsausgaben tragen.",
+      "category": "Aktien"
+    },
+    {
+      "title": "Amazon: AWS wächst 39,3 %, Umsatz 201,9 Milliarden Dollar",
+      "source": "Amazon Investor Relations",
+      "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+      "published": "29.10.2026",
+      "why": "Die Cloud-Sparte AWS wächst sehr schnell. Gleichzeitig wird über die Rentabilität hoher KI-Ausgaben diskutiert.",
+      "impact": "Unterscheide starkes Umsatzwachstum von freiem Cashflow nach Investitionen; große Capex-Zahlen verändern die Bewertung.",
+      "category": "Aktien"
+    },
+    {
+      "title": "Alphabet: Quartalsumsatz 127,6 Milliarden Dollar",
+      "source": "Alphabet / SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "published": "28.10.2026",
+      "why": "Alphabet meldet 25 % Umsatzwachstum und besonders starkes Cloud-Wachstum; die Margen und KI-Ausgaben müssen gemeinsam betrachtet werden.",
+      "impact": "Prüfe die Segmentgewinne und das Verhältnis von Cloud-Ausbau, Margen und Erwartungen.",
+      "category": "Aktien"
+    },
+    {
+      "title": "EZB hält Leitzinsen unverändert",
+      "source": "Europäische Zentralbank",
+      "url": "https://www.ecb.europa.eu/home/html/index.en.html",
+      "published": "29.10.2026",
+      "why": "Die EZB veröffentlicht am 29. Oktober ihre geldpolitische Entscheidung. Die Einlagefazilität liegt bei 2,50 %.",
+      "impact": "Die Zinslage beeinflusst Tagesgeld, Kredite und die Abzinsung zukünftiger Unternehmensgewinne.",
+      "category": "Zinsen"
+    },
+    {
+      "title": "Meta: Umsatz steigt, operative Marge fällt",
+      "source": "Meta Investor Relations",
+      "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+      "published": "21.10.2026",
+      "why": "Meta meldet im dritten Quartal 26 % mehr Umsatz, aber die operative Marge sinkt von 40 auf 20 %; Sonderbelastungen spielen mit hinein.",
+      "impact": "Prüfe Sondereffekte und bereinigtes Ergebnis, bevor du aus einer Margenänderung auf die Ertragskraft schließt.",
+      "category": "Aktien"
+    },
+    {
+      "title": "Intel leidet nach Zahlen unter starkem Kursrückgang",
       "source": "Associated Press",
       "url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
       "published": "30.10.2026",
-      "why": "Der Nasdaq verlor am Freitag 2,9 %. Anleger hinterfragen, ob hohe KI-Ausgaben schnell genug Gewinne bringen.",
-      "impact": "Wer nur wenige Technologieaktien besitzt, trägt ein hohes Klumpenrisiko. Ein weltweit gestreuter ETF kann dieses Risiko verringern, aber nicht verhindern."
+      "why": "Intel verliert laut AP fast 29 % an einem Tag, nachdem der Ausblick die Erwartungen verfehlt.",
+      "impact": "Das Beispiel zeigt, dass Erwartungen oft stärker auf Kurse wirken als die reine Ergebniszahl.",
+      "category": "Aktien"
     },
     {
-      "title": "EZB lässt die Leitzinsen unverändert",
-      "source": "Deutsche Bundesbank / EZB",
-      "url": "https://www.bundesbank.de/de/aufgaben/themen/ezb-rat-laesst-leitzinsen-unveraendert-1013492",
-      "published": "29.10.2026",
-      "why": "Höhere Energiekosten erschweren den Kampf gegen Inflation. Deshalb hält die EZB ihre Zinsen vorerst stabil.",
-      "impact": "Zinsen beeinflussen Sparzinsen, Kredite und die Bewertung von Aktien. Ein unveränderter Leitzins ist noch kein Kaufsignal."
-    },
-    {
-      "title": "Kommende Woche: Unternehmenszahlen und Arbeitsmarkt",
+      "title": "Nächste Berichtswoche: Apple und US-Arbeitsmarkt im Blick",
       "source": "Reuters",
-      "url": "https://www.reuters.com/legal/legalindustry/wall-st-week-ahead-midterm-us-elections-earnings-jobs-data-loom-ai-wary-market-2026-10-30/",
+      "url": "https://ca.marketscreener.com/news/midterm-elections-earnings-jobs-data-loom-for-ai-wary-market-ce785fdbda88f325",
       "published": "30.10.2026",
-      "why": "Weitere Technologieunternehmen veröffentlichen Ergebnisse; dazu kommen US-Arbeitsmarktdaten. Beides hilft, Wachstum und Zinsaussichten einzuordnen.",
-      "impact": "Achte darauf, was Unternehmen tatsächlich verdienen und welche Erwartungen der Aktienkurs schon enthält, statt nur auf Schlagzeilen."
+      "why": "Die kommende Woche verbindet große Unternehmensberichte und Arbeitsmarktdaten.",
+      "impact": "Unterscheide einen angekündigten Termin von schon veröffentlichten Ergebnissen; keine Zahlen vorab annehmen.",
+      "category": "Ausblick"
     }
   ],
-  "learning_note": "Diversifikation bedeutet: nicht alles von wenigen Branchen oder Unternehmen abhängig machen. Ein breiter ETF streut – Kursverluste bleiben trotzdem möglich.",
-  "important": "Wochenendstand: Die letzten US-Börsenkurse stammen vom Freitag, 30.10.2026. Keine Anlageentscheidung allein aufgrund eines Tagesverlusts."
+  "learning_note": "Wichtig bei der Gewinnsaison: tatsächlicher Gewinn minus erwarteter Gewinn, Ausblick, Cashflow und aktuelle Bewertung. Eine gute Zahl kann enttäuschen, wenn der Markt mehr erwartet hatte.",
+  "important": "Wochenendstand 31.10.2026. US-Kurse zuletzt vom 30.10.2026; keine Wochenend-Livekurse oder automatischen Kaufsignale."
 }
