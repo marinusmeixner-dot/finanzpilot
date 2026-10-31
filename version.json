@@ -1,5 +1,5 @@
 {
-  "version": 30,
-  "release": "2026-10-31-v30",
-  "notes": "Stabilized GuV academy, no full-page cloud reload, advanced finance reasoning and glossary, inventory artifact EUR transfers, global watchlist with charts/news, stock market navigation and direct-to-trade selection"
+  "version": 31,
+  "release": "2026-10-31-v31",
+  "notes": "GuV course no longer rewinds on cloud import or traps completion; deeper margin/FCF analysis and abbreviations; clearer inventory wallet/artefact choices; ticker-specific editorial watchlist news"
 }
