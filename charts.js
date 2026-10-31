@@ -2,8 +2,8 @@
    Daten: data/prices.json (belegte verzögerte Tagesschlusskurse), keine Echtzeitdaten. */
 'use strict';
 window.FinanzPilotCharts=(()=>{
- const LINK={MSFT:'MSFT',NVDA:'NVDA',AAPL:'AAPL',AMZN:'AMZN',META:'META',SIEMENS:'SIE.DE',SPY:'SPY',QQQ:'QQQ',ACWI:'ACWI',DAX:'%5EGDAXI',BTCEUR:'BTC-EUR',VWCE:'VWCE.DE'};
- const MAP={'NASDAQ:MSFT':'MSFT','NASDAQ:NVDA':'NVDA','NASDAQ:AAPL':'AAPL','NASDAQ:AMZN':'AMZN','NASDAQ:META':'META','XETR:SIE':'SIEMENS','XETR:SIE.DE':'SIEMENS','XETR:DAX':'DAX','AMEX:SPY':'SPY','AMEX:ACWI':'ACWI','BITSTAMP:BTCEUR':'BTCEUR','NASDAQ:QQQ':'QQQ','AMEX:QQQ':'QQQ','XETR:VWCE':'VWCE'};
+ const LINK={MSFT:'MSFT',NVDA:'NVDA',AAPL:'AAPL',AMZN:'AMZN',META:'META',SIEMENS:'SIE.DE',SPY:'SPY',QQQ:'QQQ',ACWI:'ACWI',DAX:'%5EGDAXI',BTCEUR:'BTC-EUR',VWCE:'VWCE.DE',KION:'KGX.DE',AIXTRON:'AIXA.DE',CGNX:'CGNX'};
+ const MAP={'NASDAQ:MSFT':'MSFT','NASDAQ:NVDA':'NVDA','NASDAQ:AAPL':'AAPL','NASDAQ:AMZN':'AMZN','NASDAQ:META':'META','XETR:SIE':'SIEMENS','XETR:SIE.DE':'SIEMENS','XETR:DAX':'DAX','AMEX:SPY':'SPY','AMEX:ACWI':'ACWI','BITSTAMP:BTCEUR':'BTCEUR','NASDAQ:QQQ':'QQQ','AMEX:QQQ':'QQQ','XETR:VWCE':'VWCE','XETR:KGX':'KION','ETR:KGX':'KION','XETR:AIXA':'AIXTRON','NASDAQ:CGNX':'CGNX'};
  const norm=s=>MAP[String(s||'').toUpperCase()]||String(s||'').toUpperCase().replace(/[^A-Z0-9]/g,'');
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  let data={assets:{}},busy=null,uid=0;const fmt=new Intl.NumberFormat('de-DE',{maximumFractionDigits:2});
