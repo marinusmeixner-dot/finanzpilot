@@ -1,0 +1,54 @@
+/* FinanzPilot v26: native-feeling, currency-separated portfolio dashboard. */
+.fp-depot{max-width:990px;margin:0 auto 65px;display:flex;flex-direction:column;gap:20px}
+.fp-depot-hero h1{font-size:clamp(28px,4.6vw,39px);letter-spacing:-.9px;margin:10px 0}
+.fp-depot-hero p,.fp-depot p{font-size:13px;line-height:1.7;color:#abc9d2}
+.fp-depot-topactions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:13px}
+.fp-depot-topactions small{font-size:11px;color:#a3c2cf;line-height:1.5}
+.fp-depot-wallets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.fp-depot-wallet,.fp-depot-panel{background:linear-gradient(140deg,#152e3e,#102634);border:1px solid #345663;border-radius:18px;padding:20px;min-width:0}
+.fp-depot-wallet-title{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;color:#b2d4da;font-size:13px}
+.fp-depot-wallet-title span{font-size:11px}
+.fp-depot-wallet-big{display:flex;flex-direction:column;gap:6px;margin-top:19px}
+.fp-depot-wallet-big small{font-size:11px;color:#9ebbc8}
+.fp-depot-wallet-big strong{font-size:clamp(24px,3.3vw,30px);font-variant-numeric:tabular-nums;letter-spacing:-.55px;color:#e1f9ed}
+.fp-depot-wallet-big>span{font-size:12px;font-weight:750}
+.fp-depot-wallet-grid{border-top:1px solid #315463;margin-top:20px;padding-top:14px;display:grid;grid-template-columns:1fr 1fr;gap:16px 8px}
+.fp-depot-stat{display:flex;flex-direction:column;gap:5px;min-width:0}
+.fp-depot-stat small{font-size:11px;color:#a5c1cf}
+.fp-depot-stat strong{font-size:14px;color:#d9f4e7;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.fp-depot-pos{color:#85ebaf!important}
+.fp-depot-neg{color:#e6aaa2!important}
+.fp-depot-panel header{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:10px;margin-bottom:13px}
+.fp-depot-panel h2{font-size:19px;margin:0}
+.fp-depot-panel header small{font-size:11px;color:#9abec5}
+.fp-depot-positions{display:flex;flex-direction:column;gap:0}
+.fp-depot-position{display:grid;grid-template-columns:1.2fr .8fr 1fr;gap:12px;align-items:center;background:transparent;border:0;border-top:1px solid #31535d;width:100%;padding:16px 0;color:#d8f0e6;text-align:left;cursor:pointer}
+.fp-depot-position:hover{background:#1e3b43}
+.fp-depot-position>span{display:flex;flex-direction:column;gap:6px;min-width:0}
+.fp-depot-position b{font-size:13px;overflow-wrap:anywhere}
+.fp-depot-position small{color:#9cbcc6;font-size:11px;overflow-wrap:anywhere}
+.fp-depot-position-value{text-align:right}
+.fp-depot-order{display:flex;flex-direction:column;gap:15px}
+.fp-depot-order label{font-size:12px;font-weight:770;color:#e1eee8;display:flex;flex-direction:column;gap:7px}
+.fp-depot-order select,.fp-depot-order input{box-sizing:border-box;width:100%;border:1px solid #486777;border-radius:11px;background:#0c2230;color:#e4efe9;padding:13px;font-size:15px;min-width:0}
+.fp-depot-order input:focus,.fp-depot-order select:focus{outline:2px solid #a4eec9;outline-offset:2px}
+.fp-depot-order-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fp-depot-order-preview{background:#1c3843;border:1px solid #38606b;border-radius:13px;padding:15px;display:flex;flex-direction:column;gap:13px}
+.fp-depot-order-preview>div{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:9px}
+.fp-depot-order-preview span{color:#abc7d0;font-size:12px}
+.fp-depot-order-preview b{font-size:15px;font-variant-numeric:tabular-nums}
+.fp-depot-warning{background:#1d3943;border-left:3px solid #96cfb6;padding:13px;border-radius:5px;font-size:12px!important;margin:0}
+.fp-depot-message{min-height:21px;margin:0;color:#d3e6ba!important}
+.fp-depot-chart .fp-chart{margin-top:0}
+.fp-depot-empty{padding:21px;border:1px dashed #49717b;border-radius:13px;background:#183441}
+.fp-depot-empty h2{font-size:19px;margin:0 0 9px}
+.fp-depot-table-scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+.fp-depot-table-scroll table{width:100%;border-collapse:collapse;min-width:560px}
+.fp-depot-table-scroll th{text-align:left;font-size:11px;color:#a3c0cb;padding:12px 8px;border-bottom:1px solid #365a63}
+.fp-depot-table-scroll td{font-size:12px;color:#d9eee5;padding:12px 8px;border-bottom:1px solid #2b4e5b;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fp-depot-table-scroll td small{display:block;font-size:10px;color:#91b3bd}
+.fp-depot-buy{color:#a2efbf}
+.fp-depot-sell{color:#edbc92}
+.fp-depot-fineprint{font-size:11px!important;color:#a3bac2!important;line-height:1.8!important}
+@media(max-width:750px){.fp-depot-wallets{grid-template-columns:1fr}.fp-depot-wallet,.fp-depot-panel{padding:16px}.fp-depot-position{grid-template-columns:1fr 0.85fr 1fr;gap:6px}.fp-depot-position b{font-size:12px}.fp-depot-position small{font-size:10px}}
+@media(max-width:420px){.fp-depot-position{grid-template-columns:1fr 1fr}.fp-depot-position-value{grid-column:1/-1;text-align:left;flex-direction:row!important;justify-content:space-between}.fp-depot-order-grid{grid-template-columns:1fr}}
