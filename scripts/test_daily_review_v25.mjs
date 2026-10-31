@@ -23,7 +23,7 @@ const client={
      rows.push(row);return {data:row,error:null};
    }}}}},
    delete(){return {eq:async(id,value)=>{rows=rows.filter(r=>r[id]!==value);return {error:null}}}}
- }}}
+ }}
 };
 const cloud={get user(){return userId},get reviewClient(){return userId?client:null},openLogin(){}};
 const window={FinanzPilotCloud:cloud,addEventListener(k,fn){events[k]=fn},render(){},FinanzPilotNavigation:{route(v){state.view=v}}};
