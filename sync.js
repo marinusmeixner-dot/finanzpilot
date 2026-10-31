@@ -55,7 +55,7 @@
       const l=a.reviews?.[key],c=b.reviews?.[key];
       out.reviews[key]=!l?c:!c?l:(Number(l.updatedAt)||0)>=(Number(c.updatedAt)||0)?l:c;
     }
-    out.active=a.active||b.active||null;
+    out.active=Object.prototype.hasOwnProperty.call(a,'active')?a.active:(b.active??null);
     return out;
   }
   function mergeConcepts(main,remote){
@@ -281,9 +281,9 @@
       showAccount();
       setStatus(dirty?'Neue Änderungen werden gleich synchronisiert …':'Lernstand gespeichert und synchronisiert · '+new Date().toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'}),dirty?'pending':'success');
       if(changed){
-        // Ältere Kursmodule lesen localStorage nur beim Laden; nur nach echtem Import neu laden.
-        setStatus('Neue Fortschritte aus der Cloud übernommen – Ansicht wird aktualisiert …','pending');
-        location.reload();
+        // Import in bereits geladene Lernmodule übernehmen, ohne die laufende PWA-Seite neu zu laden.
+        window.dispatchEvent(new CustomEvent('fp-cloud-progress-imported',{detail:{keys:KEYS}}));
+        setStatus('Cloud-Fortschritt ohne Seitenwechsel übernommen','success');
       }
     }catch(err){
       ready=false;
