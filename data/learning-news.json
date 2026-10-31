@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-31",
+  "updated_at": "2026-10-31T21:00:00+01:00",
+  "editor_note": "Einstiegslektionen mit datierten Primärquellen. Die tägliche Redaktion ersetzt/ergänzt Fälle mit neuen geprüften Nachrichten. Keine zeitlosen Fälle als heute ausgeben.",
+  "cases": [
+    {
+      "id": "2026-10-31-amazon-aws-capex",
+      "title": "Amazon: AWS-Wachstum gegen Kapitalbedarf abwägen",
+      "goal": "Wachstum, operative Qualität und Cashflow gemeinsam prüfen",
+      "source": "Amazon Investor Relations",
+      "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+      "published": "29.10.2026",
+      "facts": "Die Cloud-Sparte AWS wächst sehr schnell. Gleichzeitig wird über die Rentabilität hoher KI-Ausgaben diskutiert. Amazon: AWS wächst 39,3 %, Umsatz 201,9 Milliarden Dollar. Die Angaben beziehen sich auf das dritte Quartal 2026.",
+      "context": "Starkes Cloud-Wachstum verändert Umsatz- und Gewinnprognosen. Ob Aktionäre davon profitieren, hängt auch davon ab, wie viel Kapital investiert wird, wie hoch die dauerhaften Margen sind und was der Aktienkurs bereits einpreist.",
+      "caveat": "39,3 % AWS-Wachstum bedeutet weder 39,3 % Konzernwachstum noch dieselbe Rendite. Eine hohe Investitionssumme ist nicht automatisch schlecht; sie muss an erwartbaren zusätzlichen Cashflows gemessen werden.",
+      "questions": [
+        {
+          "question": "AWS wächst deutlich stärker als der Konzern. Welche Information brauchst du zuerst, um daraus eine belastbare Prognose für den gesamten Konzern abzuleiten?",
+          "options": [
+            "Nur die Kursentwicklung seit Jahresbeginn",
+            "AWS-Umsatzanteil, operative Segmentmarge und Entwicklung der übrigen Bereiche",
+            "Die Zahl der veröffentlichten KI-Produkte",
+            "Eine Fortschreibung des AWS-Wachstums auf alle Geschäftsfelder"
+          ],
+          "correct": 1,
+          "explanation": "Segmentwachstum lässt sich nur mit Segmentgewicht, Marge und dem übrigen Konzern sinnvoll auf Konzernerträge übertragen."
+        },
+        {
+          "question": "Angenommen, operative Cashflows steigen, der freie Cashflow fällt aber. Was ist die stärkste zunächst zu prüfende Erklärung?",
+          "options": [
+            "Free Cashflow und operative Cashflows sind identisch",
+            "Die Aktie muss überbewertet sein",
+            "Investitionszahlungen (Capex) können stärker gestiegen sein als der operative Cashflow",
+            "Das Unternehmen erzielt zwangsläufig einen Jahresverlust"
+          ],
+          "correct": 2,
+          "explanation": "Vereinfacht gilt Free Cashflow = operativer Cashflow minus Investitionsausgaben. Man muss außerdem Perioden, Zahlungsströme und Definitionen prüfen."
+        },
+        {
+          "question": "Ein starkes Quartal wird veröffentlicht, die Aktie fällt trotzdem. Was ist die methodisch sinnvollste Erklärung?",
+          "options": [
+            "Der Markt hat die Zahlen nicht gelesen",
+            "Erwartungen oder Zukunftsausblick waren noch optimistischer als die veröffentlichten Zahlen",
+            "Wachstum ist für den Aktienkurs grundsätzlich irrelevant",
+            "Ein Kursrückgang beweist negative Cashflows"
+          ],
+          "correct": 1,
+          "explanation": "Kurse reflektieren Erwartungen und deren Änderung, nicht nur absolute Ist-Zahlen. Auch Bewertung und künftiger Kapitalbedarf zählen."
+        },
+        {
+          "question": "Wie würdest du eine optimistische 2-Jahres-These am besten überprüfbar machen?",
+          "options": [
+            "Nur den Umsatz aus dem Rekordquartal fortschreiben",
+            "Eine exakte Zielrendite behaupten",
+            "Eine fremde Analystenmeinung übernehmen, ohne sie zu prüfen",
+            "AWS-Wachstumsband, Zielmarge, erwartete Capex-Quote, Bewertungsannahme und Widerlegungskriterien festlegen"
+          ],
+          "correct": 3,
+          "explanation": "Eine prüfbare These verbindet operative Annahmen mit Kapitalbedarf, Bewertung, Gegenhypothese und Zeithorizont."
+        }
+      ],
+      "reflectionPrompt": "Formuliere eine 2-Jahres-Investmentthese für Amazon: Welche drei Kennzahlen entscheidest du zu verfolgen? Welche alternative Entwicklung würde deine Erwartung widerlegen?",
+      "rubric": [
+        "Konkreter Analysezeitraum und überprüfbare Originalzahlen",
+        "Segment- und Konzernergebnis nicht verwechseln",
+        "Cashflow und Capex getrennt analysieren",
+        "Mindestens eine Gegenhypothese und messbares Widerlegungskriterium"
+      ],
+      "sample": "Beispiel: Ich würde AWS-Umsatzanteil und operative Margenentwicklung sowie Capex/operativen Cashflow der nächsten Quartale prüfen. Die These wäre gefährdet, wenn trotz Umsatzwachstum dauerhaft weniger freier Cashflow entsteht oder Wachstumserwartungen im Kurs bereits zu optimistisch sind."
+    },
+    {
+      "id": "2026-10-31-alphabet-cloud-fcf",
+      "title": "Alphabet: Rekordwachstum ist nicht gleich frei verfügbares Geld",
+      "goal": "Umsatz-, Margen- und Cashflow-Zahlen richtig zusammenführen",
+      "source": "Alphabet / SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "published": "28.10.2026",
+      "facts": "Alphabet meldet 25 % Umsatzwachstum und besonders starkes Cloud-Wachstum; die Margen und KI-Ausgaben müssen gemeinsam betrachtet werden. Alphabet: Quartalsumsatz 127,6 Milliarden Dollar. Die Zahlen stammen aus dem Bericht für das dritte Quartal 2026.",
+      "context": "Ein Unternehmen kann Umsatz und operativen Gewinn steigern, während der Cashflow wegen Investitionen und Working Capital unter Druck gerät. Für die Bewertung zählt, wie sich diese Effekte über mehrere Jahre entwickeln.",
+      "caveat": "Ein negatives einzelnes Quartal im freien Cashflow beweist nicht, dass das Geschäftsmodell wertlos ist. Positive Unternehmensmeldungen sind ebenfalls kein zuverlässiger Kaufbeweis.",
+      "questions": [
+        {
+          "question": "Alphabet meldet 25 % Umsatzwachstum. Welche Schlussfolgerung ist ohne zusätzliche Daten zulässig?",
+          "options": [
+            "Der Unternehmenswert steigt exakt um 25 %",
+            "Die Aktie ist gegenüber gestern 25 % günstiger",
+            "Der Umsatz in der berichteten Periode ist gegenüber der Vergleichsperiode gestiegen",
+            "Der freie Cashflow muss ebenfalls um 25 % steigen"
+          ],
+          "correct": 2,
+          "explanation": "Umsatzwachstum beschreibt nur eine Größe der GuV. Kosten, Kapitalbedarf, Risiken, Finanzierung und Börsenbewertung bleiben offen."
+        },
+        {
+          "question": "Wodurch unterscheidet sich ein Quartals-FCF vom Free Cashflow über die letzten zwölf Monate (TTM)?",
+          "options": [
+            "TTM ist stets größer und positiv",
+            "TTM umfasst einen längeren Zeitraum und glättet möglicherweise saisonale Schwankungen",
+            "Quartals-FCF umfasst keine Investitionen",
+            "TTM sagt den Aktienkurs exakt voraus"
+          ],
+          "correct": 1,
+          "explanation": "Quartal und rollierende zwölf Monate sind unterschiedliche Beobachtungszeiträume; ein Vergleich ohne Periodenbezug führt in die Irre."
+        },
+        {
+          "question": "Hohe KI-Investitionen reduzieren zunächst den freien Cashflow. Wann könnten sie wirtschaftlich trotzdem sinnvoll sein?",
+          "options": [
+            "Wenn über die Lebensdauer der Anlagen risikoadjustiert zusätzliche Cashflows über den Kapitalkosten entstehen",
+            "Wenn der CEO optimistisch klingt",
+            "Wenn die Investitionen jedes Jahr steigen",
+            "Wenn die Aktie im selben Monat steigt"
+          ],
+          "correct": 0,
+          "explanation": "Investitionen schaffen nur dann Wert, wenn ihr erwarteter Barwert nach Risiko und Kapitalkosten über den nötigen Mittelabflüssen liegt."
+        },
+        {
+          "question": "Welche Gegenhypothese darf bei starkem Cloudwachstum nicht fehlen?",
+          "options": [
+            "Das Unternehmen kann nie Marktanteile verlieren",
+            "Cloudkunden haben immer gleichbleibenden Bedarf",
+            "Technologie wird nicht abgeschrieben",
+            "Preisdruck, steigende Abschreibungen oder niedrigere Auslastung könnten den zusätzlichen Umsatz weniger profitabel machen"
+          ],
+          "correct": 3,
+          "explanation": "Für eine belastbare These müssen Auslastung, Preissetzung, Kapitalkosten, Margen und mögliche Enttäuschungen berücksichtigt werden."
+        }
+      ],
+      "reflectionPrompt": "Schreibe ein kurzes Investmentkomitee-Urteil zu Alphabet: Welche Wachstums- und Investitionsannahmen brauchst du, um einen fairen Wert zu schätzen, und wann würdest du das Urteil revidieren?",
+      "rubric": [
+        "Berichtszeitraum für jede Zahl korrekt nennen",
+        "GuV (Gewinn- und Verlustrechnung) und Free Cashflow trennen",
+        "Mindestens zwei explizite Annahmen zur Bewertung",
+        "Risikofaktor und messbaren Auslöser für eine Neubewertung nennen"
+      ],
+      "sample": "Beispiel: Ich würde Segmentmarge und künftige Auslastung, Investitionsintensität sowie den längerfristigen freien Cashflow modellieren. Eine schwächere Cloud-Marge trotz Wachstum oder deutlich höhere dauerhafte Kapitalkosten könnten meine Annahmen widerlegen."
+    }
+  ]
+}
