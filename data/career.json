@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-10-31",
-  "note": "Read-only mastery-based career layer. No real or simulated currency, no purchasable items and no speculative reward claims.",
+  "note": "Read-only mastery-based career layer. No real or simulated currency, no purchasable items and no speculative reward claims. Advanced tools require both earned competencies and an explicit career rank; base education remains available.",
   "ranks": [
     {
       "id": "kursfunke",
@@ -87,7 +87,8 @@
       ],
       "description": "Umsatzwachstum und operative Marge aus eigenen Zahlen berechnen",
       "example": "Umsatz 8.522 Mio. € · EBIT 632,5 Mio. €",
-      "action": "margin"
+      "action": "margin",
+      "minRank": 1
     },
     {
       "id": "orders",
@@ -100,7 +101,8 @@
       },
       "description": "Book-to-Bill und die Bedeutung von Auftragseingang nachvollziehen",
       "example": "Q3-Aufträge 274,9 Mio. € · Umsatz 183,6 Mio. €",
-      "action": "orders"
+      "action": "orders",
+      "minRank": 1
     },
     {
       "id": "safety",
@@ -112,7 +114,8 @@
       ],
       "description": "Fairen Wert, Sicherheitsmarge und Kaufpreisgrenze vergleichen",
       "example": "Beispiel fairer Wert 58,20 € · Kurs 33,27 €",
-      "action": "safety"
+      "action": "safety",
+      "minRank": 3
     },
     {
       "id": "risk",
@@ -123,7 +126,8 @@
       ],
       "description": "Gewichtete Kursverluste und Konzentrationsrisiko simulieren",
       "example": "Zwei Positionen mit eigener Gewichtung und Kursveränderung",
-      "action": "risk"
+      "action": "risk",
+      "minRank": 4
     },
     {
       "id": "dcf",
@@ -134,7 +138,8 @@
       ],
       "description": "Fünfjährige KION-Cashflow-Prognose und WACC-Sensitivität",
       "example": "Originalbericht + explizite Prognoseannahmen",
-      "action": "dcf"
+      "action": "dcf",
+      "minRank": 5
     }
   ],
   "collectibles": [
