@@ -247,3 +247,29 @@ Der Nutzer hat am 31.10.2026 nach eigenem Google-OAuth-Setup die **schrittweise 
 1. Google-Login auf iPhone, Kontowechsel, Offline-Status, Rewards-Replay, doppelte Käufe und die irreversible Entscheidung mit echtem Testkonto und starker Datenschutzkontrolle testen.
 2. Unaufdringliche, barrierefreie Belohnungs-/Beförderungsanimationen und klar abschaltbare kurze Töne als einzelne Release-Phase.
 3. Erst danach serverseitiges Depotjournal, belastbar datierte Börsenkurse und echte virtuelle Orderausführung.
+
+## Version 15 – Navigation, Sync und Homebildschirm (31.10.2026)
+
+**Im Repository implementiert, echter iPhone-PWA-Durchlauf noch ausstehend.** Der Nutzer meldete: alte v13 sichtbar, überlaufendes Konto-Synchronisieren, unübersichtliche Kontextreiter, zu viele Tabsprünge, einen störenden Zurück-Button, schlecht erkennbare Artefakt-Icons und mangelnde Auto-Updates.
+
+### Tatsächlich in dieser Etappe umgesetzt
+1. `ux-v15.js` statt `ux.js`, `ux-v15.css` ergänzt. Fünf feste Hauptbereiche:
+   - **Start:** Übersicht, Kurse fortsetzen, wichtige News.
+   - **Lernen:** Lernpfad, Training, Skillbaum, Fachwissen/Grundlagen.
+   - **Märkte:** News, Charts, Indizes, eigene Markthypothesen.
+   - **Aktien:** Unternehmensresearch und vollständige Intensivkurse.
+   - **Profil:** Fortschritt, Analystenkarriere, Werkzeuge, Inventar und Konto.
+   Lokale Breadcrumbs + ein kompakter **Bereiche**-Button öffnen pro Tab eine eigene beschreibende Modalseite. Alte großflächige Kontext-Buttons und pauschale Zurück-Schaltfläche entfernt. In den Unterseiten nur optionaler expliziter Weg zur Hauptbereichsübersicht. Ein Navigationswechsel speichert Blickposition und letzte Seite im bisherigen Schlüssel `finanzpilot_navigation_v6`.
+2. `sync.js`: Konto oben rechts jetzt nur noch kompaktes Sync-Symbol; öffnet bei nicht angemeldetem Nutzer Konto, ansonsten löst es eine direkte Sync aus. Konto weiterhin über Profil -> Bereiche erreichbar. Bei Login, App-Öffnen, Wiederkehr aus Hintergrund, Online-Wiederkehr und lokalen Fortschrittsereignissen automatischer Supabase-Abgleich; zusätzliche periodische Synchronisierung im Vordergrund. Beim Verlassen bestmöglicher `fetch keepalive` mit bestehenden JWT-/RLS-Regeln, ohne Garantien bei iOS-Prozessabbruch. Lokal gespeicherte Resultate werden niemals absichtlich gelöscht.
+3. `version.json` mit Version 15, `updates.js` prüft auf GitHub Pages beim Start, Sichtbarwerden und periodisch eine frisch abgerufene Versionsnummer. Erst bei einer höheren App-Version synchronisieren versuchen und Seite mit neuer, cachebrechender Query neu öffnen; Hash/Unterseite bleibt erhalten. `manifest.webmanifest` mit stabiler Scope, eigenem `icon.svg`, `display: standalone` und Start-URL. Reale PWA-Installation muss auf iPhone über Safari „Zum Home-Bildschirm“ mit „Als Web-App öffnen“ einmalig erfolgen.
+4. Karriere und Inventar behalten geteilte Kernschemas, erhalten aber hochwertigere, individuelle Vektor-Medaillen über `iconography.js` und `iconography.css`. Einlösbare Artefakte bleiben vom permanenten Karrieretitel getrennt.
+5. `scripts/test_navigation_v15.mjs` ist im GitHub Actions Quality-Workflow verankert, zusätzlich zu vorangehenden Rechnungs-, Economy- und JS-Tests. Manuelle Laufzeit-Mocks für Tab-Gruppierung, Wechsel und fünf Haupttabs erfolgreich; echte Gerätedarstellung/erfolgreiche GitHub-Actions-Ausführung nicht abschließend bestätigt.
+
+### Bewusst als nächste eigenständige Ausbaustufe geplant (NICHT als fertig markieren)
+- **Großer zoombarer Skillbaum:** umfangreicher als 13 Fertigkeiten, echte verästelte Karte mit 6–8 Branch-Hauptlinien, Querverbindungen und verschiedenen Fertigkeiten-/Meisterstufen. Pinch-to-Zoom am iPhone, Zoom +/−/Reset, minimap/Übersicht, Fokus/Scroll-Erhaltung. Erlerntes Wissen bleibt frei zugänglich, gesperrt sind spezialaufgaben und Tools.
+- **Begriffs-Training statt trockener Lexikoneinträge:** Glossar als Nachschlagewerk behalten, daneben eine **eigenständige Begriffsschule mit progressiver Reihe**: (1) Geschäftsmodell/GuV, (2) operative Marge, (3) Bilanz und Working Capital, (4) Cashflow/Capex, (5) Free Cashflow, (6) ROIC/WACC, (7) DCF und Szenarioprüfung. Pro Stufe: verständlich motivierender Fall → Grafik mit konkreten Zahlen → guided challenge → eigenständige Anwendung in realen Aktienanalysen → anspruchsvolle Meisterfrage. Zwischenstufen, knappe Wiederholungen und spaced review einbauen; keine triviale MC-Klickmaschine. Auch fortgeschrittene Lernende können Eingangstests zum Überspringen leichter Stufen ablegen. Nicht alles in einen großen Tab quetschen.
+- **Design weiterer Belohnungen:** Den neuen Vektorlook fortführen, klare Besonderheit für seltene Artefakte, hochwertige visuelle Entdeckungsanimationen und Nutzer-regelbare Töne; Performance des iPhones prüfen.
+- **Depot:** echte, zeitgestempelte Kurse mit Quellen/Verzögerungsangaben, serverseitiges Orderjournal, Aktien/ETF-Käufe mit ausschließlich virtuellen Euro. Kein Depot starten, bevor diese Daten und Buchungstests stehen.
+
+### Release-Regeln für die tägliche Redaktion
+Bei reinen Content-Änderungen nur Daten aktualisieren; die bestehenden Navigationsskripte nicht zurücksetzen. **Wenn Laufzeit-HTML/JS/CSS geändert werden**, zuerst GitHub Regressionen prüfen, `version.json.version` erhöhen, in `updates.js` auch `CURRENT_VERSION` anpassen, geänderte CSS/JS-Asset-Queryparameter in `index.html` cachebrechend erhöhen und `manifest.webmanifest.start_url` passend aktualisieren. Reine Datenmeldungen mit `fetch(cache:no-store)` benötigen keinen Versionssprung. Keine Cloud-Passwörter/Secrets in GitHub schreiben.
