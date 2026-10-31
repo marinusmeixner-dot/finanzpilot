@@ -10,7 +10,7 @@ window.FinanzPilotConcepts=(()=>{
  const read=()=>{try{const v=JSON.parse(localStorage.getItem(STORAGE)||'{}');return v&&typeof v==='object'?v:{}}catch{return {}}};
  let data={sessions:{},reviews:{},active:null,...read()};
  const persist=(notify=true)=>{try{localStorage.setItem(STORAGE,JSON.stringify(data));if(notify)window.dispatchEvent(new Event('fp-progress-change'))}catch{}};
- const importCloud=()=>{const newer=read();if(!newer.sessions||!newer.reviews)return;data={...data,...newer,sessions:newer.sessions,reviews:newer.reviews,active:Object.prototype.hasOwnProperty.call(newer,'active')?newer.active:data.active};if(typeof state!=='undefined'&&state.view==='concepts')window.render?.()};
+ const importCloud=event=>{if(!event.detail?.keys?.includes(STORAGE))return;const newer=read();if(!newer.sessions||!newer.reviews)return;data={...data,...newer,sessions:newer.sessions,reviews:newer.reviews,active:Object.prototype.hasOwnProperty.call(newer,'active')?newer.active:data.active};if(typeof state!=='undefined'&&state.view==='concepts')window.render?.()};
  window.addEventListener('fp-cloud-progress-imported',importCloud);
  const berlin=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  const afterDays=(n)=>{const [y,m,d]=berlin().split('-').map(Number),x=new Date(Date.UTC(y,m-1,d+n));return x.toISOString().slice(0,10)};
