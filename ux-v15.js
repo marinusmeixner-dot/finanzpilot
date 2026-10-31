@@ -143,11 +143,11 @@
       return '<button type="button" class="fp-hub-row" data-hub-view="'+id+'"><span class="fp-hub-row-icon">'+icon(id,22)+'</span><span class="fp-hub-row-text"><b>'+GROUPS[id].label+'</b><small>'+d+'</small></span><span class="fp-hub-arrow">'+icon('arrow',17)+'</span></button>';
      }).join('');
      let news='';
-     try{const d=window.FinanzPilotLatestNews;if(Array.isArray(d))news=d.slice(0,2).map(x=>'<article class="news-item"><h3>'+esc(x.title)+'</h3><p>'+esc(x.why)+'</p></article>').join('')}catch{}
+     try{const d=(typeof daily!=='undefined'&&daily&&Array.isArray(daily.stories))?daily.stories:(Array.isArray(window.FinanzPilotLatestNews)?window.FinanzPilotLatestNews:[]);news=d.slice(0,2).map(x=>'<article class="news-item"><div class="news-meta"><span>'+esc(x.source||'Quelle')+'</span><span>'+esc(x.published||'')+'</span></div><h3>'+esc(x.title)+'</h3><p>'+esc(x.why||'')+'</p></article>').join('')}catch{}
      return '<div class="fp-home-hero"><div class="eyebrow">DEIN FINANZTRAINING</div><h1>Wissen, das sich auszahlt.</h1><p>Schärfe dein Urteilsvermögen, verstehe Unternehmen und erreiche neue Skills.</p></div>'+
       (resume&&resume!=='home'?'<div class="fp-resume"><div><small>Letzter Lernort</small><b>'+esc(label(resume))+'</b></div><button type="button" data-hub-continue>Fortsetzen →</button></div>':'')+
       '<section class="fp-daily-actions"><div class="fp-section-row"><h2>Wohin möchtest du?</h2><span>Vier klar getrennte Bereiche</span></div><div class="fp-home-list">'+acts+'</div></section>'+
-      '<section class="fp-home-news"><div class="fp-section-row"><h2>Marktüberblick</h2><button type="button" data-hub-view="markets" class="settings-btn">Zu den Nachrichten →</button></div><p class="fp-home-news-summary">Aktuelle Berichte, Indizes und Charts findest du im Markt-Tab.</p></section>';
+      '<section class="fp-home-news"><div class="fp-section-row"><h2>Marktüberblick</h2><button type="button" data-hub-view="markets" class="settings-btn">Alle Nachrichten →</button></div><div class="fp-home-news-list">'+(news||'<p class="fp-home-news-summary">Aktuelle Berichte, Indizes und Charts findest du im Markt-Tab.</p>')+'</div></section>';
     };
     if(state.view==='home')render();
   }
