@@ -1,4 +1,4 @@
-/* FinanzPilot Navigation v7: klare Bereiche, letzter Ort, Kurzwege, Anzeige der Version. */
+/* FinanzPilot Navigation v8: klare Bereiche, letzter Ort, Kurzwege, Anzeige der Version. */
 'use strict';
 (()=>{
  const KEY='finanzpilot_navigation_v6';
@@ -76,11 +76,11 @@
       <div class="fp-nav-group"><div class="fp-nav-label">LERNEN</div><button class="nav-item" data-view="learn"><span>✧</span> Lernpfad & Fälle</button><button class="nav-item" data-view="academy"><span>▤</span> Intensivkurse</button><button class="nav-item" data-view="glossary"><span>≡</span> Fachwissen & Lexikon</button></div>
       <div class="fp-nav-group"><div class="fp-nav-label">ANALYSIEREN</div><button class="nav-item" data-view="markets"><span>⌁</span> Marktüberblick</button><button class="nav-item" data-view="research"><span>◈</span> Aktienanalysen</button><button class="nav-item" data-view="academymarket"><span>◉</span> Mein Markturteil</button></div>
       <div class="fp-nav-group"><div class="fp-nav-label">DEIN BEREICH</div><button class="nav-item" data-view="progress"><span>▥</span> Lernfortschritt</button><button class="fp-side-aux" data-open-account type="button">Konto & Synchronisierung</button></div>
-    </nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1 · Einsteiger</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP bis Level 2</small><div class="privacy-tag">Ohne Konto lokal · mit Konto synchronisiert</div><small class="fp-version" id="fp-app-version">Version 7.0</small></div>`;
+    </nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1 · Einsteiger</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP bis Level 2</small><div class="privacy-tag">Ohne Konto lokal · mit Konto synchronisiert</div><small class="fp-version" id="fp-app-version">Version 8.0</small></div>`;
   const bottom=document.querySelector('.bottom-nav');
   if(bottom)bottom.innerHTML=`<button data-view="home" class="active">⌂<small>Start</small></button><button data-view="learn">✧<small>Lernen</small></button><button data-view="markets">⌁<small>Märkte</small></button><button data-view="research">◈<small>Aktien</small></button><button data-view="progress">◉<small>Profil</small></button>`;
   const top=document.querySelector('.topbar');
-  if(top){top.querySelector('.topbar-note')?.remove();top.querySelector('.mobile-logo')?.remove();top.insertAdjacentHTML('afterbegin',`<button class="fp-menu-trigger" type="button" data-menu-open aria-label="Menü öffnen" aria-expanded="false">☰</button><div class="mobile-logo">↗ <b>FinanzPilot</b><small style="font-size:10px;color:#a1bbc5;margin-left:5px">v7</small></div><div class="fp-topbar-left"><div class="fp-top-location"><span class="fp-location-root">FinanzPilot / </span><span id="fp-current-page">Start</span></div><small class="fp-version">LERNEN · ANALYSIEREN · VERSTEHEN</small></div>`)}
+  if(top){top.querySelector('.topbar-note')?.remove();top.querySelector('.mobile-logo')?.remove();top.insertAdjacentHTML('afterbegin',`<button class="fp-menu-trigger" type="button" data-menu-open aria-label="Menü öffnen" aria-expanded="false">☰</button><div class="mobile-logo">↗ <b>FinanzPilot</b><small style="font-size:10px;color:#a1bbc5;margin-left:5px">v8</small></div><div class="fp-topbar-left"><div class="fp-top-location"><span class="fp-location-root">FinanzPilot / </span><span id="fp-current-page">Start</span></div><small class="fp-version">LERNEN · ANALYSIEREN · VERSTEHEN</small></div>`)}
   document.body.insertAdjacentHTML('beforeend',`<div class="fp-menu-backdrop" data-menu-close></div><aside class="fp-drawer" aria-label="Alle Bereiche"><div class="fp-drawer-header"><b>FinanzPilot · Menü</b><button class="fp-drawer-close" type="button" data-menu-close aria-label="Menü schließen">×</button></div><div class="fp-drawer-nav"><div class="fp-nav-label">ÜBERSICHT</div><button class="nav-item" data-view="home">Startseite</button><div class="fp-nav-label">LERNEN</div><button class="nav-item" data-view="learn">Lernpfad & Fallstudien</button><button class="nav-item" data-view="academy">Intensivkurse</button><button class="nav-item" data-view="glossary">Fachwissen & Lexikon</button><div class="fp-nav-label">ANALYSIEREN</div><button class="nav-item" data-view="markets">Märkte & Charts</button><button class="nav-item" data-view="research">Aktienanalysen</button><button class="nav-item" data-view="academymarket">Eigenes Markturteil</button><div class="fp-nav-label">DEIN BEREICH</div><button class="nav-item" data-view="progress">Fortschritt & Ergebnisse</button><button class="nav-item" data-open-account>Konto & Synchronisierung</button></div></aside>`);
  }
  function init(){
@@ -122,7 +122,7 @@
   window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{if(typeof state==='undefined')return;store(state.view,scrollY)},250)},{passive:true});
   window.addEventListener('pagehide',()=>{if(typeof state!=='undefined')store(state.view,scrollY)});
   window.addEventListener('hashchange',()=>{const q=new URLSearchParams(location.hash.replace(/^#/,''));const v=q.get('view');if(v&&VIEWS.has(v)&&v!==state.view)route(v)});
-  document.getElementById('fp-app-version')?.replaceChildren(document.createTextNode('Version 7.0 · 31.10.2026'));
+  document.getElementById('fp-app-version')?.replaceChildren(document.createTextNode('Version 8.0 · 31.10.2026'));
   updateMenu();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
