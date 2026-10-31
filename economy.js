@@ -15,12 +15,17 @@ window.FinanzPilotEconomy=(()=>{
  const logged=()=>!!api()?.user;
  const module=id=>modules.find(x=>x.id===id);
  const saved=()=>{try{return JSON.parse(localStorage.getItem('finanzpilot_training_v1')||'{}')}catch{return {}}};
+ const expedition=()=>{try{return JSON.parse(localStorage.getItem('finanzpilot_expedition_v1')||'{}')||{}}catch{return {}}};
+ function saveExpedition(id,index){
+  const p=expedition(),completed=p.completed||{};completed[id+':'+index]=true;
+  try{localStorage.setItem('finanzpilot_expedition_v1',JSON.stringify({...p,completed}));window.dispatchEvent(new Event('fp-progress-change'))}catch{}
+ }
  async function refresh(redraw=true){
   if(!logged()){account=null;claims=[];perks=[];ledger=[];verified=[];loading=false;if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.();return}
   loading=true;
   try{
    const rows=await Promise.all(['fp_economy_accounts','fp_reward_claims','fp_reward_perks','fp_reward_ledger','fp_verified_training'].map(t=>api().economyRead(t)));
-   account=rows[0][0]||{research_points:0,virtual_euro_cents:0};claims=rows[1];perks=rows[2];ledger=rows[3];verified=rows[4];error='';
+   account=rows[0][0]||{research_points:0,virtual_euro_cents:0};claims=rows[1];perks=rows[2];ledger=rows[3];verified=rows[4];error='';updateTheme();
   }catch(e){error='Dein Inventar konnte nicht geladen werden: '+(e.message||e);account=null}
   finally{loading=false;if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.()}
  }
@@ -61,8 +66,8 @@ window.FinanzPilotEconomy=(()=>{
   if(!pending?.special)return '';
   const [type,id]=pending.special.split(':'),m=module(id);if(!m)return '';
   if(type==='path'){
-   const qs=specialQuestions[id]||[];
-   return `<section class="fp-inventory-special" id="fp-inventory-special"><button class="fp-inventory-back" data-inventory-back>← Inventar</button><div class="eyebrow">SPEZIAL-EXPEDITION · ${esc(m.kind)}</div><h2>${esc(m.path)}</h2><p>Diese drei anspruchsvolleren Prüfstationen hast du mit einem seltenen Artefakt freigeschaltet. Nutze sie, um deine Investmentthese zu schärfen.</p>${qs.map((q,i)=>`<details class="fp-inventory-expedition-step"><summary>${i+1}. ${esc(q.title)}</summary><p>${esc(q.text)}</p><div>${q.answers.map((a,j)=>`<button type="button" data-expedition-answer="${esc(id)}:${i}:${j}">${esc(a)}</button>`).join('')}</div><p id="fp-expedition-feedback-${i}" class="fp-expedition-feedback" aria-live="polite"></p></details>`).join('')}</section>`;
+   const qs=specialQuestions[id]||[],solved=expedition().completed||{};
+   return `<section class="fp-inventory-special" id="fp-inventory-special"><button class="fp-inventory-back" data-inventory-back>← Inventar</button><div class="eyebrow">SPEZIAL-EXPEDITION · ${esc(m.kind)}</div><h2>${esc(m.path)}</h2><p>Diese drei Prüfstationen hast du mit einem besonderen Artefakt freigeschaltet. Dein Fortschritt wird mit dem Lernstand gespeichert.</p><p class="fp-inventory-expedition-progress">${qs.filter((q,i)=>solved[id+':'+i]).length} / ${qs.length} Stationen gemeistert</p>${qs.map((q,i)=>`<details class="fp-inventory-expedition-step"><summary>${i+1}. ${esc(q.title)} ${solved[id+':'+i]?'✓':''}</summary><p>${esc(q.text)}</p><div>${q.answers.map((a,j)=>`<button type="button" data-expedition-answer="${esc(id)}:${i}:${j}">${esc(a)}</button>`).join('')}</div><p id="fp-expedition-feedback-${i}" class="fp-expedition-feedback" aria-live="polite"></p></details>`).join('')}</section>`;
   }
   return `<section class="fp-inventory-special" id="fp-inventory-special"><button class="fp-inventory-back" data-inventory-back>← Inventar</button><div class="eyebrow">SPEZIALWERKZEUG · ${esc(m.kind)}</div><h2>${esc(m.tool)}</h2><p>Berechne Kennzahlen mit eigenen Unternehmenswerten. Vorgegebene Werte sind nur Lernbeispiele und keine aktuellen Börsenkurse.</p><form id="fp-econ-tool-form"><label>Wert A<input type="text" inputmode="text" name="a" value="${id==='alphabet-cloud'?'30,7':id==='kion-nachfrage'?'8445':'274,9'}" required /></label><label>Wert B<input type="text" inputmode="text" name="b" value="${id==='alphabet-cloud'?'127,6':id==='kion-nachfrage'?'8522':'183,6'}" required /></label><button type="submit" class="btn">Verhältnis berechnen</button></form><div id="fp-econ-tool-result" aria-live="polite"></div><small>${id==='alphabet-cloud'?'A = Cloud-Umsatz, B = Konzernumsatz':id==='kion-nachfrage'?'A = Aufträge, B = Konzernumsatz':'A = Auftragseingang, B = Umsatz'} – für denselben Zeitraum.</small></section>`;
  }
@@ -101,8 +106,9 @@ window.FinanzPilotEconomy=(()=>{
    const r=await verify(id,i,a.value,types[i-1]);
    if(r?.correct){verifiedCount++;if(r.newReward)awarded=true}else errors++;
   }
-  if(!errors){notice=awarded?'Neues Forschungsartefakt und 100 Forschungspunkte freigeschaltet!':verifiedCount===4?'Dein Training ist serverseitig bestätigt. Das Artefakt lässt sich im Inventar einlösen.':'Du hast '+verifiedCount+'/4 geprüfte Antworten. Schließe die restlichen Aufgaben ab.'}
   await refresh(false);
+  verifiedCount=verified.filter(x=>x.module_id===id).length;
+  if(!errors){notice=awarded?'Neues Forschungsartefakt und 100 Forschungspunkte freigeschaltet!':verifiedCount===4?'Dein Training ist serverseitig bestätigt. Das Artefakt lässt sich im Inventar einlösen.':'Du hast '+verifiedCount+'/4 geprüfte Antworten. Schließe die restlichen Aufgaben ab.'}
   if(typeof state!=='undefined'&&state.view==='inventory')window.render?.();
   return {verifiedCount,skipped,errors,awarded};
  }
@@ -145,7 +151,8 @@ window.FinanzPilotEconomy=(()=>{
   root.querySelector('[data-inventory-back]')?.addEventListener('click',()=>{pending=null;window.render?.()});
   root.querySelectorAll('[data-expedition-answer]').forEach(b=>b.addEventListener('click',()=>{
    const [id,i,j]=b.dataset.expeditionAnswer.split(':');const q=specialQuestions[id]?.[Number(i)];const out=document.getElementById('fp-expedition-feedback-'+i);if(!q||!out)return;
-   out.textContent=(q.correct===Number(j)?'✓ Richtig. ':'Noch nicht. ')+q.why;
+   if(q.correct===Number(j))saveExpedition(id,i);
+   out.textContent=(q.correct===Number(j)?'✓ Richtig und gespeichert. ':'Noch nicht. ')+q.why;
   }));
   root.querySelector('#fp-econ-tool-form')?.addEventListener('submit',ev=>{
    ev.preventDefault();const data=Object.fromEntries(new FormData(ev.currentTarget).entries());
