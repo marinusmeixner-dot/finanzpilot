@@ -110,7 +110,7 @@
       const prev=joined.get(entry.id);
       if(!prev||(Number(entry.updatedAt)||0)>=(Number(prev.updatedAt)||0))joined.set(entry.id,entry);
     }
-    const entries=[...joined.values()].sort((x,y)=>(Number(x.createdAt)||0)-(Number(y.createdAt)||0)).slice(-250);
+    const entries=[...joined.values()].sort((x,y)=>(Number(x.createdAt)||0)-(Number(y.createdAt)||0));
     const draft=(Number(a.draftAt)||0)>=(Number(b.draftAt)||0)?a.draft??b.draft??null:b.draft??a.draft??null;
     return{entries,draft,draftAt:Math.max(Number(a.draftAt)||0,Number(b.draftAt)||0),selected:a.selected||b.selected||null};
   }
