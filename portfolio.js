@@ -63,7 +63,7 @@
    quotes=q.data||[];wallets=w.data||[];trades=t.data||[];watchlist=wl.data||[];hasLoaded=true;notice='';
    if(!bySym(symbol)&&quotes.length)symbol=quotes[0].symbol;
   }catch(e){notice='Depotdaten konnten nicht geladen werden: '+String(e.message||e)}
-  finally{loading=false;viewRefresh();window.dispatchEvent(new Event('fp-portfolio-loaded'))}
+  finally{loading=false;viewRefresh();window.dispatchEvent?.(new Event('fp-portfolio-loaded'))}
  }
  async function trade(){
   if(busy||!client()||!user())return;
@@ -110,14 +110,14 @@
       const {error:e}=await client().from('fp_paper_watchlist').insert({user_id:user(),symbol:key});
       if(e&&e.code!=='23505')throw e;
     }
-    if(goTrade)symbol=key;await load();if(saveToWatchlist)window.dispatchEvent(new Event('fp-watchlist-changed'));
+    if(goTrade)symbol=key;await load();if(saveToWatchlist)window.dispatchEvent?.(new Event('fp-watchlist-changed'));
     notice=(saveToWatchlist?'Watchlist gespeichert. ':'')+out.quote.asset_name+' ('+key+') · geprüfter Schlusskurs '+out.quote.quote_date+' · '+fmt(out.quote.price,out.quote.currency)+'. Kein Livepreis.';
    }catch(e){notice='Wertpapier konnte nicht hinzugefügt werden: '+String(e.message||e)}
    finally{lookupBusy=false;viewRefresh();if(!notice.startsWith('Wertpapier konnte'))jump(goTrade?'fp-depot-order-panel':'fp-depot-watchlist')}
  }
  async function removeWatch(code){
   try{const {error:e}=await client().from('fp_paper_watchlist').delete().eq('user_id',user()).eq('symbol',code);if(e)throw e;
-   watchlist=watchlist.filter(x=>x.symbol!==code);window.dispatchEvent(new Event('fp-watchlist-changed'));notice=code+' aus deiner Watchlist entfernt. Depotpositionen bleiben erhalten.';viewRefresh();
+   watchlist=watchlist.filter(x=>x.symbol!==code);window.dispatchEvent?.(new Event('fp-watchlist-changed'));notice=code+' aus deiner Watchlist entfernt. Depotpositionen bleiben erhalten.';viewRefresh();
   }catch(e){notice='Watchlist konnte nicht geändert werden: '+String(e.message||e);viewRefresh()}
  }
  const stat=(s,label,cur)=>'<div class="fp-depot-stat"><small>'+esc(label)+'</small><strong>'+fmt(s,cur)+'</strong></div>';
