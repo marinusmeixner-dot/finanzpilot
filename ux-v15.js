@@ -3,13 +3,13 @@
  const KEY='finanzpilot_navigation_v6';
  const MAIN=['home','learn','markets','research','progress'];
  const GROUPS={
-  home:{label:'Start',links:[['home','Tagesübersicht','Weitermachen, neue Inhalte und Tagesnachrichten']]},
-  learn:{label:'Lernen',links:[['learn','Lernpfad','Lerne in aufeinander aufbauenden Lektionen'],['concepts','Begriffs-Akademie','Zehn zusammenhängende Stufen vom EBIT zum Kursziel'],['training','Trainingslabor','Anspruchsvolle Praxisfälle mit Rechnungen'],['skills','Skillbaum','Fertigkeiten, Abhängigkeiten und Meisterprüfungen'],['glossary','Fachbegriffe','Finanzsprache und wichtige Konzepte verstehen'],['foundations','Grundlagenwissen','Grundwissen für vertiefende Kurse']]},
-  markets:{label:'Märkte',links:[['markets','Marktüberblick','Aktuelle Nachrichten, Indizes und Charts'],['academymarket','Mein Markturteil','Eigene Schlüsse ziehen und vergleichen']]},
-  research:{label:'Aktien',links:[['research','Aktienkatalog','Unternehmen und Analysen entdecken'],['academy','Intensivkurse','Vollständige Unternehmens- und Bewertungsprozesse']]},
-  progress:{label:'Profil',links:[['progress','Lernfortschritt','Deine Ergebnisse und Lernhistorie'],['career','Analystenkarriere','Ränge und freigeschaltete Research-Werkzeuge'],['inventory','Inventar & Belohnungen','Forschungspunkte, Items und Spezialwege'],['account','Konto & Datensicherung','Google-Login, Datenschutz und Fortschrittssync']]}
+ home:{label:'Start',links:[['home','Tagesübersicht','Dein täglicher FinanzPilot']]},
+ learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Lernpfad','Lektionen und tägliche Übungen'],['concepts','Begriffs-Akademie','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['training','Praxis-Trainingslabor','Unternehmen analysieren und mit Zahlen rechnen'],['skills','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt']]},
+ markets:{label:'Märkte',description:'News, Kurse, Indizes und eigene Einschätzungen',links:[['marketoverview','Marktüberblick','Nachrichten, Indizes und Charts analysieren'],['academymarket','Mein Markturteil','Marktentwicklungen bewerten und Schlussfolgerungen prüfen']]},
+ research:{label:'Aktien',description:'Unternehmen recherchieren und fundiert bewerten',links:[['researchcatalog','Aktienanalysen','Umfassende Einzelaktien- und Unternehmensrecherchen'],['academy','Aktien-Intensivkurse','Vollständige Bewertungsprozesse Schritt für Schritt']]},
+ progress:{label:'Profil',description:'Dein Fortschritt, Karriere und Sammlerstücke',links:[['learningstats','Lernfortschritt','Ergebnisse, Lernhistorie und tägliche Fortschritte'],['career','Analystenkarriere & Werkzeuge','Ränge, Beförderungen und Research-Tools'],['inventory','Inventar & Belohnungen','Forschungspunkte, Artefakte und Spezialmissionen'],['account','Konto & Synchronisierung','Anmelden und Fortschritt sichern']]}
  };
- const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',markets:'markets',academymarket:'markets',research:'research',academy:'research',academycourse:'research',progress:'progress',career:'progress',inventory:'progress',account:'progress'};
+ const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',learnpath:'learn',markets:'markets',marketoverview:'markets',academymarket:'markets',research:'research',researchcatalog:'research',academy:'research',academycourse:'research',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
  const ICON={
   home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
   learn:'<path d="m3 4 9-2 9 2v16l-9 2-9-2z"/><path d="M12 2v20"/><path d="m6 9 4 1m4 0 4-1"/>',
@@ -23,7 +23,7 @@
  const icon=(key,size=21)=>'<svg width="'+size+'" height="'+size+'" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.85" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICON[key]||ICON.arrow)+'</svg>';
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
  const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return {}}};
- let inRoute=false,restoring=false,previous='home',menuOpen=false;
+ let inRoute=false,restoring=false,previous='home';
  const rootOf=view=>PARENT[view]||'home';
  const label=view=>Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[rootOf(view)].label;
  function persist(view,y){
@@ -33,27 +33,19 @@
    localStorage.setItem(KEY,JSON.stringify({...x,view,resume:view==='home'?x.resume:view,positions:pos,scroll:pos[view],updated_at:Date.now()}));
   }catch{}
  }
- function closeMenu(){
-  const dlg=document.getElementById('fp-section-overlay');
-  if(dlg){dlg.hidden=true;dlg.setAttribute('aria-hidden','true')}
-  menuOpen=false;document.body.classList.remove('fp-section-is-open');
- }
- function menu(){
-  const group=rootOf(state.view),data=GROUPS[group],dlg=document.getElementById('fp-section-overlay');
-  if(!dlg)return;
-  dlg.querySelector('[data-section-title]').textContent=data.label+' · Bereiche';
-  dlg.querySelector('[data-section-intro]').textContent='Wähle einen Bereich. Alles hier gehört zum Tab „'+data.label+'“.';
-  dlg.querySelector('[data-section-list]').innerHTML=data.links.filter(x=>x[0]!=='account').map(([view,name,description])=>
-   '<button type="button" class="fp-section-option '+(view===state.view?'selected':'')+'" data-section-route="'+esc(view)+'"><span class="fp-section-text"><strong>'+esc(name)+'</strong><small>'+esc(description)+'</small></span><span class="fp-section-arrow">'+icon('arrow',18)+'</span></button>'
-  ).join('')+(group==='progress'?'<button type="button" class="fp-section-option" data-section-account><span class="fp-section-text"><strong>Konto & Datensicherung</strong><small>Google-Anmeldung, automatische Synchronisierung und Sicherung</small></span><span class="fp-section-arrow">'+icon('arrow',18)+'</span></button>':'');
-  dlg.hidden=false;dlg.setAttribute('aria-hidden','false');menuOpen=true;document.body.classList.add('fp-section-is-open');
-  dlg.querySelector('[data-section-close]')?.focus();
+ const isHub=v=>MAIN.includes(v)&&v!=='home';
+ function renderHub(v){
+  if(!isHub(v))return '';
+  const g=GROUPS[v];
+  return '<section class="fp-tab-hub"><div class="fp-tab-hub-intro"><div class="eyebrow">DEIN FINANZPILOT</div><h1>'+esc(g.label)+'</h1><p>'+esc(g.description)+'</p></div><div class="fp-tab-hub-list">'+g.links.map(([id,name,desc],i)=>
+   '<button type="button" class="fp-tab-hub-item" '+(id==='account'?'data-section-account':'data-section-route="'+esc(id)+'"')+'><span class="fp-tab-hub-number">'+String(i+1).padStart(2,'0')+'</span><span class="fp-tab-hub-copy"><strong>'+esc(name)+'</strong><small>'+esc(desc)+'</small></span><span class="fp-tab-hub-chevron">'+icon('arrow',18)+'</span></button>'
+  ).join('')+'</div></section>';
  }
  function build(){
   const side=document.querySelector('.sidebar');
   if(side)side.innerHTML='<div class="brand"><div class="brand-symbol">↗</div><div><b>FinanzPilot</b><small>WISSEN & ANALYSE</small></div></div><nav class="fp-side-main" aria-label="Hauptnavigation">'+MAIN.map(id=>
    '<button type="button" class="fp-main-link" data-section-main="'+id+'">'+icon(id,20)+'<span>'+GROUPS[id].label+'</span></button>'
-  ).join('')+'</nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP</small><small class="fp-version" id="fp-app-version">FinanzPilot v15</small></div>';
+  ).join('')+'</nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP</small><small class="fp-version" id="fp-app-version">FinanzPilot v17</small></div>';
   const bottom=document.querySelector('.bottom-nav');
   if(bottom)bottom.innerHTML=MAIN.map(id=>'<button type="button" data-section-main="'+id+'" aria-label="'+GROUPS[id].label+'">'+icon(id,22)+'<small>'+GROUPS[id].label+'</small></button>').join('');
   const top=document.querySelector('.topbar');
@@ -66,33 +58,31 @@
    top.querySelector('.pill.muted')?.classList.add('fp-small-date');
    top.querySelector('.pill.streak')?.classList.add('fp-small-streak');
   }
-  document.body.insertAdjacentHTML('beforeend',
-   '<div id="fp-section-overlay" class="fp-section-overlay" role="presentation" hidden aria-hidden="true"><section class="fp-section-sheet" role="dialog" aria-modal="true" aria-labelledby="fp-section-title"><div class="fp-section-header"><div><small>DEINE NAVIGATION</small><h2 data-section-title id="fp-section-title">Bereiche</h2></div><button type="button" data-section-close aria-label="Menü schließen">'+icon('close',22)+'</button></div><p data-section-intro></p><div class="fp-section-list" data-section-list></div></section></div>');
+
  }
  function header(){
   const root=document.getElementById('view-root');if(!root)return;
-  let head=root.querySelector(':scope > .fp-section-bar');
-  if(!head){head=document.createElement('div');head.className='fp-section-bar';root.prepend(head)}
-  const main=rootOf(state.view),isRoot=main===state.view;
-  const html='<div class="fp-section-position"><small>'+esc(GROUPS[main].label)+'</small><strong>'+esc(label(state.view))+'</strong></div><button type="button" class="fp-section-open" data-section-open aria-label="Bereiche innerhalb '+GROUPS[main].label+' öffnen">'+icon('menu',18)+' <span>Bereiche</span></button>'+
-   (!isRoot?'<button type="button" class="fp-section-up" data-section-up="'+main+'" aria-label="Zur '+GROUPS[main].label+'-Übersicht">‹ '+esc(GROUPS[main].label)+'</button>':'');
-  if(head.dataset.sectionView!==state.view){head.innerHTML=html;head.dataset.sectionView=state.view}
+  const group=rootOf(state.view),hub=(group===state.view);
   root.querySelector(':scope > .fp-route-header')?.remove();
   root.querySelector(':scope > .fp-context-tabs')?.remove();
-  document.querySelectorAll('[data-section-main]').forEach(b=>{
-   const active=b.dataset.sectionMain===main;
-   b.classList.toggle('active',active);
-   if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');
-  });
+  root.querySelector(':scope > .fp-section-bar')?.remove();
+  const existing=root.querySelector(':scope > .fp-tab-crumb');
+  if(hub)existing?.remove();
+  else if(!existing||existing.dataset.view!==state.view){
+   existing?.remove();const el=document.createElement('div');el.className='fp-tab-crumb';el.dataset.view=state.view;
+   el.innerHTML='<button type="button" data-section-up="'+group+'">‹ '+esc(GROUPS[group].label)+'-Übersicht</button><span>'+esc(label(state.view))+'</span>';
+   root.prepend(el);
+  }
+  document.querySelectorAll('[data-section-main]').forEach(b=>{const on=b.dataset.sectionMain===group;b.classList.toggle('active',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
  }
  function route(to,remember=true){
   if(inRoute||!Object.prototype.hasOwnProperty.call(PARENT,to))return;
   if(to==='account'){window.FinanzPilotCloud?.openLogin?.();return}
-  if(to==='lesson'||to==='labcase')to='learn';
-  const old=state.view;if(old===to){closeMenu();return}
+  if(to==='lesson'||to==='labcase')to='learnpath';
+  const old=state.view;if(old===to)return;
   persist(old,window.scrollY);
   const pos=load().positions||{},y=Number(pos[to]||0);
-  inRoute=true;closeMenu();previous=to;chooseView(to);header();
+  inRoute=true;previous=to;chooseView(to);header();
   if(remember)persist(to,y);
   const hash='#view='+encodeURIComponent(to);if(location.hash!==hash)history.replaceState(null,'',location.pathname+location.search+hash);
   inRoute=false;
@@ -108,18 +98,13 @@
   previous=state.view;header();
   const y=Number(saved.positions?.[initial]||0);if(y>0)requestAnimationFrame(()=>requestAnimationFrame(()=>window.scrollTo(0,y)));
   document.addEventListener('click',ev=>{
-   const t=ev.target.closest('[data-section-main],[data-section-open],[data-section-close],[data-section-route],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
+   const t=ev.target.closest('[data-section-main],[data-section-route],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
    if(!t)return;
-   if(t.matches('[data-section-open]')){ev.preventDefault();ev.stopImmediatePropagation();menu();return}
-   if(t.matches('[data-section-close]')){ev.preventDefault();ev.stopImmediatePropagation();closeMenu();return}
-   if(t.matches('[data-section-account]')){ev.preventDefault();ev.stopImmediatePropagation();closeMenu();window.FinanzPilotCloud?.openLogin?.();return}
+   if(t.matches('[data-section-account]')){ev.preventDefault();ev.stopImmediatePropagation();window.FinanzPilotCloud?.openLogin?.();return}
    if(t.matches('[data-hub-continue]')){ev.preventDefault();ev.stopImmediatePropagation();route(load().resume||'learn');return}
    const dest=t.dataset.sectionMain||t.dataset.sectionRoute||t.dataset.sectionUp||t.dataset.hubView||t.dataset.view;
    if(dest){ev.preventDefault();ev.stopImmediatePropagation();route(dest)}
   },true);
-  const dlg=document.getElementById('fp-section-overlay');
-  dlg?.addEventListener('click',ev=>{if(ev.target===dlg)closeMenu()});
-  document.addEventListener('keydown',ev=>{if(ev.key==='Escape'&&menuOpen)closeMenu()});
   const root=document.getElementById('view-root');
   if(root)new MutationObserver(()=>{
     if(typeof state==='undefined')return;
@@ -152,7 +137,7 @@
     if(state.view==='home')render();
   }
   header();
-  window.FinanzPilotNavigation={route,openSectionMenu:menu,parentOf:rootOf};
+  window.FinanzPilotNavigation={route,renderHub,isHub,parentOf:rootOf,sections:GROUPS};if(isHub(state.view))render();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
