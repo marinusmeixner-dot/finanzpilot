@@ -13,7 +13,7 @@ assert.equal(follow.steps[1].answer,-70);
 assert.equal(follow.steps[3].type,'sequence');
 const memory={},handlers={},state={view:'concepts'};let renders=0;
 const storage={getItem:k=>memory[k]??null,setItem:(k,v)=>{memory[k]=String(v)}};
-const window={addEventListener:(n,fn)=>{handlers[n]=fn},dispatchEvent(){},render(){renders++},scrollTo(){},FinanzPilotMath:{calculate:n=>Number(String(n).replace(',','.'))}};
+const window={addEventListener:(n,fn)=>{handlers[n]=fn},dispatchEvent(){},render(){renders++},scrollTo(){},FinanzPilotMath:{calculate:n=>Number(String(n).replace(',','.')),bind(){},toolbar(){return ''}}};
 const document={readyState:'loading',addEventListener(){},getElementById(){return null}};
 const ctx=vm.createContext({window,document,localStorage:storage,state,Date,Intl,JSON,Math,Number,String,Array,Event:class Event{constructor(t){this.type=t}},queueMicrotask,fetch:async()=>({ok:true,json:async()=>lesson}),console});
 vm.runInContext(read('concepts.js'),ctx,{filename:'concepts.js'});
