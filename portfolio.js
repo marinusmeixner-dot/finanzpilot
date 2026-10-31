@@ -10,7 +10,7 @@
  const client=()=>window.FinanzPilotCloud?.paperClient||null;
  const bySym=x=>quotes.find(q=>q.symbol===x);
  const jump=id=>{const fn=()=>document.getElementById?.(id)?.scrollIntoView?.({behavior:'smooth',block:'start'});if(typeof requestAnimationFrame==='function')requestAnimationFrame(fn);else fn()};
- const inspect=code=>window.FinanzPilotMarketWatch?.open(code);
+ const inspect=code=>window.FinanzPilotMarkets?.stockDetail(code);
  const timeBerlin=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  const isFresh=q=>!!q&&q.quote_date<=timeBerlin()&&(Date.parse(timeBerlin()+'T12:00:00Z')-Date.parse(q.quote_date+'T12:00:00Z'))/864e5<=7;
  const round=x=>Math.round((Number(x)+Number.EPSILON)*100)/100;
@@ -110,14 +110,14 @@
       const {error:e}=await client().from('fp_paper_watchlist').insert({user_id:user(),symbol:key});
       if(e&&e.code!=='23505')throw e;
     }
-    if(goTrade)symbol=key;await load();
+    if(goTrade)symbol=key;await load();if(saveToWatchlist)window.dispatchEvent(new Event('fp-watchlist-changed'));
     notice=(saveToWatchlist?'Watchlist gespeichert. ':'')+out.quote.asset_name+' ('+key+') · geprüfter Schlusskurs '+out.quote.quote_date+' · '+fmt(out.quote.price,out.quote.currency)+'. Kein Livepreis.';
    }catch(e){notice='Wertpapier konnte nicht hinzugefügt werden: '+String(e.message||e)}
    finally{lookupBusy=false;viewRefresh();if(!notice.startsWith('Wertpapier konnte'))jump(goTrade?'fp-depot-order-panel':'fp-depot-watchlist')}
  }
  async function removeWatch(code){
   try{const {error:e}=await client().from('fp_paper_watchlist').delete().eq('user_id',user()).eq('symbol',code);if(e)throw e;
-   watchlist=watchlist.filter(x=>x.symbol!==code);notice=code+' aus deiner Watchlist entfernt. Depotpositionen bleiben erhalten.';viewRefresh();
+   watchlist=watchlist.filter(x=>x.symbol!==code);window.dispatchEvent(new Event('fp-watchlist-changed'));notice=code+' aus deiner Watchlist entfernt. Depotpositionen bleiben erhalten.';viewRefresh();
   }catch(e){notice='Watchlist konnte nicht geändert werden: '+String(e.message||e);viewRefresh()}
  }
  const stat=(s,label,cur)=>'<div class="fp-depot-stat"><small>'+esc(label)+'</small><strong>'+fmt(s,cur)+'</strong></div>';
@@ -134,11 +134,11 @@
   return '<div class="fp-depot"><div class="fp-depot-hero"><span class="eyebrow">FINANZPILOT · VIRTUELLES AKTIENDEPOT</span><h1>Dein Depot</h1><p>Kaufe und verkaufe Wertpapiere mit Spielgeld, vergleiche Entscheidungen und trainiere deine Strategie. Keine realen Börsenorders, keine Anbindung an ein Bankkonto.</p><div class="fp-depot-topactions"><button class="btn secondary" data-depot-reload>Depot aktualisieren</button><small>Kursquelle: Yahoo Finance (teilweise inoffiziell), datierte Schlusskurse – keine Livepreise.</small></div></div><div class="fp-depot-wallets">'+books+'</div>'+
    '<section class="fp-depot-panel fp-depot-search"><header><h2>Aktien weltweit suchen</h2><small>Unternehmensname, ISIN oder Börsenkürzel</small></header>'+
   '<form id="fp-depot-search-form" class="fp-depot-search-form"><input name="query" type="search" maxlength="64" value="'+esc(searchTerm)+'" placeholder="z. B. Alphabet, SAP.DE, ASML.AS, BRK-B" aria-label="Aktie suchen"><button class="btn" type="submit" '+(searching?'disabled':'')+'>'+(searching?'Sucht …':'Suchen')+'</button></form>'+
-  (searchResults.length?'<div class="fp-depot-search-results">'+searchResults.map(x=>'<div class="fp-depot-search-item"><span><b>'+esc(x.name)+'</b><small>'+esc(x.symbol)+' · '+esc(x.exchange)+' · '+esc(x.type)+'</small></span><button type="button" class="btn secondary" data-depot-add="'+esc(x.symbol)+'">Merken</button><button type="button" class="btn" data-depot-pick="'+esc(x.symbol)+'">Handeln</button></div>').join('')+'</div>':'')+
+  (searchResults.length?'<div class="fp-depot-search-results">'+searchResults.map(x=>'<div class="fp-depot-search-item fp34-tap-row" data-fp34-inspect="'+esc(x.symbol)+'" role="link" tabindex="0" aria-label="Chart von '+esc(x.name)+' öffnen"><span><b>'+esc(x.name)+'</b><small>'+esc(x.symbol)+' · '+esc(x.exchange)+' · '+esc(x.type)+'</small></span><button type="button" class="btn secondary" data-depot-add="'+esc(x.symbol)+'">Merken</button><button type="button" class="btn" data-depot-pick="'+esc(x.symbol)+'">Handeln</button></div>').join('')+'</div>':'')+
   (/^[A-Za-z0-9][A-Za-z0-9.\-]{0,23}$/.test(searchTerm)?'<button type="button" class="btn secondary" data-depot-direct="'+esc(searchTerm.toUpperCase())+'">Börsensymbol '+esc(searchTerm.toUpperCase())+' direkt prüfen →</button>':'')+
   '<p class="fp-depot-warning">Weltweite Suche über einen kostenlosen, inoffiziellen Anbieter. Nicht jeder Börsenplatz, jede ISIN oder jede Aktie ist dort verfügbar. Gehandelt wird nur, wenn ein gültiger, datierter Schlusskurs geprüft werden konnte.</p></section>'+
   '<section class="fp-depot-panel" id="fp-depot-watchlist"><header><h2>Meine Watchlist</h2><small>'+watchlist.length+' gemerkte Werte</small></header>'+
-  (watchlist.length?'<div class="fp-depot-search-results">'+watchlist.map(w=>{const x=bySym(w.symbol);return '<div class="fp-depot-search-item"><span><b>'+esc(x?.asset_name||w.symbol)+'</b><small>'+esc(w.symbol)+(x?' · '+fmt(x.price,x.currency)+' · Stand '+esc(x.quote_date):' · Preis derzeit nicht verfügbar')+'</small></span><button type="button" class="btn secondary" data-depot-inspect="'+esc(w.symbol)+'">Chart & News</button><button type="button" class="btn secondary" data-depot-pick="'+esc(w.symbol)+'">Handeln</button><button type="button" class="btn secondary" data-depot-remove="'+esc(w.symbol)+'">Entfernen</button></div>'}).join('')+'</div>':'<p>Suche nach einem Unternehmen und tippe auf „Merken“.</p>')+'</section>'+
+  (watchlist.length?'<div class="fp-depot-search-results">'+watchlist.map(w=>{const x=bySym(w.symbol);return '<div class="fp-depot-search-item fp34-tap-row" data-fp34-inspect="'+esc(w.symbol)+'" role="link" tabindex="0"><span><b>'+esc(x?.asset_name||w.symbol)+'</b><small>'+esc(w.symbol)+(x?' · '+fmt(x.price,x.currency)+' · Stand '+esc(x.quote_date):' · Preis derzeit nicht verfügbar')+'</small></span><button type="button" class="btn secondary" data-depot-pick="'+esc(w.symbol)+'">Handeln</button><button type="button" class="btn secondary" data-depot-remove="'+esc(w.symbol)+'">Entfernen</button></div>'}).join('')+'</div>':'<p>Suche nach einem Unternehmen und tippe auf „Merken“.</p>')+'</section>'+
    '<section class="fp-depot-panel"><header><h2>Meine Positionen</h2><small>'+pos.length+' aktuelle Werte</small></header><div class="fp-depot-positions">'+body+'</div></section>'+
    '<section class="fp-depot-panel" id="fp-depot-order-panel"><header><h2>Virtuell handeln</h2><small>Serverseitig geprüft · nur ganze Stücke</small></header><form id="fp-depot-order" class="fp-depot-order"><label>Wertpapier<select name="symbol" data-depot-symbol>'+options+'</select></label><div class="fp-depot-order-grid"><label>Aktion<select name="side" data-depot-side><option value="BUY" '+(side==='BUY'?'selected':'')+'>Virtuell kaufen</option><option value="SELL" '+(side==='SELL'?'selected':'')+'>Virtuell verkaufen</option></select></label><label>Stückzahl<input name="quantity" type="number" inputmode="numeric" min="1" max="10000" step="1" value="'+esc(qty)+'" data-depot-qty required></label></div>'+
    (q?'<div class="fp-depot-order-preview"><div><span>Referenzpreis vom '+esc(q.quote_date)+'</span><b>'+fmt(price,curr)+'</b></div><div><span>Geplanter Auftragswert</span><b>'+fmt(total,curr)+'</b></div><div><span>'+((side==='BUY')?'Verfügbare Kasse':'Im Depot verfügbar')+'</span><b>'+((side==='BUY')?fmt(stats.cash,curr):own+' Stück')+'</b></div></div>':'')+
@@ -152,6 +152,7 @@
   root.querySelector('[data-depot-login]')?.addEventListener('click',()=>window.FinanzPilotCloud?.openLogin?.());
   root.querySelectorAll('[data-depot-reload]').forEach(b=>b.addEventListener('click',load));
   root.querySelectorAll('[data-depot-inspect]').forEach(b=>b.addEventListener('click',()=>inspect(b.dataset.depotInspect)));
+  root.querySelectorAll('[data-fp34-inspect]').forEach(b=>{const open=e=>{if(e?.target?.closest?.('button'))return;inspect(b.dataset.fp34Inspect)};b.addEventListener('click',open);b.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.target.closest?.('button')){e.preventDefault();open(e)}})});
   root.querySelector('#fp-depot-search-form')?.addEventListener('submit',e=>{e.preventDefault();searchStocks(e.currentTarget.elements.query.value)});
   root.querySelectorAll('[data-depot-add]').forEach(b=>b.addEventListener('click',()=>registerStock(b.dataset.depotAdd,true,false)));
   root.querySelectorAll('[data-depot-pick]').forEach(b=>b.addEventListener('click',()=>registerStock(b.dataset.depotPick,false,true)));
@@ -163,7 +164,8 @@
   root.querySelector('#fp-depot-order')?.addEventListener('submit',ev=>{ev.preventDefault();const f=ev.currentTarget;symbol=f.elements.symbol.value;side=f.elements.side.value;qty=f.elements.quantity.value;trade()});
  }
  async function pick(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();jump('fp-depot-order-panel')}
- window.FinanzPilotPortfolio={render,bind,load,trade,pick,searchStocks,registerStock,removeWatch,calcPortfolio,currencyStats,isFresh,get quotes(){return quotes},get trades(){return trades},get watchlist(){return watchlist}};
+ async function focus(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();const row=[...document.querySelectorAll('[data-fp34-inspect]')].find(x=>x.dataset.fp34Inspect===symbol);if(row)row.scrollIntoView({behavior:'smooth',block:'center'});else jump('fp-depot-order-panel')}
+ window.FinanzPilotPortfolio={render,bind,load,trade,pick,focus,searchStocks,registerStock,removeWatch,calcPortfolio,currencyStats,isFresh,get quotes(){return quotes},get trades(){return trades},get watchlist(){return watchlist}};
  window.addEventListener('fp-auth-change',load);
  window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='depot'&&user())load()});
  window.addEventListener('online',()=>{if(user())load()});
