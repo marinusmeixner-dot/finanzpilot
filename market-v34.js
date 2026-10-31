@@ -7,7 +7,7 @@ const valid=s=>/^[A-Z0-9][A-Z0-9.\-]{0,23}$/.test(String(s||''));
 const client=()=>window.FinanzPilotCloud?.paperClient;
 const user=()=>window.FinanzPilotCloud?.user;
 const currency=(n,c)=>{try{return new Intl.NumberFormat('de-DE',{style:'currency',currency:c||'USD'}).format(Number(n))}catch{return String(n)}};
-let watch=[],quotes=[],editorial=[],feedDate='',active='',tab='general',newsFocus='',message='',busy=false,lastRefresh=0;
+let watch=[],quotes=[],editorial=[],feedDate='',active='',tab='general',newsFocus='',message='',busy=false,queued=false,lastRefresh=0;
 const historyCache=new Map(),newsCache=new Map(),pending=new Map();
 const q=s=>quotes.find(x=>x.symbol===s)||null;
 const ui=()=>{if(typeof state!=='undefined'&&['marketoverview','marketdetail','marketnews'].includes(state.view))window.render?.()};
@@ -39,7 +39,7 @@ function getAsset(symbol,type,force=false){
  pending.set(key,p);return p;
 }
 async function refresh(force=false){
- if(busy)return;
+ if(busy){queued=true;return}
  busy=true;
  try{
   await fetchEditorial(force);
@@ -54,16 +54,19 @@ async function refresh(force=false){
   }else quotes=[];
   message='';
   // Previously saved stocks appear immediately; historical charts hydrate asynchronously.
-  for(const item of watch)getAsset(item.symbol,'history');
+  hydrateCharts(watch.map(item=>item.symbol));
   if(typeof state!=='undefined'&&state.view==='marketnews'&&tab==='watch')loadWatchNews();
   if(active)getAsset(active,'history');
  }catch(e){message='Marktdaten konnten nicht aktualisiert werden: '+String(e.message||e)}
- finally{busy=false;ui()}
+ finally{busy=false;ui();if(queued){queued=false;refresh(true)}}
+}
+async function hydrateCharts(symbols){
+ for(let i=0;i<symbols.length;i+=4)await Promise.all(symbols.slice(i,i+4).map(symbol=>getAsset(symbol,'history')));
 }
 async function loadWatchNews(){
  // Provider data is requested when this section is opened, including newly added symbols.
  // No assumed background push or unsupported claim of daily chatbot access to private watchlists.
- for(const item of watch)await getAsset(item.symbol,'news');
+ for(let i=0;i<watch.length;i+=4)await Promise.all(watch.slice(i,i+4).map(item=>getAsset(item.symbol,'news')));
 }
 function points(symbol){const d=historyCache.get(symbol)?.data;return Array.isArray(d?.points)?d.points.filter(x=>Number(x.price)>0):[]}
 function chart(symbol){
@@ -139,8 +142,11 @@ async function addStock(s){
   if(!key)throw Error('Kein verifizierter Kurs gefunden');
   if(!watch.some(w=>w.symbol===key)){const r=await client().from('fp_paper_watchlist').insert({user_id:user(),symbol:key});if(r.error&&r.error.code!=='23505')throw r.error}
   message=key+' wurde der Watchlist hinzugefügt.';
+  tab='watch';newsFocus=key;
   window.dispatchEvent(new Event('fp-watchlist-changed'));
   await refresh(true);
+  await getAsset(key,'news');
+  ui();
  }catch(e){message='Nicht hinzugefügt: '+String(e.message||e);ui()}
 }
 function request(s){
