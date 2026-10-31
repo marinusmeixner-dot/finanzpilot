@@ -43,7 +43,7 @@
  function viewRefresh(){if(typeof state!=='undefined'&&state.view==='depot')window.render?.()}
  async function load(){
   if(!client()||!user()){quotes=[];wallets=[];trades=[];watchlist=[];searchResults=[];currentUser=null;hasLoaded=false;viewRefresh();return}
-  if(loading)return;
+  if(loading)return new Promise(resolve=>window.addEventListener('fp-portfolio-loaded',resolve,{once:true}));
   loading=true;const uid=user();
   if(currentUser&&currentUser!==uid){quotes=[];wallets=[];trades=[];watchlist=[];searchResults=[];hasLoaded=false}
   currentUser=uid;
@@ -63,7 +63,7 @@
    quotes=q.data||[];wallets=w.data||[];trades=t.data||[];watchlist=wl.data||[];hasLoaded=true;notice='';
    if(!bySym(symbol)&&quotes.length)symbol=quotes[0].symbol;
   }catch(e){notice='Depotdaten konnten nicht geladen werden: '+String(e.message||e)}
-  finally{loading=false;viewRefresh()}
+  finally{loading=false;viewRefresh();window.dispatchEvent(new Event('fp-portfolio-loaded'))}
  }
  async function trade(){
   if(busy||!client()||!user())return;
@@ -162,7 +162,7 @@
   root.querySelector('[data-depot-qty]')?.addEventListener('change',ev=>{qty=ev.target.value;viewRefresh()});
   root.querySelector('#fp-depot-order')?.addEventListener('submit',ev=>{ev.preventDefault();const f=ev.currentTarget;symbol=f.elements.symbol.value;side=f.elements.side.value;qty=f.elements.quantity.value;trade()});
  }
- function pick(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');load();jump('fp-depot-order-panel')}
+ async function pick(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();jump('fp-depot-order-panel')}
  window.FinanzPilotPortfolio={render,bind,load,trade,pick,searchStocks,registerStock,removeWatch,calcPortfolio,currencyStats,isFresh,get quotes(){return quotes},get trades(){return trades},get watchlist(){return watchlist}};
  window.addEventListener('fp-auth-change',load);
  window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='depot'&&user())load()});
