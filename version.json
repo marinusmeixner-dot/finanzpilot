@@ -1,5 +1,5 @@
 {
-  "version": 27,
-  "release": "2026-10-31-v27",
-  "notes": "International equity/ETF search, private watchlist and on-demand verified historical quotes for virtual trading via Supabase Edge Function; broad coverage is provider dependent"
+  "version": 28,
+  "release": "2026-10-31-v28",
+  "notes": "Smooth GuV learning and cloud sync; abbreviated finance terms expanded; richer concept reasoning; once-only inventory EUR rewards bridged to portfolio; watchlist and company charts/news under Markets; direct Depot/Markets routes"
 }
