@@ -56,3 +56,10 @@
 .glossary-detail{margin-top:11px}.glossary-detail p{font-size:12px;line-height:1.75;margin:6px 0 13px}.glossary-detail b{color:#ecf5f4}
 @media(max-width:1040px){.fp-research-cards{grid-template-columns:repeat(2,1fr)}.fp-research-layout{grid-template-columns:1fr}}
 @media(max-width:780px){.learning-lanes,.fp-research-cards,.glossary-grid{grid-template-columns:1fr}.fp-chart{padding:13px}.fp-chart-date{max-width:115px}.fp-report-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+/* FinanzPilot: Kennzahlen der Einzelaktien verständlich und vergleichbar */
+.fp-metrics-insights{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.fp-metric-insight{padding:16px;border:1px solid #2b4a5a;border-radius:14px;background:#142837;display:flex;flex-direction:column;gap:7px}
+.fp-metric-insight span{color:#a7c0cf;font-size:12px;font-weight:600}
+.fp-metric-insight strong{font-size:25px;letter-spacing:-.5px;color:#a5ebd3}
+.fp-metric-insight small{color:#8caabb;font-size:11px;line-height:1.5}
+@media(max-width:700px){.fp-metrics-insights{grid-template-columns:1fr}}
