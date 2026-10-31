@@ -8,7 +8,7 @@
   const PUBLISHABLE_KEY = 'sb_publishable_hXOPhMFpAD0RVAky9eonSQ_yiFoZps6';
   const CLOUD_TABLE = 'finanzpilot_progress';
   const APP_URL = 'https://marinusmeixner-dot.github.io/finanzpilot/';
-  const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1','finanzpilot_training_v1','finanzpilot_concepts_v1','finanzpilot_transfer_v1','finanzpilot_investment_committee_v1','finanzpilot_expedition_v1'];
+  const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1','finanzpilot_training_v1','finanzpilot_concepts_v1','finanzpilot_transfer_v1','finanzpilot_investment_committee_v1','finanzpilot_theses_v1','finanzpilot_expedition_v1'];
   const escapeHtml = x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let client=null, user=null, enabled=false, ready=false, busy=false, timer=null, retryTimer=null, canAnalyze=false, lastStatus='Lokal gespeichert', recoveryMode=false, dirty=false, accessToken=null, lastRemote={}, pendingAgain=false, lastSyncAt=0, retryCount=0;
   const localObject=k=>{try{const x=JSON.parse(localStorage.getItem(k)||'{}');return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}catch{return {}}};
@@ -102,12 +102,25 @@
     }
     return{...b,...a,sessions,active:a.active||b.active||null};
   }
+  function mergeTheses(local,remote){
+    const a=isObject(local)?local:{},b=isObject(remote)?remote:{};
+    const joined=new Map();
+    for(const entry of [...(Array.isArray(b.entries)?b.entries:[]),...(Array.isArray(a.entries)?a.entries:[])]){
+      if(!entry||typeof entry.id!=='string'||entry.id.length>100)continue;
+      const prev=joined.get(entry.id);
+      if(!prev||(Number(entry.updatedAt)||0)>=(Number(prev.updatedAt)||0))joined.set(entry.id,entry);
+    }
+    const entries=[...joined.values()].sort((x,y)=>(Number(x.createdAt)||0)-(Number(y.createdAt)||0)).slice(-250);
+    const draft=(Number(a.draftAt)||0)>=(Number(b.draftAt)||0)?a.draft??b.draft??null:b.draft??a.draft??null;
+    return{entries,draft,draftAt:Math.max(Number(a.draftAt)||0,Number(b.draftAt)||0),selected:a.selected||b.selected||null};
+  }
   function mergePayload(local,remote){
     const out={};
     for(const key of KEYS){const a=local?.[key]||{}, b=remote?.[key]||{};
       if(key==='fp_research_answers_v1')out[key]={...(isObject(b)?b:{}),...(isObject(a)?a:{})};
       else if(key==='finanzpilot_training_v1'||key==='finanzpilot_transfer_v1')out[key]=mergeTraining(a,b);
       else if(key==='finanzpilot_investment_committee_v1')out[key]=mergeInvestmentCommittee(a,b);
+      else if(key==='finanzpilot_theses_v1')out[key]=mergeTheses(a,b);
       else if(key==='finanzpilot_concepts_v1')out[key]=mergeConcepts(a,b);
       else out[key]=merge(a,b);
     }
