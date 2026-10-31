@@ -1,15 +1,15 @@
-/* FinanzPilot Navigation v13: klare Bereiche, letzter Ort, Kurzwege, Anzeige der Version. */
+/* FinanzPilot Navigation v14: klare Bereiche, letzter Ort, Kurzwege, Anzeige der Version. */
 'use strict';
 (()=>{
  const KEY='finanzpilot_navigation_v6';
- const VIEWS=new Set(['home','learn','markets','academy','academymarket','research','glossary','progress','foundations','academycourse','labcase','lesson','skills','training','career']);
- const LABEL={home:'Start',learn:'Lernpfad',markets:'Marktüberblick',academy:'Intensivkurse',academycourse:'Kurs bearbeiten',academymarket:'Markturteil',research:'Aktienanalysen',glossary:'Finanzlexikon',progress:'Fortschritt',foundations:'Grundlagen',labcase:'Fallstudie',lesson:'Lektion',skills:'Skillbaum',training:'Trainingslabor',career:'Analystenkarriere'};
+ const VIEWS=new Set(['home','learn','markets','academy','academymarket','research','glossary','progress','foundations','academycourse','labcase','lesson','skills','training','career','inventory']);
+ const LABEL={home:'Start',learn:'Lernpfad',markets:'Marktüberblick',academy:'Intensivkurse',academycourse:'Kurs bearbeiten',academymarket:'Markturteil',research:'Aktienanalysen',glossary:'Finanzlexikon',progress:'Fortschritt',foundations:'Grundlagen',labcase:'Fallstudie',lesson:'Lektion',skills:'Skillbaum',training:'Trainingslabor',career:'Analystenkarriere',inventory:'Inventar & Belohnungen'};
  const clean=v=>VIEWS.has(v)?v:'home';
  const resumeView=()=>last.resume||(last.view&&last.view!=='home'?last.view:null);
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
  const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch{return {}}};
  let prevView='home',last=load(),scrollTimer=null,restoring=false,routeBusy=false;const backStack=[];
- const group=v=>['lesson','labcase','foundations','learn','glossary','skills','training'].includes(v)?'learn':['academy','academycourse'].includes(v)?'academy':v==='career'?'progress':v;
+ const group=v=>['lesson','labcase','foundations','learn','glossary','skills','training'].includes(v)?'learn':['academy','academycourse'].includes(v)?'academy':['career','inventory'].includes(v)?'progress':v;
  const store=(view,scroll)=>{if(restoring)return;try{
    const old=load(),v=clean(view),positions={...(old.positions||{})};
    positions[v]=Math.max(0,Math.floor(Number(scroll)||0));
@@ -47,9 +47,9 @@
   academy:[['Aktienkatalog','research'],['Intensivkurse','academy'],['Eigene Marktthese','academymarket']],
   research:[['Aktienkatalog','research'],['Intensivkurse','academy'],['Eigene Marktthese','academymarket']],
   markets:[['Marktüberblick','markets'],['Mein Markturteil','academymarket']],
-  progress:[['Lernfortschritt','progress'],['Karriere & Werkzeuge','career'],['Konto','account']]
+  progress:[['Lernfortschritt','progress'],['Karriere & Werkzeuge','career'],['Inventar & Belohnungen','inventory'],['Konto','account']]
  };
- function tabsFor(view){return ['learn','lesson','labcase','glossary','foundations','skills','training'].includes(view)?NAV.learn:['academy','academycourse','research'].includes(view)?NAV.academy:['markets','academymarket'].includes(view)?NAV.markets:['progress','career'].includes(view)?NAV.progress:null}
+ function tabsFor(view){return ['learn','lesson','labcase','glossary','foundations','skills','training'].includes(view)?NAV.learn:['academy','academycourse','research'].includes(view)?NAV.academy:['markets','academymarket'].includes(view)?NAV.markets:['progress','career','inventory'].includes(view)?NAV.progress:null}
  function decorate(){
   const root=document.getElementById('view-root');
   if(!root||typeof state==='undefined')return;
@@ -83,13 +83,13 @@
       <div class="fp-nav-group"><div class="fp-nav-label">ÜBERSICHT</div><button class="nav-item active" data-view="home"><span>⌂</span> Startseite</button></div>
       <div class="fp-nav-group"><div class="fp-nav-label">LERNEN</div><button class="nav-item" data-view="learn"><span>✧</span> Lernpfad & Fälle</button><button class="nav-item" data-view="training"><span>▤</span> Training & Prüfungen</button><button class="nav-item" data-view="skills"><span>❖</span> Skillbaum & Meisterschaft</button><button class="nav-item" data-view="academy"><span>▤</span> Intensivkurse</button><button class="nav-item" data-view="glossary"><span>≡</span> Fachwissen & Lexikon</button></div>
       <div class="fp-nav-group"><div class="fp-nav-label">ANALYSIEREN</div><button class="nav-item" data-view="markets"><span>⌁</span> Marktüberblick</button><button class="nav-item" data-view="research"><span>◈</span> Aktienanalysen</button><button class="nav-item" data-view="academymarket"><span>◉</span> Mein Markturteil</button></div>
-      <div class="fp-nav-group"><div class="fp-nav-label">DEIN BEREICH</div><button class="nav-item" data-view="progress"><span>▥</span> Lernfortschritt</button><button class="nav-item" data-view="career"><span>✦</span> Karriere & Werkzeuge</button><button class="fp-side-aux" data-open-account type="button">Konto & Synchronisierung</button></div>
-    </nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1 · Einsteiger</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP bis Level 2</small><div class="privacy-tag">Ohne Konto lokal · mit Konto synchronisiert</div><small class="fp-version" id="fp-app-version">Version 13.0</small></div>`;
+      <div class="fp-nav-group"><div class="fp-nav-label">DEIN BEREICH</div><button class="nav-item" data-view="progress"><span>▥</span> Lernfortschritt</button><button class="nav-item" data-view="career"><span>✦</span> Karriere & Werkzeuge</button><button class="nav-item" data-view="inventory"><span>◈</span> Inventar & Belohnungen</button><button class="fp-side-aux" data-open-account type="button">Konto & Synchronisierung</button></div>
+    </nav><div class="sidebar-bottom"><div class="small-heading">DEIN LERNSTAND</div><div class="side-level" id="side-level">Level 1 · Einsteiger</div><div class="progress-line"><span id="side-progress"></span></div><small id="side-xp">0 / 100 XP bis Level 2</small><div class="privacy-tag">Ohne Konto lokal · mit Konto synchronisiert</div><small class="fp-version" id="fp-app-version">Version 14.0</small></div>`;
   const bottom=document.querySelector('.bottom-nav');
   if(bottom)bottom.innerHTML=`<button data-view="home" class="active">⌂<small>Start</small></button><button data-view="learn">✧<small>Lernen</small></button><button data-view="markets">⌁<small>Märkte</small></button><button data-view="research">◈<small>Aktien</small></button><button data-view="progress">◉<small>Profil</small></button>`;
   const top=document.querySelector('.topbar');
-  if(top){top.querySelector('.topbar-note')?.remove();top.querySelector('.mobile-logo')?.remove();top.insertAdjacentHTML('afterbegin',`<button class="fp-menu-trigger" type="button" data-menu-open aria-label="Menü öffnen" aria-expanded="false">☰</button><div class="mobile-logo">↗ <b>FinanzPilot</b><small style="font-size:10px;color:#a1bbc5;margin-left:5px">v13</small></div><div class="fp-topbar-left"><div class="fp-top-location"><span class="fp-location-root">FinanzPilot / </span><span id="fp-current-page">Start</span></div><small class="fp-version">LERNEN · ANALYSIEREN · VERSTEHEN</small></div>`)}
-  document.body.insertAdjacentHTML('beforeend',`<div class="fp-menu-backdrop" data-menu-close></div><aside class="fp-drawer" aria-label="Alle Bereiche"><div class="fp-drawer-header"><b>FinanzPilot · Menü</b><button class="fp-drawer-close" type="button" data-menu-close aria-label="Menü schließen">×</button></div><div class="fp-drawer-nav"><div class="fp-nav-label">ÜBERSICHT</div><button class="nav-item" data-view="home">Startseite</button><div class="fp-nav-label">LERNEN</div><button class="nav-item" data-view="learn">Lernpfad & Fallstudien</button><button class="nav-item" data-view="training">Training & Wiederholen</button><button class="nav-item" data-view="skills">Verzweigter Skillbaum</button><button class="nav-item" data-view="academy">Intensivkurse</button><button class="nav-item" data-view="glossary">Fachwissen & Lexikon</button><div class="fp-nav-label">ANALYSIEREN</div><button class="nav-item" data-view="markets">Märkte & Charts</button><button class="nav-item" data-view="research">Aktienanalysen</button><button class="nav-item" data-view="academymarket">Eigenes Markturteil</button><div class="fp-nav-label">DEIN BEREICH</div><button class="nav-item" data-view="progress">Fortschritt & Ergebnisse</button><button class="nav-item" data-view="career">Analystenkarriere</button><button class="nav-item" data-open-account>Konto & Synchronisierung</button></div></aside>`);
+  if(top){top.querySelector('.topbar-note')?.remove();top.querySelector('.mobile-logo')?.remove();top.insertAdjacentHTML('afterbegin',`<button class="fp-menu-trigger" type="button" data-menu-open aria-label="Menü öffnen" aria-expanded="false">☰</button><div class="mobile-logo">↗ <b>FinanzPilot</b><small style="font-size:10px;color:#a1bbc5;margin-left:5px">v14</small></div><div class="fp-topbar-left"><div class="fp-top-location"><span class="fp-location-root">FinanzPilot / </span><span id="fp-current-page">Start</span></div><small class="fp-version">LERNEN · ANALYSIEREN · VERSTEHEN</small></div>`)}
+  document.body.insertAdjacentHTML('beforeend',`<div class="fp-menu-backdrop" data-menu-close></div><aside class="fp-drawer" aria-label="Alle Bereiche"><div class="fp-drawer-header"><b>FinanzPilot · Menü</b><button class="fp-drawer-close" type="button" data-menu-close aria-label="Menü schließen">×</button></div><div class="fp-drawer-nav"><div class="fp-nav-label">ÜBERSICHT</div><button class="nav-item" data-view="home">Startseite</button><div class="fp-nav-label">LERNEN</div><button class="nav-item" data-view="learn">Lernpfad & Fallstudien</button><button class="nav-item" data-view="training">Training & Wiederholen</button><button class="nav-item" data-view="skills">Verzweigter Skillbaum</button><button class="nav-item" data-view="academy">Intensivkurse</button><button class="nav-item" data-view="glossary">Fachwissen & Lexikon</button><div class="fp-nav-label">ANALYSIEREN</div><button class="nav-item" data-view="markets">Märkte & Charts</button><button class="nav-item" data-view="research">Aktienanalysen</button><button class="nav-item" data-view="academymarket">Eigenes Markturteil</button><div class="fp-nav-label">DEIN BEREICH</div><button class="nav-item" data-view="progress">Fortschritt & Ergebnisse</button><button class="nav-item" data-view="career">Analystenkarriere</button><button class="nav-item" data-view="inventory">Inventar & Belohnungen</button><button class="nav-item" data-open-account>Konto & Synchronisierung</button></div></aside>`);
  }
  function init(){
   if(typeof state==='undefined')return;
@@ -105,6 +105,7 @@
         ['✧','Lernpfad','Lektionen, Fälle und Wiederholungen','learn'],
         ['▤','Trainingslabor','Echte Finanzzahlen, Aufgaben und Wiederholungen','training'],
         ['✦','Analystenkarriere','Ränge, Werkzeuge und einzigartige Kursartefakte','career'],
+        ['◈','Inventar & Belohnungen','Forschungspunkte und einmalig verdiente Gegenstände','inventory'],
         ['❖','Skillbaum','Verzweigte Fähigkeiten und Meisterprüfungen','skills'],
         ['▤','Intensivkurse','Aktien vollständig bewerten','academy'],
         ['◈','Aktienresearch','Unternehmen und Zahlen analysieren','research'],
@@ -146,7 +147,7 @@
   window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{if(typeof state==='undefined')return;store(state.view,scrollY)},250)},{passive:true});
   window.addEventListener('pagehide',()=>{if(typeof state!=='undefined')store(state.view,scrollY)});
   window.addEventListener('hashchange',()=>{const q=new URLSearchParams(location.hash.replace(/^#/,''));const v=q.get('view');if(v&&VIEWS.has(v)&&v!==state.view)route(v)});
-  document.getElementById('fp-app-version')?.replaceChildren(document.createTextNode('Version 13.0 · 31.10.2026'));
+  document.getElementById('fp-app-version')?.replaceChildren(document.createTextNode('Version 14.0 · 31.10.2026'));
   updateMenu();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
