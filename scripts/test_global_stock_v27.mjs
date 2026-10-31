@@ -25,9 +25,9 @@ assert(portfolio.includes('async function searchStocks('));
 assert(portfolio.includes('async function registerStock('));
 assert(portfolio.includes('async function removeWatch('));
 assert(portfolio.includes('Aktien weltweit suchen'));
-assert(read('index.html').includes('portfolio.js?v=29'));
-assert(read('index.html').includes('portfolio-v26.css?v=29'));
-assert(JSON.parse(read('version.json')).version===29);
+assert(read('index.html').includes('portfolio.js?v=30'));
+assert(read('index.html').includes('portfolio-v26.css?v=30'));
+assert(JSON.parse(read('version.json')).version===30);
 const memory={},state={view:'depot'},events={};
 let identity='test-user',rpcCalls=[],quotes=[{symbol:'MSFT',asset_name:'Microsoft',currency:'USD',price:521.90,quote_date:'2026-10-30',source:'historical',adjusted:true}],watch=[],wallets=[],trades=[];
 const db={
