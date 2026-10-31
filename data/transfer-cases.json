@@ -1,0 +1,531 @@
+{
+  "schema_version": 1,
+  "updated": "2026-10-31",
+  "title": "Transferwerkstatt – mehrere Konzepte in einem Fall",
+  "description": "Fünf durchgehende, fiktive und technisch nachvollziehbare Analysefälle. Erst erklären, dann eigenständig rechnen und urteilen.",
+  "modules": [
+    {
+      "id": "liquiditaetsfalle",
+      "title": "Der Wachstums-Cashflow-Fall",
+      "short": "Eine neue Fabrik treibt den Umsatz – aber wer finanziert das Wachstum?",
+      "minutes": 24,
+      "difficulty": "Aufbau · 5 Anwendungen",
+      "domain": "Bilanz · Cashflow · Investitionen",
+      "prerequisite": "guv",
+      "source": {
+        "label": "Fiktiver FinanzPilot-Lehrfall · konsistente Modellannahmen",
+        "url": "#view=concepts"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Wachstum ist nicht gleich Liquidität",
+          "text": "Die fiktive Kabelwerk Nova AG steigert den Jahresumsatz auf 920 Mio. €. Ihr EBIT beträgt 95 Mio. €, der operative Steuersatz 25 %. Abschreibungen betragen 42 Mio. €, das zusätzlich gebundene Working Capital 38 Mio. € und der gezahlte CapEx 92 Mio. €. Für dieses vereinfachte Lehrbeispiel gelten NOPAT = EBIT nach Steuern und FCFF = NOPAT + Abschreibungen − Working Capital-Zunahme − CapEx. Damit betragen NOPAT 71,25 Mio. €, FCFF −16,75 Mio. €. Finanzierungszinsen werden beim FCFF nicht separat abgezogen.",
+          "insight": "Rechne nicht vom EBITDA direkt auf verfügbares Geld: Du brauchst Steuern, Cash-Bindung und echte Investitionsausgaben.",
+          "visual": {
+            "labels": [
+              "Umsatz",
+              "EBIT",
+              "CapEx",
+              "Working Capital"
+            ],
+            "values": [
+              920,
+              95,
+              92,
+              38
+            ],
+            "unit": "Mio. € · fiktiv"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Operativen Cashflow herleiten",
+          "prompt": "EBIT = 95, Steuerquote 25 %, Abschreibungen 42 und gebundenes Working Capital +38 Mio. €. Wie hoch ist der vereinfachte operative Cashflow vor CapEx?",
+          "answer": 75.25,
+          "unit": "Mio. €",
+          "tolerance": 0.11,
+          "method": "NOPAT = 95×0,75 = 71,25. Vereinfachter CFO = 71,25 + 42 − 38 = 75,25 Mio. €. Der Fall ignoriert weitere Bilanzverschiebungen und zinsbedingte Steuerwirkungen.",
+          "hint": "Erst den operativen Nachsteuergewinn berechnen, dann Abschreibungen addieren und Working-Capital-Anstieg abziehen."
+        },
+        {
+          "type": "number",
+          "title": "Freien Unternehmens-Cashflow berechnen",
+          "prompt": "Der gerade errechnete operative Cashflow beträgt 75,25 Mio. €, der CapEx 92 Mio. €. Wie hoch ist der vereinfachte FCFF (Mio. €)?",
+          "answer": -16.75,
+          "unit": "Mio. €",
+          "tolerance": 0.11,
+          "method": "75,25 − 92 = −16,75 Mio. €; negativer FCFF ist kein Beweis für Wertvernichtung, kann aber Finanzierungslücken erzeugen.",
+          "hint": "Hier dürfen negative Werte herauskommen – keine Zahl vorweg als zwingend positiv annehmen."
+        },
+        {
+          "type": "multi",
+          "title": "Wachstum kritisch prüfen",
+          "prompt": "Welche zwei Aussagen folgen aus dem Fall?",
+          "options": [
+            "Der Umsatzanstieg finanziert die Fabrik zwangsläufig selbst.",
+            "Der positive EBIT-Wert kann gleichzeitig mit negativem FCFF auftreten.",
+            "38 Mio. € zusätzliches Working Capital binden unter sonst gleichen Bedingungen Liquidität.",
+            "Die 92 Mio. € Investitionen reduzieren das EBITDA dieses Jahres unmittelbar um 92 Mio. €."
+          ],
+          "correct": [
+            1,
+            2
+          ],
+          "method": "Die GuV weist 95 Mio. € EBIT aus, der FCFF liegt trotzdem unter null. Die 38 Mio. € zusätzliche Kapitalbindung sind ein Cashabfluss.",
+          "hint": "Trenne periodisierte Gewinne und tatsächliche Zahlungen."
+        },
+        {
+          "type": "sequence",
+          "title": "Die Cashflow-Brücke richtig anordnen",
+          "prompt": "Ordne den Analyseprozess, damit du den FCFF fachlich sauber herleitest.",
+          "options": [
+            "CapEx für Maschinen abziehen",
+            "NOPAT aus EBIT und Steuersatz berechnen",
+            "Abschreibungen hinzufügen",
+            "Zunahme des Working Capital abziehen"
+          ],
+          "correct": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "method": "EBIT nach Steuern (NOPAT) → Abschreibungen addieren → Working-Capital-Bindung abziehen → CapEx abziehen.",
+          "hint": "Der Unternehmens-Cashflow beginnt bei operativen, nicht finanziellen Gewinnen."
+        },
+        {
+          "type": "decision",
+          "title": "Investition beurteilen",
+          "prompt": "Nova hat −16,75 Mio. € FCFF, behauptet aber, das Werk erzeuge ab dem Folgejahr hohe Einnahmen. Was ist die fundierteste Entscheidung?",
+          "options": [
+            "Die Aktie sofort als wertlos einstufen.",
+            "Finanzierungsbedarf, künftige Projekt-Cashflows, ROIC und Kapitalkosten in mehreren Szenarien prüfen.",
+            "Die 92 Mio. € CapEx aus der Analyse streichen, damit die Bilanz profitabler erscheint."
+          ],
+          "correct": 1,
+          "method": "Ein negativer aktueller FCFF kann für wertschaffende Investitionen stehen, wenn die künftigen Rückflüsse Kapitalkosten und Risiko übertreffen.",
+          "hint": "Eine Investition braucht ein Modell zu Rendite, Finanzierung und Zeit."
+        }
+      ]
+    },
+    {
+      "id": "kapitalfalle",
+      "title": "Die Renditefalle einer Expansion",
+      "short": "ROIC, WACC und Economic Profit miteinander kombinieren",
+      "minutes": 24,
+      "difficulty": "Fortgeschritten · 5 Anwendungen",
+      "domain": "Kapitalrendite · Investitionsdisziplin",
+      "prerequisite": "working",
+      "source": {
+        "label": "Fiktiver FinanzPilot-Lehrfall · konsistente Modellannahmen",
+        "url": "#view=concepts"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Ein Wachstumsvorhaben mit zwei Seiten",
+          "text": "Die fiktive Medisensor SE erzielt EBIT 160 Mio. €, operativen Steuersatz 25 % und benötigt im Durchschnitt 800 Mio. € investiertes Kapital. NOPAT = 120 Mio. € und ROIC = 15 %. Bei 10,5 % WACC beträgt die operative Überrendite 4,5 Prozentpunkte. Ein neues Werk für 300 Mio. € erzielt im Base Case aber nur 8 % Nachsteuer-ROIC.",
+          "insight": "Ein historisch hoher ROIC macht nicht jedes neue Investment automatisch gut. Entscheidend ist die Rendite des zusätzlich investierten Kapitals.",
+          "visual": {
+            "labels": [
+              "NOPAT",
+              "Kapital/10",
+              "WACC in %",
+              "ROIC in %"
+            ],
+            "values": [
+              120,
+              80,
+              10.5,
+              15
+            ],
+            "unit": "Lehrmodell, Einheiten je Kennzahl"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Economic Profit ausrechnen",
+          "prompt": "Medisensor: NOPAT 120 Mio. €, Kapital 800 Mio. € und WACC 10,5 %. Wie hoch ist der jährliche Economic Profit im einfachen Modell (Mio. €)?",
+          "answer": 36,
+          "unit": "Mio. €",
+          "tolerance": 0.11,
+          "method": "120 − 800×0,105 = 120 − 84 = 36 Mio. €. Alternativ (15 %−10,5 %)×800 = 36 Mio. €.",
+          "hint": "Economic Profit = NOPAT − Kapitalkostensatz×Kapital."
+        },
+        {
+          "type": "number",
+          "title": "Wertbeitrag einer Neuinvestition",
+          "prompt": "Das neue Werk bindet zusätzlich 300 Mio. € Kapital und erzielt 8 % Nachsteuer-ROIC; Kapitalkosten bleiben bei 10,5 %. Berechne den annualisierten Economic Profit dieses Zusatzprojekts (Mio. €).",
+          "answer": -7.5,
+          "unit": "Mio. €",
+          "tolerance": 0.11,
+          "method": "(0,08 − 0,105)×300 = −7,5 Mio. €. Die Projektannahmen sind unsicher, aber unter diesen Annahmen entsteht kein positiver Economic Profit.",
+          "hint": "Auch hier kann das Ergebnis negativ sein."
+        },
+        {
+          "type": "multi",
+          "title": "Zwei Kennzahlen nicht verwechseln",
+          "prompt": "Welche zwei Schlussfolgerungen sind richtig?",
+          "options": [
+            "15 % ROIC auf dem Bestand beweisen, dass 8 % Projekt-ROIC attraktiv sind.",
+            "Die Rendite des zusätzlich investierten Kapitals ist für die Wachstumsqualität ausschlaggebend.",
+            "Ein ROIC-WACC-Spread von −2,5 Prozentpunkten spricht im Base Case gegen wirtschaftlichen Mehrwert des Projekts.",
+            "Eine EBITDA-Marge oberhalb von 10 % ersetzt jede Kapitalkostenrechnung."
+          ],
+          "correct": [
+            1,
+            2
+          ],
+          "method": "Das Projekt liegt 2,5 Prozentpunkte unter den angesetzten Kapitalkosten. Der bestehende Betrieb kann trotzdem Wert schaffen.",
+          "hint": "Bestandsrendite und Grenzrendite voneinander trennen."
+        },
+        {
+          "type": "sequence",
+          "title": "Die Investitionsentscheidung strukturieren",
+          "prompt": "Ordne die fachlichen Prüfschritte.",
+          "options": [
+            "Sensitivität für WACC, Nachfrage und Margen prüfen",
+            "Projekt-Cashflows und eingesetztes Kapital prognostizieren",
+            "Mindestanforderung aus WACC und Risiko bestimmen",
+            "Erwartete Zusatzrendite und Alternativen vergleichen"
+          ],
+          "correct": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "method": "Zuerst Kapitalbedarf und Cashflow-Prognose, dann Risikozins, Vergleich des Wertbeitrags, schließlich Sensitivitäten.",
+          "hint": "Ohne Projektdaten lässt sich kein belastbarer ROI schätzen."
+        },
+        {
+          "type": "decision",
+          "title": "Managementargument einordnen",
+          "prompt": "Der Vorstand will das Werk trotzdem bauen, um einen strategischen Schlüsselmarkt zu sichern. Deine Empfehlung?",
+          "options": [
+            "Strategische Realoptionen quantifizieren und offen gegen den negativen Base-Case-Wertbeitrag abwägen.",
+            "Das Projekt als sicher werthaltig einstufen, weil es strategisch genannt wird.",
+            "Die gesamten Unternehmens-Kapitalkosten auf null setzen."
+          ],
+          "correct": 0,
+          "method": "Strategische Optionen können relevant sein, müssen aber durch alternative Szenarien und Chancen-/Risikopreise begründet werden.",
+          "hint": "Strategie ist kein Freibrief, sondern eine zusätzliche Modellannahme."
+        }
+      ]
+    },
+    {
+      "id": "wertbruecke",
+      "title": "Vom Unternehmen zum Aktienkurs",
+      "short": "EV, Nettoverschuldung, Aktienzahl und Verwässerung",
+      "minutes": 25,
+      "difficulty": "Fortgeschritten · 5 Anwendungen",
+      "domain": "Equity Bridge · Bewertung · Multiples",
+      "prerequisite": "roic",
+      "source": {
+        "label": "Fiktiver FinanzPilot-Lehrfall · konsistente Modellannahmen",
+        "url": "#view=concepts"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Warum EV nicht der Aktienkurs ist",
+          "text": "Die fiktive Sensora Systems AG wird operativ mit 1.800 Mio. € Enterprise Value bewertet. Bruttoschulden 650 Mio. €, liquide Mittel 250 Mio. €, somit Nettoschulden 400 Mio. €. Ohne andere Anpassungen beträgt der Equity Value 1.400 Mio. €. Bei 70 Mio. ausstehenden Aktien ergibt sich ein Modellwert von 20 € je Aktie. Sensora erzielt ein normalisiertes EBIT von 150 Mio. €.",
+          "insight": "Bewerte zuerst das gesamte operative Geschäft und ziehe dann Nettofinanzverpflichtungen ab. Sonst verwechselst du Unternehmenswert und Eigentümerwert.",
+          "visual": {
+            "labels": [
+              "Enterprise Value",
+              "Bruttoschulden",
+              "Kasse",
+              "Nettofinanzschulden"
+            ],
+            "values": [
+              1800,
+              650,
+              250,
+              400
+            ],
+            "unit": "Mio. € · fiktiv"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Fairen Eigenkapitalwert je Aktie berechnen",
+          "prompt": "EV = 1.800 Mio. €, Bruttoschulden 650, Cash 250, Aktienzahl 70 Mio. Stück. Berechne den vereinfachten Aktienwert in €.",
+          "answer": 20,
+          "unit": "€ je Aktie",
+          "tolerance": 0.11,
+          "method": "Nettoschulden = 650−250=400 Mio. €. Equity Value=1.800−400=1.400 Mio. €. Je Aktie: 1.400/70 = 20 €.",
+          "hint": "Das Bargeld wird bei der Überleitung wieder zum Eigentümerwert addiert."
+        },
+        {
+          "type": "number",
+          "title": "Bewertungsmultiple ermitteln",
+          "prompt": "Der EV beträgt 1.800 Mio. € und das normalisierte EBIT 150 Mio. €. Was ist EV/EBIT in ×?",
+          "answer": 12,
+          "unit": "×",
+          "tolerance": 0.11,
+          "method": "EV/EBIT = 1.800/150 = 12×. Das ist keine sichere Rendite, sondern ein Preis-Ertrags-Verhältnis auf Unternehmensebene.",
+          "hint": "Enterprise Value, nicht Aktienwert, in den Zähler setzen."
+        },
+        {
+          "type": "multi",
+          "title": "Dilution vs. Cashzufluss",
+          "prompt": "Welche zwei Aussagen stimmen, wenn ein Unternehmen neue Aktien gegen Bargeld ausgibt?",
+          "options": [
+            "Die Aktienzahl steigt, weshalb eine unveränderte Equity-Value-Schätzung je Aktie geringer wäre.",
+            "Eingenommenes Bargeld kann den Equity Value erhöhen, daher muss der Emissionspreis berücksichtigt werden.",
+            "Neue Aktien erhöhen den fairen Wert je Altaktie zwingend.",
+            "Der EV muss schon durch die Kapitalerhöhung automatisch genau um den Emissionserlös steigen."
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "Neue Aktien verwässern bei gleichem Equity Value, aber der Mittelzufluss erhöht gleichzeitig die Kasse. Der Effekt je Altaktie hängt vom Emissionspreis und der Verwendung ab.",
+          "hint": "Ändern sich sowohl der Zähler als auch der Nenner?"
+        },
+        {
+          "type": "sequence",
+          "title": "Equity Bridge korrekt ordnen",
+          "prompt": "Bringe diese Schritte in die fachlich richtige Reihenfolge.",
+          "options": [
+            "Durch die verwässerte Aktienzahl dividieren",
+            "Operating Enterprise Value ermitteln",
+            "Nettoschulden und weitere Ansprüche überleiten",
+            "Nichtoperative Vermögenswerte und Barmittel korrekt berücksichtigen"
+          ],
+          "correct": [
+            1,
+            2,
+            3,
+            0
+          ],
+          "method": "Operativer EV → Finanzierungsansprüche → übrige Vermögenswerte → verwässerte Anzahl Aktien. Keine Position doppelt zählen.",
+          "hint": "Die Kapitalstruktur kommt vor dem Aktienwert je Stück."
+        },
+        {
+          "type": "decision",
+          "title": "Rechnerischer Wert und Börsenkurs",
+          "prompt": "Sensora handelt zu 18 €, dein Modellwert liegt bei 20 €. Welche Entscheidung ist fachlich sauber?",
+          "options": [
+            "Das Modell als 11,1 % garantiertes Jahresergebnis kommunizieren.",
+            "Vergleich mit Gegenannahmen, Sicherheitsmarge, aktueller Bewertung und Kapitalstruktur durchführen.",
+            "Den EV erhöhen, bis dein Kursziel mindestens 30 % Kurspotenzial zeigt."
+          ],
+          "correct": 1,
+          "method": "20/18−1≈11,1 % ist nur eine Modellabweichung und weder garantierte noch zeitlich definierte Rendite.",
+          "hint": "Ein Kursziel allein ist keine Kaufempfehlung."
+        }
+      ]
+    },
+    {
+      "id": "zyklische-bewertung",
+      "title": "Ist ein niedriges Multiple billig?",
+      "short": "Zyklische Gewinne, normalisierte Basis und Peer-Risiken",
+      "minutes": 26,
+      "difficulty": "Research · 5 Anwendungen",
+      "domain": "Bewertungsmultiples · Konjunktur",
+      "prerequisite": "enterprise",
+      "source": {
+        "label": "Fiktiver FinanzPilot-Lehrfall · konsistente Modellannahmen",
+        "url": "#view=concepts"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Das 6×-Multiple trügt",
+          "text": "Die fiktive Stahlteile Orion AG hat einen Enterprise Value von 900 Mio. €. Ihr aktuelles Spitzenjahr-EBIT beträgt 150 Mio. €, daher 6× EV/EBIT. Im normalen Konjunkturjahr verdient sie aber nur 90 Mio. €, also 10×. Im Abschwung sinkt das EBIT womöglich auf 60 Mio. € – das Multiple steigt bei konstantem EV auf 15×.",
+          "insight": "Bei zyklischen Firmen muss eine Bewertung mit normalisierten Cashflows und Erträgen über den gesamten Zyklus erfolgen.",
+          "visual": {
+            "labels": [
+              "EV / Spitzen-EBIT",
+              "EV / Normal-EBIT",
+              "EV / Tief-EBIT"
+            ],
+            "values": [
+              6,
+              10,
+              15
+            ],
+            "unit": "EV/EBIT ×"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Normalisiertes Multiple",
+          "prompt": "Orion wird mit EV 900 Mio. € bewertet, der nachhaltige EBIT-Mittelwert beträgt 90 Mio. €. Wie hoch ist das normalisierte EV/EBIT?",
+          "answer": 10,
+          "unit": "×",
+          "tolerance": 0.11,
+          "method": "900/90=10×. Die am Tiefpunkt und Spitzenpunkt beobachteten Multiples können erheblich abweichen.",
+          "hint": "Nutze den durch den Zyklus normalisierten Wert."
+        },
+        {
+          "type": "number",
+          "title": "Multiple im Abschwung",
+          "prompt": "Orion erzielt im Stressfall nur 60 Mio. € EBIT bei konstantem EV 900 Mio. €. Welches EV/EBIT ergibt sich?",
+          "answer": 15,
+          "unit": "×",
+          "tolerance": 0.11,
+          "method": "900/60=15×. Ein niedriges Multiple auf Spitzenerträgen kann zu einem hohen Multiple in der Rezession werden.",
+          "hint": "Nicht den alten EBIT-Zählerwert verwenden."
+        },
+        {
+          "type": "multi",
+          "title": "Warnzeichen einer Value Trap",
+          "prompt": "Welche zwei Beobachtungen rechtfertigen besondere Vorsicht?",
+          "options": [
+            "Das Unternehmens-KGV ist auf Basis eines einmalig sehr starken Zyklusjahres niedrig.",
+            "Hoher CapEx-Bedarf und stark steigende Nettoverschuldung fallen mit sinkenden Gewinnen zusammen.",
+            "Eine Firma hat nachweislich fünf Jahre lang konstant hohe Cashflow-Renditen.",
+            "Eine EBIT-Marge ist über den Zyklus stabil und der Free Cashflow positiv."
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "Ein Spitzenjahr kann das Multiple optisch günstiger machen. Kapitalintensität und Schulden verstärken Abschwungrisiken.",
+          "hint": "Günstige Zahlen auf einem Hoch sind oft die gefährlichsten."
+        },
+        {
+          "type": "sequence",
+          "title": "Peer-Vergleich ohne Abkürzungen",
+          "prompt": "Wie ordnest du diese Analyseschritte?",
+          "options": [
+            "Fairen Multiple-Bereich begründen und Sensitivitäten prüfen",
+            "Zyklische Gewinne und Margen normalisieren",
+            "Geschäftsmodell und Nachfragetreiber der Vergleichsgruppe prüfen",
+            "Bilanz, CapEx und Cashflow-Qualität angleichen"
+          ],
+          "correct": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "method": "Vergleichbares Geschäft → normalisierte Gewinnbasis → Kapitalintensität und Schulden → Multiple-Band mit Unsicherheiten.",
+          "hint": "Ein Peer muss im Geschäft und Risiko tatsächlich vergleichbar sein."
+        },
+        {
+          "type": "decision",
+          "title": "Kandidatenwahl",
+          "prompt": "Orion notiert zu 6× aktuellem EBIT, während Peers zu 9× bewertet sind. Wie gehst du vor?",
+          "options": [
+            "Kaufen, weil 6 kleiner als 9 ist.",
+            "Nach normalisiertem EBIT, Zyklik, CapEx und Nettoschulden eine echte Bewertungsbandbreite ableiten.",
+            "Das Peer-Multiple ohne Bilanzabgleich auf Orion anwenden."
+          ],
+          "correct": 1,
+          "method": "Ein Multiple-Vergleich liefert erst nach fundamentaler Normalisierung ein belastbares Signal.",
+          "hint": "Eine scheinbare Unterbewertung kann durch Prognosefehler entstehen."
+        }
+      ]
+    },
+    {
+      "id": "investmentkomitee",
+      "title": "Investmentkomitee: fairer Wert unter Druck",
+      "short": "Gordon Growth, WACC-Sensitivität und These gegen Kurs",
+      "minutes": 30,
+      "difficulty": "Meisterprüfung · 5 Anwendungen",
+      "domain": "DCF · Szenarien · Investmenturteil",
+      "prerequisite": "szenarien",
+      "source": {
+        "label": "Fiktiver FinanzPilot-Lehrfall · konsistente Modellannahmen",
+        "url": "#view=concepts"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Ein DCF ist nur so gut wie seine Annahmen",
+          "text": "Die fiktive ValueForge AG erwartet ab dem nächsten Jahr 80 Mio. € Free Cashflow to Firm (FCFF1) mit angenommenem ewigem Wachstum von 2 %. Im mathematischen Einphasenmodell beträgt der EV bei WACC 10 % genau 80/(0,10−0,02) = 1.000 Mio. €. Nettoschulden 250 Mio. €, Aktienzahl 50 Mio. → modellierter Aktienwert 15,00 €. Steigt WACC auf 11 %, sinkt der Modellwert deutlich. Eine reale Firmenbewertung braucht mehrjährige explizite Prognosen; dieses Modell dient der Sensitivitätslehre.",
+          "insight": "Gordon Growth setzt ewiges, stabiles Wachstum unterhalb des Diskontsatzes voraus; gerade Terminal-Value-Annahmen sind besonders fehleranfällig.",
+          "visual": {
+            "labels": [
+              "FCFF1",
+              "WACC %",
+              "Wachstum %",
+              "Nettoschulden /10"
+            ],
+            "values": [
+              80,
+              10,
+              2,
+              25
+            ],
+            "unit": "Fiktive Kenngrößen"
+          }
+        },
+        {
+          "type": "number",
+          "title": "DCF-Basiswert je Aktie",
+          "prompt": "FCFF1=80 Mio. €, ewiges Wachstum 2 %, WACC 10 %, Nettoschulden 250 Mio. €, 50 Mio. Aktien. Berechne den Modellwert in € je Aktie.",
+          "answer": 15,
+          "unit": "€ je Aktie",
+          "tolerance": 0.11,
+          "method": "EV=80/(0,10−0,02)=1.000. Equity=1.000−250=750. Je Aktie=750/50=15 €. Diese Zahl ist von starken Annahmen abhängig.",
+          "hint": "EV = FCFF1 /(WACC−g). Erst danach die Equity Bridge."
+        },
+        {
+          "type": "number",
+          "title": "Zinssensitivität testen",
+          "prompt": "Setze bei unverändertem FCFF1=80 und g=2 % den WACC auf 11 %. Nettoschulden=250, Aktienzahl=50. Welcher faire Wert je Aktie entsteht (auf 2 Dezimalstellen)?",
+          "answer": 12.78,
+          "unit": "€ je Aktie",
+          "tolerance": 0.11,
+          "method": "EV=80/(0,11−0,02)=888,89; Equity=888,89−250=638,89; je Aktie=638,89/50≈12,78 €. Ein Prozentpunkt mehr WACC senkt den hier errechneten Wert um rund 14,8 %.",
+          "hint": "WACC und Wachstumsrate immer beide als Dezimalzahlen einsetzen."
+        },
+        {
+          "type": "multi",
+          "title": "DCF-Fallen identifizieren",
+          "prompt": "Welche zwei Aussagen sind belastbar?",
+          "options": [
+            "Der Terminal Value kann sehr sensitiv auf WACC und langfristiges Wachstum reagieren.",
+            "Ein Kursziel von 15 € garantiert einen Anstieg auf exakt 15 € bis Ende des Jahres.",
+            "Das verwendete Einphasenmodell ist ein vereinfachter mathematischer Stress-Test, kein vollständiger Firmen-DCF.",
+            "Die Risikoprämie spielt für die Diskontierung keine Rolle."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Bei FCFF1/(WACC−g) steht die Differenz im Nenner. Kleine Annahmeänderungen können die Bewertung stark verändern.",
+          "hint": "Was passiert, wenn g nahe an WACC heranrückt?"
+        },
+        {
+          "type": "sequence",
+          "title": "Bewertungsprozess in der richtigen Reihenfolge",
+          "prompt": "Ordne diese Schritte eines echten Research-DCF.",
+          "options": [
+            "Modellrisiko und Sicherheitsmarge gegen Börsenkurs prüfen",
+            "Umsatz, Marge, Kapitalbedarf und FCFF mehrjährig prognostizieren",
+            "Unternehmenswert auf Equity Value und je Aktie überleiten",
+            "Kapitalkosten und Terminal-Value-Annahmen in Szenarien festlegen"
+          ],
+          "correct": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "method": "Explizite Cashflows → WACC und Terminal-Annäherung → Equity Bridge → Sensitivität und Sicherheitsmarge.",
+          "hint": "Prognosen sind die Basis, die Zielkurszahl steht am Ende."
+        },
+        {
+          "type": "decision",
+          "title": "Ausschussentscheidung mit Gegenargument",
+          "prompt": "Börsenkurs 14 €, Base-Modell 15 €, bei 11 % WACC nur noch 12,78 €. Was ist das fachlich sauberste Urteil?",
+          "options": [
+            "Der Basiswert liegt leicht über Kurs, aber das Modell ist zinssensitiv; ohne robuste Sicherheitsmarge ist eine vorsichtige Haltung begründet.",
+            "Der WACC kann ignoriert werden, weil das Base-Case-Ergebnis bereits höher ist.",
+            "Der Unternehmenswert garantiert einen steigenden Aktienkurs."
+          ],
+          "correct": 0,
+          "method": "Die Annahmeunsicherheit überlagert den nur geringen erwarteten Aufschlag. Ein gutes Urteil ist konditional und nennt Gegenargumente.",
+          "hint": "Begründe den Fehlerbereich, nicht nur den Mittelwert."
+        }
+      ]
+    }
+  ]
+}
