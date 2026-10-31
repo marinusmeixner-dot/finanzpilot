@@ -313,3 +313,12 @@ Bei reinen Content-Änderungen nur Daten aktualisieren; die bestehenden Navigati
 - GitHub CI: `scripts/test_investment_committee_v21.mjs` validiert die realen Zahlen aus den gespeicherten Quellen, sechs Bewertungsziele, Gewichtungen, Nachberechnungen, WACC-Grenzen, Antwortschlüssel und Integration. Start- und bereits bestandene Kurse, 53 Kern-/Vertiefungsskills und alte Fortschrittsschlüssel bleiben unverändert.
 - Release v21 synchronisiert `version.json`, `updates.js`, `manifest.webmanifest`, relevante JS-Cache-Queries und Styles in `index.html`. Die täglichen Redaktionsupdates dürfen `investment-committee.js`, den neuen Persistenz-Schlüssel oder Quellen-/Zeitangaben nicht entfernen; zusätzliche aktuelle Firmenkurse nur mit geprüften Quellen, eindeutig abgesetzten Analystenannahmen und Regressionen ergänzen.
 
+
+
+## Version 22 – Alphabet-Aktienresearch als mehrstufiges Meistertraining
+
+- Neues 20-stufiges, quellengeprüftes Masterclass-Folgecurriculum `alphabet-q3-2026-research-masterclass` in `data/academy.json`; eigener Fortschrittsschlüssel unter der bestehenden Academy-Progress-Struktur. Voraussetzung ist der bisherige 10-stufige Kurs `alphabet-q3-2026-cashflow-valuation`; dessen ursprüngliche Stufen und Fortschrittsindizes unverändert.
+- Inhalt: Geschäftsmodell, Services- und Cloud-Kennzahlen aus Alphabet SEC Exhibit 99.1 (28.10.2026), operative Gewinnqualität, negativ/positiv gezeichnete FCF-Quartale, TTM-FCF, Finanzierung, nachvollziehbare hypothetische P/FCF-Szenarien und persönliche Investmentthese. Alle Zukunftswerte werden ausdrücklich als **Lehrannahmen ohne Kursziel je Aktie** gekennzeichnet; nicht als aktuelle Kurse publizieren.
+- `academy.js` sperrt direkte Links auf noch nicht freigeschaltete Kurse, lässt bei falschen Prüfungsantworten nicht mehr weiterklicken und speichert korrekte Antworten unmittelbar. `equity-masterclass-v22.css` zeigt negative Balken mit Nullachse links statt unsichtbar oder als null.
+- Release-Konsistenz `version.json` v22, `updates.js` v22, `manifest.webmanifest` ?v=22, `academy.js?v=22` und `equity-masterclass-v22.css?v=22`. Neues CI-Skript `scripts/test_equity_masterclass_v22.mjs` in `.github/workflows/quality.yml`.
+- Nächstes Entwicklungsthema nach echter Nutzererprobung: freie Schlussfolgerungen an die bestehende freiwillige ChatGPT-Bewertung anbinden, Modellannahmen stärker personalisierbar machen und geprüfte weitere Einzelaktien ergänzen. Keine angebliche automatische KI-Bewertung ohne vorhandenen überprüfbaren Workflow behaupten.
