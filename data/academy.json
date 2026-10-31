@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-31T00:00:00+01:00",
+  "editor_note": "Die Kurse trennen berichtete Unternehmenszahlen, Modellannahmen und externe Live-Charts. Neue Inhalte werden anhand überprüfter Quellen ergänzt.",
+  "market_task": {
+    "date": "2026-10-31",
+    "title": "US-Technologiewerte unter Druck: Ist das ein Kaufsignal?",
+    "context": "Ein schwacher Handelstag für Technologiewerte ist eine Beobachtung, keine vollständige Unternehmensbewertung. Prüfe vor einer Schlussfolgerung: Was war erwartet, was ist neu und wie groß ist dein Zeithorizont?",
+    "question": "Welchen Schluss ziehst du aus dem Rückgang – und welche Informationen brauchst du noch, bevor du über einen Kauf nachdenkst?",
+    "rubric": ["Eine konkrete Aussage zur Nachricht statt nur bullish/bearish", "Erwartungen, Bewertung und Unternehmenszahlen berücksichtigen", "Mindestens eine Gegenhypothese oder Unsicherheit", "Zeithorizont und Risiko der eigenen Schlussfolgerung"],
+    "source": "Associated Press",
+    "source_url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
+    "source_date": "2026-10-30",
+    "symbol": "NASDAQ:QQQ"
+  },
+  "courses": [
+    {
+      "id": "microsoft-full-fy25",
+      "title": "Microsoft: eine Aktie systematisch analysieren",
+      "kind": "deep-dive",
+      "difficulty": "Fortgeschritten",
+      "duration": "35–45 Min.",
+      "date": "2026-10-31",
+      "symbol": "NASDAQ:MSFT",
+      "symbol_name": "Microsoft",
+      "summary": "Von Geschäftsmodell und Jahresabschluss über die Margen bis zur Bewertung und einer eigenen Investmentthese.",
+      "evidence_note": "Reale historische Zahlen aus Microsofts Geschäftsbericht für das Geschäftsjahr bis 30.06.2025 (Angaben in Mio. US-Dollar). Das ist keine aktuelle Bewertung vom Oktober 2026. Kursannahmen sind ausdrücklich hypothetisch.",
+      "source_label": "Microsoft Annual Report FY2025",
+      "source_url": "https://www.microsoft.com/investor/reports/ar25/",
+      "steps": [
+        {"type":"teach","title":"1 · Erst das Geschäft verstehen","text":"Microsoft verdient an Abonnements, Cloud-Diensten, Softwarelizenzen, Werbung und Gaming. Bevor du Kennzahlen liest, untersuche Preissetzungsmacht, wiederkehrende Einnahmen, Konkurrenz und Kapitaleinsatz. Umsatz allein beantwortet nicht, wie profitabel das Wachstum ist.","takeaway":"Eine These startet mit der Frage: Warum sollte dieses Geschäft in fünf Jahren mehr freien Cashflow erzielen?"},
+        {"type":"calc","title":"2 · Umsatzwachstum selbst berechnen","text":"Microsoft meldete 281.724 Mio. $ Umsatz für FY2025 und 245.122 Mio. $ für FY2024. Rechne die Wachstumsrate aus.","question":"Um wie viel Prozent wuchs der Jahresumsatz? Runde auf eine Nachkommastelle.","answer":14.9,"tolerance":0.15,"unit":"%","method":"(281.724 − 245.122) / 245.122 × 100 = 14,93 %. Nimm immer den Vorjahreswert als Basis."},
+        {"type":"visual","title":"3 · Zahlen im Verhältnis lesen","text":"Die Umsatzhöhe ist nur der erste Schritt. Vergleiche das operative Ergebnis mit dem Umsatz und beachte, ob sich die Marge verändert. Im Diagramm unten stehen die berichteten Größen beider Jahre.","chart":{"type":"bars","unit":"Mio. US-$","labels":["Umsatz 2024","Umsatz 2025","Operatives Ergebnis 2024","Operatives Ergebnis 2025"],"values":[245122,281724,109433,128528]},"question":"Warum genügt Umsatzwachstum allein nicht als Argument für einen höheren Aktienkurs?","rubric":["Gewinnmarge beziehungsweise Kosten erwähnen","Erwartungen oder Bewertung einbeziehen","Investitionen und Cashflow als zusätzliche Prüfung benennen"],"sample":"Umsatzwachstum ist positiv, aber ich prüfe, ob die operative Marge und der freie Cashflow mitwachsen. Außerdem könnte der Kurs bereits ein schnelleres Wachstum voraussetzen."},
+        {"type":"calc","title":"4 · Operative Marge berechnen","text":"FY2025: 128.528 Mio. $ operativer Gewinn bei 281.724 Mio. $ Umsatz.","question":"Wie hoch ist die operative Marge? Eine Nachkommastelle genügt.","answer":45.6,"tolerance":0.15,"unit":"%","method":"128.528 / 281.724 × 100 = 45,62 %. Hohe Margen sind gut, aber die Entwicklung und Kapitalintensität zählen ebenfalls."},
+        {"type":"choice","title":"5 · Zahlen kritisch interpretieren","text":"Umsatz und operativer Gewinn wachsen, aber das Unternehmen investiert zugleich umfangreich in KI-Infrastruktur.","question":"Welche Aussage ist mit diesen Informationen am besten begründet?","options":["Mehr Investitionen verschlechtern zwangsläufig den Unternehmenswert.","Operatives Wachstum ist sichtbar; zusätzliche Investitionen müssen aber auf Cashflow und Rendite geprüft werden.","Das hohe Ergebnis beweist, dass die Aktie zum heutigen Preis unterbewertet ist.","Eine steigende Marge macht eine Bewertung überflüssig."],"correct":1,"method":"Gewinnwachstum ist ein Baustein. Für die Aktionärsrendite ist entscheidend, wie viel Kapital dafür benötigt wird und was im Aktienkurs bereits erwartet wird."},
+        {"type":"calc","title":"6 · Bewertung ist eine zweite Rechnung","text":"Reines Rechenbeispiel: Angenommener Aktienkurs 500 $, historischer FY2025 Gewinn je Aktie 13,64 $. Der angenommene Aktienkurs ist KEIN aktueller Marktpreis.","question":"Wie hoch wäre das historische Kurs-Gewinn-Verhältnis bei 500 $? Auf eine Nachkommastelle.","answer":36.7,"tolerance":0.2,"unit":"×","method":"500 / 13,64 = 36,66. Ein höheres KGV enthält oft stärkere Wachstumserwartungen; das Verhältnis allein zeigt weder teuer noch günstig."},
+        {"type":"visual","title":"7 · Chart und Fundamentaldaten zusammendenken","text":"Betrachte den externen Microsoft-Chart. Ein steigender Kurs kann auf neue Informationen, sinkende Zinsen oder eine höhere Bewertung zurückgehen. Ein gleitender Durchschnitt oder ein Ausbruch ist keine unabhängige Kaufempfehlung.","chart":{"type":"live","symbol":"NASDAQ:MSFT"},"question":"Welche Beobachtung im Chart würdest du mit welcher Geschäftskennzahl vergleichen, und warum?","rubric":["Zeitfenster und Vergleichsindex konkretisieren","Kursbewegung mit einer überprüfbaren Nachricht oder Kennzahl verknüpfen","Mindestens einen anderen möglichen Treiber nennen"],"sample":"Ich vergleiche die Kursentwicklung über zwölf Monate mit dem S&P 500 und mit Azure-Wachstum, Margen und Investitionsausgaben. Ohne Erwartungen und Bewertung kann ich eine Überrendite nicht sicher erklären."},
+        {"type":"reflect","title":"8 · Eigene Investmentthese formulieren","text":"Formuliere eine nachvollziehbare Bewertung, ohne vorzugeben, die Zukunft zu kennen. Eine gute These enthält Geschäftsmodell, Wachstumsannahmen, Bewertung, Gegenargumente und überprüfbare Auslöser.","question":"Würdest du Microsoft auf eine Watchlist setzen? Begründe deine Entscheidung mit drei Fakten, zwei Risiken und einem Kriterium, bei dem du deine Ansicht ändern würdest.","rubric":["Mindestens drei sachliche Belege mit Datum oder Quelle","Mindestens zwei konkrete Risiken oder Gegenthesen","Bewertung und Zeithorizont unterscheiden","Ein klares Widerlegungskriterium formulieren"],"sample":"Beispielstruktur: Ich finde die wiederkehrenden Umsätze attraktiv, muss aber die Rendite auf KI-Investitionen und das Bewertungsniveau prüfen. Meine These wäre gefährdet, wenn Cloud-Wachstum und Cashflow über mehrere Quartale deutlich hinter den Erwartungen bleiben."}
+      ]
+    },
+    {
+      "id":"etf-comparison-process",
+      "title":"Zwei ETFs sauber vergleichen",
+      "kind":"process",
+      "difficulty":"Aufbau",
+      "duration":"20–30 Min.",
+      "date":"2026-10-31",
+      "symbol":"AMEX:ACWI",
+      "symbol_name":"Weltaktien als Referenz",
+      "summary":"Indizes, Überschneidung, Kosten, Währung, Tracking-Differenz und ein eigener Auswahlprozess.",
+      "evidence_note":"Didaktisches Zahlenbeispiel, keine Produktwerbung. Externe Live-Charts sind nur Vergleichsreferenzen.",
+      "source_label":"MSCI Index Methodology",
+      "source_url":"https://www.msci.com/indexes/index/892400",
+      "steps":[
+        {"type":"teach","title":"1 · Index zuerst, Produkt danach","text":"MSCI World enthält entwickelte Länder; ACWI ergänzt Schwellenländer. Der Produktname allein genügt nicht: Prüfe Indexzusammensetzung, Anzahl der Titel, Ländergewichte und Replikation. Entscheidend ist, welche Risiken du kaufst.","takeaway":"Zwei ETFs sind nicht automatisch stärker diversifiziert, wenn sie dieselben großen Unternehmen halten."},
+        {"type":"calc","title":"2 · Kosten über längere Zeit","text":"Modell: Einmalig 10.000 € für zehn Jahre, 6 % Bruttorendite. ETF A kostet modellhaft 0,2 % p.a., ETF B 0,6 % p.a. Keine Steuern oder Tracking-Unterschiede.","question":"Wie groß ist der ungefähre Endwertunterschied A minus B? Auf ganze Euro runden.","answer":653,"tolerance":15,"unit":"€","method":"10.000 × [(1,058)^10 − (1,054)^10] ≈ 653 €. Gebühren wirken jedes Jahr auf den verbleibenden Kapitalstock. Die Rechnung ist ein Modell."},
+        {"type":"reflect","title":"3 · Eine Auswahl begründen","text":"Nimm zwei reale ETFs, die du interessant findest. Recherchiere jeweils ISIN, Index, TER, Tracking-Differenz, Fondsgröße, Handelsplatz und steuerliche Besonderheiten.","question":"Welchen ETF würdest du wählen und warum? Nenne mindestens ein Gegenargument gegen deine Wahl.","rubric":["Zwei konkrete Fonds mit ISIN nennen","Index und Diversifikation vergleichen","Kosten einschließlich Tracking-Differenz beachten","Eine Unsicherheit oder ein Gegenargument nennen"],"sample":"Ich prüfe zuerst die Indexabdeckung und erst danach die TER. Der günstigste ETF muss nicht die geringste Tracking-Differenz haben. Meine Entscheidung hängt auch von Depotgebühren und Anlagehorizont ab."}
+      ]
+    }
+  ]
+}
