@@ -89,5 +89,6 @@ function bind(root=document){
 }
 window.FinanzPilotMarketWatch={render,bind,load,select,open,get watchlist(){return list},get selected(){return selected}};
 window.addEventListener('fp-auth-change',load);
+window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='marketwatch'&&user())load()});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
 })();
