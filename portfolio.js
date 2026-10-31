@@ -164,7 +164,7 @@
   root.querySelector('#fp-depot-order')?.addEventListener('submit',ev=>{ev.preventDefault();const f=ev.currentTarget;symbol=f.elements.symbol.value;side=f.elements.side.value;qty=f.elements.quantity.value;trade()});
  }
  async function pick(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();jump('fp-depot-order-panel')}
- async function focus(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();const row=[...document.querySelectorAll('[data-fp34-inspect]')].find(x=>x.dataset.fp34Inspect===symbol);if(row)row.scrollIntoView({behavior:'smooth',block:'center'});else jump('fp-depot-order-panel')}
+ async function focus(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();const rows=[...document.querySelectorAll('#fp-depot-watchlist [data-fp34-inspect],.fp-depot-positions [data-depot-inspect],[data-fp34-inspect]')];const row=rows.find(x=>x.dataset.fp34Inspect===symbol||x.dataset.depotInspect===symbol);if(row)row.scrollIntoView({behavior:'smooth',block:'center'});else jump('fp-depot-order-panel')}
  window.FinanzPilotPortfolio={render,bind,load,trade,pick,focus,searchStocks,registerStock,removeWatch,calcPortfolio,currencyStats,isFresh,get quotes(){return quotes},get trades(){return trades},get watchlist(){return watchlist}};
  window.addEventListener('fp-auth-change',load);
  window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='depot'&&user())load()});
