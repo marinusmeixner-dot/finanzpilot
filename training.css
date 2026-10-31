@@ -81,3 +81,8 @@
 .fp-training-complete-actions{display:flex;flex-wrap:wrap;gap:9px;justify-content:center}
 @media(max-width:700px){.fp-training-case{padding:16px}.fp-training-entry{padding:13px}.fp-training-bar{grid-template-columns:105px 1fr 65px;gap:6px}.fp-training-bar span{font-size:10px}.fp-training-top p{font-size:11px}.fp-training-result{padding:14px}}
 @media(prefers-reduced-motion:reduce){.fp-training-trophy{box-shadow:none}}
+
+/* Signed finance bar charts: a real visible midline, negative values on the left. */
+.fp-training-bar>div.fp-training-signed{position:relative;background:linear-gradient(90deg,#263e4c 0%,#263e4c 49.5%,#c1d5d9 49.5%,#c1d5d9 50.5%,#263e4c 50.5%);}
+.fp-training-bar>div.fp-training-signed i{position:absolute;top:0;bottom:0;background:#77d5ac}
+.fp-training-bar>div.fp-training-signed i.fp-training-negative{background:#e4aa98}
