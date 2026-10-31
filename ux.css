@@ -44,3 +44,11 @@
 
 .fp-resume[hidden]{display:none!important}
 .fp-mail-help{background:#1d303e;border:1px solid #456073;border-radius:12px;padding:13px;margin-top:14px;color:#dcecf1;font-size:12px;line-height:1.65}.fp-mail-help p{margin:8px 0}.fp-mail-help a{font-weight:700;color:#97dbff}
+/* FinanzPilot v7: mobile First, klarer Kontext und stabile Navigation */
+.fp-context-tabs{display:flex;flex-direction:row;align-items:center;gap:8px;overflow-x:auto;scrollbar-width:none;padding:0 0 13px;margin:0 0 13px;border-bottom:1px solid #2b4050}
+.fp-context-tabs::-webkit-scrollbar{display:none}
+.fp-context-tabs button{flex:0 0 auto;border:1px solid #304b58;background:#152737;border-radius:12px;padding:11px 15px;color:#bcd2de;font-size:12px;font-weight:700}
+.fp-context-tabs button.active{background:#244940;border-color:#4c927e;color:#bdfbe0}
+.fp-context-tabs button:focus-visible{outline:2px solid #a1ead5;outline-offset:2px}
+.fp-research-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px;flex-wrap:wrap}
+@media(max-width:700px){.bottom-nav{border-radius:19px 19px 0 0;box-shadow:0 -12px 30px #0004;padding-top:10px}.bottom-nav button{min-width:52px;padding:3px 0}.fp-context-tabs{margin-top:3px;padding-bottom:13px}.fp-context-tabs button{padding:10px 12px}.fp-menu-trigger{display:grid}}
