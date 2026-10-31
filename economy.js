@@ -21,7 +21,7 @@ window.FinanzPilotEconomy=(()=>{
   try{localStorage.setItem('finanzpilot_expedition_v1',JSON.stringify({...p,completed}));window.dispatchEvent(new Event('fp-progress-change'))}catch{}
  }
  async function refresh(redraw=true){
-  if(!logged()){account=null;claims=[];perks=[];ledger=[];verified=[];loading=false;if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.();return}
+  if(!logged()){account=null;claims=[];perks=[];ledger=[];verified=[];loading=false;updateTheme();if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.();return}
   loading=true;
   try{
    const rows=await Promise.all(['fp_economy_accounts','fp_reward_claims','fp_reward_perks','fp_reward_ledger','fp_verified_training'].map(t=>api().economyRead(t)));
