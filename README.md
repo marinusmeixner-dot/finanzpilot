@@ -1,28 +1,67 @@
 # FinanzPilot – kostenlose Finanz-Lern-App
 
-Mobile Web-App mit 14 kurzen Lernlektionen, Quiz, XP, Lernserien und täglichem Marktüberblick. Ohne Bezahl-API. Keine Kontostände im Repository.
+Funktioniert ohne zahlungspflichtige Dienste. Statisches HTML, CSS und JavaScript mit lokalem Lernfortschritt. Kein Tracking, keine privaten Kontostände, keine Zugangsdaten, keine benötigte Finanz-API. Mobile Web-App fürs iPhone, Tagesquiz, Lektionen, Fortschritt, Level, Streak, Markt-News.
 
-## Einrichtung (einmalig)
+## Kostenlos online mit GitHub Pages
 
-Der Quellcode ist **bereits hier hochgeladen**. Die ZIP-Datei wird nicht mehr benötigt.
+1. Auf https://github.com/new ein **öffentliches** Repository `finanzpilot` anlegen (ohne kostenpflichtigen Plan).
+2. ZIP lokal entpacken; **Inhalte des Ordners**, nicht ZIP selbst, ins Repo laden. `.github/workflows/daily-news.yml` muss ebenfalls hochgeladen werden (versteckter Ordner; falls Webupload ihn auslässt, einzeln anlegen).
+3. In GitHub unter **Settings → Pages → Build and deployment → Deploy from a branch → main → /(root) → Save** wählen.
+4. Unter **Actions** ggf. Workflow erlauben; unter **Settings → Actions → General → Workflow permissions** Schreibrechte für `GITHUB_TOKEN` erlauben, sofern zunächst nur Leserechte aktiv sind.
+5. Die GitHub-Pages-URL zeigt GitHub unter **Settings → Pages** an. Keine private Tabelle oder Schlüssel in diesem öffentlichen Repository hinterlegen.
 
-**Achtung:** Dieses Repository wurde zunächst als **privat** angelegt. Auf GitHub Free funktioniert GitHub Pages nur mit **öffentlichen** Repositories. Unter Settings → General → Danger Zone → Change repository visibility → Make public umstellen, wenn du die Lern-App öffentlich bereitstellen möchtest. Achtung: Dann werden Code und darin enthaltene **öffentliche Marktberichte** für alle sichtbar. Persönliche Finanzdaten bleiben nur im privaten Google Sheet.
+**Wichtig:** GitHub Free ermöglicht Pages für **öffentliche Repos**, nicht private. Geplante GitHub-Actions-Workflows können verzögert ausgeführt oder nach 60 Tagen Inaktivität deaktiviert werden. Die App zeigt ein fehlendes/veraltetes Update ausdrücklich an. Der tägliche News-Workflow benötigt keine API-Schlüssel und verwendet nur Python-Standardbibliothek.
 
-Anschließend Settings → Pages → Build and deployment: Deploy from a branch, Branch main, Folder /(root), Save.
+## Was aktualisiert sich täglich?
 
-Nach der Veröffentlichung zeigt Settings → Pages den geprüften Link zur App. Der GitHub-Pages-Link ist bis zur Aktivierung nicht bestätigt.
+- `scripts/refresh_news.py` lädt öffentliche RSS-Schlagzeilen, speichert deren Quelle und Link mit Datum. Keine erfundene Bewertung.
+- Die ChatGPT-Aufgabe **FinanzPilot Tagesredaktion** kann zusätzlich jeden Tag `data/daily.json` redaktionell aktualisieren: 3 wichtige Nachrichten mit verständlicher Erklärung, passendes Lernziel, falsche Gewissheiten vermeiden. Dafür braucht die Aufgabe GitHub-Zugriff auf das öffentliche Repository. Wenn sie keinen Zugriff hat, schreibt sie den Tagesbericht im Chat und meldet die Grenze.
+- **Nicht automatisch möglich ohne Datenverbindung:** ChatGPT kann den lokal im Browser gespeicherten individuellen Lernstand nicht auslesen. Die App selbst passt das nächste Lernmodul an falsche Antworten an. Für weitergehendes persönliches Coaching kann ein späterer freiwilliger Supabase-Login mit Row-Level Security ergänzt werden.
+- Die App übernimmt **keine persönlichen Kontodaten** aus Google Sheets. Das separate Google Sheet bleibt privat.
 
-## Automatische Aktualisierung
+## Lokaler Start
 
-- ChatGPT-Aufgabe `FinanzPilot Tagesredaktion`: recherchiert Nachrichten, erklärt Chancen/Risiken und kann `data/daily.json` redaktionell auf dem bestehenden Repo aktualisieren.
-- GitHub-Workflow `.github/workflows/daily-news.yml`: lädt täglich aktuelle RSS-Überschriften als kostenfreie Fallback-Lösung, sofern Actions aktiviert und Schreibzugriff für `GITHUB_TOKEN` erlaubt sind.
-- Bei News-Ausfall: App zeigt veralteten Datenstand statt erfundene Aktualität.
-- Wichtig: Die redaktionelle Aufgabe muss GitHub-Zugriff in der Ausführung haben, damit ihre Texte wirklich im Repo landen. GitHub Actions und ChatGPT haben keine garantierte exakte Ausführungszeit.
+Einfach `index.html` im Browser öffnen. Die Oberfläche, Lektionen und Fortschritte funktionieren offline; Laden von `data/daily.json` kann lokal über `file://` blockiert sein – dann wird ein erklärender Platzhalter angezeigt. Für lokale Entwicklung `python -m http.server 8000` im Projektordner verwenden und `http://localhost:8000` öffnen.
 
-## Datenschutz
+## Datenformat `data/daily.json`
 
-Lernfortschritt liegt lokal im Browser. Bei Browserwechsel kein automatischer Abgleich. Öffentliche GitHub-Pages-Websites und News enthalten **keine** Bankdaten, Kontonummern, Passwörter oder Google-Sheets-Inhalte. Deine Kontoübersicht bleibt im privaten Sheet.
+```json
+{
+  "date": "YYYY-MM-DD",
+  "updated_at": "2026-10-31T07:00:00+01:00",
+  "editor": "ChatGPT: überprüfte Marktredaktion",
+  "intro": "Maximal zwei kurze Sätze zum Tagesgeschehen.",
+  "lesson_id": "etf",
+  "stories": [
+    {
+      "title": "Verifizierte Kurz-Überschrift",
+      "source": "Quellenname",
+      "url": "https://...",
+      "published": "31.10. 07:00",
+      "why": "Kurz und sachlich: Warum kann das für Anleger wichtig sein?",
+      "impact": "Konkrete, vorsichtige Einordnung ohne Kursprognosen."
+    }
+  ],
+  "learning_note": "Eine kurze, belegbare Erkenntnis.",
+  "important": "Ein knapper Hinweis zu Risiko und Anlageentscheidungen."
+}
+```
 
-## ZIP
+## Datenschutz / Grenzen
 
-Die bereits erzeugte ZIP ist eine lokale Sicherheitskopie der Quelldateien. Du brauchst sie nicht hochzuladen.
+Lernfortschritt liegt im Browser (`localStorage`) und ist exportier- und importierbar. Andere Geräte synchronisieren nicht automatisch. Browserdaten-Löschung kann den Fortschritt löschen. Öffentliche News können Fehler, Verzögerungen oder Paywalls haben; Quellen sind verlinkt. Externe TradingView-Charts sind optional und unterliegen deren eigenen Datenschutzbedingungen. App ist Finanzbildung und keine Anlageberatung.
+
+
+## FinanzPilot-Akademie v4 – tägliche Kurse und eigene Aktienanalysen
+
+Die App enthält jetzt den Reiter **Analysen**. Die Dateien `academy.js` und `data/academy.json` sind ohne KI-API und ohne kostenpflichtigen Marktfeed nutzbar.
+
+- **Kurse:** Datengetriebene längere und kürzere Analysen mit Originalquellen, Rechenaufgaben, echten (externen) Charts und eigenen Investmentthesen.
+- **Aktienanalysen anfordern:** Formular am Ende des Analyse-Reiters. Öffnet ein **öffentliches GitHub-Issue**, das du noch absenden musst. Die tägliche ChatGPT-Aufgabe verarbeitet solche Anfragen, sobald sie Zugriff und belastbare Quellen hat.
+- **Markturteil:** Formuliere deine persönliche Einschätzung, lass dir ein Prüfraster zeigen, und übergib den Text nach ausdrücklicher Auswahl an ChatGPT oder via öffentliches GitHub-Issue an die Tagesredaktion. **Keine KI läuft unsichtbar im Browser.**
+- **Lernstand:** Nur auf dem eigenen Gerät unter `finanzpilot_academy_v4` gespeichert; GitHub kann ihn weder automatisch lesen noch serverseitig bewerten.
+- **Aktualisierungen:** Die bestehende Aufgabe `FinanzPilot Lernredaktion` aktualisiert `data/daily.json` und `data/academy.json` über den GitHub-Connector. Die genaue Anweisung und das Schema stehen in `docs/REDAKTION.md`.
+- **Echte Microsoft-Zahlen:** Der erste vollständige Prozess verwendet echte historische FY2025-Unternehmenszahlen aus dem Microsoft Annual Report; kursbezogene hypothetische Aufgaben sind sichtbar als Annahmen gekennzeichnet.
+- **Grenzen:** Live-Charts kommen extern von TradingView und können verzögert sein; Website-Besucher können keine vertraulichen Bankdaten eingeben. GitHub-Issues sind öffentlich.
+
+Der Kurskatalog kann täglich wachsen, ohne App-Code ändern zu müssen. Bereits absolvierte Kurs-IDs bleiben stabil, damit der Fortschritt erhalten bleibt.
