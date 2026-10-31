@@ -1,0 +1,49 @@
+{
+  "asof": "2026-10-31",
+  "purpose": "Redaktionelle Research-Watchlist: keine Kaufempfehlung oder Ergebnis der persönlichen Portfolioanalyse.",
+  "ideas": [
+    {
+      "id": "kion",
+      "company": "KION Group",
+      "ticker": "KGX",
+      "symbol": "XETR:KGX",
+      "sector": "Lagerautomation / Gabelstapler",
+      "status": "Vollständiger 20-Etappen-Lernkurs mit illustrativem Bewertungsmodell veröffentlicht",
+      "interest": "Stark wachsendes Automatisierungssegment trifft auf schwachen Auftragseingang bei Staplern. Der Kurs reflektiert hohe Unsicherheit.",
+      "counter": "FCF-Definition 2026, Schulden und zyklische Auftragslage erschweren einen robusten fairen Wert.",
+      "metric": "9M 2026: IAS +16,9 % Umsatz, Konzern-Auftragseingang −4,9 %",
+      "date": "2026-10-29",
+      "source": "https://www.kiongroup.com/de/Presse/Pressemitteilungen/Pressemitteilungen-Detail.html?id=486077516",
+      "next": "Nächste Quartale: neuer Auftragseingang ITS, IAS-Marge, Working Capital und Finanzierungs-Bridge."
+    },
+    {
+      "id": "aixtron",
+      "company": "AIXTRON",
+      "ticker": "AIXA",
+      "symbol": "XETR:AIXA",
+      "sector": "Halbleiter-Produktionsanlagen",
+      "status": "Research-Watchlist, noch kein abgeschlossenes Kursziel",
+      "interest": "Neue Anlagen für InP-Optik und KI-Rechenzentrums-Kommunikation treiben den Auftragseingang. Das könnte ein weniger offensichtlicher Profiteur des KI-Infrastrukturausbaus sein.",
+      "counter": "Zyklischer Anlagenabsatz, hohe Kundenzentrierung und mögliche Verschiebungen von Auslieferungen; Auftragseingang ist nicht sofort Umsatz oder Cashflow.",
+      "metric": "Q3/2026 Auftragseingang 274,9 Mio. € (+122 % ggü. Vorjahr), 9M Umsatz 358,1 Mio. € (−3 %)",
+      "date": "2026-10-29",
+      "source": "https://aixtron.com/en/investors/news/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801",
+      "next": "Backlog in Umsatz und FCF überführen, Margen und Kundenmix prüfen; danach DCF- und Multiples-Modell."
+    },
+    {
+      "id": "cgnx",
+      "company": "Cognex",
+      "ticker": "CGNX",
+      "symbol": "NASDAQ:CGNX",
+      "sector": "Machine Vision / Robotik",
+      "status": "Research-Watchlist, kein verlässliches aktuelles Kursziel",
+      "interest": "Sichtsysteme für industrielle Automation; RealSense-Übernahme öffnet Zugang zu 3D-Perception für Robotik.",
+      "counter": "Kaufpreis 500 Mio. $ plus erwartete Mitarbeiterbindungs- und aktienbasierte Vergütungen erhöhen Kapitalbedarf und Verwässerungsrisiken.",
+      "metric": "Q2/2026 Umsatz 291 Mio. $ (+17 %), operative Marge 29,4 %; RealSense-Akquisitionspreis rund 500 Mio. $",
+      "date": "2026-09-22",
+      "source": "https://investor.cognex.com/news/news-details/2026/Cognex-to-Acquire-RealSense-Expanding-Machine-Vision-Leadership-into-High-Growth-Robotic-Perception-Market/default.aspx",
+      "supporting_source": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000061/a07052026-xex991xq22026ear.htm",
+      "next": "Unabhängig prüfen: organisches Wachstum, Integration, Cashbestand nach Übernahme, Verwässerung, Preis und Multiples."
+    }
+  ]
+}
