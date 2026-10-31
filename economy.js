@@ -10,7 +10,7 @@ window.FinanzPilotEconomy=(()=>{
  const euro=cents=>(Number(cents||0)/100).toLocaleString('de-DE',{style:'currency',currency:'EUR'});
  const fmt=n=>Number(n).toLocaleString('de-DE',{maximumFractionDigits:2});
  const api=()=>window.FinanzPilotCloud;
- let account=null,claims=[],perks=[],ledger=[],verified=[],loading=false,error='',notice='',pending=null;
+ let account=null,claims=[],perks=[],ledger=[],verified=[],paperCash=null,loading=false,error='',notice='',pending=null;
  const has=key=>perks.some(x=>x.perk_key===key);
  const logged=()=>!!api()?.user;
  const module=id=>modules.find(x=>x.id===id);
@@ -21,11 +21,12 @@ window.FinanzPilotEconomy=(()=>{
   try{localStorage.setItem('finanzpilot_expedition_v1',JSON.stringify({...p,completed}));window.dispatchEvent(new Event('fp-progress-change'))}catch{}
  }
  async function refresh(redraw=true){
-  if(!logged()){account=null;claims=[];perks=[];ledger=[];verified=[];loading=false;updateTheme();if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.();return}
+  if(!logged()){account=null;claims=[];perks=[];ledger=[];verified=[];paperCash=null;loading=false;updateTheme();if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.();return}
   loading=true;
   try{
    const rows=await Promise.all(['fp_economy_accounts','fp_reward_claims','fp_reward_perks','fp_reward_ledger','fp_verified_training'].map(t=>api().economyRead(t)));
    account=rows[0][0]||{research_points:0,virtual_euro_cents:0};claims=rows[1];perks=rows[2];ledger=rows[3];verified=rows[4];error='';updateTheme();
+   try{const cl=api()?.paperClient;if(cl){const {error:creditError}=await cl.rpc('fp_paper_claim_artifact_rewards');if(!creditError){const {data:wallet}=await cl.from('fp_paper_wallets').select('balance').eq('user_id',api().user).eq('currency','EUR').maybeSingle();paperCash=wallet?.balance??null}}}catch{}
   }catch(e){error='Dein Inventar konnte nicht geladen werden: '+(e.message||e);account=null}
   finally{loading=false;if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.()}
  }
@@ -44,7 +45,7 @@ window.FinanzPilotEconomy=(()=>{
   const opts=[
    ['tool','Research-Werkzeug',m.tool,'Schaltet einen zusätzlichen interaktiven Finanzrechner für diese Unternehmensanalyse frei.'],
    ['path','Spezial-Expedition',m.path,'Schaltet einen eigenständigen dreiteiligen Forschungspfad frei.'],
-   ['cash','Virtuelle Euro','150,00 €','Schreibt 150,00 € deinem virtuellen Depotkonto gut. Noch kein Aktienhandel.']
+   ['cash','Virtuelle Euro','150,00 €','Schreibt einmalig 150,00 € deinem virtuellen EUR-Depotguthaben gut. Diese Wahl ist dauerhaft.']
   ];
   return `<section class="fp-inventory-decision" id="fp-inventory-decision"><div class="eyebrow">ENTSCHEIDUNG · ${esc(m.name)}</div><h2>Wofür setzt du dein Artefakt ein?</h2><p>Du kannst genau eine Möglichkeit wählen. Andere Möglichkeiten mit diesem Gegenstand gehen dauerhaft verloren.</p><div class="fp-inventory-choices">${opts.map(([id,label,title,detail])=>`<button type="button" class="fp-inventory-choice ${pending.choice===id?'active':''}" data-inventory-select="${id}"><span class="fp-inventory-choice-mark">${pending.choice===id?'◉':'○'}</span><span><b>${esc(label)}</b><strong>${esc(title)}</strong><small>${esc(detail)}</small></span></button>`).join('')}</div><div class="fp-inventory-confirm"><button type="button" class="btn" data-inventory-confirm ${pending.choice?'':'disabled'}>Gegenstand endgültig einlösen</button><button type="button" class="settings-btn" data-inventory-cancel>Abbrechen</button></div><small>Diese Entscheidung ist nicht rückgängig zu machen. Sie kann bei schlechtem Internet nur einmal vom Server bestätigt werden.</small></section>`;
  }
@@ -79,7 +80,7 @@ window.FinanzPilotEconomy=(()=>{
   if(!logged())return `<div class="fp-inventory-page"><div class="fp-inventory-hero"><div class="eyebrow">DEINE SPIELWIRTSCHAFT</div><h1>Inventar & Belohnungen</h1><p>Deine bisherigen Kurse bleiben ohne Konto verfügbar. Um seltene Gegenstände, Forschungspunkte und virtuelles Kapital geräteübergreifend sicher zu speichern, melde dich bei FinanzPilot an.</p><button type="button" class="btn" data-inventory-login>Mit Google oder E-Mail anmelden →</button></div></div>`;
   if(loading&&!account)return '<div class="fp-inventory-page"><h1>Inventar & Belohnungen</h1><p>Dein privates Inventar wird geladen …</p></div>';
   if(!account)return `<div class="fp-inventory-page"><h1>Inventar & Belohnungen</h1><p>${esc(error||'Deine Daten werden gerade geprüft.')}</p><button class="btn" data-inventory-reload>Erneut versuchen</button></div>`;
-  return `<div class="fp-inventory-page"><div class="fp-inventory-hero"><div class="eyebrow">FINANZPILOT · VERIFIZIERTE SPIELBELOHNUNGEN</div><h1>Dein Forschungsinventar</h1><p>Jede Belohnung wird nur einmal vergeben. Alle Entscheidungen werden im privaten Konto gespeichert.</p><div class="fp-inventory-balances"><div><span>Forschungspunkte</span><b>${fmt(account.research_points||0)} FP</b></div><div><span>Depotguthaben · virtuell</span><b>${euro(account.virtual_euro_cents||0)}</b></div></div><small>Das Depotkapital ist nicht auszahlbar. Aktienhandel wird erst in einer späteren Etappe freigeschaltet.</small></div>${notice?`<div class="fp-inventory-notice" role="status">${esc(notice)}</div>`:''}${choiceSection()}${pending?.special?specialPanel():''}${itemList()}${ownedContent()}${shop()}<section class="fp-inventory-history"><details><summary>Belohnungsbuchungen anzeigen</summary><div>${ledger.slice().sort((a,b)=>String(b.created_at).localeCompare(String(a.created_at))).slice(0,30).map(x=>`<div><span>${esc(x.event_type==='module_mastery'?'Kursabschluss':x.event_type==='item_redemption'?'Item eingelöst':'Freischaltung gekauft')}</span><small>${esc(String(x.created_at).slice(0,10))}</small><b>${x.points_delta?`${x.points_delta>0?'+':''}${x.points_delta} FP`:x.euro_cents_delta?'+'+euro(x.euro_cents_delta):'✓'}</b></div>`).join('')||'<p>Noch keine Buchungen</p>'}</div></details></section></div>`;
+  return `<div class="fp-inventory-page"><div class="fp-inventory-hero"><div class="eyebrow">FINANZPILOT · VERIFIZIERTE SPIELBELOHNUNGEN</div><h1>Dein Forschungsinventar</h1><p>Jede Belohnung wird nur einmal vergeben. Alle Entscheidungen werden im privaten Konto gespeichert.</p><div class="fp-inventory-balances"><div><span>Forschungspunkte</span><b>${fmt(account.research_points||0)} FP</b></div><div><span>Depotguthaben · virtuell</span><b>${euro(account.virtual_euro_cents||0)}</b></div><div><span>EUR-Spielgeld im Aktien-Depot</span><b>${paperCash===null?'wird geladen':euro(Number(paperCash)*100)}</b></div></div><small>Verdiente Artefakt-Euro werden dem Aktien-Depot genau einmal gutgeschrieben. Das Inventar zeigt insgesamt verdiente Belohnungs-Euro; im Depot sind sie als Spielgeld verfügbar. Kein echtes Geld.</small><button type="button" class="btn secondary" data-view="depot">Zum Depot →</button></div>${notice?`<div class="fp-inventory-notice" role="status">${esc(notice)}</div>`:''}${choiceSection()}${pending?.special?specialPanel():''}${itemList()}${ownedContent()}${shop()}<section class="fp-inventory-history"><details><summary>Belohnungsbuchungen anzeigen</summary><div>${ledger.slice().sort((a,b)=>String(b.created_at).localeCompare(String(a.created_at))).slice(0,30).map(x=>`<div><span>${esc(x.event_type==='module_mastery'?'Kursabschluss':x.event_type==='item_redemption'?'Item eingelöst':'Freischaltung gekauft')}</span><small>${esc(String(x.created_at).slice(0,10))}</small><b>${x.points_delta?`${x.points_delta>0?'+':''}${x.points_delta} FP`:x.euro_cents_delta?'+'+euro(x.euro_cents_delta):'✓'}</b></div>`).join('')||'<p>Noch keine Buchungen</p>'}</div></details></section></div>`;
  }
  async function verify(id,index,raw,type){
   if(!logged())return {skipped:true};
