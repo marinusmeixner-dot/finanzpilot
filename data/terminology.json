@@ -5,17 +5,17 @@
   "modules": [
     {
       "id": "guv",
-      "title": "GuV lesen",
+      "title": "GuV lesen – Gewinn- und Verlustrechnung",
       "subtitle": "Vom Umsatz zum operativen Gewinn",
       "order": 1,
-      "minutes": 12,
+      "minutes": 18,
       "prerequisite": null,
       "steps": [
         {
           "type": "read",
-          "title": "Nordwerk AG · Analyse",
-          "text": "1.000 Mio. € Umsatz minus 620 Mio. € Herstellung, 240 Mio. € übrige operative Kosten und 40 Mio. € Abschreibung ergeben 100 Mio. € EBIT. Nach 20 Mio. € Zinsen und 20 Mio. € Steuern bleiben 60 Mio. € Jahresüberschuss.",
-          "insight": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
+          "title": "So liest du eine Gewinn- und Verlustrechnung (GuV)",
+          "text": "Die Gewinn- und Verlustrechnung (GuV) zeigt Erträge und Aufwendungen über einen Zeitraum – nicht den Kontostand. Bei der fiktiven Nordwerk AG: 1.000 Mio. € Umsatz − 620 Mio. € Herstellungskosten − 240 Mio. € übrige operative Kosten − 40 Mio. € Abschreibungen = 100 Mio. € EBIT (Earnings Before Interest and Taxes, Ergebnis vor Zinsen und Steuern). Danach 20 Mio. € Zinsaufwand und 20 Mio. € Steueraufwand: Jahresüberschuss = 60 Mio. €. Wichtig: Abschreibungen mindern den Gewinn, aber die Zahlung für die Maschine kann schon früher erfolgt sein. Deshalb sind EBIT, EBITDA (Ergebnis vor Zinsen, Steuern und Abschreibungen) und freier Cashflow (FCF) nicht dasselbe. Stell dir vor, Nordwerk wächst, während die Lagerbestände steigen: Das Ergebnis kann positiv sein und trotzdem Liquidität fehlen.",
+          "insight": "GuV = Gewinn- und Verlustrechnung (Zeitraum). EBIT = operatives Ergebnis vor Zinsen und Steuern. EBITDA = EBIT plus Abschreibungen. FCF = operativer Cashflow abzüglich Investitionen. Die Werte beantworten unterschiedliche Fragen.",
           "chart": {
             "labels": [
               "Umsatz",
@@ -49,17 +49,19 @@
         },
         {
           "type": "number",
-          "title": "Selbst berechnen",
-          "prompt": "Berechne EBIT aus 1.000 − 620 − 240 − 40 (Mio. €).",
+          "title": "GuV sauber überleiten und hinterfragen",
+          "prompt": "Nordwerk meldet 1.000 Mio. € Umsatz, 620 Mio. € Herstellungskosten, 240 Mio. € weitere betriebliche Kosten und 40 Mio. € Abschreibungen. Wie hoch ist das EBIT (Mio. €)? Erkläre darunter in eigenen Worten, warum du Zinsen und Steuern hier noch NICHT abziehst und was du für die Liquidität zusätzlich wissen müsstest.",
           "answer": 100,
           "tolerance": 0.11,
-          "method": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "method": "Rechenweg: 1.000 − 620 − 240 − 40 = 100 Mio. € EBIT. Die operative Marge beträgt 100 / 1.000 = 10 %. Zinsaufwendungen (20 Mio. €) und Steuern (20 Mio. €) folgen erst unterhalb des EBIT. Jahresüberschuss: 60 Mio. €. Zur Beurteilung der Liquidität brauchst du Cashflow, Forderungen, Vorräte und Investitionszahlungen.",
+          "hint": "Rechne die operative Kostenbrücke. Prüfe die Reihenfolge: Umsatz → operativer Gewinn (EBIT) → Finanzergebnis → Steuer → Jahresüberschuss. Gewinn ist nicht automatisch Zahlungseingang.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Begründe deine Einordnung in mindestens einem vollständigen Satz: Wo stehen Zinsen und Steuern, und warum ist das EBIT nicht gleich verfügbarem Geld?"
         },
         {
           "type": "multi",
-          "title": "Wissen kritisch anwenden",
-          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "title": "Welche Aussagen sind wirklich belegbar?",
+          "prompt": "Prüfe die GuV der Nordwerk AG und entscheide, welche zwei Schlussfolgerungen durch die Daten tatsächlich gedeckt sind. Denke auch an den Unterschied zwischen Gewinn und Geldzufluss.",
           "options": [
             "EBIT liegt bei 100 Mio. €, Jahresüberschuss bei 60 Mio. €",
             "EBITDA ist automatisch verfügbares Bargeld",
@@ -70,24 +72,24 @@
             0,
             2
           ],
-          "method": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
+          "method": "Belegt sind 100 Mio. € operatives EBIT sowie 60 Mio. € Jahresüberschuss nach 20 Mio. € Zinsen und 20 Mio. € Steuern. EBIT ist vor Zinsen und Steuern. EBITDA und EBIT enthalten keine direkte Information über Erhaltungsinvestitionen, Forderungen oder tatsächlich eingegangene Zahlungen. Höhere Umsätze führen nur bei ausreichend kontrollierten Kosten zu höheren Gewinnen.",
           "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
         },
         {
           "type": "decision",
-          "title": "Ein echter Analysten-Schritt",
-          "prompt": "Nordwerk verkauft eine Halle mit 80 Mio. € Einmalgewinn. Wie bewertest du das?",
+          "title": "Einmaleffekt in der GuV erkennen",
+          "prompt": "Nordwerk verkauft eine alte Halle mit 80 Mio. € einmaligem Buchgewinn. Im selben Jahr fällt der wiederkehrende operative Gewinn unter 100 Mio. €. Wie gehst du vor, bevor du ein nachhaltiges Ergebnis bewertest?",
           "options": [
             "Dauerhaft als normalen operativen Ertrag fortschreiben",
             "Einmaleffekt vom wiederkehrenden Geschäft trennen",
             "Das Unternehmen ohne weitere Zahlen kaufen"
           ],
           "correct": 1,
-          "method": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
+          "method": "Trenne einmalige Veräußerungsgewinne von wiederkehrenden operativen Erträgen. Prüfe, wo der Verkauf in der GuV ausgewiesen wurde, welche Steuerfolgen entstehen und ob der Mittelzufluss tatsächlich eingegangen ist. Für eine normalisierte Unternehmensbewertung darfst du diese 80 Mio. € nicht einfach jedes Jahr fortschreiben.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
       ],
-      "short": "Vom Umsatz zum operativen Gewinn",
+      "short": "Umsatz, EBIT, Zinsen, Steuern und Ergebnis nachvollziehen",
       "difficulty": "Stufe 1",
       "domain": "Begriffs-Akademie",
       "source": {
@@ -880,5 +882,6 @@
       }
     }
   ],
-  "schema_version": 1
+  "schema_version": 1,
+  "updated_at": "2026-10-31"
 }
