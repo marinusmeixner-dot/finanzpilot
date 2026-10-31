@@ -99,13 +99,14 @@
   if(inRoute||!Object.prototype.hasOwnProperty.call(PARENT,to))return;
   if(to==='account'){window.FinanzPilotCloud?.openLogin?.();return}
   if(to==='lesson'||to==='labcase')to='learnpath';
-  const old=state.view;if(old===to)return;
+  const old=state.view;if(old===to){if(ROOT_VIEWS.has(to))restoreScroll(to,0);return}
   persist(old,window.scrollY);
   const pos=load().positions||{},y=ROOT_VIEWS.has(to)?0:Number(pos[to]||0);
   inRoute=true;previous=to;chooseView(to);header();
   if(remember)persist(to,y);
   const hash='#view='+encodeURIComponent(to);if(location.hash!==hash)history.replaceState(null,'',location.pathname+location.search+hash);
   inRoute=false;
+  window.dispatchEvent(new Event('fp-navigation'));
   restoreScroll(to,y);
  }
  function init(){
@@ -116,6 +117,7 @@
   const initial=Object.prototype.hasOwnProperty.call(PARENT,chosen)?chosen:Object.prototype.hasOwnProperty.call(PARENT,saved.view)?saved.view:'home';
   if(initial!=='home'&&initial!=='account')chooseView(initial);
   previous=state.view;header();
+  if(!location.hash||!hash.get('view'))history.replaceState(null,'',location.pathname+location.search+'#view='+encodeURIComponent(initial));
   restoreScroll(initial,ROOT_VIEWS.has(initial)?0:Number(saved.positions?.[initial]||0));
   document.addEventListener('click',ev=>{
    const t=ev.target.closest('[data-section-main],[data-section-route],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
