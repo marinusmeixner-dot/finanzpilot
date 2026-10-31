@@ -54,7 +54,7 @@ assert(src.includes('data-ic-thesis')===false); // real form ID is fp-ic-thesis
 assert(src.includes('fp-ic-thesis'));
 assert(src.includes('data-ic-copy'));
 assert(src.includes('kein aktueller Marktkurs')||src.includes('Kein aktueller Marktkurs'));
-assert(read('ux-v15.js').includes("investmentcommittee:'research'"));
+assert(read('ux-v15.js').includes("investmentcommittee:'stockhub'"));
 assert(read('sync.js').includes('mergeInvestmentCommittee'));
 assert(read('index.html').includes('investment-committee.js?v=23'));
 assert(read('index.html').includes('investment-committee.css?v=21'));
