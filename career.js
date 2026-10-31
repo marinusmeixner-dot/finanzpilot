@@ -63,6 +63,12 @@
    }else if(t.action==='risk'){
     inputs=field('w1','Gewichtung Position A · %','60')+field('r1','Kursveränderung Position A · %','-20')+field('w2','Gewichtung Position B · %','30')+field('r2','Kursveränderung Position B · %','10');
     note='Die übrige Gewichtung bleibt in diesem vereinfachten Modell unverzinstes Bargeld. Kein Prognosemodell.';
+   }else if(t.action==='peer'){
+    inputs=field('price','Beobachteter Aktienkurs · €','33,27')+field('shares','Aktienanzahl · Mio. Stück','131,1')+field('debt','Nettoverschuldung · Mio. €','1196')+field('ebit','Bereinigtes EBIT · Mio. €','845')+field('multiple','Selbst gewähltes EV/EBIT-Multiple · ×','8');
+    note='Vergleiche die aktuell implizierte Bewertung mit einer selbst gewählten Bewertungsannahme. Ohne belastbare Peer-Daten ist das Multiple nur ein Rechenszenario.';
+   }else if(t.action==='committee'){
+    inputs=field('bear','Negativszenario · €','24,59')+field('base','Basisszenario · €','58,20')+field('bull','Positivszenario · €','94,65')+field('pb','Wahrscheinlichkeit Negativ · %','30')+field('pbase','Wahrscheinlichkeit Basis · %','50')+field('pbull','Wahrscheinlichkeit Positiv · %','20')+field('price','Vergleichskurs · €','33,27');
+    note='Du selbst vergibst Gewichte für drei begründete Schätzungen. Die Wahrscheinlichkeiten müssen zusammen genau 100 % ergeben. Die Kursziele sind historische KION-Modellannahmen, keine aktuellen Prognosen.';
    }else if(t.action==='dcf'){
     return `<section class="fp-career-tool-panel"><button type="button" class="fp-career-panel-close" data-career-close>← Werkzeugliste</button><div class="eyebrow">${esc(t.category)}</div><h3>${esc(t.title)}</h3><p>${esc(t.description)}</p><div class="fp-career-warning">KION-Fallstudie mit datierten historischen Kursen und eigenständigen Prognoseannahmen. Kein sicheres oder aktuelles Kauf-/Verkaufssignal.</div>${window.FinanzPilotValuation?.html()||'<p>Das Bewertungsmodell wird geladen.</p>'}</section>`;
    }
@@ -103,6 +109,18 @@
     if(![w1,w2,r1,r2].every(Number.isFinite)||w1<0||w2<0||w1+w2>100||r1< -100||r2< -100||r1>1000||r2>1000)throw Error('Gewichte müssen zusammen höchstens 100 % ergeben; Preisveränderungen mindestens −100 % und höchstens +1.000 %.');
     const result=(w1*r1+w2*r2)/100;
     return `<div class="fp-career-output"><h4>Portfoliostress im Beispiel</h4><div><span>Gewichtete Depotveränderung</span><b>${fmt(result)} %</b></div><div><span>Veränderung bei 10.000 €</span><b>${money(10000*result/100)}</b></div><div><span>Bargeldanteil</span><b>${fmt(100-w1-w2)} %</b></div><p>Hohe Einzelgewichte erzeugen Klumpenrisiken. Dieses Beispiel ignoriert Korrelationen, Gebühren und Währungsbewegungen.</p></div>`;
+   }
+   if(type==='peer'){
+    const price=n('price'),shares=n('shares'),debt=n('debt'),ebit=n('ebit'),mult=n('multiple');
+    if(![price,shares,debt,ebit,mult].every(Number.isFinite)||price<=0||shares<=0||ebit<=0||mult<=0||mult>150)throw Error('Kurs, Aktienzahl, EBIT und Multiple müssen positiv sein.');
+    const enterprise=price*shares+debt,marketMultiple=enterprise/ebit,peerPrice=(mult*ebit-debt)/shares;
+    return `<div class="fp-career-output"><h4>Bewertungsprüfung</h4><div><span>Impliziter EV / EBIT</span><b>${fmt(marketMultiple,2)}×</b></div><div><span>Preis bei ${fmt(mult)}× EV/EBIT</span><b>${money(peerPrice)}</b></div><div><span>Rechnerische Differenz zum Kurs</span><b>${fmt((peerPrice/price-1)*100)} %</b></div><p>EV = Kurs × Aktienzahl + Nettoverschuldung. Vergleichswert = (Multiple × EBIT − Nettoverschuldung) / Aktienzahl. Das gewählte Multiple ist ohne dokumentierten Peer-Vergleich keine objektive Markteinschätzung.</p></div>`;
+   }
+   if(type==='committee'){
+    const bear=n('bear'),base=n('base'),bull=n('bull'),p1=n('pb'),p2=n('pbase'),p3=n('pbull'),price=n('price');
+    if(![bear,base,bull,p1,p2,p3,price].every(Number.isFinite)||[bear,base,bull,price].some(x=>x<=0)||[p1,p2,p3].some(x=>x<0||x>100)||Math.abs(p1+p2+p3-100)>0.05)throw Error('Alle Kurswerte müssen positiv sein und die drei Wahrscheinlichkeiten genau 100 % ergeben.');
+    const expected=(bear*p1+base*p2+bull*p3)/100,variance=(p1*(bear-expected)**2+p2*(base-expected)**2+p3*(bull-expected)**2)/100;
+    return `<div class="fp-career-output"><h4>Erwartungswert deines Szenariomodells</h4><div><span>Gewichtetes Research-Kursziel</span><b>${money(expected)}</b></div><div><span>Abstand zum Vergleichskurs</span><b>${fmt((expected/price-1)*100)} %</b></div><div><span>Szenariostreuung · Standardabweichung</span><b>${money(Math.sqrt(variance))}</b></div><p>Gewichteter Wert = Σ Kursziel × subjektive Wahrscheinlichkeit. Die Streuung beschreibt nur diese drei von dir gewählten Werte; sie ist weder Kursvolatilität noch ein statistisch bestätigtes Konfidenzintervall.</p></div>`;
    }
    throw Error('Werkzeug nicht verfügbar.');
   }
