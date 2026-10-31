@@ -56,6 +56,6 @@ assert(src.includes('data-ic-copy'));
 assert(src.includes('kein aktueller Marktkurs')||src.includes('Kein aktueller Marktkurs'));
 assert(read('ux-v15.js').includes("investmentcommittee:'research'"));
 assert(read('sync.js').includes('mergeInvestmentCommittee'));
-assert(read('index.html').includes('investment-committee.js?v=21'));
+assert(read('index.html').includes('investment-committee.js?v=23'));
 assert(read('index.html').includes('investment-committee.css?v=21'));
 console.log('Investment Committee v21: KION 5-year DCF, Microsoft EPS-model, 2×8 stages, 10 objective answers, 6 anchored scenarios and all guards verified.');
