@@ -80,5 +80,5 @@ assert.equal(reloaded,null);
 fresh=17;
 await updateWin.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
-assert(reloaded.includes('?v=16#view=training'));
+assert(reloaded.includes('?v=17#view=training'));
 console.log('Navigation/PWA tests passed: five isolated tabs, area menus, hierarchy, version refresh and saved location.');
