@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "updated_at": "2026-10-31",
-  "note": "Read-only mastery-based career layer. No real or simulated currency, no purchasable items and no speculative reward claims. Advanced tools require both earned competencies and an explicit career rank; base education remains available.",
+  "note": "Read-only mastery-based career layer. No real or simulated currency, no purchasable items and no speculative reward claims. Advanced tools require both earned competencies and an explicit career rank; base education remains available. Career collectibles are permanent certificates. Redeemable artifacts exist only in the Supabase inventory and disappear after use.",
   "ranks": [
     {
       "id": "kursfunke",
@@ -182,20 +182,20 @@
     },
     {
       "id": "silicon-lens",
-      "name": "Silizium-Linse",
+      "name": "Halbleiter-Meistersiegel",
       "category": "Forschungsartefakt",
       "symbol": "✧",
-      "description": "Du hast im AIXTRON-Training Auftragseingänge kritisch interpretiert.",
+      "description": "Dauerhaftes Leistungsabzeichen zum AIXTRON-Training. Das verbrauchbare Item Silizium-Linse wird ausschließlich im Inventar geführt.",
       "requiredTraining": {
         "aixtron-auftraege": 4
       }
     },
     {
       "id": "cloud-compass",
-      "name": "Cloud-Kompass",
+      "name": "Cloud-Meistersiegel",
       "category": "Forschungsartefakt",
       "symbol": "⌘",
-      "description": "Du hast in der Alphabet-Analyse Wachstum und Bewertung auseinandergehalten.",
+      "description": "Dauerhaftes Leistungsabzeichen zum Alphabet-Training. Das verbrauchbare Item Cloud-Kompass wird ausschließlich im Inventar geführt.",
       "requiredTraining": {
         "alphabet-cloud": 4
       }
