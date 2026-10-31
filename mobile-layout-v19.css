@@ -21,9 +21,9 @@ body{min-height:100dvh}
  .topbar{
   position:sticky!important;
   top:0!important;
-  min-height:calc(65px + env(safe-area-inset-top,0px));
+  min-height:calc(71px + env(safe-area-inset-top,0px));
   height:auto!important;
-  padding-top:calc(7px + env(safe-area-inset-top,0px))!important;
+  padding-top:calc(13px + env(safe-area-inset-top,0px))!important;
   padding-bottom:8px!important;
   padding-left:15px;
   padding-right:15px;
