@@ -29,7 +29,7 @@
   if(typeof state==='undefined'||routeBusy)return;
   let dest=clean(v);
   if(dest==='lesson'||dest==='labcase')dest='learn';
-  if(dest==='academycourse')dest='academy';
+  if(dest==='academycourse'&&!window.FinanzPilotAcademy)dest='academy';
   const old=state.view;
   store(old,window.scrollY);
   const targetY=Number(load().positions?.[dest]||0);
@@ -112,7 +112,7 @@
   // Tiefe Kursschritte / Testfragen werden auf ihre übergeordneten Bereiche zurückgeführt.
   const proposed=clean(urlView||nav.view||'home');
   if(proposed!=='home'){
-    const dest=['academycourse'].includes(proposed)?'academy':['labcase','lesson'].includes(proposed)?'learn':proposed;
+    const dest=['labcase','lesson'].includes(proposed)?'learn':proposed;
     state.view=dest;render();
     const savedY=Number(nav.positions?.[dest]??(dest===nav.view?nav.scroll:0)??0);if(savedY>0){restoring=true;requestAnimationFrame(()=>requestAnimationFrame(()=>{scrollTo(0,savedY);restoring=false}))}
   }
@@ -122,7 +122,7 @@
   window.addEventListener('scroll',()=>{clearTimeout(scrollTimer);scrollTimer=setTimeout(()=>{if(typeof state==='undefined')return;store(state.view,scrollY)},250)},{passive:true});
   window.addEventListener('pagehide',()=>{if(typeof state!=='undefined')store(state.view,scrollY)});
   window.addEventListener('hashchange',()=>{const q=new URLSearchParams(location.hash.replace(/^#/,''));const v=q.get('view');if(v&&VIEWS.has(v)&&v!==state.view)route(v)});
-  document.getElementById('fp-app-version')?.replaceChildren(document.createTextNode('Version 6.0 · 31.10.2026'));
+  document.getElementById('fp-app-version')?.replaceChildren(document.createTextNode('Version 7.0 · 31.10.2026'));
   updateMenu();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
