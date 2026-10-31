@@ -32,7 +32,7 @@ window.FinanzPilotEconomy=(()=>{
  }
  function stateOf(id){return claims.find(x=>x.module_id===id)||null}
  function itemList(){
-  return `<section class="fp-inventory-section"><div class="fp-inventory-heading"><h2>Deine Forschungsartefakte</h2><p>Jedes Artefakt wird nur einmal vergeben. Nach einer Einlösung wird es verbraucht – deine erworbenen Rechte bleiben erhalten.</p></div><div class="fp-inventory-rows">`+
+  return `<section class="fp-inventory-section"><div class="fp-inventory-heading"><h2>Deine Forschungsartefakte</h2><p>Derzeit gibt es drei serverseitig bestätigbare Spezialartefakte aus den Praxisreihen KION, AIXTRON und Alphabet. Karriere-Abzeichen sind andere Sammlerstücke und nicht verbrauchbar. Weitere Artefakte folgen mit neuen Prüfungen. <b>Einlösen:</b> Praxisreihe abschließen, Antworten bestätigen, dann „Verwendung auswählen“ → dauerhaft Werkzeug, Spezialmission oder einmalig 150 € virtuelles EUR-Depotguthaben wählen. Ein Artefakt kann nur einmal eingesetzt werden.</p></div><div class="fp-inventory-rows">`+
   modules.map(m=>{
    const cl=stateOf(m.id),count=verified.filter(x=>x.module_id===m.id).length;
    const headline=cl?(cl.choice?'Eingelöst: '+({tool:'Werkzeug',path:'Spezialkurs',cash:'150 € virtuelles Kapital'}[cl.choice]||cl.choice):'Einmalige Auswahl verfügbar'):`${count}/4 Antworten bestätigt`;
