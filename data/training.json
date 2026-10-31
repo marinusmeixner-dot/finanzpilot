@@ -1,0 +1,289 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-31",
+  "notes": "Fakten aus offiziellen Unternehmens-/SEC-Quellen, Stand 28–29.10.2026. Übungsaufgaben behandeln Analyse statt Kaufempfehlungen.",
+  "modules": [
+    {
+      "id": "kion-nachfrage",
+      "title": "KION: Gewinn steigt, Aufträge sinken",
+      "short": "Lies widersprüchliche Kennzahlen und entwickle eine belastbare These.",
+      "symbol": "XETR:KGX",
+      "domain": "Bilanz & Research",
+      "difficulty": "Fortgeschritten",
+      "minutes": 12,
+      "source": {
+        "label": "KION · Neunmonatsbericht 2026, 29.10.2026",
+        "url": "https://www.kiongroup.com/de/Presse/Pressemitteilungen/Pressemitteilungen-Detail.html?id=486077516"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Ein Geschäftsbericht erzählt mehrere Geschichten",
+          "text": "KION erwirtschaftete in den ersten neun Monaten 2026 8.522 Mio. € Umsatz (+3,9 %) und 632,5 Mio. € bereinigtes EBIT (+9,9 %). Gleichzeitig sank der Auftragseingang von 8.882 auf 8.445 Mio. €. Historische Ertragskraft und zukünftiger Nachfrageindikator laufen hier auseinander. Gute Analysten prüfen beide Seiten.",
+          "insight": "Die Aktie wird anhand erwarteter zukünftiger Zahlungsströme bewertet. Mehr Gewinn heute kann gleichzeitig mit mehr Unsicherheit morgen auftreten.",
+          "visual": {
+            "labels": [
+              "Umsatz 9M25",
+              "Umsatz 9M26",
+              "Aufträge 9M25",
+              "Aufträge 9M26"
+            ],
+            "values": [
+              8200,
+              8522,
+              8882,
+              8445
+            ],
+            "unit": "Mio. €"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Wie stark fällt der Auftragseingang?",
+          "prompt": "KION meldet 8.445 Mio. € statt 8.882 Mio. €. Berechne die prozentuale Veränderung gegenüber dem Vorjahr. Gib das Vorzeichen an.",
+          "answer": -4.9,
+          "tolerance": 0.15,
+          "unit": "%",
+          "method": "(8.445 − 8.882) / 8.882 × 100 = −4,92 %. Nicht 437/8.445 rechnen: Bezugsgröße ist das Vorjahr.",
+          "hint": "Teile die Differenz durch 8.882 und multipliziere mit 100."
+        },
+        {
+          "type": "multi",
+          "title": "Welche Aussagen werden durch die Zahlen gestützt?",
+          "prompt": "Wähle genau die zwei Aussagen, die aus der Meldung folgen.",
+          "options": [
+            "Das operative Ergebnis verbesserte sich, obwohl der Auftragseingang sank.",
+            "Ein sinkender Auftragseingang belegt bereits einen Gewinnrückgang für das kommende Jahr.",
+            "Die Zahlen zeigen, dass unterschiedliche Teile des Unternehmens unterschiedlich laufen.",
+            "Der Aktienkurs muss wegen des steigenden EBIT langfristig steigen."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Aussagen 1 und 3 folgen aus den veröffentlichten Daten. Ob der Gewinn später fällt oder die Aktie steigt, ist daraus allein nicht ableitbar.",
+          "hint": "Unterscheide Beobachtung von Vorhersage."
+        },
+        {
+          "type": "sequence",
+          "title": "Baue eine saubere Analystenprüfung",
+          "prompt": "Bringe die Schritte in die fachlich sinnvolle Reihenfolge.",
+          "options": [
+            "Aktualisierte Cashflow-Szenarien und fairen Wert berechnen",
+            "Rückgang bei Bestellungen nach Segment und Ursache prüfen",
+            "Eigene Hypothese mit der neuen Unternehmensprognose abgleichen",
+            "Neue Informationen mit der bisherigen Investmentthese vergleichen"
+          ],
+          "correct": [
+            3,
+            1,
+            2,
+            0
+          ],
+          "method": "Zuerst erkennen, was die These verändert. Danach Ursachen prüfen, Prognosen und Szenarien aktualisieren und erst zum Schluss bewerten.",
+          "hint": "Ein Kursziel ist das Ergebnis der Prüfung, nicht ihr Anfang."
+        },
+        {
+          "type": "decision",
+          "title": "Investment-These nach einer Gewinnwarnung",
+          "prompt": "KION senkte die 2026er bereinigte EBIT-Guidance von 880–980 auf 815–875 Mio. €. Welcher nächste Schritt ist analytisch am stärksten?",
+          "options": [
+            "Sofort kaufen: Nach einer Gewinnwarnung ist das Risiko bereits vollständig eingepreist.",
+            "Die Senkung ignorieren: Das Ergebnis der vergangenen neun Monate war besser.",
+            "Die revidierte Gewinnbasis in Bear/Base/Bull-Modelle einbauen und Cashflow, Auftragslage sowie Nettoschulden gegenprüfen.",
+            "Sofort verkaufen: Eine Prognosesenkung zeigt zwingend einen dauerhaft schlechten Unternehmenswert."
+          ],
+          "correct": 2,
+          "method": "Ein neues Kursziel braucht eine aktualisierte Ergebnisbasis, Cashflow- und Verschuldungsprüfung. Die Gewinnwarnung allein beweist weder Über- noch Unterbewertung.",
+          "hint": "Weder reflexartig handeln noch neue Informationen ignorieren."
+        }
+      ]
+    },
+    {
+      "id": "aixtron-auftraege",
+      "title": "AIXTRON: KI-Boom oder Auftragsspitze?",
+      "short": "Prüfe Auftragseingang, Umsatzumsetzung und mögliche Anlegererwartungen.",
+      "symbol": "XETR:AIXA",
+      "domain": "Unternehmen & Märkte",
+      "difficulty": "Fortgeschritten",
+      "minutes": 12,
+      "source": {
+        "label": "AIXTRON · Q3-Meldung, 29.10.2026",
+        "url": "https://aixtron.com/en/investors/news/ad-hoc-news/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Hohe Bestellungen sind noch kein Gewinn",
+          "text": "Der Auftragseingang bei AIXTRON stieg im dritten Quartal 2026 gegenüber dem Vorjahr von 124,0 auf 274,9 Mio. €. Der Q3-Umsatz lag bei 183,6 Mio. €. Der Neunmonatsumsatz lag bei 358,1 Mio. € gegenüber 369,5 Mio. € im Vorjahr. Ein neuer Auftrag wird erst durch Auslieferung, Abnahme und Zahlung zum wirtschaftlich relevanten Umsatz und Cashflow.",
+          "insight": "Unterscheide Auftragseingang, Auftragsbestand, Umsatz, EBIT und tatsächlich vereinnahmten Cashflow.",
+          "visual": {
+            "labels": [
+              "Auftrag Q3/25",
+              "Auftrag Q3/26",
+              "Umsatz Q3/26"
+            ],
+            "values": [
+              124,
+              274.9,
+              183.6
+            ],
+            "unit": "Mio. €"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Auftragseingang exakt berechnen",
+          "prompt": "Auftragseingang Q3/2025: 124,0 Mio. €, Q3/2026: 274,9 Mio. €. Wie hoch war die Veränderung in Prozent?",
+          "answer": 121.7,
+          "tolerance": 0.15,
+          "unit": "%",
+          "method": "(274,9 − 124,0) / 124,0 × 100 = 121,69 %. Die gemeldete Zunahme von rund 122 % ist gerundet.",
+          "hint": "Das Delta wird durch die Vorjahresbasis 124 geteilt."
+        },
+        {
+          "type": "multi",
+          "title": "Was darfst du noch NICHT behaupten?",
+          "prompt": "Wähle die zwei Aussagen, die ohne weitere Daten NICHT belastbar sind.",
+          "options": [
+            "Das dritte Quartal 2026 verzeichnete einen erheblich höheren Auftragseingang als Q3/2025.",
+            "Das Unternehmen wird in den nächsten Quartalen zwangsläufig 122 % mehr Gewinn erzielen.",
+            "Der Neunmonatsumsatz 2026 lag unter dem entsprechenden Vorjahreswert.",
+            "Alle neuen Aufträge werden vollständig und ohne Verschiebung in Cashflow umgesetzt."
+          ],
+          "correct": [
+            1,
+            3
+          ],
+          "method": "Weder ein proportionaler Gewinnanstieg noch hundertprozentige Cashflow-Umsetzung folgen aus Auftragseingängen. Die beiden übrigen Aussagen sind durch die gemeldeten Zahlen gedeckt.",
+          "hint": "Welche Aussagen prognostizieren ungesichert eine spätere Entwicklung?"
+        },
+        {
+          "type": "sequence",
+          "title": "Von Bestellungen zu echtem Wert",
+          "prompt": "Ordne den typischen wirtschaftlichen Ablauf, stark vereinfacht.",
+          "options": [
+            "Umsatz bei Lieferung und erfüllter Leistungspflicht",
+            "Auftragseingang",
+            "Zahlungsmittelzufluss aus Kundenrechnungen",
+            "Auftragsbestand bis zur Abarbeitung"
+          ],
+          "correct": [
+            1,
+            3,
+            0,
+            2
+          ],
+          "method": "Auftrag → Auftragsbestand → Leistung und Umsatz → Zahlung. Je nach Vertrag kann der Cashflow früher oder später kommen. Der Ablauf ist daher ein didaktisches Grundmodell, keine universelle Bilanzierungsregel.",
+          "hint": "Eine Bestellung ist noch kein beglichener Kundeneingang."
+        },
+        {
+          "type": "decision",
+          "title": "Wie prüfst du die Erwartung am Markt?",
+          "prompt": "Die Anleger erwarten eine dauerhaft starke Nachfrage nach Halbleiter-Anlagen. Was prüfst du als Nächstes?",
+          "options": [
+            "Nur, ob die Aktie schon stark gestiegen ist.",
+            "Wann Bestellungen ausgeliefert werden, welchen Deckungsbeitrag sie bringen und welche Erwartungen im aktuellen Börsenkurs stecken.",
+            "Nur den Auftragseingang: Umsatz und Cashflow sind für Bewertungen nicht wichtig.",
+            "Keine weiteren Zahlen: Ein KI-Bezug reicht als Investmentthese."
+          ],
+          "correct": 1,
+          "method": "Eine gute Analyse verbindet Orderqualität, Lieferzeit, Marge, Kapitalbedarf und Bewertung. Ein guter Branchentrend kann bei zu hohem Kurs bereits eingepreist sein.",
+          "hint": "Suche die Antwort, die sowohl operative Realisierung als auch Bewertung berücksichtigt."
+        }
+      ]
+    },
+    {
+      "id": "alphabet-cloud",
+      "title": "Alphabet: 103 % Cloud-Wachstum richtig lesen",
+      "short": "Verstehe Wachstumsraten, Segmentgrößen und den Unterschied zwischen Tempo und Wert.",
+      "symbol": "NASDAQ:GOOGL",
+      "domain": "Wachstum & Bewertung",
+      "difficulty": "Aufbau / Profi",
+      "minutes": 12,
+      "source": {
+        "label": "Alphabet Q3 2026 · SEC-Pressemitteilung, 28.10.2026",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Große Wachstumszahl, kleinerer Umsatzanteil",
+          "text": "Alphabet berichtete für Q3/2026 127,6 Mrd. $ Konzernumsatz (+25 %) und 30,7 Mrd. $ Google-Cloud-Umsatz (+103 %). Die Google-Services-Umsätze lagen bei 96,3 Mrd. $ (+11 %). Hohe Prozentzahlen sind wichtig – die Größe des jeweiligen Geschäfts aber ebenfalls.",
+          "insight": "Wachstum wirkt auf den Unternehmenswert über absolute Cashflow-Beiträge, künftige Margen und dafür nötige Investitionen. Segmentwachstum ist nicht das Konzernwachstum.",
+          "visual": {
+            "labels": [
+              "Services Q3",
+              "Cloud Q3"
+            ],
+            "values": [
+              96.3,
+              30.7
+            ],
+            "unit": "Mrd. USD"
+          }
+        },
+        {
+          "type": "number",
+          "title": "Wie wichtig ist Cloud gemessen am Umsatz?",
+          "prompt": "Konzernumsatz Q3/2026: 127,6 Mrd. $. Cloud-Umsatz: 30,7 Mrd. $. Welchen Umsatzanteil hatte Cloud? Eine Nachkommastelle.",
+          "answer": 24.1,
+          "tolerance": 0.15,
+          "unit": "%",
+          "method": "30,7 / 127,6 × 100 = 24,06 %. Rund ein Viertel des Konzernumsatzes – trotz sehr viel höherem Segmentwachstum.",
+          "hint": "Berechne 30,7 geteilt durch 127,6."
+        },
+        {
+          "type": "multi",
+          "title": "Worauf kommt es für die Aktie an?",
+          "prompt": "Wähle die zwei fachlich sinnvollen Aussagen.",
+          "options": [
+            "Der heutige Kurs hängt auch davon ab, welches künftige Wachstum Anleger bereits erwarten.",
+            "Weil Cloud mehr als 100 % wächst, muss der Gesamtumsatz im selben Tempo wachsen.",
+            "Auch Investitionen in Rechenzentren können die freien Cashflows beeinflussen.",
+            "Das Umsatzwachstum beweist, dass die Aktie aktuell unterbewertet ist."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Erwartungen und Cashflow-Investitionen sind zentral. Das Tempo eines Segments lässt sich nicht direkt aufs Gesamthaus übertragen und auch nicht ohne Preisvergleich als Unterbewertung deuten.",
+          "hint": "Welche Aussage beschreibt einen Einflussfaktor ohne automatische Kursprognose?"
+        },
+        {
+          "type": "sequence",
+          "title": "Baue einen Bewertungsprozess",
+          "prompt": "In welcher Reihenfolge solltest du die Cloud-Nachricht für die Unternehmensbewertung untersuchen?",
+          "options": [
+            "Neuen fairen Wert und Sicherheitsmarge schätzen",
+            "Investitionsbedarf, operative Marge und Cashflow prüfen",
+            "Segmentwachstum und absolute Größe aus dem Bericht erfassen",
+            "Markterwartungen und bisherige Prognosen vergleichen"
+          ],
+          "correct": [
+            2,
+            3,
+            1,
+            0
+          ],
+          "method": "Erst echte Kennzahlen sichern, dann die Veränderung der Erwartungen prüfen, den Cashflow-Effekt modellieren und zuletzt den Wert mit dem aktuellen Börsenpreis vergleichen.",
+          "hint": "Der faire Wert kommt erst, wenn Prognosen und Zahlungsströme konsistent sind."
+        },
+        {
+          "type": "decision",
+          "title": "Muss schnelleres Wachstum eine Kaufchance sein?",
+          "prompt": "Cloud wächst um 103 %. Welche These lässt sich damit verantwortungsvoll vertreten?",
+          "options": [
+            "Sichere Kaufchance, weil Umsatzverdoppelung den Aktienwert mindestens verdoppelt.",
+            "Das Wachstum ist relevant; entscheidend sind aber erwartete Dauer, Cash-Margen, Investitionskosten und bereits eingepreiste Erwartungen.",
+            "Cloud ist nur ein Teilgeschäft und deshalb für den Gesamtwert grundsätzlich irrelevant.",
+            "Das Wachstum sagt nichts über das Geschäft und kann komplett ignoriert werden."
+          ],
+          "correct": 1,
+          "method": "Wachstum ist ein Treiber, kein Kursziel. Ein professionelles Research-Modell überprüft Cash-Konvertierung, Kapitalbedarf, Bewertung und plausible Abschwächungsszenarien.",
+          "hint": "Suche die Antwort ohne Gewissheitsbehauptung und ohne Ignorieren des Segments."
+        }
+      ]
+    }
+  ]
+}
