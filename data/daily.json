@@ -66,7 +66,10 @@
       "published": "21.10.2026",
       "why": "Meta meldet im dritten Quartal 26 % mehr Umsatz, aber die operative Marge sinkt von 40 auf 20 %; Sonderbelastungen spielen mit hinein.",
       "impact": "Prüfe Sondereffekte und bereinigtes Ergebnis, bevor du aus einer Margenänderung auf die Ertragskraft schließt.",
-      "category": "Aktien"
+      "category": "Aktien",
+      "symbols": [
+        "META"
+      ]
     },
     {
       "title": "Intel leidet nach Zahlen unter starkem Kursrückgang",
@@ -75,7 +78,10 @@
       "published": "30.10.2026",
       "why": "Intel verliert laut AP fast 29 % an einem Tag, nachdem der Ausblick die Erwartungen verfehlt.",
       "impact": "Das Beispiel zeigt, dass Erwartungen oft stärker auf Kurse wirken als die reine Ergebniszahl.",
-      "category": "Aktien"
+      "category": "Aktien",
+      "symbols": [
+        "INTC"
+      ]
     },
     {
       "title": "Nächste Berichtswoche: Apple und US-Arbeitsmarkt im Blick",
