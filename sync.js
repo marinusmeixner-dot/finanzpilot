@@ -261,10 +261,11 @@
         localStorage.setItem('finanzpilot_user_backup_'+owner,JSON.stringify(snapshot()));
         KEYS.forEach(k=>localStorage.removeItem(k));
       }}catch{}
-      const local=snapshot();
-      localBefore=JSON.stringify(local);
       const {data,error}=await client.from(CLOUD_TABLE).select('progress_data,allow_coach_analysis').eq('user_id',user.id).maybeSingle();
       if(error)throw error;
+      // Snapshot after the network request: answers entered meanwhile stay authoritative.
+      const local=snapshot();
+      localBefore=JSON.stringify(local);
       lastRemote=data?.progress_data||{};
       const merged=mergePayload(local,lastRemote);
       const changed=saveLocal(merged);
