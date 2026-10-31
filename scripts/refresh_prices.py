@@ -12,7 +12,7 @@ from pathlib import Path
 
 OUT=Path(__file__).resolve().parents[1]/'data'/'prices.json'
 SYMBOLS={
- 'MSFT':('MSFT','USD'), 'NVDA':('NVDA','USD'),'AAPL':('AAPL','USD'),
+ 'MSFT':('MSFT','USD'), 'NVDA':('NVDA','USD'),'AAPL':('AAPL','USD'), 'AMZN':('AMZN','USD'), 'META':('META','USD'),
  'SIEMENS':('SIE.DE','EUR'),'SPY':('SPY','USD'), 'QQQ':('QQQ','USD'), 'ACWI':('ACWI','USD'),
  'DAX':('^GDAXI','EUR'),'BTCEUR':('BTC-EUR','EUR'),'VWCE':('VWCE.DE','EUR')
 }
