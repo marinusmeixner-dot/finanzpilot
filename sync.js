@@ -5,7 +5,7 @@
 'use strict';
 (()=>{
   const PROJECT_URL = 'https://oqhwgksunlffvknaspmx.supabase.co';
-  const PUBLISHABLE_KEY = '__SUPABASE_PUBLISHABLE_KEY__';
+  const PUBLISHABLE_KEY = 'sb_publishable_hXOPhMFpAD0RVAky9eonSQ_yiFoZps6';
   const CLOUD_TABLE = 'finanzpilot_progress';
   const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1'];
   const escapeHtml = x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
