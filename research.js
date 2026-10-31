@@ -45,11 +45,11 @@ window.FinanzPilotResearch=(()=>{
  }
  function bindCards(root=document){root.querySelectorAll('[data-fp-stock]').forEach(b=>b.addEventListener('click',()=>{
    selected=b.dataset.fpStock;localStorage.setItem('fp_research_selected_v7',selected);
-   if(state.view!=='research'){state.view='research';window.render?.();window.scrollTo({top:0,behavior:'instant'})}
+   if(state.view!=='researchcatalog'){state.view='researchcatalog';window.render?.();window.scrollTo({top:0,behavior:'instant'})}
    else paint(true);
  }))}
  async function load(){try{const r=await fetch('./data/research.json?c='+Date.now(),{cache:'no-store'});if(r.ok){const obj=await r.json();if(Array.isArray(obj.analyses))research=obj}}catch{}
-   if(['academy','research'].includes(state.view))window.render?.();
+   if(['academy','researchcatalog'].includes(state.view))window.render?.();
  }
   document.addEventListener('DOMContentLoaded',load,{once:true});
  return {cards,render,bind,bindCards,load};
