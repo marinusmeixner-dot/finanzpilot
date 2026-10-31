@@ -1,0 +1,36 @@
+name: FinanzPilot Issue-Eingang
+on:
+  issues:
+    types: [opened, reopened, edited]
+permissions:
+  contents: read
+  issues: write
+jobs:
+  register-request:
+    if: startsWith(github.event.issue.title, 'Analysewunsch:') || startsWith(github.event.issue.title, 'Skillwunsch:')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Neue FinanzPilot-Anfrage sofort in Warteschlange markieren
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            const number = context.issue.number;
+            const label = 'finanzpilot-wartet';
+            try {
+              await github.rest.issues.getLabel({owner,repo,name:label});
+            } catch (e) {
+              if (e.status !== 404) throw e;
+              try {
+                await github.rest.issues.createLabel({
+                  owner,repo,name:label,color:'327866',
+                  description:'Vom GitHub-Event erkannt; steht für den nächsten ChatGPT-Redaktionscheck an'
+                });
+              } catch (other) {
+                if (other.status !== 422) throw other;
+              }
+            }
+            await github.rest.issues.addLabels({
+              owner,repo,issue_number:number,labels:[label]
+            });
+            core.info('Issue #'+number+' als neuen FinanzPilot-Auftrag erkannt.');
