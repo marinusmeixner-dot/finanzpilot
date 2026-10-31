@@ -25,7 +25,7 @@ assert(portfolio.includes('async function searchStocks('));
 assert(portfolio.includes('async function registerStock('));
 assert(portfolio.includes('async function removeWatch('));
 assert(portfolio.includes('Aktien weltweit suchen'));
-assert(read('index.html').includes('portfolio.js?v=32'));
+assert(read('index.html').includes('portfolio.js?v=33'));
 assert(read('index.html').includes('portfolio-v26.css?v=30'));
 assert(JSON.parse(read('version.json')).version>=27,'The global search feature must remain available in newer versions');
 const memory={},state={view:'depot'},events={};
