@@ -1,6 +1,395 @@
 {
- "schema_version":1,"updated_at":"2026-10-31","analyses":[
- {"id":"microsoft","company":"Microsoft","ticker":"MSFT","symbol":"NASDAQ:MSFT","period":"Geschäftsjahr 2026 (bis 30.06.2026)","source":"Microsoft Annual Report FY2026","source_url":"https://www.microsoft.com/investor/reports/ar26/","summary":"Starke Cloud- und Software-Umsätze, aber KI-Rechenzentren benötigen viel Kapital. Wachstum allein sagt noch nichts über den richtigen Aktienpreis.","business":"Azure/Cloud-Dienste, Microsoft 365 und Copilot, Windows, Gaming. Wiederkehrende Unternehmensverträge stabilisieren Einnahmen; die KI-Infrastruktur erfordert hohe Investitionen.","figures":[["Umsatz FY2025",281724,"Mio. USD"],["Umsatz FY2026",331839,"Mio. USD"],["Operativer Gewinn FY2025",128528,"Mio. USD"],["Operativer Gewinn FY2026",155237,"Mio. USD"],["EPS FY2026",17.95,"USD/Aktie"]],"thesis":"Cloud-Wachstum und wiederkehrende Verträge können zukünftige Cashflows unterstützen; der Kurs kann dieses Wachstum jedoch schon vorwegnehmen.","risks":["Steigende KI-Capex drücken möglicherweise den freien Cashflow", "Wettbewerb und Regulierung können Margen schmälern", "Eine hohe Bewertung macht die Aktie anfällig für Enttäuschungen"],"methods":["Umsatzwachstum und operative Marge berechnen","Capex und Free Cashflow gegenüberstellen","Forward-KGV mit erwarteten Gewinnen statt nur historischen Ergebnissen beurteilen","Bewertung und Wachstum in drei Szenarien zusammenführen"],"questions":[{"q":"Microsoft erwirtschaftete FY2026 331.839 Mio. USD Umsatz und 155.237 Mio. USD operativen Gewinn. Wie hoch war die operative Marge ungefähr?","choices":["39,2 %","46,8 %","52,5 %","57,1 %"],"correct":1,"why":"155.237 / 331.839 × 100 ≈ 46,8 %. Die Marge allein sagt noch nichts über die Kapitalrendite oder Aktienbewertung."},{"q":"Ein Anleger bewertet Microsoft nur anhand des um 18 % gestiegenen Umsatzes. Welche Ergänzung ist für eine belastbare These am wichtigsten?","choices":["Nur die Zahl der veröffentlichten KI-Produkte zählen","Künftige freie Cashflows, Investitionen und den bereits eingepreisten Kurs berücksichtigen","Nur das Handelsvolumen des letzten Tages prüfen","Den Aktienkurs durch den Umsatz ersetzen"],"correct":1,"why":"Gewinnqualität, Cashflow, Kapitaleinsatz und Erwartungen sind für Aktionärserträge entscheidend."}]},
- {"id":"nvidia","company":"NVIDIA","ticker":"NVDA","symbol":"NASDAQ:NVDA","period":"Geschäftsjahr 2026 (bis 25.01.2026)","source":"NVIDIA Quartals- und Jahresergebnisse FY2026","source_url":"https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/","summary":"KI-Beschleuniger und Rechenzentren treiben außergewöhnliches Wachstum. Die Kernfrage ist, wie nachhaltig Nachfrage und Margen bei bereits hohen Erwartungen bleiben.","business":"GPUs, Rechenzentrumsplattformen, Netzwerke und Software für beschleunigtes Rechnen. Wachstum hängt auch von Investitionsbudgets großer Cloud-Betreiber ab.","figures":[["Umsatz FY2025",130497,"Mio. USD"],["Umsatz FY2026",215938,"Mio. USD"],["Operativer Gewinn FY2025",81453,"Mio. USD"],["Operativer Gewinn FY2026",130387,"Mio. USD"],["Bruttomarge FY2026",71.1,"%"]],"thesis":"Hohe Nachfrage nach KI-Infrastruktur unterstützt Umsatz und Gewinne; Bewertungsrisiken steigen, wenn die Nachfrage früher als erwartet abflacht.","risks":["Große Kunden können Capex-Zyklen stark verändern", "Konkurrenz und eigene Chips der Kunden", "Exportregeln und Lieferketten", "Sinkende Bruttomarge trotz starkem Wachstum"],"methods":["65-%-Umsatzwachstum und Margenentwicklung sauber trennen","Abhängigkeit von wenigen Großkunden untersuchen","Bull/Base/Bear-Szenarien mit Wachstum und Bewertungsmultiplikator aufbauen"],"questions":[{"q":"NVIDIAs Umsatz steigt von 130.497 auf 215.938 Mio. USD. Welche Wachstumsrate passt ungefähr?","choices":["45,8 %","55,4 %","65,5 %","75,1 %"],"correct":2,"why":"(215.938 − 130.497) / 130.497 × 100 ≈ 65,5 %. Starkes Wachstum rechtfertigt nicht jeden denkbaren Aktienpreis."},{"q":"Die Bruttomarge sinkt von 75,0 auf 71,1 Prozent. Welcher Schluss ist gerechtfertigt?","choices":["Der absolute Bruttogewinn muss gefallen sein","Ein geringerer Umsatz ist sicher die Ursache","Die Marge sank um 3,9 Prozentpunkte; der absolute Bruttogewinn kann bei höherem Umsatz trotzdem steigen","Das Unternehmen macht einen Verlust"],"correct":2,"why":"Prozentpunkte sind nicht Prozente. Bei starkem Umsatzanstieg kann auch eine etwas niedrigere Marge einen höheren absoluten Gewinn ergeben."}]},
- {"id":"siemens","company":"Siemens AG","ticker":"SIE.DE","symbol":"XETR:SIE","period":"Geschäftsjahr 2025 (bis 30.09.2025)","source":"Siemens Earnings Release FY2025, 13.11.2025","source_url":"https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q4-2025","summary":"Industrie, Automatisierung und Infrastruktur bieten unterschiedliche Konjunktur- und Wachstumstreiber. Besonders wichtig sind Aufträge, Cashflow und die Bewertung der einzelnen Geschäftsbereiche.","business":"Digital Industries, Smart Infrastructure und Mobility. Ein Unternehmen kann in der Automatisierung schwächer, aber bei Infrastruktur und Bahntechnik stärker wachsen.","figures":[["Umsatz FY2024",75930,"Mio. EUR"],["Umsatz FY2025",78914,"Mio. EUR"],["Aufträge FY2025",88366,"Mio. EUR"],["Ergebnis industrielles Geschäft",11766,"Mio. EUR"],["Free Cashflow FY2025",10800,"Mio. EUR, grob gerundet"]],"thesis":"Solide Auftragsbasis, Automatisierung und Infrastruktur können die Entwicklung stützen; Zyklik und Konzernumbauten erhöhen die Komplexität.","risks":["Schwächere Industrie-Nachfrage in einzelnen Sparten", "Konzern-Gewinne können durch Einmalverkäufe verzerrt sein", "Aufträge bedeuten nicht sofort Umsatz oder Gewinn", "Arbeitgeber- und Aktienrisiko können sich bei Mitarbeiteraktien überschneiden"],"methods":["Book-to-Bill und organisches Wachstum trennen","Industriesparten vergleichen und Einmaleffekte bereinigen","Cashflow, Ergebnis und Bewertung getrennt analysieren"],"questions":[{"q":"Siemens meldete 2025 Aufträge über 88.366 Mio. EUR und Umsatz über 78.914 Mio. EUR. Wie hoch ist Book-to-Bill ungefähr?","choices":["0,89","1,03","1,12","1,26"],"correct":2,"why":"88.366 / 78.914 ≈ 1,12. Ein Wert über 1 signalisiert mehr Auftragseingang als Umsatz in der Periode; Margen und Auftragsqualität bleiben offen."},{"q":"Welcher Fehler entsteht, wenn du 11,8 Mrd. EUR Ergebnis des industriellen Geschäfts durch 78,9 Mrd. EUR Konzernumsatz teilst und das als Konzern-EBIT-Marge ausgibst?","choices":["Keiner, Zähler und Nenner sind direkt vergleichbar","Du vermischst unterschiedliche Ergebnisabgrenzungen und Geschäftsbereiche","Du berechnest automatisch den Free Cashflow","Du berechnest die Dividendenrendite"],"correct":1,"why":"Zähler und Nenner haben unterschiedliche Berichtsgrenzen. Vor jeder Marge muss die Kennzahl und ihr Bezugsumsatz konsistent sein."}]}
- ]}
+  "schema_version": 1,
+  "updated_at": "2026-10-31",
+  "analyses": [
+    {
+      "id": "microsoft",
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "symbol": "NASDAQ:MSFT",
+      "period": "Geschäftsjahr 2026 (bis 30.06.2026)",
+      "source": "Microsoft Annual Report FY2026",
+      "source_url": "https://www.microsoft.com/investor/reports/ar26/",
+      "summary": "Starke Cloud- und Software-Umsätze, aber KI-Rechenzentren benötigen viel Kapital. Wachstum allein sagt noch nichts über den richtigen Aktienpreis.",
+      "business": "Azure/Cloud-Dienste, Microsoft 365 und Copilot, Windows, Gaming. Wiederkehrende Unternehmensverträge stabilisieren Einnahmen; die KI-Infrastruktur erfordert hohe Investitionen.",
+      "figures": [
+        [
+          "Umsatz FY2025",
+          281724,
+          "Mio. USD"
+        ],
+        [
+          "Umsatz FY2026",
+          331839,
+          "Mio. USD"
+        ],
+        [
+          "Operativer Gewinn FY2025",
+          128528,
+          "Mio. USD"
+        ],
+        [
+          "Operativer Gewinn FY2026",
+          155237,
+          "Mio. USD"
+        ],
+        [
+          "EPS FY2026",
+          17.95,
+          "USD/Aktie"
+        ]
+      ],
+      "thesis": "Cloud-Wachstum und wiederkehrende Verträge können zukünftige Cashflows unterstützen; der Kurs kann dieses Wachstum jedoch schon vorwegnehmen.",
+      "risks": [
+        "Steigende KI-Capex drücken möglicherweise den freien Cashflow",
+        "Wettbewerb und Regulierung können Margen schmälern",
+        "Eine hohe Bewertung macht die Aktie anfällig für Enttäuschungen"
+      ],
+      "methods": [
+        "Umsatzwachstum und operative Marge berechnen",
+        "Capex und Free Cashflow gegenüberstellen",
+        "Forward-KGV mit erwarteten Gewinnen statt nur historischen Ergebnissen beurteilen",
+        "Bewertung und Wachstum in drei Szenarien zusammenführen"
+      ],
+      "questions": [
+        {
+          "q": "Microsoft erwirtschaftete FY2026 331.839 Mio. USD Umsatz und 155.237 Mio. USD operativen Gewinn. Wie hoch war die operative Marge ungefähr?",
+          "choices": [
+            "39,2 %",
+            "46,8 %",
+            "52,5 %",
+            "57,1 %"
+          ],
+          "correct": 1,
+          "why": "155.237 / 331.839 × 100 ≈ 46,8 %. Die Marge allein sagt noch nichts über die Kapitalrendite oder Aktienbewertung."
+        },
+        {
+          "q": "Ein Anleger bewertet Microsoft nur anhand des um 18 % gestiegenen Umsatzes. Welche Ergänzung ist für eine belastbare These am wichtigsten?",
+          "choices": [
+            "Nur die Zahl der veröffentlichten KI-Produkte zählen",
+            "Künftige freie Cashflows, Investitionen und den bereits eingepreisten Kurs berücksichtigen",
+            "Nur das Handelsvolumen des letzten Tages prüfen",
+            "Den Aktienkurs durch den Umsatz ersetzen"
+          ],
+          "correct": 1,
+          "why": "Gewinnqualität, Cashflow, Kapitaleinsatz und Erwartungen sind für Aktionärserträge entscheidend."
+        }
+      ],
+      "recent_update": {
+        "period": "Q1 GJ 2027 (Quartal bis 30.09.2026), veröffentlicht 28.10.2026",
+        "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+        "facts": [
+          [
+            "Umsatz Q1 FY27 (Mio. USD)",
+            92279
+          ],
+          [
+            "Operatives Ergebnis Q1 FY27 (Mio. USD)",
+            45915
+          ],
+          [
+            "Azure-Umsatz Q1 FY27 (Mio. USD)",
+            33165
+          ]
+        ],
+        "note": "Aktuelle Quartalszahlen separat vom Jahresbericht bewerten. Die ausgewiesene operative Marge für Q1 FY27 beträgt etwa 49,8 %."
+      }
+    },
+    {
+      "id": "nvidia",
+      "company": "NVIDIA",
+      "ticker": "NVDA",
+      "symbol": "NASDAQ:NVDA",
+      "period": "Geschäftsjahr 2026 (bis 25.01.2026)",
+      "source": "NVIDIA Quartals- und Jahresergebnisse FY2026",
+      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+      "summary": "KI-Beschleuniger und Rechenzentren treiben außergewöhnliches Wachstum. Die Kernfrage ist, wie nachhaltig Nachfrage und Margen bei bereits hohen Erwartungen bleiben.",
+      "business": "GPUs, Rechenzentrumsplattformen, Netzwerke und Software für beschleunigtes Rechnen. Wachstum hängt auch von Investitionsbudgets großer Cloud-Betreiber ab.",
+      "figures": [
+        [
+          "Umsatz FY2025",
+          130497,
+          "Mio. USD"
+        ],
+        [
+          "Umsatz FY2026",
+          215938,
+          "Mio. USD"
+        ],
+        [
+          "Operativer Gewinn FY2025",
+          81453,
+          "Mio. USD"
+        ],
+        [
+          "Operativer Gewinn FY2026",
+          130387,
+          "Mio. USD"
+        ],
+        [
+          "Bruttomarge FY2026",
+          71.1,
+          "%"
+        ]
+      ],
+      "thesis": "Hohe Nachfrage nach KI-Infrastruktur unterstützt Umsatz und Gewinne; Bewertungsrisiken steigen, wenn die Nachfrage früher als erwartet abflacht.",
+      "risks": [
+        "Große Kunden können Capex-Zyklen stark verändern",
+        "Konkurrenz und eigene Chips der Kunden",
+        "Exportregeln und Lieferketten",
+        "Sinkende Bruttomarge trotz starkem Wachstum"
+      ],
+      "methods": [
+        "65-%-Umsatzwachstum und Margenentwicklung sauber trennen",
+        "Abhängigkeit von wenigen Großkunden untersuchen",
+        "Bull/Base/Bear-Szenarien mit Wachstum und Bewertungsmultiplikator aufbauen"
+      ],
+      "questions": [
+        {
+          "q": "NVIDIAs Umsatz steigt von 130.497 auf 215.938 Mio. USD. Welche Wachstumsrate passt ungefähr?",
+          "choices": [
+            "45,8 %",
+            "55,4 %",
+            "65,5 %",
+            "75,1 %"
+          ],
+          "correct": 2,
+          "why": "(215.938 − 130.497) / 130.497 × 100 ≈ 65,5 %. Starkes Wachstum rechtfertigt nicht jeden denkbaren Aktienpreis."
+        },
+        {
+          "q": "Die Bruttomarge sinkt von 75,0 auf 71,1 Prozent. Welcher Schluss ist gerechtfertigt?",
+          "choices": [
+            "Der absolute Bruttogewinn muss gefallen sein",
+            "Ein geringerer Umsatz ist sicher die Ursache",
+            "Die Marge sank um 3,9 Prozentpunkte; der absolute Bruttogewinn kann bei höherem Umsatz trotzdem steigen",
+            "Das Unternehmen macht einen Verlust"
+          ],
+          "correct": 2,
+          "why": "Prozentpunkte sind nicht Prozente. Bei starkem Umsatzanstieg kann auch eine etwas niedrigere Marge einen höheren absoluten Gewinn ergeben."
+        }
+      ]
+    },
+    {
+      "id": "siemens",
+      "company": "Siemens AG",
+      "ticker": "SIE.DE",
+      "symbol": "XETR:SIE",
+      "period": "Geschäftsjahr 2025 (bis 30.09.2025)",
+      "source": "Siemens Earnings Release FY2025, 13.11.2025",
+      "source_url": "https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q4-2025",
+      "summary": "Industrie, Automatisierung und Infrastruktur bieten unterschiedliche Konjunktur- und Wachstumstreiber. Besonders wichtig sind Aufträge, Cashflow und die Bewertung der einzelnen Geschäftsbereiche.",
+      "business": "Digital Industries, Smart Infrastructure und Mobility. Ein Unternehmen kann in der Automatisierung schwächer, aber bei Infrastruktur und Bahntechnik stärker wachsen.",
+      "figures": [
+        [
+          "Umsatz FY2024",
+          75930,
+          "Mio. EUR"
+        ],
+        [
+          "Umsatz FY2025",
+          78914,
+          "Mio. EUR"
+        ],
+        [
+          "Aufträge FY2025",
+          88366,
+          "Mio. EUR"
+        ],
+        [
+          "Ergebnis industrielles Geschäft",
+          11766,
+          "Mio. EUR"
+        ],
+        [
+          "Free Cashflow FY2025",
+          10800,
+          "Mio. EUR, grob gerundet"
+        ]
+      ],
+      "thesis": "Solide Auftragsbasis, Automatisierung und Infrastruktur können die Entwicklung stützen; Zyklik und Konzernumbauten erhöhen die Komplexität.",
+      "risks": [
+        "Schwächere Industrie-Nachfrage in einzelnen Sparten",
+        "Konzern-Gewinne können durch Einmalverkäufe verzerrt sein",
+        "Aufträge bedeuten nicht sofort Umsatz oder Gewinn",
+        "Arbeitgeber- und Aktienrisiko können sich bei Mitarbeiteraktien überschneiden"
+      ],
+      "methods": [
+        "Book-to-Bill und organisches Wachstum trennen",
+        "Industriesparten vergleichen und Einmaleffekte bereinigen",
+        "Cashflow, Ergebnis und Bewertung getrennt analysieren"
+      ],
+      "questions": [
+        {
+          "q": "Siemens meldete 2025 Aufträge über 88.366 Mio. EUR und Umsatz über 78.914 Mio. EUR. Wie hoch ist Book-to-Bill ungefähr?",
+          "choices": [
+            "0,89",
+            "1,03",
+            "1,12",
+            "1,26"
+          ],
+          "correct": 2,
+          "why": "88.366 / 78.914 ≈ 1,12. Ein Wert über 1 signalisiert mehr Auftragseingang als Umsatz in der Periode; Margen und Auftragsqualität bleiben offen."
+        },
+        {
+          "q": "Welcher Fehler entsteht, wenn du 11,8 Mrd. EUR Ergebnis des industriellen Geschäfts durch 78,9 Mrd. EUR Konzernumsatz teilst und das als Konzern-EBIT-Marge ausgibst?",
+          "choices": [
+            "Keiner, Zähler und Nenner sind direkt vergleichbar",
+            "Du vermischst unterschiedliche Ergebnisabgrenzungen und Geschäftsbereiche",
+            "Du berechnest automatisch den Free Cashflow",
+            "Du berechnest die Dividendenrendite"
+          ],
+          "correct": 1,
+          "why": "Zähler und Nenner haben unterschiedliche Berichtsgrenzen. Vor jeder Marge muss die Kennzahl und ihr Bezugsumsatz konsistent sein."
+        }
+      ]
+    },
+    {
+      "id": "amazon",
+      "company": "Amazon",
+      "ticker": "AMZN",
+      "symbol": "NASDAQ:AMZN",
+      "period": "Q3 2026 (bis 30.09.2026), veröffentlicht 29.10.2026",
+      "source": "Amazon Earnings Q3 2026",
+      "source_url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+      "summary": "AWS-Cloudgeschäft beschleunigt sich, während der Konzern hohe Investitionen in Infrastruktur tätigt. Entscheidend ist das Verhältnis von Wachstum, Marge und Cashflow.",
+      "business": "Amazon verbindet Onlinehandel, Marktplatz- und Werbedienste sowie AWS-Rechenzentrumstechnologie. Die Segmente haben unterschiedliche Margen und Kapitalanforderungen.",
+      "figures": [
+        [
+          "Umsatz Q3 2025",
+          180200,
+          "Mio. USD"
+        ],
+        [
+          "Umsatz Q3 2026",
+          201900,
+          "Mio. USD"
+        ],
+        [
+          "Operatives Ergebnis Q3 2026",
+          28100,
+          "Mio. USD"
+        ],
+        [
+          "Operative Marge Q3 2026",
+          13.9,
+          "%"
+        ],
+        [
+          "AWS-Umsatzwachstum Q3 2026",
+          39.3,
+          "%"
+        ]
+      ],
+      "thesis": "Hohes AWS-Wachstum könnte zukünftige Ertragskraft stärken. Die Preisfrage ist, wie viel Cashflow nach dem Ausbau der Infrastruktur verbleibt.",
+      "risks": [
+        "KI-Rechenzentren und Logistik erfordern hohen Capex",
+        "Wettbewerb und Cloud-Preisdruck",
+        "Margenschwankungen zwischen Cloud, Handel und Werbung",
+        "Erwartungen sind möglicherweise bereits im Kurs enthalten"
+      ],
+      "methods": [
+        "Cloud- und Handelssegmente getrennt analysieren",
+        "Operating Cashflow minus Capex untersuchen",
+        "Bewertung bei verschiedenen AWS-Wachstumsraten vergleichen"
+      ],
+      "questions": [
+        {
+          "q": "Bei 201,9 Mrd. USD Quartalsumsatz und 28,1 Mrd. USD operativem Ergebnis: Welche operative Marge ergibt sich ungefähr?",
+          "choices": [
+            "9,8 %",
+            "11,7 %",
+            "13,9 %",
+            "16,5 %"
+          ],
+          "correct": 2,
+          "why": "28,1 / 201,9 × 100 ≈ 13,9 %. Ein hoher operativer Gewinn allein beweist keinen hohen FCF, wenn der Investitionsbedarf groß ist."
+        },
+        {
+          "q": "Amazon meldet 39,3 % AWS-Wachstum. Welche Prüfung ergänzt diese Zahl am sinnvollsten?",
+          "choices": [
+            "Verhältnis von Cloud-Wachstum, operativer Marge, Capex und Bewertung untersuchen",
+            "Den letzten Tageskurs isoliert zur Bewertung verwenden",
+            "Aus 39,3 % Wachstum eine gleich hohe Kursrendite ableiten",
+            "Den Konzernumsatz mit der AWS-Marge gleichsetzen"
+          ],
+          "correct": 0,
+          "why": "Cloud-Wachstum allein ist keine Aktienrendite. Entscheidend sind absolute Erträge, Kapitalbedarf, Wettbewerb und eingepreiste Erwartungen."
+        }
+      ]
+    },
+    {
+      "id": "meta",
+      "company": "Meta Platforms",
+      "ticker": "META",
+      "symbol": "NASDAQ:META",
+      "period": "Q3 2026 (bis 30.09.2026), veröffentlicht 21.10.2026",
+      "source": "Meta Third Quarter 2026 Results",
+      "source_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+      "summary": "Der Umsatz wächst stark, die ausgewiesene operative Marge sinkt wegen hoher Belastungen. Ein guter Fall, um Sondereffekte von nachhaltigen Kosten zu trennen.",
+      "business": "Werbeplattformen rund um Facebook und Instagram finanzieren große Investitionen in KI, Infrastruktur und weitere Produkte. Regulatorische Risiken sind erheblich.",
+      "figures": [
+        [
+          "Umsatz Q3 2025",
+          51242,
+          "Mio. USD"
+        ],
+        [
+          "Umsatz Q3 2026",
+          64601,
+          "Mio. USD"
+        ],
+        [
+          "Operating Income Q3 2025",
+          20535,
+          "Mio. USD"
+        ],
+        [
+          "Operating Income Q3 2026",
+          12988,
+          "Mio. USD"
+        ],
+        [
+          "Einmalige Rückstellung (vereinbarungsbezogen)",
+          9890,
+          "Mio. USD"
+        ]
+      ],
+      "thesis": "Wachstum des Werbegeschäfts und KI-Effizienz können die Ertragskraft stützen; zugleich sind Rechtskosten, Investitionen und Marktpreis zu berücksichtigen.",
+      "risks": [
+        "Rechts- und Regulierungskosten können sehr hoch sein",
+        "Investitionen in KI und neue Produkte belasten Cashflow",
+        "Werbenachfrage ist konjunkturabhängig",
+        "Bereinigte Kennzahlen können fortlaufende Risiken verharmlosen"
+      ],
+      "methods": [
+        "GAAP-Ergebnis und um Sondereffekte bereinigtes Ergebnis gegenüberstellen",
+        "Margen- und Cashflow-Entwicklung beobachten",
+        "DCF-Szenarien mit unterschiedlichen regulatorischen Kosten erstellen"
+      ],
+      "questions": [
+        {
+          "q": "Meta meldete Q3 2026 12,988 Mrd. USD operativen Gewinn; eine darin enthaltene Sondereinmalbelastung betrug 9,89 Mrd. USD. Welches Ergebnis ohne diesen Effekt ergibt sich rein rechnerisch?",
+          "choices": [
+            "19,0 Mrd. USD",
+            "20,5 Mrd. USD",
+            "22,88 Mrd. USD",
+            "25,7 Mrd. USD"
+          ],
+          "correct": 2,
+          "why": "12,988 + 9,89 ≈ 22,878 Mrd. USD. Die Anpassung macht die Kosten nicht bedeutungslos und ist keine Prognose."
+        },
+        {
+          "q": "Die operative Marge sinkt trotz 26 % Umsatzwachstum von 40 auf 20 %. Welche Aussage ist am besten belegt?",
+          "choices": [
+            "Das Kerngeschäft ist dauerhaft um die Hälfte weniger profitabel",
+            "Der Kurs muss am nächsten Tag steigen",
+            "Einmalbelastungen und laufende Kosten müssen getrennt werden, bevor man nachhaltige Ertragskraft beurteilt",
+            "Die Umsatzangabe ist falsch"
+          ],
+          "correct": 2,
+          "why": "Einmalbelastungen können die Berichtsperiode verzerren. Langfristige Ertragskraft beurteilst du mit wiederkehrenden Kosten, Cashflows und zukünftigen Risiken."
+        }
+      ]
+    }
+  ]
+}
