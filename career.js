@@ -124,7 +124,7 @@
     try{const html=evaluate(form.dataset.careerCalc,values);result={tool:selected,html};output.innerHTML=html}
     catch(e){output.textContent=e.message||'Bitte die Zahlen prüfen.'}
    });
-   if(selected==='dcf'&&status().unlockedTool(content?.tools.find(t=>t.id==='dcf')).available)window.FinanzPilotValuation?.mount(root);
+   if(content&&selected==='dcf'){const tool=content.tools.find(t=>t.id==='dcf');if(tool&&status().unlockedTool(tool).available)window.FinanzPilotValuation?.mount(root)}
   }
   async function load(){
    try{const r=await fetch(SOURCE+'?v='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);const v=await r.json();
@@ -134,6 +134,6 @@
    if(typeof state!=='undefined'&&state.view==='career')window.render?.();
   }
   if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
-  return{render,bind,status,toolGate:id=>content?status().unlockedTool(content.tools.find(x=>x.id===id)):null,evaluate,load,get config(){return content}};
+  return{render,bind,status,toolGate:id=>{const tool=content?.tools?.find(x=>x.id===id);return tool?status().unlockedTool(tool):null},evaluate,load,get config(){return content}};
  })();
 })();
