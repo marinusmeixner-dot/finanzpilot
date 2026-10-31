@@ -1,0 +1,557 @@
+{
+  "schema": 1,
+  "version": "2026-10-31",
+  "company": "Nordwerk AG – vollständig fiktives und konsistentes Lehrbeispiel, keine echte Aktie oder Börsendaten",
+  "modules": [
+    {
+      "id": "guv",
+      "title": "GuV lesen",
+      "subtitle": "Vom Umsatz zum operativen Gewinn",
+      "order": 1,
+      "minutes": 12,
+      "prerequisite": null,
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "1.000 Mio. € Umsatz minus 620 Mio. € Herstellung, 240 Mio. € übrige operative Kosten und 40 Mio. € Abschreibung ergeben 100 Mio. € EBIT. Nach 20 Mio. € Zinsen und 20 Mio. € Steuern bleiben 60 Mio. € Jahresüberschuss.",
+          "insight": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne EBIT aus 1.000 − 620 − 240 − 40 (Mio. €).",
+          "answer": 100,
+          "tolerance": 0.11,
+          "method": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "EBIT liegt bei 100 Mio. €, Jahresüberschuss bei 60 Mio. €",
+            "EBITDA ist automatisch verfügbares Bargeld",
+            "Zinsen belasten den Jahresüberschuss, nicht das EBIT",
+            "Jeder Umsatzanstieg steigert zwingend den Gewinn"
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Nordwerk verkauft eine Halle mit 80 Mio. € Einmalgewinn. Wie bewertest du das?",
+          "options": [
+            "Dauerhaft als normalen operativen Ertrag fortschreiben",
+            "Einmaleffekt vom wiederkehrenden Geschäft trennen",
+            "Das Unternehmen ohne weitere Zahlen kaufen"
+          ],
+          "correct": 1,
+          "method": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "margen",
+      "title": "Operative Margen",
+      "subtitle": "EBITDA, EBIT und Nachhaltigkeit",
+      "order": 2,
+      "minutes": 14,
+      "prerequisite": "guv",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Nordwerk erzielt bei 1.000 Mio. € Umsatz 140 Mio. € EBITDA und 100 Mio. € EBIT. Der Unterschied von 40 Mio. € sind Abschreibungen. Eine gute Marge bedeutet nicht automatisch einen hohen Cashflow.",
+          "insight": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Wie hoch ist die EBIT-Marge bei 100 Mio. € EBIT und 1.000 Mio. € Umsatz (in %)?",
+          "answer": 10,
+          "tolerance": 0.11,
+          "method": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Abschreibungen mindern EBIT, aber sind in diesem Jahr nicht direkt zahlungswirksam",
+            "EBITDA ist Free Cashflow",
+            "Hoher CapEx kann FCF trotz gutem EBITDA drücken",
+            "EBIT und EBITDA unterscheiden sich allein durch Zinszahlungen"
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Die Marge steigt, weil Forschungsausgaben gekürzt wurden. Was prüfst du?",
+          "options": [
+            "Marge ungeprüft auf ewig fortschreiben",
+            "Folgen für Produktpipeline und künftige Wettbewerbsfähigkeit",
+            "Das EBITDA automatisch zu Cashflow erklären"
+          ],
+          "correct": 1,
+          "method": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "bilanz",
+      "title": "Bilanz und Liquidität",
+      "subtitle": "Bestände, Forderungen, Schulden",
+      "order": 3,
+      "minutes": 16,
+      "prerequisite": "margen",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Die GuV berichtet über eine Periode, die Bilanz über einen Stichtag. Nordwerk besitzt 240 Mio. € kurzfristige Aktiva und schuldet 160 Mio. € kurzfristige Passiva. Nicht alle Forderungen und Vorräte sind sofort in Geld wandelbar.",
+          "insight": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne Current Ratio = 240 / 160.",
+          "answer": 1.5,
+          "tolerance": 0.11,
+          "method": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Steigende Kundenforderungen können bei geringem Umsatzwachstum ein Warnsignal sein",
+            "Hohe Vorräte können Kapital binden",
+            "Jahresgewinn verhindert jede Insolvenz",
+            "Buchwerte entsprechen immer Verkaufspreisen"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Forderungen steigen 30 %, Umsatz 5 %. Was nun?",
+          "options": [
+            "Zahlungsziele, Fälligkeiten und Kundenmix prüfen",
+            "Die Forderungen bereits als Bargeld verbuchen",
+            "Automatisch Kursziel erhöhen"
+          ],
+          "correct": 0,
+          "method": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "working",
+      "title": "Working Capital",
+      "subtitle": "Warum Wachstum Geld bindet",
+      "order": 4,
+      "minutes": 12,
+      "prerequisite": "bilanz",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Nordwerk erzielt 60 Mio. € Überschuss. 40 Mio. € Abschreibungen sind nicht zahlungswirksam; Lager und Forderungen binden 15 Mio. € zusätzlich. Vereinfachter operativer Cashflow: 85 Mio. €. Die Mittelbindung wird von realen Zahlungsströmen bestimmt.",
+          "insight": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne CFO = 60 + 40 − 15 (Mio. €).",
+          "answer": 85,
+          "tolerance": 0.11,
+          "method": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Lageraufbau verbraucht bei sonst gleichen Bedingungen Cash",
+            "Frühere Bezahlung von Lieferanten bindet Liquidität",
+            "Schnellere Kundenzahlung verringert CFO",
+            "Geringere Vorräte führen zwingend zu niedrigerem Cashflow"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Gewinn steigt, CFO sinkt. Wie gehst du vor?",
+          "options": [
+            "Working-Capital-Überleitung und Forderungsqualität prüfen",
+            "Cashflow als irrelevant behandeln",
+            "Nur die EBITDA-Marge vergleichen"
+          ],
+          "correct": 0,
+          "method": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "fcf",
+      "title": "Free Cashflow",
+      "subtitle": "Operativer Cashflow abzüglich Investitionen",
+      "order": 5,
+      "minutes": 14,
+      "prerequisite": "working",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Nordwerk erzielt 85 Mio. € Cashflow aus laufendem Geschäft, investiert aber 70 Mio. € in Maschinen. Der vereinfachte FCF beträgt nur 15 Mio. €. Investitionen können werthaltig sein – aber sie verbrauchen zunächst Geld.",
+          "insight": "FCF ist nicht das EBITDA und auch keine garantierte Dividende."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne vereinfachten FCF = 85 − 70 (Mio. €).",
+          "answer": 15,
+          "tolerance": 0.11,
+          "method": "FCF ist nicht das EBITDA und auch keine garantierte Dividende.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Hoher Wachstums-CapEx kann FCF kurzfristig drücken",
+            "Erhaltungs- und Wachstumsinvestitionen sollte man auseinanderhalten",
+            "Negativer FCF beweist zwingend Wertvernichtung",
+            "Abschreibung und CapEx müssen immer exakt gleich groß sein"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "FCF ist nicht das EBITDA und auch keine garantierte Dividende.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Ein Unternehmen baut für 40 Mio. € ein neues Werk. Was ist die sinnvolle Bewertung?",
+          "options": [
+            "Cashflow um einmalige Investition normalisieren und zusätzliche Gewinne sowie Folgekosten berücksichtigen",
+            "Wachstums-CapEx immer ignorieren",
+            "EBITDA als sichere Ausschüttung einstufen"
+          ],
+          "correct": 0,
+          "method": "FCF ist nicht das EBITDA und auch keine garantierte Dividende.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "roic",
+      "title": "ROIC und Wertschöpfung",
+      "subtitle": "Rendite auf investiertes Kapital",
+      "order": 6,
+      "minutes": 16,
+      "prerequisite": "fcf",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Nordwerk: EBIT 100 Mio. €, effektiver operativer Steuersatz 25 %. NOPAT = 75 Mio. €. Investiertes Kapital = 600 Mio. €, folglich ROIC = 12,5 %. Bei 9 % Kapitalkosten ergibt sich ein positiver Spread.",
+          "insight": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne ROIC = 75 / 600 × 100 (in %).",
+          "answer": 12.5,
+          "tolerance": 0.11,
+          "method": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "ROIC oberhalb des WACC ist ein Zeichen möglicher Wertschöpfung",
+            "ROIC unter dem WACC kann Wert vernichten, auch wenn Umsatz steigt",
+            "Steigender Umsatz macht jede Aktienbewertung attraktiv",
+            "ROIC ist unabhängig von eingesetztem Kapital"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Neues Projekt: ROIC 6 %, Kapitalkosten 9 %. Wie entscheidest du?",
+          "options": [
+            "Nur nach Umsatzwachstum beurteilen",
+            "Risiken und Strategie prüfen; rechnerisch liegt Rendite unter Kapitalkosten",
+            "WACC mit sicherer Tagesgeldrendite gleichsetzen"
+          ],
+          "correct": 1,
+          "method": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "wacc",
+      "title": "Kapitalkosten verstehen",
+      "subtitle": "WACC und Abzinsung",
+      "order": 7,
+      "minutes": 12,
+      "prerequisite": "roic",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Nordwerk finanziert sich zu 60 % mit Eigenkapital (Kosten 11 %) und 40 % mit Fremdkapital (Zins 5 %). Bei 25 % Steuersatz ergibt sich der vereinfachte WACC 8,1 %. Der Zins passt zum Risiko und der Art des Cashflows.",
+          "insight": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne WACC = 0,6 × 11 + 0,4 × 5 × (1 − 0,25) (in %).",
+          "answer": 8.1,
+          "tolerance": 0.11,
+          "method": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Höherer WACC senkt bei sonst gleichen Bedingungen den Barwert positiver Cashflows",
+            "WACC muss zu Währung und Cashflow-Art passen",
+            "Mehr Schulden senken in jedem Fall die Kapitalkosten",
+            "FCFF wird stets mit dem Eigenkapitalzins statt mit WACC abgezinst"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Marktzinsen steigen stark. Was änderst du?",
+          "options": [
+            "Risikolosen Zins, Risikoprämie und Szenariowert im DCF neu prüfen",
+            "Den Umsatz direkt mit der Zinsänderung multiplizieren",
+            "Den WACC als exakt bekannten Wert ansehen"
+          ],
+          "correct": 0,
+          "method": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "enterprise",
+      "title": "EV und Equity Value",
+      "subtitle": "Vom gesamten Geschäft zum Aktienkurs",
+      "order": 8,
+      "minutes": 14,
+      "prerequisite": "wacc",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Hypothetischer Enterprise Value Nordwerk: 800 Mio. €. Nettoschulden: 250 Mio. €. Eigenkapitalwert: 550 Mio. €, 50 Mio. Aktien: Wert je Aktie 11,00 €. Die echte Equity Bridge kann weitere Ansprüche enthalten.",
+          "insight": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne (800 − 250) / 50 (in € je Aktie).",
+          "answer": 11,
+          "tolerance": 0.11,
+          "method": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Bei konstantem EV sinkt der Equity Value mit steigenden Nettoschulden",
+            "EV-basierte Vergleiche berücksichtigen eher unterschiedliche Kapitalstrukturen",
+            "EV ist immer gleich Marktkapitalisierung",
+            "EV/EBITDA ist die garantierte Aktienrendite"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Nordwerk gibt 10 Mio. neue Aktien aus. Was beachtest du?",
+          "options": [
+            "Alte Aktienzahl unkritisch beibehalten",
+            "Neue Aktienzahl und Mittelzufluss gemeinsam berücksichtigen",
+            "Allein wegen einer Kapitalerhöhung ein sicheres Kursplus annehmen"
+          ],
+          "correct": 1,
+          "method": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "multiples",
+      "title": "Bewertungsmultiples",
+      "subtitle": "Wann ein niedriges KGV täuscht",
+      "order": 9,
+      "minutes": 16,
+      "prerequisite": "enterprise",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "EV 800 Mio. € und EBIT 100 Mio. € ergeben EV/EBIT 8×. Sinkt EBIT auf 70 Mio. €, steigt das Multiple bei unverändertem EV auf 11,43×. Günstig erscheinende Aktien können zyklisch oder strukturell schwach sein.",
+          "insight": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne EV/EBIT = 800 / 70 (auf 2 Stellen runden).",
+          "answer": 11.43,
+          "tolerance": 0.11,
+          "method": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Kapitalintensität und Ertragsqualität gehören in einen Peer-Vergleich",
+            "Normalisierte Zyklusgewinne sind für Industrieunternehmen relevant",
+            "Die niedrigste KGV-Aktie ist automatisch die beste",
+            "Ein Peer mit hohem Multiple garantiert denselben Wert für Nordwerk"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Nordwerk hat EV/EBIT 5, ein Wettbewerber 12. Wie beurteilst du das?",
+          "options": [
+            "Risiken, Wachstum, Verschuldung und normalisierte Gewinne prüfen",
+            "Blind kaufen, weil 5 kleiner als 12",
+            "Kursziel direkt auf das 12-fache erhöhen"
+          ],
+          "correct": 0,
+          "method": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    },
+    {
+      "id": "szenarien",
+      "title": "Szenariomodell als Meisterklasse",
+      "subtitle": "Vom Geschäftsmodell zum begründeten Kursziel",
+      "order": 10,
+      "minutes": 12,
+      "prerequisite": "multiples",
+      "steps": [
+        {
+          "type": "read",
+          "title": "Nordwerk AG · Analyse",
+          "text": "Du schätzt bei Nordwerk hypothetische Kursziele: Bear 6 € (30 %), Base 11 € (50 %), Bull 18 € (20 %). Das ergibt einen gewichteten Wert von 10,90 €. Der fiktive Marktpreis beträgt 10 €. Diese 9 % Aufschlag sind unsicher und allein keine Kaufempfehlung.",
+          "insight": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis."
+        },
+        {
+          "type": "number",
+          "title": "Selbst berechnen",
+          "prompt": "Berechne 0,30 × 6 + 0,50 × 11 + 0,20 × 18 (in €).",
+          "answer": 10.9,
+          "tolerance": 0.11,
+          "method": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis.",
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+        },
+        {
+          "type": "multi",
+          "title": "Wissen kritisch anwenden",
+          "prompt": "Welche zwei Aussagen sind fachlich richtig? Wähle exakt zwei.",
+          "options": [
+            "Szenariowahrscheinlichkeiten sind Annahmen",
+            "Sicherheitsmarge, Bilanz und Unsicherheit gehören zum Urteil",
+            "Ein 9-%-Aufschlag garantiert 9 % Rendite",
+            "Das Base-Szenario ist zwangsläufig der spätere Kurs"
+          ],
+          "correct": [
+            0,
+            1
+          ],
+          "method": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis.",
+          "hint": "Zwei Antworten sind korrekt – rechne nach und prüfe implizite Gewissheitsbehauptungen."
+        },
+        {
+          "type": "decision",
+          "title": "Ein echter Analysten-Schritt",
+          "prompt": "Das Modell zeigt 10,90 € fairen Wert bei 10 € Kurs. Was folgt?",
+          "options": [
+            "Sofort kaufen, da das Kursziel höher ist",
+            "Modellrisiko, Markterwartungen und Sicherheitsmarge prüfen",
+            "Erwartungswert als garantierte Zielrendite deklarieren"
+          ],
+          "correct": 1,
+          "method": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis.",
+          "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
+        }
+      ]
+    }
+  ]
+}
