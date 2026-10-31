@@ -1,22 +1,23 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31T00:00:00+01:00",
-  "editor_note": "Die Kurse trennen berichtete Unternehmenszahlen, Modellannahmen und externe Live-Charts. Neue Inhalte werden anhand überprüfter Quellen ergänzt.",
+  "updated_at": "2026-10-31T08:12:00+01:00",
+  "editor_note": "Quellengestützter 10-Schritte-Deep-Dive zu Alphabet Q3 2026 ergänzt; historische Zahlen und hypothetische Bewertungsannahmen strikt getrennt.",
   "market_task": {
     "date": "2026-10-31",
-    "title": "Microsoft, Alphabet und Amazon: Reicht das KI-Wachstum?",
-    "context": "Microsoft meldete für das jüngste Quartal 92,3 Mrd. USD Umsatz (+19 %). Amazon meldete AWS-Wachstum von 39,3 %; zugleich belasten hohe KI-Investitionen die Wahrnehmung des Sektors. Unterscheide berichtete Gewinne, Marktpreis und erwartete künftige Cashflows.",
-    "question": "Welche Aussage lässt sich heute aus den Wachstumsdaten ableiten, wo liegen die Risiken und unter welchen Bedingungen würdest du eine Aktie auf die Watchlist setzen – ohne einen heutigen Preis zu erfinden?",
+    "title": "Alphabet: Rekord-Cloudwachstum und negativer Quartals-Cashflow – wie passt das zusammen?",
+    "context": "Fakten laut SEC-Meldung vom 28.10.2026: Q3-Umsatz 127,577 Mrd. USD (+25 %), Google Cloud 30,709 Mrd. USD (+103 %), operativer Gewinn 40,576 Mrd. USD, FCF Q3 −9,065 Mrd. USD und TTM-FCF +19,747 Mrd. USD. Offen sind die zukünftige Kapitalrendite, der nachhaltige FCF und die eingepreisten Erwartungen.",
+    "question": "Formuliere eine überprüfbare 2-Jahres-Investmentthese: Unter welchen Wachstums-, Capex- und Bewertungsannahmen ist die Cloud-Dynamik wertsteigernd? Welche Zahlen würden deine These widerlegen? Unterscheide operative Entwicklung, Sondereffekte im Nettogewinn und Marktpreis.",
     "rubric": [
-      "Mindestens zwei geprüfte Unternehmenskennzahlen mit Quelle und Zeitraum",
-      "Investitionsbedarf, Cashflow und Bewertung getrennt betrachten",
-      "Gegenhypothese und Unsicherheit nachvollziehbar",
-      "Prüfbare Beobachtung für die nächsten Quartale nennen"
+      "Mindestens drei originale Q3-Zahlen mit Zeitraum und Einheiten korrekt",
+      "Q3-FCF −9,065 Mrd. von TTM-FCF +19,747 Mrd. unterscheiden",
+      "Mindestens zwei explizite Bewertungsannahmen und ein Gegenszenario",
+      "Konkretes Widerlegungskriterium und Beobachtungszeitraum",
+      "Keine erfundene aktuelle Kursnotierung oder sichere Rendite"
     ],
-    "source": "Microsoft IR / Amazon IR",
-    "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+    "source": "Alphabet Q3 2026 SEC Exhibit 99.1",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
     "source_date": "2026-10-28",
-    "symbol": "NASDAQ:MSFT"
+    "symbol": "NASDAQ:GOOGL"
   },
   "courses": [
     {
@@ -184,6 +185,170 @@
             "Eine Unsicherheit oder ein Gegenargument nennen"
           ],
           "sample": "Ich prüfe zuerst die Indexabdeckung und erst danach die TER. Der günstigste ETF muss nicht die geringste Tracking-Differenz haben. Meine Entscheidung hängt auch von Depotgebühren und Anlagehorizont ab."
+        }
+      ]
+    },
+    {
+      "id": "alphabet-q3-2026-cashflow-valuation",
+      "title": "Alphabet Q3 2026: Cloud-Boom, Cashflow und faire Bewertung",
+      "kind": "deep-dive",
+      "difficulty": "Fortgeschritten",
+      "duration": "40–55 Min.",
+      "date": "2026-10-31",
+      "symbol": "NASDAQ:GOOGL",
+      "symbol_name": "Alphabet",
+      "summary": "10 Schritte: Google Search und Cloud segmentieren, Wachstum, Margen und freien Cashflow rechnen, Bewertungsannahmen prüfen und eine widerlegbare These formulieren.",
+      "evidence_note": "Bericht vom 28.10.2026 für Q3 bis 30.09.2026; Geldbeträge in Mio. USD, soweit nicht anders vermerkt. Szenariopreise und Multiples sind ausdrücklich hypothetisch. Kein aktueller Aktienkurs.",
+      "source_label": "Alphabet Q3 2026 Earnings Release, SEC Exhibit 99.1 (28.10.2026)",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "steps": [
+        {
+          "type": "teach",
+          "title": "1 · Zwei Geschäftsmodelle, unterschiedliche Kapitalbindung",
+          "text": "Alphabet meldete für Q3 2026 127.577 Mio. USD Konzernumsatz. Google Services (96.302 Mio. USD) umfasst vor allem Suche, YouTube, Werbung, Abos und Android-Ökosystem. Google Cloud (30.709 Mio. USD) verkauft Cloud-Dienste, Workspace und TPU-Systeme. Ein Cloud-Umsatzdollar erfordert andere Rechenzentrumsinvestitionen als ein zusätzlicher Suchanzeigen-Dollar. Prüfe deshalb Segmentmargen, Konzernkosten und Capex getrennt. Quelle: SEC Exhibit 99.1 vom 28.10.2026, Segment Results.",
+          "takeaway": "Wachstum und Kapitalintensität sind zwei verschiedene Fragen."
+        },
+        {
+          "type": "calc",
+          "title": "2 · Das Wachstum sauber nachrechnen",
+          "text": "Konzernumsatz Q3 2025: 102.346 Mio. USD; Q3 2026: 127.577 Mio. USD. Verwende den Vorjahreswert als Basis.",
+          "question": "Wie hoch ist das berichtete Umsatzwachstum in Prozent? Eine Nachkommastelle.",
+          "answer": 24.7,
+          "tolerance": 0.12,
+          "unit": "%",
+          "method": "(127.577 − 102.346) / 102.346 × 100 = 24,65 %, gerundet 24,7 %. Ein gutes Wachstum sagt noch nichts über die Bewertung."
+        },
+        {
+          "type": "visual",
+          "title": "3 · Services und Cloud richtig vergleichen",
+          "text": "Das Diagramm verwendet die originalen Segmentumsätze der Q3-Berichte 2025 und 2026 in Mio. USD. Cloud wächst von 15.157 auf 30.709 Mio. USD; Services von 87.052 auf 96.302 Mio. USD. Der prozentual stärkere Wachstumsbeitrag ist nicht automatisch der größere absolute Umsatzbeitrag.",
+          "chart": {
+            "type": "bars",
+            "unit": "Mio. USD",
+            "labels": [
+              "Services Q3 2025",
+              "Services Q3 2026",
+              "Cloud Q3 2025",
+              "Cloud Q3 2026"
+            ],
+            "values": [
+              87052,
+              96302,
+              15157,
+              30709
+            ]
+          },
+          "question": "Welches Segment trug absolut mehr zum Umsatzanstieg bei? Warum kann ein kleines schnell wachsendes Segment die Bewertung trotzdem prägen?",
+          "rubric": [
+            "Absolute Veränderungen Services +9.250 und Cloud +15.552 Mio. USD korrekt berechnen",
+            "Segmentanteile und unterschiedliche Margen beachten",
+            "Künftige Cashflows nicht aus einer Quartalswachstumsrate linear fortschreiben"
+          ],
+          "sample": "Cloud legte absolut um 15.552 Mio. USD zu, Services um 9.250 Mio. USD. Cloud erklärt also mehr des Umsatzanstiegs, aber künftige Kapitalrendite und Nachhaltigkeit sind offen."
+        },
+        {
+          "type": "calc",
+          "title": "4 · Cloud-Marge statt Cloud-Hype",
+          "text": "Google Cloud erzielte in Q3 2026 30.709 Mio. USD Umsatz und 11.121 Mio. USD operatives Segmentergebnis. Nicht mit der Konzernmarge verwechseln.",
+          "question": "Berechne die operative Google-Cloud-Segmentmarge in Prozent (eine Nachkommastelle).",
+          "answer": 36.2,
+          "tolerance": 0.15,
+          "unit": "%",
+          "method": "11.121 / 30.709 × 100 = 36,21 %. Das Segmentergebnis enthält nicht alle Alphabet-weiten Kosten; die Konzernmarge liegt bei 40.576 / 127.577 ≈ 31,8 %."
+        },
+        {
+          "type": "choice",
+          "title": "5 · Gewinnrückgang trotz operativer Stärke",
+          "text": "Alphabet meldete Q3 2026 40.576 Mio. USD operativen Gewinn (Vorjahr 31.228), aber 26.468 Mio. USD Nettogewinn (Vorjahr 34.979). Unter sonstigen Erträgen/Aufwendungen standen 2026 −8.221 Mio. USD gegenüber +12.759 Mio. USD 2025, darunter Wertänderungen von Beteiligungen.",
+          "question": "Welche Schlussfolgerung ist am besten belegt?",
+          "options": [
+            "Der Rückgang des Nettogewinns beweist, dass das Kerngeschäft schrumpft.",
+            "Das operative Geschäft wuchs, während nichtoperative Beteiligungsbewertungen den Jahresvergleich des Nettogewinns stark beeinflussten.",
+            "Die Cloud-Marge entspricht zwangsläufig der Konzernmarge.",
+            "Die 2026er Nettogewinnzahl ist ein verlässlicher Wert für alle Folgequartale."
+          ],
+          "correct": 1,
+          "method": "Operatives Ergebnis +29,9 %, Nettogewinn −24,3 %. Der Unterschied ist vor allem bei sonstigen Erträgen/Aufwendungen zu suchen. Nichtoperative Schwankungen dürfen nicht mit dem nachhaltigen operativen Trend gleichgesetzt werden."
+        },
+        {
+          "type": "calc",
+          "title": "6 · Freien Cashflow aus dem Bericht berechnen",
+          "text": "Q3 2026: Cashflow aus laufender Geschäftstätigkeit 42.290 Mio. USD, Käufe von Sachanlagen 51.355 Mio. USD. Alphabet definiert FCF als Operating Cashflow minus diese Investitionen.",
+          "question": "Wie hoch ist der Free Cashflow in Q3 2026 in Mio. USD? Ein negatives Ergebnis mit Minuszeichen eingeben.",
+          "answer": -9065,
+          "tolerance": 0.1,
+          "unit": "Mio. USD",
+          "method": "42.290 − 51.355 = −9.065 Mio. USD. Trotz hohem operativem Gewinn ist der Quartals-FCF negativ; hohe Infrastrukturinvestitionen sind der wesentliche Treiber."
+        },
+        {
+          "type": "visual",
+          "title": "7 · Ein Quartal ist nicht zwölf Monate",
+          "text": "Die SEC-FCF-Überleitung zeigt Q4 2025 +24.551, Q1 2026 +10.116, Q2 2026 −5.855 und Q3 2026 −9.065 Mio. USD. Der TTM-FCF ergibt +19.747 Mio. USD. Ein Quartal isoliert kann die Zahlungsfähigkeit und den langfristigen Unternehmenswert verzerrt darstellen.",
+          "chart": {
+            "type": "bars",
+            "unit": "Mio. USD FCF (negative Balken im Diagramm ggf. unvollständig dargestellt)",
+            "labels": [
+              "Q4 2025",
+              "Q1 2026",
+              "Q2 2026",
+              "Q3 2026"
+            ],
+            "values": [
+              24551,
+              10116,
+              -5855,
+              -9065
+            ]
+          },
+          "question": "Warum sind zwei negative Quartale kein automatischer Beweis für ein schlechtes Geschäftsmodell? Welche ergänzenden Daten wären erforderlich?",
+          "rubric": [
+            "TTM-FCF +19.747 Mio. USD korrekt von Quartals-FCF unterscheiden",
+            "Investitionszyklen, Abschreibungen und Kapitalrendite diskutieren",
+            "Finanzierung und zukünftigen Ersatzinvestitionsbedarf prüfen",
+            "Negative Balken in diesem vereinfachten Diagramm nicht als null interpretieren"
+          ],
+          "sample": "Die jüngsten Quartale zeigen Capex-Druck, während der TTM-FCF noch positiv ist. Ob diese Ausgaben Wert schaffen, hängt von künftiger Auslastung, Margen, Abschreibungen und Kapitalkosten ab."
+        },
+        {
+          "type": "calc",
+          "title": "8 · Bewertungsannahme offenlegen",
+          "text": "REINES MODELL, KEIN BÖRSENKURS: Setze den berichteten TTM-FCF von 19.747 Mio. USD an und unterstelle einen hypothetischen P/FCF-Multiplikator von 25. Ignoriere für diese vereinfachte Multiplikatorübung Nettoschulden und Aktienklassen. Nicht als fairen Marktwert ausgeben.",
+          "question": "Welche hypothetische Eigenkapitalbewertung ergibt sich in Mrd. USD (eine Nachkommastelle)?",
+          "answer": 493.7,
+          "tolerance": 0.15,
+          "unit": "Mrd. USD",
+          "method": "19.747 Mio. × 25 = 493.675 Mio. USD = 493,675 Mrd. USD, gerundet 493,7. Die Rechnung ist mechanisch; ein durch Capex gedrückter TTM-FCF kann als nachhaltige Basis ungeeignet sein."
+        },
+        {
+          "type": "visual",
+          "title": "9 · Kurschart: Nachricht, Erwartung und Bewertung trennen",
+          "text": "Vergleiche den externen GOOGL-Chart mit dem Bericht vom 28.10.2026 und dem breiten Aktienmarkt. Ein Kursrückgang kann trotz +25 % Umsatzwachstum auftreten, wenn Gewinn, Cashflow oder Guidance die Erwartungen enttäuschen. Der Chart ist extern und kann verzögert sein; verwende kein unbestätigtes Intraday-Preisniveau.",
+          "chart": {
+            "type": "live",
+            "symbol": "NASDAQ:GOOGL"
+          },
+          "question": "Wie würdest du die Kursreaktion nach den Zahlen auf Fakten, Erwartungen und alternative Ursachen untersuchen?",
+          "rubric": [
+            "Exaktes Zeitfenster und Vergleichsindex definieren",
+            "Gemeldete Kennzahlen von vorherigen Analystenerwartungen unterscheiden",
+            "Cashflow, Capex und Ergebnis-Sondereffekte benennen",
+            "Mindestens eine alternative Ursache für die Kursreaktion nennen"
+          ],
+          "sample": "Ich prüfe die Reaktion am ersten Handelstag nach dem Bericht gegen Nasdaq-100 und vorherige Schätzungen; 103 % Cloud-Wachstum allein reicht nicht, wenn Investitionen und FCF schlechter als erwartet sind."
+        },
+        {
+          "type": "reflect",
+          "title": "10 · Drei Szenarien und eine widerlegbare These",
+          "text": "Entwickle eine eigene 2–3-Jahres-These: Basisszenario mit normalisierendem Capex, optimistisches Szenario mit hoher Cloud-Kapitalrendite und negatives Szenario mit Suchgeschäft-Druck oder zu viel Rechenzentrumskapazität. Keine exakten Zielkurse ohne belastbare Bewertungsdaten.",
+          "question": "Würdest du Alphabet beobachten, vermeiden oder erst weitere Daten abwarten? Belege mit vier Zahlen und Quelle, lege zwei konkrete Annahmen und einen Bewertungsmaßstab offen und nenne ein klares Widerlegungskriterium.",
+          "rubric": [
+            "Vier Q3-2026-Kennzahlen korrekt und datiert nennen",
+            "Operativen Gewinn, Nettogewinn und FCF sauber unterscheiden",
+            "Szenarioannahmen und Kapitalkosten explizit machen",
+            "Gegenhypothese und falsifizierbaren Auslöser nennen",
+            "Kein Kauf- oder Verkaufssignal aus einer Kennzahl ableiten"
+          ],
+          "sample": "Die Cloud-Marge ist stark, aber der Quartals-FCF −9,065 Mrd. USD. Ich würde abwarten, ob der hohe Capex in Folgequartalen zu wiederkehrenden Cashflows führt. Meine These wäre geschwächt, wenn Cloud-Wachstum und Cashflow trotz dauerhaft hoher Ausgaben gleichzeitig nachlassen."
         }
       ]
     }
