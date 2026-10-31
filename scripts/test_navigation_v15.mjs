@@ -9,17 +9,17 @@ const research=fs.readFileSync('research.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const current=JSON.parse(fs.readFileSync('version.json','utf8'));
 const updater=fs.readFileSync('updates.js','utf8');
-assert.equal(current.version,32);
-assert.equal(manifest.start_url,'./?v=33');
+assert.equal(current.version,34);
+assert.equal(manifest.start_url,'./?v=34');
 assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
-assert(html.includes('ux-v15.js?v=30'));
+assert(html.includes('ux-v15.js?v=34'));
 assert(html.includes('ux-v15.css?v=18'));
-assert(html.includes('app.js?v=33'));
+assert(html.includes('app.js?v=34'));
 assert(html.includes('research.js?v=18'));
-assert(html.includes('updates.js?v=33'));
+assert(html.includes('updates.js?v=34'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
@@ -45,7 +45,7 @@ const document={
  body:{classList:{add(){},remove(){}}}
 };
 const scrolls=[];const sent=[];const w={scrollY:0,scrollTo(...args){scrolls.push(args)},dispatchEvent(ev){sent.push(ev.type)},addEventListener(){},FinanzPilotLab:null};
-const location={hash:'',pathname:'/finanzpilot/',search:'?v=33'};
+const location={hash:'',pathname:'/finanzpilot/',search:'?v=34'};
 const history={replaceState:(_,__,url)=>{location.hash=url.includes('#')?'#'+url.split('#')[1]:''}};
 const context=vm.createContext({window:w,document,localStorage:{getItem:k=>memory[k]??null,setItem:(k,v)=>memory[k]=v},state,chooseView:v=>{state.view=v},
  MutationObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),history,location,URLSearchParams,console,Date,JSON,
@@ -57,8 +57,8 @@ assert(nav);
 assert.deepEqual([...['home','learn','markets','depot','progress','stockhub'].filter(x=>nav.isHub(x))],['learn','markets','progress','stockhub']);
 assert.equal(nav.renderHub('home'),'');
 const groups={
- learn:['learnpath','concepts','transfer','training','skills','glossary','foundations'],
- markets:['marketoverview','marketwatch','dailyreview','academymarket','stockhub'],
+ learn:['learnpath','concepts','transfer','training','skills','glossary','foundations','learningnews','dailyreview','academymarket','stockhub'],
+ markets:['marketoverview','marketnews'],
  progress:['learningstats','career','inventory']
 };
 for(const [parent,subpages] of Object.entries(groups)){
@@ -82,13 +82,13 @@ assert(nav.renderHub('progress').includes('data-section-account'));
 assert.equal((bottom.innerHTML.match(/data-section-main=/g)||[]).length,5);
 assert.equal(nav.parentOf('skills'),'learn');
 assert.equal(nav.parentOf('transfer'),'learn');
-assert.equal(nav.parentOf('academy'),'markets');
-assert.equal(nav.parentOf('investmentcommittee'),'markets');
-assert.equal(nav.parentOf('stockhub'),'markets');
+assert.equal(nav.parentOf('academy'),'learn');
+assert.equal(nav.parentOf('investmentcommittee'),'learn');
+assert.equal(nav.parentOf('stockhub'),'learn');
 assert(nav.renderHub('stockhub').includes('data-section-route="researchcatalog"'));
-assert(nav.renderHub('markets').includes('data-section-route="stockhub"'));
-nav.route('stockhub');assert(state.view==='stockhub');assert(crumb?.innerHTML.includes('Märkte-Übersicht'));
-nav.route('academy');assert(crumb?.innerHTML.includes('Aktien &amp; Analysen-Übersicht'));
+assert(nav.renderHub('learn').includes('data-section-route="stockhub"'));
+nav.route('stockhub');assert(state.view==='stockhub');assert(crumb?.innerHTML.includes('Lernen-Übersicht'));
+nav.route('academy');assert(crumb?.innerHTML.includes('Aktienresearch &amp; Werkzeuge-Übersicht'));
 nav.route('depot');assert(state.view==='depot');assert.equal(crumb,null);
 assert(bottom.innerHTML.includes('Depot')&&!bottom.innerHTML.includes('>Aktien<'));
 assert.equal(nav.parentOf('inventory'),'progress');
@@ -99,11 +99,11 @@ assert(html.includes('learning-v20.css?v=30'));
 assert(html.includes('investment-committee.js?v=23'));
 assert(html.includes('investment-committee.css?v=21'));
 assert(app.includes("state.view==='investmentcommittee'"));
-assert(html.includes('sync.js?v=33'));
+assert(html.includes('sync.js?v=34'));
 assert(html.includes('content="black"'));
 const stylesheet=fs.readFileSync('mobile-layout-v19.css','utf8');
 assert(stylesheet.includes('env(safe-area-inset-top'));
-assert(stylesheet.includes('position:sticky!important'));
+assert(fs.readFileSync('market-v34.css','utf8').includes('position:fixed!important'));
 assert(stylesheet.includes('min-height:100dvh'));
 nav.route('home');assert.equal(state.view,'home');
 const stateAfterHome=JSON.parse(memory.finanzpilot_navigation_v6);
@@ -114,16 +114,16 @@ nav.route('home');assert.equal(JSON.parse(memory.finanzpilot_navigation_v6).posi
 assert(scrolls.some(args=>args[0]===0&&args[1]===0));
 
 assert(app.includes("state.view==='learnpath'?window.FinanzPilotLab.renderLearn()"));
-assert(app.includes("state.view==='marketoverview'?window.FinanzPilotLab.renderMarkets()"));
+assert(app.includes("state.view==='marketoverview'&&window.FinanzPilotMarkets"));
 assert(app.includes("state.view==='learningstats'?window.FinanzPilotLab.renderProgress()"));
 assert(app.includes("state.view==='researchcatalog'&&window.FinanzPilotResearch"));
 assert(app.includes("state.view==='depot'&&window.FinanzPilotPortfolio"));
-assert(html.includes('portfolio.js?v=33'));
+assert(html.includes('portfolio.js?v=34'));
 assert(html.includes('portfolio-v26.css?v=30'));
 assert(research.includes("state.view='researchcatalog'"));
 
-let serverVersion=33,replaced=null,syncCalls=0;
-const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=33#view=training',hash:'#view=training',
+let serverVersion=34,replaced=null,syncCalls=0;
+const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=34#view=training',hash:'#view=training',
  replace:url=>{replaced=url}};
 const updaterWindow={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateContext=vm.createContext({window:updaterWindow,document:{readyState:'loading',addEventListener(){}},
@@ -132,8 +132,8 @@ const updateContext=vm.createContext({window:updaterWindow,document:{readyState:
 vm.runInContext(updater,updateContext,{filename:'updates.js'});
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(replaced,null);
-serverVersion=34;
+serverVersion=35;
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
-assert(replaced.includes('?v=34#view=training'));
-console.log('Version 33 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
+assert(replaced.includes('?v=35#view=training'));
+console.log('Version 34 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
