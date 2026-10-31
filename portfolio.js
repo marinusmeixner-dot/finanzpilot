@@ -9,7 +9,7 @@
  const user=()=>window.FinanzPilotCloud?.user||null;
  const client=()=>window.FinanzPilotCloud?.paperClient||null;
  const bySym=x=>quotes.find(q=>q.symbol===x);
- const jump=id=>requestAnimationFrame(()=>document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'}));
+ const jump=id=>{const fn=()=>document.getElementById?.(id)?.scrollIntoView?.({behavior:'smooth',block:'start'});if(typeof requestAnimationFrame==='function')requestAnimationFrame(fn);else fn()};
  const inspect=code=>window.FinanzPilotMarketWatch?.open(code);
  const timeBerlin=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  const isFresh=q=>!!q&&q.quote_date<=timeBerlin()&&(Date.parse(timeBerlin()+'T12:00:00Z')-Date.parse(q.quote_date+'T12:00:00Z'))/864e5<=7;
