@@ -15,7 +15,22 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "1.000 Mio. € Umsatz minus 620 Mio. € Herstellung, 240 Mio. € übrige operative Kosten und 40 Mio. € Abschreibung ergeben 100 Mio. € EBIT. Nach 20 Mio. € Zinsen und 20 Mio. € Steuern bleiben 60 Mio. € Jahresüberschuss.",
-          "insight": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter."
+          "insight": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
+          "chart": {
+            "labels": [
+              "Umsatz",
+              "Herstellung",
+              "Sonstige Kosten",
+              "EBIT"
+            ],
+            "values": [
+              1000,
+              620,
+              240,
+              100
+            ],
+            "unit": "Mio. €"
+          }
         },
         {
           "type": "number",
@@ -70,7 +85,18 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Nordwerk erzielt bei 1.000 Mio. € Umsatz 140 Mio. € EBITDA und 100 Mio. € EBIT. Der Unterschied von 40 Mio. € sind Abschreibungen. Eine gute Marge bedeutet nicht automatisch einen hohen Cashflow.",
-          "insight": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen."
+          "insight": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen.",
+          "chart": {
+            "labels": [
+              "EBITDA",
+              "EBIT"
+            ],
+            "values": [
+              140,
+              100
+            ],
+            "unit": "Mio. €"
+          }
         },
         {
           "type": "number",
@@ -125,7 +151,18 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Die GuV berichtet über eine Periode, die Bilanz über einen Stichtag. Nordwerk besitzt 240 Mio. € kurzfristige Aktiva und schuldet 160 Mio. € kurzfristige Passiva. Nicht alle Forderungen und Vorräte sind sofort in Geld wandelbar.",
-          "insight": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung."
+          "insight": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung.",
+          "chart": {
+            "labels": [
+              "Kurzfristige Aktiva",
+              "Kurzfristige Passiva"
+            ],
+            "values": [
+              240,
+              160
+            ],
+            "unit": "Mio. €"
+          }
         },
         {
           "type": "number",
@@ -180,7 +217,22 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Nordwerk erzielt 60 Mio. € Überschuss. 40 Mio. € Abschreibungen sind nicht zahlungswirksam; Lager und Forderungen binden 15 Mio. € zusätzlich. Vereinfachter operativer Cashflow: 85 Mio. €. Die Mittelbindung wird von realen Zahlungsströmen bestimmt.",
-          "insight": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal."
+          "insight": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal.",
+          "chart": {
+            "labels": [
+              "Überschuss",
+              "Abschreibung",
+              "Working Capital",
+              "CFO"
+            ],
+            "values": [
+              60,
+              40,
+              15,
+              85
+            ],
+            "unit": "Mio. €"
+          }
         },
         {
           "type": "number",
@@ -235,7 +287,20 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Nordwerk erzielt 85 Mio. € Cashflow aus laufendem Geschäft, investiert aber 70 Mio. € in Maschinen. Der vereinfachte FCF beträgt nur 15 Mio. €. Investitionen können werthaltig sein – aber sie verbrauchen zunächst Geld.",
-          "insight": "FCF ist nicht das EBITDA und auch keine garantierte Dividende."
+          "insight": "FCF ist nicht das EBITDA und auch keine garantierte Dividende.",
+          "chart": {
+            "labels": [
+              "Operativer Cashflow",
+              "CapEx",
+              "FCF"
+            ],
+            "values": [
+              85,
+              70,
+              15
+            ],
+            "unit": "Mio. €"
+          }
         },
         {
           "type": "number",
@@ -290,7 +355,18 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Nordwerk: EBIT 100 Mio. €, effektiver operativer Steuersatz 25 %. NOPAT = 75 Mio. €. Investiertes Kapital = 600 Mio. €, folglich ROIC = 12,5 %. Bei 9 % Kapitalkosten ergibt sich ein positiver Spread.",
-          "insight": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand."
+          "insight": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand.",
+          "chart": {
+            "labels": [
+              "ROIC",
+              "WACC"
+            ],
+            "values": [
+              12.5,
+              9
+            ],
+            "unit": "%"
+          }
         },
         {
           "type": "number",
@@ -345,7 +421,20 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Nordwerk finanziert sich zu 60 % mit Eigenkapital (Kosten 11 %) und 40 % mit Fremdkapital (Zins 5 %). Bei 25 % Steuersatz ergibt sich der vereinfachte WACC 8,1 %. Der Zins passt zum Risiko und der Art des Cashflows.",
-          "insight": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden."
+          "insight": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden.",
+          "chart": {
+            "labels": [
+              "Eigenkapitalkosten",
+              "Fremdkapitalzins",
+              "WACC"
+            ],
+            "values": [
+              11,
+              5,
+              8.1
+            ],
+            "unit": "%"
+          }
         },
         {
           "type": "number",
@@ -400,7 +489,20 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Hypothetischer Enterprise Value Nordwerk: 800 Mio. €. Nettoschulden: 250 Mio. €. Eigenkapitalwert: 550 Mio. €, 50 Mio. Aktien: Wert je Aktie 11,00 €. Die echte Equity Bridge kann weitere Ansprüche enthalten.",
-          "insight": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen."
+          "insight": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen.",
+          "chart": {
+            "labels": [
+              "EV",
+              "Nettoschulden",
+              "Equity Value"
+            ],
+            "values": [
+              800,
+              250,
+              550
+            ],
+            "unit": "Mio. €"
+          }
         },
         {
           "type": "number",
@@ -455,7 +557,18 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "EV 800 Mio. € und EBIT 100 Mio. € ergeben EV/EBIT 8×. Sinkt EBIT auf 70 Mio. €, steigt das Multiple bei unverändertem EV auf 11,43×. Günstig erscheinende Aktien können zyklisch oder strukturell schwach sein.",
-          "insight": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind."
+          "insight": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind.",
+          "chart": {
+            "labels": [
+              "EV/EBIT normal",
+              "EV/EBIT bei Rückgang"
+            ],
+            "values": [
+              8,
+              11.43
+            ],
+            "unit": "×"
+          }
         },
         {
           "type": "number",
@@ -510,7 +623,22 @@
           "type": "read",
           "title": "Nordwerk AG · Analyse",
           "text": "Du schätzt bei Nordwerk hypothetische Kursziele: Bear 6 € (30 %), Base 11 € (50 %), Bull 18 € (20 %). Das ergibt einen gewichteten Wert von 10,90 €. Der fiktive Marktpreis beträgt 10 €. Diese 9 % Aufschlag sind unsicher und allein keine Kaufempfehlung.",
-          "insight": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis."
+          "insight": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis.",
+          "chart": {
+            "labels": [
+              "Bear",
+              "Base",
+              "Bull",
+              "Gewichteter Wert"
+            ],
+            "values": [
+              6,
+              11,
+              18,
+              10.9
+            ],
+            "unit": "€"
+          }
         },
         {
           "type": "number",
