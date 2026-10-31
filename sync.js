@@ -58,11 +58,32 @@
     out.active=a.active||b.active||null;
     return out;
   }
+  function mergeConcepts(main,remote){
+    const a=isObject(main)?main:{},b=isObject(remote)?remote:{};
+    const merged=mergeTraining(a,b);
+    const sessions=merged.sessions||{};
+    for(const id of new Set([...Object.keys(a.sessions||{}),...Object.keys(b.sessions||{})])){
+      const x=a.sessions?.[id]||{},y=b.sessions?.[id]||{};
+      const latest=(Number(x.updatedAt)||0)>=(Number(y.updatedAt)||0)?x:y;
+      const ans={...y.answers,...x.answers};
+      for(const idx of new Set([...Object.keys(y.answers||{}),...Object.keys(x.answers||{})])){
+        const lx=x.answers?.[idx],ry=y.answers?.[idx];
+        ans[idx]=lx?.correct?lx:ry?.correct?ry:(latest.answers?.[idx]??lx??ry);
+      }
+      sessions[id]={...latest,answers:ans,step:Math.max(Number(x.step)||0,Number(y.step)||0),
+        bestScore:Math.max(Number(x.bestScore)||0,Number(y.bestScore)||0,Object.values(ans).filter(t=>t?.correct).length),
+        completedAt:Math.max(Number(x.completedAt)||0,Number(y.completedAt)||0),
+        drafts:{...y.drafts,...x.drafts},
+        updatedAt:Math.max(Number(x.updatedAt)||0,Number(y.updatedAt)||0)};
+    }
+    return {...merged,sessions};
+  }
   function mergePayload(local,remote){
     const out={};
     for(const key of KEYS){const a=local?.[key]||{}, b=remote?.[key]||{};
       if(key==='fp_research_answers_v1')out[key]={...(isObject(b)?b:{}),...(isObject(a)?a:{})};
-      else if(key==='finanzpilot_training_v1'||key==='finanzpilot_concepts_v1')out[key]=mergeTraining(a,b);
+      else if(key==='finanzpilot_training_v1')out[key]=mergeTraining(a,b);
+      else if(key==='finanzpilot_concepts_v1')out[key]=mergeConcepts(a,b);
       else out[key]=merge(a,b);
     }
     return out;
