@@ -73,7 +73,7 @@ const storage={
 const network={onLine:true};
 const context=vm.createContext({
  window:win,document:doc,localStorage:storage,navigator:network,
- location:{reload(){reloads++},href:'https://example.com'},Event:class Event{constructor(type){this.type=type}},
+ location:{reload(){reloads++},href:'https://example.com'},Event:class Event{constructor(type){this.type=type}},CustomEvent:class CustomEvent{constructor(type,options={}){this.type=type;this.detail=options.detail}},
  Date,JSON,Math,Number,Object,Set,Promise,console,
  setTimeout,clearTimeout,setInterval:()=>null,
  fetch:async()=>({ok:true}),URL
