@@ -1,0 +1,72 @@
+/* FinanzPilot Karriere v13: zurückhaltendes Research-UI, kompakte Listen statt Kachelflut */
+.fp-career-page{display:flex;flex-direction:column;gap:23px;padding-bottom:28px}
+.fp-career-levels{border-radius:19px;border:1px solid #3e655e;background:linear-gradient(125deg,#173b3c,#172b40 70%,#192c3b);padding:21px}
+.fp-career-rank-top{display:flex;align-items:center;gap:17px}
+.fp-career-rank-emblem{display:grid;place-items:center;flex:none;width:72px;height:72px;border-radius:22px;background:linear-gradient(140deg,#3d7c69,#204e59);color:#bff8e1;font-size:44px;box-shadow:0 0 16px #5bc99c45}
+.fp-career-rank-top small{font-size:10px;letter-spacing:.6px;color:#9ccec5;font-weight:700}
+.fp-career-rank-top h1{margin:7px 0;font-size:clamp(26px,4vw,35px);color:#e7faf0;line-height:1.1}
+.fp-career-rank-top p{font-size:12px;color:#bed5dc;line-height:1.5}
+.fp-career-progress{padding:18px 0 11px}
+.fp-career-progress>div:first-child{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;color:#c2d9dd;font-size:12px;margin-bottom:11px}
+.fp-career-progress>div b{color:#e0f7ec}
+.fp-career-progress>div span{color:#b6d0d9}
+.fp-career-progress-track{height:9px;border-radius:99px;overflow:hidden;background:#365161}
+.fp-career-progress-track i{display:block;height:100%;background:linear-gradient(90deg,#57b9a4,#b7efd3);border-radius:99px}
+.fp-career-rank-benefit{display:flex;flex-wrap:wrap;gap:8px;padding:12px 13px;background:#1f3a46;border:1px solid #3c6066;border-radius:12px;font-size:12px;color:#c5dfde}
+.fp-career-rank-benefit strong{color:#8fe6c3}
+.fp-career-all-ranks{margin-top:12px;border-top:1px solid #3b5c63;padding-top:10px}
+.fp-career-all-ranks summary{font-size:12px;color:#b1dbc9;cursor:pointer}
+.fp-career-all-ranks>div{margin-top:13px;border:1px solid #426168;border-radius:11px;overflow:hidden}
+.fp-career-rank-row{display:flex;align-items:center;gap:10px;padding:9px 12px;border-bottom:1px solid #35525f;font-size:12px;color:#adc8d0}
+.fp-career-rank-row:last-child{border-bottom:0}
+.fp-career-rank-row.earned{color:#d8f2e6;background:#23463f}
+.fp-career-rank-row>b{flex:1}
+.fp-career-rank-row>small{color:#a1bac3}
+.fp-career-stats{display:grid;grid-template-columns:1fr 1fr auto;gap:9px;align-items:stretch}
+.fp-career-stats>div{display:flex;flex-direction:column;gap:4px;border:1px solid #3b5962;background:#1a3440;border-radius:12px;padding:14px}
+.fp-career-stats b{font-size:21px;color:#c1f4de}
+.fp-career-stats small{font-size:11px;color:#b2c8d4}
+.fp-career-stats>button{border:1px solid #4d8273;background:#1c493f;color:#c3eed7;font-size:12px;font-weight:750;padding:11px 14px;border-radius:12px;cursor:pointer}
+.fp-career-section-title h2{font-size:20px;margin:0 0 7px}
+.fp-career-section-title p{font-size:12px;color:#adc5ce;line-height:1.65}
+.fp-career-rows{margin-top:15px;border:1px solid #2e4e5e;border-radius:15px;overflow:hidden}
+.fp-career-row{display:flex;align-items:center;text-align:left;gap:12px;width:100%;border:0;border-bottom:1px solid #294857;background:#122938;padding:14px;color:#e0edf0;cursor:pointer}
+.fp-career-row:last-child{border-bottom:0}
+.fp-career-row:hover,.fp-career-row.active{background:#20403e}
+.fp-career-row:focus-visible,.fp-career-tool-panel button:focus-visible{outline:2px solid #b4f7dc;outline-offset:-3px}
+.fp-career-row-icon{display:grid;place-items:center;flex:none;width:38px;height:38px;background:#244a47;border-radius:11px;color:#a9f4d6;font-size:22px}
+.fp-career-row-copy{display:flex;flex-direction:column;gap:5px;flex:1;min-width:0}
+.fp-career-row-copy>b{font-size:14px}
+.fp-career-row-copy>small{font-size:11px;color:#a7bcc9;line-height:1.5}
+.fp-career-row-state{font-size:11px;font-weight:700;color:#9bd3bf;white-space:nowrap}
+.fp-career-tool-panel{border:1px solid #46766c;background:#19353d;padding:21px;border-radius:17px;scroll-margin-top:14px}
+.fp-career-panel-close{border:0;background:transparent;color:#94e2c6;font-weight:700;font-size:12px;cursor:pointer;margin-bottom:12px}
+.fp-career-tool-panel h3{font-size:21px;margin:9px 0}
+.fp-career-tool-panel>p{font-size:13px;color:#bfd3dc;line-height:1.65}
+.fp-career-warning{background:#132a38;border-left:3px solid #7fc5b5;padding:12px;border-radius:9px;font-size:12px;color:#bcd1d7;line-height:1.6;margin:14px 0}
+.fp-career-tool-form{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.fp-career-tool-form label{display:flex;flex-direction:column;gap:7px;color:#c4d8e0;font-size:12px;font-weight:700}
+.fp-career-tool-form input{background:#102c39;color:#f2fffc;border:1px solid #4e737e;border-radius:9px;padding:12px 13px;font-size:16px;min-width:0}
+.fp-career-tool-form>.btn{align-self:end;justify-self:start}
+.fp-career-result{margin-top:15px}
+.fp-career-output{padding:16px;border-radius:12px;border:1px solid #4f8775;background:#173d37}
+.fp-career-output h4{margin:0 0 14px;color:#c7f2e2}
+.fp-career-output>div{display:flex;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid #456d61;font-size:12px}
+.fp-career-output>div b{font-size:17px;color:#b2f6d4;font-variant-numeric:tabular-nums;white-space:nowrap}
+.fp-career-output p{margin:14px 0 0;font-size:12px;color:#bbd7d1;line-height:1.7}
+.fp-career-lock{margin-top:15px;background:#28363f;border:1px solid #63707a;border-radius:12px;padding:14px;font-size:12px;color:#c8d6dd}
+.fp-career-lock ul{padding-left:20px;line-height:1.8}
+.fp-career-tool-actions{margin-top:14px;display:flex;gap:9px;flex-wrap:wrap}
+.fp-career-awards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:13px}
+.fp-career-award{display:flex;gap:12px;align-items:center;border:1px solid #365b64;background:#162f3e;border-radius:13px;padding:14px}
+.fp-career-award-icon{display:grid;place-items:center;flex:none;width:47px;height:47px;border-radius:13px;background:#1c3945;color:#8ea6b4;font-size:26px}
+.fp-career-award.earned{background:#1b403b;border-color:#569681}
+.fp-career-award.earned .fp-career-award-icon{background:#305c49;color:#b7f5d7;box-shadow:0 0 13px #47b08933}
+.fp-career-award>div:last-child{display:flex;flex-direction:column;gap:5px}
+.fp-career-award b{font-size:13px;color:#e3f0eb}
+.fp-career-award small{font-size:11px;color:#a9c0cc;line-height:1.5}
+.fp-career-award span{font-size:11px;color:#96ceb5;font-weight:700}
+.fp-career-foot{font-size:11px;line-height:1.7;color:#9db5c2}
+.fp-career-loading{border:1px solid #355768;background:#172d3c;border-radius:15px;padding:23px}
+@media(max-width:750px){.fp-career-stats{grid-template-columns:1fr 1fr}.fp-career-stats>button{grid-column:1/-1}.fp-career-awards{grid-template-columns:1fr}.fp-career-tool-form{grid-template-columns:1fr}.fp-career-levels{padding:17px}.fp-career-rank-top{gap:11px}.fp-career-rank-emblem{height:58px;width:58px;font-size:35px}.fp-career-stats>button{min-height:43px}}
+@media(prefers-reduced-motion:reduce){.fp-career-rank-emblem{box-shadow:none}}
