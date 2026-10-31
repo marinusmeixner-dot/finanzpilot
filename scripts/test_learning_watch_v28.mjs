@@ -18,7 +18,7 @@ assert(sync.includes("fp-cloud-progress-imported"));
 assert(sync.includes('if(changed.length)'));
 assert(sync.includes("detail:{keys:changed}"));
 assert(sync.includes("Object.prototype.hasOwnProperty.call(a,'active')"));
-assert(market.includes('action:\\'history\\'')&&market.includes('action:\\'news\\''));
+assert(market.includes("action:'history'")&&market.includes("action:'news'"));
 assert(port.includes('fp-depot-watchlist')&&port.includes('fp-depot-order-panel'));
 assert(port.includes('scrollIntoView'));
 assert(port.includes('data-depot-inspect'));
