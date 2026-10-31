@@ -56,7 +56,7 @@
     }}
     return changed;
   }
-  function setStatus(message){lastStatus=message;const x=document.getElementById('fp-account-state');if(x)x.textContent=message;const b=document.getElementById('fp-account-button');if(b){b.textContent=user?'Konto · synchronisiert':'Konto / Login';b.title=user?.email||message}}
+  function setStatus(message){lastStatus=message;const x=document.getElementById('fp-account-state');if(x)x.textContent=message;const b=document.getElementById('fp-account-button');if(b){b.textContent=user?(ready?'Konto · synchronisiert':'Konto · verbindet'):'Konto / Login';b.title=user?.email||message}}
   const statusMessage=e=>e?.message||'Unbekannter Fehler';
   function accountPanel(){
     if(document.getElementById('fp-account-dialog'))return;
