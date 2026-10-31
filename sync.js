@@ -78,11 +78,36 @@
     }
     return {...merged,sessions};
   }
+  function mergeInvestmentCommittee(local,remote){
+    const a=isObject(local)?local:{},b=isObject(remote)?remote:{};
+    const sessions={};
+    for(const id of new Set([...Object.keys(a.sessions||{}),...Object.keys(b.sessions||{})])){
+      const x=a.sessions?.[id]||{},y=b.sessions?.[id]||{};
+      const latest=(Number(x.updatedAt)||0)>=(Number(y.updatedAt)||0)?x:y;
+      const earlier=latest===x?y:x;
+      const answers={...(earlier.answers||{}),...(latest.answers||{})};
+      for(const key of new Set([...Object.keys(x.answers||{}),...Object.keys(y.answers||{})])){
+        const left=x.answers?.[key],right=y.answers?.[key];
+        if(left?.correct||right?.correct)answers[key]=left?.correct?left:right;
+      }
+      sessions[id]={
+        ...earlier,...latest,
+        step:Math.max(Number(x.step)||0,Number(y.step)||0),
+        completed:Boolean(x.completed||y.completed),
+        answers,
+        model:(Number(x.updatedAt)||0)>=(Number(y.updatedAt)||0)?(x.model||y.model||null):(y.model||x.model||null),
+        memo:(Number(x.memo?.savedAt)||0)>=(Number(y.memo?.savedAt)||0)?(x.memo||y.memo||null):(y.memo||x.memo||null),
+        updatedAt:Math.max(Number(x.updatedAt)||0,Number(y.updatedAt)||0)
+      };
+    }
+    return{...b,...a,sessions,active:a.active||b.active||null};
+  }
   function mergePayload(local,remote){
     const out={};
     for(const key of KEYS){const a=local?.[key]||{}, b=remote?.[key]||{};
       if(key==='fp_research_answers_v1')out[key]={...(isObject(b)?b:{}),...(isObject(a)?a:{})};
-      else if(key==='finanzpilot_training_v1'||key==='finanzpilot_transfer_v1'||key==='finanzpilot_investment_committee_v1')out[key]=mergeTraining(a,b);
+      else if(key==='finanzpilot_training_v1'||key==='finanzpilot_transfer_v1')out[key]=mergeTraining(a,b);
+      else if(key==='finanzpilot_investment_committee_v1')out[key]=mergeInvestmentCommittee(a,b);
       else if(key==='finanzpilot_concepts_v1')out[key]=mergeConcepts(a,b);
       else out[key]=merge(a,b);
     }
