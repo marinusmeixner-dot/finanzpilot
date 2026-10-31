@@ -6,7 +6,7 @@ const source=fs.readFileSync('sync.js','utf8');
 const css=fs.readFileSync('mobile-layout-v19.css','utf8');
 const markup=fs.readFileSync('index.html','utf8');
 assert(markup.includes('mobile-layout-v19.css?v=20'));
-assert(markup.includes('sync.js?v=21'));
+assert(markup.includes('sync.js?v=23'));
 assert(markup.includes('content="black"'));
 assert(css.includes('env(safe-area-inset-top'));
 assert(css.includes('position:sticky!important'));
