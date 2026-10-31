@@ -92,7 +92,7 @@
   const old=state.view;if(old===to){closeMenu();return}
   persist(old,window.scrollY);
   const pos=load().positions||{},y=Number(pos[to]||0);
-  inRoute=true;closeMenu();chooseView(to);header();
+  inRoute=true;closeMenu();previous=to;chooseView(to);header();
   if(remember)persist(to,y);
   const hash='#view='+encodeURIComponent(to);if(location.hash!==hash)history.replaceState(null,'',location.pathname+location.search+hash);
   inRoute=false;
@@ -113,7 +113,7 @@
    if(t.matches('[data-section-open]')){ev.preventDefault();ev.stopImmediatePropagation();menu();return}
    if(t.matches('[data-section-close]')){ev.preventDefault();ev.stopImmediatePropagation();closeMenu();return}
    if(t.matches('[data-section-account]')){ev.preventDefault();ev.stopImmediatePropagation();closeMenu();window.FinanzPilotCloud?.openLogin?.();return}
-   if(t.matches('[data-hub-continue]')){ev.preventDefault();ev.stopImmediatePropagation();route(saved.resume||'learn');return}
+   if(t.matches('[data-hub-continue]')){ev.preventDefault();ev.stopImmediatePropagation();route(load().resume||'learn');return}
    const dest=t.dataset.sectionMain||t.dataset.sectionRoute||t.dataset.sectionUp||t.dataset.hubView||t.dataset.view;
    if(dest){ev.preventDefault();ev.stopImmediatePropagation();route(dest)}
   },true);
@@ -123,7 +123,7 @@
   const root=document.getElementById('view-root');
   if(root)new MutationObserver(()=>{
     if(typeof state==='undefined')return;
-    if(state.view!==previous){const old=previous;previous=state.view;persist(old,load().positions?.[old]||0)}
+    if(state.view!==previous){previous=state.view;persist(state.view,load().positions?.[state.view]||0)}
     header();
   }).observe(root,{childList:true});
   let scrollTimer=null;
