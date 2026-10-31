@@ -347,6 +347,7 @@
   }
   window.FinanzPilotCloud={
     get user(){return user?.id||null},get ready(){return ready},
+    get reviewClient(){return user?client:null},
     sync:()=>sync(true),backup:snapshot,
     async economyRpc(name,args){
       if(!client||!user)throw Error('Bitte zuerst bei FinanzPilot anmelden.');
