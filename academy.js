@@ -12,7 +12,7 @@
  let progress={completed:{},answers:{},savedOpinions:[],seen:{}},activeCourse=null,stepIndex=0,checked=false,feed='',queryFilter='all';
  let curView='academy';
  try{const stored=JSON.parse(localStorage.getItem(STORAGE)||'{}');if(stored&&typeof stored==='object')progress={...progress,...stored,completed:stored.completed||{},answers:stored.answers||{},savedOpinions:Array.isArray(stored.savedOpinions)?stored.savedOpinions:[],seen:stored.seen||{}}}catch{}
- const persist=()=>{try{localStorage.setItem(STORAGE,JSON.stringify(progress))}catch{}};
+ const persist=()=>{try{localStorage.setItem(STORAGE,JSON.stringify(progress));window.dispatchEvent(new Event('fp-progress-change'))}catch{}};
  const courses=()=>Array.isArray(content.courses)?content.courses.filter(c=>c&&typeof c.id==='string'&&Array.isArray(c.steps)):[];
  const current=()=>courses().find(x=>x.id===activeCourse);
  const bread=(t,sub='')=>`<div class="academy-bread"><div class="eyebrow">FINANZPILOT AKADEMIE</div><h1>${esc(t)}</h1>${sub?`<p>${esc(sub)}</p>`:''}</div>`;
