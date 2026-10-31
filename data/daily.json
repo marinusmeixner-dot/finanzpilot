@@ -21,7 +21,10 @@
       "published": "28.10.2026",
       "why": "Microsoft berichtet für das Quartal bis September 2026 19 % Umsatzwachstum und 21 % operatives Gewinnwachstum.",
       "impact": "Berechne die operative Marge und prüfe, wie stark zukünftige Cloud-Gewinne hohe Investitionsausgaben tragen.",
-      "category": "Aktien"
+      "category": "Aktien",
+      "symbols": [
+        "MSFT"
+      ]
     },
     {
       "title": "Amazon: AWS wächst 39,3 %, Umsatz 201,9 Milliarden Dollar",
@@ -30,7 +33,10 @@
       "published": "29.10.2026",
       "why": "Die Cloud-Sparte AWS wächst sehr schnell. Gleichzeitig wird über die Rentabilität hoher KI-Ausgaben diskutiert.",
       "impact": "Unterscheide starkes Umsatzwachstum von freiem Cashflow nach Investitionen; große Capex-Zahlen verändern die Bewertung.",
-      "category": "Aktien"
+      "category": "Aktien",
+      "symbols": [
+        "AMZN"
+      ]
     },
     {
       "title": "Alphabet: Quartalsumsatz 127,6 Milliarden Dollar",
@@ -39,7 +45,10 @@
       "published": "28.10.2026",
       "why": "Alphabet meldet 25 % Umsatzwachstum und besonders starkes Cloud-Wachstum; die Margen und KI-Ausgaben müssen gemeinsam betrachtet werden.",
       "impact": "Prüfe die Segmentgewinne und das Verhältnis von Cloud-Ausbau, Margen und Erwartungen.",
-      "category": "Aktien"
+      "category": "Aktien",
+      "symbols": [
+        "GOOGL"
+      ]
     },
     {
       "title": "EZB hält Leitzinsen unverändert",
@@ -75,7 +84,10 @@
       "published": "30.10.2026",
       "why": "Die kommende Woche verbindet große Unternehmensberichte und Arbeitsmarktdaten.",
       "impact": "Unterscheide einen angekündigten Termin von schon veröffentlichten Ergebnissen; keine Zahlen vorab annehmen.",
-      "category": "Ausblick"
+      "category": "Ausblick",
+      "symbols": [
+        "AAPL"
+      ]
     },
     {
       "title": "US-Wirtschaft wächst im dritten Quartal annualisiert um 3,4 %",
