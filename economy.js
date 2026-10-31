@@ -185,6 +185,7 @@ window.FinanzPilotEconomy=(()=>{
  async function init(){
   if(logged())await refresh(false);
   window.addEventListener('fp-auth-change',async()=>{notice='';pending=null;await refresh();updateTheme()});
+  window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='inventory'&&logged())refresh()});
   document.addEventListener('visibilitychange',()=>{if(!document.hidden&&logged())refresh(false)});
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
