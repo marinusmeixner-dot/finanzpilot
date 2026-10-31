@@ -8,7 +8,7 @@
  const resumeView=()=>last.resume||(last.view&&last.view!=='home'?last.view:null);
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
  const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')}catch{return {}}};
- let prevView='home',last=load(),scrollTimer=null,restoring=false,routeBusy=false;
+ let prevView='home',last=load(),scrollTimer=null,restoring=false,routeBusy=false;const backStack=[];
  const group=v=>['lesson','labcase','foundations','learn','glossary','skills'].includes(v)?'learn':['academy','academycourse'].includes(v)?'academy':v;
  const store=(view,scroll)=>{if(restoring)return;try{
    const old=load(),v=clean(view),positions={...(old.positions||{})};
@@ -31,6 +31,7 @@
   if(dest==='lesson'||dest==='labcase')dest='learn';
   if(dest==='academycourse'&&!window.FinanzPilotAcademy)dest='academy';
   const old=state.view;
+  if(old!==dest){backStack.push(old);if(backStack.length>20)backStack.shift()}
   store(old,window.scrollY);
   const targetY=Number(load().positions?.[dest]||0);
   routeBusy=true;
@@ -53,6 +54,13 @@
   const root=document.getElementById('view-root');
   if(!root||typeof state==='undefined')return;
   const tabs=tabsFor(state.view);
+  let back=root.querySelector(':scope > .fp-route-header');
+  if(state.view==='home'){if(back)back.remove()}
+  else{
+    if(!back){back=document.createElement('div');back.className='fp-route-header';root.prepend(back)}
+    const key=state.view+':'+(backStack.length?backStack.at(-1):'home');
+    if(back.dataset.renderKey!==key){back.dataset.renderKey=key;back.innerHTML='<button type="button" data-nav-back aria-label="Zurück zum vorherigen Bereich">← Zurück</button><span>'+esc(LABEL[state.view]||'FinanzPilot')+'</span>'}
+  }
   if(!tabs)return;
   let el=root.querySelector(':scope > .fp-context-tabs');
   if(!el){
@@ -112,7 +120,10 @@
   document.querySelectorAll('[data-open-account]').forEach(b=>b.addEventListener('click',()=>{closeDrawer();document.getElementById('fp-account-button')?.click()}));
   document.getElementById('fp-back-last')?.addEventListener('click',()=>route(resumeView()||'learn'));
   document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer()});
-  document.addEventListener('click',event=>{const btn=event.target.closest('[data-fp-tab],[data-view]');
+  document.addEventListener('click',event=>{
+    const back=event.target.closest('[data-nav-back]');
+    if(back){event.preventDefault();event.stopImmediatePropagation();const v=backStack.pop()||'home';route(v);return}
+    const btn=event.target.closest('[data-fp-tab],[data-view]');
     if(!btn)return;
     event.preventDefault();event.stopImmediatePropagation();
     const target=btn.dataset.fpTab||btn.dataset.view;
