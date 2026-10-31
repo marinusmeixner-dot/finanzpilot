@@ -2,8 +2,8 @@
 'use strict';
 window.FinanzPilotConcepts=(()=>{
  const STORAGE='finanzpilot_concepts_v1';
- const FULL={GuV:'Gewinn- und Verlustrechnung',EBIT:'Ergebnis vor Zinsen und Steuern (Earnings Before Interest and Taxes)',EBITDA:'Ergebnis vor Zinsen, Steuern und Abschreibungen',FCF:'Free Cashflow (freier Cashflow)',ROIC:'Return on Invested Capital (Rendite auf das investierte Kapital)',WACC:'Weighted Average Cost of Capital (gewichtete durchschnittliche Kapitalkosten)',EV:'Enterprise Value (Gesamtunternehmenswert)',KGV:'Kurs-Gewinn-Verhältnis',NOPAT:'Net Operating Profit After Taxes (operativer Gewinn nach Steuern)',DCF:'Discounted Cashflow (Barwert zukünftiger Zahlungsüberschüsse)',CFO:'Cashflow aus laufender Geschäftstätigkeit'};
- const abbreviations=text=>[...new Set((String(text||'').match(/\b(?:EBITDA|EBIT|FCF|ROIC|WACC|GuV|NOPAT|DCF|CFO|KGV|EV)\b/g)||[]))].map(x=>'<li><b>'+x+'</b> = '+esc(FULL[x])+'</li>').join('');
+ const FULL={GuV:'Gewinn- und Verlustrechnung',EBIT:'Ergebnis vor Zinsen und Steuern (Earnings Before Interest and Taxes)',EBITDA:'Ergebnis vor Zinsen, Steuern und Abschreibungen',FCF:'Free Cashflow (freier Cashflow)',ROIC:'Return on Invested Capital (Rendite auf das investierte Kapital)',WACC:'Weighted Average Cost of Capital (gewichtete durchschnittliche Kapitalkosten)',EV:'Enterprise Value (Gesamtunternehmenswert)',KGV:'Kurs-Gewinn-Verhältnis',NOPAT:'Net Operating Profit After Taxes (operativer Gewinn nach Steuern)',DCF:'Discounted Cashflow (Barwert zukünftiger Zahlungsüberschüsse)',CFO:'Cash Flow from Operations (Cashflow aus laufender Geschäftstätigkeit)',CapEx:'Capital Expenditures (Sachinvestitionen)'};
+ const abbreviations=text=>[...new Set((String(text||'').match(/\b(?:EBITDA|EBIT|FCF|ROIC|WACC|GuV|NOPAT|DCF|CFO|KGV|EV|CapEx)\b/g)||[]))].map(x=>'<li><b>'+x+'</b> = '+esc(FULL[x])+'</li>').join('');
  const DATA_URL='./data/terminology.json';
  let content={modules:[]},dataReady=false,loadError='';
  const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -66,9 +66,11 @@ window.FinanzPilotConcepts=(()=>{
  }
  function chart(v){
   if(!v||!Array.isArray(v.values))return '';
-  const mx=Math.max(1,...v.values.map(Number));
-  return '<div class="fp-training-chart"><small>Zahlen des Lehrmodells · '+esc(v.unit||'')+'</small>'+
-   v.values.map((n,i)=>'<div class="fp-training-bar"><span>'+esc(v.labels[i]||'')+'</span><div><i style="width:'+Math.max(1,Number(n)/mx*100)+'%"></i></div><b>'+human(n)+'</b></div>').join('')+'</div>';
+  const nums=v.values.map(Number),signed=nums.some(n=>n<0);
+  const mx=Math.max(1,...nums.map(n=>Math.abs(n)));
+  return '<div class="fp-training-chart"><small>Zahlen des Lehrmodells · '+esc(v.unit||'')+(signed?' · Nullachse mittig; negative Werte links':'')+'</small>'+
+   nums.map((n,i)=>{const width=Math.max(1,Math.abs(n)/mx*(signed?48:100));
+    return '<div class="fp-training-bar"><span>'+esc(v.labels[i]||'')+'</span><div class="'+(signed?'fp-training-signed':'')+'"><i class="'+(n<0?'fp-training-negative':'')+'" style="'+(signed?'left:'+(n<0?50-width:50)+'%;':'')+'width:'+width+'%"></i></div><b>'+human(n)+'</b></div>'}).join('')+'</div>';
  }
  function list(){
   const due=Object.entries(data.reviews).filter(([,r])=>r.due<=berlin()).length;
