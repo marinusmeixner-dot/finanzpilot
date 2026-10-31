@@ -51,8 +51,8 @@ window.FinanzPilotValuation=(()=>{
   if(!data){if(!fetching){fetching=fetch('./data/kion_model.json?cb='+Date.now(),{cache:'no-store'}).then(r=>{if(!r.ok)throw Error('Daten '+r.status);return r.json()}).then(v=>{data=v;fetching=null;const target=document.querySelector('#fp-valuation-model');if(target)mount(document)}).catch(()=>{fetching=null;const target=document.querySelector('#fp-valuation-model');if(target)target.innerHTML='<div class="fp-model-state">Das Bewertungsmodell ist vorübergehend nicht erreichbar. Keine Ersatzkurse oder erfundenen Daten.</div>'})}return}
   el.innerHTML=build();
   el.querySelectorAll('[data-model-case]').forEach(b=>b.addEventListener('click',()=>{selected=b.dataset.modelCase;wacc=null;growth=null;mount(root)}));
-  el.querySelector('[data-model-wacc]')?.addEventListener('input',ev=>{wacc=Number(ev.target.value);mount(root)});
-  el.querySelector('[data-model-g]')?.addEventListener('input',ev=>{growth=Number(ev.target.value);mount(root)});
+  el.querySelector('[data-model-wacc]')?.addEventListener('change',ev=>{wacc=Number(ev.target.value);mount(root)});
+  el.querySelector('[data-model-g]')?.addEventListener('change',ev=>{growth=Number(ev.target.value);mount(root)});
  }
  function summary(){return data?cases().map(s=>({name:s.name,target:calc(s)?.price})):[]}
  return{html:()=>'<div id="fp-valuation-model" class="fp-model"></div>',mount,summary,calculate:calc};
