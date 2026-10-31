@@ -30,6 +30,21 @@
               100
             ],
             "unit": "Mio. €"
+          },
+          "visual": {
+            "labels": [
+              "Umsatz",
+              "Herstellung",
+              "Sonstige Kosten",
+              "EBIT"
+            ],
+            "values": [
+              1000,
+              620,
+              240,
+              100
+            ],
+            "unit": "Mio. €"
           }
         },
         {
@@ -71,7 +86,14 @@
           "method": "EBIT = Umsatz − operative Aufwendungen inkl. Abschreibungen; Zinsen und Steuern liegen darunter.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Vom Umsatz zum operativen Gewinn",
+      "difficulty": "Stufe 1",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "margen",
@@ -87,6 +109,17 @@
           "text": "Nordwerk erzielt bei 1.000 Mio. € Umsatz 140 Mio. € EBITDA und 100 Mio. € EBIT. Der Unterschied von 40 Mio. € sind Abschreibungen. Eine gute Marge bedeutet nicht automatisch einen hohen Cashflow.",
           "insight": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen.",
           "chart": {
+            "labels": [
+              "EBITDA",
+              "EBIT"
+            ],
+            "values": [
+              140,
+              100
+            ],
+            "unit": "Mio. €"
+          },
+          "visual": {
             "labels": [
               "EBITDA",
               "EBIT"
@@ -137,7 +170,14 @@
           "method": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "EBITDA, EBIT und Nachhaltigkeit",
+      "difficulty": "Stufe 2",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "bilanz",
@@ -153,6 +193,17 @@
           "text": "Die GuV berichtet über eine Periode, die Bilanz über einen Stichtag. Nordwerk besitzt 240 Mio. € kurzfristige Aktiva und schuldet 160 Mio. € kurzfristige Passiva. Nicht alle Forderungen und Vorräte sind sofort in Geld wandelbar.",
           "insight": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung.",
           "chart": {
+            "labels": [
+              "Kurzfristige Aktiva",
+              "Kurzfristige Passiva"
+            ],
+            "values": [
+              240,
+              160
+            ],
+            "unit": "Mio. €"
+          },
+          "visual": {
             "labels": [
               "Kurzfristige Aktiva",
               "Kurzfristige Passiva"
@@ -203,7 +254,14 @@
           "method": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Bestände, Forderungen, Schulden",
+      "difficulty": "Stufe 3",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "working",
@@ -219,6 +277,21 @@
           "text": "Nordwerk erzielt 60 Mio. € Überschuss. 40 Mio. € Abschreibungen sind nicht zahlungswirksam; Lager und Forderungen binden 15 Mio. € zusätzlich. Vereinfachter operativer Cashflow: 85 Mio. €. Die Mittelbindung wird von realen Zahlungsströmen bestimmt.",
           "insight": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal.",
           "chart": {
+            "labels": [
+              "Überschuss",
+              "Abschreibung",
+              "Working Capital",
+              "CFO"
+            ],
+            "values": [
+              60,
+              40,
+              15,
+              85
+            ],
+            "unit": "Mio. €"
+          },
+          "visual": {
             "labels": [
               "Überschuss",
               "Abschreibung",
@@ -273,7 +346,14 @@
           "method": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Warum Wachstum Geld bindet",
+      "difficulty": "Stufe 4",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "fcf",
@@ -289,6 +369,19 @@
           "text": "Nordwerk erzielt 85 Mio. € Cashflow aus laufendem Geschäft, investiert aber 70 Mio. € in Maschinen. Der vereinfachte FCF beträgt nur 15 Mio. €. Investitionen können werthaltig sein – aber sie verbrauchen zunächst Geld.",
           "insight": "FCF ist nicht das EBITDA und auch keine garantierte Dividende.",
           "chart": {
+            "labels": [
+              "Operativer Cashflow",
+              "CapEx",
+              "FCF"
+            ],
+            "values": [
+              85,
+              70,
+              15
+            ],
+            "unit": "Mio. €"
+          },
+          "visual": {
             "labels": [
               "Operativer Cashflow",
               "CapEx",
@@ -341,7 +434,14 @@
           "method": "FCF ist nicht das EBITDA und auch keine garantierte Dividende.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Operativer Cashflow abzüglich Investitionen",
+      "difficulty": "Stufe 5",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "roic",
@@ -357,6 +457,17 @@
           "text": "Nordwerk: EBIT 100 Mio. €, effektiver operativer Steuersatz 25 %. NOPAT = 75 Mio. €. Investiertes Kapital = 600 Mio. €, folglich ROIC = 12,5 %. Bei 9 % Kapitalkosten ergibt sich ein positiver Spread.",
           "insight": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand.",
           "chart": {
+            "labels": [
+              "ROIC",
+              "WACC"
+            ],
+            "values": [
+              12.5,
+              9
+            ],
+            "unit": "%"
+          },
+          "visual": {
             "labels": [
               "ROIC",
               "WACC"
@@ -407,7 +518,14 @@
           "method": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Rendite auf investiertes Kapital",
+      "difficulty": "Stufe 6",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "wacc",
@@ -423,6 +541,19 @@
           "text": "Nordwerk finanziert sich zu 60 % mit Eigenkapital (Kosten 11 %) und 40 % mit Fremdkapital (Zins 5 %). Bei 25 % Steuersatz ergibt sich der vereinfachte WACC 8,1 %. Der Zins passt zum Risiko und der Art des Cashflows.",
           "insight": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden.",
           "chart": {
+            "labels": [
+              "Eigenkapitalkosten",
+              "Fremdkapitalzins",
+              "WACC"
+            ],
+            "values": [
+              11,
+              5,
+              8.1
+            ],
+            "unit": "%"
+          },
+          "visual": {
             "labels": [
               "Eigenkapitalkosten",
               "Fremdkapitalzins",
@@ -475,7 +606,14 @@
           "method": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "WACC und Abzinsung",
+      "difficulty": "Stufe 7",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "enterprise",
@@ -491,6 +629,19 @@
           "text": "Hypothetischer Enterprise Value Nordwerk: 800 Mio. €. Nettoschulden: 250 Mio. €. Eigenkapitalwert: 550 Mio. €, 50 Mio. Aktien: Wert je Aktie 11,00 €. Die echte Equity Bridge kann weitere Ansprüche enthalten.",
           "insight": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen.",
           "chart": {
+            "labels": [
+              "EV",
+              "Nettoschulden",
+              "Equity Value"
+            ],
+            "values": [
+              800,
+              250,
+              550
+            ],
+            "unit": "Mio. €"
+          },
+          "visual": {
             "labels": [
               "EV",
               "Nettoschulden",
@@ -543,7 +694,14 @@
           "method": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Vom gesamten Geschäft zum Aktienkurs",
+      "difficulty": "Stufe 8",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "multiples",
@@ -559,6 +717,17 @@
           "text": "EV 800 Mio. € und EBIT 100 Mio. € ergeben EV/EBIT 8×. Sinkt EBIT auf 70 Mio. €, steigt das Multiple bei unverändertem EV auf 11,43×. Günstig erscheinende Aktien können zyklisch oder strukturell schwach sein.",
           "insight": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind.",
           "chart": {
+            "labels": [
+              "EV/EBIT normal",
+              "EV/EBIT bei Rückgang"
+            ],
+            "values": [
+              8,
+              11.43
+            ],
+            "unit": "×"
+          },
+          "visual": {
             "labels": [
               "EV/EBIT normal",
               "EV/EBIT bei Rückgang"
@@ -609,7 +778,14 @@
           "method": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Wann ein niedriges KGV täuscht",
+      "difficulty": "Stufe 9",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     },
     {
       "id": "szenarien",
@@ -625,6 +801,21 @@
           "text": "Du schätzt bei Nordwerk hypothetische Kursziele: Bear 6 € (30 %), Base 11 € (50 %), Bull 18 € (20 %). Das ergibt einen gewichteten Wert von 10,90 €. Der fiktive Marktpreis beträgt 10 €. Diese 9 % Aufschlag sind unsicher und allein keine Kaufempfehlung.",
           "insight": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis.",
           "chart": {
+            "labels": [
+              "Bear",
+              "Base",
+              "Bull",
+              "Gewichteter Wert"
+            ],
+            "values": [
+              6,
+              11,
+              18,
+              10.9
+            ],
+            "unit": "€"
+          },
+          "visual": {
             "labels": [
               "Bear",
               "Base",
@@ -679,7 +870,15 @@
           "method": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis.",
           "hint": "Suche den Schritt, der Beobachtung, Bewertung und Unsicherheit sauber trennt."
         }
-      ]
+      ],
+      "short": "Vom Geschäftsmodell zum begründeten Kursziel",
+      "difficulty": "Stufe 10",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      }
     }
-  ]
+  ],
+  "schema_version": 1
 }
