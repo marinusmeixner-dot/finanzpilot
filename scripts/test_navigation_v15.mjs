@@ -17,7 +17,7 @@ assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
 assert(html.includes('ux-v15.js?v=21'));
 assert(html.includes('ux-v15.css?v=18'));
-assert(html.includes('app.js?v=18'));
+assert(html.includes('app.js?v=21'));
 assert(html.includes('research.js?v=18'));
 assert(html.includes('updates.js?v=21'));
 assert(!html.includes('src="ux.js'));
