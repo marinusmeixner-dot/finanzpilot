@@ -5,16 +5,16 @@
 window.FinanzPilotSkills=(()=>{
  const NODES=[
   {id:'scout',title:'Markt-Scout',sub:'Der Einstieg',x:460,y:75,icon:'✦',parents:[],kind:'Grundlagen',target:'learn',need:'Erste ETF- oder Risikolektion abschließen',has:p=>p.base.etf||p.base.risk},
-  {id:'ledger',title:'Bilanzspäher',sub:'Unternehmen verstehen',x:180,y:215,icon:'▤',parents:['scout'],kind:'Bilanz',target:'learn',need:'Quartalszahlen-Lektion oder KION-Training mit 4/4 absolvieren',has:p=>p.base.earnings||p.train['kion-nachfrage']>=4},
+  {id:'ledger',title:'Bilanzspäher',sub:'Unternehmen verstehen',x:180,y:215,icon:'▤',parents:['scout'],kind:'Bilanz',target:'training',need:'Quartalszahlen-Lektion oder KION-Training mit 4/4 absolvieren',has:p=>p.base.earnings||p.train['kion-nachfrage']>=4},
   {id:'charts',title:'Chart-Scout',sub:'Kurse hinterfragen',x:460,y:215,icon:'⌁',parents:['scout'],kind:'Charts',target:'learn',need:'Fallstudie Ausbruch & Volumen bestehen',has:p=>p.lab.breakout},
   {id:'risk',title:'Risiko-Wächter',sub:'Risiken erkennen',x:740,y:215,icon:'◇',parents:['scout'],kind:'Risiko',target:'learn',need:'Risiko-Lektion bestehen',has:p=>p.base.risk},
   {id:'cashflow',title:'Cashflow-Sucher',sub:'Gewinn ≠ Kasse',x:120,y:375,icon:'◈',parents:['ledger'],kind:'Bilanz',target:'academy',need:'Microsoft-Finanzanalyse abschließen',has:p=>p.academy['microsoft-full-fy25']>=8},
-  {id:'quality',title:'Gewinn-Prüfer',sub:'Zahlen normalisieren',x:305,y:375,icon:'◎',parents:['ledger'],kind:'Bilanz',target:'academy',need:'Alphabet-Quartalskurs oder Cloud-Training mit 4/4 abschließen',has:p=>p.academy['alphabet-q3-2026-cashflow-valuation']>=10||p.train['alphabet-cloud']>=4},
+  {id:'quality',title:'Gewinn-Prüfer',sub:'Zahlen normalisieren',x:305,y:375,icon:'◎',parents:['ledger'],kind:'Bilanz',target:'training',need:'Alphabet-Quartalskurs oder Cloud-Training mit 4/4 abschließen',has:p=>p.academy['alphabet-q3-2026-cashflow-valuation']>=10||p.train['alphabet-cloud']>=4},
   {id:'signals',title:'Signalprüfer',sub:'Fehlsignale erkennen',x:460,y:375,icon:'◉',parents:['charts'],kind:'Charts',target:'markets',need:'Chart-Fall und Marktinterpretation anwenden',has:p=>p.lab.breakout&&p.base.emotion},
   {id:'rates',title:'Zinsnavigator',sub:'Makro erforschen',x:630,y:375,icon:'⌘',parents:['charts'],kind:'Makro',target:'learn',need:'Leitzins-Lektion bestehen',has:p=>p.base.rates},
   {id:'portfolio',title:'Diversifizierer',sub:'Klumpenrisiken',x:795,y:375,icon:'⬡',parents:['risk'],kind:'Risiko',target:'learn',need:'Diversifikation-Lektion bestehen',has:p=>p.base.diversify},
   {id:'valuations',title:'Renditeschmied',sub:'Komplette Bewertung',x:215,y:550,icon:'✧',parents:['cashflow','quality'],kind:'Bewertung',target:'academy',need:'KION-Bewertung komplett bestehen',has:p=>p.academy['kion-deep-valuation-2026']>=22},
-  {id:'catalysts',title:'Thesejäger',sub:'Erwartungen prüfen',x:535,y:550,icon:'✷',parents:['signals','rates'],kind:'Research',target:'research',need:'Bewertungs- und Quartalslektion oder AIXTRON-Training mit 4/4 meistern',has:p=>(p.base.valuation&&p.base.earnings)||p.train['aixtron-auftraege']>=4},
+  {id:'catalysts',title:'Thesejäger',sub:'Erwartungen prüfen',x:535,y:550,icon:'✷',parents:['signals','rates'],kind:'Research',target:'training',need:'Bewertungs- und Quartalslektion oder AIXTRON-Training mit 4/4 meistern',has:p=>(p.base.valuation&&p.base.earnings)||p.train['aixtron-auftraege']>=4},
   {id:'portfolio2',title:'Risikoarchitekt',sub:'Risiken steuern',x:795,y:550,icon:'♜',parents:['portfolio'],kind:'Risiko',target:'learn',need:'Risiko- und ETF-Lektion bestehen',has:p=>p.base.risk&&p.base.etf},
   {id:'master',title:'Szenarioarchitekt',sub:'Meisterprüfung',x:465,y:710,icon:'✺',parents:['valuations','catalysts','portfolio2'],kind:'Meisterschaft',target:'academy',need:'KION- und Alphabet-Kurse plus Risiko-Nachweise',has:p=>p.academy['kion-deep-valuation-2026']>=22&&p.academy['alphabet-q3-2026-cashflow-valuation']>=10&&p.base.risk}
  ];
