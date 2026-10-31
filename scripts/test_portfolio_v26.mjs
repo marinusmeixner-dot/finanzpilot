@@ -33,6 +33,7 @@ const fakeClient={
   return {select(){return query}};
  },
  async rpc(fn,p){
+  if(fn==='fp_paper_claim_artifact_rewards')return {data:{bonus_added_eur:0},error:null};
   assert.equal(fn,'fp_paper_execute');
   calls++;
   const quote=quotes.find(q=>q.symbol===p.p_symbol);
