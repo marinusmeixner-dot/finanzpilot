@@ -76,7 +76,7 @@
   const main=rootOf(state.view),isRoot=main===state.view;
   const html='<div class="fp-section-position"><small>'+esc(GROUPS[main].label)+'</small><strong>'+esc(label(state.view))+'</strong></div><button type="button" class="fp-section-open" data-section-open aria-label="Bereiche innerhalb '+GROUPS[main].label+' öffnen">'+icon('menu',18)+' <span>Bereiche</span></button>'+
    (!isRoot?'<button type="button" class="fp-section-up" data-section-up="'+main+'" aria-label="Zur '+GROUPS[main].label+'-Übersicht">‹ '+esc(GROUPS[main].label)+'</button>':'');
-  if(head.innerHTML!==html)head.innerHTML=html;
+  if(head.dataset.sectionView!==state.view){head.innerHTML=html;head.dataset.sectionView=state.view}
   root.querySelector(':scope > .fp-route-header')?.remove();
   root.querySelector(':scope > .fp-context-tabs')?.remove();
   document.querySelectorAll('[data-section-main]').forEach(b=>{
