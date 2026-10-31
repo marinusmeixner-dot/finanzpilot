@@ -65,7 +65,7 @@
   let el=root.querySelector(':scope > .fp-context-tabs');
   if(!el){
     el=document.createElement('nav');el.className='fp-context-tabs';el.setAttribute('aria-label','Unterbereiche');
-    root.prepend(el);
+    if(back)back.after(el);else root.prepend(el);
   }
   const key=tabs.map(x=>x.join(':')).join('|')+':'+state.view;
   if(el.dataset.renderKey===key)return;
