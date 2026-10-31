@@ -1,17 +1,17 @@
 (function navV15(){
  'use strict';
  const KEY='finanzpilot_navigation_v6';
- const LEARNING_VIEWS=new Set(['learnpath','concepts','training','skills','glossary','foundations','academy','academycourse','labcase']);
+ const LEARNING_VIEWS=new Set(['learnpath','concepts','training','transfer','skills','glossary','foundations','academy','academycourse','labcase']);
  const ROOT_VIEWS=new Set(['home','learn','markets','research','progress']);
  const MAIN=['home','learn','markets','research','progress'];
  const GROUPS={
  home:{label:'Start',links:[['home','Tagesübersicht','Dein täglicher FinanzPilot']]},
- learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Lernpfad','Lektionen und tägliche Übungen'],['concepts','Begriffs-Akademie','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['training','Praxis-Trainingslabor','Unternehmen analysieren und mit Zahlen rechnen'],['skills','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt']]},
+ learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Lernpfad','Lektionen und tägliche Übungen'],['concepts','Begriffs-Akademie','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['transfer','Transferwerkstatt','Größere Firmenfälle, Rechnungen und fundierte Entscheidungen'],['training','Praxis-Trainingslabor','Unternehmen analysieren und mit Zahlen rechnen'],['skills','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt']]},
  markets:{label:'Märkte',description:'News, Kurse, Indizes und eigene Einschätzungen',links:[['marketoverview','Marktüberblick','Nachrichten, Indizes und Charts analysieren'],['academymarket','Mein Markturteil','Marktentwicklungen bewerten und Schlussfolgerungen prüfen']]},
  research:{label:'Aktien',description:'Unternehmen recherchieren und fundiert bewerten',links:[['researchcatalog','Aktienanalysen','Umfassende Einzelaktien- und Unternehmensrecherchen'],['academy','Aktien-Intensivkurse','Vollständige Bewertungsprozesse Schritt für Schritt']]},
  progress:{label:'Profil',description:'Dein Fortschritt, Karriere und Sammlerstücke',links:[['learningstats','Lernfortschritt','Ergebnisse, Lernhistorie und tägliche Fortschritte'],['career','Analystenkarriere & Werkzeuge','Ränge, Beförderungen und Research-Tools'],['inventory','Inventar & Belohnungen','Forschungspunkte, Artefakte und Spezialmissionen'],['account','Konto & Synchronisierung','Anmelden und Fortschritt sichern']]}
  };
- const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',learnpath:'learn',markets:'markets',marketoverview:'markets',academymarket:'markets',research:'research',researchcatalog:'research',academy:'research',academycourse:'research',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
+ const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',transfer:'learn',learnpath:'learn',markets:'markets',marketoverview:'markets',academymarket:'markets',research:'research',researchcatalog:'research',academy:'research',academycourse:'research',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
  const ICON={
   home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
   learn:'<path d="m3 4 9-2 9 2v16l-9 2-9-2z"/><path d="M12 2v20"/><path d="m6 9 4 1m4 0 4-1"/>',
@@ -54,12 +54,29 @@
   }));
  }
  const isHub=v=>MAIN.includes(v)&&v!=='home';
+ function learningGuide(){
+  const read=k=>{try{return JSON.parse(localStorage.getItem(k)||'{}')||{}}catch{return {}}};
+  const concept=read('finanzpilot_concepts_v1'),transfer=read('finanzpilot_transfer_v1');
+  const all=[...Object.values(concept.reviews||{}),...Object.values(transfer.reviews||{})];
+  const today=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
+  const due=all.filter(r=>r?.due&&r.due<=today).length;
+  const learned=window.FinanzPilotConcepts?.achievements||{};
+  const modules=window.FinanzPilotConcepts?.modules||[];
+  const next=modules.find(m=>!learned[m.id]&&(!m.prerequisite||learned[m.prerequisite]));
+  const transferModules=window.FinanzPilotTransfer?.modules||[];
+  const canApply=transferModules.some(m=>(!m.prerequisite||learned[m.prerequisite])&&!(transfer.sessions?.[m.id]?.bestScore>=5));
+  return '<section class="fp-learning-guide"><div class="fp-learning-guide-head"><h2>Dein Lernkompass</h2><p>Wähle, was dein Wissen heute am stärksten verbessert.</p></div><div class="fp-learning-guide-grid">'+
+   '<button type="button" data-section-route="concepts"><span>01 · AUFBAUEN</span><b>'+(next?esc(next.title):'Wissen vertiefen')+'</b><small>'+(next?'Nächste sinnvoll freigeschaltete Lernstufe':'Erklärungen, Rechnungen und aufeinanderfolgende Kurse')+'</small></button>'+
+   '<button type="button" data-section-route="transfer"><span>02 · ANWENDEN</span><b>Fälle durchrechnen</b><small>'+(canApply?'Ein neuer Transferfall ist verfügbar':'Fünf anspruchsvolle Unternehmensfälle, stufenweise freischaltbar')+'</small></button>'+
+   '<button type="button" data-section-route="concepts"><span>03 · FESTIGEN</span><b>'+due+' Wiederholungen fällig</b><small>Gezielte Aufgaben helfen, Wissen langfristig zu sichern</small></button>'+
+  '</div></section>';
+ }
  function renderHub(v){
   if(!isHub(v))return '';
   const g=GROUPS[v];
   return '<section class="fp-tab-hub"><div class="fp-tab-hub-intro"><div class="eyebrow">DEIN FINANZPILOT</div><h1>'+esc(g.label)+'</h1><p>'+esc(g.description)+'</p></div><div class="fp-tab-hub-list">'+g.links.map(([id,name,desc],i)=>
    '<button type="button" class="fp-tab-hub-item" '+(id==='account'?'data-section-account':'data-section-route="'+esc(id)+'"')+'><span class="fp-tab-hub-number">'+String(i+1).padStart(2,'0')+'</span><span class="fp-tab-hub-copy"><strong>'+esc(name)+'</strong><small>'+esc(desc)+'</small></span><span class="fp-tab-hub-chevron">'+icon('arrow',18)+'</span></button>'
-  ).join('')+'</div></section>';
+   ).join('')+'</div>'+(v==='learn'?learningGuide():'')+'</section>';
  }
  function build(){
   const side=document.querySelector('.sidebar');
