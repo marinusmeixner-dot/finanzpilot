@@ -59,5 +59,5 @@ assert(nav.includes("transfer:'learn'"));
 assert(app.includes("state.view==='transfer'"));
 assert(sync.includes("'finanzpilot_transfer_v1'"));
 assert(file('index.html').includes('transfer.js?v=20'));
-assert(file('index.html').includes('learning-v20.css?v=20'));
+assert(file('index.html').includes('learning-v20.css?v=28'));
 console.log('FinancePilot v20: 5 structured transfer cases; 25 correct assessments; 25 incorrect responses rejected; mastery gating, retries, and sync wiring validated.');
