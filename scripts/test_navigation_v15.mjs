@@ -99,7 +99,7 @@ assert(html.includes('learning-v20.css?v=20'));
 assert(html.includes('investment-committee.js?v=23'));
 assert(html.includes('investment-committee.css?v=21'));
 assert(app.includes("state.view==='investmentcommittee'"));
-assert(html.includes('sync.js?v=26'));
+assert(html.includes('sync.js?v=28'));
 assert(html.includes('content="black"'));
 const stylesheet=fs.readFileSync('mobile-layout-v19.css','utf8');
 assert(stylesheet.includes('env(safe-area-inset-top'));
@@ -118,8 +118,8 @@ assert(app.includes("state.view==='marketoverview'?window.FinanzPilotLab.renderM
 assert(app.includes("state.view==='learningstats'?window.FinanzPilotLab.renderProgress()"));
 assert(app.includes("state.view==='researchcatalog'&&window.FinanzPilotResearch"));
 assert(app.includes("state.view==='depot'&&window.FinanzPilotPortfolio"));
-assert(html.includes('portfolio.js?v=27'));
-assert(html.includes('portfolio-v26.css?v=27'));
+assert(html.includes('portfolio.js?v=28'));
+assert(html.includes('portfolio-v26.css?v=28'));
 assert(research.includes("state.view='researchcatalog'"));
 
 let serverVersion=28,replaced=null,syncCalls=0;
