@@ -9,17 +9,17 @@ const research=fs.readFileSync('research.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const current=JSON.parse(fs.readFileSync('version.json','utf8'));
 const updater=fs.readFileSync('updates.js','utf8');
-assert.equal(current.version,17);
-assert.equal(manifest.start_url,'./?v=17');
+assert.equal(current.version,18);
+assert.equal(manifest.start_url,'./?v=18');
 assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
-assert(html.includes('ux-v15.js?v=17'));
-assert(html.includes('ux-v15.css?v=17'));
-assert(html.includes('app.js?v=17'));
-assert(html.includes('research.js?v=17'));
-assert(html.includes('updates.js?v=17'));
+assert(html.includes('ux-v15.js?v=18'));
+assert(html.includes('ux-v15.css?v=18'));
+assert(html.includes('app.js?v=18'));
+assert(html.includes('research.js?v=18'));
+assert(html.includes('updates.js?v=18'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
@@ -90,8 +90,8 @@ assert(app.includes("state.view==='learningstats'?window.FinanzPilotLab.renderPr
 assert(app.includes("state.view==='researchcatalog'&&window.FinanzPilotResearch"));
 assert(research.includes("state.view='researchcatalog'"));
 
-let serverVersion=17,replaced=null,syncCalls=0;
-const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=17#view=training',hash:'#view=training',
+let serverVersion=18,replaced=null,syncCalls=0;
+const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=18#view=training',hash:'#view=training',
  replace:url=>{replaced=url}};
 const updaterWindow={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateContext=vm.createContext({window:updaterWindow,document:{readyState:'loading',addEventListener(){}},
@@ -100,8 +100,8 @@ const updateContext=vm.createContext({window:updaterWindow,document:{readyState:
 vm.runInContext(updater,updateContext,{filename:'updates.js'});
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(replaced,null);
-serverVersion=18;
+serverVersion=19;
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
-assert(replaced.includes('?v=18#view=training'));
-console.log('Version 17 tests passed: Start preserved; four tab list overviews, all subroutes, contextual back, separate equity research and Home Screen icon.');
+assert(replaced.includes('?v=19#view=training'));
+console.log('Version 18 tests passed: Start preserved; four tab list overviews, all subroutes, contextual back, separate equity research and Home Screen icon.');
