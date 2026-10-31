@@ -189,5 +189,5 @@ window.FinanzPilotTraining=(()=>{
   if(typeof state!=='undefined'&&state.view==='training')window.render?.();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
- return {render,bind,load,grade,stats,get data(){return data},get modules(){return content.modules}};
+ return {render,bind,load,open,grade,stats,get data(){return data},get modules(){return content.modules}};
 })();
