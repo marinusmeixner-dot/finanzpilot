@@ -28,3 +28,5 @@ jobs:
         run: node scripts/test_learning_v16.mjs
       - name: Validate financial transfer cases, critical questions and skill prerequisites
         run: node scripts/test_transfer_v20.mjs
+      - name: Audit guided KION and Microsoft investment-committee analysis
+        run: node scripts/test_investment_committee_v21.mjs
