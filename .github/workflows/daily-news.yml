@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/daily-news.yml'
+      - 'scripts/refresh_prices.py'
   workflow_dispatch:
   schedule:
     - cron: '17 6 * * *' # 07:17 MEZ / 08:17 MESZ (GitHub-Uhr = UTC)
