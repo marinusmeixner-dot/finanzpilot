@@ -44,6 +44,7 @@
   if(currentUser&&currentUser!==uid){quotes=[];wallets=[];trades=[];watchlist=[];searchResults=[];hasLoaded=false}
   currentUser=uid;
   try{
+   const {error:bonusError}=await client().rpc('fp_paper_claim_artifact_rewards');if(bonusError)console.warn('Depot-Belohnungsabgleich:',bonusError.message);
    const [w,t,wl]=await Promise.all([
     client().from('fp_paper_wallets').select('user_id,currency,balance,starting_balance').eq('user_id',uid),
     client().from('fp_paper_trades').select('id,symbol,currency,side,quantity,price,total,quote_date,source,traded_at').eq('user_id',uid).order('traded_at',{ascending:true}).limit(1000),
