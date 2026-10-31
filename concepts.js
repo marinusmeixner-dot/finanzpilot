@@ -10,7 +10,24 @@ window.FinanzPilotConcepts=(()=>{
  const read=()=>{try{const v=JSON.parse(localStorage.getItem(STORAGE)||'{}');return v&&typeof v==='object'?v:{}}catch{return {}}};
  let data={sessions:{},reviews:{},active:null,...read()};
  const persist=(notify=true)=>{try{localStorage.setItem(STORAGE,JSON.stringify(data));if(notify)window.dispatchEvent(new Event('fp-progress-change'))}catch{}};
- const importCloud=event=>{if(!event.detail?.keys?.includes(STORAGE))return;const newer=read();if(!newer.sessions||!newer.reviews)return;data={...data,...newer,sessions:newer.sessions,reviews:newer.reviews,active:Object.prototype.hasOwnProperty.call(newer,'active')?newer.active:data.active};if(typeof state!=='undefined'&&state.view==='concepts')window.render?.()};
+ const importCloud=event=>{
+  if(!event.detail?.keys?.includes(STORAGE))return;
+  const fromCloud=read();if(!fromCloud.sessions||!fromCloud.reviews)return;
+  const local=data,active=local.active;
+  const sessions={...fromCloud.sessions};
+  for(const id of new Set([...Object.keys(local.sessions||{}),...Object.keys(fromCloud.sessions||{})])){
+    const x=local.sessions?.[id]||{},y=fromCloud.sessions?.[id]||{};
+    const newer=(Number(x.updatedAt)||0)>=(Number(y.updatedAt)||0)?x:y;
+    sessions[id]={...y,...x,...newer,step:Math.max(0,Number(x.step)||0,Number(y.step)||0),
+      bestScore:Math.max(0,Number(x.bestScore)||0,Number(y.bestScore)||0),
+      answers:{...(y.answers||{}),...(x.answers||{})},drafts:{...(y.drafts||{}),...(x.drafts||{})},
+      updatedAt:Math.max(Number(x.updatedAt)||0,Number(y.updatedAt)||0)};
+  }
+  // A remote background sync must never move an open lesson, dismiss its result
+  // or steal focus. Only the learner's own buttons change the active page.
+  data={...fromCloud,...local,sessions,reviews:{...fromCloud.reviews,...local.reviews},active};
+  if(!active&&typeof state!=='undefined'&&state.view==='concepts')window.render?.();
+ };
  window.addEventListener('fp-cloud-progress-imported',importCloud);
  const berlin=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  const afterDays=(n)=>{const [y,m,d]=berlin().split('-').map(Number),x=new Date(Date.UTC(y,m-1,d+n));return x.toISOString().slice(0,10)};
@@ -128,7 +145,7 @@ window.FinanzPilotConcepts=(()=>{
   const a=data.active;if(!a)return;
   if(a.mode==='review'){data.active=null;persist();window.render?.();return}
   const m=module(a.id),s=session(a.id);if(!m)return;
-  if(s.step>=m.steps.length){data.active=null;persist();window.render?.();return}
+  if(s.step>=m.steps.length){data.active=null;persist(false);window.render?.();queueMicrotask(()=>window.dispatchEvent(new Event('fp-progress-change')));return}
   s.step=Math.min(m.steps.length,s.step+1);
   if(s.step>=m.steps.length){
    const score=Object.values(s.answers).filter(x=>x.type!=='read'&&x.correct).length;
@@ -153,7 +170,11 @@ window.FinanzPilotConcepts=(()=>{
  function bind(root=document){
   root.querySelectorAll('[data-training-open]').forEach(x=>x.addEventListener('click',()=>open(x.dataset.trainingOpen)));
   root.querySelectorAll('[data-training-repeat]').forEach(x=>x.addEventListener('click',()=>repeat(x.dataset.trainingRepeat)));
-  root.querySelectorAll('[data-training-list]').forEach(x=>x.addEventListener('click',()=>{data.active=null;persist();window.render?.();window.scrollTo({top:0,behavior:'instant'})}));
+  root.querySelectorAll('[data-training-list]').forEach(x=>x.addEventListener('click',()=>{
+   data.active=null;persist(false);window.render?.();window.scrollTo({top:0,behavior:'instant'});
+   // Notify background synchronization only after the overview has been rendered.
+   queueMicrotask(()=>window.dispatchEvent(new Event('fp-progress-change')));
+  }));
   root.querySelectorAll('[data-training-review]').forEach(x=>x.addEventListener('click',()=>openReview(x.dataset.trainingReview)));
   root.querySelector('[data-training-skill]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('skills'));
   root.querySelector('[data-training-verify]')?.addEventListener('click',async ev=>{
