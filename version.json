@@ -1,5 +1,5 @@
 {
-  "version": 26,
-  "release": "2026-10-31-v26",
-  "notes": "New Depot main tab: protected EUR/USD paper trading, portfolio values, historical adjusted quote dates and immutable trade history; Aktien & Analysen moved to Markets"
+  "version": 27,
+  "release": "2026-10-31-v27",
+  "notes": "International equity/ETF search, private watchlist and on-demand verified historical quotes for virtual trading via Supabase Edge Function; broad coverage is provider dependent"
 }
