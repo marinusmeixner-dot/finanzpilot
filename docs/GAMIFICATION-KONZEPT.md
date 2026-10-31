@@ -159,3 +159,26 @@ Jeder Begriff: echtes Problem -> nachvollziehbare Geschichte/Intuition -> Dateng
 
 ### Aktueller Status
 Konzept in Markdown dokumentiert, **keine Veröffentlichung als App-Funktion**. Frei entscheidbare noch offene Parameter: Startkapital/Höhe von Skill-Belohnungen, Typ und Wert spezieller Item-Umwandlungen, Sound-Standard, Reihenfolge der Gameplay-Releases, Live-/Delay-Quoteversorgung, grafischer Kartenstil.
+
+
+## Umsetzungsstand 31.10.2026 – Autorisierung und erste Etappen
+Der Nutzer hat am 31.10.2026 nach eigenem Google-OAuth-Setup die **schrittweise Umsetzung** ausdrücklich beauftragt. Die frühere Formulierung „ohne Freigabe keine Implementierung“ ist durch diese spätere Freigabe für die unten bezeichneten Schritte überholt. Nicht stillschweigend andere große Teilprojekte als fertig bezeichnen.
+
+| Etappe | Status | Technischer Stand |
+|---|---|---|
+| 0. Konto & Datensicherung | **Vorbereitet; Live-Login noch nicht end-to-end bestätigt** | Google-Button und Passwort-Reset in sync.js; vorhandene Supabase-Tabelle mit RLS; keine Benutzerdaten migriert oder gelöscht |
+| 1. Navigation & Startseite | **Im Repo veröffentlicht; Sichtprüfung auf iPhone ausstehend** | ux.js v11, kompakter Home-Hub, eigene Skillseite, gespeicherte letzte Ansicht/Scrollposition unter bestehendem Key |
+| 2. Skillbaum Basis | **Im Repo veröffentlicht; synthetisch getestet** | skills.js + skills.css v11: 13 Knoten, 16 Kanten, echte Abhängigkeiten; Beherrschung ausschließlich aus gespeicherten Kurs- und Aufgabenergebnissen abgeleitet |
+| 3. Bessere interaktive Kurse | **Offen** | Vorhandene Kurse unverändert, Schwerpunkt Lernqualität und Aufgabenformen |
+| 4. Inventar, Economy & Beförderungsvorteile | **Offen** | Vor Implementierung: Ledger/RLS/Servertransaktionen, Statusmodell, idempotente Reward-Claims |
+| 5. Sounds, animierte Rangaufstiege, Weltkarte | **Offen** | Animation und Audio-Einstellungen, Accessibility, iPhone-Performance |
+| 6. Private Analyse-Prüfschlange | **Offen** | Eigene Supabase-Warteschlange und echtes privates Feedback der täglichen Redaktion |
+| 7. Virtuelles Echtkurs-Depot | **Offen** | Datierte verifizierte Kursquelle, Orders, Konto, Geldflussbereinigte Performance |
+| 8. Geschenke, Depotauswertung, Events | **Offen** | Abhängig vom sicheren Depot-Ledger |
+
+### Erste Release-Grenzen
+- Skillbaum ist **vorerst lesender Fortschritt** und keine eigene Guthaben-/Belohnungswirtschaft. Er darf nie XP ohne bestandene Aufgaben vergeben.
+- Der Graph zeigt Prüfungs-Freischaltungen, **keine Sperre für Lernmaterialien**.
+- Keine echten oder virtuellen Depotorders, noch keine Items und keine Sounds.
+- Bestehende lokale Keys `finanzpilot_v1`, `finanzpilot_lab_v3`, `finanzpilot_academy_v4`, `fp_research_answers_v1`, `finanzpilot_navigation_v6` werden nicht umbenannt/gelöscht.
+- Vor Ausweitung Etappe 0 mit Google-Login/SMTP und Fortschrittsübernahme auf dem iPhone testen. Ein veröffentlichter Button ist kein Beweis für funktionierenden OAuth.
