@@ -182,3 +182,17 @@ Der Nutzer hat am 31.10.2026 nach eigenem Google-OAuth-Setup die **schrittweise 
 - Keine echten oder virtuellen Depotorders, noch keine Items und keine Sounds.
 - Bestehende lokale Keys `finanzpilot_v1`, `finanzpilot_lab_v3`, `finanzpilot_academy_v4`, `fp_research_answers_v1`, `finanzpilot_navigation_v6` werden nicht umbenannt/gelöscht.
 - Vor Ausweitung Etappe 0 mit Google-Login/SMTP und Fortschrittsübernahme auf dem iPhone testen. Ein veröffentlichter Button ist kein Beweis für funktionierenden OAuth.
+
+## Entwicklungsstand Version 12 – interaktive Trainingskurse
+
+**Am 31.10.2026 direkt in GitHub veröffentlicht, End-to-End-iPhone-Test ausstehend.**
+
+- Phase 3, erste vollständige Teilfunktion: `data/training.json`, `training.js`, `training.css`; drei unternehmensbezogene, datierte Praxisreihen zu KION, AIXTRON, Alphabet (5 Schritte je Kurs).
+- Lernformate: Erklärung und Diagramm → Zahlenrechnung → Mehrfachauswahl (genau zwei) → fachliche Reihenfolge → analytische Entscheidung. Bei jeder Prüfung gibt es einen expliziten Rechenweg / begründete Analyse.
+- Eigenes wiederaufnehmbares Lernmodul `training` im Menü und auf Startseite, unveränderte bestehende Kurse.
+- Wiederholungsplanung: falsche Antworten nach einem Tag, richtige nach drei Tagen, bei korrekter Wiederholung längeres Intervall. Keine erfundene KI-Auswertung.
+- Fortschrittskey `finanzpilot_training_v1` mit modulspezifischem Status, Antworten, Bestwerten und Wiedervorlage; Cloud-Synchronisierung anhand zeitlich neuerer Modulversion und maximalem bestandenem Score.
+- Der Skillbaum kann nachgewiesene 4/4-Trainingsergebnisse zusätzlich zu älteren Kursen als Kompetenznachweis verwenden.
+- XP, Belohnungen, virtuelle Euros, Inventar und Trades weiterhin nicht implementiert; die sichere Spielökonomie gehört zu einer späteren Etappe.
+- QA: JS-Syntax und 12 richtige/falsche Musterantwort-Paare simuliert und bestanden; App-Verknüpfung, Dateipfade und Schreib-Commits verifiziert. Echte Nutzeranmeldung und Anzeige auf iPhone noch nicht verifiziert.
+- Redaktion: bestehende tägliche Automations-Aufgabe wurde um Qualitätsvorgaben und Schutz der neuen Trainingsschema- und Fortschritts-IDs ergänzt.
