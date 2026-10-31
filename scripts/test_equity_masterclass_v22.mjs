@@ -68,6 +68,6 @@ const academyCode=read('academy.js');
 assert(academyCode.includes("st.type!=='teach'&&!checked"),'Cannot advance after incorrect answers');
 assert(academyCode.includes("if(right){progress.answers"),'Only right results are passed');
 assert(academyCode.includes("if(name==='retry')"),'Retry control must function');
-assert(read('index.html').includes('academy.js?v=24'));
+assert(read('index.html').includes('academy.js?v=25'));
 assert(read('index.html').includes('equity-masterclass-v22.css?v=22'));
 console.log('Equity masterclass v22: 20 sourced stages, eight numeric checks, scenario valuation, locked prerequisite, signed FCF charts, and strict mastery verified.');
