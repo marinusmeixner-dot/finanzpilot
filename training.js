@@ -88,7 +88,7 @@ window.FinanzPilotTraining=(()=>{
  }
  function finished(m){
   const s=session(m.id),stat=stats(m.id),points=scoredSteps(m).length;
-  return '<div class="fp-training-complete"><div class="fp-training-trophy">✧</div><div class="eyebrow">ANALYSE-SESSION ABGESCHLOSSEN</div><h1>'+esc(m.title)+'</h1><div class="fp-training-score">'+stat.best+' / '+points+'</div><h2>'+(stat.mastered?'Meisterschaft bestanden':'Deine Analyse ist dokumentiert')+'</h2><p>'+ (stat.mastered?'Du hast alle Prüfaufgaben gelöst. Ein Teil des Wissens wird nach einigen Tagen gezielt wieder abgefragt.':'Du hast den vollständigen Fall durchgearbeitet. Wiederhole die schwierigen Aufgaben, um deine Kompetenz zu festigen.')+'</p><div class="fp-training-complete-actions"><button class="btn" data-training-list>Zur Kursübersicht</button><button class="btn secondary" data-training-repeat="'+esc(m.id)+'">Noch einmal trainieren</button><button class="btn secondary" data-training-skill>Skillbaum ansehen →</button></div></div>';
+  return '<div class="fp-training-complete"><div class="fp-training-trophy">✧</div><div class="eyebrow">ANALYSE-SESSION ABGESCHLOSSEN</div><h1>'+esc(m.title)+'</h1><div class="fp-training-score">'+stat.best+' / '+points+'</div><h2>'+(stat.mastered?'Meisterschaft bestanden':'Deine Analyse ist dokumentiert')+'</h2><p>'+ (stat.mastered?'Du hast alle Prüfaufgaben gelöst. Ein Teil des Wissens wird nach einigen Tagen gezielt wieder abgefragt.':'Du hast den vollständigen Fall durchgearbeitet. Wiederhole die schwierigen Aufgaben, um deine Kompetenz zu festigen.')+'</p><div class="fp-training-complete-actions"><button class="btn" data-training-list>Zur Kursübersicht</button><button class="btn secondary" data-training-repeat="'+esc(m.id)+'">Noch einmal trainieren</button><button class="btn secondary" data-training-skill>Skillbaum ansehen →</button>'+(stat.mastered?'<button class="btn" data-training-verify="'+esc(m.id)+'">100 Forschungspunkte & Artefakt prüfen →</button>':'')+'</div><p class="fp-training-proof-note">Belohnungen werden nach Anmeldung durch die Prüfung deiner vier Lösungen auf dem Server vergeben. Pro Praxisreihe nur einmal.</p></div>';
  }
  function render(){
   if(!dataReady)return '<div class="fp-training"><h1>Trainingslabor</h1><p>'+esc(loadError||'Lernfälle werden geladen …')+'</p></div>';
@@ -117,7 +117,7 @@ window.FinanzPilotTraining=(()=>{
   const answer={type:step.type,correct:Boolean(check.correct),checkedAt:Date.now(),value:input};
   if(a.mode==='review'){a.reviewAnswer=answer;schedule(a.id,idx,answer.correct,true)}
   else{s.answers[idx]=answer;schedule(a.id,idx,answer.correct,false)}
-  s.updatedAt=Date.now();persist();window.render?.();
+  s.updatedAt=Date.now();persist();if(answer.correct&&a.mode!=='review')window.FinanzPilotEconomy?.verify(a.id,idx,input,step.type).catch(()=>{});window.render?.();
  }
  function advance(){
   const a=data.active;if(!a)return;
@@ -150,6 +150,18 @@ window.FinanzPilotTraining=(()=>{
   root.querySelectorAll('[data-training-list]').forEach(x=>x.addEventListener('click',()=>{data.active=null;persist();window.render?.();window.scrollTo({top:0,behavior:'instant'})}));
   root.querySelectorAll('[data-training-review]').forEach(x=>x.addEventListener('click',()=>openReview(x.dataset.trainingReview)));
   root.querySelector('[data-training-skill]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('skills'));
+  root.querySelector('[data-training-verify]')?.addEventListener('click',async ev=>{
+    const btn=ev.currentTarget,id=btn.dataset.trainingVerify;
+    if(!window.FinanzPilotCloud?.user){window.FinanzPilotCloud?.openLogin?.();return}
+    btn.disabled=true;btn.textContent='Prüfe Antworten auf dem Server …';
+    try{
+      const feedback=await window.FinanzPilotEconomy?.certifySaved(id);
+      if(!feedback){btn.textContent='Prüfung gerade nicht verfügbar';return}
+      if(feedback.errors){btn.textContent='Prüfung nicht vollständig. Bitte erneut versuchen.';return}
+      if(feedback.verifiedCount===4)window.FinanzPilotNavigation?.route('inventory');
+      else btn.textContent=feedback.verifiedCount+'/4 Antworten bestätigt – fehlende Aufgaben wiederholen';
+    }catch(e){btn.textContent='Prüfung fehlgeschlagen – erneut versuchen'}
+  });
   root.querySelectorAll('[data-training-option]').forEach(x=>x.addEventListener('click',()=>{
    const idx=Number(x.dataset.trainingOption),act=data.active,step=module(act.id).steps[act.mode==='review'?act.step:session(act.id).step];
    let draft=getDraft();if(!Array.isArray(draft))draft=[];
