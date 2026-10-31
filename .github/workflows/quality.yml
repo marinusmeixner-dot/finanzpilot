@@ -22,5 +22,7 @@ jobs:
         run: node scripts/test_economy.mjs
       - name: Check navigation and automatic PWA upgrades
         run: node scripts/test_navigation_v15.mjs
+      - name: Verify mobile safe-area and authenticated sync lifecycle
+        run: node scripts/test_mobile_v19.mjs
       - name: Check expanded skill-world and financial concepts curriculum
         run: node scripts/test_learning_v16.mjs
