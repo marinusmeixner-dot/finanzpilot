@@ -47,7 +47,9 @@ async function refresh(force=false){
   const uid=user();
   const rows=await client().from('fp_paper_watchlist').select('symbol,created_at').eq('user_id',uid).order('created_at',{ascending:false}).limit(500);
   if(rows.error)throw rows.error;if(uid!==user())return;
-  watch=rows.data||[];const syms=[...new Set([...watch.map(x=>x.symbol),...(active?[active]:[])])];
+  const previouslyKnown=new Set(watch.map(x=>x.symbol));
+  watch=rows.data||[];const newSymbols=watch.map(x=>x.symbol).filter(x=>!previouslyKnown.has(x));
+  const syms=[...new Set([...watch.map(x=>x.symbol),...(active?[active]:[])])];
   if(syms.length){
    const result=await client().from('fp_paper_quotes').select('symbol,asset_name,currency,price,quote_date,source').in('symbol',syms);
    if(result.error)throw result.error;quotes=result.data||[];
@@ -55,6 +57,8 @@ async function refresh(force=false){
   message='';
   // Previously saved stocks appear immediately; historical charts hydrate asynchronously.
   hydrateCharts(watch.map(item=>item.symbol));
+  // A newly followed company also gets its own provider headlines immediately.
+  hydrateNewStocks(newSymbols);
   if(typeof state!=='undefined'&&state.view==='marketnews'&&tab==='watch')loadWatchNews();
   if(active)getAsset(active,'history');
  }catch(e){message='Marktdaten konnten nicht aktualisiert werden: '+String(e.message||e)}
@@ -62,6 +66,9 @@ async function refresh(force=false){
 }
 async function hydrateCharts(symbols){
  for(let i=0;i<symbols.length;i+=4)await Promise.all(symbols.slice(i,i+4).map(symbol=>getAsset(symbol,'history')));
+}
+async function hydrateNewStocks(symbols){
+ for(let i=0;i<symbols.length;i+=4)await Promise.all(symbols.slice(i,i+4).map(symbol=>getAsset(symbol,'news')));
 }
 async function loadWatchNews(){
  // Provider data is requested when this section is opened, including newly added symbols.
