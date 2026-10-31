@@ -390,6 +390,83 @@
           "why": "Einmalbelastungen können die Berichtsperiode verzerren. Langfristige Ertragskraft beurteilst du mit wiederkehrenden Kosten, Cashflows und zukünftigen Risiken."
         }
       ]
+    },
+    {
+      "id": "alphabet",
+      "company": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "symbol": "NASDAQ:GOOGL",
+      "period": "Q3 2026 (bis 30.09.2026), veröffentlicht 28.10.2026",
+      "source": "Alphabet Q3 2026 SEC Exhibit 99.1",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "summary": "Google Cloud wächst um 103 %, der operative Konzerngewinn steigt; zugleich drücken 51,355 Mrd. USD Sachanlageinvestitionen den Quartals-FCF auf −9,065 Mrd. USD.",
+      "business": "Alphabet monetarisiert Suche, YouTube und andere Google-Dienste über Werbung, Abos und Plattformgebühren; Google Cloud verkauft Infrastruktur, Workspace und TPU-Systeme. Die hohen KI-Investitionen können das Cloud-Geschäft ausbauen, erhöhen aber die Kapitalbindung.",
+      "figures": [
+        [
+          "Konzernumsatz Q3 2026",
+          127577,
+          "Mio. USD"
+        ],
+        [
+          "Google-Cloud-Umsatz Q3 2026",
+          30709,
+          "Mio. USD"
+        ],
+        [
+          "Operativer Konzerngewinn Q3 2026",
+          40576,
+          "Mio. USD"
+        ],
+        [
+          "Operating Cashflow Q3 2026",
+          42290,
+          "Mio. USD"
+        ],
+        [
+          "Sachanlageinvestitionen Q3 2026",
+          51355,
+          "Mio. USD"
+        ]
+      ],
+      "thesis": "Die Cloud-Dynamik und die 31,8-%-Konzernmarge zeigen operative Stärke. Der entscheidende offene Punkt ist, ob die Rekordinvestitionen dauerhaft genügend zusätzliche freie Cashflows erzeugen. Q3-FCF −9,065 Mrd. USD, TTM-FCF +19,747 Mrd. USD; der Bewertungsmaßstab hängt von einem normalisierten Cashflow ab.",
+      "risks": [
+        "Dauerhaft hoher KI-Capex, sinkender FCF und hoher Ersatzinvestitionsbedarf",
+        "Suchwerbung durch KI-Assistenten, Regulierung oder veränderte Nutzergewohnheiten unter Druck",
+        "Cloud-Preisdruck, Auslastung und Kundenkonzentration",
+        "Beteiligungsbewertungen verzerren den GAAP-Nettogewinn (Q3 2026 −8,664 Mrd. USD Verlust auf Eigenkapitalinstrumente)",
+        "Ein starkes Geschäft kann bei zu hohen Markterwartungen dennoch eine teure Aktie sein"
+      ],
+      "methods": [
+        "Google Services und Cloud nach Umsatzwachstum und Segmentmarge getrennt bewerten",
+        "Operativen Gewinn (40,576 Mrd. USD) von Nettogewinn (26,468 Mrd. USD) und FCF (−9,065 Mrd. USD) trennen",
+        "Capex 51,355 Mrd. USD und operativen Cashflow 42,290 Mrd. USD auf Quartals- und TTM-Basis vergleichen",
+        "Für optimistisches, Basis- und Stressszenario normalisierten FCF, Wachstum und Bewertungsmultiple offenlegen",
+        "Die Marktreaktion mit vorab dokumentierten Erwartungen und einem Vergleichsindex überprüfen"
+      ],
+      "questions": [
+        {
+          "q": "Cloud erzielte in Q3 2026 30.709 Mio. USD Umsatz und 11.121 Mio. USD operativen Segmentgewinn. Welche Cloud-Segmentmarge folgt?",
+          "choices": [
+            "24,1 %",
+            "31,8 %",
+            "36,2 %",
+            "40,6 %"
+          ],
+          "correct": 2,
+          "why": "11.121 / 30.709 × 100 = 36,21 %. 31,8 % ist dagegen die operative Konzernmarge (40.576 / 127.577)."
+        },
+        {
+          "q": "Alphabet meldete Q3 2026 42.290 Mio. USD operativen Cashflow und 51.355 Mio. USD Sachanlageinvestitionen. Welche Schlussfolgerung ist korrekt?",
+          "choices": [
+            "FCF +9.065 Mio. USD; Wachstum deckt alle Investitionen",
+            "FCF −9.065 Mio. USD; die Kapitalrendite muss über mehrere Perioden geprüft werden",
+            "FCF +42.290 Mio. USD; Investitionen beeinflussen den Cashflow nicht",
+            "Der negative FCF beweist, dass der operative Gewinn gefälscht ist"
+          ],
+          "correct": 1,
+          "why": "42.290 − 51.355 = −9.065 Mio. USD. Ein negativer Quartals-FCF kann bei Ausbauinvestitionen auftreten; für die Bewertung zählen die künftigen Cashflows und Investitionsrenditen."
+        }
+      ]
     }
   ]
 }
