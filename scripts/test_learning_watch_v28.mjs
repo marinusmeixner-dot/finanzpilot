@@ -9,6 +9,7 @@ assert(guv.title.includes('Gewinn- und Verlustrechnung'));
 assert.equal(guv.steps.length,4,'Do not break old question IDs and saved answers');
 assert.equal(guv.steps[1].answer,100);
 assert(guv.steps[1].reasoningRequired);
+assert(terms.modules.every(m=>m.steps[1]?.reasoningRequired),'All financial arithmetic steps now require conceptual reasoning');
 assert(guv.steps[1].reasoningQuestion.includes('Begründe'));
 assert(c.includes('Abkürzungen ausgeschrieben'));
 assert(c.includes('fp-training-reason'));
