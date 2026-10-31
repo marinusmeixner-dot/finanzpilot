@@ -8,7 +8,7 @@
   const PUBLISHABLE_KEY = 'sb_publishable_hXOPhMFpAD0RVAky9eonSQ_yiFoZps6';
   const CLOUD_TABLE = 'finanzpilot_progress';
   const APP_URL = 'https://marinusmeixner-dot.github.io/finanzpilot/';
-  const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1','finanzpilot_training_v1','finanzpilot_concepts_v1','finanzpilot_transfer_v1','finanzpilot_expedition_v1'];
+  const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1','finanzpilot_training_v1','finanzpilot_concepts_v1','finanzpilot_transfer_v1','finanzpilot_investment_committee_v1','finanzpilot_expedition_v1'];
   const escapeHtml = x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   let client=null, user=null, enabled=false, ready=false, busy=false, timer=null, retryTimer=null, canAnalyze=false, lastStatus='Lokal gespeichert', recoveryMode=false, dirty=false, accessToken=null, lastRemote={}, pendingAgain=false, lastSyncAt=0, retryCount=0;
   const localObject=k=>{try{const x=JSON.parse(localStorage.getItem(k)||'{}');return x&&typeof x==='object'&&!Array.isArray(x)?x:{}}catch{return {}}};
@@ -82,7 +82,7 @@
     const out={};
     for(const key of KEYS){const a=local?.[key]||{}, b=remote?.[key]||{};
       if(key==='fp_research_answers_v1')out[key]={...(isObject(b)?b:{}),...(isObject(a)?a:{})};
-      else if(key==='finanzpilot_training_v1'||key==='finanzpilot_transfer_v1')out[key]=mergeTraining(a,b);
+      else if(key==='finanzpilot_training_v1'||key==='finanzpilot_transfer_v1'||key==='finanzpilot_investment_committee_v1')out[key]=mergeTraining(a,b);
       else if(key==='finanzpilot_concepts_v1')out[key]=mergeConcepts(a,b);
       else out[key]=merge(a,b);
     }
