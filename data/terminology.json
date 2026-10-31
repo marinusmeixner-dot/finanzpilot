@@ -56,7 +56,7 @@
           "method": "Operatives Ergebnis vor Zinsen und Steuern (EBIT) = 1.330 − 820 − 290 − 70 − 50 = 100 Mio. €. Operative Marge = 100/1.330 = 7,52 %. Zinsen 35 und Steuer 13 gehören unter das EBIT; rechnerisch blieben 52 Mio. € Jahresüberschuss. Der operative Gewinn ist nicht gleich Cashflow: Zahlungen, Abschreibungen, Vorräte, Forderungen, Verbindlichkeiten und Investitionen sind gesondert zu prüfen. Vergleiche die Marge mit den 10 % aus dem Vorjahr – der nominal identische Gewinn kann trotz höherem Umsatz eine schlechtere Ertragsqualität bedeuten.",
           "hint": "Ordne die 70 Mio. € Abschreibung dem operativen Aufwand zu, nicht dem Zahlungsabfluss in diesem Jahr. Wende EBIT = Umsatz − operative Kosten an; vergleiche danach den Umsatz mit dem Vorjahr.",
           "reasoningRequired": true,
-          "reasoningQuestion": "Warum sinkt die operative Marge im Vergleich zum Vorjahr trotz identischen EBIT, und weshalb sagt dieser Gewinn noch nichts über die Bankliquidität?"
+          "reasoningQuestion": "Begründe, warum die operative Marge gegenüber dem Vorjahr trotz identischen EBIT fällt und wieso aus dem Gewinn noch kein verfügbarer Geldbetrag folgt."
         },
         {
           "type": "multi",
