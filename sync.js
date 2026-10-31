@@ -5,7 +5,7 @@
 'use strict';
 (()=>{
   const PROJECT_URL = 'https://oqhwgksunlffvknaspmx.supabase.co';
-  const PUBLISHABLE_KEY = 'sb_publishable_hXOPhMFpAD0RVAky9eonSQ_yiFoZps6';
+  const PUBLISHABLE_KEY = '__SUPABASE_PUBLISHABLE_KEY__';
   const CLOUD_TABLE = 'finanzpilot_progress';
   const KEYS = ['finanzpilot_v1','finanzpilot_lab_v3','finanzpilot_academy_v4','fp_research_answers_v1'];
   const escapeHtml = x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -56,14 +56,20 @@
     }}
     return changed;
   }
-  function setStatus(message){lastStatus=message;const x=document.getElementById('fp-account-state');if(x)x.textContent=message;const b=document.getElementById('fp-account-button');if(b){b.textContent=user?(ready?'Konto · synchronisiert':'Konto · verbindet'):'Konto / Login';b.title=user?.email||message}}
-  const statusMessage=e=>e?.message||'Unbekannter Fehler';
+  function setStatus(message){lastStatus=message;const x=document.getElementById('fp-account-state');if(x)x.textContent=message;const b=document.getElementById('fp-account-button');if(b){b.textContent=user?'Konto · synchronisiert':'Konto / Login';b.title=user?.email||message}}
+  const statusMessage=e=>{
+    const code=String(e?.code||'').toLowerCase(),msg=String(e?.message||'');
+    if(code==='email_address_not_authorized'||/email address not authorized/i.test(msg))return 'Der kostenlose E-Mail-Versand erlaubt nur Projekt-Teamadressen. Bitte den Administrator um die Einrichtung eines SMTP-Dienstes.';
+    if(code==='over_email_send_rate_limit'||/rate limit exceeded/i.test(msg))return 'Das E-Mail-Limit des Projekts ist erreicht (Standard: 2 E-Mails pro Stunde). Bitte nicht immer wieder registrieren; die Einrichtung eines eigenen Mailversands ist nötig.';
+    if(code==='invalid_credentials'||/invalid login credentials/i.test(msg))return 'E-Mail/Passwort stimmen nicht überein oder das Konto wurde noch nicht bestätigt. Prüfe bestehende Anmeldung statt erneut zu registrieren.';
+    return msg||'Unbekannter Fehler';
+  };
   function accountPanel(){
     if(document.getElementById('fp-account-dialog'))return;
     const button=document.createElement('button');button.id='fp-account-button';button.className='settings-btn fp-account-trigger';button.type='button';button.textContent='Konto / Login';
     document.querySelector('.header-right')?.append(button);
     const modal=document.createElement('div');modal.id='fp-account-dialog';modal.className='fp-account-overlay';modal.hidden=true;
-    modal.innerHTML=`<section class="fp-account-window" role="dialog" aria-modal="true" aria-label="FinanzPilot Konto"><div class="fp-account-title"><h2>Dein FinanzPilot-Konto</h2><button id="fp-account-close" class="settings-btn" type="button" aria-label="Schließen">✕</button></div><p id="fp-account-state" aria-live="polite">Lokal gespeichert</p><div id="fp-account-guest"><p>Ohne Anmeldung bleiben deine bisherigen Ergebnisse auf diesem Gerät. Mit einem kostenlosen Konto werden Fortschritte auch auf anderen Geräten synchronisiert.</p><form id="fp-account-form"><label>E-Mail-Adresse<input id="fp-account-email" type="email" name="email" autocomplete="username" required maxlength="254" /></label><label>Passwort<input id="fp-account-password" type="password" name="password" autocomplete="current-password" required minlength="6" /></label><div class="fp-account-actions"><button class="btn" type="submit">Anmelden</button><button class="btn secondary" id="fp-account-signup" type="button">Neues Konto erstellen</button></div></form></div><div id="fp-account-signed" hidden><p>Angemeldet als <strong id="fp-account-user"></strong>. Dein Lernstand wird automatisch und verschlüsselt übertragen.</p><label class="fp-account-consent"><input id="fp-account-analysis" type="checkbox" /> Erlaube persönliche Lernstand-Analysen durch meinen verbundenen ChatGPT-Finanzcoach.</label><p>Ohne Freigabe werden deine Lernstatistiken nicht für ChatGPT-Auswertungen verwendet. Sie werden nicht auf GitHub veröffentlicht.</p><div class="fp-account-actions"><button id="fp-account-save" class="btn" type="button">Jetzt synchronisieren</button><button id="fp-account-logout" class="settings-btn" type="button">Abmelden</button></div></div><div class="fp-account-footer"><button class="settings-btn" id="fp-account-backup" type="button">Alle Lernstände als Backup speichern</button><small>Bei Kontowechsel oder Safari-Datenlöschung ist ein zusätzliches Backup sinnvoll.</small></div></section>`;
+    modal.innerHTML=`<section class="fp-account-window" role="dialog" aria-modal="true" aria-label="FinanzPilot Konto"><div class="fp-account-title"><h2>Dein FinanzPilot-Konto</h2><button id="fp-account-close" class="settings-btn" type="button" aria-label="Schließen">✕</button></div><p id="fp-account-state" aria-live="polite">Lokal gespeichert</p><div id="fp-account-guest"><p>Dein Lernstand bleibt ohne Konto lokal erhalten. Mit einem bestätigten Konto können Ergebnisse synchronisiert werden. Die Anmeldung ist freiwillig.</p><form id="fp-account-form"><label>E-Mail-Adresse<input id="fp-account-email" type="email" name="email" autocomplete="username" required maxlength="254" /></label><label>Passwort<input id="fp-account-password" type="password" name="password" autocomplete="current-password" required minlength="6" /></label><div class="fp-account-actions"><button class="btn" type="submit">Anmelden</button><button class="btn secondary" id="fp-account-signup" type="button">Neues Konto erstellen</button></div></form><div class="fp-mail-help"><strong>Keine Bestätigungs-E-Mail erhalten?</strong><p>Der eingebaute Supabase-Mailversand ist auf Teamadressen und sehr wenige Nachrichten begrenzt. Du kannst solange ohne Login weiterlernen und unten ein Backup speichern. Bei einer bereits registrierten Adresse bitte anmelden, statt erneut ein Konto anzulegen.</p><a href="https://supabase.com/dashboard/project/oqhwgksunlffvknaspmx/auth/providers" target="_blank" rel="noopener">Mail-Einstellungen öffnen ↗</a></div></div><div id="fp-account-signed" hidden><p>Angemeldet als <strong id="fp-account-user"></strong>. Dein Lernstand wird automatisch und verschlüsselt übertragen.</p><label class="fp-account-consent"><input id="fp-account-analysis" type="checkbox" /> Erlaube persönliche Lernstand-Analysen durch meinen verbundenen ChatGPT-Finanzcoach.</label><p>Ohne Freigabe werden deine Lernstatistiken nicht für ChatGPT-Auswertungen verwendet. Sie werden nicht auf GitHub veröffentlicht.</p><div class="fp-account-actions"><button id="fp-account-save" class="btn" type="button">Jetzt synchronisieren</button><button id="fp-account-logout" class="settings-btn" type="button">Abmelden</button></div></div><div class="fp-account-footer"><button class="settings-btn" id="fp-account-backup" type="button">Alle Lernstände als Backup speichern</button><small>Bei Kontowechsel oder Safari-Datenlöschung ist ein zusätzliches Backup sinnvoll.</small></div></section>`;
     document.body.append(modal);
     button.addEventListener('click',()=>{modal.hidden=false;document.getElementById('fp-account-email')?.focus()});
     document.getElementById('fp-account-close').addEventListener('click',()=>modal.hidden=true);
@@ -90,7 +96,9 @@
   async function signUp(){if(!client){setStatus('Anmeldung zurzeit nicht erreichbar.');return}
     const {email,password}=credentials();if(!email||password.length<6){setStatus('Bitte E-Mail und Passwort mit mindestens sechs Zeichen eintragen.');return}
     setStatus('Registrierung wird geprüft …');try{const {data,error}=await client.auth.signUp({email,password,options:{emailRedirectTo:'https://marinusmeixner-dot.github.io/finanzpilot/'}});if(error)throw error;
-      if(data?.session){setStatus('Konto angelegt. Synchronisierung startet …')}else setStatus('Bitte Bestätigungs-E-Mail öffnen und danach anmelden. Dein bisheriger Lernstand bleibt hier erhalten.');
+      if(data?.session){setStatus('Konto angelegt. Synchronisierung startet …')}
+      else if(data?.user && Array.isArray(data.user.identities)&&data.user.identities.length===0){setStatus('Diese Adresse ist möglicherweise bereits registriert. Es wurde keine neue Bestätigungs-E-Mail zugesichert. Bitte mit deinem bisherigen Passwort anmelden oder später den Mailversand prüfen.');}
+      else setStatus('Registrierung angenommen, Versand der E-Mail ist NICHT bestätigt. Der kostenlose Supabase-Mailversand funktioniert nur eingeschränkt; schau auch im Spamordner nach. Bis zur Bestätigung bleibt dein Fortschritt lokal.');
     }catch(e){setStatus('Registrierung: '+statusMessage(e))}
   }
   async function toggleAnalysis(e){if(!client||!user)return;const next=e.target.checked;
