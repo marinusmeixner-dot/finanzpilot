@@ -23,13 +23,13 @@ const quoteData=JSON.parse(read('data/prices.json'));
 const q=q=>{
  const asset=quoteData.assets[q];return {symbol:q,asset_name:q,currency:asset.currency,price:asset.points.at(-1).c,quote_date:asset.asof,source:asset.source,adjusted:true};
 };
-const quotes=[q('MSFT'),q('SIEMENS')],wallets=[],tradeRows=[];
+const quotes=[q('MSFT'),q('SIEMENS')],wallets=[],tradeRows=[],watchRows=[];
 let account='sample-user',calls=0;
 const fakeClient={
  from(t){
-  const data=t==='fp_paper_quotes'?quotes:t==='fp_paper_wallets'?wallets:tradeRows;
+  const data=t==='fp_paper_quotes'?quotes:t==='fp_paper_wallets'?wallets:t==='fp_paper_watchlist'?watchRows:tradeRows;
   const result=()=>Promise.resolve({data,error:null});
-  const query={then(ok,fail){return result().then(ok,fail)},order(){return this},eq(){return this},limit(){return result()},range(){return result()}};
+  const query={then(ok,fail){return result().then(ok,fail)},order(){return this},eq(){return this},in(){return this},limit(){return result()},range(){return result()}};
   return {select(){return query}};
  },
  async rpc(fn,p){
