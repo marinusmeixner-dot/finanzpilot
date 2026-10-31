@@ -46,7 +46,7 @@ window.FinanzPilotEconomy=(()=>{
   modules.map(m=>{
    const cl=stateOf(m.id),count=verified.filter(x=>x.module_id===m.id).length;
    const headline=cl?(cl.choice?'Eingelöst: '+({tool:'Werkzeug',path:'Spezialkurs',cash:'150 € virtuelles Kapital'}[cl.choice]||cl.choice):'Einmalige Auswahl verfügbar'):`${count}/4 Antworten bestätigt`;
-   return `<article class="fp-inventory-item ${cl&&!cl.choice?'fp-inventory-owned':''}"><span class="fp-inventory-symbol fp-premium-medal ${cl?.choice?'fp-consumed':''}">${window.FinanzPilotIcons?.emblem(m.id)||esc(m.symbol)}</span><div class="fp-inventory-item-body"><div class="fp-inventory-item-top"><b>${esc(m.name)}</b><small>${esc(m.kind)}</small></div><p>${esc(m.lesson)}</p><span class="fp-inventory-status">${esc(headline)}</span>${cl&&!cl.choice?`<button type="button" class="btn fp-inventory-choose" data-inventory-choose="${esc(m.id)}">Verwendung auswählen →</button>`:cl&&cl.choice?`<small class="fp-inventory-consumed">Deine Entscheidung wurde dauerhaft gespeichert.</small>`:`<button type="button" class="fp-inventory-study" data-view="training">Training öffnen →</button>`}</div></article>`;
+   return `<article class="fp-inventory-item ${cl&&!cl.choice?'fp-inventory-owned':''}"><span class="fp-inventory-symbol fp-premium-medal ${cl?.choice?'fp-consumed':''}">${window.FinanzPilotIcons?.emblem(m.id)||esc(m.symbol)}</span><div class="fp-inventory-item-body"><div class="fp-inventory-item-top"><b>${esc(m.name)}</b><small>${esc(m.kind)}</small></div><p>${esc(m.lesson)}</p><span class="fp-inventory-status">${esc(headline)}</span>${cl&&!cl.choice?`<button type="button" class="btn fp-inventory-choose" data-inventory-choose="${esc(m.id)}">Verwendung auswählen →</button>`:cl&&cl.choice?`<small class="fp-inventory-consumed">Deine Entscheidung wurde dauerhaft gespeichert.</small>`:`<button type="button" class="fp-inventory-study" data-inventory-study="${esc(m.id)}">Diese Praxisreihe beginnen →</button>`}</div></article>`;
   }).join('')+'</div></section>';
  }
  function choiceSection(){
@@ -160,6 +160,7 @@ window.FinanzPilotEconomy=(()=>{
  }
  function bind(root=document){
   root.querySelectorAll('[data-inventory-login]').forEach(b=>b.addEventListener('click',()=>api()?.openLogin?.()));
+  root.querySelectorAll('[data-inventory-study]').forEach(b=>b.addEventListener('click',()=>{const id=b.dataset.inventoryStudy;window.FinanzPilotNavigation?.route('training');window.FinanzPilotTraining?.open?.(id)}));
   root.querySelectorAll('[data-inventory-reload]').forEach(b=>b.addEventListener('click',()=>refresh()));
   root.querySelectorAll('[data-inventory-choose]').forEach(b=>b.addEventListener('click',()=>{pending={id:b.dataset.inventoryChoose,choice:null};window.render?.();document.querySelector('#fp-inventory-decision')?.scrollIntoView({behavior:'smooth',block:'start'})}));
   root.querySelectorAll('[data-inventory-select]').forEach(b=>b.addEventListener('click',()=>{if(pending){pending.choice=b.dataset.inventorySelect;window.render?.();document.querySelector('#fp-inventory-decision')?.scrollIntoView({block:'nearest'})}}));
