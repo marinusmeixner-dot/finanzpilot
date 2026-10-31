@@ -4,7 +4,7 @@
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=(v,c)=>new Intl.NumberFormat('de-DE',{style:'currency',currency:/^[A-Z]{3}$/.test(c||'')?c:'USD'}).format(Number(v)||0);
 const user=()=>window.FinanzPilotCloud?.user,client=()=>window.FinanzPilotCloud?.paperClient;
-let list=[],quotes=[],selected=null,series=null,news=[],editorial=[],busy=false,notice='',cache={},loading=false;
+let list=[],quotes=[],selected=null,series=null,news=[],editorial=[],busy=false,notice='',cache={},loading=false,selectionToken=0;
 const quote=s=>quotes.find(x=>x.symbol===s);
 async function loadEditorial(){
  try{
@@ -16,8 +16,9 @@ async function loadEditorial(){
 }
 const relatedEditorial=code=>{
  const ticker=String(code||'').toUpperCase(),company=String(quote(ticker)?.asset_name||'').toLowerCase();
- const aliases={MSFT:['microsoft'],AAPL:['apple'],NVDA:['nvidia'],AMZN:['amazon','aws'],META:['meta platforms','facebook'],GOOGL:['alphabet','google'],GOOG:['alphabet','google'],SAP:['sap'],KION:['kion'],AIXTRON:['aixtron'],SIEMENS:['siemens'],ASML:['asml']};
- const keys=[...(aliases[ticker]||[])].concat(company.length>=5?[company]:[]);
+ const aliases={MSFT:['microsoft'],AAPL:['apple'],NVDA:['nvidia'],AMZN:['amazon','aws'],META:['meta','facebook'],GOOGL:['alphabet','google'],GOOG:['alphabet','google'],SAP:['sap'],KION:['kion'],AIXTRON:['aixtron'],SIEMENS:['siemens'],ASML:['asml'],INTC:['intel'],TSLA:['tesla'],KGX:['kion']};
+ const base=ticker.split('.')[0];
+ const keys=[...(aliases[ticker]||aliases[base]||[])].concat(company.length>=5?[company]:[]);
  return editorial.filter(x=>{
    if(Array.isArray(x.symbols)&&x.symbols.some(v=>String(v).toUpperCase()===ticker))return true;
    const title=String(x.title||'').toLowerCase();
@@ -49,23 +50,33 @@ function chart(points){
 }
 async function select(code){
  const id=String(code||'').toUpperCase();if(!/^[A-Z0-9][A-Z0-9.\-]{0,23}$/.test(id))return;
- selected=id;series=null;news=[];notice='';renderNow();if(!client())return;
- if(cache[id]&&Date.now()-cache[id].at<300000){series=cache[id].series;news=cache[id].news;renderNow();return}
- busy=true;
+ const ticket=++selectionToken;
+ selected=id;
+ const cached=cache[id];
+ if(cached&&Date.now()-cached.at<300000){
+  series=cached.series;news=cached.news;notice='';busy=false;renderNow();return;
+ }
+ series=null;news=[];notice='';busy=true;renderNow();
+ if(!client()){busy=false;renderNow();return}
  try{
   const results=await Promise.allSettled([client().functions.invoke('finanzpilot-stock-lookup',{body:{action:'history',symbol:id}}),client().functions.invoke('finanzpilot-stock-lookup',{body:{action:'news',symbol:id}})]);
-  if(selected!==id)return;
-  const [h,n]=results;const errs=[];
+  if(ticket!==selectionToken||selected!==id)return;
+  const [h,n]=results,errs=[];
   if(h.status==='fulfilled'&&!h.value.error&&!h.value.data?.error)series=h.value.data;else errs.push('Historischer Kurs nicht abrufbar');
   if(n.status==='fulfilled'&&!n.value.error&&!n.value.data?.error)news=n.value.data?.news||[];else errs.push('Nachrichten derzeit nicht verfügbar');
   cache[id]={at:Date.now(),series,news};notice=errs.join(' · ');
- }catch(e){notice='Kurs-/Newsabruf fehlgeschlagen: '+String(e.message||e)}
- finally{busy=false;renderNow()}
+ }catch(e){if(ticket===selectionToken)notice='Kurs-/Newsabruf fehlgeschlagen: '+String(e.message||e)}
+ finally{if(ticket===selectionToken){busy=false;renderNow()}}
 }
 function open(symbol){
- selected=String(symbol||'').toUpperCase();series=null;news=[];notice='';
- window.FinanzPilotNavigation?.route('marketwatch');load();return true;
+ const next=String(symbol||'').toUpperCase();if(!/^[A-Z0-9][A-Z0-9.\-]{0,23}$/.test(next))return false;
+ const here=typeof state!=='undefined'&&state.view==='marketwatch';
+ if(selected!==next){selected=next;series=null;news=[];notice=''}
+ // Navigation already triggers load(). Do not launch a second competing request.
+ if(here)load();else window.FinanzPilotNavigation?.route('marketwatch');
+ return true;
 }
+
 const url=s=>{try{const u=new URL(String(s));return u.protocol==='https:'?u.href:null}catch{return null}};
 function render(){
  if(!user())return '<div class="fp-mw"><h1>Meine Aktien-Watchlist</h1><p>Zur persönlichen Watchlist bitte anmelden.</p><button class="btn" data-mw-login>Anmelden</button></div>';
