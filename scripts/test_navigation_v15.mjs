@@ -9,17 +9,17 @@ const research=fs.readFileSync('research.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const current=JSON.parse(fs.readFileSync('version.json','utf8'));
 const updater=fs.readFileSync('updates.js','utf8');
-assert.equal(current.version,24);
-assert.equal(manifest.start_url,'./?v=24');
+assert.equal(current.version,25);
+assert.equal(manifest.start_url,'./?v=25');
 assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
-assert(html.includes('ux-v15.js?v=23'));
+assert(html.includes('ux-v15.js?v=25'));
 assert(html.includes('ux-v15.css?v=18'));
-assert(html.includes('app.js?v=23'));
+assert(html.includes('app.js?v=25'));
 assert(html.includes('research.js?v=18'));
-assert(html.includes('updates.js?v=24'));
+assert(html.includes('updates.js?v=25'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
@@ -45,7 +45,7 @@ const document={
  body:{classList:{add(){},remove(){}}}
 };
 const scrolls=[];const sent=[];const w={scrollY:0,scrollTo(...args){scrolls.push(args)},dispatchEvent(ev){sent.push(ev.type)},addEventListener(){},FinanzPilotLab:null};
-const location={hash:'',pathname:'/finanzpilot/',search:'?v=24'};
+const location={hash:'',pathname:'/finanzpilot/',search:'?v=25'};
 const history={replaceState:(_,__,url)=>{location.hash=url.includes('#')?'#'+url.split('#')[1]:''}};
 const context=vm.createContext({window:w,document,localStorage:{getItem:k=>memory[k]??null,setItem:(k,v)=>memory[k]=v},state,chooseView:v=>{state.view=v},
  MutationObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),history,location,URLSearchParams,console,Date,JSON,
@@ -58,7 +58,7 @@ assert.deepEqual([...['home','learn','markets','research','progress'].filter(x=>
 assert.equal(nav.renderHub('home'),'');
 const groups={
  learn:['learnpath','concepts','transfer','training','skills','glossary','foundations'],
- markets:['marketoverview','academymarket'],
+ markets:['marketoverview','dailyreview','academymarket'],
  research:['researchcatalog','investmentcommittee','theses','academy'],
  progress:['learningstats','career','inventory']
 };
@@ -113,8 +113,8 @@ assert(app.includes("state.view==='learningstats'?window.FinanzPilotLab.renderPr
 assert(app.includes("state.view==='researchcatalog'&&window.FinanzPilotResearch"));
 assert(research.includes("state.view='researchcatalog'"));
 
-let serverVersion=24,replaced=null,syncCalls=0;
-const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=24#view=training',hash:'#view=training',
+let serverVersion=25,replaced=null,syncCalls=0;
+const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=25#view=training',hash:'#view=training',
  replace:url=>{replaced=url}};
 const updaterWindow={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateContext=vm.createContext({window:updaterWindow,document:{readyState:'loading',addEventListener(){}},
@@ -123,8 +123,8 @@ const updateContext=vm.createContext({window:updaterWindow,document:{readyState:
 vm.runInContext(updater,updateContext,{filename:'updates.js'});
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(replaced,null);
-serverVersion=25;
+serverVersion=26;
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
-assert(replaced.includes('?v=25#view=training'));
-console.log('Version 24 tests passed: Start preserved; four tab list overviews, all subroutes, contextual back, separate equity research and Home Screen icon.');
+assert(replaced.includes('?v=26#view=training'));
+console.log('Version 25 tests passed: Start preserved; four tab list overviews, all subroutes, contextual back, separate equity research and Home Screen icon.');
