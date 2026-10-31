@@ -19,7 +19,7 @@
       "minSkills": 1,
       "description": "Du kennst die ersten Zusammenhänge",
       "perks": [
-        "Neue Skillzweige erkunden"
+        "Freischaltbar: Margen-Scanner mit Bilanz-Skill"
       ]
     },
     {
@@ -28,7 +28,7 @@
       "minSkills": 3,
       "description": "Du liest die ersten Finanzdaten",
       "perks": [
-        "Mehrstufige Firmenanalysen"
+        "Freischaltbar: Auftragslabor nach AIXTRON-Meisterprüfung"
       ]
     },
     {
@@ -37,7 +37,7 @@
       "minSkills": 5,
       "description": "Du prüfst Zahlen kritisch",
       "perks": [
-        "Research-Werkzeuge freischalten"
+        "Freischaltbar: Sicherheitsmargen-Werkstatt mit Cashflow- und Gewinnkompetenz"
       ]
     },
     {
@@ -46,7 +46,7 @@
       "minSkills": 7,
       "description": "Du verbindest Bewertung und Geschäftsmodell",
       "perks": [
-        "Spezialisierte Prüfungen"
+        "Freischaltbar: Portfolio-Stresstest mit Risiko-Skill"
       ]
     },
     {
@@ -55,7 +55,7 @@
       "minSkills": 10,
       "description": "Du verstehst Risiko und Bewertungsunsicherheit",
       "perks": [
-        "Erweiterte Szenariovergleiche"
+        "Freischaltbar: DCF-Szenarioarchiv mit Bewertungs-Skill"
       ]
     },
     {
@@ -64,7 +64,7 @@
       "minSkills": 12,
       "description": "Du entwickelst prüfbare Investmentthesen",
       "perks": [
-        "Meisterschafts-Dossiers"
+        "Zugang zur Peer-Bewertungsprüfung nach Skillnachweis"
       ]
     },
     {
@@ -73,7 +73,7 @@
       "minSkills": 13,
       "description": "Alle grundlegenden Skillzweige abgeschlossen",
       "perks": [
-        "Abgeschlossener Wissensbaum der ersten Generation"
+        "Zugang zum Investment-Ausschuss und Szenario-Kristall"
       ]
     }
   ],
@@ -140,6 +140,31 @@
       "example": "Originalbericht + explizite Prognoseannahmen",
       "action": "dcf",
       "minRank": 5
+    },
+    {
+      "id": "peer",
+      "title": "Peer-Bewertungsprüfung",
+      "category": "Professionelle Vergleichsbewertung",
+      "required": [
+        "valuations",
+        "catalysts"
+      ],
+      "minRank": 6,
+      "description": "EV/EBIT berechnen und eine eigene Vergleichsmultiple kritisch testen",
+      "example": "Marktpreis · Aktienzahl · Nettoverschuldung · EBIT",
+      "action": "peer"
+    },
+    {
+      "id": "committee",
+      "title": "Investment-Ausschuss",
+      "category": "Expertenbewertung",
+      "required": [
+        "master"
+      ],
+      "minRank": 7,
+      "description": "Drei begründete Kursziel-Szenarien mit eigenen Wahrscheinlichkeiten gewichten",
+      "example": "Bear · Base · Bull · Wahrscheinlichkeiten",
+      "action": "committee"
     }
   ],
   "collectibles": [
