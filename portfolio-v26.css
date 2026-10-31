@@ -52,3 +52,17 @@
 .fp-depot-fineprint{font-size:11px!important;color:#a3bac2!important;line-height:1.8!important}
 @media(max-width:750px){.fp-depot-wallets{grid-template-columns:1fr}.fp-depot-wallet,.fp-depot-panel{padding:16px}.fp-depot-position{grid-template-columns:1fr 0.85fr 1fr;gap:6px}.fp-depot-position b{font-size:12px}.fp-depot-position small{font-size:10px}}
 @media(max-width:420px){.fp-depot-position{grid-template-columns:1fr 1fr}.fp-depot-position-value{grid-column:1/-1;text-align:left;flex-direction:row!important;justify-content:space-between}.fp-depot-order-grid{grid-template-columns:1fr}}
+
+/* v27 – international stock discovery and private watchlist */
+.fp-depot-search-form{display:flex;align-items:stretch;gap:10px;margin:0 0 15px}
+.fp-depot-search-form input{flex:1;min-width:0;font:inherit;font-size:15px;background:#0c2533;border:1px solid #456977;color:#e5f8ec;border-radius:11px;padding:13px}
+.fp-depot-search-form input:focus{outline:2px solid #93eac1;outline-offset:2px}
+.fp-depot-search-results{display:flex;flex-direction:column;border-top:1px solid #31525e}
+.fp-depot-search-item{display:flex;align-items:center;gap:10px;border-bottom:1px solid #31525e;padding:12px 1px;flex-wrap:wrap}
+.fp-depot-search-item>span{display:flex;flex:1;min-width:180px;flex-direction:column;gap:5px}
+.fp-depot-search-item>span b{font-size:13px;color:#ebf6eb}
+.fp-depot-search-item>span small{font-size:11px;color:#aac9cd;overflow-wrap:anywhere}
+.fp-depot-search-item .btn{font-size:12px;white-space:nowrap}
+.fp-depot-search>.btn{margin-bottom:15px}
+.fp-depot-search .fp-depot-warning{margin-top:12px}
+@media(max-width:640px){.fp-depot-search-form{flex-direction:column}.fp-depot-search-item{gap:8px}.fp-depot-search-item>span{flex-basis:100%}.fp-depot-search-item .btn{flex:1}}
