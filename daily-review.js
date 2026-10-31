@@ -75,7 +75,7 @@
   active=null;await refresh();return row;
  }
  function useMarketOpinion(t,txt){
-  const market=taskList().find(x=>x.kind==='market'&&(x.date===t?.date||x.title===t?.title))||taskList().find(x=>x.kind==='market');
+  const market=taskList().find(x=>x.kind==='market'&&x.date===t?.date);
   if(!market)return false;
   remember(market.id,txt);active=market.id;
   if(window.FinanzPilotNavigation?.route)window.FinanzPilotNavigation.route('dailyreview');
