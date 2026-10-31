@@ -102,7 +102,7 @@
       "title": "Operative Margen",
       "subtitle": "EBITDA, EBIT und Nachhaltigkeit",
       "order": 2,
-      "minutes": 14,
+      "minutes": 16,
       "prerequisite": "guv",
       "steps": [
         {
@@ -140,7 +140,9 @@
           "answer": 10,
           "tolerance": 0.11,
           "method": "EBIT-Marge = EBIT/Umsatz. Nachhaltigkeit und Investitionsbedarf immer separat beurteilen.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Begründe, warum eine höhere operative Marge trotz gleicher Umsätze noch nichts über verfügbare Liquidität sagt. Welche Kosten und Investitionen fehlen?"
         },
         {
           "type": "multi",
@@ -224,7 +226,9 @@
           "answer": 1.5,
           "tolerance": 0.11,
           "method": "Current Ratio > 1 ist kein Ersatz für eine Cashflow- und Forderungsqualitätsprüfung.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre den Unterschied zwischen einem Liquiditätsverhältnis und tatsächlich verfügbarem Bargeld. Welche Forderungen oder Vorräte könnten problematisch sein?"
         },
         {
           "type": "multi",
@@ -270,7 +274,7 @@
       "title": "Working Capital",
       "subtitle": "Warum Wachstum Geld bindet",
       "order": 4,
-      "minutes": 12,
+      "minutes": 16,
       "prerequisite": "bilanz",
       "steps": [
         {
@@ -316,7 +320,9 @@
           "answer": 85,
           "tolerance": 0.11,
           "method": "Steigendes Working Capital ist ein möglicher Wachstumsbedarf, aber auch ein Warnsignal.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Begründe, warum Lageraufbau und offene Kundenrechnungen die Liquidität belasten können, obwohl der Gewinn positiv ist."
         },
         {
           "type": "multi",
@@ -362,7 +368,7 @@
       "title": "Free Cashflow",
       "subtitle": "Operativer Cashflow abzüglich Investitionen",
       "order": 5,
-      "minutes": 14,
+      "minutes": 16,
       "prerequisite": "working",
       "steps": [
         {
@@ -404,7 +410,9 @@
           "answer": 15,
           "tolerance": 0.11,
           "method": "FCF ist nicht das EBITDA und auch keine garantierte Dividende.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Warum kann ein Unternehmen hohen operativen Gewinn haben und trotzdem wenig freien Cashflow (FCF) erwirtschaften? Trenne Investitionen von Abschreibungen."
         },
         {
           "type": "multi",
@@ -488,7 +496,9 @@
           "answer": 12.5,
           "tolerance": 0.11,
           "method": "ROIC = NOPAT/durchschnittlich investiertes Kapital; relevant ist auch der ROIC-WACC-Abstand.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Wann schafft eine Rendite auf investiertes Kapital (ROIC) wirklich Wert? Stelle die Verbindung zu den Kapitalkosten (WACC) her."
         },
         {
           "type": "multi",
@@ -534,7 +544,7 @@
       "title": "Kapitalkosten verstehen",
       "subtitle": "WACC und Abzinsung",
       "order": 7,
-      "minutes": 12,
+      "minutes": 16,
       "prerequisite": "roic",
       "steps": [
         {
@@ -576,7 +586,9 @@
           "answer": 8.1,
           "tolerance": 0.11,
           "method": "WACC ist ein Schätzwert und sollte in Szenarien variiert werden.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Warum wird die Fremdkapitalverzinsung in der WACC-Rechnung nach Steuern berücksichtigt? Wann kann ein sinkender rechnerischer WACC täuschen?"
         },
         {
           "type": "multi",
@@ -622,7 +634,7 @@
       "title": "EV und Equity Value",
       "subtitle": "Vom gesamten Geschäft zum Aktienkurs",
       "order": 8,
-      "minutes": 14,
+      "minutes": 16,
       "prerequisite": "wacc",
       "steps": [
         {
@@ -664,7 +676,9 @@
           "answer": 11,
           "tolerance": 0.11,
           "method": "Enterprise Value ist nicht der Aktienwert; Nettoschulden abziehen, dann durch Anzahl Aktien teilen.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre den Unterschied zwischen Enterprise Value (EV) und Eigenkapitalwert (Equity Value). Wie wirken Nettoschulden und zusätzliche Aktien?"
         },
         {
           "type": "multi",
@@ -748,7 +762,9 @@
           "answer": 11.43,
           "tolerance": 0.11,
           "method": "Multiples sind nur vergleichbar, wenn Wachstum, Schulden, Bilanzierung und Cashflows ähnlich sind.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Warum kann ein günstiges EV/EBIT-Multiple bei zyklisch überhöhten Gewinnen täuschen? Welche normalisierte Größe würdest du verwenden?"
         },
         {
           "type": "multi",
@@ -794,7 +810,7 @@
       "title": "Szenariomodell als Meisterklasse",
       "subtitle": "Vom Geschäftsmodell zum begründeten Kursziel",
       "order": 10,
-      "minutes": 12,
+      "minutes": 16,
       "prerequisite": "multiples",
       "steps": [
         {
@@ -840,7 +856,9 @@
           "answer": 10.9,
           "tolerance": 0.11,
           "method": "Ein gutes Research-Urteil dokumentiert Unsicherheiten, Gegenargumente und den aktuellen Preis.",
-          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt."
+          "hint": "Nutze die Zahlen aus der Erklärung. Dezimalkomma und negative Werte sind erlaubt. Nutze die Ergebniszahl als Ausgangspunkt, um die Aussagekraft und Grenzen der Kennzahl zu erklären.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre, welche Zukunftsannahme den gewichteten Unternehmenswert besonders beeinflusst und weshalb Wahrscheinlichkeiten keine objektive Gewissheit bedeuten."
         },
         {
           "type": "multi",
