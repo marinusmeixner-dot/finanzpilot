@@ -36,3 +36,5 @@ jobs:
         run: node scripts/test_theses_v23.mjs
       - name: Verify daily private review queue, opt-in consent, feedback history and task freshness
         run: node scripts/test_daily_review_v25.mjs
+      - name: Validate private virtual Depot, EUR/USD trading safety and navigation
+        run: node scripts/test_portfolio_v26.mjs
