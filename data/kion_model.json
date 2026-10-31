@@ -1,0 +1,371 @@
+{
+  "schema_version": 1,
+  "asof": "2026-10-31",
+  "company": "KION GROUP AG",
+  "ticker": "KGX",
+  "symbol": "XETR:KGX",
+  "isin": "DE000KGX8881",
+  "currency": "EUR",
+  "quote": {
+    "price": 33.27,
+    "asof": "2026-10-30",
+    "venue": "Xetra",
+    "source": "https://stockanalysis.com/quote/etr/KGX/history/"
+  },
+  "source_audit": [
+    {
+      "type": "company",
+      "title": "KION Konzern Q3/9M 2026",
+      "date": "2026-10-29",
+      "url": "https://reports.kiongroup.com/2026/ir/3/key-figures.html"
+    },
+    {
+      "type": "company",
+      "title": "KION FY2026 aktualisierte Prognose",
+      "date": "2026-10-29",
+      "url": "https://reports.kiongroup.com/2026/ir/3/business-performance/outlook.html"
+    },
+    {
+      "type": "company",
+      "title": "KION FCF-Definition und Finanzierungsrechnung",
+      "date": "2026-10-29",
+      "url": "https://reports.kiongroup.com/2026/ir/3/business-performance/financial-position-and-financial-performance/financial-position-of-the-group.html"
+    },
+    {
+      "type": "company",
+      "title": "KION Kapitalstruktur / 131,1 Mio. Aktien",
+      "date": "2026-10-29",
+      "url": "https://reports.kiongroup.com/2026/ir/3/financial-information/income-statement.html"
+    },
+    {
+      "type": "price",
+      "title": "KGX Xetra Schlusskurs 30.10.2026",
+      "date": "2026-10-30",
+      "url": "https://stockanalysis.com/quote/etr/KGX/history/"
+    }
+  ],
+  "reported": {
+    "ytd_revenue": 8522,
+    "prior_ytd_revenue": 8200.4,
+    "ytd_ebit": 632.5,
+    "prior_ytd_ebit": 575.4,
+    "ytd_fcf": 121.1,
+    "prior_ytd_fcf": 392.8,
+    "orders": 8445,
+    "prior_orders": 8882,
+    "ias_revenue": 2519,
+    "ias_revenue_prior": 2154,
+    "its_revenue": 6034,
+    "its_revenue_prior": 6079,
+    "adjusted_ebit_margin": 7.4,
+    "shares_m": 131.1,
+    "net_debt_m": 1196,
+    "net_debt_dec25_m": 584,
+    "fy2025_revenue": 11297.2,
+    "fy2025_ebit_adj": 788.6,
+    "fy2025_fcf": 709.5
+  },
+  "guidance": {
+    "revenue_m": [
+      11450,
+      11750
+    ],
+    "adjusted_ebit_m": [
+      815,
+      875
+    ],
+    "fcf_m": [
+      400,
+      500
+    ],
+    "previous_ebit_m": [
+      880,
+      980
+    ],
+    "previous_fcf_m": [
+      420,
+      540
+    ]
+  },
+  "model": {
+    "type": "FCFF DCF / Illustratives Research-Modell",
+    "base_revenue_2026": 11600,
+    "years": [
+      2027,
+      2028,
+      2029,
+      2030,
+      2031
+    ],
+    "tax_rate": 30,
+    "capital_structure": {
+      "net_debt_m": 1196,
+      "shares_m": 131.1
+    },
+    "formula": "FCFF = EBIT × (1 – Steuersatz) + Abschreibungen – Investitionen – Working-Capital-Aufbau/sonstige Cash-Abflüsse. EV = Σ FCFF_t/(1+WACC)^t + FCFF_2031×(1+g)/(WACC−g)/(1+WACC)^5. Eigenkapitalwert = EV – Nettoverschuldung; fairer Wert = Eigenkapitalwert/131,1 Mio. Aktien.",
+    "warning": "Das veröffentlichte KION-Free-Cashflow-Maß wurde 2026 wegen Leasing-/Mietfinanzierung erweitert. Modell-FCFF ist eine eigenständige Schätzung und nicht das berichtete KION-FCF. D&A/CapEx/WC sind konservativ angenommene Modelltreiber, keine veröffentlichte 2027–2031 Guidance. Leasing-/Finanzierungs-Bridge ist modellkritisch und für einen endgültigen Research-Befund weiter zu normalisieren.",
+    "scenarios": [
+      {
+        "id": "bear",
+        "name": "Negativ",
+        "wacc": 11.5,
+        "g": 1,
+        "revenue_growth": [
+          0,
+          1,
+          1.5,
+          1.5,
+          2
+        ],
+        "ebit_margins": [
+          6.7,
+          6.8,
+          7,
+          7,
+          7.2
+        ],
+        "depreciation": [
+          600,
+          610,
+          620,
+          630,
+          640
+        ],
+        "capex": [
+          500,
+          510,
+          520,
+          530,
+          540
+        ],
+        "working_capital_other": [
+          250,
+          230,
+          220,
+          220,
+          220
+        ],
+        "reason": "Schwache Staplernachfrage, Preisdruck, langsame IAS-Verbesserung und hohe Kapitalkosten.",
+        "check": {
+          "rows": [
+            {
+              "year": 2027,
+              "revenue": 11600,
+              "ebit": 777.2,
+              "fcff": 394.04
+            },
+            {
+              "year": 2028,
+              "revenue": 11716,
+              "ebit": 796.688,
+              "fcff": 427.682
+            },
+            {
+              "year": 2029,
+              "revenue": 11891.74,
+              "ebit": 832.422,
+              "fcff": 462.695
+            },
+            {
+              "year": 2030,
+              "revenue": 12070.116,
+              "ebit": 844.908,
+              "fcff": 471.436
+            },
+            {
+              "year": 2031,
+              "revenue": 12311.518,
+              "ebit": 886.429,
+              "fcff": 500.501
+            }
+          ],
+          "ev": 4420.23,
+          "equity": 3224.23,
+          "target": 24.59,
+          "changePct": -26.1,
+          "terminalSharePct": 63.2
+        }
+      },
+      {
+        "id": "base",
+        "name": "Basis",
+        "wacc": 10.5,
+        "g": 2,
+        "revenue_growth": [
+          3,
+          3.5,
+          3.5,
+          3,
+          3
+        ],
+        "ebit_margins": [
+          7.6,
+          8.1,
+          8.6,
+          9,
+          9.3
+        ],
+        "depreciation": [
+          640,
+          660,
+          680,
+          700,
+          720
+        ],
+        "capex": [
+          460,
+          475,
+          490,
+          505,
+          520
+        ],
+        "working_capital_other": [
+          235,
+          235,
+          235,
+          235,
+          235
+        ],
+        "reason": "Logistikautomation wächst, Stapler stabilisieren sich und die Marge erholt sich moderat. Die 10%-Marge wird 2031 noch nicht erreicht.",
+        "check": {
+          "rows": [
+            {
+              "year": 2027,
+              "revenue": 11948,
+              "ebit": 908.048,
+              "fcff": 580.634
+            },
+            {
+              "year": 2028,
+              "revenue": 12366.18,
+              "ebit": 1001.661,
+              "fcff": 651.162
+            },
+            {
+              "year": 2029,
+              "revenue": 12798.996,
+              "ebit": 1100.714,
+              "fcff": 725.5
+            },
+            {
+              "year": 2030,
+              "revenue": 13182.966,
+              "ebit": 1186.467,
+              "fcff": 790.527
+            },
+            {
+              "year": 2031,
+              "revenue": 13578.455,
+              "ebit": 1262.796,
+              "fcff": 848.957
+            }
+          ],
+          "ev": 8825.82,
+          "equity": 7629.82,
+          "target": 58.2,
+          "changePct": 74.9,
+          "terminalSharePct": 70.1
+        }
+      },
+      {
+        "id": "bull",
+        "name": "Positiv",
+        "wacc": 9,
+        "g": 2.5,
+        "revenue_growth": [
+          5,
+          5,
+          4.5,
+          4,
+          3.5
+        ],
+        "ebit_margins": [
+          8.2,
+          8.9,
+          9.6,
+          10.3,
+          10.6
+        ],
+        "depreciation": [
+          660,
+          680,
+          705,
+          730,
+          755
+        ],
+        "capex": [
+          485,
+          505,
+          525,
+          545,
+          565
+        ],
+        "working_capital_other": [
+          215,
+          220,
+          225,
+          235,
+          245
+        ],
+        "reason": "Starke Logistikautomation, stabilisierter Staplerabsatz und verbesserte Kapitalrendite erlauben wieder zweistellige EBIT-Margen.",
+        "check": {
+          "rows": [
+            {
+              "year": 2027,
+              "revenue": 12180,
+              "ebit": 998.76,
+              "fcff": 659.132
+            },
+            {
+              "year": 2028,
+              "revenue": 12789,
+              "ebit": 1138.221,
+              "fcff": 751.755
+            },
+            {
+              "year": 2029,
+              "revenue": 13364.505,
+              "ebit": 1282.992,
+              "fcff": 853.095
+            },
+            {
+              "year": 2030,
+              "revenue": 13899.085,
+              "ebit": 1431.606,
+              "fcff": 952.124
+            },
+            {
+              "year": 2031,
+              "revenue": 14385.553,
+              "ebit": 1524.869,
+              "fcff": 1012.408
+            }
+          ],
+          "ev": 13604.78,
+          "equity": 12408.78,
+          "target": 94.65,
+          "changePct": 184.5,
+          "terminalSharePct": 76.3
+        }
+      }
+    ],
+    "valuation_date": "2026-10-30"
+  },
+  "catalysts": [
+    "29.10.2026: neun Monate 2026 veröffentlicht; höhere Verschuldung und niedrigerer Cashflow prüfen",
+    "04.03.2027: Jahresbericht 2026 (laut Börsenkalender)",
+    "Auftragseingang ITS: stabilisiert sich die Nachfrage nach Staplern?",
+    "IAS: werden Umsatzwachstum und Auftragsbestand in freien Cashflow umgesetzt?"
+  ],
+  "falsifiers": [
+    "Die Bestellungen im ITS-Geschäft sinken über weitere Quartale stärker als die Erlöse.",
+    "Die IAS-Margen verbessern sich trotz steigender Automatisierungsnachfrage nicht.",
+    "2027 lässt sich der Konzern-FCF auch nach Bereinigung der Leasingfinanzierung nicht normalisieren.",
+    "Nettoverschuldung steigt strukturell stärker als operative Geldzuflüsse."
+  ],
+  "confidence": {
+    "reported": "hoch (Originalberichte, Quellen datiert)",
+    "model": "mittel bis niedrig (fünfjährige Annahmen, Leasing-FCF-Risiko)",
+    "actionability": "Analytische Watchlist, noch kein unabhängig validiertes Handelsurteil"
+  }
+}
