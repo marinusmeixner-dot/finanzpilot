@@ -172,13 +172,19 @@ window.FinanzPilotConcepts=(()=>{
    const idx=Number(x.dataset.trainingOption),act=data.active,step=module(act.id).steps[act.mode==='review'?act.step:session(act.id).step];
    let draft=getDraft();if(!Array.isArray(draft))draft=[];
    draft=step.type==='decision'?[idx]:draft.includes(idx)?draft.filter(n=>n!==idx):[...draft,idx];
-   updateDraft(draft);window.render?.();
+   updateDraft(draft);
+   // Nur die Auswahl markieren, nicht die gesamte Lernseite und ihre Scrollposition neu aufbauen.
+   root.querySelectorAll('[data-training-option]').forEach(btn=>{
+    const on=draft.includes(Number(btn.dataset.trainingOption));
+    btn.classList.toggle('selected',on);btn.setAttribute('aria-pressed',String(on));
+    const mark=btn.querySelector('span');if(mark)mark.textContent=step.type==='multi'?(on?'☑':'□'):(on?'◉':'◯');
+   });
   }));
   root.querySelectorAll('[data-training-move]').forEach(x=>x.addEventListener('click',()=>{
    const [index,delta]=x.dataset.trainingMove.split(':').map(Number),order=[...getDraft()],end=index+delta;
    if(end<0||end>=order.length)return;
    [order[index],order[end]]=[order[end],order[index]];
-   updateDraft(order);window.render?.();
+   updateDraft(order);const scrollY=window.scrollY;window.render?.();requestAnimationFrame(()=>window.scrollTo({top:scrollY,behavior:'instant'}));
   }));
   root.querySelector('#fp-training-number-input')?.addEventListener('input',ev=>updateDraft(ev.target.value));
   root.querySelector('#fp-training-reason')?.addEventListener('input',ev=>{const a=data.active;if(!a)return;const idx=a.mode==='review'?a.step:session(a.id).step;if(a.mode==='review')a.reasoning=ev.target.value;else session(a.id).drafts[idx+':reasoning']=ev.target.value;persist(false)});
