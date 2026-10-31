@@ -273,3 +273,29 @@ Der Nutzer hat am 31.10.2026 nach eigenem Google-OAuth-Setup die **schrittweise 
 
 ### Release-Regeln für die tägliche Redaktion
 Bei reinen Content-Änderungen nur Daten aktualisieren; die bestehenden Navigationsskripte nicht zurücksetzen. **Wenn Laufzeit-HTML/JS/CSS geändert werden**, zuerst GitHub Regressionen prüfen, `version.json.version` erhöhen, in `updates.js` auch `CURRENT_VERSION` anpassen, geänderte CSS/JS-Asset-Queryparameter in `index.html` cachebrechend erhöhen und `manifest.webmanifest.start_url` passend aktualisieren. Reine Datenmeldungen mit `fetch(cache:no-store)` benötigen keinen Versionssprung. Keine Cloud-Passwörter/Secrets in GitHub schreiben.
+
+## Version 16 – vergrößerter Skillbaum und strukturierte Begriffs-Akademie
+
+**31.10.2026: auf GitHub main implementiert und statisch/funktional in JS-Mocks geprüft; echter iPhone-PWA-Test weiterhin ausstehend.**
+
+### Neues Curriculum und Fortschritt
+- Die zehn eigens aufgebauten Lernkurse in `data/terminology.json` heißen `guv`, `margen`, `bilanz`, `working`, `fcf`, `roic`, `wacc`, `enterprise`, `multiples`, `szenarien`. Ein durchgehendes *fiktives* Unternehmen Nordwerk AG liefert nachvollziehbare und zusammenpassende Kennzahlen. Keine echten oder aktuellen Kursdaten vortäuschen.
+- Je vier Schritte: ausführliches Konzept + Einordnung samt einfachen Datenbalkendiagrammen, eigene Rechnung, kritische Mehrfachauswahl mit genau zwei richtigen Aussagen, begründete analytische Entscheidung. 40 Schritte, davon 30 bewertete Prüfungen. Hinter jeder Prüfung steht eine Erklärung, keine kindischen Rätsel. Die nächste Kursstufe wird nach vollständig bestandenen drei Prüfungen freigegeben; zuvor bestandenes bleibt erhalten.
+- `concepts.js` ist eine unabhängige Instanz des bewährten Lern-Engines mit eigenem Speicherkey `finanzpilot_concepts_v1` und verzögerten Wiederholungen. In `sync.js` wird das Konto-Backup um diesen Key ergänzt und mit `mergeConcepts()` korrekt pro beantworteter Aufgabe zusammengeführt, ohne bestehende richtige Lösungen zu verlieren. Keine virtuelle Währung/Extra-Items durch diese Kurse, nur evidenzbasierte Skills.
+- Eigenständiges älteres `glossary.js` bleibt das Lexikon zum Nachschlagen. Neue Akademie ist als `concepts` unter „Lernen → Bereiche“ und als deutlich sichtbarer Startpunkt im Lernbereich zu finden. Das Training bestehender Unternehmenskursen bleibt unabhängig.
+
+### Erweiterte Skillwelt und Zoom
+- `skill-world.js` ersetzt **nur die Darstellung und Bindung** von `FinanzPilotSkills.render/bind`. Die bewährte Funktion `FinanzPilotSkills.levels()` (genau 13 Kernskills) wird als Vertrags-API unverändert beibehalten: bisherige Analystenkarriere, ihre Schwellen und die 7 Werkzeuge dürfen nicht plötzlich auf 53 Knoten umgerechnet werden.
+- 53 sichtbare Skillknoten, 66 Abhängigkeitsverbindungen: 13 bisherige Kernskills, 30 zusätzliche Begriffs-Teilkompetenzen (10 Kurse × Entdecken/Anwenden/Meistern) und 10 vertiefende Expertenabzeichen. Status aus tatsächlichen gespeicherten Antworten und bestandenen Lernstufen abgeleitet – keine bloßen Klickbelohnungen. Neues `fullLevels()` gibt die gesamte Karte zurück.
+- Mobile Bedienung: ein- und zweidimensionales Scrollen, Pinch-to-Zoom über Safari-Touchevents, Zoom +/−/Übersicht, Tastaturbefehle und Minimap mit klickbarer Zentrierung. Zoom/Position im Gerätekey `finanzpilot_skillmap_v2` lokal gespeichert; Cloud-Konto sichert weiterhin die Lernstände, nicht pixelgenaue UI-Ansichten.
+- `learning-v16.css` ist responsive; bestehenden Fünf-Tab-Aufbau nicht wieder verwässern. Andere Haupttabs werden nur über ausdrücklich geklickte Lernbereich-Links geöffnet.
+
+### Release und Kontrollen
+- `index.html` lädt `skill-world.js`, `concepts.js` und `learning-v16.css`; `app.js` hat den neuen `concepts`-Renderpfad, `ux-v15.js` ordnet ihn korrekt dem Haupttab Lernen zu.
+- `version.json` = 16, `updates.js` = 16, Webapp-Manifest Start-URL `?v=16`. Geänderte Asset-Dateien erhalten Cacheparameter.
+- `scripts/test_learning_v16.mjs` und die bestehenden Testskripte sind in GitHub Actions unter `quality.yml` angebunden. Manuell überprüft: JS-Syntax, 10 valide Module, 30 richtige Musterantworten ohne falsche positive Antworten, 53 Knoten, 66 Kanten, 13 unveränderte Career-Core-Knoten und relevante Integrationspfade. GitHub Actions-Lauf und echter Pinch/Google-Login auf iPhone sind noch nicht vollständig unabhängig bestätigt.
+
+### Weitere Ausbauschritte
+- Branch-übergreifende Meisterprojekte, längere dokumentierte Research-Cases, zusätzliches Diagramm-Feedback und Nutzer-Review für Prüfungen.
+- Später Belohnungsanimationen und Töne mit Ausschaltmöglichkeit, separate serverseitig gesicherte virtuelle Aktienorders und ein vollständiger Echtkurs-Datenlieferant.
+- Über mehrere Lernstufen hinweg keine triviale Ja/Nein-Klickerei; anspruchsvolle praktische Anwendung, Originalzahlen bei echten Firmencases und Quellenangabe bleiben Pflicht.
