@@ -21,6 +21,7 @@ for(let i=0;i<content.modules.length;i++){
 const memory={};
 const storage={getItem:k=>memory[k]||null,setItem:(k,v)=>memory[k]=v};
 const window={
+ addEventListener(){},dispatchEvent(){},
  FinanzPilotMath:{calculate(raw){
   const n=String(raw).trim().replace(',','.');
   if(!/^[+\-]?\d+(?:\.\d+)?$/.test(n))return NaN;
