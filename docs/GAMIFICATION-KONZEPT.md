@@ -221,3 +221,29 @@ Der Nutzer hat am 31.10.2026 nach eigenem Google-OAuth-Setup die **schrittweise 
 2. Eigenes **serverseitig gebuchtes Belohnungs-/Inventarsystem** entwerfen: pro einmaligem Ereignis (Kurs, Prüfung) eine idempotente Reward-ID, Transaktionen in Supabase mit RLS. Getrennte Forschungspunkte und virtuelle Depot-Euro; Umtausch nur mit klarer Bestätigung und atomischem Ledger.
 3. Animationen und Sounds erst nach sicheren Reward-Ereignissen anbinden, um Mehrfachbelohnungen und falsche Freischaltmeldungen zu vermeiden.
 4. Virtuelles Aktien-Depot erst nach belastbaren zeitgestempelten Kursen, serverseitiger Ordervalidierung und Cashflowbereinigter Performance.
+
+## Entwicklungsstand Version 14 – sicheres Inventar, Lernbelohnungen und virtuelle Euro
+
+**Stand 31.10.2026. Backend auf Supabase und App-Code auf GitHub veröffentlicht. Authentifizierter End-to-End-Test auf dem echten iPhone steht aus.**
+
+### Implementierte, durchdachte Economy-Stufe
+- Server-Schema `supabase/economy_v1.sql` mit Patch `supabase/economy_v1b_item_ids.sql`: `fp_economy_accounts` (Forschungspunkte/virtuelle Eurocent), `fp_verified_training` (einzeln bestätigte Aufgaben), `fp_reward_claims` (ein einmalig verdientes und optional verbrauchtes Item pro Modul), `fp_reward_perks` (dauerhafte Freischaltung), `fp_reward_ledger` (unveränderliche, eindeutige Buchungen).
+- RLS an allen fünf Tabellen, ausschließlich SELECT für `authenticated`, kein Browser-Direktwrite und kein anon-read. Drei kontrollierte RPCs `fp_submit_training_answer`, `fp_redeem_artifact`, `fp_purchase_reward` mit expliziter `auth.uid()`-Prüfung; `SECURITY DEFINER` wird ausschließlich für diese streng begrenzten validierenden Endpunkte verwendet. Der Security Advisor meldet zwei erwartete Warnungen über intentional aufrufbare authenticated/security-definer-RPCs; keine neuen ERROR-Befunde für die fünf Tabellen.
+- Trainingserfolg wird **nicht aufgrund ungesicherter localStorage-Punkte ausgezahlt**: die vier öffentlichen, festgelegten Antworten werden auch auf dem Server geprüft. Je Modul können nur vier unterschiedliche Schritte zählen und ein einzigartiges Buchungsereignis `mastery:<module>` schreibt höchstens einmal **100 Forschungspunkte + ein eigenes verbrauchbares Artefakt** gut.
+- Die drei anrechenbaren Module heißen `kion-nachfrage`, `aixtron-auftraege`, `alphabet-cloud`. Ein bereits abgeschlossener Kurs kann auf der Abschlussseite erneut serverseitig bestätigt werden (nur bei vorhandenen gespeicherten korrekten Antworten, sonst Aufgaben erneut lösen).
+- Jedes so entstandene Artefakt hat **genau eine irreversible Einlösung** mit expliziter Benutzer-Bestätigung: eine modulbezogene **interaktive Research-Lupe (Tool)**, eine modulbezogene **dreistufige Spezial-Expedition (Lernpfad)** oder **150,00 € nicht auszahlbare virtuelle Depotliquidität**. Der ursprüngliche Gegenstand wird danach als verbraucht markiert. Besondere Kursurkunden in der Karriere sind getrennte dauerhafte Leistungsnachweise, keine zusätzlichen verbrauchbaren Items.
+- Neue Spezial-Expeditionsergebnisse in `finanzpilot_expedition_v1` im bestehenden Sync-Backup. Zwei zusätzliche rein kosmetische Forschungspunkt-Produkte: `theme:mint` (150 FP) und `theme:gold` (200 FP), ohne Echtgeld.
+- Einloggen erforderlich für Economy. Bei Logout leert die UI die Kontodaten, Themes und Items. Formulardaten und sensible Auth-Credentials werden nie in GitHub gespeichert.
+- Ledger-Schutz: Account-Row-Lock, einmalige `user_id,event_key`-Buchungen und eindeutige `user_id,module_id`-Ansprüche. Direkte HTTP-POSTs auf Tabellen verhindern die Privilegien/RLS, aber die quizbasierten Antworten sind bewusst öffentlich und damit für motiviertes Cheating kein kryptografischer Kompetenznachweis.
+- `economy.js` / `economy.css` / `sync.js` / `training.js` und Navigation v14 sind angeschlossen. Frei zugängliche Grundlagen- und Expertenkurse bleiben erhalten. Die neue Profil-Unterseite heißt **Inventar & Belohnungen**.
+- Tests: JS-Syntax, 4 Aufgaben je Modul, erneute Abgabe desselben Trainings erzeugt in simulierten Tests weder doppelte Coins noch ein zweites Item, anonymes RPC wird serverseitig abgewiesen, RLS-/GRANT-Schema und drei RPCs geprüft, GitHub CI um `scripts/test_economy.mjs` ergänzt.
+
+### Noch nicht umgesetzt
+- Kein aktiver virtueller Handel, kein Kauf/Verkauf realer Aktien für virtuelle Euro, keine Gutschriften aus Dividenden oder Kursgewinnen.
+- Keine automatischen Sound- und Rangaufstiegsanimationen, keine grafische Abenteuer-Weltkarte, keine KI-Review-Queue und keine umfangreiche Economy über die drei geprüften V12-Kurse hinaus.
+- Kein unabhängiger End-to-End-Test eines realen Google-Logins mit echtem Belohnungs-RPC, kein verifizierter GitHub-Pages-Browser-Test. Bestehende Nutzer können ihre Arbeiten zunächst weiter lokal sichern.
+
+### Nächste Release-Qualitätsstufe
+1. Google-Login auf iPhone, Kontowechsel, Offline-Status, Rewards-Replay, doppelte Käufe und die irreversible Entscheidung mit echtem Testkonto und starker Datenschutzkontrolle testen.
+2. Unaufdringliche, barrierefreie Belohnungs-/Beförderungsanimationen und klar abschaltbare kurze Töne als einzelne Release-Phase.
+3. Erst danach serverseitiges Depotjournal, belastbar datierte Börsenkurse und echte virtuelle Orderausführung.
