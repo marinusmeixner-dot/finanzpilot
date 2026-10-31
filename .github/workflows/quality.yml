@@ -32,3 +32,5 @@ jobs:
         run: node scripts/test_investment_committee_v21.mjs
       - name: Validate full 20-stage sourced Alphabet masterclass and research gating
         run: node scripts/test_equity_masterclass_v22.mjs
+      - name: Test private thesis journal, scenario feedback, timeline and account merge
+        run: node scripts/test_theses_v23.mjs
