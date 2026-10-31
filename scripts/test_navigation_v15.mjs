@@ -118,8 +118,8 @@ assert(app.includes("state.view==='marketoverview'?window.FinanzPilotLab.renderM
 assert(app.includes("state.view==='learningstats'?window.FinanzPilotLab.renderProgress()"));
 assert(app.includes("state.view==='researchcatalog'&&window.FinanzPilotResearch"));
 assert(app.includes("state.view==='depot'&&window.FinanzPilotPortfolio"));
-assert(html.includes('portfolio.js?v=26'));
-assert(html.includes('portfolio-v26.css?v=26'));
+assert(html.includes('portfolio.js?v=27'));
+assert(html.includes('portfolio-v26.css?v=27'));
 assert(research.includes("state.view='researchcatalog'"));
 
 let serverVersion=27,replaced=null,syncCalls=0;
