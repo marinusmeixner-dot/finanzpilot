@@ -70,3 +70,8 @@
 .fp-career-loading{border:1px solid #355768;background:#172d3c;border-radius:15px;padding:23px}
 @media(max-width:750px){.fp-career-stats{grid-template-columns:1fr 1fr}.fp-career-stats>button{grid-column:1/-1}.fp-career-awards{grid-template-columns:1fr}.fp-career-tool-form{grid-template-columns:1fr}.fp-career-levels{padding:17px}.fp-career-rank-top{gap:11px}.fp-career-rank-emblem{height:58px;width:58px;font-size:35px}.fp-career-stats>button{min-height:43px}}
 @media(prefers-reduced-motion:reduce){.fp-career-rank-emblem{box-shadow:none}}
+
+.fp-progress-career-actions{display:flex;flex-wrap:wrap;gap:8px}
+.fp-skill-career-link{display:inline-block;border:1px solid #4e8e7d;color:#c3f7df;background:#1f4c40;border-radius:10px;font-size:12px;font-weight:700;margin-left:7px;padding:9px 12px;cursor:pointer}
+.fp-skill-career-link:hover{background:#286052}
+.fp-skill-career-link:focus-visible{outline:2px solid #b7f8db;outline-offset:2px}
