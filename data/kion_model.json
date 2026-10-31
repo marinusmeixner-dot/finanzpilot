@@ -349,7 +349,32 @@
         }
       }
     ],
-    "valuation_date": "2026-10-30"
+    "valuation_date": "2026-10-30",
+    "crosscheck": {
+      "method": "EV / bereinigtes EBIT 2026 (unabhängige Plausibilitätsprüfung, keine validierte Peer-Multiple-Bewertung)",
+      "reported_guidance_ebit_midpoint_m": 845,
+      "spot_implied_enterprise_value_m": 5557.697,
+      "spot_multiple": 6.58,
+      "assumed_multiples": [
+        {
+          "ev_ebit": 6,
+          "price": 29.55
+        },
+        {
+          "ev_ebit": 8,
+          "price": 42.44
+        },
+        {
+          "ev_ebit": 10,
+          "price": 55.33
+        },
+        {
+          "ev_ebit": 12,
+          "price": 68.22
+        }
+      ],
+      "limitation": "Die Vielfachen sind willkürliche Rechen-Szenarien, keine durch Peers/Consensus belegte Multiple-Bandbreite. DCF-Basis 58,20 € entspricht rund 10,5x der 2026 EBIT-Guidance-Mitte. Jahres- und Zyklusunterschied, Finanzierungsbrücke und Lease-Claims prüfen."
+    }
   },
   "catalysts": [
     "29.10.2026: neun Monate 2026 veröffentlicht; höhere Verschuldung und niedrigerer Cashflow prüfen",
