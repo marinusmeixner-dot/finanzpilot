@@ -4,21 +4,41 @@
 const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const money=(v,c)=>new Intl.NumberFormat('de-DE',{style:'currency',currency:/^[A-Z]{3}$/.test(c||'')?c:'USD'}).format(Number(v)||0);
 const user=()=>window.FinanzPilotCloud?.user,client=()=>window.FinanzPilotCloud?.paperClient;
-let list=[],quotes=[],selected=null,series=null,news=[],busy=false,notice='',cache={},loading=false;
+let list=[],quotes=[],selected=null,series=null,news=[],editorial=[],busy=false,notice='',cache={},loading=false;
 const quote=s=>quotes.find(x=>x.symbol===s);
+async function loadEditorial(){
+ try{
+  const r=await fetch('./data/daily.json?t='+Date.now(),{cache:'no-store'});
+  if(!r.ok)return;
+  const d=await r.json();
+  editorial=Array.isArray(d.stories)?d.stories:[];
+ }catch{}
+}
+const relatedEditorial=code=>{
+ const ticker=String(code||'').toUpperCase(),company=String(quote(ticker)?.asset_name||'').toLowerCase();
+ const aliases={MSFT:['microsoft'],AAPL:['apple'],NVDA:['nvidia'],AMZN:['amazon','aws'],META:['meta platforms','facebook'],GOOGL:['alphabet','google'],GOOG:['alphabet','google'],SAP:['sap'],KION:['kion'],AIXTRON:['aixtron'],SIEMENS:['siemens'],ASML:['asml']};
+ const keys=[...(aliases[ticker]||[])].concat(company.length>=5?[company]:[]);
+ return editorial.filter(x=>{
+   if(Array.isArray(x.symbols)&&x.symbols.some(v=>String(v).toUpperCase()===ticker))return true;
+   const title=String(x.title||'').toLowerCase();
+   return keys.some(v=>title.includes(v));
+ }).slice(0,5);
+};
+
 const renderNow=()=>{if(typeof state!=='undefined'&&state.view==='marketwatch')window.render?.()};
 async function load(){
  if(!user()||!client()){list=[];quotes=[];selected=null;series=null;news=[];renderNow();return}
  if(loading)return;loading=true;const uid=user();
  try{
+  await loadEditorial();
   const {data,error}=await client().from('fp_paper_watchlist').select('symbol,created_at').eq('user_id',uid).order('created_at',{ascending:false}).limit(500);
   if(error)throw error;if(user()!==uid)return;list=data||[];
   if(!selected&&list.length)selected=list[0].symbol;
   const symbols=[...new Set([...list.map(x=>x.symbol),...(selected?[selected]:[])])];
   if(symbols.length){const q=await client().from('fp_paper_quotes').select('symbol,asset_name,price,currency,quote_date,source').in('symbol',symbols);if(q.error)throw q.error;quotes=q.data||[]}else quotes=[];
-  notice='';renderNow();if(selected)await select(selected);
+  notice='';if(selected)await select(selected);
  }catch(e){notice='Watchlist konnte nicht geladen werden: '+String(e.message||e);renderNow()}
- finally{loading=false;renderNow()}
+ finally{loading=false;if(!selected)renderNow()}
 }
 function chart(points){
  const arr=(points||[]).filter(x=>Number.isFinite(Number(x.price))&&x.price>0);if(arr.length<2)return '<p>Derzeit kein historischer Chart verfügbar.</p>';
@@ -54,7 +74,9 @@ function render(){
  (selected?'<section class="fp-mw-detail"><div class="fp-mw-detail-head"><div><small>'+esc(selected)+'</small><h2>'+esc(quote(selected)?.asset_name||selected)+'</h2></div><button type="button" class="btn secondary" data-mw-trade="'+esc(selected)+'">Im Depot handeln →</button></div>'+
  (quote(selected)?'<p>Letzter registrierter Kurs: <b>'+money(quote(selected).price,quote(selected).currency)+'</b> · '+esc(quote(selected).quote_date)+' · '+esc(quote(selected).source||'Historischer Schlusskurs')+'</p>':'')+
  (series?chart(series.points):'<p>'+esc(busy?'Historische Kurse werden geladen …':'Noch kein Chart verfügbar.')+'</p>')+
- '<h2>Unternehmensnachrichten</h2><p>Diese externen Schlagzeilen werden bei Aufruf geladen. Sie sind nicht einzeln von der täglichen Redaktion geprüft. Quelle und Datum kontrollieren.</p>'+
+ '<h2>Einordnung aus deiner täglichen FinanzPilot-Redaktion</h2>'+
+ (relatedEditorial(selected).length?'<div class="fp-mw-news">'+relatedEditorial(selected).map(n=>'<article><small>REDAKTION · '+esc(n.published||'Datum unbekannt')+' · '+esc(n.source||'Quelle')+'</small><h3>'+esc(n.title||'')+'</h3><p>'+esc(n.why||'')+'</p><p><b>Was du daraus lernen kannst:</b> '+esc(n.impact||'')+'</p>'+(url(n.url)?'<a href="'+esc(url(n.url))+'" target="_blank" rel="noopener noreferrer">Originalquelle ansehen ↗</a>':'')+'</article>').join('')+'</div>':'<p>Heute kein redaktionell geprüfter Einzelaktienbeitrag zu diesem Unternehmen. Andere Meldungen stehen unten und stammen direkt vom Nachrichtenanbieter.</p>')+
+ '<h2>Weitere aktuelle Schlagzeilen</h2><p>Diese externen Schlagzeilen werden beim Aufruf abgerufen und nicht einzeln durch die tägliche Redaktion geprüft. Quelle und Datum kontrollieren.</p>'+
  (news.length?'<div class="fp-mw-news">'+news.map(n=>'<article><small>'+esc(n.publisher)+' · '+(n.published?new Date(n.published*1000).toLocaleDateString('de-DE'):'Datum unbekannt')+'</small><h3>'+esc(n.title)+'</h3>'+(url(n.url)?'<a href="'+esc(url(n.url))+'" target="_blank" rel="noopener noreferrer">Originalquelle ansehen ↗</a>':'')+'</article>').join('')+'</div>':'<p>Noch keine passenden Nachrichten verfügbar. Auch das ist kein Handelssignal.</p>')+'</section>':'')+
  '<p class="fp-depot-message" role="status">'+esc(notice)+'</p></div>';
 }
