@@ -53,7 +53,7 @@ window.FinanzPilotSkills=(()=>{
     return '<button type="button" class="fp-skill-node '+cl+'" data-skill-node="'+n.id+'" style="left:'+n.x+'px;top:'+n.y+'px" aria-label="'+escape(n.title)+': '+(s.mastered?'beherrscht':s.available?'erreichbar':'gesperrt')+'"><span class="fp-skill-emblem">'+n.icon+'</span><b>'+escape(n.title)+'</b><small>'+escape(n.sub)+'</small><span class="fp-node-state">'+(s.mastered?'✓ Beherrscht':s.available?'✦ Prüfbar':'🔒 Gesperrt')+'</span></button>';
    }).join('')+'</div></div>'+
    '<section id="fp-skill-details" class="fp-skill-details" aria-live="polite"><div class="fp-skill-detail-default"><h2>Wähle einen Knoten</h2><p>Berühre einen Skill auf der Karte, um seine Voraussetzungen, Ziele und den passenden Kurs zu sehen.</p></div></section>'+
-   '<div class="fp-skill-hint"><b>Als Nächstes geplant:</b> Spezialkurse, persönliche Relikte, freischaltbare Research-Werkzeuge und eine Analystenkarriere. Diese Belohnungen werden erst mit der späteren sicheren Spielwirtschaft aktiviert.</div></div>';
+   '<div class="fp-skill-hint"><b>Deine freigeschalteten Vorteile:</b> In der Analystenkarriere werden neue Research-Werkzeuge und persönliche Kursartefakte aus denselben nachgewiesenen Skills berechnet. Die spätere Spielgeldwirtschaft bleibt getrennt. <button type="button" class="fp-skill-career-link" data-view="career">Meine Karriere ansehen →</button></div></div>';
  }
  function details(id){
   const n=byId[id],area=document.getElementById('fp-skill-details');if(!n||!area)return;
