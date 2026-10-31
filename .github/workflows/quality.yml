@@ -46,3 +46,5 @@ jobs:
         run: node scripts/test_course_sync_v31.mjs
       - name: "Regression: Watchlist charts, news desks and daily learning newsroom"
         run: node scripts/test_market_learning_v34.mjs
+      - name: "Regression: Interactive chart ranges, BayWa alternative exchange and issue inbox"
+        run: node scripts/test_charts_issues_v35.mjs
