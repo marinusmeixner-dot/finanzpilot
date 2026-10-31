@@ -11,7 +11,7 @@ let watch=[],quotes=[],editorial=[],feedDate='',active='',tab='general',newsFocu
 const historyCache=new Map(),newsCache=new Map(),pending=new Map();
 const q=s=>quotes.find(x=>x.symbol===s)||null;
 const ui=()=>{if(typeof state!=='undefined'&&['marketoverview','marketdetail','marketnews'].includes(state.view))window.render?.()};
-const alias={MSFT:['microsoft'],AMZN:['amazon','aws'],AAPL:['apple'],GOOGL:['alphabet','google'],GOOG:['alphabet','google'],NVDA:['nvidia'],META:['meta','facebook'],BAYN:['bayer'],BAYN.DE:['bayer'],BYW:['baywa'],BYW.MU:['baywa'],SAP:['sap'],KGX:['kion'],INTC:['intel']};
+const alias={MSFT:['microsoft'],AMZN:['amazon','aws'],AAPL:['apple'],GOOGL:['alphabet','google'],GOOG:['alphabet','google'],NVDA:['nvidia'],META:['meta','facebook'],BAYN:['bayer'],'BAYN.DE':['bayer'],BYW:['baywa'],'BYW.MU':['baywa'],SAP:['sap'],KGX:['kion'],INTC:['intel']};
 function matches(story,symbol){
  const s=String(symbol||'').toUpperCase(),base=s.split('.')[0],names=alias[s]||alias[base]||[];
  const syms=(story.symbols||[]).map(x=>String(x).toUpperCase());
