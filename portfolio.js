@@ -165,6 +165,7 @@
  function pick(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');load();jump('fp-depot-order-panel')}
  window.FinanzPilotPortfolio={render,bind,load,trade,pick,searchStocks,registerStock,removeWatch,calcPortfolio,currencyStats,isFresh,get quotes(){return quotes},get trades(){return trades},get watchlist(){return watchlist}};
  window.addEventListener('fp-auth-change',load);
+ window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='depot'&&user())load()});
  window.addEventListener('online',()=>{if(user())load()});
  document.addEventListener('visibilitychange',()=>{if(!document.hidden&&user())load()});
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
