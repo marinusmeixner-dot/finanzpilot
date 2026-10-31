@@ -60,7 +60,7 @@ window.FinanzPilotTraining=(()=>{
   }).join('')+'</div><p class="fp-training-fine">Deine Antworten bleiben lokal und werden nach erfolgreicher Anmeldung zusätzlich synchronisiert. Alle Zahlen haben einen Berichtszeitpunkt.</p></div>';
  }
  function chooseUI(step,draft){
-  if(step.type==='number')return '<form id="fp-training-number-form" class="fp-training-number-form"><label for="fp-training-number-input">Dein Ergebnis ('+esc(step.unit||'')+')</label><input id="fp-training-number-input" name="value" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="z. B. -4,9 oder (845/930-1)*100" value="'+esc(draft??'')+'" /><button class="btn" type="submit">Ergebnis prüfen</button></form>';
+  if(step.type==='number')return '<form id="fp-training-number-form" class="fp-training-number-form"><label for="fp-training-number-input">Dein Ergebnis ('+esc(step.unit||'')+')</label><input id="fp-training-number-input" name="value" type="text" inputmode="text" autocomplete="off" spellcheck="false" placeholder="z. B. -4,9 oder (845/930-1)*100" value="'+esc(draft??'')+'" />'+(window.FinanzPilotMath?.toolbar()||'')+'<button class="btn" type="submit">Ergebnis prüfen</button></form>';
   if(step.type==='multi'||step.type==='decision'){
    const values=Array.isArray(draft)?draft:[];
    return '<div class="fp-training-options">'+step.options.map((o,i)=>'<button type="button" class="fp-training-option '+(values.includes(i)?'selected':'')+'" data-training-option="'+i+'" aria-pressed="'+values.includes(i)+'"><span>'+((step.type==='multi')?(values.includes(i)?'☑':'□'):(values.includes(i)?'◉':'◯'))+'</span><span>'+esc(o)+'</span></button>').join('')+'</div><button type="button" class="btn" data-training-submit>Antwort prüfen</button>';
@@ -167,6 +167,7 @@ window.FinanzPilotTraining=(()=>{
   root.querySelectorAll('[data-training-submit]').forEach(x=>x.addEventListener('click',submit));
   root.querySelectorAll('[data-training-continue]').forEach(x=>x.addEventListener('click',advance));
   root.querySelector('[data-training-hint]')?.addEventListener('click',ev=>{const el=document.getElementById('fp-training-hint');if(el){el.hidden=!el.hidden;ev.target.setAttribute('aria-expanded',String(!el.hidden))}});
+  window.FinanzPilotMath?.bind(root);
  }
  async function load(){
   try{const r=await fetch(DATA_URL+'?t='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('Lernfälle '+r.status);const d=await r.json();
