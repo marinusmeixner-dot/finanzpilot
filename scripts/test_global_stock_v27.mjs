@@ -43,7 +43,7 @@ const db={
    if(body.action==='register'){const q={symbol:body.symbol,asset_name:'ASML Holding',currency:'EUR',price:920.25,quote_date:'2026-10-30',source:'historical',adjusted:false};quotes.push(q);return {data:{quote:q},error:null}}
    throw Error('Unexpected action');
  }},
- async rpc(){throw Error('Trade RPC not used in lookup test')}
+ async rpc(name){if(name==='fp_paper_claim_artifact_rewards')return {data:{bonus_added_eur:0},error:null};throw Error('Trade RPC not used in lookup test')}
 };
 const window={FinanzPilotCloud:{get user(){return identity},get paperClient(){return identity?db:null}},addEventListener(){},render(){},confirm(){return true},FinanzPilotCharts:{html(){return ''}}};
 const document={readyState:'loading',hidden:false,addEventListener(k,fn){events[k]=fn}};
