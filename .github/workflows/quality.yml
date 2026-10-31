@@ -22,3 +22,5 @@ jobs:
         run: node scripts/test_economy.mjs
       - name: Check navigation and automatic PWA upgrades
         run: node scripts/test_navigation_v15.mjs
+      - name: Check expanded skill-world and financial concepts curriculum
+        run: node scripts/test_learning_v16.mjs
