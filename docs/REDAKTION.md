@@ -78,3 +78,9 @@ Prüfe täglich offene Issues. Nimm zuerst maximal zwei offene Wünsche pro Lauf
 - Diese App besitzt **keine bezahlte KI-API**. Freitext wird lokal gespeichert; individuelles KI-Feedback braucht ausdrücklich die Übertragung an ChatGPT oder per GitHub-Issue.
 - TradingView zeigt externe Kurse, die verzögert oder im Browser blockiert sein können. Ein Klick im Chart ist keine automatisch bewertbare historische Datenquelle.
 - Bei Ausfall: altes Datum sichtbar lassen, kein erfundenes Update melden.
+## Neue v5-Komponenten
+
+- data/research.json: datierte öffentliche Einzelaktienanalysen mit Primärquelle, Geschäftsmodell, Vergleichszahlen, Risiken und Aufgaben.
+- data/prices.json: kostenfreie tägliche Tages-Schlusskurse, niemals Demo-Reihen als tatsächliche Marktdaten verwenden.
+- glossary.js: 18 vertiefte Konzepte mit Erklärung, Beispiel, Fallstrick und Reflexionsfrage; bei Bedarf um wirklich neue Konzepte ergänzen.
+- Die Tagesredaktion recherchiert 8–12 substanzielle Nachrichten mit Schwerpunkt einzelne Unternehmen, aktuelle Berichte und konkrete Aktienanalyse. Prüfe jede Quelle und trenne Fakten von Einschätzungen.
