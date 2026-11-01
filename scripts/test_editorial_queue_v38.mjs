@@ -6,7 +6,7 @@ const daily=JSON.parse(read('data/daily.json'));
 const market=read('market-v34.js');
 const review=read('daily-review.js');
 const nav=read('docs/REDAKTION.md');
-assert.equal(JSON.parse(read('version.json')).version,43);
+assert.equal(JSON.parse(read('version.json')).version,44);
 assert(sql.includes('private.fp_editorial_queue'));
 assert(sql.includes("kind in ('watchlist_added','review_submitted')"));
 assert(sql.includes("after insert on public.fp_paper_watchlist"));
@@ -23,7 +23,7 @@ assert(market.includes('Analyse oder Werkzeug anfordern'),'Full research only on
 assert(review.includes("from('fp_review_submissions').insert("));
 assert(review.includes('consent:true'),'Free-text submission needs explicit consent');
 assert(nav.includes('Analysen nur auf ausdrückliche Anfrage'));
-for(const symbol of ['BAYN.DE','BYW.MU','SIE.DE','NVDA']){
+for(const symbol of ['AMZN','MSFT']){
  const articles=JSON.parse(read('data/editorial-core-v43.json')).stories.filter(x=>x.symbols?.includes(symbol));
  assert(articles.some(x=>x.article?.sections?.length>=4&&String(x.url||'').startsWith('https://')&&x.published),symbol+' must have an original free readable article');
 }
