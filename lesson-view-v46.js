@@ -19,7 +19,7 @@ function render(skill,lesson,info={}){
   (lesson.practice?'<div class="fp46-calculation"><span class="eyebrow">KURZE RECHENÜBUNG · UNBENOTET</span><h4>'+esc(lesson.practice.prompt)+'</h4><div class="fp46-calculation-controls"><input type="text" inputmode="text" autocomplete="off" spellcheck="false" data-fp46-calc-input placeholder="Ergebnis eingeben, auch mit Komma oder Minus"><span>'+esc(lesson.practice.unit)+'</span><button type="button" class="btn secondary" data-fp46-calc-check>Prüfen</button></div><output data-fp46-calc-result aria-live="polite"></output></div>':'')+
   '<p class="fp46-study-pause">Überlege selbst: Welche Zahl oder Annahme trägt die Schlussfolgerung?</p></section>';
  if(step===2)content='<section class="fp46-study-panel"><span class="eyebrow">03 · TRANSFER</span><h3>Wissen mit eigenen Worten erklären</h3>'+
-  '<p class="fp46-transfer-task">'+esc(lesson.transferPrompt||'Erkläre die wichtigste Schlussfolgerung des Beispiels und eine mögliche Ausnahme.')+'</p>'+
+  
   (window.FinanzPilotStudy?.noteWidget?.(lesson.id,lesson.title,lesson.transferPrompt)||'<p>Erkläre den Zusammenhang in eigenen Worten.</p>')+
   (lesson.transferHint?'<details class="fp46-transfer-hint"><summary>Prüfkriterien zur Erklärung</summary><p>'+esc(lesson.transferHint)+'</p></details>':'')+'</section>';
  if(step===3)content='<section class="fp41-question fp46-study-panel"><span class="eyebrow">04 · AKTIVES ABRUFEN</span><h3>'+esc(lesson.question)+'</h3><p>Versuche ohne Nachlesen zu antworten. Die Bewertung erfolgt weiterhin auf dem Server.</p>'+
