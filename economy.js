@@ -10,7 +10,7 @@ window.FinanzPilotEconomy=(()=>{
  const euro=cents=>(Number(cents||0)/100).toLocaleString('de-DE',{style:'currency',currency:'EUR'});
  const fmt=n=>Number(n).toLocaleString('de-DE',{maximumFractionDigits:2});
  const api=()=>window.FinanzPilotCloud;
- let account=null,claims=[],perks=[],ledger=[],verified=[],paperCash=null,loading=false,error='',notice='',pending=null;
+ let account=null,claims=[],perks=[],ledger=[],verified=[],crafted=[],shards=0,paperCash=null,loading=false,error='',notice='',pending=null;
  const has=key=>perks.some(x=>x.perk_key===key);
  const logged=()=>!!api()?.user;
  const module=id=>modules.find(x=>x.id===id);
@@ -21,11 +21,17 @@ window.FinanzPilotEconomy=(()=>{
   try{localStorage.setItem('finanzpilot_expedition_v1',JSON.stringify({...p,completed}));window.dispatchEvent(new Event('fp-progress-change'))}catch{}
  }
  async function refresh(redraw=true){
-  if(!logged()){account=null;claims=[];perks=[];ledger=[];verified=[];paperCash=null;loading=false;updateTheme();if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.();return}
+  if(!logged()){account=null;claims=[];perks=[];ledger=[];verified=[];crafted=[];shards=0;paperCash=null;loading=false;updateTheme();if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.();return}
   loading=true;
   try{
    const rows=await Promise.all(['fp_economy_accounts','fp_reward_claims','fp_reward_perks','fp_reward_ledger','fp_verified_training'].map(t=>api().economyRead(t)));
    account=rows[0][0]||{research_points:0,virtual_euro_cents:0};claims=rows[1];perks=rows[2];ledger=rows[3];verified=rows[4];error='';updateTheme();
+   if(api()?.paperClient){
+    const id=api().user,c=api().paperClient;
+    const extra=await Promise.all([c.from('fp_artifact_shards').select('shards').eq('user_id',id).maybeSingle(),c.from('fp_crafted_artifacts').select('id,kind,effect,tier,created_at,redeemed_at,redeemed_for').eq('user_id',id).order('created_at',{ascending:false})]);
+    if(extra.some(x=>x.error))console.warn('Artefakte:',extra.find(x=>x.error)?.error.message);
+    else{shards=Number(extra[0].data?.shards)||0;crafted=extra[1].data||[]}
+   }
    try{
      const cl=api()?.paperClient;
      if(cl){
@@ -41,6 +47,36 @@ window.FinanzPilotEconomy=(()=>{
   finally{loading=false;if(redraw&&typeof state!=='undefined'&&state.view==='inventory')window.render?.()}
  }
  function stateOf(id){return claims.find(x=>x.module_id===id)||null}
+
+ const artifactTypes={compass:'Forschungs-Kompass',prism:'Datenprisma',lens:'Bilanz-Linse',codex:'Analysten-Kodex',beacon:'Signal-Leuchte',orbit:'Markt-Orbit'};
+ const artifactEffects={xp_5:'5 % mehr XP bei neuen Speziallektionen',fp_5:'5 % mehr Forschungspunkte bei Skills',xp_fp_3:'3 % mehr XP und Forschungspunkte bei neuen Spezialisierungen'};
+ function craftingSection(){
+  const active=crafted.filter(x=>!x.redeemed_at);
+  const old=claims.filter(x=>!x.choice).length;
+  const occupied=active.length+old;
+  return '<section class="fp-inventory-section fp44-crafting"><div class="fp-inventory-heading"><h2>Artefakte aus Beförderungen</h2>'+
+  '<p>Alle drei erlernten neuen Skills erhältst du eine Beförderung mit zwei Artefaktscherben. Aus drei Scherben stellst du ein einmaliges zufälliges Artefakt her. Maximal vier aktive Artefakte, bestehende ältere Artefakte zählen dazu. Solange du es behältst, besitzt du seinen individuellen Effekt. Einlösen ist endgültig.</p></div>'+
+  '<div class="fp44-craft-summary"><div><small>Artefaktscherben</small><b>'+shards+' / 3</b></div><div><small>Aktive Artefakte</small><b>'+occupied+' / 4</b></div></div>'+
+  '<button type="button" class="btn" data-fp44-craft '+(shards<3||occupied>=4?'disabled':'')+'>Aus drei Scherben ein Artefakt herstellen</button>'+
+  '<div class="fp44-crafted-list">'+crafted.map(a=>'<article class="fp44-crafted-card'+(a.redeemed_at?' used':'')+'"><div class="fp44-crafted-emblem">✦</div><div><b>'+esc(artifactTypes[a.kind]||a.kind)+'</b><small>'+esc(artifactEffects[a.effect]||'Spezieller Forschungsgegenstand')+'</small><small>Stufe '+Number(a.tier||1)+' · '+(a.redeemed_at?'Bereits eingetauscht':'Aktiv')+'</small></div>'+
+  (!a.redeemed_at?'<div class="fp44-crafted-actions"><button type="button" class="btn secondary" data-fp44-exchange="'+esc(a.id)+'" data-fp44-choice="cash">75 € Spielgeld</button><button type="button" class="btn secondary" data-fp44-exchange="'+esc(a.id)+'" data-fp44-choice="points">8 FP</button></div>':'')+'</article>').join('')+
+  (crafted.length?'':'<p>Du hast noch kein Artefakt hergestellt. Dein erster Bau wird möglich, sobald du drei Scherben gesammelt hast.</p>')+'</div>'+
+  '<small>Artefakt-Effekte und Einlösen müssen serverseitig gelten; eine spätere Tauschoption gegen virtuelle Aktien wird nur mit geprüftem Börsenkurs eingeführt.</small></section>';
+ }
+ async function craft(){
+  const c=api()?.paperClient;if(!c)return;
+  try{const {data,error}=await c.rpc('fp_craft_artifact');if(error)throw error;
+    notice='Neues einmaliges Artefakt hergestellt. Seine zufällige Eigenschaft ist dauerhaft gespeichert.';
+    await refresh(false);window.render?.();
+  }catch(e){notice='Artefakt nicht hergestellt: '+String(e.message||e);window.render?.()}
+ }
+ async function exchange(id,choice){
+  if(!window.confirm('Artefakt endgültig gegen '+(choice==='cash'?'75 € Spielgeld':'8 Forschungspunkte')+' eintauschen? Der Artefakt-Effekt geht verloren.'))return;
+  const c=api()?.paperClient;if(!c)return;
+  try{const {data,error}=await c.rpc('fp_exchange_crafted_artifact',{p_id:id,p_choice:choice});if(error)throw error;
+  notice='Artefakt endgültig eingelöst. Guthaben serverseitig gutgeschrieben.';await refresh(false);window.FinanzPilotHeaderProgress?.refresh(true);window.render?.();
+  }catch(e){notice='Artefakt nicht eingelöst: '+String(e.message||e);window.render?.()}
+ }
  function itemList(){
   return `<section class="fp-inventory-section"><div class="fp-inventory-heading"><h2>Deine Forschungsartefakte</h2><p>Aktuell gibt es drei tatsächlich verdienbare Spezialartefakte aus den Praxisreihen KION, AIXTRON und Alphabet. Die übrigen Karriereabzeichen sind eine andere, nicht einlösbare Sammlung. Neue Artefakte benötigen jeweils eine echte serverseitig prüfbare Herausforderung. <b>Einlösen:</b> Praxisreihe abschließen, Antworten bestätigen, dann „Verwendung auswählen“ → dauerhaft Werkzeug, Spezialmission oder einmalig 150 € virtuelles EUR-Depotguthaben wählen. Ein Artefakt kann nur einmal eingesetzt werden.</p></div><div class="fp-inventory-rows">`+
   modules.map(m=>{
@@ -98,7 +134,7 @@ window.FinanzPilotEconomy=(()=>{
   if(!logged())return `<div class="fp-inventory-page"><div class="fp-inventory-hero"><div class="eyebrow">DEINE SPIELWIRTSCHAFT</div><h1>Inventar & Belohnungen</h1><p>Deine bisherigen Kurse bleiben ohne Konto verfügbar. Um seltene Gegenstände, Forschungspunkte und virtuelles Kapital geräteübergreifend sicher zu speichern, melde dich bei FinanzPilot an.</p><button type="button" class="btn" data-inventory-login>Mit Google oder E-Mail anmelden →</button></div></div>`;
   if(loading&&!account)return '<div class="fp-inventory-page"><h1>Inventar & Belohnungen</h1><p>Dein privates Inventar wird geladen …</p></div>';
   if(!account)return `<div class="fp-inventory-page"><h1>Inventar & Belohnungen</h1><p>${esc(error||'Deine Daten werden gerade geprüft.')}</p><button class="btn" data-inventory-reload>Erneut versuchen</button></div>`;
-  return `<div class="fp-inventory-page"><div class="fp-inventory-hero"><div class="eyebrow">FINANZPILOT · VERIFIZIERTE SPIELBELOHNUNGEN</div><h1>Dein Forschungsinventar</h1><p>Jede Belohnung wird nur einmal vergeben. Alle Entscheidungen werden im privaten Konto gespeichert.</p><div class="fp-inventory-balances"><div><span>Forschungspunkte</span><b>${fmt(account.research_points||0)} FP</b></div><div><span>Verdiente virtuelle € · Belohnungshistorie</span><b>${euro(account.virtual_euro_cents||0)}</b></div><div><span>EUR-Spielgeld im Aktien-Depot</span><b>${paperCash===null?'wird geladen':euro(Number(paperCash)*100)}</b></div></div><small>Das Inventar zeigt verdiente Belohnungen über alle Zeiten, das Depot den aktuellen verfügbaren EUR-Kassenbestand (Startgeld + einmalige Prämien − Käufe + Verkäufe). Beides ist nicht dasselbe. Forschungspunkte sind eine eigene Spielwährung. Kein echtes Geld.</small><button type="button" class="btn secondary" data-view="depot">Zum Depot →</button></div>${notice?`<div class="fp-inventory-notice" role="status">${esc(notice)}</div>`:''}${choiceSection()}${pending?.special?specialPanel():''}${itemList()}${artifactGuide()}${ownedContent()}${shop()}<section class="fp-inventory-history"><details><summary>Belohnungsbuchungen anzeigen</summary><div>${ledger.slice().sort((a,b)=>String(b.created_at).localeCompare(String(a.created_at))).slice(0,30).map(x=>`<div><span>${esc(x.event_type==='module_mastery'?'Kursabschluss':x.event_type==='item_redemption'?'Item eingelöst':'Freischaltung gekauft')}</span><small>${esc(String(x.created_at).slice(0,10))}</small><b>${x.points_delta?`${x.points_delta>0?'+':''}${x.points_delta} FP`:x.euro_cents_delta?'+'+euro(x.euro_cents_delta):'✓'}</b></div>`).join('')||'<p>Noch keine Buchungen</p>'}</div></details></section></div>`;
+  return `<div class="fp-inventory-page"><div class="fp-inventory-hero"><div class="eyebrow">FINANZPILOT · VERIFIZIERTE SPIELBELOHNUNGEN</div><h1>Dein Forschungsinventar</h1><p>Jede Belohnung wird nur einmal vergeben. Alle Entscheidungen werden im privaten Konto gespeichert.</p><div class="fp-inventory-balances"><div><span>Forschungspunkte</span><b>${fmt(account.research_points||0)} FP</b></div><div><span>Verdiente virtuelle € · Belohnungshistorie</span><b>${euro(account.virtual_euro_cents||0)}</b></div><div><span>EUR-Spielgeld im Aktien-Depot</span><b>${paperCash===null?'wird geladen':euro(Number(paperCash)*100)}</b></div></div><small>Das Inventar zeigt verdiente Belohnungen über alle Zeiten, das Depot den aktuellen verfügbaren EUR-Kassenbestand (Startgeld + einmalige Prämien − Käufe + Verkäufe). Beides ist nicht dasselbe. Forschungspunkte sind eine eigene Spielwährung. Kein echtes Geld.</small><button type="button" class="btn secondary" data-view="depot">Zum Depot →</button></div>${notice?`<div class="fp-inventory-notice" role="status">${esc(notice)}</div>`:''}${craftingSection()}${choiceSection()}${pending?.special?specialPanel():''}${itemList()}${artifactGuide()}${ownedContent()}${shop()}<section class="fp-inventory-history"><details><summary>Belohnungsbuchungen anzeigen</summary><div>${ledger.slice().sort((a,b)=>String(b.created_at).localeCompare(String(a.created_at))).slice(0,30).map(x=>`<div><span>${esc(x.event_type==='module_mastery'?'Kursabschluss':x.event_type==='item_redemption'?'Item eingelöst':'Freischaltung gekauft')}</span><small>${esc(String(x.created_at).slice(0,10))}</small><b>${x.points_delta?`${x.points_delta>0?'+':''}${x.points_delta} FP`:x.euro_cents_delta?'+'+euro(x.euro_cents_delta):'✓'}</b></div>`).join('')||'<p>Noch keine Buchungen</p>'}</div></details></section></div>`;
  }
  async function verify(id,index,raw,type){
   if(!logged())return {skipped:true};
@@ -159,6 +195,9 @@ window.FinanzPilotEconomy=(()=>{
   document.body.classList.toggle('fp-econ-gold',has('theme:gold'));
  }
  function bind(root=document){
+  root.querySelector('[data-fp44-craft]')?.addEventListener('click',craft);
+  root.querySelectorAll('[data-fp44-exchange]').forEach(b=>b.addEventListener('click',()=>exchange(b.dataset.fp44Exchange,b.dataset.fp44Choice)));
+
   root.querySelectorAll('[data-inventory-login]').forEach(b=>b.addEventListener('click',()=>api()?.openLogin?.()));
   root.querySelectorAll('[data-inventory-study]').forEach(b=>b.addEventListener('click',()=>{const id=b.dataset.inventoryStudy;window.FinanzPilotNavigation?.route('training');window.FinanzPilotTraining?.open?.(id)}));
   root.querySelectorAll('[data-inventory-reload]').forEach(b=>b.addEventListener('click',()=>refresh()));
@@ -190,6 +229,6 @@ window.FinanzPilotEconomy=(()=>{
   document.addEventListener('visibilitychange',()=>{if(!document.hidden&&logged())refresh(false)});
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
- return{render,bind,refresh,verify,certifySaved,get account(){return account},get claims(){return claims},get perks(){return perks}};
+ return{render,bind,refresh,verify,certifySaved,get account(){return account},get claims(){return claims},get shards(){return shards},get crafted(){return crafted},get perks(){return perks}};
 })();
 })();
