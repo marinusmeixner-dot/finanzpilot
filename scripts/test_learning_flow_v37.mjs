@@ -1,0 +1,60 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8');
+const terms=JSON.parse(read('data/terminology.json'));
+const modules=terms.modules;
+assert.equal(modules.length,16);
+const bridges=new Set(['umsatz-und-marge','bilanz-bruecke','cashflow-normalisieren','kapitalrendite-bruecke','multiples-vergleich']);
+for(const id of bridges){
+ const m=modules.find(x=>x.id===id);
+ assert(m&&m.steps.length===4,'New bridge course '+id);
+ assert.deepEqual(m.steps.map(s=>s.type),['read','number','multi','decision']);
+ assert(m.steps[1].reasoningRequired,'Bridge arithmetic must require reasoning');
+ assert(m.steps[2].correct.length===2);
+}
+const course=read('concepts.js'),training=read('training.js'),academy=read('academy.js'),nav=read('ux-v15.js'),market=read('market-v34.js'),portfolio=read('portfolio.js'),edge=read('supabase/functions/finanzpilot-stock-lookup/index.ts');
+assert(nav.includes('DEIN PERSÖNLICHER LERNWEG'));
+assert(nav.includes('data-learning-module')&&nav.includes('Nächste Lernstufe'));
+assert(nav.includes('fp37-roadmap-steps'));
+assert(academy.includes('previewStep')&&academy.includes("name==='previous'")&&academy.includes("name==='resume'"));
+assert(course.includes('data-training-step-back')&&course.includes('RÜCKBLICK'));
+assert(training.includes('data-training-step-back')&&training.includes('RÜCKBLICK'));
+assert(!course.includes('<details class="fp-training-definitions" open>'),'Do not render duplicate acronym glossary');
+assert(!market.includes('const external=newsCache.get(symbol)'),'Third party paywall metadata must not appear as full articles');
+assert(market.includes('function glossaryFor(n)')&&market.includes('fp37-one-minute'));
+assert(portfolio.includes("searchTicket++")&&portfolio.includes('fp37-stock-price'));
+assert(edge.includes('quote_date:barDate(last.date')&&edge.includes('price:Math.round(last.price'));
+const data=JSON.parse(read('data/daily.json'));
+assert(data.stories.length>=10);
+assert(data.stories.every(s=>s.article?.sections?.length>=4&&s.article.lead&&s.article.conclusion));
+
+const memories={},handlers={},state={view:'concepts'};
+const window={addEventListener:(name,fn)=>handlers[name]=fn,dispatchEvent(){},render(){},scrollTo(){},
+ FinanzPilotMath:{bind(){},toolbar(){return ''},calculate:x=>Number(String(x).replace(',','.'))}};
+const document={readyState:'loading',addEventListener(){},getElementById(){return null}};
+const ctx=vm.createContext({window,document,state,localStorage:{getItem:k=>memories[k]||null,setItem:(k,v)=>memories[k]=String(v)},
+ Date,Intl,JSON,Math,Number,String,Array,Event:class Event{constructor(name){this.type=name}},queueMicrotask,fetch:async()=>({ok:true,json:async()=>terms}),console});
+vm.runInContext(course,ctx);
+const api=window.FinanzPilotConcepts;await api.load();
+api.data.sessions.guv={step:2,answers:{1:{correct:true,type:'number'}},drafts:{},bestScore:1,updatedAt:Date.now()};
+api.data.active={id:'guv',mode:'course'};
+const active=api.data.active,step=api.data.sessions.guv.step;
+assert(api.render().includes('data-training-step-back'));
+const binds={};
+const back={addEventListener:(name,fn)=>binds[name]=fn};
+api.bind({querySelectorAll:selector=>selector==='[data-training-step-back]'?[back]:[],querySelector:()=>null});
+assert(typeof binds.click==='function');
+binds.click();
+assert.equal(api.data.sessions.guv.step,step);
+assert.equal(api.data.active,active);
+assert.equal(api.data.active.previewStep,1);
+assert(api.render().includes('RÜCKBLICK'));
+assert(api.render().includes('Zur aktuellen Aufgabe'));
+const forward={};
+api.bind({querySelectorAll:selector=>selector==='[data-training-step-next]'?[{addEventListener:(name,fn)=>forward[name]=fn}]:[],querySelector:()=>null});
+forward.click();
+assert.equal(api.data.sessions.guv.step,step);
+assert.equal(api.data.active.previewStep,undefined);
+assert(api.render().includes('data-training-step-back'));
+console.log('v37: guided stages, five new bridge lessons, read-only course rewind, free articles, instant-clear stock search and dated quotes verified.');
