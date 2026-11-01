@@ -4,8 +4,8 @@
  const fmt=(value,currency='USD')=>new Intl.NumberFormat('de-DE',{style:'currency',currency,maximumFractionDigits:2}).format(Number(value)||0);
  const number=v=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:2}).format(Number(v)||0);
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
- const initial=50000;
- let quotes=[],wallets=[],trades=[],watchlist=[],searchResults=[],searchTerm='',searching=false,searchTicket=0,lookupBusy=false,symbol='MSFT',side='BUY',qty='1',busy=false,loading=false,notice='',currentUser=null,hasLoaded=false;
+ const initial=1000;
+ let quotes=[],wallets=[],trades=[],fxRates=[],watchlist=[],searchResults=[],searchTerm='',searching=false,searchTicket=0,lookupBusy=false,symbol='MSFT',side='BUY',qty='0.25',orderMode='amount',orderAmount='50',fxRefreshAt=0,busy=false,loading=false,notice='',currentUser=null,hasLoaded=false;
  const user=()=>window.FinanzPilotCloud?.user||null;
  const client=()=>window.FinanzPilotCloud?.paperClient||null;
  const bySym=x=>quotes.find(q=>q.symbol===x);
@@ -14,75 +14,99 @@
  const timeBerlin=()=>new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
  const isFresh=q=>!!q&&q.quote_date<=timeBerlin()&&(Date.parse(timeBerlin()+'T12:00:00Z')-Date.parse(q.quote_date+'T12:00:00Z'))/864e5<=7;
  const round=x=>Math.round((Number(x)+Number.EPSILON)*100)/100;
+ const fmtQty=n=>Number(n).toLocaleString('de-DE',{maximumFractionDigits:6});
+ const rateFor=cur=>{
+  if(cur==='EUR')return 1;
+  const r=fxRates.find(x=>x.currency===cur);
+  return r&&isFresh({quote_date:r.quote_date})?Number(r.eur_per_unit):null;
+ };
  function calcPortfolio(xs=trades){
-  const positions={};const realized={USD:0,EUR:0};
+  const positions={};let realizedEUR=0;
   for(const t of xs.slice().sort((a,b)=>new Date(a.traded_at)-new Date(b.traded_at)||String(a.id).localeCompare(String(b.id)))){
-   const p=positions[t.symbol]||(positions[t.symbol]={symbol:t.symbol,currency:t.currency,qty:0,cost:0,realized:0});
-   const n=Number(t.quantity),px=Number(t.price),total=Number(t.total),avg=p.qty>0?p.cost/p.qty:0;
-   if(t.side==='BUY'){p.qty+=n;p.cost=round(p.cost+total)}
+   const p=positions[t.symbol]||(positions[t.symbol]={symbol:t.symbol,currency:t.currency,qty:0,cost:0,costEUR:0,realizedEUR:0});
+   const n=Number(t.quantity),total=Number(t.total),totalEUR=Number(t.eur_total??(Number(t.total)*Number(t.fx_eur_per_unit||1)));
+   if(t.side==='BUY'){p.qty+=n;p.cost=round(p.cost+total);p.costEUR=round(p.costEUR+totalEUR)}
    else{
-    if(n>p.qty)continue;
-    p.qty-=n;p.cost=round(p.cost-avg*n);
-    if(!p.qty)p.cost=0;
-    p.realized=round(p.realized+total-avg*n);
-    realized[t.currency]=round((realized[t.currency]||0)+total-avg*n);
+    if(n>p.qty+1e-7)continue;
+    const fraction=n/p.qty,removed=p.cost*fraction,removedEUR=p.costEUR*fraction;
+    p.qty=Math.max(0,Number((p.qty-n).toFixed(6)));
+    p.cost=round(p.cost-removed);p.costEUR=round(p.costEUR-removedEUR);
+    if(p.qty===0){p.cost=0;p.costEUR=0}
+    p.realizedEUR=round(p.realizedEUR+totalEUR-removedEUR);
+    realizedEUR=round(realizedEUR+totalEUR-removedEUR);
    }
   }
-  return {positions:Object.values(positions).filter(p=>p.qty>0),realized};
+  return {positions:Object.values(positions).filter(p=>p.qty>0.0000001),realizedEUR};
  }
  const holdings=s=>calcPortfolio().positions.find(p=>p.symbol===s)?.qty||0;
- function currencyStats(cur){
-  const balance=wallets.find(w=>w.currency===cur)?.balance??initial,all=calcPortfolio(),pos=all.positions.filter(p=>p.currency===cur);
-  const marked=pos.filter(p=>!!bySym(p.symbol));
-  const value=round(marked.reduce((s,p)=>s+p.qty*Number(bySym(p.symbol).price),0));
-  const invested=round(pos.reduce((s,p)=>s+p.cost,0));
-  const cashMoves=trades.filter(t=>t.currency===cur).reduce((sum,t)=>sum+(t.side==='BUY'?-Number(t.total):Number(t.total)),0);
-  const earnedBonus=Math.max(0,round(Number(balance)-initial-cashMoves));
-  return {currency:cur,cash:Number(balance),value,invested,total:round(Number(balance)+value),pnl:round(Number(balance)+value-initial-earnedBonus),earnedBonus,realized:all.realized[cur]||0,positionCount:pos.length,unpriced:pos.some(p=>!bySym(p.symbol))};
+ function currencyStats(){
+  const balance=Number(wallets.find(w=>w.currency==='EUR')?.balance??initial),all=calcPortfolio(),pos=all.positions;
+  const marked=pos.filter(p=>!!bySym(p.symbol)&&rateFor(p.currency)!==null);
+  const value=round(marked.reduce((s,p)=>s+p.qty*Number(bySym(p.symbol).price)*rateFor(p.currency),0));
+  const invested=round(pos.reduce((s,p)=>s+p.costEUR,0));
+  const moves=trades.reduce((sum,t)=>sum+(t.side==='BUY'?-Number(t.eur_total||0):Number(t.eur_total||0)),0);
+  const earnedBonus=Math.max(0,round(balance-initial-moves));
+  return {currency:'EUR',cash:balance,value,invested,total:round(balance+value),
+   pnl:round(balance+value-initial-earnedBonus),earnedBonus,realized:all.realizedEUR||0,
+   positionCount:pos.length,unpriced:marked.length!==pos.length};
  }
+
  function viewRefresh(){if(typeof state!=='undefined'&&state.view==='depot')window.render?.()}
  async function load(){
-  if(!client()||!user()){quotes=[];wallets=[];trades=[];watchlist=[];searchResults=[];currentUser=null;hasLoaded=false;viewRefresh();return}
+  if(!client()||!user()){quotes=[];wallets=[];trades=[];fxRates=[];watchlist=[];searchResults=[];currentUser=null;hasLoaded=false;viewRefresh();return}
   if(loading)return new Promise(resolve=>window.addEventListener('fp-portfolio-loaded',resolve,{once:true}));
   loading=true;const uid=user();
-  if(currentUser&&currentUser!==uid){quotes=[];wallets=[];trades=[];watchlist=[];searchResults=[];hasLoaded=false}
+  if(currentUser&&currentUser!==uid){quotes=[];wallets=[];trades=[];fxRates=[];watchlist=[];searchResults=[];hasLoaded=false}
   currentUser=uid;
   try{
    const {error:bonusError}=await client().rpc('fp_paper_claim_artifact_rewards');if(bonusError)console.warn('Depot-Belohnungsabgleich:',bonusError.message);
-   const [w,t,wl]=await Promise.all([
+   if(Date.now()-fxRefreshAt>3600000){
+    try{await lookup('fx',{});fxRefreshAt=Date.now()}catch(e){console.warn('EZB-FX-Aktualisierung:',String(e.message||e))}
+   }
+   const [w,t,wl,fx]=await Promise.all([
     client().from('fp_paper_wallets').select('user_id,currency,balance,starting_balance').eq('user_id',uid),
-    client().from('fp_paper_trades').select('id,symbol,currency,side,quantity,price,total,quote_date,source,traded_at').eq('user_id',uid).order('traded_at',{ascending:true}).limit(1000),
-    client().from('fp_paper_watchlist').select('symbol,created_at').eq('user_id',uid).order('created_at',{ascending:false}).limit(500)
+    client().from('fp_paper_trades').select('id,symbol,currency,side,quantity,price,total,eur_total,fx_eur_per_unit,quote_date,source,traded_at').eq('user_id',uid).order('traded_at',{ascending:true}).limit(1000),
+    client().from('fp_paper_watchlist').select('symbol,created_at').eq('user_id',uid).order('created_at',{ascending:false}).limit(500),
+    client().from('fp_paper_fx_rates').select('currency,eur_per_unit,quote_date,source')
    ]);
-   for(const result of [w,t,wl])if(result.error)throw result.error;
+   for(const result of [w,t,wl,fx])if(result.error)throw result.error;
    const defaultSymbols=['MSFT','NVDA','AAPL','AMZN','META','SIEMENS','KION','VWCE','SPY','QQQ','ACWI','AIXTRON','CGNX'];
    const wanted=[...new Set([...defaultSymbols,...(t.data||[]).map(x=>x.symbol),...(wl.data||[]).map(x=>x.symbol),symbol])];
    const q=await client().from('fp_paper_quotes').select('symbol,asset_name,currency,price,quote_date,source,adjusted').in('symbol',wanted.slice(0,900)).order('symbol');
    if(q.error)throw q.error;
    if(uid!==user())return;
-   quotes=q.data||[];wallets=w.data||[];trades=t.data||[];watchlist=wl.data||[];hasLoaded=true;notice='';
+   quotes=q.data||[];wallets=w.data||[];trades=t.data||[];fxRates=fx.data||[];watchlist=wl.data||[];hasLoaded=true;notice='';
    if(!bySym(symbol)&&quotes.length)symbol=quotes[0].symbol;
   }catch(e){notice='Depotdaten konnten nicht geladen werden: '+String(e.message||e)}
   finally{loading=false;viewRefresh();window.dispatchEvent?.(new Event('fp-portfolio-loaded'))}
  }
  async function trade(){
   if(busy||!client()||!user())return;
-  const q=bySym(symbol),n=Number(qty);
+  const q=bySym(symbol),r=q&&rateFor(q.currency);
   if(!q||!isFresh(q)){notice='Der Referenzkurs ist veraltet oder nicht verfügbar. Kein virtueller Handel möglich.';viewRefresh();return}
-  if(!Number.isInteger(n)||n<1||n>10000){notice='Bitte eine ganze Stückzahl zwischen 1 und 10.000 eingeben.';viewRefresh();return}
-  const total=round(Number(q.price)*n),stats=currencyStats(q.currency);
-  if(side==='BUY'&&total>stats.cash){notice='Nicht genügend virtuelles Guthaben.';viewRefresh();return}
-  if(side==='SELL'&&n>holdings(symbol)){notice='Du kannst nicht mehr Anteile verkaufen, als im Depot liegen.';viewRefresh();return}
-  if(!window.confirm('Virtuelle '+(side==='BUY'?'Kauf-':'Verkaufs-')+'simulation: '+n+' × '+q.symbol+' zu ungefähr '+fmt(total,q.currency)+' (Referenzschlusskurs '+q.quote_date+'). Keine echte Börsenorder. Fortfahren?'))return;
+  if(!r){notice='Für diese Handelswährung fehlt ein aktueller EZB-Referenzkurs. Bitte „Depot aktualisieren“ nutzen.';viewRefresh();return}
+  const amount=Number(String(orderAmount).replace(',','.')),fraction=Number(String(qty).replace(',','.'));
+  if(orderMode==='amount'&&(!Number.isFinite(amount)||amount<0.01||amount>100000)){
+   notice='Bitte einen Eurobetrag von mindestens 0,01 € eingeben.';viewRefresh();return}
+  if(orderMode==='shares'&&(!Number.isFinite(fraction)||fraction<.000001||fraction>10000||fraction!==Number(fraction.toFixed(6)))){
+   notice='Gültige Stückzahl mit bis zu sechs Nachkommastellen eingeben.';viewRefresh();return}
+  const n=orderMode==='amount'?Math.floor(amount/(Number(q.price)*r)*1e6)/1e6:fraction;
+  if(n<.000001){notice='Für diesen Eurobetrag kann noch kein Bruchstück von 0,000001 Anteilen gekauft werden.';viewRefresh();return}
+  const euros=round(Number(q.price)*r*n),stats=currencyStats();
+  if(side==='BUY'&&euros>stats.cash){notice='Nicht genug virtuelles Euroguthaben.';viewRefresh();return}
+  if(side==='SELL'&&n>holdings(symbol)+1e-7){notice='Du kannst nicht mehr Anteile verkaufen, als im Depot liegen.';viewRefresh();return}
+  if(!window.confirm('Virtuelle '+(side==='BUY'?'Kauf-':'Verkaufs-')+'simulation: ungefähr '+fmtQty(n)+' Anteile '+q.symbol+' für '+fmt(euros,'EUR')+' zum Referenzschlusskurs '+q.quote_date+'. Keine echte Börsenorder. Fortfahren?'))return;
   busy=true;notice='Server prüft den virtuellen Auftrag …';viewRefresh();
   try{
-   const {data,error}=await client().rpc('fp_paper_execute',{p_symbol:symbol,p_side:side,p_quantity:n});
+   const params={p_symbol:symbol,p_side:side,p_quantity:orderMode==='shares'?fraction:null,p_amount_eur:orderMode==='amount'?amount:null};
+   const {data,error}=await client().rpc('fp_paper_execute',params);
    if(error)throw error;
-   notice='Virtueller '+(side==='BUY'?'Kauf':'Verkauf')+' gespeichert: '+n+' × '+data.symbol+' zu '+fmt(data.price,data.currency)+' je Anteil am '+data.quote_date+'.';
-   await load();notice='Virtueller Auftrag erfolgreich verbucht. Historischer Schlusskurs, kein Livehandel.';
+   await load();
+   notice='Virtueller '+(side==='BUY'?'Kauf':'Verkauf')+' gespeichert: '+fmtQty(data.quantity)+' Anteile '+data.symbol+' für '+fmt(data.total_eur,'EUR')+'. Referenzkurs '+data.quote_date+' · kein Livehandel.';
   }catch(e){notice='Auftrag nicht ausgeführt: '+String(e.message||e)}
   finally{busy=false;viewRefresh()}
  }
+
  async function lookup(action,payload){
    if(!client()||!user())throw Error('Bitte anmelden');
    const response=await client().functions.invoke('finanzpilot-stock-lookup',{body:{action,...payload}});
