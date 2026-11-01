@@ -5,7 +5,7 @@ import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
 const data=JSON.parse(read('data/journey-v39.json'));
 const app=read('app.js'),nav=read('ux-v15.js'),sync=read('sync.js'),css=read('journey-v39.css');
-assert.equal(JSON.parse(read('version.json')).version,41);
+assert.equal(JSON.parse(read('version.json')).version,42);
 assert.equal(data.schema_version,1);
 assert.equal(data.stages.length,6);
 assert.equal(data.stages.reduce((n,s)=>n+s.modules.length,0),36);
@@ -24,7 +24,7 @@ for(const [n,s] of data.stages.entries()){
   }
  }
 }
-assert(nav.includes("if(v==='learn')return window.FinanzPilotJourney?.renderHome"));
+assert(nav.includes("window.FinanzPilotLearningHub?.home"));
 for(let n=1;n<=6;n++)assert(nav.includes("'journey-"+n+"':'learn'"));
 assert(app.includes("window.FinanzPilotJourney.renderFor(state.view)"));
 assert(sync.includes("'finanzpilot_journey_v1'")&&sync.includes('mergeJourney(a,b)'));
@@ -50,7 +50,8 @@ const journey=window.FinanzPilotJourney;
 await journey.load();
 const initial=journey.renderHome();
 assert(initial.includes('Mit Lektion 1 anfangen'));
-assert(initial.includes('0 von 36'));
+assert(initial.includes('0 von 18'));
+assert.equal(journey.modules.length,18);
 for(let n=1;n<=6;n++)assert(initial.includes('data-journey-stage="'+n+'"'));
 assert(!initial.includes('Nächste Lernstufe'));
 assert(!initial.includes('data-section-route="learnpath"'),'Old unordered advanced lessons must not remain on main learning screen');
@@ -91,8 +92,8 @@ assert(journey.renderFor(view).includes('Wissen gesichert'));
 press('[data-journey-complete]');
 assert.equal(view,'journey-1');
 assert(journey.completed[first.id]);
-assert.equal(journey.firstIncomplete().id,data.stages[0].modules[1].id);
+assert.equal(journey.firstIncomplete().id,data.stages[0].modules[3].id);
 const saved=JSON.parse(memory.finanzpilot_journey_v1);
 assert(saved.completed[first.id]&&saved.lessons[first.id].answers[0].correct&&saved.lessons[first.id].answers[1].correct);
 assert(!app.includes('fp39-lesson-reward'),'Journey must not award unapproved XP or artifacts');
-console.log('v39: 36 unique beginner-to-investment lessons, six distinct screens, wrong-answer retry, safe page rewind, clear progression and preserved saves verified.');
+console.log('v42: 18 concise beginner-to-investment lessons out of 36 preserved source modules, six distinct screens, wrong-answer retry, safe page rewind, clear progression and preserved saves verified.');
