@@ -160,6 +160,13 @@ function newsCard(n,extra=''){
  (n.why?'<p>'+esc(n.why)+'</p>':'')+(extra?'<p>'+extra+'</p>':'')+
  (link?'<a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Originalquelle öffnen</a>':'')+'</article>';
 }
+function openEditorialStory(story){
+ if(!story||!Array.isArray(story.article?.sections)||story.article.sections.length<4||
+ story.article.sections.some(section=>!section.heading||!Array.isArray(section.paragraphs)||!section.paragraphs.length))return false;
+ const key=articleKey(story);if(!key)return false;
+ articleRegistry.set(key,story);
+ return openArticle(key);
+}
 function openArticle(id){
  const item=articleRegistry.get(id);if(!item)return false;
  selectedArticle=item;window.FinanzPilotNavigation?.route('marketarticle');return true;
@@ -291,7 +298,7 @@ function bind(root=document){
  root.querySelector('[data-fp34-depot]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('depot'));
  root.querySelector('[data-fp34-overview]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('marketoverview'));
 }
-window.FinanzPilotMarkets={renderOverview,renderFinancials,renderDetail,renderNews,renderArticle,openArticle,bind,refresh,stockDetail,openNews,get watchlist(){return watch},get active(){return active}};
+window.FinanzPilotMarkets={renderOverview,renderFinancials,renderDetail,renderNews,renderArticle,openArticle,openEditorialStory,bind,refresh,stockDetail,openNews,get watchlist(){return watch},get active(){return active}};
 window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&['marketoverview','marketnews','marketdetail','marketfinancials'].includes(state.view)){refresh();if(state.view==='marketnews'&&tab==='watch')loadWatchNews()}});
 window.addEventListener('fp-watchlist-changed',()=>refresh(true));
 window.addEventListener('fp-auth-change',()=>refresh(true));
