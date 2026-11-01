@@ -6,25 +6,25 @@
       "id": "reporting",
       "title": "Finanzberichte",
       "description": "Lerne Zahlen aus Berichten korrekt einzuordnen",
-      "capstone": "bilanz-pruefer"
+      "capstone": "financial-statement-forensics"
     },
     {
       "id": "valuation",
       "title": "Unternehmensbewertung",
       "description": "Verbinde Geschäftsmodell, Gewinn und Preis",
-      "capstone": "unternehmenswert"
+      "capstone": "valuation-committee"
     },
     {
       "id": "risk",
       "title": "Risiko & Depot",
       "description": "Lerne Unsicherheit und Portfoliorisiken zu messen",
-      "capstone": "makro-risiken"
+      "capstone": "portfolio-risk-chief"
     },
     {
       "id": "research",
       "title": "Research & Urteil",
       "description": "Von überprüfbaren Quellen zur eigenen Investmentthese",
-      "capstone": "investment-these"
+      "capstone": "senior-investigator"
     }
   ],
   "skills": [
@@ -814,6 +814,534 @@
           ],
           "correct": 0,
           "xp": 39,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "quality-of-earnings",
+      "title": "Gewinnqualität & Bilanztricks",
+      "branch": "reporting",
+      "parent": "bilanz-pruefer",
+      "tier": 4,
+      "description": "Untersuche, ob berichtete Gewinne dauerhaft, cashwirksam und mit den Risiken der Bilanz vereinbar sind.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "quality-of-earnings-1",
+          "title": "Einmalige Erträge bereinigen",
+          "goal": "Einmalige Erträge bereinigen",
+          "explanation": "Nicht jeder ausgewiesene Gewinn ist regelmäßig erzielbar. Ein Immobilienverkauf, eine Wertaufholung oder geänderte Schätzungen können den Gewinn erhöhen, ohne das Kerngeschäft entsprechend zu stärken.",
+          "example": "Ein Unternehmen zeigt 120 Mio. € Gewinn. Davon stammen 35 Mio. € aus einem Grundstücksverkauf. Ohne diesen Effekt bleiben rechnerisch 85 Mio. €; weitere Effekte können hinzukommen.",
+          "question": "Was ist bei einer Qualitätsprüfung richtig?",
+          "options": [
+            "Einmalige Erträge offen getrennt betrachten",
+            "Alle Gewinne als wiederkehrend behandeln",
+            "Nur den Aktienkurs prüfen"
+          ],
+          "correct": 0,
+          "xp": 35,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "quality-of-earnings-2",
+          "title": "Forderungen gegen Umsatz abgleichen",
+          "goal": "Forderungen gegen Umsatz abgleichen",
+          "explanation": "Wenn Umsätze schnell steigen, Forderungen aber noch schneller, kann Geld später eingehen als der Gewinn vermuten lässt. Das ist ein Untersuchungssignal, kein automatischer Betrugsbeweis.",
+          "example": "Der Umsatz steigt um zehn Prozent, ausstehende Kundenforderungen um vierzig Prozent. Prüfe Zahlungsziele, Kundenmix und Cashflow.",
+          "question": "Welche Daten sollte man zusätzlich prüfen?",
+          "options": [
+            "Nur das Logo des Unternehmens",
+            "Zahlungseingänge, Forderungslaufzeiten und Cashflow",
+            "Nur das Vorjahreshoch"
+          ],
+          "correct": 1,
+          "xp": 40,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "quality-of-earnings-3",
+          "title": "Bilanzrisiko zusammenführen",
+          "goal": "Bilanzrisiko zusammenführen",
+          "explanation": "Rückstellungen, Lagerbestände, Verbindlichkeiten und Fälligkeiten müssen zum Geschäft passen. Nur gemeinsam mit Anhang und Zahlungsströmen entsteht ein belastbares Bild.",
+          "example": "Ein Unternehmen verbessert die operative Marge, hat aber zugleich hohe Lagerbestände und steigende kurzfristige Schulden. Stelle daraus mindestens zwei prüfbare Risiken zusammen.",
+          "question": "Welche Analyse ist sinnvoll?",
+          "options": [
+            "Nur die Marge als sicher bewerten",
+            "Alle Bilanzpositionen ignorieren",
+            "Marge, Lager, Fälligkeiten und Zahlungsmittel gemeinsam untersuchen"
+          ],
+          "correct": 2,
+          "xp": 45,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "financial-statement-forensics",
+      "title": "Finanzbericht-Forensik",
+      "branch": "reporting",
+      "parent": "quality-of-earnings",
+      "tier": 5,
+      "description": "Rekonstruiere eine vollständige Unternehmensgeschichte aus mehreren Berichtsperioden und erkenne widersprüchliche Kennzahlen.",
+      "cost": 3,
+      "rewardPoints": 15,
+      "lessons": [
+        {
+          "id": "financial-statement-forensics-1",
+          "title": "Zahlenreihen konsistent machen",
+          "goal": "Zahlenreihen konsistent machen",
+          "explanation": "Mehrjährige Vergleiche erfordern gleiche Rechnungslegungsregeln, Unternehmenskreise und Währungen. Bei Akquisitionen muss organisches von zugekauftem Wachstum getrennt werden.",
+          "example": "Eine Gruppe meldet 25 Prozent Umsatzwachstum, hat aber einen großen Wettbewerber gekauft. Ohne die Übernahme kann das zugrunde liegende Wachstum deutlich niedriger sein.",
+          "question": "Was muss vor einem Langfristvergleich geprüft werden?",
+          "options": [
+            "Konsolidierung, Zukäufe und Berechnungsmethoden",
+            "Nur der letzte Tageskurs",
+            "Nur die Anzahl neuer Produkte"
+          ],
+          "correct": 0,
+          "xp": 39,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "financial-statement-forensics-2",
+          "title": "Cashflow mit Bilanz versöhnen",
+          "goal": "Cashflow mit Bilanz versöhnen",
+          "explanation": "Forderungen, Vorräte und Verbindlichkeiten erklären teilweise, warum Gewinn und operativer Geldfluss auseinanderlaufen. Eine nachvollziehbare Brücke verhindert vorschnelle Schlüsse.",
+          "example": "Eine Firma meldet Gewinnwachstum, während sich hohe Forderungen aufbauen. Berechne den möglichen Einfluss auf das Working Capital und vergleiche die Entwicklung mit dem Bericht.",
+          "question": "Was gilt als gute Vorgehensweise?",
+          "options": [
+            "Den Cashflow ganz ignorieren",
+            "Veränderungen in der Bilanz und im Cashflow abgleichen",
+            "Immer den höheren Wert übernehmen"
+          ],
+          "correct": 1,
+          "xp": 44,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "financial-statement-forensics-3",
+          "title": "Prüfvermerk und Unsicherheiten",
+          "goal": "Prüfvermerk und Unsicherheiten",
+          "explanation": "Der Abschlussprüfer beschreibt seinen Prüfungsumfang, mögliche Einschränkungen und besonders wichtige Prüfungssachverhalte. Ein uneingeschränkter Vermerk bedeutet nicht, dass das Unternehmen risikofrei ist.",
+          "example": "Ein Geschäftsbericht enthält einen Hinweis auf erhebliche Unsicherheit bei der Finanzierung. Dokumentiere die genaue Passage und untersuche spätere Anschlussberichte.",
+          "question": "Was bedeutet ein uneingeschränkter Prüfvermerk?",
+          "options": [
+            "Eine garantierte Aktienrendite",
+            "Keine Notwendigkeit weiterer Prüfung",
+            "Eine Prüfung nach vorgegebenen Standards, keine Zukunftsgarantie"
+          ],
+          "correct": 2,
+          "xp": 49,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "scenario-master",
+      "title": "Szenario-Modellierer",
+      "branch": "valuation",
+      "parent": "unternehmenswert",
+      "tier": 4,
+      "description": "Baue verknüpfte Modelle, die Wachstum, Margen, Kapitalbedarf und Unternehmenswert in mehreren Fällen nachvollziehbar verbinden.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "scenario-master-1",
+          "title": "Operatives Modell strukturieren",
+          "goal": "Operatives Modell strukturieren",
+          "explanation": "Ein Finanzmodell verbindet Umsatzmenge, Preise, Kostenstruktur, Steuern und Investitionen. Jede Annahme sollte eine wirtschaftliche Begründung erhalten.",
+          "example": "Bei 10 Prozent Umsatzwachstum steigt das Ergebnis nicht automatisch um 10 Prozent: fixe Kosten und Margenveränderungen können das Verhältnis verändern.",
+          "question": "Welcher Schritt ist zuerst nötig?",
+          "options": [
+            "Nur ein Kursziel abschreiben",
+            "Umsatz, Marge und Kapitalbedarf konsistent modellieren",
+            "Den höchsten Unternehmenswert auswählen"
+          ],
+          "correct": 1,
+          "xp": 35,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "scenario-master-2",
+          "title": "Drei Szenarien bewerten",
+          "goal": "Drei Szenarien bewerten",
+          "explanation": "Ein optimistischer, ein neutraler und ein negativer Fall machen Unsicherheit sichtbar. Selbst mit Wahrscheinlichkeiten bleibt das Ergebnis eine subjektive Schätzung.",
+          "example": "Ein Modell liefert 60, 90 und 120 Euro je Aktie. Gewichte und Annahmen müssen vor dem Ausrechnen offengelegt werden.",
+          "question": "Was ist fachlich korrekt?",
+          "options": [
+            "Die drei Zahlen als garantiert behandeln",
+            "Nur den positiven Fall zeigen",
+            "Annahmen und Risiken jedes Falls transparent dokumentieren"
+          ],
+          "correct": 2,
+          "xp": 40,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "scenario-master-3",
+          "title": "Sensitivität interpretieren",
+          "goal": "Sensitivität interpretieren",
+          "explanation": "Eine Sensitivitätstabelle zeigt, wie sich der errechnete Wert bei Änderungen zweier Schlüsselfaktoren entwickelt. Werte sind Schätzungen, keine Börsenpreise.",
+          "example": "Ein höherer Diskontsatz senkt bei gleichen positiven zukünftigen Zahlungen den heutigen Modellwert. Prüfe, welche Kombinationen tatsächlich plausibel sind.",
+          "question": "Was zeigt eine Sensitivitätsanalyse?",
+          "options": [
+            "Abhängigkeit vom Modell und seinen Annahmen",
+            "Den garantiert künftigen Schlusskurs",
+            "Den aktuellen Spread eines Brokers"
+          ],
+          "correct": 0,
+          "xp": 45,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "valuation-committee",
+      "title": "Bewertungskomitee",
+      "branch": "valuation",
+      "parent": "scenario-master",
+      "tier": 5,
+      "description": "Verteidige eine Bewertung gegenüber Gegenmeinungen und entscheide, wann ein gutes Unternehmen trotzdem zu teuer ist.",
+      "cost": 3,
+      "rewardPoints": 15,
+      "lessons": [
+        {
+          "id": "valuation-committee-1",
+          "title": "Annahmen angreifen",
+          "goal": "Annahmen angreifen",
+          "explanation": "Eine belastbare Unternehmensbewertung sollte auch die Argumente kennen, die gegen sie sprechen. Wachstumsraten, Wettbewerb, notwendige Investitionen und Kapitalkosten sind kritische Prüfstellen.",
+          "example": "Ein Optimist erwartet 20 Prozent Wachstum über zehn Jahre. Ein Skeptiker fordert nachvollziehbare Marktanteils- und Investitionsannahmen.",
+          "question": "Was zeichnet eine gute Gegenprüfung aus?",
+          "options": [
+            "Nur schlechte Schlagzeilen sammeln",
+            "Die entscheidenden Modellannahmen mit Daten testen",
+            "Immer den höchsten Wert verteidigen"
+          ],
+          "correct": 1,
+          "xp": 39,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "valuation-committee-2",
+          "title": "Preis und Wert trennen",
+          "goal": "Preis und Wert trennen",
+          "explanation": "Ein hoher Börsenpreis kann selbst dann riskant sein, wenn die Firma überdurchschnittlich wächst. Sicherheitsabstand ist eine Schätzung und kein Verlustschutz.",
+          "example": "Ein konservativ berechneter Wert liegt bei 80 Euro, der Kurs bei 110 Euro. Der langfristige Erfolg des Unternehmens allein macht diesen Einstieg nicht günstig.",
+          "question": "Welche Schlussfolgerung ist zulässig?",
+          "options": [
+            "Eine Qualitätsfirma muss immer gekauft werden",
+            "Ein hoher Kurs garantiert weitere Anstiege",
+            "Qualität und heutiger Preis getrennt beurteilen"
+          ],
+          "correct": 2,
+          "xp": 44,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "valuation-committee-3",
+          "title": "Revisionsregeln festlegen",
+          "goal": "Revisionsregeln festlegen",
+          "explanation": "Eine Analyse wird besser, wenn man vorab aufschreibt, welche Zahlen eine These widerlegen würden. Das begrenzt den nachträglichen Wunsch, immer Recht zu behalten.",
+          "example": "Setze feste Termine nach Quartalsberichten und überprüfe Wachstum, Free Cashflow und die ursprüngliche Kapitalbedarfsannahme.",
+          "question": "Was ist eine überprüfbare These?",
+          "options": [
+            "Eine Aussage mit messbaren Bedingungen für Neubewertung",
+            "Ein Bauchgefühl ohne Quellen",
+            "Nur eine einzelne Kursprognose"
+          ],
+          "correct": 0,
+          "xp": 49,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "position-sizing",
+      "title": "Positionsgröße & Rebalancing",
+      "branch": "risk",
+      "parent": "makro-risiken",
+      "tier": 4,
+      "description": "Bestimme, wie viel eine Einzelidee das gesamte Depot gefährden darf, und plane sinnvolle Anpassungen ohne hektischen Aktionismus.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "position-sizing-1",
+          "title": "Risikoanteile berechnen",
+          "goal": "Risikoanteile berechnen",
+          "explanation": "Eine Position von 25 Prozent des Depots, die um 40 Prozent fällt, verursacht rechnerisch zehn Prozentpunkte Depotverlust. So lassen sich Grenzwerte festlegen.",
+          "example": "In einem virtuellen 1.000-Euro-Depot sind 250 Euro in einer Aktie. Bei 40 Prozent Verlust fehlen 100 Euro.",
+          "question": "Wie hoch ist der Depotverlust durch diesen Titel allein?",
+          "options": [
+            "10 Prozent",
+            "40 Prozent",
+            "25 Prozent"
+          ],
+          "correct": 0,
+          "xp": 35,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "position-sizing-2",
+          "title": "Rebalancing erklären",
+          "goal": "Rebalancing erklären",
+          "explanation": "Wenn Kurse stark unterschiedlich steigen, verändern sich ursprüngliche Gewichte. Rebalancing stellt eine gewünschte Risikoverteilung wieder her, kann aber Kosten und Steuern auslösen.",
+          "example": "Eine Anlage wächst von 20 auf 35 Prozent Depotgewicht. Prüfe, ob eine teilweise Umschichtung dem langfristigen Risikoplan entspricht.",
+          "question": "Was ist ein sinnvoller Grund für Rebalancing?",
+          "options": [
+            "Jede winzige Tagesschwankung sofort handeln",
+            "Zu stark verschobene Portfolio-Risiken wieder ausgleichen",
+            "Alle Verluste garantiert verhindern"
+          ],
+          "correct": 1,
+          "xp": 40,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "position-sizing-3",
+          "title": "Risikobudget dokumentieren",
+          "goal": "Risikobudget dokumentieren",
+          "explanation": "Das Risikobudget hängt von Einkommen, geplanten Ausgaben, Liquiditätsreserve und Verlusttragfähigkeit ab. Eine einfache Formel ersetzt diese persönliche Situation nicht.",
+          "example": "Du brauchst in sechs Monaten Geld für eine Rechnung. Dieses Geld gehört nicht ins Risikoportfolio, auch wenn eine Aktie aussichtsreich wirkt.",
+          "question": "Welcher Grundsatz gilt?",
+          "options": [
+            "Kurze Ausgaben immer mit Aktien finanzieren",
+            "Kursgewinne als sichere Reserven zählen",
+            "Notwendige Liquidität vom Risikoportfolio trennen"
+          ],
+          "correct": 2,
+          "xp": 45,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "portfolio-risk-chief",
+      "title": "Portfolio-Risikochef",
+      "branch": "risk",
+      "parent": "position-sizing",
+      "tier": 5,
+      "description": "Verbinde Stresstests, Liquidität und Verhaltensrisiken zu einer vollständigen Depotregel, die in schwierigen Phasen tragfähig bleibt.",
+      "cost": 3,
+      "rewardPoints": 15,
+      "lessons": [
+        {
+          "id": "portfolio-risk-chief-1",
+          "title": "Klumpenrisiken identifizieren",
+          "goal": "Klumpenrisiken identifizieren",
+          "explanation": "Ein Depot kann über mehrere Unternehmen hinweg von derselben Zins-, Energie- oder Technologieentwicklung abhängen. Solche versteckten Gemeinsamkeiten sind in Krisen relevant.",
+          "example": "Ein Depot besteht zu 70 Prozent aus Firmen, deren Nachfrage von Rechenzentrumsinvestitionen abhängt. Andere Aktiennamen beseitigen dieses Konzentrationsrisiko nicht.",
+          "question": "Was zeigt eine sinnvolle Risikokarte?",
+          "options": [
+            "Gemeinsame wirtschaftliche Abhängigkeiten",
+            "Nur die Anzahl der Ticker",
+            "Nur die Durchschnittsdividende"
+          ],
+          "correct": 0,
+          "xp": 39,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "portfolio-risk-chief-2",
+          "title": "Liquiditätskrise simulieren",
+          "goal": "Liquiditätskrise simulieren",
+          "explanation": "Unter Druck können Kursverluste, schlechtere Handelbarkeit und ein persönlicher Geldbedarf zusammenfallen. Teste, wie viel ohne Zwangsverkauf verfügbar bleibt.",
+          "example": "Ein Depot verliert 30 Prozent, gleichzeitig wird Geld für eine Reparatur benötigt. Der Notgroschen verringert die Gefahr, Wertpapiere ungünstig verkaufen zu müssen.",
+          "question": "Welche Maßnahme schützt besonders gegen Zwangsverkäufe?",
+          "options": [
+            "Noch stärkere Konzentration",
+            "Ein ausreichender getrennter Liquiditätspuffer",
+            "Blindes Nachkaufen jeder fallenden Aktie"
+          ],
+          "correct": 1,
+          "xp": 44,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "portfolio-risk-chief-3",
+          "title": "Regeln gegen Denkfehler",
+          "goal": "Regeln gegen Denkfehler",
+          "explanation": "Ankerpreise, Verlustaversion und selektive Nachrichtenwahl können Depotentscheidungen verzerren. Vorab dokumentierte Kriterien verbessern die Nachvollziehbarkeit.",
+          "example": "Ein Anleger hält eine Aktie nur, weil er seinen früheren Einstiegskurs wiedersehen möchte. Eine neue Bewertung sollte die Zukunftsaussichten prüfen.",
+          "question": "Was ist die bessere Entscheidungsbasis?",
+          "options": [
+            "Der ursprüngliche Kaufpreis allein",
+            "Eine optimistische Chatgruppe",
+            "Künftiger Wert, Risiken und Alternativen"
+          ],
+          "correct": 2,
+          "xp": 49,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "evidence-auditor",
+      "title": "Research-Quellenprüfer",
+      "branch": "research",
+      "parent": "investment-these",
+      "tier": 4,
+      "description": "Bewerte Primärquellen, Interessenkonflikte und statistische Aussagen so, dass eine Investmentanalyse reproduzierbar wird.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "evidence-auditor-1",
+          "title": "Quellenkette dokumentieren",
+          "goal": "Quellenkette dokumentieren",
+          "explanation": "Bei jeder wichtigen Aussage muss sichtbar sein, wo sie herkommt, wann sie veröffentlicht wurde und welche Zahl tatsächlich im Original steht.",
+          "example": "Ein Screenshot zeigt 30 Prozent Wachstum ohne Zeitraum. Ermittle den Bericht, die Definition, den Wert im Vorjahr und die aktuelle Zahl.",
+          "question": "Welche Form dokumentiert eine Kennzahl vollständig?",
+          "options": [
+            "Nur ein Aktienforum",
+            "Quelle, Einheit, Zeitraum und Vergleichsmethode",
+            "Eine anonyme Behauptung"
+          ],
+          "correct": 1,
+          "xp": 35,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "evidence-auditor-2",
+          "title": "Korrelation von Ursache unterscheiden",
+          "goal": "Korrelation von Ursache unterscheiden",
+          "explanation": "Zwei zeitgleich steigende Werte beweisen nicht, dass einer den anderen verursacht. Prüfe alternative Erklärungen und den zeitlichen Ablauf.",
+          "example": "Ein Aktienkurs steigt, nachdem eine KI-Konferenz beginnt. Gleichzeitig könnten Zinsen gefallen oder Gewinne gemeldet worden sein.",
+          "question": "Welche Aussage ist seriös?",
+          "options": [
+            "Die Konferenz war sicher allein verantwortlich",
+            "Der Kurs beweist den Nutzen der KI",
+            "Weitere Einflussfaktoren und Vergleichsdaten prüfen"
+          ],
+          "correct": 2,
+          "xp": 40,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "evidence-auditor-3",
+          "title": "Interessenkonflikte untersuchen",
+          "goal": "Interessenkonflikte untersuchen",
+          "explanation": "Unternehmenspräsentationen, Analystenberichte und bezahlte Werbung haben unterschiedliche Anreize. Ein guter Research-Prozess kennt deren Herkunft.",
+          "example": "Ein bezahlter Influencer wirbt mit einem hohen Kursziel, nennt aber weder Annahmen noch Risiken. Eine unabhängige Quellenprüfung ist erforderlich.",
+          "question": "Was ist bei dieser Quelle besonders wichtig?",
+          "options": [
+            "Finanzielle Interessen und Belege offenlegen",
+            "Nur die Followerzahl zählen",
+            "Ein Kursziel unkritisch übernehmen"
+          ],
+          "correct": 0,
+          "xp": 45,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "senior-investigator",
+      "title": "Investment-Researchleiter",
+      "branch": "research",
+      "parent": "evidence-auditor",
+      "tier": 5,
+      "description": "Verbinde Kennzahlen, Bewertung, Gegenargumente und Portfolio-Risiko in einer unabhängigen schriftlichen Analyse mit nachvollziehbarer Revision.",
+      "cost": 3,
+      "rewardPoints": 15,
+      "lessons": [
+        {
+          "id": "senior-investigator-1",
+          "title": "Analysedossier erstellen",
+          "goal": "Analysedossier erstellen",
+          "explanation": "Eine fundierte Unternehmensanalyse ordnet Geschäft, Branche, Kennzahlen, Bewertung und Risiken in ein zusammenhängendes Dossier ein. Jede zentrale Aussage braucht eine überprüfbare Quelle.",
+          "example": "Analysiere eine fiktive Firma über drei Jahre, erkläre ihre Margenentwicklung und dokumentiere das stärkste Gegenargument.",
+          "question": "Was gehört zwingend in ein Dossier?",
+          "options": [
+            "Nur das Kursziel",
+            "Nur positive Produktmeldungen",
+            "Belege, Rechnungen, Bewertungsannahmen und Risiken"
+          ],
+          "correct": 2,
+          "xp": 39,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "senior-investigator-2",
+          "title": "Investitionsausschuss simulieren",
+          "goal": "Investitionsausschuss simulieren",
+          "explanation": "In einem Ausschuss müssen verschiedene Perspektiven zusammenkommen: Wachstum, Finanzierung, Alternativen und Preis. Eine gute Analyse kann auch zu einem begründeten Nein führen.",
+          "example": "Ein hervorragendes Unternehmen erscheint bei der aktuellen Bewertung zu teuer. Begründe die Entscheidung ohne die Qualität des Geschäftsmodells zu leugnen.",
+          "question": "Wann ist eine Ablehnung eine gute Analyseleistung?",
+          "options": [
+            "Wenn Preis und Risiko trotz guter Firma nicht passen",
+            "Nie",
+            "Nur bei einem roten Tageschart"
+          ],
+          "correct": 0,
+          "xp": 44,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "senior-investigator-3",
+          "title": "Thesen nachprüfen",
+          "goal": "Thesen nachprüfen",
+          "explanation": "Ein Researchprozess ist erst vollständig, wenn frühere Annahmen gegen neue Fakten getestet werden. Änderungen sollten datiert und begründet bleiben.",
+          "example": "Nach einem Quartalsbericht sinkt der erwartete freie Cashflow. Aktualisiere den ursprünglichen Werttreiber statt nur das Kursziel kosmetisch anzupassen.",
+          "question": "Was zeigt integre Forschung?",
+          "options": [
+            "Die alte Begründung löschen",
+            "Widersprechende Belege sichtbar berücksichtigen",
+            "Kursziele ohne Modelle erhöhen"
+          ],
+          "correct": 1,
+          "xp": 49,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
