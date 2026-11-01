@@ -1,5 +1,5 @@
 {
-  "version": 38,
-  "release": "2026-11-01-v38",
-  "notes": "Private Supabase event inbox now queues new Watchlist tickers and consented free-text reviews on DB INSERT; hourly ChatGPT finance editorial task polls queue. Analyses only by explicit request. Four initial Watchlist stocks covered with complete free in-app stories including new Siemens and NVIDIA articles. News refresh in app. Career, reward, skills and animations system planned only (docs/GAMIFICATION_SYSTEM_PLAN_V38.md), not implemented."
+  "version": 39,
+  "release": "2026-11-01-v39",
+  "notes": "Lernen rebuilt as a clean single-path beginner curriculum: six distinct stage screens, 36 real lessons including interstage checks, from money and saving through company financials, valuation, calculation, independent research and investment judgment. Clear start/resume, explanations and worked examples, answer feedback and safe page rewind. Private learning progress sync. Existing specialized courses moved to optional supplements; old progress kept. One unified XP-skill-career-artifact system and small streak popup/rewards are PLANNED ONLY (docs/CONNECTED_PROGRESSION_STREAK_PLAN_V39.md), not implemented."
 }
