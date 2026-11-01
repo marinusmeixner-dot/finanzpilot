@@ -6,7 +6,7 @@
  const MAIN=['home','learn','markets','depot','progress'];
  const GROUPS={
  home:{label:'Start',links:[['home','Tagesübersicht','Dein täglicher FinanzPilot']]},
- learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Lernpfad','Lektionen und tägliche Übungen'],['concepts','Begriffs-Akademie','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['transfer','Transferwerkstatt','Größere Firmenfälle, Rechnungen und fundierte Entscheidungen'],['training','Praxis-Trainingslabor','Unternehmen analysieren und mit Zahlen rechnen'],['skills','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt'],['learningnews','News verstehen','Tagesaktuelle Nachrichten mit anspruchsvollen Analysefragen'],['dailyreview','Tägliche Herausforderungen','Eigene Antworten privat einreichen und bewerten lassen'],['academymarket','Mein Markturteil','Marktszenarien verstehen und Schlüsse ziehen'],['stockhub','Aktienresearch & Werkzeuge','Analysen, Bewertungsmodelle, Thesen und Intensivkurse']]},
+ learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Grundlagen · Schritt 1','Lektionen und tägliche Übungen'],['concepts','Finanzielle Zusammenhänge · Schritt 2–3','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['transfer','Transferwerkstatt · Schritt 4','Größere Firmenfälle, Rechnungen und fundierte Entscheidungen'],['training','Praxislabor · Schritt 5','Unternehmen analysieren und mit Zahlen rechnen'],['skills','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt'],['learningnews','News verstehen','Tagesaktuelle Nachrichten mit anspruchsvollen Analysefragen'],['dailyreview','Tägliche Herausforderungen','Eigene Antworten privat einreichen und bewerten lassen'],['academymarket','Mein Markturteil','Marktszenarien verstehen und Schlüsse ziehen'],['stockhub','Aktienresearch & Werkzeuge','Analysen, Bewertungsmodelle, Thesen und Intensivkurse']]},
  markets:{label:'Märkte',description:'Deine Watchlist-Charts und aktuelle Nachrichten – Lernen findest du im Lern-Tab',links:[['marketoverview','Marktüberblick','Ausschließlich Charts deiner gemerkten Aktien'],['marketnews','News','Gesamtmarkt, Watchlist-Nachrichten und interessante neue Aktien']]},
  stockhub:{label:'Aktienresearch & Werkzeuge',description:'Unternehmen recherchieren und fundiert bewerten',links:[['researchcatalog','Aktienanalysen','Umfassende Einzelaktien- und Unternehmensrecherchen'],['investmentcommittee','Investmentkomitee','Kursziele selbst modellieren und ein Investmenturteil erarbeiten'],['theses','Thesenjournal','Eigene Bewertungen prüfen, überarbeiten und über längere Zeit vergleichen'],['academy','Aktien-Intensivkurse','Vollständige Bewertungsprozesse Schritt für Schritt']]},
  depot:{label:'Depot',description:'Deine virtuellen Aktienpositionen, Spielgeld und Transaktionen',links:[]},
@@ -64,29 +64,44 @@
  }
  const isHub=v=>(MAIN.includes(v)&&v!=='home'&&v!=='depot')||v==='stockhub';
  function learningGuide(){
-  const read=k=>{try{return JSON.parse(localStorage.getItem(k)||'{}')||{}}catch{return {}}};
-  const concept=read('finanzpilot_concepts_v1'),transfer=read('finanzpilot_transfer_v1');
-  const all=[...Object.values(concept.reviews||{}),...Object.values(transfer.reviews||{})];
-  const today=new Intl.DateTimeFormat('sv-SE',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
-  const due=all.filter(r=>r?.due&&r.due<=today).length;
-  const learned=window.FinanzPilotConcepts?.achievements||{};
-  const modules=window.FinanzPilotConcepts?.modules||[];
-  const next=modules.find(m=>!learned[m.id]&&(!m.prerequisite||learned[m.prerequisite]));
-  const transferModules=window.FinanzPilotTransfer?.modules||[];
-  const canApply=transferModules.some(m=>(!m.prerequisite||learned[m.prerequisite])&&!(transfer.sessions?.[m.id]?.bestScore>=5));
-  return '<section class="fp-learning-guide"><div class="fp-learning-guide-head"><h2>Dein Lernkompass</h2><p>Wähle, was dein Wissen heute am stärksten verbessert.</p></div><div class="fp-learning-guide-grid">'+
-   '<button type="button" data-section-route="concepts"><span>01 · AUFBAUEN</span><b>'+(next?esc(next.title):'Wissen vertiefen')+'</b><small>'+(next?'Nächste sinnvoll freigeschaltete Lernstufe':'Erklärungen, Rechnungen und aufeinanderfolgende Kurse')+'</small></button>'+
-   '<button type="button" data-section-route="transfer"><span>02 · ANWENDEN</span><b>Fälle durchrechnen</b><small>'+(canApply?'Ein neuer Transferfall ist verfügbar':'Fünf anspruchsvolle Unternehmensfälle, stufenweise freischaltbar')+'</small></button>'+
-   '<button type="button" data-section-route="concepts"><span>03 · FESTIGEN</span><b>'+due+' Wiederholungen fällig</b><small>Gezielte Aufgaben helfen, Wissen langfristig zu sichern</small></button>'+
-  '</div></section>';
+  const c=window.FinanzPilotConcepts,modules=c?.modules||[],skills=c?.achievements||{};
+  const done=modules.filter(m=>skills[m.id]).length,possible=modules.filter(m=>!skills[m.id]&&(!m.prerequisite||skills[m.prerequisite]));
+  const next=possible[0]||modules.find(m=>!skills[m.id]);
+  const progressText=modules.length?done+' von '+modules.length+' Lernstufen abgeschlossen':'Lernstufen werden geladen';
+  const copy=done===0?'Starte hier: Zuerst Grundlagen, danach die erste Zahlen-Lektion.':next?'Weiter bei: '+next.title:'Alle verfügbaren Stufen geschafft – Wissen nun in Praxisfällen anwenden.';
+  return '<section class="fp37-roadmap"><div class="fp37-roadmap-intro"><span class="eyebrow">DEIN PERSÖNLICHER LERNWEG</span><h2>Hier fängst du an.</h2><p>'+esc(copy)+'</p><div class="fp37-progress-track"><span style="width:'+(modules.length?Math.round(100*done/modules.length):0)+'%"></span></div><small>'+esc(progressText)+' · Fortschritt wird gespeichert</small></div>'+
+   '<div class="fp37-guide-actions">'+
+   (done===0?'<button type="button" class="btn" data-section-route="learnpath">01 · Mit den Grundlagen starten →</button>':
+    next?'<button type="button" class="btn" data-learning-module="'+esc(next.id)+'">Nächste Lernstufe: '+esc(next.title)+' →</button>':
+    '<button type="button" class="btn" data-section-route="transfer">Weiter in die Transferwerkstatt →</button>')+
+   '<button type="button" class="btn secondary" data-section-route="concepts">Alle Lern- und Zwischenstufen ansehen</button></div>'+
+   '<ol class="fp37-roadmap-steps">'+[
+    ['01','Orientieren','Grundlagen, Zahlen und Unternehmensberichte','learnpath'],
+    ['02','Verstehen','Gewinn, Bilanz, Cashflow und Zwischenstufen','concepts'],
+    ['03','Verknüpfen','Kennzahlen, Kapitalkosten und Bewertung','concepts'],
+    ['04','Anwenden','Rechnen und reale Problemstellungen bearbeiten','transfer'],
+    ['05','Selbst analysieren','Praxisfälle, vollständige Unternehmensanalysen','training'],
+    ['06','Urteil bilden','Eigene Investmentthese, Marktnachrichten verstehen','stockhub']
+   ].map(([i,title,sub,target],j)=>'<li><button type="button" data-section-route="'+target+'"><span class="fp37-roadmap-marker">'+i+'</span><span><strong>'+title+'</strong><small>'+sub+'</small></span><span aria-hidden="true">›</span></button></li>').join('')+'</ol></section>';
  }
  function renderHub(v){
   if(!isHub(v))return '';
-  const g=GROUPS[v];
-  return '<section class="fp-tab-hub"><div class="fp-tab-hub-intro"><div class="eyebrow">DEIN FINANZPILOT</div><h1>'+esc(g.label)+'</h1><p>'+esc(g.description)+'</p></div><div class="fp-tab-hub-list">'+g.links.map(([id,name,desc],i)=>
-   '<button type="button" class="fp-tab-hub-item" '+(id==='account'?'data-section-account':'data-section-route="'+esc(id)+'"')+'><span class="fp-tab-hub-number">'+String(i+1).padStart(2,'0')+'</span><span class="fp-tab-hub-copy"><strong>'+esc(name)+'</strong><small>'+esc(desc)+'</small></span><span class="fp-tab-hub-chevron">'+icon('arrow',18)+'</span></button>'
-   ).join('')+'</div>'+(v==='learn'?learningGuide():'')+'</section>';
+  const g=GROUPS[v],intro='<section class="fp-tab-hub"><div class="fp-tab-hub-intro"><div class="eyebrow">DEIN FINANZPILOT</div><h1>'+esc(g.label)+'</h1><p>'+esc(g.description)+'</p></div>';
+  const link=([id,name,desc],i)=>'<button type="button" class="fp-tab-hub-item" '+(id==='account'?'data-section-account':'data-section-route="'+esc(id)+'"')+'><span class="fp-tab-hub-number">'+String(i+1).padStart(2,'0')+'</span><span class="fp-tab-hub-copy"><strong>'+esc(name)+'</strong><small>'+esc(desc)+'</small></span><span class="fp-tab-hub-chevron">'+icon('arrow',18)+'</span></button>';
+  if(v!=='learn')return intro+'<div class="fp-tab-hub-list">'+g.links.map(link).join('')+'</div></section>';
+  const groups=[
+   ['Dein Lernpfad','In dieser Reihenfolge bauen die Fähigkeiten aufeinander auf.',['learnpath','concepts','transfer','training','academy']],
+   ['Wissen auf echte Märkte übertragen','Aktuelle Nachrichten, deine Analyse und kritische Reflexion.',['learningnews','dailyreview','academymarket','stockhub']],
+   ['Nachschlagen und Fortschritt vertiefen','Hilfsmittel, Lernmethoden und ergänzende Wissensbereiche.',['skills','glossary','foundations']]
+  ];
+  const seen=new Set();
+  const html=groups.map(([title,description,ids])=>{
+   const items=g.links.filter(row=>ids.includes(row[0])&&!seen.has(row[0]));items.forEach(row=>seen.add(row[0]));
+   return '<section class="fp37-learning-group"><h2>'+esc(title)+'</h2><p>'+esc(description)+'</p><div class="fp-tab-hub-list">'+items.map(link).join('')+'</div></section>'
+  }).join('');
+  return intro+learningGuide()+html+'</section>';
  }
+
  function build(){
   const side=document.querySelector('.sidebar');
   if(side)side.innerHTML='<div class="brand"><div class="brand-symbol">↗</div><div><b>FinanzPilot</b><small>WISSEN & ANALYSE</small></div></div><nav class="fp-side-main" aria-label="Hauptnavigation">'+MAIN.map(id=>
@@ -151,9 +166,10 @@
   if(!location.hash||!hash.get('view'))history.replaceState(null,'',location.pathname+location.search+'#view='+encodeURIComponent(initial));
   restoreScroll(initial,ROOT_VIEWS.has(initial)?0:Number(saved.positions?.[initial]||0));
   document.addEventListener('click',ev=>{
-   const t=ev.target.closest('[data-section-main],[data-section-route],[data-section-back],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
+   const t=ev.target.closest('[data-section-main],[data-section-route],[data-learning-module],[data-section-back],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
    if(!t)return;
    if(t.matches('[data-section-back]')){ev.preventDefault();ev.stopImmediatePropagation();goBack();return}
+    if(t.matches('[data-learning-module]')){ev.preventDefault();ev.stopImmediatePropagation();const id=t.dataset.learningModule;route('concepts');window.FinanzPilotConcepts?.open?.(id);return}
     if(t.matches('[data-section-account]')){ev.preventDefault();ev.stopImmediatePropagation();window.FinanzPilotCloud?.openLogin?.();return}
    if(t.matches('[data-hub-continue]')){ev.preventDefault();ev.stopImmediatePropagation();const target=load().resume;route(LEARNING_VIEWS.has(target)?target:'learnpath');return}
    const dest=t.dataset.sectionMain||t.dataset.sectionRoute||t.dataset.sectionUp||t.dataset.hubView||t.dataset.view;
