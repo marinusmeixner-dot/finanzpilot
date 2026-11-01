@@ -1,10 +1,14 @@
 /* v46: four-step specialist teaching – earned rewards remain server-owned. */
 (function(){
 'use strict';
-let selected='',page=0;
+let selected='',page=0,lastFeedback=null;
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels=['Verstehen','Beispiel lösen','Selbst erklären','Wissen prüfen'];
-function open(id){if(selected!==id){selected=id;page=0}}
+function open(id){if(selected!==id){selected=id;page=0;lastFeedback=null}}
+function feedback(lessonId,correct){
+ if(lessonId!==selected)return;
+ lastFeedback={id:lessonId,correct:!!correct};
+}
 function render(skill,lesson,info={}){
  if(selected!==lesson.id)open(lesson.id);
  const done=Boolean(info.completed),step=Math.max(0,Math.min(3,page));
@@ -24,7 +28,11 @@ function render(skill,lesson,info={}){
   (lesson.transferHint?'<details class="fp46-transfer-hint"><summary>Prüfkriterien zur Erklärung</summary><p>'+esc(lesson.transferHint)+'</p></details>':'')+'</section>';
  if(step===3)content='<section class="fp41-question fp46-study-panel"><span class="eyebrow">04 · AKTIVES ABRUFEN</span><h3>'+esc(lesson.question)+'</h3><p>Versuche ohne Nachlesen zu antworten. Die Bewertung erfolgt weiterhin auf dem Server.</p>'+
   lesson.options.map((opt,i)=>'<button type="button" data-fp41-answer="'+i+'" '+(done?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+esc(opt)+'</button>').join('')+
-  '<div class="fp41-answer-status">'+(done?'✓ Bereits bestanden. Erneutes Lesen vergibt keine doppelten XP.':'Falls du falsch liegst, lies die Erklärung erneut und versuche es noch einmal.')+'</div></section>';
+  '<div class="fp41-answer-status">'+(done?'✓ Bereits bestanden. Erneutes Lesen vergibt keine doppelten XP.':'Falls du falsch liegst, lies die Erklärung erneut und versuche es noch einmal.')+'</div>'+
+  (lastFeedback?.id===lesson.id?'<div class="fp48-feedback '+(lastFeedback.correct?'correct':'retry')+'" role="status"><h4>'+(lastFeedback.correct?'Richtig – das solltest du mitnehmen':'Noch nicht richtig – so kannst du es prüfen')+'</h4>'+
+  '<p>'+esc(lastFeedback.correct?(lesson.keyTakeaway||lesson.goal):(lesson.pitfall||'Vergleiche deine Antwort nochmals mit dem Beispiel und kontrolliere die zugrunde liegende Definition.'))+'</p>'+
+  '<details><summary>'+(lastFeedback.correct?'Den Zusammenhang noch einmal nachvollziehen':'Hilfestellung: Was ist entscheidend?')+'</summary><p>'+esc(lastFeedback.correct?lesson.explanation:(lesson.transferHint||lesson.explanation))+'</p></details>'+
+  (lastFeedback.correct?'':'<button type="button" class="btn secondary" data-fp46-study-step="0">Erklärung erneut lesen →</button>')+'</div>':'')+'</section>';
  return '<div class="fp41-study fp46-stepper"><div class="eyebrow">'+esc(skill.title)+' · LEKTION '+lesson.sequence+' VON '+skill.lessons.length+'</div><h2>'+esc(lesson.title)+'</h2>'+
   '<p class="fp46-study-goal"><b>Danach kannst du:</b> '+esc(lesson.goal)+'</p>'+steps+content+
   '<div class="fp46-study-controls">'+(step>0?'<button type="button" class="btn secondary" data-fp46-study-step="'+(step-1)+'">← Vorheriger Lernschritt</button>':'')+
@@ -46,5 +54,5 @@ function bind(root=document){
 
  window.FinanzPilotStudy?.bind?.(root);
 }
-window.FinanzPilotLessonView={open,render,bind,get page(){return page}};
+window.FinanzPilotLessonView={open,render,bind,feedback,get page(){return page}};
 })();
