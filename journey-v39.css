@@ -1,0 +1,62 @@
+/* v39: real six-stage financial education, deliberately independent of proposed rewards */
+.fp39-home,.fp39-stage-page,.fp39-lesson{display:flex;flex-direction:column;gap:17px;max-width:900px;margin:4px auto 40px;color:#e8f6f2}
+.fp39-intro{border-bottom:1px solid #355365;padding:12px 3px 24px;display:flex;flex-direction:column;gap:10px}
+.fp39-intro h1,.fp39-stage-page h1,.fp39-lesson h1{font-size:clamp(26px,4vw,35px);line-height:1.2;margin:0}
+.fp39-intro>p,.fp39-stage-purpose,.fp39-course-goal{font-size:15px;line-height:1.7;color:#bfd2d6;max-width:650px}
+.fp39-start{display:flex;align-items:center;justify-content:flex-start;flex-wrap:wrap;gap:10px;margin-top:7px}
+.fp39-start .btn{min-height:42px}
+.fp39-start>small{font-size:12px;color:#a5c2c9}
+.fp39-mini-track{flex:1;max-width:145px;background:#15323b;height:8px;border-radius:20px;overflow:hidden}
+.fp39-mini-track span{background:#85e5b7;display:block;height:100%;border-radius:20px}
+.fp39-stage-grid{display:grid;grid-template-columns:1fr;gap:10px}
+.fp39-stage{display:flex;align-items:center;gap:15px;width:100%;text-align:left;background:#142d3b;border:1px solid #355562;border-radius:15px;padding:18px 17px;color:#e8f8f2;cursor:pointer}
+.fp39-stage.current{border-color:#7bdbac;background:#173a3a}
+.fp39-stage:hover,.fp39-stage:focus-visible,.fp39-module:hover,.fp39-module:focus-visible{border-color:#90e6bb;outline-offset:2px}
+.fp39-stage-num,.fp39-module-num{flex:none;display:grid;place-items:center;font-variant-numeric:tabular-nums;font-size:13px;font-weight:750;color:#a1eec8;background:#214a45;border-radius:12px;width:40px;height:40px}
+.fp39-stage-body,.fp39-module>span:nth-child(2){display:flex;flex-direction:column;min-width:0;flex:1;gap:4px}
+.fp39-stage-body strong{font-size:18px}
+.fp39-stage-body>span,.fp39-module small{font-size:13px;color:#b1cbd0;line-height:1.5}
+.fp39-stage-body small,.fp39-module em{font-size:12px;color:#8fe1bc;font-style:normal}
+.fp39-stage-chevron{font-size:24px;color:#99dfb9}
+.fp39-optional{border:1px solid #354e5b;border-radius:14px;padding:16px;margin:9px 0 0}
+.fp39-optional summary{font-size:14px;font-weight:650;cursor:pointer}
+.fp39-optional p{font-size:13px;line-height:1.6;color:#afc7cc;margin:12px 0}
+.fp39-extras{display:flex;flex-wrap:wrap;gap:10px;margin-top:13px}
+.fp39-extras .btn{font-size:12px}
+.fp39-stage-goal{background:#173b3a;border-left:4px solid #7fdab0;border-radius:11px;padding:17px 18px}
+.fp39-stage-goal>b{font-size:14px}
+.fp39-stage-goal p{color:#daf5e8;line-height:1.6;font-size:14px;margin:7px 0 0}
+.fp39-small-progress{font-size:13px;color:#aac4ca}
+.fp39-module-list{display:flex;flex-direction:column;gap:9px}
+.fp39-module{display:flex;gap:14px;align-items:center;text-align:left;width:100%;padding:16px 15px;border:1px solid #3d5b66;background:#142f3d;border-radius:13px;color:#e6f5ee;cursor:pointer}
+.fp39-module.done{background:#143c38}
+.fp39-module b{font-size:15px}
+.fp39-bottom-actions{display:flex;flex-wrap:wrap;gap:12px}
+.fp39-bottom-actions>.btn{font-size:13px}
+.fp39-course-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px;align-items:center}
+.fp39-course-count{font-size:12px;color:#afcbcb}
+.fp39-lesson-progress{display:grid;grid-template-columns:repeat(5,1fr);gap:5px}
+.fp39-lesson-progress span{height:6px;background:#28474b;border-radius:30px}
+.fp39-lesson-progress span.active{background:#77dbaa}
+.fp39-reading{display:flex;flex-direction:column;gap:17px;background:#142c39;border:1px solid #3b5661;border-radius:17px;padding:24px;min-height:255px}
+.fp39-reading>h2{font-size:clamp(19px,3vw,24px);line-height:1.3;margin:0}
+.fp39-reading>p{color:#d6e6e5;font-size:16px;line-height:1.85;max-width:690px}
+.fp39-hint{background:#0f2831;border:1px solid #375a59;border-radius:12px;padding:15px}
+.fp39-hint p{line-height:1.65;font-size:14px;color:#b9d5d0;margin:6px 0 0}
+.fp39-choices{display:flex;flex-direction:column;gap:10px}
+.fp39-choice{width:100%;display:flex;align-items:flex-start;gap:12px;text-align:left;padding:15px;background:#1a3948;border:1px solid #486771;border-radius:11px;color:#e8f7f1;font-size:14px;line-height:1.6;cursor:pointer}
+.fp39-choice span{flex:none;background:#2b4e56;border-radius:7px;padding:3px 8px}
+.fp39-choice.correct{border-color:#75d8a8;background:#1b5045}
+.fp39-choice.wrong{border-color:#d7aa8a;background:#483a3b}
+.fp39-choice:disabled{cursor:default}
+.fp39-feedback{border-radius:11px;border:1px solid #42646a;padding:15px;display:flex;flex-direction:column;gap:8px}
+.fp39-feedback.correct{background:#173f36}
+.fp39-feedback.retry{background:#3b3334}
+.fp39-feedback p{color:#d2e4dd;line-height:1.7;font-size:14px}
+.fp39-lesson-buttons{display:flex;justify-content:flex-start;flex-wrap:wrap;gap:9px}
+.fp39-lesson-buttons .btn:disabled{opacity:.48;cursor:not-allowed}
+.fp39-lesson-note{color:#9fbec4;font-size:12px;line-height:1.5}
+.fp39-plain-note{font-size:13px!important;color:#a8c6c9!important}
+.fp39-loading{border-radius:12px;padding:20px;color:#b9d4d8;background:#18323c}
+@media(max-width:700px){.fp39-start{align-items:flex-start;flex-direction:column}.fp39-start .btn{width:100%}.fp39-reading{padding:18px 16px}.fp39-reading>p{font-size:15px}.fp39-stage{padding:14px 12px;gap:11px}.fp39-stage-body strong{font-size:16px}.fp39-stage-num{width:36px;height:36px}.fp39-lesson-buttons .btn{flex:1}}
+@media(prefers-reduced-motion:reduce){.fp39-mini-track span{transition:none}}
