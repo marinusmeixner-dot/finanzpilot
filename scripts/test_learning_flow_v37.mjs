@@ -14,7 +14,7 @@ for(const id of bridges){
  assert(m.steps[2].correct.length===2);
 }
 const course=read('concepts.js'),training=read('training.js'),academy=read('academy.js'),nav=read('ux-v15.js'),market=read('market-v34.js'),portfolio=read('portfolio.js'),edge=read('supabase/functions/finanzpilot-stock-lookup/index.ts');
-assert(nav.includes('window.FinanzPilotJourney?.renderHome'));
+assert(nav.includes('window.FinanzPilotLearningHub?.home'));
 assert(read('journey-v39.js').includes('data-journey-start'));
 assert(read('journey-v39.css').includes('fp39-stage-grid'));
 assert(academy.includes('previewStep')&&academy.includes("name==='previous'")&&academy.includes("name==='resume'"));
