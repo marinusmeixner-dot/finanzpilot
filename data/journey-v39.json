@@ -612,7 +612,7 @@
           "title": "Operative Marge berechnen",
           "goal": "Prozentpunkte von Prozentänderungen unterscheiden.",
           "explain": "Teile das operative Ergebnis durch den Umsatz und multipliziere mit 100. Vergleiche Margen stets für die gleichen Zeiträume. Ein Rückgang von 12 % auf 10 % bedeutet minus zwei Prozentpunkte, nicht minus zwei Prozent relativer Veränderung.",
-          "example": "Ein Umsatz von 400 Mio. € und operatives Ergebnis von 40 Mio. € ergeben eine operative Marge von 10 %.",
+          "example": "Ein Umsatz von 400 Mio. € und operatives Ergebnis von 40 Mio. € ergeben eine operative Marge von 10 %. Prüfe dabei immer, ob beide Werte aus derselben Berichtsperiode stammen.",
           "questions": [
             {
               "prompt": "Eine Firma erzielt 500 Mio. € Umsatz und 75 Mio. € operativen Gewinn. Welche Marge hat sie?",
