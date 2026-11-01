@@ -1,23 +1,22 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31",
-  "editor_note": "KION 20-stufige, primary-source-geprüfte Komplettbewertung und interaktives FCFF-Modell ergänzt. Analystenannahmen sichtbar; alte Kurse und Aufgaben bleiben erhalten. Quellen, Szenarien und Grenzen müssen bei neuen Berichten erneut geprüft werden.",
+  "updated_at": "2026-11-01T08:18:00+01:00",
+  "editor_note": "01.11.2026: neue tagesaktuelle Amazon-Aufgabe aus Q3-Primärmeldung; fünf vorhandene Kurse/IDs unverändert.",
   "market_task": {
-    "date": "2026-10-31",
-    "title": "Alphabet: Rekord-Cloudwachstum und negativer Quartals-Cashflow – wie passt das zusammen?",
-    "context": "Fakten laut SEC-Meldung vom 28.10.2026: Q3-Umsatz 127,577 Mrd. USD (+25 %), Google Cloud 30,709 Mrd. USD (+103 %), operativer Gewinn 40,576 Mrd. USD, FCF Q3 −9,065 Mrd. USD und TTM-FCF +19,747 Mrd. USD. Offen sind die zukünftige Kapitalrendite, der nachhaltige FCF und die eingepreisten Erwartungen.",
-    "question": "Formuliere eine überprüfbare 2-Jahres-Investmentthese: Unter welchen Wachstums-, Capex- und Bewertungsannahmen ist die Cloud-Dynamik wertsteigernd? Welche Zahlen würden deine These widerlegen? Unterscheide operative Entwicklung, Sondereffekte im Nettogewinn und Marktpreis.",
+    "date": "2026-11-01",
+    "title": "Amazon: Rekordmarge trotz negativem Zwölfmonats-FCF – Kapitalrendite statt Wachstumsreflex",
+    "context": "Amazon Q3 2026 (Originalmeldung 29.10.): Umsatz 201,9 Mrd. USD, operatives Ergebnis 28,1 Mrd. USD (13,9 % Marge), AWS-Umsatz 46,0 Mrd. USD (+39,3 %), AWS-Betriebsgewinn 17,8 Mrd. USD. Operativer Cashflow der letzten zwölf Monate 168,3 Mrd. USD, Netto-Sachinvestitionen 210,7 Mrd. USD, FCF −42,4 Mrd. USD. Letzter regulärer Börsentag 30.10., kein Sonntagskurs.",
+    "question": "Erstelle eine eigene Investmentkomitee-These bis Ende 2028: Rechne Konzern- und AWS-Marge sowie die FCF-Bridge vor; begründe, wann die hohen Investitionen einen positiven Kapitalwert haben könnten. Welche Annahmen zu Kapitalkosten, Auslastung, Margen und bereits eingepreistem Wachstum brauchst du? Formuliere Bear/Base/Bull und zwei messbare Widerlegungskriterien.",
     "rubric": [
-      "Mindestens drei originale Q3-Zahlen mit Zeitraum und Einheiten korrekt",
-      "Q3-FCF −9,065 Mrd. von TTM-FCF +19,747 Mrd. unterscheiden",
-      "Mindestens zwei explizite Bewertungsannahmen und ein Gegenszenario",
-      "Konkretes Widerlegungskriterium und Beobachtungszeitraum",
-      "Keine erfundene aktuelle Kursnotierung oder sichere Rendite"
+      "Quartalsmargen 13,9 % und 38,7 % korrekt berechnen, vom TTM-FCF −42,4 Mrd. USD unterscheiden",
+      "Cashflow-Bridge 168,3−210,7 und relevante Investitions-/Leasingdefinitionen prüfen",
+      "Drei transparente Szenarien und Bewertungsannahmen statt Kursgarantie formulieren",
+      "Gegenhypothese, Beobachtungsgrößen und Termin Ende 2027/2028 angeben"
     ],
-    "source": "Alphabet Q3 2026 SEC Exhibit 99.1",
-    "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
-    "source_date": "2026-10-28",
-    "symbol": "NASDAQ:GOOGL"
+    "source": "Amazon Q3 2026 Investor Relations",
+    "source_url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+    "source_date": "2026-10-29",
+    "symbol": "NASDAQ:AMZN"
   },
   "courses": [
     {
