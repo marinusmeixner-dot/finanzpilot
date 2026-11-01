@@ -58,11 +58,13 @@ jobs:
         run: node scripts/test_journey_v39.mjs
       - name: "Regression: Verified EUR fractional trading and 30-day streak milestones"
         run: node scripts/test_portfolio_streak_v40.mjs
-      - name: "Regression: Four-tab Lernen and server-side skill promotions"
+      - name: "Regression: Four-list Lernen and verified skill rewards"
         run: node scripts/test_specialization_v41.mjs
       - name: "Regression: Four-row Lernen, true zoomable Skillbaum, lean foundations, direct Profil and no duplicate Depot chart"
         run: node scripts/test_learning_redesign_v42.mjs
       - name: Validate v45 watchlist financial statements, 8 branches, cross-skills and navigation
         run: node scripts/test_market_financials_skills_v45.mjs
+      - name: "v46: Audit all 36 fundamentals, all 132 specialist lessons, learning stages and reward-free spaced practice"
+        run: node scripts/test_study_depth_v46.mjs
       - name: "Regression: 3-skill promotions, artifact shards, 28 skills, free news and reset safety"
         run: node scripts/test_progression_news_v44.mjs
