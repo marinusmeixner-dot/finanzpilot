@@ -92,7 +92,7 @@ function tree(){
  catalog.skills.map(mapNode).join('')+
  '</div></div></div><div class="fp42-map-caption">Mit einem Finger verschieben · mit den Tasten zoomen · Knoten antippen</div></div>'+
  '<aside class="fp42-map-detail" id="fp42-skill-detail" aria-live="polite">'+skillDetail()+'</aside></div>'+
- '<p class="fp41-hint">'+count+' von '+catalog.skills.length+' neuen Skills erlernt. Alle fünf abgeschlossenen Spezialisierungen ist eine Beförderung möglich.</p>';
+ '<p class="fp41-hint">'+count+' von '+catalog.skills.length+' neuen Skills erlernt. Alle drei abgeschlossenen Spezialisierungen ist eine Beförderung möglich.</p>';
  return shell('skilltree',body);
 }
 function bindMap(root){
@@ -151,7 +151,7 @@ function skillIndex(){
  let body='<div class="fp41-intro"><span class="eyebrow">FACHLICHE SPEZIALISIERUNGEN</span><h1>Deine Skill-Lektionen</h1><p>Jeder ausgewählte Skill besteht aus mehreren inhaltlich zusammenhängenden Lernaufgaben. Du kannst eine Erklärung jederzeit erneut lesen; die XP und Forschungspunkte werden nur nach bestandenem, serverseitig bestätigtem Abschluss vergeben.</p></div>'+profileLine();
  if(!user())body+=guest();
  if(!current){
-  body+='<h2 class="fp41-small-heading">Wähle zuerst einen Skill aus</h2><div class="fp41-pick">'+catalog.skills.filter(s=>enrolled(s.id)||purchaseReady(s)).map(s=>'<button class="fp41-pick-item" type="button" data-fp41-skill="'+escape(s.id)+'"><strong>'+escape(s.title)+'</strong><small>'+(enrolled(s.id)?'Bereits ausgewählt':'Skill für 3 FP auswählen')+'</small></button>').join('')+'</div><button class="btn secondary" data-fp41-route="skilltree">Zum Skillbaum →</button>';
+  body+='<h2 class="fp41-small-heading">Wähle zuerst einen Skill aus</h2><div class="fp41-pick">'+catalog.skills.map(s=>'<button class="fp41-pick-item" type="button" data-fp41-skill="'+escape(s.id)+'"><strong>'+escape(s.title)+'</strong><small>'+(mastered(s.id)?'✓ Erlernt':enrolled(s.id)?'Lernpfad ausgewählt':purchaseReady(s)?'Für 3 FP auswählbar':'Gesperrt · benötigt '+titleOf(s.parent))+'</small></button>').join('')+'</div><button class="btn secondary" data-fp41-route="skilltree">Zum Skillbaum →</button>';
   return shell('skilllessons',body);
  }
  if(selectedLesson)return shell('skilllessons',body+renderLesson(current,selectedLesson));
