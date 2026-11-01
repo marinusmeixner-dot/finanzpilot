@@ -1,0 +1,22 @@
+-- FinanzPilot v46 – four append-only expert skills, no changes to earned scores/previous rubrics
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('working-capital-diagnose','bilanz-pruefer','Working Capital & Liquidität','reporting',3,12) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('working-capital-diagnose-1','working-capital-diagnose',1,28,1) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('working-capital-diagnose-2','working-capital-diagnose',2,36,0) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('working-capital-diagnose-3','working-capital-diagnose',3,48,1) on conflict (id) do nothing;
+insert into public.fp_specialization_prerequisites(skill_id,required_skill_id) values('working-capital-diagnose','risiko-basis') on conflict do nothing;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('realrendite-kaufkraft','etf-depotbau','Rendite nach Inflation & Kosten','etfs',3,12) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('realrendite-kaufkraft-1','realrendite-kaufkraft',1,28,2) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('realrendite-kaufkraft-2','realrendite-kaufkraft',2,36,0) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('realrendite-kaufkraft-3','realrendite-kaufkraft',3,48,1) on conflict (id) do nothing;
+insert into public.fp_specialization_prerequisites(skill_id,required_skill_id) values('realrendite-kaufkraft','inflation-zinsen') on conflict do nothing;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('backtests-kritisch','orderkosten-slippage','Backtests & Strategieprüfung','trading',3,13) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('backtests-kritisch-1','backtests-kritisch',1,28,1) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('backtests-kritisch-2','backtests-kritisch',2,36,0) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('backtests-kritisch-3','backtests-kritisch',3,48,2) on conflict (id) do nothing;
+insert into public.fp_specialization_prerequisites(skill_id,required_skill_id) values('backtests-kritisch','entscheidungsjournal') on conflict do nothing;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('kreditrisiko-unternehmen','bewertung-multiples','Kreditrisiko von Unternehmen','valuation',3,12) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('kreditrisiko-unternehmen-1','kreditrisiko-unternehmen',1,30,0) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('kreditrisiko-unternehmen-2','kreditrisiko-unternehmen',2,38,1) on conflict (id) do nothing;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('kreditrisiko-unternehmen-3','kreditrisiko-unternehmen',3,50,2) on conflict (id) do nothing;
+insert into public.fp_specialization_prerequisites(skill_id,required_skill_id) values('kreditrisiko-unternehmen','anleihen-rendite') on conflict do nothing;
+insert into public.fp_specialization_prerequisites(skill_id,required_skill_id) values('kreditrisiko-unternehmen','bilanz-pruefer') on conflict do nothing;
