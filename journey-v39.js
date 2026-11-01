@@ -114,7 +114,7 @@ function complete(){
  const m=current();if(!m)return;
  const p=localSession(m.id);
  if(p.page!==4||!m.questions.every((q,i)=>p.answers[i]?.correct))return;
- state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();
+ state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();window.FinanzPilotStudy?.seed?.(m.id);
  const n=stageNum(m.id);
  selectedId='';state.selected='';persist();
  if(!window.FinanzPilotNavigation?.goBack?.())go('journey-'+n);
@@ -144,5 +144,5 @@ async function load(force=false){
 }
 window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};selectedId=String(state.selected||'');redraw()}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
-window.FinanzPilotJourney={renderHome:brief,renderFor,bind,load,open,start,complete,stageOf,firstIncomplete,get modules(){return all()},get completed(){return state.completed},canOpen,get state(){return state}};
+window.FinanzPilotJourney={renderHome:brief,renderFor,bind,load,open,start,complete,stageOf,firstIncomplete,get modules(){return all()},get catalog(){return data},get completed(){return state.completed},canOpen,get state(){return state}};
 })();
