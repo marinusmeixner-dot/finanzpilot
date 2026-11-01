@@ -36,7 +36,7 @@
   return false;
  }
  const rootOf=view=>{let v=view;for(let i=0;i<4;i++){if(MAIN.includes(v))return v;v=PARENT[v];if(!v)break}return 'home'};
- const label=view=>Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[view]?.label||GROUPS[rootOf(view)].label;
+ const label=view=>view==='marketarticle'?'Artikel':view==='marketdetail'?'Aktienchart':Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[view]?.label||GROUPS[rootOf(view)].label;
  function persist(view,y){
   if(restoring||!Object.prototype.hasOwnProperty.call(PARENT,view))return;
   try{
