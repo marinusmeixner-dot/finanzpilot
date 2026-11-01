@@ -1,0 +1,64 @@
+/* FinanzPilot v41 - integrated learning sections */
+.fp41-root{max-width:990px;margin:0 auto;padding-bottom:35px}
+.fp41-tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:3px 0 20px;padding:4px;background:#142d38;border:1px solid #3c5760;border-radius:15px;position:relative}
+.fp41-tab{background:transparent;color:#b6d3d5;border:0;border-radius:11px;cursor:pointer;min-height:44px;padding:8px 9px;font-size:13px;font-weight:650}
+.fp41-tab.active{background:#26584d;color:#ebfff0;box-shadow:0 1px 8px #0003}
+.fp41-tab:hover,.fp41-tab:focus-visible{outline:1px solid #8ee7c1}
+.fp41-intro{margin:10px 0 23px;display:grid;gap:10px}
+.fp41-intro h1{font-size:clamp(25px,4vw,34px);margin:0}
+.fp41-intro p{font-size:15px;color:#c4d9d8;line-height:1.7;max-width:700px}
+.fp41-microprogress{display:flex;flex-wrap:wrap;gap:10px;margin:15px 0}
+.fp41-microprogress span{background:#183e41;border:1px solid #416b63;border-radius:10px;padding:11px;color:#cce8dc;font-size:12px}
+.fp41-microprogress b{color:#e0ffee}
+.fp41-hint,.fp41-precondition{font-size:13px;line-height:1.65;color:#aec8ce;margin:12px 0}
+.fp41-branches{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px;margin-top:18px}
+.fp41-branch{padding:18px;border:1px solid #3e5b64;border-radius:17px;background:#142c38}
+.fp41-branch-heading h2{font-size:20px;margin:0 0 7px}
+.fp41-branch-heading p,.fp41-capstone{font-size:12px;line-height:1.6;color:#a7c2c8}
+.fp41-branch-steps{display:flex;flex-direction:column;gap:9px;margin:16px 0}
+.fp41-skill-node{display:flex;gap:11px;align-items:center;min-height:89px;border:1px solid #44646c;background:#1c3a44;border-radius:12px;padding:13px;width:100%;text-align:left;color:#e6f6ed;cursor:pointer}
+.fp41-skill-node.ready{border-color:#5b897a}
+.fp41-skill-node.selected{background:#1c5146;border-color:#7ed5ac}
+.fp41-skill-node.done{background:#24593f;border-color:#9adea9}
+.fp41-skill-node.locked{opacity:.72}
+.fp41-skill-tier{border-radius:50%;width:32px;height:32px;background:#31574f;display:grid;place-items:center;flex:none;font-weight:700}
+.fp41-skill-body{display:grid;gap:6px;flex:1;min-width:0}
+.fp41-skill-body strong{font-size:15px}
+.fp41-skill-body small{font-size:12px;line-height:1.5;color:#b7cfd0}
+.fp41-skill-body em{font-size:11px;color:#a6e3bf;font-style:normal}
+.fp41-pick{display:grid;gap:9px;grid-template-columns:repeat(2,minmax(0,1fr));margin:15px 0}
+.fp41-pick-item{border:1px solid #54706f;background:#19414a;color:#e4f6e9;text-align:left;border-radius:13px;padding:13px;cursor:pointer;display:grid;gap:7px}
+.fp41-pick-item small{color:#b2d0c9}
+.fp41-detail{padding:19px;border:1px solid #567674;background:#1b3c41;border-radius:16px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.fp41-detail h2{font-size:26px;margin:0}
+.fp41-detail>p{font-size:15px;line-height:1.75}
+.fp41-detail-status{font-size:13px;color:#bff4d4;font-weight:650}
+.fp41-small-heading{font-size:20px;margin:22px 0 0}
+.fp41-lesson-list,.fp41-special-list{display:grid;gap:14px;margin-top:21px}
+.fp41-lesson-card,.fp41-special{padding:19px;border:1px solid #3d6168;background:#15323e;border-radius:15px;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.fp41-lesson-card.done{border-color:#73b98e}
+.fp41-lesson-card.locked,.fp41-special.locked{opacity:.71}
+.fp41-lesson-card h3,.fp41-special h2{margin:0}
+.fp41-lesson-card p,.fp41-special p{font-size:14px;line-height:1.75;color:#c6d9d9}
+.fp41-lesson-info{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:#b6e5ce}
+.fp41-buy-actions{display:flex;gap:9px;flex-wrap:wrap}
+.fp41-study{display:flex;flex-direction:column;gap:17px}
+.fp41-study>.btn{align-self:flex-start}
+.fp41-study h2{font-size:26px}
+.fp41-reading{padding:21px;background:#15313b;border:1px solid #45656a;border-radius:15px;display:grid;gap:13px}
+.fp41-reading h3{font-size:17px;color:#ceffe1;margin:0}
+.fp41-reading p{font-size:15px;line-height:1.9;margin:0}
+.fp41-question{display:grid;gap:12px;background:#19443f;border:1px solid #54887a;padding:20px;border-radius:14px}
+.fp41-question>button{border-radius:10px;padding:14px;text-align:left;background:#1b3441;border:1px solid #52726e;color:#e7f8f0;cursor:pointer;font-size:14px;line-height:1.6}
+.fp41-question>button:disabled{opacity:.7;cursor:default}
+.fp41-question>button span{font-weight:700;margin-right:12px}
+.fp41-question h3{font-size:18px}
+.fp41-answer-status{font-size:12px;color:#bee7d2}
+.fp41-special small{font-size:12px;color:#acd6c5}
+.fp41-special-detail{background:#183740;border-radius:15px;padding:23px;line-height:1.8}
+.fp41-special-detail h2{margin-bottom:14px}
+.fp41-case-steps{border-left:4px solid #90d3ab;padding:12px 17px;background:#1b4840;margin-top:20px;border-radius:8px}
+.fp41-guest,.fp41-earned,.fp41-loading{margin:12px 0;padding:17px;background:#18443b;border-radius:13px;border:1px solid #578878}
+.fp41-guest p,.fp41-earned p{font-size:13px;line-height:1.65}
+.fp41-notice{padding:12px 15px;border:1px solid #70a58b;color:#d7ffdf;background:#1a4738;border-radius:10px;font-size:13px;margin-bottom:15px}
+@media(max-width:760px){.fp41-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.fp41-branches,.fp41-pick{grid-template-columns:1fr}.fp41-tab{min-height:42px}.fp41-branch{padding:15px}}
