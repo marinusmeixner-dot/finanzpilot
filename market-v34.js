@@ -113,7 +113,7 @@ function renderDetail(){
 function newsCard(n,extra=''){
  const link=safe(n.url),id=articleKey(n);articleRegistry.set(id,n);
  return '<article class="fp34-news-card"><small>'+esc(n.source||n.publisher||'Nachrichtenanbieter')+' · '+esc(n.published||'Datum prüfen')+'</small>'+
- '<button class="fp36-news-title" type="button" data-fp36-read="'+esc(id)+'"><h3>'+esc(n.title||'Nachricht')+'</h3><small>'+(n.article?'Ausführlichen FinanzPilot-Artikel lesen':'Nachricht und Quellenlage ansehen')+' →</small></button>'+
+ '<button class="fp36-news-title" type="button" data-fp36-read="'+esc(id)+'"><h3>'+esc(n.title||'Nachricht')+'</h3><small>Vollständigen kostenlosen FinanzPilot-Artikel lesen →</small></button>'+
  (n.why?'<p>'+esc(n.why)+'</p>':'')+(extra?'<p>'+extra+'</p>':'')+
  (link?'<a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Originalquelle öffnen</a>':'')+'</article>';
 }
@@ -121,16 +121,19 @@ function openArticle(id){
  const item=articleRegistry.get(id);if(!item)return false;
  selectedArticle=item;window.FinanzPilotNavigation?.route('marketarticle');return true;
 }
+const simpleTerms={EBIT:'Operativer Gewinn vor Zinsen und Steuern',EBITDA:'Operatives Ergebnis vor Zinsen, Steuern und Abschreibungen',Cashflow:'Tatsächliche Geldbewegungen eines Unternehmens',Kapitalkosten:'Erwartete Rendite, die Geldgeber für das Risiko verlangen',Marge:'Gewinn als Anteil am Umsatz',Umsatz:'Wert der verkauften Leistungen in einer Periode',Bilanz:'Vermögen und Finanzierung an einem Stichtag',BIP:'Bruttoinlandsprodukt: Wert aller produzierten Güter und Leistungen'};
+function friendlyParagraph(p){let value=esc(p);let used=new Set();return value.replace(/\\b(EBITDA|EBIT|Cashflow|Kapitalkosten|Marge|Umsatz|Bilanz|BIP)\\b/g,word=>{if(used.has(word))return word;used.add(word);return '<strong class="fp37-article-key">'+word+'</strong>'})}
+function glossaryFor(n){const content=(n.article?.sections||[]).flatMap(x=>x.paragraphs||[]).join(' ')+' '+(n.article?.lead||'');const terms=Object.entries(simpleTerms).filter(([word])=>new RegExp('\\b'+word+'\\b','i').test(content));return terms.length?'<details class="fp37-article-glossary"><summary>Begriffe einfach erklärt ('+terms.length+')</summary><dl>'+terms.map(([word,meaning])=>'<div><dt>'+esc(word)+'</dt><dd>'+esc(meaning)+'</dd></div>').join('')+'</dl></details>':''}
 function renderArticle(){
  const n=selectedArticle;if(!n)return '<div class="fp34"><h1>Artikel nicht gefunden</h1><button type="button" class="btn" data-fp36-article-back>← Zurück</button></div>';
  const link=safe(n.url),article=n.article;
  const common='<div class="fp36-article-meta">'+esc(n.source||n.publisher||'Quelle')+' · '+esc(n.published||'Datum unbekannt')+'</div>';
  let body='';
  if(article?.sections?.length){
-  body='<p class="fp36-article-lead">'+esc(article.lead||'')+'</p>'+
+  body='<div class="fp37-one-minute"><small>DAS WICHTIGSTE IN EINER MINUTE</small><p>'+friendlyParagraph(article.lead||'')+'</p></div>'+
   article.sections.map(section=>'<section class="fp36-article-section"><h2>'+esc(section.heading||'')+'</h2>'+
-   (Array.isArray(section.paragraphs)?section.paragraphs:[]).map(p=>'<p>'+esc(p)+'</p>').join('')+'</section>').join('')+
-  '<section class="fp36-article-conclusion"><h2>Fazit</h2><p>'+esc(article.conclusion||'')+'</p></section>';
+   (Array.isArray(section.paragraphs)?section.paragraphs:[]).map(p=>'<p>'+friendlyParagraph(p)+'</p>').join('')+'</section>').join('')+
+  '<section class="fp36-article-conclusion"><h2>Was du mitnehmen solltest</h2><p>'+friendlyParagraph(article.conclusion||'')+'</p></section>'+glossaryFor(n);
  }else if(n.why||n.impact){
   body='<div class="fp36-article-limited">Dieser Beitrag ist eine eigene, quellengestützte FinanzPilot-Einordnung. Der vollständige Originalartikel des Anbieters wird hier nicht kopiert.</div>'+
    '<section class="fp36-article-section"><h2>Bekannte Fakten und Ausgangslage</h2><p>'+esc(n.why||'')+'</p></section>'+
@@ -148,25 +151,24 @@ function renderArticle(){
 }
 
 function stockNews(symbol){
- const editorialNews=editorial.filter(n=>matches(n,symbol));
- const external=newsCache.get(symbol)?.data?.news||[];
- const normalized=external.slice(0,7).map(n=>({title:n.title,source:n.publisher,published:n.published?new Date(n.published*1000).toLocaleDateString('de-DE'):'',url:n.url}));
- // An item is either explicitly editorial (with context) or a clearly labelled external headline.
- const seen=new Set();return [...editorialNews,...normalized].filter(n=>{const key=String(n.title||'').toLowerCase();if(!key||seen.has(key))return false;seen.add(key);return true});
+ // Publish only fully readable, independently authored and source-dated articles.
+ // External headline metadata from a paywalled publisher is NOT a free article.
+ return editorial.filter(n=>matches(n,symbol)&&Array.isArray(n.article?.sections)&&n.article.sections.length>=4);
 }
+
 function renderNews(){
  const tabs=[['general','Gesamtmarkt'],['watch','Meine Aktien'],['discover','Entdecken']];
  const navigation='<div class="fp34-news-tabs" role="group" aria-label="Nachrichtenbereich">'+tabs.map(([id,name])=>'<button type="button" class="'+(tab===id?'selected':'')+'" data-fp34-news-tab="'+id+'">'+name+'</button>').join('')+'</div>';
  let body='';
  if(tab==='general'){
-  const general=editorial.filter(n=>!Array.isArray(n.symbols)||n.symbols.length===0||n.category==='Markt'||n.category==='Zinsen');
+  const general=editorial.filter(n=>(!Array.isArray(n.symbols)||n.symbols.length===0||n.category==='Markt'||n.category==='Zinsen'||n.category==='Wirtschaft')&&Array.isArray(n.article?.sections)&&n.article.sections.length>=4);
   body='<h2>Allgemeine Finanzmarktnachrichten</h2><p>Redaktionell datierte Nachrichten, keine Lernaufgaben.</p>'+(general.length?general.map(n=>newsCard(n)).join(''):'<p>Für den heutigen Tag liegen keine aktuellen redaktionellen Nachrichten vor.</p>');
  }else if(tab==='watch'){
   body='<h2>Nachrichten zu deiner Watchlist</h2><p>Nach Unternehmen sortiert. Redaktionelle Einordnung und zusätzliche externe Schlagzeilen werden getrennt kenntlich gemacht.</p>'+
   (watch.length?watch.map(w=>'<section class="fp34-news-company" id="fp34-news-'+esc(w.symbol)+'"><header><h3>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</h3><button class="btn secondary" data-fp34-chart="'+esc(w.symbol)+'">Zum Chart</button></header>'+
-   (stockNews(w.symbol).length?stockNews(w.symbol).map(n=>newsCard(n)).join(''):'<p>'+ (pending.has('news:'+w.symbol)?'Nachrichten werden geladen …':'Keine neuen Meldungen für diese Aktie verfügbar.')+'</p>')+'</section>').join(''):'<p>Merke zuerst Unternehmen in deinem Depot.</p>');
+   (stockNews(w.symbol).length?stockNews(w.symbol).map(n=>newsCard(n)).join(''):'<p>'+ 'Zu dieser Aktie ist noch kein vollständig frei lesbarer FinanzPilot-Bericht veröffentlicht. <button type="button" class="btn secondary" data-fp37-news-request="'+esc(w.symbol)+'">Eigenen Hintergrundartikel anfordern</button>'+'</p>')+'</section>').join(''):'<p>Merke zuerst Unternehmen in deinem Depot.</p>');
  }else{
-  const candidates=editorial.filter(n=>Array.isArray(n.symbols)&&n.symbols.length&&n.symbols.some(s=>!watch.some(w=>w.symbol===s)));
+  const candidates=editorial.filter(n=>Array.isArray(n.article?.sections)&&n.article.sections.length>=4&&Array.isArray(n.symbols)&&n.symbols.length&&n.symbols.some(s=>!watch.some(w=>w.symbol===s)));
   body='<h2>Interessante Aktien entdecken</h2><p>Unternehmensmeldungen der Redaktion, die nicht bereits in deiner Watchlist sind. Keine Kaufempfehlungen.</p>'+
     (candidates.length?candidates.slice(0,12).map(n=>{const s=n.symbols.find(x=>!watch.some(w=>w.symbol===x));return '<article class="fp34-discover"><div><strong>'+esc(s)+'</strong><small>Unternehmensmeldung · '+esc(n.published)+'</small></div>'+newsCard(n)+'<button class="btn secondary" data-fp34-add="'+esc(s)+'">Auf meine Watchlist</button></article>'}).join(''):'<p>Heute keine neuen recherchierten Unternehmen außerhalb deiner Watchlist.</p>');
  }
@@ -237,6 +239,7 @@ function bind(root=document){
  root.querySelectorAll('[data-fp34-add]').forEach(b=>b.addEventListener('click',()=>addStock(b.dataset.fp34Add)));
  root.querySelectorAll('[data-fp34-depot-stock]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotPortfolio?.focus?.(b.dataset.fp34DepotStock)));
  root.querySelectorAll('[data-fp34-request]').forEach(b=>b.addEventListener('click',()=>request(b.dataset.fp34Request)));
+ root.querySelectorAll('[data-fp37-news-request]').forEach(b=>b.addEventListener('click',()=>{const symbol=b.dataset.fp37NewsRequest;window.open('https://github.com/marinusmeixner-dot/finanzpilot/issues/new?title='+encodeURIComponent('Analysewunsch: Frei lesbarer Hintergrundartikel '+symbol)+'&body='+encodeURIComponent('Bitte für '+symbol+' einen vollständigen eigenständig verfassten FinanzPilot-Nachrichtenartikel mit frei zugänglicher Quelle, verständlichen Erklärungen und Gegenargumenten erstellen.'),'_blank','noopener,noreferrer')}));
  root.querySelectorAll('[data-fp34-refresh]').forEach(b=>b.addEventListener('click',()=>refresh(true)));
  root.querySelector('[data-fp34-login]')?.addEventListener('click',()=>window.FinanzPilotCloud?.openLogin?.());
  root.querySelector('[data-fp34-depot]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('depot'));
