@@ -9,17 +9,17 @@ const research=fs.readFileSync('research.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const current=JSON.parse(fs.readFileSync('version.json','utf8'));
 const updater=fs.readFileSync('updates.js','utf8');
-assert.equal(current.version,44);
+assert.equal(current.version,45);
 assert.equal(manifest.start_url,'./?v=44');
 assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
-assert(html.includes('ux-v15.js?v=44'));
+assert(html.includes('ux-v15.js?v=45'));
 assert(html.includes('ux-v15.css?v=18'));
-assert(html.includes('app.js?v=44'));
+assert(html.includes('app.js?v=45'));
 assert(html.includes('research.js?v=18'));
-assert(html.includes('updates.js?v=44'));
+assert(html.includes('updates.js?v=45'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
@@ -59,7 +59,7 @@ assert(nav);
 assert.deepEqual([...['home','learn','markets','depot','progress','stockhub'].filter(x=>nav.isHub(x))],['learn','markets','progress','stockhub']);
 assert.equal(nav.renderHub('home'),'');
 const groups={
- markets:['marketoverview','marketnews']
+ markets:['marketoverview','marketnews','marketfinancials']
 };
 for(const [parent,subpages] of Object.entries(groups)){
  const markup=nav.renderHub(parent);
