@@ -1,5 +1,5 @@
 {
-  "version": 35,
-  "release": "2026-11-01-v35",
-  "notes": "Immediate GitHub Issues label detection, hourly issue-only editorial checks and daily 08:00 research; interactive chart windows 1M,3M,6M,1Y,5Y,MAX, touch/cursor date-price details, BayWa BYW.MU alternate venue BYW.DE explicitly disclosed and Supabase history endpoint v4. Trading prices unchanged."
+  "version": 36,
+  "release": "2026-11-01-v36",
+  "notes": "Chart-verified exchange search and main-listing preference, with transparently unverified fallback only if no native chart; all current editorial stories expanded into source-based original in-app articles (including Bayer and BayWa), external paywalled texts never copied; screen-by-screen Zurück navigation with scroll restoration. Supabase Edge Function v5."
 }
