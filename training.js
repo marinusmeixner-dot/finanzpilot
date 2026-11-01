@@ -73,14 +73,17 @@ window.FinanzPilotTraining=(()=>{
  }
  function questionView(){
   const active=data.active||{},m=module(active.id);if(!m)return list();
-  const idx=active.mode==='review'?active.step:session(m.id).step;
+  const current=active.mode==='review'?active.step:session(m.id).step;
+   const idx=active.mode==='course'&&Number.isInteger(active.previewStep)?Math.min(current,active.previewStep):current;
+   if(active.mode==='course'&&idx<current){const past=m.steps[idx];return '<div class="fp-training-work fp37-preview"><div class="eyebrow">RÜCKBLICK · SEITE '+(idx+1)+' VON '+m.steps.length+'</div><h1>'+esc(m.title)+'</h1><div class="fp37-preview-box"><h2>'+esc(past.title)+'</h2><p>'+esc(past.text||past.prompt||'')+'</p>'+(past.insight?'<p><strong>Wichtig:</strong> '+esc(past.insight)+'</p>':'')+(past.method?'<p><strong>Lösungsweg:</strong> '+esc(past.method)+'</p>':'')+'</div><div class="fp37-step-actions">'+(idx>0?'<button type="button" class="btn secondary" data-training-step-back>← Vorherige Seite</button>':'')+'<button type="button" class="btn" data-training-step-next>Weiter →</button><button type="button" class="btn secondary" data-training-step-current>Zur aktuellen Aufgabe</button></div><small>Rückblick ist schreibgeschützt: Deine beantworteten Aufgaben und dein Fortschritt bleiben unverändert.</small></div>'}
+
   if(idx>=m.steps.length)return finished(m);
   const step=m.steps[idx],s=session(m.id),key=m.id+':'+idx;
   const answer=active.mode==='review'?active.reviewAnswer:s.answers[idx];
   const draft=(active.mode==='review'?active.draft:s.drafts[idx])??(step.type==='sequence'?step.options.map((_,i)=>i):step.type==='multi'||step.type==='decision'?[]:'');
   const solved=Boolean(answer),head=active.mode==='review'?'GEZIELTE WIEDERHOLUNG':'SCHRITT '+(idx+1)+' VON '+m.steps.length;
   return '<div class="fp-training-work"><button type="button" class="fp-training-back" data-training-list>← Alle Lernfälle</button><div class="fp-training-top"><div><div class="eyebrow">'+head+'</div><h1>'+esc(m.title)+'</h1><p>'+esc(m.domain)+' · '+esc(m.difficulty)+'</p></div><div class="fp-training-percent">'+Math.round(100*idx/m.steps.length)+' %</div></div><div class="fp-training-progress"><i style="width:'+(100*idx/m.steps.length)+'%"></i></div>'+
-   '<section class="fp-training-case"><div class="fp-training-case-intro"><small>'+esc(step.type==='read'?'VERSTEHEN':step.type==='number'?'SELBST RECHNEN':step.type==='multi'?'MEHRERE AUSSAGEN PRÜFEN':step.type==='sequence'?'ANALYSEPROZESS ORDNEN':'ENTSCHEIDEN')+'</small><h2>'+esc(step.title)+'</h2><p>'+esc(step.text||step.prompt||'')+'</p></div>'+chart(step.visual)+
+   (active.mode==='course'&&idx>0?'<div class="fp37-step-actions"><button type="button" class="btn secondary" data-training-step-back>← Vorherige Erklärung</button><small>Ohne Verlust deiner Antwort zurückblättern</small></div>':'')+'<section class="fp-training-case"><div class="fp-training-case-intro"><small>'+esc(step.type==='read'?'VERSTEHEN':step.type==='number'?'SELBST RECHNEN':step.type==='multi'?'MEHRERE AUSSAGEN PRÜFEN':step.type==='sequence'?'ANALYSEPROZESS ORDNEN':'ENTSCHEIDEN')+'</small><h2>'+esc(step.title)+'</h2><p>'+esc(step.text||step.prompt||'')+'</p></div>'+chart(step.visual)+
    (step.type==='read'?'<div class="fp-training-insight"><b>Das solltest du mitnehmen</b><p>'+esc(step.insight||'')+'</p></div><button type="button" class="btn" data-training-continue>Verstanden · Weiter →</button>':
     solved?'<div class="fp-training-result '+(answer.correct?'correct':'incorrect')+'"><div class="fp-training-result-title">'+(answer.correct?'✓ Richtig eingeordnet':'↻ Noch nicht ganz – hier ist die Analyse')+'</div><p>'+esc(step.method||'')+'</p><button class="btn" type="button" data-training-continue>'+(active.mode==='review'?'Wiederholung abschließen':'Nächster Schritt →')+'</button></div>':
     '<div class="fp-training-task"><div class="fp-training-task-title"><b>Deine Aufgabe</b><button type="button" data-training-hint aria-expanded="false">Hinweis anzeigen</button></div><p class="fp-training-hint" id="fp-training-hint" hidden>'+esc(step.hint||'Denke an Fakten, Prognosen und Gegenargumente.')+'</p>'+chooseUI(step,draft)+'<p class="fp-training-validation" id="fp-training-validation" role="alert"></p></div>')+
@@ -120,7 +123,7 @@ window.FinanzPilotTraining=(()=>{
   s.updatedAt=Date.now();persist();if(answer.correct&&a.mode!=='review')window.FinanzPilotEconomy?.verify(a.id,idx,input,step.type).catch(()=>{});window.render?.();
  }
  function advance(){
-  const a=data.active;if(!a)return;
+  const a=data.active;if(a?.mode==='course'&&Number.isInteger(a.previewStep)){delete a.previewStep;window.render?.();return}if(!a)return;
   if(a.mode==='review'){data.active=null;persist();window.render?.();return}
   const m=module(a.id),s=session(a.id);if(!m)return;
   s.step=Math.min(m.steps.length,s.step+1);
@@ -177,6 +180,9 @@ window.FinanzPilotTraining=(()=>{
   root.querySelector('#fp-training-number-input')?.addEventListener('input',ev=>updateDraft(ev.target.value));
   root.querySelector('#fp-training-number-form')?.addEventListener('submit',ev=>{ev.preventDefault();submit()});
   root.querySelectorAll('[data-training-submit]').forEach(x=>x.addEventListener('click',submit));
+  root.querySelectorAll('[data-training-step-back]').forEach(b=>b.addEventListener('click',()=>{const a=data.active;if(a?.mode!=='course')return;const position=Number.isInteger(a.previewStep)?a.previewStep:session(a.id).step;a.previewStep=Math.max(0,position-1);window.render?.();window.scrollTo?.({top:0,behavior:'instant'})}));
+  root.querySelectorAll('[data-training-step-next]').forEach(b=>b.addEventListener('click',()=>{const a=data.active;if(a?.mode!=='course')return;const current=session(a.id).step;a.previewStep=Math.min(current,(Number(a.previewStep)||0)+1);if(a.previewStep>=current)delete a.previewStep;window.render?.();window.scrollTo?.({top:0,behavior:'instant'})}));
+  root.querySelectorAll('[data-training-step-current]').forEach(b=>b.addEventListener('click',()=>{if(data.active)delete data.active.previewStep;window.render?.();window.scrollTo?.({top:0,behavior:'instant'})}));
   root.querySelectorAll('[data-training-continue]').forEach(x=>x.addEventListener('click',advance));
   root.querySelector('[data-training-hint]')?.addEventListener('click',ev=>{const el=document.getElementById('fp-training-hint');if(el){el.hidden=!el.hidden;ev.target.setAttribute('aria-expanded',String(!el.hidden))}});
   window.FinanzPilotMath?.bind(root);
