@@ -99,7 +99,7 @@
 .fp42-map-lines{position:absolute;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
 .fp42-line{fill:none;stroke:#577875;stroke-width:3.5;stroke-linecap:round}
 .fp42-line.lit{stroke:#78d5a1;stroke-width:5}
-.fp42-tree-root{position:absolute;left:735px;top:30px;width:300px;height:130px;border:1px solid #9bddba;background:linear-gradient(155deg,#235346,#1b363d);box-shadow:0 0 45px #2b986944;border-radius:21px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
+.fp42-tree-root{position:absolute;left:850px;top:30px;width:300px;height:130px;border:1px solid #9bddba;background:linear-gradient(155deg,#235346,#1b363d);box-shadow:0 0 45px #2b986944;border-radius:21px;text-align:center;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px}
 .fp42-tree-root strong{font-size:21px}
 .fp42-tree-root small{color:#c0e0d4;font-size:12px}
 .fp42-tree-root-icon{color:#a3f2c9;font-size:24px}
@@ -130,3 +130,12 @@
 .fp42-legacy-cases p{font-size:13px;line-height:1.7;color:#b5cfcc;margin:15px 0}
 .fp42-legacy-links{display:flex;flex-wrap:wrap;gap:9px}
 .fp42-learn-sub .fp39-home{width:100%}
+
+/* v44: three real branch tips per field, connected to their actual parent node */
+.fp42-map-node.compact{padding:12px 10px;min-height:168px;max-height:192px;gap:7px;border-radius:14px}
+.fp42-map-node.compact strong{font-size:13px;line-height:1.35;max-width:100%}
+.fp42-map-node.compact small{display:none}
+.fp42-map-node.compact em{font-size:10px;line-height:1.45}
+.fp42-map-node.compact .fp42-map-symbol{position:static;width:23px;height:23px;min-height:23px;font-size:12px}
+.fp42-map-viewport{min-height:440px}
+.fp42-map-detail .btn{border-radius:12px}
