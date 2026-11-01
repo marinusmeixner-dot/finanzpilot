@@ -124,3 +124,9 @@
 .fp42-detail-reward{color:#b7f0d1;background:#244d44;border-radius:10px;padding:12px;font-size:13px;margin:16px 0;line-height:1.6}
 .fp42-detail-empty{padding-top:15px}
 @media(max-width:820px){.fp42-map-layout{grid-template-columns:1fr}.fp42-map-viewport{height:425px}.fp42-map-detail{position:static;min-height:120px}.fp42-learn-entry{min-height:90px}.fp42-learn-entry .fp-tab-hub-copy strong{font-size:17px}}
+
+.fp42-legacy-cases{margin:27px 0 10px;border:1px solid #49696d;background:#15343d;border-radius:15px;padding:18px}
+.fp42-legacy-cases summary{font-weight:700;cursor:pointer;font-size:15px;color:#d6f6e8}
+.fp42-legacy-cases p{font-size:13px;line-height:1.7;color:#b5cfcc;margin:15px 0}
+.fp42-legacy-links{display:flex;flex-wrap:wrap;gap:9px}
+.fp42-learn-sub .fp39-home{width:100%}
