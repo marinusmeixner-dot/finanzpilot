@@ -19,16 +19,22 @@ const mastered=id=>{const ls=skillLessons(id);return !!ls.length&&ls.every(x=>le
 const enrolled=id=>enrollments.some(e=>e.skill_id===id);
 const unlocked=id=>lessons.some(l=>l.lesson_id===id);
 const completed=id=>lessons.some(l=>l.lesson_id===id&&l.completed_at);
-const purchaseReady=s=>!s.parent||mastered(s.parent);
+const required=s=>[...(s.parent?[s.parent]:[]),...(s.prerequisites||[])];
+const purchaseReady=s=>required(s).every(id=>mastered(id));
 const lessonAvailable=(s,l)=>enrolled(s.id)&&(l.sequence===1||completed(s.lessons[l.sequence-2].id));
 const points=()=>Number(accounts[0]?.research_points)||0;
 const earnedXp=()=>Number(profiles[0]?.xp)||0;
 const promotionsEarned=()=>Number(profiles[0]?.promotion_count)||0;
 const titleOf=id=>bySkill(id)?.title||id;
-const MAP_W=2060,MAP_H=1875,MAP_CX=1000,MAP_NODE_W=300;
-const mapX=[190,640,1090,1540],mapY=[295,605,915,1260,1575];
-const nodePos=s=>{const x=mapX[catalog.branches.findIndex(b=>b.id===s.branch)],y=mapY[Math.min(4,s.tier-1)];if(s.tier!==4)return {x,y,w:MAP_NODE_W};const siblings=catalog.skills.filter(q=>q.branch===s.branch&&q.tier===4),i=siblings.findIndex(q=>q.id===s.id);return {x:x+[-145,0,145][Math.min(2,Math.max(0,i))],y,w:136};};
-let selectedMap='',mapZoom=.74,mapLeft=420,mapTop=0;
+const MAP_W=3550,MAP_H=2060,MAP_CX=1775,MAP_NODE_W=250;
+const branchX=i=>80+410*i;
+const mapY=tier=>300+(Number(tier)-1)*330;
+const nodePos=s=>{
+ const x=branchX(catalog.branches.findIndex(b=>b.id===s.branch)),members=catalog.skills.filter(t=>t.branch===s.branch&&t.tier===s.tier),i=Math.max(0,members.findIndex(t=>t.id===s.id)),n=members.length;
+ const w=n===1?260:n===2?177:n===3?128:105,gap=n===1?0:n===2?16:n===3?10:5,span=n*w+(n-1)*gap,center=x+145;
+ return {x:center-span/2+i*(w+gap),y:mapY(s.tier),w};
+};
+let selectedMap='',mapZoom=.44,mapLeft=420,mapTop=0;
 function shell(active,content){
  return '<div class="fp42-learn-sub">'+
  (notice?'<div class="fp41-notice" role="status">'+escape(notice)+'</div>':'')+content+'</div>';
@@ -58,7 +64,7 @@ function skillDetail(){
  const done=mastered(s.id),active=enrolled(s.id),ready=purchaseReady(s);
  return '<div class="fp42-skill-detail"><span class="eyebrow">SKILL · '+escape(catalog.branches.find(b=>b.id===s.branch)?.title||'Finanzwissen')+'</span>'+
  '<h3>'+escape(s.title)+'</h3><p>'+escape(s.description)+'</p>'+
- (s.parent?'<div class="fp42-detail-condition"><b>Vorheriger Skill</b><span>'+escape(titleOf(s.parent))+(mastered(s.parent)?' ✓': ' · noch gesperrt')+'</span></div>':
+ (required(s).length?'<div class="fp42-detail-condition"><b>Voraussetzungen – alle erforderlich</b><span>'+required(s).map(id=>escape(titleOf(id))+(mastered(id)?' ✓':' · noch nicht erlernt')).join('<br>')+'</span></div>':
  '<div class="fp42-detail-condition"><b>Einstieg</b><span>Ohne vorherigen Spezialskill möglich</span></div>')+
  '<div class="fp42-detail-condition"><b>Deine Lektionen</b><span>'+s.lessons.filter(l=>completed(l.id)).length+' / '+s.lessons.length+' abgeschlossen</span></div>'+
  '<div class="fp42-detail-condition"><b>Freischaltung</b><span>'+(done?'Skill bereits erlernt':active?'Lernpfad aktiv':ready?'3 Forschungspunkte':'Vorherigen Skill abschließen')+'</span></div>'+
@@ -66,26 +72,30 @@ function skillDetail(){
  '<button type="button" class="btn" data-fp42-open="'+escape(s.id)+'">Zu den Skill-Lektionen →</button></div>';
 }
 function mapLines(){
- const edges=[];
- for(const s of catalog.skills){
-  const to=nodePos(s),tx=to.x+to.w/2,ty=to.y;
-  if(!s.parent){edges.push('<path class="fp42-line" d="M'+MAP_CX+',160 C'+MAP_CX+',240 '+tx+',210 '+tx+','+ty+'" />');continue}
-  const from=bySkill(s.parent);if(!from)continue;const p=nodePos(from),fx=p.x+p.w/2,fy=p.y+(p.w<200?168:145);
-  edges.push('<path class="fp42-line'+(mastered(s.parent)?' lit':'')+'" d="M'+fx+','+fy+' C'+fx+','+(fy+90)+' '+tx+','+(ty-75)+' '+tx+','+ty+'" />');
+ const edges=[],edge=(skill,req,cross)=>{
+  const from=bySkill(req);if(!from)return;
+  const a=nodePos(from),b=nodePos(skill),sx=a.x+a.w/2,sy=a.y+(a.w<200?170:135),tx=b.x+b.w/2,ty=b.y,depth=Math.max(55,Math.min(185,Math.abs(tx-sx)/5)),mid=(sy+ty)/2;
+  edges.push('<path class="fp42-line'+(mastered(req)?' lit':'')+(cross?' fp45-cross-line':'')+'" d="M'+sx+','+sy+' C'+(sx+(cross?depth:0))+','+mid+' '+(tx-(cross?depth:0))+','+mid+' '+tx+','+ty+'" />');
+ };
+ for(const skill of catalog.skills){
+  const to=nodePos(skill),tx=to.x+to.w/2,ty=to.y;
+  if(skill.parent)edge(skill,skill.parent,false);
+  else edges.push('<path class="fp42-line" d="M'+MAP_CX+',180 C'+MAP_CX+',245 '+tx+',230 '+tx+','+ty+'" />');
+  for(const req of skill.prerequisites||[])edge(skill,req,true);
  }
  return edges.join('');
 }
 function tree(){
  if(!catalog)return shell('skilltree','<div class="fp41-loading">Skill-Katalog wird geladen: '+escape(problem)+'</div>');
  const count=catalog.skills.filter(s=>mastered(s.id)).length;
- let body='<div class="fp41-intro"><span class="eyebrow">DEIN WEG ZUM ANALYSTEN</span><h1>Skillbaum</h1><p>Verzweige dich in vier Fachrichtungen. Jede führt über zusammenhängende Kompetenzen zu einem großen Skill. Tippe auf einen Knoten, um Voraussetzungen und die passenden Lektionen zu sehen. Die Karte lässt sich verschieben und zoomen.</p></div>'+profileLine();
+ let body='<div class="fp41-intro"><span class="eyebrow">DEIN WEG ZUM ANALYSTEN</span><h1>Skillbaum</h1><p>Verzweige dich in acht Fachrichtungen. Jede führt über zusammenhängende Kompetenzen zu einem großen Skill. Tippe auf einen Knoten, um Voraussetzungen und die passenden Lektionen zu sehen. Die Karte lässt sich verschieben und zoomen.</p></div>'+profileLine();
  if(!user())body+=guest();
  body+='<div class="fp42-map-toolbar"><div class="fp42-map-legend"><span>● Erlernt</span><span>◉ Ausgewählt</span><span>◇ Freischaltbar</span><span>○ Gesperrt</span></div><div class="fp42-map-controls"><button type="button" data-fp42-zoom="-1" aria-label="Verkleinern">−</button><span data-fp42-scale>'+Math.round(mapZoom*100)+' %</span><button type="button" data-fp42-zoom="1" aria-label="Vergrößern">+</button><button type="button" data-fp42-fit>Übersicht</button></div></div>'+
  '<div class="fp42-map-layout"><div class="fp42-map-col"><div id="fp42-map-viewport" class="fp42-map-viewport" tabindex="0" aria-label="Verschiebbarer und zoombarer Skillbaum">'+
  '<div id="fp42-map-stage" class="fp42-map-stage" style="width:'+(MAP_W*mapZoom)+'px;height:'+(MAP_H*mapZoom)+'px"><div id="fp42-map-plane" class="fp42-map-plane" style="width:'+MAP_W+'px;height:'+MAP_H+'px;transform:scale('+mapZoom+')">'+
  '<svg class="fp42-map-lines" viewBox="0 0 '+MAP_W+' '+MAP_H+'" aria-hidden="true">'+mapLines()+'</svg>'+
- '<div class="fp42-tree-root"><div class="fp42-tree-root-icon">◎</div><strong>Dein Finanzwissen</strong><small>Vier verschiedene Spezialisierungen</small></div>'+
- catalog.branches.map((b,i)=>'<div class="fp42-tree-branch-title" style="left:'+(mapX[i])+'px;top:228px;width:'+MAP_NODE_W+'px">'+escape(b.title)+'</div>').join('')+
+ '<div class="fp42-tree-root"><div class="fp42-tree-root-icon">◎</div><strong>Dein Finanzwissen</strong><small>Acht vernetzte Fachrichtungen</small></div>'+
+ catalog.branches.map((b,i)=>'<div class="fp42-tree-branch-title" style="left:'+(branchX(i))+'px;top:228px;width:'+MAP_NODE_W+'px">'+escape(b.title)+'</div>').join('')+
  catalog.skills.map(mapNode).join('')+
  '</div></div></div><div class="fp42-map-caption">Mit einem Finger verschieben · mit den Tasten zoomen · Knoten antippen</div></div>'+
  '<aside class="fp42-map-detail" id="fp42-skill-detail" aria-live="polite">'+skillDetail()+'</aside></div>'+
