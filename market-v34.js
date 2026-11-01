@@ -7,7 +7,7 @@ const valid=s=>/^[A-Z0-9][A-Z0-9.\-]{0,23}$/.test(String(s||''));
 const client=()=>window.FinanzPilotCloud?.paperClient;
 const user=()=>window.FinanzPilotCloud?.user;
 const currency=(n,c)=>{try{return new Intl.NumberFormat('de-DE',{style:'currency',currency:c||'USD'}).format(Number(n))}catch{return String(n)}};
-let watch=[],quotes=[],editorial=[],feedDate='',active='',tab='general',newsFocus='',message='',busy=false,queued=false,lastRefresh=0;
+let watch=[],quotes=[],editorial=[],financials=[],financialsDate='',feedDate='',active='',tab='general',newsFocus='',message='',busy=false,queued=false,lastRefresh=0;
 let selectedArticle=null;const articleRegistry=new Map();
 const articleKey=n=>String(n.id||n.url||n.title||'').slice(0,400);
 
@@ -15,7 +15,7 @@ const historyCache=new Map(),newsCache=new Map(),pending=new Map(),ranges=new Ma
 const WINDOWS=[['1mo','1M'],['3mo','3M'],['6mo','6M'],['1y','1J'],['5y','5J'],['max','MAX']];
 const rangeOf=s=>ranges.get(s)||'6mo';
 const q=s=>quotes.find(x=>x.symbol===s)||null;
-const ui=()=>{if(typeof state!=='undefined'&&['marketoverview','marketdetail','marketnews','marketarticle'].includes(state.view))window.render?.()};
+const ui=()=>{if(typeof state!=='undefined'&&['marketoverview','marketdetail','marketnews','marketarticle','marketfinancials'].includes(state.view))window.render?.()};
 const alias={MSFT:['microsoft'],AMZN:['amazon','aws'],AAPL:['apple'],GOOGL:['alphabet','google'],GOOG:['alphabet','google'],NVDA:['nvidia'],META:['meta','facebook'],BAYN:['bayer'],'BAYN.DE':['bayer'],BYW:['baywa'],'BYW.MU':['baywa'],SAP:['sap'],KGX:['kion'],INTC:['intel']};
 function matches(story,symbol){
  const s=String(symbol||'').toUpperCase(),base=s.split('.')[0],names=alias[s]||alias[base]||[];
@@ -60,11 +60,17 @@ function getAsset(symbol,type,force=false,range=rangeOf(symbol)){
  pending.set(key,p);return p;
 }
 
+async function loadFinancials(force=false){
+ try{const response=await fetch('./data/company-financials-v45.json?v=45'+(force?'&t='+Date.now():''),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
+ const document=await response.json();if(!Array.isArray(document?.companies))throw Error('Finanzbericht-Katalog unvollständig');
+ financials=document.companies.filter(c=>c&&valid(c.symbol)&&Array.isArray(c.metrics)&&c.source?.url&&/^https:\/\//.test(c.source.url));financialsDate=document.generated_at||'';
+ }catch(e){financialsDate='';console.warn('Finanzberichte:',String(e.message||e));}
+}
 async function refresh(force=false){
  if(busy){queued=true;return}
  busy=true;
  try{
-  await fetchEditorial(force);
+  await Promise.all([fetchEditorial(force),loadFinancials(force)]);
   if(!user()||!client()){watch=[];quotes=[];message='Melde dich an, damit deine privaten Watchlist-Charts angezeigt werden.';return}
   const uid=user();
   const rows=await client().from('fp_paper_watchlist').select('symbol,created_at').eq('user_id',uid).order('created_at',{ascending:false}).limit(500);
@@ -112,6 +118,31 @@ function renderOverview(){
  return '<div class="fp34"><div class="fp34-head"><div><span class="eyebrow">MÄRKTE · DEINE TITEL</span><h1>Marktüberblick</h1><p>Alle gemerkten Aktien als Charts. Tippe auf einen Kursverlauf für Details.</p></div><button class="btn secondary" data-fp34-refresh>Aktualisieren</button></div>'+
  (message?'<p role="status">'+esc(message)+'</p>':'')+
  (watch.length?'<div class="fp34-chart-grid">'+watch.map(w=>'<article class="fp34-chart-card"><button type="button" class="fp35-chart-header" data-fp34-chart="'+esc(w.symbol)+'"><span class="fp34-title"><span><strong>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</strong><small>'+esc(w.symbol)+' · '+esc(q(w.symbol)?.quote_date||'Kursstand wird geladen')+'</small></span><span aria-hidden="true">›</span></span></button>'+chart(w.symbol)+'</article>').join('')+'</div>':'<div class="fp34-empty"><p>Deine Watchlist ist noch leer. Im Depot kannst du Aktien merken; sie erscheinen hier unmittelbar.</p><button class="btn secondary" data-fp34-depot>Zum Depot</button></div>')+'</div>';
+}
+function renderFinancials(){
+ if(!user())return '<section class="fp34 fp45-financials"><h1>Kennzahlen</h1><p>Die Finanzberichte deiner privaten Watchlist sind nach Anmeldung sichtbar.</p><button class="btn" type="button" data-fp34-login>Anmelden</button></section>';
+ const fmt=n=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:3}).format(Number(n));
+ const delta=(item)=>{
+  if(!Number.isFinite(Number(item.previous))||!Number.isFinite(Number(item.value))||Number(item.previous)===0)return '';
+  const diff=Number(item.value)-Number(item.previous);
+  if(item.change_kind==='percentage_points')return '<span class="fp45-delta">'+(diff>0?'+':'')+fmt(diff)+' Prozentpunkte</span>';
+  const pct=100*diff/Math.abs(Number(item.previous));
+  return '<span class="fp45-delta">'+(pct>0?'+':'')+fmt(pct)+' % ggü. '+esc(item.comparison||'Vergleichszeitraum')+'</span>';
+ };
+ let content='<div class="fp34-head"><div><span class="eyebrow">MÄRKTE · DEINE WATCHLIST</span><h1>Kennzahlen & Finanzberichte</h1><p>Die aktuell zuletzt redaktionell geprüften Unternehmenszahlen – mit Originalquelle, Berichtsperiode, Veränderungen und kurzer Einordnung. Keine erfundenen oder automatisch geschätzten Werte.</p></div><button class="btn secondary" data-fp45-refresh>Berichte aktualisieren</button></div>';
+ content+='<p class="fp45-data-note">Redaktioneller Datenstand: '+esc(financialsDate||'noch nicht verfügbar')+'. Nur veröffentlichte Berichte werden verwendet. Aktualisierung der Datei erfolgt bei der geplanten täglichen Redaktion – kein Live-Kursfeed.</p>';
+ if(!watch.length)content+='<div class="fp34-empty"><p>Füge im Depot zuerst Aktien zu deiner Watchlist hinzu. Ihre Finanzberichte werden hier anschließend automatisch zugeordnet.</p><button class="btn secondary" data-fp34-depot>Zum Depot</button></div>';
+ else content+='<div class="fp45-report-list">'+watch.map(w=>{
+  const r=financials.find(x=>x.symbol===w.symbol);
+  if(!r)return '<article class="fp45-report-card"><h2>'+esc(q(w.symbol)?.asset_name||w.symbol)+' · '+esc(w.symbol)+'</h2><p>Für diese Aktie wurde noch kein aktueller, belastbar geprüfter Finanzbericht in die Datenbank der Redaktion aufgenommen. Der Titel bleibt in der täglichen Watchlist-Prüfung; es werden keine Kennzahlen geschätzt.</p><small>Bitte später erneut aktualisieren.</small></article>';
+  const href=safe(r.source.url);
+  return '<article class="fp45-report-card"><header><div><span class="eyebrow">LETZTER VERIFIZIERTER BERICHT</span><h2>'+esc(r.name)+' <small>'+esc(w.symbol)+'</small></h2><p>'+esc(r.period)+' · Ende '+esc(r.period_end)+' · veröffentlicht '+esc(r.published)+'</p></div><button type="button" class="btn secondary" data-fp34-chart="'+esc(w.symbol)+'">Kurschart</button></header>'+
+  '<div class="fp45-metric-grid">'+r.metrics.map(m=>'<div class="fp45-metric"><small>'+esc(m.label)+'</small><strong>'+fmt(m.value)+' '+esc(m.unit)+'</strong>'+delta(m)+(m.note?'<p>'+esc(m.note)+'</p>':'')+'</div>').join('')+'</div>'+
+  '<div class="fp45-assessment"><strong>Einordnung</strong><p>'+esc(r.assessment)+'</p>'+(r.caution?'<p><b>Wichtige Einschränkung:</b> '+esc(r.caution)+'</p>':'')+
+  '<details><summary>Worauf du zusätzlich achten solltest</summary><ul>'+r.risks.map(v=>'<li>'+esc(v)+'</li>').join('')+'</ul></details></div>'+
+  (href?'<a class="fp45-report-source" href="'+esc(href)+'" target="_blank" rel="noopener noreferrer">Originalbericht / Veröffentlichung prüfen →</a>':'')+'</article>';
+ }).join('')+'</div>';
+ return '<section class="fp34 fp45-financials">'+content+'</section>';
 }
 function renderDetail(){
  const s=active||watch[0]?.symbol||'',name=q(s)?.asset_name||s;
@@ -252,13 +283,14 @@ function bind(root=document){
  root.querySelectorAll('[data-fp34-request]').forEach(b=>b.addEventListener('click',()=>request(b.dataset.fp34Request)));
  root.querySelectorAll('[data-fp37-news-request]').forEach(b=>b.addEventListener('click',()=>{const symbol=b.dataset.fp37NewsRequest;window.open('https://github.com/marinusmeixner-dot/finanzpilot/issues/new?title='+encodeURIComponent('Analysewunsch: Frei lesbarer Hintergrundartikel '+symbol)+'&body='+encodeURIComponent('Bitte für '+symbol+' einen vollständigen eigenständig verfassten FinanzPilot-Nachrichtenartikel mit frei zugänglicher Quelle, verständlichen Erklärungen und Gegenargumenten erstellen.'),'_blank','noopener,noreferrer')}));
  root.querySelectorAll('[data-fp34-refresh]').forEach(b=>b.addEventListener('click',()=>refresh(true)));
+ root.querySelectorAll('[data-fp45-refresh]').forEach(b=>b.addEventListener('click',()=>refresh(true)));
  root.querySelectorAll('[data-fp38-news-refresh]').forEach(b=>b.addEventListener('click',()=>refresh(true)));
  root.querySelector('[data-fp34-login]')?.addEventListener('click',()=>window.FinanzPilotCloud?.openLogin?.());
  root.querySelector('[data-fp34-depot]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('depot'));
  root.querySelector('[data-fp34-overview]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('marketoverview'));
 }
-window.FinanzPilotMarkets={renderOverview,renderDetail,renderNews,renderArticle,openArticle,bind,refresh,stockDetail,openNews,get watchlist(){return watch},get active(){return active}};
-window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&['marketoverview','marketnews','marketdetail'].includes(state.view)){refresh();if(state.view==='marketnews'&&tab==='watch')loadWatchNews()}});
+window.FinanzPilotMarkets={renderOverview,renderFinancials,renderDetail,renderNews,renderArticle,openArticle,bind,refresh,stockDetail,openNews,get watchlist(){return watch},get active(){return active}};
+window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&['marketoverview','marketnews','marketdetail','marketfinancials'].includes(state.view)){refresh();if(state.view==='marketnews'&&tab==='watch')loadWatchNews()}});
 window.addEventListener('fp-watchlist-changed',()=>refresh(true));
 window.addEventListener('fp-auth-change',()=>refresh(true));
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>refresh(),{once:true});else refresh();
