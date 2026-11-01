@@ -54,9 +54,11 @@ jobs:
         run: node scripts/test_learning_flow_v37.mjs
       - name: "Regression: Private Watchlist event inbox and submitted free-text reviews"
         run: node scripts/test_editorial_queue_v38.mjs
-      - name: "Regression: 36-part guided curriculum and distinct stage navigation"
+      - name: "Regression: Concise 18-part Grundlagen path with preserved 36 source lessons"
         run: node scripts/test_journey_v39.mjs
       - name: "Regression: Verified EUR fractional trading and 30-day streak milestones"
         run: node scripts/test_portfolio_streak_v40.mjs
       - name: "Regression: Four-tab Lernen and server-side skill promotions"
         run: node scripts/test_specialization_v41.mjs
+      - name: "Regression: Four-row Lernen, true zoomable Skillbaum, lean foundations, direct Profil and no duplicate Depot chart"
+        run: node scripts/test_learning_redesign_v42.mjs
