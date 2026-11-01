@@ -25,7 +25,7 @@ assert(portfolio.includes('async function searchStocks('));
 assert(portfolio.includes('async function registerStock('));
 assert(portfolio.includes('async function removeWatch('));
 assert(portfolio.includes('Aktien weltweit suchen'));
-assert(read('index.html').includes('portfolio.js?v=37'));
+assert(read('index.html').includes('portfolio.js?v=40'));
 assert(read('index.html').includes('portfolio-v26.css?v=30'));
 assert(JSON.parse(read('version.json')).version>=27,'The global search feature must remain available in newer versions');
 const memory={},state={view:'depot'},events={};
@@ -39,6 +39,7 @@ const db={
  functions:{async invoke(name,{body}){
    assert.equal(name,'finanzpilot-stock-lookup');
    rpcCalls.push(body.action);
+   if(body.action==='fx')return {data:{asof:'2026-10-30',currencies:['USD','EUR']},error:null};
    if(body.action==='search')return {data:{results:[{symbol:'ASML.AS',name:'ASML Holding',exchange:'Amsterdam',type:'EQUITY'}],provider:'Test'},error:null};
    if(body.action==='register'){const q={symbol:body.symbol,asset_name:'ASML Holding',currency:'EUR',price:920.25,quote_date:'2026-10-30',source:'historical',adjusted:false};quotes.push(q);return {data:{quote:q},error:null}}
    throw Error('Unexpected action');
@@ -60,10 +61,10 @@ await api.registerStock('ASML.AS',true,true);
 assert.equal(api.watchlist.length,1);
 assert.equal(api.watchlist[0].symbol,'ASML.AS');
 assert.equal(api.quotes.some(q=>q.symbol==='ASML.AS'),true);
-assert.equal(api.currencyStats('EUR').total,50000);
+assert.equal(api.currencyStats('EUR').total,1000);
 assert(api.render().includes('data-depot-symbol'));
 assert(api.render().includes('ASML.AS'));
-assert.deepEqual(rpcCalls,['search','register']);
+assert.deepEqual(rpcCalls,['fx','search','register']);
 await api.registerStock('SAP.DE',false,true);
 assert(api.quotes.some(q=>q.symbol==='SAP.DE'),'New stock must be fetched before the Handel order form is rendered');
 assert(api.render().includes('value="SAP.DE"'),'Handel should directly select the newly found symbol');
