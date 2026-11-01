@@ -47,7 +47,7 @@ const document={
 const scrolls=[];const sent=[];const w={scrollY:0,scrollTo(...args){scrolls.push(args)},dispatchEvent(ev){sent.push(ev.type)},addEventListener(){},FinanzPilotLab:null,FinanzPilotJourney:{renderHome:()=>'<div class="fp39-home"><button data-journey-start>Starten</button><button data-journey-stage="1">Orientieren</button><button data-journey-stage="2">Verstehen</button><button data-journey-stage="3">Verknüpfen</button><button data-journey-stage="4">Anwenden</button><button data-journey-stage="5">Analysieren</button><button data-journey-stage="6">Urteil</button></div>'}};
 w.FinanzPilotLearningHub={home:()=>'<section class="fp42-learn-home">'+['basics','skilltree','skilllessons','speciallessons'].map(x=>'<button data-fp41-route="'+x+'">'+x+'</button>').join('')+'</section>'};
 w.FinanzPilotProfile={render:()=>'<section class="fp42-profile"><button data-section-route="learningstats">Statistik</button><button data-section-route="career">Karriere</button><button data-section-route="inventory">Artefakte</button><button data-section-account>Konto</button></section>'};
-const location={hash:'',pathname:'/finanzpilot/',search:'?v=42};
+const location={hash:'',pathname:'/finanzpilot/',search:'?v=43};
 const history={replaceState:(_,__,url)=>{location.hash=url.includes('#')?'#'+url.split('#')[1]:''}};
 const context=vm.createContext({window:w,document,localStorage:{getItem:k=>memory[k]??null,setItem:(k,v)=>memory[k]=v},state,chooseView:v=>{state.view=v},
  MutationObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),history,location,URLSearchParams,console,Date,JSON,
