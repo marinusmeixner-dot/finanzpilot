@@ -98,11 +98,75 @@
       }
     },
     {
+      "id": "umsatz-und-marge",
+      "title": "Zwischenstufe: Umsatz, Kosten und Gewinnmarge",
+      "subtitle": "Wachstum ist nicht automatisch profitabel",
+      "short": "Wachstum ist nicht automatisch profitabel",
+      "order": 2,
+      "minutes": 15,
+      "prerequisite": "guv",
+      "difficulty": "Zwischenstufe",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Verstehen, bevor du rechnest",
+          "text": "Die Nordwerk AG erhöht den Umsatz von 1.000 auf 1.200 Mio. €. Gleichzeitig steigt der operative Gewinn vor Zinsen und Steuern von 100 auf 108 Mio. €. Obwohl beide Beträge wachsen, kann die Gewinnmarge fallen. Eine Marge ist ein Verhältnis: operativer Gewinn geteilt durch Umsatz. Prozentpunkte und prozentuale Veränderung sind nicht dasselbe. Geprüfte Berichtszeiträume sind Voraussetzung.",
+          "insight": "Mehr Umsatz bei sinkender Marge kann unterschiedliche Ursachen haben: Preisdruck, Materialkosten oder vorgezogene Ausgaben."
+        },
+        {
+          "type": "number",
+          "title": "Eine Kennzahl selbst herleiten",
+          "prompt": "Nordwerk erzielt 1.200 Mio. € Umsatz und 108 Mio. € operativen Gewinn vor Zinsen und Steuern. Wie hoch ist die operative Gewinnmarge in Prozent?",
+          "answer": 9,
+          "tolerance": 0.12,
+          "method": "Operative Marge = 108 / 1.200 × 100 = 9 %. Im Vorjahr waren es 100 / 1.000 × 100 = 10 %. Der Gewinn steigt um 8 %, die operative Marge fällt um einen Prozentpunkt.",
+          "hint": "Schreibe die Formel zuerst mit den Einheiten und rechne dann. Prüfe, ob dein Ergebnis wirtschaftlich plausibel ist.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre in mindestens zwei Sätzen, welche Annahme deiner Rechnung zugrunde liegt und welche Information zur Bewertung noch fehlt."
+        },
+        {
+          "type": "multi",
+          "title": "Belegte Aussagen von Vermutungen trennen",
+          "prompt": "Welche zwei Schlussfolgerungen sind aus dem Beispiel tatsächlich begründbar? Wähle genau zwei.",
+          "options": [
+            "Die neue operative Marge beträgt 9 %.",
+            "Die operative Marge steigt wegen des höheren Umsatzes zwingend.",
+            "Die Marge sinkt gegenüber 10 % im Vorjahr um einen Prozentpunkt.",
+            "Aus dem Umsatzwachstum folgt ein mindestens ebenso hohes Cashflow-Wachstum."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Operative Marge = 108 / 1.200 × 100 = 9 %. Im Vorjahr waren es 100 / 1.000 × 100 = 10 %. Der Gewinn steigt um 8 %, die operative Marge fällt um einen Prozentpunkt. Eine richtige Rechnung allein beweist noch keine attraktive Aktienbewertung.",
+          "hint": "Berücksichtige Zahlen, Zeiträume, Unsicherheit und die Grenzen des Modells."
+        },
+        {
+          "type": "decision",
+          "title": "Von der Zahl zur Analystenentscheidung",
+          "prompt": "Die Nordwerk-Aktie steigt nach dem Umsatzbericht. Welchen nächsten Schritt wählst du?",
+          "options": [
+            "Nur das Umsatzwachstum in den künftigen Aktienkurs übertragen.",
+            "Margenveränderung und Ursachen prüfen und erst danach künftige Cashflows schätzen.",
+            "Die Kostenentwicklung ignorieren, weil der Umsatz größer geworden ist."
+          ],
+          "correct": 1,
+          "method": "Ein Analyst trennt die belegte Kennzahl von Prognosen, überprüft Datenqualität und definiert Alternativszenarien. Mehr Umsatz bei sinkender Marge kann unterschiedliche Ursachen haben: Preisdruck, Materialkosten oder vorgezogene Ausgaben.",
+          "hint": "Achte auf den Unterschied zwischen Beobachtung, Interpretation und Kaufentscheidung."
+        }
+      ]
+    },
+    {
       "id": "guv-gewinnqualitaet",
       "title": "GuV vertiefen – Gewinnqualität und Cashflow",
       "subtitle": "Von operativer Marge über Kapitalbindung zu freiem Cashflow",
       "short": "Zahlungsströme, Kapitalbindung und Einmaleffekte in einer Bilanzanalyse verbinden",
-      "order": 11,
+      "order": 3,
       "minutes": 24,
       "prerequisite": "guv",
       "difficulty": "Vertiefung",
@@ -188,7 +252,7 @@
       "id": "margen",
       "title": "Operative Margen",
       "subtitle": "EBITDA, EBIT und Nachhaltigkeit",
-      "order": 2,
+      "order": 4,
       "minutes": 16,
       "prerequisite": "guv",
       "steps": [
@@ -274,7 +338,7 @@
       "id": "bilanz",
       "title": "Bilanz und Liquidität",
       "subtitle": "Bestände, Forderungen, Schulden",
-      "order": 3,
+      "order": 5,
       "minutes": 16,
       "prerequisite": "margen",
       "steps": [
@@ -357,10 +421,74 @@
       }
     },
     {
+      "id": "bilanz-bruecke",
+      "title": "Zwischenstufe: Bilanz, Schulden und Zahlungsmittel",
+      "subtitle": "Eigenkapital und Liquidität sauber trennen",
+      "short": "Eigenkapital und Liquidität sauber trennen",
+      "order": 6,
+      "minutes": 15,
+      "prerequisite": "bilanz",
+      "difficulty": "Zwischenstufe",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Verstehen, bevor du rechnest",
+          "text": "Eine Bilanz zeigt Vermögenswerte und die Finanzierung zu einem Stichtag. Ein Unternehmen kann viel Eigenkapital haben und trotzdem kurzfristig wenig flüssige Mittel. Nordwerk hält 180 Mio. € liquide Mittel, 120 Mio. € kurz- und langfristige Finanzschulden. Die Nettofinanzverschuldung ist Finanzschulden minus liquide Mittel; sie kann bei hoher Liquidität negativ sein. Nicht jedes Bilanzpassivum ist eine Finanzschuld.",
+          "insight": "Bilanzwerte sind eine Momentaufnahme; Zahlungsfähigkeit hängt auch von zukünftigen Fälligkeiten und operativem Cashflow ab."
+        },
+        {
+          "type": "number",
+          "title": "Eine Kennzahl selbst herleiten",
+          "prompt": "Nordwerk hat 120 Mio. € zinstragende Finanzschulden und 180 Mio. € liquide Mittel. Berechne die Nettofinanzverschuldung in Mio. €.",
+          "answer": -60,
+          "tolerance": 0.12,
+          "method": "Nettofinanzverschuldung = 120 − 180 = −60 Mio. €. Das bedeutet in dieser vereinfachten Betrachtung 60 Mio. € mehr Cash als Finanzschulden. Sonstige Verpflichtungen müssen getrennt geprüft werden.",
+          "hint": "Schreibe die Formel zuerst mit den Einheiten und rechne dann. Prüfe, ob dein Ergebnis wirtschaftlich plausibel ist.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre in mindestens zwei Sätzen, welche Annahme deiner Rechnung zugrunde liegt und welche Information zur Bewertung noch fehlt."
+        },
+        {
+          "type": "multi",
+          "title": "Belegte Aussagen von Vermutungen trennen",
+          "prompt": "Welche zwei Schlussfolgerungen sind aus dem Beispiel tatsächlich begründbar? Wähle genau zwei.",
+          "options": [
+            "Die Nettofinanzverschuldung beträgt −60 Mio. €.",
+            "Negative Nettofinanzverschuldung beweist, dass es keine Zahlungsverpflichtungen gibt.",
+            "Die liquiden Mittel übersteigen die zinstragenden Schulden um 60 Mio. €.",
+            "Das Eigenkapital muss exakt 60 Mio. € betragen."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Nettofinanzverschuldung = 120 − 180 = −60 Mio. €. Das bedeutet in dieser vereinfachten Betrachtung 60 Mio. € mehr Cash als Finanzschulden. Sonstige Verpflichtungen müssen getrennt geprüft werden. Eine richtige Rechnung allein beweist noch keine attraktive Aktienbewertung.",
+          "hint": "Berücksichtige Zahlen, Zeiträume, Unsicherheit und die Grenzen des Modells."
+        },
+        {
+          "type": "decision",
+          "title": "Von der Zahl zur Analystenentscheidung",
+          "prompt": "Die liquiden Mittel stammen teilweise aus einer einmaligen Vorauszahlung. Welche Bewertung ist am besten?",
+          "options": [
+            "Nur den Bilanzstichtag verwenden und zukünftige Zahlungen ignorieren.",
+            "Das gesamte Geld sofort als dauerhaft ausschüttbar ansehen.",
+            "Fälligkeiten, Mittelbindung und absehbare Zahlungen zusätzlich zur Stichtagsbilanz untersuchen."
+          ],
+          "correct": 2,
+          "method": "Ein Analyst trennt die belegte Kennzahl von Prognosen, überprüft Datenqualität und definiert Alternativszenarien. Bilanzwerte sind eine Momentaufnahme; Zahlungsfähigkeit hängt auch von zukünftigen Fälligkeiten und operativem Cashflow ab.",
+          "hint": "Achte auf den Unterschied zwischen Beobachtung, Interpretation und Kaufentscheidung."
+        }
+      ]
+    },
+    {
       "id": "working",
       "title": "Working Capital",
       "subtitle": "Warum Wachstum Geld bindet",
-      "order": 4,
+      "order": 7,
       "minutes": 16,
       "prerequisite": "bilanz",
       "steps": [
@@ -454,7 +582,7 @@
       "id": "fcf",
       "title": "Free Cashflow",
       "subtitle": "Operativer Cashflow abzüglich Investitionen",
-      "order": 5,
+      "order": 8,
       "minutes": 16,
       "prerequisite": "working",
       "steps": [
@@ -541,10 +669,74 @@
       }
     },
     {
+      "id": "cashflow-normalisieren",
+      "title": "Zwischenstufe: Nachhaltigen Cashflow abschätzen",
+      "subtitle": "Einmaleffekte und Investitionen unterscheiden",
+      "short": "Einmaleffekte und Investitionen unterscheiden",
+      "order": 9,
+      "minutes": 15,
+      "prerequisite": "fcf",
+      "difficulty": "Zwischenstufe",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Verstehen, bevor du rechnest",
+          "text": "Nordwerk hat in einem Jahr 120 Mio. € operativen Cashflow und 70 Mio. € Investitionen. Darin enthalten sind 25 Mio. € einmalige zusätzliche Anlageninvestitionen für die Erweiterung der Produktion. Zunächst beträgt der berichtete freie Cashflow 50 Mio. €. Ein analytisch bereinigter Wert ohne die Erweiterung ist kein real zusätzlich verfügbares Geld, sondern nur ein Szenario, das man offen kennzeichnen muss.",
+          "insight": "Berichtete und bereinigte Zahlen sind separat zu nennen; Investitionen können zukünftige Gewinne ermöglichen."
+        },
+        {
+          "type": "number",
+          "title": "Eine Kennzahl selbst herleiten",
+          "prompt": "Nordwerk berichtet 120 Mio. € operativen Cashflow und 70 Mio. € Investitionen, davon 25 Mio. € außergewöhnliche Erweiterung. Wie hoch wäre ein nur für den Vergleich bereinigter freier Cashflow ohne diese Erweiterung, in Mio. €?",
+          "answer": 75,
+          "tolerance": 0.12,
+          "method": "Berichteter freier Cashflow = 120 − 70 = 50 Mio. €. Ohne 25 Mio. € außergewöhnliche Erweiterungsinvestition verbleiben 45 Mio. € Investitionen und ein illustrativer bereinigter Cashflow von 120 − 45 = 75 Mio. €. Diese 75 Mio. € sind keine berichteten Zahlungsmittel.",
+          "hint": "Schreibe die Formel zuerst mit den Einheiten und rechne dann. Prüfe, ob dein Ergebnis wirtschaftlich plausibel ist.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre in mindestens zwei Sätzen, welche Annahme deiner Rechnung zugrunde liegt und welche Information zur Bewertung noch fehlt."
+        },
+        {
+          "type": "multi",
+          "title": "Belegte Aussagen von Vermutungen trennen",
+          "prompt": "Welche zwei Schlussfolgerungen sind aus dem Beispiel tatsächlich begründbar? Wähle genau zwei.",
+          "options": [
+            "Berichtet sind 50 Mio. € freier Cashflow.",
+            "Bereinigte 75 Mio. € bedeuten, dass der Firma sofort 75 Mio. € zusätzlich gehören.",
+            "75 Mio. € sind unter der genannten Annahme ein illustratives Vergleichsszenario.",
+            "Eine einmalige Investition darf in jedem Jahr der Bewertung ignoriert werden."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Berichteter freier Cashflow = 120 − 70 = 50 Mio. €. Ohne 25 Mio. € außergewöhnliche Erweiterungsinvestition verbleiben 45 Mio. € Investitionen und ein illustrativer bereinigter Cashflow von 120 − 45 = 75 Mio. €. Diese 75 Mio. € sind keine berichteten Zahlungsmittel. Eine richtige Rechnung allein beweist noch keine attraktive Aktienbewertung.",
+          "hint": "Berücksichtige Zahlen, Zeiträume, Unsicherheit und die Grenzen des Modells."
+        },
+        {
+          "type": "decision",
+          "title": "Von der Zahl zur Analystenentscheidung",
+          "prompt": "Ein Analyst erstellt eine mehrjährige Bewertung. Was sollte er mit dem einmaligen Ausbau tun?",
+          "options": [
+            "Die Investition und ihren möglichen künftigen Nutzen in expliziten Jahren modellieren.",
+            "Erweiterungsinvestitionen als wertlos streichen.",
+            "Nur den höchsten bereinigten Cashflow aller Jahre weiterrechnen."
+          ],
+          "correct": 0,
+          "method": "Ein Analyst trennt die belegte Kennzahl von Prognosen, überprüft Datenqualität und definiert Alternativszenarien. Berichtete und bereinigte Zahlen sind separat zu nennen; Investitionen können zukünftige Gewinne ermöglichen.",
+          "hint": "Achte auf den Unterschied zwischen Beobachtung, Interpretation und Kaufentscheidung."
+        }
+      ]
+    },
+    {
       "id": "roic",
       "title": "ROIC und Wertschöpfung",
       "subtitle": "Rendite auf investiertes Kapital",
-      "order": 6,
+      "order": 10,
       "minutes": 16,
       "prerequisite": "fcf",
       "steps": [
@@ -627,10 +819,74 @@
       }
     },
     {
+      "id": "kapitalrendite-bruecke",
+      "title": "Zwischenstufe: Kapitalrendite und Wachstum",
+      "subtitle": "Wachstum gegen Kapitalkosten stellen",
+      "short": "Wachstum gegen Kapitalkosten stellen",
+      "order": 11,
+      "minutes": 15,
+      "prerequisite": "roic",
+      "difficulty": "Zwischenstufe",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Verstehen, bevor du rechnest",
+          "text": "Wenn ein Unternehmen neues Kapital aufnimmt oder investiert, zählt nicht nur zusätzlicher Gewinn, sondern auch die Rendite auf das eingesetzte Kapital. Nordwerk plant eine Investition von 200 Mio. €, die langfristig 16 Mio. € zusätzlichen operativen Gewinn nach Steuern erzielen soll. Die einfache Rendite beträgt 8 %. Ob dadurch Wert entsteht, hängt von Risiko, Kapitalkosten, Dauer und der Entwicklung der Zahlungsströme ab.",
+          "insight": "Investiertes Kapital ist knapp; eine höhere Umsatzrate alleine erzeugt keinen Wert für die Eigentümer."
+        },
+        {
+          "type": "number",
+          "title": "Eine Kennzahl selbst herleiten",
+          "prompt": "Nordwerk investiert 200 Mio. € und erwartet 16 Mio. € zusätzlichen operativen Gewinn nach Steuern pro Jahr. Wie hoch ist die einfache Rendite auf das neue Kapital in Prozent?",
+          "answer": 8,
+          "tolerance": 0.12,
+          "method": "Zusätzliche Kapitalrendite = 16 / 200 × 100 = 8 %. Der Wert muss mit realistischen risikoadjustierten Kapitalkosten verglichen werden. Perioden, Cashflow-Umsetzung und Unsicherheiten zählen.",
+          "hint": "Schreibe die Formel zuerst mit den Einheiten und rechne dann. Prüfe, ob dein Ergebnis wirtschaftlich plausibel ist.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre in mindestens zwei Sätzen, welche Annahme deiner Rechnung zugrunde liegt und welche Information zur Bewertung noch fehlt."
+        },
+        {
+          "type": "multi",
+          "title": "Belegte Aussagen von Vermutungen trennen",
+          "prompt": "Welche zwei Schlussfolgerungen sind aus dem Beispiel tatsächlich begründbar? Wähle genau zwei.",
+          "options": [
+            "Die einfache erwartete Rendite beträgt 8 %.",
+            "Eine erwartete Rendite von 8 % liegt automatisch über den Kapitalkosten.",
+            "Für Wertschöpfung muss man die Kapitalkosten und das Risiko berücksichtigen.",
+            "Das Umsatzwachstum ist exakt 8 %."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Zusätzliche Kapitalrendite = 16 / 200 × 100 = 8 %. Der Wert muss mit realistischen risikoadjustierten Kapitalkosten verglichen werden. Perioden, Cashflow-Umsetzung und Unsicherheiten zählen. Eine richtige Rechnung allein beweist noch keine attraktive Aktienbewertung.",
+          "hint": "Berücksichtige Zahlen, Zeiträume, Unsicherheit und die Grenzen des Modells."
+        },
+        {
+          "type": "decision",
+          "title": "Von der Zahl zur Analystenentscheidung",
+          "prompt": "Wenn die risikoadjustierten Kapitalkosten 10 % betragen, wie bewertest du die Investition?",
+          "options": [
+            "Die Rendite übertrifft die Kapitalkosten und ist deshalb sicher wertschaffend.",
+            "Die einfache Rendite liegt unter den Kapitalkosten; Annahmen, zeitlichen Verlauf und andere Nutzen prüfen.",
+            "Der Aktienkurs muss im selben Jahr um 2 % fallen."
+          ],
+          "correct": 1,
+          "method": "Ein Analyst trennt die belegte Kennzahl von Prognosen, überprüft Datenqualität und definiert Alternativszenarien. Investiertes Kapital ist knapp; eine höhere Umsatzrate alleine erzeugt keinen Wert für die Eigentümer.",
+          "hint": "Achte auf den Unterschied zwischen Beobachtung, Interpretation und Kaufentscheidung."
+        }
+      ]
+    },
+    {
       "id": "wacc",
       "title": "Kapitalkosten verstehen",
       "subtitle": "WACC und Abzinsung",
-      "order": 7,
+      "order": 12,
       "minutes": 16,
       "prerequisite": "roic",
       "steps": [
@@ -720,7 +976,7 @@
       "id": "enterprise",
       "title": "EV und Equity Value",
       "subtitle": "Vom gesamten Geschäft zum Aktienkurs",
-      "order": 8,
+      "order": 13,
       "minutes": 16,
       "prerequisite": "wacc",
       "steps": [
@@ -810,7 +1066,7 @@
       "id": "multiples",
       "title": "Bewertungsmultiples",
       "subtitle": "Wann ein niedriges KGV täuscht",
-      "order": 9,
+      "order": 14,
       "minutes": 16,
       "prerequisite": "enterprise",
       "steps": [
@@ -893,10 +1149,74 @@
       }
     },
     {
+      "id": "multiples-vergleich",
+      "title": "Zwischenstufe: Unternehmensvergleiche richtig lesen",
+      "subtitle": "Bewertungsmultiples im Kontext",
+      "short": "Bewertungsmultiples im Kontext",
+      "order": 15,
+      "minutes": 15,
+      "prerequisite": "multiples",
+      "difficulty": "Zwischenstufe",
+      "domain": "Begriffs-Akademie",
+      "source": {
+        "label": "Nordwerk AG · durchgehend fiktives Lehrmodell",
+        "url": "#view=glossary"
+      },
+      "steps": [
+        {
+          "type": "read",
+          "title": "Verstehen, bevor du rechnest",
+          "text": "Das Kurs-Gewinn-Verhältnis (KGV) setzt Aktienkurs und Gewinn je Aktie ins Verhältnis. Ein niedriges KGV kann auf günstige Bewertung hinweisen, aber auch geringere Wachstumsaussichten oder höhere Risiken widerspiegeln. Nordwerk notiert bei 80 €, der für dasselbe Geschäftsjahr erwartete Gewinn pro Aktie beträgt 5 €. Ein Vergleich mit einer anderen Firma erfordert vergleichbare Berichtszeiträume, Bilanzrisiken und Rechnungslegungsgrundlagen.",
+          "insight": "Ein Multiple ist ein Einstieg in den Vergleich, kein Ersatz für eine Prognose von Gewinnqualität, Kapitalbedarf und Risiko."
+        },
+        {
+          "type": "number",
+          "title": "Eine Kennzahl selbst herleiten",
+          "prompt": "Ein Nordwerk-Anteil kostet 80 €; der erwartete Gewinn je Aktie beträgt 5 €. Berechne das erwartete Kurs-Gewinn-Verhältnis (KGV) als dimensionslose Zahl.",
+          "answer": 16,
+          "tolerance": 0.12,
+          "method": "Erwartetes KGV = Aktienkurs / erwarteter Gewinn je Aktie = 80 / 5 = 16. Der erwartete Gewinn ist unsicher und kann Einmaleffekte enthalten; der Vergleich unterschiedlicher Jahre verfälscht die Bewertung.",
+          "hint": "Schreibe die Formel zuerst mit den Einheiten und rechne dann. Prüfe, ob dein Ergebnis wirtschaftlich plausibel ist.",
+          "reasoningRequired": true,
+          "reasoningQuestion": "Erkläre in mindestens zwei Sätzen, welche Annahme deiner Rechnung zugrunde liegt und welche Information zur Bewertung noch fehlt."
+        },
+        {
+          "type": "multi",
+          "title": "Belegte Aussagen von Vermutungen trennen",
+          "prompt": "Welche zwei Schlussfolgerungen sind aus dem Beispiel tatsächlich begründbar? Wähle genau zwei.",
+          "options": [
+            "Das erwartete Kurs-Gewinn-Verhältnis beträgt 16.",
+            "Ein KGV von 16 garantiert 16 % Jahresrendite.",
+            "Es ist eine Relation aus Kurs und erwarteten Gewinnen, keine Cashflow-Analyse.",
+            "Ein niedrigeres KGV zeigt zwingend die attraktivere Aktie."
+          ],
+          "correct": [
+            0,
+            2
+          ],
+          "method": "Erwartetes KGV = Aktienkurs / erwarteter Gewinn je Aktie = 80 / 5 = 16. Der erwartete Gewinn ist unsicher und kann Einmaleffekte enthalten; der Vergleich unterschiedlicher Jahre verfälscht die Bewertung. Eine richtige Rechnung allein beweist noch keine attraktive Aktienbewertung.",
+          "hint": "Berücksichtige Zahlen, Zeiträume, Unsicherheit und die Grenzen des Modells."
+        },
+        {
+          "type": "decision",
+          "title": "Von der Zahl zur Analystenentscheidung",
+          "prompt": "Ein Wettbewerber hat ein KGV von 10, wächst aber langsamer und ist stärker verschuldet. Welche Aussage passt?",
+          "options": [
+            "Die günstigere Zahl beweist eine sichere Überrendite.",
+            "Nur die numerischen KGV-Werte vergleichen.",
+            "Wachstum, Qualität des Gewinns, Schulden und Risiken vor der Bewertung gegenüberstellen."
+          ],
+          "correct": 2,
+          "method": "Ein Analyst trennt die belegte Kennzahl von Prognosen, überprüft Datenqualität und definiert Alternativszenarien. Ein Multiple ist ein Einstieg in den Vergleich, kein Ersatz für eine Prognose von Gewinnqualität, Kapitalbedarf und Risiko.",
+          "hint": "Achte auf den Unterschied zwischen Beobachtung, Interpretation und Kaufentscheidung."
+        }
+      ]
+    },
+    {
       "id": "szenarien",
       "title": "Szenariomodell als Meisterklasse",
       "subtitle": "Vom Geschäftsmodell zum begründeten Kursziel",
-      "order": 10,
+      "order": 16,
       "minutes": 16,
       "prerequisite": "multiples",
       "steps": [
