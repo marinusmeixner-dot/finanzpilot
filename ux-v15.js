@@ -29,6 +29,7 @@
  let inRoute=false,restoring=false,previous='home',restoreTicket=0;
  let navTrail=[];
  function goBack(){
+  if(window.FinanzPilotLearningHub?.backInternal?.(state.view))return true;
   while(navTrail.length){const item=navTrail.pop();if(item?.view===state.view||!Object.prototype.hasOwnProperty.call(PARENT,item?.view))continue;
    route(item.view,false,true,item.scroll);return true;
   }
