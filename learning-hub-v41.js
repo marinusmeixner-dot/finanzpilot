@@ -29,7 +29,7 @@ const MAP_W=1800,MAP_H=1200,MAP_CX=885,MAP_NODE_W=300;
 const mapX=[75,515,955,1395],mapY=[295,605,915];
 let selectedMap='',mapZoom=.74,mapLeft=420,mapTop=0;
 function shell(active,content){
- return '<div class="fp42-learn-sub"><div class="fp42-learn-back"><button type="button" class="btn secondary" data-fp41-route="learn">← Lernen</button><span>'+escape(routes.find(x=>x[0]===active)?.[1]||'Lernen')+'</span></div>'+
+ return '<div class="fp42-learn-sub">'+
  (notice?'<div class="fp41-notice" role="status">'+escape(notice)+'</div>':'')+content+'</div>';
 }
 function home(){
@@ -156,7 +156,7 @@ function skillIndex(){
  }
  if(selectedLesson)return shell('skilllessons',body+renderLesson(current,selectedLesson));
  const done=mastered(current.id),selected=enrolled(current.id),ready=purchaseReady(current);
- body+='<div class="fp41-detail"><button class="btn secondary" data-fp41-route="skilltree">← Skillbaum</button><span class="eyebrow">'+escape(catalog.branches.find(b=>b.id===current.branch)?.title||'Spezialisierung')+' · AUFBAUSTUFE '+current.tier+'</span>'+
+ body+='<div class="fp41-detail"><button type="button" class="btn secondary" data-fp43-all-skills>Alle Skill-Lektionen anzeigen</button><span class="eyebrow">'+escape(catalog.branches.find(b=>b.id===current.branch)?.title||'Spezialisierung')+' · AUFBAUSTUFE '+current.tier+'</span>'+
  '<h2>'+escape(current.title)+'</h2><p>'+escape(current.description)+'</p>'+
  (current.parent?'<p class="fp41-precondition">Vorheriger Skill: '+escape(titleOf(current.parent))+(mastered(current.parent)?' ✓':', noch nicht abgeschlossen')+'</p>':'')+
  '<div class="fp41-detail-status">'+(done?'Skill erlernt · Abschlussbelohnung erhalten':selected?'Lernpfad freigeschaltet':ready?'Noch nicht gewählt · Kosten 3 Forschungspunkte':'Noch gesperrt')+'</div>'+
@@ -243,8 +243,9 @@ async function action(kind,skill,lesson,payment,answer){
 function bind(root=document){
  bindMap(root);
  root.querySelectorAll('[data-fp41-route]').forEach(b=>b.addEventListener('click',()=>{
-  selectedLesson='';selectedSpecial='';nav()?.route(b.dataset.fp41Route);if(!['learn','basics'].includes(b.dataset.fp41Route))load();
+  selectedLesson='';selectedSpecial='';if(b.dataset.fp41Route==='skilllessons')selectedSkill='';nav()?.route(b.dataset.fp41Route);if(!['learn','basics'].includes(b.dataset.fp41Route))load();
  }));
+ root.querySelector('[data-fp43-all-skills]')?.addEventListener('click',()=>{selectedSkill='';selectedLesson='';redraw()});
  root.querySelectorAll('[data-fp41-skill]').forEach(b=>b.addEventListener('click',()=>pick(b.dataset.fp41Skill)));
  root.querySelectorAll('[data-fp41-enroll]').forEach(b=>b.addEventListener('click',()=>action('enroll',b.dataset.fp41Enroll)));
  root.querySelectorAll('[data-fp41-buy]').forEach(b=>b.addEventListener('click',()=>action('unlock',selectedSkill,b.dataset.fp41Buy,b.dataset.fp41Currency)));
