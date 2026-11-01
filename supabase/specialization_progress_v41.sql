@@ -59,151 +59,54 @@ drop policy if exists fp_spec_profile_owner on public.fp_specialization_profiles
 create policy fp_spec_profile_owner on public.fp_specialization_profiles for select to authenticated using(user_id=(select auth.uid()));
 drop policy if exists fp_spec_promotions_owner on public.fp_specialization_promotions;
 create policy fp_spec_promotions_owner on public.fp_specialization_promotions for select to authenticated using(user_id=(select auth.uid()));
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('berichte-lesen',null,'Berichte sicher lesen','reporting',3,7)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('berichte-lesen-1','berichte-lesen',1,0,Letzter Aktienkurs)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('berichte-lesen-2','berichte-lesen',2,0,Eine Meinungsäußerung ohne Originalzahlen)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('berichte-lesen-3','berichte-lesen',3,1,Der Verkauf hat keinen Einfluss auf den Cashflow)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('cashflow-architekt','berichte-lesen','Cashflow-Architekt','reporting',3,9)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('cashflow-architekt-1','cashflow-architekt',1,1,Er erhöht automatisch den Gewinn)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('cashflow-architekt-2','cashflow-architekt',2,1,65 Mio. €)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('cashflow-architekt-3','cashflow-architekt',3,1,Jede Investition dauerhaft ignorieren)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('bilanz-pruefer','cashflow-architekt','Bilanz- und Schuldenprüfer','reporting',3,11)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('bilanz-pruefer-1','bilanz-pruefer',1,1,180 Mio. €)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('bilanz-pruefer-2','bilanz-pruefer',2,0,Nur die Anzahl neuer Produkte)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('bilanz-pruefer-3','bilanz-pruefer',3,0,Das Eigenkapital ist automatisch null)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('bewertung-multiples',null,'Relative Bewertung','valuation',3,7)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('bewertung-multiples-1','bewertung-multiples',1,0,6)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('bewertung-multiples-2','bewertung-multiples',2,0,Nur der gestrige Kurs)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('bewertung-multiples-3','bewertung-multiples',3,0,Nur den Firmenname vergleichen)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('werttreiber','bewertung-multiples','Werttreiber verstehen','valuation',3,9)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('werttreiber-1','werttreiber',1,0,200 %)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('werttreiber-2','werttreiber',2,0,Zukünftige Euro sind immer genauso viel wert)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('werttreiber-3','werttreiber',3,0,Nur die Zahl der Mitarbeitenden)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('unternehmenswert','werttreiber','DCF- und Szenarioanalyse','valuation',3,11)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('unternehmenswert-1','unternehmenswert',1,0,Nur ein Kursziel aus sozialen Medien)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('unternehmenswert-2','unternehmenswert',2,0,Die Angabe von Risiken)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('unternehmenswert-3','unternehmenswert',3,0,Den höchsten Wert immer als sicher annehmen)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('risiko-basis',null,'Verlust und Risikotragfähigkeit','risk',3,7)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('risiko-basis-1','risiko-basis',1,0,Vergangene Kursschwankungen)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('risiko-basis-2','risiko-basis',2,0,Jede Position gleich benennen)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('risiko-basis-3','risiko-basis',3,0,Nur die heutige Kursschwankung)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('portfolio-architekt','risiko-basis','Portfolio-Architekt','risk',3,9)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('portfolio-architekt-1','portfolio-architekt',1,0,2,5 %)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('portfolio-architekt-2','portfolio-architekt',2,0,Sie ist gleichbedeutend mit einer sicheren Rendite)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('portfolio-architekt-3','portfolio-architekt',3,0,+12 %)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('makro-risiken','portfolio-architekt','Makro- und Liquiditätsrisiken','risk',3,11)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('makro-risiken-1','makro-risiken',1,0,Nur das letzte Tageshoch)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('makro-risiken-2','makro-risiken',2,0,Weil alle Broker gleiche Währungen zeigen)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('makro-risiken-3','makro-risiken',3,0,Mehr Zeit für die Rückzahlung)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('quellenfinder',null,'Primärquellen-Forscher','research',3,7)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('quellenfinder-1','quellenfinder',1,0,Ein beliebiger Social-Media-Post)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('quellenfinder-2','quellenfinder',2,0,Nur das Datum des Aktienkurses)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('quellenfinder-3','quellenfinder',3,0,Beide Werte addieren)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('nachrichten-einordnen','quellenfinder','Nachrichten-Analyst','research',3,9)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('nachrichten-einordnen-1','nachrichten-einordnen',1,0,Die Börse hat keine Nachrichten verarbeitet)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('nachrichten-einordnen-2','nachrichten-einordnen',2,0,Welche Farbe hat die Börsenanzeige?)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('nachrichten-einordnen-3','nachrichten-einordnen',3,0,Nur den heutigen Kurs)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points)
- values('investment-these','nachrichten-einordnen','Investmentkomitee','research',3,11)
- on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('investment-these-1','investment-these',1,0,Nur die Zahl der Besucher)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('investment-these-2','investment-these',2,0,Nur den letzten Depotgewinn betrachten)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer)
- values('investment-these-3','investment-these',3,0,Nie, denn gute Analysen müssen zum Kauf führen)
- on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
-
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('berichte-lesen',null,'Berichte sicher lesen','reporting',3,7) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('berichte-lesen-1','berichte-lesen',1,15,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('berichte-lesen-2','berichte-lesen',2,18,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('berichte-lesen-3','berichte-lesen',3,24,1) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('cashflow-architekt','berichte-lesen','Cashflow-Architekt','reporting',3,9) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('cashflow-architekt-1','cashflow-architekt',1,22,1) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('cashflow-architekt-2','cashflow-architekt',2,25,1) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('cashflow-architekt-3','cashflow-architekt',3,31,1) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('bilanz-pruefer','cashflow-architekt','Bilanz- und Schuldenprüfer','reporting',3,11) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('bilanz-pruefer-1','bilanz-pruefer',1,30,1) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('bilanz-pruefer-2','bilanz-pruefer',2,33,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('bilanz-pruefer-3','bilanz-pruefer',3,39,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('bewertung-multiples',null,'Relative Bewertung','valuation',3,7) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('bewertung-multiples-1','bewertung-multiples',1,15,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('bewertung-multiples-2','bewertung-multiples',2,18,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('bewertung-multiples-3','bewertung-multiples',3,24,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('werttreiber','bewertung-multiples','Werttreiber verstehen','valuation',3,9) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('werttreiber-1','werttreiber',1,22,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('werttreiber-2','werttreiber',2,25,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('werttreiber-3','werttreiber',3,31,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('unternehmenswert','werttreiber','DCF- und Szenarioanalyse','valuation',3,11) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('unternehmenswert-1','unternehmenswert',1,30,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('unternehmenswert-2','unternehmenswert',2,33,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('unternehmenswert-3','unternehmenswert',3,39,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('risiko-basis',null,'Verlust und Risikotragfähigkeit','risk',3,7) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('risiko-basis-1','risiko-basis',1,15,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('risiko-basis-2','risiko-basis',2,18,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('risiko-basis-3','risiko-basis',3,24,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('portfolio-architekt','risiko-basis','Portfolio-Architekt','risk',3,9) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('portfolio-architekt-1','portfolio-architekt',1,22,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('portfolio-architekt-2','portfolio-architekt',2,25,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('portfolio-architekt-3','portfolio-architekt',3,31,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('makro-risiken','portfolio-architekt','Makro- und Liquiditätsrisiken','risk',3,11) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('makro-risiken-1','makro-risiken',1,30,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('makro-risiken-2','makro-risiken',2,33,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('makro-risiken-3','makro-risiken',3,39,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('quellenfinder',null,'Primärquellen-Forscher','research',3,7) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('quellenfinder-1','quellenfinder',1,15,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('quellenfinder-2','quellenfinder',2,18,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('quellenfinder-3','quellenfinder',3,24,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('nachrichten-einordnen','quellenfinder','Nachrichten-Analyst','research',3,9) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('nachrichten-einordnen-1','nachrichten-einordnen',1,22,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('nachrichten-einordnen-2','nachrichten-einordnen',2,25,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('nachrichten-einordnen-3','nachrichten-einordnen',3,31,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_catalog(id,parent_id,title,branch,cost_points,completion_points) values('investment-these','nachrichten-einordnen','Investmentkomitee','research',3,11) on conflict(id) do update set title=excluded.title,branch=excluded.branch,cost_points=excluded.cost_points,completion_points=excluded.completion_points;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('investment-these-1','investment-these',1,30,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('investment-these-2','investment-these',2,33,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
+insert into public.fp_specialization_lesson_catalog(id,skill_id,sequence,xp,answer) values('investment-these-3','investment-these',3,39,0) on conflict(id) do update set xp=excluded.xp,answer=excluded.answer;
 create or replace function public.fp_specialization_action(
  p_action text,p_skill_id text,p_lesson_id text default null,p_payment text default null,p_answer integer default null
 ) returns jsonb language plpgsql security definer set search_path=''
