@@ -283,6 +283,20 @@
       }}catch{}
       const {data,error}=await client.from(CLOUD_TABLE).select('progress_data,allow_coach_analysis').eq('user_id',user.id).maybeSingle();
       if(error)throw error;
+      // A requested, account-scoped server reset wins over stale local/archived progress.
+      // Clear ONLY learning/reward caches; paper orders, watchlists and account identity remain untouched.
+      let resetApplied=false;
+      const {data:resetMarker,error:resetError}=await client.from('fp_progress_reset_marks')
+        .select('reset_at').eq('user_id',user.id).maybeSingle();
+      if(resetError)throw resetError;
+      const lastReset=Date.parse(resetMarker?.reset_at||'')||0;
+      const resetKey='finanzpilot_reset_seen_'+user.id;
+      const seenReset=Number(localStorage.getItem(resetKey)||0);
+      if(lastReset>seenReset){
+        KEYS.forEach(k=>localStorage.removeItem(k));
+        localStorage.setItem(resetKey,String(lastReset));
+        resetApplied=true;
+      }
       // Snapshot after the network request: answers entered meanwhile stay authoritative.
       const local=snapshot();
       localBefore=JSON.stringify(local);
@@ -293,6 +307,7 @@
       const {error:writeError}=await client.from(CLOUD_TABLE).upsert({user_id:user.id,progress_data:merged,updated_at:new Date().toISOString()},{onConflict:'user_id'});
       if(writeError)throw writeError;
       ready=true;lastRemote=merged;lastSyncAt=Date.now();retryCount=0;
+      if(resetApplied){window.dispatchEvent(new Event('fp-account-reset-applied'));if(typeof window.location?.reload==='function')setTimeout(()=>window.location.reload(),50);}
       clearTimeout(retryTimer);retryTimer=null;
       // Wenn während des Uploads neue Übungen abgeschlossen werden, direkt einen weiteren Abgleich vormerken.
       const afterUpload=JSON.stringify(snapshot());
