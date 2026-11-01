@@ -828,7 +828,37 @@
       "unlock": "promotion",
       "minPromotion": 1,
       "description": "Eine mehrstufige Fallstudie mit finanziellen Kennzahlen, Finanzierungsszenarien und kritischen Entscheidungspunkten – kein allgemeiner Skill.",
-      "case": "Ein mittelständischer Anlagenbauer erhält weniger neue Bestellungen. Zwei Kredite werden innerhalb von 18 Monaten fällig, während Kunden später zahlen. Arbeite die Liquiditätsplanung in drei alternativen Szenarien aus."
+      "case": "Ein mittelständischer Anlagenbauer erhält weniger neue Bestellungen. Zwei Kredite werden innerhalb von 18 Monaten fällig, während Kunden später zahlen. Arbeite die Liquiditätsplanung in drei alternativen Szenarien aus.",
+      "sections": [
+        {
+          "heading": "Der Ausgangspunkt",
+          "paragraphs": [
+            "Die fiktive Maschinenbau AG erzielt jährlich 240 Mio. € Umsatz. Der operative Cashflow liegt bei 18 Mio. €, der Investitionsbedarf bei 12 Mio. €. Innerhalb der nächsten 12 Monate müssen Kredite über 35 Mio. € zurückgezahlt werden; liquide Mittel betragen 14 Mio. €.",
+            "Der zuletzt gemeldete Gewinn ist positiv, aber der freie Cashflow von nur 6 Mio. € deckt die bald fälligen Verpflichtungen nicht allein. Ein erheblicher Teil der finanziellen Zukunft hängt damit von Refinanzierung, Verkäufen oder zusätzlichem Eigenkapital ab."
+          ]
+        },
+        {
+          "heading": "Drei Liquiditätsszenarien",
+          "paragraphs": [
+            "Basisszenario: operativer Cashflow 18 Mio. €, Investitionen 12 Mio. €, 35 Mio. € Rückzahlung. Ohne weitere Finanzierungsmaßnahmen entsteht nach Anfangskasse eine Lücke von 15 Mio. € (14 + 18 − 12 − 35).",
+            "Negatives Szenario: operativer Cashflow sinkt auf 5 Mio. €, während Investitionen unverändert bleiben. Dann beträgt die rechnerische Lücke 28 Mio. €. Positives Szenario: der Betrieb gewinnt einen neuen Kredit mit ausreichend Laufzeit. Das schafft Zeit, verursacht aber möglicherweise höhere Zinsen."
+          ]
+        },
+        {
+          "heading": "Deine Analyse",
+          "paragraphs": [
+            "Berechne die Liquiditätslücke jedes Szenarios. Unterscheide Zahlungsmittel, Erträge, neue Kreditaufnahme und Verpflichtungen. Zeige, unter welchen Voraussetzungen du den positiven Cashflow des Unternehmens für ausreichend halten würdest.",
+            "Prüfe zwei Lösungswege: spätere Kredittilgungen gegen frisches Eigenkapital. Beide haben Nachteile: zusätzliche Zinslast oder Verwässerung bestehender Anteilseigner."
+          ]
+        },
+        {
+          "heading": "Entscheidung und Gegenargument",
+          "paragraphs": [
+            "Formuliere einen kurzen Beschluss: weiter beobachten, eine kleinere Position zulassen oder auf ausreichend gesicherte Finanzierung warten. Ein fundiertes 'noch nicht investierbar' ist ausdrücklich ein gutes Analyseergebnis.",
+            "Definiere zwei spätere Quartalskennzahlen, die dich umstimmen könnten. Weise darauf hin, dass alle Fallzahlen fiktiv sind und nicht mit einem tatsächlichen Unternehmen verwechselt werden dürfen."
+          ]
+        }
+      ]
     },
     {
       "id": "cloud-margenfall",
@@ -836,7 +866,37 @@
       "unlock": "artifact",
       "artifact": "alphabet-cloud",
       "description": "Spezialfall mit Bilanz, CapEx-Sensitivität und Investitionsurteil, nur mit einem passenden Artefakt.",
-      "case": "Analysiere, ob stark steigende Rechenzentrumsausgaben durch zusätzlichen Cloud-Cashflow gerechtfertigt werden können. Dokumentiere die Grenzen deiner Schätzungen."
+      "case": "Analysiere, ob stark steigende Rechenzentrumsausgaben durch zusätzlichen Cloud-Cashflow gerechtfertigt werden können. Dokumentiere die Grenzen deiner Schätzungen.",
+      "sections": [
+        {
+          "heading": "Die Investitionswelle",
+          "paragraphs": [
+            "Ein fiktiver Cloud-Konzern wächst in einem Jahr von 50 auf 65 Mrd. € Umsatz. Der operative Cashflow steigt von 20 auf 24 Mrd. €. Gleichzeitig wachsen Investitionsauszahlungen von 12 auf 23 Mrd. €. Diese Investitionen dienen insbesondere neuen Rechenzentren.",
+            "Obwohl Umsatz und operative Einzahlungen steigen, sinkt der vereinfachte freie Cashflow von 8 Mrd. € auf nur noch 1 Mrd. €. Beurteile zuerst, warum diese Zahlen gleichzeitig auftreten können."
+          ]
+        },
+        {
+          "heading": "Wirtschaftlichkeit eines Rechenzentrums",
+          "paragraphs": [
+            "Ein zusätzlicher Standort kostet 4 Mrd. € und soll ab dem dritten Jahr jährlich 0,8 Mrd. € zusätzliche operative Nettozahlungen liefern. Ohne Restwert und Finanzierungskosten beträgt der einfache Rückfluss ungefähr fünf Jahre ab Beginn der Zahlungen.",
+            "Ein wirkliches Modell benötigt aber Zinsen, Steuern, Ersatzinvestitionen, Preisänderungen und Auslastung. Eine reine Amortisationszahl ist noch kein fairer Aktienwert."
+          ]
+        },
+        {
+          "heading": "Gegenhypothesen",
+          "paragraphs": [
+            "Szenario A: KI-Nachfrage steigt stark und die Auslastung neuer Rechenzentren verbessert sich. Szenario B: Viele Wettbewerber bauen gleichzeitig Kapazitäten auf, Preise geraten unter Druck und Ersatzinvestitionen bleiben hoch.",
+            "Bewerte, welche Annahmen die erwartete Rendite am stärksten verändern. Welche Kennzahlen aus den nächsten Geschäftsberichten helfen, die Szenarien auseinanderzuhalten?"
+          ]
+        },
+        {
+          "heading": "Deine Forschungsnotiz",
+          "paragraphs": [
+            "Verfasse eine Beurteilung von 200 bis 300 Wörtern mit These, mindestens einer Rechnung, dem wichtigsten Risiko und einem messbaren Prüfpunkt. Trenne ausdrücklich den Unternehmenswert vom Börsenpreis.",
+            "Nutze den Cloud-Kompass für die Fragestellung, nicht als Beweis einer positiven Entwicklung. Es gibt keinen Garantiebonus für eine optimistische Schlussfolgerung."
+          ]
+        }
+      ]
     },
     {
       "id": "portfolio-ausschuss",
@@ -844,7 +904,37 @@
       "unlock": "promotion",
       "minPromotion": 2,
       "description": "Du musst eine konkrete Depotentscheidung vor einem fiktiven Ausschuss rechtfertigen, einschließlich Gegenhypothese und Stresstest.",
-      "case": "Drei Positionen sind stark auf ein gemeinsames Makrorisiko konzentriert. Begründe einen Portfolio-Umbau und mögliche Nachteile ohne garantierte Rendite zu versprechen."
+      "case": "Drei Positionen sind stark auf ein gemeinsames Makrorisiko konzentriert. Begründe einen Portfolio-Umbau und mögliche Nachteile ohne garantierte Rendite zu versprechen.",
+      "sections": [
+        {
+          "heading": "Ausgangsdepot",
+          "paragraphs": [
+            "Ein fiktives virtuelles Depot enthält 40 % Chipunternehmen, 30 % Cloud-Plattformen, 20 % Industrieautomation und 10 % Euro-Kasse. Auf den ersten Blick sind drei Aktienbereiche vertreten, doch die ersten beiden sind stark vom selben Investitionszyklus abhängig.",
+            "Der Ausschuss befürchtet ein Szenario, in dem große Technologiekunden Investitionen verschieben. Die Börsenwerte der beiden größten Bereiche könnten gemeinsam stark fallen."
+          ]
+        },
+        {
+          "heading": "Der Stresstest",
+          "paragraphs": [
+            "Angenommen, Chipunternehmen verlieren 35 %, Cloud-Plattformen 25 % und Industrieautomation 15 %, während die Kasse unverändert bleibt. Die gewichtete Depotveränderung beträgt -14 % -7,5 % -3 % = -24,5 %.",
+            "Eine solche Rechnung ist keine Prognose, sondern zeigt die Abhängigkeit des Depots von einer gemeinsamen Annahme. Auch Zins- und Währungseffekte können später hinzukommen."
+          ]
+        },
+        {
+          "heading": "Zwei mögliche Änderungen",
+          "paragraphs": [
+            "Option 1: Du reduzierst die Konzentration und verteilst einen Teil auf nicht eng verwandte Geschäftsfelder. Dadurch sinkt womöglich das gemeinsame Branchenrisiko, aber es können Chancen auf überdurchschnittliche Renditen verloren gehen.",
+            "Option 2: Du hältst die konzentrierten Positionen und akzeptierst höhere Schwankungen. Diese Entscheidung verlangt eine tragfähige Begründung und muss zum Verlustbudget passen."
+          ]
+        },
+        {
+          "heading": "Vortrag vor dem Ausschuss",
+          "paragraphs": [
+            "Stelle eine begründete Entscheidung vor, einschließlich Nachteilen deiner eigenen Empfehlung. Berechne die Gewichtsveränderung im neuen Depot und beschreibe, welche Information du künftig überprüfen wirst.",
+            "Bewertet werden Klarheit, Zahlen, Gegenargumente und das Verständnis von Unsicherheit; ein besonders hoher Aktienanteil ist kein zusätzlicher Erfolg."
+          ]
+        }
+      ]
     }
   ]
 }
