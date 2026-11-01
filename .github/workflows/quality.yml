@@ -50,3 +50,5 @@ jobs:
         run: node scripts/test_charts_issues_v35.mjs
       - name: "Regression: Verified stock search and complete editorial readers"
         run: node scripts/test_news_reader_v36.mjs
+      - name: "Regression: Guided learning progression, safe course review, editorial free reading and stock prices"
+        run: node scripts/test_learning_flow_v37.mjs
