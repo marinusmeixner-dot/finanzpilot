@@ -1,128 +1,129 @@
 {
-  "date": "2026-10-31",
-  "updated_at": "2026-10-31T08:12:00+01:00",
-  "editor": "ChatGPT: quellengestützte Marktredaktion (Primärquellenprüfung 31.10.2026)",
-  "intro": "Wochenendüberblick: Tech-Gewinnsaison, KI-Investitionsbedarf und Cashflow; dazu neue Konjunktur- und Inflationsdaten aus offiziellen Quellen. Berichts- und Handelstage sind datiert, keine Wochenend-Livekurse.",
+  "date": "2026-11-01",
+  "updated_at": "2026-11-01T08:18:00+01:00",
+  "editor": "FinanzPilot Tagesredaktion – Primärquellen geprüft am 01.11.2026",
+  "intro": "Sonntag, 01.11.2026: keine regulären neuen Aktien-Schlusskurse. US- und Xetra-Handel zuletzt Freitag, 30.10.2026. Die folgenden Veröffentlichungen stammen überwiegend vom 28.–30.10.; Berichtszeiträume, Vorläufigkeit und Unsicherheit sind ausdrücklich markiert.",
   "lesson_id": "valuation",
   "stories": [
     {
-      "title": "US-Technologiebörse fällt deutlich",
-      "source": "Reuters",
-      "url": "https://www.reuters.com/business/nasdaq-futures-tumble-amazon-intel-results-deepen-ai-spending-woes-2026-10-30/",
+      "title": "EZB belässt Einlagezins bei 2,50 % – Energieinflation bleibt Risiko",
+      "source": "Europäische Zentralbank, geldpolitische Entscheidung",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "published": "29.10.2026",
+      "why": "Fakt: Einlage-/Hauptrefinanzierungs-/Spitzenrefinanzierungssatz bleiben 2,50/2,65/2,90 %. Die EZB warnt vor höheren Energiepreisen und möglichen Zweitrundeneffekten. Ein künftiger Zinspfad wurde nicht zugesagt.",
+      "impact": "Interpretation: Kapitalkosten und Anleiherenditen können Bewertungen beeinflussen. Gegenargument: Gleichbleibende Leitzinsen bedeuten nicht gleichbleibende Marktzinsen oder einen sicheren nächsten Zinsschritt.",
+      "category": "Zinsen"
+    },
+    {
+      "title": "US-BIP wächst im dritten Quartal annualisiert um 3,4 %",
+      "source": "U.S. Bureau of Economic Analysis – erste Schätzung",
+      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
+      "published": "29.10.2026",
+      "why": "Fakt: Reales US-Bruttoinlandsprodukt Q3 2026 +3,4 % annualisiert nach +2,2 % in Q2; BEA nennt rund +0,8 % nicht annualisiertes Quartalswachstum. Investitionen und Konsum stützten, Exporte belasteten.",
+      "impact": "Interpretation: robustes Wachstum kann Gewinnerwartungen stützen. Gegenargument: Erste Schätzung ist revidierbar; annualisierte US-Raten sind nicht direkt mit deutschen Quartalsraten vergleichbar.",
+      "category": "Wirtschaft"
+    },
+    {
+      "title": "Eurozone: Wirtschaftsleistung Q3 2026 +0,4 % zum Vorquartal",
+      "source": "Eurostat – vorläufige Schnellschätzung",
+      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
       "published": "30.10.2026",
-      "why": "Der Nasdaq gab am Freitag laut Reuters um rund 2,9 % nach. Anleger hinterfragen die Rendite hoher KI-Investitionen.",
-      "impact": "Vergleiche die Kursreaktion mit langfristigen Gewinnerwartungen und dem Bewertungsniveau, statt den Rückgang als automatisches Kaufsignal zu sehen.",
-      "category": "Markt"
+      "why": "Fakt: Reales saisonbereinigtes BIP +0,4 % gegenüber Q2 in der Eurozone, +0,5 % in der EU; Vorjahresvergleich +1,3 % bzw. +1,5 %. Datengrundlage noch unvollständig.",
+      "impact": "Interpretation: etwas robustere Nachfrage als in einzelnen Mitgliedstaaten. Gegenargument: Frühschätzungen werden revidiert; +0,4 % ist nicht annualisiert und kein Prognosewert für Aktienrenditen.",
+      "category": "Wirtschaft"
     },
     {
-      "title": "Microsoft: Quartalsumsatz steigt auf 92,3 Milliarden Dollar",
-      "source": "Microsoft Investor Relations",
-      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
-      "published": "28.10.2026",
-      "why": "Microsoft berichtet für das Quartal bis September 2026 19 % Umsatzwachstum und 21 % operatives Gewinnwachstum.",
-      "impact": "Berechne die operative Marge und prüfe, wie stark zukünftige Cloud-Gewinne hohe Investitionsausgaben tragen.",
-      "category": "Aktien",
-      "symbols": [
-        "MSFT"
-      ]
+      "title": "Deutschland: Vorläufiges BIP Q3 2026 +0,2 %",
+      "source": "Statistisches Bundesamt – Schnellmeldung",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_381_811.html",
+      "published": "30.10.2026",
+      "why": "Fakt: Reales, saison- und kalenderbereinigtes BIP +0,2 % zum Vorquartal; kalenderbereinigt +1,2 % zum Vorjahresquartal. Konsum leicht positiv, Investitionen nach ersten Erkenntnissen rückläufig.",
+      "impact": "Interpretation: leichte Expansion statt Stagnation. Gegenargument: Schwächere Exporte und Revisionen begrenzen Aussagen über künftige DAX-Gewinne.",
+      "category": "Wirtschaft"
     },
     {
-      "title": "Amazon: AWS wächst 39,3 %, Umsatz 201,9 Milliarden Dollar",
-      "source": "Amazon Investor Relations",
+      "title": "Deutsche Verbraucherpreise: Oktober-Inflation vorläufig 2,8 %",
+      "source": "Statistisches Bundesamt – vorläufige Verbraucherpreise",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html",
+      "published": "30.10.2026",
+      "why": "Fakt: Verbraucherpreisindex +2,8 % zum Vorjahr nach +3,3 % im September; Kernrate +2,1 %, Energiepreise +12,2 %. Die Werte sind vorläufig.",
+      "impact": "Interpretation: der Anstieg des Preisniveaus verlangsamt sich. Gegenargument: Das bedeutet nicht, dass die Preise zum Vorjahr fallen; Energie und andere Güter entwickeln sich unterschiedlich.",
+      "category": "Wirtschaft"
+    },
+    {
+      "title": "Amazon: 201,9 Mrd. USD Q3-Umsatz, aber −42,4 Mrd. USD Zwölfmonats-FCF",
+      "source": "Amazon Investor Relations – Q3 2026",
       "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
       "published": "29.10.2026",
-      "why": "Die Cloud-Sparte AWS wächst sehr schnell. Gleichzeitig wird über die Rentabilität hoher KI-Ausgaben diskutiert.",
-      "impact": "Unterscheide starkes Umsatzwachstum von freiem Cashflow nach Investitionen; große Capex-Zahlen verändern die Bewertung.",
+      "why": "Fakt: Q3-Umsatz 201,9 Mrd. USD (+12 %), operatives Ergebnis 28,1 Mrd. USD; AWS-Umsatz 46,0 Mrd. USD (+39,3 %). Freier Cashflow der letzten zwölf Monate −42,4 Mrd. USD gegenüber +14,8 Mrd. USD ein Jahr zuvor, vor allem wegen stark gestiegener Sachinvestitionen.",
+      "impact": "Interpretation: Cloud-Nachfrage ist hoch, doch Kapitalrendite und Finanzierungsbedarf sind offen. Gegenargument: Negativer Zwölfmonats-FCF kann durch vorgezogene rentable Investitionen entstehen; nicht mit dem Q3-Ergebnis verwechseln.",
       "category": "Aktien",
       "symbols": [
         "AMZN"
       ]
     },
     {
-      "title": "Alphabet: Quartalsumsatz 127,6 Milliarden Dollar",
-      "source": "Alphabet / SEC",
-      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "title": "Microsoft: Q1 GJ 2027 mit 92,279 Mrd. USD Umsatz",
+      "source": "Microsoft Investor Relations – Q1 FY2027",
+      "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
       "published": "28.10.2026",
-      "why": "Alphabet meldet 25 % Umsatzwachstum und besonders starkes Cloud-Wachstum; die Margen und KI-Ausgaben müssen gemeinsam betrachtet werden.",
-      "impact": "Prüfe die Segmentgewinne und das Verhältnis von Cloud-Ausbau, Margen und Erwartungen.",
+      "why": "Fakt: Quartal bis 30.09.2026: Umsatz 92,279 Mrd. USD (+19 %), operatives Ergebnis 45,915 Mrd. USD (+21 %); Azure-Umsatz 33,165 Mrd. USD. Operative Marge rechnerisch 49,8 %.",
+      "impact": "Interpretation: starke Cloud- und Softwareerträge. Gegenargument: Rechenzentrumsinvestitionen, künftige Abschreibungen und eingepreiste Erwartungen müssen getrennt vom Umsatzwachstum beurteilt werden.",
       "category": "Aktien",
       "symbols": [
-        "GOOGL"
+        "MSFT"
       ]
     },
     {
-      "title": "EZB hält Leitzinsen unverändert",
-      "source": "Europäische Zentralbank",
-      "url": "https://www.ecb.europa.eu/home/html/index.en.html",
-      "published": "29.10.2026",
-      "why": "Die EZB veröffentlicht am 29. Oktober ihre geldpolitische Entscheidung. Die Einlagefazilität liegt bei 2,50 %.",
-      "impact": "Die Zinslage beeinflusst Tagesgeld, Kredite und die Abzinsung zukünftiger Unternehmensgewinne.",
-      "category": "Zinsen"
+      "title": "Alphabet: Google Cloud verdoppelt Umsatz, Q3-FCF negativ",
+      "source": "Alphabet – SEC Exhibit 99.1, Q3 2026",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "published": "28.10.2026",
+      "why": "Fakt: Q3-Umsatz 127,577 Mrd. USD (+25 %), Google Cloud 30,709 Mrd. USD (+103 %), operatives Ergebnis 40,576 Mrd. USD. Der Quartals-FCF ist laut Meldung negativ; längere Cashflow-Perioden separat betrachten.",
+      "impact": "Interpretation: Cloud-Skalierung kann die Ertragsbasis stärken. Gegenargument: Kapitalintensität, Abschreibungen und bereits im Kurs erwartetes Wachstum begrenzen den fairen Wert.",
+      "category": "Aktien",
+      "symbols": [
+        "GOOGL",
+        "GOOG"
+      ]
     },
     {
-      "title": "Meta: Umsatz steigt, operative Marge fällt",
-      "source": "Meta Investor Relations",
+      "title": "AIXTRON: Auftragseingang Q3 2026 steigt auf 274,9 Mio. EUR",
+      "source": "AIXTRON SE – Q3-Unternehmensmeldung",
+      "url": "https://www.aixtron.com/en/press/press-releases/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801",
+      "published": "29.10.2026",
+      "why": "Fakt: Auftragseingang Q3 274,9 Mio. EUR (+122 % zu 124,0 Mio. EUR im Vorjahr), Q3-Umsatz 183,6 Mio. EUR; Neunmonatsumsatz 358,1 Mio. EUR nach 369,5 Mio. EUR. Nachfrage aus optischer Datenkommunikation.",
+      "impact": "Interpretation: bessere Pipeline für Anlagenlieferungen. Gegenargument: Bestellungen sind noch keine Umsätze oder Cashflows; Stornierungen, Kundenkonzentration und Lieferzeitpunkte bleiben entscheidend.",
+      "category": "Aktien",
+      "symbols": [
+        "AIXA.DE"
+      ]
+    },
+    {
+      "title": "KION Group: Automatisierung wächst, Staplergeschäft schwächer",
+      "source": "KION Group – Q3-Quartalsmitteilung",
+      "url": "https://reports.kiongroup.com/2026/ir/3/business-performance/financial-position-and-financial-performance/business-situation-and-financial-performance-of-the-group/revenue.html",
+      "published": "29.10.2026",
+      "why": "Fakt: Konzernumsatz Januar–September 2026 8.522,0 Mio. EUR (+3,9 %); externe IAS-Umsätze +17,1 % auf 2.498,3 Mio. EUR, ITS-Umsätze −0,7 % auf 6.023,3 Mio. EUR. Segmentwerte und Konsolidierung beachten.",
+      "impact": "Interpretation: Lagerautomation gewinnt Gewicht. Gegenargument: zyklische Investitionen, Auftragslage und FCF können den Wachstumsbeitrag neutralisieren; kein Konzernwachstum von 17 % behaupten.",
+      "category": "Aktien",
+      "symbols": [
+        "KGX.DE"
+      ]
+    },
+    {
+      "title": "Meta: Rechtsstreit-Belastung drückt Q3-Marge auf 20 %",
+      "source": "Meta Investor Relations – Q3 2026",
       "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
       "published": "21.10.2026",
-      "why": "Meta meldet im dritten Quartal 26 % mehr Umsatz, aber die operative Marge sinkt von 40 auf 20 %; Sonderbelastungen spielen mit hinein.",
-      "impact": "Prüfe Sondereffekte und bereinigtes Ergebnis, bevor du aus einer Margenänderung auf die Ertragskraft schließt.",
+      "why": "Fakt: Q3-Umsatz 64,601 Mrd. USD (+26 %), operativer Gewinn 12,988 Mrd. USD, operative Marge 20 % nach 40 % im Vorjahresquartal. Ein Aufwand von 9,89 Mrd. USD im Zusammenhang mit einem Vergleich belastet das Ergebnis.",
+      "impact": "Interpretation: ausgewiesene Marge unterschätzt möglicherweise die operative Ertragskraft ohne Sonderaufwand. Gegenargument: Rechtsrisiken können echte wiederkehrende Kosten sein; Bereinigung nicht unkritisch als risikofrei behandeln.",
       "category": "Aktien",
       "symbols": [
         "META"
       ]
-    },
-    {
-      "title": "Intel leidet nach Zahlen unter starkem Kursrückgang",
-      "source": "Associated Press",
-      "url": "https://apnews.com/article/a01d3551e794fed1a0c317c20bc3f0a2",
-      "published": "30.10.2026",
-      "why": "Intel verliert laut AP fast 29 % an einem Tag, nachdem der Ausblick die Erwartungen verfehlt.",
-      "impact": "Das Beispiel zeigt, dass Erwartungen oft stärker auf Kurse wirken als die reine Ergebniszahl.",
-      "category": "Aktien",
-      "symbols": [
-        "INTC"
-      ]
-    },
-    {
-      "title": "Nächste Berichtswoche: Apple und US-Arbeitsmarkt im Blick",
-      "source": "Reuters",
-      "url": "https://ca.marketscreener.com/news/midterm-elections-earnings-jobs-data-loom-for-ai-wary-market-ce785fdbda88f325",
-      "published": "30.10.2026",
-      "why": "Die kommende Woche verbindet große Unternehmensberichte und Arbeitsmarktdaten.",
-      "impact": "Unterscheide einen angekündigten Termin von schon veröffentlichten Ergebnissen; keine Zahlen vorab annehmen.",
-      "category": "Ausblick",
-      "symbols": [
-        "AAPL"
-      ]
-    },
-    {
-      "title": "US-Wirtschaft wächst im dritten Quartal annualisiert um 3,4 %",
-      "source": "U.S. Bureau of Economic Analysis",
-      "url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
-      "published": "29.10.2026",
-      "why": "Fakt: Die erste Schätzung des realen US-BIP für Q3 2026 beträgt +3,4 % annualisiert, nach +2,2 % in Q2. Interpretation: Investitionen und Konsum stützen die Konjunktur. Gegenargument: Die Zahl ist annualisiert, vorläufig und nicht direkt mit europäischen Quartalsraten vergleichbar.",
-      "impact": "Prüfe die Umrechnung von annualisiertem auf einfaches Quartalswachstum und warum starkes Wachstum zugleich Zinssenkungserwartungen dämpfen kann.",
-      "category": "Wirtschaft"
-    },
-    {
-      "title": "Deutschland: BIP steigt im dritten Quartal nur um 0,2 %",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_381_811.html",
-      "published": "30.10.2026",
-      "why": "Fakt: Das preis-, saison- und kalenderbereinigte BIP legte in Q3 2026 um 0,2 % zum Vorquartal zu. Interpretation: Die Erholung hält an. Gegenargument: Vorläufige Daten deuten auf sinkende Investitionen und schwächere Exportdynamik hin.",
-      "impact": "Unterscheide BIP-Niveau, Quartalswachstum und Vorjahresrate (+1,2 % kalenderbereinigt), bevor du Schlüsse für DAX- oder ETF-Anlagen ziehst.",
-      "category": "Wirtschaft"
-    },
-    {
-      "title": "Deutschland: Inflation sinkt im Oktober vorläufig auf 2,8 %",
-      "source": "Statistisches Bundesamt (Destatis)",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_382_611.html",
-      "published": "30.10.2026",
-      "why": "Fakt: Die vorläufige Jahresinflation liegt im Oktober bei 2,8 % nach 3,3 % im September; die Kernrate bei 2,1 %. Interpretation: Der Preisdruck lässt nach. Gegenargument: Energiepreise liegen immer noch 12,2 % über Vorjahr; die Daten sind vorläufig.",
-      "impact": "Trenne sinkende Inflationsrate von fallenden Preisen und erkläre, weshalb ein ETF-Investor reale statt nominale Renditen betrachtet.",
-      "category": "Wirtschaft"
     }
   ],
-  "learning_note": "Neue Lernaufgabe: Alphabet meldet +103 % Cloud-Wachstum, aber −9,065 Mrd. USD Quartals-FCF. Trenne Gewinn, Investitionen, freien Cashflow, Erwartungen und hypothetische Bewertung. Dazu: US-BIP +3,4 % annualisiert ≠ +3,4 % gegenüber dem Vorquartal.",
-  "important": "Stand 31.10.2026, 08:12 MEZ; US-Börsenschluss zuletzt 30.10.2026. Zahlen aus Originalmeldungen vom 28.–30.10.2026. Keine Livekurse oder automatischen Kauf-/Verkaufssignale."
+  "learning_note": "01.11.: US-BIP 3,4 % annualisiert entspricht näherungsweise 0,84 % pro Quartal; Eurozone meldet +0,4 % Quartalswachstum. Bei Amazon operativen Gewinn und freien Cashflow über zwölf Monate strikt auseinanderhalten.",
+  "important": "Stand Sonntag, 01.11.2026, 08:18 MEZ. Letzter regulärer US-/Xetra-Börsentag: 30.10.2026. Veröffentlichungen datiert 21.–30.10.; kein Wochenend-Livekurs, keine Kaufempfehlung."
 }
