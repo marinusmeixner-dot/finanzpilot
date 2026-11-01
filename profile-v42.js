@@ -49,7 +49,7 @@ function render(){
 function stats(){
  const v=current();
  const detail=(title,value,subtitle)=>'<article class="fp42-profile-stat fp42-profile-stat-detail"><small>'+title+'</small><b>'+value+'</b><span>'+subtitle+'</span></article>';
- return '<div class="fp42-profile"><button class="btn secondary" type="button" data-section-route="progress">← Profil</button><div class="fp42-profile-heading"><span class="eyebrow">DEIN FORTSCHRITT</span><h1>Lernstatistik</h1><p>Nur tatsächliche Abschlüsse. Wiederholungen erhöhen die Zählung nicht erneut.</p></div><div class="fp42-profile-stats">'+
+ return '<div class="fp42-profile"><div class="fp42-profile-heading"><span class="eyebrow">DEIN FORTSCHRITT</span><h1>Lernstatistik</h1><p>Nur tatsächliche Abschlüsse. Wiederholungen erhöhen die Zählung nicht erneut.</p></div><div class="fp42-profile-stats">'+
  detail('Grundlagen',v.done+' / '+v.total,'Kompakter Einstieg')+
  detail('Neue Spezialisierungen',v.mastered+' / '+v.skillTotal,'Geprüfte Skillabschlüsse')+
  detail('Bisheriges Lern-XP',num(v.oldXp),'Historisch vorhandene Kurse')+
