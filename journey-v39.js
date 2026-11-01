@@ -136,7 +136,7 @@ async function load(force=false){
  if(data&&!force)return;
  loading=true;
  try{
-  const res=await fetch(DATA+'?v=39',{cache:'no-store'});
+  const res=await fetch(DATA+'?v=40',{cache:'no-store'});
   if(!res.ok)throw Error('HTTP '+res.status);
   const received=await res.json();
   if(received.schema_version!==1||received.stages?.length!==6||received.stages.some(s=>s.modules?.length!==6))throw Error('Ungültiger Lehrplan');
