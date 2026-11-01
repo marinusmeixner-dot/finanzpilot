@@ -7,7 +7,7 @@ const DATA='./data/journey-v39.json';
 const STORAGE='finanzpilot_journey_v1';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=()=>{try{const x=JSON.parse(localStorage.getItem(STORAGE)||'{}');return x&&typeof x==='object'?x:{}}catch{return{}}};
-let data=null,loading=false,error='',state={completed:{},lessons:{},...read()},selectedId='';
+let data=null,loading=false,error='',state={completed:{},lessons:{},...read()},selectedId=String(read().selected||'');
 const stageOf=number=>data?.stages?.[Number(number)-1]||null;
 const all=()=>data?.stages?.flatMap(s=>s.modules)||[];
 const course=id=>all().find(m=>m.id===id);
@@ -33,8 +33,8 @@ function start(){
 }
 function open(id){
  if(!course(id))return;
- selectedId=id;
- localSession(id);
+ selectedId=id;state.selected=id;
+ localSession(id);persist();
  go('journeycourse');
  redraw();
 }
@@ -117,7 +117,7 @@ function complete(){
  if(p.page!==4||!m.questions.every((q,i)=>p.answers[i]?.correct))return;
  state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();
  const n=stageNum(m.id);
- selectedId='';
+ selectedId='';state.selected='';persist();
  if(!window.FinanzPilotNavigation?.goBack?.())go('journey-'+n);
  redraw();
 }
@@ -143,7 +143,7 @@ async function load(force=false){
  }catch(e){error='Lerninhalte sind derzeit nicht erreichbar. Bitte erneut laden.';console.warn('FinanzPilot Journey:',e)}
  finally{loading=false;redraw()}
 }
-window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};redraw()}});
+window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};selectedId=String(state.selected||'');redraw()}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
 window.FinanzPilotJourney={renderHome:brief,renderFor,bind,load,open,start,complete,stageOf,firstIncomplete,get modules(){return all()},get completed(){return state.completed},get state(){return state}};
 })();
