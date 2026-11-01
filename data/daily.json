@@ -122,6 +122,103 @@
       "symbols": [
         "META"
       ]
+    },
+    {
+      "id": "2026-10-30-bayer-glyphosat-missouri",
+      "title": "Bayer: Monsanto gewinnt Glyphosat-Prozess in Missouri – Bedeutung für Rechtsrisiken",
+      "source": "Bayer Unternehmensmitteilung (Parteidarstellung)",
+      "url": "https://www.bayer.com/media/monsanto-gewinnt-ersten-glyphosat-fall-nach-entscheidung-des-us-supreme-court-einstimmig",
+      "published": "30.10.2026",
+      "category": "Aktien",
+      "symbols": [
+        "BAYN.DE",
+        "BAYN"
+      ],
+      "why": "Bayer meldet nach der Entscheidung des US Supreme Court im Fall Durnell einen einstimmigen Juryerfolg von Monsanto im Missouri-Verfahren Aretino. Es geht um weitere behauptete Klagegründe; das Ergebnis betrifft zunächst diesen einzelnen Prozess.",
+      "impact": "Ein Erfolg in einem Rechtsstreit kann die Einschätzung möglicher Glyphosat-Risiken beeinflussen. Höhe und Wahrscheinlichkeit anderer Verfahren sowie künftige Zahlungen lassen sich daraus nicht sicher ableiten.",
+      "article": {
+        "lead": "Ein weiterer Glyphosat-Prozess ist zugunsten der Bayer-Tochter Monsanto ausgegangen. Entscheidend für eine Aktienanalyse ist nicht nur die Schlagzeile, sondern wie das Urteil den möglichen Umfang zukünftiger Rechtskosten verändern könnte.",
+        "sections": [
+          {
+            "heading": "Was wurde entschieden?",
+            "paragraphs": [
+              "Nach der Unternehmensmitteilung vom 30. Oktober 2026 entschieden Geschworene in Missouri im Verfahren Aretino et al. einstimmig zugunsten von Monsanto. Bayer stellt die Entscheidung in den Zusammenhang mit einem vorherigen Urteil des Obersten Gerichtshofs der USA zum Konflikt zwischen Bundesrecht und Ansprüchen wegen angeblich fehlender Warnhinweise.",
+              "Der konkrete Prozess betraf nach Bayers Darstellung verbleibende Vorwürfe gegen das Produkt, darunter behauptete Konstruktionsfehler, Täuschung und Nachlässigkeit. Die Nachricht ist eine Unternehmensdarstellung; die Prozessunterlagen und andere Parteien sollten für eine umfassende juristische Bewertung zusätzlich geprüft werden."
+            ]
+          },
+          {
+            "heading": "Warum ist das für Aktionäre wichtig?",
+            "paragraphs": [
+              "Bei einer Aktie mit bedeutenden Rechtsstreitigkeiten sind erwartete zukünftige Zahlungen entscheidend: Kosten aus Verfahren, Vergleichen oder Rückstellungen können den freien Cashflow mindern. Ein günstiges Urteil kann Marktteilnehmer dazu bewegen, Eintrittswahrscheinlichkeiten oder mögliche Belastungen neu zu gewichten.",
+              "Damit ist aber noch nicht quantifiziert, wie stark sich Bayers Unternehmenswert verändert. Dafür müsste man die Zahl weiterer anhängiger Verfahren, mögliche neue Klagegründe, den zeitlichen Zahlungsplan, Versicherungen und die rechtliche Durchsetzbarkeit einzelner Ansprüche kennen."
+            ]
+          },
+          {
+            "heading": "Welche Schlüsse wären vorschnell?",
+            "paragraphs": [
+              "Ein Urteil zugunsten des Unternehmens beendet nicht automatisch sämtliche Streitigkeiten. Ebenso wenig ist eine positive Börsenreaktion ein Beweis, dass die langfristige Kostenlast vollständig verschwunden ist. Einzelverfahren können juristisch verschieden gelagert sein, und Rechtsmittel bleiben als Risiko grundsätzlich denkbar.",
+              "Die Sicherheit und Regulierung von Glyphosat ist zudem eine eigenständige wissenschaftliche und rechtliche Debatte. Eine Aktienanalyse muss die finanziellen Auswirkungen prüfen, ohne die Position der Unternehmenspressestelle als abschließend unabhängige Tatsachenbewertung auszugeben."
+            ]
+          },
+          {
+            "heading": "Worauf man jetzt achten sollte",
+            "paragraphs": [
+              "Bei den nächsten Finanzberichten wären Änderungen bei Rückstellungen, Cash-Abflüssen für Vergleiche, Ausblick und Erläuterungen zu anhängigen Verfahren besonders aufschlussreich. Anleger sollten diese mit der Kapitalstruktur und den verfügbaren freien Cashflows zusammenführen.",
+              "Eine transparente Bewertung würde zumindest drei Szenarien bilden: niedrigere Belastungen, unveränderte Belastungen und weitere erhebliche Zahlungen. Erst zusammen mit dem operativen Geschäft und den Kapitalkosten lässt sich eine belastbare Investmentthese aufbauen."
+            ]
+          }
+        ],
+        "conclusion": "Der Juryerfolg ist ein relevanter neuer Informationspunkt, keine Garantie für einen dauerhaften Abschluss des Glyphosat-Risikos. Das Datum und die Einordnung als Unternehmensmitteilung bleiben wesentlich."
+      }
+    },
+    {
+      "id": "2026-09-16-baywa-restrukturierung",
+      "title": "BayWa: Sanierung auf angepasstem Kurs – was die Einigung für Aktionäre bedeutet",
+      "source": "BayWa AG / EQS-Ad-hoc-Mitteilung",
+      "url": "https://www.eqs-news.com/company/baywa-ag/news/5b74ed9f-ea7c-11e8-902f-2c44fd856d8c",
+      "published": "16.09.2026",
+      "category": "Aktien",
+      "symbols": [
+        "BYW.DE",
+        "BYW.MU",
+        "BYW"
+      ],
+      "why": "BayWa meldete am 16. September eine Einigung auf ein Term Sheet zur Anpassung der Sanierungsvereinbarung und geplante Restrukturierung einer Hybridanleihe. Dies ist ein älterer, noch relevanter Sanierungsmeilenstein und keine neue Nachricht vom 1. November.",
+      "impact": "Für die Bewertung zählen verfügbare Liquidität, Verhandlungsergebnis mit Gläubigern, Zinslast, Laufzeiten und mögliche Verwässerung. Ein Term Sheet ist nicht mit abgeschlossenem Sanierungsprozess gleichzusetzen.",
+      "article": {
+        "lead": "Bei der BayWa AG steht die Finanzierung der Restrukturierung im Mittelpunkt. Eine Einigung über Eckpunkte ist ein wichtiger Schritt, aber noch kein Beleg für eine abgeschlossene Sanierung oder eine sichere Aktienrendite.",
+        "sections": [
+          {
+            "heading": "Der bisherige Stand",
+            "paragraphs": [
+              "Die BayWa AG meldete am 16. September 2026 über den Kapitalmarkt-Mitteilungsdienst EQS, dass sich Beteiligte auf Eckpunkte für eine angepasste Sanierungsvereinbarung verständigt hätten. Zugleich wurde die geplante Restrukturierung einer Hybridanleihe angesprochen. Die Nachricht betrifft die Finanzierung und die langfristige Stabilisierung des Unternehmens.",
+              "Es handelt sich um einen dokumentierten Meilenstein aus September, nicht um eine neue Entscheidung vom heutigen Tag. Für einen aktuellen Überblick sollten spätere kapitalmarktrechtliche Mitteilungen, endgültige Vertragsabschlüsse und Geschäftszahlen gesondert geprüft werden."
+            ]
+          },
+          {
+            "heading": "Warum ein Term Sheet nicht die fertige Lösung ist",
+            "paragraphs": [
+              "Ein Term Sheet legt typischerweise grundlegende Verhandlungspunkte fest. Es ersetzt nicht notwendigerweise jede abschließende Vereinbarung oder alle erforderlichen Zustimmungen. Die tatsächlichen Auswirkungen hängen davon ab, welche Konditionen rechtlich wirksam werden und ob die zugrunde liegende Geschäftsplanung eintritt.",
+              "Für Aktionäre können Anpassungen der Finanzierung sowohl positiv als auch negativ wirken. Längere Laufzeiten oder zusätzliche Liquidität schaffen Zeit. Neue Verpflichtungen, höhere Finanzierungskosten oder Kapitalmaßnahmen können dagegen den Wert vorhandener Anteile belasten."
+            ]
+          },
+          {
+            "heading": "Was für eine Unternehmensbewertung entscheidend ist",
+            "paragraphs": [
+              "Bei einem Restrukturierungsfall sind Nettoverschuldung, Fälligkeiten, operative Mittelzuflüsse, Veräußerungserlöse und kurzfristige Liquiditätsreserven oft wichtiger als ein einzelnes Kursplus. Die Frage lautet, ob das Kerngeschäft nach Restrukturierung ausreichend freie Mittel zur Bedienung seiner Verpflichtungen erwirtschaften kann.",
+              "Es ist sinnvoll, ein Basisszenario mit schrittweise erfolgreicher Sanierung, ein schwaches Szenario mit erneuten Finanzierungslücken und ein günstiges Szenario mit stärkerem operativem Cashflow gegenüberzustellen. Alle drei benötigen belegte Annahmen, nicht nur die letzte Pressemitteilung."
+            ]
+          },
+          {
+            "heading": "Welche Daten weiter beobachtet werden sollten",
+            "paragraphs": [
+              "Entscheidend sind künftig testierte Jahres- und Zwischenberichte, präzise Angaben zur Umsetzung des Sanierungskonzepts, Liquidität und Kapitalstruktur sowie verbindliche Meldungen der Gesellschaft. Bei der Aktie sollten Kursverläufe verschiedener Börsenplätze getrennt werden; ein Münchner Schlusskurs und eine Xetra-Historie müssen nicht identisch sein.",
+              "Der langfristige Anlagewert lässt sich erst dann überzeugend beurteilen, wenn sich aus der bilanziellen Neuordnung und dem operativen Geschäft verlässliche freie Cashflows und ein tragbarer Finanzierungspfad ableiten lassen."
+            ]
+          }
+        ],
+        "conclusion": "Die Restrukturierungsmeldung erklärt ein zentrales Risiko der BayWa-Aktie. Sie ist kein Kauf- oder Verkaufssignal und muss zusammen mit späteren Veröffentlichungen bewertet werden."
+      }
     }
   ],
   "learning_note": "01.11.: US-BIP 3,4 % annualisiert entspricht näherungsweise 0,84 % pro Quartal; Eurozone meldet +0,4 % Quartalswachstum. Bei Amazon operativen Gewinn und freien Cashflow über zwölf Monate strikt auseinanderhalten.",
