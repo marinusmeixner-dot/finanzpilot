@@ -4,7 +4,7 @@ import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
 const html=read('index.html'),nav=read('ux-v15.js'),app=read('app.js'),portfolio=read('portfolio.js');
 const old=JSON.parse(read('data/journey-v39.json')),specials=JSON.parse(read('data/specializations-v41.json'));
-assert.equal(JSON.parse(read('version.json')).version,46);
+assert.equal(JSON.parse(read('version.json')).version,47);
 assert.equal(old.stages.length,6);
 assert.equal(old.stages.flatMap(s=>s.modules).length,36,'Original learning assets preserved');
 assert.equal(specials.skills.length,44);
