@@ -231,7 +231,7 @@ window.FinanzPilotConcepts=(()=>{
    if(d.schema_version!==1||!Array.isArray(d.modules))throw Error('Ungültiges Kursformat');
    content=d;dataReady=true;loadError='';
   }catch(e){loadError='Daten nicht erreichbar. Bitte Verbindung prüfen und Seite neu laden.';dataReady=false}
-  if(typeof state!=='undefined'&&state.view==='concepts')window.render?.();
+  if(typeof state!=='undefined'&&['concepts','learn'].includes(state.view))window.render?.();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',load,{once:true});else load();
  return {render,bind,load,open,grade,stats,get data(){return data},get modules(){return content.modules},get achievements(){return Object.fromEntries(content.modules.map(m=>[m.id,stats(m.id).mastered]))}};
