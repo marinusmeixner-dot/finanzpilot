@@ -5,7 +5,7 @@
  const number=v=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:2}).format(Number(v)||0);
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const initial=1000;
- let quotes=[],wallets=[],trades=[],fxRates=[],watchlist=[],searchResults=[],searchTerm='',searching=false,searchTicket=0,lookupBusy=false,symbol='MSFT',side='BUY',qty='0.25',orderMode='amount',orderAmount='50',fxRefreshAt=0,busy=false,loading=false,notice='',currentUser=null,hasLoaded=false;
+ let quotes=[],wallets=[],trades=[],fxRates=[],learningExpenses=[],watchlist=[],searchResults=[],searchTerm='',searching=false,searchTicket=0,lookupBusy=false,symbol='MSFT',side='BUY',qty='0.25',orderMode='amount',orderAmount='50',fxRefreshAt=0,busy=false,loading=false,notice='',currentUser=null,hasLoaded=false;
  const user=()=>window.FinanzPilotCloud?.user||null;
  const client=()=>window.FinanzPilotCloud?.paperClient||null;
  const bySym=x=>quotes.find(q=>q.symbol===x);
@@ -45,37 +45,39 @@
   const value=round(marked.reduce((s,p)=>s+p.qty*Number(bySym(p.symbol).price)*rateFor(p.currency),0));
   const invested=round(pos.reduce((s,p)=>s+p.costEUR,0));
   const moves=trades.reduce((sum,t)=>sum+(t.side==='BUY'?-Number(t.eur_total||0):Number(t.eur_total||0)),0);
-  const earnedBonus=Math.max(0,round(balance-initial-moves));
+  const learningSpent=round(learningExpenses.filter(x=>x.payment==='euro').length*10);
+  const earnedBonus=Math.max(0,round(balance-initial-moves+learningSpent));
   return {currency:'EUR',cash:balance,value,invested,total:round(balance+value),
-   pnl:round(balance+value-initial-earnedBonus),earnedBonus,realized:all.realizedEUR||0,
+   pnl:round(balance+value-initial-earnedBonus+learningSpent),earnedBonus,learningSpent,realized:all.realizedEUR||0,
    positionCount:pos.length,unpriced:marked.length!==pos.length};
  }
 
  function viewRefresh(){if(typeof state!=='undefined'&&state.view==='depot')window.render?.()}
  async function load(){
-  if(!client()||!user()){quotes=[];wallets=[];trades=[];fxRates=[];watchlist=[];searchResults=[];currentUser=null;hasLoaded=false;viewRefresh();return}
+  if(!client()||!user()){quotes=[];wallets=[];trades=[];fxRates=[];learningExpenses=[];watchlist=[];searchResults=[];currentUser=null;hasLoaded=false;viewRefresh();return}
   if(loading)return new Promise(resolve=>window.addEventListener('fp-portfolio-loaded',resolve,{once:true}));
   loading=true;const uid=user();
-  if(currentUser&&currentUser!==uid){quotes=[];wallets=[];trades=[];fxRates=[];watchlist=[];searchResults=[];hasLoaded=false}
+  if(currentUser&&currentUser!==uid){quotes=[];wallets=[];trades=[];fxRates=[];learningExpenses=[];watchlist=[];searchResults=[];hasLoaded=false}
   currentUser=uid;
   try{
    const {error:bonusError}=await client().rpc('fp_paper_claim_artifact_rewards');if(bonusError)console.warn('Depot-Belohnungsabgleich:',bonusError.message);
    if(Date.now()-fxRefreshAt>3600000){
     fxRefreshAt=Date.now();try{await lookup('fx',{})}catch(e){console.warn('EZB-FX-Aktualisierung:',String(e.message||e))}
    }
-   const [w,t,wl,fx]=await Promise.all([
+   const [w,t,wl,fx,sp]=await Promise.all([
     client().from('fp_paper_wallets').select('user_id,currency,balance,starting_balance').eq('user_id',uid),
     client().from('fp_paper_trades').select('id,symbol,currency,side,quantity,price,total,eur_total,fx_eur_per_unit,quote_date,source,traded_at').eq('user_id',uid).order('traded_at',{ascending:true}).limit(1000),
     client().from('fp_paper_watchlist').select('symbol,created_at').eq('user_id',uid).order('created_at',{ascending:false}).limit(500),
-    client().from('fp_paper_fx_rates').select('currency,eur_per_unit,quote_date,source')
+    client().from('fp_paper_fx_rates').select('currency,eur_per_unit,quote_date,source'),
+    client().from('fp_specialization_lessons').select('payment').eq('user_id',uid)
    ]);
-   for(const result of [w,t,wl,fx])if(result.error)throw result.error;
+   for(const result of [w,t,wl,fx,sp])if(result.error)throw result.error;
    const defaultSymbols=['MSFT','NVDA','AAPL','AMZN','META','SIEMENS','KION','VWCE','SPY','QQQ','ACWI','AIXTRON','CGNX'];
    const wanted=[...new Set([...defaultSymbols,...(t.data||[]).map(x=>x.symbol),...(wl.data||[]).map(x=>x.symbol),symbol])];
    const q=await client().from('fp_paper_quotes').select('symbol,asset_name,currency,price,quote_date,source,adjusted').in('symbol',wanted.slice(0,900)).order('symbol');
    if(q.error)throw q.error;
    if(uid!==user())return;
-   quotes=q.data||[];wallets=w.data||[];trades=t.data||[];fxRates=fx.data||[];watchlist=wl.data||[];hasLoaded=true;notice='';
+   quotes=q.data||[];wallets=w.data||[];trades=t.data||[];fxRates=fx.data||[];learningExpenses=sp.data||[];watchlist=wl.data||[];hasLoaded=true;notice='';
    if(!bySym(symbol)&&quotes.length)symbol=quotes[0].symbol;
   }catch(e){notice='Depotdaten konnten nicht geladen werden: '+String(e.message||e)}
   finally{loading=false;viewRefresh();window.dispatchEvent?.(new Event('fp-portfolio-loaded'))}
@@ -155,7 +157,7 @@
   const valid=fx!==null&&fx>0&&n>=.000001&&n<=10000&&total>=.01&&(side!=='BUY'||total<=stats.cash)&&(side!=='SELL'||n<=own+1e-7);
   const books='<section class="fp-depot-wallet"><div class="fp-depot-wallet-title"><b>Dein gemeinsames Eurodepot</b><span>Einmaliges Startkapital: '+fmt(initial,'EUR')+(stats.earnedBonus?' · Belohnungen '+fmt(stats.earnedBonus,'EUR'):'')+'</span></div>'+
     '<div class="fp-depot-wallet-big"><small>Gesamtwert inklusive Kasse und Positionen</small><strong>'+fmt(stats.total,'EUR')+'</strong><span class="'+(stats.pnl>=0?'fp-depot-pos':'fp-depot-neg')+'">'+(stats.pnl>=0?'+':'')+fmt(stats.pnl,'EUR')+' ('+number(stats.pnl/initial*100)+' %)</span></div>'+
-    '<div class="fp-depot-wallet-grid">'+stat(stats.cash,'Euro-Spielgeld verfügbar','EUR')+stat(stats.value,'Aktienwert umgerechnet','EUR')+stat(stats.realized,'Realisierte Kursdifferenz','EUR')+'</div>'+
+    (stats.learningSpent?'<p class="fp41-learning-expense">Bisher in Lernfreischaltungen investiert: '+fmt(stats.learningSpent,'EUR')+' – separat von der Kursrendite verrechnet.</p>':'')+'<div class="fp-depot-wallet-grid">'+stat(stats.cash,'Euro-Spielgeld verfügbar','EUR')+stat(stats.value,'Aktienwert umgerechnet','EUR')+stat(stats.realized,'Realisierte Kursdifferenz','EUR')+'</div>'+
     (stats.unpriced?'<small>Eine oder mehrere Positionen haben keinen verlässlichen aktuellen Kurs oder Umrechnungskurs; der Marktwert ist dann unvollständig.</small>':'')+'</section>';
   const pos=calcPortfolio().positions;
   const body=pos.length?pos.map(p=>{
