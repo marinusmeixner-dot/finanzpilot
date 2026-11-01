@@ -30,6 +30,10 @@
  let navTrail=[];
  function goBack(){
   if(window.FinanzPilotLearningHub?.backInternal?.(state.view))return true;
+  const inner=document.getElementById('view-root');
+  const selector={inventory:'[data-inventory-back]',academycourse:'[data-academy-action="back"]',researchcatalog:'[data-research-back]',investmentcommittee:'[data-ic-back]'}[state.view];
+  const internal=selector?inner?.querySelector(selector):null;
+  if(internal){internal.click();return true;}
   while(navTrail.length){const item=navTrail.pop();if(item?.view===state.view||!Object.prototype.hasOwnProperty.call(PARENT,item?.view))continue;
    route(item.view,false,true,item.scroll);return true;
   }
