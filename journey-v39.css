@@ -60,3 +60,10 @@
 .fp39-loading{border-radius:12px;padding:20px;color:#b9d4d8;background:#18323c}
 @media(max-width:700px){.fp39-start{align-items:flex-start;flex-direction:column}.fp39-start .btn{width:100%}.fp39-reading{padding:18px 16px}.fp39-reading>p{font-size:15px}.fp39-stage{padding:14px 12px;gap:11px}.fp39-stage-body strong{font-size:16px}.fp39-stage-num{width:36px;height:36px}.fp39-lesson-buttons .btn{flex:1}}
 @media(prefers-reduced-motion:reduce){.fp39-mini-track span{transition:none}}
+
+/* v40: lessons unlock in strict order; previews are readable but cannot be skipped */
+.fp39-module.locked{opacity:.59;background:#162a34;border-style:dashed;cursor:not-allowed}
+.fp39-module.locked:hover,.fp39-module.locked:focus-visible{border-color:#385865}
+.fp39-module.locked .fp39-module-num{background:#263a44;color:#bdd0d1}
+.fp39-stage.locked{opacity:.7;border-style:dashed}
+.fp39-stage.locked .fp39-stage-body small{color:#d0b693}
