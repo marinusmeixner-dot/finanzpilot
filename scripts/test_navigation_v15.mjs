@@ -114,7 +114,7 @@ assert(html.includes('learning-v20.css?v=30'));
 assert(html.includes('investment-committee.js?v=23'));
 assert(html.includes('investment-committee.css?v=21'));
 assert(app.includes("state.view==='investmentcommittee'"));
-assert(html.includes('sync.js?v=39'));
+assert(html.includes('sync.js?v=46'));
 assert(html.includes('content="black"'));
 const stylesheet=fs.readFileSync('mobile-layout-v19.css','utf8');
 assert(stylesheet.includes('env(safe-area-inset-top'));
