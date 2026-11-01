@@ -38,6 +38,8 @@ vm.runInContext(read('market-v34.js'),context,{filename:'market-v34.js'});
 const api=window.FinanzPilotMarkets;
 await api.refresh(true);
 await new Promise(r=>setTimeout(r,0));
+api.openNews('BAYN.DE');
+await new Promise(r=>setTimeout(r,0));
 const result=api.renderNews();
 assert(result.includes('Bayer')&&result.includes('BayWa'),'Both known watchlist stocks must receive editorial coverage');
 assert(result.includes('Ausführlichen FinanzPilot-Artikel lesen'));
