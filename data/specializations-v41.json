@@ -207,7 +207,14 @@
             "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
           ],
           "transferPrompt": "Zum Thema „Investitionen richtig abziehen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Ein Unternehmen erzielt 160 Mio. € operativen Cashflow und gibt 60 Mio. € für Sachanlagen aus. Vereinfachter freier Cashflow?",
+            "answer": 100,
+            "unit": "Mio. €",
+            "explanation": "160 − 60 = 100 Mio. €. Beachte: Unternehmen verwenden teils abweichende FCF-Definitionen.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "cashflow-architekt-3",
@@ -273,7 +280,14 @@
             "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
           ],
           "transferPrompt": "Zum Thema „Kasse und verzinsliche Schulden vergleichen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Ein Betrieb hat 380 Mio. € verzinsliche Schulden und 70 Mio. € frei verfügbare Kasse. Wie hoch sind die vereinfachten Nettoschulden?",
+            "answer": 310,
+            "unit": "Mio. €",
+            "explanation": "380 − 70 = 310 Mio. €. Eingeschränkt verfügbare Liquidität zählt nicht automatisch als abziehbarer Kassenbestand.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "bilanz-pruefer-2",
@@ -366,7 +380,14 @@
             "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
           ],
           "transferPrompt": "Zum Thema „Kurs und Ergebnis richtig verknüpfen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Eine Aktie kostet 48 €, der Gewinn je Aktie beträgt 3 €. Wie hoch ist das Kurs-Gewinn-Verhältnis?",
+            "answer": 16,
+            "unit": "-fach",
+            "explanation": "48 / 3 = 16. Das KGV muss mit vergleichbarer Gewinnperiode berechnet werden.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "bewertung-multiples-2",
@@ -393,7 +414,14 @@
             "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
           ],
           "transferPrompt": "Zum Thema „Schulden und liquide Mittel berücksichtigen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Börsenwert 800 Mio. €, verzinsliche Schulden 250 Mio. €, freie Zahlungsmittel 150 Mio. €. Vereinfachter Enterprise Value?",
+            "answer": 900,
+            "unit": "Mio. €",
+            "explanation": "800 + 250 − 150 = 900 Mio. €. Andere Wertanpassungen können im echten Unternehmenswert hinzukommen.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "bewertung-multiples-3",
@@ -459,7 +487,14 @@
             "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
           ],
           "transferPrompt": "Zum Thema „Rendite auf eingesetztes Kapital beurteilen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Ein Unternehmen erwirtschaftet 12 Mio. € Ergebnis nach operativen Steuern auf 100 Mio. € eingesetztes Kapital. ROIC in Prozent?",
+            "answer": 12,
+            "unit": "%",
+            "explanation": "12 / 100 × 100 = 12 %. Der Kapitalbetrag und die Ergebnisdefinition müssen zusammenpassen.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "werttreiber-2",
@@ -552,7 +587,14 @@
             "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
           ],
           "transferPrompt": "Zum Thema „Cashflows über Jahre fortschreiben“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Eine sichere hypothetische Zahlung von 105 € erfolgt in einem Jahr; Diskontierungszins 5 %. Wie hoch ist der Barwert?",
+            "answer": 100,
+            "unit": "€",
+            "explanation": "105 / 1,05 = 100 €. Reale Unternehmenszahlungen sind nicht sicher und benötigen risikoadäquate Annahmen.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "unternehmenswert-2",
@@ -645,7 +687,14 @@
             "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
           ],
           "transferPrompt": "Zum Thema „Verlustrisiken erkennen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Eine Anlage fällt von 200 € um 25 %. Wie viel Euro bleibt übrig?",
+            "answer": 150,
+            "unit": "€",
+            "explanation": "200 × (1 − 0,25) = 150 €. Die anschließende prozentuale Erholung benötigt einen anderen Nenner.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "risiko-basis-2",
@@ -738,7 +787,14 @@
             "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
           ],
           "transferPrompt": "Zum Thema „Kapitalverteilung sichtbar machen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Ein Portfolio umfasst 2.000 €. Ein Bereich soll 35 % ausmachen. Wie viel Euro sind das?",
+            "answer": 700,
+            "unit": "€",
+            "explanation": "2.000 × 0,35 = 700 €. Berücksichtige die Gewichtung der restlichen Positionen.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "portfolio-architekt-2",
@@ -792,7 +848,14 @@
             "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
           ],
           "transferPrompt": "Zum Thema „Szenarien auf den Gesamtwert übertragen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Eine Position wiegt 40 % im Depot und verliert 30 %. Wie groß ist der direkte Beitrag zum Depotverlust in Prozentpunkten?",
+            "answer": -12,
+            "unit": "Prozentpunkte",
+            "explanation": "0,40 × (−30 %) = −12 Prozentpunkte, sofern alle übrigen Positionen unverändert bleiben.",
+            "tolerance": 0.01
+          }
         }
       ]
     },
@@ -858,7 +921,14 @@
             "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
           ],
           "transferPrompt": "Zum Thema „Wechselkurse korrekt umrechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Wechselkurs 1 € = 1,25 $. Du besitzt 100 $. Wie viele Euro sind das beim gegebenen Kurs, vor Gebühren?",
+            "answer": 80,
+            "unit": "€",
+            "explanation": "100 $ / (1,25 $ je €) = 80 €. Auf die Kursrichtung und Wechselkurseinheit achten.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "makro-risiken-3",
@@ -1575,7 +1645,14 @@
             "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
           ],
           "transferPrompt": "Zum Thema „Risikoanteile berechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Maximal 50 € Verlust; je Aktie läge die Stop-Differenz bei hypothetischen 5 €. Wie viele Aktien entsprechen diesem Risikobudget ohne Gebühren?",
+            "answer": 10,
+            "unit": "Aktien",
+            "explanation": "50 / 5 = 10 Aktien. Ein Stop garantiert wegen Kurslücken keinen exakten Ausführungspreis.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "position-sizing-2",
@@ -2160,7 +2237,14 @@
             "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
           ],
           "transferPrompt": "Zum Thema „Finanzierungsmix berechnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Gewichteter Finanzierungssatz vor Steuern: 60 % Eigenkapital mit 10 % Renditeforderung, 40 % Schulden mit 5 % Zinssatz. Ergebnis?",
+            "answer": 8,
+            "unit": "%",
+            "explanation": "0,60 × 10 % + 0,40 × 5 % = 8 %. Ein steuerlicher Zinseffekt wurde hier ausdrücklich nicht berücksichtigt.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "kapitalkosten-schaetzen-3",
@@ -2253,7 +2337,14 @@
             "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
           ],
           "transferPrompt": "Zum Thema „Verwässerung berechnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Ein hypothetischer gesamter Eigenkapitalwert von 1.200 Mio. € verteilt sich auf 120 Mio. Aktien. Wie viele Euro je Aktie?",
+            "answer": 10,
+            "unit": "€",
+            "explanation": "1.200 / 120 = 10 € je Aktie. Bei Neuemissionen auch den Kapitalzufluss gesondert modellieren.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "bewertungs-komitee-3",
@@ -2786,7 +2877,14 @@
             "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
           ],
           "transferPrompt": "Zum Thema „Inflation richtig lesen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Eine Inflationsrate sinkt von 5 % auf 3 %. Wie viele Prozentpunkte hat sie sich verändert?",
+            "answer": -2,
+            "unit": "Prozentpunkte",
+            "explanation": "3 % − 5 % = −2 Prozentpunkte. Preise steigen bei weiterhin positiver Inflation trotzdem.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "inflation-zinsen-2",
@@ -2976,7 +3074,14 @@
             "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
           ],
           "transferPrompt": "Zum Thema „Kupon und Marktrendite trennen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Ein Kupon von 4 € pro Jahr steht einem Anleihepreis von 80 € gegenüber. Wie viel Prozent beträgt die einfache laufende Kuponrendite?",
+            "answer": 5,
+            "unit": "%",
+            "explanation": "4 / 80 × 100 = 5 %. Das ist nicht automatisch die Rendite bis zur Fälligkeit.",
+            "tolerance": 0.01
+          }
         },
         {
           "id": "anleihen-rendite-2",
@@ -3357,7 +3462,14 @@
             "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
           ],
           "transferPrompt": "Zum Thema „Gesamtkosten ermitteln“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "practice": {
+            "prompt": "Bei einer 100-€-Order entstehen 1 € Gebühr und 0,20 € implizite Spreadkosten. Gesamte Einstiegskosten in Prozent des Auftragswerts?",
+            "answer": 1.2,
+            "unit": "%",
+            "explanation": "(1 + 0,2) / 100 × 100 = 1,2 %. Weitere Kosten beim Verkauf sind hier noch nicht enthalten.",
+            "tolerance": 0.03
+          }
         },
         {
           "id": "orderkosten-slippage-2",
