@@ -74,7 +74,7 @@ window.FinanzPilotEconomy=(()=>{
   if(!window.confirm('Artefakt endgültig gegen '+(choice==='cash'?'75 € Spielgeld':'8 Forschungspunkte')+' eintauschen? Der Artefakt-Effekt geht verloren.'))return;
   const c=api()?.paperClient;if(!c)return;
   try{const {data,error}=await c.rpc('fp_exchange_crafted_artifact',{p_id:id,p_choice:choice});if(error)throw error;
-  notice='Artefakt endgültig eingelöst. Guthaben serverseitig gutgeschrieben.';await refresh(false);window.FinanzPilotHeaderProgress?.refresh(true);window.render?.();
+  notice='Artefakt endgültig eingelöst. Guthaben serverseitig gutgeschrieben.';await refresh(false);window.FinanzPilotHeader?.refresh(true);window.render?.();
   }catch(e){notice='Artefakt nicht eingelöst: '+String(e.message||e);window.render?.()}
  }
  function itemList(){
