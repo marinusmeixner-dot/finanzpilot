@@ -396,7 +396,7 @@
       ready=false;dirty=false;lastRemote={};clearTimeout(timer);clearTimeout(retryTimer);
       KEYS.forEach(key=>localStorage.removeItem(key));
       localStorage.removeItem('finanzpilot_navigation_v6');
-      location.replace(APP_URL+'?v=43&restart=1');
+      location.replace(APP_URL+'?v=44&restart=1');
       return data;
     },
     async economyRpc(name,args){
