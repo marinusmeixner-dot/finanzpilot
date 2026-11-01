@@ -29,7 +29,7 @@ function tabs(active){
  return '<nav class="fp41-tabs" aria-label="Bereiche des Lernens">'+routes.map(([id,label])=>'<button type="button" class="fp41-tab'+(id===active?' active':'')+'" data-fp41-route="'+id+'" aria-current="'+(active===id?'page':'false')+'">'+escape(label)+'</button>').join('')+'</nav>';
 }
 function shell(active,content){
- return '<div class="fp41-root">'+tabs(active)+content+'</div>';
+ return '<div class="fp41-root">'+tabs(active)+(notice?'<div class="fp41-notice" role="status">'+escape(notice)+'</div>':'')+content+'</div>';
 }
 function profileLine(){
  return '<div class="fp41-microprogress"><span><b>'+catalog.skills.filter(s=>mastered(s.id)).length+'</b> von '+catalog.skills.length+' Spezialisierungen</span>'+
