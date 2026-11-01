@@ -12,7 +12,7 @@
  depot:{label:'Depot',description:'Deine virtuellen Aktienpositionen, Spielgeld und Transaktionen',links:[]},
  progress:{label:'Profil',description:'Dein Fortschritt, Karriere und Sammlerstücke',links:[['learningstats','Lernfortschritt','Ergebnisse, Lernhistorie und tägliche Fortschritte'],['career','Analystenkarriere & Werkzeuge','Ränge, Beförderungen und Research-Tools'],['inventory','Inventar & Belohnungen','Forschungspunkte, Artefakte und Spezialmissionen'],['account','Konto & Synchronisierung','Anmelden und Fortschritt sichern']]}
  };
- const PARENT={home:'home',learn:'learn', skilltree:'learn',skilllessons:'learn',speciallessons:'learn','journey-1':'learn','journey-2':'learn','journey-3':'learn','journey-4':'learn','journey-5':'learn','journey-6':'learn',journeycourse:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',transfer:'learn',learnpath:'learn',learningnews:'learn',dailyreview:'learn',academymarket:'learn',stockhub:'learn',research:'learn',marketoverview:'markets',marketnews:'markets',marketdetail:'markets',marketarticle:'markets',markets:'markets',marketwatch:'markets',depot:'depot',researchcatalog:'stockhub',investmentcommittee:'stockhub',theses:'stockhub',academy:'stockhub',academycourse:'stockhub',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
+ const PARENT={home:'home',learn:'learn', skilltree:'learn',skilllessons:'learn',speciallessons:'learn',basics:'learn','journey-1':'learn','journey-2':'learn','journey-3':'learn','journey-4':'learn','journey-5':'learn','journey-6':'learn',journeycourse:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',transfer:'learn',learnpath:'learn',learningnews:'learn',dailyreview:'learn',academymarket:'learn',stockhub:'learn',research:'learn',marketoverview:'markets',marketnews:'markets',marketdetail:'markets',marketarticle:'markets',markets:'markets',marketwatch:'markets',depot:'depot',researchcatalog:'stockhub',investmentcommittee:'stockhub',theses:'stockhub',academy:'stockhub',academycourse:'stockhub',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
  const ICON={
   home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
   learn:'<path d="m3 4 9-2 9 2v16l-9 2-9-2z"/><path d="M12 2v20"/><path d="m6 9 4 1m4 0 4-1"/>',
@@ -68,7 +68,8 @@
   if(!isHub(v))return '';
   const g=GROUPS[v],intro='<section class="fp-tab-hub"><div class="fp-tab-hub-intro"><div class="eyebrow">DEIN FINANZPILOT</div><h1>'+esc(g.label)+'</h1><p>'+esc(g.description)+'</p></div>';
   const link=([id,name,desc],i)=>'<button type="button" class="fp-tab-hub-item" '+(id==='account'?'data-section-account':'data-section-route="'+esc(id)+'"')+'><span class="fp-tab-hub-number">'+String(i+1).padStart(2,'0')+'</span><span class="fp-tab-hub-copy"><strong>'+esc(name)+'</strong><small>'+esc(desc)+'</small></span><span class="fp-tab-hub-chevron">'+icon('arrow',18)+'</span></button>';
-  if(v==='learn')return window.FinanzPilotLearningHub?.home?.()||window.FinanzPilotJourney?.renderHome?.()||'<section class="fp39-loading"><h1>Lernweg wird vorbereitet</h1><p>Bitte aktualisiere die Seite.</p></section>';
+  if(v==='learn')return window.FinanzPilotLearningHub?.home?.()||'<section class="fp39-loading"><h1>Die Lernübersicht wird geladen.</h1></section>';
+   if(v==='progress')return window.FinanzPilotProfile?.render?.()||'<section class="fp39-loading"><h1>Das Profil wird geladen.</h1></section>';
   return intro+'<div class="fp-tab-hub-list">'+g.links.map(link).join('')+'</div></section>';
 
  }
