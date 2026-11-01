@@ -6,7 +6,7 @@ const daily=JSON.parse(read('data/daily.json'));
 const market=read('market-v34.js');
 const review=read('daily-review.js');
 const nav=read('docs/REDAKTION.md');
-assert.equal(JSON.parse(read('version.json')).version,46);
+assert.equal(JSON.parse(read('version.json')).version,47);
 assert(sql.includes('private.fp_editorial_queue'));
 assert(sql.includes("kind in ('watchlist_added','review_submitted')"));
 assert(sql.includes("after insert on public.fp_paper_watchlist"));
