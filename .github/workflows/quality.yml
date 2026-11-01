@@ -58,3 +58,5 @@ jobs:
         run: node scripts/test_journey_v39.mjs
       - name: "Regression: Verified EUR fractional trading and 30-day streak milestones"
         run: node scripts/test_portfolio_streak_v40.mjs
+      - name: "Regression: Four-tab Lernen and server-side skill promotions"
+        run: node scripts/test_specialization_v41.mjs
