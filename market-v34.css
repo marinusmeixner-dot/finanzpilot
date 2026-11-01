@@ -111,3 +111,8 @@
 .fp36-article-source strong{display:block;margin-bottom:8px}
 .fp36-related{display:block;text-align:left;width:100%;padding:12px 14px;background:#1d3c46;color:#b4f3d5;border:1px solid #416573;border-radius:9px;cursor:pointer;margin-bottom:8px}
 @media(max-width:700px){.fp36-article{padding-bottom:22px}.fp36-article-section p{font-size:14px}}
+
+/* v36: verified source-specific stock lookup */
+.fp36-search-chart{display:inline-block;font-size:12px!important;line-height:1.5;padding:4px 0}
+.fp36-search-chart.verified{color:#8be4b4!important}
+.fp36-search-chart.unconfirmed{color:#f0ca87!important}
