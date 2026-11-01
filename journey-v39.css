@@ -67,3 +67,13 @@
 .fp39-module.locked .fp39-module-num{background:#263a44;color:#bdd0d1}
 .fp39-stage.locked{opacity:.7;border-style:dashed}
 .fp39-stage.locked .fp39-stage-body small{color:#d0b693}
+
+.fp40-lesson-detail{border-top:1px solid #34555d;padding:15px 0 0;display:grid;gap:8px}
+.fp40-lesson-detail h3{font-size:16px;color:#d4ffe3;margin:0}
+.fp40-lesson-detail p{font-size:15px;color:#d2e5e0;line-height:1.8;margin:0}
+.fp40-lesson-challenge{background:#18433c;border-left:4px solid #79ddb1;border-radius:12px;padding:17px;display:grid;gap:10px}
+.fp40-lesson-challenge h3{font-size:17px;margin:0;color:#dbffec}
+.fp40-lesson-challenge>p{font-size:15px;line-height:1.65;color:#d8f0e5}
+.fp40-lesson-challenge details{border-top:1px solid #4d796f;padding-top:10px}
+.fp40-lesson-challenge summary{cursor:pointer;color:#c6f9dc;font-weight:650;font-size:14px}
+.fp40-lesson-challenge details p{font-size:14px;line-height:1.7;margin-top:10px;color:#cceddd}
