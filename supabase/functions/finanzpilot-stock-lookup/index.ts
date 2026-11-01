@@ -53,8 +53,11 @@ async function nativeChartExists(symbol:string){
   const r=raw?.chart?.result?.[0];if(!r)return false;
   const actual=String(r.meta?.symbol||symbol).toUpperCase();
   if(actual!==symbol)return false;
-  const p=r.indicators?.quote?.[0]?.close||[];
-  return p.filter((x:any)=>Number.isFinite(Number(x))&&Number(x)>0).length>=2;
+  const p=r.indicators?.quote?.[0]?.close||[],times=r.timestamp||[];
+  const entries=p.map((value:any,i:number)=>({price:Number(value),date:Number(times[i])})).filter((v:any)=>Number.isFinite(v.price)&&v.price>0&&Number.isFinite(v.date));
+  if(entries.length<2)return false;
+  const last=entries.at(-1);
+  return {price:Math.round(last.price*10000)/10000,currency:String(r.meta?.currency||''),quote_date:barDate(last.date,String(r.meta?.exchangeTimezoneName||'UTC'))};
  }catch{return false}
 }
 async function search(q:string){
@@ -74,7 +77,7 @@ async function search(q:string){
  }).sort((a:any,b:any)=>b.score-a.score);
  // Validate a bounded set, so search remains responsive on the free provider.
  const candidates=ranked.slice(0,8);
- const checks=await Promise.all(candidates.map(async(x:any)=>({...x,chart_verified:await nativeChartExists(x.symbol)})));
+ const checks=await Promise.all(candidates.map(async(x:any)=>{const info=await nativeChartExists(x.symbol);return {...x,chart_verified:!!info,...(info&&typeof info==='object'?info:{})}}));
  const verified=checks.filter((x:any)=>x.chart_verified).sort((a:any,b:any)=>b.score-a.score);
  const remaining=checks.filter((x:any)=>!x.chart_verified).concat(ranked.slice(8).map((x:any)=>({...x,chart_verified:false})));
  const selected=verified.length?verified:remaining.slice(0,8);
