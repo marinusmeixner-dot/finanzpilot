@@ -1,0 +1,46 @@
+/* FinanzPilot v46 – deliberate practice, small readable lessons and spaced recall */
+.fp46-study-steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px;margin:19px 0 22px}
+.fp46-study-steps button{min-width:0;text-align:center;border:1px solid #4b6871;border-radius:13px;padding:12px 8px;cursor:pointer;color:#bcd9d5;background:#1a3440;font-size:12px;line-height:1.5;display:flex;flex-direction:column;align-items:center;gap:7px}
+.fp46-study-steps button span{width:27px;height:27px;border:1px solid #5b857b;background:#24483f;border-radius:50%;display:grid;place-items:center;font-weight:750}
+.fp46-study-steps button.active{border-color:#86d8b0;background:#21493d;color:#e2fbe9;font-weight:700}
+.fp46-stepper{max-width:910px}
+.fp46-study-goal{font-size:14px;line-height:1.75;color:#c2dacf;margin:12px 0 4px}
+.fp46-study-panel{border:1px solid #4a6e70;border-radius:17px;background:#142e3b;padding:22px;margin:10px 0 13px}
+.fp46-study-panel h3{margin:9px 0 15px;font-size:22px}
+.fp46-study-panel>p{font-size:15px;line-height:1.85;color:#d2e3dd}
+.fp46-didactic-tip{background:#23443e;border-left:3px solid #9bd9bb;border-radius:9px;padding:15px;margin-top:18px;line-height:1.7}
+.fp46-didactic-tip p{font-size:14px;margin-top:5px}
+.fp46-mistake,.fp46-transfer-hint{border:1px solid #49645d;border-radius:12px;padding:14px;margin:18px 0 0}
+.fp46-mistake summary,.fp46-transfer-hint summary{font-size:14px;cursor:pointer;font-weight:600;color:#b9edcf}
+.fp46-mistake p,.fp46-transfer-hint p{line-height:1.8;font-size:13px;color:#c2d7d1;margin:9px 0 0}
+.fp46-worked-steps{padding-left:24px;margin:19px 0;display:grid;gap:12px}
+.fp46-worked-steps li{line-height:1.7;font-size:14px;color:#d4e9dc;padding-left:4px}
+.fp46-study-pause{border-radius:11px;background:#263f45;padding:13px}
+.fp46-study-controls{display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;margin:19px 0 12px}
+.fp46-study-controls .btn{border-radius:12px}
+.fp46-study-foot{color:#a8c7c6;font-size:12px;line-height:1.65}
+.fp46-reflection{margin:16px 0 5px;border:1px solid #557b77;border-radius:13px;background:#1b3a42;padding:17px}
+.fp46-reflection h3{font-size:17px}
+.fp46-reflection p{font-size:13px;line-height:1.75;color:#c4ddda}
+.fp46-reflection textarea{width:100%;min-height:108px;border-radius:12px;padding:13px;margin:11px 0;background:#122d39;border:1px solid #618079;color:#e2f9ed;resize:vertical;line-height:1.6;font:inherit}
+.fp46-reflection-actions{display:flex;flex-wrap:wrap;align-items:center;gap:11px}
+.fp46-reflection-actions small{font-size:11px;color:#adc4c1}
+.fp46-review{border:1px solid #5b8276;border-radius:18px;background:#16343c;margin:15px 0 27px;padding:20px}
+.fp46-review-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.fp46-review-head h2{margin:9px 0;font-size:21px}
+.fp46-review-head p{font-size:13px;line-height:1.7;color:#bed6ce;max-width:720px}
+.fp46-review-count{font-size:12px;font-weight:700;white-space:nowrap;border:1px solid #89cba8;border-radius:99px;padding:8px 12px;color:#bdf2d2}
+.fp46-review-filters{display:flex;flex-wrap:wrap;gap:7px;margin:16px 0}
+.fp46-review-filters button{border:1px solid #557c7a;border-radius:10px;background:#203f47;color:#c9e9df;cursor:pointer;padding:10px 12px}
+.fp46-review-filters button.active{background:#2c5a4d;border-color:#8dd8ad}
+.fp46-review-card{background:#163540;border:1px solid #456771;border-radius:13px;margin:10px 0;padding:17px}
+.fp46-review-card small{color:#b1cbc9;font-size:11px}
+.fp46-review-card h3{margin:7px 0;font-size:16px}
+.fp46-review-card p{color:#d2e3df;font-size:14px;line-height:1.7;margin:10px 0}
+.fp46-review-solution{background:#24483e;border-left:3px solid #a3dcba;border-radius:10px;padding:14px;margin:12px 0}
+.fp46-review-solution b{font-size:14px}
+.fp46-review-rating{display:flex;gap:9px;flex-wrap:wrap}
+.fp46-review-foot{font-size:11px;color:#acc6c1;line-height:1.75;display:block;margin-top:12px}
+.fp46-review-empty{padding:16px;border:1px dashed #537773;border-radius:10px;color:#c3d6cb;line-height:1.7;font-size:14px}
+.fp46-review-banner{border:1px solid #76cba8;border-radius:13px;background:#1e473e;color:#e2fbec;cursor:pointer;padding:13px 16px;text-align:left;display:block;width:100%;font-size:14px;font-weight:600}
+@media(max-width:650px){.fp46-study-steps{gap:4px}.fp46-study-steps button{font-size:10px;padding:9px 3px}.fp46-study-panel{padding:15px}.fp46-review{padding:14px}.fp46-study-panel>p{font-size:14px}.fp46-study-controls .btn{flex:1}}
