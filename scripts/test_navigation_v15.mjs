@@ -44,7 +44,7 @@ const document={
  addEventListener:(type,fn)=>{events[type]=fn},
  body:{classList:{add(){},remove(){}}}
 };
-const scrolls=[];const sent=[];const w={scrollY:0,scrollTo(...args){scrolls.push(args)},dispatchEvent(ev){sent.push(ev.type)},addEventListener(){},FinanzPilotLab:null};
+const scrolls=[];const sent=[];const w={scrollY:0,scrollTo(...args){scrolls.push(args)},dispatchEvent(ev){sent.push(ev.type)},addEventListener(){},FinanzPilotLab:null,FinanzPilotJourney:{renderHome:()=>'<div class="fp39-home"><button data-journey-start>Starten</button><button data-journey-stage="1">Orientieren</button><button data-journey-stage="2">Verstehen</button><button data-journey-stage="3">Verknüpfen</button><button data-journey-stage="4">Anwenden</button><button data-journey-stage="5">Analysieren</button><button data-journey-stage="6">Urteil</button></div>'}};
 const location={hash:'',pathname:'/finanzpilot/',search:'?v=38};
 const history={replaceState:(_,__,url)=>{location.hash=url.includes('#')?'#'+url.split('#')[1]:''}};
 const context=vm.createContext({window:w,document,localStorage:{getItem:k=>memory[k]??null,setItem:(k,v)=>memory[k]=v},state,chooseView:v=>{state.view=v},
@@ -57,7 +57,6 @@ assert(nav);
 assert.deepEqual([...['home','learn','markets','depot','progress','stockhub'].filter(x=>nav.isHub(x))],['learn','markets','progress','stockhub']);
 assert.equal(nav.renderHub('home'),'');
 const groups={
- learn:['learnpath','concepts','transfer','training','skills','glossary','foundations','learningnews','dailyreview','academymarket','stockhub'],
  markets:['marketoverview','marketnews'],
  progress:['learningstats','career','inventory']
 };
@@ -86,7 +85,10 @@ assert.equal(nav.parentOf('academy'),'learn');
 assert.equal(nav.parentOf('investmentcommittee'),'learn');
 assert.equal(nav.parentOf('stockhub'),'learn');
 assert(nav.renderHub('stockhub').includes('data-section-route="researchcatalog"'));
-assert(nav.renderHub('learn').includes('data-section-route="stockhub"'));
+assert(nav.renderHub('learn').includes('data-journey-start'));
+for(let i=1;i<=6;i++){assert(nav.renderHub('learn').includes('data-journey-stage="'+i+'"'));assert.equal(nav.parentOf('journey-'+i),'learn')}
+assert.equal(nav.parentOf('journeycourse'),'learn');
+nav.route('learn');nav.route('journey-1');assert.equal(state.view,'journey-1');nav.route('journey-2');assert.equal(state.view,'journey-2');nav.goBack();assert.equal(state.view,'journey-1');
 nav.route('stockhub');assert(state.view==='stockhub');assert(crumb?.innerHTML.includes('Zurück'));
 nav.route('academy');assert(crumb?.innerHTML.includes('Zurück'));
 nav.route('depot');assert(state.view==='depot');assert.equal(crumb,null);
@@ -106,7 +108,7 @@ assert(html.includes('learning-v20.css?v=30'));
 assert(html.includes('investment-committee.js?v=23'));
 assert(html.includes('investment-committee.css?v=21'));
 assert(app.includes("state.view==='investmentcommittee'"));
-assert(html.includes('sync.js?v=34'));
+assert(html.includes('sync.js?v=39'));
 assert(html.includes('content="black"'));
 const stylesheet=fs.readFileSync('mobile-layout-v19.css','utf8');
 assert(stylesheet.includes('env(safe-area-inset-top'));
