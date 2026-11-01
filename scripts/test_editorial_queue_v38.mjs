@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+const read=p=>fs.readFileSync(p,'utf8');
+const sql=read('supabase/finanzpilot_editorial_queue_v38.sql');
+const daily=JSON.parse(read('data/daily.json'));
+const market=read('market-v34.js');
+const review=read('daily-review.js');
+const nav=read('docs/REDAKTION.md');
+assert.equal(JSON.parse(read('version.json')).version,38);
+assert(sql.includes('private.fp_editorial_queue'));
+assert(sql.includes("kind in ('watchlist_added','review_submitted')"));
+assert(sql.includes("after insert on public.fp_paper_watchlist"));
+assert(sql.includes("after insert on public.fp_review_submissions"));
+assert(sql.includes("new.consent is true and new.status='pending'"));
+assert(sql.includes("revoke all on private.fp_editorial_queue from public, anon, authenticated"));
+assert(sql.includes("alter table private.fp_editorial_queue enable row level security"));
+assert(!sql.includes('answer text'),'Event queue may never copy private free-text answers');
+assert(!sql.includes('user_id uuid'),'Watchlist queue must not reveal user IDs');
+assert(market.includes('data-fp38-news-refresh'),'Readers must be able to refresh editorial publication');
+assert(market.includes('automatisch in die private Redaktionswarteschlange'),'Watchlist empty state explains next hourly report');
+assert(market.includes("window.dispatchEvent(new Event('fp-watchlist-changed'))"));
+assert(market.includes('Analyse oder Werkzeug anfordern'),'Full research only on demand');
+assert(review.includes("from('fp_review_submissions').insert("));
+assert(review.includes('consent:true'),'Free-text submission needs explicit consent');
+assert(nav.includes('Analysen nur auf ausdrückliche Anfrage'));
+for(const symbol of ['BAYN.DE','BYW.MU','SIE.DE','NVDA']){
+ const articles=daily.stories.filter(x=>x.symbols?.includes(symbol));
+ assert(articles.some(x=>x.article?.sections?.length>=4&&String(x.url||'').startsWith('https://')&&x.published),symbol+' must have an original free readable article');
+}
+assert(daily.stories.every(x=>x.article?.sections?.length>=4),'No empty paywalled-only stories');
+console.log('v38 QA: private event triggers, consented free-text queue, automatic Watchlist newsroom and on-demand-only analyses verified.');
