@@ -302,6 +302,7 @@
       localBefore=JSON.stringify(local);
       lastRemote=data?.progress_data||{};
       const merged=mergePayload(local,lastRemote);
+      if(lastReset>0)merged.__reset_confirmed=resetMarker.reset_at;
       const changed=saveLocal(merged);
       canAnalyze=Boolean(data?.allow_coach_analysis);
       const {error:writeError}=await client.from(CLOUD_TABLE).upsert({user_id:user.id,progress_data:merged,updated_at:new Date().toISOString()},{onConflict:'user_id'});
