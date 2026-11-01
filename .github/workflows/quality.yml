@@ -36,7 +36,7 @@ jobs:
         run: node scripts/test_theses_v23.mjs
       - name: Verify daily private review queue, opt-in consent, feedback history and task freshness
         run: node scripts/test_daily_review_v25.mjs
-      - name: Validate private virtual Depot, EUR/USD trading safety and navigation
+      - name: Validate EUR 1,000 budget, fractional orders, authenticated daily streak and no double rewards
         run: node scripts/test_portfolio_v26.mjs
       - name: Validate international stock search and private watchlist
         run: node scripts/test_global_stock_v27.mjs
@@ -56,3 +56,5 @@ jobs:
         run: node scripts/test_editorial_queue_v38.mjs
       - name: "Regression: 36-part guided curriculum and distinct stage navigation"
         run: node scripts/test_journey_v39.mjs
+      - name: "Regression: Verified EUR fractional trading and 30-day streak milestones"
+        run: node scripts/test_portfolio_streak_v40.mjs
