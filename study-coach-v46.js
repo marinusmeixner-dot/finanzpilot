@@ -77,4 +77,5 @@ function bind(root=document){
 window.FinanzPilotStudy={seed,recall,note,reviewWidget,noteWidget,bind,dueCount,queue,hydrate,get data(){return db}};
 window.addEventListener('fp-account-reset-applied',()=>{db={notes:{},reviews:{}};showAnswer=''});
 window.addEventListener('fp-auth-change',hydrate);
+window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(KEY))hydrate()});
 })();
