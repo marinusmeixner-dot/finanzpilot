@@ -12,7 +12,7 @@ const current=()=>{
  const promotions=Number(hub.profiles?.[0]?.promotion_count)||0;
  const sxp=Number(hub.profiles?.[0]?.xp)||0;
  const oldXp=typeof state==='object'&&state?Number(state.xp)||0:0;
- const oldLevel=typeof level==='function'?level():1;
+ const oldLevel=window.FinanzPilotHeader?.level||(typeof level==='function'?level():1);
  const st=window.FinanzPilotStreak?.status;
  const econ=window.FinanzPilotEconomy;
  const artefacts=(econ?.claims||[]).filter(x=>!x.choice).length;
