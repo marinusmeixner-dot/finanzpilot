@@ -6,7 +6,7 @@
  const MAIN=['home','learn','markets','depot','progress'];
  const GROUPS={
  home:{label:'Start',links:[['home','Tagesübersicht','Dein täglicher FinanzPilot']]},
- learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Grundlagen · Schritt 1','Lektionen und tägliche Übungen'],['concepts','Finanzielle Zusammenhänge · Schritt 2–3','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['transfer','Transferwerkstatt · Schritt 4','Größere Firmenfälle, Rechnungen und fundierte Entscheidungen'],['training','Praxislabor · Schritt 5','Unternehmen analysieren und mit Zahlen rechnen'],['skills','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt'],['learningnews','News verstehen','Tagesaktuelle Nachrichten mit anspruchsvollen Analysefragen'],['dailyreview','Tägliche Herausforderungen','Eigene Antworten privat einreichen und bewerten lassen'],['academymarket','Mein Markturteil','Marktszenarien verstehen und Schlüsse ziehen'],['stockhub','Aktienresearch & Werkzeuge','Analysen, Bewertungsmodelle, Thesen und Intensivkurse']]},
+ learn:{label:'Lernen',description:'Kurse, Wissen und deine Fähigkeiten',links:[['learnpath','Grundlagen · Schritt 1','Lektionen und tägliche Übungen'],['concepts','Finanzielle Zusammenhänge · Schritt 2–3','Finanzthemen vom EBIT bis zum eigenen Kursziel verstehen'],['transfer','Transferwerkstatt · Schritt 4','Größere Firmenfälle, Rechnungen und fundierte Entscheidungen'],['training','Praxislabor · Schritt 5','Unternehmen analysieren und mit Zahlen rechnen'],['skilltree','Skillbaum','Fähigkeiten und neue Meisterschaften entdecken'],['glossary','Fachbegriffe und Lexikon','Begriffe nachschlagen und vertiefen'],['foundations','Grundlagenwissen','Zusammenhänge und Modelle verständlich erklärt'],['learningnews','News verstehen','Tagesaktuelle Nachrichten mit anspruchsvollen Analysefragen'],['dailyreview','Tägliche Herausforderungen','Eigene Antworten privat einreichen und bewerten lassen'],['academymarket','Mein Markturteil','Marktszenarien verstehen und Schlüsse ziehen'],['stockhub','Aktienresearch & Werkzeuge','Analysen, Bewertungsmodelle, Thesen und Intensivkurse']]},
  markets:{label:'Märkte',description:'Deine Watchlist-Charts und aktuelle Nachrichten – Lernen findest du im Lern-Tab',links:[['marketoverview','Marktüberblick','Ausschließlich Charts deiner gemerkten Aktien'],['marketnews','News','Gesamtmarkt, Watchlist-Nachrichten und interessante neue Aktien']]},
  stockhub:{label:'Aktienresearch & Werkzeuge',description:'Unternehmen recherchieren und fundiert bewerten',links:[['researchcatalog','Aktienanalysen','Umfassende Einzelaktien- und Unternehmensrecherchen'],['investmentcommittee','Investmentkomitee','Kursziele selbst modellieren und ein Investmenturteil erarbeiten'],['theses','Thesenjournal','Eigene Bewertungen prüfen, überarbeiten und über längere Zeit vergleichen'],['academy','Aktien-Intensivkurse','Vollständige Bewertungsprozesse Schritt für Schritt']]},
  depot:{label:'Depot',description:'Deine virtuellen Aktienpositionen, Spielgeld und Transaktionen',links:[]},
@@ -108,7 +108,7 @@
   document.querySelectorAll('[data-section-main]').forEach(b=>{const on=b.dataset.sectionMain===group;b.classList.toggle('active',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
  }
  function route(to,remember=true,fromBack=false,atScroll=null){
-  if(to==='research')to='stockhub';
+  if(to==='research')to='stockhub';if(to==='skills')to='skilltree';
    if(to==='marketwatch')to='marketoverview';
   if(inRoute||!Object.prototype.hasOwnProperty.call(PARENT,to))return;
   if(to==='account'){window.FinanzPilotCloud?.openLogin?.();return}
@@ -129,8 +129,8 @@
   build();
   const saved=load();
   const hash=new URLSearchParams(location.hash.replace(/^#/,'')),chosen=hash.get('view');
-  const candidate=chosen==='research'?'stockhub':chosen;
-  const fallback=saved.view==='research'?'stockhub':saved.view;
+  const candidate=chosen==='research'?'stockhub':chosen==='skills'?'skilltree':chosen;
+  const fallback=saved.view==='research'?'stockhub':saved.view==='skills'?'skilltree':saved.view;
   const initial=Object.prototype.hasOwnProperty.call(PARENT,candidate)?candidate:Object.prototype.hasOwnProperty.call(PARENT,fallback)?fallback:'home';
   if(initial!=='home'&&initial!=='account')chooseView(initial);
   previous=state.view;header();
