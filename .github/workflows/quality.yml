@@ -54,3 +54,5 @@ jobs:
         run: node scripts/test_learning_flow_v37.mjs
       - name: "Regression: Private Watchlist event inbox and submitted free-text reviews"
         run: node scripts/test_editorial_queue_v38.mjs
+      - name: "Regression: 36-part guided curriculum and distinct stage navigation"
+        run: node scripts/test_journey_v39.mjs
