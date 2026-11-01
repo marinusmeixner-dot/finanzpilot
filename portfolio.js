@@ -5,7 +5,7 @@
  const number=v=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:2}).format(Number(v)||0);
  const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
  const initial=50000;
- let quotes=[],wallets=[],trades=[],watchlist=[],searchResults=[],searchTerm='',searching=false,lookupBusy=false,symbol='MSFT',side='BUY',qty='1',busy=false,loading=false,notice='',currentUser=null,hasLoaded=false;
+ let quotes=[],wallets=[],trades=[],watchlist=[],searchResults=[],searchTerm='',searching=false,searchTicket=0,lookupBusy=false,symbol='MSFT',side='BUY',qty='1',busy=false,loading=false,notice='',currentUser=null,hasLoaded=false;
  const user=()=>window.FinanzPilotCloud?.user||null;
  const client=()=>window.FinanzPilotCloud?.paperClient||null;
  const bySym=x=>quotes.find(q=>q.symbol===x);
@@ -91,13 +91,13 @@
    return response.data;
  }
  async function searchStocks(query){
-   if(searching)return;
    searchTerm=String(query||'').trim().slice(0,64);
-   if(searchTerm.length<2){notice='Bitte Unternehmensname oder Börsensymbol eingeben.';viewRefresh();return}
+   const ticket=++searchTicket;
+   if(searchTerm.length<2){searchResults=[];notice='';searching=false;viewRefresh();return}
    searching=true;searchResults=[];notice='Suche nach Aktien und ETFs …';viewRefresh();
-   try{const r=await lookup('search',{query:searchTerm});searchResults=r.results||[];notice=searchResults.length?(r.notice||'Suchergebnisse von '+r.provider+'.'):'Keine Treffer oder Suchdienst eingeschränkt. Du kannst ein bekanntes Börsensymbol direkt prüfen.'}
-   catch(e){notice='Aktiensuche vorübergehend nicht verfügbar: '+String(e.message||e)+'. Bekanntes Börsensymbol kann direkt geprüft werden.'}
-   finally{searching=false;viewRefresh()}
+   try{const r=await lookup('search',{query:searchTerm});if(ticket!==searchTicket||!searchTerm)return;searchResults=r.results||[];notice=searchResults.length?(r.notice||'Suchergebnisse von '+r.provider+'.'):'Keine Treffer oder Suchdienst eingeschränkt. Du kannst ein bekanntes Börsensymbol direkt prüfen.'}
+   catch(e){if(ticket!==searchTicket)return;notice='Aktiensuche vorübergehend nicht verfügbar: '+String(e.message||e)+'. Bekanntes Börsensymbol kann direkt geprüft werden.'}
+   finally{if(ticket===searchTicket){searching=false;viewRefresh()}}
  }
  async function registerStock(code,saveToWatchlist=false,goTrade=false){
    if(lookupBusy)return;
@@ -134,7 +134,7 @@
   return '<div class="fp-depot"><div class="fp-depot-hero"><span class="eyebrow">FINANZPILOT · VIRTUELLES AKTIENDEPOT</span><h1>Dein Depot</h1><p>Kaufe und verkaufe Wertpapiere mit Spielgeld, vergleiche Entscheidungen und trainiere deine Strategie. Keine realen Börsenorders, keine Anbindung an ein Bankkonto.</p><div class="fp-depot-topactions"><button class="btn secondary" data-depot-reload>Depot aktualisieren</button><small>Kursquelle: Yahoo Finance (teilweise inoffiziell), datierte Schlusskurse – keine Livepreise.</small></div></div><div class="fp-depot-wallets">'+books+'</div>'+
    '<section class="fp-depot-panel fp-depot-search"><header><h2>Aktien weltweit suchen</h2><small>Unternehmensname, ISIN oder Börsenkürzel</small></header>'+
   '<form id="fp-depot-search-form" class="fp-depot-search-form"><input name="query" type="search" maxlength="64" value="'+esc(searchTerm)+'" placeholder="z. B. Alphabet, SAP.DE, ASML.AS, BRK-B" aria-label="Aktie suchen"><button class="btn" type="submit" '+(searching?'disabled':'')+'>'+(searching?'Sucht …':'Suchen')+'</button></form>'+
-  (searchResults.length?'<div class="fp-depot-search-results">'+searchResults.map(x=>'<div class="fp-depot-search-item fp34-tap-row" data-fp34-inspect="'+esc(x.symbol)+'" role="link" tabindex="0" aria-label="Chart von '+esc(x.name)+' öffnen"><span><b>'+esc(x.name)+'</b><small>'+esc(x.symbol)+' · '+esc(x.exchange)+' · '+esc(x.type)+'</small><small class="fp36-search-chart '+(x.chart_verified?'verified':'unconfirmed')+'">'+(x.chart_verified?'Historischer Chart geprüft':'Kursreihe nicht bestätigt – nur Alternativvorschlag')+'</small></span><button type="button" class="btn secondary" data-depot-add="'+esc(x.symbol)+'">Merken</button><button type="button" class="btn" data-depot-pick="'+esc(x.symbol)+'">Handeln</button></div>').join('')+'</div>':'')+
+  (searchResults.length?'<div class="fp-depot-search-results">'+searchResults.map(x=>'<div class="fp-depot-search-item fp34-tap-row" data-fp34-inspect="'+esc(x.symbol)+'" role="link" tabindex="0" aria-label="Chart von '+esc(x.name)+' öffnen"><span><b>'+esc(x.name)+'</b><small>'+esc(x.symbol)+' · '+esc(x.exchange)+' · '+esc(x.type)+'</small><small class="fp37-stock-price">'+(x.chart_verified&&Number(x.price)>0?fmt(x.price,x.currency||'EUR')+' · Schlusskurs '+esc(x.quote_date||''):'Kurs aktuell nicht verifiziert')+'</small><small class="fp36-search-chart '+(x.chart_verified?'verified':'unconfirmed')+'">'+(x.chart_verified?'Historischer Chart geprüft':'Kursreihe nicht bestätigt – nur Alternativvorschlag')+'</small></span><button type="button" class="btn secondary" data-depot-add="'+esc(x.symbol)+'">Merken</button><button type="button" class="btn" data-depot-pick="'+esc(x.symbol)+'">Handeln</button></div>').join('')+'</div>':'')+
   (/^[A-Za-z0-9][A-Za-z0-9.\-]{0,23}$/.test(searchTerm)?'<button type="button" class="btn secondary" data-depot-direct="'+esc(searchTerm.toUpperCase())+'">Börsensymbol '+esc(searchTerm.toUpperCase())+' direkt prüfen →</button>':'')+
   '<p class="fp-depot-warning">Weltweite Suche über einen kostenlosen, inoffiziellen Anbieter. Nicht jeder Börsenplatz, jede ISIN oder jede Aktie ist dort verfügbar. Gehandelt wird nur, wenn ein gültiger, datierter Schlusskurs geprüft werden konnte.</p></section>'+
   '<section class="fp-depot-panel" id="fp-depot-watchlist"><header><h2>Meine Watchlist</h2><small>'+watchlist.length+' gemerkte Werte</small></header>'+
@@ -154,6 +154,7 @@
   root.querySelectorAll('[data-depot-inspect]').forEach(b=>b.addEventListener('click',()=>inspect(b.dataset.depotInspect)));
   root.querySelectorAll('[data-fp34-inspect]').forEach(b=>{const open=e=>{if(e?.target?.closest?.('button'))return;inspect(b.dataset.fp34Inspect)};b.addEventListener('click',open);b.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.target.closest?.('button')){e.preventDefault();open(e)}})});
   root.querySelector('#fp-depot-search-form')?.addEventListener('submit',e=>{e.preventDefault();searchStocks(e.currentTarget.elements.query.value)});
+  root.querySelector('#fp-depot-search-form input[name="query"]')?.addEventListener('input',e=>{if(e.target.value.trim())return;searchTicket++;searchTerm='';searchResults=[];notice='';searching=false;root.querySelector('.fp-depot-search .fp-depot-search-results')?.remove();root.querySelector('.fp-depot-search [data-depot-direct]')?.remove();});
   root.querySelectorAll('[data-depot-add]').forEach(b=>b.addEventListener('click',()=>registerStock(b.dataset.depotAdd,true,false)));
   root.querySelectorAll('[data-depot-pick]').forEach(b=>b.addEventListener('click',()=>registerStock(b.dataset.depotPick,false,true)));
   root.querySelectorAll('[data-depot-direct]').forEach(b=>b.addEventListener('click',()=>registerStock(b.dataset.depotDirect,true,true)));
