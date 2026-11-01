@@ -6,25 +6,49 @@
       "id": "reporting",
       "title": "Finanzberichte",
       "description": "Lerne Zahlen aus Berichten korrekt einzuordnen",
-      "capstone": "quality-of-earnings"
+      "capstone": "financial-statement-forensics"
     },
     {
       "id": "valuation",
       "title": "Unternehmensbewertung",
       "description": "Verbinde Geschäftsmodell, Gewinn und Preis",
-      "capstone": "scenario-master"
+      "capstone": "valuation-committee"
     },
     {
       "id": "risk",
       "title": "Risiko & Depot",
       "description": "Lerne Unsicherheit und Portfoliorisiken zu messen",
-      "capstone": "position-sizing"
+      "capstone": "portfolio-risk-chief"
     },
     {
       "id": "research",
       "title": "Research & Urteil",
       "description": "Von überprüfbaren Quellen zur eigenen Investmentthese",
-      "capstone": "evidence-auditor"
+      "capstone": "senior-investigator"
+    },
+    {
+      "id": "macro",
+      "title": "Konjunktur & Zinsen",
+      "description": "Lerne, wie Wachstum, Inflation, Zentralbanken und Zinsstruktur die Gewinne und Bewertungen beeinflussen",
+      "capstone": "zinskurve-szenarien"
+    },
+    {
+      "id": "etfs",
+      "title": "ETFs & Anleihen",
+      "description": "Fondsaufbau, Zinspapiere, Kreditrisiko und der strukturierte Aufbau eines Portfolios",
+      "capstone": "etf-depotbau"
+    },
+    {
+      "id": "trading",
+      "title": "Börsenhandel & Derivate",
+      "description": "Verstehe Orderbücher, Ausführungskosten, Marktmechanik und Risiken von Hebelinstrumenten",
+      "capstone": "derivate-und-hebel"
+    },
+    {
+      "id": "psychology",
+      "title": "Finanzpsychologie",
+      "description": "Entscheidungsfehler erkennen, begründete Handelsregeln entwickeln und Prognosen überprüfen",
+      "capstone": "prognosen-kalibrieren"
     }
   ],
   "skills": [
@@ -1870,6 +1894,823 @@
           ],
           "correct": 1,
           "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "konjunktur-lesen",
+      "title": "Konjunkturdaten verstehen",
+      "branch": "macro",
+      "parent": null,
+      "prerequisites": [],
+      "tier": 1,
+      "description": "Du ordnest Wachstum, Beschäftigung und Frühindikatoren zeitlich ein, ohne aus einem Einzelwert eine sichere Börsenprognose abzuleiten.",
+      "cost": 3,
+      "rewardPoints": 8,
+      "lessons": [
+        {
+          "id": "konjunktur-lesen-1",
+          "title": "Bruttoinlandsprodukt einordnen",
+          "goal": "Bruttoinlandsprodukt einordnen",
+          "explanation": "Das reale Bruttoinlandsprodukt (BIP) misst preisbereinigt die gesamtwirtschaftliche Produktion. Ein Quartalsplus von 0,3 % bedeutet nicht ein jährliches Wachstum von 0,3 %. Revisionsstände und saisonale Bereinigungen gehören zur korrekten Interpretation.",
+          "example": "Ein Quartal wächst um 0,3 %, das Vorquartal um 0,1 %. Prüfe bei jedem Prozentwert, ob er sich auf das Vorquartal oder Vorjahr bezieht.",
+          "question": "Welche Aussage ist zuverlässig?",
+          "options": [
+            "Reales BIP berücksichtigt Preisänderungen",
+            "BIP misst direkt den Aktiengewinn",
+            "Ein Quartal ist automatisch ein volles Jahr"
+          ],
+          "correct": 0,
+          "xp": 18,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "konjunktur-lesen-2",
+          "title": "Früh- und Spätindikatoren unterscheiden",
+          "goal": "Früh- und Spätindikatoren unterscheiden",
+          "explanation": "Auftragseingang, Einkaufsmanagerindizes und Verbrauchervertrauen können Änderungen vor der endgültigen Wirtschaftsleistung andeuten. Arbeitslosenquoten reagieren dagegen teils zeitverzögert. Kein einzelner Indikator bestätigt einen Aufschwung sicher.",
+          "example": "Ein Industrie-Einkaufsmanagerindex steigt, während die Produktion noch sinkt. Es kann sich um eine frühe Stimmungsverbesserung handeln, nicht um bereits realisierte Mehrproduktion.",
+          "question": "Was ist ein angemessener Schluss?",
+          "options": [
+            "Der nächste Aktienkurs ist sicher höher",
+            "Ein Stimmungsindikator kann eine Trendwende anzeigen, ohne sie zu beweisen",
+            "Die Konjunktur wurde bereits verdoppelt"
+          ],
+          "correct": 1,
+          "xp": 24,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "konjunktur-lesen-3",
+          "title": "Konjunkturszenario für Firmen erstellen",
+          "goal": "Konjunkturszenario für Firmen erstellen",
+          "explanation": "Eine Konjunkturanalyse verbindet Auftragseingang, Kreditkosten, Konsum und Exportmärkte. Definiere ein positives und ein negatives Szenario und prüfe, welche Kennzahlen einer konkreten Firma betroffen sein könnten.",
+          "example": "Ein Maschinenbauer erzielt 70 % seines Umsatzes außerhalb Deutschlands. Deutsche BIP-Daten allein reichen für seine Absatzprognose nicht aus.",
+          "question": "Worauf kommt es bei der Aktienanalyse an?",
+          "options": [
+            "Die tatsächliche geografische Nachfrage und Margen",
+            "Nur die deutsche Wachstumsrate",
+            "Nur die letzte Kursbewegung"
+          ],
+          "correct": 0,
+          "xp": 34,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "inflation-zinsen",
+      "title": "Inflation & Geldpolitik",
+      "branch": "macro",
+      "parent": "konjunktur-lesen",
+      "prerequisites": [],
+      "tier": 2,
+      "description": "Du verstehst Verbraucherpreise, Inflationserwartungen und geldpolitische Entscheidungen als unterschiedliche, zeitlich verknüpfte Einflussgrößen.",
+      "cost": 3,
+      "rewardPoints": 11,
+      "lessons": [
+        {
+          "id": "inflation-zinsen-1",
+          "title": "Inflation richtig lesen",
+          "goal": "Inflation richtig lesen",
+          "explanation": "Die jährliche Inflationsrate vergleicht ein Preisniveau mit dem zwölf Monate zuvor. Sinkende Inflation heißt meist langsamere Preissteigerung, nicht automatisch fallende Preise. Basis- und Sondereffekte können Zahlen stark beeinflussen.",
+          "example": "Die Inflationsrate sinkt von 5 auf 2 %. Die Preise steigen insgesamt weiterhin, solange die Rate positiv bleibt.",
+          "question": "Welche Aussage trifft zu?",
+          "options": [
+            "Die Preise fallen zwangsläufig um 3 %",
+            "Das Preisniveau steigt bei 2 % Inflation weiter",
+            "Eine niedrigere Inflationsrate garantiert sinkende Zinsen"
+          ],
+          "correct": 1,
+          "xp": 22,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "inflation-zinsen-2",
+          "title": "Leitzinsen und Übertragung",
+          "goal": "Leitzinsen und Übertragung",
+          "explanation": "Zentralbanken beeinflussen kurzfristige Zinsen. Über Kreditkosten, Einlagenzinsen, Wechselkurse und Erwartungen wirkt das auf Unternehmen und Haushalte, oft zeitverzögert. Die Wirkung ist je nach Verschuldung und Geschäftsmodell verschieden.",
+          "example": "Ein Unternehmen refinanziert sich nächstes Jahr mit neuen Anleihen, während ein anderes zehnjährige Festzinsen hat. Ein Zinsanstieg trifft beide nicht zwingend gleich schnell.",
+          "question": "Welche Variable sollte geprüft werden?",
+          "options": [
+            "Kreditlaufzeiten und Refinanzierungsbedarf",
+            "Nur der Börsenticker",
+            "Nur die Anzahl der Standorte"
+          ],
+          "correct": 0,
+          "xp": 28,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "inflation-zinsen-3",
+          "title": "Inflationsrisiken vergleichen",
+          "goal": "Inflationsrisiken vergleichen",
+          "explanation": "Inflation kann Kosten erhöhen, aber Firmen können sie unterschiedlich an Kunden weiterreichen. Prüfe Lieferverträge, Preissetzungsmacht, Lohnkosten und Nachfrage, bevor du die Gewinnwirkung schätzt.",
+          "example": "Ein Lebensmittelhändler muss teurere Waren einkaufen, kann höhere Verkaufspreise aber nur teilweise durchsetzen. Die operative Marge könnte sinken.",
+          "question": "Welche Schlussfolgerung ist sinnvoll?",
+          "options": [
+            "Inflation macht jede Aktie wertvoller",
+            "Preissetzungsmacht und Kostenstruktur bestimmen den Effekt",
+            "Alle Firmen haben dieselbe Marge"
+          ],
+          "correct": 1,
+          "xp": 38,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "zinskurve-szenarien",
+      "title": "Zinskurven-Analyst",
+      "branch": "macro",
+      "parent": "inflation-zinsen",
+      "prerequisites": [
+        "anleihen-rendite"
+      ],
+      "tier": 3,
+      "description": "Du kombinierst Makroerwartungen mit Anleiherenditen und lernst, was eine steile oder inverse Zinskurve tatsächlich aussagen kann.",
+      "cost": 3,
+      "rewardPoints": 11,
+      "lessons": [
+        {
+          "id": "zinskurve-szenarien-1",
+          "title": "Zinskurve verstehen",
+          "goal": "Zinskurve verstehen",
+          "explanation": "Die Zinskurve zeigt Renditen verschiedener Laufzeiten vergleichbarer Schuldner. Eine inverse Kurve bedeutet, dass kurzfristige Renditen über langfristigen liegen. Dafür können erwartete Zinssenkungen oder besondere Nachfrage nach sicheren Anlagen mitverantwortlich sein.",
+          "example": "Zweijährige Staatsanleihen rentieren bei 4 %, zehnjährige bei 3 %. Die Kurve ist zwischen diesen Laufzeiten invers; das ist kein sicherer Zeitpunkt für eine Rezession.",
+          "question": "Was bedeutet 'invers'?",
+          "options": [
+            "Langfristige Rendite ist niedriger als kurzfristige",
+            "Alle Anleihen sind wertlos",
+            "Die Inflation ist immer negativ"
+          ],
+          "correct": 0,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "zinskurve-szenarien-2",
+          "title": "Duration und Zinsänderung",
+          "goal": "Duration und Zinsänderung",
+          "explanation": "Die modifizierte Duration liefert eine erste Näherung der relativen Kursreaktion einer Anleihe auf eine kleine Renditeänderung. Je länger die Duration, desto empfindlicher ist der Kurs meist gegenüber einem Zinsanstieg.",
+          "example": "Eine Anleihe hat eine modifizierte Duration von 6. Steigt die Rendite um einen Prozentpunkt, beträgt die angenäherte Kursänderung etwa minus 6 %, bevor Konvexität berücksichtigt wird.",
+          "question": "Welche Größenordnung ergibt die Näherung?",
+          "options": [
+            "Plus 6 %",
+            "Minus 6 %",
+            "Minus 60 %"
+          ],
+          "correct": 1,
+          "xp": 32,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "zinskurve-szenarien-3",
+          "title": "Zinskurve in ein Szenario übersetzen",
+          "goal": "Zinskurve in ein Szenario übersetzen",
+          "explanation": "Unterscheide beobachtete Zinsstruktur, erwartete Notenbankpolitik und langfristige Risikoprämien. Übertrage zwei plausible Szenarien auf ein zinssensitives Depot und dokumentiere, was du nicht weißt.",
+          "example": "Eine Bank refinanziert sich kurzfristig und vergibt langfristige Kredite. Eine inverse Zinskurve kann ihre Marge belasten; die tatsächliche Wirkung hängt jedoch von Einlagenstruktur und Absicherung ab.",
+          "question": "Was ist für eine seriöse Analyse erforderlich?",
+          "options": [
+            "Eine garantierte Rezessionsprognose",
+            "Geschäftsmodell, Fristen und alternative Szenarien",
+            "Nur die Farbe einer Zinskurve"
+          ],
+          "correct": 1,
+          "xp": 42,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "anleihen-rendite",
+      "title": "Anleihen & Renditen",
+      "branch": "etfs",
+      "parent": null,
+      "prerequisites": [],
+      "tier": 1,
+      "description": "Du lernst, wie Kupon, Marktpreis, Rückzahlung und Ausfallrisiko zusammenhängen und warum Anleihen nicht automatisch risikofrei sind.",
+      "cost": 3,
+      "rewardPoints": 8,
+      "lessons": [
+        {
+          "id": "anleihen-rendite-1",
+          "title": "Kupon und Marktrendite trennen",
+          "goal": "Kupon und Marktrendite trennen",
+          "explanation": "Der Kupon bezeichnet vertragliche Zinszahlungen auf den Nennwert; die laufende Rendite hängt zusätzlich vom aktuellen Kaufpreis ab. Zur Rendite bis Fälligkeit gehören auch Kursdifferenzen und verbleibende Zahlungen.",
+          "example": "Eine Anleihe mit 100 € Nennwert und 4 € Jahreskupon wird für 90 € gehandelt. Die aktuelle Kuponrendite bezogen auf den Marktpreis liegt über vier Prozent.",
+          "question": "Welche Aussage ist richtig?",
+          "options": [
+            "Kupon und Rendite sind stets identisch",
+            "Die laufende Kuponrendite beträgt 4/90 ≈ 4,44 %",
+            "Der Marktpreis kann nicht unter Nennwert fallen"
+          ],
+          "correct": 1,
+          "xp": 18,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "anleihen-rendite-2",
+          "title": "Kurs und Marktzins",
+          "goal": "Kurs und Marktzins",
+          "explanation": "Bei einer fest verzinslichen Anleihe sinkt der Marktwert typischerweise, wenn vergleichbare Marktrenditen steigen. Die exakte Reaktion hängt unter anderem von Laufzeit, Kupon und Rückzahlung ab.",
+          "example": "Eine bestehende Anleihe zahlt 2 %, neu ausgegebene vergleichbare Papiere bieten 5 %. Ein Käufer wird für die alte Anleihe meist einen Abschlag verlangen.",
+          "question": "Welche Bewegung ist plausibel?",
+          "options": [
+            "Der Kurs bestehender Niedrigkupons fällt",
+            "Der Kurs muss steigen",
+            "Marktzinsen haben nie Einfluss"
+          ],
+          "correct": 0,
+          "xp": 24,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "anleihen-rendite-3",
+          "title": "Ausfall und Nachrang",
+          "goal": "Ausfall und Nachrang",
+          "explanation": "Ein Zahlungsversprechen ist nur so gut wie die Zahlungsfähigkeit des Schuldners. Die Rangfolge im Insolvenzfall, Sicherheiten und Unternehmensliquidität beeinflussen das Ausfallrisiko.",
+          "example": "Eine hoch verschuldete Firma bietet 12 % Rendite auf eine nachrangige Anleihe. Die höhere Rendite kann ein höheres Ausfallrisiko widerspiegeln.",
+          "question": "Warum ist die hohe Rendite keine sichere Chance?",
+          "options": [
+            "Weil hohe Zinsen immer verboten sind",
+            "Weil der Schuldner ausfallen kann und Nachrang Gläubiger schwächt",
+            "Weil Anleihekurse nie schwanken"
+          ],
+          "correct": 1,
+          "xp": 34,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "etf-strukturen",
+      "title": "ETFs unter der Haube",
+      "branch": "etfs",
+      "parent": null,
+      "prerequisites": [],
+      "tier": 1,
+      "description": "Du untersuchst Indexmethodik, Fondsgröße, Tracking-Differenz, Kosten und Konzentration und erkennst den Unterschied zwischen ETF-Verpackung und dem tatsächlichen Risiko.",
+      "cost": 3,
+      "rewardPoints": 8,
+      "lessons": [
+        {
+          "id": "etf-strukturen-1",
+          "title": "Index und Fonds vergleichen",
+          "goal": "Index und Fonds vergleichen",
+          "explanation": "Ein ETF folgt einem Index oder einer anderen klaren Strategie. Er kann Aktien oder Anleihen bündeln, global streuen oder stark auf eine Branche konzentriert sein. Entscheidend ist die Indexzusammensetzung.",
+          "example": "Zwei ETFs tragen 'Welt' im Namen. Der eine enthält nur Industrieländer, der andere auch Schwellenländer. Die Produkte sind nicht identisch.",
+          "question": "Welche Prüfung klärt den Unterschied?",
+          "options": [
+            "Nur die Fondswährung ansehen",
+            "Indexmethodik und tatsächliche Ländergewichtung prüfen",
+            "Den kürzesten Namen wählen"
+          ],
+          "correct": 1,
+          "xp": 18,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "etf-strukturen-2",
+          "title": "Kosten und Tracking-Differenz",
+          "goal": "Kosten und Tracking-Differenz",
+          "explanation": "Die Gesamtkostenquote erfasst nicht alle realen Unterschiede zum Index. Tracking-Differenz, Handels-Spread, Steuern und Replikationsmethode können Renditeabweichungen erzeugen.",
+          "example": "Ein Fonds berechnet 0,2 % laufende Kosten, liegt aber über mehrere Jahre im Mittel um 0,5 Prozentpunkte hinter seinem Index. Die gesamte Abweichung verdient nähere Untersuchung.",
+          "question": "Welche Größe zeigt die tatsächliche Indexabweichung?",
+          "options": [
+            "Nur die gesetzliche Mindestanlage",
+            "Tracking-Differenz über vergleichbare Zeiträume",
+            "Nur die Zahl der Aktien"
+          ],
+          "correct": 1,
+          "xp": 24,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "etf-strukturen-3",
+          "title": "Fondsrisiken lesen",
+          "goal": "Fondsrisiken lesen",
+          "explanation": "Bei thesaurierenden Fonds werden Erträge wiederangelegt. Bei ausschüttenden Fonds fließen sie an Anleger. Beide können ähnliche Gesamtrenditen haben; die Ausschüttung ist kein kostenloser Zusatzgewinn.",
+          "example": "Ein ausschüttender ETF fällt am Ex-Tag um ungefähr die Ausschüttung, wenn sonst alles gleich bleibt. Der Anleger besitzt dann entsprechend mehr Geld außerhalb des Fonds.",
+          "question": "Welche Aussage ist korrekt?",
+          "options": [
+            "Ausschüttungen erhöhen die Gesamtrendite automatisch",
+            "Gesamtrendite berücksichtigt Kurs und Ausschüttung gemeinsam",
+            "Thesaurierende ETFs enthalten keine Risiken"
+          ],
+          "correct": 1,
+          "xp": 34,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "etf-depotbau",
+      "title": "ETF-Portfolio konstruieren",
+      "branch": "etfs",
+      "parent": "etf-strukturen",
+      "prerequisites": [
+        "portfolio-architekt",
+        "anleihen-rendite"
+      ],
+      "tier": 2,
+      "description": "Du verbindest Index- und Fondskenntnis mit Positionsgewichten und Anleihen, um ein nachvollziehbares Portfolio für konkrete Zeithorizonte zu planen.",
+      "cost": 3,
+      "rewardPoints": 11,
+      "lessons": [
+        {
+          "id": "etf-depotbau-1",
+          "title": "Zielgewicht festlegen",
+          "goal": "Zielgewicht festlegen",
+          "explanation": "Ein Portfolioziel beginnt bei Liquiditätsbedarf, Zeithorizont und Tragfähigkeit von Verlusten. Erst danach werden Anteile aus Aktien-ETFs und Anleihen bestimmt. Ein Musterportfolio ersetzt keine persönliche Risikoanalyse.",
+          "example": "Bei 1.000 € Anlagekapital ergeben 60 % Aktien und 40 % Anleihen zunächst 600 € und 400 €. Kurzfristig benötigte Mittel gehören nicht automatisch in diese Verteilung.",
+          "question": "Wie wird das Gewicht berechnet?",
+          "options": [
+            "60 % von 1.000 € = 600 €",
+            "60 % bedeutet 60 €",
+            "Gewichte müssen nicht zu 100 % passen"
+          ],
+          "correct": 0,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "etf-depotbau-2",
+          "title": "Überschneidungen prüfen",
+          "goal": "Überschneidungen prüfen",
+          "explanation": "Zwei ETFs können viele identische Unternehmen enthalten. Prüfe Länder-, Branchen- und Unternehmensanteile. Die Anzahl verschiedener Fondstitel ist keine gute Ersatzkennzahl für echte Streuung.",
+          "example": "Ein Technologie-ETF ergänzt einen breit gestreuten Weltfonds, dessen größter Anteil bereits Technologieunternehmen enthält. Die Konzentration kann trotz zweier Fonds steigen.",
+          "question": "Was ist zuerst zu prüfen?",
+          "options": [
+            "Anzahl der Produktnamen",
+            "Überschneidende Bestandteile und Gewichte",
+            "Nur die Farbe der Fondsliste"
+          ],
+          "correct": 1,
+          "xp": 32,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "etf-depotbau-3",
+          "title": "Portfolio nach Regeln pflegen",
+          "goal": "Portfolio nach Regeln pflegen",
+          "explanation": "Ein nachvollziehbares Rebalancing erfolgt nach vorher festgelegten Regeln, zum Beispiel Zeitintervall oder Gewichtsabweichung. Gebühren, Steuern und Marktstress können die Umsetzung verändern.",
+          "example": "Die Aktienquote steigt von 60 % auf 75 %. Ein regelmäßiges Rebalancing kann das ursprüngliche Risikoprofil wiederherstellen, garantiert aber keinen Mehrertrag.",
+          "question": "Was ist das Hauptziel?",
+          "options": [
+            "Marktrisiko auf die festgelegte Verteilung zurückführen",
+            "Jeden Börsenhochpunkt treffen",
+            "Täglich umschichten müssen"
+          ],
+          "correct": 0,
+          "xp": 42,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "orderbuch-liquiditaet",
+      "title": "Börsenorders verstehen",
+      "branch": "trading",
+      "parent": null,
+      "prerequisites": [],
+      "tier": 1,
+      "description": "Du lernst, weshalb Börsenkurse aus Kauf- und Verkaufsaufträgen entstehen und welche Kosten sich hinter einer scheinbar einfachen Order verbergen.",
+      "cost": 3,
+      "rewardPoints": 8,
+      "lessons": [
+        {
+          "id": "orderbuch-liquiditaet-1",
+          "title": "Bid und Ask unterscheiden",
+          "goal": "Bid und Ask unterscheiden",
+          "explanation": "Das höchste aktuelle Kaufgebot heißt Bid, das niedrigste Verkaufsangebot Ask. Die Differenz ist der Spread. Bei wenig gehandelten Aktien kann der Spread deutlich größer sein als bei liquiden Titeln.",
+          "example": "Bid liegt bei 99,80 €, Ask bei 100,20 €. Ein sofortiger Kauf gegen die günstigste Verkaufsorder startet bei ungefähr 100,20 € vor Gebühren.",
+          "question": "Welcher Preis ist für einen sofortigen kleinen Kauf näherliegend?",
+          "options": [
+            "99,80 €",
+            "100,20 €",
+            "Ein Durchschnitt ist garantiert"
+          ],
+          "correct": 1,
+          "xp": 18,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "orderbuch-liquiditaet-2",
+          "title": "Limit und Marktorder",
+          "goal": "Limit und Marktorder",
+          "explanation": "Eine Market-Order priorisiert die Ausführung, nicht den exakten Preis. Eine Limit-Order begrenzt beim Kauf den maximalen Ausführungspreis, garantiert aber keine Ausführung.",
+          "example": "Eine Aktie zeigt 50 €, ist aber sehr illiquide. Eine unlimitierte Market-Order kann oberhalb der letzten Kursanzeige ausgeführt werden.",
+          "question": "Welche Eigenschaft hat die Limit-Order?",
+          "options": [
+            "Sie garantiert jeden Kauf",
+            "Sie begrenzt den Höchstpreis, kann aber unerfüllt bleiben",
+            "Sie verhindert alle Kursverluste"
+          ],
+          "correct": 1,
+          "xp": 24,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "orderbuch-liquiditaet-3",
+          "title": "Liquidität im Stresstest",
+          "goal": "Liquidität im Stresstest",
+          "explanation": "Ein sichtbarer letzter Kurs beschreibt nicht zwingend die handelbare Menge. In volatilen Märkten können Orderbuchtiefe und Handelsvolumen schnell abnehmen.",
+          "example": "Du willst 2.000 Aktien sofort kaufen, im besten Angebot liegen aber nur 50 Stück. Die restlichen Stücke können zu ungünstigeren Preisen ausgeführt werden.",
+          "question": "Warum ist die Stückzahl wichtig?",
+          "options": [
+            "Weil die Order mehrere Preisstufen durchlaufen könnte",
+            "Weil alle Kurse immer identisch sind",
+            "Weil nur ganze Aktien handelbar sind"
+          ],
+          "correct": 0,
+          "xp": 34,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "orderkosten-slippage",
+      "title": "Transaktionskosten messen",
+      "branch": "trading",
+      "parent": "orderbuch-liquiditaet",
+      "prerequisites": [
+        "etf-strukturen"
+      ],
+      "tier": 2,
+      "description": "Du berechnest Gebühren, Spread und Slippage und erkennst, wann eine Handelsstrategie allein an ihren realen Kosten scheitert.",
+      "cost": 3,
+      "rewardPoints": 11,
+      "lessons": [
+        {
+          "id": "orderkosten-slippage-1",
+          "title": "Gesamtkosten ermitteln",
+          "goal": "Gesamtkosten ermitteln",
+          "explanation": "Eine Handelsgebühr ist nicht die einzige Belastung. Spread und Kursabweichung zwischen geplantem und ausgeführtem Preis können den tatsächlichen Einstieg verteuern. Vergleiche Gesamtkosten relativ zum Orderwert.",
+          "example": "Eine 100-€-Order kostet 1 € Gebühr und 0,40 € implizite Spreadkosten. Vereinfacht fallen 1,40 € bzw. 1,4 % beim Einstieg an.",
+          "question": "Welche Prozentzahl entspricht den Kosten?",
+          "options": [
+            "0,14 %",
+            "1,4 %",
+            "14 %"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "orderkosten-slippage-2",
+          "title": "Slippage nachvollziehen",
+          "goal": "Slippage nachvollziehen",
+          "explanation": "Slippage bezeichnet die Abweichung zwischen erwartetem und tatsächlich erhaltenem Ausführungskurs. Sie ist besonders bei geringer Liquidität oder starken Bewegungen relevant.",
+          "example": "Ein Auftrag wurde bei 20,00 € geplant, aber im Mittel bei 20,18 € ausgeführt. Die Slippage beträgt 0,18 € pro Aktie zusätzlich zu eventuellen Gebühren.",
+          "question": "Was ist hier Slippage?",
+          "options": [
+            "Die absolute Preisabweichung von 0,18 €",
+            "Immer die gesamte Depotperformance",
+            "Die jährliche Inflation"
+          ],
+          "correct": 0,
+          "xp": 32,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "orderkosten-slippage-3",
+          "title": "Tradingstrategie gegen Kosten prüfen",
+          "goal": "Tradingstrategie gegen Kosten prüfen",
+          "explanation": "Häufige Umschichtungen müssen ihren vermeintlichen Mehrertrag gegen Gebühren, Steuern und den Spread behaupten. Historische Rücktests ohne echte Ausführungskosten überschätzen häufig Ergebnisse.",
+          "example": "Eine Strategie erzielt vor Kosten 4 % pro Jahr, verursacht durch häufigen Handel 5 % Kosten. Nach diesen Kosten liegt sie rechnerisch im Minus.",
+          "question": "Was sollte in einem seriösen Backtest enthalten sein?",
+          "options": [
+            "Nur erfolgreiche Handelswochen",
+            "Gebühren, Spread, Slippage und realistische Ausführung",
+            "Nur die maximale Tagesrendite"
+          ],
+          "correct": 1,
+          "xp": 42,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "derivate-und-hebel",
+      "title": "Hebel & Derivaterisiken",
+      "branch": "trading",
+      "parent": "orderkosten-slippage",
+      "prerequisites": [
+        "risiko-basis"
+      ],
+      "tier": 3,
+      "description": "Du verstehst Options- und Terminkontrakte als riskante Instrumente und lernst Hebel, Sicherheitsleistungen und mögliche Verluste korrekt einzuordnen.",
+      "cost": 3,
+      "rewardPoints": 11,
+      "lessons": [
+        {
+          "id": "derivate-und-hebel-1",
+          "title": "Hebelwirkung",
+          "goal": "Hebelwirkung",
+          "explanation": "Ein gehebeltes Engagement reagiert stärker auf Preisbewegungen des Basiswerts. Bei fünfmaligem Hebel kann ein Kursverlust des Basiswerts von 10 % vereinfacht rund 50 % des eingesetzten Kapitals kosten, ohne Gebühren oder Finanzierung.",
+          "example": "Eine Position hat 5x Hebel und der Basiswert fällt um 10 %. Der mögliche rechnerische Verlust auf das eingesetzte Kapital ist groß, bevor Liquidationsregeln berücksichtigt werden.",
+          "question": "Welcher Verlust ist in der vereinfachten Rechnung plausibel?",
+          "options": [
+            "5 %",
+            "50 %",
+            "0 %"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "derivate-und-hebel-2",
+          "title": "Optionsrisiken verstehen",
+          "goal": "Optionsrisiken verstehen",
+          "explanation": "Der Käufer einer einfachen Kaufoption kann unter normalen Vertragsbedingungen höchstens die bezahlte Prämie verlieren. Der ungedeckte Verkäufer kann dagegen sehr hohe, bei manchen Kontrakten theoretisch unbegrenzte Verluste erleiden.",
+          "example": "Du bezahlst 200 € Prämie für eine Kaufoption. Bei Verfall ohne inneren Wert ist die gesamte Prämie verloren, auch wenn der Basiswert nur wenig gefallen ist.",
+          "question": "Welcher Fehler wäre gefährlich?",
+          "options": [
+            "Alle Optionspositionen als gleich riskant betrachten",
+            "Verfall und Zeitwert prüfen",
+            "Die gezahlte Prämie dokumentieren"
+          ],
+          "correct": 0,
+          "xp": 32,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "derivate-und-hebel-3",
+          "title": "Margin und Liquidationsrisiko",
+          "goal": "Margin und Liquidationsrisiko",
+          "explanation": "Eine Sicherheitsleistung ist kein garantierter maximaler Verlust. Kurslücken und schnelle Bewegungen können zu Nachschusspflichten oder ungünstigen Zwangsschließungen führen; die Bedingungen unterscheiden sich nach Produkt.",
+          "example": "Ein Händler hält einen gehebelten Terminkontrakt. Ein schneller Gegentrend reduziert die Sicherheitsleistung, der Broker schließt die Position. Zusätzliche Verluste können entstehen.",
+          "question": "Was muss vor dem Handel klar sein?",
+          "options": [
+            "Nur die beworbene Gewinnchance",
+            "Maximalrisiko, Liquidation und mögliche Nachschusspflichten",
+            "Nur der Hebelname"
+          ],
+          "correct": 1,
+          "xp": 42,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "biases-mentalmodelle",
+      "title": "Denkfehler beim Investieren",
+      "branch": "psychology",
+      "parent": null,
+      "prerequisites": [],
+      "tier": 1,
+      "description": "Du erkennst Ankereffekte, Verlustaversion und Bestätigungsfehler und lernst, deine Urteile gegen emotionale Schnellschlüsse abzusichern.",
+      "cost": 3,
+      "rewardPoints": 8,
+      "lessons": [
+        {
+          "id": "biases-mentalmodelle-1",
+          "title": "Ankereffekt erkennen",
+          "goal": "Ankereffekt erkennen",
+          "explanation": "Ein alter Kaufpreis ist kein zuverlässiger Anker für den künftigen Unternehmenswert. Bewerte heutige Chancen, Risiken und einen nachvollziehbaren Preisbereich unabhängig davon, was du selbst bezahlt hast.",
+          "example": "Du hast eine Aktie für 100 € gekauft, heute kostet sie 60 €. Die Entscheidung zum Halten sollte aus heutiger Bewertung entstehen, nicht allein aus dem Wunsch, wieder 100 € zu sehen.",
+          "question": "Welche Denkweise vermeidet den Ankereffekt?",
+          "options": [
+            "Nur auf den Einstiegspreis achten",
+            "Heute neu bewerten, ohne die eigene Kaufhistorie als Maßstab",
+            "Jede Verlustposition automatisch verkaufen"
+          ],
+          "correct": 1,
+          "xp": 18,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "biases-mentalmodelle-2",
+          "title": "Verlustaversion einordnen",
+          "goal": "Verlustaversion einordnen",
+          "explanation": "Verluste können emotional stärker wirken als gleich hohe Gewinne. Das kann zu riskantem Nachkaufen aus Trotz oder zu vorschnellem Verkaufen führen. Entscheidend sind vorher dokumentierte Regeln und die aktuelle Informationslage.",
+          "example": "Ein Depot fällt um 20 %. Ein Anleger verdoppelt die Position ohne neue Analyse, um den Verlust schneller aufzuholen. Das erhöht sein Konzentrationsrisiko.",
+          "question": "Worin liegt der mögliche Fehler?",
+          "options": [
+            "Risikoveränderung ohne neue Begründung",
+            "Die neue Beurteilung aller Kennzahlen",
+            "Ein festgelegtes Risikolimit"
+          ],
+          "correct": 0,
+          "xp": 24,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "biases-mentalmodelle-3",
+          "title": "Bestätigungsfehler umgehen",
+          "goal": "Bestätigungsfehler umgehen",
+          "explanation": "Wenn du nur Meldungen suchst, die deine These stützen, übersiehst du Risiken. Formuliere vor jeder Investition einen glaubwürdigen Grund, warum deine Schlussfolgerung falsch sein könnte.",
+          "example": "Du hältst einen Halbleiterwert und liest nur Wachstumsprognosen. Ein Bericht zu steigenden Investitionskosten könnte für die Gewinnentwicklung ebenso relevant sein.",
+          "question": "Welche Methode hilft?",
+          "options": [
+            "Nur optimistische Quellen lesen",
+            "Eine Gegenhypothese und überprüfbare Kriterien formulieren",
+            "Die letzten zwei positiven Handelstage analysieren"
+          ],
+          "correct": 1,
+          "xp": 34,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "entscheidungsjournal",
+      "title": "Entscheidungsjournal führen",
+      "branch": "psychology",
+      "parent": "biases-mentalmodelle",
+      "prerequisites": [
+        "quellenfinder"
+      ],
+      "tier": 2,
+      "description": "Du erstellst vor einer virtuellen Entscheidung ein prüfbares Protokoll mit Quellen, erwarteten Ergebnissen und Bedingungen zum Überdenken.",
+      "cost": 3,
+      "rewardPoints": 11,
+      "lessons": [
+        {
+          "id": "entscheidungsjournal-1",
+          "title": "Vorab-These dokumentieren",
+          "goal": "Vorab-These dokumentieren",
+          "explanation": "Schreibe Geschäftsmodell, Bewertung, Zeitrahmen und Risiken auf, bevor du einen Kauf entscheidest. Eine später veränderte Erinnerung an die ursprüngliche Begründung ist kein verlässlicher Leistungsnachweis.",
+          "example": "Eine Firma erscheint günstig. Du hältst vorab fest, welche Marge und welchen Free Cashflow du erwartest und bei welchen Abweichungen du deine Meinung ändern würdest.",
+          "question": "Was macht den späteren Rückblick ehrlich?",
+          "options": [
+            "Ursprüngliche Annahmen unverändert erhalten",
+            "Die Erwartungen nach den Ergebnissen umschreiben",
+            "Nur den letzten Kurs notieren"
+          ],
+          "correct": 0,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "entscheidungsjournal-2",
+          "title": "Konfidenz statt Gewissheit",
+          "goal": "Konfidenz statt Gewissheit",
+          "explanation": "Prognosen sollten eine angemessene Unsicherheit enthalten. Eine Wahrscheinlichkeit von 70 % heißt, dass ähnliche Ereignisse langfristig ungefähr in sieben von zehn Fällen eintreten sollten, nicht dass der konkrete Fall garantiert ist.",
+          "example": "Du hältst eine Margeverbesserung für wahrscheinlich, aber nicht sicher. Du notierst die erwartete Wahrscheinlichkeit und später den tatsächlichen Ausgang.",
+          "question": "Was beschreibt eine Prognosewahrscheinlichkeit?",
+          "options": [
+            "Eine sichere Aussage",
+            "Einen überprüfbaren Grad an Unsicherheit",
+            "Den aktuellen Aktienkurs"
+          ],
+          "correct": 1,
+          "xp": 32,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "entscheidungsjournal-3",
+          "title": "Entscheidung und Ergebnis trennen",
+          "goal": "Entscheidung und Ergebnis trennen",
+          "explanation": "Eine vernünftige Entscheidung kann wegen zufälliger Ereignisse ein schlechtes kurzfristiges Ergebnis erzielen; eine schlechte Entscheidung kann kurzfristig Gewinne bringen. Bewerte Prozess und Ergebnis getrennt.",
+          "example": "Eine belegte These scheitert an einem überraschenden externen Ereignis. Analysiere, welche Informationen vorher verfügbar waren und was du beim nächsten Mal verbessern kannst.",
+          "question": "Welche Bewertung ist sinnvoll?",
+          "options": [
+            "Nur den Gewinn betrachten",
+            "Entscheidungsqualität und tatsächliches Ergebnis getrennt prüfen",
+            "Jeden Verlust als Beleg für Unfähigkeit ansehen"
+          ],
+          "correct": 1,
+          "xp": 42,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "prognosen-kalibrieren",
+      "title": "Prognosen kalibrieren",
+      "branch": "psychology",
+      "parent": "entscheidungsjournal",
+      "prerequisites": [
+        "investment-these"
+      ],
+      "tier": 3,
+      "description": "Du überprüfst Prognosen über viele Fälle, misst die Güte deiner Wahrscheinlichkeiten und erkennst, wann du dein eigenes Wissen überschätzt.",
+      "cost": 3,
+      "rewardPoints": 11,
+      "lessons": [
+        {
+          "id": "prognosen-kalibrieren-1",
+          "title": "Kalibrierung verstehen",
+          "goal": "Kalibrierung verstehen",
+          "explanation": "Ein Analyst ist gut kalibriert, wenn Ereignisse, die er mit 70 % Wahrscheinlichkeit vorhersagt, langfristig in etwa 70 % der Fälle eintreten. Ein einzelner Fall reicht nicht für diese Aussage.",
+          "example": "Du machst 20 Prognosen mit 70 % Wahrscheinlichkeit. Treten 14 davon ein, ist das ein passender langfristiger Anteil; eine kleine Stichprobe bleibt unsicher.",
+          "question": "Welche Beobachtung gehört zur Kalibrierung?",
+          "options": [
+            "Häufigkeit der Treffer bei gleichartigen Wahrscheinlichkeiten",
+            "Nur die Anzahl der Diagramme",
+            "Nur das höchste Kursziel"
+          ],
+          "correct": 0,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "prognosen-kalibrieren-2",
+          "title": "Brier-Score als Denkwerkzeug",
+          "goal": "Brier-Score als Denkwerkzeug",
+          "explanation": "Beim Brier-Score wird die quadrierte Abweichung zwischen geschätzter Ereigniswahrscheinlichkeit und Ausgang (0 oder 1) verwendet. Ein kleinerer mittlerer Score ist bei vergleichbaren Aufgaben besser.",
+          "example": "Du sagst ein Ereignis mit 80 % Wahrscheinlichkeit voraus, es tritt ein. Der quadratische Fehler beträgt (0,8 - 1)^2 = 0,04.",
+          "question": "Welcher Score entsteht?",
+          "options": [
+            "0,64",
+            "0,04",
+            "0,2"
+          ],
+          "correct": 1,
+          "xp": 32,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "prognosen-kalibrieren-3",
+          "title": "Eigene Prognosen verbessern",
+          "goal": "Eigene Prognosen verbessern",
+          "explanation": "Vergleiche über Monate viele Prognosen, trenne leicht und schwer überprüfbare Fragen und dokumentiere, warum du deine Einschätzung geändert hast. Gute Kalibrierung bedeutet nicht perfekte Treffer.",
+          "example": "Ein Analyst trifft seltene Ereignisse schlecht, obwohl seine häufigen Prognosen gut aussehen. Er wertet deshalb die Trefferquote nach Wahrscheinlichkeit und Themenbereich getrennt aus.",
+          "question": "Was verbessert den Lernwert?",
+          "options": [
+            "Nur profitable Entscheidungen zählen",
+            "Revisionsgründe und Fehler nach Themen auswerten",
+            "Immer 50 % prognostizieren"
+          ],
+          "correct": 1,
+          "xp": 42,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
