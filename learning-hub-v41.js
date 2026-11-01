@@ -153,7 +153,7 @@ function skillIndex(){
  }
  if(selectedLesson)return shell('skilllessons',body+renderLesson(current,selectedLesson));
  const done=mastered(current.id),selected=enrolled(current.id),ready=purchaseReady(current);
- body+='<div class="fp41-detail"><button type="button" class="btn secondary" data-fp43-all-skills>Alle Skill-Lektionen anzeigen</button><span class="eyebrow">'+escape(catalog.branches.find(b=>b.id===current.branch)?.title||'Spezialisierung')+' · AUFBAUSTUFE '+current.tier+'</span>'+
+ body+='<div class="fp41-detail"><button type="button" class="btn secondary" data-fp43-all-skills>Alle Skill-Lektionen ansehen</button><span class="eyebrow">'+escape(catalog.branches.find(b=>b.id===current.branch)?.title||'Spezialisierung')+' · AUFBAUSTUFE '+current.tier+'</span>'+
  '<h2>'+escape(current.title)+'</h2><p>'+escape(current.description)+'</p>'+
  (current.parent?'<p class="fp41-precondition">Vorheriger Skill: '+escape(titleOf(current.parent))+(mastered(current.parent)?' ✓':', noch nicht abgeschlossen')+'</p>':'')+
  '<div class="fp41-detail-status">'+(done?'Skill erlernt · Abschlussbelohnung erhalten':selected?'Lernpfad freigeschaltet':ready?'Noch nicht gewählt · Kosten 3 Forschungspunkte':'Noch gesperrt')+'</div>'+
@@ -172,7 +172,7 @@ function renderLesson(skill,id){
  const l=skill.lessons.find(x=>x.id===id);
  if(!l)return '<div class="fp41-loading">Die Lektion existiert nicht.</div>';
  const done=completed(id);
- return '<div class="fp41-study"><button type="button" class="btn secondary" data-fp41-lesson-back>← Alle Lektionen dieses Skills</button>'+
+ return '<div class="fp41-study"><button type="button" class="btn secondary" data-fp41-lesson-back>Alle Lektionen dieses Skills</button>'+
  '<div class="eyebrow">'+escape(skill.title)+' · LEKTION '+l.sequence+'</div><h2>'+escape(l.title)+'</h2>'+
  '<div class="fp41-reading"><h3>Den Zusammenhang verstehen</h3><p>'+escape(l.explanation)+'</p><h3>Beispiel aus der Praxis</h3><p>'+escape(l.example)+'</p></div>'+
  '<section class="fp41-question"><span class="eyebrow">WISSENSCHECK</span><h3>'+escape(l.question)+'</h3>'+
@@ -183,7 +183,7 @@ function specials(){
  if(!catalog)return shell('speciallessons','<div class="fp41-loading">Spezialfälle werden geladen.</div>');
  let body='<div class="fp41-intro"><span class="eyebrow">AUSSERGEWÖHNLICHE FORSCHUNGSAUFTRÄGE</span><h1>Individuelle Speziallektionen</h1><p>Diese Fälle gehören absichtlich nicht zu einem ganzen Skill. Sie verbinden mehrere bereits erlernte Fachgebiete zu einer einzigen anspruchsvollen Entscheidung mit realistischeren Zielkonflikten. Zugang gibt es nur durch passende Beförderungen oder Artefakte.</p></div>';
  if(selectedSpecial){const item=catalog.special.find(x=>x.id===selectedSpecial);if(item){
-  body+='<button class="btn secondary" data-fp41-special-back>← Alle Spezialfälle</button><article class="fp41-special-detail"><h2>'+escape(item.title)+'</h2><p>'+escape(item.description)+'</p><h3>Dein Forschungsfall</h3><p>'+escape(item.case)+'</p>'+(item.sections||[]).map((section,i)=>'<section class="fp41-case-section"><span class="eyebrow">PHASE '+(i+1)+' VON '+item.sections.length+'</span><h3>'+escape(section.heading)+'</h3>'+section.paragraphs.map(p=>'<p>'+escape(p)+'</p>').join('')+'</section>').join('')+'<div class="fp41-case-steps"><h3>Arbeitsauftrag</h3><p>1. Trenne belegte Fakten und eigene Annahmen. 2. Erstelle mindestens ein negatives und ein positives Szenario. 3. Benenne, welche zusätzliche Information deine Entscheidung verändern könnte.</p><p>Dieser anspruchsvolle Spezialfall ist die erste inhaltliche Fassung. Eine geprüfte Freitextabgabe und besondere Vergütung folgen erst mit dem erweiterten Missionssystem.</p></div></article>';
+  body+='<button class="btn secondary" data-fp41-special-back>Alle Spezialfälle</button><article class="fp41-special-detail"><h2>'+escape(item.title)+'</h2><p>'+escape(item.description)+'</p><h3>Dein Forschungsfall</h3><p>'+escape(item.case)+'</p>'+(item.sections||[]).map((section,i)=>'<section class="fp41-case-section"><span class="eyebrow">PHASE '+(i+1)+' VON '+item.sections.length+'</span><h3>'+escape(section.heading)+'</h3>'+section.paragraphs.map(p=>'<p>'+escape(p)+'</p>').join('')+'</section>').join('')+'<div class="fp41-case-steps"><h3>Arbeitsauftrag</h3><p>1. Trenne belegte Fakten und eigene Annahmen. 2. Erstelle mindestens ein negatives und ein positives Szenario. 3. Benenne, welche zusätzliche Information deine Entscheidung verändern könnte.</p><p>Dieser anspruchsvolle Spezialfall ist die erste inhaltliche Fassung. Eine geprüfte Freitextabgabe und besondere Vergütung folgen erst mit dem erweiterten Missionssystem.</p></div></article>';
   return shell('speciallessons',body);
  }}
  body+='<div class="fp41-special-list">'+catalog.special.map(s=>{
