@@ -1,0 +1,223 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-11-01",
+  "policy": "Nur nachprüfbare veröffentlichte Unternehmensdaten; Quartal, Geschäftsjahr, Definition, Währung und Quelle jedes Werts sind anzugeben. Fehlende Kennzahlen niemals schätzen.",
+  "companies": [
+    {
+      "symbol": "SIE.DE",
+      "name": "Siemens AG",
+      "period": "Q3 GJ 2026",
+      "period_end": "2026-06-30",
+      "published": "2026-08-06",
+      "currency": "EUR",
+      "unit": "Mrd.",
+      "source": {
+        "title": "Siemens AG – Ergebnisveröffentlichung Q3 GJ 2026",
+        "url": "https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q3-gj-2026"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Umsatz",
+          "value": 20.8,
+          "previous": 19.4,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Nominale Konzernumsätze; vergleichbares Wachstum gesondert ausgewiesen."
+        },
+        {
+          "key": "net_income",
+          "label": "Konzernergebnis",
+          "value": 2.6,
+          "previous": 2.2,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "fcf",
+          "label": "Free Cashflow",
+          "value": 4.1,
+          "previous": 2.9,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "industrial_profit",
+          "label": "Ergebnis industrielles Geschäft",
+          "value": 3.5,
+          "previous": 2.8,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "industrial_margin",
+          "label": "Marge industrielles Geschäft",
+          "value": 17.3,
+          "previous": 14.9,
+          "unit": "%",
+          "comparison": "Vorjahresquartal",
+          "change_kind": "percentage_points"
+        }
+      ],
+      "assessment": "Umsatz und Ergebnis des industriellen Geschäfts sind gestiegen; der freie Cashflow verbesserte sich deutlich. Prüfe für die Bewertung, ob die jüngste Entwicklung nachhaltig ist und wie viel Wachstum bereits im Aktienkurs erwartet wird.",
+      "risks": [
+        "Industriezyklus und Investitionsnachfrage",
+        "Bewertungsniveau und Ergebnisentwicklung",
+        "Quervergleich von Segmentmarge und Konzernmarge vermeiden"
+      ]
+    },
+    {
+      "symbol": "BAYN.DE",
+      "name": "Bayer AG",
+      "period": "Q2 2026",
+      "period_end": "2026-06-30",
+      "published": "2026-08-04",
+      "currency": "EUR",
+      "unit": "Mrd.",
+      "source": {
+        "title": "Bayer – Medien-Update Q2 2026",
+        "url": "https://www.bayer.com/de-de/ueber-uns/veranstaltungen/2026-08-04-media-update-q2"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Konzernumsatz",
+          "value": 10.872,
+          "previous": 10.739,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Die separat gemeldete währungs- und portfoliobereinigte Wachstumsrate beträgt 2,2 %."
+        },
+        {
+          "key": "adjusted_ebitda",
+          "label": "EBITDA vor Sondereinflüssen",
+          "value": 2.144,
+          "previous": 2.105,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Bereinigte Kennzahl; nicht mit unbereinigtem EBIT verwechseln."
+        },
+        {
+          "key": "fcf",
+          "label": "Free Cashflow",
+          "value": -0.371,
+          "unit": "Mrd. €",
+          "note": "Negativer freier Cashflow unter anderem wegen Vergleichszahlungen. Kein Vorjahreswert im geprüften Ausgangsmaterial."
+        },
+        {
+          "key": "net_debt",
+          "label": "Nettofinanzverschuldung",
+          "value": 33.647,
+          "unit": "Mrd. €",
+          "note": "Bestandsgröße zum 30.06.2026, kein Quartals-Cashflow."
+        },
+        {
+          "key": "net_income",
+          "label": "Konzernergebnis",
+          "value": 0.219,
+          "unit": "Mrd. €",
+          "note": "Veröffentlichter Quartalswert."
+        }
+      ],
+      "assessment": "Das bereinigte operative Ergebnis verbessert sich leicht, während negativer Free Cashflow und hohe Nettofinanzschulden besondere Aufmerksamkeit verlangen. Sondereffekte, Rechtsrisiken und Finanzierungsbedarf separat prüfen.",
+      "risks": [
+        "Rechtliche Verpflichtungen und Zahlungen",
+        "Verschuldung und Refinanzierung",
+        "Bereinigte und berichtete Gewinne nicht verwechseln"
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "period": "Q2 GJ 2027",
+      "period_end": "2026-07-26",
+      "published": "2026-08-26",
+      "currency": "USD",
+      "unit": "Mrd.",
+      "source": {
+        "title": "NVIDIA – Q2 FY2027 Financial Results",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Umsatz",
+          "value": 96.221,
+          "previous": 46.743,
+          "unit": "Mrd. $",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "net_income",
+          "label": "Nettogewinn (GAAP)",
+          "value": 59.688,
+          "previous": 26.422,
+          "unit": "Mrd. $",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "operating_income",
+          "label": "Operatives Ergebnis (GAAP)",
+          "value": 63.734,
+          "previous": 28.44,
+          "unit": "Mrd. $",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "gross_margin",
+          "label": "Bruttomarge (GAAP)",
+          "value": 75,
+          "previous": 72.4,
+          "unit": "%",
+          "comparison": "Vorjahresquartal",
+          "change_kind": "percentage_points"
+        },
+        {
+          "key": "diluted_eps",
+          "label": "Verwässertes EPS (GAAP)",
+          "value": 2.46,
+          "previous": 1.08,
+          "unit": "$/Aktie",
+          "comparison": "Vorjahresquartal"
+        }
+      ],
+      "assessment": "Das Unternehmen meldet starkes Umsatz- und Ergebniswachstum sowie eine hohe Bruttomarge. Die Bewertung muss berücksichtigen, wie lange das hohe Wachstum anhält, ob KI-Investitionen nachlassen könnten und welche Erwartungen bereits eingepreist sind.",
+      "risks": [
+        "Zyklische KI-Infrastrukturausgaben",
+        "Wettbewerb und Exportregeln",
+        "Hohe Erwartungen an künftiges Wachstum"
+      ]
+    },
+    {
+      "symbol": "BYW.MU",
+      "name": "BayWa AG",
+      "period": "Q1 2026",
+      "period_end": "2026-03-31",
+      "published": "2026-05-26",
+      "currency": "EUR",
+      "unit": "Mrd.",
+      "source": {
+        "title": "BayWa AG – Quartalsmitteilung Q1 2026",
+        "url": "https://www.baywa.com/presseinformationen/210526_pi_baywa_quartalsmitteilung-q1-2026"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Konzernumsatz",
+          "value": 2.3,
+          "previous": 3.6,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Nicht organisch vergleichbar: Portfolioverkäufe und Sortimentsbereinigung beeinflussen die Veränderung."
+        }
+      ],
+      "assessment": "BayWa berichtet trotz Restrukturierungsmaßnahmen einen deutlich geringeren Konzernumsatz. Die Quartalsmeldung enthält nur eingeschränkte Kennzahlen; sie nennt einen über dem Vorjahr liegenden bereinigten EBITDA-Wert ohne öffentlich überprüfbaren Absolutwert an dieser Stelle. Finanzierungs- und Sanierungsrisiken dominieren die Einordnung.",
+      "risks": [
+        "Restrukturierung und Liquidität",
+        "Verschiebung der Abschlussveröffentlichungen",
+        "Umsatzveränderung wegen Portfolioverkäufen nur eingeschränkt vergleichbar"
+      ],
+      "caution": "Veröffentlichte Informationen zum Q1 2026 sind eingeschränkt; fehlende Bilanz- und Ergebniswerte werden bewusst nicht ergänzt."
+    }
+  ]
+}
