@@ -25,8 +25,9 @@ const points=()=>Number(accounts[0]?.research_points)||0;
 const earnedXp=()=>Number(profiles[0]?.xp)||0;
 const promotionsEarned=()=>Number(profiles[0]?.promotion_count)||0;
 const titleOf=id=>bySkill(id)?.title||id;
-const MAP_W=1800,MAP_H=1800,MAP_CX=885,MAP_NODE_W=300;
-const mapX=[75,515,955,1395],mapY=[295,605,915,1225,1535];
+const MAP_W=2060,MAP_H=1875,MAP_CX=1000,MAP_NODE_W=300;
+const mapX=[190,640,1090,1540],mapY=[295,605,915,1260,1575];
+const nodePos=s=>{const x=mapX[catalog.branches.findIndex(b=>b.id===s.branch)],y=mapY[Math.min(4,s.tier-1)];if(s.tier!==4)return {x,y,w:MAP_NODE_W};const siblings=catalog.skills.filter(q=>q.branch===s.branch&&q.tier===4),i=siblings.findIndex(q=>q.id===s.id);return {x:x+[-145,0,145][Math.min(2,Math.max(0,i))],y,w:136};};
 let selectedMap='',mapZoom=.74,mapLeft=420,mapTop=0;
 function shell(active,content){
  return '<div class="fp42-learn-sub">'+
@@ -46,11 +47,10 @@ function basics(){
  return shell('basics',window.FinanzPilotJourney?.renderHome?.()||'<div class="fp41-loading">Die Grundlagen werden geladen.</div>');
 }
 function mapNode(s){
- const x=mapX[catalog.branches.findIndex(b=>b.id===s.branch)],y=mapY[s.tier-1];
- const done=mastered(s.id),active=enrolled(s.id),ready=purchaseReady(s);
+ const {x,y,w}=nodePos(s),done=mastered(s.id),active=enrolled(s.id),ready=purchaseReady(s);
  const cls=done?'done':active?'selected':ready?'ready':'locked';
- return '<button type="button" class="fp42-map-node '+cls+(selectedMap===s.id?' focused':'')+'" style="left:'+x+'px;top:'+y+'px;width:'+MAP_NODE_W+'px" data-fp42-node="'+escape(s.id)+'" aria-label="'+escape(s.title)+', '+(done?'erlernt':active?'ausgewählt':ready?'freischaltbar':'Voraussetzung fehlt')+'">'+
- '<span class="fp42-map-symbol">'+(done?'✓':s.tier)+'</span><strong>'+escape(s.title)+'</strong><small>'+escape(s.description)+'</small><em>'+(done?'✓ Erlernt':active?'Lernweg aktiv':ready?'Für 3 FP auswählbar':'Benötigt vorherigen Skill')+'</em></button>';
+ return '<button type="button" class="fp42-map-node '+cls+(w<200?' compact':'')+(selectedMap===s.id?' focused':'')+'" style="left:'+x+'px;top:'+y+'px;width:'+w+'px" data-fp42-node="'+escape(s.id)+'" aria-label="'+escape(s.title)+', '+(done?'erlernt':active?'ausgewählt':ready?'freischaltbar':'Voraussetzung fehlt')+'">'+
+ '<span class="fp42-map-symbol">'+(done?'✓':s.tier)+'</span><strong>'+escape(s.title)+'</strong><small>'+escape(s.description)+'</small><em>'+(done?'✓ Erlernt':active?'Lernweg aktiv':ready?'Für 3 FP auswählbar':'Voriger Skill fehlt')+'</em></button>';
 }
 function skillDetail(){
  if(!selectedMap)return '<div class="fp42-detail-empty"><h3>Wähle einen Skill</h3><p>Tippe auf einen Knoten in der Karte. Hier siehst du, was du lernst, welche Voraussetzungen fehlen und wie du zu den Lektionen kommst.</p></div>';
@@ -66,15 +66,12 @@ function skillDetail(){
  '<button type="button" class="btn" data-fp42-open="'+escape(s.id)+'">Zu den Skill-Lektionen →</button></div>';
 }
 function mapLines(){
- const c=catalog,edges=[];
- for(let i=0;i<c.branches.length;i++){
-  const nodes=c.skills.filter(x=>x.branch===c.branches[i].id).sort((a,b)=>a.tier-b.tier);
-  const x=mapX[i]+MAP_NODE_W/2;
-  edges.push('<path class="fp42-line" d="M'+MAP_CX+',160 C'+MAP_CX+',238 '+x+',180 '+x+','+mapY[0]+'" />');
-  for(let k=1;k<nodes.length;k++){
-   const startY=mapY[k-1]+145,toY=mapY[k];
-   edges.push('<path class="fp42-line'+(mastered(nodes[k-1].id)?' lit':'')+'" d="M'+x+','+startY+' C'+x+','+(startY+90)+' '+x+','+(toY-70)+' '+x+','+toY+'" />');
-  }
+ const edges=[];
+ for(const s of catalog.skills){
+  const to=nodePos(s),tx=to.x+to.w/2,ty=to.y;
+  if(!s.parent){edges.push('<path class="fp42-line" d="M'+MAP_CX+',160 C'+MAP_CX+',240 '+tx+',210 '+tx+','+ty+'" />');continue}
+  const from=bySkill(s.parent);if(!from)continue;const p=nodePos(from),fx=p.x+p.w/2,fy=p.y+(p.w<200?168:145);
+  edges.push('<path class="fp42-line'+(mastered(s.parent)?' lit':'')+'" d="M'+fx+','+fy+' C'+fx+','+(fy+90)+' '+tx+','+(ty-75)+' '+tx+','+ty+'" />');
  }
  return edges.join('');
 }
