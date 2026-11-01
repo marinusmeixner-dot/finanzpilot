@@ -1,0 +1,26 @@
+/* v43 responsive seamless four-card learning menu and award workshop */
+.fp42-learn-entry.fp-tab-hub-item{border-radius:17px!important;overflow:hidden;background:var(--card,#173643);border:1px solid #4c6a73;box-shadow:0 4px 16px #0002}
+.fp42-learn-entry.fp-tab-hub-item:hover,.fp42-learn-entry.fp-tab-hub-item:focus-visible{border-color:#87d9b6;background:#214b46}
+.fp42-learn-entry .fp-tab-hub-number{border-radius:11px}
+.fp43-shard-page{padding:22px 20px;margin-bottom:22px;border:1px solid #4e8070;border-radius:19px;background:linear-gradient(150deg,#173d40,#17333d);display:grid;gap:15px}
+.fp43-shard-head h2{font-size:22px;margin:7px 0}
+.fp43-shard-head p{font-size:14px;line-height:1.7;color:#c3d8d5}
+.fp43-shard-balances{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.fp43-shard-balances>div{border:1px solid #4c6f6a;border-radius:11px;background:#1c4b44;padding:13px;display:grid;gap:8px}
+.fp43-shard-balances small{font-size:11px;color:#b9d7ca}
+.fp43-shard-balances b{font-size:22px}
+.fp43-shard-caption,.fp43-shard-feedback,.fp43-shard-error{font-size:12px;line-height:1.65;color:#c1dcd3}
+.fp43-shard-error{color:#ffd2bc}
+.fp43-craft-grid{display:grid;gap:10px}
+.fp43-craft-card{background:#13313b;padding:17px;border:1px solid #658274;border-radius:13px;display:grid;gap:8px}
+.fp43-craft-card.redeemed{opacity:.7}
+.fp43-craft-card h3{font-size:18px;margin:0}
+.fp43-craft-card p{font-size:13px;line-height:1.7;color:#d2e5da}
+.fp43-craft-choices{display:flex;gap:9px;flex-wrap:wrap}
+.fp43-reset-warning{margin-top:16px;border:1px solid #b98a63;border-radius:14px;padding:16px}
+.fp43-reset-warning summary{cursor:pointer;font-size:13px;font-weight:700;color:#f0d8c2}
+.fp43-reset-warning p{color:#c7c7c4;font-size:12px;line-height:1.65;margin:12px 0}
+.fp43-header-pill{display:inline-flex;align-items:center;gap:5px;border-radius:99px;white-space:nowrap;border:1px solid #426b68;background:#1b4542;color:#e0f6ea;padding:7px 10px;font-size:12px;font-weight:600;cursor:pointer}
+.fp43-header-pill:hover,.fp43-header-pill:focus-visible{border-color:#99e9c4}
+.fp43-header-pill strong{font-size:13px}
+@media(max-width:650px){.topbar .header-right{gap:5px;flex-wrap:nowrap}.topbar .header-right #today-date{display:none}.fp43-header-pill{font-size:11px;padding:6px 8px}.fp43-header-pill strong{font-size:11px}.fp43-shard-page{padding:15px}.fp43-shard-balances b{font-size:19px}}
