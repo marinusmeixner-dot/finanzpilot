@@ -38,7 +38,21 @@
               "correct": 2,
               "explanation": "5.000 € Vermögen minus 2.000 € Schulden sind 3.000 €. Andere Vermögenswerte oder Verpflichtungen wurden hier nicht berücksichtigt."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Einkommen und Kontostand sind nicht dasselbe",
+              "text": "Einkommen beschreibt, wie viel Geld über einen Zeitraum hereinkommt. Vermögen ist ein Bestand zu einem Stichtag. Wer 2.500 € verdient, aber alles ausgibt, hat trotz Einkommen keinen zusätzlichen Geldpuffer aufgebaut. Auch Kredite zählen nicht als selbst verdientes Vermögen."
+            },
+            {
+              "heading": "So denkst du in echten Geldflüssen",
+              "text": "Stelle für einen Monat die eingehenden Zahlungen den festen und veränderlichen Ausgaben gegenüber. Der verbleibende Betrag kann für einen Notgroschen oder spätere Ziele dienen. Eine Rückzahlung von Schulden kann die finanzielle Lage ebenfalls verbessern, auch wenn das Geld nicht auf dem Girokonto bleibt."
+            }
+          ],
+          "challenge": {
+            "prompt": "Du bekommst 1.400 € im Monat, zahlst 650 € feste Kosten und 480 € variable Ausgaben. Wie viel bleibt übrig – und warum ist das nicht automatisch dein gesamtes Vermögen?",
+            "solution": "1.400 − 650 − 480 = 270 € Monatsüberschuss. Vermögen berücksichtigt zusätzlich vorhandene Guthaben, Sachwerte und Schulden; 270 € sind zunächst nur der freie Betrag dieses Monats."
+          }
         },
         {
           "id": "budget-reserve",
@@ -67,7 +81,21 @@
               "correct": 1,
               "explanation": "Eine Notreserve schützt vor erzwungenen Verkäufen im ungünstigen Börsenmoment."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Drei Töpfe statt einer einzigen Zahl",
+              "text": "Erstens: notwendige laufende Kosten. Zweitens: eine für ungeplante Ausgaben verfügbare Reserve. Drittens: Geld für mittel- und langfristige Ziele. Die Aufteilung ist keine gesetzliche Regel; wichtig ist, dass kurzfristig benötigtes Geld nicht von einem Börsengewinn abhängen muss."
+            },
+            {
+              "heading": "Wie viel Reserve ist sinnvoll?",
+              "text": "Das hängt unter anderem von Job- und Einkommenssicherheit, Haushalt, Versicherungsschutz und möglichen Reparaturkosten ab. Eine bestimmte Monatszahl ist nur eine grobe Faustregel. Entscheidend ist, welche unerwarteten Ausgaben du ohne Verkauf riskanter Anlagen bezahlen könntest."
+            }
+          ],
+          "challenge": {
+            "prompt": "Du hast 1.000 € zur Verfügung, brauchst in vier Monaten sicher 700 € und möchtest trotzdem Aktien kennenlernen. Wie würdest du beide Ziele trennen?",
+            "solution": "Die 700 € für den festen Termin solltest du verfügbar und möglichst wertstabil halten. Nur der tatsächlich entbehrliche Rest könnte, je nach Notreserve und Risikotragfähigkeit, für längerfristige Investments infrage kommen."
+          }
         },
         {
           "id": "sparen-investieren",
@@ -96,7 +124,21 @@
               "correct": 0,
               "explanation": "Lange Zeiträume eröffnen Möglichkeiten, schützen aber nicht vor Verlusten."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Rendite hat verschiedene Bestandteile",
+              "text": "Eine Anlage kann durch Kurssteigerungen, Zinsen oder Ausschüttungen Erträge liefern. Die tatsächlich nutzbare Rendite hängt außerdem von Gebühren, Steuern und der Entwicklung der Kaufkraft ab. Eine hohe historische Rendite ist keine Zusage für das nächste Jahr."
+            },
+            {
+              "heading": "Der Zeitraum bestimmt, wie viel Schwankung du tragen kannst",
+              "text": "Für einen festen Betrag in wenigen Monaten ist Planbarkeit zentral. Bei langfristigen Zielen können schwankende Anlagen eine Rolle spielen. Auch nach 15 Jahren können Aktien einen Verlust aufweisen; ausreichend Zeit vermindert das Risiko nicht vollständig."
+            }
+          ],
+          "challenge": {
+            "prompt": "Du hast zwei Ziele: einen Laptop in drei Monaten und einen langfristigen Vermögensaufbau über 20 Jahre. Welches Ziel verträgt eher Aktienkursschwankungen?",
+            "solution": "Der langfristige Vermögensaufbau kann sie grundsätzlich eher vertragen. Geld für einen Laptop in drei Monaten sollte nicht von kurzfristigen Börsenkursen abhängig sein."
+          }
         },
         {
           "id": "was-ist-boerse",
@@ -125,7 +167,21 @@
               "correct": 1,
               "explanation": "Preis und geschätzter Wert sind unterschiedliche Größen."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Ein Preis entsteht durch Aufträge",
+              "text": "Käufer bieten Geld für eine Aktie; Verkäufer verlangen einen Preis. Wenn passende Aufträge zusammenkommen, entsteht ein Handel. Ein Chart zeigt solche vergangenen Preise und keinen garantierten zukünftigen Unternehmenswert. Der letzte Kurs kann sich zwischen Börsenplätzen unterscheiden."
+            },
+            {
+              "heading": "Preis, Wert und Nachrichten haben verschiedene Rollen",
+              "text": "Eine Meldung kann die Erwartungen vieler Anleger gleichzeitig verändern. Daraus kann ein neuer Kurs entstehen, auch wenn die Firma heute keine neue Maschine verkauft hat. Umgekehrt kann eine Aktie fallen, obwohl der Umsatz wächst: Vielleicht hatten die Anleger zuvor noch stärkere Ergebnisse erwartet."
+            }
+          ],
+          "challenge": {
+            "prompt": "Eine Firma erzielt mehr Gewinn als im Vorjahr. Die Aktie fällt nach dem Bericht trotzdem um fünf Prozent. Welche zwei Erklärungen würdest du zuerst prüfen?",
+            "solution": "Zum Beispiel, ob der Gewinn unter der vorherigen Markterwartung lag und ob der Ausblick oder die künftigen Margen enttäuscht haben. Allein aus einem Kursrückgang folgt keine sichere Erklärung."
+          }
         },
         {
           "id": "anlagearten",
@@ -154,7 +210,21 @@
               "correct": 0,
               "explanation": "ETF ist die Abkürzung für Exchange Traded Fund; entscheidend ist, welche Anlagen der Fonds hält."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Wer trägt welches Risiko?",
+              "text": "Bei einer Aktie bist du an Chancen und Verlusten des Unternehmens beteiligt. Bei einer Anleihe besitzt du grundsätzlich eine Forderung gegenüber einem Schuldner und trägst unter anderem Ausfallrisiko. Ein Fonds kann viele Anlagen bündeln, aber die Zusammensetzung bestimmt sein Risiko."
+            },
+            {
+              "heading": "ETF sagt nur etwas über die Verpackung",
+              "text": "Ein ETF kann beispielsweise Aktien, Anleihen oder andere Werte abbilden. Entscheidend sind der zugrunde liegende Index oder die Anlagestrategie, die Kosten und die Streuung. Ein einzelner Branchen-ETF kann trotz vieler Titel stark konzentriert sein."
+            }
+          ],
+          "challenge": {
+            "prompt": "Zwei ETFs stehen zur Auswahl: einer hält über tausend Unternehmen weltweit, der andere zwanzig Firmen einer einzigen Branche. Sind beide gleich breit gestreut?",
+            "solution": "Nein. Beide sind börsengehandelte Fonds, aber der weltweite Fonds verteilt Einzel- und Branchenrisiken breiter. Das allgemeine Marktrisiko bleibt dennoch bestehen."
+          }
         },
         {
           "id": "bruecke-1",
@@ -183,7 +253,21 @@
               "correct": 1,
               "explanation": "Diese Unterscheidung brauchst du für die nächsten Unternehmenslektionen."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Vier Fragen vor jeder Geldanlage",
+              "text": "Wofür ist das Geld gedacht? Wann benötigst du es? Welchen Verlust könntest du aushalten, ohne das Ziel zu gefährden? Was kostet die Anlage insgesamt? Diese Reihenfolge schützt davor, nur wegen einer vielversprechenden Schlagzeile zu handeln."
+            },
+            {
+              "heading": "Wie du das Gelernte überprüfst",
+              "text": "Betrachte nie nur die höchste Rendite. Eine Anlage mit großer möglicher Schwankung kann für einen festen Termin ungeeignet sein, auch wenn das Unternehmen langfristig attraktiv ist. Die beste Anlageform hängt von Ziel und Risiko ab."
+            }
+          ],
+          "challenge": {
+            "prompt": "Du brauchst dein gesamtes Erspartes in sechs Wochen für eine Rechnung. Ein Freund empfiehlt eine Aktie mit angeblich sicherem schnellen Gewinn. Was würdest du ihm entgegnen?",
+            "solution": "Weder Aktiengewinne noch kurzfristige Kurssteigerungen sind sicher. Für eine fällige Zahlung zählt vor allem, dass du den Betrag rechtzeitig verfügbar hast."
+          }
         }
       ]
     },
