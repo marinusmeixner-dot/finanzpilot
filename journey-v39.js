@@ -50,7 +50,7 @@ function brief(){
  const completed=s.modules.filter(m=>isDone(m.id)).length,here=i+1===now,locked=i>0&&!finishedStage(i);
  return '<button type="button" class="fp39-stage'+(here?' current':'')+(locked?' locked':'')+'" data-journey-stage="'+(i+1)+'" aria-label="Stufe '+(i+1)+': '+esc(s.title)+', '+completed+' von '+s.modules.length+' Lektionen abgeschlossen"><span class="fp39-stage-num">'+String(i+1).padStart(2,'0')+'</span><span class="fp39-stage-body"><strong>'+esc(s.title)+'</strong><span>'+esc(s.purpose)+'</span><small>'+completed+' / '+s.modules.length+' Lektionen'+(here?' · Als Nächstes':locked?' · Noch gesperrt':'')+'</small></span><span class="fp39-stage-chevron" aria-hidden="true">›</span></button>'
  }).join('')+'</section><details class="fp39-optional"><summary>Weitere Inhalte und Werkzeuge</summary><p>Diese Angebote ergänzen den Lernweg, sind aber nicht für den Einstieg nötig.</p><div class="fp39-extras">'+[
- ['concepts','Kennzahlen-Akademie'],['transfer','Transferwerkstatt'],['training','Praxislabor'],['learningnews','Nachrichten analysieren'],['skills','Skillbaum'],['glossary','Begriffe nachschlagen'],['stockhub','Aktienresearch & Werkzeuge']
+ ['concepts','Kennzahlen-Akademie'],['transfer','Transferwerkstatt'],['training','Praxislabor'],['learningnews','Nachrichten analysieren'],['skilltree','Skillbaum & Spezialisierungen'],['glossary','Begriffe nachschlagen'],['stockhub','Aktienresearch & Werkzeuge']
  ].map(([id,name])=>'<button type="button" class="btn secondary" data-section-route="'+id+'">'+name+'</button>').join('')+'</div></details></div>';
 }
 function stage(n){
