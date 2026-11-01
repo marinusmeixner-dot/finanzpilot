@@ -167,7 +167,7 @@ const simpleTerms={EBIT:'Operativer Gewinn vor Zinsen und Steuern',EBITDA:'Opera
 function friendlyParagraph(p){let value=esc(p);let used=new Set();return value.replace(/\b(EBITDA|EBIT|Cashflow|Kapitalkosten|Marge|Umsatz|Bilanz|BIP)\b/g,word=>{if(used.has(word))return word;used.add(word);return '<strong class="fp37-article-key">'+word+'</strong>'})}
 function glossaryFor(n){const content=(n.article?.sections||[]).flatMap(x=>x.paragraphs||[]).join(' ')+' '+(n.article?.lead||'');const terms=Object.entries(simpleTerms).filter(([word])=>new RegExp('\\b'+word+'\\b','i').test(content));return terms.length?'<details class="fp37-article-glossary"><summary>Begriffe einfach erklärt ('+terms.length+')</summary><dl>'+terms.map(([word,meaning])=>'<div><dt>'+esc(word)+'</dt><dd>'+esc(meaning)+'</dd></div>').join('')+'</dl></details>':''}
 function renderArticle(){
- const n=selectedArticle;if(!n)return '<div class="fp34"><h1>Artikel nicht gefunden</h1><button type="button" class="btn" data-fp36-article-back>← Zurück</button></div>';
+ const n=selectedArticle;if(!n)return '<div class="fp34"><h1>Artikel nicht gefunden</h1><p>Nutze oben „Zurück“.</p></div>';
  const link=safe(n.url),article=n.article;
  const common='<div class="fp36-article-meta">'+esc(n.source||n.publisher||'Quelle')+' · '+esc(n.published||'Datum unbekannt')+'</div>';
  let body='';
@@ -187,7 +187,7 @@ function renderArticle(){
   body='<div class="fp36-article-limited"><h2>Externe Schlagzeile</h2><p>Zu dieser Meldung sind nur Überschrift, Anbieter und Veröffentlichungszeitpunkt abrufbar. Der vollständige Verlagsartikel ist nicht zur Nachveröffentlichung freigegeben. FinanzPilot umgeht keine Bezahlschranken und erfindet keinen Artikeltext.</p></div>'+
   (similar.length?'<section class="fp36-article-section"><h2>Passende redaktionelle Hintergrundberichte</h2>'+similar.map(x=>{const k=articleKey(x);articleRegistry.set(k,x);return '<button type="button" class="fp36-related" data-fp36-read="'+esc(k)+'">'+esc(x.title)+' →</button>'}).join('')+'</section>':'<p>Es liegt noch keine eigenständig recherchierte Langfassung zu dieser einzelnen Schlagzeile vor.</p>');
  }
- return '<div class="fp34 fp36-article"><button type="button" class="btn secondary" data-fp36-article-back>← Zurück</button>'+
+ return '<div class="fp34 fp36-article">'+
  '<span class="eyebrow">FINANZPILOT · '+(article?.sections?.length?'EIGENER HINTERGRUNDBERICHT':'QUELLEN &amp; EINORDNUNG')+'</span><h1>'+esc(n.title||'Nachricht')+'</h1>'+common+body+
  (link?'<div class="fp36-article-source"><strong>Originalquelle</strong><p>Überprüfe für weitere Einzelheiten den Originalbericht. Dieser kann extern zugangsbeschränkt sein.</p><a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Zur Veröffentlichung von '+esc(n.source||n.publisher||'Anbieter')+'</a></div>':'')+'</div>';
 }
