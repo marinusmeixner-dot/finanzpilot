@@ -62,7 +62,7 @@ function stage(n){
  '<div class="fp39-module-list">'+s.modules.map((m,i)=>{const done=isDone(m.id),locked=!canOpen(m.id),progress=locked?{page:0}:localSession(m.id),page=Math.min(5,Number(progress.page)||0);
  return '<button type="button" data-journey-open="'+esc(m.id)+'" class="fp39-module'+(done?' done':locked?' locked':'')+'" '+(locked?'disabled aria-disabled="true"':'')+'><span class="fp39-module-num">'+(done?'✓':locked?'🔒':String(i+1).padStart(2,'0'))+'</span><span><b>'+esc(m.title)+'</b><small>'+esc(m.goal)+'</small><em>'+(done?'Abgeschlossen':locked?'Erst die vorherige Lektion abschließen':page>0?'Begonnen · weiterlesen':'Jetzt beginnen')+'</em></span><span aria-hidden="true">›</span></button>'
  }).join('')+'</div>'+
- '<div class="fp39-bottom-actions"><button class="btn secondary" data-section-route="learn">Alle sechs Etappen</button>'+
+ '<div class="fp39-bottom-actions"><button class="btn secondary" data-section-route="basics">Alle sechs Etappen</button>'+
  (count===s.modules.length&&n<6?'<button class="btn" data-section-route="journey-'+(n+1)+'">Weiter zu Etappe '+(n+1)+' →</button>':'')+'</div></div>';
 }
 function lesson(){
