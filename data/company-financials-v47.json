@@ -1,0 +1,1485 @@
+{
+  "schema_version": 2,
+  "generated_at": "2026-11-02",
+  "verified_at": "2026-11-02",
+  "coverage_policy": "Zahlen ausschließlich aus tatsächlich publizierten Finanzberichten/Investor-Relations-Primärquellen; Berichtsperioden getrennt; alle im Stand überprüften Kennzahlen nach Kategorien. Nicht verifizierte Positionen bleiben unbekannt. Vollständige Berichte enthalten zudem Anhangs-/Detailpositionen; die App erfindet keine Zahlen.",
+  "companies": [
+    {
+      "symbol": "SIE.DE",
+      "name": "Siemens AG",
+      "period": "Q3 GJ 2026",
+      "period_end": "2026-06-30",
+      "published": "2026-08-06",
+      "currency": "EUR",
+      "unit": "Mrd.",
+      "source": {
+        "title": "Siemens AG – Ergebnisveröffentlichung Q3 GJ 2026",
+        "url": "https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q3-gj-2026"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Umsatz",
+          "value": 20.8,
+          "previous": 19.4,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Nominale Konzernumsätze; vergleichbares Wachstum gesondert ausgewiesen."
+        },
+        {
+          "key": "net_income",
+          "label": "Konzernergebnis",
+          "value": 2.6,
+          "previous": 2.2,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "fcf",
+          "label": "Free Cashflow",
+          "value": 4.1,
+          "previous": 2.9,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "industrial_profit",
+          "label": "Ergebnis industrielles Geschäft",
+          "value": 3.5,
+          "previous": 2.8,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "industrial_margin",
+          "label": "Marge industrielles Geschäft",
+          "value": 17.3,
+          "previous": 14.9,
+          "unit": "%",
+          "comparison": "Vorjahresquartal",
+          "change_kind": "percentage_points"
+        }
+      ],
+      "assessment": "Umsatz und Ergebnis des industriellen Geschäfts sind gestiegen; der freie Cashflow verbesserte sich deutlich. Prüfe für die Bewertung, ob die jüngste Entwicklung nachhaltig ist und wie viel Wachstum bereits im Aktienkurs erwartet wird.",
+      "risks": [
+        "Industriezyklus und Investitionsnachfrage",
+        "Bewertungsniveau und Ergebnisentwicklung",
+        "Quervergleich von Segmentmarge und Konzernmarge vermeiden"
+      ],
+      "report_sections": [
+        {
+          "id": "geschaeft",
+          "title": "Umsatz & Aufträge",
+          "description": "Siemens-Konzern, Q3 GJ 2026. Die industriellen Ergebnisgrößen sind **nicht** mit Konzern-EBIT gleichzusetzen.",
+          "metrics": [
+            {
+              "label": "Auftragseingang",
+              "value": 27.9,
+              "previous": 24.7,
+              "unit": "Mrd. €",
+              "period": "Q3 GJ 2026",
+              "previous_period": "Q3 GJ 2025",
+              "kind": "reported",
+              "note": "Nominal; Siemens nennt +14 % vergleichbares Wachstum."
+            },
+            {
+              "label": "Umsatz",
+              "value": 20.8,
+              "previous": 19.4,
+              "unit": "Mrd. €",
+              "period": "Q3 GJ 2026",
+              "previous_period": "Q3 GJ 2025",
+              "kind": "reported",
+              "note": "Nominal; Siemens nennt +8 % vergleichbares Wachstum."
+            },
+            {
+              "label": "Auftrags-Buchungsverhältnis",
+              "value": 1.34,
+              "previous": null,
+              "unit": "-fach",
+              "period": "Q3 GJ 2026",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Auftragseingang / Umsatz."
+            },
+            {
+              "label": "Auftragsbestand",
+              "value": 132,
+              "previous": null,
+              "unit": "Mrd. €",
+              "period": "30.06.2026",
+              "previous_period": null,
+              "kind": "stock",
+              "note": "Konzernweiter Auftragsbestand am 30. Juni 2026."
+            },
+            {
+              "label": "Wachstum Auftragseingang vergleichbar",
+              "value": 14,
+              "previous": null,
+              "unit": "%",
+              "period": "Q3 GJ 2026",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Bereinigt um Währungs-/Portfolioeffekte."
+            },
+            {
+              "label": "Wachstum Umsatz vergleichbar",
+              "value": 8,
+              "previous": null,
+              "unit": "%",
+              "period": "Q3 GJ 2026",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Bereinigt um Währungs-/Portfolioeffekte."
+            }
+          ]
+        },
+        {
+          "id": "profit",
+          "title": "Profitabilität & Cashflow",
+          "description": "Siemens Industrial Business separat von Konzerngewinn.",
+          "metrics": [
+            {
+              "label": "Ergebnis Industriegeschäft",
+              "value": 3.5,
+              "previous": 2.8,
+              "unit": "Mrd. €",
+              "period": "Q3 GJ 2026",
+              "previous_period": "Q3 GJ 2025",
+              "kind": "reported",
+              "note": "Profit Industrial Business."
+            },
+            {
+              "label": "Marge Industriegeschäft",
+              "value": 17.3,
+              "previous": 14.9,
+              "unit": "%",
+              "period": "Q3 GJ 2026",
+              "previous_period": "Q3 GJ 2025",
+              "kind": "ratio",
+              "note": "Veränderung in Prozentpunkten."
+            },
+            {
+              "label": "Konzerngewinn nach Steuern",
+              "value": 2.6,
+              "previous": 2.2,
+              "unit": "Mrd. €",
+              "period": "Q3 GJ 2026",
+              "previous_period": "Q3 GJ 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Unverwässertes EPS",
+              "value": 2.93,
+              "previous": null,
+              "unit": "€ je Aktie",
+              "period": "Q3 GJ 2026",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Konzern-EPS laut Ergebnisveröffentlichung."
+            },
+            {
+              "label": "EPS vor Kaufpreisallokation",
+              "value": 3.14,
+              "previous": null,
+              "unit": "€ je Aktie",
+              "period": "Q3 GJ 2026",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Bereinigtes EPS vor Purchase Price Allocation."
+            },
+            {
+              "label": "Free Cashflow Siemens-Konzern",
+              "value": 4.1,
+              "previous": 2.9,
+              "unit": "Mrd. €",
+              "period": "Q3 GJ 2026",
+              "previous_period": "Q3 GJ 2025",
+              "kind": "reported",
+              "note": "Unternehmensdefinition."
+            }
+          ]
+        },
+        {
+          "id": "ausblick",
+          "title": "Geschäftsjahresausblick",
+          "description": "Unternehmensprognosen für das Gesamtjahr, nicht als realisierte Werte behandeln.",
+          "metrics": [
+            {
+              "label": "Prognose EPS vor PPA – Untergrenze",
+              "value": 11.2,
+              "previous": null,
+              "unit": "€ je Aktie",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Angehobene Siemens-Jahresprognose."
+            },
+            {
+              "label": "Prognose EPS vor PPA – Obergrenze",
+              "value": 11.5,
+              "previous": null,
+              "unit": "€ je Aktie",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Angehobene Siemens-Jahresprognose."
+            },
+            {
+              "label": "Erwartetes vergleichbares Umsatzwachstum – Untergrenze",
+              "value": 6,
+              "previous": null,
+              "unit": "%",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Jahresprognose."
+            },
+            {
+              "label": "Erwartetes vergleichbares Umsatzwachstum – Obergrenze",
+              "value": 8,
+              "previous": null,
+              "unit": "%",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Jahresprognose."
+            },
+            {
+              "label": "Smart Infrastructure Wachstum – Untergrenze",
+              "value": 10,
+              "previous": null,
+              "unit": "%",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Prognose vergleichbares Segmentwachstum."
+            },
+            {
+              "label": "Smart Infrastructure Wachstum – Obergrenze",
+              "value": 11,
+              "previous": null,
+              "unit": "%",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Prognose vergleichbares Segmentwachstum."
+            },
+            {
+              "label": "Mobility Wachstum – Untergrenze",
+              "value": 5,
+              "previous": null,
+              "unit": "%",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Prognose vergleichbares Segmentwachstum."
+            },
+            {
+              "label": "Mobility Wachstum – Obergrenze",
+              "value": 7,
+              "previous": null,
+              "unit": "%",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Prognose vergleichbares Segmentwachstum."
+            }
+          ]
+        }
+      ],
+      "verified_at": "2026-11-02",
+      "report_scope": "earnings_release_und_presse",
+      "completeness": "umfangreich_quellenbasiert",
+      "sources": [
+        {
+          "title": "Siemens Q3 Earnings & Financial Results",
+          "url": "https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q3-gj-2026"
+        },
+        {
+          "title": "Ergebnisüberblick Siemens Q3 2026",
+          "url": "https://press.siemens.com/global/de/pressemitteilung/rekordleistung-im-dritten-quartal-ausblick-angehoben"
+        }
+      ],
+      "report_overview": {
+        "summary": "Siemens verzeichnet steigende Aufträge und Umsätze, einen hohen Auftragspuffer und einen gestiegenen Cashflow. Die hohe Marge des Industriegeschäfts ist nicht mit der Konzern-Gewinnmarge gleichzusetzen.",
+        "positives": [
+          "Auftragseingang 27,9 Mrd. € liegt über dem Quartalsumsatz von 20,8 Mrd. €.",
+          "Ergebnis Industriegeschäft 3,5 Mrd. €, FCF 4,1 Mrd. €."
+        ],
+        "negatives": [
+          "Rekordaufträge sind kein garantierter zukünftiger Ertrag.",
+          "Wachstum und Profitabilität der industriellen Segmente können unterschiedlich ausfallen."
+        ],
+        "watch": [
+          "Geschäftsjahresabschluss Q4 2026 wird am 12.11.2026 erwartet.",
+          "Marge und Cashflow je Geschäftsbereich sowie Auftragseingang vergleichen."
+        ]
+      },
+      "data_limitations": [
+        "Dies ist eine umfangreiche Presse-/Ergebnisdarstellung, nicht jede Bilanzposition des vollständigen Earnings-Release-PDFs wurde geprüft.",
+        "Für vollständige Bilanz und Segmentdetails den Original-Earnings-Release verwenden."
+      ]
+    },
+    {
+      "symbol": "BAYN.DE",
+      "name": "Bayer AG",
+      "period": "Q2 2026",
+      "period_end": "2026-06-30",
+      "published": "2026-08-04",
+      "currency": "EUR",
+      "unit": "Mrd.",
+      "source": {
+        "title": "Bayer Halbjahresfinanzbericht Q2 2026",
+        "url": "https://reports.bayer.com/halbjahresfinanzbericht-q2-2026/de/"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Konzernumsatz",
+          "value": 10.872,
+          "previous": 10.739,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Die separat gemeldete währungs- und portfoliobereinigte Wachstumsrate beträgt 2,2 %."
+        },
+        {
+          "key": "adjusted_ebitda",
+          "label": "EBITDA vor Sondereinflüssen",
+          "value": 2.144,
+          "previous": 2.105,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Bereinigte Kennzahl; nicht mit unbereinigtem EBIT verwechseln."
+        },
+        {
+          "key": "fcf",
+          "label": "Free Cashflow",
+          "value": -0.371,
+          "unit": "Mrd. €",
+          "note": "Negativer freier Cashflow unter anderem wegen Vergleichszahlungen. Kein Vorjahreswert im geprüften Ausgangsmaterial."
+        },
+        {
+          "key": "net_debt",
+          "label": "Nettofinanzverschuldung",
+          "value": 33.647,
+          "unit": "Mrd. €",
+          "note": "Bestandsgröße zum 30.06.2026, kein Quartals-Cashflow."
+        },
+        {
+          "key": "net_income",
+          "label": "Konzernergebnis",
+          "value": 0.219,
+          "unit": "Mrd. €",
+          "note": "Veröffentlichter Quartalswert."
+        }
+      ],
+      "assessment": "Das bereinigte operative Ergebnis verbessert sich leicht, während negativer Free Cashflow und hohe Nettofinanzschulden besondere Aufmerksamkeit verlangen. Sondereffekte, Rechtsrisiken und Finanzierungsbedarf separat prüfen.",
+      "risks": [
+        "Rechtliche Verpflichtungen und Zahlungen",
+        "Verschuldung und Refinanzierung",
+        "Bereinigte und berichtete Gewinne nicht verwechseln"
+      ],
+      "report_sections": [
+        {
+          "id": "ergebnis",
+          "title": "Umsatz & Gewinn",
+          "description": "Konzernergebnis für das zweite Quartal 2026; berichtete und bereinigte Werte bleiben getrennt.",
+          "metrics": [
+            {
+              "label": "Umsatz",
+              "value": 10872,
+              "previous": 10739,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Organisches Umsatzwachstum",
+              "value": 2.2,
+              "previous": null,
+              "unit": "%",
+              "period": "Q2 2026",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Währungs- und portfoliobereinigt; nicht mit nominaler Veränderung gleichsetzen."
+            },
+            {
+              "label": "EBITDA (berichtet)",
+              "value": 1985,
+              "previous": 285,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "EBITDA vor Sondereinflüssen",
+              "value": 2144,
+              "previous": 2105,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Bereinigte EBITDA-Marge",
+              "value": 19.7,
+              "previous": 19.6,
+              "unit": "%",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "ratio",
+              "note": "Veränderung in Prozentpunkten."
+            },
+            {
+              "label": "EBIT (berichtet)",
+              "value": 827,
+              "previous": 13,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "EBIT vor Sondereinflüssen",
+              "value": 999,
+              "previous": 994,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Finanzergebnis",
+              "value": -506,
+              "previous": -439,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Konzernergebnis",
+              "value": 219,
+              "previous": -199,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Ergebnis je Aktie",
+              "value": 0.23,
+              "previous": -0.2,
+              "unit": "€ je Aktie",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Bereinigtes Ergebnis je Aktie",
+              "value": 0.95,
+              "previous": 1.14,
+              "unit": "€ je Aktie",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Forschungs- und Entwicklungsaufwand",
+              "value": 1518,
+              "previous": 1408,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Abschreibungen/Wertminderungen",
+              "value": 1158,
+              "previous": 272,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Beschäftigte",
+              "value": 87830,
+              "previous": 89556,
+              "unit": "Vollzeitäquivalente",
+              "period": "30.06.2026",
+              "previous_period": "30.06.2025",
+              "kind": "stock",
+              "note": "Stichtagsvergleich 30.06.2026 vs. 30.06.2025"
+            }
+          ]
+        },
+        {
+          "id": "cashflow",
+          "title": "Cashflow & Investitionen",
+          "description": "Zahlungsströme Q2 2026, nicht mit Halbjahreswerten vermischen.",
+          "metrics": [
+            {
+              "label": "Operativer Cashflow",
+              "value": 690,
+              "previous": 1058,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Investitionen in Sachanlagen/Immaterielles",
+              "value": 660,
+              "previous": 465,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Free Cashflow",
+              "value": -371,
+              "previous": 125,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported",
+              "note": "Definition laut Bayer (nicht bloß operativer Cashflow minus Sachanlageninvestitionen)"
+            },
+            {
+              "label": "Cashflow aus Investitionstätigkeit",
+              "value": -707,
+              "previous": 154,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Cashflow aus Finanzierungstätigkeit",
+              "value": -1477,
+              "previous": -482,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Ausgaben für Forschung und Entwicklung",
+              "value": 1518,
+              "previous": 1408,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Zahlungsmittel am Periodenende",
+              "value": 4289,
+              "previous": 4557,
+              "unit": "Mio. €",
+              "period": "30.06.2026",
+              "previous_period": "30.06.2025",
+              "kind": "stock",
+              "note": "Stichtagswert aus der Cashflow-Rechnung."
+            }
+          ]
+        },
+        {
+          "id": "bilanz",
+          "title": "Bilanz & Finanzierung",
+          "description": "Stichtagswerte und Risikoindikatoren, nicht als Quartalserträge lesen.",
+          "metrics": [
+            {
+              "label": "Nettofinanzverschuldung",
+              "value": 33647,
+              "previous": 33274,
+              "unit": "Mio. €",
+              "period": "30.06.2026",
+              "previous_period": "30.06.2025",
+              "kind": "stock",
+              "note": "Stichtagsvergleich jeweils Ende Juni."
+            },
+            {
+              "label": "Nettofinanzschulden-Veränderung",
+              "value": 1.1,
+              "previous": null,
+              "unit": "%",
+              "period": "30.06.2026",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Bayer-Angabe ggü. 30.06.2025."
+            },
+            {
+              "label": "Liquidität (Kassenbestand)",
+              "value": 4289,
+              "previous": 4557,
+              "unit": "Mio. €",
+              "period": "30.06.2026",
+              "previous_period": "30.06.2025",
+              "kind": "stock",
+              "note": "Zahlungsmittel und Zahlungsmitteläquivalente laut Kapitalflussrechnung."
+            }
+          ]
+        },
+        {
+          "id": "segmente",
+          "title": "Geschäftsbereiche",
+          "description": "Segmentumsatz und bereinigtes EBITDA im Q2, nach Definition des Unternehmens.",
+          "metrics": [
+            {
+              "label": "Crop Science – Umsatz",
+              "value": 4910,
+              "previous": 4788,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Crop Science – EBITDA bereinigt",
+              "value": 902,
+              "previous": 693,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Crop Science – EBITDA-Marge",
+              "value": 18.4,
+              "previous": 14.5,
+              "unit": "%",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "ratio"
+            },
+            {
+              "label": "Pharmaceuticals – Umsatz",
+              "value": 4458,
+              "previous": 4470,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Pharmaceuticals – EBITDA bereinigt",
+              "value": 1055,
+              "previous": 1094,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Consumer Health – Umsatz",
+              "value": 1445,
+              "previous": 1427,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Consumer Health – EBITDA bereinigt",
+              "value": 319,
+              "previous": 331,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            }
+          ]
+        },
+        {
+          "id": "regionen",
+          "title": "Regionale Umsätze",
+          "description": "Geografischer Konzernumsatz; Veränderungen überwiegend nominal.",
+          "metrics": [
+            {
+              "label": "Europa/Nahost/Afrika",
+              "value": 3069,
+              "previous": 3305,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Nordamerika",
+              "value": 4367,
+              "previous": 4120,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Asien/Pazifik",
+              "value": 1996,
+              "previous": 2002,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Lateinamerika",
+              "value": 1440,
+              "previous": 1312,
+              "unit": "Mio. €",
+              "period": "Q2 2026",
+              "previous_period": "Q2 2025",
+              "kind": "reported"
+            }
+          ]
+        },
+        {
+          "id": "ausblick",
+          "title": "Ausblick & Risiken",
+          "description": "Prognosen sind keine abgeschlossenen Ergebnisse.",
+          "metrics": [
+            {
+              "label": "Prognose Umsatz 2026 – Untergrenze",
+              "value": 44.7,
+              "previous": null,
+              "unit": "Mrd. €",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Unternehmensprognose auf Basis Wechselkurse 30.06.2026; NICHT tatsächlich erzielter Jahresumsatz."
+            },
+            {
+              "label": "Prognose Umsatz 2026 – Obergrenze",
+              "value": 46.7,
+              "previous": null,
+              "unit": "Mrd. €",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Unternehmensprognose."
+            },
+            {
+              "label": "Prognose bereinigtes EPS – Untergrenze",
+              "value": 4.2,
+              "previous": null,
+              "unit": "€ je Aktie",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Unternehmensprognose."
+            },
+            {
+              "label": "Prognose bereinigtes EPS – Obergrenze",
+              "value": 4.7,
+              "previous": null,
+              "unit": "€ je Aktie",
+              "period": "GJ 2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Unternehmensprognose."
+            },
+            {
+              "label": "Prognose Nettoschulden Jahresende – Untergrenze",
+              "value": 29,
+              "previous": null,
+              "unit": "Mrd. €",
+              "period": "31.12.2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Unternehmensprognose; nicht aktueller Schuldenstand."
+            },
+            {
+              "label": "Prognose Nettoschulden Jahresende – Obergrenze",
+              "value": 30,
+              "previous": null,
+              "unit": "Mrd. €",
+              "period": "31.12.2026",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Unternehmensprognose; nicht aktueller Schuldenstand."
+            }
+          ]
+        }
+      ],
+      "verified_at": "2026-11-02",
+      "report_scope": "halbjahresbericht",
+      "completeness": "umfangreich_quellenbasiert",
+      "sources": [
+        {
+          "title": "Offizieller Halbjahresbericht Q2 2026",
+          "url": "https://reports.bayer.com/halbjahresfinanzbericht-q2-2026/de/"
+        },
+        {
+          "title": "Kapitalflussrechnung des Bayer-Konzerns",
+          "url": "https://reports.bayer.com/halbjahresfinanzbericht-q2-2026/de/verkuerzter-konzernzwischenabschluss/verkuerzte-kapitalflussrechnung.html"
+        }
+      ],
+      "report_overview": {
+        "summary": "Bereinigtes EBITDA steigt leicht, trotz starkem EBIT-Anstieg bleibt der freie Cashflow negativ. Hohe Nettofinanzschulden und mögliche rechtliche Zahlungen sind wesentlich.",
+        "positives": [
+          "Q2-Konzernergebnis kehrt in die Gewinnzone zurück.",
+          "Crop-Science-Marge vor Sondereinflüssen verbessert sich deutlich."
+        ],
+        "negatives": [
+          "Q2-Free-Cashflow −371 Mio. €, Halbjahr −2.691 Mio. €.",
+          "Bereinigtes EPS fällt auf 0,95 €, Nettofinanzschulden 33,647 Mrd. €."
+        ],
+        "watch": [
+          "Offizielle Angaben zu Rechtsrisiken und Rückstellungen prüfen.",
+          "Cashflow-Entwicklung gegenüber Quartals- und Halbjahreswerten trennen."
+        ]
+      },
+      "data_limitations": [
+        "Gesetzliche Rechnungslegungsgrößen und eigene/alternative Kennzahlen sind ausdrücklich gekennzeichnet.",
+        "Prognosewerte nicht als Ist-Ergebnisse behandeln."
+      ]
+    },
+    {
+      "symbol": "NVDA",
+      "name": "NVIDIA Corporation",
+      "period": "Q2 GJ 2027",
+      "period_end": "2026-07-26",
+      "published": "2026-08-26",
+      "currency": "USD",
+      "unit": "Mrd.",
+      "source": {
+        "title": "NVIDIA Q2 FY2027 Official Earnings Release",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Umsatz",
+          "value": 96.221,
+          "previous": 46.743,
+          "unit": "Mrd. $",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "net_income",
+          "label": "Nettogewinn (GAAP)",
+          "value": 59.688,
+          "previous": 26.422,
+          "unit": "Mrd. $",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "operating_income",
+          "label": "Operatives Ergebnis (GAAP)",
+          "value": 63.734,
+          "previous": 28.44,
+          "unit": "Mrd. $",
+          "comparison": "Vorjahresquartal"
+        },
+        {
+          "key": "gross_margin",
+          "label": "Bruttomarge (GAAP)",
+          "value": 75,
+          "previous": 72.4,
+          "unit": "%",
+          "comparison": "Vorjahresquartal",
+          "change_kind": "percentage_points"
+        },
+        {
+          "key": "diluted_eps",
+          "label": "Verwässertes EPS (GAAP)",
+          "value": 2.46,
+          "previous": 1.08,
+          "unit": "$/Aktie",
+          "comparison": "Vorjahresquartal"
+        }
+      ],
+      "assessment": "Das Unternehmen meldet starkes Umsatz- und Ergebniswachstum sowie eine hohe Bruttomarge. Die Bewertung muss berücksichtigen, wie lange das hohe Wachstum anhält, ob KI-Investitionen nachlassen könnten und welche Erwartungen bereits eingepreist sind.",
+      "risks": [
+        "Zyklische KI-Infrastrukturausgaben",
+        "Wettbewerb und Exportregeln",
+        "Hohe Erwartungen an künftiges Wachstum"
+      ],
+      "report_sections": [
+        {
+          "id": "ergebnis",
+          "title": "Gewinn- & Verlustrechnung",
+          "description": "GAAP-Zahlen in Millionen US-Dollar, Q2 FY2027 vs. Q2 FY2026. Rundungen und Vergleiche aus der Originaltabelle.",
+          "metrics": [
+            {
+              "label": "Umsatz",
+              "value": 96221,
+              "previous": 46743,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Umsatzkosten",
+              "value": 24079,
+              "previous": 12890,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Bruttoergebnis",
+              "value": 72142,
+              "previous": 33853,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Bruttomarge",
+              "value": 75,
+              "previous": 72.4,
+              "unit": "%",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "ratio",
+              "note": "GAAP; Veränderung in Prozentpunkten."
+            },
+            {
+              "label": "Forschung und Entwicklung",
+              "value": 7054,
+              "previous": 4291,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Verwaltung & Vertrieb",
+              "value": 1354,
+              "previous": 1122,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Operative Aufwendungen",
+              "value": 8408,
+              "previous": 5413,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Operatives Ergebnis",
+              "value": 63734,
+              "previous": 28440,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Sonstiges Finanzergebnis",
+              "value": 7773,
+              "previous": 2766,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Ergebnis vor Steuern",
+              "value": 71507,
+              "previous": 31206,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Ertragsteuern",
+              "value": 11819,
+              "previous": 4784,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Nettogewinn",
+              "value": 59688,
+              "previous": 26422,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "EPS verwässert",
+              "value": 2.46,
+              "previous": 1.08,
+              "unit": "$ je Aktie",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "EPS unverwässert",
+              "value": 2.47,
+              "previous": 1.08,
+              "unit": "$ je Aktie",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Aktien verwässert (gewichteter Durchschnitt)",
+              "value": 24285,
+              "previous": 24532,
+              "unit": "Mio. Aktien",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            }
+          ]
+        },
+        {
+          "id": "cashflow",
+          "title": "Cashflow & Investitionen",
+          "description": "Q2-Cashflows im Vergleich zum Vorjahresquartal; FCF hier gesondert aus ausgewiesenen Komponenten abgeleitet.",
+          "metrics": [
+            {
+              "label": "Operativer Cashflow",
+              "value": 24077,
+              "previous": 15365,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Sachanlage- und immaterielle Investitionen",
+              "value": 2677,
+              "previous": 1894,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported",
+              "note": "Positive Darstellung der Ausgaben (im Bericht negatives Vorzeichen)."
+            },
+            {
+              "label": "Free Cashflow (eigene Ableitung)",
+              "value": 21400,
+              "previous": 13471,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "derived",
+              "note": "Operativer Cashflow minus Ausgaben für Sachanlagen/immaterielle Vermögenswerte; keine offizielle Non-GAAP-Größe."
+            },
+            {
+              "label": "Netto-Cashflow Investitionen",
+              "value": -8695,
+              "previous": -7126,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Ausgaben für Aktienrückkäufe",
+              "value": 19732,
+              "previous": 9721,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported",
+              "note": "Positive Darstellung des Cash-Abflusses."
+            },
+            {
+              "label": "Dividendenzahlungen",
+              "value": 6047,
+              "previous": 244,
+              "unit": "Mio. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": "Q2 GJ 2026",
+              "kind": "reported",
+              "note": "Positive Darstellung des Cash-Abflusses."
+            }
+          ]
+        },
+        {
+          "id": "bilanz",
+          "title": "Bilanz – Vermögen",
+          "description": "Stichtagswerte 26. Juli 2026 gegenüber 25. Januar 2026; **kein Vorjahresvergleich**.",
+          "metrics": [
+            {
+              "label": "Zahlungsmittel und Zahlungsmitteläquivalente",
+              "value": 22443,
+              "previous": 10605,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Marktfähige Schuldpapiere",
+              "value": 34143,
+              "previous": 39065,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Marktfähige Eigenkapitaltitel",
+              "value": 42783,
+              "previous": 12886,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Forderungen aus Lieferungen",
+              "value": 63059,
+              "previous": 38466,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Vorräte",
+              "value": 31575,
+              "previous": 21403,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Kurzfristiges Vermögen",
+              "value": 197412,
+              "previous": 125605,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Sachanlagen netto",
+              "value": 14285,
+              "previous": 10383,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Geschäfts- oder Firmenwert",
+              "value": 21125,
+              "previous": 20832,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Bilanzsumme",
+              "value": 320272,
+              "previous": 206803,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            }
+          ]
+        },
+        {
+          "id": "schulden",
+          "title": "Bilanz – Schulden & Eigenkapital",
+          "description": "Bilanzgrößen, nicht mit Quartalsgewinn oder Cashflow verwechseln.",
+          "metrics": [
+            {
+              "label": "Lieferantenverbindlichkeiten",
+              "value": 15059,
+              "previous": 9812,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Kurzfristige Finanzschulden",
+              "value": 1000,
+              "previous": 999,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Langfristige Finanzschulden",
+              "value": 32366,
+              "previous": 7469,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Kurzfristige Verbindlichkeiten gesamt",
+              "value": 43019,
+              "previous": 32163,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Verbindlichkeiten gesamt",
+              "value": 91288,
+              "previous": 49510,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Eigenkapital",
+              "value": 228984,
+              "previous": 157293,
+              "unit": "Mio. $",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "stock"
+            },
+            {
+              "label": "Eigenkapitalquote (eigene Rechnung)",
+              "value": 71.5,
+              "previous": 76.1,
+              "unit": "%",
+              "period": "26.07.2026",
+              "previous_period": "25.01.2026",
+              "kind": "derived",
+              "note": "Eigenkapital / Bilanzsumme; gerundet."
+            }
+          ]
+        },
+        {
+          "id": "segmente",
+          "title": "Geschäftsbereiche",
+          "description": "NVIDIA-Segmente und gemeldete Wachstumsraten im Berichtszeitraum.",
+          "metrics": [
+            {
+              "label": "Data-Center-Umsatz",
+              "value": 89,
+              "previous": null,
+              "unit": "Mrd. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Plus 117 % zum Vorjahr; gerundete veröffentlichte Segmentzahl."
+            },
+            {
+              "label": "Data-Center-Wachstum",
+              "value": 117,
+              "previous": null,
+              "unit": "%",
+              "period": "Q2 GJ 2027",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Vom Unternehmen gemeldetes Wachstum gegenüber dem Vorjahresquartal."
+            },
+            {
+              "label": "Edge-Computing-Umsatz",
+              "value": 7.2,
+              "previous": null,
+              "unit": "Mrd. $",
+              "period": "Q2 GJ 2027",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Plus 27 % zum Vorjahr; gerundete veröffentlichte Segmentzahl."
+            },
+            {
+              "label": "Edge-Computing-Wachstum",
+              "value": 27,
+              "previous": null,
+              "unit": "%",
+              "period": "Q2 GJ 2027",
+              "previous_period": null,
+              "kind": "reported",
+              "note": "Vom Unternehmen gemeldetes Wachstum gegenüber dem Vorjahresquartal."
+            }
+          ]
+        },
+        {
+          "id": "ausblick",
+          "title": "Unternehmensausblick",
+          "description": "Alle Werte sind ausdrücklich Prognosen für das Folgequartal, keine gemeldeten Ergebnisse.",
+          "metrics": [
+            {
+              "label": "Umsatzprognose Q3",
+              "value": 108,
+              "previous": null,
+              "unit": "Mrd. $",
+              "period": "Q3 GJ 2027",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Schätzung des Unternehmens mit Bandbreite ±2 %."
+            },
+            {
+              "label": "Bruttomarge-Prognose Q3",
+              "value": 74,
+              "previous": null,
+              "unit": "%",
+              "period": "Q3 GJ 2027",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "±0,5 Prozentpunkte."
+            },
+            {
+              "label": "Prognose operative Aufwendungen GAAP",
+              "value": 9.2,
+              "previous": null,
+              "unit": "Mrd. $",
+              "period": "Q3 GJ 2027",
+              "previous_period": null,
+              "kind": "forecast",
+              "note": "Unternehmensausblick."
+            }
+          ]
+        }
+      ],
+      "verified_at": "2026-11-02",
+      "report_scope": "offizielle_geschaeftszahlen",
+      "completeness": "umfangreich_quellenbasiert",
+      "sources": [
+        {
+          "title": "Official Q2 FY2027 Earnings Release and tables",
+          "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027"
+        }
+      ],
+      "report_overview": {
+        "summary": "NVIDIA erzielt sehr starkes Umsatz- und Ergebniswachstum. Die hohen Investitionen und steigenden Forderungen verlangen zugleich sorgfältige Prüfung des Working Capital und der Nachfrage.",
+        "positives": [
+          "Umsatz 96,2 Mrd. $, Bruttomarge 75 %.",
+          "Operativer Q2-Cashflow 24,1 Mrd. $."
+        ],
+        "negatives": [
+          "Forderungen und Vorräte steigen stark seit Jahresbeginn.",
+          "Die Aktie kann hohe künftige Wachstumserwartungen bereits einpreisen."
+        ],
+        "watch": [
+          "Cashflow-Konversion, Umsatzkonzentration im Data Center und Marktpotenzial kontrollieren.",
+          "Die nächsten Ergebnisse werden erwartet; noch nicht veröffentlicht."
+        ]
+      },
+      "data_limitations": [
+        "Gesetzliche Rechnungslegungsgrößen und eigene/alternative Kennzahlen sind ausdrücklich gekennzeichnet.",
+        "Prognosewerte nicht als Ist-Ergebnisse behandeln."
+      ]
+    },
+    {
+      "symbol": "BYW.MU",
+      "name": "BayWa AG",
+      "period": "Q1 2026",
+      "period_end": "2026-03-31",
+      "published": "2026-05-26",
+      "currency": "EUR",
+      "unit": "Mrd.",
+      "source": {
+        "title": "BayWa AG – Quartalsmitteilung Q1 2026",
+        "url": "https://www.baywa.com/presseinformationen/210526_pi_baywa_quartalsmitteilung-q1-2026"
+      },
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Konzernumsatz",
+          "value": 2.3,
+          "previous": 3.6,
+          "unit": "Mrd. €",
+          "comparison": "Vorjahresquartal",
+          "note": "Nicht organisch vergleichbar: Portfolioverkäufe und Sortimentsbereinigung beeinflussen die Veränderung."
+        }
+      ],
+      "assessment": "BayWa berichtet trotz Restrukturierungsmaßnahmen einen deutlich geringeren Konzernumsatz. Die Quartalsmeldung enthält nur eingeschränkte Kennzahlen; sie nennt einen über dem Vorjahr liegenden bereinigten EBITDA-Wert ohne öffentlich überprüfbaren Absolutwert an dieser Stelle. Finanzierungs- und Sanierungsrisiken dominieren die Einordnung.",
+      "risks": [
+        "Restrukturierung und Liquidität",
+        "Verschiebung der Abschlussveröffentlichungen",
+        "Umsatzveränderung wegen Portfolioverkäufen nur eingeschränkt vergleichbar"
+      ],
+      "caution": "Veröffentlichte Informationen zum Q1 2026 sind eingeschränkt; fehlende Bilanz- und Ergebniswerte werden bewusst nicht ergänzt.",
+      "report_sections": [
+        {
+          "id": "ergebnis",
+          "title": "Veröffentlichte Quartalszahlen",
+          "description": "BayWa Q1 2026: wegen laufender Restrukturierung nur eingeschränkter Berichtsumfang.",
+          "metrics": [
+            {
+              "label": "Konzernumsatz",
+              "value": 2.3,
+              "previous": 3.6,
+              "unit": "Mrd. €",
+              "period": "Q1 2026",
+              "previous_period": "Q1 2025",
+              "kind": "reported",
+              "note": "Deutlich rückläufig, auch wegen Verkauf von Cefetra sowie Sortimentsbereinigung."
+            },
+            {
+              "label": "Umsatzrückgang (rechnerisch)",
+              "value": -36.1,
+              "previous": null,
+              "unit": "%",
+              "period": "Q1 2026",
+              "previous_period": null,
+              "kind": "derived",
+              "note": "(2,3 / 3,6 − 1) × 100; beide veröffentlichten Umsätze sind auf eine Nachkommastelle gerundet."
+            }
+          ]
+        },
+        {
+          "id": "risiken",
+          "title": "Restrukturierung & Berichtsgrenzen",
+          "description": "Nicht veröffentlichte aktuelle Größen bleiben ausdrücklich unbekannt.",
+          "metrics": []
+        }
+      ],
+      "verified_at": "2026-11-02",
+      "report_scope": "eingeschraenkte_quartalsmitteilung",
+      "completeness": "eingeschraenkt",
+      "sources": [
+        {
+          "title": "BayWa Q1 2026 Quartalsmitteilung",
+          "url": "https://www.baywa.com/presseinformationen/210526_pi_baywa_quartalsmitteilung-q1-2026"
+        },
+        {
+          "title": "BayWa Finanzkalender",
+          "url": "https://www.baywa.com/investor-relations/finanzkalender/finanztermine"
+        }
+      ],
+      "report_overview": {
+        "summary": "BayWa hat nur eingeschränkte Q1-2026-Finanzdaten veröffentlicht. Ohne vollständigen aktuellen Abschluss sind belastbare Aussagen zu Gewinn, Bilanz und Liquidität nicht möglich.",
+        "positives": [
+          "Restrukturierung wird verfolgt; bereinigtes EBITDA liegt laut Management über Sanierungsplan, jedoch ohne veröffentlichten absoluten Wert."
+        ],
+        "negatives": [
+          "Umsatz 2,3 statt 3,6 Mrd. €, durch Portfolioverkäufe eingeschränkt vergleichbar.",
+          "Laufende Sanierung, Standstill-Vereinbarung und verzögerte Jahresabschlüsse erhöhen die Unsicherheit."
+        ],
+        "watch": [
+          "Konzernfinanzbericht 2025 laut Finanzkalender für den 22.12.2026 vorgesehen.",
+          "Halbjahresfinanzbericht 2026 laut Kalender erst für 26.02.2027 geplant."
+        ]
+      },
+      "data_limitations": [
+        "Kein veröffentlichter Q1-Betrag für das bereinigte EBITDA.",
+        "Keine aktuelle Q1-Bilanz, operative Cashflow-Rechnung oder geprüfte Verschuldungsaufstellung.",
+        "Stand 02.11.2026 keine neuere veröffentlichte Quartalsrechnung im IR-Archiv; zukünftige Berichte nicht vorwegnehmen."
+      ]
+    }
+  ]
+}
