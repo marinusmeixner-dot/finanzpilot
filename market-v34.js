@@ -27,7 +27,7 @@ function matches(story,symbol){
 async function fetchEditorial(force=false){
  if(!force&&editorial.length&&Date.now()-lastRefresh<120000)return;
  const [coreResult,dailyResult]=await Promise.allSettled([
-  fetch('./data/editorial-core-v43.json?v=43',{cache:'no-store'}),
+  fetch('./data/editorial-core-v43.json?v=44',{cache:'no-store'}),
   fetch('./data/daily.json?m='+Date.now(),{cache:'no-store'})
  ]);
  const read=async value=>{
