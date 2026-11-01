@@ -156,6 +156,33 @@ async function history(symbol:string,rangeInput="6mo"){
  throw Error("Für "+requested+" ist über die verfügbaren Börsenplätze keine verlässliche historische Kursreihe abrufbar. "+lastError);
 }
 
+async function refreshFx(){
+ // Central bank euro reference fixings, NOT a live exchange order.
+ // Never allow browser-submitted FX prices to alter paper-cash balances.
+ const ctrl=new AbortController();const tm=setTimeout(()=>ctrl.abort(),8500);
+ let xml:string;
+ try{
+  const res=await fetch("https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml",{
+   headers:{"Accept":"application/xml,text/xml;q=0.9"},signal:ctrl.signal
+  });
+  if(!res.ok)throw Error("EZB-Abruf HTTP "+res.status);
+  xml=await res.text();
+ }finally{clearTimeout(tm)}
+ const date=/<Cube\s+time=['"](\d{4}-\d{2}-\d{2})['"]/.exec(xml)?.[1];
+ if(!date||Math.abs(Date.now()-Date.parse(date+"T12:00:00Z"))>8.5*86400000)throw Error("Keine aktuellen datierten EZB-Referenzkurse");
+ const pairs=[...xml.matchAll(/currency=['"]([A-Z]{3})['"]\s+rate=['"]([0-9.]+)['"]/g)];
+ const rows=pairs.map(match=>{const rate=Number(match[2]);return {currency:match[1],eur_per_unit:rate>0?Math.round(1/rate*1e10)/1e10:0,quote_date:date,source:"Europäische Zentralbank – offizieller Referenzkurs "+date};})
+ .filter(x=>Number.isFinite(x.eur_per_unit)&&x.eur_per_unit>0&&allowedCurrency.test(x.currency));
+ rows.push({currency:"EUR",eur_per_unit:1,quote_date:date,source:"EUR Basiswährung"});
+ if(rows.length<10)throw Error("EZB-Quoten nicht vollständig");
+ const post=await fetch(DB+"/rest/v1/fp_paper_fx_rates?on_conflict=currency",{
+  method:"POST",headers:{"Authorization":"Bearer "+ADMIN,"apikey":ADMIN,"Content-Type":"application/json","Prefer":"resolution=merge-duplicates,return=minimal"},
+  body:JSON.stringify(rows)
+ });
+ if(!post.ok)throw Error("EZB-Kurse konnten nicht gespeichert werden ("+post.status+")");
+ return {asof:date,currencies:rows.map(r=>r.currency),source:"Europäische Zentralbank, täglicher Referenzkurs; Simulation ohne Wechselgebühr"};
+}
+
 async function news(symbol:string){
  const key=String(symbol).trim().toUpperCase();if(!valid(key))throw Error("Ungültiges Börsensymbol");
  const q=await yahoo("/v1/finance/search?q="+encodeURIComponent(key)+"&newsCount=12&quotesCount=0");
@@ -179,6 +206,7 @@ Deno.serve(async(req:Request)=>{
   if(action==="search")return send(await search(String(body.query||"").trim().slice(0,64)));
   if(action==="register")return send(await register(String(body.symbol||"")));
   if(action==="history")return send(await history(String(body.symbol||""),String(body.range||"6mo")));
+  if(action==="fx")return send(await refreshFx());
   if(action==="news")return send(await news(String(body.symbol||"")));
   return send({error:"Unbekannte Aktion"},400);
  }catch(e){const message=String(e instanceof Error?e.message:e).slice(0,250);
