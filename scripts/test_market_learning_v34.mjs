@@ -10,7 +10,7 @@ const portfolio=read('portfolio.js');
 const stylesheet=read('market-v34.css');
 const daily=JSON.parse(read('data/daily.json'));
 const learning=JSON.parse(read('data/learning-news.json'));
-assert.equal(JSON.parse(read('version.json')).version,40);
+assert.equal(JSON.parse(read('version.json')).version,41);
 assert(html.includes('market-v34.js?v=38')&&html.includes('learning-news-v34.js?v=34'));
 assert(html.includes('market-v34.css?v=38'));
 assert(stylesheet.includes('position:fixed!important')&&stylesheet.includes('env(safe-area-inset-bottom'));
