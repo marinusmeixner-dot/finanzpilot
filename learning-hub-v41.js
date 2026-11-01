@@ -160,6 +160,9 @@ function skillIndex(){
  if(!user())body+=guest();
  if(!current){
   if(window.FinanzPilotStudy)body+=window.FinanzPilotStudy.reviewWidget();
+  const recommended=catalog.skills.find(s=>purchaseReady(s)&&!enrolled(s.id)&&!mastered(s.id));
+  if(recommended)body+='<section class="fp46-next-skill"><span class="eyebrow">DEIN NÄCHSTER LERNSCHRITT</span><h2>'+escape(recommended.title)+'</h2><p>'+escape(recommended.description)+'</p><button type="button" class="btn secondary" data-fp41-skill="'+escape(recommended.id)+'">Den Skill und seine Lektionen ansehen →</button></section>';
+  body+='<label class="fp46-skill-search-label" for="fp46-skill-search">Skill-Lektionen nach Thema suchen</label><input id="fp46-skill-search" data-fp46-skill-search type="search" autocomplete="off" placeholder="Zum Beispiel Cashflow, ETF, Anleihen …" />';
   body+='<h2 class="fp41-small-heading">Alle Skill-Lektionen nach Fachgebiet</h2><p class="fp41-hint">Du erreichst jede Speziallektion auch ohne Umweg über den Skillbaum. Gesperrte Skills kannst du bereits ansehen; die Freischaltung erfordert den gemeisterten Vorgänger.</p>';
   body+='<div class="fp44-skill-overview">'+catalog.branches.map(branch=>
     '<section class="fp44-skill-group"><h3>'+escape(branch.title)+'</h3><div class="fp44-skill-options">'+catalog.skills.filter(s=>s.branch===branch.id).map(s=>
@@ -263,6 +266,19 @@ function bind(root=document){
  }));
  root.querySelector('[data-fp43-all-skills]')?.addEventListener('click',()=>{selectedSkill='';selectedLesson='';redraw()});
  root.querySelectorAll('[data-fp41-skill]').forEach(b=>b.addEventListener('click',()=>pick(b.dataset.fp41Skill)));
+ root.querySelector('[data-fp46-skill-search]')?.addEventListener('input',e=>{
+  const term=String(e.target.value||'').toLocaleLowerCase('de-DE').trim();
+  root.querySelectorAll('.fp44-skill-group').forEach(group=>{
+   let visible=0;
+   group.querySelectorAll('[data-fp41-skill]').forEach(button=>{
+    const skill=bySkill(button.dataset.fp41Skill);
+    const words=[skill?.title,skill?.description,skill?.branch,...(skill?.lessons||[]).map(l=>l.title)].join(' ').toLocaleLowerCase('de-DE');
+    button.hidden=!!term&&!words.includes(term);
+    if(!button.hidden)visible++;
+   });
+   group.hidden=visible===0;
+  });
+ });
  root.querySelectorAll('[data-fp41-enroll]').forEach(b=>b.addEventListener('click',()=>action('enroll',b.dataset.fp41Enroll)));
  root.querySelectorAll('[data-fp41-buy]').forEach(b=>b.addEventListener('click',()=>action('unlock',selectedSkill,b.dataset.fp41Buy,b.dataset.fp41Currency)));
  root.querySelectorAll('[data-fp41-open]').forEach(b=>b.addEventListener('click',()=>{selectedLesson=b.dataset.fp41Open;window.FinanzPilotLessonView?.open?.(selectedLesson);redraw()}));
