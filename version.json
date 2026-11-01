@@ -1,5 +1,5 @@
 {
-  "version": 37,
-  "release": "2026-11-01-v37",
-  "notes": "Lernen now offers a guided six-stage roadmap, five new intermediate financial courses (16 total), safe previous-page review in Concepts/Praxis/Academy, and de-duplicated acronym explanations. Markets displays only fully free original in-app articles with reader glossary; paywalled provider headlines excluded. Stock suggestions vanish on cleared input and show chart-verified close price/currency/date via Supabase stock lookup v6. Previous saves preserved."
+  "version": 38,
+  "release": "2026-11-01-v38",
+  "notes": "Private Supabase event inbox now queues new Watchlist tickers and consented free-text reviews on DB INSERT; hourly ChatGPT finance editorial task polls queue. Analyses only by explicit request. Four initial Watchlist stocks covered with complete free in-app stories including new Siemens and NVIDIA articles. News refresh in app. Career, reward, skills and animations system planned only (docs/GAMIFICATION_SYSTEM_PLAN_V38.md), not implemented."
 }
