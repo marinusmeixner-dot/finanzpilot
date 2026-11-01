@@ -1,0 +1,41 @@
+/* FinanzPilot v37: guided academy and accessible free reading */
+.fp37-roadmap{margin:18px 0 28px;display:flex;flex-direction:column;gap:16px}
+.fp37-roadmap-intro{padding:23px 20px;border-radius:19px;background:linear-gradient(135deg,#173d3a,#142d39);border:1px solid #548377}
+.fp37-roadmap-intro h2{font-size:clamp(23px,4vw,30px);margin:9px 0 8px;color:#f2fffa}
+.fp37-roadmap-intro p{color:#d3e7e4;font-size:15px;line-height:1.6}
+.fp37-roadmap-intro small{display:block;font-size:12px;color:#afd1c7;margin-top:8px}
+.fp37-progress-track{height:8px;border-radius:9px;background:#0c242b;overflow:hidden;margin-top:18px}
+.fp37-progress-track span{display:block;height:100%;background:#80e4b4;border-radius:9px;transition:width .25s}
+.fp37-guide-actions{display:flex;flex-wrap:wrap;gap:9px}
+.fp37-guide-actions .btn{font-size:14px;text-align:center}
+.fp37-roadmap-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:0;padding:0;list-style:none}
+.fp37-roadmap-steps li{min-width:0}
+.fp37-roadmap-steps button{width:100%;height:100%;display:flex;gap:13px;align-items:center;text-align:left;color:#effaf5;background:#142d39;border:1px solid #385763;border-radius:14px;padding:13px;cursor:pointer}
+.fp37-roadmap-steps button:hover,.fp37-roadmap-steps button:focus-visible{border-color:#8ce7bd}
+.fp37-roadmap-steps button>span:nth-child(2){flex:1;min-width:0}
+.fp37-roadmap-steps strong{display:block;font-size:15px}
+.fp37-roadmap-steps small{display:block;font-size:12px;color:#a9c9ca;line-height:1.5;margin-top:4px}
+.fp37-roadmap-marker{flex:none;width:34px;height:34px;display:grid;place-items:center;background:#21584b;color:#d8ffe7;border-radius:50%;font-size:12px;font-weight:700}
+.fp37-learning-group{margin:26px 0 0}
+.fp37-learning-group h2{font-size:21px;margin:0 0 6px;color:#e8f8f3}
+.fp37-learning-group>p{color:#a8c4c8;font-size:14px;line-height:1.6;margin:0 0 12px}
+.fp37-learning-group .fp-tab-hub-list{margin-top:10px}
+.fp37-step-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 0 17px}
+.fp37-step-actions .btn{font-size:13px}
+.fp37-step-actions small{font-size:12px;color:#a9c5cc}
+.fp37-preview-box{margin:16px 0;padding:19px;background:#15343d;border:1px solid #427169;border-radius:15px;display:grid;gap:12px}
+.fp37-preview-box p{line-height:1.75;margin:0;color:#d2e6e3}
+.fp37-preview-box h2{margin:0}
+.fp37-preview{padding:15px}
+.fp37-stock-price{display:block;color:#d7f7e2;font-weight:700;font-size:13px;margin-top:5px}
+.fp37-one-minute{background:#19473e;border-left:4px solid #85e7b8;border-radius:12px;padding:22px 20px}
+.fp37-one-minute small{color:#b7f5d6;font-weight:750;letter-spacing:.08em;font-size:11px}
+.fp37-one-minute p{font-size:17px!important;line-height:1.75!important;color:#f5fff9!important;margin-top:7px}
+.fp37-article-key{color:#e4fff2;font-weight:700;text-decoration:underline;text-decoration-color:#79d8b0;text-underline-offset:3px}
+.fp37-article-glossary{border:1px solid #426d6b;border-radius:15px;padding:17px;background:#15333b}
+.fp37-article-glossary summary{cursor:pointer;color:#cbf9e2;font-weight:700;font-size:15px}
+.fp37-article-glossary dl{display:grid;grid-template-columns:1fr;gap:12px;margin-top:15px}
+.fp37-article-glossary dl>div{border-top:1px solid #34585e;padding-top:10px}
+.fp37-article-glossary dt{font-weight:700;color:#e6fff0}
+.fp37-article-glossary dd{margin:4px 0 0;color:#b7d5d3;line-height:1.55}
+@media(max-width:700px){.fp37-roadmap-steps{grid-template-columns:1fr}.fp37-guide-actions{flex-direction:column}.fp37-guide-actions .btn{width:100%}.fp37-roadmap-intro{padding:20px 16px}.fp37-one-minute{padding:17px}.fp37-one-minute p{font-size:15px!important}}
