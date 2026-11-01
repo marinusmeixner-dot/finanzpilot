@@ -1,0 +1,57 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const read=p=>fs.readFileSync(p,'utf8');
+const data=JSON.parse(read('data/company-financials-v47.json'));
+const company=Object.fromEntries(data.companies.map(c=>[c.symbol,c]));
+assert.equal(data.schema_version,2);
+assert.equal(data.companies.length,4);
+assert.deepEqual(data.companies.map(c=>c.symbol).sort(),['BAYN.DE','BYW.MU','NVDA','SIE.DE']);
+for(const c of data.companies){
+ assert(c.period_end&&c.published&&c.verified_at&&Array.isArray(c.report_sections));
+ assert(c.sources.every(s=>new URL(s.url).protocol==='https:'));
+ assert(c.report_sections.length>=2);
+ const keys=new Set();
+ for(const section of c.report_sections)for(const m of section.metrics){
+  assert(Number.isFinite(Number(m.value)),c.symbol+' '+m.label+' has invalid numeric value');
+  assert(m.unit&&m.period&&m.label);
+  assert(m.previous==null||m.previous_period,'Comparison without reference period: '+m.label);
+  const key=section.id+'-'+m.label;assert(!keys.has(key),'Duplicate metric '+key);keys.add(key);
+ }
+}
+const counts=Object.fromEntries(data.companies.map(c=>[c.symbol,c.report_sections.reduce((n,s)=>n+s.metrics.length,0)]));
+assert(counts['BAYN.DE']>=40&&counts.NVDA>=40&&counts['SIE.DE']>=20);
+assert(company['BYW.MU'].report_scope==='eingeschraenkte_quartalsmitteilung');
+assert(company['BYW.MU'].data_limitations.length>=2);
+const html=read('index.html'),market=read('market-v34.js'),renderSrc=read('financial-report-v47.js');
+assert(html.includes('financial-report-v47.js?v=47'));
+assert(html.includes('financial-report-v47.css?v=47'));
+assert(html.includes('market-v34.js?v=47'));
+assert(market.includes('company-financials-v47.json?v=47'));
+assert(market.includes('FinanzPilotFinancialReports.render('));
+const w={render(){}},ctx=vm.createContext({window:w,document:{},URL,Intl,Number,console});
+vm.runInContext(renderSrc,ctx);
+const ui=w.FinanzPilotFinancialReports;
+const stocks=['BAYN.DE','BYW.MU','NVDA','SIE.DE'].map(symbol=>({symbol}));
+let first=ui.render({watch:stocks,reports:data.companies,loggedIn:true,nameOf:s=>company[s]?.name,verifiedAt:data.verified_at});
+assert(first.includes('41 verifizierte Datenpositionen'));
+assert((first.match(/data-fp47-section=/g)||[]).length>=6);
+assert(first.includes('Berichtszahlen im Detail'));
+assert(first.includes('data-fp47-search'));
+assert(first.includes('Originalquellen'));
+assert(first.includes('Q2 2025'));
+assert(first.includes('Cashflow & Investitionen'));
+const handlers={};
+const buttons=[{dataset:{fp47Company:'BYW.MU'},addEventListener:(_,fn)=>handlers.click=fn}];
+ui.bind({querySelectorAll:q=>q==='[data-fp47-company]'?buttons:[],querySelector:()=>null});
+handlers.click();
+const baywa=ui.render({watch:stocks,reports:data.companies,loggedIn:true,nameOf:s=>company[s]?.name,verifiedAt:data.verified_at});
+assert(baywa.includes('EINGESCHRÄNKTER BERICHT'));
+assert(baywa.includes('fehlenden Gewinn-'));
+assert(baywa.includes('Keine geschätzten'));
+assert(!baywa.includes('41 verifizierte Datenpositionen'));
+const guest=ui.render({watch:stocks,reports:data.companies,loggedIn:false});
+assert(guest.includes('nach Anmeldung'));
+const notReported=ui.render({watch:[{symbol:'EXAMPLE'}],reports:data.companies,loggedIn:true});
+assert(notReported.includes('noch kein verifizierter umfangreicher Bericht'));
+console.log('v47 verified: source-based 4-watchlist financial dossiers, ~100 reported/explicitly computed numbers, multiple chapters, source notes, correct comparatives, missing BayWa data, gated watchlist and empty states.');
