@@ -11,7 +11,7 @@ assert.equal(guv.steps[1].answer,100);
 assert(guv.steps[1].reasoningRequired);
 assert(terms.modules.every(m=>m.steps[1]?.reasoningRequired),'All financial arithmetic steps now require conceptual reasoning');
 assert(guv.steps[1].reasoningQuestion.includes('Begründe'));
-assert(c.includes('Abkürzungen ausgeschrieben'));
+assert(c.includes('const explain=text')&&!c.includes('fp-training-definitions\" open'),'Inline abbreviation expansion replaces duplicate glossary panels');
 assert(c.includes('fp-training-reason'));
 assert(!sync.includes('location.reload()'),'Cloud import must NOT force a page refresh');
 assert(sync.includes("fp-cloud-progress-imported"));
@@ -46,6 +46,6 @@ const previous=rendered;events['fp-cloud-progress-imported']({detail:{keys:['fin
 assert.equal(rendered,previous,'Unrelated sync imports must not reset course UI');
 assert.equal(api.data.sessions.guv,oldSession);
 assert(read('index.html').includes('market-watch.js?v=33'));
-assert(read('index.html').includes('concepts.js?v=33'));
+assert(read('index.html').includes('concepts.js?v=37'));
 assert(read('ux-v15.js').includes("marketwatch:'markets'"));
 console.log('v28 concept navigation, GuV reasoning, no reload, per-key imports, inventory bonus-once, Depot/Markets routing and watchlist assets verified.');
