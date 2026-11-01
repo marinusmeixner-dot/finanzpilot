@@ -8,7 +8,7 @@ const escape=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>'
 const nav=()=>window.FinanzPilotNavigation;
 const client=()=>window.FinanzPilotCloud?.paperClient;
 const user=()=>window.FinanzPilotCloud?.user;
-const routes=[['learn','Grundlagen'],['skilltree','Skillbaum'],['skilllessons','Skill-Lektionen'],['speciallessons','Speziallektionen']];
+const routes=[['basics','Grundlagen'],['skilltree','Skillbaum'],['skilllessons','Skill-Lektionen'],['speciallessons','Speziallektionen']];
 let catalog=null,problem='',busy=false,loadedFor=null,fetching=false,notice='',selectedSkill='',selectedLesson='',selectedSpecial='';
 let enrollments=[],lessons=[],profiles=[],promotions=[],accounts=[],claims=[];
 const redraw=()=>window.render?.();
@@ -242,7 +242,7 @@ async function action(kind,skill,lesson,payment,answer){
 function bind(root=document){
  bindMap(root);
  root.querySelectorAll('[data-fp41-route]').forEach(b=>b.addEventListener('click',()=>{
-  selectedLesson='';selectedSpecial='';nav()?.route(b.dataset.fp41Route);if(b.dataset.fp41Route!=='learn')load();
+  selectedLesson='';selectedSpecial='';nav()?.route(b.dataset.fp41Route);if(!['learn','basics'].includes(b.dataset.fp41Route))load();
  }));
  root.querySelectorAll('[data-fp41-skill]').forEach(b=>b.addEventListener('click',()=>pick(b.dataset.fp41Skill)));
  root.querySelectorAll('[data-fp41-enroll]').forEach(b=>b.addEventListener('click',()=>action('enroll',b.dataset.fp41Enroll)));
