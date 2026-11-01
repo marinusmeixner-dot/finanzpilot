@@ -311,7 +311,21 @@
               "correct": 0,
               "explanation": "Planbarkeit ist hilfreich, aber nie eine Gewinngarantie."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Geschäft und Gewinn sauber trennen",
+              "text": "Umsatz ist nicht Gewinn und Gewinn nicht frei verfügbares Geld. Vergleiche immer Zeitraum, Aufwand und Zahlungswirkung."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Nur die Aktienkursbewegung.“ kann in die Irre führen. Entscheidend ist: Wichtig sind Angebot, Kunden, Einnahmequelle und Kosten."
+            }
+          ],
+          "challenge": {
+            "prompt": "Ein Betrieb gewinnt viele Kunden, die Lieferkosten steigen aber noch stärker. Was müsstest du prüfen, bevor du von einem erfolgreichen Geschäftsmodell sprichst?",
+            "solution": "Vergleiche die Einnahmen pro Kunde mit den direkt und indirekt verursachten Kosten. Mehr Kunden bedeuten nicht zwingend mehr Gewinn."
+          }
         },
         {
           "id": "umsatz-kosten",
@@ -340,7 +354,21 @@
               "correct": 1,
               "explanation": "Gewinnwachstum hängt davon ab, wie die Kosten mitwachsen."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Geschäft und Gewinn sauber trennen",
+              "text": "Umsatz ist nicht Gewinn und Gewinn nicht frei verfügbares Geld. Vergleiche immer Zeitraum, Aufwand und Zahlungswirkung."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „3.700 € Gewinn.“ kann in die Irre führen. Entscheidend ist: 2.000 − 1.700 = 300 €. Reale Abschlüsse haben verschiedene Kosten- und Ergebnisstufen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Ein Händler erzielt 2.000 € Umsatz und hat 1.400 € Aufwendungen. Wie viel Gewinn bleibt vor weiteren Posten, und welche Ausgaben könnten noch fehlen?",
+            "solution": "Die einfache Differenz beträgt 600 €. Für den tatsächlichen Jahresüberschuss können noch Zinsen, Steuern und weitere Posten relevant sein."
+          }
         },
         {
           "id": "gewinn-zeitraum",
@@ -369,7 +397,21 @@
               "correct": 0,
               "explanation": "Buchhalterische Erträge und Zahlungsflüsse können zeitlich auseinanderfallen."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Geschäft und Gewinn sauber trennen",
+              "text": "Umsatz ist nicht Gewinn und Gewinn nicht frei verfügbares Geld. Vergleiche immer Zeitraum, Aufwand und Zahlungswirkung."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Wie viel Bargeld liegt genau jetzt im Tresor?“ kann in die Irre führen. Entscheidend ist: Es handelt sich um eine zeitbezogene Darstellung von Erträgen und Aufwendungen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Was sagt eine Gewinnrechnung?“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Gewinn und Berichtszeitraum zuordnen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "bilanz-einfach",
@@ -398,7 +440,21 @@
               "correct": 0,
               "explanation": "Die Liquidität muss separat betrachtet werden."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Geschäft und Gewinn sauber trennen",
+              "text": "Umsatz ist nicht Gewinn und Gewinn nicht frei verfügbares Geld. Vergleiche immer Zeitraum, Aufwand und Zahlungswirkung."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „110.000 €.“ kann in die Irre führen. Entscheidend ist: 80.000 − 30.000 = 50.000 € Eigenkapital."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Was zeigt eine Bilanz?“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Vermögen und Finanzierung an einem Stichtag verstehen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "cashflow-einfach",
@@ -427,7 +483,21 @@
               "correct": 0,
               "explanation": "Zahlungen und buchhalterischer Gewinn sind nicht deckungsgleich."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Geschäft und Gewinn sauber trennen",
+              "text": "Umsatz ist nicht Gewinn und Gewinn nicht frei verfügbares Geld. Vergleiche immer Zeitraum, Aufwand und Zahlungswirkung."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „1.700 €.“ kann in die Irre führen. Entscheidend ist: 1.000 − 700 = 300 €. Weitere Investitionen wurden noch nicht berücksichtigt."
+            }
+          ],
+          "challenge": {
+            "prompt": "Ein Geschäft meldet 400 € Gewinn, aber 300 € davon wurden noch nicht von den Kunden bezahlt. Was kann deshalb mit dem Kontostand passieren?",
+            "solution": "Ein Rechnungsgewinn wird nicht automatisch sofort überwiesen. Offene Forderungen können den tatsächlichen Zahlungseingang verzögern."
+          }
         },
         {
           "id": "bruecke-2",
@@ -456,7 +526,21 @@
               "correct": 0,
               "explanation": "Der Unterschied kann zeitliche oder strukturelle Ursachen haben."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Geschäft und Gewinn sauber trennen",
+              "text": "Umsatz ist nicht Gewinn und Gewinn nicht frei verfügbares Geld. Vergleiche immer Zeitraum, Aufwand und Zahlungswirkung."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Nur eine Liste der heutigen Aktienkäufe.“ kann in die Irre führen. Entscheidend ist: Verbindlichkeiten und Liquidität sind Teil der Finanzierungsanalyse."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Zwischenstufe: Eine Firma lesen“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Gewinn, Bilanz und Geldfluss zusammenführen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         }
       ]
     },
@@ -500,7 +584,21 @@
               "correct": 0,
               "explanation": "Die Marge macht die Ertragsqualität mit sichtbar."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Ursachen statt einzelne Kennzahlen betrachten",
+              "text": "Die Bewertung entsteht aus zusammenhängenden Erwartungen. Erkläre, welcher Treiber sich verändert und warum das für die Firma relevant ist."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Die Gewinnmarge steigt immer.“ kann in die Irre führen. Entscheidend ist: Mehr Umsatz bei unverändertem Gewinn bedeutet einen geringeren Gewinnanteil am Umsatz."
+            }
+          ],
+          "challenge": {
+            "prompt": "Der Umsatz steigt von 100 auf 110 Mio. €, der operative Gewinn sinkt von 10 auf 8 Mio. €. Ist das Unternehmen rentabler geworden?",
+            "solution": "Nein. Die Marge sinkt von 10 % auf rund 7,27 %. Umsatzwachstum und Gewinnentwicklung müssen getrennt bewertet werden."
+          }
         },
         {
           "id": "liquiditaet-schulden",
@@ -529,7 +627,21 @@
               "correct": 0,
               "explanation": "Finanzierungsbedingungen und Geschäftsrisiken sind wichtiger als die bloße Existenz von Krediten."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Ursachen statt einzelne Kennzahlen betrachten",
+              "text": "Die Bewertung entsteht aus zusammenhängenden Erwartungen. Erkläre, welcher Treiber sich verändert und warum das für die Firma relevant ist."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Ob der Chart gestern stieg.“ kann in die Irre führen. Entscheidend ist: Liquidität ist eine Frage von Zeitpunkt und Zahlungsfähigkeit."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Schulden treffen Geldfluss“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Zinsen, Fälligkeiten und Liquidität verbinden. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "zins-inflation-bewertung",
@@ -558,7 +670,21 @@
               "correct": 0,
               "explanation": "Inflation ist ein Durchschnitt des Preisniveaus."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Ursachen statt einzelne Kennzahlen betrachten",
+              "text": "Die Bewertung entsteht aus zusammenhängenden Erwartungen. Erkläre, welcher Treiber sich verändert und warum das für die Firma relevant ist."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Er verdoppelt sich zwingend.“ kann in die Irre führen. Entscheidend ist: Höhere Abzinsung reduziert bei sonst gleichen Annahmen den Gegenwartswert."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Zinsen und Inflation verknüpfen“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Verstehen, warum Geld heute und morgen anders bewertet wird. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "aktienpreis-wert",
@@ -587,7 +713,21 @@
               "correct": 0,
               "explanation": "Bewertungen sind Modelle, keine gemessenen Tatsachen."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Ursachen statt einzelne Kennzahlen betrachten",
+              "text": "Die Bewertung entsteht aus zusammenhängenden Erwartungen. Erkläre, welcher Treiber sich verändert und warum das für die Firma relevant ist."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Weil gute Zahlen immer ein Betrug sind.“ kann in die Irre führen. Entscheidend ist: Der Unterschied zwischen berichteten Ergebnissen und Erwartungen treibt Reaktionen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Eine Aktie kostet 120 €, dein vorsichtig geschätzter Wert liegt bei 90 €. Ist das Unternehmen automatisch schlecht?",
+            "solution": "Nicht unbedingt. Ein gutes Unternehmen kann zu einem zu hohen Preis gehandelt werden. Die eigene Wertschätzung ist zudem unsicher."
+          }
         },
         {
           "id": "bewertungsvergleiche",
@@ -616,7 +756,21 @@
               "correct": 0,
               "explanation": "Einzelne Kennzahlen müssen in einen wirtschaftlichen Kontext."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Ursachen statt einzelne Kennzahlen betrachten",
+              "text": "Die Bewertung entsteht aus zusammenhängenden Erwartungen. Erkläre, welcher Treiber sich verändert und warum das für die Firma relevant ist."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Zum Nachweis garantierter Renditen.“ kann in die Irre führen. Entscheidend ist: Es ist eine Gewinnbewertungsrelation, kein vollständiges Unternehmensmodell."
+            }
+          ],
+          "challenge": {
+            "prompt": "Zwei Firmen haben dasselbe Kurs-Gewinn-Verhältnis (KGV), aber eine hat deutlich höhere Schulden und einen schlechteren Cashflow. Reicht das gleiche KGV als Kaufargument?",
+            "solution": "Nein. Finanzierung, Gewinnqualität, Wachstum und Geschäftsrisiken müssen für einen fairen Vergleich berücksichtigt werden."
+          }
         },
         {
           "id": "bruecke-3",
@@ -645,7 +799,21 @@
               "correct": 0,
               "explanation": "Wachstum muss auch finanziell tragfähig sein."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Ursachen statt einzelne Kennzahlen betrachten",
+              "text": "Die Bewertung entsteht aus zusammenhängenden Erwartungen. Erkläre, welcher Treiber sich verändert und warum das für die Firma relevant ist."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Social-Media-Aufrufe → sicherer Gewinn.“ kann in die Irre führen. Entscheidend ist: Die Bewertungskette startet beim Geschäftsmodell und endet nicht bei der Schlagzeile."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Zwischenstufe: Die Bewertungskette“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Wachstum, Margen, Cashflow und Kapitalkosten verbinden. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         }
       ]
     },
@@ -689,7 +857,21 @@
               "correct": 1,
               "explanation": "20 / 80 × 100 = 25 %. Nach Verlusten wird die verbleibende Basis kleiner."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Mit der richtigen Bezugsgröße rechnen",
+              "text": "Schreibe bei jeder Prozentrechnung den Ausgangswert oder Nenner dazu und kontrolliere die Einheit und den Zeitraum."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „10 %.“ kann in die Irre führen. Entscheidend ist: 10 / 50 × 100 = 20 %. Der ursprüngliche Wert ist der Nenner."
+            }
+          ],
+          "challenge": {
+            "prompt": "Eine Kennzahl steigt von 80 auf 100. Wie groß ist die relative Veränderung, und warum ist 20 % hier falsch?",
+            "solution": "(100 − 80) / 80 × 100 = 25 %. Der Nenner ist der Ausgangswert 80, nicht der Endwert 100."
+          }
         },
         {
           "id": "rechnen-marge",
@@ -718,7 +900,21 @@
               "correct": 0,
               "explanation": "Die Differenz von zwei Prozentsätzen wird in Prozentpunkten ausgedrückt."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Mit der richtigen Bezugsgröße rechnen",
+              "text": "Schreibe bei jeder Prozentrechnung den Ausgangswert oder Nenner dazu und kontrolliere die Einheit und den Zeitraum."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „10 %.“ kann in die Irre führen. Entscheidend ist: 75 / 500 × 100 = 15 %."
+            }
+          ],
+          "challenge": {
+            "prompt": "Ein Betrieb erzielt 120 Mio. € Umsatz und 15 Mio. € operativen Gewinn. Berechne die operative Marge. Was ändert sich bei 10 Mio. € Gewinn?",
+            "solution": "15 / 120 × 100 = 12,5 %. Bei 10 Mio. € Gewinn sind es rund 8,33 %. Die Bezugsgröße bleibt der Umsatz."
+          }
         },
         {
           "id": "rechnen-cashflow",
@@ -747,7 +943,21 @@
               "correct": 0,
               "explanation": "Investitionen beeinflussen gegenwärtige Liquidität und zukünftige Möglichkeiten."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Mit der richtigen Bezugsgröße rechnen",
+              "text": "Schreibe bei jeder Prozentrechnung den Ausgangswert oder Nenner dazu und kontrolliere die Einheit und den Zeitraum."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „190 Mio. €.“ kann in die Irre führen. Entscheidend ist: 120 − 70 = 50 Mio. €. Es ist eine vereinfachte Cashflow-Definition."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Freien Cashflow ableiten“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Operative Einzahlungen und Investitionen trennen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "rechnen-bewertung",
@@ -776,7 +986,21 @@
               "correct": 0,
               "explanation": "Das KGV sagt nichts direkt über sichere zukünftige Renditen."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Mit der richtigen Bezugsgröße rechnen",
+              "text": "Schreibe bei jeder Prozentrechnung den Ausgangswert oder Nenner dazu und kontrolliere die Einheit und den Zeitraum."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „9.“ kann in die Irre führen. Entscheidend ist: 90 / 6 = 15."
+            }
+          ],
+          "challenge": {
+            "prompt": "Eine Aktie kostet 60 €, der Gewinn je Aktie beträgt 3 €. Berechne das KGV und benenne eine Einschränkung.",
+            "solution": "60 / 3 = 20. Ein einmaliger Gewinn oder zukünftige Verluste können das Verhältnis verzerren."
+          }
         },
         {
           "id": "rechnen-szenario",
@@ -805,7 +1029,21 @@
               "correct": 0,
               "explanation": "Ein Szenario macht Unsicherheit sichtbar, beseitigt sie aber nicht."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Mit der richtigen Bezugsgröße rechnen",
+              "text": "Schreibe bei jeder Prozentrechnung den Ausgangswert oder Nenner dazu und kontrolliere die Einheit und den Zeitraum."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Für immer steigende Gewinne ohne Risiko.“ kann in die Irre führen. Entscheidend ist: Ein Stresstest untersucht belastende, plausible Alternativen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Drei Szenarien vergleichen“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Annahmen variieren, statt einen einzigen Wert zu behaupten. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "bruecke-4",
@@ -834,7 +1072,21 @@
               "correct": 0,
               "explanation": "Erst aus Zahlen und Kontext wird eine Analyse."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Mit der richtigen Bezugsgröße rechnen",
+              "text": "Schreibe bei jeder Prozentrechnung den Ausgangswert oder Nenner dazu und kontrolliere die Einheit und den Zeitraum."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „−5 % und deshalb sichere Insolvenz.“ kann in die Irre führen. Entscheidend ist: Ergebnis, Einheiten und Ursachen müssen sauber getrennt werden."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Zwischenstufe: Zahlen prüfen“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Eine Rechnung mit wirtschaftlicher Aussage verbinden. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         }
       ]
     },
@@ -882,7 +1134,21 @@
               "correct": 0,
               "explanation": "Bestätigungsfehler entstehen leicht, wenn der Schluss vor der Analyse feststeht."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Aussagen überprüfbar machen",
+              "text": "Formuliere vor jeder Recherche eine genaue Frage und halte fest, welche Originalquelle und welche zweite Perspektive nötig sind."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Wie schnell verdoppelt sich die Aktie garantiert?“ kann in die Irre führen. Entscheidend ist: Die Frage sollte an Daten und Gegenbelegen überprüfbar sein."
+            }
+          ],
+          "challenge": {
+            "prompt": "Du möchtest einen Maschinenbauer analysieren. Formuliere eine Frage, die sich mit Geschäftsberichten beantworten lässt, statt nur 'Ist die Aktie gut?' zu fragen.",
+            "solution": "Beispiel: 'Kann der Konzern bei steigendem Auftragseingang seine operative Marge und seinen freien Cashflow dauerhaft verbessern?'"
+          }
         },
         {
           "id": "analysieren-quellen",
@@ -911,7 +1177,21 @@
               "correct": 0,
               "explanation": "Ohne Zeitraum und Einheit sind Zahlen leicht missverständlich."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Aussagen überprüfbar machen",
+              "text": "Formuliere vor jeder Recherche eine genaue Frage und halte fest, welche Originalquelle und welche zweite Perspektive nötig sind."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Einen Kommentar ohne Quellenverweis.“ kann in die Irre führen. Entscheidend ist: Zahlen und Berichtsperiode sollten direkt aus dem Abschluss überprüft werden."
+            }
+          ],
+          "challenge": {
+            "prompt": "Eine anonyme Kursprognose widerspricht den offiziellen Geschäftsberichten. Welche Quelle verwendest du für tatsächlich gemeldete Umsätze?",
+            "solution": "Nutze den datierten Originalbericht des Unternehmens für veröffentlichte Umsätze. Für die Einordnung prüfst du zusätzlich unabhängige Analysen und Gegenargumente."
+          }
         },
         {
           "id": "analysieren-nachrechnen",
@@ -940,7 +1220,21 @@
               "correct": 0,
               "explanation": "Rechnerische Richtigkeit ist erst der Anfang."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Aussagen überprüfbar machen",
+              "text": "Formuliere vor jeder Recherche eine genaue Frage und halte fest, welche Originalquelle und welche zweite Perspektive nötig sind."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Jedes Segment hat die gleiche Größe.“ kann in die Irre führen. Entscheidend ist: Gewicht und Veränderung aller Bereiche bestimmen die Gesamtentwicklung."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Kennzahlen nachprüfen“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Selbst rechnen statt fertige Prozentzahlen übernehmen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "analysieren-treiber",
@@ -969,7 +1263,21 @@
               "correct": 0,
               "explanation": "Gegenargumente müssen wirtschaftlich möglich sein."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Aussagen überprüfbar machen",
+              "text": "Formuliere vor jeder Recherche eine genaue Frage und halte fest, welche Originalquelle und welche zweite Perspektive nötig sind."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Die Aktie kann nur steigen.“ kann in die Irre führen. Entscheidend ist: Die Hypothese nennt Mechanismus und Bedingungen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Werttreiber und Risiken erkennen“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Kausalität und Gegenargumente auseinanderhalten. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "analysieren-kurzbericht",
@@ -998,7 +1306,21 @@
               "correct": 0,
               "explanation": "Transparente Unsicherheit stärkt die Analyse."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Aussagen überprüfbar machen",
+              "text": "Formuliere vor jeder Recherche eine genaue Frage und halte fest, welche Originalquelle und welche zweite Perspektive nötig sind."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Eine unbegründete zukünftige Verdopplung.“ kann in die Irre führen. Entscheidend ist: Fakten brauchen einen überprüfbaren Beleg."
+            }
+          ],
+          "challenge": {
+            "prompt": "Erstelle für ein fiktives Unternehmen eine Mini-Analyse mit nur drei Beobachtungen: Umsatztendenz, Cashflow und Schulden.",
+            "solution": "Trenne jede beobachtete Zahl von deiner Interpretation. Notiere Zeitraum und Quelle; schließe mit einer offenen Frage oder Gegenhypothese."
+          }
         },
         {
           "id": "bruecke-5",
@@ -1027,7 +1349,21 @@
               "correct": 0,
               "explanation": "Eine gute These lässt sich widerlegen und verbessern."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Aussagen überprüfbar machen",
+              "text": "Formuliere vor jeder Recherche eine genaue Frage und halte fest, welche Originalquelle und welche zweite Perspektive nötig sind."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Wie klingen die nächsten Werbeplakate?“ kann in die Irre führen. Entscheidend ist: Preis und Erwartungen müssen zusammenpassen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Zwischenstufe: Zur Investmentthese“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Von Recherche zu einem überprüfbaren Urteil übergehen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         }
       ]
     },
@@ -1079,7 +1415,21 @@
               "correct": 0,
               "explanation": "Die Ursache einer Entwicklung ist oft erst eine begründete Vermutung."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Eine These auch widerlegen können",
+              "text": "Ein Urteil ist nur belastbar, wenn du Annahmen, Gegenargumente und Bedingungen zum Überarbeiten vorab dokumentierst."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Die Aktie ist morgen sicher teurer.“ kann in die Irre führen. Entscheidend ist: Eine Zahl ist mit Quelle und Zeitraum überprüfbar."
+            }
+          ],
+          "challenge": {
+            "prompt": "'Umsatz sinkt um 5 %' und 'das Management versagt' stehen in einer Meldung. Was ist überprüfbare Tatsache, was Interpretation?",
+            "solution": "Die gemeldete Umsatzveränderung lässt sich am Bericht prüfen. Die Aussage über das Management benötigt weitere Daten, Kontext und Begründung."
+          }
         },
         {
           "id": "urteil-erwartungen",
@@ -1108,7 +1458,21 @@
               "correct": 0,
               "explanation": "Bewertung übersetzt Erwartungen in einen Preis."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Eine These auch widerlegen können",
+              "text": "Ein Urteil ist nur belastbar, wenn du Annahmen, Gegenargumente und Bedingungen zum Überarbeiten vorab dokumentierst."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Weil Gewinn gesetzlich Kurssenkungen auslöst.“ kann in die Irre führen. Entscheidend ist: Erwartung und Wirklichkeit werden verglichen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Was steckt schon im Kurs?“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Nicht nur die Firma, sondern die Markterwartung prüfen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "urteil-chancen-risiken",
@@ -1137,7 +1501,21 @@
               "correct": 0,
               "explanation": "Szenarien sind überprüfbare Annahmen, keine Vorhersagesicherheit."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Eine These auch widerlegen können",
+              "text": "Ein Urteil ist nur belastbar, wenn du Annahmen, Gegenargumente und Bedingungen zum Überarbeiten vorab dokumentierst."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Nur ein willkürlicher niedriger Kurs.“ kann in die Irre führen. Entscheidend ist: Ein Szenario soll wirtschaftliche Mechanismen offenlegen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Entwirf drei mögliche Ausgänge für die nächste Unternehmensperiode. Warum darfst du nur mit plausiblen Annahmen rechnen?",
+            "solution": "Nenne Basis-, günstigen und ungünstigen Fall mit je zwei überprüfbaren Treibern. Übertriebene Annahmen erzeugen Scheingenauigkeit."
+          }
         },
         {
           "id": "urteil-positionsrisiko",
@@ -1166,7 +1544,21 @@
               "correct": 0,
               "explanation": "Die Positionsgröße muss zur persönlichen Verlusttragfähigkeit passen."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Eine These auch widerlegen können",
+              "text": "Ein Urteil ist nur belastbar, wenn du Annahmen, Gegenargumente und Bedingungen zum Überarbeiten vorab dokumentierst."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Gute Aktien können nicht fallen.“ kann in die Irre führen. Entscheidend ist: Risiko bleibt auch bei guten Unternehmen bestehen."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Auch gute Ideen können schaden“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Positionsgröße, Verlustpotenzial und Streuung abwägen. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         },
         {
           "id": "urteil-these-protokoll",
@@ -1195,7 +1587,21 @@
               "correct": 0,
               "explanation": "Die Reflexion ist Teil des Lernprozesses."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Eine These auch widerlegen können",
+              "text": "Ein Urteil ist nur belastbar, wenn du Annahmen, Gegenargumente und Bedingungen zum Überarbeiten vorab dokumentierst."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Ein hoher Optimismuswert.“ kann in die Irre führen. Entscheidend ist: Kriterien für Widerlegung sind wesentlich."
+            }
+          ],
+          "challenge": {
+            "prompt": "Deine These setzt mindestens 15 % operative Marge voraus. Später meldet das Unternehmen nachhaltig nur 10 %. Wie reagierst du?",
+            "solution": "Überprüfe die ursprüngliche Bewertungsrechnung anhand der dokumentierten Abbruchkriterien. Den Wert anzupassen ist sachlicher als die alte These nachträglich zu verdrehen."
+          }
         },
         {
           "id": "abschluss-urteil",
@@ -1224,7 +1630,21 @@
               "correct": 0,
               "explanation": "Kompetenz zeigt sich in überprüfbaren Begründungen, nicht in Fachwörtern."
             }
-          ]
+          ],
+          "details": [
+            {
+              "heading": "Eine These auch widerlegen können",
+              "text": "Ein Urteil ist nur belastbar, wenn du Annahmen, Gegenargumente und Bedingungen zum Überarbeiten vorab dokumentierst."
+            },
+            {
+              "heading": "Der häufige Denkfehler",
+              "text": "Eine scheinbar einfache Lösung wie „Kursziel → Hoffnung → Belege passend auswählen.“ kann in die Irre führen. Entscheidend ist: Der Ablauf verhindert, dass eine Begeisterung die Prüfung ersetzt."
+            }
+          ],
+          "challenge": {
+            "prompt": "Wende das Beispiel „Abschluss: Wie Analysten denken“ auf eine zweite Situation an: Welche zwei Informationen oder Zahlen müsstest du überprüfen, bevor du eine Empfehlung gibst?",
+            "solution": "Beginne bei diesem Lernziel: Den vollständigen Weg vom Geldverständnis zur These verbinden. Verwende die im Beispiel beschriebenen Größen mit eindeutigen Zeiträumen. Unterscheide anschließend Beobachtung, Interpretation und mögliche Gegenargumente."
+          }
         }
       ]
     }
