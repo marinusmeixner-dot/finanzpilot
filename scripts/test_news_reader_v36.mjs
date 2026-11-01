@@ -5,7 +5,7 @@ const read=p=>fs.readFileSync(p,'utf8');
 const daily=JSON.parse(read('data/daily.json'));
 const edge=read('supabase/functions/finanzpilot-stock-lookup/index.ts');
 const portfolio=read('portfolio.js'),app=read('app.js'),nav=read('ux-v15.js');
-assert.equal(JSON.parse(read('version.json')).version,37);
+assert.equal(JSON.parse(read('version.json')).version,38);
 assert(daily.stories.length>=12);
 assert(daily.stories.every(s=>s.id&&s.article?.sections?.length>=4),'Every editorial story needs a full original in-app report');
 assert(daily.stories.some(s=>s.symbols?.includes('BAYN.DE')&&s.article?.sections?.length>=4));
