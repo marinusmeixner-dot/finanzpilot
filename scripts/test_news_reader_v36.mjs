@@ -18,8 +18,8 @@ assert(nav.includes("marketarticle:'markets'")&&nav.includes('function goBack()'
 assert(app.includes("state.view==='marketarticle'&&window.FinanzPilotMarkets"));
 const events={};let page='marketnews';
 const identity='test-owner',watch=[{symbol:'AMZN'},{symbol:'MSFT'}];
-const quote=[{symbol:'BAYN.DE',asset_name:'Bayer Aktiengesellschaft',price:50,currency:'EUR',quote_date:'2026-10-30'},
- {symbol:'BYW.MU',asset_name:'BayWa AG',price:7,currency:'EUR',quote_date:'2026-10-30'}];
+const quote=[{symbol:'AMZN',asset_name:'Amazon',price:200,currency:'USD',quote_date:'2026-10-30'},
+ {symbol:'MSFT',asset_name:'Microsoft',price:530,currency:'USD',quote_date:'2026-10-30'}];
 const query=()=>{const q={select(){return q},eq(){return q},order(){return q},
  limit(){return Promise.resolve({data:watch,error:null})},
  in(){return Promise.resolve({data:quote,error:null})}};return q};
@@ -38,16 +38,16 @@ vm.runInContext(read('market-v34.js'),context,{filename:'market-v34.js'});
 const api=window.FinanzPilotMarkets;
 await api.refresh(true);
 await new Promise(r=>setTimeout(r,0));
-api.openNews('BAYN.DE');
+api.openNews('AMZN');
 await new Promise(r=>setTimeout(r,0));
 const result=api.renderNews();
-assert(result.includes('Bayer')&&result.includes('BayWa'),'Both known watchlist stocks must receive editorial coverage');
-assert(result.includes('Ausführlichen FinanzPilot-Artikel lesen'));
+assert(result.includes('Amazon')&&result.includes('Microsoft'),'Both watchlist stocks must receive editorial coverage');
+assert(result.includes('Vollständigen kostenlosen FinanzPilot-Artikel lesen'));
 const bayer=daily.stories.find(s=>s.symbols?.includes('AMZN'));
 assert(api.openArticle(bayer.id));
 assert.equal(page,'marketarticle');
 const content=api.renderArticle();
-assert(content.includes('Fakten')||content.includes('Was wurde entschieden?'));
+assert(content.includes('Die wichtigsten Zahlen')||content.includes('Cloud-Wachstum'));
 assert(content.includes('Originalquelle'));
 assert(content.includes('FINANZPILOT'));
 assert(content.length>1400,'Full editorial view must contain meaningful detail');
