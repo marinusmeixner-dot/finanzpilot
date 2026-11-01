@@ -1,0 +1,71 @@
+/* v47 – comprehensive quarterly/half-year financial report reader */
+.fp47-report{gap:18px;max-width:1120px}
+.fp47-head{display:grid;gap:8px}
+.fp47-head p{max-width:880px;color:#c2dcd6;line-height:1.75;font-size:14px}
+.fp47-head>small{color:#aac8c2;font-size:12px}
+.fp47-company-switch{display:flex;gap:9px;overflow-x:auto;overscroll-behavior-inline:contain;padding:4px 0 8px;scrollbar-width:thin}
+.fp47-company-switch button{cursor:pointer;flex:none;min-height:64px;display:flex;flex-direction:column;gap:4px;justify-content:center;text-align:left;padding:10px 15px;border:1px solid #4a716e;border-radius:13px;background:#1a3640;color:#c9e7db;font:inherit;font-weight:650}
+.fp47-company-switch button small{font-size:11px;color:#aacac4;font-weight:500}
+.fp47-company-switch button.selected{background:#245448;border-color:#95e0b3;color:#e6fff1}
+.fp47-company-switch button:focus-visible{outline:3px solid #97d9bc;outline-offset:2px}
+.fp47-report-body{display:grid;gap:18px}
+.fp47-company-head{display:flex;align-items:flex-start;justify-content:space-between;gap:17px;background:#152f3c;border:1px solid #50706b;border-radius:17px;padding:18px}
+.fp47-company-head h2{font-size:clamp(22px,3vw,31px);margin:8px 0 6px}
+.fp47-company-head p{font-size:13px;line-height:1.7;color:#d0e5db}
+.fp47-company-head small{font-size:11px;color:#a9c8bf}
+.fp47-report-actions{display:flex;flex-wrap:wrap;gap:9px;justify-content:flex-end}
+.fp47-report-actions .btn{border-radius:12px;white-space:nowrap;font-size:12px}
+.fp47-executive,.fp47-interpretation{border:1px solid #54766e;background:#193941;padding:19px;border-radius:17px}
+.fp47-executive h3,.fp47-interpretation h3{font-size:20px;margin:0 0 10px}
+.fp47-executive>p,.fp47-interpretation>p{font-size:14px;line-height:1.85;color:#d2e6de}
+.fp47-takeaways{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:17px}
+.fp47-takeaways>div{border-radius:13px;border:1px solid #507470;background:#1a3f43;padding:14px}
+.fp47-takeaways h4,.fp47-interpretation h4{font-size:14px;margin:0 0 8px;color:#c8f2dc}
+.fp47-takeaways ul,.fp47-interpretation ul,.fp47-limitations ul{padding-left:22px;display:grid;gap:8px}
+.fp47-takeaways li,.fp47-interpretation li,.fp47-limitations li{font-size:13px;line-height:1.7;color:#c3d9d4}
+.fp47-kpi-tools{display:flex;align-items:flex-end;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.fp47-kpi-tools h3{font-size:21px;margin:0 0 7px}
+.fp47-kpi-tools p{font-size:13px;line-height:1.6;color:#aac6c1}
+.fp47-filter-label{display:flex;flex-direction:column;gap:6px;font-weight:600;color:#d4eae1;font-size:13px}
+.fp47-filter-label input{min-height:43px;border-radius:11px;border:1px solid #64897e;background:#193843;color:#e7f9ed;padding:10px 13px;font:inherit;min-width:240px}
+.fp47-sections{display:grid;gap:12px}
+.fp47-section{border-radius:15px;border:1px solid #4c7071;background:#152e3b;overflow:hidden}
+.fp47-section[hidden]{display:none!important}
+.fp47-section>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:17px;color:#e3f9ef}
+.fp47-section>summary::-webkit-details-marker{display:none}
+.fp47-section>summary::before{content:"▸";color:#a1debb;font-size:19px}
+.fp47-section[open]>summary::before{content:"▾"}
+.fp47-section>summary>span:first-child{flex:1;display:grid;gap:6px}
+.fp47-section>summary b{font-size:17px}
+.fp47-section>summary small{font-size:12px;line-height:1.5;color:#b2d0c9}
+.fp47-section-count{font-size:11px;white-space:nowrap;color:#b6d8c9;border:1px solid #567e73;padding:5px 8px;border-radius:99px}
+.fp47-section[open]>summary{background:#1b4543;border-bottom:1px solid #54756e}
+.fp47-table-scroll{overflow-x:auto;max-width:100%;overscroll-behavior-x:contain}
+.fp47-kpi-table{width:100%;border-collapse:collapse;min-width:680px;table-layout:auto;text-align:left;color:#d9e9e6}
+.fp47-kpi-table thead{background:#203d49;color:#d5f0e3}
+.fp47-kpi-table th,.fp47-kpi-table td{padding:13px 15px;border-bottom:1px solid #3d5961;vertical-align:top}
+.fp47-kpi-table thead th{font-size:11px;letter-spacing:.035em;text-transform:uppercase}
+.fp47-kpi-table tbody th{font-size:13px;min-width:265px;max-width:390px;line-height:1.5}
+.fp47-kpi-table tbody tr:nth-child(even){background:#193843}
+.fp47-kpi-table tbody tr:hover{background:#224b4d}
+.fp47-kpi-table tbody tr[hidden]{display:none!important}
+.fp47-number{font-variant-numeric:tabular-nums;font-size:13px;min-width:116px;white-space:normal}
+.fp47-number strong{font-weight:700;font-size:14px}
+.fp47-number>small{font-size:11px;color:#b3cec8}
+.fp47-row-note,.fp47-row-period,.fp47-compare-date{display:block;font-weight:400;font-size:11px;line-height:1.6;color:#a9c4c2;margin-top:5px}
+.fp47-kind{display:inline-block;white-space:nowrap;font-size:10px;font-weight:550;padding:2px 6px;border:1px solid #6e918b;border-radius:6px;margin-left:7px}
+.fp47-kind.forecast{border-color:#d6b476;color:#f0d8ac}
+.fp47-kind.derived{border-color:#87aacb;color:#d1eaff}
+.fp47-no-value{font-size:12px;color:#a0b4b5}
+.fp47-critical{border:1px solid #b38d64;border-radius:13px;background:#403128;padding:16px}
+.fp47-critical p{font-size:13px;line-height:1.75;margin:8px 0;color:#f0dccb}
+.fp47-missing,.fp47-unavailable{padding:18px;color:#d8e7df;line-height:1.8}
+.fp47-interpretation h4{margin:16px 0 6px}
+.fp47-limitations{border:1px solid #59716d;border-radius:13px;padding:15px;background:#1d3640}
+.fp47-limitations summary{cursor:pointer;color:#c9e9da;font-weight:650}
+.fp47-limitations p{font-size:12px;line-height:1.75;color:#c5d7d1;margin-top:12px}
+.fp47-sources{border-top:1px solid #526e6a;padding-top:16px;display:grid;gap:10px}
+.fp47-sources h3{font-size:17px}
+.fp47-sources p{font-size:12px;line-height:1.7;color:#bdd7cf}
+.fp47-sources a{font-size:13px;color:#a8ecca;text-decoration:underline;text-underline-offset:4px;overflow-wrap:anywhere}
+@media(max-width:650px){.fp47-company-head{flex-direction:column;padding:15px}.fp47-takeaways{grid-template-columns:1fr}.fp47-kpi-tools{display:grid}.fp47-filter-label input{min-width:0;width:100%}.fp47-section>summary{padding:14px 10px}.fp47-section>summary b{font-size:15px}.fp47-section-count{font-size:10px}.fp47-head h1{font-size:27px}}
