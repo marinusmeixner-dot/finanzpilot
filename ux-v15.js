@@ -1,7 +1,7 @@
 (function navV15(){
  'use strict';
  const KEY='finanzpilot_navigation_v6';
- const LEARNING_VIEWS=new Set(['learningnews','dailyreview','academymarket','stockhub','learnpath','concepts','training','transfer','skills','glossary','foundations','academy','academycourse','labcase']);
+ const LEARNING_VIEWS=new Set(['journey-1','journey-2','journey-3','journey-4','journey-5','journey-6','journeycourse','learningnews','dailyreview','academymarket','stockhub','learnpath','concepts','training','transfer','skills','glossary','foundations','academy','academycourse','labcase']);
  const ROOT_VIEWS=new Set(['home','learn','markets','depot','progress','stockhub']);
  const MAIN=['home','learn','markets','depot','progress'];
  const GROUPS={
@@ -12,7 +12,7 @@
  depot:{label:'Depot',description:'Deine virtuellen Aktienpositionen, Spielgeld und Transaktionen',links:[]},
  progress:{label:'Profil',description:'Dein Fortschritt, Karriere und Sammlerstücke',links:[['learningstats','Lernfortschritt','Ergebnisse, Lernhistorie und tägliche Fortschritte'],['career','Analystenkarriere & Werkzeuge','Ränge, Beförderungen und Research-Tools'],['inventory','Inventar & Belohnungen','Forschungspunkte, Artefakte und Spezialmissionen'],['account','Konto & Synchronisierung','Anmelden und Fortschritt sichern']]}
  };
- const PARENT={home:'home',learn:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',transfer:'learn',learnpath:'learn',learningnews:'learn',dailyreview:'learn',academymarket:'learn',stockhub:'learn',research:'learn',marketoverview:'markets',marketnews:'markets',marketdetail:'markets',marketarticle:'markets',markets:'markets',marketwatch:'markets',depot:'depot',researchcatalog:'stockhub',investmentcommittee:'stockhub',theses:'stockhub',academy:'stockhub',academycourse:'stockhub',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
+ const PARENT={home:'home',learn:'learn', 'journey-1':'learn','journey-2':'learn','journey-3':'learn','journey-4':'learn','journey-5':'learn','journey-6':'learn',journeycourse:'learn',lesson:'learn',labcase:'learn',glossary:'learn',foundations:'learn',skills:'learn',training:'learn',concepts:'learn',transfer:'learn',learnpath:'learn',learningnews:'learn',dailyreview:'learn',academymarket:'learn',stockhub:'learn',research:'learn',marketoverview:'markets',marketnews:'markets',marketdetail:'markets',marketarticle:'markets',markets:'markets',marketwatch:'markets',depot:'depot',researchcatalog:'stockhub',investmentcommittee:'stockhub',theses:'stockhub',academy:'stockhub',academycourse:'stockhub',progress:'progress',learningstats:'progress',career:'progress',inventory:'progress',account:'progress'};
  const ICON={
   home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',
   learn:'<path d="m3 4 9-2 9 2v16l-9 2-9-2z"/><path d="M12 2v20"/><path d="m6 9 4 1m4 0 4-1"/>',
@@ -36,7 +36,7 @@
   return false;
  }
  const rootOf=view=>{let v=view;for(let i=0;i<4;i++){if(MAIN.includes(v))return v;v=PARENT[v];if(!v)break}return 'home'};
- const label=view=>view==='marketarticle'?'Artikel':view==='marketdetail'?'Aktienchart':Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[view]?.label||GROUPS[rootOf(view)].label;
+ const label=view=>view==='journeycourse'?'Lektion':/^journey-[1-6]$/.test(view)?('Etappe '+view.slice(-1)):view==='marketarticle'?'Artikel':view==='marketdetail'?'Aktienchart':Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[view]?.label||GROUPS[rootOf(view)].label;
  function persist(view,y){
   if(restoring||!Object.prototype.hasOwnProperty.call(PARENT,view))return;
   try{
@@ -63,43 +63,14 @@
   }));
  }
  const isHub=v=>(MAIN.includes(v)&&v!=='home'&&v!=='depot')||v==='stockhub';
- function learningGuide(){
-  const c=window.FinanzPilotConcepts,modules=c?.modules||[],skills=c?.achievements||{};
-  const done=modules.filter(m=>skills[m.id]).length,possible=modules.filter(m=>!skills[m.id]&&(!m.prerequisite||skills[m.prerequisite]));
-  const next=possible[0]||modules.find(m=>!skills[m.id]);
-  const progressText=modules.length?done+' von '+modules.length+' Lernstufen abgeschlossen':'Lernstufen werden geladen';
-  const copy=done===0?'Starte hier: Zuerst Grundlagen, danach die erste Zahlen-Lektion.':next?'Weiter bei: '+next.title:'Alle verfügbaren Stufen geschafft – Wissen nun in Praxisfällen anwenden.';
-  return '<section class="fp37-roadmap"><div class="fp37-roadmap-intro"><span class="eyebrow">DEIN PERSÖNLICHER LERNWEG</span><h2>Hier fängst du an.</h2><p>'+esc(copy)+'</p><div class="fp37-progress-track"><span style="width:'+(modules.length?Math.round(100*done/modules.length):0)+'%"></span></div><small>'+esc(progressText)+' · Fortschritt wird gespeichert</small></div>'+
-   '<div class="fp37-guide-actions">'+
-   (done===0?'<button type="button" class="btn" data-section-route="learnpath">01 · Mit den Grundlagen starten →</button>':
-    next?'<button type="button" class="btn" data-learning-module="'+esc(next.id)+'">Nächste Lernstufe: '+esc(next.title)+' →</button>':
-    '<button type="button" class="btn" data-section-route="transfer">Weiter in die Transferwerkstatt →</button>')+
-   '<button type="button" class="btn secondary" data-section-route="concepts">Alle Lern- und Zwischenstufen ansehen</button></div>'+
-   '<ol class="fp37-roadmap-steps">'+[
-    ['01','Orientieren','Grundlagen, Zahlen und Unternehmensberichte','learnpath'],
-    ['02','Verstehen','Gewinn, Bilanz, Cashflow und Zwischenstufen','concepts'],
-    ['03','Verknüpfen','Kennzahlen, Kapitalkosten und Bewertung','concepts'],
-    ['04','Anwenden','Rechnen und reale Problemstellungen bearbeiten','transfer'],
-    ['05','Selbst analysieren','Praxisfälle, vollständige Unternehmensanalysen','training'],
-    ['06','Urteil bilden','Eigene Investmentthese, Marktnachrichten verstehen','stockhub']
-   ].map(([i,title,sub,target],j)=>'<li><button type="button" data-section-route="'+target+'"><span class="fp37-roadmap-marker">'+i+'</span><span><strong>'+title+'</strong><small>'+sub+'</small></span><span aria-hidden="true">›</span></button></li>').join('')+'</ol></section>';
- }
+
  function renderHub(v){
   if(!isHub(v))return '';
   const g=GROUPS[v],intro='<section class="fp-tab-hub"><div class="fp-tab-hub-intro"><div class="eyebrow">DEIN FINANZPILOT</div><h1>'+esc(g.label)+'</h1><p>'+esc(g.description)+'</p></div>';
   const link=([id,name,desc],i)=>'<button type="button" class="fp-tab-hub-item" '+(id==='account'?'data-section-account':'data-section-route="'+esc(id)+'"')+'><span class="fp-tab-hub-number">'+String(i+1).padStart(2,'0')+'</span><span class="fp-tab-hub-copy"><strong>'+esc(name)+'</strong><small>'+esc(desc)+'</small></span><span class="fp-tab-hub-chevron">'+icon('arrow',18)+'</span></button>';
-  if(v!=='learn')return intro+'<div class="fp-tab-hub-list">'+g.links.map(link).join('')+'</div></section>';
-  const groups=[
-   ['Dein Lernpfad','In dieser Reihenfolge bauen die Fähigkeiten aufeinander auf.',['learnpath','concepts','transfer','training','academy']],
-   ['Wissen auf echte Märkte übertragen','Aktuelle Nachrichten, deine Analyse und kritische Reflexion.',['learningnews','dailyreview','academymarket','stockhub']],
-   ['Nachschlagen und Fortschritt vertiefen','Hilfsmittel, Lernmethoden und ergänzende Wissensbereiche.',['skills','glossary','foundations']]
-  ];
-  const seen=new Set();
-  const html=groups.map(([title,description,ids])=>{
-   const items=g.links.filter(row=>ids.includes(row[0])&&!seen.has(row[0]));items.forEach(row=>seen.add(row[0]));
-   return '<section class="fp37-learning-group"><h2>'+esc(title)+'</h2><p>'+esc(description)+'</p><div class="fp-tab-hub-list">'+items.map(link).join('')+'</div></section>'
-  }).join('');
-  return intro+learningGuide()+html+'</section>';
+  if(v==='learn')return window.FinanzPilotJourney?.renderHome?.()||'<section class="fp39-loading"><h1>Lernweg wird vorbereitet</h1><p>Bitte aktualisiere die Seite.</p></section>';
+  return intro+'<div class="fp-tab-hub-list">'+g.links.map(link).join('')+'</div></section>';
+
  }
 
  function build(){
