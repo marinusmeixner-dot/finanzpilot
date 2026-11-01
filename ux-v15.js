@@ -27,6 +27,14 @@
  const esc=s=>String(s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;','\'':'&#39;'}[c]));
  const load=()=>{try{return JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch{return {}}};
  let inRoute=false,restoring=false,previous='home',restoreTicket=0;
+ let navTrail=[];
+ function goBack(){
+  while(navTrail.length){const item=navTrail.pop();if(item?.view===state.view||!Object.prototype.hasOwnProperty.call(PARENT,item?.view))continue;
+   route(item.view,false,true,item.scroll);return true;
+  }
+  const parent=PARENT[state.view];if(parent&&parent!==state.view){route(parent,false,true,0);return true}
+  return false;
+ }
  const rootOf=view=>{let v=view;for(let i=0;i<4;i++){if(MAIN.includes(v))return v;v=PARENT[v];if(!v)break}return 'home'};
  const label=view=>Object.values(GROUPS).flatMap(g=>g.links).find(x=>x[0]===view)?.[1]||GROUPS[view]?.label||GROUPS[rootOf(view)].label;
  function persist(view,y){
@@ -108,12 +116,12 @@
   if(hub)existing?.remove();
   else if(!existing||existing.dataset.view!==state.view){
    existing?.remove();const el=document.createElement('div');el.className='fp-tab-crumb';el.dataset.view=state.view;
-   el.innerHTML='<button type="button" data-section-up="'+back+'">‹ '+esc(GROUPS[back]?.label||label(back))+'-Übersicht</button><span>'+esc(label(state.view))+'</span>';
+   el.innerHTML='<button type="button" data-section-back>‹ Zurück</button><span>'+esc(label(state.view))+'</span>';
    root.prepend(el);
   }
   document.querySelectorAll('[data-section-main]').forEach(b=>{const on=b.dataset.sectionMain===group;b.classList.toggle('active',on);if(on)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});
  }
- function route(to,remember=true){
+ function route(to,remember=true,fromBack=false,atScroll=null){
   if(to==='research')to='stockhub';
    if(to==='marketwatch')to='marketoverview';
   if(inRoute||!Object.prototype.hasOwnProperty.call(PARENT,to))return;
@@ -121,7 +129,8 @@
   if(to==='lesson'||to==='labcase')to='learnpath';
   const old=state.view;if(old===to){if(ROOT_VIEWS.has(to))restoreScroll(to,0);return}
   persist(old,window.scrollY);
-  const pos=load().positions||{},y=ROOT_VIEWS.has(to)?0:Number(pos[to]||0);
+  if(!fromBack){navTrail.push({view:old,scroll:window.scrollY});if(navTrail.length>60)navTrail.shift()}
+  const pos=load().positions||{},y=atScroll!==null?Math.max(0,Number(atScroll)||0):ROOT_VIEWS.has(to)?0:Number(pos[to]||0);
   inRoute=true;previous=to;chooseView(to);header();
   if(remember)persist(to,y);
   const hash='#view='+encodeURIComponent(to);if(location.hash!==hash)history.replaceState(null,'',location.pathname+location.search+hash);
@@ -142,9 +151,10 @@
   if(!location.hash||!hash.get('view'))history.replaceState(null,'',location.pathname+location.search+'#view='+encodeURIComponent(initial));
   restoreScroll(initial,ROOT_VIEWS.has(initial)?0:Number(saved.positions?.[initial]||0));
   document.addEventListener('click',ev=>{
-   const t=ev.target.closest('[data-section-main],[data-section-route],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
+   const t=ev.target.closest('[data-section-main],[data-section-route],[data-section-back],[data-section-up],[data-section-account],[data-hub-view],[data-hub-continue],[data-view]');
    if(!t)return;
-   if(t.matches('[data-section-account]')){ev.preventDefault();ev.stopImmediatePropagation();window.FinanzPilotCloud?.openLogin?.();return}
+   if(t.matches('[data-section-back]')){ev.preventDefault();ev.stopImmediatePropagation();goBack();return}
+    if(t.matches('[data-section-account]')){ev.preventDefault();ev.stopImmediatePropagation();window.FinanzPilotCloud?.openLogin?.();return}
    if(t.matches('[data-hub-continue]')){ev.preventDefault();ev.stopImmediatePropagation();const target=load().resume;route(LEARNING_VIEWS.has(target)?target:'learnpath');return}
    const dest=t.dataset.sectionMain||t.dataset.sectionRoute||t.dataset.sectionUp||t.dataset.hubView||t.dataset.view;
    if(dest){ev.preventDefault();ev.stopImmediatePropagation();route(dest)}
@@ -182,7 +192,7 @@
     if(state.view==='home')render();
   }
   header();
-  window.FinanzPilotNavigation={route,renderHub,isHub,parentOf:rootOf,sections:GROUPS,restoreScroll};if(isHub(state.view))render();
+  window.FinanzPilotNavigation={route,goBack,renderHub,isHub,parentOf:rootOf,sections:GROUPS,restoreScroll};if(isHub(state.view))render();
  }
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
