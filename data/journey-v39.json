@@ -1,0 +1,1148 @@
+{
+  "schema_version": 1,
+  "version": 1,
+  "principle": "Ein zusammenhängender Lernweg. Jede Etappe vermittelt das Wissen für die folgende; Erweiterungen erscheinen erst danach.",
+  "stages": [
+    {
+      "id": "orientieren",
+      "title": "Orientieren",
+      "purpose": "Was Geld, Börse und Geldanlage überhaupt sind",
+      "outcome": "Du kannst Geld sparen, investieren und wesentliche Anlageformen auseinanderhalten.",
+      "level": "Einstieg · ohne Vorwissen",
+      "related": [],
+      "modules": [
+        {
+          "id": "geld-wofuer",
+          "title": "Wofür ist Geld da?",
+          "goal": "Geld, Einkommen, Vermögen und Ausgaben trennen.",
+          "explain": "Geld ist ein Mittel, um Waren und Dienstleistungen zu bezahlen. Dein Einkommen kommt regelmäßig herein, während Vermögen der Wert deiner Besitztümer abzüglich deiner Schulden ist. Ein hoher Kontostand ist nicht automatisch ein hohes Einkommen; eine hohe Gehaltszahlung macht dich nicht automatisch vermögend.",
+          "example": "Du erhältst 1.000 € Einkommen, gibst 750 € aus und legst 250 € zurück. Die 250 € sind ein Teil deiner Ersparnis, nicht zusätzlicher Verdienst.",
+          "questions": [
+            {
+              "prompt": "Eine Person verdient 2.000 € und gibt 2.100 € aus. Was stimmt? ",
+              "options": [
+                "Sie spart 100 €.",
+                "Sie gibt 100 € mehr aus als sie verdient.",
+                "Das Vermögen steigt zwingend."
+              ],
+              "correct": 1,
+              "explanation": "2.100 € minus 2.000 € ergibt 100 € Überschuss bei den Ausgaben. Dauerhaft ist das nicht tragfähig."
+            },
+            {
+              "prompt": "Jemand besitzt 5.000 € auf dem Konto, schuldet aber 2.000 €. Wie groß ist sein Nettovermögen allein aus diesen beiden Posten?",
+              "options": [
+                "7.000 €",
+                "5.000 €",
+                "3.000 €"
+              ],
+              "correct": 2,
+              "explanation": "5.000 € Vermögen minus 2.000 € Schulden sind 3.000 €. Andere Vermögenswerte oder Verpflichtungen wurden hier nicht berücksichtigt."
+            }
+          ]
+        },
+        {
+          "id": "budget-reserve",
+          "title": "Sparen ohne Risikochaos",
+          "goal": "Ausgaben, Reserven und Ziele sinnvoll unterscheiden.",
+          "explain": "Ein Budget beantwortet, wohin dein Geld fließt. Kurzfristige Pflichtausgaben und eine Notreserve sollten nicht davon abhängen, ob Aktien morgen steigen. Ein finanzielles Ziel braucht deshalb den Betrag und den Zeitpunkt, an dem du das Geld benötigst.",
+          "example": "Eine Autoreparatur wird in drei Monaten fällig. Das Geld gehört nicht in eine schwankende Aktie, sondern sollte verfügbar und möglichst wertstabil sein.",
+          "questions": [
+            {
+              "prompt": "Du brauchst 1.000 € in sechs Wochen. Welcher Ansatz passt?",
+              "options": [
+                "Mit hohem Risiko auf Börsengewinne hoffen.",
+                "Auf einem verfügbaren, geeigneten Konto bereithalten.",
+                "Den gesamten Betrag in eine einzelne Aktie stecken."
+              ],
+              "correct": 1,
+              "explanation": "Bei so kurzer Frist dominiert die sichere Verfügbarkeit, nicht die Aussicht auf eine höhere Rendite."
+            },
+            {
+              "prompt": "Wozu dient eine Notreserve am ehesten?",
+              "options": [
+                "Um mit ihr ständig zu handeln.",
+                "Damit du unerwartete Ausgaben ohne Notverkauf decken kannst.",
+                "Sie verhindert jede Geldentwertung."
+              ],
+              "correct": 1,
+              "explanation": "Eine Notreserve schützt vor erzwungenen Verkäufen im ungünstigen Börsenmoment."
+            }
+          ]
+        },
+        {
+          "id": "sparen-investieren",
+          "title": "Sparen und Investieren",
+          "goal": "Rendite, Zeit und Risiko auseinanderhalten.",
+          "explain": "Sparen bewahrt Geld für ein Ziel auf und setzt auf Verfügbarkeit. Investieren beteiligt dich an wirtschaftlichen Chancen, bringt aber Wertschwankungen und Verlustrisiken mit sich. Ob eine Anlage geeignet ist, hängt auch vom Anlagehorizont ab.",
+          "example": "Für eine Rechnung nächsten Monat ist ein Tagesgeldkonto geeigneter. Bei einem langfristigen Ziel kann eine breit gestreute Geldanlage erwogen werden, die auch zwischenzeitliche Verluste verkraften muss.",
+          "questions": [
+            {
+              "prompt": "Was ist beim Investieren grundsätzlich anders als beim Zurücklegen auf einem Girokonto?",
+              "options": [
+                "Der investierte Betrag muss nicht jederzeit vollständig verfügbar sein.",
+                "Es sind immer jährlich genau fünf Prozent Gewinn.",
+                "Man darf Geld nur einmal anlegen."
+              ],
+              "correct": 0,
+              "explanation": "Börsenwerte können fallen; außerdem hängen Verkauf und Geldverfügbarkeit vom gewählten Produkt ab."
+            },
+            {
+              "prompt": "Ein Ziel liegt in 15 Jahren. Worüber solltest du zusätzlich nachdenken?",
+              "options": [
+                "Streuung, Gebühren und mögliche Verluste.",
+                "Nur über den gestrigen Kurs.",
+                "Ob die Aktie einen schönen Namen hat."
+              ],
+              "correct": 0,
+              "explanation": "Lange Zeiträume eröffnen Möglichkeiten, schützen aber nicht vor Verlusten."
+            }
+          ]
+        },
+        {
+          "id": "was-ist-boerse",
+          "title": "Was passiert an der Börse?",
+          "goal": "Käufer, Verkäufer und Kursbildung verstehen.",
+          "explain": "Eine Börse bringt Kauf- und Verkaufsinteressen zusammen. Der Aktienkurs ist der Preis einer Transaktion, nicht der persönlich empfundene Wert des Unternehmens. Kurse bewegen sich, wenn Marktteilnehmer neue Informationen oder Erwartungen anders einschätzen.",
+          "example": "Steigt die Nachfrage zu bisherigen Preisen stärker als das Verkaufsangebot, kann der gehandelte Preis steigen. Ein einzelner Anstieg beweist noch keine gute Geschäftsentwicklung.",
+          "questions": [
+            {
+              "prompt": "Warum kann ein Aktienkurs an einem Tag fallen?",
+              "options": [
+                "Weil der Unternehmensgewinn zwingend negativ ist.",
+                "Weil sich Angebot, Nachfrage oder Erwartungen verändern.",
+                "Weil die Aktie automatisch ungültig wird."
+              ],
+              "correct": 1,
+              "explanation": "Auch neue Erwartungen, Zinsen oder allgemeine Marktbewegungen beeinflussen Kurse."
+            },
+            {
+              "prompt": "Was beschreibt ein Börsenkurs am besten?",
+              "options": [
+                "Den garantierten inneren Wert der Firma.",
+                "Einen tatsächlich oder zuletzt gehandelten Marktpreis.",
+                "Den zukünftigen Gewinn je Aktie."
+              ],
+              "correct": 1,
+              "explanation": "Preis und geschätzter Wert sind unterschiedliche Größen."
+            }
+          ]
+        },
+        {
+          "id": "anlagearten",
+          "title": "Aktie, Anleihe und Fonds",
+          "goal": "Wichtige Anlageformen sicher auseinanderhalten.",
+          "explain": "Mit einer Aktie besitzt du einen Anteil an einem Unternehmen. Eine Anleihe ist grundsätzlich eine Forderung gegenüber einem Schuldner. Ein Fonds bündelt viele Anlagen; ein börsengehandelter Fonds heißt ETF (Exchange Traded Fund). Keine dieser Anlagen ist völlig risikolos.",
+          "example": "Bei einer Anleihe schuldest nicht du dem Unternehmen Geld, sondern der Emittent schuldet dir vereinbarte Zahlungen; bei einer Aktie gehören dir Anteile ohne garantierte Rückzahlung.",
+          "questions": [
+            {
+              "prompt": "Was erwirbst du mit einer gewöhnlichen Unternehmensaktie?",
+              "options": [
+                "Eine Beteiligung am Unternehmen.",
+                "Einen staatlich garantierten Sparzins.",
+                "Eine Forderung mit unveränderlicher Tilgung."
+              ],
+              "correct": 0,
+              "explanation": "Mit Aktien bist du Miteigentümer im rechtlichen und wirtschaftlichen Sinn."
+            },
+            {
+              "prompt": "Was ist ein ETF?",
+              "options": [
+                "Ein börsengehandelter Fonds.",
+                "Eine einzige besonders große Aktie.",
+                "Eine sichere Einlagengarantie."
+              ],
+              "correct": 0,
+              "explanation": "ETF ist die Abkürzung für Exchange Traded Fund; entscheidend ist, welche Anlagen der Fonds hält."
+            }
+          ]
+        },
+        {
+          "id": "bruecke-1",
+          "title": "Zwischenstufe: Deine erste Entscheidung",
+          "goal": "Die fünf Grundlagen anhand einer Situation verbinden.",
+          "explain": "Jetzt kombinierst du Budget, Anlageziel, Zeit und Risiko. Eine Anlage kann wirtschaftlich interessant sein und trotzdem ungeeignet, wenn du das Geld kurzfristig brauchst. Gute Entscheidungen beginnen mit einem überprüfbaren Ziel, nicht mit einem Namen aus den Nachrichten.",
+          "example": "Du hast 1.500 € Reserve und willst in acht Wochen eine größere Ausgabe bezahlen. Eine Aktie wirkt attraktiv, kann aber bis dahin fallen.",
+          "questions": [
+            {
+              "prompt": "Welche Information sollte zuerst geklärt werden?",
+              "options": [
+                "Welche Firma gestern am stärksten gestiegen ist.",
+                "Welcher Betrag wann sicher verfügbar sein muss.",
+                "Welchen Influencer du zuerst fragst."
+              ],
+              "correct": 1,
+              "explanation": "Anlagehorizont und Liquiditätsbedarf sind die Ausgangspunkte."
+            },
+            {
+              "prompt": "Was hat dich Schritt 1 gelehrt?",
+              "options": [
+                "Mehr Rendite erfordert immer einen einzelnen Technologiewert.",
+                "Ein Kurs ist nicht gleich ein garantierter Unternehmenswert.",
+                "Aktienkurse werden nur durch Gewinne bestimmt."
+              ],
+              "correct": 1,
+              "explanation": "Diese Unterscheidung brauchst du für die nächsten Unternehmenslektionen."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verstehen",
+      "title": "Verstehen",
+      "purpose": "Wie ein Unternehmen Geld verdient und Zahlen entstehen",
+      "outcome": "Du kannst Umsatz, Gewinn, Bilanz und Geldfluss voneinander trennen.",
+      "level": "Einführung · Unternehmen",
+      "related": [
+        {
+          "view": "concepts",
+          "label": "Weitere Unternehmenskennzahlen in der Begriffsakademie"
+        }
+      ],
+      "modules": [
+        {
+          "id": "unternehmen-geschaeft",
+          "title": "Wie verdienen Unternehmen Geld?",
+          "goal": "Produkte, Kunden und Geschäftsmodelle verstehen.",
+          "explain": "Unternehmen schaffen Produkte oder Dienstleistungen, für die Kunden zahlen. Das Geschäftsmodell erklärt, wer der Kunde ist, welchen Nutzen er erhält und wie daraus Einnahmen entstehen. Die Qualität eines Geschäftsmodells hängt auch von Wettbewerbern, Preisen und wiederkehrender Nachfrage ab.",
+          "example": "Ein Softwareunternehmen kann monatliche Gebühren verlangen; ein Maschinenbauer verkauft Anlagen mit längeren Auftragszyklen. Derselbe Umsatz kann deshalb unterschiedlich planbar sein.",
+          "questions": [
+            {
+              "prompt": "Was beschreibt ein Geschäftsmodell?",
+              "options": [
+                "Wie ein Unternehmen mit Kundennutzen Geld einnimmt.",
+                "Nur die Aktienkursbewegung.",
+                "Nur das Firmenlogo."
+              ],
+              "correct": 0,
+              "explanation": "Wichtig sind Angebot, Kunden, Einnahmequelle und Kosten."
+            },
+            {
+              "prompt": "Warum sind wiederkehrende Umsätze interessant?",
+              "options": [
+                "Sie können Einnahmen planbarer machen.",
+                "Sie schließen Konkurrenz aus.",
+                "Sie garantieren steigende Margen."
+              ],
+              "correct": 0,
+              "explanation": "Planbarkeit ist hilfreich, aber nie eine Gewinngarantie."
+            }
+          ]
+        },
+        {
+          "id": "umsatz-kosten",
+          "title": "Umsatz, Kosten und Gewinn",
+          "goal": "Die drei Grundgrößen einer Gewinnrechnung verstehen.",
+          "explain": "Umsatz ist der Wert verkaufter Waren oder Dienstleistungen. Kosten entstehen etwa durch Material, Personal, Entwicklung oder Vertrieb. Vereinfacht bleibt Gewinn übrig, wenn du die zugehörigen Aufwendungen vom Umsatz abziehst. Ein höherer Umsatz kann trotzdem mit sinkendem Gewinn einhergehen.",
+          "example": "Ein Betrieb erzielt 1.000 € Umsatz und hat 800 € relevante Kosten. In diesem einfachen Beispiel bleiben 200 € Gewinn.",
+          "questions": [
+            {
+              "prompt": "Ein Unternehmen setzt 2.000 € um und hat 1.700 € Kosten. Was bleibt vereinfacht übrig?",
+              "options": [
+                "300 € Gewinn.",
+                "3.700 € Gewinn.",
+                "1.700 € Gewinn."
+              ],
+              "correct": 0,
+              "explanation": "2.000 − 1.700 = 300 €. Reale Abschlüsse haben verschiedene Kosten- und Ergebnisstufen."
+            },
+            {
+              "prompt": "Was folgt aus zehn Prozent Umsatzwachstum?",
+              "options": [
+                "Der Gewinn wächst genau um zehn Prozent.",
+                "Gar keine sichere Aussage über den Gewinn ohne die Kostenentwicklung.",
+                "Die Kosten fallen automatisch."
+              ],
+              "correct": 1,
+              "explanation": "Gewinnwachstum hängt davon ab, wie die Kosten mitwachsen."
+            }
+          ]
+        },
+        {
+          "id": "gewinn-zeitraum",
+          "title": "Was sagt eine Gewinnrechnung?",
+          "goal": "Gewinn und Berichtszeitraum zuordnen.",
+          "explain": "Die Gewinn- und Verlustrechnung zeigt Einnahmen und Aufwendungen für eine Periode, etwa ein Quartal oder ein Geschäftsjahr. Sie zeigt nicht automatisch alle tatsächlichen Geldbewegungen. Man muss außerdem zwischen dem operativen Ergebnis, Zinsen, Steuern und dem Gewinn für Aktionäre unterscheiden.",
+          "example": "Ein Unternehmen kann eine Rechnung im Dezember schreiben, obwohl der Kunde im Januar zahlt. Das Geschäft kann im Dezemberergebnis auftauchen, obwohl der Geldeingang später erfolgt.",
+          "questions": [
+            {
+              "prompt": "Welche Frage beantwortet eine Gewinn- und Verlustrechnung?",
+              "options": [
+                "Was passierte im Betrieb innerhalb einer bestimmten Periode?",
+                "Wie viel Bargeld liegt genau jetzt im Tresor?",
+                "Wie hoch wird die Aktie morgen notieren?"
+              ],
+              "correct": 0,
+              "explanation": "Es handelt sich um eine zeitbezogene Darstellung von Erträgen und Aufwendungen."
+            },
+            {
+              "prompt": "Warum ist ein berichteter Gewinn nicht automatisch das Bankguthaben?",
+              "options": [
+                "Weil Zahlung und Gewinnermittlung zu unterschiedlichen Zeitpunkten erfolgen können.",
+                "Weil Gewinne immer fiktiv sind.",
+                "Weil jede Firma Schulden haben muss."
+              ],
+              "correct": 0,
+              "explanation": "Buchhalterische Erträge und Zahlungsflüsse können zeitlich auseinanderfallen."
+            }
+          ]
+        },
+        {
+          "id": "bilanz-einfach",
+          "title": "Was zeigt eine Bilanz?",
+          "goal": "Vermögen und Finanzierung an einem Stichtag verstehen.",
+          "explain": "Eine Bilanz zeigt, welche Vermögenswerte das Unternehmen besitzt und wie sie finanziert sind. Vermögen entspricht vereinfacht Eigenkapital plus Schulden beziehungsweise anderen Verpflichtungen. Eine Bilanz ist ein Stichtagsbild, keine Erfolgsrechnung für das ganze Jahr.",
+          "example": "Ein Unternehmen besitzt Anlagen und liquide Mittel im Wert von insgesamt 100.000 €. Es schuldet 60.000 €. Vereinfacht bleiben 40.000 € Eigenkapital.",
+          "questions": [
+            {
+              "prompt": "Vermögenswerte von 80.000 € stehen Schulden von 30.000 € gegenüber. Wie hoch ist rechnerisch das Eigenkapital?",
+              "options": [
+                "50.000 €.",
+                "110.000 €.",
+                "30.000 €."
+              ],
+              "correct": 0,
+              "explanation": "80.000 − 30.000 = 50.000 € Eigenkapital."
+            },
+            {
+              "prompt": "Wieso garantiert hohes Eigenkapital keine problemlosen Rechnungszahlungen?",
+              "options": [
+                "Weil Vermögen in Maschinen gebunden sein kann und kurzfristige Geldmittel fehlen.",
+                "Weil Eigenkapital automatisch eine Bankzahlung ist.",
+                "Weil jede Firma ein Depot besitzen muss."
+              ],
+              "correct": 0,
+              "explanation": "Die Liquidität muss separat betrachtet werden."
+            }
+          ]
+        },
+        {
+          "id": "cashflow-einfach",
+          "title": "Warum zählt der Geldfluss?",
+          "goal": "Cashflow als echte Ein- und Auszahlungen verstehen.",
+          "explain": "Cashflow beschreibt Zahlungsströme. Ein Unternehmen kann Umsatz erzielen, aber das Geld noch nicht erhalten haben. Es kann außerdem Gewinne berichten und gleichzeitig viel Geld für neue Maschinen ausgeben. Darum analysieren Anleger Gewinn und verfügbares Geld zusammen.",
+          "example": "Ein Unternehmen erhält 600 € von Kunden, bezahlt 400 € laufende Ausgaben und kauft für 150 € eine Maschine. Vereinfacht bleiben 50 € nach diesen Zahlungen.",
+          "questions": [
+            {
+              "prompt": "Es fließen 1.000 € von Kunden ein und 700 € für den laufenden Betrieb ab. Wie hoch ist vereinfacht der betriebliche Netto-Geldzufluss?",
+              "options": [
+                "300 €.",
+                "1.700 €.",
+                "700 €."
+              ],
+              "correct": 0,
+              "explanation": "1.000 − 700 = 300 €. Weitere Investitionen wurden noch nicht berücksichtigt."
+            },
+            {
+              "prompt": "Warum kann der verfügbare Geldbetrag unter dem Gewinn liegen?",
+              "options": [
+                "Weil Investitionen und der Zahlungszeitpunkt wichtig sind.",
+                "Weil hohe Gewinne verboten sind.",
+                "Weil jede Aktie teurer wird."
+              ],
+              "correct": 0,
+              "explanation": "Zahlungen und buchhalterischer Gewinn sind nicht deckungsgleich."
+            }
+          ]
+        },
+        {
+          "id": "bruecke-2",
+          "title": "Zwischenstufe: Eine Firma lesen",
+          "goal": "Gewinn, Bilanz und Geldfluss zusammenführen.",
+          "explain": "Ein Jahresbericht erzählt in verschiedenen Zahlenwerken unterschiedliche Teile derselben Geschichte. Die Gewinnrechnung zeigt den Erfolg einer Periode, die Bilanz den Finanzierungszustand am Stichtag und die Kapitalflussrechnung den tatsächlichen Zahlungsweg. Erst gemeinsam lassen sich größere Risiken erkennen.",
+          "example": "Ein Unternehmen meldet 20 Mio. € Gewinn, hat aber 5 Mio. € negativen frei verfügbaren Geldfluss und hohe bald fällige Schulden. Der Gewinn allein reicht nicht für Entwarnung.",
+          "questions": [
+            {
+              "prompt": "Welches Dokument hilft am ehesten, die kurzfristige Finanzierung am Stichtag zu sehen?",
+              "options": [
+                "Bilanz und Erläuterungen zur Fälligkeit der Schulden.",
+                "Nur eine Liste der heutigen Aktienkäufe.",
+                "Der fünfminütige Börsenchart."
+              ],
+              "correct": 0,
+              "explanation": "Verbindlichkeiten und Liquidität sind Teil der Finanzierungsanalyse."
+            },
+            {
+              "prompt": "Was solltest du bei hohem Gewinn und schwachem Cashflow als Nächstes untersuchen?",
+              "options": [
+                "Zahlungseingänge, Lager, Forderungen und Investitionen.",
+                "Nur die Farbe der Bilanzgrafik.",
+                "Nur die Gewinnsteigerung isoliert feiern."
+              ],
+              "correct": 0,
+              "explanation": "Der Unterschied kann zeitliche oder strukturelle Ursachen haben."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verknuepfen",
+      "title": "Verknüpfen",
+      "purpose": "Warum aus Unternehmenszahlen noch kein Aktienwert folgt",
+      "outcome": "Du erkennst den Zusammenhang zwischen Wachstum, Finanzierung, Risiko und Bewertung.",
+      "level": "Zusammenhänge · Bewertung",
+      "related": [
+        {
+          "view": "concepts",
+          "label": "Fortgeschrittene Bewertungskennzahlen vertiefen"
+        }
+      ],
+      "modules": [
+        {
+          "id": "wachstum-marge",
+          "title": "Wachstum und Marge zusammen lesen",
+          "goal": "Umsatzänderungen mit Rentabilität verknüpfen.",
+          "explain": "Umsatzwachstum ist die relative Veränderung der Einnahmen. Die Gewinnmarge zeigt, wie viel Gewinn je Euro Umsatz übrig bleibt. Ein Unternehmen kann beim Umsatz wachsen und dennoch eine kleinere Marge erzielen, wenn Kosten schneller steigen.",
+          "example": "Ein Betrieb steigert den Umsatz von 100 auf 120 Mio. €, der Gewinn bleibt bei 10 Mio. €. Die Marge fällt von 10 % auf etwa 8,3 %.",
+          "questions": [
+            {
+              "prompt": "Was ist bei Umsatzanstieg und gleichem Gewinn richtig?",
+              "options": [
+                "Die Gewinnmarge sinkt.",
+                "Die Gewinnmarge steigt immer.",
+                "Die Firma hat automatisch mehr Bargeld."
+              ],
+              "correct": 0,
+              "explanation": "Mehr Umsatz bei unverändertem Gewinn bedeutet einen geringeren Gewinnanteil am Umsatz."
+            },
+            {
+              "prompt": "Welche Kennzahl würdest du für einen Vergleich zusätzlich heranziehen?",
+              "options": [
+                "Gewinnmarge beider Perioden.",
+                "Nur die letzte Aktienfarbe.",
+                "Nur die Mitarbeiterzahl ohne Bezug."
+              ],
+              "correct": 0,
+              "explanation": "Die Marge macht die Ertragsqualität mit sichtbar."
+            }
+          ]
+        },
+        {
+          "id": "liquiditaet-schulden",
+          "title": "Schulden treffen Geldfluss",
+          "goal": "Zinsen, Fälligkeiten und Liquidität verbinden.",
+          "explain": "Schulden sind nicht immer schlecht: Investitionen können durch Kredite finanziert werden. Entscheidend sind Kosten, Fälligkeiten und die Fähigkeit, Zahlungen aus dem Geschäft zu leisten. Eine Firma mit gutem Gewinn kann Schwierigkeiten haben, wenn große Kreditbeträge bald fällig werden.",
+          "example": "Eine Firma besitzt 10 Mio. € freie Mittel, muss aber in einem Monat 30 Mio. € zurückzahlen. Ohne neue Finanzierung oder zusätzliche Einzahlungen besteht eine Lücke.",
+          "questions": [
+            {
+              "prompt": "Welche Angabe ist für die kurzfristige Zahlungsfähigkeit besonders wichtig?",
+              "options": [
+                "Wann welche Schulden fällig werden.",
+                "Ob der Chart gestern stieg.",
+                "Wie oft der Firmenname in Nachrichten vorkommt."
+              ],
+              "correct": 0,
+              "explanation": "Liquidität ist eine Frage von Zeitpunkt und Zahlungsfähigkeit."
+            },
+            {
+              "prompt": "Sind Schulden immer ein Zeichen für ein schlechtes Unternehmen?",
+              "options": [
+                "Nein, ihre Tragbarkeit und Kosten sind entscheidend.",
+                "Ja, jede Schuld verhindert Gewinne.",
+                "Nein, Zinsen spielen grundsätzlich keine Rolle."
+              ],
+              "correct": 0,
+              "explanation": "Finanzierungsbedingungen und Geschäftsrisiken sind wichtiger als die bloße Existenz von Krediten."
+            }
+          ]
+        },
+        {
+          "id": "zins-inflation-bewertung",
+          "title": "Zinsen und Inflation verknüpfen",
+          "goal": "Verstehen, warum Geld heute und morgen anders bewertet wird.",
+          "explain": "Inflation kann die Kaufkraft verringern. Zinsen beeinflussen die Finanzierungskosten und die Renditeanforderungen an Investments. Bei einer Bewertung zählt, wann künftige Zahlungen anfallen und mit welchem Risiko sie verbunden sind. Künftige Euro sind nicht automatisch so viel wert wie heutige Euro.",
+          "example": "Wenn sichere Anlagen höhere Zinsen bieten, verlangen Anleger oft auch bei riskanten Aktien mehr erwartete Rendite. Das kann bei sonst gleichen Erwartungen den heutigen Aktienwert drücken.",
+          "questions": [
+            {
+              "prompt": "Was geschieht häufig mit dem heutigen Wert weit entfernter Zahlungen, wenn die Renditeanforderung steigt?",
+              "options": [
+                "Er sinkt bei gleichen erwarteten Zahlungen.",
+                "Er verdoppelt sich zwingend.",
+                "Es gibt nie einen Effekt."
+              ],
+              "correct": 0,
+              "explanation": "Höhere Abzinsung reduziert bei sonst gleichen Annahmen den Gegenwartswert."
+            },
+            {
+              "prompt": "Was beschreibt Inflation am ehesten?",
+              "options": [
+                "Den durchschnittlichen Anstieg eines Preisniveaus.",
+                "Jede einzelne Ware wird exakt gleich teuer.",
+                "Eine Garantie steigender Aktien."
+              ],
+              "correct": 0,
+              "explanation": "Inflation ist ein Durchschnitt des Preisniveaus."
+            }
+          ]
+        },
+        {
+          "id": "aktienpreis-wert",
+          "title": "Preis ist nicht Wert",
+          "goal": "Geschätzten Unternehmenswert vom Börsenkurs trennen.",
+          "explain": "Der Aktienpreis ist am Markt beobachtbar. Den fairen Wert muss man mithilfe begründeter Annahmen über zukünftige Zahlungen, Risiko und Wachstum schätzen. Unterschiedliche Anleger können deshalb bei gleichem Marktpreis zu verschiedenen Werten kommen.",
+          "example": "Eine Aktie kostet 50 €. Du schätzt begründet einen Wert von 40 € je Anteil. Das ist eine Bewertungsaussage, kein Beweis für einen morgigen Kursrückgang.",
+          "questions": [
+            {
+              "prompt": "Warum kann eine Aktie nach guten Unternehmenszahlen fallen?",
+              "options": [
+                "Weil Marktteilnehmer noch bessere Ergebnisse erwartet hatten.",
+                "Weil gute Zahlen immer ein Betrug sind.",
+                "Weil steigender Gewinn einen Kursrückgang zwingend macht."
+              ],
+              "correct": 0,
+              "explanation": "Der Unterschied zwischen berichteten Ergebnissen und Erwartungen treibt Reaktionen."
+            },
+            {
+              "prompt": "Was braucht eine faire Wertschätzung?",
+              "options": [
+                "Transparente Annahmen und Unsicherheiten.",
+                "Nur einen vergangenen Rekordkurs.",
+                "Nur einen optimistischen Artikel."
+              ],
+              "correct": 0,
+              "explanation": "Bewertungen sind Modelle, keine gemessenen Tatsachen."
+            }
+          ]
+        },
+        {
+          "id": "bewertungsvergleiche",
+          "title": "Kennzahlen fair vergleichen",
+          "goal": "Einfaches Kurs-Gewinn-Verhältnis und seine Grenzen.",
+          "explain": "Das Kurs-Gewinn-Verhältnis (KGV) setzt den Aktienkurs ins Verhältnis zum Gewinn je Aktie. Ein niedriges KGV kann günstig wirken, aber auch ein Signal für schwaches Wachstum oder hohe Risiken sein. Der Vergleich funktioniert nur mit ähnlichen Berichtsperioden und Ertragsqualitäten.",
+          "example": "Aktie A kostet 80 € bei 5 € Jahresgewinn je Anteil: KGV 16. Aktie B hat KGV 10, aber viel mehr Schulden. B ist nicht allein deshalb die bessere Anlage.",
+          "questions": [
+            {
+              "prompt": "Wozu dient das Kurs-Gewinn-Verhältnis?",
+              "options": [
+                "Zur Einordnung des Preises relativ zum Gewinn je Aktie.",
+                "Zum Nachweis garantierter Renditen.",
+                "Zur exakten Messung des Cashflows."
+              ],
+              "correct": 0,
+              "explanation": "Es ist eine Gewinnbewertungsrelation, kein vollständiges Unternehmensmodell."
+            },
+            {
+              "prompt": "Was ist bei Vergleichen wichtig?",
+              "options": [
+                "Gewinnqualität, Schulden, Wachstum und gleichartige Perioden.",
+                "Nur die kleinere Zahl.",
+                "Nur der Börsenplatz."
+              ],
+              "correct": 0,
+              "explanation": "Einzelne Kennzahlen müssen in einen wirtschaftlichen Kontext."
+            }
+          ]
+        },
+        {
+          "id": "bruecke-3",
+          "title": "Zwischenstufe: Die Bewertungskette",
+          "goal": "Wachstum, Margen, Cashflow und Kapitalkosten verbinden.",
+          "explain": "Ein möglicher Aktienwert entsteht aus künftigen wirtschaftlichen Ergebnissen und dem Risiko ihrer Entstehung. Mehr Umsatz ist nur wertvoll, wenn er zu genügend nachhaltigem Geldfluss führt. Höhere Kapitalkosten oder Schulden können die Attraktivität relativieren.",
+          "example": "Ein Unternehmen könnte den Umsatz stark steigern, benötigt dafür aber enorme Investitionen. Eine Bewertung muss zusätzlichen Nutzen und zusätzlichen Kapitaleinsatz gemeinsam berücksichtigen.",
+          "questions": [
+            {
+              "prompt": "Welche Argumentationskette ist am sinnvollsten?",
+              "options": [
+                "Kunden → Umsatz → Marge → Cashflow → Risiko → Bewertung.",
+                "Social-Media-Aufrufe → sicherer Gewinn.",
+                "Kursanstieg → garantierter Firmenwert."
+              ],
+              "correct": 0,
+              "explanation": "Die Bewertungskette startet beim Geschäftsmodell und endet nicht bei der Schlagzeile."
+            },
+            {
+              "prompt": "Eine Firma wächst schnell, braucht aber immer mehr Fremdkapital. Was prüfst du?",
+              "options": [
+                "Finanzierungskosten, Fälligkeiten, Cashflow und Wachstumsqualität.",
+                "Nur den Kursgewinn des Vortages.",
+                "Nur die Zahl neuer Produkte."
+              ],
+              "correct": 0,
+              "explanation": "Wachstum muss auch finanziell tragfähig sein."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "anwenden",
+      "title": "Anwenden",
+      "purpose": "Die Zusammenhänge selbst berechnen und prüfen",
+      "outcome": "Du kannst echte Veränderungen berechnen und Annahmen hinterfragen.",
+      "level": "Üben · Transfer",
+      "related": [
+        {
+          "view": "transfer",
+          "label": "Zusätzliche Transferübungen"
+        }
+      ],
+      "modules": [
+        {
+          "id": "rechnen-veraenderung",
+          "title": "Prozentveränderungen berechnen",
+          "goal": "Wachstum und Rückgänge selbst nachrechnen.",
+          "explain": "Eine relative Veränderung berechnest du mit (Neuer Wert − Alter Wert) geteilt durch den alten Wert, mal 100. Das Ergebnis ist ein Prozentsatz. Der Vergleichszeitraum muss passen, sonst entstehen falsche Schlussfolgerungen.",
+          "example": "80 auf 100 bedeutet (100 − 80) / 80 × 100 = 25 % Wachstum. Von 100 auf 80 sind es −20 %. Die beiden Veränderungen sind nicht symmetrisch.",
+          "questions": [
+            {
+              "prompt": "Ein Umsatz steigt von 50 auf 60 Mio. €. Wie stark ist das Wachstum?",
+              "options": [
+                "10 %.",
+                "20 %.",
+                "25 %."
+              ],
+              "correct": 1,
+              "explanation": "10 / 50 × 100 = 20 %. Der ursprüngliche Wert ist der Nenner."
+            },
+            {
+              "prompt": "Ein Kurs sinkt von 100 € auf 80 €. Wie stark muss er danach steigen, um wieder 100 € zu erreichen?",
+              "options": [
+                "20 %.",
+                "25 %.",
+                "40 %."
+              ],
+              "correct": 1,
+              "explanation": "20 / 80 × 100 = 25 %. Nach Verlusten wird die verbleibende Basis kleiner."
+            }
+          ]
+        },
+        {
+          "id": "rechnen-marge",
+          "title": "Operative Marge berechnen",
+          "goal": "Prozentpunkte von Prozentänderungen unterscheiden.",
+          "explain": "Teile das operative Ergebnis durch den Umsatz und multipliziere mit 100. Vergleiche Margen stets für die gleichen Zeiträume. Ein Rückgang von 12 % auf 10 % bedeutet minus zwei Prozentpunkte, nicht minus zwei Prozent relativer Veränderung.",
+          "example": "Ein Umsatz von 400 Mio. € und operatives Ergebnis von 40 Mio. € ergeben eine operative Marge von 10 %.",
+          "questions": [
+            {
+              "prompt": "Eine Firma erzielt 500 Mio. € Umsatz und 75 Mio. € operativen Gewinn. Welche Marge hat sie?",
+              "options": [
+                "10 %.",
+                "15 %.",
+                "25 %."
+              ],
+              "correct": 1,
+              "explanation": "75 / 500 × 100 = 15 %."
+            },
+            {
+              "prompt": "Die Marge sinkt von 15 % auf 12 %. Welche Beschreibung stimmt?",
+              "options": [
+                "−3 Prozentpunkte.",
+                "−3 % relativ.",
+                "Der operative Gewinn ist sicher unverändert."
+              ],
+              "correct": 0,
+              "explanation": "Die Differenz von zwei Prozentsätzen wird in Prozentpunkten ausgedrückt."
+            }
+          ]
+        },
+        {
+          "id": "rechnen-cashflow",
+          "title": "Freien Cashflow ableiten",
+          "goal": "Operative Einzahlungen und Investitionen trennen.",
+          "explain": "Vereinfacht kannst du freien Cashflow als Cashflow aus laufender Geschäftstätigkeit abzüglich Investitionsauszahlungen betrachten. Es gibt je nach Unternehmen unterschiedliche Definitionen. Einmalige Erweiterungsinvestitionen sollten nicht stillschweigend aus der Rechnung verschwinden.",
+          "example": "Ein Unternehmen hat 90 Mio. € operativen Cashflow und 40 Mio. € Investitionen: Der freie Cashflow beträgt hier 50 Mio. €.",
+          "questions": [
+            {
+              "prompt": "Operativer Cashflow 120 Mio. €, Investitionen 70 Mio. €. Was bleibt vereinfacht?",
+              "options": [
+                "50 Mio. €.",
+                "190 Mio. €.",
+                "70 Mio. €."
+              ],
+              "correct": 0,
+              "explanation": "120 − 70 = 50 Mio. €. Es ist eine vereinfachte Cashflow-Definition."
+            },
+            {
+              "prompt": "Warum sollte man eine einmalige Erweiterungsinvestition gesondert erklären?",
+              "options": [
+                "Weil sie die aktuelle Auszahlung und möglicherweise zukünftige Erträge beeinflusst.",
+                "Weil sie nie bezahlt werden muss.",
+                "Weil der Umsatz deshalb sicher verdoppelt wird."
+              ],
+              "correct": 0,
+              "explanation": "Investitionen beeinflussen gegenwärtige Liquidität und zukünftige Möglichkeiten."
+            }
+          ]
+        },
+        {
+          "id": "rechnen-bewertung",
+          "title": "Ein einfaches KGV rechnen",
+          "goal": "Bewertung mit einheitlichen Zahlen prüfen.",
+          "explain": "Beim Kurs-Gewinn-Verhältnis teilst du den Aktienkurs durch den Gewinn je Aktie für einen klar genannten Zeitraum. Wenn der Gewinn durch Sondereffekte verzerrt wird, ist das berechnete Verhältnis wenig aussagekräftig. Man sollte historische und erwartete Gewinne klar unterscheiden.",
+          "example": "Kurs 60 €, Gewinn je Aktie 4 € pro Jahr: KGV 15. Ein erwarteter Gewinn von 5 € würde bei gleichem Kurs ein anderes, unsicheres KGV ergeben.",
+          "questions": [
+            {
+              "prompt": "Eine Aktie kostet 90 €, Gewinn je Aktie 6 €. Wie hoch ist das KGV?",
+              "options": [
+                "9.",
+                "15.",
+                "54."
+              ],
+              "correct": 1,
+              "explanation": "90 / 6 = 15."
+            },
+            {
+              "prompt": "Was bedeutet ein erwartetes KGV von 15?",
+              "options": [
+                "Eine Relation von Kurs und erwarteten Gewinnen.",
+                "Eine sichere Rendite von 15 %.",
+                "Einen Garantiekurs im nächsten Jahr."
+              ],
+              "correct": 0,
+              "explanation": "Das KGV sagt nichts direkt über sichere zukünftige Renditen."
+            }
+          ]
+        },
+        {
+          "id": "rechnen-szenario",
+          "title": "Drei Szenarien vergleichen",
+          "goal": "Annahmen variieren, statt einen einzigen Wert zu behaupten.",
+          "explain": "Ein Finanzmodell ist nur so gut wie die Annahmen. Ein Basisszenario beschreibt die wahrscheinlich erscheinende Entwicklung, ein günstiges und ein ungünstiges Szenario erkunden andere mögliche Ergebnisse. Die Wahrscheinlichkeiten sind Schätzungen, keine Naturgesetze.",
+          "example": "Ein Betrieb könnte im nächsten Jahr 8, 12 oder 16 Mio. € operativen Gewinn erzielen. Die Spanne zeigt Unsicherheit. Für einen Bewertungsvergleich musst du zusätzlich Risiko und Investitionen berücksichtigen.",
+          "questions": [
+            {
+              "prompt": "Welche Annahme ist für einen Stresstest sinnvoll?",
+              "options": [
+                "Eine schlechtere Marge bei steigenden Kosten.",
+                "Für immer steigende Gewinne ohne Risiko.",
+                "Ein einziges exaktes Zukunftsergebnis."
+              ],
+              "correct": 0,
+              "explanation": "Ein Stresstest untersucht belastende, plausible Alternativen."
+            },
+            {
+              "prompt": "Warum reichen drei Szenarien noch nicht für ein sicheres Kursziel?",
+              "options": [
+                "Weil Annahmen, Wahrscheinlichkeiten und Kapitalbedarf unsicher bleiben.",
+                "Weil drei Zahlen gesetzlich verboten sind.",
+                "Weil jeder Kurs immer genau dem Durchschnitt entspricht."
+              ],
+              "correct": 0,
+              "explanation": "Ein Szenario macht Unsicherheit sichtbar, beseitigt sie aber nicht."
+            }
+          ]
+        },
+        {
+          "id": "bruecke-4",
+          "title": "Zwischenstufe: Zahlen prüfen",
+          "goal": "Eine Rechnung mit wirtschaftlicher Aussage verbinden.",
+          "explain": "Ein guter Analyst gibt nicht nur eine Zahl aus. Er nennt Ausgangs- und Endwert, Zeitraum, verwendete Formel und interpretiert das Ergebnis. Danach fragt er, wodurch sich der Wert verändern könnte und ob der Unternehmensbericht ihn wirklich belegt.",
+          "example": "Ein Wachstum von 20 % bei fallender Marge ist kein glasklarer Erfolg. Es können bewusste Investitionen dahinterstecken, aber auch Kostenprobleme.",
+          "questions": [
+            {
+              "prompt": "Eine Marge fällt von 20 % auf 15 %. Was ist korrekt?",
+              "options": [
+                "−5 Prozentpunkte; Ursachen prüfen.",
+                "−5 % und deshalb sichere Insolvenz.",
+                "+5 Prozentpunkte."
+              ],
+              "correct": 0,
+              "explanation": "Ergebnis, Einheiten und Ursachen müssen sauber getrennt werden."
+            },
+            {
+              "prompt": "Welche Information ergänzt eine reine Wachstumsrechnung am sinnvollsten?",
+              "options": [
+                "Berichtszeitraum, Kostenentwicklung und Cashflow.",
+                "Nur die Aktienfarbe.",
+                "Nur die Zahl der Klicks auf die Nachricht."
+              ],
+              "correct": 0,
+              "explanation": "Erst aus Zahlen und Kontext wird eine Analyse."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "analysieren",
+      "title": "Selbst analysieren",
+      "purpose": "Von der Unternehmensidee zu einer eigenen Analyse",
+      "outcome": "Du kannst eine nachvollziehbare erste Unternehmensanalyse aufbauen.",
+      "level": "Praxis · Recherche",
+      "related": [
+        {
+          "view": "training",
+          "label": "Datierte Unternehmensfälle im Praxislabor"
+        },
+        {
+          "view": "academy",
+          "label": "Freiwillige vertiefende Aktien-Intensivkurse"
+        }
+      ],
+      "modules": [
+        {
+          "id": "analysieren-fragestellung",
+          "title": "Die richtige Analysefrage",
+          "goal": "Ein Unternehmen als überprüfbaren Fall untersuchen.",
+          "explain": "Eine sinnvolle Aktienanalyse beginnt mit einer konkreten Frage: Wie verdient die Firma Geld, wie entwickelt sie sich und was könnte ihren wirtschaftlichen Wert verändern? Beginne nicht mit einem Kursziel und suche danach nur passende Beweise. Formuliere zuerst, was du herausfinden willst.",
+          "example": "Untersuche nicht bloß, ob eine Aktie 'gut' ist. Frage etwa, ob neue Rechenzentren bei einem Industrieunternehmen tatsächlich die Auftragseingänge und die Margen erhöhen.",
+          "questions": [
+            {
+              "prompt": "Welche Frage eignet sich am besten als Ausgangspunkt?",
+              "options": [
+                "Wie wirkt sich ein neuer Großkunde messbar auf Umsatz und Marge aus?",
+                "Wie schnell verdoppelt sich die Aktie garantiert?",
+                "Welche Überschrift klingt am besten?"
+              ],
+              "correct": 0,
+              "explanation": "Die Frage sollte an Daten und Gegenbelegen überprüfbar sein."
+            },
+            {
+              "prompt": "Was wäre eine schlechte Reihenfolge?",
+              "options": [
+                "Zuerst ein fixes Kursziel wählen, danach nur bestätigende Quellen suchen.",
+                "Geschäftsmodell prüfen, dann Zahlen vergleichen.",
+                "Risiken und Chancen getrennt dokumentieren."
+              ],
+              "correct": 0,
+              "explanation": "Bestätigungsfehler entstehen leicht, wenn der Schluss vor der Analyse feststeht."
+            }
+          ]
+        },
+        {
+          "id": "analysieren-quellen",
+          "title": "Verlässliche Quellen finden",
+          "goal": "Geschäftsbericht, Pressemitteilung und Meinung trennen.",
+          "explain": "Primärquellen wie Geschäftsberichte, Pflichtmitteilungen und offizielle Unternehmenspräsentationen enthalten wichtige Originalzahlen. Sie können eigene Interessen widerspiegeln. Nachrichten und Analystenkommentare helfen bei der Einordnung, sind aber nicht dasselbe wie die Originalrechnung.",
+          "example": "Ein Social-Media-Beitrag nennt 50 % Umsatzwachstum. Du überprüfst, ob die Zahl im Originalbericht steht, welche Sparte sie betrifft und ob es ein Quartal oder ein Jahr ist.",
+          "questions": [
+            {
+              "prompt": "Welche Quelle solltest du zuerst für den berichteten Konzernumsatz verwenden?",
+              "options": [
+                "Den offiziellen Finanzbericht des Unternehmens.",
+                "Einen Kommentar ohne Quellenverweis.",
+                "Einen alten Aktienchart."
+              ],
+              "correct": 0,
+              "explanation": "Zahlen und Berichtsperiode sollten direkt aus dem Abschluss überprüft werden."
+            },
+            {
+              "prompt": "Was gehört zu jeder zitierten Kennzahl?",
+              "options": [
+                "Quelle, Datum, Zeitraum und Einheit.",
+                "Nur ein Diagramm ohne Achsen.",
+                "Nur eine optimistische Prognose."
+              ],
+              "correct": 0,
+              "explanation": "Ohne Zeitraum und Einheit sind Zahlen leicht missverständlich."
+            }
+          ]
+        },
+        {
+          "id": "analysieren-nachrechnen",
+          "title": "Kennzahlen nachprüfen",
+          "goal": "Selbst rechnen statt fertige Prozentzahlen übernehmen.",
+          "explain": "Übernimm Unternehmenskennzahlen nicht blind. Suche die Ausgangswerte, rechne Wachstum oder Marge nach und prüfe die richtige Einheit. Eine Sparte kann stark wachsen, während das Gesamtergebnis weniger deutlich steigt. Auch Sondereffekte und Währungsumrechnung können wichtig sein.",
+          "example": "Ein Geschäftsbereich wächst um 40 %, macht aber nur 10 % des Konzernumsatzes aus. Daraus folgt nicht automatisch, dass der gesamte Konzern um 40 % wächst.",
+          "questions": [
+            {
+              "prompt": "Warum ist Segmentwachstum nicht gleich Konzernwachstum?",
+              "options": [
+                "Das Segment ist nur ein Teil des Unternehmens.",
+                "Jedes Segment hat die gleiche Größe.",
+                "Konzerne haben immer exakt zwei Bereiche."
+              ],
+              "correct": 0,
+              "explanation": "Gewicht und Veränderung aller Bereiche bestimmen die Gesamtentwicklung."
+            },
+            {
+              "prompt": "Was gehört nach dem Nachrechnen dazu?",
+              "options": [
+                "Einordnung von Margen, Cashflow und Sonderfaktoren.",
+                "Ein Kauf ohne Prüfung.",
+                "Das Ignorieren des Vergleichsjahrs."
+              ],
+              "correct": 0,
+              "explanation": "Rechnerische Richtigkeit ist erst der Anfang."
+            }
+          ]
+        },
+        {
+          "id": "analysieren-treiber",
+          "title": "Werttreiber und Risiken erkennen",
+          "goal": "Kausalität und Gegenargumente auseinanderhalten.",
+          "explain": "Ein Werttreiber ist eine Entwicklung, die künftige Einnahmen oder Zahlungsüberschüsse verändern könnte. Gegenargumente fragen, warum dieser Effekt kleiner oder ganz ausfallen könnte. Jede Annahme braucht zumindest einen nachvollziehbaren Mechanismus, möglichst eine Quelle und einen beobachtbaren Prüfpunkt.",
+          "example": "Wachsender Bedarf an Stromnetzen könnte den Absatz bei einem Hersteller steigern. Ob Gewinne mitwachsen, hängt von Preisen, Wettbewerb und Produktionskapazitäten ab.",
+          "questions": [
+            {
+              "prompt": "Welche Formulierung ist eine prüfbare Hypothese?",
+              "options": [
+                "Wachsender Netzausbau erhöht bei stabilen Margen mittelfristig die Aufträge.",
+                "Die Aktie kann nur steigen.",
+                "Jede gute Nachricht verdoppelt sofort den Umsatz."
+              ],
+              "correct": 0,
+              "explanation": "Die Hypothese nennt Mechanismus und Bedingungen."
+            },
+            {
+              "prompt": "Welche Gegenhypothese ist sinnvoll?",
+              "options": [
+                "Preisdruck frisst den erwarteten Gewinnzuwachs auf.",
+                "Gute Firmen haben nie Konkurrenz.",
+                "Börsenkurse bleiben immer konstant."
+              ],
+              "correct": 0,
+              "explanation": "Gegenargumente müssen wirtschaftlich möglich sein."
+            }
+          ]
+        },
+        {
+          "id": "analysieren-kurzbericht",
+          "title": "Dein erster Analysebericht",
+          "goal": "Beobachtung, Annahme und offene Frage schriftlich trennen.",
+          "explain": "Ein kompakter Unternehmensbericht enthält Geschäftsmodell, aktuelle belegte Zahlen, die wichtigste Veränderung, Chancen, Risiken und die noch offene Frage. Beginne mit wenigen klaren Aussagen statt einer langen Sammlung fremder Fachbegriffe. Halte den Stand der Veröffentlichung fest.",
+          "example": "Schreibe etwa: 'Der Umsatz ist im letzten Quartal gestiegen; die Marge ist gefallen. Ich vermute höhere Vorlaufkosten. Das möchte ich im nächsten Bericht anhand von Investitionen und Kostenkommentaren prüfen.'",
+          "questions": [
+            {
+              "prompt": "Was ist im Bericht ein belegter Fakt?",
+              "options": [
+                "Ein in der Quelle veröffentlichter Umsatz für das genannte Quartal.",
+                "Eine unbegründete zukünftige Verdopplung.",
+                "Ein Gefühl über die Kursrichtung."
+              ],
+              "correct": 0,
+              "explanation": "Fakten brauchen einen überprüfbaren Beleg."
+            },
+            {
+              "prompt": "Wofür eignet sich eine offene Frage am Ende?",
+              "options": [
+                "Sie benennt gezielt die Daten, die für das Urteil noch fehlen.",
+                "Sie ersetzt jede Risikobetrachtung.",
+                "Sie macht Prognosen sicher."
+              ],
+              "correct": 0,
+              "explanation": "Transparente Unsicherheit stärkt die Analyse."
+            }
+          ]
+        },
+        {
+          "id": "bruecke-5",
+          "title": "Zwischenstufe: Zur Investmentthese",
+          "goal": "Von Recherche zu einem überprüfbaren Urteil übergehen.",
+          "explain": "Du kannst jetzt die wichtigsten Zahlen finden und einordnen. Für ein Investmenturteil fehlt noch die Gegenüberstellung mit den Erwartungen des Aktienmarktes und dem Preis. Eine plausible gute Firma ist nicht automatisch ein gutes Investment zu jedem Preis.",
+          "example": "Eine Firma wächst gesund, die Aktie ist aber besonders teuer. Vielleicht hat der Markt künftiges Wachstum bereits vorweggenommen. Eine These sollte erklären, welche Annahmen der Markt unterschätzt.",
+          "questions": [
+            {
+              "prompt": "Welche nächste Frage folgt auf eine solide Unternehmensanalyse?",
+              "options": [
+                "Was ist bei diesem Kurs bereits eingepreist?",
+                "Wie klingen die nächsten Werbeplakate?",
+                "Wie hoch war der Kurs beim Börsengang allein?"
+              ],
+              "correct": 0,
+              "explanation": "Preis und Erwartungen müssen zusammenpassen."
+            },
+            {
+              "prompt": "Warum gehört die Gegenhypothese in die Analyse?",
+              "options": [
+                "Damit mögliche Fehler und Risiken prüfbar werden.",
+                "Weil jede These sonst juristisch unwirksam ist.",
+                "Weil Risiken grundsätzlich nie eintreten."
+              ],
+              "correct": 0,
+              "explanation": "Eine gute These lässt sich widerlegen und verbessern."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urteilen",
+      "title": "Urteil bilden",
+      "purpose": "Aus Fakten, Bewertung und Gegenargumenten entscheiden",
+      "outcome": "Du kannst eine begründete, überprüfbare Investmentthese formulieren.",
+      "level": "Fortgeschritten · kritisch entscheiden",
+      "related": [
+        {
+          "view": "learningnews",
+          "label": "Aktuelle Nachrichten kritisch untersuchen"
+        },
+        {
+          "view": "dailyreview",
+          "label": "Eigene Freitextthese zur Bewertung einreichen"
+        },
+        {
+          "view": "stockhub",
+          "label": "Aktienresearch und Werkzeuge"
+        }
+      ],
+      "modules": [
+        {
+          "id": "urteil-fakt-vs-deutung",
+          "title": "Fakten und Meinungen trennen",
+          "goal": "Bei Nachrichten erst prüfen und dann interpretieren.",
+          "explain": "Die Meldung einer Quartalszahl ist eine Beobachtung. Ob sie gut oder schlecht für den Aktienwert ist, ist eine Interpretation. Daraus folgt noch keine automatische Handlung. Trenne bei jedem Nachrichtenartikel Quelle, Zahl, Vergleich, Unsicherheit und mögliche Folge.",
+          "example": "Ein Betrieb berichtet +15 % Umsatz. Das ist eine belegbare Zahl. 'Die Aktie ist deshalb unterbewertet' ist dagegen eine zusätzliche Hypothese, die eine Bewertung braucht.",
+          "questions": [
+            {
+              "prompt": "Welche Aussage ist zuerst eine belegbare Beobachtung?",
+              "options": [
+                "Der Umsatz im Bericht beträgt 120 Mio. €.",
+                "Die Aktie ist morgen sicher teurer.",
+                "Das Management hat immer recht."
+              ],
+              "correct": 0,
+              "explanation": "Eine Zahl ist mit Quelle und Zeitraum überprüfbar."
+            },
+            {
+              "prompt": "Was ist eine Interpretation?",
+              "options": [
+                "Die gemeldete Gewinnmarge könnte wegen höherer Investitionen sinken.",
+                "Im Bericht steht der Umsatz des Quartals.",
+                "Die Firma hat einen veröffentlichten Jahresabschluss."
+              ],
+              "correct": 0,
+              "explanation": "Die Ursache einer Entwicklung ist oft erst eine begründete Vermutung."
+            }
+          ]
+        },
+        {
+          "id": "urteil-erwartungen",
+          "title": "Was steckt schon im Kurs?",
+          "goal": "Nicht nur die Firma, sondern die Markterwartung prüfen.",
+          "explain": "Eine Aktie kann operativ stark sein, aber teuer. Entscheidend ist, wie viel Wachstum bereits eingepreist wurde. Die Aktie muss nicht nur gut sein, sondern relativ zum bezahlten Preis eine vernünftige Aussicht unter Berücksichtigung des Risikos bieten.",
+          "example": "Wenn Anleger jahrelang 30 % Wachstum erwarten, können sogar 20 % Wachstum und hohe Gewinne enttäuschen. Das heißt nicht, dass das Geschäft schlecht ist.",
+          "questions": [
+            {
+              "prompt": "Warum fällt manchmal eine Aktie nach guten Zahlen?",
+              "options": [
+                "Weil noch bessere Zahlen erwartet wurden.",
+                "Weil Gewinn gesetzlich Kurssenkungen auslöst.",
+                "Weil der Kurs die Historie löscht."
+              ],
+              "correct": 0,
+              "explanation": "Erwartung und Wirklichkeit werden verglichen."
+            },
+            {
+              "prompt": "Welche Frage ist vor einem Kauf besonders wichtig?",
+              "options": [
+                "Welche zukünftigen Ergebnisse wären nötig, um den Preis zu rechtfertigen?",
+                "Welche Aktie war heute in den Schlagzeilen?",
+                "Wie viele Follower hat die Firma?"
+              ],
+              "correct": 0,
+              "explanation": "Bewertung übersetzt Erwartungen in einen Preis."
+            }
+          ]
+        },
+        {
+          "id": "urteil-chancen-risiken",
+          "title": "Drei überprüfbare Szenarien",
+          "goal": "Eigene Prognosen mit Bedingungen verbinden.",
+          "explain": "Eine These sollte mindestens eine Ausgangserwartung, eine positive Alternative und eine negative Alternative nennen. Bei jedem Szenario sagst du, welche Daten es bestätigen oder widerlegen würden. Ein breites Intervall ist ehrlicher als ein willkürlich exakter Wert.",
+          "example": "Basisszenario: Aufträge wachsen moderat. Positiv: größere Nachfrage bei stabiler Marge. Negativ: Nachfrage fällt und Investitionen steigen. Prüfe künftige Quartalsberichte gegen diese Annahmen.",
+          "questions": [
+            {
+              "prompt": "Was gehört in ein negatives Szenario?",
+              "options": [
+                "Eine plausible schlechte Entwicklung und beobachtbare Auslöser.",
+                "Nur ein willkürlicher niedriger Kurs.",
+                "Ausschließlich positive Nachrichten."
+              ],
+              "correct": 0,
+              "explanation": "Ein Szenario soll wirtschaftliche Mechanismen offenlegen."
+            },
+            {
+              "prompt": "Was ist bei allen drei Szenarien notwendig?",
+              "options": [
+                "Transparente Annahmen und passende Kennzahlen.",
+                "Ein exakter garantierter Aktienkurs.",
+                "Ein einziger Social-Media-Kommentar."
+              ],
+              "correct": 0,
+              "explanation": "Szenarien sind überprüfbare Annahmen, keine Vorhersagesicherheit."
+            }
+          ]
+        },
+        {
+          "id": "urteil-positionsrisiko",
+          "title": "Auch gute Ideen können schaden",
+          "goal": "Positionsgröße, Verlustpotenzial und Streuung abwägen.",
+          "explain": "Eine plausible These kann falsch sein. Ein Depot sollte deshalb nicht völlig von einer einzigen Analyse abhängen. Überlege, wie groß ein Verlust sein könnte, welche anderen Positionen mit betroffen wären und ob das Geld gebraucht wird. Die Höhe der Aktienposition gehört zum Risiko.",
+          "example": "Bei 10.000 € Depotwert bedeutet eine einzelne 5.000-€-Position eine Konzentration von 50 %. Selbst eine qualitativ gute Firma kann dadurch das gesamte Ergebnis stark beeinflussen.",
+          "questions": [
+            {
+              "prompt": "Welche Aussage passt?",
+              "options": [
+                "Eine überzeugende These hebt Konzentrationsrisiko nicht auf.",
+                "Gute Aktien können nicht fallen.",
+                "Mehr Einzelaktien bedeuten immer höhere Renditen."
+              ],
+              "correct": 0,
+              "explanation": "Risiko bleibt auch bei guten Unternehmen bestehen."
+            },
+            {
+              "prompt": "Was prüfst du vor einer großen Position?",
+              "options": [
+                "Verlustszenarien, Streuung und deinen Liquiditätsbedarf.",
+                "Nur die letzten zwei Handelstage.",
+                "Nur die Dividende des Vorjahres."
+              ],
+              "correct": 0,
+              "explanation": "Die Positionsgröße muss zur persönlichen Verlusttragfähigkeit passen."
+            }
+          ]
+        },
+        {
+          "id": "urteil-these-protokoll",
+          "title": "Deine Investmentthese dokumentieren",
+          "goal": "Entscheidungen messbar und korrigierbar machen.",
+          "explain": "Eine Investmentthese nennt den belegten Ausgangspunkt, eine überprüfbare Zukunftsannahme, Risiken, eine Bewertungsbandbreite und Kriterien, die dich umstimmen würden. Dokumentiere den Zeitpunkt. Bei neuen Daten prüfst du die Annahmen, ohne die ursprüngliche These nachträglich zu verändern.",
+          "example": "'Ich erwarte mittelfristig höhere Marge durch bessere Auslastung; wenn die Marge zwei Berichtsperioden weiter fällt, überprüfe ich meine Annahme.' Das ist aussagekräftiger als 'Die Aktie steigt'.",
+          "questions": [
+            {
+              "prompt": "Was macht eine These überprüfbar?",
+              "options": [
+                "Klare Annahmen mit Gegenbelegen und einem Zeitpunkt.",
+                "Ein hoher Optimismuswert.",
+                "Das tägliche Ändern des ursprünglichen Texts."
+              ],
+              "correct": 0,
+              "explanation": "Kriterien für Widerlegung sind wesentlich."
+            },
+            {
+              "prompt": "Warum später die ursprüngliche These erneut ansehen?",
+              "options": [
+                "Um Fehler und Denkverzerrungen zu erkennen.",
+                "Weil sich jede Prognose garantiert erfüllt.",
+                "Damit es keine Gegenargumente mehr gibt."
+              ],
+              "correct": 0,
+              "explanation": "Die Reflexion ist Teil des Lernprozesses."
+            }
+          ]
+        },
+        {
+          "id": "abschluss-urteil",
+          "title": "Abschluss: Wie Analysten denken",
+          "goal": "Den vollständigen Weg vom Geldverständnis zur These verbinden.",
+          "explain": "Ein zusammenhängender Prozess beginnt mit der Situation und dem Ziel, versteht das Unternehmen, prüft Zahlen und Geldfluss, schätzt das Risiko und verbindet alles mit den Erwartungen im Börsenkurs. Erst dann wird aus einer Meinung eine tragfähigere These. Du musst keine Aktie kaufen, um einen analytischen Fortschritt zu machen.",
+          "example": "Beim nächsten Unternehmensbericht kannst du dieselbe Reihenfolge auf einen echten Fall anwenden und anschließend eine detaillierte Fallstudie oder Freitextbewertung im ergänzenden Bereich bearbeiten.",
+          "questions": [
+            {
+              "prompt": "Welche Reihenfolge macht fachlich Sinn?",
+              "options": [
+                "Ziel → Geschäftsmodell → Zahlen → Bewertung → Risiken → These.",
+                "Kursziel → Hoffnung → Belege passend auswählen.",
+                "Trendfarbe → Kauf → Bericht suchen."
+              ],
+              "correct": 0,
+              "explanation": "Der Ablauf verhindert, dass eine Begeisterung die Prüfung ersetzt."
+            },
+            {
+              "prompt": "Welcher Abschluss zeigt eine gute Analysekompetenz?",
+              "options": [
+                "Eine eigene begründete, änderbare Schlussfolgerung mit Gegenargumenten.",
+                "Ein garantiertes Kursziel.",
+                "Eine möglichst lange Liste von Abkürzungen."
+              ],
+              "correct": 0,
+              "explanation": "Kompetenz zeigt sich in überprüfbaren Begründungen, nicht in Fachwörtern."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
