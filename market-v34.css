@@ -116,3 +116,27 @@
 .fp36-search-chart{display:inline-block;font-size:12px!important;line-height:1.5;padding:4px 0}
 .fp36-search-chart.verified{color:#8be4b4!important}
 .fp36-search-chart.unconfirmed{color:#f0ca87!important}
+
+/* v45 – Watchlist company financial statements, quarter-safe figures and primary sources */
+.fp45-financials{padding-bottom:28px}
+.fp45-data-note{font-size:12px;color:#aac8c6;line-height:1.7;margin:10px 0 20px}
+.fp45-report-list{display:grid;gap:18px}
+.fp45-report-card{border:1px solid #48636d;border-radius:17px;background:#152f3c;padding:20px;display:grid;gap:18px}
+.fp45-report-card>header{display:flex;align-items:flex-start;justify-content:space-between;gap:14px}
+.fp45-report-card h2{margin:7px 0;font-size:22px}
+.fp45-report-card h2 small{font-size:12px;color:#a9c9ca;font-weight:500}
+.fp45-report-card header p{font-size:12px;color:#b0cbd0;line-height:1.6}
+.fp45-metric-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.fp45-metric{background:#1a3b43;border:1px solid #42636a;border-radius:11px;padding:14px;display:flex;flex-direction:column;gap:8px}
+.fp45-metric small{color:#b4cdce;font-size:11px}
+.fp45-metric strong{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+.fp45-delta{font-size:12px;color:#b5e2cb}
+.fp45-metric p{font-size:11px;color:#a8bfc1;line-height:1.6}
+.fp45-assessment{border-left:3px solid #8ed8b0;background:#1a3d3d;border-radius:10px;padding:15px;display:grid;gap:10px}
+.fp45-assessment strong{font-size:15px;color:#d4fbe1}
+.fp45-assessment p,.fp45-assessment li{font-size:13px;line-height:1.7;color:#c3dfd3}
+.fp45-assessment summary{cursor:pointer;color:#b4e8cf;font-size:13px;font-weight:650}
+.fp45-assessment ul{padding-left:22px;margin:8px 0}
+.fp45-report-source{font-size:13px;color:#b9f1d2;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:720px){.fp45-metric-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.fp45-report-card{padding:14px}.fp45-report-card>header{flex-wrap:wrap}}
+@media(max-width:390px){.fp45-metric-grid{grid-template-columns:1fr}}
