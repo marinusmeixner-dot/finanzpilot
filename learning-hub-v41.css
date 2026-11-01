@@ -150,3 +150,11 @@
 .fp44-skill-option b{font-size:13px}
 .fp44-skill-option small{color:#b8d4cb;font-size:11px;line-height:1.5}
 @media(max-width:700px){.fp44-skill-overview{grid-template-columns:1fr}}
+
+/* Top Back is the only screen-navigation Back; keep in-lesson 'previous explanation' learning controls. */
+#view-root [data-inventory-back],#view-root [data-research-back],#view-root [data-academy-action="back"],#view-root [data-ic-back],#view-root [data-fp36-article-back]{display:none!important}
+.fp45-cross-line{stroke:#79b5d2;stroke-width:2.5;stroke-dasharray:9 9;opacity:.82}
+.fp42-tree-root{left:1635px;top:42px}
+.fp42-map-node.compact{min-height:155px}
+.fp42-map-node.compact strong{font-size:13px}
+.fp42-map-controls{position:relative;z-index:3}
