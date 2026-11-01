@@ -62,3 +62,5 @@ jobs:
         run: node scripts/test_specialization_v41.mjs
       - name: "Regression: Four-row Lernen, true zoomable Skillbaum, lean foundations, direct Profil and no duplicate Depot chart"
         run: node scripts/test_learning_redesign_v42.mjs
+      - name: "Regression: 3-skill promotions, artifact shards, 28 skills, free news and reset safety"
+        run: node scripts/test_progression_news_v44.mjs
