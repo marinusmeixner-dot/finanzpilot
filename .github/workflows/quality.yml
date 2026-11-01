@@ -66,6 +66,8 @@ jobs:
         run: node scripts/test_market_financials_skills_v45.mjs
       - name: "v47: Verify all four company dossiers, 100+ sourced KPIs, honest gaps, period-safe tables and watchlist controls"
         run: node scripts/test_comprehensive_financials_v47.mjs
+      - name: "v48: Start homepage, clickable full editorial articles, learner actions and enriched exercises"
+        run: node scripts/test_home_reader_v48.mjs
       - name: "v46: Audit all 36 fundamentals, all 132 specialist lessons, learning stages and reward-free spaced practice"
         run: node scripts/test_study_depth_v46.mjs
       - name: "Regression: 3-skill promotions, artifact shards, 28 skills, free news and reset safety"
