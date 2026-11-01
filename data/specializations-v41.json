@@ -166,7 +166,7 @@
       "branch": "reporting",
       "parent": "cashflow-architekt",
       "tier": 3,
-      "description": "Du erkennst, ob Verschuldung, Fälligkeiten und Zahlungsströme langfristig zusammenpassen.",
+      "description": "Du erkennst, ob Verschuldung, Fälligkeiten und Zahlungsströme langfristig zusammenpassen. Dabei werden Zinskosten, kurzfristige Fälligkeiten und laufende Zahlungsströme gemeinsam geprüft.",
       "cost": 3,
       "rewardPoints": 11,
       "lessons": [
@@ -241,7 +241,7 @@
           "title": "Kurs und Ergebnis richtig verknüpfen",
           "goal": "Kurs und Ergebnis richtig verknüpfen",
           "explanation": "Das Kurs-Gewinn-Verhältnis vergleicht den Preis je Aktie mit dem Gewinn je Aktie. Ein extrem niedriger Wert kann auf Risiken oder vorübergehende Gewinne hinweisen und ist nicht automatisch ein Schnäppchen.",
-          "example": "Bei 90 € Kurs und 6 € Jahresgewinn je Aktie beträgt das Verhältnis 15.",
+          "example": "Bei 90 € Kurs und 6 € Jahresgewinn je Aktie beträgt das Verhältnis 15. Prüfe, ob der Gewinn aus einem wiederkehrenden Geschäft stammt oder durch Sondererträge verzerrt ist.",
           "question": "Wie groß ist das Kurs-Gewinn-Verhältnis?",
           "options": [
             "15",
@@ -496,7 +496,7 @@
       "branch": "risk",
       "parent": "risiko-basis",
       "tier": 2,
-      "description": "Du bewertest Positionsgewichte, Gleichlauf und die Risiken eines virtuellen Depots.",
+      "description": "Du bewertest Positionsgewichte, Gleichlauf und die Risiken eines virtuellen Depots. Du berechnest Gewichte, mögliche Verluste und die Auswirkungen gemeinsamer Risikofaktoren.",
       "cost": 3,
       "rewardPoints": 9,
       "lessons": [
