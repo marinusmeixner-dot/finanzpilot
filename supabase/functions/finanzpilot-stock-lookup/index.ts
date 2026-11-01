@@ -33,14 +33,57 @@ async function authenticate(req:Request){
  const user=await response.json();if(!user?.id)throw Error("Benutzer unbekannt");
  return user.id as string;
 }
+// Prefer verified histories from the same quoted exchange, not from an unrelated
+// local/depositary receipt. A secondary venue is NEVER counted as a native chart.
+const CANONICAL:Record<string,{symbol:string,name:string}>={
+ "bayer":{symbol:"BAYN.DE",name:"Bayer Aktiengesellschaft"},
+ "baywa":{symbol:"BYW.DE",name:"BayWa AG"}
+};
+function exchangePreference(symbol:string){
+ if(/\.DE$/.test(symbol))return 35;
+ if(!symbol.includes("."))return 25;
+ if(/\.(AS|PA|L|SW|MI|TO|AX|ST|OL|CO)$/.test(symbol))return 22;
+ if(/\.(F|MU|BE|DU|SG|HM)$/.test(symbol))return 8;
+ if(/\.IL$/.test(symbol))return -15;
+ return 4;
+}
+async function nativeChartExists(symbol:string){
+ try{
+  const raw=await yahoo("/v8/finance/chart/"+encodeURIComponent(symbol)+"?range=3mo&interval=1d");
+  const r=raw?.chart?.result?.[0];if(!r)return false;
+  const actual=String(r.meta?.symbol||symbol).toUpperCase();
+  if(actual!==symbol)return false;
+  const p=r.indicators?.quote?.[0]?.close||[];
+  return p.filter((x:any)=>Number.isFinite(Number(x))&&Number(x)>0).length>=2;
+ }catch{return false}
+}
 async function search(q:string){
  if(q.length<2||q.length>64)throw Error("Mindestens zwei Zeichen eingeben");
- const raw=await yahoo("/v1/finance/search?q="+encodeURIComponent(q)+"&quotesCount=15&newsCount=0");
+ const phrase=q.trim().toLowerCase(),raw=await yahoo("/v1/finance/search?q="+encodeURIComponent(q)+"&quotesCount=20&newsCount=0");
  const list=(Array.isArray(raw.quotes)?raw.quotes:[])
  .filter((x:any)=>supported.has(String(x.quoteType||"").toUpperCase())&&valid(String(x.symbol||"").toUpperCase()))
- .map((x:any)=>({symbol:String(x.symbol).toUpperCase(),name:String(x.shortname||x.longname||x.symbol).slice(0,150),exchange:String(x.exchDisp||x.exchange||"").slice(0,70),type:String(x.quoteType).toUpperCase()})).slice(0,12);
- return {results:list,provider:"Yahoo Finance (inoffizielle Suche)",limited:true};
+ .map((x:any)=>({symbol:String(x.symbol).toUpperCase(),name:String(x.shortname||x.longname||x.symbol).slice(0,150),exchange:String(x.exchDisp||x.exchange||"").slice(0,70),type:String(x.quoteType).toUpperCase()}));
+ const normalized=q.toLowerCase().replace(/[^a-zäöüß ]/g," ").trim();
+ const brand=Object.entries(CANONICAL).find(([term])=>normalized===term||normalized.startsWith(term+" "))?.[1];
+ if(brand&&!list.some((x:any)=>x.symbol===brand.symbol))list.unshift({symbol:brand.symbol,name:brand.name,exchange:"Xetra",type:"EQUITY"});
+ const dedup=[...new Map(list.map((x:any)=>[x.symbol,x])).values()];
+ const ranked=dedup.map((x:any)=>{
+  const name=x.name.toLowerCase(),short=phrase.replace(/\s+(aktie|ag|se|stock)$/,"");
+  const relevance=name===short?100:name.startsWith(short)?65:name.includes(short)?35:x.symbol.toLowerCase()===short?80:0;
+  return {...x,score:relevance+exchangePreference(x.symbol)+(brand?.symbol===x.symbol?100:0)};
+ }).sort((a:any,b:any)=>b.score-a.score);
+ // Validate a bounded set, so search remains responsive on the free provider.
+ const candidates=ranked.slice(0,8);
+ const checks=await Promise.all(candidates.map(async(x:any)=>({...x,chart_verified:await nativeChartExists(x.symbol)})));
+ const verified=checks.filter((x:any)=>x.chart_verified).sort((a:any,b:any)=>b.score-a.score);
+ const remaining=checks.filter((x:any)=>!x.chart_verified).concat(ranked.slice(8).map((x:any)=>({...x,chart_verified:false})));
+ const selected=verified.length?verified:remaining.slice(0,8);
+ return {results:selected.map(({score,...x}:any)=>x),
+  verified_chart_count:verified.length,used_fallback:verified.length===0,
+  provider:"Yahoo Finance (inoffizielle Suche und Börsenplatz-Chartprüfung)",
+  limited:true,notice:verified.length?"Nur Börsenplätze mit geprüftem eigenem Kursverlauf angezeigt.":"Kein eigener Kursverlauf bestätigt; weitere Börsenplätze werden zur manuellen Prüfung angeboten."};
 }
+
 function barDate(unix:number,timezone:string){
  const zone=/^[A-Za-z_]+(?:\/[A-Za-z_+-]+){0,3}$/.test(timezone)?timezone:"UTC";
  return new Intl.DateTimeFormat("en-CA",{timeZone:zone,year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(unix*1000));
