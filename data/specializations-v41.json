@@ -41,13 +41,17 @@
         {
           "id": "berichte-lesen-1",
           "title": "Geschäftsjahre und Quartale sauber vergleichen",
-          "goal": "Ein Unternehmen meldet 900 Mio. € Umsatz für ein Quartal und 3.200 Mio. € für das Vorjahr. Ein direkter Vergleich der beiden Werte wäre irreführend. Du musst dieselbe Dauer und möglichst dieselbe Abgrenzung vergleichen.",
-          "explanation": "Der Vergleich eines Quartals mit einem Gesamtjahr ist ohne Umrechnung keine Wachstumsanalyse. Suche das passende Vorjahresquartal in den Berichten.",
-          "example": "Welche Vergleichszahl ist für den Umsatz des dritten Quartals am besten?",
-          "question": "Umsatz des dritten Quartals im Vorjahr",
-          "options": "Umsatz des gesamten Vorjahres",
-          "correct": "Letzter Aktienkurs",
-          "xp": 0,
+          "goal": "Geschäftsjahre und Quartale sauber vergleichen",
+          "explanation": "Ein Unternehmen meldet 900 Mio. € Umsatz für ein Quartal und 3.200 Mio. € für das Vorjahr. Ein direkter Vergleich der beiden Werte wäre irreführend. Du musst dieselbe Dauer und möglichst dieselbe Abgrenzung vergleichen.",
+          "example": "Der Vergleich eines Quartals mit einem Gesamtjahr ist ohne Umrechnung keine Wachstumsanalyse. Suche das passende Vorjahresquartal in den Berichten.",
+          "question": "Welche Vergleichszahl ist für den Umsatz des dritten Quartals am besten?",
+          "options": [
+            "Umsatz des dritten Quartals im Vorjahr",
+            "Umsatz des gesamten Vorjahres",
+            "Letzter Aktienkurs"
+          ],
+          "correct": 0,
+          "xp": 15,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -55,13 +59,17 @@
         {
           "id": "berichte-lesen-2",
           "title": "Zahlen mit Quelle und Einheit dokumentieren",
-          "goal": "Investor-Relations-Berichte und veröffentlichte Jahresabschlüsse sind Primärquellen. Notiere Einheit, Zeitraum, Unternehmensbereich, Konsolidierung und die entsprechende Tabelle. Ein EBIT des Konzerns ist nicht dasselbe wie ein Segment-EBIT.",
-          "explanation": "Ein Betrieb veröffentlicht eine angepasste operative Kennzahl. Dokumentiere die offizielle Definition und welche Einmaleffekte ausgeschlossen wurden.",
-          "example": "Welche Dokumentation macht eine Zahl überprüfbar?",
-          "question": "Quelle, Datum, Einheit und Berechnung",
-          "options": "Nur ein Screenshot vom Chart",
-          "correct": "Eine Meinungsäußerung ohne Originalzahlen",
-          "xp": 0,
+          "goal": "Zahlen mit Quelle und Einheit dokumentieren",
+          "explanation": "Investor-Relations-Berichte und veröffentlichte Jahresabschlüsse sind Primärquellen. Notiere Einheit, Zeitraum, Unternehmensbereich, Konsolidierung und die entsprechende Tabelle. Ein EBIT des Konzerns ist nicht dasselbe wie ein Segment-EBIT.",
+          "example": "Ein Betrieb veröffentlicht eine angepasste operative Kennzahl. Dokumentiere die offizielle Definition und welche Einmaleffekte ausgeschlossen wurden.",
+          "question": "Welche Dokumentation macht eine Zahl überprüfbar?",
+          "options": [
+            "Quelle, Datum, Einheit und Berechnung",
+            "Nur ein Screenshot vom Chart",
+            "Eine Meinungsäußerung ohne Originalzahlen"
+          ],
+          "correct": 0,
+          "xp": 18,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -69,13 +77,17 @@
         {
           "id": "berichte-lesen-3",
           "title": "Ergebnis und Zahlungsströme hinterfragen",
-          "goal": "Ein Gewinnanstieg kann aus einem Immobilienverkauf statt aus dem Kerngeschäft stammen. Bereinigungen müssen transparent bleiben. Vergleiche deshalb operative Ergebnisse, operative Cashflows und Sondereffekte über mehrere Jahre.",
-          "explanation": "Ein Unternehmen meldet 80 Mio. € Gewinn, davon 50 Mio. € durch einen einmaligen Verkauf. Stelle berichteten Gewinn und die verbleibenden 30 Mio. € separat dar.",
-          "example": "Welche Aussage ist zulässig?",
-          "question": "80 Mio. € sind automatisch dauerhaft verdient",
-          "options": "30 Mio. € verbleiben rechnerisch ohne diesen einmaligen Effekt, weitere Einflüsse sind zu prüfen",
-          "correct": "Der Verkauf hat keinen Einfluss auf den Cashflow",
-          "xp": 1,
+          "goal": "Ergebnis und Zahlungsströme hinterfragen",
+          "explanation": "Ein Gewinnanstieg kann aus einem Immobilienverkauf statt aus dem Kerngeschäft stammen. Bereinigungen müssen transparent bleiben. Vergleiche deshalb operative Ergebnisse, operative Cashflows und Sondereffekte über mehrere Jahre.",
+          "example": "Ein Unternehmen meldet 80 Mio. € Gewinn, davon 50 Mio. € durch einen einmaligen Verkauf. Stelle berichteten Gewinn und die verbleibenden 30 Mio. € separat dar.",
+          "question": "Welche Aussage ist zulässig?",
+          "options": [
+            "80 Mio. € sind automatisch dauerhaft verdient",
+            "30 Mio. € verbleiben rechnerisch ohne diesen einmaligen Effekt, weitere Einflüsse sind zu prüfen",
+            "Der Verkauf hat keinen Einfluss auf den Cashflow"
+          ],
+          "correct": 1,
+          "xp": 24,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -95,13 +107,17 @@
         {
           "id": "cashflow-architekt-1",
           "title": "Nichtzahlungswirksame Effekte erkennen",
-          "goal": "Abschreibungen mindern den Gewinn, stellen aber in derselben Periode nicht erneut eine Auszahlung dar. Forderungen oder Lageraufbau können hingegen Mittel binden. Eine Überleitung beginnt beim Ergebnis und korrigiert um nicht zahlungswirksame Posten und das Working Capital.",
-          "explanation": "Ein Unternehmen meldet 60 Mio. € Gewinn, 15 Mio. € Abschreibungen und 20 Mio. € zusätzliche Mittelbindung im Lager. Vereinfacht entstehen 55 Mio. € operativer Geldzufluss.",
-          "example": "Was passiert bei steigendem Lagerbestand bei sonst gleichen Bedingungen?",
-          "question": "Er setzt sofort zusätzliches Geld frei",
-          "options": "Er bindet normalerweise liquide Mittel",
-          "correct": "Er erhöht automatisch den Gewinn",
-          "xp": 1,
+          "goal": "Nichtzahlungswirksame Effekte erkennen",
+          "explanation": "Abschreibungen mindern den Gewinn, stellen aber in derselben Periode nicht erneut eine Auszahlung dar. Forderungen oder Lageraufbau können hingegen Mittel binden. Eine Überleitung beginnt beim Ergebnis und korrigiert um nicht zahlungswirksame Posten und das Working Capital.",
+          "example": "Ein Unternehmen meldet 60 Mio. € Gewinn, 15 Mio. € Abschreibungen und 20 Mio. € zusätzliche Mittelbindung im Lager. Vereinfacht entstehen 55 Mio. € operativer Geldzufluss.",
+          "question": "Was passiert bei steigendem Lagerbestand bei sonst gleichen Bedingungen?",
+          "options": [
+            "Er setzt sofort zusätzliches Geld frei",
+            "Er bindet normalerweise liquide Mittel",
+            "Er erhöht automatisch den Gewinn"
+          ],
+          "correct": 1,
+          "xp": 22,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -109,13 +125,17 @@
         {
           "id": "cashflow-architekt-2",
           "title": "Investitionen richtig abziehen",
-          "goal": "Der freie Cashflow wird häufig als operativer Cashflow abzüglich Auszahlungen für Sach- und immaterielle Investitionen berechnet. Unterscheide Ersatzinvestitionen und Wachstumsausgaben, ohne real gezahlte Investitionen in der Berichtsgröße wegzurechnen.",
-          "explanation": "100 Mio. € operativer Cashflow und 65 Mio. € Investitionen entsprechen vereinfacht 35 Mio. € frei verfügbarem Cashflow.",
-          "example": "Welche Zahl entspricht in diesem Beispiel dem freien Cashflow?",
-          "question": "165 Mio. €",
-          "options": "35 Mio. €",
-          "correct": "65 Mio. €",
-          "xp": 1,
+          "goal": "Investitionen richtig abziehen",
+          "explanation": "Der freie Cashflow wird häufig als operativer Cashflow abzüglich Auszahlungen für Sach- und immaterielle Investitionen berechnet. Unterscheide Ersatzinvestitionen und Wachstumsausgaben, ohne real gezahlte Investitionen in der Berichtsgröße wegzurechnen.",
+          "example": "100 Mio. € operativer Cashflow und 65 Mio. € Investitionen entsprechen vereinfacht 35 Mio. € frei verfügbarem Cashflow.",
+          "question": "Welche Zahl entspricht in diesem Beispiel dem freien Cashflow?",
+          "options": [
+            "165 Mio. €",
+            "35 Mio. €",
+            "65 Mio. €"
+          ],
+          "correct": 1,
+          "xp": 25,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -123,13 +143,17 @@
         {
           "id": "cashflow-architekt-3",
           "title": "Einmalige Effekte offen ausweisen",
-          "goal": "Für einen Vergleich kannst du Cashflows um belegte Sonderposten bereinigen. Das ist ein analytisches Szenario, kein tatsächlicher Geldzufluss. Plane die langfristig nötigen Ersatzinvestitionen mit ein, sonst überschätzt du die ausschüttbare Substanz.",
-          "explanation": "Ein Jahr enthält 20 Mio. € einmalige Investitionen; die bereinigte Modellzahl liegt deshalb höher als der berichtete freie Cashflow. Kennzeichne beide Zahlen deutlich.",
-          "example": "Welche Darstellungsweise ist seriös?",
-          "question": "Nur den höchsten bereinigten Wert ausweisen",
-          "options": "Berichteten und bereinigten Wert mit Annahmen getrennt zeigen",
-          "correct": "Jede Investition dauerhaft ignorieren",
-          "xp": 1,
+          "goal": "Einmalige Effekte offen ausweisen",
+          "explanation": "Für einen Vergleich kannst du Cashflows um belegte Sonderposten bereinigen. Das ist ein analytisches Szenario, kein tatsächlicher Geldzufluss. Plane die langfristig nötigen Ersatzinvestitionen mit ein, sonst überschätzt du die ausschüttbare Substanz.",
+          "example": "Ein Jahr enthält 20 Mio. € einmalige Investitionen; die bereinigte Modellzahl liegt deshalb höher als der berichtete freie Cashflow. Kennzeichne beide Zahlen deutlich.",
+          "question": "Welche Darstellungsweise ist seriös?",
+          "options": [
+            "Nur den höchsten bereinigten Wert ausweisen",
+            "Berichteten und bereinigten Wert mit Annahmen getrennt zeigen",
+            "Jede Investition dauerhaft ignorieren"
+          ],
+          "correct": 1,
+          "xp": 31,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -149,13 +173,17 @@
         {
           "id": "bilanz-pruefer-1",
           "title": "Kasse und verzinsliche Schulden vergleichen",
-          "goal": "Nettofinanzverschuldung entspricht häufig verzinslichen Finanzschulden abzüglich verfügbarer liquider Mittel. Andere Verbindlichkeiten werden getrennt berücksichtigt. Hoher Cashbestand bedeutet nicht zwangsläufig freie Ausschüttbarkeit.",
-          "explanation": "450 Mio. € Finanzschulden und 180 Mio. € liquide Mittel ergeben 270 Mio. € Nettofinanzschulden.",
-          "example": "Welche Zahl ist die vereinfachte Nettofinanzverschuldung?",
-          "question": "630 Mio. €",
-          "options": "270 Mio. €",
-          "correct": "180 Mio. €",
-          "xp": 1,
+          "goal": "Kasse und verzinsliche Schulden vergleichen",
+          "explanation": "Nettofinanzverschuldung entspricht häufig verzinslichen Finanzschulden abzüglich verfügbarer liquider Mittel. Andere Verbindlichkeiten werden getrennt berücksichtigt. Hoher Cashbestand bedeutet nicht zwangsläufig freie Ausschüttbarkeit.",
+          "example": "450 Mio. € Finanzschulden und 180 Mio. € liquide Mittel ergeben 270 Mio. € Nettofinanzschulden.",
+          "question": "Welche Zahl ist die vereinfachte Nettofinanzverschuldung?",
+          "options": [
+            "630 Mio. €",
+            "270 Mio. €",
+            "180 Mio. €"
+          ],
+          "correct": 1,
+          "xp": 30,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -163,13 +191,17 @@
         {
           "id": "bilanz-pruefer-2",
           "title": "Risiko durch Laufzeiten beurteilen",
-          "goal": "Nicht allein die Schuldenhöhe entscheidet über Finanzierungsrisiken: kurzfristige Fälligkeiten, Zinsanpassung und Liquiditätsreserven sind entscheidend. Längerfristige Schulden können besser planbar sein, obwohl sie weiterhin Kosten verursachen.",
-          "explanation": "Ein Unternehmen muss in sechs Monaten 300 Mio. € zurückzahlen, verfügt aber nur über 40 Mio. € liquide Mittel. Plane mögliche Refinanzierung oder Liquiditätsquellen ein.",
-          "example": "Was ist hier besonders zu prüfen?",
-          "question": "Finanzierungs- und Rückzahlungsplan",
-          "options": "Nur der letzte Aktienkurs",
-          "correct": "Nur die Anzahl neuer Produkte",
-          "xp": 0,
+          "goal": "Risiko durch Laufzeiten beurteilen",
+          "explanation": "Nicht allein die Schuldenhöhe entscheidet über Finanzierungsrisiken: kurzfristige Fälligkeiten, Zinsanpassung und Liquiditätsreserven sind entscheidend. Längerfristige Schulden können besser planbar sein, obwohl sie weiterhin Kosten verursachen.",
+          "example": "Ein Unternehmen muss in sechs Monaten 300 Mio. € zurückzahlen, verfügt aber nur über 40 Mio. € liquide Mittel. Plane mögliche Refinanzierung oder Liquiditätsquellen ein.",
+          "question": "Was ist hier besonders zu prüfen?",
+          "options": [
+            "Finanzierungs- und Rückzahlungsplan",
+            "Nur der letzte Aktienkurs",
+            "Nur die Anzahl neuer Produkte"
+          ],
+          "correct": 0,
+          "xp": 33,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -177,13 +209,17 @@
         {
           "id": "bilanz-pruefer-3",
           "title": "Schlechte Geschäftsjahre durchdenken",
-          "goal": "Teste, wie ein Rückgang des operativen Cashflows die Bedienung von Zinsen und Krediten verändert. Szenarien müssen zu den tatsächlichen Bedingungen des Unternehmens passen.",
-          "explanation": "Der operative Cashflow könnte von 100 auf 50 Mio. € sinken, während Zinsen und Tilgungen bei 70 Mio. € bleiben. Ohne Reserven entsteht eine Finanzierungslücke.",
-          "example": "Was zeigt das Szenario?",
-          "question": "Die Zahlungsdeckung kann unzureichend werden",
-          "options": "Der Aktienkurs verdoppelt sich garantiert",
-          "correct": "Das Eigenkapital ist automatisch null",
-          "xp": 0,
+          "goal": "Schlechte Geschäftsjahre durchdenken",
+          "explanation": "Teste, wie ein Rückgang des operativen Cashflows die Bedienung von Zinsen und Krediten verändert. Szenarien müssen zu den tatsächlichen Bedingungen des Unternehmens passen.",
+          "example": "Der operative Cashflow könnte von 100 auf 50 Mio. € sinken, während Zinsen und Tilgungen bei 70 Mio. € bleiben. Ohne Reserven entsteht eine Finanzierungslücke.",
+          "question": "Was zeigt das Szenario?",
+          "options": [
+            "Die Zahlungsdeckung kann unzureichend werden",
+            "Der Aktienkurs verdoppelt sich garantiert",
+            "Das Eigenkapital ist automatisch null"
+          ],
+          "correct": 0,
+          "xp": 39,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -203,13 +239,17 @@
         {
           "id": "bewertung-multiples-1",
           "title": "Kurs und Ergebnis richtig verknüpfen",
-          "goal": "Das Kurs-Gewinn-Verhältnis vergleicht den Preis je Aktie mit dem Gewinn je Aktie. Ein extrem niedriger Wert kann auf Risiken oder vorübergehende Gewinne hinweisen und ist nicht automatisch ein Schnäppchen.",
-          "explanation": "Bei 90 € Kurs und 6 € Jahresgewinn je Aktie beträgt das Verhältnis 15.",
-          "example": "Wie groß ist das Kurs-Gewinn-Verhältnis?",
-          "question": "15",
-          "options": "540",
-          "correct": "6",
-          "xp": 0,
+          "goal": "Kurs und Ergebnis richtig verknüpfen",
+          "explanation": "Das Kurs-Gewinn-Verhältnis vergleicht den Preis je Aktie mit dem Gewinn je Aktie. Ein extrem niedriger Wert kann auf Risiken oder vorübergehende Gewinne hinweisen und ist nicht automatisch ein Schnäppchen.",
+          "example": "Bei 90 € Kurs und 6 € Jahresgewinn je Aktie beträgt das Verhältnis 15.",
+          "question": "Wie groß ist das Kurs-Gewinn-Verhältnis?",
+          "options": [
+            "15",
+            "540",
+            "6"
+          ],
+          "correct": 0,
+          "xp": 15,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -217,13 +257,17 @@
         {
           "id": "bewertung-multiples-2",
           "title": "Schulden und liquide Mittel berücksichtigen",
-          "goal": "Der Enterprise Value bezieht sich auf das operative Geschäft und wird vereinfacht als Börsenwert plus Nettofinanzschulden berechnet. So kannst du Unternehmen mit unterschiedlicher Finanzierung besser vergleichen.",
-          "explanation": "Börsenwert 1.000 Mio. € plus 300 Mio. € Nettofinanzschulden ergibt einen Enterprise Value von 1.300 Mio. €.",
-          "example": "Welche Zahl gehört bei dieser Rechnung zusätzlich zum Börsenwert?",
-          "question": "Nettofinanzschulden",
-          "options": "Nur die Dividendenrendite",
-          "correct": "Nur der gestrige Kurs",
-          "xp": 0,
+          "goal": "Schulden und liquide Mittel berücksichtigen",
+          "explanation": "Der Enterprise Value bezieht sich auf das operative Geschäft und wird vereinfacht als Börsenwert plus Nettofinanzschulden berechnet. So kannst du Unternehmen mit unterschiedlicher Finanzierung besser vergleichen.",
+          "example": "Börsenwert 1.000 Mio. € plus 300 Mio. € Nettofinanzschulden ergibt einen Enterprise Value von 1.300 Mio. €.",
+          "question": "Welche Zahl gehört bei dieser Rechnung zusätzlich zum Börsenwert?",
+          "options": [
+            "Nettofinanzschulden",
+            "Nur die Dividendenrendite",
+            "Nur der gestrige Kurs"
+          ],
+          "correct": 0,
+          "xp": 18,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -231,13 +275,17 @@
         {
           "id": "bewertung-multiples-3",
           "title": "Unterschiedliche Risiken und Wachstum einordnen",
-          "goal": "Unternehmen im selben Sektor können wegen unterschiedlicher Margen, Wachstumsaussichten, Geschäftsmodelle und Bilanzrisiken verschiedene Multiples rechtfertigen. Vergleiche deshalb mehr als eine einzige Kennzahl.",
-          "explanation": "Ein Wettbewerber besitzt ein niedrigeres Kurs-Gewinn-Verhältnis, trägt aber deutlich höhere Schulden. Prüfe die Finanzierung, bevor du von einer Unterbewertung sprichst.",
-          "example": "Woran erkennst du einen besseren Vergleich?",
-          "question": "Mehrere vergleichbare Kennzahlen mit Risikoeinordnung",
-          "options": "Einfach das niedrigste Multiple wählen",
-          "correct": "Nur den Firmenname vergleichen",
-          "xp": 0,
+          "goal": "Unterschiedliche Risiken und Wachstum einordnen",
+          "explanation": "Unternehmen im selben Sektor können wegen unterschiedlicher Margen, Wachstumsaussichten, Geschäftsmodelle und Bilanzrisiken verschiedene Multiples rechtfertigen. Vergleiche deshalb mehr als eine einzige Kennzahl.",
+          "example": "Ein Wettbewerber besitzt ein niedrigeres Kurs-Gewinn-Verhältnis, trägt aber deutlich höhere Schulden. Prüfe die Finanzierung, bevor du von einer Unterbewertung sprichst.",
+          "question": "Woran erkennst du einen besseren Vergleich?",
+          "options": [
+            "Mehrere vergleichbare Kennzahlen mit Risikoeinordnung",
+            "Einfach das niedrigste Multiple wählen",
+            "Nur den Firmenname vergleichen"
+          ],
+          "correct": 0,
+          "xp": 24,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -257,13 +305,17 @@
         {
           "id": "werttreiber-1",
           "title": "Rendite auf eingesetztes Kapital beurteilen",
-          "goal": "Wachstum schafft nur dann wirtschaftlichen Wert, wenn die zusätzlichen Erträge den Kapitaleinsatz und das Risiko rechtfertigen. Die Kapitalrendite muss im Kontext der Kapitalkosten beurteilt werden.",
-          "explanation": "Eine Erweiterung benötigt 200 Mio. € und bringt langfristig 16 Mio. € zusätzlichen operativen Gewinn nach Steuern. Die einfache Rendite beträgt 8 %.",
-          "example": "Welche Rendite ergibt sich?",
-          "question": "8 %",
-          "options": "16 %",
-          "correct": "200 %",
-          "xp": 0,
+          "goal": "Rendite auf eingesetztes Kapital beurteilen",
+          "explanation": "Wachstum schafft nur dann wirtschaftlichen Wert, wenn die zusätzlichen Erträge den Kapitaleinsatz und das Risiko rechtfertigen. Die Kapitalrendite muss im Kontext der Kapitalkosten beurteilt werden.",
+          "example": "Eine Erweiterung benötigt 200 Mio. € und bringt langfristig 16 Mio. € zusätzlichen operativen Gewinn nach Steuern. Die einfache Rendite beträgt 8 %.",
+          "question": "Welche Rendite ergibt sich?",
+          "options": [
+            "8 %",
+            "16 %",
+            "200 %"
+          ],
+          "correct": 0,
+          "xp": 22,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -271,13 +323,17 @@
         {
           "id": "werttreiber-2",
           "title": "Zahlungen über mehrere Jahre vergleichen",
-          "goal": "Künftige Zahlungsströme werden mit einer risikogerechten Renditeanforderung auf einen heutigen Wert umgerechnet. Je später und unsicherer ein Betrag anfällt, desto wichtiger ist die Annahme über die Abzinsung.",
-          "explanation": "100 € nächstes Jahr haben bei einer geforderten Rendite von 10 % vereinfacht heute rund 90,91 € Wert.",
-          "example": "Welche Aussage stimmt?",
-          "question": "Höhere Kapitalkosten verringern bei gleichen Zahlungsströmen den Gegenwartswert",
-          "options": "Kapitalkosten verändern Bewertungen nie",
-          "correct": "Zukünftige Euro sind immer genauso viel wert",
-          "xp": 0,
+          "goal": "Zahlungen über mehrere Jahre vergleichen",
+          "explanation": "Künftige Zahlungsströme werden mit einer risikogerechten Renditeanforderung auf einen heutigen Wert umgerechnet. Je später und unsicherer ein Betrag anfällt, desto wichtiger ist die Annahme über die Abzinsung.",
+          "example": "100 € nächstes Jahr haben bei einer geforderten Rendite von 10 % vereinfacht heute rund 90,91 € Wert.",
+          "question": "Welche Aussage stimmt?",
+          "options": [
+            "Höhere Kapitalkosten verringern bei gleichen Zahlungsströmen den Gegenwartswert",
+            "Kapitalkosten verändern Bewertungen nie",
+            "Zukünftige Euro sind immer genauso viel wert"
+          ],
+          "correct": 0,
+          "xp": 25,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -285,13 +341,17 @@
         {
           "id": "werttreiber-3",
           "title": "Skalierung auf Cashflow prüfen",
-          "goal": "Ein wachsendes Unternehmen benötigt möglicherweise mehr Lager, Rechenzentren oder Maschinen. Umsatzanstieg allein genügt nicht; entscheidend ist, welcher freie Zahlungsüberschuss nach notwendigen Investitionen übrig bleibt.",
-          "explanation": "Hohe zusätzliche Umsätze erfordern ebenfalls hohe neue Maschineninvestitionen. Bewerte beide Seiten über denselben Zeitraum.",
-          "example": "Was ist für zusätzlichen Wert entscheidend?",
-          "question": "Nachhaltiger Mehr-Cashflow relativ zum Kapitaleinsatz",
-          "options": "Nur das Umsatzwachstum",
-          "correct": "Nur die Zahl der Mitarbeitenden",
-          "xp": 0,
+          "goal": "Skalierung auf Cashflow prüfen",
+          "explanation": "Ein wachsendes Unternehmen benötigt möglicherweise mehr Lager, Rechenzentren oder Maschinen. Umsatzanstieg allein genügt nicht; entscheidend ist, welcher freie Zahlungsüberschuss nach notwendigen Investitionen übrig bleibt.",
+          "example": "Hohe zusätzliche Umsätze erfordern ebenfalls hohe neue Maschineninvestitionen. Bewerte beide Seiten über denselben Zeitraum.",
+          "question": "Was ist für zusätzlichen Wert entscheidend?",
+          "options": [
+            "Nachhaltiger Mehr-Cashflow relativ zum Kapitaleinsatz",
+            "Nur das Umsatzwachstum",
+            "Nur die Zahl der Mitarbeitenden"
+          ],
+          "correct": 0,
+          "xp": 31,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -311,13 +371,17 @@
         {
           "id": "unternehmenswert-1",
           "title": "Cashflows über Jahre fortschreiben",
-          "goal": "Ein vereinfachtes Bewertungsmodell nutzt explizite Annahmen für Umsatz, Marge, Steuern, Investitionen und Working Capital. Rechne jedes Jahr nach, anstatt eine Wachstumskonstante blind zu übertragen.",
-          "explanation": "Ein Unternehmen könnte im Jahr 1 einen freien Cashflow von 100 Mio. € und im Jahr 2 von 110 Mio. € liefern. Beide Werte müssen getrennt diskontiert werden.",
-          "example": "Welche Grundlage braucht ein transparentes Modell?",
-          "question": "Getrennte Jahresannahmen und Zahlungsströme",
-          "options": "Nur den letzten Schlusskurs",
-          "correct": "Nur ein Kursziel aus sozialen Medien",
-          "xp": 0,
+          "goal": "Cashflows über Jahre fortschreiben",
+          "explanation": "Ein vereinfachtes Bewertungsmodell nutzt explizite Annahmen für Umsatz, Marge, Steuern, Investitionen und Working Capital. Rechne jedes Jahr nach, anstatt eine Wachstumskonstante blind zu übertragen.",
+          "example": "Ein Unternehmen könnte im Jahr 1 einen freien Cashflow von 100 Mio. € und im Jahr 2 von 110 Mio. € liefern. Beide Werte müssen getrennt diskontiert werden.",
+          "question": "Welche Grundlage braucht ein transparentes Modell?",
+          "options": [
+            "Getrennte Jahresannahmen und Zahlungsströme",
+            "Nur den letzten Schlusskurs",
+            "Nur ein Kursziel aus sozialen Medien"
+          ],
+          "correct": 0,
+          "xp": 30,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -325,13 +389,17 @@
         {
           "id": "unternehmenswert-2",
           "title": "Restwert nicht dominieren lassen",
-          "goal": "In vielen Modellen ist ein großer Teil des geschätzten Unternehmenswertes vom langfristigen Restwert abhängig. Ein zu hoher ewiger Wachstumssatz kann den fairen Wert unrealistisch aufblasen.",
-          "explanation": "Ein Modell prognostiziert dauerhaft zweistelliges Wachstum über mehrere Generationen. Die dauerhaften Annahmen sollten gegen Markt- und Wirtschaftsgrenzen geprüft werden.",
-          "example": "Was ist die größte Modellgefahr?",
-          "question": "Unrealistische langfristige Wachstumsannahmen",
-          "options": "Zu klare Dokumentation",
-          "correct": "Die Angabe von Risiken",
-          "xp": 0,
+          "goal": "Restwert nicht dominieren lassen",
+          "explanation": "In vielen Modellen ist ein großer Teil des geschätzten Unternehmenswertes vom langfristigen Restwert abhängig. Ein zu hoher ewiger Wachstumssatz kann den fairen Wert unrealistisch aufblasen.",
+          "example": "Ein Modell prognostiziert dauerhaft zweistelliges Wachstum über mehrere Generationen. Die dauerhaften Annahmen sollten gegen Markt- und Wirtschaftsgrenzen geprüft werden.",
+          "question": "Was ist die größte Modellgefahr?",
+          "options": [
+            "Unrealistische langfristige Wachstumsannahmen",
+            "Zu klare Dokumentation",
+            "Die Angabe von Risiken"
+          ],
+          "correct": 0,
+          "xp": 33,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -339,13 +407,17 @@
         {
           "id": "unternehmenswert-3",
           "title": "Unsichere Bewertung als Bandbreite formulieren",
-          "goal": "Werte dieselbe Firma mit höheren und niedrigeren Margen, Wachstum und Kapitalkosten aus. Der Begriff Sicherheitsmarge beschreibt den Abstand zwischen Preis und konservativ geschätztem Wert, keine garantierte Absicherung.",
-          "explanation": "Schätzt du einen vorsichtigen Wert von 65 € und die Aktie kostet 50 €, beträgt der rechnerische Preisabstand zum Schätzwert etwa 23 %. Das schützt nicht vor fehlerhaften Annahmen.",
-          "example": "Welche Praxis ist sinnvoll?",
-          "question": "Mehrere nachvollziehbare Szenarien mit Gegenargumenten",
-          "options": "Ein einziges garantiertes Kursziel",
-          "correct": "Den höchsten Wert immer als sicher annehmen",
-          "xp": 0,
+          "goal": "Unsichere Bewertung als Bandbreite formulieren",
+          "explanation": "Werte dieselbe Firma mit höheren und niedrigeren Margen, Wachstum und Kapitalkosten aus. Der Begriff Sicherheitsmarge beschreibt den Abstand zwischen Preis und konservativ geschätztem Wert, keine garantierte Absicherung.",
+          "example": "Schätzt du einen vorsichtigen Wert von 65 € und die Aktie kostet 50 €, beträgt der rechnerische Preisabstand zum Schätzwert etwa 23 %. Das schützt nicht vor fehlerhaften Annahmen.",
+          "question": "Welche Praxis ist sinnvoll?",
+          "options": [
+            "Mehrere nachvollziehbare Szenarien mit Gegenargumenten",
+            "Ein einziges garantiertes Kursziel",
+            "Den höchsten Wert immer als sicher annehmen"
+          ],
+          "correct": 0,
+          "xp": 39,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -365,13 +437,17 @@
         {
           "id": "risiko-basis-1",
           "title": "Verlustrisiken erkennen",
-          "goal": "Volatilität beschreibt Kursbewegungen, nicht automatisch das gesamte Verlustrisiko. Geschäftsmodell, Fremdfinanzierung und Zwangsverkäufe können langfristig wichtiger sein. Anleger unterscheiden Risikobereitschaft von finanzieller Verlusttragfähigkeit.",
-          "explanation": "Eine Aktie kann monatelang stabil bleiben und anschließend wegen einer Insolvenz stark fallen. Niedrige vorherige Schwankungen haben das Geschäftsrisiko nicht beseitigt.",
-          "example": "Was zeigt die Schwankung allein nicht vollständig?",
-          "question": "Dauerhaftes Verlustrisiko",
-          "options": "Den historischen Kursverlauf",
-          "correct": "Vergangene Kursschwankungen",
-          "xp": 0,
+          "goal": "Verlustrisiken erkennen",
+          "explanation": "Volatilität beschreibt Kursbewegungen, nicht automatisch das gesamte Verlustrisiko. Geschäftsmodell, Fremdfinanzierung und Zwangsverkäufe können langfristig wichtiger sein. Anleger unterscheiden Risikobereitschaft von finanzieller Verlusttragfähigkeit.",
+          "example": "Eine Aktie kann monatelang stabil bleiben und anschließend wegen einer Insolvenz stark fallen. Niedrige vorherige Schwankungen haben das Geschäftsrisiko nicht beseitigt.",
+          "question": "Was zeigt die Schwankung allein nicht vollständig?",
+          "options": [
+            "Dauerhaftes Verlustrisiko",
+            "Den historischen Kursverlauf",
+            "Vergangene Kursschwankungen"
+          ],
+          "correct": 0,
+          "xp": 15,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -379,13 +455,17 @@
         {
           "id": "risiko-basis-2",
           "title": "Einzelrisiken und Abhängigkeiten",
-          "goal": "Mehrere Aktien können sich ähnlich verhalten, wenn sie in demselben Wirtschaftsbereich tätig sind. Die Zahl der Positionen allein beweist deshalb keine echte Streuung.",
-          "explanation": "Fünf Halbleiterfirmen sind fünf Unternehmen, aber stark demselben Branchentrend ausgesetzt.",
-          "example": "Was verbessert den Vergleich von Depots?",
-          "question": "Gemeinsame Risiken und Branchenschwerpunkte prüfen",
-          "options": "Nur Aktienanzahl zählen",
-          "correct": "Jede Position gleich benennen",
-          "xp": 0,
+          "goal": "Einzelrisiken und Abhängigkeiten",
+          "explanation": "Mehrere Aktien können sich ähnlich verhalten, wenn sie in demselben Wirtschaftsbereich tätig sind. Die Zahl der Positionen allein beweist deshalb keine echte Streuung.",
+          "example": "Fünf Halbleiterfirmen sind fünf Unternehmen, aber stark demselben Branchentrend ausgesetzt.",
+          "question": "Was verbessert den Vergleich von Depots?",
+          "options": [
+            "Gemeinsame Risiken und Branchenschwerpunkte prüfen",
+            "Nur Aktienanzahl zählen",
+            "Jede Position gleich benennen"
+          ],
+          "correct": 0,
+          "xp": 18,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -393,13 +473,17 @@
         {
           "id": "risiko-basis-3",
           "title": "Verlusttragfähigkeit definieren",
-          "goal": "Plane vor einem Kauf, welchen Betrag du langfristig entbehren kannst und wie ein großer Verlust deine Ziele verändert. Die Positionsgröße begrenzt den Einfluss einer einzelnen Idee auf dein Gesamtvermögen.",
-          "explanation": "Eine 60-%-Depotposition verliert 40 %. Das gesamte Depot verliert dadurch allein aus diesem Titel rund 24 %.",
-          "example": "Was ist für den Kauf entscheidend?",
-          "question": "Gesamtdepotwirkung eines möglichen Verlusts",
-          "options": "Nur der höchstmögliche Gewinn",
-          "correct": "Nur die heutige Kursschwankung",
-          "xp": 0,
+          "goal": "Verlusttragfähigkeit definieren",
+          "explanation": "Plane vor einem Kauf, welchen Betrag du langfristig entbehren kannst und wie ein großer Verlust deine Ziele verändert. Die Positionsgröße begrenzt den Einfluss einer einzelnen Idee auf dein Gesamtvermögen.",
+          "example": "Eine 60-%-Depotposition verliert 40 %. Das gesamte Depot verliert dadurch allein aus diesem Titel rund 24 %.",
+          "question": "Was ist für den Kauf entscheidend?",
+          "options": [
+            "Gesamtdepotwirkung eines möglichen Verlusts",
+            "Nur der höchstmögliche Gewinn",
+            "Nur die heutige Kursschwankung"
+          ],
+          "correct": 0,
+          "xp": 24,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -419,13 +503,17 @@
         {
           "id": "portfolio-architekt-1",
           "title": "Kapitalverteilung sichtbar machen",
-          "goal": "Das Positionsgewicht ist der Marktwert der jeweiligen Anlage geteilt durch den Gesamtwert des Portfolios. Beachte dabei Kasse und Währungsumrechnung.",
-          "explanation": "Ein 2.000-€-Depot enthält eine Aktie im Wert von 500 €. Ihr Gewicht ist 25 %.",
-          "example": "Wie groß ist das Gewicht?",
-          "question": "25 %",
-          "options": "50 %",
-          "correct": "2,5 %",
-          "xp": 0,
+          "goal": "Kapitalverteilung sichtbar machen",
+          "explanation": "Das Positionsgewicht ist der Marktwert der jeweiligen Anlage geteilt durch den Gesamtwert des Portfolios. Beachte dabei Kasse und Währungsumrechnung.",
+          "example": "Ein 2.000-€-Depot enthält eine Aktie im Wert von 500 €. Ihr Gewicht ist 25 %.",
+          "question": "Wie groß ist das Gewicht?",
+          "options": [
+            "25 %",
+            "50 %",
+            "2,5 %"
+          ],
+          "correct": 0,
+          "xp": 22,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -433,13 +521,17 @@
         {
           "id": "portfolio-architekt-2",
           "title": "Gleichlauf von Anlagen verstehen",
-          "goal": "Korrelation beschreibt den statistischen gemeinsamen Verlauf von Renditen über einen bestimmten Zeitraum. Historischer Gleichlauf kann sich in Krisen ändern; geringe Korrelation ist keine Garantie für Verlusteinschränkungen.",
-          "explanation": "Zwei unterschiedliche Branchen können in einem allgemeinen Börsencrash gleichzeitig fallen. Eine historische Korrelation von null ist keine Schutzgarantie.",
-          "example": "Welche Aussage ist richtig?",
-          "question": "Historische Korrelation ist zeitabhängig und unsicher",
-          "options": "Sie garantiert künftige Stabilität",
-          "correct": "Sie ist gleichbedeutend mit einer sicheren Rendite",
-          "xp": 0,
+          "goal": "Gleichlauf von Anlagen verstehen",
+          "explanation": "Korrelation beschreibt den statistischen gemeinsamen Verlauf von Renditen über einen bestimmten Zeitraum. Historischer Gleichlauf kann sich in Krisen ändern; geringe Korrelation ist keine Garantie für Verlusteinschränkungen.",
+          "example": "Zwei unterschiedliche Branchen können in einem allgemeinen Börsencrash gleichzeitig fallen. Eine historische Korrelation von null ist keine Schutzgarantie.",
+          "question": "Welche Aussage ist richtig?",
+          "options": [
+            "Historische Korrelation ist zeitabhängig und unsicher",
+            "Sie garantiert künftige Stabilität",
+            "Sie ist gleichbedeutend mit einer sicheren Rendite"
+          ],
+          "correct": 0,
+          "xp": 25,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -447,13 +539,17 @@
         {
           "id": "portfolio-architekt-3",
           "title": "Szenarien auf den Gesamtwert übertragen",
-          "goal": "Schätze für mehrere Positionen plausible Verlustszenarien und multipliziere Verlustrate mit Positionsgewicht. Das ist eine Modellrechnung, keine Aussage über tatsächliche künftige Kurse.",
-          "explanation": "Ein Titel wiegt 40 % und fällt um 30 %; sein rechnerischer Effekt auf das Depot ist −12 Prozentpunkte.",
-          "example": "Wie wirkt dieser Titel allein auf den Depotwert?",
-          "question": "−12 %",
-          "options": "−70 %",
-          "correct": "+12 %",
-          "xp": 0,
+          "goal": "Szenarien auf den Gesamtwert übertragen",
+          "explanation": "Schätze für mehrere Positionen plausible Verlustszenarien und multipliziere Verlustrate mit Positionsgewicht. Das ist eine Modellrechnung, keine Aussage über tatsächliche künftige Kurse.",
+          "example": "Ein Titel wiegt 40 % und fällt um 30 %; sein rechnerischer Effekt auf das Depot ist −12 Prozentpunkte.",
+          "question": "Wie wirkt dieser Titel allein auf den Depotwert?",
+          "options": [
+            "−12 %",
+            "−70 %",
+            "+12 %"
+          ],
+          "correct": 0,
+          "xp": 31,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -473,13 +569,17 @@
         {
           "id": "makro-risiken-1",
           "title": "Auswirkungen auf Finanzierung und Bewertung",
-          "goal": "Steigende Zinsen verteuern tendenziell neue Kredite und erhöhen die geforderte Rendite auf riskante Anlagen. Die tatsächliche Wirkung hängt von Laufzeiten, Kunden und Geschäftsmodell ab.",
-          "explanation": "Ein Unternehmen muss einen großen Kredit in Kürze refinanzieren. Höhere Marktzinsen können seinen künftigen freien Cashflow reduzieren.",
-          "example": "Welche Größe sollte man besonders prüfen?",
-          "question": "Zeitpunkt der Refinanzierung",
-          "options": "Nur das Firmenlogo",
-          "correct": "Nur das letzte Tageshoch",
-          "xp": 0,
+          "goal": "Auswirkungen auf Finanzierung und Bewertung",
+          "explanation": "Steigende Zinsen verteuern tendenziell neue Kredite und erhöhen die geforderte Rendite auf riskante Anlagen. Die tatsächliche Wirkung hängt von Laufzeiten, Kunden und Geschäftsmodell ab.",
+          "example": "Ein Unternehmen muss einen großen Kredit in Kürze refinanzieren. Höhere Marktzinsen können seinen künftigen freien Cashflow reduzieren.",
+          "question": "Welche Größe sollte man besonders prüfen?",
+          "options": [
+            "Zeitpunkt der Refinanzierung",
+            "Nur das Firmenlogo",
+            "Nur das letzte Tageshoch"
+          ],
+          "correct": 0,
+          "xp": 30,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -487,13 +587,17 @@
         {
           "id": "makro-risiken-2",
           "title": "Wechselkurse korrekt umrechnen",
-          "goal": "Eine amerikanische Aktie kann in US-Dollar steigen, während der Euro-Anleger wegen eines stärkeren Euro weniger Gewinn erzielt. Betrachte Rendite in der Heimatwährung und Kursänderungen getrennt.",
-          "explanation": "Ein Investment legt in US-Dollar um 5 % zu. Gleichzeitig wertet der Euro auf. Der Gewinn in Euro kann daher niedriger als 5 % sein.",
-          "example": "Wieso kann die Euro-Rendite abweichen?",
-          "question": "Wegen des Wechselkurses",
-          "options": "Wegen der Zahl der Aktiennamen",
-          "correct": "Weil alle Broker gleiche Währungen zeigen",
-          "xp": 0,
+          "goal": "Wechselkurse korrekt umrechnen",
+          "explanation": "Eine amerikanische Aktie kann in US-Dollar steigen, während der Euro-Anleger wegen eines stärkeren Euro weniger Gewinn erzielt. Betrachte Rendite in der Heimatwährung und Kursänderungen getrennt.",
+          "example": "Ein Investment legt in US-Dollar um 5 % zu. Gleichzeitig wertet der Euro auf. Der Gewinn in Euro kann daher niedriger als 5 % sein.",
+          "question": "Wieso kann die Euro-Rendite abweichen?",
+          "options": [
+            "Wegen des Wechselkurses",
+            "Wegen der Zahl der Aktiennamen",
+            "Weil alle Broker gleiche Währungen zeigen"
+          ],
+          "correct": 0,
+          "xp": 33,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -501,13 +605,17 @@
         {
           "id": "makro-risiken-3",
           "title": "Finanzierungsrisiken unter Druck",
-          "goal": "In Krisen können große Kursbewegungen, geringe Handelbarkeit und neue Kreditkosten gleichzeitig auftreten. Teste, wie sich das auf notwendige Verkäufe und den verfügbaren Cashflow auswirkt.",
-          "explanation": "Ein Unternehmen benötigt schnell Kapital, während Anleger wegen eines schlechten Berichts riskante Anlagen meiden. Das Risiko einer ungünstigen Finanzierung steigt.",
-          "example": "Welche Kombination verschärft den Stress?",
-          "question": "Weniger liquide Mittel und bald fällige Verpflichtungen",
-          "options": "Steigende Liquidität und sinkende Schulden",
-          "correct": "Mehr Zeit für die Rückzahlung",
-          "xp": 0,
+          "goal": "Finanzierungsrisiken unter Druck",
+          "explanation": "In Krisen können große Kursbewegungen, geringe Handelbarkeit und neue Kreditkosten gleichzeitig auftreten. Teste, wie sich das auf notwendige Verkäufe und den verfügbaren Cashflow auswirkt.",
+          "example": "Ein Unternehmen benötigt schnell Kapital, während Anleger wegen eines schlechten Berichts riskante Anlagen meiden. Das Risiko einer ungünstigen Finanzierung steigt.",
+          "question": "Welche Kombination verschärft den Stress?",
+          "options": [
+            "Weniger liquide Mittel und bald fällige Verpflichtungen",
+            "Steigende Liquidität und sinkende Schulden",
+            "Mehr Zeit für die Rückzahlung"
+          ],
+          "correct": 0,
+          "xp": 39,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -527,13 +635,17 @@
         {
           "id": "quellenfinder-1",
           "title": "Originaldokumente priorisieren",
-          "goal": "Eine Unternehmensmeldung ist ein dokumentierter Primärbeleg dafür, was das Unternehmen berichtet – nicht zwingend ein unabhängiges Urteil. Ergänze bei kritischen Themen weitere Quellen und die tatsächlichen veröffentlichten Zahlen.",
-          "explanation": "Ein Blog behauptet 40 % Umsatzwachstum, ohne einen Berichtszeitraum zu nennen. Prüfe das entsprechende offizielle Finanzdokument.",
-          "example": "Was ist für eine Ergebniszahl zuerst geeignet?",
-          "question": "Der offizielle Bericht mit Tabellen und Zeitraum",
-          "options": "Ein Kommentar ohne Quelle",
-          "correct": "Ein beliebiger Social-Media-Post",
-          "xp": 0,
+          "goal": "Originaldokumente priorisieren",
+          "explanation": "Eine Unternehmensmeldung ist ein dokumentierter Primärbeleg dafür, was das Unternehmen berichtet – nicht zwingend ein unabhängiges Urteil. Ergänze bei kritischen Themen weitere Quellen und die tatsächlichen veröffentlichten Zahlen.",
+          "example": "Ein Blog behauptet 40 % Umsatzwachstum, ohne einen Berichtszeitraum zu nennen. Prüfe das entsprechende offizielle Finanzdokument.",
+          "question": "Was ist für eine Ergebniszahl zuerst geeignet?",
+          "options": [
+            "Der offizielle Bericht mit Tabellen und Zeitraum",
+            "Ein Kommentar ohne Quelle",
+            "Ein beliebiger Social-Media-Post"
+          ],
+          "correct": 0,
+          "xp": 15,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -541,13 +653,17 @@
         {
           "id": "quellenfinder-2",
           "title": "Einheit, Zeitraum und Definition prüfen",
-          "goal": "Bei jeder Kennzahl müssen Zeitraum, Vergleich, Quelle, Währung und gegebenenfalls Bereinigungen dokumentiert werden. Jahres- und Quartalszahlen sind ohne Anpassung nicht vergleichbar.",
-          "explanation": "Ein Unternehmen meldet 12 % Wachstum eines einzelnen Segments. Prüfe, ob die Schlagzeile dies fälschlich dem ganzen Konzern zuschreibt.",
-          "example": "Was sollte eine saubere Aussage enthalten?",
-          "question": "Welche Sparte und welche Periode gemeint sind",
-          "options": "Nur eine große Prozentzahl",
-          "correct": "Nur das Datum des Aktienkurses",
-          "xp": 0,
+          "goal": "Einheit, Zeitraum und Definition prüfen",
+          "explanation": "Bei jeder Kennzahl müssen Zeitraum, Vergleich, Quelle, Währung und gegebenenfalls Bereinigungen dokumentiert werden. Jahres- und Quartalszahlen sind ohne Anpassung nicht vergleichbar.",
+          "example": "Ein Unternehmen meldet 12 % Wachstum eines einzelnen Segments. Prüfe, ob die Schlagzeile dies fälschlich dem ganzen Konzern zuschreibt.",
+          "question": "Was sollte eine saubere Aussage enthalten?",
+          "options": [
+            "Welche Sparte und welche Periode gemeint sind",
+            "Nur eine große Prozentzahl",
+            "Nur das Datum des Aktienkurses"
+          ],
+          "correct": 0,
+          "xp": 18,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -555,13 +671,17 @@
         {
           "id": "quellenfinder-3",
           "title": "Widersprüche transparent behandeln",
-          "goal": "Wenn zwei Quellen unterschiedliche Angaben liefern, muss nicht zwingend eine falsch sein. Unterschiedliche Rechnungslegungsstandards, Perioden, Währungen oder Definitionen können den Unterschied erklären.",
-          "explanation": "Zwei Berichte zeigen verschiedene Umsatzwerte. Verfolge zunächst Konzernabgrenzung und Währung, statt einen Wert still zu ignorieren.",
-          "example": "Was ist die richtige Reaktion?",
-          "question": "Definitionen und Datenstände vergleichen",
-          "options": "Nur die höhere Zahl auswählen",
-          "correct": "Beide Werte addieren",
-          "xp": 0,
+          "goal": "Widersprüche transparent behandeln",
+          "explanation": "Wenn zwei Quellen unterschiedliche Angaben liefern, muss nicht zwingend eine falsch sein. Unterschiedliche Rechnungslegungsstandards, Perioden, Währungen oder Definitionen können den Unterschied erklären.",
+          "example": "Zwei Berichte zeigen verschiedene Umsatzwerte. Verfolge zunächst Konzernabgrenzung und Währung, statt einen Wert still zu ignorieren.",
+          "question": "Was ist die richtige Reaktion?",
+          "options": [
+            "Definitionen und Datenstände vergleichen",
+            "Nur die höhere Zahl auswählen",
+            "Beide Werte addieren"
+          ],
+          "correct": 0,
+          "xp": 24,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -581,13 +701,17 @@
         {
           "id": "nachrichten-einordnen-1",
           "title": "Meldung und Markterwartung unterscheiden",
-          "goal": "Ein Unternehmen kann sehr gute Zahlen melden, die bereits in den Aktienkurs eingepreist sind. Die Reaktion hängt oft von Erwartungen, Ausblick, Kapitalkosten und anderen gleichzeitig eintreffenden Nachrichten ab.",
-          "explanation": "Nach einem starken Quartal fällt die Aktie. Möglicherweise waren die Prognosen der Anleger noch höher.",
-          "example": "Welche Erklärung wäre plausibel?",
-          "question": "Das Ergebnis blieb hinter der Markterwartung zurück",
-          "options": "Gute Gewinne verbieten steigende Kurse",
-          "correct": "Die Börse hat keine Nachrichten verarbeitet",
-          "xp": 0,
+          "goal": "Meldung und Markterwartung unterscheiden",
+          "explanation": "Ein Unternehmen kann sehr gute Zahlen melden, die bereits in den Aktienkurs eingepreist sind. Die Reaktion hängt oft von Erwartungen, Ausblick, Kapitalkosten und anderen gleichzeitig eintreffenden Nachrichten ab.",
+          "example": "Nach einem starken Quartal fällt die Aktie. Möglicherweise waren die Prognosen der Anleger noch höher.",
+          "question": "Welche Erklärung wäre plausibel?",
+          "options": [
+            "Das Ergebnis blieb hinter der Markterwartung zurück",
+            "Gute Gewinne verbieten steigende Kurse",
+            "Die Börse hat keine Nachrichten verarbeitet"
+          ],
+          "correct": 0,
+          "xp": 22,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -595,13 +719,17 @@
         {
           "id": "nachrichten-einordnen-2",
           "title": "Mechanismus hinter der Schlagzeile finden",
-          "goal": "Eine Nachricht ist erst für den Firmenwert relevant, wenn sie plausibel künftige Umsätze, Kosten, Investitionen, Risiken oder Finanzierung beeinflusst. Ein politischer Beschluss wirkt je nach Unternehmen unterschiedlich.",
-          "explanation": "Ein Infrastrukturprogramm könnte Auftragseingänge bei einem Maschinenbauer erhöhen. Prüfe, welche Projekte und Margen tatsächlich betroffen sind.",
-          "example": "Welche Frage hilft am meisten?",
-          "question": "Wie verändern sich künftige Zahlungsströme und Risiken?",
-          "options": "Wie oft wurde die Meldung geteilt?",
-          "correct": "Welche Farbe hat die Börsenanzeige?",
-          "xp": 0,
+          "goal": "Mechanismus hinter der Schlagzeile finden",
+          "explanation": "Eine Nachricht ist erst für den Firmenwert relevant, wenn sie plausibel künftige Umsätze, Kosten, Investitionen, Risiken oder Finanzierung beeinflusst. Ein politischer Beschluss wirkt je nach Unternehmen unterschiedlich.",
+          "example": "Ein Infrastrukturprogramm könnte Auftragseingänge bei einem Maschinenbauer erhöhen. Prüfe, welche Projekte und Margen tatsächlich betroffen sind.",
+          "question": "Welche Frage hilft am meisten?",
+          "options": [
+            "Wie verändern sich künftige Zahlungsströme und Risiken?",
+            "Wie oft wurde die Meldung geteilt?",
+            "Welche Farbe hat die Börsenanzeige?"
+          ],
+          "correct": 0,
+          "xp": 25,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -609,13 +737,17 @@
         {
           "id": "nachrichten-einordnen-3",
           "title": "Interpretationen kritisch testen",
-          "goal": "Formuliere mindestens einen glaubwürdigen Grund, warum die erwartete positive oder negative Wirkung nicht eintritt. Du lernst dadurch, Auslöser und Kausalität vom bloßen zeitlichen Zusammenhang zu trennen.",
-          "explanation": "Steigende Nachfrage könnte durch größere Wettbewerber oder Lieferengpässe aufgezehrt werden. Was für den Umsatz gut wirkt, kann die Marge trotzdem belasten.",
-          "example": "Was macht eine These prüfbar?",
-          "question": "Eine plausible Gegenhypothese mit konkreten Kennzahlen",
-          "options": "Nur die eigene Überzeugung",
-          "correct": "Nur den heutigen Kurs",
-          "xp": 0,
+          "goal": "Interpretationen kritisch testen",
+          "explanation": "Formuliere mindestens einen glaubwürdigen Grund, warum die erwartete positive oder negative Wirkung nicht eintritt. Du lernst dadurch, Auslöser und Kausalität vom bloßen zeitlichen Zusammenhang zu trennen.",
+          "example": "Steigende Nachfrage könnte durch größere Wettbewerber oder Lieferengpässe aufgezehrt werden. Was für den Umsatz gut wirkt, kann die Marge trotzdem belasten.",
+          "question": "Was macht eine These prüfbar?",
+          "options": [
+            "Eine plausible Gegenhypothese mit konkreten Kennzahlen",
+            "Nur die eigene Überzeugung",
+            "Nur den heutigen Kurs"
+          ],
+          "correct": 0,
+          "xp": 31,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
@@ -635,13 +767,17 @@
         {
           "id": "investment-these-1",
           "title": "Fakten, Prognosen und Preis getrennt halten",
-          "goal": "Eine Investmentthese beginnt mit dem Geschäftsmodell, nennt aktuelle belegte Kennzahlen, erklärt die erwartete Veränderung und verbindet diese mit einer Preis- und Risikobetrachtung.",
-          "explanation": "Eine Firma meldet 15 % Umsatzwachstum. Die These erklärt zusätzlich, wie sich daraus nach Investitionen möglicher Mehr-Cashflow ergibt.",
-          "example": "Was fehlt einer reinen Wachstumsthese?",
-          "question": "Bewertung, Investitionsbedarf und Gegenargumente",
-          "options": "Nur die Firmenfarbe",
-          "correct": "Nur die Zahl der Besucher",
-          "xp": 0,
+          "goal": "Fakten, Prognosen und Preis getrennt halten",
+          "explanation": "Eine Investmentthese beginnt mit dem Geschäftsmodell, nennt aktuelle belegte Kennzahlen, erklärt die erwartete Veränderung und verbindet diese mit einer Preis- und Risikobetrachtung.",
+          "example": "Eine Firma meldet 15 % Umsatzwachstum. Die These erklärt zusätzlich, wie sich daraus nach Investitionen möglicher Mehr-Cashflow ergibt.",
+          "question": "Was fehlt einer reinen Wachstumsthese?",
+          "options": [
+            "Bewertung, Investitionsbedarf und Gegenargumente",
+            "Nur die Firmenfarbe",
+            "Nur die Zahl der Besucher"
+          ],
+          "correct": 0,
+          "xp": 30,
           "sequence": 1,
           "cost": 1,
           "eurCost": 10
@@ -649,13 +785,17 @@
         {
           "id": "investment-these-2",
           "title": "Überprüfbare Meilensteine definieren",
-          "goal": "Notiere vor der Entscheidung, welche künftigen Quartalszahlen oder Entwicklungen die These bestätigen und widerlegen würden. So lässt sich später unterscheiden, ob eine neue Meinung auf Daten beruht.",
-          "explanation": "Du erwartest eine Margenerholung innerhalb von vier Quartalen. Dokumentiere, bei welchem Bericht du die Annahme erneut prüfst.",
-          "example": "Was schützt vor nachträglicher Selbsttäuschung?",
-          "question": "Ursprüngliche Begründung und Prüfdatum dokumentieren",
-          "options": "Die ursprüngliche These überschreiben",
-          "correct": "Nur den letzten Depotgewinn betrachten",
-          "xp": 0,
+          "goal": "Überprüfbare Meilensteine definieren",
+          "explanation": "Notiere vor der Entscheidung, welche künftigen Quartalszahlen oder Entwicklungen die These bestätigen und widerlegen würden. So lässt sich später unterscheiden, ob eine neue Meinung auf Daten beruht.",
+          "example": "Du erwartest eine Margenerholung innerhalb von vier Quartalen. Dokumentiere, bei welchem Bericht du die Annahme erneut prüfst.",
+          "question": "Was schützt vor nachträglicher Selbsttäuschung?",
+          "options": [
+            "Ursprüngliche Begründung und Prüfdatum dokumentieren",
+            "Die ursprüngliche These überschreiben",
+            "Nur den letzten Depotgewinn betrachten"
+          ],
+          "correct": 0,
+          "xp": 33,
           "sequence": 2,
           "cost": 1,
           "eurCost": 10
@@ -663,13 +803,17 @@
         {
           "id": "investment-these-3",
           "title": "Eine Gegenmeinung begründet entkräften",
-          "goal": "Ein Investmentkomitee sollte eine These aus Sicht verschiedener Risiken prüfen. Der Lernwert entsteht im Formulieren nachvollziehbarer Gründe, nicht darin, dass immer ein Kauf empfohlen wird.",
-          "explanation": "Du nennst einen bullischen und einen bärischen Fall, belegst die entscheidenden Annahmen und erklärst, was dich umstimmen würde.",
-          "example": "Wann ist ein fundiertes Nein ebenfalls ein gutes Ergebnis?",
-          "question": "Wenn Preis oder Risiko trotz guter Firma nicht zur These passen",
-          "options": "Nur wenn die Aktie bereits gefallen ist",
-          "correct": "Nie, denn gute Analysen müssen zum Kauf führen",
-          "xp": 0,
+          "goal": "Eine Gegenmeinung begründet entkräften",
+          "explanation": "Ein Investmentkomitee sollte eine These aus Sicht verschiedener Risiken prüfen. Der Lernwert entsteht im Formulieren nachvollziehbarer Gründe, nicht darin, dass immer ein Kauf empfohlen wird.",
+          "example": "Du nennst einen bullischen und einen bärischen Fall, belegst die entscheidenden Annahmen und erklärst, was dich umstimmen würde.",
+          "question": "Wann ist ein fundiertes Nein ebenfalls ein gutes Ergebnis?",
+          "options": [
+            "Wenn Preis oder Risiko trotz guter Firma nicht zur These passen",
+            "Nur wenn die Aktie bereits gefallen ist",
+            "Nie, denn gute Analysen müssen zum Kauf führen"
+          ],
+          "correct": 0,
+          "xp": 39,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
