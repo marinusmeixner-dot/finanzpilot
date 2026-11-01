@@ -12,7 +12,40 @@
       "published": "29.10.2026",
       "why": "Fakt: Einlage-/Hauptrefinanzierungs-/Spitzenrefinanzierungssatz bleiben 2,50/2,65/2,90 %. Die EZB warnt vor höheren Energiepreisen und möglichen Zweitrundeneffekten. Ein künftiger Zinspfad wurde nicht zugesagt.",
       "impact": "Interpretation: Kapitalkosten und Anleiherenditen können Bewertungen beeinflussen. Gegenargument: Gleichbleibende Leitzinsen bedeuten nicht gleichbleibende Marktzinsen oder einen sicheren nächsten Zinsschritt.",
-      "category": "Zinsen"
+      "category": "Zinsen",
+      "id": "29-10-2026-ezb-bela-sst-einlagezins-bei-2-50-energieinflation-b",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 29.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Einlage-/Hauptrefinanzierungs-/Spitzenrefinanzierungssatz bleiben 2,50/2,65/2,90 %. Die EZB warnt vor höheren Energiepreisen und möglichen Zweitrundeneffekten. Ein künftiger Zinspfad wurde nicht zugesagt.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Europäische Zentralbank, geldpolitische Entscheidung und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Die Einlagefazilität ist der von Banken für Überschussliquidität relevante Leitzins, aber für die Bewertung einer Aktie zählt nicht einfach nur dieser eine Prozentsatz. Entscheidend sind außerdem Marktrenditen, Kreditaufschläge, Erwartungen an künftige Entscheidungen und das Risiko des einzelnen Unternehmens.",
+              "Interpretation: Kapitalkosten und Anleiherenditen können Bewertungen beeinflussen. Gegenargument: Gleichbleibende Leitzinsen bedeuten nicht gleichbleibende Marktzinsen oder einen sicheren nächsten Zinsschritt."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Bei zinssensitiven Unternehmen lohnt der Blick auf Fälligkeiten der Schulden, variabel verzinste Kredite und die Eigenkapitalkosten. Eine unveränderte Entscheidung muss nicht bereits eingepreiste Zinsänderungserwartungen bestätigen."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Für ein belastbares Urteil wären die Originalentscheidung der EZB, die Inflationsprojektionen, langlaufende Marktzinsen und die Finanzierungskosten des betreffenden Unternehmens getrennt zu betrachten."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "US-BIP wächst im dritten Quartal annualisiert um 3,4 %",
@@ -21,7 +54,40 @@
       "published": "29.10.2026",
       "why": "Fakt: Reales US-Bruttoinlandsprodukt Q3 2026 +3,4 % annualisiert nach +2,2 % in Q2; BEA nennt rund +0,8 % nicht annualisiertes Quartalswachstum. Investitionen und Konsum stützten, Exporte belasteten.",
       "impact": "Interpretation: robustes Wachstum kann Gewinnerwartungen stützen. Gegenargument: Erste Schätzung ist revidierbar; annualisierte US-Raten sind nicht direkt mit deutschen Quartalsraten vergleichbar.",
-      "category": "Wirtschaft"
+      "category": "Wirtschaft",
+      "id": "29-10-2026-us-bip-wa-chst-im-dritten-quartal-annualisiert-um-3-",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 29.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Reales US-Bruttoinlandsprodukt Q3 2026 +3,4 % annualisiert nach +2,2 % in Q2; BEA nennt rund +0,8 % nicht annualisiertes Quartalswachstum. Investitionen und Konsum stützten, Exporte belasteten.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus U.S. Bureau of Economic Analysis – erste Schätzung und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Die in den USA häufig genannte annualisierte Wachstumsrate beschreibt, wie sich ein einzelnes Quartal unter einer hypothetischen Fortschreibung auf ein Jahr hochrechnen ließe. Sie ist keine tatsächlich gemessene Wachstumsrate über die zurückliegenden zwölf Monate.",
+              "Interpretation: robustes Wachstum kann Gewinnerwartungen stützen. Gegenargument: Erste Schätzung ist revidierbar; annualisierte US-Raten sind nicht direkt mit deutschen Quartalsraten vergleichbar."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Für Aktien zählt, welche Teile der Nachfrage auf Konsum, Unternehmensinvestitionen oder öffentliche Ausgaben entfallen und welche Geschäftsmodelle davon überhaupt profitieren. Ein hohes reales BIP-Wachstum kann gleichzeitig Erwartungen an eine restriktivere Geldpolitik verändern."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Die BEA-Erstschätzung sollte mit späteren Revisionen, der Preisentwicklung, Arbeitsmarktdaten und den Unternehmensausblicken verglichen werden. Die Quartalsrate darf nicht eins zu eins mit nicht annualisierten europäischen Zahlen verglichen werden."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "Eurozone: Wirtschaftsleistung Q3 2026 +0,4 % zum Vorquartal",
@@ -30,7 +96,40 @@
       "published": "30.10.2026",
       "why": "Fakt: Reales saisonbereinigtes BIP +0,4 % gegenüber Q2 in der Eurozone, +0,5 % in der EU; Vorjahresvergleich +1,3 % bzw. +1,5 %. Datengrundlage noch unvollständig.",
       "impact": "Interpretation: etwas robustere Nachfrage als in einzelnen Mitgliedstaaten. Gegenargument: Frühschätzungen werden revidiert; +0,4 % ist nicht annualisiert und kein Prognosewert für Aktienrenditen.",
-      "category": "Wirtschaft"
+      "category": "Wirtschaft",
+      "id": "30-10-2026-eurozone-wirtschaftsleistung-q3-2026-0-4-zum-vorquar",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 30.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Reales saisonbereinigtes BIP +0,4 % gegenüber Q2 in der Eurozone, +0,5 % in der EU; Vorjahresvergleich +1,3 % bzw. +1,5 %. Datengrundlage noch unvollständig.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Eurostat – vorläufige Schnellschätzung und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Die Eurozone besteht aus Volkswirtschaften mit unterschiedlicher Branchenstruktur und Konjunkturlage. Eine gemeinsame Quartalszahl sagt daher wenig darüber aus, wie sich einzelne Firmenumsätze oder Margen im Inland entwickeln.",
+              "Interpretation: etwas robustere Nachfrage als in einzelnen Mitgliedstaaten. Gegenargument: Frühschätzungen werden revidiert; +0,4 % ist nicht annualisiert und kein Prognosewert für Aktienrenditen."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Wichtig sind neben dem Gesamtwachstum insbesondere Investitionen, Exportnachfrage und der Verbraucherbereich. Eine konjunkturelle Verbesserung kann gleichzeitig von höheren Kosten oder einer bereits anspruchsvollen Börsenbewertung begleitet werden."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Die Schnellschätzung sollte nach den nachgereichten Detailkomponenten erneut geprüft werden. Ein Anleger muss die genaue Vergleichsbasis – Quartal zu Quartal oder Vorjahresquartal – und die saisonale Bereinigung beachten."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "Deutschland: Vorläufiges BIP Q3 2026 +0,2 %",
@@ -39,7 +138,40 @@
       "published": "30.10.2026",
       "why": "Fakt: Reales, saison- und kalenderbereinigtes BIP +0,2 % zum Vorquartal; kalenderbereinigt +1,2 % zum Vorjahresquartal. Konsum leicht positiv, Investitionen nach ersten Erkenntnissen rückläufig.",
       "impact": "Interpretation: leichte Expansion statt Stagnation. Gegenargument: Schwächere Exporte und Revisionen begrenzen Aussagen über künftige DAX-Gewinne.",
-      "category": "Wirtschaft"
+      "category": "Wirtschaft",
+      "id": "30-10-2026-deutschland-vorla-ufiges-bip-q3-2026-0-2-",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 30.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Reales, saison- und kalenderbereinigtes BIP +0,2 % zum Vorquartal; kalenderbereinigt +1,2 % zum Vorjahresquartal. Konsum leicht positiv, Investitionen nach ersten Erkenntnissen rückläufig.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Statistisches Bundesamt – Schnellmeldung und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Ein leicht steigendes reales Bruttoinlandsprodukt ist zunächst eine Momentaufnahme der gesamtwirtschaftlichen Produktion. Es sagt weder, dass alle deutschen Branchen wachsen, noch dass der Aktienmarkt automatisch einen entsprechend positiven Monat haben muss.",
+              "Interpretation: leichte Expansion statt Stagnation. Gegenargument: Schwächere Exporte und Revisionen begrenzen Aussagen über künftige DAX-Gewinne."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Bei deutschen Unternehmen kommen Exportmärkte, Wechselkurse, Finanzierung und branchenspezifische Risiken hinzu. Gerade international tätige Konzerne können sich trotz schwacher heimischer Nachfrage anders entwickeln als die Binnenkonjunktur."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Für eine Einordnung sollte man zunächst die endgültige BIP-Aufschlüsselung prüfen und danach Umsätze und Auftragseingänge der tatsächlich interessierenden Firmen betrachten. Einzelne Wachstumsraten sind kein fairer Unternehmenswert."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "Deutsche Verbraucherpreise: Oktober-Inflation vorläufig 2,8 %",
@@ -48,7 +180,40 @@
       "published": "30.10.2026",
       "why": "Fakt: Verbraucherpreisindex +2,8 % zum Vorjahr nach +3,3 % im September; Kernrate +2,1 %, Energiepreise +12,2 %. Die Werte sind vorläufig.",
       "impact": "Interpretation: der Anstieg des Preisniveaus verlangsamt sich. Gegenargument: Das bedeutet nicht, dass die Preise zum Vorjahr fallen; Energie und andere Güter entwickeln sich unterschiedlich.",
-      "category": "Wirtschaft"
+      "category": "Wirtschaft",
+      "id": "30-10-2026-deutsche-verbraucherpreise-oktober-inflation-vorla-u",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 30.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Verbraucherpreisindex +2,8 % zum Vorjahr nach +3,3 % im September; Kernrate +2,1 %, Energiepreise +12,2 %. Die Werte sind vorläufig.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Statistisches Bundesamt – vorläufige Verbraucherpreise und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Die ausgewiesene Inflationsrate misst die Veränderung des Verbraucherpreisniveaus gegenüber dem Vorjahresmonat. Eine niedrigere Rate bedeutet weiterhin steigende Preise, sofern sie positiv bleibt; sie ist nicht dasselbe wie ein allgemeiner Preisrückgang.",
+              "Interpretation: der Anstieg des Preisniveaus verlangsamt sich. Gegenargument: Das bedeutet nicht, dass die Preise zum Vorjahr fallen; Energie und andere Güter entwickeln sich unterschiedlich."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Für Unternehmen wirkt Inflation unterschiedlich: Manche können höhere Kosten weitergeben, andere verlieren Nachfrage oder Marge. Dazu beeinflussen Reallöhne, Energiepreise und Zinsreaktionen die Umsatz- und Bewertungsannahmen."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Zusätzlich zur Gesamtrate sind Kernrate, Energieeffekte, die jeweilige Vergleichsperiode und mögliche Revisionen wichtig. Eine einzelne Inflationsmeldung reicht nicht für eine verlässliche Zins- oder Börsenprognose."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "Amazon: 201,9 Mrd. USD Q3-Umsatz, aber −42,4 Mrd. USD Zwölfmonats-FCF",
@@ -60,7 +225,40 @@
       "category": "Aktien",
       "symbols": [
         "AMZN"
-      ]
+      ],
+      "id": "29-10-2026-amazon-201-9-mrd-usd-q3-umsatz-aber-42-4-mrd-usd-zwo",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 29.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Q3-Umsatz 201,9 Mrd. USD (+12 %), operatives Ergebnis 28,1 Mrd. USD; AWS-Umsatz 46,0 Mrd. USD (+39,3 %). Freier Cashflow der letzten zwölf Monate −42,4 Mrd. USD gegenüber +14,8 Mrd. USD ein Jahr zuvor, vor allem wegen stark gestiegener Sachinvestitionen.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Amazon Investor Relations – Q3 2026 und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Die Meldung kombiniert mehrere unterschiedliche Zahlenarten: Konzernumsatz und operatives Ergebnis eines Quartals sowie freien Cashflow eines rollierenden Zwölfmonatszeitraums. Diese Größen dürfen bei einer Bewertung nicht miteinander verwechselt werden.",
+              "Interpretation: Cloud-Nachfrage ist hoch, doch Kapitalrendite und Finanzierungsbedarf sind offen. Gegenargument: Negativer Zwölfmonats-FCF kann durch vorgezogene rentable Investitionen entstehen; nicht mit dem Q3-Ergebnis verwechseln."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Bei einem kapitalintensiven Cloud-Ausbau ist die zentrale Frage, wie sich neue Investitionen über mehrere Jahre in Auslastung, Margen und zusätzliche Barmittel umsetzen. Ein gegenwärtig negativer freier Cashflow kann vorübergehend sein, muss aber finanziert werden."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Die nächste Prüfung sollte operative Cashflows, CapEx, Segmentumsatz und operative Segmenterträge aus den Originalunterlagen getrennt modellieren. Erst dann lässt sich eine Bandbreite für nachhaltige Cashflows aufstellen."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "Microsoft: Q1 GJ 2027 mit 92,279 Mrd. USD Umsatz",
@@ -72,7 +270,40 @@
       "category": "Aktien",
       "symbols": [
         "MSFT"
-      ]
+      ],
+      "id": "28-10-2026-microsoft-q1-gj-2027-mit-92-279-mrd-usd-umsatz",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 28.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Quartal bis 30.09.2026: Umsatz 92,279 Mrd. USD (+19 %), operatives Ergebnis 45,915 Mrd. USD (+21 %); Azure-Umsatz 33,165 Mrd. USD. Operative Marge rechnerisch 49,8 %.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Microsoft Investor Relations – Q1 FY2027 und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Bei Microsoft ist das starke operative Ergebnis interessant, doch die berichtete Marge allein reicht nicht für eine langfristige Bewertung. Softwareerträge und Investitionen in Infrastruktur entwickeln sich zeitlich unterschiedlich und müssen getrennt betrachtet werden.",
+              "Interpretation: starke Cloud- und Softwareerträge. Gegenargument: Rechenzentrumsinvestitionen, künftige Abschreibungen und eingepreiste Erwartungen müssen getrennt vom Umsatzwachstum beurteilt werden."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Höhere Rechenzentrumsausgaben können langfristig den Umsatz stützen, führen aber auch zu Cash-Abflüssen und späteren Abschreibungen. Ein starker Bericht sagt deshalb noch nicht, dass die Aktie gegenüber den Erwartungen günstig bewertet ist."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Zu prüfen sind die genaue Definition der Cloud-Segmente, Umsatzwachstum, operative Cashflows, Investitionen und die in den Aktienpreis eingerechneten Wachstumserwartungen. Der Berichtszeitraum ist das erste Geschäftsjahresquartal 2027."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "Alphabet: Google Cloud verdoppelt Umsatz, Q3-FCF negativ",
@@ -85,7 +316,40 @@
       "symbols": [
         "GOOGL",
         "GOOG"
-      ]
+      ],
+      "id": "28-10-2026-alphabet-google-cloud-verdoppelt-umsatz-q3-fcf-negat",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 28.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Q3-Umsatz 127,577 Mrd. USD (+25 %), Google Cloud 30,709 Mrd. USD (+103 %), operatives Ergebnis 40,576 Mrd. USD. Der Quartals-FCF ist laut Meldung negativ; längere Cashflow-Perioden separat betrachten.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Alphabet – SEC Exhibit 99.1, Q3 2026 und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Die Zahl zum Cloud-Wachstum ist eine Segmentkennzahl und darf nicht als Wachstumsrate für den ganzen Konzern ausgegeben werden. Außerdem unterscheiden sich ausgewiesene Ergebnisse, operativer Cashflow und freier Cashflow nach Investitionen.",
+              "Interpretation: Cloud-Skalierung kann die Ertragsbasis stärken. Gegenargument: Kapitalintensität, Abschreibungen und bereits im Kurs erwartetes Wachstum begrenzen den fairen Wert."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Schnell wachsende Umsätze können eine Investitionswelle rechtfertigen, wenn die zusätzlichen späteren Zahlungsüberschüsse ausreichen. Um das zu prüfen, braucht man plausible Annahmen zu Auslastung, Preisdruck und langfristigen Margen."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Berichtsquartal und rollierende Cashflow-Zeiträume getrennt ausweisen, Segmentmargen sowie Investitionen und Abschreibungen dokumentieren. Ein angemessener Unternehmenswert ist nur als Szenario unter expliziten Annahmen seriös."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "AIXTRON: Auftragseingang Q3 2026 steigt auf 274,9 Mio. EUR",
@@ -97,7 +361,40 @@
       "category": "Aktien",
       "symbols": [
         "AIXA.DE"
-      ]
+      ],
+      "id": "29-10-2026-aixtron-auftragseingang-q3-2026-steigt-auf-274-9-mio",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 29.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Auftragseingang Q3 274,9 Mio. EUR (+122 % zu 124,0 Mio. EUR im Vorjahr), Q3-Umsatz 183,6 Mio. EUR; Neunmonatsumsatz 358,1 Mio. EUR nach 369,5 Mio. EUR. Nachfrage aus optischer Datenkommunikation.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus AIXTRON SE – Q3-Unternehmensmeldung und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Ein Auftragseingang misst neue Bestellungen und ist weder derselbe Wert wie ausgelieferte Maschinen noch unmittelbar verdientes Geld. Zwischen Bestellung, Auslieferung, Abnahme, Umsatzrealisierung und Zahlung können erhebliche Zeitspannen liegen.",
+              "Interpretation: bessere Pipeline für Anlagenlieferungen. Gegenargument: Bestellungen sind noch keine Umsätze oder Cashflows; Stornierungen, Kundenkonzentration und Lieferzeitpunkte bleiben entscheidend."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Ein starkes Quartal kann einen Wendepunkt andeuten, ohne schon die nachhaltige Gewinnkraft zu belegen. Gerade im Anlagenbau sind Kundenkonzentration, Lieferzyklen und Stornierungsrisiken wichtig."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Für eine Prognose müssen Auftragseingang, Auftragsbestand, realisierter Umsatz, Margen und operativer Cashflow über mehrere Berichtsperioden miteinander verglichen werden. Einzelne prozentuale Quartalssprünge lassen sich nicht unbegrenzt fortschreiben."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "KION Group: Automatisierung wächst, Staplergeschäft schwächer",
@@ -109,7 +406,40 @@
       "category": "Aktien",
       "symbols": [
         "KGX.DE"
-      ]
+      ],
+      "id": "29-10-2026-kion-group-automatisierung-wa-chst-staplergescha-ft-",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 29.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Konzernumsatz Januar–September 2026 8.522,0 Mio. EUR (+3,9 %); externe IAS-Umsätze +17,1 % auf 2.498,3 Mio. EUR, ITS-Umsätze −0,7 % auf 6.023,3 Mio. EUR. Segmentwerte und Konsolidierung beachten.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus KION Group – Q3-Quartalsmitteilung und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Die beiden Unternehmensbereiche entwickeln sich unterschiedlich: Der Automatisierungsbereich wächst, während das klassische Flurförderzeuggeschäft schwächer ist. Aus den Segmentzahlen muss die konsolidierte Ergebniswirkung herausgearbeitet werden.",
+              "Interpretation: Lagerautomation gewinnt Gewicht. Gegenargument: zyklische Investitionen, Auftragslage und FCF können den Wachstumsbeitrag neutralisieren; kein Konzernwachstum von 17 % behaupten."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Ein höherer Umsatzanteil wachsender Dienstleistungen oder Anlagen ist nur dann wertsteigernd, wenn Margen, Kapitaleinsatz und Cashflow ebenfalls attraktiv sind. Auch Auftragsbestand, Finanzierung und zyklische Lagerinvestitionen spielen eine Rolle."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Die Segmentergebnisse, die Konzern-Konsolidierung, die Free-Cashflow-Entwicklung und die Ausblickbandbreite in der Originalmitteilung vergleichen. Der 17-prozentige Bereichswert ist ausdrücklich keine Gesamtkonzernrate."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "title": "Meta: Rechtsstreit-Belastung drückt Q3-Marge auf 20 %",
@@ -121,7 +451,40 @@
       "category": "Aktien",
       "symbols": [
         "META"
-      ]
+      ],
+      "id": "21-10-2026-meta-rechtsstreit-belastung-dru-ckt-q3-marge-auf-20-",
+      "article": {
+        "lead": "Diese eigenständig formulierte FinanzPilot-Einordnung erläutert den Hintergrund und die finanziellen Folgen der Meldung vom 21.10.2026. Sie ersetzt keine Originalunterlagen und keine individuelle Anlageberatung.",
+        "sections": [
+          {
+            "heading": "Was die Quelle tatsächlich berichtet",
+            "paragraphs": [
+              "Fakt: Q3-Umsatz 64,601 Mrd. USD (+26 %), operativer Gewinn 12,988 Mrd. USD, operative Marge 20 % nach 40 % im Vorjahresquartal. Ein Aufwand von 9,89 Mrd. USD im Zusammenhang mit einem Vergleich belastet das Ergebnis.",
+              "Für die richtige Einordnung sind Veröffentlichungsdatum, Quelle, betrachteter Zeitraum und verwendete Kennzahl wichtig. Die Angaben stammen aus Meta Investor Relations – Q3 2026 und dürfen nicht als heutige Live-Daten oder zukünftige Gewissheiten gelesen werden."
+            ]
+          },
+          {
+            "heading": "Warum die Nachricht wirtschaftlich bedeutsam ist",
+            "paragraphs": [
+              "Bei Meta trifft starkes Umsatzwachstum auf eine deutlich niedrigere ausgewiesene Quartalsmarge. Ein einmaliger oder außergewöhnlicher Rechtsaufwand kann die Vergleichbarkeit der Perioden verzerren, aber er ist trotzdem ein realer wirtschaftlicher Aufwand.",
+              "Interpretation: ausgewiesene Marge unterschätzt möglicherweise die operative Ertragskraft ohne Sonderaufwand. Gegenargument: Rechtsrisiken können echte wiederkehrende Kosten sein; Bereinigung nicht unkritisch als risikofrei behandeln."
+            ]
+          },
+          {
+            "heading": "Welche Gegenargumente geprüft werden müssen",
+            "paragraphs": [
+              "Eine bereinigte Marge kann nützlich sein, wenn der Effekt transparent dokumentiert wird. Das Risiko besteht darin, solche Belastungen zu oft herauszurechnen und dadurch das langfristige Risikoprofil zu unterschätzen."
+            ]
+          },
+          {
+            "heading": "Wie du die Meldung weiterverfolgen kannst",
+            "paragraphs": [
+              "Ausgewiesene und bereinigte Zahlen getrennt darstellen, die Einordnung des Rechtsrisikos überprüfen und den Cashflow einschließlich Investitionen betrachten. Erst danach lässt sich schätzen, wie nachhaltig die operative Ertragskraft wirklich ist."
+            ]
+          }
+        ],
+        "conclusion": "Die Nachricht liefert einen überprüfbaren Informationspunkt. Erst der Vergleich mit früheren Daten, einer Gegenhypothese und den Erwartungen im aktuellen Preis ermöglicht eine belastbare Schlussfolgerung."
+      }
     },
     {
       "id": "2026-10-30-bayer-glyphosat-missouri",
