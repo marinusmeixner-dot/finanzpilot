@@ -371,6 +371,18 @@
     get reviewClient(){return user?client:null},
     get paperClient(){return user?client:null},
     sync:()=>sync(true),backup:snapshot,
+    async resetLearning(){
+      if(!client||!user)throw Error('Bitte zuerst mit deinem eigenen Konto anmelden.');
+      const owner=user.id;
+      const {data,error}=await client.rpc('fp_reset_my_learning',{p_confirmation:'NEUSTART'});
+      if(error||!data?.ok)throw Error(error?.message||data?.message||'Zurücksetzen fehlgeschlagen.');
+      if(user?.id!==owner)throw Error('Konto während des Zurücksetzens gewechselt.');
+      ready=false;dirty=false;lastRemote={};clearTimeout(timer);clearTimeout(retryTimer);
+      KEYS.forEach(key=>localStorage.removeItem(key));
+      localStorage.removeItem('finanzpilot_navigation_v6');
+      location.replace(APP_URL+'?v=43&restart=1');
+      return data;
+    },
     async economyRpc(name,args){
       if(!client||!user)throw Error('Bitte zuerst bei FinanzPilot anmelden.');
       if(!['fp_submit_training_answer','fp_redeem_artifact','fp_purchase_reward'].includes(name))throw Error('Unbekannte Funktion');
