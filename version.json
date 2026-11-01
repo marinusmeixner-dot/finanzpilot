@@ -1,5 +1,5 @@
 {
-  "version": 39,
-  "release": "2026-11-01-v39",
-  "notes": "Lernen rebuilt as a clean single-path beginner curriculum: six distinct stage screens, 36 real lessons including interstage checks, from money and saving through company financials, valuation, calculation, independent research and investment judgment. Clear start/resume, explanations and worked examples, answer feedback and safe page rewind. Private learning progress sync. Existing specialized courses moved to optional supplements; old progress kept. One unified XP-skill-career-artifact system and small streak popup/rewards are PLANNED ONLY (docs/CONNECTED_PROGRESSION_STREAK_PLAN_V39.md), not implemented."
+  "version": 40,
+  "release": "2026-11-01-v40",
+  "notes": "Single €1,000 starting virtual depot; existing trades preserved and normalized via official dated ECB FX. Buy/sell by euro amount or fractional shares to 0.000001, with atomic server checks and euro-only wallet. Signed-in app visits earn once-daily €10 paper funds and one research point, plus bigger streak milestone grants at day 10,20,30, capped at 30. Clickable 7-day streak reward modal. Sequential locked 36-lesson curriculum, with richer first-six foundation courses. Expanded unified career/skill/artifact/animation design documented separately and not implemented yet."
 }
