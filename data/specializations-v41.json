@@ -6,25 +6,25 @@
       "id": "reporting",
       "title": "Finanzberichte",
       "description": "Lerne Zahlen aus Berichten korrekt einzuordnen",
-      "capstone": "financial-statement-forensics"
+      "capstone": "quality-of-earnings"
     },
     {
       "id": "valuation",
       "title": "Unternehmensbewertung",
       "description": "Verbinde Geschäftsmodell, Gewinn und Preis",
-      "capstone": "valuation-committee"
+      "capstone": "scenario-master"
     },
     {
       "id": "risk",
       "title": "Risiko & Depot",
       "description": "Lerne Unsicherheit und Portfoliorisiken zu messen",
-      "capstone": "portfolio-risk-chief"
+      "capstone": "position-sizing"
     },
     {
       "id": "research",
       "title": "Research & Urteil",
       "description": "Von überprüfbaren Quellen zur eigenen Investmentthese",
-      "capstone": "senior-investigator"
+      "capstone": "evidence-auditor"
     }
   ],
   "skills": [
@@ -1342,6 +1342,534 @@
           ],
           "correct": 1,
           "xp": 49,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "rechnungslegungs-fallen",
+      "title": "Rechnungslegung unter der Lupe",
+      "branch": "reporting",
+      "parent": "bilanz-pruefer",
+      "tier": 4,
+      "description": "Du prüfst Rückstellungen, Leasingverpflichtungen und nicht zahlungswirksame Erträge, bevor du aus der Bilanz auf die tatsächliche Finanzierungslage schließt.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "rechnungslegungs-fallen-1",
+          "title": "Leasing und echte Verpflichtungen",
+          "goal": "Leasing und echte Verpflichtungen",
+          "explanation": "Ein geleastes Gebäude kann nach den geltenden Rechnungslegungsregeln ein Nutzungsrecht und eine Leasingverbindlichkeit auslösen. Der Aufwand verteilt sich auf Abschreibungen und Zinsen. In einer Bewertung darfst du Verbindlichkeiten und Mietaufwendungen nicht doppelt berücksichtigen.",
+          "example": "Ein Konzern hat 100 Mio. Euro Bankdarlehen und 35 Mio. Euro Leasingverbindlichkeiten. Die Frage ist nicht, ob es 100 oder 135 Millionen Verbindlichkeiten gibt, sondern welche Definition der ausgewiesenen Nettofinanzschulden verwendet wird.",
+          "question": "Welche Prüfung verhindert eine Doppelzählung?",
+          "options": [
+            "Leasingverbindlichkeiten und verwendete Bewertungsdefinition abstimmen",
+            "Leasingverbindlichkeiten stets ignorieren",
+            "Alle Gebäude als kostenlos betrachten"
+          ],
+          "correct": 0,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "rechnungslegungs-fallen-2",
+          "title": "Rückstellungen kritisch lesen",
+          "goal": "Rückstellungen kritisch lesen",
+          "explanation": "Rückstellungen entstehen bei gegenwärtigen Verpflichtungen mit ungewisser Höhe oder Fälligkeit, sofern die jeweiligen Bilanzierungsvoraussetzungen erfüllt sind. Sie sind nicht automatisch sofort fällige Kredite. Entstehung, Auflösung und Zahlungswirksamkeit getrennt verfolgen.",
+          "example": "Ein Unternehmen bildet für einen Rechtsstreit eine Rückstellung von 40 Mio. Euro. Der aktuelle Gewinn sinkt, obwohl die entsprechende Auszahlung erst später oder möglicherweise in anderer Höhe erfolgt. Prüfe die Notes.",
+          "question": "Welche Unterscheidung ist wichtig?",
+          "options": [
+            "Rückstellung ist immer identisch mit einer heutigen Auszahlung",
+            "Bilanzaufwand und späterer Zahlungsmittelabfluss können zeitlich auseinanderfallen",
+            "Der Rechtsstreit hat keinen Einfluss auf Risiken"
+          ],
+          "correct": 1,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "rechnungslegungs-fallen-3",
+          "title": "Bilanzänderungen erklären",
+          "goal": "Bilanzänderungen erklären",
+          "explanation": "Ein Bilanzvergleich muss Akquisitionen, Währungseffekte und Bilanzierungsänderungen berücksichtigen. Ein steigender Sachanlagebestand beweist noch kein operatives Wachstum. Verfolge die Überleitungen, bevor du Kapitalrenditen berechnest.",
+          "example": "Ein Unternehmen übernimmt einen Wettbewerber: Sachanlagen steigen, Schulden wachsen ebenfalls. Ein Teil des Bilanzanstiegs stammt aus Kaufpreisallokation und nicht aus eigenständig erwirtschaftetem Cashflow.",
+          "question": "Welche Quelle hilft zur Erklärung?",
+          "options": [
+            "Nur die Börsenkursgrafik",
+            "Anhang und Kaufpreisallokation des Geschäftsberichts",
+            "Ein Trend aus sozialen Medien"
+          ],
+          "correct": 1,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "bilanzqualitaet",
+      "title": "Bilanzqualität und Warnsignale",
+      "branch": "reporting",
+      "parent": "bilanz-pruefer",
+      "tier": 4,
+      "description": "Du kombinierst Forderungen, Lagerbestände und Margen zu einer nachvollziehbaren Prüfung der Gewinnqualität und möglicher Bilanzrisiken.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "bilanzqualitaet-1",
+          "title": "Forderungen gegen Umsatz halten",
+          "goal": "Forderungen gegen Umsatz halten",
+          "explanation": "Steigen Forderungen deutlich schneller als Umsätze, kann das längere Kundenzahlungsziele, Abrechnungsverschiebungen oder höhere Risiken anzeigen. Daraus folgt kein automatischer Bilanzskandal; die Veränderung muss begründet werden.",
+          "example": "Die Umsätze wachsen um 5 Prozent, offene Forderungen aber um 30 Prozent. Prüfe Forderungslaufzeiten, Kundenstruktur und Einmaleffekte, bevor du einen Verdacht formulierst.",
+          "question": "Was ist die seriöse Reaktion?",
+          "options": [
+            "Sofort Betrug behaupten",
+            "Zahlungsziele und Forderungsqualität im Anhang nachprüfen",
+            "Den Anstieg ignorieren"
+          ],
+          "correct": 1,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "bilanzqualitaet-2",
+          "title": "Lageraufbau interpretieren",
+          "goal": "Lageraufbau interpretieren",
+          "explanation": "Ein Lageraufbau kann auf kommende Nachfrage vorbereitet sein oder auf schwache Verkäufe hinweisen. Entscheidend sind Umschlag, Lagerwertberichtigungen und die Vergleichbarkeit saisonaler Perioden.",
+          "example": "Ein Industriebetrieb meldet 20 Prozent mehr Lager bei unverändertem Absatz. Das kann Kapital binden. Vergleiche Auftragslage und Abwertungen, um die Ursache einzuschätzen.",
+          "question": "Welche Kennzahl hilft ergänzend?",
+          "options": [
+            "Warenumschlag oder Lagerreichweite",
+            "Nur das Tageshoch der Aktie",
+            "Die Anzahl der Firmenlogos"
+          ],
+          "correct": 0,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "bilanzqualitaet-3",
+          "title": "Qualitätsurteil formulieren",
+          "goal": "Qualitätsurteil formulieren",
+          "explanation": "Ein Urteil zur Gewinnqualität soll nicht aus einer einzigen Kennzahl entstehen. Verbinde Cashflow-Umrechnung, Kundenforderungen, Vorräte, Einmaleffekte und verfügbare Liquidität. Dokumentiere auch plausible harmlose Erklärungen.",
+          "example": "Ein Unternehmen wächst bei Umsatz und EBIT, aber operativer Cashflow sinkt. Möglicherweise werden mehr Forderungen aufgebaut; erst Berichte und Zahlungsentwicklung erklären, was dahintersteckt.",
+          "question": "Welche Darstellung ist belastbar?",
+          "options": [
+            "Nur das höchste EBIT berichten",
+            "Mehrere Finanzdaten und Gegenargumente gemeinsam dokumentieren",
+            "Aus einem Quartal einen sicheren Langzeittrend ableiten"
+          ],
+          "correct": 1,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "kapitalkosten-schaetzen",
+      "title": "Kapitalkosten nachvollziehen",
+      "branch": "valuation",
+      "parent": "unternehmenswert",
+      "tier": 4,
+      "description": "Du verstehst die Wirkung von Finanzierung, Risikoprämie und Verschuldung auf Bewertungsmodelle, ohne eine Scheingenauigkeit als fairen Wert auszugeben.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "kapitalkosten-schaetzen-1",
+          "title": "Eigenkapitalrendite verstehen",
+          "goal": "Eigenkapitalrendite verstehen",
+          "explanation": "Eigenkapitalgeber tragen das verbleibende Unternehmensrisiko und verlangen im Modell eine entsprechende Rendite. Die zugrunde liegenden Risikoprämien sind Schätzungen und hängen von wirtschaftlichen Rahmenbedingungen ab.",
+          "example": "Eine Aktie bietet erwartete Erträge erst in vielen Jahren. Ein höherer angenommener Eigenkapitalzins reduziert bei gleichen Zahlungsströmen den modellierten Gegenwartswert.",
+          "question": "Was gilt bei sonst gleichen Annahmen?",
+          "options": [
+            "Höhere Renditeanforderung senkt den Barwert",
+            "Höhere Renditeanforderung erhöht den Barwert",
+            "Renditeanforderung ist für den Wert irrelevant"
+          ],
+          "correct": 0,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "kapitalkosten-schaetzen-2",
+          "title": "Finanzierungsmix berechnen",
+          "goal": "Finanzierungsmix berechnen",
+          "explanation": "Ein gewichteter Kapitalkostensatz berücksichtigt Eigen- und Fremdfinanzierung sowie gegebenenfalls den steuerlichen Zinseffekt. Die Gewichte sollten zu Marktwerten und den gewählten Cashflows passen.",
+          "example": "Bei 60 Prozent Eigenkapital zu 10 Prozent Renditeforderung und 40 Prozent Fremdkapital zu 5 Prozent Zinssatz ergibt sich vor Steuern vereinfacht 8 Prozent als gewichteter Satz.",
+          "question": "Welches Ergebnis ist rechnerisch richtig?",
+          "options": [
+            "12 Prozent",
+            "8 Prozent",
+            "3 Prozent"
+          ],
+          "correct": 1,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "kapitalkosten-schaetzen-3",
+          "title": "Falsche Präzision vermeiden",
+          "goal": "Falsche Präzision vermeiden",
+          "explanation": "Kapitalkosten werden nicht auf zwei Stellen genau für zehn Jahre garantiert. Sinnvoll ist eine Sensitivitätsprüfung über mehrere plausible Annahmen, insbesondere bei unsicheren Geschäftsmodellen.",
+          "example": "Bei angenommenen 7, 9 und 11 Prozent Kapitalkosten kann der geschätzte Unternehmenswert stark schwanken. Der Vergleich dieser Ergebnisse ist aussagekräftiger als ein einziges punktgenaues Kursziel.",
+          "question": "Welche Präsentation ist besser?",
+          "options": [
+            "Eine nachvollziehbare Bewertungsbandbreite",
+            "Ein garantiertes Kursziel auf den Cent",
+            "Unbelegte Annahmen ohne Quellen"
+          ],
+          "correct": 0,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "bewertungs-komitee",
+      "title": "Fortgeschrittenes Bewertungskomitee",
+      "branch": "valuation",
+      "parent": "unternehmenswert",
+      "tier": 4,
+      "description": "Du erstellst aus mehreren voneinander unabhängigen Bewertungswegen ein begründetes Urteil und erklärst offen, welche Annahmen den größten Unterschied erzeugen.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "bewertungs-komitee-1",
+          "title": "DCF und Marktvergleich kombinieren",
+          "goal": "DCF und Marktvergleich kombinieren",
+          "explanation": "Das Discounted-Cashflow-Verfahren schätzt künftige freie Zahlungsströme. Vergleichsmultiples zeigen, wie ähnliche Unternehmen derzeit bewertet werden. Widersprüche sind ein Analyseanlass, kein Grund, automatisch den höheren Wert zu nehmen.",
+          "example": "Ein DCF ergibt 85 Euro je Aktie, der faire Peer-Bereich 55 bis 70 Euro. Prüfe, ob deine Wachstums- und Margenannahmen optimistischer sind als die des Marktes.",
+          "question": "Wie gehst du mit dem Unterschied um?",
+          "options": [
+            "Immer den DCF-Wert übernehmen",
+            "Die Annahmen und Vergleichsunternehmen systematisch prüfen",
+            "Die Werte ohne Begründung mitteln"
+          ],
+          "correct": 1,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "bewertungs-komitee-2",
+          "title": "Verwässerung berechnen",
+          "goal": "Verwässerung berechnen",
+          "explanation": "Neue Aktien erhöhen die Zahl ausstehender Anteile. Auch wenn Kapitalzuflüsse dem Unternehmen helfen, kann dadurch der Wert je bisheriger Aktie sinken, sofern der zusätzliche Unternehmenswert nicht ausreichend wächst.",
+          "example": "Ein Unternehmen hat 100 Mio. Aktien und gibt 20 Mio. neue Aktien aus. Der modellierte gesamte Eigenkapitalwert verteilt sich nun auf 120 Mio. Anteile. Beachte zusätzlich den Mittelzufluss.",
+          "question": "Was verändert sich sicher?",
+          "options": [
+            "Die Anzahl der Aktien steigt",
+            "Der Unternehmenswert muss sinken",
+            "Jede neue Aktie garantiert höhere Rendite"
+          ],
+          "correct": 0,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "bewertungs-komitee-3",
+          "title": "Ein Gegenmodell vertreten",
+          "goal": "Ein Gegenmodell vertreten",
+          "explanation": "Eine ernsthafte Bewertungsanalyse braucht eine alternative Erklärung, warum die eigene Schätzung falsch sein könnte. Definiere Bedingungen, bei denen du die Bewertung revidierst und unterscheide Wert vom Kaufzeitpunkt.",
+          "example": "Die optimistische These verlangt dauerhaft hohe Margen; der Gegenfall enthält Konkurrenzdruck und steigende Investitionen. Beide Szenarien sollen auf konkreten Kennzahlen beruhen.",
+          "question": "Was macht das Urteil robust?",
+          "options": [
+            "Nur eine überzeugende Schlagzeile",
+            "Belegte Annahmen, Szenarien und Revisionskriterien",
+            "Nur der letzte Börsenkurs"
+          ],
+          "correct": 1,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "faktor-risiken-lesen",
+      "title": "Versteckte Depot-Faktoren",
+      "branch": "risk",
+      "parent": "makro-risiken",
+      "tier": 4,
+      "description": "Du erkennst, wenn verschiedene Aktien von denselben Wirtschafts-, Währungs- oder Zinsrisiken abhängen und ein Depot deshalb weniger gestreut ist als es aussieht.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "faktor-risiken-lesen-1",
+          "title": "Gemeinsame Risikofaktoren",
+          "goal": "Gemeinsame Risikofaktoren",
+          "explanation": "Zwei verschiedene Aktien können ähnliche Kursschwankungen zeigen, wenn sie stark von denselben Zinsen oder Wirtschaftszyklen beeinflusst werden. Branchenvielfalt allein bedeutet nicht automatisch unabhängige Risiken.",
+          "example": "Ein Depot hält Cloud-Plattformen, Chipdesigner und Rechenzentrumszulieferer. Alle drei können unter einer überraschend schwachen KI-Investitionswelle leiden.",
+          "question": "Was sollte man zusätzlich messen?",
+          "options": [
+            "Gleichläufige Faktoren und Abhängigkeiten",
+            "Nur die Anzahl der Ticker",
+            "Nur den höchsten Tagesgewinn"
+          ],
+          "correct": 0,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "faktor-risiken-lesen-2",
+          "title": "Währungsgewicht berechnen",
+          "goal": "Währungsgewicht berechnen",
+          "explanation": "Für Anleger mit Euro-Ausgaben zählen Wechselkursbewegungen auch bei Aktien, die in einer anderen Währung notieren. Die Währung des Börsenplatzes allein beschreibt nicht alle tatsächlichen wirtschaftlichen Währungsrisiken.",
+          "example": "Ein Depot hält 50 Prozent US-Aktien, deren Erlöse zugleich weltweit verteilt sind. Kurswährung, Bilanzwährung und operative Erlöswährungen können voneinander abweichen.",
+          "question": "Welche Analyse ist sinnvoll?",
+          "options": [
+            "Nur die Handelseinheit betrachten",
+            "Währungs- und Geschäftsrisiken getrennt untersuchen",
+            "Währungsrisiken pauschal null setzen"
+          ],
+          "correct": 1,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "faktor-risiken-lesen-3",
+          "title": "Faktorszenario durchführen",
+          "goal": "Faktorszenario durchführen",
+          "explanation": "Ein Faktor-Stresstest schätzt, wie mehrere Teile eines Depots auf ein gemeinsames Szenario reagieren könnten. Die angenommenen Verlustraten sind keine sicheren Vorhersagen und sollten als Unsicherheit ausgewiesen werden.",
+          "example": "Bei zwei stark zinsabhängigen Depotanteilen mit 30 und 20 Prozent Gewicht kann ein Zinsschock beide gleichzeitig belasten. Rechne die gewichtete Auswirkung statt jede Position isoliert zu beurteilen.",
+          "question": "Was ist der Hauptnutzen?",
+          "options": [
+            "Annahmen und Risikokonzentration transparent machen",
+            "Den nächsten Aktienkurs sicher bestimmen",
+            "Vergangene Korrelation garantieren"
+          ],
+          "correct": 0,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "portfolio-resilienz",
+      "title": "Resilientes Portfolio gestalten",
+      "branch": "risk",
+      "parent": "makro-risiken",
+      "tier": 4,
+      "description": "Du entwirfst eine nachvollziehbare Risikostrategie mit Grenzen, Liquiditätsreserve und möglichen Anpassungen für schlechte Marktphasen.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "portfolio-resilienz-1",
+          "title": "Maximalverlust verstehen",
+          "goal": "Maximalverlust verstehen",
+          "explanation": "Eine feste Verlustgrenze kann bei Kurslücken nicht immer garantiert werden. Plane deshalb mit möglichen starken Schwankungen und dem Zeitpunkt, zu dem du Geld wirklich brauchst.",
+          "example": "Ein Portfolio von 2.000 Euro verliert in einem Stressszenario 35 Prozent. Der Wert fällt rechnerisch auf 1.300 Euro. Beurteile, ob dieser Verlust deine notwendigen Ausgaben gefährdet.",
+          "question": "Was folgt aus einer Verlustgrenze?",
+          "options": [
+            "Sie garantiert jeden Verkaufspreis",
+            "Sie dient der Planung, aber verhindert keine Kurslücken",
+            "Sie bedeutet automatische Diversifikation"
+          ],
+          "correct": 1,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "portfolio-resilienz-2",
+          "title": "Rebalancing einordnen",
+          "goal": "Rebalancing einordnen",
+          "explanation": "Durch Rebalancing werden Anlagegewichte an ein zuvor begründetes Ziel zurückgeführt. Dabei entstehen womöglich Gebühren und Steuern; Rebalancing ist keine Methode, um automatisch Börsentiefs zu treffen.",
+          "example": "Ein Wert steigt von 20 auf 40 Prozent Depotgewicht. Ein Anleger könnte einen Teil verkaufen, um das ursprüngliche Konzentrationsrisiko zu reduzieren. Dafür entgehen ihm möglicherweise weitere Kursgewinne.",
+          "question": "Was ist der primäre Zweck?",
+          "options": [
+            "Risikogewichte steuern",
+            "Rendite garantieren",
+            "Jedes Jahr dieselbe Aktie kaufen"
+          ],
+          "correct": 0,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "portfolio-resilienz-3",
+          "title": "Liquiditätsreserve im Depot",
+          "goal": "Liquiditätsreserve im Depot",
+          "explanation": "Eine ausreichende Reserve hilft, fällige Ausgaben ohne erzwungene Aktienverkäufe zu bezahlen. Wie groß sie sein sollte, hängt vom Haushalt und den möglichen Verpflichtungen ab.",
+          "example": "Jemand benötigt 700 Euro in drei Monaten. Ein Depot ist zuletzt stark gestiegen. Die notwendige Ausgabe sollte trotzdem nicht vom Börsenkurs am Fälligkeitstag abhängen.",
+          "question": "Was ist für das kurzfristige Ziel wichtiger?",
+          "options": [
+            "Ein hoher prognostizierter Aktiengewinn",
+            "Zeitgerechte Verfügbarkeit und Planbarkeit",
+            "Möglichst viele Handelsaufträge"
+          ],
+          "correct": 1,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "evidenz-matrix",
+      "title": "Evidenz und Unsicherheit ordnen",
+      "branch": "research",
+      "parent": "investment-these",
+      "tier": 4,
+      "description": "Du bewertest Belegqualität, Interessenkonflikte und Datenlücken und baust daraus eine überprüfbare Übersicht für eine Researchentscheidung.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "evidenz-matrix-1",
+          "title": "Quellen nach Qualität ordnen",
+          "goal": "Quellen nach Qualität ordnen",
+          "explanation": "Ein Geschäftsbericht dokumentiert Unternehmensangaben und ist für Finanzkennzahlen wichtig. Er ist aber nicht automatisch eine unabhängige Beurteilung künftiger Chancen. Ergänze bei rechtlichen oder branchenweiten Aussagen geeignete andere Quellen.",
+          "example": "Ein Konzern behauptet, der Markt werde jährlich um 25 Prozent wachsen. Dokumentiere die Aussage als Unternehmensprognose, nicht als bereits bestätigte Marktentwicklung.",
+          "question": "Welches Vorgehen ist korrekt?",
+          "options": [
+            "Unternehmensprognose als Gewissheit behandeln",
+            "Herkunft und Unsicherheit der Prognose offen kennzeichnen",
+            "Alle externen Quellen ignorieren"
+          ],
+          "correct": 1,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "evidenz-matrix-2",
+          "title": "Kausalität statt nur Gleichlauf",
+          "goal": "Kausalität statt nur Gleichlauf",
+          "explanation": "Zwei Ereignisse können zeitgleich auftreten, ohne dass eines das andere verursacht. Eine gute Researchfrage sucht einen nachvollziehbaren Mechanismus und prüft alternative Erklärungen.",
+          "example": "Ein Aktienkurs steigt am Tag einer neuen Produktankündigung. Auch allgemeine Marktentwicklung und Zinsen könnten zeitgleich mitgewirkt haben.",
+          "question": "Welche Aussage ist belastbarer?",
+          "options": [
+            "Die Produktmeldung hat sicher den ganzen Anstieg verursacht",
+            "Die Produktmeldung ist ein möglicher, erst zu prüfender Einflussfaktor",
+            "Jeder Kursanstieg bedeutet langfristigen Mehrwert"
+          ],
+          "correct": 1,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "evidenz-matrix-3",
+          "title": "Unsicherheiten dokumentieren",
+          "goal": "Unsicherheiten dokumentieren",
+          "explanation": "Bewertungsannahmen haben unterschiedliche Unsicherheiten. Die gemeldete Umsatzzahl ist besser belegt als die eigene Prognose für die Marge in fünf Jahren. Markiere, welche Daten die These später ändern würden.",
+          "example": "Eine Analyse verwendet eine bestätigte Umsatzbasis, erwartet aber langfristig stark steigende Margen. Setze besonders an diese Prognose ein Warnzeichen und prüfe realistische Gegenfälle.",
+          "question": "Was gehört in eine Evidenzübersicht?",
+          "options": [
+            "Fakten, Schätzungen und offene Fragen getrennt",
+            "Nur das optimistischste Szenario",
+            "Nur einen einzigen Quellenlink"
+          ],
+          "correct": 0,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10
+        }
+      ]
+    },
+    {
+      "id": "analysten-ausschuss",
+      "title": "Researchbericht verteidigen",
+      "branch": "research",
+      "parent": "investment-these",
+      "tier": 4,
+      "description": "Du verteidigst vor einem fiktiven Ausschuss eine Unternehmensanalyse mit überprüfbaren Zahlen, Chancen, Gegenhypothesen und Ausstiegskriterien.",
+      "cost": 3,
+      "rewardPoints": 13,
+      "lessons": [
+        {
+          "id": "analysten-ausschuss-1",
+          "title": "Ein Forschungsmandat festlegen",
+          "goal": "Ein Forschungsmandat festlegen",
+          "explanation": "Ein Bericht soll zunächst klar sagen, welches Unternehmen, welchen Zeitraum und welche Entscheidung er untersucht. Der Untersuchungsrahmen verhindert, dass später unbequeme Daten stillschweigend weggelassen werden.",
+          "example": "Du prüfst, ob ein Maschinenbauer seine gestiegenen Aufträge profitabel abarbeiten kann. Formuliere eine präzise Frage zu Marge, Cashflow und Bilanz statt allgemein nach einem Kursziel zu fragen.",
+          "question": "Was gehört an den Anfang?",
+          "options": [
+            "Ein überprüfbarer Untersuchungsauftrag",
+            "Eine sichere Gewinnzusage",
+            "Nur die Lieblingsaktie"
+          ],
+          "correct": 0,
+          "xp": 31,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "analysten-ausschuss-2",
+          "title": "Eine Gegenrede prüfen",
+          "goal": "Eine Gegenrede prüfen",
+          "explanation": "Der Ausschuss hält deiner These eine plausible Gegenerklärung entgegen. Du solltest diese mit Daten beurteilen können und offen lassen, was noch ungeklärt ist.",
+          "example": "Deine These erwartet hohe Margen aus KI-Nachfrage. Ein Einwand verweist auf massive Investitionen und Konkurrenz. Vergleiche dazu operative Marge und Investitionsquote über mehrere Quartale.",
+          "question": "Was ist eine gute Reaktion?",
+          "options": [
+            "Kritik ohne Prüfung ablehnen",
+            "Gegenargument mit Daten und Annahmen überprüfen",
+            "Nur den Aktienkurs zeigen"
+          ],
+          "correct": 1,
+          "xp": 37,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10
+        },
+        {
+          "id": "analysten-ausschuss-3",
+          "title": "Revisionsregeln definieren",
+          "goal": "Revisionsregeln definieren",
+          "explanation": "Ein gutes Researchprotokoll enthält messbare Bedingungen, unter denen die ursprüngliche These abgeschwächt oder verworfen werden müsste. Eine Entscheidung zum Nichtkauf kann genauso gut begründet sein.",
+          "example": "Du erwartest eine Verbesserung des freien Cashflows innerhalb von vier Quartalen. Halte vorab fest, welche künftigen Zahlen den Erwartungen widersprechen würden.",
+          "question": "Warum sind Revisionsregeln nützlich?",
+          "options": [
+            "Sie garantieren die Prognose",
+            "Sie machen Lerneffekte und Fehlannahmen sichtbar",
+            "Sie eliminieren alle Marktrisiken"
+          ],
+          "correct": 1,
+          "xp": 46,
           "sequence": 3,
           "cost": 1,
           "eurCost": 10
