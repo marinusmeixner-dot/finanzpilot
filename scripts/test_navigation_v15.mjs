@@ -9,17 +9,17 @@ const research=fs.readFileSync('research.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const current=JSON.parse(fs.readFileSync('version.json','utf8'));
 const updater=fs.readFileSync('updates.js','utf8');
-assert.equal(current.version,47);
-assert.equal(manifest.start_url,'./?v=47');
+assert.equal(current.version,48);
+assert.equal(manifest.start_url,'./?v=48');
 assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
 assert(html.includes('ux-v15.js?v=46'));
 assert(html.includes('ux-v15.css?v=18'));
-assert(html.includes('app.js?v=46'));
+assert(html.includes('app.js?v=48'));
 assert(html.includes('research.js?v=18'));
-assert(html.includes('updates.js?v=47'));
+assert(html.includes('updates.js?v=48'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
@@ -137,8 +137,8 @@ assert(html.includes('portfolio.js?v=44'));
 assert(html.includes('portfolio-v26.css?v=30'));
 assert(research.includes("state.view='researchcatalog'"));
 
-let serverVersion=47,replaced=null,syncCalls=0;
-const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=47#view=training',hash:'#view=training',
+let serverVersion=48,replaced=null,syncCalls=0;
+const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=48#view=training',hash:'#view=training',
  replace:url=>{replaced=url}};
 const updaterWindow={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateContext=vm.createContext({window:updaterWindow,document:{readyState:'loading',addEventListener(){}},
@@ -147,8 +147,8 @@ const updateContext=vm.createContext({window:updaterWindow,document:{readyState:
 vm.runInContext(updater,updateContext,{filename:'updates.js'});
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(replaced,null);
-serverVersion=48;
+serverVersion=49;
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
-assert(replaced.includes('?v=48#view=training'));
+assert(replaced.includes('?v=49#view=training'));
 console.log('Version 47 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
