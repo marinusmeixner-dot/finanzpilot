@@ -4,7 +4,7 @@ import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
 const sql=read('supabase/paper_budget_fractional_v40.sql'),streakSQL=read('supabase/streak_rewards_v40.sql');
 const front=read('portfolio.js'),streak=read('streak-v40.js'),edge=read('supabase/functions/finanzpilot-stock-lookup/index.ts');
-assert.equal(JSON.parse(read('version.json')).version,47);
+assert.equal(JSON.parse(read('version.json')).version,48);
 assert(sql.includes('starting_balance=1000')&&sql.includes('drop function if exists public.fp_paper_execute(text,text,integer)'));
 assert(sql.includes('p_amount_eur numeric default null')&&sql.includes('trunc(p_amount_eur/v_price_eur,6)'));
 assert(sql.includes('v_balance<v_eur_total')&&sql.includes('v_holdings<v_q'));
