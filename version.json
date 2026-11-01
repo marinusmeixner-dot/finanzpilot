@@ -1,5 +1,5 @@
 {
-  "version": 36,
-  "release": "2026-11-01-v36",
-  "notes": "Chart-verified exchange search and main-listing preference, with transparently unverified fallback only if no native chart; all current editorial stories expanded into source-based original in-app articles (including Bayer and BayWa), external paywalled texts never copied; screen-by-screen Zurück navigation with scroll restoration. Supabase Edge Function v5."
+  "version": 37,
+  "release": "2026-11-01-v37",
+  "notes": "Lernen now offers a guided six-stage roadmap, five new intermediate financial courses (16 total), safe previous-page review in Concepts/Praxis/Academy, and de-duplicated acronym explanations. Markets displays only fully free original in-app articles with reader glossary; paywalled provider headlines excluded. Stock suggestions vanish on cleared input and show chart-verified close price/currency/date via Supabase stock lookup v6. Previous saves preserved."
 }
