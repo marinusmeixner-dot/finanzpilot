@@ -52,3 +52,5 @@ jobs:
         run: node scripts/test_news_reader_v36.mjs
       - name: "Regression: Guided learning progression, safe course review, editorial free reading and stock prices"
         run: node scripts/test_learning_flow_v37.mjs
+      - name: "Regression: Private Watchlist event inbox and submitted free-text reviews"
+        run: node scripts/test_editorial_queue_v38.mjs
