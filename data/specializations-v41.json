@@ -3835,7 +3835,14 @@
           "keyTakeaway": "Net Working Capital berechnen",
           "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Net Working Capital berechnen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "Forderungen 22 Mio. €, Vorräte 17 Mio. €, Lieferantenverbindlichkeiten 13 Mio. €. Wie hoch ist das vereinfachte Working Capital in Mio. €?",
+            "answer": 26,
+            "tolerance": 0.01,
+            "unit": "Mio. €",
+            "explanation": "22 + 17 − 13 = 26 Mio. €. Die Verbindlichkeiten werden abgezogen."
+          }
         },
         {
           "id": "working-capital-diagnose-2",
@@ -3862,7 +3869,14 @@
           "keyTakeaway": "Forderungslaufzeit untersuchen",
           "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Forderungslaufzeit untersuchen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "Durchschnittliche Forderungen 24 Mio. €, Quartalsumsatz 120 Mio. €, Quartalsdauer 90 Tage. Wie viele DSO-Tage ergeben sich?",
+            "answer": 18,
+            "tolerance": 0.01,
+            "unit": "Tage",
+            "explanation": "24 / 120 × 90 = 18 Tage."
+          }
         },
         {
           "id": "working-capital-diagnose-3",
@@ -3889,7 +3903,14 @@
           "keyTakeaway": "Cash Conversion Cycle",
           "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Cash Conversion Cycle“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "Lagerreichweite 25 Tage, Forderungslaufzeit 30 Tage, Lieferanten-Zahlungsziel 35 Tage. Cash Conversion Cycle?",
+            "answer": 20,
+            "tolerance": 0.01,
+            "unit": "Tage",
+            "explanation": "25 + 30 − 35 = 20 Tage."
+          }
         }
       ]
     },
@@ -3931,7 +3952,14 @@
           "keyTakeaway": "Nominale und reale Rendite",
           "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Nominale und reale Rendite“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "Nominale Rendite 8 %, Inflation 4 %. Berechne die reale Rendite in Prozent (gerundet auf eine Nachkommastelle).",
+            "answer": 3.8,
+            "tolerance": 0.13,
+            "unit": "%",
+            "explanation": "(1,08 / 1,04 − 1) × 100 = rund 3,85 %; mit einer Nachkommastelle 3,8 %."
+          }
         },
         {
           "id": "realrendite-kaufkraft-2",
@@ -3985,7 +4013,14 @@
           "keyTakeaway": "Kaufkraftziel mit Szenarien",
           "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kaufkraftziel mit Szenarien“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "Ein Warenkorb kostet 1.000 €. Die jährliche Inflation beträgt angenommen 2 %. Was kostet er nach zwei Jahren (in €)?",
+            "answer": 1040.4,
+            "tolerance": 0.2,
+            "unit": "€",
+            "explanation": "1.000 × 1,02² = 1.040,40 €."
+          }
         }
       ]
     },
@@ -4081,7 +4116,14 @@
           "keyTakeaway": "Out-of-Sample & Gebühren",
           "pitfall": "Gute historische Ergebnisse ohne realistische Zeit- und Kostengrenzen beweisen keine zukünftige Strategie.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Out-of-Sample & Gebühren“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "Eine Strategie erzielt vor Kosten 7 % Rendite und verursacht 4 Prozentpunkte Gesamtkosten. Rendite danach in Prozentpunkten?",
+            "answer": 3,
+            "tolerance": 0.01,
+            "unit": "%",
+            "explanation": "7 % − 4 Prozentpunkte = 3 % (vereinfachtes Modell)."
+          }
         }
       ]
     },
@@ -4124,7 +4166,14 @@
           "keyTakeaway": "Nettoschulden und Ergebnis vergleichen",
           "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Nettoschulden und Ergebnis vergleichen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "Finanzschulden 320 Mio. €, anrechenbare Liquidität 70 Mio. €. Berechne die Nettoschulden (in Mio. €).",
+            "answer": 250,
+            "tolerance": 0.01,
+            "unit": "Mio. €",
+            "explanation": "320 − 70 = 250 Mio. €."
+          }
         },
         {
           "id": "kreditrisiko-unternehmen-2",
@@ -4151,7 +4200,14 @@
           "keyTakeaway": "Zinsdeckung bewerten",
           "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Zinsdeckung bewerten“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
-          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
+          "practice": {
+            "prompt": "EBIT 40 Mio. €, Zinsaufwendungen 8 Mio. €. Wie oft werden die Zinsen gedeckt?",
+            "answer": 5,
+            "tolerance": 0.01,
+            "unit": "-fach",
+            "explanation": "40 / 8 = 5-fache Deckung."
+          }
         },
         {
           "id": "kreditrisiko-unternehmen-3",
