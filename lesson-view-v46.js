@@ -16,6 +16,7 @@ function render(skill,lesson,info={}){
   (lesson.pitfall?'<details class="fp46-mistake"><summary>Typischen Denkfehler erkennen</summary><p>'+esc(lesson.pitfall)+'</p></details>':'')+'</section>';
  if(step===1)content='<section class="fp46-study-panel"><span class="eyebrow">02 · AN EINEM FALL LERNEN</span><h3>Beispiel durchdenken</h3><p>'+esc(lesson.example)+'</p>'+
   (lesson.workedSteps?.length?'<ol class="fp46-worked-steps">'+lesson.workedSteps.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>':'')+
+  (lesson.practice?'<div class="fp46-calculation"><span class="eyebrow">KURZE RECHENÜBUNG · UNBENOTET</span><h4>'+esc(lesson.practice.prompt)+'</h4><div class="fp46-calculation-controls"><input type="text" inputmode="text" autocomplete="off" spellcheck="false" data-fp46-calc-input placeholder="Ergebnis eingeben, auch mit Komma oder Minus"><span>'+esc(lesson.practice.unit)+'</span><button type="button" class="btn secondary" data-fp46-calc-check>Prüfen</button></div><output data-fp46-calc-result aria-live="polite"></output></div>':'')+
   '<p class="fp46-study-pause">Überlege selbst: Welche Zahl oder Annahme trägt die Schlussfolgerung?</p></section>';
  if(step===2)content='<section class="fp46-study-panel"><span class="eyebrow">03 · TRANSFER</span><h3>Wissen mit eigenen Worten erklären</h3>'+
   '<p class="fp46-transfer-task">'+esc(lesson.transferPrompt||'Erkläre die wichtigste Schlussfolgerung des Beispiels und eine mögliche Ausnahme.')+'</p>'+
@@ -32,6 +33,17 @@ function render(skill,lesson,info={}){
 }
 function bind(root=document){
  root.querySelectorAll('[data-fp46-study-step]').forEach(b=>b.addEventListener('click',()=>{page=Math.max(0,Math.min(3,Number(b.dataset.fp46StudyStep)||0));window.render?.()}));
+ const check=root.querySelector('[data-fp46-calc-check]');
+ check?.addEventListener('click',()=>{
+  const v=root.querySelector('[data-fp46-calc-input]'),out=root.querySelector('[data-fp46-calc-result]');
+  if(!v||!out)return;
+  const raw=v.value.trim().replace(/\s/g,'').replace(',','.');
+  if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(raw)){out.textContent='Bitte eine Zahl eingeben. Beispiel: 3,8 oder -12.';return}
+  const value=Number(raw),cat=window.FinanzPilotLearningHub?.catalog,lesson=cat?.skills?.flatMap(s=>s.lessons).find(l=>l.id===selected),p=lesson?.practice;
+  if(!p||!Number.isFinite(value))return;
+  out.textContent=Math.abs(value-p.answer)<=Number(p.tolerance||0.001)?'Richtig. '+p.explanation:'Noch nicht. Prüfe die Formel und die Ausgangswerte. '+p.explanation;
+ });
+
  window.FinanzPilotStudy?.bind?.(root);
 }
 window.FinanzPilotLessonView={open,render,bind,get page(){return page}};
