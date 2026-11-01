@@ -26,7 +26,7 @@ assert(company['BYW.MU'].data_limitations.length>=2);
 const html=read('index.html'),market=read('market-v34.js'),renderSrc=read('financial-report-v47.js');
 assert(html.includes('financial-report-v47.js?v=47'));
 assert(html.includes('financial-report-v47.css?v=47'));
-assert(html.includes('market-v34.js?v=47'));
+assert(html.includes('market-v34.js?v=48'));
 assert(market.includes('company-financials-v47.json?v=47'));
 assert(market.includes('FinanzPilotFinancialReports.render('));
 const w={render(){}},ctx=vm.createContext({window:w,document:{},URL,Intl,Number,console});
