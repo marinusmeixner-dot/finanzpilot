@@ -25,7 +25,7 @@ assert(front.includes("p_amount_eur:orderMode==='amount'?amount:null"));
 assert(!front.includes('50.000 EUR und 50.000 USD'));
 assert(streak.includes("paperClient.rpc('fp_streak_checkin')"));
 assert(streak.includes("fp-streak-trigger"));
-assert(streak.includes('max_days'));
+assert(streak.includes('fp40-streak-count'));
 const html=read('index.html');
 assert(html.includes('streak-v40.js?v=40')&&html.includes('streak-v40.css?v=40'));
 assert(html.includes('portfolio.js?v=40'));
@@ -70,7 +70,7 @@ const context=vm.createContext({window:win,document:doc,state:{view:'depot'},Dat
 vm.runInContext(front,context);
 const api=win.FinanzPilotPortfolio;await api.load();
 assert.equal(api.currencyStats().cash,1000);
-assert(api.render().includes('Einmaliges Startkapital: 1.000 €'));
+assert(api.render().includes('Einmaliges virtuelles Startkapital: 1.000 €'));
 assert(api.render().includes('Eurobetrag'));
 assert(api.render().includes('data-depot-amount'));
 await api.trade();
