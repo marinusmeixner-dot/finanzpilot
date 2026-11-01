@@ -61,7 +61,7 @@ function getAsset(symbol,type,force=false,range=rangeOf(symbol)){
 }
 
 async function loadFinancials(force=false){
- try{const response=await fetch('./data/company-financials-v45.json?v=45'+(force?'&t='+Date.now():''),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
+ try{const response=await fetch('./data/company-financials-v47.json?v=47'+(force?'&t='+Date.now():''),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
  const document=await response.json();if(!Array.isArray(document?.companies))throw Error('Finanzbericht-Katalog unvollständig');
  financials=document.companies.filter(c=>c&&valid(c.symbol)&&Array.isArray(c.metrics)&&c.source?.url&&/^https:\/\//.test(c.source.url));financialsDate=document.generated_at||'';
  }catch(e){financialsDate='';console.warn('Finanzberichte:',String(e.message||e));}
@@ -120,6 +120,7 @@ function renderOverview(){
  (watch.length?'<div class="fp34-chart-grid">'+watch.map(w=>'<article class="fp34-chart-card"><button type="button" class="fp35-chart-header" data-fp34-chart="'+esc(w.symbol)+'"><span class="fp34-title"><span><strong>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</strong><small>'+esc(w.symbol)+' · '+esc(q(w.symbol)?.quote_date||'Kursstand wird geladen')+'</small></span><span aria-hidden="true">›</span></span></button>'+chart(w.symbol)+'</article>').join('')+'</div>':'<div class="fp34-empty"><p>Deine Watchlist ist noch leer. Im Depot kannst du Aktien merken; sie erscheinen hier unmittelbar.</p><button class="btn secondary" data-fp34-depot>Zum Depot</button></div>')+'</div>';
 }
 function renderFinancials(){
+ if(window.FinanzPilotFinancialReports)return window.FinanzPilotFinancialReports.render({watch,reports:financials,generatedAt:financialsDate,verifiedAt:financialsDate,loggedIn:!!user(),nameOf:s=>q(s)?.asset_name||s});
  if(!user())return '<section class="fp34 fp45-financials"><h1>Kennzahlen</h1><p>Die Finanzberichte deiner privaten Watchlist sind nach Anmeldung sichtbar.</p><button class="btn" type="button" data-fp34-login>Anmelden</button></section>';
  const fmt=n=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:3}).format(Number(n));
  const delta=(item)=>{
@@ -250,6 +251,7 @@ function request(s){
  window.open('https://github.com/marinusmeixner-dot/finanzpilot/issues/new?title='+encodeURIComponent(title)+'&body='+encodeURIComponent(body),'_blank','noopener,noreferrer');
 }
 function bind(root=document){
+ window.FinanzPilotFinancialReports?.bind?.(root);
  root.querySelectorAll('[data-fp34-chart]').forEach(b=>b.addEventListener('click',()=>stockDetail(b.dataset.fp34Chart)));
 
  root.querySelectorAll('[data-fp35-range]').forEach(b=>b.addEventListener('click',()=>{
