@@ -10,7 +10,7 @@ const portfolio=read('portfolio.js');
 const stylesheet=read('market-v34.css');
 const daily=JSON.parse(read('data/daily.json'));
 const learning=JSON.parse(read('data/learning-news.json'));
-assert.equal(JSON.parse(read('version.json')).version,42);
+assert.equal(JSON.parse(read('version.json')).version,43);
 assert(html.includes('market-v34.js?v=38')&&html.includes('learning-news-v34.js?v=34'));
 assert(html.includes('market-v34.css?v=38'));
 assert(stylesheet.includes('position:fixed!important')&&stylesheet.includes('env(safe-area-inset-bottom'));
@@ -28,7 +28,7 @@ for(const c of learning.cases){
  for(const q of c.questions)assert(q.options.length===4&&Number.isInteger(q.correct)&&q.correct>=0&&q.correct<4&&q.explanation.length>35);
  assert(c.reflectionPrompt&&c.rubric.length>=3);
 }
-assert(daily.stories.some(s=>Array.isArray(s.symbols)));
+assert(JSON.parse(read('data/editorial-core-v43.json')).stories.some(s=>Array.isArray(s.symbols)&&s.symbols.length));
 
 // Functional smoke with private watchlist only in browser. No secret / user data in GitHub.
 let view='marketoverview';
