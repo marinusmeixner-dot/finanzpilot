@@ -44,3 +44,10 @@
 .fp46-review-empty{padding:16px;border:1px dashed #537773;border-radius:10px;color:#c3d6cb;line-height:1.7;font-size:14px}
 .fp46-review-banner{border:1px solid #76cba8;border-radius:13px;background:#1e473e;color:#e2fbec;cursor:pointer;padding:13px 16px;text-align:left;display:block;width:100%;font-size:14px;font-weight:600}
 @media(max-width:650px){.fp46-study-steps{gap:4px}.fp46-study-steps button{font-size:10px;padding:9px 3px}.fp46-study-panel{padding:15px}.fp46-review{padding:14px}.fp46-study-panel>p{font-size:14px}.fp46-study-controls .btn{flex:1}}
+
+.fp46-calculation{border:1px solid #658a78;background:#203f3f;border-radius:13px;padding:16px;margin:18px 0}
+.fp46-calculation h4{margin:7px 0 13px;font-size:15px;line-height:1.7}
+.fp46-calculation-controls{display:flex;align-items:center;gap:9px;flex-wrap:wrap}
+.fp46-calculation-controls input{width:min(240px,100%);min-height:43px;background:#122d36;border:1px solid #7b9b8d;border-radius:9px;padding:10px 12px;font:inherit;color:#e4f9ea}
+.fp46-calculation-controls span{font-size:12px;color:#b2d9c1}
+.fp46-calculation output{display:block;margin:12px 0 0;color:#c8eddb;font-size:13px;line-height:1.65;min-height:20px}
