@@ -195,6 +195,7 @@ function specials(){
  return '<article class="fp41-special'+(eligible?' eligible':' locked')+'"><span class="eyebrow">'+(s.unlock==='promotion'?'BEFÖRDERUNGSFALL':'ARTEFAKT-EXKLUSIV')+'</span><h2>'+escape(s.title)+'</h2><p>'+escape(s.description)+'</p><small>'+ (eligible?'✓ Zugang freigeschaltet':s.unlock==='promotion'?'Freischaltung ab '+s.minPromotion+'. neuer Beförderung':'Nur nach Freigabe durch das passende Artefakt')+'</small>'+
  '<button class="btn" data-fp41-special="'+escape(s.id)+'" '+(!eligible?'disabled':'')+'>'+(eligible?'Fall bearbeiten':'Noch gesperrt')+'</button></article>';
  }).join('')+'</div>';
+ body+='<details class="fp42-legacy-cases"><summary>Bereits vorhandene Fallstudien und Intensivkurse</summary><p>Deine älteren Unternehmensfälle mit KION, AIXTRON und Alphabet, die Transferwerkstatt und die langen Bewertungslehrgänge bleiben erhalten. Sie gehören in den Lernbereich und sind keine eigenen Profilkarten.</p><div class="fp42-legacy-links">'+[['training','Vorhandene Unternehmensfälle'],['transfer','Transferwerkstatt'],['academy','Intensivkurse zur Aktienbewertung']].map(([id,name])=>'<button type="button" class="btn secondary" data-section-route="'+id+'">'+name+' →</button>').join('')+'</div></details>';
  return shell('speciallessons',body);
 }
 async function load(force=false){
