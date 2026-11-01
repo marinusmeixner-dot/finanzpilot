@@ -160,13 +160,13 @@ function renderNews(){
  }else if(tab==='watch'){
   body='<h2>Nachrichten zu deiner Watchlist</h2><p>Nach Unternehmen sortierte, vollständig und kostenlos lesbare FinanzPilot-Beiträge. Keine Paywall-Meldungen.</p>'+
   (watch.length?watch.map(w=>'<section class="fp34-news-company" id="fp34-news-'+esc(w.symbol)+'"><header><h3>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</h3><button class="btn secondary" data-fp34-chart="'+esc(w.symbol)+'">Zum Chart</button></header>'+
-   (stockNews(w.symbol).length?stockNews(w.symbol).map(n=>newsCard(n)).join(''):'<p>'+ 'Zu dieser Aktie ist noch kein vollständig frei lesbarer FinanzPilot-Bericht veröffentlicht. <button type="button" class="btn secondary" data-fp37-news-request="'+esc(w.symbol)+'">Eigenen Hintergrundartikel anfordern</button>'+'</p>')+'</section>').join(''):'<p>Merke zuerst Unternehmen in deinem Depot.</p>');
+   (stockNews(w.symbol).length?stockNews(w.symbol).map(n=>newsCard(n)).join(''):'<p>'+ 'Für diese Aktie liegt noch kein vollständig frei lesbarer FinanzPilot-Artikel vor. Neue Watchlist-Titel werden automatisch in die private Redaktionswarteschlange aufgenommen und stündlich geprüft. Sobald ein geprüfter Artikel veröffentlicht wurde, erscheint er hier nach dem Aktualisieren. Für eine vollständige Aktienanalyse ist weiterhin eine ausdrückliche Anfrage nötig.'+'</p>')+'</section>').join(''):'<p>Merke zuerst Unternehmen in deinem Depot.</p>');
  }else{
   const candidates=editorial.filter(n=>Array.isArray(n.article?.sections)&&n.article.sections.length>=4&&Array.isArray(n.symbols)&&n.symbols.length&&n.symbols.some(s=>!watch.some(w=>w.symbol===s)));
   body='<h2>Interessante Aktien entdecken</h2><p>Unternehmensmeldungen der Redaktion, die nicht bereits in deiner Watchlist sind. Keine Kaufempfehlungen.</p>'+
     (candidates.length?candidates.slice(0,12).map(n=>{const s=n.symbols.find(x=>!watch.some(w=>w.symbol===x));return '<article class="fp34-discover"><div><strong>'+esc(s)+'</strong><small>Unternehmensmeldung · '+esc(n.published)+'</small></div>'+newsCard(n)+'<button class="btn secondary" data-fp34-add="'+esc(s)+'">Auf meine Watchlist</button></article>'}).join(''):'<p>Heute keine neuen recherchierten Unternehmen außerhalb deiner Watchlist.</p>');
  }
- return '<div class="fp34"><span class="eyebrow">MÄRKTE · NACHRICHTEN</span><h1>News</h1><p>Redaktioneller Stand: '+esc(feedDate||'wird geladen')+'. Hier stehen ausschließlich vollständig in FinanzPilot lesbare redaktionelle Artikel. Neue Watchlist-Titel werden automatisch zugeordnet, sobald ein recherchierter Artikel vorliegt.</p>'+navigation+
+ return '<div class="fp34"><span class="eyebrow">MÄRKTE · NACHRICHTEN</span><h1>News</h1><p>Redaktioneller Stand: '+esc(feedDate||'wird geladen')+'. Hier stehen ausschließlich vollständig in FinanzPilot lesbare redaktionelle Artikel. Neue Watchlist-Titel werden automatisch zugeordnet, sobald ein recherchierter Artikel vorliegt.</p><button type="button" class="btn secondary" data-fp38-news-refresh>Neuigkeiten aktualisieren</button>'+navigation+
  (message?'<p role="status">'+esc(message)+'</p>':'')+'<div class="fp34-news-body">'+body+'</div></div>';
 }
 function stockDetail(s){
@@ -187,7 +187,7 @@ async function addStock(s){
   const result=await invoke('register',s),key=result?.quote?.symbol;
   if(!key)throw Error('Kein verifizierter Kurs gefunden');
   if(!watch.some(w=>w.symbol===key)){const r=await client().from('fp_paper_watchlist').insert({user_id:user(),symbol:key});if(r.error&&r.error.code!=='23505')throw r.error}
-  message=key+' wurde der Watchlist hinzugefügt.';
+  message=key+' wurde der Watchlist hinzugefügt und für die stündliche redaktionelle Recherche vorgemerkt.';
   tab='watch';newsFocus=key;
   window.dispatchEvent(new Event('fp-watchlist-changed'));
   await refresh(true);
@@ -235,6 +235,7 @@ function bind(root=document){
  root.querySelectorAll('[data-fp34-request]').forEach(b=>b.addEventListener('click',()=>request(b.dataset.fp34Request)));
  root.querySelectorAll('[data-fp37-news-request]').forEach(b=>b.addEventListener('click',()=>{const symbol=b.dataset.fp37NewsRequest;window.open('https://github.com/marinusmeixner-dot/finanzpilot/issues/new?title='+encodeURIComponent('Analysewunsch: Frei lesbarer Hintergrundartikel '+symbol)+'&body='+encodeURIComponent('Bitte für '+symbol+' einen vollständigen eigenständig verfassten FinanzPilot-Nachrichtenartikel mit frei zugänglicher Quelle, verständlichen Erklärungen und Gegenargumenten erstellen.'),'_blank','noopener,noreferrer')}));
  root.querySelectorAll('[data-fp34-refresh]').forEach(b=>b.addEventListener('click',()=>refresh(true)));
+ root.querySelectorAll('[data-fp38-news-refresh]').forEach(b=>b.addEventListener('click',()=>refresh(true)));
  root.querySelector('[data-fp34-login]')?.addEventListener('click',()=>window.FinanzPilotCloud?.openLogin?.());
  root.querySelector('[data-fp34-depot]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('depot'));
  root.querySelector('[data-fp34-overview]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('marketoverview'));
