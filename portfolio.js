@@ -61,7 +61,7 @@
   try{
    const {error:bonusError}=await client().rpc('fp_paper_claim_artifact_rewards');if(bonusError)console.warn('Depot-Belohnungsabgleich:',bonusError.message);
    if(Date.now()-fxRefreshAt>3600000){
-    try{await lookup('fx',{});fxRefreshAt=Date.now()}catch(e){console.warn('EZB-FX-Aktualisierung:',String(e.message||e))}
+    fxRefreshAt=Date.now();try{await lookup('fx',{})}catch(e){console.warn('EZB-FX-Aktualisierung:',String(e.message||e))}
    }
    const [w,t,wl,fx]=await Promise.all([
     client().from('fp_paper_wallets').select('user_id,currency,balance,starting_balance').eq('user_id',uid),
