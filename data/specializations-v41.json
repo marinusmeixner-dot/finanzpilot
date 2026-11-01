@@ -78,7 +78,16 @@
           "xp": 15,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Geschäftsjahre und Quartale sauber vergleichen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Geschäftsjahre und Quartale sauber vergleichen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "berichte-lesen-2",
@@ -96,7 +105,16 @@
           "xp": 18,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Zahlen mit Quelle und Einheit dokumentieren",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Zahlen mit Quelle und Einheit dokumentieren“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "berichte-lesen-3",
@@ -114,7 +132,16 @@
           "xp": 24,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Ergebnis und Zahlungsströme hinterfragen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Ergebnis und Zahlungsströme hinterfragen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -144,7 +171,16 @@
           "xp": 22,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Nichtzahlungswirksame Effekte erkennen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Nichtzahlungswirksame Effekte erkennen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "cashflow-architekt-2",
@@ -162,7 +198,16 @@
           "xp": 25,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Investitionen richtig abziehen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Investitionen richtig abziehen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "cashflow-architekt-3",
@@ -180,7 +225,16 @@
           "xp": 31,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Einmalige Effekte offen ausweisen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Einmalige Effekte offen ausweisen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -210,7 +264,16 @@
           "xp": 30,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kasse und verzinsliche Schulden vergleichen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Kasse und verzinsliche Schulden vergleichen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bilanz-pruefer-2",
@@ -228,7 +291,16 @@
           "xp": 33,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Risiko durch Laufzeiten beurteilen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Risiko durch Laufzeiten beurteilen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bilanz-pruefer-3",
@@ -246,7 +318,16 @@
           "xp": 39,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Schlechte Geschäftsjahre durchdenken",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Schlechte Geschäftsjahre durchdenken“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -276,7 +357,16 @@
           "xp": 15,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kurs und Ergebnis richtig verknüpfen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Kurs und Ergebnis richtig verknüpfen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bewertung-multiples-2",
@@ -294,7 +384,16 @@
           "xp": 18,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Schulden und liquide Mittel berücksichtigen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Schulden und liquide Mittel berücksichtigen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bewertung-multiples-3",
@@ -312,7 +411,16 @@
           "xp": 24,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Unterschiedliche Risiken und Wachstum einordnen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Unterschiedliche Risiken und Wachstum einordnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -342,7 +450,16 @@
           "xp": 22,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Rendite auf eingesetztes Kapital beurteilen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Rendite auf eingesetztes Kapital beurteilen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "werttreiber-2",
@@ -360,7 +477,16 @@
           "xp": 25,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Zahlungen über mehrere Jahre vergleichen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Zahlungen über mehrere Jahre vergleichen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "werttreiber-3",
@@ -378,7 +504,16 @@
           "xp": 31,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Skalierung auf Cashflow prüfen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Skalierung auf Cashflow prüfen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -408,7 +543,16 @@
           "xp": 30,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Cashflows über Jahre fortschreiben",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Cashflows über Jahre fortschreiben“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "unternehmenswert-2",
@@ -426,7 +570,16 @@
           "xp": 33,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Restwert nicht dominieren lassen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Restwert nicht dominieren lassen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "unternehmenswert-3",
@@ -444,7 +597,16 @@
           "xp": 39,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Unsichere Bewertung als Bandbreite formulieren",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Unsichere Bewertung als Bandbreite formulieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -474,7 +636,16 @@
           "xp": 15,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Verlustrisiken erkennen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Verlustrisiken erkennen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "risiko-basis-2",
@@ -492,7 +663,16 @@
           "xp": 18,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Einzelrisiken und Abhängigkeiten",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Einzelrisiken und Abhängigkeiten“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "risiko-basis-3",
@@ -510,7 +690,16 @@
           "xp": 24,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Verlusttragfähigkeit definieren",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Verlusttragfähigkeit definieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -540,7 +729,16 @@
           "xp": 22,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kapitalverteilung sichtbar machen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Kapitalverteilung sichtbar machen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "portfolio-architekt-2",
@@ -558,7 +756,16 @@
           "xp": 25,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Gleichlauf von Anlagen verstehen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Gleichlauf von Anlagen verstehen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "portfolio-architekt-3",
@@ -576,7 +783,16 @@
           "xp": 31,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Szenarien auf den Gesamtwert übertragen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Szenarien auf den Gesamtwert übertragen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -606,7 +822,16 @@
           "xp": 30,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Auswirkungen auf Finanzierung und Bewertung",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Auswirkungen auf Finanzierung und Bewertung“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "makro-risiken-2",
@@ -624,7 +849,16 @@
           "xp": 33,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Wechselkurse korrekt umrechnen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Wechselkurse korrekt umrechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "makro-risiken-3",
@@ -642,7 +876,16 @@
           "xp": 39,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Finanzierungsrisiken unter Druck",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Finanzierungsrisiken unter Druck“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -672,7 +915,16 @@
           "xp": 15,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Originaldokumente priorisieren",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Originaldokumente priorisieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "quellenfinder-2",
@@ -690,7 +942,16 @@
           "xp": 18,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Einheit, Zeitraum und Definition prüfen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Einheit, Zeitraum und Definition prüfen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "quellenfinder-3",
@@ -708,7 +969,16 @@
           "xp": 24,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Widersprüche transparent behandeln",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Widersprüche transparent behandeln“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -738,7 +1008,16 @@
           "xp": 22,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Meldung und Markterwartung unterscheiden",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Meldung und Markterwartung unterscheiden“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "nachrichten-einordnen-2",
@@ -756,7 +1035,16 @@
           "xp": 25,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Mechanismus hinter der Schlagzeile finden",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Mechanismus hinter der Schlagzeile finden“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "nachrichten-einordnen-3",
@@ -774,7 +1062,16 @@
           "xp": 31,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Interpretationen kritisch testen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Interpretationen kritisch testen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -804,7 +1101,16 @@
           "xp": 30,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Fakten, Prognosen und Preis getrennt halten",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Fakten, Prognosen und Preis getrennt halten“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "investment-these-2",
@@ -822,7 +1128,16 @@
           "xp": 33,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Überprüfbare Meilensteine definieren",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Überprüfbare Meilensteine definieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "investment-these-3",
@@ -840,7 +1155,16 @@
           "xp": 39,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Eine Gegenmeinung begründet entkräften",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Eine Gegenmeinung begründet entkräften“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -870,7 +1194,16 @@
           "xp": 35,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Einmalige Erträge bereinigen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Einmalige Erträge bereinigen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "quality-of-earnings-2",
@@ -888,7 +1221,16 @@
           "xp": 40,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Forderungen gegen Umsatz abgleichen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Forderungen gegen Umsatz abgleichen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "quality-of-earnings-3",
@@ -906,7 +1248,16 @@
           "xp": 45,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Bilanzrisiko zusammenführen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Bilanzrisiko zusammenführen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -936,7 +1287,16 @@
           "xp": 39,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Zahlenreihen konsistent machen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Zahlenreihen konsistent machen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "financial-statement-forensics-2",
@@ -954,7 +1314,16 @@
           "xp": 44,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Cashflow mit Bilanz versöhnen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Cashflow mit Bilanz versöhnen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "financial-statement-forensics-3",
@@ -972,7 +1341,16 @@
           "xp": 49,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Prüfvermerk und Unsicherheiten",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Prüfvermerk und Unsicherheiten“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1002,7 +1380,16 @@
           "xp": 35,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Operatives Modell strukturieren",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Operatives Modell strukturieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "scenario-master-2",
@@ -1020,7 +1407,16 @@
           "xp": 40,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Drei Szenarien bewerten",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Drei Szenarien bewerten“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "scenario-master-3",
@@ -1038,7 +1434,16 @@
           "xp": 45,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Sensitivität interpretieren",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Sensitivität interpretieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1068,7 +1473,16 @@
           "xp": 39,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Annahmen angreifen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Annahmen angreifen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "valuation-committee-2",
@@ -1086,7 +1500,16 @@
           "xp": 44,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Preis und Wert trennen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Preis und Wert trennen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "valuation-committee-3",
@@ -1104,7 +1527,16 @@
           "xp": 49,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Revisionsregeln festlegen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Revisionsregeln festlegen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1134,7 +1566,16 @@
           "xp": 35,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Risikoanteile berechnen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Risikoanteile berechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "position-sizing-2",
@@ -1152,7 +1593,16 @@
           "xp": 40,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Rebalancing erklären",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Rebalancing erklären“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "position-sizing-3",
@@ -1170,7 +1620,16 @@
           "xp": 45,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Risikobudget dokumentieren",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Risikobudget dokumentieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1200,7 +1659,16 @@
           "xp": 39,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Klumpenrisiken identifizieren",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Klumpenrisiken identifizieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "portfolio-risk-chief-2",
@@ -1218,7 +1686,16 @@
           "xp": 44,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Liquiditätskrise simulieren",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Liquiditätskrise simulieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "portfolio-risk-chief-3",
@@ -1236,7 +1713,16 @@
           "xp": 49,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Regeln gegen Denkfehler",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Regeln gegen Denkfehler“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1266,7 +1752,16 @@
           "xp": 35,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Quellenkette dokumentieren",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Quellenkette dokumentieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "evidence-auditor-2",
@@ -1284,7 +1779,16 @@
           "xp": 40,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Korrelation von Ursache unterscheiden",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Korrelation von Ursache unterscheiden“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "evidence-auditor-3",
@@ -1302,7 +1806,16 @@
           "xp": 45,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Interessenkonflikte untersuchen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Interessenkonflikte untersuchen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1332,7 +1845,16 @@
           "xp": 39,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Analysedossier erstellen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Analysedossier erstellen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "senior-investigator-2",
@@ -1350,7 +1872,16 @@
           "xp": 44,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Investitionsausschuss simulieren",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Investitionsausschuss simulieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "senior-investigator-3",
@@ -1368,7 +1899,16 @@
           "xp": 49,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Thesen nachprüfen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Thesen nachprüfen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1398,7 +1938,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Leasing und echte Verpflichtungen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Leasing und echte Verpflichtungen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "rechnungslegungs-fallen-2",
@@ -1416,7 +1965,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Rückstellungen kritisch lesen",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Rückstellungen kritisch lesen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "rechnungslegungs-fallen-3",
@@ -1434,7 +1992,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Bilanzänderungen erklären",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Bilanzänderungen erklären“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1464,7 +2031,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Forderungen gegen Umsatz halten",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Forderungen gegen Umsatz halten“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bilanzqualitaet-2",
@@ -1482,7 +2058,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Lageraufbau interpretieren",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Lageraufbau interpretieren“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bilanzqualitaet-3",
@@ -1500,7 +2085,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Qualitätsurteil formulieren",
+          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "workedSteps": [
+            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
+            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
+            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+          ],
+          "transferPrompt": "Zum Thema „Qualitätsurteil formulieren“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1530,7 +2124,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Eigenkapitalrendite verstehen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Eigenkapitalrendite verstehen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "kapitalkosten-schaetzen-2",
@@ -1548,7 +2151,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Finanzierungsmix berechnen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Finanzierungsmix berechnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "kapitalkosten-schaetzen-3",
@@ -1566,7 +2178,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Falsche Präzision vermeiden",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Falsche Präzision vermeiden“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1596,7 +2217,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "DCF und Marktvergleich kombinieren",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „DCF und Marktvergleich kombinieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bewertungs-komitee-2",
@@ -1614,7 +2244,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Verwässerung berechnen",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Verwässerung berechnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "bewertungs-komitee-3",
@@ -1632,7 +2271,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Ein Gegenmodell vertreten",
+          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "workedSteps": [
+            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
+            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
+            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+          ],
+          "transferPrompt": "Zum Thema „Ein Gegenmodell vertreten“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1662,7 +2310,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Gemeinsame Risikofaktoren",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Gemeinsame Risikofaktoren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "faktor-risiken-lesen-2",
@@ -1680,7 +2337,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Währungsgewicht berechnen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Währungsgewicht berechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "faktor-risiken-lesen-3",
@@ -1698,7 +2364,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Faktorszenario durchführen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Faktorszenario durchführen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1728,7 +2403,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Maximalverlust verstehen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Maximalverlust verstehen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "portfolio-resilienz-2",
@@ -1746,7 +2430,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Rebalancing einordnen",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Rebalancing einordnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "portfolio-resilienz-3",
@@ -1764,7 +2457,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Liquiditätsreserve im Depot",
+          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "workedSteps": [
+            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
+            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
+            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+          ],
+          "transferPrompt": "Zum Thema „Liquiditätsreserve im Depot“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1794,7 +2496,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Quellen nach Qualität ordnen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Quellen nach Qualität ordnen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "evidenz-matrix-2",
@@ -1812,7 +2523,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kausalität statt nur Gleichlauf",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Kausalität statt nur Gleichlauf“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "evidenz-matrix-3",
@@ -1830,7 +2550,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Unsicherheiten dokumentieren",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Unsicherheiten dokumentieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1860,7 +2589,16 @@
           "xp": 31,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Ein Forschungsmandat festlegen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Ein Forschungsmandat festlegen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "analysten-ausschuss-2",
@@ -1878,7 +2616,16 @@
           "xp": 37,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Eine Gegenrede prüfen",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Eine Gegenrede prüfen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "analysten-ausschuss-3",
@@ -1896,7 +2643,16 @@
           "xp": 46,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Revisionsregeln definieren",
+          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "workedSteps": [
+            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
+            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
+            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+          ],
+          "transferPrompt": "Zum Thema „Revisionsregeln definieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1927,7 +2683,16 @@
           "xp": 18,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Bruttoinlandsprodukt einordnen",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Bruttoinlandsprodukt einordnen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "konjunktur-lesen-2",
@@ -1945,7 +2710,16 @@
           "xp": 24,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Früh- und Spätindikatoren unterscheiden",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Früh- und Spätindikatoren unterscheiden“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "konjunktur-lesen-3",
@@ -1963,7 +2737,16 @@
           "xp": 34,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Konjunkturszenario für Firmen erstellen",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Konjunkturszenario für Firmen erstellen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -1994,7 +2777,16 @@
           "xp": 22,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Inflation richtig lesen",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Inflation richtig lesen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "inflation-zinsen-2",
@@ -2012,7 +2804,16 @@
           "xp": 28,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Leitzinsen und Übertragung",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Leitzinsen und Übertragung“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "inflation-zinsen-3",
@@ -2030,7 +2831,16 @@
           "xp": 38,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Inflationsrisiken vergleichen",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Inflationsrisiken vergleichen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2063,7 +2873,16 @@
           "xp": 26,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Zinskurve verstehen",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Zinskurve verstehen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "zinskurve-szenarien-2",
@@ -2081,7 +2900,16 @@
           "xp": 32,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Duration und Zinsänderung",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Duration und Zinsänderung“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "zinskurve-szenarien-3",
@@ -2099,7 +2927,16 @@
           "xp": 42,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Zinskurve in ein Szenario übersetzen",
+          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "workedSteps": [
+            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
+            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
+            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+          ],
+          "transferPrompt": "Zum Thema „Zinskurve in ein Szenario übersetzen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2130,7 +2967,16 @@
           "xp": 18,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kupon und Marktrendite trennen",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Kupon und Marktrendite trennen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "anleihen-rendite-2",
@@ -2148,7 +2994,16 @@
           "xp": 24,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kurs und Marktzins",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Kurs und Marktzins“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "anleihen-rendite-3",
@@ -2166,7 +3021,16 @@
           "xp": 34,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Ausfall und Nachrang",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Ausfall und Nachrang“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2197,7 +3061,16 @@
           "xp": 18,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Index und Fonds vergleichen",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Index und Fonds vergleichen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "etf-strukturen-2",
@@ -2215,7 +3088,16 @@
           "xp": 24,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kosten und Tracking-Differenz",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Kosten und Tracking-Differenz“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "etf-strukturen-3",
@@ -2233,7 +3115,16 @@
           "xp": 34,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Fondsrisiken lesen",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Fondsrisiken lesen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2267,7 +3158,16 @@
           "xp": 26,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Zielgewicht festlegen",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Zielgewicht festlegen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "etf-depotbau-2",
@@ -2285,7 +3185,16 @@
           "xp": 32,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Überschneidungen prüfen",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Überschneidungen prüfen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "etf-depotbau-3",
@@ -2303,7 +3212,16 @@
           "xp": 42,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Portfolio nach Regeln pflegen",
+          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "workedSteps": [
+            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
+            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
+            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+          ],
+          "transferPrompt": "Zum Thema „Portfolio nach Regeln pflegen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2334,7 +3252,16 @@
           "xp": 18,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Bid und Ask unterscheiden",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Bid und Ask unterscheiden“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "orderbuch-liquiditaet-2",
@@ -2352,7 +3279,16 @@
           "xp": 24,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Limit und Marktorder",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Limit und Marktorder“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "orderbuch-liquiditaet-3",
@@ -2370,7 +3306,16 @@
           "xp": 34,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Liquidität im Stresstest",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Liquidität im Stresstest“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2403,7 +3348,16 @@
           "xp": 26,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Gesamtkosten ermitteln",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Gesamtkosten ermitteln“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "orderkosten-slippage-2",
@@ -2421,7 +3375,16 @@
           "xp": 32,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Slippage nachvollziehen",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Slippage nachvollziehen“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "orderkosten-slippage-3",
@@ -2439,7 +3402,16 @@
           "xp": 42,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Tradingstrategie gegen Kosten prüfen",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Tradingstrategie gegen Kosten prüfen“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2472,7 +3444,16 @@
           "xp": 26,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Hebelwirkung",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Hebelwirkung“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "derivate-und-hebel-2",
@@ -2490,7 +3471,16 @@
           "xp": 32,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Optionsrisiken verstehen",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Optionsrisiken verstehen“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "derivate-und-hebel-3",
@@ -2508,7 +3498,16 @@
           "xp": 42,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Margin und Liquidationsrisiko",
+          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "workedSteps": [
+            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
+            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
+            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+          ],
+          "transferPrompt": "Zum Thema „Margin und Liquidationsrisiko“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2539,7 +3538,16 @@
           "xp": 18,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Ankereffekt erkennen",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Ankereffekt erkennen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "biases-mentalmodelle-2",
@@ -2557,7 +3565,16 @@
           "xp": 24,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Verlustaversion einordnen",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Verlustaversion einordnen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "biases-mentalmodelle-3",
@@ -2575,7 +3592,16 @@
           "xp": 34,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Bestätigungsfehler umgehen",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Bestätigungsfehler umgehen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2608,7 +3634,16 @@
           "xp": 26,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Vorab-These dokumentieren",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Vorab-These dokumentieren“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "entscheidungsjournal-2",
@@ -2626,7 +3661,16 @@
           "xp": 32,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Konfidenz statt Gewissheit",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Konfidenz statt Gewissheit“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "entscheidungsjournal-3",
@@ -2644,7 +3688,16 @@
           "xp": 42,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Entscheidung und Ergebnis trennen",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Entscheidung und Ergebnis trennen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     },
@@ -2677,7 +3730,16 @@
           "xp": 26,
           "sequence": 1,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Kalibrierung verstehen",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Kalibrierung verstehen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "prognosen-kalibrieren-2",
@@ -2695,7 +3757,16 @@
           "xp": 32,
           "sequence": 2,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Brier-Score als Denkwerkzeug",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Brier-Score als Denkwerkzeug“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
           "id": "prognosen-kalibrieren-3",
@@ -2713,7 +3784,16 @@
           "xp": 42,
           "sequence": 3,
           "cost": 1,
-          "eurCost": 10
+          "eurCost": 10,
+          "keyTakeaway": "Eigene Prognosen verbessern",
+          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "workedSteps": [
+            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
+            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
+            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+          ],
+          "transferPrompt": "Zum Thema „Eigene Prognosen verbessern“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
+          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
     }
