@@ -21,7 +21,7 @@ assert(html.match(/id="fp43-fp-trigger"/g)?.length===1);
 assert(html.match(/id="fp43-level-trigger"/g)?.length===1);
 assert(!html.includes('id="fp44-fp"'));
 assert(!html.includes('id="fp44-level"'));
-assert(html.includes('sync.js?v=44'));
+assert(html.includes('sync.js?v=46'));
 assert(html.includes('economy.js?v=44'));
 assert(html.includes('market-v34.js?v=44'));
 assert(html.includes('learning-hub-v41.js?v=44'));
