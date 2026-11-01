@@ -1,5 +1,5 @@
 {
-  "version": 40,
-  "release": "2026-11-01-v40",
-  "notes": "Single €1,000 starting virtual depot; existing trades preserved and normalized via official dated ECB FX. Buy/sell by euro amount or fractional shares to 0.000001, with atomic server checks and euro-only wallet. Signed-in app visits earn once-daily €10 paper funds and one research point, plus bigger streak milestone grants at day 10,20,30, capped at 30. Clickable 7-day streak reward modal. Sequential locked 36-lesson curriculum, with richer first-six foundation courses. Expanded unified career/skill/artifact/animation design documented separately and not implemented yet."
+  "version": 41,
+  "release": "2026-11-01-v41",
+  "notes": "Four separate Lernen sections: existing free Grundlagen, coherent four-branch Skillbaum, individually unlockable Skill-Lektionen and promotion/artifact-gated Speziallektionen. Added 12 structured skills and 36 specialist lessons with individualized XP, server-side prerequisite checks, FP/euro payments and single-award skill completion. Every five new skills unlocks a server-verified promotion, paper cash/FP rewards and increased future daily streak bonuses. Three full interdisciplinary special cases. Removed old Skillbaum link from Profil; preserved all legacy careers and artifacts. Four-slot unique randomized artifact enhancements, virtual-share redemption, merged legacy/new XP, and additional expert grading still planned, not activated."
 }
