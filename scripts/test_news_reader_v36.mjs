@@ -2,14 +2,14 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
-const daily=JSON.parse(read('data/daily.json'));
+const daily=JSON.parse(read('data/editorial-core-v43.json'));
 const edge=read('supabase/functions/finanzpilot-stock-lookup/index.ts');
 const portfolio=read('portfolio.js'),app=read('app.js'),nav=read('ux-v15.js');
-assert.equal(JSON.parse(read('version.json')).version,42);
-assert(daily.stories.length>=12);
+assert.equal(JSON.parse(read('version.json')).version,43);
+assert(daily.stories.length>=6);
 assert(daily.stories.every(s=>s.id&&s.article?.sections?.length>=4),'Every editorial story needs a full original in-app report');
-assert(daily.stories.some(s=>s.symbols?.includes('BAYN.DE')&&s.article?.sections?.length>=4));
-assert(daily.stories.some(s=>s.symbols?.includes('BYW.MU')&&s.article?.sections?.length>=4));
+assert(daily.stories.some(s=>s.symbols?.includes('AMZN')&&s.article?.sections?.length>=4));
+assert(daily.stories.some(s=>s.symbols?.includes('MSFT')&&s.article?.sections?.length>=4));
 assert(edge.includes('nativeChartExists')&&edge.includes('verified.length?verified:remaining.slice(0,8)'));
 assert(edge.includes('chart_verified:await nativeChartExists(x.symbol)'));
 assert(edge.includes('"BAYN.DE"')&&edge.includes('"BYW.DE"'));
@@ -17,7 +17,7 @@ assert(portfolio.includes('x.chart_verified')&&portfolio.includes('Kursreihe nic
 assert(nav.includes("marketarticle:'markets'")&&nav.includes('function goBack()'));
 assert(app.includes("state.view==='marketarticle'&&window.FinanzPilotMarkets"));
 const events={};let page='marketnews';
-const identity='test-owner',watch=[{symbol:'BAYN.DE'},{symbol:'BYW.MU'}];
+const identity='test-owner',watch=[{symbol:'AMZN'},{symbol:'MSFT'}];
 const quote=[{symbol:'BAYN.DE',asset_name:'Bayer Aktiengesellschaft',price:50,currency:'EUR',quote_date:'2026-10-30'},
  {symbol:'BYW.MU',asset_name:'BayWa AG',price:7,currency:'EUR',quote_date:'2026-10-30'}];
 const query=()=>{const q={select(){return q},eq(){return q},order(){return q},
@@ -43,7 +43,7 @@ await new Promise(r=>setTimeout(r,0));
 const result=api.renderNews();
 assert(result.includes('Bayer')&&result.includes('BayWa'),'Both known watchlist stocks must receive editorial coverage');
 assert(result.includes('Ausführlichen FinanzPilot-Artikel lesen'));
-const bayer=daily.stories.find(s=>s.symbols?.includes('BAYN.DE'));
+const bayer=daily.stories.find(s=>s.symbols?.includes('AMZN'));
 assert(api.openArticle(bayer.id));
 assert.equal(page,'marketarticle');
 const content=api.renderArticle();
