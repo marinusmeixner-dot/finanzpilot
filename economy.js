@@ -34,7 +34,7 @@ window.FinanzPilotEconomy=(()=>{
        if(claim.error)notice='Artefakt-Bonus konnte nicht abgeglichen werden: '+(claim.error.message||'Serverfehler');
        const {data:wallet,error:cashError}=await cl.from('fp_paper_wallets').select('balance').eq('user_id',api().user).eq('currency','EUR').maybeSingle();
        if(cashError)throw cashError;
-       paperCash=wallet?.balance??50000;
+       paperCash=wallet?.balance??1000;
      }
    }catch(e){paperCash=null;notice='Depotguthaben wird beim nächsten Abruf geprüft: '+(e.message||'Netzwerkfehler')}
   }catch(e){error='Dein Inventar konnte nicht geladen werden: '+(e.message||e);account=null}
