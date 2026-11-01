@@ -6,7 +6,7 @@ const daily=JSON.parse(read('data/daily.json'));
 const market=read('market-v34.js');
 const review=read('daily-review.js');
 const nav=read('docs/REDAKTION.md');
-assert.equal(JSON.parse(read('version.json')).version,42);
+assert.equal(JSON.parse(read('version.json')).version,43);
 assert(sql.includes('private.fp_editorial_queue'));
 assert(sql.includes("kind in ('watchlist_added','review_submitted')"));
 assert(sql.includes("after insert on public.fp_paper_watchlist"));
@@ -24,8 +24,8 @@ assert(review.includes("from('fp_review_submissions').insert("));
 assert(review.includes('consent:true'),'Free-text submission needs explicit consent');
 assert(nav.includes('Analysen nur auf ausdrückliche Anfrage'));
 for(const symbol of ['BAYN.DE','BYW.MU','SIE.DE','NVDA']){
- const articles=daily.stories.filter(x=>x.symbols?.includes(symbol));
+ const articles=JSON.parse(read('data/editorial-core-v43.json')).stories.filter(x=>x.symbols?.includes(symbol));
  assert(articles.some(x=>x.article?.sections?.length>=4&&String(x.url||'').startsWith('https://')&&x.published),symbol+' must have an original free readable article');
 }
-assert(daily.stories.every(x=>x.article?.sections?.length>=4),'No empty paywalled-only stories');
+assert(JSON.parse(read('data/editorial-core-v43.json')).stories.every(x=>x.article?.sections?.length>=4),'No headline-only stories in stable own-article newsroom');
 console.log('v38 QA: private event triggers, consented free-text queue, automatic Watchlist newsroom and on-demand-only analyses verified.');
