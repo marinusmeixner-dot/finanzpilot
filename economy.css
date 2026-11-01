@@ -85,3 +85,20 @@
 .fp-inventory-page button:focus-visible{outline:2px solid #a7f9d6;outline-offset:2px}
 @media(max-width:650px){.fp-inventory-hero{padding:17px}.fp-inventory-balances{gap:7px}.fp-inventory-balances>div{padding:11px}.fp-inventory-balances b{font-size:20px}.fp-inventory-section{padding:13px}.fp-inventory-item{padding:11px}.fp-inventory-special{padding:15px}.fp-inventory-decision{padding:15px}}
 @media(prefers-reduced-motion:reduce){.fp-inventory-page *{scroll-behavior:auto!important}}
+
+.fp44-crafting{border:1px solid #5f927c!important;border-radius:17px;padding:18px;background:linear-gradient(132deg,#153b34,#152c3a)}
+.fp44-craft-summary{display:flex;flex-wrap:wrap;gap:10px;margin:13px 0}
+.fp44-craft-summary>div{display:flex;flex-direction:column;gap:5px;border:1px solid #597b78;padding:12px 17px;border-radius:12px;background:#20443f}
+.fp44-craft-summary small{font-size:11px;color:#b7d3ce}
+.fp44-craft-summary b{font-size:22px;color:#e6ffed}
+.fp44-crafted-list{display:grid;gap:12px;margin:18px 0}
+.fp44-crafted-card{display:flex;align-items:center;gap:14px;background:#1c3c44;border:1px solid #5e7c79;padding:14px;border-radius:15px;flex-wrap:wrap}
+.fp44-crafted-card.used{opacity:.62}
+.fp44-crafted-emblem{font-size:27px;width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#2f6254;color:#edffef}
+.fp44-crafted-card>div:nth-child(2){flex:1;min-width:180px;display:grid;gap:7px}
+.fp44-crafted-card small{color:#b6d4cf;font-size:12px;line-height:1.45}
+.fp44-crafted-actions{display:flex;flex-wrap:wrap;gap:7px}
+.fp44-crafted-actions .btn{font-size:12px}
+.fp42-learn-entry,.fp-tab-hub-item.fp42-learn-entry{border-radius:16px!important;overflow:hidden}
+.fp42-learn-index{gap:11px}
+.fp39-bottom-actions:empty{display:none}
