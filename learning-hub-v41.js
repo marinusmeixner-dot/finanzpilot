@@ -47,6 +47,7 @@ function home(){
   ['speciallessons','Speziallektionen','Besondere mehrteilige Firmenfälle und Herausforderungen, freischaltbar über Beförderungen und Artefakte.','gem','04']
  ];
  return '<section class="fp42-learn-home"><div class="fp42-learn-intro"><span class="eyebrow">DEINE FINANZAUSBILDUNG</span><h1>Lernen</h1><p>Starte mit dem kurzen Fundament und vertiefe anschließend die Themen, die dich interessieren. Jeder abgeschlossene Skill bringt dich fachlich und in deiner Karriere weiter.</p></div>'+
+ (window.FinanzPilotStudy?.dueCount?.()>0?'<button type="button" data-fp41-route="skilllessons" class="fp46-review-banner">'+window.FinanzPilotStudy.dueCount()+' gelernte Inhalte wiederholen →</button>':'')+
  '<div class="fp42-learn-index">'+items.map(([id,title,description,icon,num])=>'<button type="button" class="fp42-learn-entry fp-tab-hub-item" data-fp41-route="'+id+'"><span class="fp-tab-hub-number">'+num+'</span><span class="fp-tab-hub-copy"><strong>'+title+'</strong><small>'+description+'</small></span><span class="fp-tab-hub-chevron" aria-hidden="true">›</span></button>').join('')+'</div></section>';
 }
 function basics(){
