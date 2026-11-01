@@ -12,6 +12,7 @@ const stageOf=number=>data?.stages?.[Number(number)-1]||null;
 const all=()=>data?.stages?.flatMap(s=>s.modules)||[];
 const course=id=>all().find(m=>m.id===id);
 const isDone=id=>Boolean(state.completed?.[id]);
+const canOpen=id=>{const ix=all().findIndex(m=>m.id===id);return ix>=0&&(ix===0||isDone(all()[ix-1].id))};
 const finishedStage=n=>{const s=stageOf(n);return !!s&&s.modules.every(m=>isDone(m.id))};
 const completedCount=()=>all().filter(x=>isDone(x.id)).length;
 const firstIncomplete=()=>all().find(m=>!isDone(m.id))||all().at(-1);
@@ -32,7 +33,7 @@ function start(){
  open(next.id); // open the next lesson immediately, leaving its stage in the Back history
 }
 function open(id){
- if(!course(id))return;
+ if(!course(id)||!canOpen(id))return false;
  selectedId=id;state.selected=id;
  localSession(id);persist();
  go('journeycourse');
@@ -46,8 +47,8 @@ function brief(){
  '<div class="fp39-start"><div class="fp39-mini-track"><span style="width:'+(done/total*100).toFixed(1)+'%"></span></div><small>'+done+' von '+total+' Lektionen abgeschlossen</small>'+
  '<button type="button" class="btn" data-journey-start>'+(done===0?'Mit Lektion 1 anfangen':done===total?'Lernweg wiederholen':'Weiterlernen: '+esc(next.title))+' →</button></div></div>'+
  '<section aria-label="Sechs Lernstufen" class="fp39-stage-grid">'+data.stages.map((s,i)=>{
- const completed=s.modules.filter(m=>isDone(m.id)).length,here=i+1===now;
- return '<button type="button" class="fp39-stage'+(here?' current':'')+'" data-journey-stage="'+(i+1)+'" aria-label="Stufe '+(i+1)+': '+esc(s.title)+', '+completed+' von '+s.modules.length+' Lektionen abgeschlossen"><span class="fp39-stage-num">'+String(i+1).padStart(2,'0')+'</span><span class="fp39-stage-body"><strong>'+esc(s.title)+'</strong><span>'+esc(s.purpose)+'</span><small>'+completed+' / '+s.modules.length+' Lektionen'+(here?' · Als Nächstes':'')+'</small></span><span class="fp39-stage-chevron" aria-hidden="true">›</span></button>'
+ const completed=s.modules.filter(m=>isDone(m.id)).length,here=i+1===now,locked=i>0&&!finishedStage(i);
+ return '<button type="button" class="fp39-stage'+(here?' current':'')+(locked?' locked':'')+'" data-journey-stage="'+(i+1)+'" aria-label="Stufe '+(i+1)+': '+esc(s.title)+', '+completed+' von '+s.modules.length+' Lektionen abgeschlossen"><span class="fp39-stage-num">'+String(i+1).padStart(2,'0')+'</span><span class="fp39-stage-body"><strong>'+esc(s.title)+'</strong><span>'+esc(s.purpose)+'</span><small>'+completed+' / '+s.modules.length+' Lektionen'+(here?' · Als Nächstes':locked?' · Noch gesperrt':'')+'</small></span><span class="fp39-stage-chevron" aria-hidden="true">›</span></button>'
  }).join('')+'</section><details class="fp39-optional"><summary>Weitere Inhalte und Werkzeuge</summary><p>Diese Angebote ergänzen den Lernweg, sind aber nicht für den Einstieg nötig.</p><div class="fp39-extras">'+[
  ['concepts','Kennzahlen-Akademie'],['transfer','Transferwerkstatt'],['training','Praxislabor'],['learningnews','Nachrichten analysieren'],['skills','Skillbaum'],['glossary','Begriffe nachschlagen'],['stockhub','Aktienresearch & Werkzeuge']
  ].map(([id,name])=>'<button type="button" class="btn secondary" data-section-route="'+id+'">'+name+'</button>').join('')+'</div></details></div>';
@@ -59,15 +60,15 @@ function stage(n){
  '<p class="fp39-stage-purpose">'+esc(s.purpose)+'</p>'+
  '<div class="fp39-stage-goal"><b>Nach dieser Etappe kannst du:</b><p>'+esc(s.outcome)+'</p></div>'+
  '<p class="fp39-small-progress">'+count+' von '+s.modules.length+' Lektionen abgeschlossen</p>'+
- '<div class="fp39-module-list">'+s.modules.map((m,i)=>{const done=isDone(m.id),progress=localSession(m.id),page=Math.min(5,Number(progress.page)||0);
- return '<button type="button" data-journey-open="'+esc(m.id)+'" class="fp39-module'+(done?' done':'')+'"><span class="fp39-module-num">'+(done?'✓':String(i+1).padStart(2,'0'))+'</span><span><b>'+esc(m.title)+'</b><small>'+esc(m.goal)+'</small><em>'+(done?'Abgeschlossen':page>0?'Begonnen · weiterlesen':'Noch nicht begonnen')+'</em></span><span aria-hidden="true">›</span></button>'
+ '<div class="fp39-module-list">'+s.modules.map((m,i)=>{const done=isDone(m.id),locked=!canOpen(m.id),progress=locked?{page:0}:localSession(m.id),page=Math.min(5,Number(progress.page)||0);
+ return '<button type="button" data-journey-open="'+esc(m.id)+'" class="fp39-module'+(done?' done':locked?' locked':'')+'" '+(locked?'disabled aria-disabled="true"':'')+'><span class="fp39-module-num">'+(done?'✓':locked?'🔒':String(i+1).padStart(2,'0'))+'</span><span><b>'+esc(m.title)+'</b><small>'+esc(m.goal)+'</small><em>'+(done?'Abgeschlossen':locked?'Erst die vorherige Lektion abschließen':page>0?'Begonnen · weiterlesen':'Jetzt beginnen')+'</em></span><span aria-hidden="true">›</span></button>'
  }).join('')+'</div>'+
  (s.related?.length?'<details class="fp39-optional"><summary>Passende weiterführende Kurse (optional)</summary><p>Die Spezialkurse ergänzen diese Etappe. Sie ersetzen nicht die sechs aufeinanderfolgenden Lektionen.</p><div class="fp39-extras">'+s.related.map(r=>'<button class="btn secondary" type="button" data-section-route="'+esc(r.view)+'">'+esc(r.label)+'</button>').join('')+'</div></details>':'')+
  '<div class="fp39-bottom-actions"><button class="btn secondary" data-section-route="learn">Alle sechs Etappen</button>'+
  (count===s.modules.length&&n<6?'<button class="btn" data-section-route="journey-'+(n+1)+'">Weiter zu Etappe '+(n+1)+' →</button>':'')+'</div></div>';
 }
 function lesson(){
- const m=current();if(!m)return '<div class="fp39-loading">Wähle eine Lektion aus dem Lernweg.</div>';
+ const m=current();if(!m||!canOpen(m.id))return '<div class="fp39-loading">Diese Lektion ist noch gesperrt. Schließe zuerst die vorherige Lektion ab.</div>';
  const n=stageNum(m.id),session=localSession(m.id),page=Math.max(0,Math.min(4,Number(session.page)||0));
  const questions=m.questions||[],answers=session.answers||{};
  const steps=['Erklärung','Beispiel','Frage 1','Frage 2','Abschluss'];
@@ -145,5 +146,5 @@ async function load(force=false){
 }
 window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};selectedId=String(state.selected||'');redraw()}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
-window.FinanzPilotJourney={renderHome:brief,renderFor,bind,load,open,start,complete,stageOf,firstIncomplete,get modules(){return all()},get completed(){return state.completed},get state(){return state}};
+window.FinanzPilotJourney={renderHome:brief,renderFor,bind,load,open,start,complete,stageOf,firstIncomplete,get modules(){return all()},get completed(){return state.completed},canOpen,get state(){return state}};
 })();
