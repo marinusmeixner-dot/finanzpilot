@@ -137,8 +137,8 @@ assert(html.includes('portfolio.js?v=44'));
 assert(html.includes('portfolio-v26.css?v=30'));
 assert(research.includes("state.view='researchcatalog'"));
 
-let serverVersion=45,replaced=null,syncCalls=0;
-const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=45#view=training',hash:'#view=training',
+let serverVersion=47,replaced=null,syncCalls=0;
+const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=47#view=training',hash:'#view=training',
  replace:url=>{replaced=url}};
 const updaterWindow={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateContext=vm.createContext({window:updaterWindow,document:{readyState:'loading',addEventListener(){}},
@@ -147,8 +147,8 @@ const updateContext=vm.createContext({window:updaterWindow,document:{readyState:
 vm.runInContext(updater,updateContext,{filename:'updates.js'});
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(replaced,null);
-serverVersion=46;
+serverVersion=48;
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
 assert(replaced.includes('?v=48#view=training'));
-console.log('Version 42 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
+console.log('Version 47 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
