@@ -6,13 +6,13 @@ const data=JSON.parse(read('data/specializations-v41.json'));
 const sql=read('supabase/specialization_progress_v41.sql');
 const streak=read('supabase/streak_promotion_upgrade_v41.sql');
 const app=read('app.js'),nav=read('ux-v15.js'),career=read('career.js'),html=read('index.html');
-assert.equal(JSON.parse(read('version.json')).version,42);
+assert.equal(JSON.parse(read('version.json')).version,43);
 assert.equal(data.branches.length,4);
-assert.equal(data.skills.length,12);
+assert.equal(data.skills.length,20);
 assert.equal(data.special.length,3);
 assert.equal(data.skills.reduce((n,s)=>n+s.lessons.length,0),36);
 const names=new Set(data.skills.map(x=>x.id));
-assert.equal(names.size,12);
+assert.equal(names.size,20);
 for(const s of data.skills){
  assert(s.description.length>90&&s.cost===3);
  assert(s.lessons.length===3);
@@ -33,7 +33,8 @@ assert(sql.includes("if p_payment='research'"));
 assert(sql.includes("if v_wallet<10"));
 assert(sql.includes("v_correct:=p_answer=v_lesson.answer"));
 assert(sql.includes("xp_awarded=v_lesson.xp"));
-assert(sql.includes("v_mastered%5=0"));
+assert(read('supabase/promotion_three_shards_fix_v43.sql').includes('v_mastered%3=0'));
+assert(read('supabase/promotion_three_shards_fix_v43.sql').includes('shards=public.fp_artifact_shards.shards+3'));
 assert(sql.includes("public.fp_specialization_promotions"));
 assert(streak.includes("v_bonus_euros:=least(7"));
 assert(streak.includes("v_bonus_points:=least(7"));
@@ -45,7 +46,7 @@ assert(!career.includes('data-view="skills"'),'Skillbaum must be removed from pr
 assert(app.includes("FinanzPilotLearningHub.tree()"));
 assert(app.includes("FinanzPilotLearningHub.skillIndex()"));
 assert(app.includes("FinanzPilotLearningHub.specials()"));
-assert(html.includes("learning-hub-v41.js?v=42")&&html.includes("learning-hub-v41.css?v=42"));
+assert(html.includes("learning-hub-v41.js?v=43")&&html.includes("learning-hub-v41.css?v=43"));
 assert(read('docs/CONNECTED_LEARNING_ARTIFACTS_V41.md').includes('maximal **vier aktive'));
 
 const routes=[];
