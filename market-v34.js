@@ -63,8 +63,8 @@ async function refresh(force=false){
   // Previously saved stocks appear immediately; historical charts hydrate asynchronously.
   hydrateCharts(watch.map(item=>item.symbol));
   // A newly followed company also gets its own provider headlines immediately.
-  hydrateNewStocks(newSymbols);
-  if(typeof state!=='undefined'&&state.view==='marketnews'&&tab==='watch')loadWatchNews();
+  // Company news comes exclusively from fully readable editorial articles.
+
   if(active)getAsset(active,'history');
  }catch(e){message='Marktdaten konnten nicht aktualisiert werden: '+String(e.message||e)}
  finally{busy=false;ui();if(queued){queued=false;refresh(true)}}
@@ -72,14 +72,8 @@ async function refresh(force=false){
 async function hydrateCharts(symbols){
  for(let i=0;i<symbols.length;i+=4)await Promise.all(symbols.slice(i,i+4).map(symbol=>getAsset(symbol,'history')));
 }
-async function hydrateNewStocks(symbols){
- for(let i=0;i<symbols.length;i+=4)await Promise.all(symbols.slice(i,i+4).map(symbol=>getAsset(symbol,'news')));
-}
-async function loadWatchNews(){
- // Provider data is requested when this section is opened, including newly added symbols.
- // No assumed background push or unsupported claim of daily chatbot access to private watchlists.
- for(let i=0;i<watch.length;i+=4)await Promise.all(watch.slice(i,i+4).map(item=>getAsset(item.symbol,'news')));
-}
+async function hydrateNewStocks(){return}
+async function loadWatchNews(){return}
 function entryFor(s){return historyCache.get(s+':'+rangeOf(s))}
 function points(s){return (entryFor(s)?.data?.points||[]).filter(x=>Number(x.price)>0&&Number.isFinite(Number(x.price)))}
 function chart(s){
@@ -164,7 +158,7 @@ function renderNews(){
   const general=editorial.filter(n=>(!Array.isArray(n.symbols)||n.symbols.length===0||n.category==='Markt'||n.category==='Zinsen'||n.category==='Wirtschaft')&&Array.isArray(n.article?.sections)&&n.article.sections.length>=4);
   body='<h2>Allgemeine Finanzmarktnachrichten</h2><p>Redaktionell datierte Nachrichten, keine Lernaufgaben.</p>'+(general.length?general.map(n=>newsCard(n)).join(''):'<p>Für den heutigen Tag liegen keine aktuellen redaktionellen Nachrichten vor.</p>');
  }else if(tab==='watch'){
-  body='<h2>Nachrichten zu deiner Watchlist</h2><p>Nach Unternehmen sortiert. Redaktionelle Einordnung und zusätzliche externe Schlagzeilen werden getrennt kenntlich gemacht.</p>'+
+  body='<h2>Nachrichten zu deiner Watchlist</h2><p>Nach Unternehmen sortierte, vollständig und kostenlos lesbare FinanzPilot-Beiträge. Keine Paywall-Meldungen.</p>'+
   (watch.length?watch.map(w=>'<section class="fp34-news-company" id="fp34-news-'+esc(w.symbol)+'"><header><h3>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</h3><button class="btn secondary" data-fp34-chart="'+esc(w.symbol)+'">Zum Chart</button></header>'+
    (stockNews(w.symbol).length?stockNews(w.symbol).map(n=>newsCard(n)).join(''):'<p>'+ 'Zu dieser Aktie ist noch kein vollständig frei lesbarer FinanzPilot-Bericht veröffentlicht. <button type="button" class="btn secondary" data-fp37-news-request="'+esc(w.symbol)+'">Eigenen Hintergrundartikel anfordern</button>'+'</p>')+'</section>').join(''):'<p>Merke zuerst Unternehmen in deinem Depot.</p>');
  }else{
@@ -172,7 +166,7 @@ function renderNews(){
   body='<h2>Interessante Aktien entdecken</h2><p>Unternehmensmeldungen der Redaktion, die nicht bereits in deiner Watchlist sind. Keine Kaufempfehlungen.</p>'+
     (candidates.length?candidates.slice(0,12).map(n=>{const s=n.symbols.find(x=>!watch.some(w=>w.symbol===x));return '<article class="fp34-discover"><div><strong>'+esc(s)+'</strong><small>Unternehmensmeldung · '+esc(n.published)+'</small></div>'+newsCard(n)+'<button class="btn secondary" data-fp34-add="'+esc(s)+'">Auf meine Watchlist</button></article>'}).join(''):'<p>Heute keine neuen recherchierten Unternehmen außerhalb deiner Watchlist.</p>');
  }
- return '<div class="fp34"><span class="eyebrow">MÄRKTE · NACHRICHTEN</span><h1>News</h1><p>Redaktioneller Stand: '+esc(feedDate||'wird geladen')+'. Neue Watchlist-Titel werden bei Aufruf zusätzlich direkt beim Anbieter abgefragt.</p>'+navigation+
+ return '<div class="fp34"><span class="eyebrow">MÄRKTE · NACHRICHTEN</span><h1>News</h1><p>Redaktioneller Stand: '+esc(feedDate||'wird geladen')+'. Hier stehen ausschließlich vollständig in FinanzPilot lesbare redaktionelle Artikel. Neue Watchlist-Titel werden automatisch zugeordnet, sobald ein recherchierter Artikel vorliegt.</p>'+navigation+
  (message?'<p role="status">'+esc(message)+'</p>':'')+'<div class="fp34-news-body">'+body+'</div></div>';
 }
 function stockDetail(s){
@@ -184,7 +178,7 @@ function openNews(s){
  newsFocus=valid(s)?s:'';tab='watch';
  window.FinanzPilotNavigation?.route('marketnews');
  refresh();
- if(newsFocus)getAsset(newsFocus,'news').then(()=>{const el=document.getElementById('fp34-news-'+newsFocus);el?.scrollIntoView({block:'start'})});
+ if(newsFocus)Promise.resolve().then(()=>document.getElementById('fp34-news-'+newsFocus)?.scrollIntoView({block:'start'}));
 }
 async function addStock(s){
  if(!valid(s)||!user()||!client()){message='Zum Merken bitte anmelden.';ui();return}
@@ -197,7 +191,7 @@ async function addStock(s){
   tab='watch';newsFocus=key;
   window.dispatchEvent(new Event('fp-watchlist-changed'));
   await refresh(true);
-  await getAsset(key,'news');
+
   ui();
  }catch(e){message='Nicht hinzugefügt: '+String(e.message||e);ui()}
 }
