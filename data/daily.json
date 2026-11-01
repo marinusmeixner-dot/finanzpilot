@@ -582,6 +582,100 @@
         ],
         "conclusion": "Die Restrukturierungsmeldung erklärt ein zentrales Risiko der BayWa-Aktie. Sie ist kein Kauf- oder Verkaufssignal und muss zusammen mit späteren Veröffentlichungen bewertet werden."
       }
+    },
+    {
+      "id": "2026-10-22-siemens-industrial-ai-partnership",
+      "title": "Siemens erweitert mit NVIDIA industrielle KI – Chancen für Fabriken und Rechenzentren",
+      "category": "Aktien",
+      "symbols": [
+        "SIE.DE"
+      ],
+      "source": "Siemens AG – Pressemitteilung vom 22.10.2026",
+      "url": "https://press.siemens.com/global/de/pressemitteilung/siemens-und-nvidia-bringen-industrielle-ki-voran",
+      "published": "22.10.2026",
+      "why": "Siemens meldete am 22. Oktober weitere Anwendungen seiner Partnerschaft mit NVIDIA: KI-gestütztes Chipdesign, digitale Zwillinge für Rechenzentren und Anpassungen in Industrieprozessen. Es handelt sich zunächst um erklärte Anwendungen und erwartete Effizienzgewinne, nicht automatisch um neuen Konzernumsatz.",
+      "impact": "Relevant sind mögliche zusätzliche Software-, Automatisierungs- und Infrastrukturumsätze. Ob sie nachhaltig zu höherem Gewinn und freiem Cashflow führen, hängt von Kundenaufträgen, Kosten, Marktanteilen und der tatsächlichen Umsetzung ab.",
+      "article": {
+        "lead": "Siemens und NVIDIA bauen ihre Zusammenarbeit rund um industrielle künstliche Intelligenz aus. Die Ankündigung vom 22. Oktober zeigt konkrete Anwendungen – aber sie ist noch keine fertige Gewinnprognose. Entscheidend ist, ob daraus bezahlte Aufträge mit attraktiven Margen entstehen.",
+        "sections": [
+          {
+            "heading": "Was ist tatsächlich neu?",
+            "paragraphs": [
+              "Siemens stellte am 22. Oktober 2026 gemeinsam mit NVIDIA mehrere Einsatzfelder für künstliche Intelligenz in der Industrie vor. Dazu zählen Werkzeuge für den Entwurf komplexer Chips, digitale Modelle von Rechenzentren und Verfahren für eine flexiblere Fabrikplanung. Die Unternehmen berichten dabei von erheblichen potenziellen Beschleunigungen bei einzelnen Abläufen.",
+              "Ein digitaler Zwilling ist ein computergestütztes Modell einer realen Anlage. Unternehmen können damit beispielsweise Strombedarf, Maschinenabläufe oder die Planung von Rechenzentren testen, bevor sie tatsächlich investieren. Solche Modelle können Fehlinvestitionen verringern; der wirtschaftliche Vorteil hängt jedoch von den tatsächlichen Betriebskosten und der Nutzung ab."
+            ]
+          },
+          {
+            "heading": "Welche Geschäftsbereiche könnten profitieren?",
+            "paragraphs": [
+              "Siemens verkauft unter anderem Automatisierungstechnik, Industriesoftware und Technik für elektrische Infrastruktur. Wenn Kunden mehr intelligente Fabriken und Rechenzentren bauen, können sich für diese Bereiche zusätzliche Absatzmöglichkeiten ergeben. Dass eine Anwendung technisch funktioniert, bedeutet aber noch nicht, dass viele Kunden sie kaufen.",
+              "Für eine spätere Bewertung sollte man deshalb besonders auf Auftragseingang, wiederkehrende Softwareumsätze, operative Margen und mögliche Investitionen in die Umsetzung schauen. Die in einer Pressemitteilung genannten Effizienzverbesserungen beim Kunden sind nicht mit derselben prozentualen Umsatzsteigerung bei Siemens gleichzusetzen."
+            ]
+          },
+          {
+            "heading": "Was lässt sich finanziell noch nicht belegen?",
+            "paragraphs": [
+              "Die gemeinsame Veröffentlichung beziffert keine unmittelbar auf diese neuen Anwendungen entfallenden, bereits gesicherten zusätzlichen Konzernumsätze oder freien Zahlungsmittelüberschüsse. Aussagen wie 'das erhöht den fairen Wert der Aktie um zehn Prozent' wären ohne zusätzliche Annahmen nicht seriös.",
+              "Außerdem müssen Softwareentwicklung, Vertrieb, neue Infrastruktur und Wartung finanziert werden. Selbst attraktive Produkte können bei wachsendem Wettbewerb oder längeren Einführungszyklen weniger profitabel sein als zunächst erhofft."
+            ]
+          },
+          {
+            "heading": "Welche Risiken und nächsten Prüfungen gibt es?",
+            "paragraphs": [
+              "Zu den Risiken gehören langsame Kundenentscheidungen, Konkurrenz bei Industrietechnologie, Abhängigkeiten von Partnerplattformen und die Frage, wie sich Sicherheits- und Datenschutzanforderungen bei autonomen Fabriken entwickeln. Einige Anwendungen müssen sich über längere Zeit in der Produktion bewähren.",
+              "Für eine nüchterne Überprüfung sollte man die nächsten Siemens-Geschäftsberichte und die Entwicklung in Digital Industries und Smart Infrastructure verfolgen. Die nächsten Jahreszahlen wurden von Siemens für den 12. November 2026 angekündigt. Die Produktmeldung und das spätere Finanzergebnis sind getrennte Informationsquellen."
+            ]
+          }
+        ],
+        "conclusion": "Die Partnerschaft kann Siemens technologisch und geschäftlich stärken. Für Aktionäre entsteht ein belastbarer Investmentfall aber erst, wenn Aufträge, Margen und Cashflows die technische Ankündigung bestätigen."
+      }
+    },
+    {
+      "id": "2026-08-26-nvidia-q2-fy27-results",
+      "title": "NVIDIA: 96,2 Mrd. US-Dollar Quartalsumsatz – wie belastbar ist das Wachstum?",
+      "category": "Aktien",
+      "symbols": [
+        "NVDA"
+      ],
+      "source": "NVIDIA – offizielle Quartalsmitteilung vom 26.08.2026",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "published": "26.08.2026",
+      "why": "NVIDIA berichtete für das zweite Quartal des Geschäftsjahres 2027 einen Umsatz von 96,2 Mrd. US-Dollar, 106 % mehr als im Vorjahr; der Rechenzentrumsbereich erreichte 89,0 Mrd. US-Dollar. Die Mitteilung stammt vom 26. August und wird nicht als heutige Neuigkeit ausgegeben.",
+      "impact": "Für die Aktienbewertung sind über das Umsatzwachstum hinaus Bruttomarge, Kundenkonzentration, Investitionszyklen der Rechenzentrumsbetreiber, Exportbeschränkungen und bereits eingepreiste Erwartungen entscheidend.",
+      "article": {
+        "lead": "NVIDIA wächst laut den am 26. August 2026 veröffentlichten Quartalszahlen außerordentlich stark. Der wichtigste Punkt: Rekordumsatz ist eine Unternehmensleistung, aber noch kein Beleg dafür, dass die Aktie zu jedem Kurs günstig wäre.",
+        "sections": [
+          {
+            "heading": "Was steht im Quartalsbericht?",
+            "paragraphs": [
+              "NVIDIA erzielte im zweiten Quartal seines Geschäftsjahres 2027, das am 26. Juli 2026 endete, rund 96,2 Milliarden US-Dollar Umsatz. Gegenüber dem Vorjahresquartal waren das etwa 106 Prozent mehr. Im Vergleich zum unmittelbar vorangegangenen Quartal stieg der Umsatz um 18 Prozent.",
+              "Das Rechenzentrumsgeschäft stand mit ungefähr 89,0 Milliarden US-Dollar für den mit Abstand größten Teil der Umsätze. Die ausgewiesene Bruttomarge lag nach den veröffentlichten Rechnungslegungszahlen bei 75,0 Prozent. Die Bruttomarge ist der Umsatzanteil, der nach unmittelbar zurechenbaren Herstellungskosten verbleibt, nicht der endgültige Nettogewinn."
+            ]
+          },
+          {
+            "heading": "Warum reagieren Anleger auf solche Zahlen?",
+            "paragraphs": [
+              "Große Cloud-Betreiber und andere Kunden investieren in leistungsstarke Rechentechnik für künstliche Intelligenz. NVIDIA verkauft dafür Beschleuniger, Netzwerktechnik und weitere Komponenten. Hohe Nachfrage kann Umsätze und Gewinne treiben, vor allem wenn Kunden spezialisierte Technologie und ein funktionierendes Software-Ökosystem nachfragen.",
+              "Trotzdem muss man die Zahlen relativ zu den Erwartungen vor der Veröffentlichung einordnen. Auch ein Rekordquartal kann bereits im Kurs enthalten sein. Eine Aktie entwickelt sich nicht nur nach der Höhe der Umsätze, sondern auch danach, ob Zukunftserwartungen steigen oder fallen."
+            ]
+          },
+          {
+            "heading": "Was sagt die Gewinnmarge – und was nicht?",
+            "paragraphs": [
+              "Eine Bruttomarge von 75 Prozent verdeutlicht, dass nach den direkten Produktkosten ein erheblicher Umsatzanteil für Forschung, Vertrieb, Verwaltung, Steuern und weitere Posten verbleibt. Sie ist deshalb eine wichtige Qualitätskennzahl, aber nicht gleichbedeutend mit freiem Cashflow.",
+              "Für die Bewertung sind unter anderem operative Kosten, Aktienvergütungen, die Entwicklung des Working Capitals und zukünftige Investitionen wichtig. Zudem können sich Marktstellung und Preisdurchsetzung ändern, wenn Kunden eigene Chips entwickeln oder Wettbewerber aufholen."
+            ]
+          },
+          {
+            "heading": "Welche Risiken sollte man beobachten?",
+            "paragraphs": [
+              "Ein wesentlicher Teil des Geschäfts hängt von großen Rechenzentrumsprojekten und den Investitionsentscheidungen einiger finanzkräftiger Kunden ab. Wenn deren Wachstumserwartungen nachlassen oder geplante Investitionen verschoben werden, kann das die Nachfrage nach neuen Systemen treffen.",
+              "Weitere Risiken entstehen aus Exportvorschriften, Lieferkapazitäten, hohen Erwartungen an neue Produktgenerationen und möglichem Wettbewerb. Eine seriöse Szenarioanalyse prüft deshalb mehrere Wachstums- und Margenpfade, statt die zuletzt beobachteten 106 Prozent Umsatzwachstum unbegrenzt fortzuschreiben."
+            ]
+          }
+        ],
+        "conclusion": "Die veröffentlichten Zahlen zeigen ein sehr starkes operatives Geschäft. Ob die Aktie attraktiv bewertet ist, bleibt eine getrennte Frage, die den Börsenpreis, realistische Wachstumsszenarien, Kosten und Risiken erfordert."
+      }
     }
   ],
   "learning_note": "01.11.: US-BIP 3,4 % annualisiert entspricht näherungsweise 0,84 % pro Quartal; Eurozone meldet +0,4 % Quartalswachstum. Bei Amazon operativen Gewinn und freien Cashflow über zwölf Monate strikt auseinanderhalten.",
