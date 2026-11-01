@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-31",
+  "updated_at": "2026-11-01",
   "analyses": [
     {
       "id": "microsoft",
@@ -465,6 +465,82 @@
           ],
           "correct": 1,
           "why": "42.290 − 51.355 = −9.065 Mio. USD. Ein negativer Quartals-FCF kann bei Ausbauinvestitionen auftreten; für die Bewertung zählen die künftigen Cashflows und Investitionsrenditen."
+        }
+      ]
+    },
+    {
+      "id": "aixtron",
+      "company": "AIXTRON SE",
+      "ticker": "AIXA",
+      "symbol": "XETR:AIXA",
+      "period": "Q3 und Januar–September 2026, veröffentlicht 29.10.2026",
+      "source": "AIXTRON Q3 2026 Unternehmensmeldung",
+      "source_url": "https://www.aixtron.com/en/press/press-releases/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801",
+      "summary": "KI-getriebene optische Datenkommunikation erhöht den Auftragseingang deutlich; ein nachlaufender Umsatz- und Cashflow-Effekt muss erst nachgewiesen werden. Kein geprüftes aktuelles Kursziel.",
+      "business": "Anlagen zur Abscheidung von Halbleitermaterialien für Optoelektronik und Leistungselektronik; Projektaufträge, Lieferzeiten, Kundenkonzentration und Fertigungszyklen beeinflussen Ergebnis und Cashflow.",
+      "figures": [
+        [
+          "Auftragseingang Q3 2025",
+          124,
+          "Mio. EUR"
+        ],
+        [
+          "Auftragseingang Q3 2026",
+          274.9,
+          "Mio. EUR"
+        ],
+        [
+          "Umsatz Q3 2026",
+          183.6,
+          "Mio. EUR"
+        ],
+        [
+          "Umsatz Januar–September 2025",
+          369.5,
+          "Mio. EUR"
+        ],
+        [
+          "Umsatz Januar–September 2026",
+          358.1,
+          "Mio. EUR"
+        ]
+      ],
+      "thesis": "Neue Bestellungen können 2027/28 den Umsatz stützen, falls sie zu wirtschaftlich attraktiven Margen in Zahlungsmittelzuflüsse übergehen; der gegenwärtige Marktpreis wurde hier nicht geprüft.",
+      "risks": [
+        "Auftragsstornierungen oder Verschiebungen im Halbleiterzyklus",
+        "Wenige Großkunden und technologischer Wandel",
+        "Hoher Vorrats- und Forderungsaufbau bei langsamer Auslieferung",
+        "Künftige Margen und Aktienbewertung ohne vollständiges Bilanz-/DCF-Audit unbestimmt"
+      ],
+      "methods": [
+        "Auftragseingangswachstum (274,9/124,0−1)≈121,7 % berechnen",
+        "Neunmonats-Umsatzänderung (358,1/369,5−1)≈−3,1 % bestimmen",
+        "Book-to-Bill Q3 (274,9/183,6)≈1,50 nur als Verhältnis zweier Quartalsgrößen einordnen",
+        "Auftragsbestand, Umsatzkonversion, Bruttomarge, Working Capital und FCF in Bear/Base/Bull modellieren",
+        "Kursziel erst nach vollständigem Nettofinanzschulden-, Aktienzahl-, WACC- und Bewertungsquellen-Audit erstellen"
+      ],
+      "questions": [
+        {
+          "q": "Der Q3-Auftragseingang stieg von 124,0 auf 274,9 Mio. EUR. Welche Veränderung ist korrekt?",
+          "choices": [
+            "+121,7 % Auftragseingang, nicht Umsatzwachstum",
+            "+50,0 % Umsatzwachstum",
+            "+121,7 % freie Cashflow-Marge",
+            "−3,1 % Auftragseingang"
+          ],
+          "correct": 0,
+          "why": "(274,9−124,0)/124,0≈121,7 %. Der Neunmonatsumsatz fiel von 369,5 auf 358,1 Mio. EUR; die beiden Größen sind unterschiedlich."
+        },
+        {
+          "q": "Welcher Schritt ist vor einem seriösen DCF-Kursziel unverzichtbar?",
+          "choices": [
+            "Aufträge sofort als Gewinn verbuchen",
+            "Kursziel direkt mit 122 % multiplizieren",
+            "Umsatzkonversion, Margen, FCF, Nettofinanzschulden, Aktienzahl und WACC belegen",
+            "Nur den letzten Chartanstieg betrachten"
+          ],
+          "correct": 2,
+          "why": "Ein DCF bewertet künftige Cashflows nach Kapitalkosten. Ohne verifizierte Kapitalstruktur und Cashflowannahmen wäre ein numerisches Kursziel Scheingenauigkeit."
         }
       ]
     }
