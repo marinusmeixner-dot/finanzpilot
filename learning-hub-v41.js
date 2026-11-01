@@ -25,11 +25,117 @@ const points=()=>Number(accounts[0]?.research_points)||0;
 const earnedXp=()=>Number(profiles[0]?.xp)||0;
 const promotionsEarned=()=>Number(profiles[0]?.promotion_count)||0;
 const titleOf=id=>bySkill(id)?.title||id;
-function tabs(active){
- return '<nav class="fp41-tabs" aria-label="Bereiche des Lernens">'+routes.map(([id,label])=>'<button type="button" class="fp41-tab'+(id===active?' active':'')+'" data-fp41-route="'+id+'" aria-current="'+(active===id?'page':'false')+'">'+escape(label)+'</button>').join('')+'</nav>';
-}
+const MAP_W=1800,MAP_H=1200,MAP_CX=885,MAP_NODE_W=300;
+const mapX=[75,515,955,1395],mapY=[295,605,915];
+let selectedMap='',mapZoom=.74,mapLeft=420,mapTop=0;
 function shell(active,content){
- return '<div class="fp41-root">'+tabs(active)+(notice?'<div class="fp41-notice" role="status">'+escape(notice)+'</div>':'')+content+'</div>';
+ return '<div class="fp42-learn-sub"><div class="fp42-learn-back"><button type="button" class="btn secondary" data-fp41-route="learn">← Lernen</button><span>'+escape(routes.find(x=>x[0]===active)?.[1]||'Lernen')+'</span></div>'+
+ (notice?'<div class="fp41-notice" role="status">'+escape(notice)+'</div>':'')+content+'</div>';
+}
+function home(){
+ const items=[
+  ['basics','Grundlagen','18 kurze Einstiegsmodule in sechs übersichtlichen Etappen. Lerne zuerst die wichtigsten Zusammenhänge.','book-open','01'],
+  ['skilltree','Skillbaum','Ein echter verzweigter Kompetenzbaum. Wähle deine Fachrichtung und arbeite dich zu großen Fähigkeiten vor.','network','02'],
+  ['skilllessons','Skill-Lektionen','Die vertiefenden Kurse zu deinen ausgewählten Skills – mit eigenen Aufgaben, XP und Freischaltungen.','graduation-cap','03'],
+  ['speciallessons','Speziallektionen','Besondere mehrteilige Firmenfälle und Herausforderungen, freischaltbar über Beförderungen und Artefakte.','gem','04']
+ ];
+ return '<section class="fp42-learn-home"><div class="fp42-learn-intro"><span class="eyebrow">DEINE FINANZAUSBILDUNG</span><h1>Lernen</h1><p>Starte mit dem kurzen Fundament und vertiefe anschließend die Themen, die dich interessieren. Jeder abgeschlossene Skill bringt dich fachlich und in deiner Karriere weiter.</p></div>'+
+ '<div class="fp42-learn-index">'+items.map(([id,title,description,icon,num])=>'<button type="button" class="fp42-learn-entry fp-tab-hub-item" data-fp41-route="'+id+'"><span class="fp-tab-hub-number">'+num+'</span><span class="fp-tab-hub-copy"><strong>'+title+'</strong><small>'+description+'</small></span><span class="fp-tab-hub-chevron" aria-hidden="true">›</span></button>').join('')+'</div></section>';
+}
+function basics(){
+ return shell('basics',window.FinanzPilotJourney?.renderHome?.()||'<div class="fp41-loading">Die Grundlagen werden geladen.</div>');
+}
+function mapNode(s){
+ const x=mapX[catalog.branches.findIndex(b=>b.id===s.branch)],y=mapY[s.tier-1];
+ const done=mastered(s.id),active=enrolled(s.id),ready=purchaseReady(s);
+ const cls=done?'done':active?'selected':ready?'ready':'locked';
+ return '<button type="button" class="fp42-map-node '+cls+(selectedMap===s.id?' focused':'')+'" style="left:'+x+'px;top:'+y+'px;width:'+MAP_NODE_W+'px" data-fp42-node="'+escape(s.id)+'" aria-label="'+escape(s.title)+', '+(done?'erlernt':active?'ausgewählt':ready?'freischaltbar':'Voraussetzung fehlt')+'">'+
+ '<span class="fp42-map-symbol">'+(done?'✓':s.tier)+'</span><strong>'+escape(s.title)+'</strong><small>'+escape(s.description)+'</small><em>'+(done?'✓ Erlernt':active?'Lernweg aktiv':ready?'Für 3 FP auswählbar':'Benötigt vorherigen Skill')+'</em></button>';
+}
+function skillDetail(){
+ if(!selectedMap)return '<div class="fp42-detail-empty"><h3>Wähle einen Skill</h3><p>Tippe auf einen Knoten in der Karte. Hier siehst du, was du lernst, welche Voraussetzungen fehlen und wie du zu den Lektionen kommst.</p></div>';
+ const s=bySkill(selectedMap);if(!s)return '';
+ const done=mastered(s.id),active=enrolled(s.id),ready=purchaseReady(s);
+ return '<div class="fp42-skill-detail"><span class="eyebrow">SKILL · '+escape(catalog.branches.find(b=>b.id===s.branch)?.title||'Finanzwissen')+'</span>'+
+ '<h3>'+escape(s.title)+'</h3><p>'+escape(s.description)+'</p>'+
+ (s.parent?'<div class="fp42-detail-condition"><b>Vorheriger Skill</b><span>'+escape(titleOf(s.parent))+(mastered(s.parent)?' ✓': ' · noch gesperrt')+'</span></div>':
+ '<div class="fp42-detail-condition"><b>Einstieg</b><span>Ohne vorherigen Spezialskill möglich</span></div>')+
+ '<div class="fp42-detail-condition"><b>Deine Lektionen</b><span>'+s.lessons.filter(l=>completed(l.id)).length+' / '+s.lessons.length+' abgeschlossen</span></div>'+
+ '<div class="fp42-detail-condition"><b>Freischaltung</b><span>'+(done?'Skill bereits erlernt':active?'Lernpfad aktiv':ready?'3 Forschungspunkte':'Vorherigen Skill abschließen')+'</span></div>'+
+ '<div class="fp42-detail-reward">Bei Abschluss: <b>Skill + '+s.rewardPoints+' Forschungspunkte</b>, dazu individuelle Lern-XP</div>'+
+ '<button type="button" class="btn" data-fp42-open="'+escape(s.id)+'">Zu den Skill-Lektionen →</button></div>';
+}
+function mapLines(){
+ const c=catalog,edges=[];
+ for(let i=0;i<c.branches.length;i++){
+  const nodes=c.skills.filter(x=>x.branch===c.branches[i].id).sort((a,b)=>a.tier-b.tier);
+  const x=mapX[i]+MAP_NODE_W/2;
+  edges.push('<path class="fp42-line" d="M'+MAP_CX+',160 C'+MAP_CX+',238 '+x+',180 '+x+','+mapY[0]+'" />');
+  for(let k=1;k<nodes.length;k++){
+   const startY=mapY[k-1]+115,toY=mapY[k];
+   edges.push('<path class="fp42-line'+(mastered(nodes[k-1].id)?' lit':'')+'" d="M'+x+','+startY+' C'+x+','+(startY+90)+' '+x+','+(toY-70)+' '+x+','+toY+'" />');
+  }
+ }
+ return edges.join('');
+}
+function tree(){
+ if(!catalog)return shell('skilltree','<div class="fp41-loading">Skill-Katalog wird geladen: '+escape(problem)+'</div>');
+ const count=catalog.skills.filter(s=>mastered(s.id)).length;
+ let body='<div class="fp41-intro"><span class="eyebrow">DEIN WEG ZUM ANALYSTEN</span><h1>Skillbaum</h1><p>Verzweige dich in vier Fachrichtungen. Jede führt über zusammenhängende Kompetenzen zu einem großen Skill. Tippe auf einen Knoten, um Voraussetzungen und die passenden Lektionen zu sehen. Die Karte lässt sich verschieben und zoomen.</p></div>'+profileLine();
+ if(!user())body+=guest();
+ body+='<div class="fp42-map-toolbar"><div class="fp42-map-legend"><span>● Erlernt</span><span>◉ Ausgewählt</span><span>◇ Freischaltbar</span><span>○ Gesperrt</span></div><div class="fp42-map-controls"><button type="button" data-fp42-zoom="-1" aria-label="Verkleinern">−</button><span data-fp42-scale>'+Math.round(mapZoom*100)+' %</span><button type="button" data-fp42-zoom="1" aria-label="Vergrößern">+</button><button type="button" data-fp42-fit>Übersicht</button></div></div>'+
+ '<div class="fp42-map-layout"><div class="fp42-map-col"><div id="fp42-map-viewport" class="fp42-map-viewport" tabindex="0" aria-label="Verschiebbarer und zoombarer Skillbaum">'+
+ '<div id="fp42-map-stage" class="fp42-map-stage" style="width:'+(MAP_W*mapZoom)+'px;height:'+(MAP_H*mapZoom)+'px"><div id="fp42-map-plane" class="fp42-map-plane" style="width:'+MAP_W+'px;height:'+MAP_H+'px;transform:scale('+mapZoom+')">'+
+ '<svg class="fp42-map-lines" viewBox="0 0 '+MAP_W+' '+MAP_H+'" aria-hidden="true">'+mapLines()+'</svg>'+
+ '<div class="fp42-tree-root"><div class="fp42-tree-root-icon">◎</div><strong>Dein Finanzwissen</strong><small>Vier verschiedene Spezialisierungen</small></div>'+
+ catalog.branches.map((b,i)=>'<div class="fp42-tree-branch-title" style="left:'+(mapX[i])+'px;top:228px;width:'+MAP_NODE_W+'px">'+escape(b.title)+'</div>').join('')+
+ catalog.skills.map(mapNode).join('')+
+ '</div></div></div><div class="fp42-map-caption">Mit einem Finger verschieben · mit den Tasten zoomen · Knoten antippen</div></div>'+
+ '<aside class="fp42-map-detail" id="fp42-skill-detail" aria-live="polite">'+skillDetail()+'</aside></div>'+
+ '<p class="fp41-hint">'+count+' von '+catalog.skills.length+' neuen Skills erlernt. Alle fünf abgeschlossenen Spezialisierungen ist eine Beförderung möglich.</p>';
+ return shell('skilltree',body);
+}
+function bindMap(root){
+ const vp=root.querySelector('#fp42-map-viewport'),stage=root.querySelector('#fp42-map-stage'),plane=root.querySelector('#fp42-map-plane');
+ if(!vp||!stage||!plane)return;
+ let z=Math.max(.4,Math.min(1.5,mapZoom));
+ function zoom(n,x=vp.clientWidth/2,y=vp.clientHeight/2){
+  const old=z;z=Math.max(.38,Math.min(1.6,n));
+  const cx=(vp.scrollLeft+x)/old,cy=(vp.scrollTop+y)/old;
+  stage.style.width=(MAP_W*z)+'px';stage.style.height=(MAP_H*z)+'px';plane.style.transform='scale('+z+')';
+  vp.scrollLeft=Math.max(0,cx*z-x);vp.scrollTop=Math.max(0,cy*z-y);
+  mapZoom=z;mapLeft=vp.scrollLeft;mapTop=vp.scrollTop;
+  const indicator=root.querySelector('[data-fp42-scale]');if(indicator)indicator.textContent=Math.round(z*100)+' %';
+ }
+ vp.scrollLeft=mapLeft;vp.scrollTop=mapTop;
+ root.querySelectorAll('[data-fp42-zoom]').forEach(btn=>btn.addEventListener('click',()=>zoom(z+(Number(btn.dataset.fp42Zoom)>0?.15:-.15))));
+ root.querySelector('[data-fp42-fit]')?.addEventListener('click',()=>{
+  zoom(Math.max(.38,Math.min(vp.clientWidth/MAP_W, vp.clientHeight/MAP_H)));
+  vp.scrollLeft=Math.max(0,(MAP_W*z-vp.clientWidth)/2);vp.scrollTop=0;mapLeft=vp.scrollLeft;mapTop=0;
+ });
+ vp.addEventListener('scroll',()=>{mapLeft=vp.scrollLeft;mapTop=vp.scrollTop},{passive:true});
+ let start=null;
+ vp.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||e.target.closest('button'))return;
+  start={x:e.clientX,y:e.clientY,left:vp.scrollLeft,top:vp.scrollTop};vp.classList.add('dragging');vp.setPointerCapture?.(e.pointerId);
+ });
+ vp.addEventListener('pointermove',e=>{if(!start)return;vp.scrollLeft=start.left-(e.clientX-start.x);vp.scrollTop=start.top-(e.clientY-start.y)});
+ const stop=()=>{start=null;vp.classList.remove('dragging')};
+ vp.addEventListener('pointerup',stop);vp.addEventListener('pointercancel',stop);
+ vp.addEventListener('wheel',e=>{if(!e.ctrlKey&&!e.metaKey)return;e.preventDefault();const r=vp.getBoundingClientRect();zoom(z*(e.deltaY>0?.90:1.1),e.clientX-r.left,e.clientY-r.top)},{passive:false});
+ let gesture=null;
+ const distance=t=>Math.hypot(t[0].clientX-t[1].clientX,t[0].clientY-t[1].clientY);
+ vp.addEventListener('touchstart',e=>{if(e.touches.length===2)gesture={z,d:distance(e.touches)}},{passive:true});
+ vp.addEventListener('touchmove',e=>{if(!gesture||e.touches.length!==2)return;e.preventDefault();zoom(gesture.z*distance(e.touches)/gesture.d)},{passive:false});
+ vp.addEventListener('touchend',e=>{if(e.touches.length<2)gesture=null},{passive:true});
+ root.querySelectorAll('[data-fp42-node]').forEach(btn=>btn.addEventListener('click',()=>{
+  selectedMap=btn.dataset.fp42Node;
+  root.querySelectorAll('[data-fp42-node]').forEach(n=>n.classList.toggle('focused',n.dataset.fp42Node===selectedMap));
+  const detail=root.querySelector('#fp42-skill-detail');if(detail)detail.innerHTML=skillDetail();
+  if(window.innerWidth<800)detail?.scrollIntoView?.({behavior:'smooth',block:'nearest'});
+ }));
+ root.querySelector('#fp42-skill-detail')?.addEventListener('click',e=>{
+  const btn=e.target.closest('[data-fp42-open]');if(btn)pick(btn.dataset.fp42Open);
+ });
 }
 function profileLine(){
  return '<div class="fp41-microprogress"><span><b>'+catalog.skills.filter(s=>mastered(s.id)).length+'</b> von '+catalog.skills.length+' Spezialisierungen</span>'+
@@ -38,26 +144,6 @@ function profileLine(){
 }
 function guest(){
  return '<div class="fp41-guest"><h2>Skillfortschritt kostenlos speichern</h2><p>Die Skillkarte ist sichtbar. Für Forschungspunkte, Lektionenkäufe und prüfbare Abschlüsse benötigst du ein kostenloses Konto. Bereits erworbene alte Lernstände werden dadurch nicht gelöscht.</p><button class="btn" type="button" data-fp41-login>Zum Konto</button></div>';
-}
-function home(){
- return shell('learn',(window.FinanzPilotJourney?.renderHome?.()||'<div class="fp41-loading">Grundlagen werden geladen</div>'));
-}
-function tree(){
- if(!catalog)return shell('skilltree','<div class="fp41-loading">Skill-Katalog wird geladen: '+escape(problem)+'</div>');
- const count=catalog.skills.filter(s=>mastered(s.id)).length;
- let body='<div class="fp41-intro"><span class="eyebrow">LERNE, WAS DICH WIRKLICH INTERESSIERT</span><h1>Dein Skillbaum</h1><p>Jede Fachrichtung baut vom ersten Überblick bis zu einer anspruchsvollen Fähigkeit auf. Wähle einen Skill mit Forschungspunkten aus, schalte seine Lektionen einzeln frei und bestehe alle Aufgaben. Erst dann ist der Skill erlernt.</p></div>'+profileLine()+
- '<p class="fp41-hint">Erlernte Skills: '+count+'. Nach fünf neuen Spezialisierungen ist eine Beförderung mit einer größeren Belohnung vorgesehen. Der bisherige Karrierefortschritt bleibt separat erhalten.</p>';
- if(!user())body+=guest();
- body+='<div class="fp41-branches">'+catalog.branches.map(branch=>{
- const list=catalog.skills.filter(x=>x.branch===branch.id);
- return '<section class="fp41-branch"><div class="fp41-branch-heading"><h2>'+escape(branch.title)+'</h2><p>'+escape(branch.description)+'</p></div>'+
- '<div class="fp41-branch-steps">'+list.map(s=>{
- const done=mastered(s.id),active=enrolled(s.id),ready=purchaseReady(s),missing=s.parent&&!mastered(s.parent)?titleOf(s.parent):null;
- const status=done?'✓ Erlernt':active?'Lernpfad freigeschaltet':ready?'Für 3 FP auswählbar':'Benötigt '+escape(missing);
- return '<button type="button" class="fp41-skill-node'+(done?' done':active?' selected':ready?' ready':' locked')+'" data-fp41-skill="'+escape(s.id)+'"><span class="fp41-skill-tier">'+s.tier+'</span><span class="fp41-skill-body"><strong>'+escape(s.title)+'</strong><small>'+escape(s.description)+'</small><em>'+status+'</em></span><span aria-hidden="true">›</span></button>';
- }).join('')+'</div><p class="fp41-capstone">Großes Kompetenzziel: '+escape(titleOf(branch.capstone))+'</p></section>';
- }).join('')+'</div>';
- return shell('skilltree',body);
 }
 function skillIndex(){
  if(!catalog)return shell('skilllessons','<div class="fp41-loading">Skill-Lektionen werden geladen.</div>');
@@ -154,6 +240,7 @@ async function action(kind,skill,lesson,payment,answer){
  finally{busy=false;redraw()}
 }
 function bind(root=document){
+ bindMap(root);
  root.querySelectorAll('[data-fp41-route]').forEach(b=>b.addEventListener('click',()=>{
   selectedLesson='';selectedSpecial='';nav()?.route(b.dataset.fp41Route);if(b.dataset.fp41Route!=='learn')load();
  }));
@@ -169,6 +256,6 @@ function bind(root=document){
 }
 window.addEventListener('fp-auth-change',()=>{loadedFor=null;load(true)});
 window.addEventListener('fp-streak-reward',()=>{loadedFor=null;load(true)});
-window.FinanzPilotLearningHub={home,tree,skillIndex,specials,bind,load,pick,get catalog(){return catalog},get status(){return {enrollments,lessons,profiles,promotions,points:points(),problem,notice,busy}}};
+window.FinanzPilotLearningHub={home,basics,tree,skillIndex,specials,bind,load,pick,get catalog(){return catalog},get status(){return {enrollments,lessons,profiles,promotions,points:points(),problem,notice,busy}}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
 })();
