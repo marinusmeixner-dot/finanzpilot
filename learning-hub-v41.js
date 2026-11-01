@@ -25,8 +25,8 @@ const points=()=>Number(accounts[0]?.research_points)||0;
 const earnedXp=()=>Number(profiles[0]?.xp)||0;
 const promotionsEarned=()=>Number(profiles[0]?.promotion_count)||0;
 const titleOf=id=>bySkill(id)?.title||id;
-const MAP_W=1800,MAP_H=1200,MAP_CX=885,MAP_NODE_W=300;
-const mapX=[75,515,955,1395],mapY=[295,605,915];
+const MAP_W=1800,MAP_H=1800,MAP_CX=885,MAP_NODE_W=300;
+const mapX=[75,515,955,1395],mapY=[295,605,915,1225,1535];
 let selectedMap='',mapZoom=.74,mapLeft=420,mapTop=0;
 function shell(active,content){
  return '<div class="fp42-learn-sub">'+
@@ -72,7 +72,7 @@ function mapLines(){
   const x=mapX[i]+MAP_NODE_W/2;
   edges.push('<path class="fp42-line" d="M'+MAP_CX+',160 C'+MAP_CX+',238 '+x+',180 '+x+','+mapY[0]+'" />');
   for(let k=1;k<nodes.length;k++){
-   const startY=mapY[k-1]+115,toY=mapY[k];
+   const startY=mapY[k-1]+145,toY=mapY[k];
    edges.push('<path class="fp42-line'+(mastered(nodes[k-1].id)?' lit':'')+'" d="M'+x+','+startY+' C'+x+','+(startY+90)+' '+x+','+(toY-70)+' '+x+','+toY+'" />');
   }
  }
