@@ -10,7 +10,7 @@ assert.equal(JSON.parse(read('version.json')).version,43);
 assert.equal(data.branches.length,4);
 assert.equal(data.skills.length,20);
 assert.equal(data.special.length,3);
-assert.equal(data.skills.reduce((n,s)=>n+s.lessons.length,0),36);
+assert.equal(data.skills.reduce((n,s)=>n+s.lessons.length,0),60);
 const names=new Set(data.skills.map(x=>x.id));
 assert.equal(names.size,20);
 for(const s of data.skills){
@@ -80,4 +80,4 @@ assert(lessons.includes('kostenlos speichern'));
 const specials=api.specials();
 assert(specials.includes('Kreditkrise im Stresstest'));
 assert(specials.includes('Noch gesperrt'));
-console.log('v42: 4 listed learning sections and branching skill map, 4 coherent skill paths / 36 specialist lessons, prerequisite economy, verified XP and five-skill promotions, exclusive special cases and legacy career preservation verified.');
+console.log('v43: 4 listed learning sections and branching skill map, 4 coherent skill paths / 60 specialist lessons, prerequisite economy and three-skill promotion shards, exclusive special cases and legacy career preservation verified.');
