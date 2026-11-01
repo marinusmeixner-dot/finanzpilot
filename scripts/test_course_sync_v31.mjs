@@ -40,7 +40,7 @@ assert(window.FinanzPilotConcepts.grade(follow.steps[1],'-70').correct);
 assert(!window.FinanzPilotConcepts.grade(follow.steps[1],'70').correct);
 assert(api.render().includes('GuV vertiefen'));
 assert(read('concepts.js').includes('fp-training-negative'));
-assert(read('economy.js').includes('paperCash=wallet?.balance??50000'));
+assert(read('economy.js').includes('paperCash=wallet?.balance??1000'));
 assert(read('market-watch.js').includes('relatedEditorial(selected)'));
 // Regression: an incorrect answer must show its explanation and must never trap the learner.
 api.data.active={id:'guv',mode:'course'};
