@@ -148,7 +148,12 @@ function skillIndex(){
  let body='<div class="fp41-intro"><span class="eyebrow">FACHLICHE SPEZIALISIERUNGEN</span><h1>Deine Skill-Lektionen</h1><p>Jeder ausgewählte Skill besteht aus mehreren inhaltlich zusammenhängenden Lernaufgaben. Du kannst eine Erklärung jederzeit erneut lesen; die XP und Forschungspunkte werden nur nach bestandenem, serverseitig bestätigtem Abschluss vergeben.</p></div>'+profileLine();
  if(!user())body+=guest();
  if(!current){
-  body+='<h2 class="fp41-small-heading">Wähle zuerst einen Skill aus</h2><div class="fp41-pick">'+catalog.skills.map(s=>'<button class="fp41-pick-item" type="button" data-fp41-skill="'+escape(s.id)+'"><strong>'+escape(s.title)+'</strong><small>'+(mastered(s.id)?'✓ Erlernt':enrolled(s.id)?'Lernpfad ausgewählt':purchaseReady(s)?'Für 3 FP auswählbar':'Gesperrt · benötigt '+titleOf(s.parent))+'</small></button>').join('')+'</div><button class="btn secondary" data-fp41-route="skilltree">Zum Skillbaum →</button>';
+  body+='<h2 class="fp41-small-heading">Alle Skill-Lektionen nach Fachgebiet</h2><p class="fp41-hint">Du erreichst jede Speziallektion auch ohne Umweg über den Skillbaum. Gesperrte Skills kannst du bereits ansehen; die Freischaltung erfordert den gemeisterten Vorgänger.</p>';
+  body+='<div class="fp44-skill-overview">'+catalog.branches.map(branch=>
+    '<section class="fp44-skill-group"><h3>'+escape(branch.title)+'</h3><div class="fp44-skill-options">'+catalog.skills.filter(s=>s.branch===branch.id).map(s=>
+      '<button class="fp44-skill-option" type="button" data-fp41-skill="'+escape(s.id)+'"><span><b>'+escape(s.title)+'</b><small>'+s.lessons.filter(l=>completed(l.id)).length+' / '+s.lessons.length+' Lektionen · '+(mastered(s.id)?'✓ Erlernt':enrolled(s.id)?'Ausgewählt':purchaseReady(s)?'Freischaltbar':'Vorgänger fehlt')+'</small></span><span>›</span></button>'
+    ).join('')+'</div></section>'
+  ).join('')+'</div>';
   return shell('skilllessons',body);
  }
  if(selectedLesson)return shell('skilllessons',body+renderLesson(current,selectedLesson));
