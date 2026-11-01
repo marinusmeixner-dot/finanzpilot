@@ -28,7 +28,8 @@ function redraw(){if(typeof window.render==='function')window.render()}
 function go(to){window.FinanzPilotNavigation?.route(to)}
 function start(){
  const next=firstIncomplete();if(!next)return;
- go('journey-'+stageNum(next.id)); // exactly one stage is the next destination
+ go('journey-'+stageNum(next.id));
+ open(next.id); // open the next lesson immediately, leaving its stage in the Back history
 }
 function open(id){
  if(!course(id))return;
@@ -140,8 +141,9 @@ async function load(force=false){
   if(received.schema_version!==1||received.stages?.length!==6||received.stages.some(s=>s.modules?.length!==6))throw Error('Ungültiger Lehrplan');
   data=received;error='';
  }catch(e){error='Lerninhalte sind derzeit nicht erreichbar. Bitte erneut laden.';console.warn('FinanzPilot Journey:',e)}
- finally{loading=false;if(['learn','journeycourse',...Array.from({length:6},(_,i)=>'journey-'+(i+1))].includes(window.state?.view))redraw()}
+ finally{loading=false;redraw()}
 }
+window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};redraw()}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
 window.FinanzPilotJourney={renderHome:brief,renderFor,bind,load,open,start,complete,stageOf,firstIncomplete,get modules(){return all()},get completed(){return state.completed},get state(){return state}};
 })();
