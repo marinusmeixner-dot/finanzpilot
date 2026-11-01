@@ -45,7 +45,7 @@ assert(!career.includes('data-view="skills"'),'Skillbaum must be removed from pr
 assert(app.includes("FinanzPilotLearningHub.tree()"));
 assert(app.includes("FinanzPilotLearningHub.skillIndex()"));
 assert(app.includes("FinanzPilotLearningHub.specials()"));
-assert(html.includes("learning-hub-v41.js?v=41")&&html.includes("learning-hub-v41.css?v=41"));
+assert(html.includes("learning-hub-v41.js?v=42")&&html.includes("learning-hub-v41.css?v=42"));
 assert(read('docs/CONNECTED_LEARNING_ARTIFACTS_V41.md').includes('maximal **vier aktive'));
 
 const routes=[];
