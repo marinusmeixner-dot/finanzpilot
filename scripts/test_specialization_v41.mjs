@@ -6,13 +6,13 @@ const data=JSON.parse(read('data/specializations-v41.json'));
 const sql=read('supabase/specialization_progress_v41.sql');
 const streak=read('supabase/streak_promotion_upgrade_v41.sql');
 const app=read('app.js'),nav=read('ux-v15.js'),career=read('career.js'),html=read('index.html');
-assert.equal(JSON.parse(read('version.json')).version,43);
+assert.equal(JSON.parse(read('version.json')).version,44);
 assert.equal(data.branches.length,4);
-assert.equal(data.skills.length,20);
+assert.equal(data.skills.length,28);
 assert.equal(data.special.length,3);
 assert.equal(data.skills.reduce((n,s)=>n+s.lessons.length,0),60);
 const names=new Set(data.skills.map(x=>x.id));
-assert.equal(names.size,20);
+assert.equal(names.size,28);
 for(const s of data.skills){
  assert(s.description.length>90&&s.cost===3);
  assert(s.lessons.length===3);
@@ -46,7 +46,7 @@ assert(!career.includes('data-view="skills"'),'Skillbaum must be removed from pr
 assert(app.includes("FinanzPilotLearningHub.tree()"));
 assert(app.includes("FinanzPilotLearningHub.skillIndex()"));
 assert(app.includes("FinanzPilotLearningHub.specials()"));
-assert(html.includes("learning-hub-v41.js?v=43")&&html.includes("learning-hub-v41.css?v=43"));
+assert(html.includes("learning-hub-v41.js?v=44")&&html.includes("learning-hub-v41.css?v=44"));
 assert(read('docs/CONNECTED_LEARNING_ARTIFACTS_V41.md').includes('maximal **vier aktive'));
 
 const routes=[];
