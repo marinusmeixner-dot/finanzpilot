@@ -8,8 +8,9 @@ const STORAGE='finanzpilot_journey_v1';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=()=>{try{const x=JSON.parse(localStorage.getItem(STORAGE)||'{}');return x&&typeof x==='object'?x:{}}catch{return{}}};
 let data=null,loading=false,error='',state={completed:{},lessons:{},...read()},selectedId=String(read().selected||'');
-const stageOf=number=>data?.stages?.[Number(number)-1]||null;
-const all=()=>data?.stages?.flatMap(s=>s.modules)||[];
+const FOUNDATION=[[0,3,4],[0,1,4],[0,3,4],[0,1,3],[0,1,4],[0,2,4]];
+const stageOf=number=>{const n=Number(number)-1,s=data?.stages?.[n];return s?{...s,modules:s.modules.filter((m,i)=>FOUNDATION[n].includes(i))}:null};
+const all=()=>data?.stages?.flatMap((s,i)=>stageOf(i+1)?.modules||[])||[];
 const course=id=>all().find(m=>m.id===id);
 const isDone=id=>Boolean(state.completed?.[id]);
 const canOpen=id=>{const ix=all().findIndex(m=>m.id===id);return ix>=0&&(ix===0||isDone(all()[ix-1].id))};
@@ -43,15 +44,13 @@ function brief(){
  if(!data)return '<div class="fp39-loading">Der neue Lehrplan wird geladen. '+esc(error)+'</div>';
  const total=all().length,done=completedCount(),next=firstIncomplete(),now=stageNum(next?.id);
  return '<div class="fp39-home"><div class="fp39-intro"><div class="eyebrow">DEIN LERNWEG</div><h1>Finanzen Schritt für Schritt lernen.</h1>'+
- '<p>Wir beginnen bei null. Jede Etappe bereitet die nächste vor. Wähle die erste offene Lektion und arbeite dich von dort weiter.</p>'+
+ '<p>Ein kompakter Einstieg: sechs Etappen mit je drei wichtigen Grundlagen. Für ausführliche Vertiefungen wählst du anschließend passende Skills im Skillbaum.</p>'+
  '<div class="fp39-start"><div class="fp39-mini-track"><span style="width:'+(done/total*100).toFixed(1)+'%"></span></div><small>'+done+' von '+total+' Lektionen abgeschlossen</small>'+
  '<button type="button" class="btn" data-journey-start>'+(done===0?'Mit Lektion 1 anfangen':done===total?'Lernweg wiederholen':'Weiterlernen: '+esc(next.title))+' →</button></div></div>'+
- '<section aria-label="Sechs Lernstufen" class="fp39-stage-grid">'+data.stages.map((s,i)=>{
+ '<section aria-label="Sechs Lernstufen" class="fp39-stage-grid">'+data.stages.map((raw,i)=>{const s=stageOf(i+1);
  const completed=s.modules.filter(m=>isDone(m.id)).length,here=i+1===now,locked=i>0&&!finishedStage(i);
  return '<button type="button" class="fp39-stage'+(here?' current':'')+(locked?' locked':'')+'" data-journey-stage="'+(i+1)+'" aria-label="Stufe '+(i+1)+': '+esc(s.title)+', '+completed+' von '+s.modules.length+' Lektionen abgeschlossen"><span class="fp39-stage-num">'+String(i+1).padStart(2,'0')+'</span><span class="fp39-stage-body"><strong>'+esc(s.title)+'</strong><span>'+esc(s.purpose)+'</span><small>'+completed+' / '+s.modules.length+' Lektionen'+(here?' · Als Nächstes':locked?' · Noch gesperrt':'')+'</small></span><span class="fp39-stage-chevron" aria-hidden="true">›</span></button>'
- }).join('')+'</section><details class="fp39-optional"><summary>Weitere Inhalte und Werkzeuge</summary><p>Diese Angebote ergänzen den Lernweg, sind aber nicht für den Einstieg nötig.</p><div class="fp39-extras">'+[
- ['concepts','Kennzahlen-Akademie'],['transfer','Transferwerkstatt'],['training','Praxislabor'],['learningnews','Nachrichten analysieren'],['skilltree','Skillbaum & Spezialisierungen'],['glossary','Begriffe nachschlagen'],['stockhub','Aktienresearch & Werkzeuge']
- ].map(([id,name])=>'<button type="button" class="btn secondary" data-section-route="'+id+'">'+name+'</button>').join('')+'</div></details></div>';
+ }).join('')+'</section></div>';
 }
 function stage(n){
  const s=stageOf(n);if(!s)return '<div class="fp39-loading">Unbekannte Stufe</div>';
@@ -63,7 +62,6 @@ function stage(n){
  '<div class="fp39-module-list">'+s.modules.map((m,i)=>{const done=isDone(m.id),locked=!canOpen(m.id),progress=locked?{page:0}:localSession(m.id),page=Math.min(5,Number(progress.page)||0);
  return '<button type="button" data-journey-open="'+esc(m.id)+'" class="fp39-module'+(done?' done':locked?' locked':'')+'" '+(locked?'disabled aria-disabled="true"':'')+'><span class="fp39-module-num">'+(done?'✓':locked?'🔒':String(i+1).padStart(2,'0'))+'</span><span><b>'+esc(m.title)+'</b><small>'+esc(m.goal)+'</small><em>'+(done?'Abgeschlossen':locked?'Erst die vorherige Lektion abschließen':page>0?'Begonnen · weiterlesen':'Jetzt beginnen')+'</em></span><span aria-hidden="true">›</span></button>'
  }).join('')+'</div>'+
- (s.related?.length?'<details class="fp39-optional"><summary>Passende weiterführende Kurse (optional)</summary><p>Die Spezialkurse ergänzen diese Etappe. Sie ersetzen nicht die sechs aufeinanderfolgenden Lektionen.</p><div class="fp39-extras">'+s.related.map(r=>'<button class="btn secondary" type="button" data-section-route="'+esc(r.view)+'">'+esc(r.label)+'</button>').join('')+'</div></details>':'')+
  '<div class="fp39-bottom-actions"><button class="btn secondary" data-section-route="learn">Alle sechs Etappen</button>'+
  (count===s.modules.length&&n<6?'<button class="btn" data-section-route="journey-'+(n+1)+'">Weiter zu Etappe '+(n+1)+' →</button>':'')+'</div></div>';
 }
