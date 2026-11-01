@@ -3796,6 +3796,391 @@
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
+    },
+    {
+      "id": "working-capital-diagnose",
+      "title": "Working Capital & Liquidität",
+      "branch": "reporting",
+      "parent": "bilanz-pruefer",
+      "prerequisites": [
+        "risiko-basis"
+      ],
+      "tier": 4,
+      "cost": 3,
+      "rewardPoints": 12,
+      "description": "Du erkennst, wie Forderungen, Vorräte und Lieferantenverbindlichkeiten operative Liquidität binden oder freisetzen. Du prüfst dabei saisonale und buchhalterische Effekte.",
+      "lessons": [
+        {
+          "id": "working-capital-diagnose-1",
+          "title": "Net Working Capital berechnen",
+          "goal": "Net Working Capital berechnen",
+          "explanation": "Das operative Working Capital umfasst vereinfacht kurzfristige Kundenforderungen plus Vorräte minus kurzfristige Lieferantenverbindlichkeiten. Es bindet Geld, wenn ein Unternehmen Kundenzahlungen vorfinanziert oder Lager aufbaut. Der Anstieg ist nicht automatisch ein Verlust, belastet aber häufig den operativen Cashflow.",
+          "example": "Ein Händler hat 30 Mio. € Forderungen, 40 Mio. € Lagerbestand und 25 Mio. € Lieferantenverbindlichkeiten: 30 + 40 − 25 = 45 Mio. € Working Capital. Steigt das Lager um 20 Mio. € ohne andere Veränderungen, steigen die gebundenen Mittel auf 65 Mio. €.",
+          "question": "Wie hoch ist das vereinfachte Working Capital bei Forderungen von 10, Lager von 15 und Verbindlichkeiten von 8 Mio. €?",
+          "options": [
+            "33 Mio. €",
+            "17 Mio. €",
+            "7 Mio. €"
+          ],
+          "correct": 1,
+          "sequence": 1,
+          "xp": 28,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Berichtszeitraum, konzernweite Abgrenzung und maßgebliche Definition notieren.",
+            "Die verwendete Bilanz- oder Cashflowposition rechnerisch nachvollziehen.",
+            "Veränderungen mit einer möglichen alternativen Ursache vergleichen."
+          ],
+          "keyTakeaway": "Net Working Capital berechnen",
+          "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Net Working Capital berechnen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "working-capital-diagnose-2",
+          "title": "Forderungslaufzeit untersuchen",
+          "goal": "Forderungslaufzeit untersuchen",
+          "explanation": "Die Days Sales Outstanding (DSO) beschreiben näherungsweise, wie viele Tage Umsatz in offenen Kundenforderungen gebunden sind. Eine einfache periodische Schätzung verwendet durchschnittliche Forderungen geteilt durch den Umsatz der gleichen Periode, multipliziert mit deren Tagen. Saisonale Spitzen und die Umsatzsteuerbehandlung können den Vergleich verfälschen.",
+          "example": "Im 90-Tage-Quartal stehen durchschnittlich 18 Mio. € Forderungen einem Periodenumsatz von 90 Mio. € gegenüber. Näherung: 18 / 90 × 90 = 18 Tage. Steigende DSO können auf langsamere Zahlungen hinweisen.",
+          "question": "Eine Firma hat 12 Mio. € durchschnittliche Forderungen und 60 Mio. € Quartalsumsatz in 90 Tagen. Wie viele Tage sind es ungefähr?",
+          "options": [
+            "18 Tage",
+            "5 Tage",
+            "45 Tage"
+          ],
+          "correct": 0,
+          "sequence": 2,
+          "xp": 36,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Berichtszeitraum, konzernweite Abgrenzung und maßgebliche Definition notieren.",
+            "Die verwendete Bilanz- oder Cashflowposition rechnerisch nachvollziehen.",
+            "Veränderungen mit einer möglichen alternativen Ursache vergleichen."
+          ],
+          "keyTakeaway": "Forderungslaufzeit untersuchen",
+          "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Forderungslaufzeit untersuchen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "working-capital-diagnose-3",
+          "title": "Cash Conversion Cycle",
+          "goal": "Cash Conversion Cycle",
+          "explanation": "Der Cash Conversion Cycle beschreibt die Zeit zwischen Bezahlung der Vorleistungen und Einzug von Kundenzahlungen. In einer gebräuchlichen Näherung: Lagerreichweite plus Forderungslaufzeit minus Lieferanten-Zahlungsziel. Negative Werte können günstige Zahlungsbedingungen bedeuten, sind aber nicht immer nachhaltig.",
+          "example": "Ein Unternehmen hält Waren 35 Tage im Lager, bekommt Kundengeld nach 40 Tagen und zahlt Lieferanten nach 30 Tagen. Der vereinfachte Zyklus beträgt 35 + 40 − 30 = 45 Tage.",
+          "question": "Was ergibt die Näherung bei 20 Tagen Lager, 15 Tagen Forderungen und 25 Tagen Lieferantenkredit?",
+          "options": [
+            "60 Tage",
+            "10 Tage",
+            "-10 Tage"
+          ],
+          "correct": 1,
+          "sequence": 3,
+          "xp": 48,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Berichtszeitraum, konzernweite Abgrenzung und maßgebliche Definition notieren.",
+            "Die verwendete Bilanz- oder Cashflowposition rechnerisch nachvollziehen.",
+            "Veränderungen mit einer möglichen alternativen Ursache vergleichen."
+          ],
+          "keyTakeaway": "Cash Conversion Cycle",
+          "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Cash Conversion Cycle“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        }
+      ]
+    },
+    {
+      "id": "realrendite-kaufkraft",
+      "title": "Rendite nach Inflation & Kosten",
+      "branch": "etfs",
+      "parent": "etf-depotbau",
+      "prerequisites": [
+        "inflation-zinsen"
+      ],
+      "tier": 4,
+      "cost": 3,
+      "rewardPoints": 12,
+      "description": "Du berechnest Kaufkraftentwicklung und erkennst, wie Inflation, Gebühren, Wiederanlage und lange Zeiträume die tatsächliche Anlagewirkung beeinflussen.",
+      "lessons": [
+        {
+          "id": "realrendite-kaufkraft-1",
+          "title": "Nominale und reale Rendite",
+          "goal": "Nominale und reale Rendite",
+          "explanation": "Nominale Rendite misst die Geldwertänderung, reale Rendite berücksichtigt Preissteigerungen. Die exakte Näherung für eine Periode ist (1 + nominale Rendite) / (1 + Inflation) − 1. Einfaches Abziehen ist bei kleinen Prozentsätzen oft nahe dran, aber nicht exakt.",
+          "example": "Ein Depot steigt um 7 %, die Preise steigen um 3 %. Die reale Rendite beträgt 1,07 / 1,03 − 1 ≈ 3,88 %. Die nominelle Kaufkraftsteigerung von 7 % ist daher nicht die reale.",
+          "question": "Welche Aussage trifft bei 0 % nominaler Rendite und 5 % Inflation zu?",
+          "options": [
+            "Die reale Rendite bleibt null",
+            "Die Kaufkraft steigt um 5 %",
+            "Die reale Rendite ist negativ"
+          ],
+          "correct": 2,
+          "sequence": 1,
+          "xp": 28,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Klären, ob Wertänderungen nominal, real oder nach Gebühren beschrieben werden.",
+            "Bei der Rechnung die Bezugsgröße und den vollständigen Zeitraum verwenden.",
+            "Kosten, Steuern und unsichere künftige Entwicklungen getrennt behandeln."
+          ],
+          "keyTakeaway": "Nominale und reale Rendite",
+          "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Nominale und reale Rendite“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "realrendite-kaufkraft-2",
+          "title": "Kosten und Wiederanlage",
+          "goal": "Kosten und Wiederanlage",
+          "explanation": "Laufende Fondskosten, Handelskosten und Steuerwirkungen können die verfügbare Gesamtrendite verändern. Gebühren werden nicht in jedem Fonds einzeln vom Depot abgebucht; sie können bereits im Anteilspreis enthalten sein. Beim Vergleich nicht doppelt abziehen. Wiederanlage von Erträgen kann langfristig den Zinseszinseffekt unterstützen.",
+          "example": "Zwei identische Portfolios erwirtschaften vor Kosten 6 % jährlich. Ein Produkt kostet 0,2 %, das andere 1,2 % laufend, jeweils modellhaft vollständig renditemindernd. Nach Kosten bleiben vereinfacht 5,8 % beziehungsweise 4,8 % vor Steuern.",
+          "question": "Was ist die korrekte Bewertung von Kosten?",
+          "options": [
+            "Bereits im Fondspreis berücksichtigte Kosten nicht noch einmal abziehen",
+            "Fondskosten spielen bei langen Zeiträumen keine Rolle",
+            "Jede Ausschüttung ist ein zusätzlicher Gewinn"
+          ],
+          "correct": 0,
+          "sequence": 2,
+          "xp": 36,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Klären, ob Wertänderungen nominal, real oder nach Gebühren beschrieben werden.",
+            "Bei der Rechnung die Bezugsgröße und den vollständigen Zeitraum verwenden.",
+            "Kosten, Steuern und unsichere künftige Entwicklungen getrennt behandeln."
+          ],
+          "keyTakeaway": "Kosten und Wiederanlage",
+          "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kosten und Wiederanlage“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "realrendite-kaufkraft-3",
+          "title": "Kaufkraftziel mit Szenarien",
+          "goal": "Kaufkraftziel mit Szenarien",
+          "explanation": "Langfristiges Investieren benötigt eine Annahme über die jährliche Inflation und die Schwankungen der Anlage. Ein in Euro angegebenes Ziel und ein Ziel in heutiger Kaufkraft sind nicht dasselbe. Die Inflation ist eine unsichere Prognose, kein garantierter Parameter.",
+          "example": "Wenn 1.000 € fünf Jahre lang im Durchschnitt um 2 % teurer werden, kostet derselbe Warenkorb nach fünf Jahren näherungsweise 1.000 × 1,02^5 ≈ 1.104 €. Ein nominales Depotziel von 1.000 € verliert Kaufkraft.",
+          "question": "Welches Ziel erhält bei positiver Inflation die heutige Kaufkraft eines Warenkorbs?",
+          "options": [
+            "Ein konstanter nominaler Betrag",
+            "Ein Betrag, der die Preisentwicklung berücksichtigt",
+            "Ein Fonds mit sicherem Jahresgewinn"
+          ],
+          "correct": 1,
+          "sequence": 3,
+          "xp": 48,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Klären, ob Wertänderungen nominal, real oder nach Gebühren beschrieben werden.",
+            "Bei der Rechnung die Bezugsgröße und den vollständigen Zeitraum verwenden.",
+            "Kosten, Steuern und unsichere künftige Entwicklungen getrennt behandeln."
+          ],
+          "keyTakeaway": "Kaufkraftziel mit Szenarien",
+          "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kaufkraftziel mit Szenarien“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        }
+      ]
+    },
+    {
+      "id": "backtests-kritisch",
+      "title": "Backtests & Strategieprüfung",
+      "branch": "trading",
+      "parent": "orderkosten-slippage",
+      "prerequisites": [
+        "entscheidungsjournal"
+      ],
+      "tier": 3,
+      "cost": 3,
+      "rewardPoints": 13,
+      "description": "Du erkennst Zukunftswissen, Auswahlverzerrungen, Kosten und Überanpassung in historischen Handelstests und lernst, was ein belastbarer Strategietest leisten kann.",
+      "lessons": [
+        {
+          "id": "backtests-kritisch-1",
+          "title": "Look-ahead-Bias vermeiden",
+          "goal": "Look-ahead-Bias vermeiden",
+          "explanation": "Ein historischer Test darf Entscheidungen nur mit Informationen simulieren, die zu dem jeweiligen Zeitpunkt tatsächlich vorlagen. Später veröffentlichte Bilanzdaten, überarbeitete Indexzusammensetzungen oder endgültige Schlusskurse dürfen nicht rückwirkend als damals bekannte Signale verwendet werden.",
+          "example": "Ein Backtest wählt am 1. Januar Aktien anhand ihres am 20. Februar veröffentlichten Jahresgewinns. Dieser Gewinn konnte am 1. Januar noch nicht bekannt sein; der Test erhält einen unzulässigen Wissensvorsprung.",
+          "question": "Was macht einen Backtest unfair?",
+          "options": [
+            "Alle damaligen Handelskosten berücksichtigen",
+            "Später bekannte Quartalszahlen in frühere Kaufentscheidungen einbauen",
+            "Nur tatsächliche historische Handelstage verwenden"
+          ],
+          "correct": 1,
+          "sequence": 1,
+          "xp": 28,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Zeitpunkt und damals bekannte Informationen des Signals festhalten.",
+            "Tatsächlich handelbare Preise und vollständige Kosten berücksichtigen.",
+            "Das Ergebnis an bislang ungesehenen Zeiträumen und Gegenbeispielen überprüfen."
+          ],
+          "keyTakeaway": "Look-ahead-Bias vermeiden",
+          "pitfall": "Gute historische Ergebnisse ohne realistische Zeit- und Kostengrenzen beweisen keine zukünftige Strategie.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Look-ahead-Bias vermeiden“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "backtests-kritisch-2",
+          "title": "Survivorship Bias erkennen",
+          "goal": "Survivorship Bias erkennen",
+          "explanation": "Wenn ein historischer Aktienkorb nur Firmen umfasst, die heute noch börsennotiert sind, fehlen insolvente oder fusionierte frühere Unternehmen. Das kann Gewinne systematisch zu positiv erscheinen lassen. Daten sollen delistete Werte, Dividenden und Kapitalmaßnahmen korrekt abbilden.",
+          "example": "Eine Strategie wird für das Jahr 2010 getestet, nutzt aber ausschließlich die heutigen Indexmitglieder. Unternehmen, die seitdem aus dem Index ausgeschieden sind, fehlen im Test und verzerren die Vergleichsmenge.",
+          "question": "Wie vermeidest du diese Verzerrung?",
+          "options": [
+            "Den damaligen vollständigen Aktienbestand inklusive ausgeschiedener Firmen verwenden",
+            "Nur heutige Gewinner zurückrechnen",
+            "Die Aktien im Rückblick nach größter Rendite auswählen"
+          ],
+          "correct": 0,
+          "sequence": 2,
+          "xp": 36,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Zeitpunkt und damals bekannte Informationen des Signals festhalten.",
+            "Tatsächlich handelbare Preise und vollständige Kosten berücksichtigen.",
+            "Das Ergebnis an bislang ungesehenen Zeiträumen und Gegenbeispielen überprüfen."
+          ],
+          "keyTakeaway": "Survivorship Bias erkennen",
+          "pitfall": "Gute historische Ergebnisse ohne realistische Zeit- und Kostengrenzen beweisen keine zukünftige Strategie.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Survivorship Bias erkennen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "backtests-kritisch-3",
+          "title": "Out-of-Sample & Gebühren",
+          "goal": "Out-of-Sample & Gebühren",
+          "explanation": "Eine Strategie, deren Parameter an genau denselben Daten optimiert und bewertet wurden, kann bloß Zufallsmuster ausnutzen. Trenne Trainings- und Prüfzeiträume, überprüfe stabile Ergebnisse über verschiedene Marktphasen und berücksichtige realistische Gebühren, Spread sowie Slippage.",
+          "example": "Eine Strategie erzielt vor Kosten 8 % jährlich. Realistische Gebühren, Spread und Slippage summieren sich auf 5 Prozentpunkte, also bleiben vereinfacht 3 %. In einem späteren, nicht zur Optimierung benutzten Zeitraum kann das Ergebnis zusätzlich abweichen.",
+          "question": "Welcher Test stärkt die Aussagekraft?",
+          "options": [
+            "Immer mehr Parameter an denselben Zeitraum anpassen",
+            "Nur die besten Trades zeigen",
+            "Unabhängigen späteren Prüfzeitraum und realistische Kosten verwenden"
+          ],
+          "correct": 2,
+          "sequence": 3,
+          "xp": 48,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Zeitpunkt und damals bekannte Informationen des Signals festhalten.",
+            "Tatsächlich handelbare Preise und vollständige Kosten berücksichtigen.",
+            "Das Ergebnis an bislang ungesehenen Zeiträumen und Gegenbeispielen überprüfen."
+          ],
+          "keyTakeaway": "Out-of-Sample & Gebühren",
+          "pitfall": "Gute historische Ergebnisse ohne realistische Zeit- und Kostengrenzen beweisen keine zukünftige Strategie.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Out-of-Sample & Gebühren“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        }
+      ]
+    },
+    {
+      "id": "kreditrisiko-unternehmen",
+      "title": "Kreditrisiko von Unternehmen",
+      "branch": "valuation",
+      "parent": "bewertung-multiples",
+      "prerequisites": [
+        "anleihen-rendite",
+        "bilanz-pruefer"
+      ],
+      "tier": 2,
+      "cost": 3,
+      "rewardPoints": 12,
+      "description": "Du beurteilst Nettofinanzschulden, Zinsdeckung, Kreditfälligkeiten und vertragliche Kennzahlengrenzen. Aktien- und Anleiheperspektive werden sinnvoll verbunden.",
+      "lessons": [
+        {
+          "id": "kreditrisiko-unternehmen-1",
+          "title": "Nettoschulden und Ergebnis vergleichen",
+          "goal": "Nettoschulden und Ergebnis vergleichen",
+          "explanation": "Das Verhältnis Nettofinanzschulden zu EBITDA (Ergebnis vor Zinsen, Steuern und Abschreibungen) ist ein grober Verschuldungsindikator. Unterschiede zwischen berichteten und bereinigten EBITDA-Größen sowie Leasing und Sondereffekte beeinflussen ihn. Es ist keine sichere Insolvenzprognose.",
+          "example": "Ein Unternehmen hat 350 Mio. € verzinsliche Schulden, 50 Mio. € freie Liquidität und 100 Mio. € EBITDA. Die einfachen Nettoschulden betragen 300 Mio. €, der Quotient 300 / 100 = 3,0.",
+          "question": "Wie groß ist die vereinfachte Nettoverschuldung bei 240 Mio. € Schulden und 40 Mio. € anrechenbarer Kasse?",
+          "options": [
+            "200 Mio. €",
+            "280 Mio. €",
+            "6 Mio. €"
+          ],
+          "correct": 0,
+          "sequence": 1,
+          "xp": 30,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Den Zusammenhang aus Schulden, Cashflow und Finanzierung dokumentieren.",
+            "Die Kennzahl mit gleicher Definition und gleichem Zeitraum berechnen.",
+            "Ein schwächeres Szenario und die fälligen Zahlungen prüfen."
+          ],
+          "keyTakeaway": "Nettoschulden und Ergebnis vergleichen",
+          "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Nettoschulden und Ergebnis vergleichen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "kreditrisiko-unternehmen-2",
+          "title": "Zinsdeckung bewerten",
+          "goal": "Zinsdeckung bewerten",
+          "explanation": "Die Zinsdeckung stellt ein Ergebnismaß den laufenden Zinsaufwendungen gegenüber. In einer einfachen EBIT-basierten Variante gilt EBIT / Zinsaufwand. Branchenunterschiede, schwankende Gewinne und fällige Tilgungen müssen daneben separat betrachtet werden.",
+          "example": "Ein Betrieb meldet 50 Mio. € EBIT und 10 Mio. € laufende Zinsen. Die einfache Zinsdeckung beträgt fünfmal. Sinkt das Ergebnis auf 20 Mio. €, reduziert sie sich bei unveränderten Zinsen auf zweimal.",
+          "question": "Wie hoch ist eine EBIT-basierte Zinsdeckung bei 36 Mio. € EBIT und 12 Mio. € Zinsaufwand?",
+          "options": [
+            "48-mal",
+            "3-mal",
+            "0,33-mal"
+          ],
+          "correct": 1,
+          "sequence": 2,
+          "xp": 38,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Den Zusammenhang aus Schulden, Cashflow und Finanzierung dokumentieren.",
+            "Die Kennzahl mit gleicher Definition und gleichem Zeitraum berechnen.",
+            "Ein schwächeres Szenario und die fälligen Zahlungen prüfen."
+          ],
+          "keyTakeaway": "Zinsdeckung bewerten",
+          "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Zinsdeckung bewerten“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        },
+        {
+          "id": "kreditrisiko-unternehmen-3",
+          "title": "Kreditfälligkeit & Covenants",
+          "goal": "Kreditfälligkeit & Covenants",
+          "explanation": "Eine Firma kann trotz positiver Gewinne ein Liquiditätsproblem bekommen, wenn große Kredite kurzfristig fällig werden oder vertragliche Finanzkennzahlen verletzt werden. Covenants sind Kreditbedingungen, deren Verletzung zusätzliche Pflichten oder Neuverhandlungen auslösen kann.",
+          "example": "Ein Unternehmen erzielt jährlichen operativen Cashflow von 80 Mio. €, muss jedoch innerhalb von sechs Monaten 300 Mio. € Kredite tilgen. Es benötigt Refinanzierung, einen Verkauf oder zusätzliche Liquidität, obwohl der laufende Betrieb positiv ist.",
+          "question": "Welche Größe kann neben der laufenden Gewinnzahl entscheidend sein?",
+          "options": [
+            "Nur der Aktienkurs",
+            "Nur die Anzahl der Mitarbeitenden",
+            "Tilgungsplan, Finanzierungsspielraum und Kreditbedingungen"
+          ],
+          "correct": 2,
+          "sequence": 3,
+          "xp": 50,
+          "cost": 1,
+          "eurCost": 10,
+          "workedSteps": [
+            "Den Zusammenhang aus Schulden, Cashflow und Finanzierung dokumentieren.",
+            "Die Kennzahl mit gleicher Definition und gleichem Zeitraum berechnen.",
+            "Ein schwächeres Szenario und die fälligen Zahlungen prüfen."
+          ],
+          "keyTakeaway": "Kreditfälligkeit & Covenants",
+          "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
+          "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kreditfälligkeit & Covenants“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
+          "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        }
+      ]
     }
   ],
   "special": [
