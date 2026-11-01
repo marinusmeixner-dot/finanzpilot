@@ -55,7 +55,7 @@ window.FinanzPilotEconomy=(()=>{
   const old=claims.filter(x=>!x.choice).length;
   const occupied=active.length+old;
   return '<section class="fp-inventory-section fp44-crafting"><div class="fp-inventory-heading"><h2>Artefakte aus Beförderungen</h2>'+
-  '<p>Alle drei erlernten neuen Skills erhältst du eine Beförderung mit zwei Artefaktscherben. Aus drei Scherben stellst du ein einmaliges zufälliges Artefakt her. Maximal vier aktive Artefakte, bestehende ältere Artefakte zählen dazu. Solange du es behältst, besitzt du seinen individuellen Effekt. Einlösen ist endgültig.</p></div>'+
+  '<p>Alle drei erlernten neuen Skills erhältst du eine Beförderung mit drei Artefaktscherben. Aus drei Scherben stellst du ein einmaliges zufälliges Artefakt her. Maximal vier aktive Artefakte, bestehende ältere Artefakte zählen dazu. Solange du es behältst, besitzt du seinen individuellen Effekt. Einlösen ist endgültig.</p></div>'+
   '<div class="fp44-craft-summary"><div><small>Artefaktscherben</small><b>'+shards+' / 3</b></div><div><small>Aktive Artefakte</small><b>'+occupied+' / 4</b></div></div>'+
   '<button type="button" class="btn" data-fp44-craft '+(shards<3||occupied>=4?'disabled':'')+'>Aus drei Scherben ein Artefakt herstellen</button>'+
   '<div class="fp44-crafted-list">'+crafted.map(a=>'<article class="fp44-crafted-card'+(a.redeemed_at?' used':'')+'"><div class="fp44-crafted-emblem">✦</div><div><b>'+esc(artifactTypes[a.kind]||a.kind)+'</b><small>'+esc(artifactEffects[a.effect]||'Spezieller Forschungsgegenstand')+'</small><small>Stufe '+Number(a.tier||1)+' · '+(a.redeemed_at?'Bereits eingetauscht':'Aktiv')+'</small></div>'+
