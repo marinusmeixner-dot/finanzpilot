@@ -31,7 +31,7 @@ const branchX=i=>80+410*i;
 const mapY=tier=>300+(Number(tier)-1)*330;
 const nodePos=s=>{
  const x=branchX(catalog.branches.findIndex(b=>b.id===s.branch)),members=catalog.skills.filter(t=>t.branch===s.branch&&t.tier===s.tier),i=Math.max(0,members.findIndex(t=>t.id===s.id)),n=members.length;
- const w=n===1?260:n===2?177:n===3?128:105,gap=n===1?0:n===2?16:n===3?10:5,span=n*w+(n-1)*gap,center=x+145;
+ const w=n===1?260:n===2?177:n===3?128:94,gap=n===1?0:n===2?16:n===3?10:5,span=n*w+(n-1)*gap,center=x+145;
  return {x:center-span/2+i*(w+gap),y:mapY(s.tier),w};
 };
 let selectedMap='',mapZoom=.44,mapLeft=420,mapTop=0;
