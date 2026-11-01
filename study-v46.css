@@ -59,3 +59,14 @@
 .fp46-skill-search-label{display:block;font-size:13px;font-weight:650;color:#cae8df;margin:18px 0 7px}
 [data-fp46-skill-search]{width:100%;max-width:550px;min-height:44px;padding:11px 14px;border-radius:12px;border:1px solid #688985;background:#132e39;color:#e6f9ea;font:inherit}
 .fp44-skill-group[hidden],.fp44-skill-option[hidden]{display:none!important}
+
+/* v48 – feedback immediately after the server-graded answer. */
+.fp48-feedback{border:1px solid #6a9183;border-radius:13px;background:#1e403d;padding:17px;margin-top:14px;display:grid;gap:10px}
+.fp48-feedback.correct{border-color:#8bdab1;background:#194d3c}
+.fp48-feedback.retry{border-color:#d5ae79;background:#40352a}
+.fp48-feedback h4{font-size:16px;margin:0;font-weight:700}
+.fp48-feedback p{font-size:14px;line-height:1.75;color:#e0ede3;margin:0}
+.fp48-feedback details{border:1px solid #718e81;padding:11px 12px;border-radius:10px}
+.fp48-feedback summary{font-size:13px;font-weight:650;cursor:pointer}
+.fp48-feedback details p{margin-top:8px}
+.fp48-feedback .btn{justify-self:start;border-radius:11px}
