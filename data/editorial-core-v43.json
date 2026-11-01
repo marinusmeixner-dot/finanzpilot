@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-11-01",
-  "editor": "FinanzPilot Redaktion – eigenständige frei lesbare Artikel mit verlinkten Primärquellen",
+  "updated_at": "2026-11-01T16:30:00+01:00",
+  "editor": "FinanzPilot – frei lesbare Originalartikel mit Quellen",
   "stories": [
     {
       "id": "ecb-rates-oct-2026",
@@ -274,6 +274,289 @@
           }
         ],
         "conclusion": "Microsoft meldete starkes Wachstum und hohe Profitabilität. Ob die Aktie attraktiv ist, hängt darüber hinaus von Cashflow, künftigen Ergebnissen, Risiken und dem bereits bezahlten Börsenpreis ab."
+      }
+    },
+    {
+      "id": "gas-storage-winter-2026",
+      "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "category": "Wirtschaft",
+      "symbols": [
+        "RWE.DE",
+        "EOAN.DE"
+      ],
+      "published": "01.11.2026",
+      "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
+      "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "why": "Zum Winterbeginn waren die deutschen Gasspeicher deutlich weniger gefüllt als vorgesehen. Das kann Preis- und Versorgungssorgen verstärken.",
+      "impact": "Für Versorger und energieintensive Firmen zählen Preisänderungen und Absicherung, nicht allein die Füllzahl.",
+      "article": {
+        "lead": "Deutschland geht mit vergleichsweise niedrigen Gasreserven in den Winter. Für den Finanzmarkt bedeutet das nicht automatisch eine Gaskrise, wohl aber ein zusätzliches Risiko bei Kälte oder Lieferproblemen.",
+        "sections": [
+          {
+            "heading": "Was ist passiert?",
+            "paragraphs": [
+              "Der Speicherverband INES meldete zum 31. Oktober 2026 einen Füllstand von rund 61,17 Prozent. Dieser Wert lag deutlich unter dem angestrebten Novemberniveau von 80 Prozent.",
+              "Ein Füllstand ist eine Momentaufnahme. Er sagt noch nicht, wie viel Gas bei verschiedenen Temperaturen tatsächlich verfügbar sein wird und wie viel über Pipelines oder Flüssiggas-Lieferungen hinzukommen kann."
+            ]
+          },
+          {
+            "heading": "Warum ist das wirtschaftlich wichtig?",
+            "paragraphs": [
+              "Gas spielt in Haushalten, Industrie und bei Teilen der Stromversorgung eine Rolle. Bleiben die Vorräte niedrig und wird der Winter kalt, kann ein hoher kurzfristiger Bedarf die Beschaffung verteuern.",
+              "Unternehmen können solche Preisschwankungen teilweise über längerfristige Verträge oder Absicherungsgeschäfte begrenzen. Entscheidend ist deshalb nicht nur der Marktpreis, sondern auch, welche Energiekosten ein Unternehmen tatsächlich tragen muss."
+            ]
+          },
+          {
+            "heading": "Was bedeutet das für Aktien?",
+            "paragraphs": [
+              "Energieintensive Betriebe könnten bei stark steigenden Gaspreisen höhere Kosten haben, wenn sie diese nicht an ihre Kunden weitergeben können. Das kann die Gewinnmarge belasten.",
+              "Für Versorger gibt es unterschiedliche Geschäftsmodelle. Höhere Energiepreise bedeuten nicht automatisch höhere Gewinne: Beschaffungskosten, Kundentarife, abgesicherte Mengen und Regulierung beeinflussen das Ergebnis."
+            ]
+          },
+          {
+            "heading": "Worauf sollte man achten?",
+            "paragraphs": [
+              "Achte auf die Entwicklung der Speicherstände, die Wetterprognosen und die Großhandelspreise. Prüfe außerdem, ob tatsächlich Engpässe auftreten; die Bundesregierung erwartete laut der gemeldeten Einschätzung zunächst keine Versorgungsprobleme.",
+              "Bei einzelnen Aktien sind der konkrete Energiebedarf, die Vertragslaufzeiten und die Fähigkeit zur Weitergabe von Kosten wichtiger als eine dramatische Schlagzeile."
+            ]
+          }
+        ],
+        "conclusion": "Niedrige Gasspeicher sind ein überprüfbares Risiko, noch kein Beleg für eine akute Versorgungskrise. Eine fundierte Analyse trennt den Füllstand von seinen möglichen finanziellen Folgen."
+      }
+    },
+    {
+      "id": "eu-economy-q3-2026-stronger",
+      "title": "Eurozone wächst stärker als erwartet – Energiepreise bleiben ein Gegenwind",
+      "category": "Wirtschaft",
+      "symbols": [],
+      "published": "30.10.2026",
+      "source": "FinanzPilot-Redaktion · auf Basis von Eurostat/AP",
+      "url": "https://apnews.com/article/905619a8db70802b721fbe6ebefa32aa",
+      "why": "Die Eurozone wuchs im dritten Quartal um etwa 0,4 Prozent und damit stärker als zuvor erwartet.",
+      "impact": "Wachstum kann Umsätze stützen; gleichzeitig könnten Energiepreise und Zinsen den Aufschwung bremsen.",
+      "article": {
+        "lead": "Das Wirtschaftswachstum in der Eurozone überraschte im dritten Quartal positiv. Daraus ergibt sich aber noch keine eindeutige Prognose für Aktien oder Zinsen: Wachstum, Preise und Finanzierungskosten wirken gleichzeitig.",
+        "sections": [
+          {
+            "heading": "Wie stark ist die Wirtschaft gewachsen?",
+            "paragraphs": [
+              "Nach der veröffentlichten ersten Schätzung legte die Wirtschaftsleistung der Eurozone im dritten Quartal 2026 um rund 0,4 Prozent zum Vorquartal zu. Die Erwartungen lagen niedriger.",
+              "Solche ersten Daten können später revidiert werden. Besonders bei multinationalen Unternehmen können einzelne Länder das Gesamtergebnis beeinflussen."
+            ]
+          },
+          {
+            "heading": "Warum reagieren Börsen darauf?",
+            "paragraphs": [
+              "Wenn Unternehmen und Verbraucher mehr ausgeben, können Firmen mehr Waren und Dienstleistungen verkaufen. Ein Teil des Wachstums kann damit die künftigen Unternehmensgewinne unterstützen.",
+              "Der Effekt ist nicht bei allen Branchen gleich. Exporteure hängen von Auslandsnachfrage ab, Kreditinstitute von Zinsen und Kreditqualität und Einzelhändler stark von Kaufkraft und Konsum."
+            ]
+          },
+          {
+            "heading": "Der Zusammenhang mit der Inflation",
+            "paragraphs": [
+              "Höhere Energiepreise können gleichzeitig die Kaufkraft schmälern und Produktionskosten erhöhen. Für Notenbanken entsteht dann eine schwierige Abwägung zwischen Preisstabilität und Konjunktur.",
+              "Ein stärkeres Wachstum allein verrät nicht, ob die Europäische Zentralbank die Zinsen als Nächstes erhöhen, senken oder unverändert lassen wird."
+            ]
+          },
+          {
+            "heading": "Was bleibt für Anleger offen?",
+            "paragraphs": [
+              "Verfolge neue Daten zu privaten Konsumausgaben, Industrieaufträgen und Inflation sowie spätere Korrekturen des Wirtschaftswachstums.",
+              "Bei Aktien musst du prüfen, wie stark eine Firma vom europäischen Wirtschaftsumfeld abhängt. Ein international tätiges Unternehmen kann auch bei schwächerer Konjunktur in Deutschland wachsen."
+            ]
+          }
+        ],
+        "conclusion": "Die Zahlen deuten auf eine widerstandsfähigere Wirtschaft hin. Für Anlageentscheidungen sind aber Gewinnentwicklung, Risiken und Erwartungen der Märkte entscheidend."
+      }
+    },
+    {
+      "id": "earnings-november-2026-preview",
+      "title": "Wichtige Unternehmenszahlen stehen an: Worauf Anleger diese Woche achten",
+      "category": "Markt",
+      "symbols": [],
+      "published": "01.11.2026",
+      "source": "FinanzPilot-Redaktion · Deutsche Börse Terminvorschau",
+      "url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
+      "why": "In der kommenden Woche stehen mehrere größere Quartalsberichte bevor. Die Ergebnisse sind noch nicht veröffentlicht.",
+      "impact": "Anleger können Erwartungen und Geschäftsberichte überprüfen, statt aufgrund von Vorhersagen zu handeln.",
+      "article": {
+        "lead": "In den nächsten Tagen berichten zahlreiche Unternehmen über ihre Geschäfte. Für den Markt sind weniger die bloßen Umsatz- und Gewinnzahlen entscheidend als der Unterschied zwischen den Ergebnissen und den bisherigen Erwartungen.",
+        "sections": [
+          {
+            "heading": "Welche Termine stehen fest?",
+            "paragraphs": [
+              "Laut der veröffentlichten Terminvorschau stehen in der ersten Novemberwoche unter anderem Unternehmensberichte von BMW, Vonovia, Fresenius, der Deutschen Telekom und Rheinmetall auf dem Kalender. Zeitangaben können sich ändern.",
+              "Diese Berichte sind am 1. November noch zukünftige Ereignisse. Deshalb nennt FinanzPilot hier ausdrücklich keine angeblich bereits feststehenden Gewinne oder Kursreaktionen."
+            ]
+          },
+          {
+            "heading": "Warum können Aktien trotz guter Zahlen fallen?",
+            "paragraphs": [
+              "Eine Aktie kann sinken, obwohl der Umsatz wächst, wenn die Anleger vorher ein noch stärkeres Wachstum erwartet hatten. Entscheidend ist die Differenz zwischen der Erwartung und den veröffentlichten Angaben.",
+              "Andersherum kann eine Aktie bei schwachem Gewinn steigen, wenn der Ausblick weniger schlecht ausfällt als befürchtet. Der Preis bündelt Erwartungen über viele zukünftige Geschäftsjahre."
+            ]
+          },
+          {
+            "heading": "Ein einfacher Analyseplan",
+            "paragraphs": [
+              "Notiere vor dem Bericht drei Fragen: Wie verändern sich Umsatz und operative Marge? Wie entwickelt sich der freie Cashflow nach Investitionen? Was sagt die Unternehmensführung über die kommenden Quartale?",
+              "Vergleiche die Zahlen mit dem Vorjahreszeitraum und prüfe Sondereffekte. Ein Quartalswert und eine Jahreszahl dürfen nicht ohne Anpassung miteinander verglichen werden."
+            ]
+          },
+          {
+            "heading": "Was solltest du vermeiden?",
+            "paragraphs": [
+              "Nutze keine vermeintlich sicheren Prognosen aus sozialen Medien als Kaufgrund. Erwartete Ergebnisse sind Schätzungen, keine veröffentlichten Tatsachen.",
+              "Auch hohe Kursschwankungen nach einem Bericht beweisen nicht automatisch, dass ein Unternehmen fundamental besser oder schlechter geworden ist. Prüfe die Ursache."
+            ]
+          }
+        ],
+        "conclusion": "Die Berichtssaison ist eine Gelegenheit, das Lesen echter Finanzzahlen zu üben – nicht bloß eine Wette auf die erste Kursbewegung."
+      }
+    },
+    {
+      "id": "bayer-report-2026-watch",
+      "title": "Bayer vor der nächsten Bilanz: Wie man die Risiken wirklich einordnet",
+      "category": "Unternehmen",
+      "symbols": [
+        "BAYN.DE",
+        "BAYN"
+      ],
+      "published": "01.11.2026",
+      "source": "FinanzPilot-Redaktion · öffentliche Terminvorschau",
+      "url": "https://atlas-stocks.com/calendar/earnings/germany",
+      "why": "Bei Bayer stehen Unternehmenszahlen und die Entwicklung rechtlicher Risiken im Fokus. Neue Ergebnisse werden nicht vorweggenommen.",
+      "impact": "Für die Bewertung zählen Cashflow, mögliche Verpflichtungen und Finanzierungsbedarf gemeinsam.",
+      "article": {
+        "lead": "Wenn Bayer seine nächsten Zahlen veröffentlicht, ist eine einzige Gewinnkennzahl nicht genug, um das Unternehmen zu verstehen. Entscheidend ist, wie operative Ergebnisse, Schulden und rechtliche Risiken miteinander zusammenhängen.",
+        "sections": [
+          {
+            "heading": "Warum ist die nächste Berichtsperiode interessant?",
+            "paragraphs": [
+              "Die öffentliche Terminvorschau führte Bayer unter den anstehenden deutschen Unternehmensberichten im November. Diese Vorschau enthält noch keine tatsächlich veröffentlichten Ergebnisse der neuen Berichtsperiode.",
+              "Interessant sind vor allem die Geschäftsbereiche, die operative Entwicklung und der Ausblick des Konzerns. In einzelnen Sparten kann das Geschäft sehr unterschiedlich verlaufen."
+            ]
+          },
+          {
+            "heading": "Welche Rolle spielen Rechtsstreitigkeiten?",
+            "paragraphs": [
+              "Rechtliche Verfahren können Zahlungen, Rückstellungen und Unsicherheit über künftige Verpflichtungen verursachen. Ein einzelner Gerichtserfolg beendet nicht automatisch alle möglichen Rechtsrisiken.",
+              "Anleger sollten die Angaben des Unternehmens und vorhandene unabhängige Einordnungen unterscheiden. Wichtige Fragen sind Umfang, Zeithorizont und Finanzierung möglicher Zahlungen."
+            ]
+          },
+          {
+            "heading": "Gewinn ist nicht gleich verfügbare Kasse",
+            "paragraphs": [
+              "Die Gewinnrechnung enthält auch Aufwendungen, die nicht sofort ausgezahlt werden, oder Posten, die nicht zum wiederkehrenden Geschäft gehören. Deshalb ist es sinnvoll, die Veränderung des operativen Cashflows zu prüfen.",
+              "Bei hoher Verschuldung sind neben dem Cashflow die Fälligkeit von Krediten und die Kosten einer Refinanzierung besonders wichtig."
+            ]
+          },
+          {
+            "heading": "Eine eigene Prüfung in vier Schritten",
+            "paragraphs": [
+              "1. Suche den offiziellen Quartalsbericht. 2. Vergleiche Umsatz und operative Marge mit dem entsprechenden Vorjahreszeitraum. 3. Prüfe Cashflow, Schulden und mögliche Sonderzahlungen. 4. Dokumentiere eine Gegenhypothese.",
+              "Ohne aktuellen Bericht solltest du keine neuen Gewinne erfinden und keine genaue Kursprognose aus einer einzelnen Meldung ableiten."
+            ]
+          }
+        ],
+        "conclusion": "Die Qualität einer Bayer-Analyse entscheidet sich daran, ob Chancen und Verpflichtungen gemeinsam bewertet werden – nicht an einer kurzfristigen Schlagzeile."
+      }
+    },
+    {
+      "id": "siemens-energy-year-end-2026-preview",
+      "title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
+      "category": "Unternehmen",
+      "symbols": [
+        "ENR.DE",
+        "ENR"
+      ],
+      "published": "01.11.2026",
+      "source": "FinanzPilot-Redaktion · Deutsche Börse Terminvorschau",
+      "url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
+      "why": "Für Siemens Energy sind in der Terminvorschau Jahreszahlen im November angesetzt; sie liegen noch nicht vor.",
+      "impact": "Auftragseingang, Marge und Cashflow helfen, die Qualität eines möglichen Wachstumskurses zu überprüfen.",
+      "article": {
+        "lead": "Siemens Energy steht vor wichtigen Jahreszahlen. Die FinanzPilot-Analyse erklärt, welche Kennzahlen man beobachten sollte, ohne Ergebnisse oder Aktienkurse vorwegzunehmen.",
+        "sections": [
+          {
+            "heading": "Was ist bislang bekannt?",
+            "paragraphs": [
+              "Die Terminübersicht nennt für Siemens Energy die Veröffentlichung der Jahreszahlen am 11. November 2026. Der Termin liegt vom 1. November aus betrachtet in der Zukunft.",
+              "Ein Kalendereintrag sagt nichts darüber aus, ob die Gewinne später höher oder niedriger als erwartet ausfallen."
+            ]
+          },
+          {
+            "heading": "Warum ist der Auftragseingang wichtig?",
+            "paragraphs": [
+              "Bei langfristigen Industrieprojekten gehen Auftragseingang, tatsächliche Auslieferung und Umsatz häufig zeitlich auseinander. Eine hohe Zahl neuer Bestellungen kann künftige Beschäftigung anzeigen, sagt aber noch nicht, wie profitabel die Projekte werden.",
+              "Prüfe deshalb zusätzlich die Auftragssituation je Sparte, mögliche Projektverzögerungen und die Margen neuer Aufträge."
+            ]
+          },
+          {
+            "heading": "Was verrät der Cashflow?",
+            "paragraphs": [
+              "Ein gutes operatives Ergebnis bedeutet nicht automatisch, dass im selben Jahr ebenso viel Bargeld zufließt. Anzahlungen, Lagerbestände und Projektmeilensteine können die zeitliche Zahlungsentwicklung beeinflussen.",
+              "Für langfristige Investitionen und die finanzielle Stabilität ist wichtig, ob das Unternehmen aus seinen Geschäften nach notwendigen Investitionen genügend Geld erwirtschaftet."
+            ]
+          },
+          {
+            "heading": "So bereitest du dich vor",
+            "paragraphs": [
+              "Notiere vor dem Bericht die letzten bestätigten Kennzahlen und deine Erwartungen. Vergleiche nach Veröffentlichung die tatsächlichen Zahlen mit genau diesen Angaben.",
+              "Unterscheide Wachstum, Gewinnmarge, freien Cashflow und finanzielle Risiken. Eine einzige positive Kennzahl ersetzt keine Gesamtbewertung."
+            ]
+          }
+        ],
+        "conclusion": "Der Wert des nächsten Siemens-Energy-Berichts liegt in überprüfbaren neuen Informationen. Wichtig ist, wie Nachfrage, Profitabilität und Cashflow zusammenpassen."
+      }
+    },
+    {
+      "id": "tech-ai-capex-story-2026",
+      "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "category": "Markt",
+      "symbols": [
+        "AMZN",
+        "MSFT",
+        "GOOGL"
+      ],
+      "published": "01.11.2026",
+      "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
+      "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "why": "Große Cloudanbieter investieren in Rechenzentren, deren langfristiger Ertrag erst später sichtbar wird.",
+      "impact": "Kapitalausgaben, Auslastung und freier Cashflow bestimmen, ob Wachstum nachhaltig zusätzlichen Wert schafft.",
+      "article": {
+        "lead": "Der Ausbau künstlicher Intelligenz erhöht bei großen Technologieunternehmen die Nachfrage nach Rechenleistung – aber auch die Kosten für neue Rechenzentren. Warum Anleger die Entwicklung nicht allein am Umsatz messen sollten.",
+        "sections": [
+          {
+            "heading": "Woher kommt das Wachstum?",
+            "paragraphs": [
+              "Unternehmen mieten Rechenleistung und KI-Dienste zunehmend bei großen Cloudanbietern. Daraus entstehen wiederkehrende Umsätze, doch ihre Entwicklung hängt von Preisgestaltung, Nachfrage und Wettbewerb ab.",
+              "Die Quartalsberichte von Amazon und Microsoft liefern jeweils einen Einblick in einzelne Geschäftsbereiche. Zwei verschiedene Firmen können trotz ähnlicher Schlagzeilen völlig unterschiedliche Cashflows erzielen."
+            ]
+          },
+          {
+            "heading": "Warum sind Investitionen ein Gegenstück?",
+            "paragraphs": [
+              "Rechenzentren benötigen Gebäude, Server, Stromversorgung und Netztechnik. Ein Teil dieser Ausgaben wird sofort bezahlt, während die erwarteten Erträge über mehrere Jahre anfallen.",
+              "Eine einfache Rechnung: Operativer Cashflow von 20 Milliarden Euro und Investitionen von 17 Milliarden Euro ergeben vereinfacht 3 Milliarden Euro freien Cashflow. Steigen die Investitionen schneller als die Zahlungszuflüsse, kann der freie Cashflow trotz Umsatzwachstum sinken."
+            ]
+          },
+          {
+            "heading": "Was wäre ein gutes Wachstum?",
+            "paragraphs": [
+              "Neue Rechenzentren sind wirtschaftlich sinnvoll, wenn ihre späteren Zahlungsüberschüsse die Investitionen und die damit verbundenen Risiken angemessen übersteigen. Die konkrete Bewertung benötigt mehrere Jahre und transparente Annahmen.",
+              "Eine hohe Auslastung und zuverlässige Kundenbindung können helfen. Andererseits besteht das Risiko, dass Wettbewerber Kapazitäten aufbauen und Preise unter Druck geraten."
+            ]
+          },
+          {
+            "heading": "Welche Zahlen sollte man verfolgen?",
+            "paragraphs": [
+              "Vergleiche Cloud-Umsatz, operative Marge, Investitionsausgaben, operativen Cashflow und freien Cashflow über mehrere Berichtsperioden.",
+              "Bewerte daneben, wie stark der Börsenpreis bereits hohes künftiges Wachstum voraussetzt. Ein hervorragendes Unternehmen kann trotzdem zu teuer bewertet sein."
+            ]
+          }
+        ],
+        "conclusion": "Wachstum wird dann wertvoll, wenn aus zusätzlichen Umsätzen langfristig ausreichend zusätzlicher Cashflow entsteht. Diese Frage verbindet KI-Nachrichten mit echter Unternehmensanalyse."
       }
     }
   ]
