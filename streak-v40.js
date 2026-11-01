@@ -29,7 +29,7 @@
   const next=day<10?10:day<20?20:day<30?30:null;
   const goal=next===10?'+100 € virtuelles Depotgeld & +15 Forschungspunkte':next===20?'+125 € & +20 Forschungspunkte':next===30?'+150 € & +30 Forschungspunkte':'Alle drei großen Meilensteine erreicht';
   return '<div class="fp40-streak-head"><div><span class="eyebrow">FINANZPILOT · BESUCHSSERIE</span><h2>Deine Streak</h2><p>Einmal täglich FinanzPilot öffnen. Maximal 30 Tage werden angezeigt.</p></div><button type="button" class="fp40-streak-close" data-fp40-streak-close aria-label="Schließen">×</button></div>'+
-   '<div class="fp40-streak-count"><strong>'+day+'</strong><span> / 30 Tage</span></div>'+
+   '<div class="fp40-streak-count"><strong>'+day+'</strong><span> / 30 Tage</span></div>'+(Number(result?.promotion_count)>0?'<p class="fp41-streak-promotion">Deine '+Number(result.promotion_count)+' neue(n) Beförderung(en) verbessern die tägliche Belohnung um +'+euro(result.daily_euro_bonus)+' und +'+Number(result.daily_points_bonus)+' Forschungspunkte.</p>':'')+
    '<div class="fp40-streak-week" aria-label="Besuche der letzten sieben Tage">'+week()+'</div>'+
    (result?'<div class="fp40-streak-today"><b>Heutige Belohnung '+(result.awarded_now?'erhalten':'bereits verbucht')+'</b>'+
     '<p>+'+euro(result.today_euros)+' Depotgeld · +'+Number(result.today_points)+' Forschungspunkte'+
