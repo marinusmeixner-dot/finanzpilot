@@ -5,7 +5,7 @@ import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
 const data=JSON.parse(read('data/journey-v39.json'));
 const app=read('app.js'),nav=read('ux-v15.js'),sync=read('sync.js'),css=read('journey-v39.css');
-assert.equal(JSON.parse(read('version.json')).version,46);
+assert.equal(JSON.parse(read('version.json')).version,47);
 assert.equal(data.schema_version,1);
 assert.equal(data.stages.length,6);
 assert.equal(data.stages.reduce((n,s)=>n+s.modules.length,0),36);
