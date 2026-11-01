@@ -1,0 +1,36 @@
+/* FinancePilot v40 – compact clickable verified visit rewards */
+.fp40-streak-trigger{cursor:pointer;font:inherit;display:inline-flex;align-items:center;gap:4px}
+.fp40-streak-trigger:hover,.fp40-streak-trigger:focus-visible{outline:2px solid #a7e4c0;outline-offset:2px}
+.fp40-streak-dialog{max-width:min(96vw,500px);max-height:min(92dvh,730px);border-radius:21px;border:1px solid #507276;background:#112b36;color:#e8f8f2;padding:0;overflow:auto;box-shadow:0 23px 90px #0009}
+.fp40-streak-dialog::backdrop{background:#06141cae}
+.fp40-streak-panel{padding:24px;display:flex;flex-direction:column;gap:15px}
+.fp40-streak-head{display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.fp40-streak-head h2{font-size:25px;margin:5px 0}
+.fp40-streak-head p{font-size:13px;line-height:1.55;color:#bfd4d6}
+.fp40-streak-close{border:0;background:#1d4048;color:#e7f9f0;border-radius:50%;font-size:25px;line-height:1;width:35px;height:35px;cursor:pointer;flex:none}
+.fp40-streak-count{display:flex;align-items:baseline;gap:7px}
+.fp40-streak-count strong{font-size:46px;line-height:1;color:#b5f3d0}
+.fp40-streak-count span{color:#aecdc8}
+.fp40-streak-week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px}
+.fp40-streak-day{background:#142e39;border:1px solid #3b5a64;border-radius:11px;text-align:center;padding:9px 2px;display:grid;gap:6px}
+.fp40-streak-day span{font-size:11px;color:#a7c4c6}
+.fp40-streak-day b{font-size:17px;color:#648d9a}
+.fp40-streak-day.achieved{background:#1c4c40;border-color:#81dcb0}
+.fp40-streak-day.achieved b{color:#b3ffd8}
+.fp40-streak-today{background:#19493e;border:1px solid #56967b;border-radius:15px;padding:16px}
+.fp40-streak-today b{font-size:15px}
+.fp40-streak-today p{font-size:15px;line-height:1.5;margin:7px 0;color:#e6fff0}
+.fp40-streak-today small{color:#b9dbd1;font-size:12px;line-height:1.5}
+.fp40-streak-milestones h3{font-size:17px;margin:0 0 12px}
+.fp40-streak-milestone-list{display:grid;gap:9px}
+.fp40-streak-milestone-list>div{display:flex;gap:11px;align-items:center;padding:11px 12px;border-radius:12px;background:#17333e;border:1px solid #385a64}
+.fp40-streak-milestone-list>div.achieved{background:#20483c;border-color:#6aaf86}
+.fp40-streak-milestone-list>div>span:first-child{font-weight:700;display:grid;place-items:center;background:#305b54;border-radius:50%;width:33px;height:33px;flex:none}
+.fp40-streak-milestone-list>div>div{flex:1;min-width:0}
+.fp40-streak-milestone-list b{display:block;font-size:13px}
+.fp40-streak-milestone-list small{display:block;font-size:12px;color:#afccc7;margin-top:3px;line-height:1.4}
+.fp40-streak-next{font-size:13px;color:#b4dec8;line-height:1.55;margin:13px 0 0}
+.fp40-streak-disclaimer{font-size:11px;line-height:1.6;color:#a4bdc5;margin:3px 0}
+.fp40-streak-error{color:#f4ccaa;font-size:12px}
+@media(max-width:540px){.fp40-streak-panel{padding:18px 15px}.fp40-streak-dialog{max-width:calc(100vw - 18px)}}
+@media(prefers-reduced-motion:reduce){.fp40-streak-dialog{scroll-behavior:auto}}
