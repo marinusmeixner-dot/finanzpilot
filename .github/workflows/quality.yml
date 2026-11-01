@@ -48,3 +48,5 @@ jobs:
         run: node scripts/test_market_learning_v34.mjs
       - name: "Regression: Interactive chart ranges, BayWa alternative exchange and issue inbox"
         run: node scripts/test_charts_issues_v35.mjs
+      - name: "Regression: Verified stock search and complete editorial readers"
+        run: node scripts/test_news_reader_v36.mjs
