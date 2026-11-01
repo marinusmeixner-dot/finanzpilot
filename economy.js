@@ -78,7 +78,7 @@ window.FinanzPilotEconomy=(()=>{
   }catch(e){notice='Artefakt nicht eingelöst: '+String(e.message||e);window.render?.()}
  }
  function itemList(){
-  return `<section class="fp-inventory-section"><div class="fp-inventory-heading"><h2>Deine Forschungsartefakte</h2><p>Aktuell gibt es drei tatsächlich verdienbare Spezialartefakte aus den Praxisreihen KION, AIXTRON und Alphabet. Die übrigen Karriereabzeichen sind eine andere, nicht einlösbare Sammlung. Neue Artefakte benötigen jeweils eine echte serverseitig prüfbare Herausforderung. <b>Einlösen:</b> Praxisreihe abschließen, Antworten bestätigen, dann „Verwendung auswählen“ → dauerhaft Werkzeug, Spezialmission oder einmalig 150 € virtuelles EUR-Depotguthaben wählen. Ein Artefakt kann nur einmal eingesetzt werden.</p></div><div class="fp-inventory-rows">`+
+  return `<section class="fp-inventory-section"><div class="fp-inventory-heading"><h2>Deine Forschungsartefakte</h2><p>Deine früheren Spezialartefakte aus KION, AIXTRON und Alphabet bleiben erhalten. Neue Artefakte stellst du ausschließlich mit Scherben aus Beförderungen her. Die übrigen Karriereabzeichen sind eine andere, nicht einlösbare Sammlung. Das neue System vergibt drei Scherben je drei gemeisterte Skills. Drei Scherben ergeben ein zufälliges Artefakt mit einem kleinen, überprüften Lernbonus. <b>Einlösen:</b> Praxisreihe abschließen, Antworten bestätigen, dann „Verwendung auswählen“ → dauerhaft Werkzeug, Spezialmission oder einmalig 150 € virtuelles EUR-Depotguthaben wählen. Ein Artefakt kann nur einmal eingesetzt werden.</p></div><div class="fp-inventory-rows">`+
   modules.map(m=>{
    const cl=stateOf(m.id),count=verified.filter(x=>x.module_id===m.id).length;
    const headline=cl?(cl.choice?'Eingelöst: '+({tool:'Werkzeug',path:'Spezialkurs',cash:'150 € virtuelles Kapital'}[cl.choice]||cl.choice):'Einmalige Auswahl verfügbar'):`${count}/4 Antworten bestätigt`;
@@ -148,7 +148,7 @@ window.FinanzPilotEconomy=(()=>{
   if(!['number','multi','sequence','decision'].includes(type))return {skipped:true};
   try{
    const out=await api().economyRpc('fp_submit_training_answer',{p_module:id,p_step:index,p_answer:answer});
-   if(out.newReward){notice='Neue Belohnung verdient: +100 Forschungspunkte und ein neues Forschungsartefakt!';await refresh(false)}
+   if(out.newReward){notice='Vorhandenen Praxisfall bestätigt: +2 Forschungspunkte. Neue Artefakte entstehen aus Beförderungsscherben.';await refresh(false)}
    return out;
   }catch(e){notice='Serverprüfung nicht möglich: '+(e.message||'Netzwerkfehler');return {error:notice}}
  }
@@ -163,7 +163,7 @@ window.FinanzPilotEconomy=(()=>{
   }
   await refresh(false);
   verifiedCount=verified.filter(x=>x.module_id===id).length;
-  if(!errors){notice=awarded?'Neues Forschungsartefakt und 100 Forschungspunkte freigeschaltet!':verifiedCount===4?'Dein Training ist serverseitig bestätigt. Das Artefakt lässt sich im Inventar einlösen.':'Du hast '+verifiedCount+'/4 geprüfte Antworten. Schließe die restlichen Aufgaben ab.'}
+  if(!errors){notice=awarded?'Archiv-Fallstudie bestätigt, +2 Forschungspunkte gutgeschrieben!':verifiedCount===4?'Dein Training ist serverseitig bestätigt. Das Artefakt lässt sich im Inventar einlösen.':'Du hast '+verifiedCount+'/4 geprüfte Antworten. Schließe die restlichen Aufgaben ab.'}
   if(typeof state!=='undefined'&&state.view==='inventory')window.render?.();
   return {verifiedCount,skipped,errors,awarded};
  }
