@@ -8,6 +8,9 @@ const client=()=>window.FinanzPilotCloud?.paperClient;
 const user=()=>window.FinanzPilotCloud?.user;
 const currency=(n,c)=>{try{return new Intl.NumberFormat('de-DE',{style:'currency',currency:c||'USD'}).format(Number(n))}catch{return String(n)}};
 let watch=[],quotes=[],editorial=[],feedDate='',active='',tab='general',newsFocus='',message='',busy=false,queued=false,lastRefresh=0;
+let selectedArticle=null;const articleRegistry=new Map();
+const articleKey=n=>String(n.id||n.url||n.title||'').slice(0,400);
+
 const historyCache=new Map(),newsCache=new Map(),pending=new Map(),ranges=new Map();
 const WINDOWS=[['1mo','1M'],['3mo','3M'],['6mo','6M'],['1y','1J'],['5y','5J'],['max','MAX']];
 const rangeOf=s=>ranges.get(s)||'6mo';
@@ -108,10 +111,42 @@ function renderDetail(){
  '<label for="fp34-request-kind">Gewünschter Inhalt</label><select id="fp34-request-kind"><option value="Komplettanalyse">Vollständige Aktienanalyse</option><option value="DCF und Szenarien">Bewertungsmodell mit Szenarien</option><option value="Lernkurs">Interaktiver Research-Lernkurs</option><option value="Research-Werkzeug">Neues Analysewerkzeug oder Skill</option></select><button class="btn secondary" data-fp34-request="'+esc(s)+'">Anfrage auf GitHub vorbereiten</button></section></div>';
 }
 function newsCard(n,extra=''){
- const link=safe(n.url);return '<article class="fp34-news-card"><small>'+esc(n.source||n.publisher||'Nachrichtenanbieter')+' · '+esc(n.published||'Datum prüfen')+'</small><h3>'+esc(n.title||'Nachricht')+'</h3>'+
+ const link=safe(n.url),id=articleKey(n);articleRegistry.set(id,n);
+ return '<article class="fp34-news-card"><small>'+esc(n.source||n.publisher||'Nachrichtenanbieter')+' · '+esc(n.published||'Datum prüfen')+'</small>'+
+ '<button class="fp36-news-title" type="button" data-fp36-read="'+esc(id)+'"><h3>'+esc(n.title||'Nachricht')+'</h3><small>'+(n.article?'Ausführlichen FinanzPilot-Artikel lesen':'Nachricht und Quellenlage ansehen')+' →</small></button>'+
  (n.why?'<p>'+esc(n.why)+'</p>':'')+(extra?'<p>'+extra+'</p>':'')+
  (link?'<a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Originalquelle öffnen</a>':'')+'</article>';
 }
+function openArticle(id){
+ const item=articleRegistry.get(id);if(!item)return false;
+ selectedArticle=item;window.FinanzPilotNavigation?.route('marketarticle');return true;
+}
+function renderArticle(){
+ const n=selectedArticle;if(!n)return '<div class="fp34"><h1>Artikel nicht gefunden</h1><button type="button" class="btn" data-fp36-article-back>← Zurück</button></div>';
+ const link=safe(n.url),article=n.article;
+ const common='<div class="fp36-article-meta">'+esc(n.source||n.publisher||'Quelle')+' · '+esc(n.published||'Datum unbekannt')+'</div>';
+ let body='';
+ if(article?.sections?.length){
+  body='<p class="fp36-article-lead">'+esc(article.lead||'')+'</p>'+
+  article.sections.map(section=>'<section class="fp36-article-section"><h2>'+esc(section.heading||'')+'</h2>'+
+   (Array.isArray(section.paragraphs)?section.paragraphs:[]).map(p=>'<p>'+esc(p)+'</p>').join('')+'</section>').join('')+
+  '<section class="fp36-article-conclusion"><h2>Fazit</h2><p>'+esc(article.conclusion||'')+'</p></section>';
+ }else if(n.why||n.impact){
+  body='<div class="fp36-article-limited">Dieser Beitrag ist eine eigene, quellengestützte FinanzPilot-Einordnung. Der vollständige Originalartikel des Anbieters wird hier nicht kopiert.</div>'+
+   '<section class="fp36-article-section"><h2>Bekannte Fakten und Ausgangslage</h2><p>'+esc(n.why||'')+'</p></section>'+
+   '<section class="fp36-article-section"><h2>Finanzielle Bedeutung und offene Fragen</h2><p>'+esc(n.impact||'')+'</p></section>'+
+   '<section class="fp36-article-section"><h2>Was noch geprüft werden muss</h2><p>Für ein eigenes Urteil sind Originalzahlen, Berichtszeiträume, Gegenargumente, mögliche Risiken und die Erwartungen im Aktienkurs entscheidend. Ein einzelner Nachrichtenbericht reicht nicht als Kauf- oder Verkaufsempfehlung.</p></section>';
+ }else{
+  const ticker=watch.find(w=>matches({title:n.title||'',symbols:n.symbols||[]},w.symbol))?.symbol;
+  const similar=ticker?editorial.filter(x=>matches(x,ticker)&&x.article).slice(0,3):[];
+  body='<div class="fp36-article-limited"><h2>Externe Schlagzeile</h2><p>Zu dieser Meldung sind nur Überschrift, Anbieter und Veröffentlichungszeitpunkt abrufbar. Der vollständige Verlagsartikel ist nicht zur Nachveröffentlichung freigegeben. FinanzPilot umgeht keine Bezahlschranken und erfindet keinen Artikeltext.</p></div>'+
+  (similar.length?'<section class="fp36-article-section"><h2>Passende redaktionelle Hintergrundberichte</h2>'+similar.map(x=>{const k=articleKey(x);articleRegistry.set(k,x);return '<button type="button" class="fp36-related" data-fp36-read="'+esc(k)+'">'+esc(x.title)+' →</button>'}).join('')+'</section>':'<p>Es liegt noch keine eigenständig recherchierte Langfassung zu dieser einzelnen Schlagzeile vor.</p>');
+ }
+ return '<div class="fp34 fp36-article"><button type="button" class="btn secondary" data-fp36-article-back>← Zurück</button>'+
+ '<span class="eyebrow">FINANZPILOT · '+(article?.sections?.length?'EIGENER HINTERGRUNDBERICHT':'QUELLEN &amp; EINORDNUNG')+'</span><h1>'+esc(n.title||'Nachricht')+'</h1>'+common+body+
+ (link?'<div class="fp36-article-source"><strong>Originalquelle</strong><p>Überprüfe für weitere Einzelheiten den Originalbericht. Dieser kann extern zugangsbeschränkt sein.</p><a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Zur Veröffentlichung von '+esc(n.source||n.publisher||'Anbieter')+'</a></div>':'')+'</div>';
+}
+
 function stockNews(symbol){
  const editorialNews=editorial.filter(n=>matches(n,symbol));
  const external=newsCache.get(symbol)?.data?.news||[];
@@ -196,6 +231,8 @@ function bind(root=document){
  });
 
  root.querySelectorAll('[data-fp34-news-tab]').forEach(b=>b.addEventListener('click',()=>{tab=b.dataset.fp34NewsTab;newsFocus='';ui();if(tab==='watch')loadWatchNews()}));
+ root.querySelectorAll('[data-fp36-read]').forEach(b=>b.addEventListener('click',()=>openArticle(b.dataset.fp36Read)));
+ root.querySelector('[data-fp36-article-back]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.goBack?.());
  root.querySelectorAll('[data-fp34-stock-news]').forEach(b=>b.addEventListener('click',()=>openNews(b.dataset.fp34StockNews)));
  root.querySelectorAll('[data-fp34-add]').forEach(b=>b.addEventListener('click',()=>addStock(b.dataset.fp34Add)));
  root.querySelectorAll('[data-fp34-depot-stock]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotPortfolio?.focus?.(b.dataset.fp34DepotStock)));
@@ -205,7 +242,7 @@ function bind(root=document){
  root.querySelector('[data-fp34-depot]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('depot'));
  root.querySelector('[data-fp34-overview]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('marketoverview'));
 }
-window.FinanzPilotMarkets={renderOverview,renderDetail,renderNews,bind,refresh,stockDetail,openNews,get watchlist(){return watch},get active(){return active}};
+window.FinanzPilotMarkets={renderOverview,renderDetail,renderNews,renderArticle,openArticle,bind,refresh,stockDetail,openNews,get watchlist(){return watch},get active(){return active}};
 window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&['marketoverview','marketnews','marketdetail'].includes(state.view)){refresh();if(state.view==='marketnews'&&tab==='watch')loadWatchNews()}});
 window.addEventListener('fp-watchlist-changed',()=>refresh(true));
 window.addEventListener('fp-auth-change',()=>refresh(true));
