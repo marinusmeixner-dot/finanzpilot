@@ -15,7 +15,7 @@
           "type": "read",
           "title": "So liest du eine Gewinn- und Verlustrechnung (GuV)",
           "text": "Die Gewinn- und Verlustrechnung (GuV) zeigt Erträge und Aufwendungen über einen Zeitraum – nicht den Kontostand. Bei der fiktiven Nordwerk AG: 1.000 Mio. € Umsatz − 620 Mio. € Herstellungskosten − 240 Mio. € übrige operative Kosten − 40 Mio. € Abschreibungen = 100 Mio. € EBIT (Earnings Before Interest and Taxes, Ergebnis vor Zinsen und Steuern). Danach 20 Mio. € Zinsaufwand und 20 Mio. € Steueraufwand: Jahresüberschuss = 60 Mio. €. Wichtig: Abschreibungen mindern den Gewinn, aber die Zahlung für die Maschine kann schon früher erfolgt sein. Deshalb sind EBIT, EBITDA (Ergebnis vor Zinsen, Steuern und Abschreibungen) und freier Cashflow (FCF) nicht dasselbe. Stell dir vor, Nordwerk wächst, während die Lagerbestände steigen: Das Ergebnis kann positiv sein und trotzdem Liquidität fehlen.",
-          "insight": "GuV = Gewinn- und Verlustrechnung (Zeitraum). EBIT = operatives Ergebnis vor Zinsen und Steuern. EBITDA = EBIT plus Abschreibungen. FCF = operativer Cashflow abzüglich Investitionen. Die Werte beantworten unterschiedliche Fragen.",
+          "insight": "Eine Gewinn- und Verlustrechnung gilt für einen Zeitraum. Der operative Gewinn, der Gewinn vor Abschreibungen und der frei verfügbare Cashflow beantworten unterschiedliche Fragen; deshalb darf man sie nicht gleichsetzen.",
           "chart": {
             "labels": [
               "Umsatz",
