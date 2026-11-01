@@ -62,3 +62,12 @@
 .fp41-guest p,.fp41-earned p{font-size:13px;line-height:1.65}
 .fp41-notice{padding:12px 15px;border:1px solid #70a58b;color:#d7ffdf;background:#1a4738;border-radius:10px;font-size:13px;margin-bottom:15px}
 @media(max-width:760px){.fp41-tabs{grid-template-columns:repeat(2,minmax(0,1fr))}.fp41-branches,.fp41-pick{grid-template-columns:1fr}.fp41-tab{min-height:42px}.fp41-branch{padding:15px}}
+
+.fp41-case-section{border-top:1px solid #41666c;padding:19px 0 4px;display:grid;gap:13px}
+.fp41-case-section h3{font-size:18px;margin:0;color:#d7ffe7}
+.fp41-case-section p{font-size:14px;line-height:1.82;color:#c9e0d9}
+.fp41-career-link{border:1px solid #507867;background:#153e36;border-radius:15px;padding:18px;margin:18px 0}
+.fp41-career-link h3{font-size:17px;margin:0 0 8px}
+.fp41-career-link p{font-size:13px;line-height:1.68}
+.fp41-streak-promotion{background:#205a47;border:1px solid #75ac83;padding:12px;border-radius:11px;color:#e5fce9;font-size:12px;line-height:1.6}
+.fp41-learning-expense{font-size:12px;line-height:1.55;color:#bdd0cc}
