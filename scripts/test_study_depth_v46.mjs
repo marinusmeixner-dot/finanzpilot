@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
 const skills=JSON.parse(read('data/specializations-v41.json')),foundations=JSON.parse(read('data/journey-v39.json'));
-assert.equal(JSON.parse(read('version.json')).version,46);
+assert.equal(JSON.parse(read('version.json')).version,47);
 assert.equal(skills.branches.length,8);
 assert.equal(skills.skills.length,44);
 assert.equal(skills.skills.flatMap(x=>x.lessons).length,132);
