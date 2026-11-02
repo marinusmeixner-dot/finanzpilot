@@ -19,7 +19,7 @@ assert(html.includes('ux-v15.js?v=46'));
 assert(html.includes('ux-v15.css?v=18'));
 assert(html.includes('app.js?v=48'));
 assert(html.includes('research.js?v=18'));
-assert(html.includes('updates.js?v=48'));
+assert(html.includes('updates.js?v=49'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
