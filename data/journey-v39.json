@@ -428,7 +428,7 @@
                 "30.000 €."
               ],
               "correct": 0,
-              "explanation": "80.000 − 30.000 = 50.000 € Eigenkapital."
+              "explanation": "Die Bilanzgleichung lautet Vermögen = Eigenkapital + Schulden. Daher 80.000 € − 30.000 € = 50.000 € Eigenkapital zum Bilanzstichtag. 110.000 € wäre die unzulässige Addition von Vermögen und Schulden; 30.000 € sind bereits die Verbindlichkeiten, nicht das Eigenkapital."
             },
             {
               "prompt": "Wieso garantiert hohes Eigenkapital keine problemlosen Rechnungszahlungen?",
@@ -888,7 +888,7 @@
                 "25 %."
               ],
               "correct": 1,
-              "explanation": "75 / 500 × 100 = 15 %."
+              "explanation": "Operative Marge = operativer Gewinn / Umsatz × 100. Bei 75 Mio. € Gewinn und 500 Mio. € Umsatz ergibt das 75 / 500 × 100 = 15 %. Die 10 % und 25 % passen nicht zu diesen Eingangsgrößen. Beide Beträge müssen dieselbe Berichtsperiode und denselben Unternehmensumfang betreffen."
             },
             {
               "prompt": "Die Marge sinkt von 15 % auf 12 %. Welche Beschreibung stimmt?",
@@ -974,7 +974,7 @@
                 "54."
               ],
               "correct": 1,
-              "explanation": "90 / 6 = 15."
+              "explanation": "Kurs-Gewinn-Verhältnis (KGV) = Aktienkurs / Gewinn je Aktie = 90 € / 6 € = 15. Die Einheit Euro kürzt sich heraus; das Ergebnis ist das 15-Fache des angegebenen Gewinns je Aktie. Ob die Aktie günstig ist, lässt sich daraus allein nicht ableiten, weil Gewinnqualität, Zeitraum und Wachstumserwartungen fehlen."
             },
             {
               "prompt": "Was bedeutet ein erwartetes KGV von 15?",
