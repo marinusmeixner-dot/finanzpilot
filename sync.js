@@ -196,7 +196,7 @@
     const quick=document.createElement('button');quick.id='fp-quick-sync';quick.className='fp-topbar-sync';quick.type='button';quick.title='Synchronisieren';quick.setAttribute('aria-label','Jetzt synchronisieren oder anmelden');
     quick.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M6 9a7 7 0 0 1 12-2l2 5M18 15a7 7 0 0 1-12 2l-2-5"/></svg>';
     document.querySelector('.header-right')?.append(quick);
-    quick.addEventListener('click',()=>{if(user)sync(true);else button.click()});
+    quick.addEventListener('click',()=>{if(user)sync(true,true);else button.click()});
     const sr=document.createElement('span');sr.id='fp-sync-accessible';sr.className='fp-sync-a11y';sr.setAttribute('role','status');sr.setAttribute('aria-live','polite');document.querySelector('.header-right')?.append(sr);
     const modal=document.createElement('div');modal.id='fp-account-dialog';modal.className='fp-account-overlay';modal.hidden=true;
     modal.innerHTML=`<section class="fp-account-window" role="dialog" aria-modal="true" aria-label="FinanzPilot Konto"><div class="fp-account-title"><h2>Dein FinanzPilot-Konto</h2><button id="fp-account-close" class="settings-btn" type="button" aria-label="Schließen">✕</button></div><p id="fp-account-state" aria-live="polite">Lokal gespeichert</p><div id="fp-account-guest"><p>Dein Lernstand bleibt ohne Konto lokal erhalten. Mit einem bestätigten Konto können Ergebnisse synchronisiert werden. Die Anmeldung ist freiwillig.</p><form id="fp-account-form"><label>E-Mail-Adresse<input id="fp-account-email" type="email" name="email" autocomplete="username" required maxlength="254" /></label><label>Passwort<input id="fp-account-password" type="password" name="password" autocomplete="current-password" required minlength="6" /></label><button class="fp-account-forgot" id="fp-account-forgot" type="button">Passwort vergessen? Zurücksetzen</button><div class="fp-account-actions"><button class="btn" type="submit">Anmelden</button><button class="btn secondary" id="fp-account-signup" type="button">Neues Konto erstellen</button></div></form><div class="fp-account-divider"><span>oder</span></div><button class="fp-account-google" type="button" id="fp-account-google"><svg viewBox="0 0 24 24" width="23" height="23" aria-hidden="true"><path fill="#4285F4" d="M21.6 12.23c0-.73-.07-1.45-.2-2.13H12v4.03h5.37a4.6 4.6 0 0 1-1.99 3.02v2.53h3.22c1.89-1.74 3-4.3 3-7.45Z"/><path fill="#34A853" d="M12 22c2.71 0 4.99-.9 6.6-2.32l-3.22-2.53c-.9.6-2.03.96-3.38.96a6.02 6.02 0 0 1-5.66-4.16H3.03v2.61A10 10 0 0 0 12 22Z"/><path fill="#FBBC05" d="M6.34 13.95A6 6 0 0 1 6 12c0-.68.12-1.34.34-1.95V7.44H3.03A10 10 0 0 0 2 12c0 1.64.4 3.19 1.03 4.56l3.31-2.61Z"/><path fill="#EA4335" d="M12 5.89c1.48 0 2.81.51 3.85 1.52l2.88-2.88A9.56 9.56 0 0 0 12 2a10 10 0 0 0-8.97 5.44l3.31 2.61A6.02 6.02 0 0 1 12 5.89Z"/></svg><span>Mit Google anmelden</span></button><p class="fp-account-google-note">Wähle nach Möglichkeit dieselbe Google-E-Mail wie beim bestehenden Konto, damit sich deine Lernstände nicht auf zwei Konten verteilen. Die Google-Anmeldung muss zunächst im Projekt aktiviert sein.</p><div class="fp-mail-help"><strong>Keine Bestätigungs-E-Mail erhalten?</strong><p>Der eingebaute Supabase-Mailversand ist auf Teamadressen und sehr wenige Nachrichten begrenzt. Du kannst solange ohne Login weiterlernen und unten ein Backup speichern. Bei einer bereits registrierten Adresse bitte anmelden, statt erneut ein Konto anzulegen.</p><a href="https://supabase.com/dashboard/project/oqhwgksunlffvknaspmx/auth/providers" target="_blank" rel="noopener">Mail-Einstellungen öffnen ↗</a></div></div><div id="fp-account-recovery" hidden><h3>Neues Passwort festlegen</h3><p>Du hast einen Wiederherstellungslink geöffnet. Wähle jetzt ein neues Passwort für dein bestehendes Konto.</p><form id="fp-account-recovery-form"><label>Neues Passwort<input type="password" id="fp-account-new-password" autocomplete="new-password" required minlength="8" maxlength="128" /></label><label>Passwort wiederholen<input type="password" id="fp-account-confirm-password" autocomplete="new-password" required minlength="8" maxlength="128" /></label><button type="submit" class="btn">Neues Passwort speichern</button></form></div><div id="fp-account-signed" hidden><p>Angemeldet als <strong id="fp-account-user"></strong>. Dein Lernstand wird automatisch und verschlüsselt übertragen.</p><label class="fp-account-consent"><input id="fp-account-analysis" type="checkbox" /> Erlaube persönliche Lernstand-Analysen durch meinen verbundenen ChatGPT-Finanzcoach.</label><p>Ohne Freigabe werden deine Lernstatistiken nicht für ChatGPT-Auswertungen verwendet. Sie werden nicht auf GitHub veröffentlicht.</p><div class="fp-account-actions"><button id="fp-account-save" class="btn" type="button">Jetzt synchronisieren</button><button id="fp-account-logout" class="settings-btn" type="button">Abmelden</button></div></div><div class="fp-account-footer"><button class="settings-btn" id="fp-account-backup" type="button">Alle Lernstände als Backup speichern</button><small>Bei Kontowechsel oder Safari-Datenlöschung ist ein zusätzliches Backup sinnvoll.</small></div></section>`;
@@ -210,7 +210,7 @@
     document.getElementById('fp-account-forgot').addEventListener('click',requestPasswordReset);
     document.getElementById('fp-account-google').addEventListener('click',signInGoogle);
     document.getElementById('fp-account-recovery-form').addEventListener('submit',finishPasswordReset);
-    document.getElementById('fp-account-save').addEventListener('click',()=>sync(true));
+    document.getElementById('fp-account-save').addEventListener('click',()=>sync(true,true));
     document.getElementById('fp-account-logout').addEventListener('click',async()=>{if(!client)return;await client.auth.signOut();user=null;ready=false;setStatus('Abgemeldet – Lernstand weiterhin lokal erhalten');showAccount();window.dispatchEvent(new Event('fp-auth-change'))});
     document.getElementById('fp-account-analysis').addEventListener('change',toggleAnalysis);
     document.getElementById('fp-account-backup').addEventListener('click',()=>{
@@ -277,14 +277,16 @@
     if(error){e.target.checked=!next;setStatus('Freigabe konnte nicht gespeichert werden: '+statusMessage(error))}else{canAnalyze=next;setStatus(next?'Analysefreigabe aktiviert':'Analysefreigabe ausgeschaltet')}
   }
   async function signedIn(session){if(!session?.user){user=null;ready=false;canAnalyze=false;showAccount();return}
-    if(user?.id===session.user.id&&ready)return;user=session.user;ready=false;showAccount();window.dispatchEvent(new Event('fp-auth-change'));await sync(true)
+    if(user?.id===session.user.id&&ready)return;user=session.user;ready=false;showAccount();window.dispatchEvent(new Event('fp-auth-change'));await sync(true,true)
   }
-  async function sync(force=false){
+  async function sync(force=false,visible=false){
     if(!client||!user)return;
     if(busy){if(dirty)pendingAgain=true;return}
     if(!force&&!ready)return;
     if(typeof navigator!=='undefined'&&navigator.onLine===false){setStatus('Offline – dein Lernfortschritt bleibt auf dem Gerät gespeichert.','offline');return}
-    busy=true;setStatus('Lernstand wird abgeglichen …','pending');
+    busy=true;
+    // Periodic and queued sync stays invisible in the header; only a manual/initial request spins.
+    if(visible||!ready)setStatus('Lernstand wird abgeglichen …','pending');
     let localBefore='';
     try{
       // Nie den Zustand eines anderen Logins in diesen Nutzeraccount hochladen.
@@ -316,18 +318,24 @@
       if(lastReset>0)merged.__reset_confirmed=resetMarker.reset_at;
       const changed=saveLocal(merged);
       canAnalyze=Boolean(data?.allow_coach_analysis);
-      const {error:writeError}=await client.from(CLOUD_TABLE).upsert({user_id:user.id,progress_data:merged,updated_at:new Date().toISOString()},{onConflict:'user_id'});
-      if(writeError)throw writeError;
+      // Skip unnecessary cloud writes on periodic checks when the server already has this exact state.
+      if(JSON.stringify(data?.progress_data||{})!==JSON.stringify(merged)){
+        const {error:writeError}=await client.from(CLOUD_TABLE).upsert({user_id:user.id,progress_data:merged,updated_at:new Date().toISOString()},{onConflict:'user_id'});
+        if(writeError)throw writeError;
+      }
       ready=true;lastRemote=merged;lastSyncAt=Date.now();retryCount=0;
       if(resetApplied){window.dispatchEvent(new Event('fp-account-reset-applied'));if(typeof window.location?.reload==='function')setTimeout(()=>window.location.reload(),50);}
       clearTimeout(retryTimer);retryTimer=null;
       // Wenn während des Uploads neue Übungen abgeschlossen werden, direkt einen weiteren Abgleich vormerken.
       const afterUpload=JSON.stringify(snapshot());
-      dirty=afterUpload!==JSON.stringify(merged);
+      // merged may contain private sync metadata (__reset_confirmed) not stored in the KEYS snapshot.
+      // Compare like-for-like: false differences used to schedule another sync forever.
+      const savedKeys=JSON.stringify(Object.fromEntries(KEYS.map(k=>[k,merged[k]||{}])));
+      dirty=afterUpload!==savedKeys;
       if(dirty)pendingAgain=true;
       try{localStorage.setItem('finanzpilot_account_owner',user.id)}catch{}
       showAccount();
-      setStatus(dirty?'Neue Änderungen werden gleich synchronisiert …':'Lernstand gespeichert und synchronisiert · '+new Date().toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'}),dirty?'pending':'success');
+      setStatus(dirty?'Lokale Änderungen werden im Hintergrund gesichert':'Lernstand gespeichert und synchronisiert · '+new Date().toLocaleTimeString('de-DE',{hour:'2-digit',minute:'2-digit'}),'success');
       if(changed.length){
         // Import in bereits geladene Lernmodule übernehmen, ohne die laufende PWA-Seite neu zu laden.
         window.dispatchEvent(new CustomEvent('fp-cloud-progress-imported',{detail:{keys:changed}}));
@@ -348,7 +356,8 @@
     if(!user)return;
     if(busy){pendingAgain=true;return}
     if(!ready)return;
-    setStatus('Änderungen lokal gespeichert – synchronisiere …','pending');
+    // No spinning indicator for the background-save debounce. The progress remains locally saved.
+    setStatus('Lokale Änderungen werden im Hintergrund gesichert','success');
     clearTimeout(timer);timer=setTimeout(()=>sync(false),1100)
   }
   // Beim Schließen darf eine Web-App nur Best-Effort-Arbeit erwarten.
@@ -390,7 +399,7 @@
     window.addEventListener('pageshow',()=>{if(user&&!busy&&(dirty||Date.now()-lastSyncAt>45000))sync(true)});
     window.addEventListener('focus',()=>{if(user&&!busy&&(dirty||Date.now()-lastSyncAt>45000))sync(true)});
     window.addEventListener('online',()=>{if(user&&!busy)sync(true);else if(!user)setStatus('Online – Anmeldung für Cloud-Sync möglich.','guest')});
-    setInterval(()=>{if(user&&!busy&&!document.hidden)sync(true)},120000);
+    setInterval(()=>{if(user&&!busy&&!document.hidden&&(dirty||Date.now()-lastSyncAt>300000))sync(true)},120000);
     client.auth.getSession().then(({data,error})=>{if(error){setStatus('Anmeldung nicht verfügbar: '+statusMessage(error));return}signedIn(data?.session)}).catch(()=>{});
   }
   window.FinanzPilotCloud={
