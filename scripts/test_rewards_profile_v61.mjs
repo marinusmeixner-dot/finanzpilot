@@ -46,8 +46,8 @@ assert.equal((settings.match(/role="switch"/g)||[]).length,2,'Exactly two switch
 for(const word of ['Töne','Animationen'])assert(settings.includes(word));
 for(const forbidden of ['Ton testen','animation-test','sound-test','Vorschau','fp52-settings-toggle'])assert(!settings.includes(forbidden));
 assert(profile.includes('settingsHtml?.()')&&profile.includes('bindSettings?.(root)'),'Both controls render and bind in profile.');
-assert(prefs.includes('answer:[[660,0,.075,.055],[880,.077,.095,.06]]'),'Familiar positive short chime.');
-assert(prefs.includes('wrong:[[440,0,.13,.055]]'),'Simple negative short low cue.');
+assert(prefs.includes('answer:[[1030,0,.072,.070]]'),'Short high correct answer signal, no long chime.');
+assert(prefs.includes('wrong:[[710,0,.090,.067]]'),'Short distinct failure signal, no harsh alarm.');
 const bindings={};
 controller.bindSettings({querySelector(sel){return{checked:true,addEventListener(type,fn){bindings[sel]=fn}}}});
 bindings['#fp52-sound-pref']({currentTarget:{checked:false}});
