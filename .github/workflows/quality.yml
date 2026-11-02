@@ -16,6 +16,8 @@ jobs:
         run: find . -type f -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -r -n1 node --check
       - name: Validate JSON files
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
+      - name: "V54: Real iPhone audio unlock, self-dismissed frameless rewards"
+        run: node scripts/test_reward_sound_v54.mjs
       - name: "V53: Earned award reveals, accessibility and server-backed achievements"
         run: node scripts/test_celebrations_v53.mjs
       - name: "V52: Lightweight audio and motion preferences with verified result feedback"
