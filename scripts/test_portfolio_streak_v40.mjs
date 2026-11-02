@@ -27,7 +27,7 @@ assert(streak.includes("paperClient.rpc('fp_streak_checkin')"));
 assert(streak.includes("fp-streak-trigger"));
 assert(streak.includes('fp40-streak-count'));
 const html=read('index.html');
-assert(html.includes('streak-v40.js?v=61')&&html.includes('streak-v40.css?v=40'));
+assert(html.includes('streak-v40.js?v=64')&&html.includes('streak-v40.css?v=64'));
 assert(html.includes('portfolio.js?v=61'));
 const mem={},events={};
 let identity='u1',num=0;
