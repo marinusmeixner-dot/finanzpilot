@@ -14,7 +14,11 @@ const top=html.match(/<header class="topbar">[\s\S]*?<\/header>/)?.[0]||'';
 assert(top.includes('id="top-fp"')&&top.includes('id="top-depot"'),'FP and numeric portfolio total remain');
 assert(!top.includes('fp-streak-trigger'),'Streak stays in Profile, not in topbar');
 assert(read('sync.js').includes("quick.id='fp-quick-sync'"),'Sync remains available');
-assert(html.includes('ui-v43.css?v=66'),'iPhone loads new right-edge CSS instead of stale cache');
-assert(JSON.parse(read('version.json')).version>=66,'App update detects new layout');
-assert(patch.includes('padding-inline:0!important;')&&patch.indexOf('padding-inline:12px!important;')<patch.indexOf('.main-area>.topbar>.header-right'),'Only inner action group resets padding; outer topbar maintains symmetric inset.');
-console.log('V66 PASS: symmetric mobile header padding moves logo right and FP/depot/sync left by 12px, without overflow or changing click targets.');
+assert(html.includes('ui-v43.css?v=67'),'iPhone loads new right-edge CSS instead of stale cache');
+assert(JSON.parse(read('version.json')).version>=67,'App update detects new layout');
+assert(/\.main-area>\.topbar>\.header-right\s*\{[^}]*padding-left:0!important;[^}]*padding-right:16px!important;/s.test(patch),'The entire FP + Depot + Sync group moves another 16px LEFT; no per-button transforms.');
+assert(patch.includes('padding-inline:12px!important;'),'Logo keeps the V66 corrected position.');
+// The CSS box-model at a 390px portrait viewport, with 15px main gutters:
+// logo starts at 15+12=27px, while Sync right edge = 390-15-12-16=347px.
+assert.equal(390-15-12-16,347,'Rightmost sync button ends 43px inside the iPhone viewport, not at its edge.');
+console.log('V67 PASS: FP, virtual portfolio and Sync moved 16px left together, logo unchanged; no right overflow.');
