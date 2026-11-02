@@ -1,5 +1,5 @@
 {
-  "version": 48,
-  "release": "2026-11-02-v48",
-  "notes": "Redesigned Start: compact next-lesson CTA based on 18 genuine foundation modules, personal progress and review queue, current FP/Skills/Streak figures, source-dated full editorial market news cards with accessible click targets that open complete articles directly in existing in-app reader rather than external/paywalled links; optional watchlist and market filters, finance statement and chart shortcuts. Specialist lessons refined without changing official answer keys, rewards, course progress or eligibility: 16 additional authored numerical independent practice exercises, total 24, plus contextual correct/incorrect post-server-grading feedback with misconception hints and return-to-explanation action. Updated hourly existing FinanzPilot Research & Lernredaktion to keep homepage news complete and improve lesson quality; added end-to-end Start-news and lesson regression tests."
+  "version": 49,
+  "release": "2026-11-02-v49",
+  "notes": "Lernen: eight new advanced skills (52 total) with 24 sourced-independent case lessons (156 total), 46 optional numeric exercises, more individually explained mistakes and transfer steps in 21 prior lessons, append-only Supabase catalog registration with cross prerequisites and matching server quiz answer keys. All existing user progress, achievements and V48 home/V47 financial statements preserved. Added dedicated V49 learning-quality and dependency regression tests; complete GitHub Actions verification."
 }
