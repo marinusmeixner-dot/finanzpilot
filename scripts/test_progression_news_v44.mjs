@@ -18,7 +18,8 @@ assert(hub.includes('data-fp41-route="skilllessons"')||hub.includes("['skillless
 assert(!hub.includes('fp41-tabs'));
 assert(profile.includes('v.mastered%3'));
 assert(html.match(/id="fp43-fp-trigger"/g)?.length===1);
-assert(html.match(/id="fp43-level-trigger"/g)?.length===1);
+assert(html.match(/id="fp43-depot-trigger"/g)?.length===1,'V61 replaced top level by actual virtual depot value');
+assert(!html.includes('id="fp43-level-trigger"'),'Do not reintroduce obsolete level pill');
 assert(!html.includes('id="fp44-fp"'));
 assert(!html.includes('id="fp44-level"'));
 assert(html.includes('sync.js?v=57'));
