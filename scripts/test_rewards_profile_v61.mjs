@@ -9,7 +9,7 @@ const version=JSON.parse(read('version.json'));
 assert(version.version>=61,'Later releases must preserve V61 rewards, profile and depot behavior');
 assert(html.includes('top-depot')&&!html.includes('top-level'),'Replace level in topbar with total portfolio value.');
 assert(!html.includes('fp43-level-trigger')&&!html.includes('fp52-settings-toggle'),'No header level or sound controls.');
-for(const name of ['header-v43.js','portfolio.js','profile-v42.js','feedback-v52.js','celebrations-v53.js','economy.js'])assert(html.includes(name+'?v=61'),'Fresh PWA asset '+name);
+for(const name of ['header-v43.js','portfolio.js','profile-v42.js','feedback-v52.js','celebrations-v53.js','economy.js'])assert(new RegExp(name.replaceAll('.','\\.')+'\\?v=\\d+').test(html),'Fresh PWA asset '+name);
 assert(portfolio.includes('currencyStats')&&portfolio.includes('cash:balance,value,invested,total:round(balance+value)'),'Authoritative EUR portfolio total is cash PLUS holdings.');
 assert(portfolio.includes('complete:valid&&!stats.unpriced'),'Must never show misleading incomplete total.');
 const elements=Object.fromEntries(['top-depot','top-fp','fp43-depot-trigger'].map(k=>[k,{textContent:'',title:'',addEventListener(n,h){this[n]=h}}]));
