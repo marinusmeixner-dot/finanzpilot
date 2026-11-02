@@ -16,3 +16,5 @@
 .fp52-toast{position:fixed;z-index:10060;bottom:calc(env(safe-area-inset-bottom,0px) + 82px);left:50%;max-width:min(440px,calc(100vw - 30px));transform:translateX(-50%);padding:12px 18px;border:1px solid #5e927e;border-radius:13px;background:#203d3a;color:#edfff6;font-size:13px;font-weight:650;text-align:center;pointer-events:none}
 .fp52-toast.fp52-error{background:#482f39;border-color:#93616b;color:#ffe0e0}
 @media(max-width:520px){.fp52-settings-toggle{width:28px;height:28px;border-radius:8px}.fp52-settings{top:calc(env(safe-area-inset-top,0px) + 66px)}}
+
+@media(prefers-reduced-motion:reduce){.fp52-settings *,.fp52-toast{animation:none!important;transition:none!important}}
