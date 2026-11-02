@@ -30,79 +30,96 @@
 #top-depot{font-variant-numeric:tabular-nums}
 @media(max-width:650px){.fp60-depot-pill{padding:6px 7px;font-size:10px}.fp60-depot-pill strong{font-size:11px}}
 
-/* V63: give portfolio wealth, FP and streak enough room at every iPhone width.
-   Desktop remains a single line; phones use a calm two-line header. */
-.topbar .header-right{min-width:0}
+/* V68: Single-row iPhone topbar. Replaces conflicting V63-V67 GRID, 100%-wide
+   action group and additive offsets. Real DOM uses .mobile-logo, not
+   .fp-mobile-brand; force actual DOM into one bounded flex layout. */
 #fp43-depot-trigger{font-variant-numeric:tabular-nums;min-width:0}
 #top-depot{font-variant-numeric:tabular-nums}
-@media(max-width:700px){
- .topbar{display:grid!important;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;align-content:center;justify-items:stretch;row-gap:7px;min-height:calc(92px + env(safe-area-inset-top,0px))!important}
- .topbar .fp-mobile-brand{grid-row:1;grid-column:1;flex:none;min-width:0}
- .topbar .header-right{grid-row:2;grid-column:1;margin:0!important;width:100%;display:flex;gap:6px;justify-content:space-between;align-items:center;min-width:0}
- .topbar .header-right #today-date{display:none!important}
- .topbar .header-right .fp43-header-pill{flex:0 1 auto;min-width:0;font-size:11px;padding:7px 9px;justify-content:center}
- .topbar .header-right .fp60-depot-pill{flex:1 1 auto;min-width:104px;padding:7px 8px;gap:4px}
- .topbar .header-right .fp60-depot-pill strong{overflow:hidden;text-overflow:ellipsis;min-width:0;font-size:12px}
- .topbar .header-right .fp-small-streak{display:inline-flex!important;align-items:center;justify-content:center;flex:none;padding:8px 7px;font-size:11px;white-space:nowrap}
- .topbar .header-right .fp-topbar-sync{width:33px;height:33px;min-height:33px;min-width:33px;border-radius:10px;padding:5px}
- .topbar .header-right .fp-topbar-sync svg{width:17px;height:17px}
-}
-@media(max-width:360px){
- .topbar .header-right{gap:4px}
- .topbar .header-right .fp43-header-pill{padding:7px 6px;font-size:10px}
- .topbar .header-right .fp60-depot-pill{min-width:90px}
- .topbar .header-right .fp-small-streak{padding:7px 5px}
- .topbar .header-right .fp-topbar-sync{width:29px;min-width:29px;height:30px;min-height:30px}
-}
-
-/* V63: a draft choice has no correctness or failure color before explicit verification. */
 .option.selected:not(.correct):not(.wrong){background:#223d49;border:2px solid #8dd4bf;box-shadow:0 0 0 2px rgba(141,212,191,.12)}
-
-/* V64: no Streak in the topbar; only FP, portfolio value and manual sync on phones. */
-#fp43-depot-trigger.fp60-depot-pill{min-width:0}
-#fp43-depot-trigger.fp60-depot-pill strong{white-space:nowrap}
-@media(max-width:700px){
- .topbar .header-right{justify-content:flex-end;gap:7px}
- .topbar .header-right #fp43-fp-trigger{flex:0 0 auto;white-space:nowrap}
- .topbar .header-right #fp43-depot-trigger{flex:0 1 auto;min-width:0;max-width:100%;padding-inline:11px}
- .topbar .header-right #fp43-depot-trigger strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
- .topbar .header-right #fp-quick-sync{flex:0 0 34px;width:34px;min-width:34px;min-height:34px}
-}
-@media(max-width:360px){
- .topbar .header-right{gap:5px}
- .topbar .header-right #fp43-depot-trigger{padding-inline:7px}
- .topbar .header-right #fp-quick-sync{flex-basis:30px;width:30px;min-width:30px}
-}
-
-/* V65/V66: Header controls align with the SAME right content edge as the rest of the app.
-   Older mobile CSS gave the sticky topbar negative side margins, causing the
-   100%-wide second grid row to drift beyond the visible content boundary. */
 @media(max-width:700px){
  .main-area>.topbar{
-  width:100%!important;
-  max-width:100%!important;
-  margin-inline:0!important;
-  padding-inline:12px!important; /* symmetric inset for logo left and action group right */
-  box-sizing:border-box;
+  display:flex!important;
+  flex-flow:row nowrap!important;
+  align-items:center!important;
+  justify-content:space-between!important;
+  gap:6px!important;
+  width:calc(100% + 30px)!important;
+  max-width:none!important;
+  min-width:0!important;
+  margin-left:-15px!important;
+  margin-right:-15px!important;
+  padding-left:15px!important;
+  padding-right:15px!important;
+  box-sizing:border-box!important;
+  min-height:calc(76px + env(safe-area-inset-top,0px))!important;
  }
+ .main-area>.topbar>.mobile-logo{
+  display:block!important;
+  flex:0 1 auto!important;
+  min-width:0!important;
+  max-width:none!important;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  font-size:18px;
+ }
+ .main-area>.topbar>.mobile-logo b{font-size:18px}
  .main-area>.topbar>.header-right{
-  grid-column:1;
-  justify-self:stretch;
-  width:100%;
-  max-width:100%;
-  margin-inline:0!important;
-  padding-left:0!important;
-  padding-right:16px!important; /* V67: correct the 3 controls together, independent of logo */
-  box-sizing:border-box;
-  display:flex;
+  display:flex!important;
+  flex:0 1 auto!important;
+  flex-flow:row nowrap!important;
+  align-items:center!important;
   justify-content:flex-end!important;
-  align-items:center;
-  flex-wrap:nowrap;
- }
- .main-area>.topbar>.header-right>#fp-quick-sync{
+  width:auto!important;
+  max-width:calc(100% - 114px)!important;
+  min-width:0!important;
+  margin-left:auto!important;
   margin-right:0!important;
-  flex-shrink:0;
+  padding:0!important;
+  gap:5px!important;
+  box-sizing:border-box!important;
  }
+ .main-area>.topbar>.header-right #today-date{display:none!important}
+ .main-area>.topbar>.header-right #fp43-fp-trigger{
+  flex:0 0 auto!important;
+  min-width:0!important;
+  white-space:nowrap;
+  padding:7px 8px;
+  font-size:11px;
+ }
+ .main-area>.topbar>.header-right #fp43-depot-trigger{
+  flex:0 1 auto!important;
+  min-width:0!important;
+  max-width:135px!important;
+  overflow:hidden;
+  padding:7px 8px!important;
+  font-size:11px;
+ }
+ .main-area>.topbar>.header-right #fp43-depot-trigger strong{
+  display:block;min-width:0;max-width:100%;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  font-size:11px;font-variant-numeric:tabular-nums;
+ }
+ .main-area>.topbar>.header-right #fp-quick-sync{
+  display:grid!important;
+  flex:0 0 34px!important;
+  width:34px!important;
+  min-width:34px!important;
+  height:34px!important;
+  min-height:34px!important;
+  padding:5px!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+ }
+}
+@media(max-width:370px){
+ .main-area>.topbar{gap:4px!important;padding-left:12px!important;padding-right:12px!important}
+ .main-area>.topbar>.mobile-logo{font-size:15px}
+ .main-area>.topbar>.mobile-logo b{font-size:15px}
+ .main-area>.topbar>.header-right{gap:4px!important;max-width:calc(100% - 96px)!important}
+ .main-area>.topbar>.header-right #fp43-fp-trigger{padding-inline:6px;font-size:10px}
+ .main-area>.topbar>.header-right #fp43-depot-trigger{padding-inline:6px!important}
+ .main-area>.topbar>.header-right #fp-quick-sync{flex-basis:30px!important;width:30px!important;min-width:30px!important;height:30px!important;min-height:30px!important}
 }
 @media(min-width:701px){
  .topbar>.header-right{margin-left:auto;justify-content:flex-end}
