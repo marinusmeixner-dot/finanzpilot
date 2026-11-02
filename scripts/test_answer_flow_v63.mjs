@@ -13,7 +13,7 @@ assert(profile.includes('settingsHtml?.()')&&profile.includes('bindSettings?.(ro
 assert(sound.includes('role="switch" id="fp52-sound-pref"')&&sound.includes('role="switch" id="fp52-motion-pref"'),'Only two toggles.');
 assert(!sound.includes('fp52-sound-test')&&!sound.includes('fp52-animation-test'),'No test button or demo UI.');
 assert(sound.includes('answer:[[660,0,.080,.055]]')&&sound.includes('wrong:[[440,0,.095,.050]]'),'Plain single-note tones for answer confirmation.');
-assert(css.includes('grid-template-rows:auto auto')&&css.includes('.fp60-depot-pill'),'Phone header has two practical rows.');
+assert(css.includes('flex-flow:row nowrap!important')&&css.includes('.fp60-depot-pill'),'Phone header has a bounded single row with all controls visible.');
 assert(streak.includes("show?.('streak'")&&streak.includes('data?.awarded_now'),'Every newly earned first-visit streak award has its animation.');
 assert(reveal.includes('dismissTimer=setTimeout(advance'),'Every award automatically dismisses.');
 assert(reveal.includes("level:{caption:'LEVEL AUFGESTIEGEN!'")&&reveal.includes("artifact:{caption:'NEUES ARTEFAKT'"),'Level and artifacts have distinct animations.');
