@@ -72,7 +72,7 @@
     if(userId!==window.FinanzPilotCloud.user)return;
     result=data;
     if(data?.awarded_now){
-     window.FinanzPilotCelebrations?.show?.('streak',{confirmed:true,id:'streak:'+data.today,title:Math.max(1,Number(data.day)||1)+' Tage in Folge!',text:'Heute erhalten: +'+Number(data.today_euros||0).toLocaleString('de-DE')+' € virtuelles Depotgeld'+(Number(data.today_points)>0?' und +'+Number(data.today_points)+' FP':'')+(Number(data.milestone)>0?' · Streak-Meilenstein!':''),value:Number(data.today_points)>0?'+'+Number(data.today_points)+' FP':'TAGESBESUCH BESTÄTIGT'});
+     window.FinanzPilotCelebrations?.show?.('streak',{confirmed:true,id:'streak:'+data.today,title:Math.max(1,Number(data.day)||1)+' Tage in Folge!',text:'Heute erhalten: +'+Number(data.today_euros||0).toLocaleString('de-DE')+' € virtuelles Depotgeld'+(Number(data.today_points)>0?' und +'+Number(data.today_points)+' FP':'')+(Number(data.milestone)>0?' · Streak-Meilenstein!':''),value:'+'+euro(data.today_euros||0)+(Number(data.today_points)>0?' · +'+Number(data.today_points)+' FP':'')});
      window.dispatchEvent?.(new Event('fp-streak-reward'));
      if(typeof state!=='undefined'&&state.view==='depot')window.FinanzPilotPortfolio?.load?.();
      if(typeof state!=='undefined'&&state.view==='inventory')window.FinanzPilotEconomy?.refresh?.();
