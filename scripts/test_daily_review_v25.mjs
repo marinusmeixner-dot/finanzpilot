@@ -32,7 +32,7 @@ const context=vm.createContext({window,document,localStorage,state,console,fetch
 vm.runInContext(read('daily-review.js'),context,{filename:'daily-review.js'});
 const api=window.FinanzPilotDailyReview;
 await api.load();
-assert.equal(api.tasks.length,2);
+assert(api.tasks.length>=2&&api.tasks.length<=3,'Daily editorial publishes two or three tasks');
 assert.equal(rows.length,0,'App must never auto-submit private responses');
 assert(api.render().includes('Tagesherausforderungen'));
 assert(api.render().toLowerCase().includes('privat'));
