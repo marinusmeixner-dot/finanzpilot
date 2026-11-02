@@ -6,7 +6,7 @@ const data=JSON.parse(read('data/specializations-v41.json'));
 const sql=read('supabase/specialization_progress_v41.sql');
 const streak=read('supabase/streak_promotion_upgrade_v41.sql');
 const app=read('app.js'),nav=read('ux-v15.js'),career=read('career.js'),html=read('index.html');
-assert.equal(JSON.parse(read('version.json')).version,48);
+assert.equal(JSON.parse(read('version.json')).version,49);
 assert.equal(data.branches.length,8);
 assert.equal(data.skills.length,52);
 assert.equal(data.special.length,3);
