@@ -18,6 +18,8 @@ jobs:
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
       - name: "V56: Economically sustainable XP/FP and balanced skill investment"
         run: node scripts/test_economy_v56.mjs
+      - name: "V60: Display verified Alphabet and other private-watchlist articles after login"
+        run: node scripts/test_watchlist_news_v60.mjs
       - name: "V59: Optional per-lesson abbreviation glossary without inline parentheses"
         run: node scripts/test_abbreviations_v59.mjs
       - name: "V58: Audible high correct/wrong feedback and guaranteed lesson completion animations"
