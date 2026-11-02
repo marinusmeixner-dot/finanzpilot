@@ -34,3 +34,9 @@
 .fp40-streak-error{color:#f4ccaa;font-size:12px}
 @media(max-width:540px){.fp40-streak-panel{padding:18px 15px}.fp40-streak-dialog{max-width:calc(100vw - 18px)}}
 @media(prefers-reduced-motion:reduce){.fp40-streak-dialog{scroll-behavior:auto}}
+
+/* V64: persistent profile section, not a header overlay. */
+.fp40-streak-page{width:min(780px,100%);margin:0 auto 34px;padding:22px clamp(14px,4vw,30px);border:1px solid #42636a;border-radius:20px;background:#122e38;color:#edf7f1;box-sizing:border-box}
+.fp40-streak-page .fp40-streak-head h2{font-size:clamp(25px,5vw,34px)}
+.fp40-streak-page .fp40-streak-count strong{font-size:clamp(50px,12vw,76px)}
+@media(max-width:480px){.fp40-streak-page{margin-bottom:28px;border-radius:17px;padding:17px 13px}.fp40-streak-page .fp40-streak-week{gap:4px}.fp40-streak-page .fp40-streak-day{padding:8px 1px}}
