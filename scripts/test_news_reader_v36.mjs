@@ -11,7 +11,7 @@ assert(daily.stories.every(s=>s.id&&s.article?.sections?.length>=4),'Every edito
 assert(daily.stories.some(s=>s.symbols?.includes('AMZN')&&s.article?.sections?.length>=4));
 assert(daily.stories.some(s=>s.symbols?.includes('MSFT')&&s.article?.sections?.length>=4));
 assert(edge.includes('nativeChartExists')&&edge.includes('verified.length?verified:remaining.slice(0,8)'));
-assert(edge.includes('chart_verified:await nativeChartExists(x.symbol)'));
+assert(edge.includes('const info=await nativeChartExists(x.symbol)')&&edge.includes('chart_verified:!!info'),'Chart verification must use actual native-series evidence');
 assert(edge.includes('"BAYN.DE"')&&edge.includes('"BYW.DE"'));
 assert(portfolio.includes('x.chart_verified')&&portfolio.includes('Kursreihe nicht bestätigt'));
 assert(nav.includes("marketarticle:'markets'")&&nav.includes('function goBack()'));
