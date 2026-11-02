@@ -3988,7 +3988,7 @@
             "answer": 18,
             "tolerance": 0.01,
             "unit": "Tage",
-            "explanation": "24 / 120 × 90 = 18 Tage."
+            "explanation": "DSO (Days Sales Outstanding) = durchschnittliche Forderungen / Quartalsumsatz × Quartalstage = 24 / 120 × 90 = 18 Tage. Das ist eine vereinfachte Forderungslaufzeit; Umsätze auf Kredit und saisonale Schwankungen können die reale Kennzahl verändern."
           }
         },
         {
@@ -4022,7 +4022,7 @@
             "answer": 20,
             "tolerance": 0.01,
             "unit": "Tage",
-            "explanation": "25 + 30 − 35 = 20 Tage."
+            "explanation": "Cash Conversion Cycle = Lagerreichweite + Forderungslaufzeit − Lieferantenzahlungsziel = 25 + 30 − 35 = 20 Tage. Lieferantenkredit verkürzt die Zeit, in der eigenes Geld im Umlaufvermögen gebunden ist. Negative Werte wären grundsätzlich möglich."
           }
         }
       ]
@@ -4132,7 +4132,7 @@
             "answer": 1040.4,
             "tolerance": 0.2,
             "unit": "€",
-            "explanation": "1.000 × 1,02² = 1.040,40 €."
+            "explanation": "Bei angenommener konstanter jährlicher Inflation wird der Warenkorb zweimal mit 1,02 multipliziert: 1.000 € × 1,02 × 1,02 = 1.040,40 €. Die zweite Erhöhung bezieht sich auf den bereits gestiegenen Preis; einfach zweimal 20 € addieren ergäbe fälschlich 1.040 €."
           }
         }
       ]
@@ -4285,7 +4285,7 @@
             "answer": 250,
             "tolerance": 0.01,
             "unit": "Mio. €",
-            "explanation": "320 − 70 = 250 Mio. €."
+            "explanation": "Vereinfachte Nettoschulden = verzinsliche Finanzschulden − frei verfügbare anrechenbare Zahlungsmittel = 320 − 70 = 250 Mio. €. Nicht frei verfügbare Kassenbestände dürfen nicht ungeprüft abgezogen werden; Leasing und andere Schuldendefinitionen können den Wert verändern."
           }
         },
         {
@@ -4319,7 +4319,7 @@
             "answer": 5,
             "tolerance": 0.01,
             "unit": "-fach",
-            "explanation": "40 / 8 = 5-fache Deckung."
+            "explanation": "Zinsdeckungsgrad = EBIT / Zinsaufwendungen = 40 Mio. € / 8 Mio. € = 5-fach. Der operative Gewinn deckt die angegebenen Zinsaufwendungen rechnerisch fünfmal. Das garantiert noch keine Liquidität zur Zahlung; Cashflow, Fälligkeiten und Einmaleffekte sind zusätzlich zu prüfen."
           }
         },
         {
