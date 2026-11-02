@@ -73,3 +73,36 @@
  .topbar .header-right #fp43-depot-trigger{padding-inline:7px}
  .topbar .header-right #fp-quick-sync{flex-basis:30px;width:30px;min-width:30px}
 }
+
+/* V65: Header controls align with the SAME right content edge as the rest of the app.
+   Older mobile CSS gave the sticky topbar negative side margins, causing the
+   100%-wide second grid row to drift beyond the visible content boundary. */
+@media(max-width:700px){
+ .main-area>.topbar{
+  width:100%!important;
+  max-width:100%!important;
+  margin-inline:0!important;
+  padding-inline:0!important;
+  box-sizing:border-box;
+ }
+ .main-area>.topbar>.header-right{
+  grid-column:1;
+  justify-self:stretch;
+  width:100%;
+  max-width:100%;
+  margin-inline:0!important;
+  padding-inline:0!important;
+  box-sizing:border-box;
+  display:flex;
+  justify-content:flex-end!important;
+  align-items:center;
+  flex-wrap:nowrap;
+ }
+ .main-area>.topbar>.header-right>#fp-quick-sync{
+  margin-right:0!important;
+  flex-shrink:0;
+ }
+}
+@media(min-width:701px){
+ .topbar>.header-right{margin-left:auto;justify-content:flex-end}
+}
