@@ -45,7 +45,7 @@ async function awardFoundation(moduleId,title,celebrate=true){
   mark(id,moduleId);
   if(result.awarded_now&&celebrate)window.FinanzPilotCelebrations?.show?.('basics',{confirmed:true,id:'foundations:'+id+':'+moduleId,title:title||'Grundlage gemeistert',text:'Grundlagenwissen erfolgreich abgeschlossen. Die Punkte sind deinem Konto gutgeschrieben.',value:'+'+result.xp_awarded+' XP · +'+result.fp_awarded+' FP'});
   window.FinanzPilotHeader?.refresh?.(true);
-  if(result.awarded_now||celebrate)await refresh(true);
+  if(celebrate)await refresh(true);
   return result;
  }catch(e){lastError='Grundlagenbelohnung konnte noch nicht bestätigt werden: '+String(e.message||e);repaint();return null}
 }
