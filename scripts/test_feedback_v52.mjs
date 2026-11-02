@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import vm from 'node:vm';
 const code=fs.readFileSync('feedback-v52.js','utf8'),css=fs.readFileSync('feedback-v52.css','utf8'),index=fs.readFileSync('index.html','utf8');
-assert(index.includes('feedback-v52.js?v=53')&&index.includes('feedback-v52.css?v=52'));
+assert(index.includes('feedback-v52.js?v=54')&&index.includes('feedback-v52.css?v=54'));
 assert(code.includes('AudioContext')&&code.includes('webkitAudioContext'),'Must support Safari audio.');
 assert(code.includes('prefers-reduced-motion'),'Must honor accessibility media query.');
 assert(code.includes('fp52-sound-pref')&&code.includes('fp52-motion-pref'),'Must provide sound and motion controls.');
