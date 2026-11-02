@@ -89,10 +89,11 @@
   const top=document.querySelector('.topbar');
   if(top){
    top.querySelector('.topbar-note')?.remove();
-   top.querySelector('.mobile-logo')?.remove();
+   // Keep the actual .mobile-logo from index.html: V68+ mobile CSS targets this node.
+   // The former injected .fp-mobile-brand removed the real logo and broke header sizing.
+   top.querySelector('.fp-mobile-brand')?.remove();
    top.querySelector('.fp-menu-trigger')?.remove();
    top.querySelector('.fp-topbar-left')?.remove();
-   top.insertAdjacentHTML('afterbegin','<div class="fp-mobile-brand"><span class="fp-brand-mark">↗</span><b>FinanzPilot</b></div>');
    top.querySelector('.pill.muted')?.classList.add('fp-small-date');
    top.querySelector('.pill.streak')?.classList.add('fp-small-streak');
   }
