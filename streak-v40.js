@@ -24,11 +24,11 @@
     '<b>'+(row?'✓':'·')+'</b></div>';
   }).join('');
  }
- function panelHtml(){
+ function panelHtml(standalone=false){
   const day=Math.min(30,Number(result?.day)||0),signed=Boolean(connected());
   const next=day<10?10:day<20?20:day<30?30:null;
   const goal=next===10?'+100 € virtuelles Depotgeld & +2 Forschungspunkte':next===20?'+125 € & +3 Forschungspunkte':next===30?'+150 € & +4 Forschungspunkte':'Alle drei großen Meilensteine erreicht';
-  return '<div class="fp40-streak-head"><div><span class="eyebrow">FINANZPILOT · BESUCHSSERIE</span><h2>Deine Streak</h2><p>Einmal täglich FinanzPilot öffnen. Maximal 30 Tage werden angezeigt.</p></div><button type="button" class="fp40-streak-close" data-fp40-streak-close aria-label="Schließen">×</button></div>'+
+  return '<div class="fp40-streak-head"><div><span class="eyebrow">FINANZPILOT · BESUCHSSERIE</span><h2>Deine Streak</h2><p>Einmal täglich FinanzPilot öffnen. Maximal 30 Tage werden angezeigt.</p></div>'+(standalone?'':'<button type="button" class="fp40-streak-close" data-fp40-streak-close aria-label="Schließen">×</button>')+'</div>'+
    '<div class="fp40-streak-count"><strong>'+day+'</strong><span> / 30 Tage</span></div>'+(Number(result?.promotion_count)>0?'<p class="fp41-streak-promotion">Deine '+Number(result.promotion_count)+' neue(n) Beförderung(en) verbessern die tägliche Belohnung um +'+euro(result.daily_euro_bonus)+' Spielgeldbonus. Zusätzliche tägliche FP durch Beförderungen entfallen im neuen Balancing.</p>':'')+
    '<div class="fp40-streak-week" aria-label="Besuche der letzten sieben Tage">'+week()+'</div>'+
    (result?'<div class="fp40-streak-today"><b>Heutige Belohnung '+(result.awarded_now?'erhalten':'bereits verbucht')+'</b>'+
@@ -44,6 +44,14 @@
    (error?'<p class="fp40-streak-error" role="status">'+esc(error)+'</p>':'')+
    (!signed?'<button type="button" class="btn" data-fp40-streak-login>Zum kostenlosen Konto anmelden</button>':'')+
    '<p class="fp40-streak-disclaimer">Nur Spielgeld, keine echten Einzahlungen. Nach einem ausgelassenen Kalendertag beginnt die Besuchsserie wieder bei Tag 1. Bereits verdiente Punkte und Gegenstände bleiben erhalten. Belohnungen werden serverseitig nur einmal je Kalendertag vergeben.</p>';
+ }
+ function render(){
+  // Like Level & Belohnungen: a full, navigable profile section – not a header dialog.
+  return '<section class="fp40-streak-page" aria-label="Streak und tägliche Belohnungen">'+panelHtml(true)+'</section>';
+ }
+ function bind(root=document){
+  root.querySelector('[data-fp40-streak-login]')?.addEventListener('click',()=>window.FinanzPilotCloud?.openLogin?.());
+  if(connected()&&(!result||result.today!==dayBerlin()))checkin();
  }
  function draw(){
   const dialog=document.getElementById('fp-streak-dialog');if(!dialog)return;
@@ -78,7 +86,7 @@
      if(typeof state!=='undefined'&&state.view==='inventory')window.FinanzPilotEconomy?.refresh?.();
     }
    }catch(e){error='Die Tagesbelohnung konnte nicht bestätigt werden: '+String(e.message||e)}
-   finally{busy=false;reflect()}
+   finally{busy=false;reflect();if(typeof state!=='undefined'&&state.view==='streaks')window.render?.()}
   })();
   return pending;
  }
@@ -89,6 +97,6 @@
   document.addEventListener('visibilitychange',()=>{if(!document.hidden&&result?.today!==dayBerlin())checkin()});
   checkin();
  }
- window.FinanzPilotStreak={open,checkin,get status(){return result}};
+ window.FinanzPilotStreak={open,render,bind,checkin,get status(){return result}};
  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
