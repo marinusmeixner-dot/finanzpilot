@@ -1,13 +1,14 @@
 /* v46: four-step specialist teaching – earned rewards remain server-owned. */
 (function(){
 'use strict';
-let selected='',page=0,lastFeedback=null;
+let selected='',page=0,lastFeedback=null,chosen=null;
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const labels=['Verstehen','Beispiel lösen','Selbst erklären','Wissen prüfen'];
-function open(id){if(selected!==id){selected=id;page=0;lastFeedback=null}}
+function open(id){if(selected!==id){selected=id;page=0;lastFeedback=null;chosen=null}}
 function feedback(lessonId,correct){
  if(lessonId!==selected)return;
  lastFeedback={id:lessonId,correct:!!correct};
+ if(!correct)chosen=null;
 }
 function render(skill,lesson,info={}){
  if(selected!==lesson.id)open(lesson.id);
@@ -27,8 +28,8 @@ function render(skill,lesson,info={}){
   (window.FinanzPilotStudy?.noteWidget?.(lesson.id,lesson.title,lesson.transferPrompt)||'<p>Erkläre den Zusammenhang in eigenen Worten.</p>')+
   (lesson.transferHint?'<details class="fp46-transfer-hint"><summary>Prüfkriterien zur Erklärung</summary><p>'+esc(lesson.transferHint)+'</p></details>':'')+'</section>';
  if(step===3)content='<section class="fp41-question fp46-study-panel"><span class="eyebrow">04 · AKTIVES ABRUFEN</span><h3>'+esc(lesson.question)+'</h3><p>Versuche ohne Nachlesen zu antworten. Die Bewertung erfolgt weiterhin auf dem Server.</p>'+
-  lesson.options.map((opt,i)=>'<button type="button" data-fp41-answer="'+i+'" '+(done?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+esc(opt)+'</button>').join('')+
-  '<div class="fp41-answer-status">'+(done?'✓ Bereits bestanden. Erneutes Lesen vergibt keine doppelten XP.':'Falls du falsch liegst, lies die Erklärung erneut und versuche es noch einmal.')+'</div>'+
+  lesson.options.map((opt,i)=>'<button type="button" class="fp63-special-choice'+(chosen===i?' selected':'')+'" data-fp41-answer="'+i+'" aria-pressed="'+(chosen===i)+'" '+(done?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+esc(opt)+'</button>').join('')+
+  '<div class="fp41-answer-status">'+(done?'✓ Bereits bestanden. Erneutes Lesen vergibt keine doppelten XP.':'Wähle zunächst eine Antwort. Erst „Antwort prüfen“ sendet sie zur Bewertung.')+'</div>'+
   (lastFeedback?.id===lesson.id?'<div class="fp48-feedback '+(lastFeedback.correct?'correct':'retry')+'" role="status"><h4>'+(lastFeedback.correct?'Richtig – das solltest du mitnehmen':'Noch nicht richtig – so kannst du es prüfen')+'</h4>'+
   '<p>'+esc(lastFeedback.correct?(lesson.keyTakeaway||lesson.goal):(lesson.pitfall||'Vergleiche deine Antwort nochmals mit dem Beispiel und kontrolliere die zugrunde liegende Definition.'))+'</p>'+
   '<details><summary>'+(lastFeedback.correct?'Den Zusammenhang noch einmal nachvollziehen':'Hilfestellung: Was ist entscheidend?')+'</summary><p>'+esc(lastFeedback.correct?lesson.explanation:(lesson.transferHint||lesson.explanation))+'</p></details>'+
@@ -36,10 +37,18 @@ function render(skill,lesson,info={}){
  return '<div class="fp41-study fp46-stepper"><div class="eyebrow">'+esc(skill.title)+' · LEKTION '+lesson.sequence+' VON '+skill.lessons.length+'</div><h2>'+esc(lesson.title)+'</h2>'+
   '<p class="fp46-study-goal"><b>Danach kannst du:</b> '+esc(lesson.goal)+'</p>'+steps+content+
   '<div class="fp46-study-controls">'+(step>0?'<button type="button" class="btn secondary" data-fp46-study-step="'+(step-1)+'">← Vorheriger Lernschritt</button>':'')+
-  (step<3?'<button type="button" class="btn" data-fp46-study-step="'+(step+1)+'">Weiter: '+labels[step+1]+' →</button>':'')+'</div>'+
+  (step<3?'<button type="button" class="btn" data-fp46-study-step="'+(step+1)+'">Weiter: '+labels[step+1]+' →</button>':
+   done?'<button type="button" class="btn" data-fp41-finish>Lektion abschließen →</button>':
+   '<button type="button" class="btn" data-fp41-check '+(chosen===null||info.busy?'disabled':'')+'>Antwort prüfen</button>')+'</div>'+
   '<small class="fp46-study-foot">Notizen und Wiederholungen sind freiwillig und vergeben keine XP. Den offiziellen Abschluss prüft nur der Server.</small></div>';
 }
 function bind(root=document){
+ root.querySelectorAll('[data-fp41-answer]').forEach(button=>button.addEventListener('click',()=>{
+  const next=Number(button.dataset.fp41Answer);
+  if(!Number.isInteger(next)||next<0||next>3)return;
+  chosen=next;lastFeedback=null;window.render?.();
+ }));
+
  root.querySelectorAll('[data-fp46-study-step]').forEach(b=>b.addEventListener('click',()=>{page=Math.max(0,Math.min(3,Number(b.dataset.fp46StudyStep)||0));window.render?.()}));
  const check=root.querySelector('[data-fp46-calc-check]');
  check?.addEventListener('click',()=>{
@@ -56,5 +65,5 @@ function bind(root=document){
 
  window.FinanzPilotStudy?.bind?.(root);
 }
-window.FinanzPilotLessonView={open,render,bind,feedback,get page(){return page}};
+window.FinanzPilotLessonView={open,render,bind,feedback,get chosen(){return chosen},get page(){return page}};
 })();
