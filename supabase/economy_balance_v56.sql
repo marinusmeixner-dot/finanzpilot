@@ -46,7 +46,7 @@ begin
  return jsonb_build_object('ok',true,'awarded_now',v_new,'module_id',p_module_id,
  'xp_awarded',case when v_new then v_xp else 0 end,'fp_awarded',case when v_new then v_fp else 0 end,
  'xp_total',coalesce(v_profile,0));
-end $function$
+end $function$;
 
 CREATE OR REPLACE FUNCTION public.fp_level_claim_v55()
  RETURNS jsonb
@@ -82,7 +82,7 @@ begin
  return jsonb_build_object('ok',true,'xp',v_xp,'level',v_level,
  'next_xp',case when v_level>=100 then null else 100*v_level+10*v_level*(v_level-1) end,'level_points_awarded',v_reward_points,'new_levels',v_levels,
  'foundation_completed',v_existing);
-end $function$
+end $function$;
 
 CREATE OR REPLACE FUNCTION public.fp_specialization_action(p_action text, p_skill_id text, p_lesson_id text DEFAULT NULL::text, p_payment text DEFAULT NULL::text, p_answer integer DEFAULT NULL::integer)
  RETURNS jsonb
@@ -214,7 +214,7 @@ begin
     'promotion',coalesce(v_promotion,0),'promotion_euro',coalesce(v_reward_eur,0),'message','Lektion erfolgreich abgeschlossen.');
  end if;
  raise exception 'Ungültiger Auftrag.' using errcode='22023';
-end $function$
+end $function$;
 
 CREATE OR REPLACE FUNCTION public.fp_missions_submit_v51(p_question_id text, p_index integer)
  RETURNS jsonb
@@ -274,7 +274,7 @@ begin
  'explanation',case when v_resolved then v_reason else null end,
  'correct_index',case when v_resolved then v_answer else null end,
  'points_awarded',coalesce(v_awarded,0),'dashboard',public.fp_missions_dashboard_v51());
-end $function$
+end $function$;
 
 CREATE OR REPLACE FUNCTION public.fp_streak_checkin()
  RETURNS jsonb
@@ -347,7 +347,7 @@ begin
  return jsonb_build_object('day',v_day,'today',v_today,'awarded_now',v_earned,'today_euros',v_euros::numeric/100,
  'today_points',v_points,'milestone',v_milestone,'eur_cash',v_cash,'research_total',v_rp,'recent',v_days,
  'max_days',30,'promotion_count',v_promotion_count,'daily_euro_bonus',v_bonus_euros::numeric/100,'daily_points_bonus',v_bonus_points,'next_milestone',case when v_day<10 then 10 when v_day<20 then 20 when v_day<30 then 30 else null end);
-end $function$
+end $function$;
 DO $audit$ DECLARE v_bad integer; BEGIN
  SELECT count(*) INTO v_bad FROM public.fp_specialization_catalog WHERE cost_points<=completion_points OR cost_points<3 OR cost_points>11;
  IF v_bad<>0 THEN RAISE EXCEPTION 'Invalid FP inflation: % skills',v_bad;END IF;
