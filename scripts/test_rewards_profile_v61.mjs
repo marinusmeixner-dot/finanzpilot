@@ -6,7 +6,7 @@ const html=read('index.html'),header=read('header-v43.js'),portfolio=read('portf
 const prefs=read('feedback-v52.js'),profile=read('profile-v42.js'),celebrations=read('celebrations-v53.js');
 const economy=read('economy.js'),levels=read('levels-v55.js'),streak=read('streak-v40.js');
 const version=JSON.parse(read('version.json'));
-assert.equal(version.version,61);
+assert(version.version>=61,'Later releases must preserve V61 rewards, profile and depot behavior');
 assert(html.includes('top-depot')&&!html.includes('top-level'),'Replace level in topbar with total portfolio value.');
 assert(!html.includes('fp43-level-trigger')&&!html.includes('fp52-settings-toggle'),'No header level or sound controls.');
 for(const name of ['header-v43.js','portfolio.js','profile-v42.js','feedback-v52.js','celebrations-v53.js','economy.js'])assert(html.includes(name+'?v=61'),'Fresh PWA asset '+name);
