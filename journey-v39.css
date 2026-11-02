@@ -77,3 +77,7 @@
 .fp40-lesson-challenge details{border-top:1px solid #4d796f;padding-top:10px}
 .fp40-lesson-challenge summary{cursor:pointer;color:#c6f9dc;font-weight:650;font-size:14px}
 .fp40-lesson-challenge details p{font-size:14px;line-height:1.7;margin-top:10px;color:#cceddd}
+
+/* V56: explicitly show difficulty-based XP and rare stage FP before opening a foundation. */
+.fp56-foundation-reward{display:block;margin-top:5px;font-size:11px;font-weight:750;color:#9fdbbd;letter-spacing:.1px}
+.fp39-module.locked .fp56-foundation-reward{color:#94a7a9}
