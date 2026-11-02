@@ -42,5 +42,5 @@ const tree=window.FinanzPilotLearningHub.tree();
 assert.equal((tree.match(/data-fp42-node="/g)||[]).length,52);
 assert((tree.match(/fp45-cross-line/g)||[]).length>=7);
 assert(tree.includes('Konjunktur &amp; Zinsen')&&tree.includes('ETFs &amp; Anleihen'));
-const hub=window.FinanzPilotLearningHub.home();assert.equal((hub.match(/fp42-learn-entry/g)||[]).length,4);
+const hub=window.FinanzPilotLearningHub.home();assert.equal((hub.match(/fp42-learn-entry/g)||[]).length,5);
 console.log('v45: 40 skills and 120 lessons, 8 fields, 7 real cross prerequisites, 4 source-dated watchlist reports, 3 market routes, one Back, number-first FP verified.');
