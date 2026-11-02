@@ -7,6 +7,9 @@ const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&
 const user=()=>window.FinanzPilotCloud?.user||null;
 const client=()=>window.FinanzPilotCloud?.paperClient;
 const levelPoints=n=>n%10===0?2:n%5===0?1:0;
+const levelEuros=n=>n===1?0:n%10===0?12:n%5===0?8:5;
+const fromXp=xp=>{let n=1;while(n<MAX_LEVEL&&Number(xp)>=threshold(n+1))n++;return n};
+const cash=n=>Number(n||0).toLocaleString('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0});
 const rank=n=>n>=50?'Marktstratege':n>=30?'Portfolio-Architekt':n>=20?'Finanzexperte':n>=10?'Analyst':n>=5?'Marktkenner':'Einsteiger';
 let data=null,loadedUser=null,busy=false,claimBusy=false,lastFetch=0,lastError='',backfillRunning=false,backfillUser=null;
 const cacheKey=id=>'finanzpilot_foundation_rewards_v55_'+id;
@@ -27,9 +30,10 @@ async function refresh(force=false){
   data=answer;loadedUser=id;lastFetch=Date.now();
   window.FinanzPilotHeader?.refresh?.(true);
   if(Array.isArray(answer.new_levels)&&answer.new_levels.length){
-   const latest=answer.new_levels.at(-1);
-   const earned=Number(answer.level_points_awarded)||0;
-   window.FinanzPilotCelebrations?.show?.('level',{confirmed:true,id:'level-awarded:'+id+':'+latest.level,title:'Level '+latest.level+' erreicht!',text:earned>0?'Besonderer Meilenstein: einmalige Forschungspunkte freigeschaltet.':'Neues Level erreicht! Der nächste Aufstieg benötigt mehr XP.',value:earned>0?'+'+earned+' FP':'LEVEL '+latest.level});
+   const latest=answer.new_levels.at(-1),earned=Number(answer.level_points_awarded)||0,euros=Number(answer.level_euros_awarded)||0;
+   window.FinanzPilotCelebrations?.show?.('level',{confirmed:true,id:'level-awarded:'+id+':'+latest.level,title:'Level '+latest.level+' erreicht!',text:earned?'Meilenstein erreicht: Seltene Forschungspunkte und virtuelles Depotguthaben erhalten.':'Du hast dir eine neue Depotprämie erspielt. Weitere FP gibt es an Meilensteinen.',value:(earned?'+'+earned+' FP · ':'')+'+'+cash(euros)+' Depot'});
+  }else if(Number(answer.level_euros_awarded)>0){
+   window.FinanzPilotCelebrations?.show?.('reward',{confirmed:true,id:'level-cash-backfill:'+id+':'+answer.level,title:'Alte Levelprämien nachgetragen',text:'Deine bereits erreichten Level haben ihr einmaliges virtuelles Depotguthaben erhalten.',value:'+'+cash(answer.level_euros_awarded)});
   }
   repaint();return answer;
  }catch(e){lastError=String(e.message||e);repaint();return null}
@@ -70,27 +74,27 @@ async function backfill(){
  }finally{backfillRunning=false}
 }
 function snapshot(){
- const xp=Math.max(0,Number(data?.xp)||0);
- const lvl=Math.max(1,Math.min(100,Number(data?.level)||1));
- return{xp,level:lvl,nextXp:data?.next_xp??(lvl>=MAX_LEVEL?null:threshold(lvl+1)),pointsEarned:Number(data?.level_points_awarded)||0,foundations:Number(data?.foundation_completed)||0,loading:claimBusy,error:lastError,authenticated:!!user()};
+ const xp=Math.max(0,Number(data?.xp??window.FinanzPilotHeader?.xp)||0);
+ const lvl=Math.max(1,Math.min(100,Number(data?.level)||fromXp(xp)));
+ return{xp,level:lvl,verified:Boolean(data),nextXp:data?.next_xp??(lvl>=MAX_LEVEL?null:threshold(lvl+1)),pointsEarned:Number(data?.level_points_awarded)||0,foundations:Number(data?.foundation_completed)||0,loading:claimBusy,error:lastError,authenticated:!!user()};
 }
 function render(){
  const st=snapshot(),xp=st.xp,lv=st.level,from=threshold(lv),to=st.nextXp??threshold(lv+1),progress=lv===MAX_LEVEL?100:Math.max(0,Math.min(100,(xp-from)/(to-from)*100));
  const end=100;
  const tile=n=>{
-  const isDone=n<lv,active=n===lv,fp=n>1?levelPoints(n):0;
+  const isDone=n<lv,active=n===lv,fp=n>1?levelPoints(n):0,euros=levelEuros(n);
   return '<div class="fp55-level'+(isDone?' completed':active?' current':' locked')+'" data-fp55-node="'+n+'">'+
    '<div class="fp55-level-circle">'+(isDone?'✓':n)+'</div><div class="fp55-level-data"><b>Level '+n+'</b><small>'+esc(rank(n))+' · '+threshold(n)+' XP insgesamt</small>'+
-   '<span>'+(n===1?'Start deiner Finanzreise':n%10===0?'Großer Meilenstein':n%5===0?'Kleiner Meilenstein':'Level geschafft – ohne FP')+'</span></div>'+
-   '<strong class="fp55-level-prize">'+(n===1?'Start':fp>0?'+ '+fp+' FP':'XP-Fortschritt')+'</strong></div>';
+   '<span>'+(n===1?'Start deiner Finanzreise':n%10===0?'Großer Meilenstein':n%5===0?'Kleiner Meilenstein':'Depotguthaben')+'</span></div>'+
+   '<strong class="fp55-level-prize">'+(n===1?'Start':('+'+cash(euros)+(fp>0?' · +'+fp+' FP':'')))+'</strong></div>';
  };
  return '<section class="fp55-levels">'+
  '<div class="fp55-hero"><span class="eyebrow">DEIN WEG ZUM FINANZEXPERTEN</span><h1>Level & Belohnungen</h1>'+
- '<p>Jede echte Lernleistung zählt. Für höhere Level brauchst du schrittweise mehr XP. Forschungspunkte gibt es nur bei bestimmten Meilensteinen, nicht bei jedem Aufstieg.</p>'+
+ '<p>Jede echte Lernleistung zählt. Schwierige Lektionen bringen mehr XP, für höhere Level brauchst du schrittweise mehr. Forschungspunkte bleiben selten, dafür erhält jedes Level eine kleine virtuelle Depotprämie.</p>'+
  '<div class="fp55-balance"><div><small>DEIN LEVEL</small><strong>'+lv+'</strong><span>'+esc(rank(lv))+'</span></div><div><small>VERIFIZIERTE XP</small><strong>'+xp+'</strong><span>'+(lv===MAX_LEVEL?'Maximallevel erreicht':(st.nextXp-xp)+' XP bis Level '+(lv+1))+'</span></div></div>'+
  '<div class="fp55-bar" role="progressbar" aria-label="Fortschritt zum nächsten Level" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+Math.round(progress)+'"><span style="width:'+progress+'%"></span></div>'+
- (st.authenticated?'<p class="fp55-verified">Serverseitig bestätigt · '+st.foundations+' Grundlagen mit XP vergütet</p>':'<p class="fp55-verified">Für serverseitige XP und FP bitte dein kostenloses Konto anmelden. Lokal erarbeitete Grundlagen bleiben erhalten und können nach der Anmeldung angerechnet werden.</p>')+
- '</div><div class="fp55-schedule"><h2>Dein Belohnungspfad</h2><p>Normale Level: kein FP-Zufluss. Jedes 5. Level: +1 FP. Jedes 10. Level: +2 FP. Neue Rangbezeichnungen motivieren zusätzlich. Bei höheren Leveln steigt die benötigte XP-Menge.</p>'+
+ (st.authenticated?(st.verified?'<p class="fp55-verified">Serverseitig bestätigt · '+st.foundations+' Grundlagen mit XP vergütet</p>':'<p class="fp55-verified">XP aus deiner oberen Levelanzeige · Serverabgleich läuft</p>'):'<p class="fp55-verified">Für serverseitige XP und FP bitte dein kostenloses Konto anmelden. Lokal erarbeitete Grundlagen bleiben erhalten und können nach der Anmeldung angerechnet werden.</p>')+
+ '</div><div class="fp55-schedule"><h2>Dein Belohnungspfad</h2><p>Jedes normale Level: +5 € virtuelles Depotgeld. Jedes 5. Level: +8 € und +1 FP. Jedes 10. Level: +12 € und +2 FP. Alles einmalig, niemals echtes Geld.</p>'+
  '<div class="fp55-timeline">'+Array.from({length:end},(_,i)=>tile(i+1)).join('')+'</div>'+
  (end<100?'<p class="fp55-fine">Der Pfad setzt sich nach Level '+end+' mit denselben Levelprämien bis Level 100 fort.</p>':'')+
  '</div><p class="fp55-fine">Grundlagen: je nach Etappe 8, 10, 12, 14, 16 oder 18 XP pro erstmals abgeschlossener Lektion. Nur der Abschluss der dritten Lektion einer Etappe vergibt 1 FP. Speziallektionen bringen entsprechend ihrer Schwierigkeit mehr XP. Bereits verbuchte Altprämien bleiben erhalten.</p>'+
