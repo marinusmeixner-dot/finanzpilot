@@ -5,7 +5,8 @@ const user=()=>window.FinanzPilotCloud?.user;
 const client=()=>window.FinanzPilotCloud?.paperClient;
 const stateNow=()=>typeof state!=='undefined'?state:{xp:0};
 let specialXp=0,points=0,currentUser=null,lastFetch=0,busy=false;
-const level=()=>Math.floor(((Number(stateNow().xp)||0)+specialXp)/100)+1;
+const officialXP=()=>user()?specialXp:(Number(stateNow().xp)||0);
+const level=()=>Math.max(1,Math.min(100,Math.floor(officialXP()/100)+1));
 const pretty=n=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:0}).format(Number(n)||0);
 function paint(){
  const fp=document.getElementById('top-fp'),lv=document.getElementById('top-level');
@@ -29,7 +30,7 @@ async function refresh(force=false){
 }
 function init(){
  document.getElementById('fp43-fp-trigger')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('inventory'));
- document.getElementById('fp43-level-trigger')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('learningstats'));
+ document.getElementById('fp43-level-trigger')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('levels'));
  window.addEventListener('fp-auth-change',()=>refresh(true));
  window.addEventListener('fp-streak-reward',()=>refresh(true));
  window.addEventListener('fp-progress-change',()=>{paint();refresh()});
@@ -37,6 +38,6 @@ function init(){
  window.addEventListener('focus',()=>refresh(true));
  paint();refresh(true);
 }
-window.FinanzPilotHeader={refresh,get level(){return level()},get xp(){return (Number(stateNow().xp)||0)+specialXp},get fp(){return points}};
+window.FinanzPilotHeader={refresh,get level(){return level()},get xp(){return officialXP()},get fp(){return points}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init,{once:true});else init();
 })();
