@@ -1,6 +1,6 @@
 (function installUpdateWatcher(){
 'use strict';
-const CURRENT_VERSION=57,PATH='./version.json';
+const CURRENT_VERSION=58,PATH='./version.json';
 let checking=false,updating=false,lastChecked=0;
 async function check(force=false){
  if(checking||updating||!navigator.onLine)return;
