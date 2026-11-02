@@ -666,8 +666,8 @@
           "id": "risiko-basis-1",
           "title": "Verlustrisiken erkennen",
           "goal": "Verlustrisiken erkennen",
-          "explanation": "Volatilität beschreibt Kursbewegungen, nicht automatisch das gesamte Verlustrisiko. Geschäftsmodell, Fremdfinanzierung und Zwangsverkäufe können langfristig wichtiger sein. Anleger unterscheiden Risikobereitschaft von finanzieller Verlusttragfähigkeit.",
-          "example": "Eine Aktie kann monatelang stabil bleiben und anschließend wegen einer Insolvenz stark fallen. Niedrige vorherige Schwankungen haben das Geschäftsrisiko nicht beseitigt.",
+          "explanation": "Kursvolatilität misst die Schwankung beobachteter Preise, nicht direkt das Risiko eines dauerhaften Kapitalverlusts. Ein Unternehmen kann trotz ruhigem Kurs hoch verschuldet oder finanziell instabil sein. Entscheidend sind Geschäftsmodell, Schuldenfälligkeiten, Liquidität, Bewertung und die Fähigkeit, einen Verlust auszuhalten. Prozentuale Verluste und Erholungen beziehen sich auf unterschiedliche Ausgangswerte: Nach −25 % benötigt man +33,33 % auf den verbleibenden Betrag, um wieder auf den ursprünglichen Wert zu kommen. Alle folgenden Zahlen sind fiktive Lernbeispiele.",
+          "example": "Fiktives Beispiel: Eine Position ist zunächst 200 € wert und verliert 25 % auf 150 €. Für die Rückkehr auf 200 € fehlen 50 €; relativ zu 150 € sind das 50/150 × 100 = 33,33 % notwendige Erholung, nicht 25 %. Macht die Position anfangs 20 % eines ansonsten unveränderten Depots aus, verursacht ihr Verlust von 25 % zunächst −5 Prozentpunkte auf den gesamten Depotwert (0,20 × −25 %). Ein Kursrückgang allein beweist keine dauerhafte Wertvernichtung, kann bei Insolvenz oder Zwangsverkauf aber endgültig werden.",
           "question": "Was zeigt die Schwankung allein nicht vollständig?",
           "options": [
             "Dauerhaftes Verlustrisiko",
@@ -680,19 +680,20 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Verlustrisiken erkennen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Nach −25 % genügt +25 % nicht zur Erholung: 150 € × 1,25 = 187,50 €. Ebenso ist niedrige historische Schwankung kein Beweis für geringe Insolvenz- oder Liquiditätsrisiken.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Berechne den Restwert: 200 € × (1 − 0,25) = 150 €. Der Verlust beträgt 50 €.",
+            "Bestimme die nötige Erholung mit neuem Nenner: (200 − 150)/150 × 100 = 33,33 %. Eine bloße Addition von −25 % und +25 % ist falsch.",
+            "Übertrage den Verlust auf ein fiktives 20-%-Depotgewicht: 0,20 × (−25 %) = −5 Prozentpunkte bei sonst unveränderten Positionen.",
+            "Prüfe neben Kursvolatilität die fundamentalen Verlustquellen: Schulden, Fälligkeiten, Cashflow, Konzentration und möglicher Zwangsverkauf."
           ],
           "transferPrompt": "Zum Thema „Verlustrisiken erkennen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
-          "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
+          "transferHint": "Trenne Kursbewegung von dauerhaftem Kapitalverlust. Rechne mit derselben Ausgangsbasis und einem plausiblen Stressszenario. Was würde sich ändern, wenn die andere Position wegen desselben Risikofaktors ebenfalls 25 % verlöre?",
           "practice": {
             "prompt": "Eine Anlage fällt von 200 € um 25 %. Wie viel Euro bleibt übrig?",
             "answer": 150,
             "unit": "€",
-            "explanation": "200 × (1 − 0,25) = 150 €. Die anschließende prozentuale Erholung benötigt einen anderen Nenner.",
+            "explanation": "200 € × (1 − 0,25) = 150 € Restwert. Die fehlenden 50 € entsprechen anschließend 50/150 ≈ 33,33 % Erholung. 150 € × 1,25 = 187,50 € wäre noch unter dem Startwert. Die Rechnung ist fiktiv; ein realer Kurs kann sich weiter verändern.",
             "tolerance": 0.01
           }
         },
