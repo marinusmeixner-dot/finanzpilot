@@ -1,131 +1,382 @@
 {
-  "date": "2026-11-01",
-  "updated_at": "2026-11-01T13:24:16.879804+00:00",
-  "editor": "RSS-Fallback; keine redaktionelle KI-Einordnung",
-  "intro": "Aktuelle Überschriften aus öffentlichen Quellen. Erst die Quellen öffnen und prüfen, bevor daraus eine Anlageentscheidung abgeleitet wird.",
+  "date": "2026-11-02",
+  "updated_at": "2026-11-02T09:08:00+01:00",
+  "editor": "FinanzPilot Tagesredaktion – geprüfte kostenlose Primärquellen",
+  "intro": "Acht vollständig innerhalb der App lesbare Eigenartikel. Quellen wurden am 02.11.2026 geprüft; published ist das tatsächliche Datum der zugrunde liegenden Originalmeldung, nicht das heutige Recherchedatum. Keine Live-Kurse oder vorweggenommenen Geschäftszahlen.",
   "lesson_id": "valuation",
   "stories": [
     {
-      "title": "Füllstandsvorgaben bei Gasspeichern nicht erreicht",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/energie/gasspeicher-vorgaben-ziel-verfehlt-100.html",
-      "published": "01.11. 13:53",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-de-inflation-energy",
+      "title": "Deutschland: 2,8 % Inflation – Energie ist der entscheidende Unterschied",
+      "published": "2026-10-30",
+      "category": "Gesamtmarkt",
+      "symbols": [],
+      "source": "Destatis – Verbraucherpreise Oktober 2026 (vorläufig)",
+      "url": "https://www.destatis.de/EN/Press/2026/10/PE26_382_611.html",
+      "why": "Die Oktober-Schätzung zeigt, warum die Gesamtinflation allein die Preisentwicklung nicht erklärt.",
+      "impact": "Für Konsum, Zinsen und Unternehmensmargen ist entscheidend, welche Preisbestandteile steigen.",
+      "article": {
+        "lead": "Die vorläufige deutsche Inflationsrate lag im Oktober 2026 bei 2,8 % gegenüber dem Vorjahresmonat. Die Kerninflation ohne Energie und Nahrungsmittel wurde auf 2,1 % geschätzt.",
+        "sections": [
+          {
+            "heading": "Was die Behörde tatsächlich gemeldet hat",
+            "paragraphs": [
+              "Destatis meldete am 30. Oktober eine vorläufige Jahresveränderung des Verbraucherpreisindex von +2,8 %. Gegenüber September sanken die Verbraucherpreise vorläufig um 0,2 %. Das sind zwei verschiedene Vergleichsmaßstäbe.",
+              "Die Energiepreise lagen laut Schätzung um 12,2 % über Oktober 2025; im September hatte der entsprechende Vorjahresanstieg noch 14,9 % betragen. Diese Verlangsamung ist kein Rückgang des Energiepreisniveaus."
+            ]
+          },
+          {
+            "heading": "Warum Gesamt- und Kernrate auseinanderlaufen",
+            "paragraphs": [
+              "Die Kernrate von 2,1 % schließt die besonders schwankungsanfälligen Kategorien Energie und Nahrungsmittel aus. Sie kann einen Hinweis auf den breiteren Preisauftrieb liefern, bildet aber die tatsächlichen Lebenshaltungskosten eines Haushalts nicht vollständig ab.",
+              "Ein Energiepreisschub verteuert zunächst Heizung, Kraftstoffe und Strom. Zeitverzögert kann er Transport- und Produktionskosten erhöhen; ob Unternehmen diese Kosten weiterreichen können, hängt vom Wettbewerb ab."
+            ]
+          },
+          {
+            "heading": "Was das für Zinsen und Unternehmen bedeutet",
+            "paragraphs": [
+              "Eine höhere Gesamtinflation kann Zinssenkungen erschweren, wenn sie auf länger anhaltende Preissteigerungen übergreift. Bleibt der Schub auf Energie begrenzt, wäre die geldpolitische Schlussfolgerung weniger eindeutig.",
+              "Energieintensive Hersteller können unter Margendruck geraten; Energieanbieter können profitieren. Für den Einzelwert zählen aber Absicherungen, Verträge, Nachfragerückgang und bereits eingepreiste Erwartungen."
+            ]
+          },
+          {
+            "heading": "Gegenargument und nächste Datenpunkte",
+            "paragraphs": [
+              "Die Oktoberzahlen sind vorläufig. Einzelne Komponenten und saisonale Effekte können sich in der endgültigen Veröffentlichung anders darstellen. Eine Monatsbewegung reicht nicht für eine Trendwende.",
+              "Für eine belastbare These sollte man die endgültige Inflationsrate, die Kernkomponenten, Löhne und Inflationserwartungen verfolgen. Aktienkurse reagieren zudem auf die Abweichung von Erwartungen, nicht nur auf den Zahlenwert."
+            ]
+          }
+        ],
+        "conclusion": "2,8 % Gesamtinflation und 2,1 % Kerninflation beschreiben unterschiedliche Dinge. Eine Anlageentscheidung benötigt zusätzliche Daten zu Kostenweitergabe, Nachfrage und Bewertung."
+      }
     },
     {
-      "title": "Wie KI Entwicklung und Alltag verändert - kreativ auf Knopfdruck?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
-      "published": "01.11. 09:00",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-gdp-qoq-yoy",
+      "title": "Deutsches BIP: Warum +0,2 % und +1,3 % gleichzeitig stimmen",
+      "published": "2026-10-30",
+      "category": "Gesamtmarkt",
+      "symbols": [],
+      "source": "Destatis – BIP-Schnellmeldung drittes Quartal 2026",
+      "url": "https://www.destatis.de/EN/Press/2026/10/PE26_381_811.html",
+      "why": "Zwei korrekte Wachstumsraten können bei falschem Zeitraumvergleich zu gegensätzlichen Schlüssen führen.",
+      "impact": "Die Zusammensetzung des Wachstums ist für Branchen oft wichtiger als die Gesamtzahl.",
+      "article": {
+        "lead": "Die deutsche Wirtschaftsleistung stieg im dritten Quartal 2026 preis-, saison- und kalenderbereinigt um 0,2 % gegenüber dem Vorquartal. Gegenüber dem Vorjahresquartal waren es preisbereinigt 1,3 %.",
+        "sections": [
+          {
+            "heading": "Zwei Bezugsgrößen, keine widersprüchlichen Meldungen",
+            "paragraphs": [
+              "Die +0,2 % vergleichen Juli bis September 2026 mit April bis Juni 2026, nach mehreren Bereinigungen. Die +1,3 % vergleichen mit Juli bis September 2025 und sind preisbereinigt, aber nicht identisch kalenderbereinigt.",
+              "Destatis nennt für den preis- und kalenderbereinigten Jahresvergleich +1,2 %. Bei der Analyse muss deshalb die konkrete Datenreihe genannt werden; eine Rate darf nicht stillschweigend als die andere ausgegeben werden."
+            ]
+          },
+          {
+            "heading": "Welche Wachstumstreiber sichtbar sind",
+            "paragraphs": [
+              "Nach den vorläufigen Angaben legte der private und staatliche Endverbrauch insgesamt leicht zu. Die Investitionen gingen dagegen zurück, und die zuvor lebhafte Exportentwicklung verlangsamte sich.",
+              "Eine steigende Gesamtleistung bei schwachen Investitionen kann weniger tragfähig sein als eine Erholung mit wachsender Produktivität und neuen Anlagen. Aus der Schnellmeldung allein lässt sich die Dauerhaftigkeit noch nicht ableiten."
+            ]
+          },
+          {
+            "heading": "Wie man die Nachricht in Finanzanalysen verwendet",
+            "paragraphs": [
+              "Für zyklische Industriekonzerne sind Investitionen und Auslandsnachfrage häufig wichtiger als die isolierte BIP-Rate. Banken reagieren zusätzlich auf Kreditnachfrage, Ausfälle und Zinsen.",
+              "Wer Umsatzprognosen für ein Unternehmen erstellt, sollte die regionale Umsatzverteilung prüfen. Eine deutsche Wachstumsrate ist kein Ersatz für Daten zu weltweiten Bestellungen oder Segmenten."
+            ]
+          },
+          {
+            "heading": "Revisionen und stärkstes Gegenargument",
+            "paragraphs": [
+              "Die Schnellmeldung wird durch detailliertere Volkswirtschaftliche Gesamtrechnungen ergänzt und kann revidiert werden. Auch eine positive Quartalsrate kann nach einer schwachen Ausgangsbasis wenig über das längerfristige Niveau sagen.",
+              "Eine optimistische Konjunkturthese müsste durch höhere Investitionen, stabilere Exporte und reale Einkommenszuwächse gestützt werden. Bleiben diese aus, könnte das Wachstum trotz positiver Schlagzeile fragil sein."
+            ]
+          }
+        ],
+        "conclusion": "Die Quartalsrate zeigt eine leichte Expansion, nicht automatisch einen kräftigen Aufschwung. Entscheidend sind die Vergleichsbasis und die Wachstumstreiber."
+      }
     },
     {
-      "title": "Warnstreiks der IG Metall kurz nach Mitternacht angelaufen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ig-metall-warnstreiks-108.html",
-      "published": "01.11. 04:48",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-ecb-energy-dilemma",
+      "title": "EZB hält Zinsen: Warum ein Energieschock zwei Probleme gleichzeitig schafft",
+      "published": "2026-10-29",
+      "category": "Gesamtmarkt",
+      "symbols": [],
+      "source": "Europäische Zentralbank – Geldpolitische Beschlüsse 29. Oktober 2026",
+      "url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.mp261029~9a493adf17.en.html",
+      "why": "Die EZB ließ ihre Leitzinsen unverändert und benannte gegenläufige Risiken für Preise und Wachstum.",
+      "impact": "Zins- und Bewertungsannahmen sollten diese Unsicherheit abbilden statt einen festen Zinspfad zu unterstellen.",
+      "article": {
+        "lead": "Am 29. Oktober 2026 beschloss der EZB-Rat, die drei Leitzinsen unverändert zu lassen. Höhere Energiepreise erhöhen nach Einschätzung der Notenbank Inflationsrisiken und belasten gleichzeitig die Wachstumsaussichten.",
+        "sections": [
+          {
+            "heading": "Der bestätigte Beschluss",
+            "paragraphs": [
+              "Die Zentralbank veröffentlichte am 29. Oktober ihre Entscheidung, die drei Leitzinsen nicht zu verändern. Sie bekräftigte das mittelfristige Inflationsziel von 2 %. Aus dem Beschluss folgt keine Zusage für den nächsten Sitzungstermin.",
+              "Die EZB beschreibt die Lage ausdrücklich als unsicher und kündigt an, von Sitzung zu Sitzung anhand der Daten zu entscheiden. Eine behauptete garantierte Zinssenkung wäre deshalb unbelegt."
+            ]
+          },
+          {
+            "heading": "Warum Energiepreise ein Dilemma auslösen",
+            "paragraphs": [
+              "Teurere Energie hebt unmittelbar die gemessene Inflation. Gleichzeitig schmälert sie Kaufkraft und erhöht Kosten vieler Unternehmen; dadurch kann die reale Wirtschaftsleistung leiden.",
+              "Eine Zinserhöhung kann Nachfrage und Preisdruck dämpfen, aber den unmittelbaren Energiepreisschub kaum beseitigen. Eine Zinssenkung könnte die Konjunktur stützen, bei anhaltendem Preisauftrieb aber riskant sein."
+            ]
+          },
+          {
+            "heading": "Was Aktienbewertungen davon haben",
+            "paragraphs": [
+              "Höhere erwartete Finanzierungskosten können den Barwert weit in der Zukunft liegender Gewinne drücken. Bei hoch verschuldeten Unternehmen steigt zusätzlich die Bedeutung von Refinanzierungsfristen.",
+              "Allerdings kann ein Unternehmen mit Preissetzungsmacht seine Gewinne trotz Inflation steigern. Zinsänderungen sind daher kein mechanischer Kursbefehl; Wachstumserwartungen und Risikoprämien wirken gleichzeitig."
+            ]
+          },
+          {
+            "heading": "Was eine These widerlegen würde",
+            "paragraphs": [
+              "Die EZB verweist darauf, dass die zugrunde liegende Inflation bislang vergleichsweise stabil und bei den Löhnen keine wesentliche Reaktion erkennbar sei. Das spricht gegen die einfache Gleichsetzung von Energiepreisschub und dauerhafter Inflationsspirale.",
+              "Zu beobachten sind Lohnabschlüsse, Kerninflation, Kreditbedingungen und Konjunkturdaten. Verlangsamt sich die Energieinflation ohne breitere Zweitrundeneffekte, kann die geldpolitische Abwägung anders ausfallen."
+            ]
+          }
+        ],
+        "conclusion": "Die unveränderten Zinsen sind eine beobachtete Entscheidung; der künftige Pfad bleibt offen. Für Bewertungen gehören mindestens zwei Zins- und Wachstumsszenarien dazu."
+      }
     },
     {
-      "title": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/salz-142.html",
-      "published": "31.10. 17:21",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-bayer-fcf-vs-profit",
+      "title": "Bayer: 2,144 Milliarden Euro bereinigtes EBITDA – und negativer Free Cashflow",
+      "published": "2026-08-04",
+      "category": "Unternehmen",
+      "symbols": [
+        "BAYN.DE"
+      ],
+      "source": "Bayer AG – Q2 2026 Media Update",
+      "url": "https://www.bayer.com/de-de/ueber-uns/veranstaltungen/2026-08-04-media-update-q2",
+      "why": "Bayers Gewinnkennzahl und der freie Cashflow zeichnen im zweiten Quartal ein unterschiedliches Bild.",
+      "impact": "Für den Aktienwert zählen neben dem operativen Geschäft auch Rechtszahlungen und Verschuldung.",
+      "article": {
+        "lead": "Bayer veröffentlichte am 4. August für Q2 2026 einen Konzernumsatz von 10,872 Milliarden Euro und ein EBITDA vor Sondereinflüssen von 2,144 Milliarden Euro. Der Free Cashflow lag zugleich bei minus 371 Millionen Euro.",
+        "sections": [
+          {
+            "heading": "Was die berichteten Zahlen aussagen",
+            "paragraphs": [
+              "Der Konzernumsatz stieg währungs- und portfoliobereinigt um 2,2 %, das EBITDA vor Sondereinflüssen um 1,9 %. Diese Veränderungen beschreiben operative Entwicklung nach bestimmten Bereinigungen, nicht den tatsächlich verfügbaren Geldbetrag.",
+              "Das Konzernergebnis betrug 219 Millionen Euro. Bereinigtes EBITDA, Konzernergebnis und Free Cashflow haben unterschiedliche Definitionen und dürfen nicht als austauschbare Gewinnmaße behandelt werden."
+            ]
+          },
+          {
+            "heading": "Warum Geldfluss und Ergebnis auseinanderfallen",
+            "paragraphs": [
+              "Bayer nennt unter anderem Vergleichszahlungen als Belastung des freien Cashflows. Solche Zahlungen können Liquidität verbrauchen, selbst wenn sie in einer bereinigten operativen Kennzahl ausgeklammert sind.",
+              "Auch Investitionen, Forderungen, Vorräte und Zahlungszeitpunkte beeinflussen den Geldfluss. Eine EBITDA-Marge allein zeigt daher nicht, wie viel Geld für Schuldenabbau oder Aktionäre übrig bleibt."
+            ]
+          },
+          {
+            "heading": "Verschuldung und Prognose richtig einordnen",
+            "paragraphs": [
+              "Die Nettofinanzverschuldung lag laut Mitteilung bei 33,647 Milliarden Euro. Bayer bestätigte den währungsbereinigten Jahresausblick und erwartete für das Jahresende nun eine geringere Nettoverschuldung als zuvor.",
+              "Die Jahresprognose ist eine Managementerwartung, kein realisiertes Ergebnis. Entscheidend wird sein, ob operative Mittelzuflüsse und weitere Zahlungen diese Erwartung tatsächlich stützen."
+            ]
+          },
+          {
+            "heading": "Stärkster Gegenfall und nächster Bericht",
+            "paragraphs": [
+              "Ein Gegenargument gegen die negative Cashflow-Lesart lautet: Einzelne Rechtszahlungen können zeitlich konzentriert auftreten und das laufende operative Geschäft schwächer erscheinen lassen, als es dauerhaft ist.",
+              "Umgekehrt können weitere Zahlungen und Refinanzierungskosten den finanziellen Spielraum länger einengen. Die für 3. November angekündigten Q3-Zahlen waren am 2. November noch nicht veröffentlicht."
+            ]
+          }
+        ],
+        "conclusion": "Bei Bayer ist die Brücke zwischen bereinigtem Gewinn, Cashflow und Nettofinanzschulden zentral. Q3-Zahlen erst nach ihrer tatsächlichen Veröffentlichung auswerten."
+      }
     },
     {
-      "title": "KI bei der Geldanlage: Wie sicher sind ChatGPT-Anlagetipps?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/ki-geldanlage-chatgpt-anlagetipps-risiken-100.html",
-      "published": "31.10. 08:45",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-siemens-orders-cash",
+      "title": "Siemens: Rekordaufträge sind wichtig – 4,1 Milliarden Euro Free Cashflow noch wichtiger?",
+      "published": "2026-08-06",
+      "category": "Unternehmen",
+      "symbols": [
+        "SIE.DE"
+      ],
+      "source": "Siemens AG – Q3 Geschäftsjahr 2026 Ergebnisveröffentlichung",
+      "url": "https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q3-gj-2026",
+      "why": "Das Q3-Ergebnis verbindet wachsende Nachfrage mit einem nachweisbaren Mittelzufluss.",
+      "impact": "Die Qualität der Aufträge und die Umwandlung in Cashflow sind für die Bewertung entscheidend.",
+      "article": {
+        "lead": "Siemens meldete am 6. August 2026 für das dritte Quartal seines Geschäftsjahres Auftragseingänge von 27,9 Milliarden Euro, Umsatz von 20,8 Milliarden Euro und freien Cashflow des Konzerns von 4,1 Milliarden Euro.",
+        "sections": [
+          {
+            "heading": "Was in Q3 tatsächlich gewachsen ist",
+            "paragraphs": [
+              "Der nominale Auftragseingang lag um 13 % über Vorjahr, der Umsatz um 7 %. Auf vergleichbarer Basis ohne Währungs- und Portfolioeffekte betrugen die Zuwächse 14 % beziehungsweise 8 %. Die beiden Wachstumsdefinitionen dürfen nicht vermischt werden.",
+              "Das Verhältnis von Auftragseingang zu Umsatz betrug 1,34. Das zeigt hohe neue Bestellungen relativ zu fakturierten Leistungen, garantiert aber weder die Marge künftiger Aufträge noch deren Zahlungseingang."
+            ]
+          },
+          {
+            "heading": "Profitabilität und Qualität",
+            "paragraphs": [
+              "Das Ergebnis des industriellen Geschäfts stieg laut Siemens auf 3,5 Milliarden Euro; die entsprechende Marge betrug 17,3 %. Dies ist eine definierte Segment-/Geschäftskennzahl und nicht mit der Konzernnettomarge gleichzusetzen.",
+              "Der Konzerngewinn nach Steuern lag bei 2,6 Milliarden Euro. Der Abstand zwischen den Gewinnmaßen ist kein Fehler, sondern folgt unter anderem aus anderen Geschäften, Finanz- und Steuereffekten."
+            ]
+          },
+          {
+            "heading": "Warum Cashflow ein zweiter Prüfstein ist",
+            "paragraphs": [
+              "Der freie Cashflow des Konzerns erreichte 4,1 Milliarden Euro. Im Gegensatz zu einer reinen Auftragsschlagzeile zeigt er, dass im Quartal nach der verwendeten Definition tatsächlich Mittel erwirtschaftet wurden.",
+              "Ein außergewöhnlich starkes Quartal kann jedoch von Zahlungszeitpunkten oder Working Capital profitieren. Für eine nachhaltige Bewertung muss man mehrere Quartale, Investitionen und die Definition des Free Cashflow betrachten."
+            ]
+          },
+          {
+            "heading": "Ausblick und Widerlegung",
+            "paragraphs": [
+              "Siemens hob im August die Spanne für das Ergebnis je Aktie vor Kaufpreisallokationseffekten an. Diese Prognose ist nicht dasselbe wie das bereits erreichte Q3-Ergebnis.",
+              "Die nächsten Q4-/Jahreszahlen sind laut Siemens für den 12. November 2026 angekündigt. Sinkende Auftragsumsetzung, schwächere Margen oder dauerhaft geringerer Cashflow würden die optimistische These belasten."
+            ]
+          }
+        ],
+        "conclusion": "Siemens' Q3 zeigt Nachfrage und Mittelzuflüsse, doch ein Auftrag ist kein sicherer Gewinn. Der nächste veröffentlichte Bericht muss die Entwicklung bestätigen."
+      }
     },
     {
-      "title": "Binance will alle Verluste nach Hackerangriff ersetzen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/usa-binance-hackerangriff-verluste-100.html",
-      "published": "30.10. 21:21",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-nvidia-gaap-cash",
+      "title": "NVIDIA: 96,2 Milliarden Dollar Umsatz – warum GAAP und Non-GAAP getrennt gehören",
+      "published": "2026-08-26",
+      "category": "Unternehmen",
+      "symbols": [
+        "NVDA"
+      ],
+      "source": "NVIDIA Investor Relations – Q2 Geschäftsjahr 2027",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
+      "why": "Die hohen Wachstumszahlen machen Unterschiede zwischen Gewinnmaßstäben besonders relevant.",
+      "impact": "Cashflow, Rechenzentrumsabhängigkeit und Bewertung sind neben Umsatzwachstum zu prüfen.",
+      "article": {
+        "lead": "NVIDIA meldete am 26. August 2026 für das am 26. Juli beendete zweite Quartal des Geschäftsjahres 2027 einen Umsatz von 96,221 Milliarden US-Dollar, 106 % mehr als im Vorjahresquartal.",
+        "sections": [
+          {
+            "heading": "Berichtsperiode und Wachstum",
+            "paragraphs": [
+              "Das Geschäftsjahr von NVIDIA ist nicht mit dem Kalenderjahr gleichzusetzen: Q2 GJ 2027 endete am 26. Juli 2026. Der Umsatz stieg gegenüber dem vorherigen Quartal um 18 % und gegenüber dem Vorjahresquartal um 106 %.",
+              "Das Rechenzentrumsgeschäft erzielte laut Unternehmensmeldung 89,0 Milliarden US-Dollar Umsatz, 117 % mehr als ein Jahr zuvor. Die starke Konzentration auf einen Bereich schafft Chancen und Abhängigkeiten."
+            ]
+          },
+          {
+            "heading": "Warum die Gewinnkennzahlen überraschen können",
+            "paragraphs": [
+              "NVIDIA weist für das Quartal ein verwässertes Ergebnis je Aktie nach US-Rechnungslegung GAAP von 2,46 US-Dollar und eine bereinigte Non-GAAP-Größe von 2,22 US-Dollar aus. Bereinigt bedeutet nicht automatisch höher.",
+              "Steuereffekte und die konkrete Überleitungsrechnung können Unterschiede erklären. Wer eine Bewertung auf Gewinnmultiplikatoren stützt, muss die gewählte Definition und ungewöhnliche Effekte explizit nennen."
+            ]
+          },
+          {
+            "heading": "Mittelzufluss statt nur Gewinn",
+            "paragraphs": [
+              "Der operative Cashflow betrug im Quartal laut Überleitungsrechnung 24,077 Milliarden US-Dollar; der ausgewiesene freie Cashflow 21,341 Milliarden US-Dollar. Beide Werte beziehen sich auf das Quartal, nicht auf die letzten zwölf Monate.",
+              "Investitionen und Zahlungen für Sachanlagen reduzieren den freien Cashflow. Zugleich kann der Cashflow von Forderungen, Vorräten und Zahlungsfristen beeinflusst sein. Eine einzelne Periode ist kein sicherer Dauerzustand."
+            ]
+          },
+          {
+            "heading": "Prognose und größtes Risiko",
+            "paragraphs": [
+              "Für Q3 GJ 2027 erwartete NVIDIA bei der Veröffentlichung rund 108 Milliarden US-Dollar Umsatz, plus oder minus 2 %. Das ist eine Prognose vom August, kein am 2. November veröffentlichtes Q3-Ist-Ergebnis.",
+              "Ein Gegenfall wären langsamere Rechenzentrumsausgaben großer Kunden, Exportbeschränkungen oder sinkende Margen. Auch bei weiter steigenden Gewinnen kann ein hoher Aktienpreis enttäuschen, wenn Erwartungen bereits sehr optimistisch sind."
+            ]
+          }
+        ],
+        "conclusion": "Die Q2-Zahlen sind außergewöhnlich stark; für die Aktie sind die Gewinnüberleitung, die Cashflow-Qualität und die im Kurs enthaltenen Erwartungen genauso wichtig."
+      }
     },
     {
-      "title": "Wie der VW-Vorstand die Laune bei den Skoda-Mitarbeitern drückt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/skoda-144.html",
-      "published": "30.10. 14:51",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-baywa-report-gap",
+      "title": "BayWa: Der nächste Bericht ist verschoben – was Anleger derzeit nicht wissen",
+      "published": "2026-05-26",
+      "category": "Unternehmen",
+      "symbols": [
+        "BYW.MU",
+        "BYW.DE"
+      ],
+      "source": "BayWa AG – Investor-Relations-Finanzkalender und Q1-Mitteilung",
+      "url": "https://www.baywa.com/investor-relations/finanzkalender/finanztermine",
+      "why": "Die verfügbare Q1-Mitteilung ist älter und die nächsten umfassenden Finanzberichte sind erst angekündigt.",
+      "impact": "Bei einer Sanierung ist fehlende aktuelle Bilanztransparenz ein eigenständiger Risikofaktor.",
+      "article": {
+        "lead": "BayWa veröffentlichte die Quartalsmitteilung für Q1 2026 am 26. Mai. Der am 2. November abrufbare Unternehmenskalender nennt den Konzernfinanzbericht 2025 für den 22. Dezember 2026 und den Halbjahresbericht 2026 für den 26. Februar 2027.",
+        "sections": [
+          {
+            "heading": "Was veröffentlicht und was nur geplant ist",
+            "paragraphs": [
+              "Im BayWa-Archiv ist für das Geschäftsjahr 2026 derzeit die Q1-Mitteilung aufgeführt. Ein Kalendereintrag für einen späteren Bericht enthält noch keine Bilanz, keinen Cashflow und keine bestätigten neuen Kennzahlen.",
+              "Der Kalender nennt für die Q3-Mitteilung 2026 noch keinen Termin. Es wäre falsch, aus einem erwarteten Veröffentlichungsdatum bereits Zahlen oder einen vollzogenen Sanierungserfolg abzuleiten."
+            ]
+          },
+          {
+            "heading": "Warum der Berichtsverzug finanziell relevant ist",
+            "paragraphs": [
+              "Für Unternehmen in einer angespannten Finanzierungslage sind Liquidität, Fälligkeiten, Veräußerungserlöse und Kreditbedingungen besonders wichtig. Je älter die geprüften Zahlen sind, desto schwieriger wird die aktuelle Einschätzung.",
+              "Eine Quartalsmitteilung mit begrenztem Umfang kann keine vollständige aktuelle Bilanz oder Kapitalflussrechnung ersetzen. Fehlende Angaben sind keine Nullwerte und dürfen nicht geschätzt werden."
+            ]
+          },
+          {
+            "heading": "Was das für Aktionäre bedeutet",
+            "paragraphs": [
+              "Eine operative Verbesserung und eine erfolgreiche Refinanzierung sind verschiedene Prüfgegenstände. Auch bei Fortführung des Unternehmens kann der wirtschaftliche Anteil bestehender Aktionäre durch Finanzierungskosten oder Kapitalmaßnahmen belastet werden.",
+              "Umgekehrt könnte eine verbindliche Sanierung mit ausreichender Liquidität das Ausfallrisiko reduzieren. Ohne belastbare neue Berichte ist die Bandbreite möglicher Ergebnisse aber groß."
+            ]
+          },
+          {
+            "heading": "Was als nächstes nachzuprüfen ist",
+            "paragraphs": [
+              "Zu prüfen sind offizielle Ad-hoc-Mitteilungen, tatsächlich unterzeichnete Finanzierungsvereinbarungen und neue veröffentlichte Abschlussdaten. Die bloße Ankündigung eines Termins ist kein Ersatz dafür.",
+              "Der Stand dieses Artikels ist der 2. November 2026; die Datumsangabe bei der Nachricht verweist auf die letzte Q1-Mitteilung. Die Kalenderangaben sind ein nachträglicher aktueller Prüfkontext, keine vorgetäuschte Veröffentlichung im Mai."
+            ]
+          }
+        ],
+        "conclusion": "Die jüngste nachprüfbare Q1-Mitteilung bleibt erhalten. Bis neue offizielle Berichte erscheinen, ist die Datenlücke bei BayWa ausdrücklich Teil der Risikoanalyse."
+      }
     },
     {
-      "title": "Krise in Automobilbranche: Gewinn bei Audi bricht drastisch ein",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/automobil-audi-gewinneinbruch-100.html",
-      "published": "30.10. 10:42",
-      "why": "",
-      "impact": ""
-    },
-    {
-      "title": "Experte zum Krypto-Angriff: \"Drei Milliarden sind definitiv weg\"",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/hackerangriff-binance-interview-100.html",
-      "published": "30.10. 13:32",
-      "why": "",
-      "impact": ""
-    },
-    {
-      "title": "Milliardenschwerer Hackerangriff auf Kryptobörse Binance",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/hackerangriff-kryptoboerse-binance-100.html",
-      "published": "30.10. 08:24",
-      "why": "",
-      "impact": ""
-    },
-    {
-      "title": "Fehlende Wohnungen: Was hat der \"Bau-Turbo\" bislang gebracht?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/bauturbo-wohnungen-immobilien-100.html",
-      "published": "30.10. 08:55",
-      "why": "",
-      "impact": ""
-    },
-    {
-      "title": "Inflationsrate geht im Oktober auf 2,8 Prozent zurück",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/inflationsrate-deutschland-oktober-100.html",
-      "published": "30.10. 15:08",
-      "why": "",
-      "impact": ""
-    },
-    {
-      "title": "Fast drei Millionen Arbeitslose im Oktober",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/arbeitslose-statistik-oktober-100.html",
-      "published": "30.10. 11:32",
-      "why": "",
-      "impact": ""
-    },
-    {
-      "title": "Deutsche Wirtschaft wächst überraschend im Sommer",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/entwicklung-bip-deutschland-sommer-100.html",
-      "published": "30.10. 10:50",
-      "why": "",
-      "impact": ""
-    },
-    {
-      "title": "Bilanzen & Termine: Tesla, NVIDIA, Apple, Amazon & Co. - Ergebnisse der Tech-Riesen in der aktuellen Saison - Finanzen.net",
-      "source": "Google News Aktien",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxORk9VVW4tMVhSNTY1LVliVi1MMmJRY3FGempueU1YQU44NndmSUM0QkFpeVdYTDZnQ2NMd25CZVFEa1pERHZNZGJIaUVUWG5ZZHUyUXAyZUZpRk51WjFydHgzeGZxVWluTG1EbjlocTAxUmtNTW15ZnZaVjNqeDVDOVlENldPLXR0eGtnODE5OHNYNWlpWUNxbThzNkdvTUtOcl9wUzA1Q19PYlJyX0lMUHNXN2cta0ZiMWVzUEV5aHo5SGZBSWYtNXlRbDN1NjFSVjdiN2FvRVUwRFdHMUF5Wm4tUGZnMUdzT1R4THlhSkxXYlpVcUp4TFFfQlRFdW8?oc=5",
-      "published": "01.11. 06:34",
-      "why": "",
-      "impact": ""
+      "id": "2026-11-02-bayer-results-tomorrow",
+      "title": "Bayer berichtet am 3. November: Diese Fragen sind wichtiger als eine Kurswette",
+      "published": "2026-10-30",
+      "category": "Unternehmen",
+      "symbols": [
+        "BAYN.DE"
+      ],
+      "source": "Bayer AG – Q3-2026 Investoren-Terminseite",
+      "url": "https://www.bayer.com/en/investors/events/q3-2026-investor-video-call",
+      "why": "Die bevorstehende Veröffentlichung ist bestätigt; Ergebnisse selbst liegen noch nicht vor.",
+      "impact": "Anleger können Cashflow, Nettoverschuldung und Segmenttrends vorab als Prüfliste festlegen.",
+      "article": {
+        "lead": "Bayer kündigt die Veröffentlichung der Q3-2026-Zahlen für den 3. November 2026 um 07:30 Uhr MEZ an. Am Morgen des 2. November liegen diese Ergebnisse noch nicht vor; es wäre falsch, sie bereits als Ist-Werte zu berichten.",
+        "sections": [
+          {
+            "heading": "Was tatsächlich bekannt ist",
+            "paragraphs": [
+              "Die Investor-Relations-Seite nennt einen Veröffentlichungstermin und eine anschließende Analystenkonferenz. Ein Terminkalender ist eine Primärquelle für das Datum, nicht für die künftige Höhe von Umsatz oder Gewinn.",
+              "Die letzten hier verifizierten Zahlen stammen aus dem Halbjahresbericht und der Q2-Mitteilung vom 4. August 2026. Diese müssen als historische Vergleichsbasis und nicht als Q3-Ergebnis gekennzeichnet werden."
+            ]
+          },
+          {
+            "heading": "Erster Prüfblock: Geschäftsbereiche",
+            "paragraphs": [
+              "Crop Science, Pharmaceuticals und Consumer Health haben unterschiedliche Nachfrage-, Margen- und Währungsrisiken. Ein Konzernwachstum kann Rückgänge in einzelnen Segmenten überdecken.",
+              "Prüfe die Umsatzveränderung je Sparte sowohl nominal als auch währungs- und portfoliobereinigt. Für einen belastbaren Vergleich braucht man die identische Vorjahresperiode."
+            ]
+          },
+          {
+            "heading": "Zweiter Prüfblock: Geldfluss und Schulden",
+            "paragraphs": [
+              "Nach Q2 lag die Nettofinanzverschuldung bei 33,647 Milliarden Euro und der freie Cashflow des Quartals bei minus 371 Millionen Euro. Rechtszahlungen und Investitionen können die Cashflow-Entwicklung deutlich verändern.",
+              "Für Q3 sollten operativer Cashflow, Investitionen, freie Mittel und Verschuldung gemeinsam geprüft werden. Ein Anstieg des bereinigten EBITDA allein beweist keine verbesserte Schuldentragfähigkeit."
+            ]
+          },
+          {
+            "heading": "Was eine positive These widerlegen könnte",
+            "paragraphs": [
+              "Ein höherer Umsatz bei schlechterem Cashflow, steigenden Finanzierungskosten oder ungünstigeren Rechtsrisiken könnte eine positive Gewinnmeldung relativieren. Umgekehrt kann ein einmaliger Mittelabfluss die nachhaltige Entwicklung verzerren.",
+              "Erst die veröffentlichten Tabellen und der Ausblick erlauben eine Neubewertung. Auch eine positive Überraschung führt nicht automatisch zu steigenden Kursen, wenn der Markt noch bessere Zahlen erwartet hatte."
+            ]
+          }
+        ],
+        "conclusion": "Die Veröffentlichung am 3. November ist ein Ausblick, kein Ergebnis. Die entscheidende Prüfung beginnt mit den tatsächlich publizierten Tabellen."
+      }
     }
   ],
-  "learning_note": "01.11.: US-BIP 3,4 % annualisiert entspricht näherungsweise 0,84 % pro Quartal; Eurozone meldet +0,4 % Quartalswachstum. Bei Amazon operativen Gewinn und freien Cashflow über zwölf Monate strikt auseinanderhalten.",
-  "important": "Öffentliche Schlagzeilen sind keine Kaufempfehlungen. Wichtiger ist, was ein Ereignis langfristig verändert."
+  "learning_note": "Zahlen fachlich trennen: nominales und bereinigtes Wachstum, Quartal und Jahr, operatives Ergebnis und Free Cashflow, bereits veröffentlichte Daten und zukünftige Termine.",
+  "important": "Quellen sind kostenlos zugängliche Behörden- oder Unternehmensseiten. Eigene Einordnung ist keine Anlageempfehlung."
 }
