@@ -1,0 +1,48 @@
+/* FinanzPilot V50 – mobile-first, readable working area for earned research tools. */
+.fp50-toolbox{display:flex;flex-direction:column;gap:14px;padding:20px 0;min-width:0}
+.fp50-heading{display:flex;flex-direction:column;gap:8px}
+.fp50-heading h2{font-size:clamp(20px,3.3vw,26px);margin:0;color:var(--text,#ebf4f5)}
+.fp50-heading p,.fp50-note{font-size:13px;line-height:1.6;color:var(--muted,#b8cad3)}
+.fp50-heading small{color:#94dbc6;font-size:12px}
+.fp50-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:10px}
+.fp50-card{min-width:0;display:flex;flex-direction:column;align-items:stretch;text-align:left;gap:9px;background:#132c39;border:1px solid #375562;color:#e7f5f2;border-radius:14px;padding:16px;cursor:pointer}
+.fp50-card b{font-size:14px}
+.fp50-card small{color:#adc6ce;line-height:1.45;font-size:12px;flex:1}
+.fp50-card span{font-size:11px;color:#a7ebd2}
+.fp50-card.active,.fp50-card:hover{border-color:#67bda0;background:#1b3b40}
+.fp50-card:focus-visible,.fp50-panel button:focus-visible,.fp50-history button:focus-visible{outline:2px solid #a7ebd2;outline-offset:2px}
+.fp50-panel{border:1px solid #42616d;border-radius:16px;background:#132b39;padding:clamp(15px,3vw,23px);display:flex;flex-direction:column;gap:15px;min-width:0}
+.fp50-panel-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.fp50-panel-top h3{margin:5px 0 0;font-size:20px;color:#eaf8ef}
+.fp50-panel-top small{font-size:11px;color:#a9c4cc}
+.fp50-panel>p{font-size:13px;color:#c2d4db;line-height:1.6}
+.fp50-form{display:flex;flex-direction:column;gap:16px}
+.fp50-fields{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+.fp50-fields label{font-size:12px;color:#d6e5e8;display:flex;flex-direction:column;gap:7px;min-width:0;line-height:1.4}
+.fp50-input{width:100%;box-sizing:border-box;min-width:0;padding:12px 11px;background:#0c202d;border:1px solid #54707a;border-radius:9px;color:#f2f8fb;font-size:16px;line-height:1.4}
+.fp50-fields textarea{min-height:90px;resize:vertical}
+.fp50-form>.btn{align-self:flex-start}
+.fp50-result-slot:empty{display:none}
+.fp50-result{padding:16px;border:1px solid #456c66;background:#163b38;border-radius:13px;display:flex;flex-direction:column;gap:12px}
+.fp50-result h3{font-size:17px;margin:0}
+.fp50-result p,.fp50-warning{color:#c9dfdf;font-size:12px;line-height:1.65}
+.fp50-warning{background:#203b43;border-radius:9px;padding:11px;margin-top:5px}
+.fp50-metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,170px),1fr));gap:9px}
+.fp50-metrics>div{display:flex;flex-direction:column;gap:7px;background:#0e2930;padding:12px;border-radius:9px;min-width:0}
+.fp50-metrics small{font-size:11px;color:#b5d0d1}
+.fp50-metrics b{font-size:18px;color:#c4f2dc;overflow-wrap:anywhere}
+.fp50-actions{display:flex;flex-wrap:wrap;gap:9px}
+.fp50-report-section{border:1px solid #3d6570;border-radius:10px;padding:11px;margin:11px 0}
+.fp50-report-section summary{font-weight:650;color:#c4efd9;cursor:pointer}
+.fp50-report-section p{font-size:12px;line-height:1.5}
+.fp50-table-wrap{max-width:100%;overflow:auto;-webkit-overflow-scrolling:touch}
+.fp50-table-wrap table{width:100%;min-width:540px;border-collapse:collapse;font-size:12px;color:#d7e7e8}
+.fp50-table-wrap th,.fp50-table-wrap td{padding:9px;text-align:left;border-bottom:1px solid #385562}
+.fp50-table-wrap th{color:#a9d3ce}
+.fp50-history{border:1px solid #3d5f69;border-radius:12px;padding:15px}
+.fp50-history summary{cursor:pointer;font-weight:650}
+.fp50-history p{font-size:12px;line-height:1.6;color:#afc5cd}
+.fp50-history button{display:block;margin-top:9px;width:100%;padding:11px;border-radius:9px;background:#173642;border:1px solid #3e6671;color:#d6efea;text-align:left;cursor:pointer;font-size:12px}
+.fp50-note{border-top:1px solid #36555f;padding-top:13px;margin:0}
+@media(max-width:560px){.fp50-panel-top{flex-direction:column}.fp50-panel-top .btn{align-self:flex-start}.fp50-grid{grid-template-columns:1fr}.fp50-fields{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.fp50-toolbox *{scroll-behavior:auto!important}}
