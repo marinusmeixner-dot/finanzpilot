@@ -46,9 +46,9 @@ function unlock(){
 }
 const NOTES={
  tap:[[470,0,.045,.045]],
- correct:[[1030,0,.072,.070]],
- answer:[[1030,0,.072,.070]], // One clean, high 72ms confirmation ping, not a jingle.
- wrong:[[710,0,.090,.067]], // A slightly lower, single 90ms error ping; no dramatic buzzer.
+ correct:[[660,0,.075,.055],[880,.077,.095,.06]],
+ answer:[[660,0,.075,.055],[880,.077,.095,.06]], // Familiar soft rising two-note confirmation.
+ wrong:[[440,0,.13,.055]], // Short neutral low feedback, no harsh high-pitched alarm.
  lesson:[[523,0,.11,.08],[659,.12,.14,.09],[784,.29,.19,.11]],
  unlock:[[392,0,.11,.08],[494,.13,.12,.085],[659,.27,.19,.12]],
  skill:[[392,0,.11,.085],[523,.12,.12,.09],[659,.26,.13,.10],[784,.40,.22,.12]],
@@ -59,12 +59,12 @@ const NOTES={
  streak:[[440,0,.11,.08],[554,.13,.14,.095],[740,.30,.22,.115]],
  reward:[[540,0,.1,.09],[675,.12,.13,.11],[900,.28,.22,.12]],
  level:[[440,0,.12,.09],[660,.15,.16,.11],[880,.34,.22,.13]],
- retry:[[710,0,.090,.067]],
- error:[[710,0,.090,.067]]
+ retry:[[440,0,.13,.055]],
+ error:[[440,0,.13,.055]]
 };
 function tone(kind,force=false){
  if(!prefs.sound||document.hidden)return false;
- const now=Date.now();if(!force&&now-lastTone<45)return false;
+ const now=Date.now();if(!force&&now-lastTone<55)return false;
  const ctx=context();if(!ctx)return false;
  if(ctx.state==='suspended'||ctx.state==='interrupted')ctx.resume?.().catch?.(()=>{});
  const notes=NOTES[kind]||NOTES.reward;
