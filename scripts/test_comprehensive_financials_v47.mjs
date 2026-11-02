@@ -40,7 +40,7 @@ assert(first.includes('Berichtszahlen im Detail'));
 assert(first.includes('data-fp47-search'));
 assert(first.includes('Originalquellen'));
 assert(first.includes('Q2 2025'));
-assert(first.includes('Cashflow & Investitionen'));
+assert(first.includes('Cashflow &amp; Investitionen'),'Section title must be HTML-escaped in rendered report');
 const handlers={};
 const buttons=[{dataset:{fp47Company:'BYW.MU'},addEventListener:(_,fn)=>handlers.click=fn}];
 ui.bind({querySelectorAll:q=>q==='[data-fp47-company]'?buttons:[],querySelector:()=>null});
