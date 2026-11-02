@@ -10,7 +10,7 @@
 .fp54-rings{position:absolute;z-index:0;top:0;left:50%;transform:translateX(-50%);width:175px;height:175px;display:grid;place-items:center;pointer-events:none}
 .fp54-rings i{grid-area:1/1;width:106px;height:106px;border:2px solid var(--c);border-radius:50%;opacity:0;box-shadow:0 0 22px var(--glow)}
 .fp54-icon{position:relative;z-index:2;display:grid;place-items:center;height:122px;width:130px;line-height:1;font-size:88px;font-weight:750;color:var(--c);filter:drop-shadow(0 0 18px var(--glow)) drop-shadow(0 2px 7px #102530)}
-.fp54-lesson .fp54-icon,.fp54-basics .fp54-icon,.fp54-lessonUnlock .fp54-icon{font-size:75px;height:105px}
+.fp54-lesson .fp54-icon,.fp54-basics .fp54-icon,.fp54-lessonUnlock .fp54-icon{font-size:89px;height:115px}
 .fp54-promotion .fp54-icon{font-size:101px}
 .fp54-artifact .fp54-icon{font-size:98px}
 .fp54-caption{font-size:11px;font-weight:850;letter-spacing:2.5px;color:var(--c);margin-top:1px}
@@ -33,8 +33,8 @@
 .fp54-p10{--dx:-194px;--dy:14px;--r:55deg}
 .fp54-p11{--dx:16px;--dy:-206px;--r:125deg}
 @media(prefers-reduced-motion:no-preference){
- :root.fp52-motion .fp54-motion{animation:fp54-end 2.5s ease-in both}
- :root.fp52-motion .fp54-lesson.fp54-motion,:root.fp52-motion .fp54-basics.fp54-motion{animation-duration:1.85s}
+ html:not(.fp52-static) .fp54-motion{animation:fp54-end 2.5s ease-in both}
+ :root.fp52-motion .fp54-lesson.fp54-motion,:root.fp52-motion .fp54-basics.fp54-motion{animation-duration:2.6s}
  :root.fp52-motion .fp54-promotion.fp54-motion,:root.fp52-motion .fp54-artifact.fp54-motion{animation-duration:3.1s}
  :root.fp52-motion .fp54-motion .fp54-icon{animation:fp54-reveal .68s cubic-bezier(.1,1.25,.2,1) both}
  :root.fp52-motion .fp54-artifact.fp54-motion .fp54-icon{animation:fp54-discover .95s cubic-bezier(.1,1.25,.2,1) both}
