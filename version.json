@@ -1,5 +1,5 @@
 {
-  "version": 65,
-  "release": "2026-11-02-v65",
-  "notes": "Kopfzeilen-Ausrichtung auf schmalen Displays: FP, virtueller Depotgesamtwert und manueller Sync-Button enden bündig an derselben rechten Inhaltskante. Fehlerursache waren ältere negative Außenränder und volle Breite einer zweiten Grid-Zeile. Die Topbar nutzt nun den vorhandenen Inhaltsbereich ohne Überstand; auf Desktop ebenfalls rechts ausgerichtet. Funktionen und Daten bleiben unverändert."
+  "version": 66,
+  "release": "2026-11-02-v66",
+  "notes": "Kopfzeile auf iPhone exakt symmetrisch um 12px eingerückt: FinanzPilot-Zeichen und Schrift werden etwas nach rechts verschoben; FP, Depotwert und Sync gemeinsam entsprechend nach links. Vorheriger V65-Fehler war padding-inline:0 bei einem mobil 100% breiten Header; jetzt border-box mit 12px Innenabstand auf beiden Seiten, ohne unterschiedliche Button-Abstände. Keine Änderungen an Login, Spieldaten, Fortschritt oder Synchronisierung."
 }
