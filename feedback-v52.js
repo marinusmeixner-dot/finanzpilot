@@ -130,6 +130,7 @@ function mount(){
  '<p id="fp52-audio-status" class="fp52-audio-status" role="status">Tippe auf „Ton testen“, um die Audiowiedergabe auf deinem iPhone zu prüfen.</p>'+
  '<label>Animationen<select id="fp52-motion-pref"><option value="system">Systemeinstellung beachten</option><option value="on">An</option><option value="off">Aus</option></select></label>'+
  '<button type="button" class="fp52-test-button fp52-demo-button" id="fp52-animation-test">✦ Belohnungsanimation ansehen</button>'+
+ '<button type="button" class="fp52-test-button fp52-demo-button" id="fp52-lesson-animation-test">✓ Lektionsabschluss testen</button>'+
  '<p>Die Vorschau vergibt keine Punkte. Belohnungseffekte laufen von selbst aus, ohne Fenster. Bei fehlendem Ton die Medienlautstärke und den iPhone-Lautlosmodus prüfen.</p>';
  document.body.append(settings);
  settings.querySelector('[data-fp52-close]')?.addEventListener('click',()=>{settings.hidden=true});
@@ -137,6 +138,9 @@ function mount(){
  settings.querySelector('#fp52-motion-pref')?.addEventListener('change',e=>{prefs.motion=e.target.value;write()});
  settings.querySelector('#fp52-sound-test')?.addEventListener('click',soundTest);
  settings.querySelector('#fp52-sound-wrong-test')?.addEventListener('click',()=>{if(!prefs.sound){prefs.sound=true;write()}unlock();const played=tone('wrong',true);const el=document.getElementById('fp52-audio-status');if(el)el.textContent=played?'Kurzer Fehlerton abgespielt.':'Das Gerät blockiert die Audioausgabe.'});
+ settings.querySelector('#fp52-lesson-animation-test')?.addEventListener('click',()=>{
+  settings.hidden=true;window.FinanzPilotCelebrations?.preview?.('basics');
+ });
  settings.querySelector('#fp52-animation-test')?.addEventListener('click',()=>{
   if(prefs.sound)unlock();
   settings.hidden=true;window.FinanzPilotCelebrations?.preview?.('artifact');
