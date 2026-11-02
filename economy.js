@@ -55,7 +55,7 @@ window.FinanzPilotEconomy=(()=>{
   const old=claims.filter(x=>!x.choice).length;
   const occupied=active.length+old;
   return '<section class="fp-inventory-section fp44-crafting"><div class="fp-inventory-heading"><h2>Artefakte aus Beförderungen</h2>'+
-  '<p>Alle drei erlernten neuen Skills erhältst du eine Beförderung mit drei Artefaktscherben. Aus drei Scherben stellst du ein einmaliges zufälliges Artefakt her. Maximal vier aktive Artefakte, bestehende ältere Artefakte zählen dazu. Solange du es behältst, besitzt du seinen individuellen Effekt. Einlösen ist endgültig.</p></div>'+
+  '<p>Für jeweils drei erlernte neue Skills erhältst du eine Beförderung mit zwei Artefaktscherben. Aus drei Scherben stellst du ein einmaliges zufälliges Artefakt her. Maximal vier aktive Artefakte, bestehende ältere Artefakte zählen dazu. Solange du es behältst, besitzt du seinen individuellen Effekt. Einlösen ist endgültig.</p></div>'+
   '<div class="fp44-craft-summary"><div><small>Artefaktscherben</small><b>'+shards+' / 3</b></div><div><small>Aktive Artefakte</small><b>'+occupied+' / 4</b></div></div>'+
   '<button type="button" class="btn" data-fp44-craft '+(shards<3||occupied>=4?'disabled':'')+'>Aus drei Scherben ein Artefakt herstellen</button>'+
   '<div class="fp44-crafted-list">'+crafted.map(a=>'<article class="fp44-crafted-card'+(a.redeemed_at?' used':'')+'"><div class="fp44-crafted-emblem">✦</div><div><b>'+esc(artifactTypes[a.kind]||a.kind)+'</b><small>'+esc(artifactEffects[a.effect]||'Spezieller Forschungsgegenstand')+'</small><small>Stufe '+Number(a.tier||1)+' · '+(a.redeemed_at?'Bereits eingetauscht':'Aktiv')+'</small></div>'+
@@ -66,7 +66,12 @@ window.FinanzPilotEconomy=(()=>{
  async function craft(){
   const c=api()?.paperClient;if(!c)return;
   try{const {data,error}=await c.rpc('fp_craft_artifact');if(error)throw error;
-    window.FinanzPilotFeedback?.notify?.('reward',{text:'Artefakt hergestellt!'});
+    if(data?.id&&data?.kind){
+     window.FinanzPilotCelebrations?.show?.('artifact',{confirmed:true,id:'artifact:'+data.id,
+      title:artifactTypes[data.kind]||'Neues Artefakt',
+      text:artifactEffects[data.effect]||'Einzigartiges Forschungsartefakt dauerhaft erhalten.',
+      value:'Artefakt freigeschaltet'});
+    }
     notice='Neues einmaliges Artefakt hergestellt. Seine zufällige Eigenschaft ist dauerhaft gespeichert.';
     await refresh(false);window.render?.();
   }catch(e){notice='Artefakt nicht hergestellt: '+String(e.message||e);window.render?.()}
@@ -79,7 +84,7 @@ window.FinanzPilotEconomy=(()=>{
   }catch(e){notice='Artefakt nicht eingelöst: '+String(e.message||e);window.render?.()}
  }
  function itemList(){
-  return `<section class="fp-inventory-section"><div class="fp-inventory-heading"><h2>Deine Forschungsartefakte</h2><p>Deine früheren Spezialartefakte aus KION, AIXTRON und Alphabet bleiben erhalten. Neue Artefakte stellst du ausschließlich mit Scherben aus Beförderungen her. Die übrigen Karriereabzeichen sind eine andere, nicht einlösbare Sammlung. Das neue System vergibt drei Scherben je drei gemeisterte Skills. Drei Scherben ergeben ein zufälliges Artefakt mit einem kleinen, überprüften Lernbonus. <b>Einlösen:</b> Praxisreihe abschließen, Antworten bestätigen, dann „Verwendung auswählen“ → dauerhaft Werkzeug, Spezialmission oder einmalig 150 € virtuelles EUR-Depotguthaben wählen. Ein Artefakt kann nur einmal eingesetzt werden.</p></div><div class="fp-inventory-rows">`+
+  return `<section class="fp-inventory-section"><div class="fp-inventory-heading"><h2>Deine Forschungsartefakte</h2><p>Deine früheren Spezialartefakte aus KION, AIXTRON und Alphabet bleiben erhalten. Neue Artefakte stellst du ausschließlich mit Scherben aus Beförderungen her. Die übrigen Karriereabzeichen sind eine andere, nicht einlösbare Sammlung. Das neue System vergibt zwei Scherben je drei gemeisterte Skills. Drei Scherben ergeben ein zufälliges Artefakt mit einem kleinen, überprüften Lernbonus. <b>Einlösen:</b> Praxisreihe abschließen, Antworten bestätigen, dann „Verwendung auswählen“ → dauerhaft Werkzeug, Spezialmission oder einmalig 150 € virtuelles EUR-Depotguthaben wählen. Ein Artefakt kann nur einmal eingesetzt werden.</p></div><div class="fp-inventory-rows">`+
   modules.map(m=>{
    const cl=stateOf(m.id),count=verified.filter(x=>x.module_id===m.id).length;
    const headline=cl?(cl.choice?'Eingelöst: '+({tool:'Werkzeug',path:'Spezialkurs',cash:'150 € virtuelles Kapital'}[cl.choice]||cl.choice):'Einmalige Auswahl verfügbar'):`${count}/4 Antworten bestätigt`;
