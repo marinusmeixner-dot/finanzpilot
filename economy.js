@@ -80,6 +80,7 @@ window.FinanzPilotEconomy=(()=>{
   if(!window.confirm('Artefakt endgültig gegen '+(choice==='cash'?'75 € Spielgeld':'8 Forschungspunkte')+' eintauschen? Der Artefakt-Effekt geht verloren.'))return;
   const c=api()?.paperClient;if(!c)return;
   try{const {data,error}=await c.rpc('fp_exchange_crafted_artifact',{p_id:id,p_choice:choice});if(error)throw error;
+  window.FinanzPilotCelebrations?.show?.('reward',{confirmed:true,id:'artifact-exchanged:'+id,title:'Artefakt eingetauscht',text:'Deine einmalige Auszahlung wurde erfolgreich gebucht.',value:choice==='cash'?'+75 € Depot':'+8 FP'});
   notice='Artefakt endgültig eingelöst. Guthaben serverseitig gutgeschrieben.';await refresh(false);window.FinanzPilotHeader?.refresh(true);window.render?.();
   }catch(e){notice='Artefakt nicht eingelöst: '+String(e.message||e);window.render?.()}
  }
@@ -154,7 +155,10 @@ window.FinanzPilotEconomy=(()=>{
   if(!['number','multi','sequence','decision'].includes(type))return {skipped:true};
   try{
    const out=await api().economyRpc('fp_submit_training_answer',{p_module:id,p_step:index,p_answer:answer});
-   if(out.newReward){notice='Vorhandenen Praxisfall bestätigt: +2 Forschungspunkte. Neue Artefakte entstehen aus Beförderungsscherben.';await refresh(false)}
+   if(out.newReward){
+    window.FinanzPilotCelebrations?.show?.('mission',{confirmed:true,id:'practice-award:'+id,title:'Praxisfall gemeistert',text:'Die Fallstudie wurde geprüft und vergütet.',value:'+2 FP'});
+    notice='Vorhandenen Praxisfall bestätigt: +2 Forschungspunkte. Neue Artefakte entstehen aus Beförderungsscherben.';await refresh(false)
+   }
    return out;
   }catch(e){notice='Serverprüfung nicht möglich: '+(e.message||'Netzwerkfehler');return {error:notice}}
  }
@@ -182,6 +186,7 @@ window.FinanzPilotEconomy=(()=>{
   const current=pending;pending=null;notice='Einlösung wird überprüft …';window.render?.();
   try{
    await api().economyRpc('fp_redeem_artifact',{p_module:current.id,p_choice:current.choice});
+   window.FinanzPilotCelebrations?.show?.('reward',{confirmed:true,id:'redeemed:'+current.id,title:'Belohnung freigeschaltet',text:'Dein Forschungsartefakt wurde erfolgreich eingelöst.',value:current.choice==='cash'?'+150 € Depot':current.choice==='tool'?m.tool:m.path});
    notice='Einlösung erfolgreich: '+(current.choice==='cash'?'150,00 € virtuell gutgeschrieben':current.choice==='tool'?m.tool+' dauerhaft verfügbar':m.path+' dauerhaft verfügbar');
   }catch(e){notice='Einlösung fehlgeschlagen: '+(e.message||e)}
   await refresh();
@@ -192,7 +197,9 @@ window.FinanzPilotEconomy=(()=>{
   const cost=key==='theme:mint'?150:200;
   if(!['theme:mint','theme:gold'].includes(key))return;
   if(!confirm(`Analysedesign „${name}“ für ${cost} Forschungspunkte dauerhaft freischalten?`))return;
-  try{await api().economyRpc('fp_purchase_reward',{p_perk:key});notice='Analysedesign freigeschaltet.'}
+  try{await api().economyRpc('fp_purchase_reward',{p_perk:key});
+   window.FinanzPilotCelebrations?.show?.('reward',{confirmed:true,id:'style-unlocked:'+key,title:'Analysedesign freigeschaltet',text:'Dein neues Design steht jetzt dauerhaft bereit.',value:name});
+   notice='Analysedesign freigeschaltet.'}
   catch(e){notice='Kauf fehlgeschlagen: '+(e.message||e)}
   await refresh();
  }
