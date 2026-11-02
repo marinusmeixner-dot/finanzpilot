@@ -28,10 +28,10 @@ assert(header.includes('id="top-fp"')&&header.includes('id="top-depot"'),'FP and
 assert(!header.includes('top-streak'),'Streak remains in Profile.');
 assert(read('sync.js').includes("quick.id='fp-quick-sync'"),'Sync still joins header-right dynamically.');
 const buildVersion=JSON.parse(read('version.json')).version;
-const uxVersion=Number(html.match(/ux-v15\\.js\\?v=(\\d+)/)?.[1]);
+const uxVersion=Number(html.match(/ux-v15[.]js[?]v=([0-9]+)/)?.[1]);
 assert(html.includes('ui-v43.css?v='+buildVersion)&&Number.isInteger(uxVersion)&&uxVersion>=69,'Current CSS URL and v69+ runtime logo code must bypass iPhone cache.');
 assert(buildVersion>=71,'The visible mobile header alignment fix must be included in this release.');
-const brandRule=patch.match(/\\.main-area>\\.topbar>\\.mobile-logo\\s*\\{([^}]*)\\}/)?.[1]||'';
+const brandRule=patch.match(/[.]main-area>[.]topbar>[.]mobile-logo[ ]*[{]([^}]*)[}]/)?.[1]||'';
 assert(brandRule.includes('position:relative!important')&&brandRule.includes('left:8px!important')&&brandRule.includes('transform:none!important'),'Brand moves right without changing flex layout or displacing FP, Depot, Sync.');
 assert(patch.includes('.main-area>.topbar>.mobile-logo{font-size:15px;left:3px!important}'),'Small screens limit brand offset to avoid collision.');
 console.log('V71 PASS: mobile logo right offset, one-row flex header, 34px Sync and current cache-busted assets.');
