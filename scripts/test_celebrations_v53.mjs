@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 const read=f=>fs.readFileSync(f,'utf8');
 const source=read('celebrations-v53.js'),css=read('celebrations-v53.css'),html=read('index.html');
-assert(html.includes('celebrations-v53.js?v=54')&&html.includes('celebrations-v53.css?v=54'));
+assert(html.includes('celebrations-v53.js?v=55')&&html.includes('celebrations-v53.css?v=55'));
 assert(css.includes('fp54-lesson')&&css.includes('fp54-skill')&&css.includes('fp54-artifact')&&css.includes('fp54-promotion'));
 assert(!/infinite|setInterval\s*\(/.test(css+source));
 assert(!/createElement\(['\"]canvas['\"]\)|getUserMedia|fetch\s*\(|https?:\/\//.test(source),'No media payload, canvas, remote effect or UI polling.');
