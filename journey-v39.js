@@ -108,6 +108,8 @@ function answer(choice){
  const q=m.questions[page-2],i=Number(choice);
  if(!Number.isInteger(i)||i<0||i>=q.options.length||p.answers[page-2]?.correct)return;
  p.answers[page-2]={selected:i,correct:i===q.correct,updatedAt:Date.now()};
+ // A correct answer is acknowledged by sound only. The larger animation belongs to the lesson finish.
+ if(i===q.correct)window.FinanzPilotFeedback?.tone?.('correct');
  p.updatedAt=Date.now();persist();redraw();
 }
 function complete(){
