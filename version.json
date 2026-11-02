@@ -1,5 +1,5 @@
 {
-  "version": 54,
-  "release": "2026-11-02-v54",
-  "notes": "Belohnungen werden jetzt mit rahmenlosen, automatisch ausblendenden Symbol-/Licht-/Funkenanimationen direkt über der App gefeiert, ohne Popup oder Interaktionsblockade. Unveränderte geprüfte Lern-/Belohnungsereignisse, iOS Safari/WebKit WebAudio beim ursprünglichen Berühren freischalten, deutlichere kurze Erfolgstöne, direkter Testton und reine Animationsvorschau in den Einstellungen. Hintergrund/Navigation ohne unnötige Animationen. Vorherige Skills, Gewinne, Marktdaten und Missionen bleiben gespeichert."
+  "version": 55,
+  "release": "2026-11-02-v55",
+  "notes": "Stiller Hintergrund-Sync (Ladeanimation nur auf manuelles Auslösen); 36 anspruchsvollere Grundlagen-Multiple-Choice-Aufgaben für 18 Module mit plausiblen Antworten; nachweislich einmalige, nachträglich anrechenbare Grundlagenprämie 20 XP/1 FP je vollständige Lektion; eigene 100-Level-Karte mit echten, idempotenten FP-Prämien (+2, +5, +10 FP), Fortschritt und automatischer Level-Aufstiegsanimation; erste serverbestätigte Tages-Streak mit Belohnungsanzeige; korrekte Antworten nur mit kleinem Ton und ohne Animation, bestehende Daten bleiben erhalten."
 }
