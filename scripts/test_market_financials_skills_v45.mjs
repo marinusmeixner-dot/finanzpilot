@@ -6,8 +6,8 @@ const catalog=JSON.parse(read('data/specializations-v41.json')),reports=JSON.par
 const market=read('market-v34.js'),nav=read('ux-v15.js'),app=read('app.js'),html=read('index.html');
 assert.equal(JSON.parse(read('version.json')).version,48);
 assert.equal(catalog.branches.length,8);
-assert.equal(catalog.skills.length,44);
-assert.equal(catalog.skills.flatMap(s=>s.lessons).length,132);
+assert.equal(catalog.skills.length,52);
+assert.equal(catalog.skills.flatMap(s=>s.lessons).length,156);
 assert.equal(reports.companies.length,4);
 assert(html.includes('<strong id="top-fp">0</strong> FP'),'Show points before FP suffix');
 assert(nav.includes("['marketfinancials','Kennzahlen'"));
@@ -39,7 +39,7 @@ const context=vm.createContext({window,document,fetch:async()=>({ok:true,json:as
 vm.runInContext(read('learning-hub-v41.js'),context);
 await window.FinanzPilotLearningHub.load();
 const tree=window.FinanzPilotLearningHub.tree();
-assert.equal((tree.match(/data-fp42-node="/g)||[]).length,44);
+assert.equal((tree.match(/data-fp42-node="/g)||[]).length,52);
 assert((tree.match(/fp45-cross-line/g)||[]).length>=7);
 assert(tree.includes('Konjunktur &amp; Zinsen')&&tree.includes('ETFs &amp; Anleihen'));
 const hub=window.FinanzPilotLearningHub.home();assert.equal((hub.match(/fp42-learn-entry/g)||[]).length,4);
