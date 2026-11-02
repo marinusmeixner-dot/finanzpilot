@@ -70,5 +70,7 @@ jobs:
         run: node scripts/test_home_reader_v48.mjs
       - name: "v46: Audit all 36 fundamentals, all 132 specialist lessons, learning stages and reward-free spaced practice"
         run: node scripts/test_study_depth_v46.mjs
+      - name: "v49: Verify eight new skill pathways, client/server answers and teaching quality"
+        run: node scripts/test_skill_expansion_v49.mjs
       - name: "Regression: 3-skill promotions, artifact shards, 28 skills, free news and reset safety"
         run: node scripts/test_progression_news_v44.mjs
