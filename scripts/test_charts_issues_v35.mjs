@@ -6,7 +6,7 @@ const source=read('market-v34.js');
 const edge=read('supabase/functions/finanzpilot-stock-lookup/index.ts');
 const inbox=read('.github/workflows/issue-inbox.yml');
 const markup=read('index.html'),css=read('market-v34.css');
-assert.equal(JSON.parse(read('version.json')).version,59);
+assert(JSON.parse(read('version.json')).version>=59,'App version must not regress below V59');
 assert(/market-v34\.js\?v=\d+/.test(markup)&&/market-v34\.css\?v=\d+/.test(markup));
 assert(css.includes('.fp35-tooltip')&&css.includes('.fp35-ranges'));
 for(const range of ['1mo','3mo','6mo','1y','5y','max'])assert(edge.includes('"'+range+'"'),'Missing backend chart range: '+range);
