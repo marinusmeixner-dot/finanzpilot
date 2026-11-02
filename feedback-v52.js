@@ -1,137 +1,150 @@
-/* FinanzPilot V52 – tiny GPU-friendly motion + original synthesized UI feedback.
- * No playback before user action; no remote media; OS motion preference honored. */
+/* V54 – reliable iOS/WebKit audio unlock and audible, original achievement jingles. */
 (function(){
- 'use strict';
- const KEY='finanzpilot_feedback_preferences_v52';
- const defaultPrefs=()=>({sound:true,motion:'system'});
- function read(){
-  try{const s=JSON.parse(localStorage.getItem(KEY)||'{}');return {sound:s.sound!==false,motion:['system','on','off'].includes(s.motion)?s.motion:'system'};}
-  catch{return defaultPrefs()}
+'use strict';
+const KEY='finanzpilot_feedback_preferences_v52';
+const read=()=>{try{const x=JSON.parse(localStorage.getItem(KEY)||'{}');return{sound:x.sound!==false,motion:['system','on','off'].includes(x.motion)?x.motion:'system'}}catch{return{sound:true,motion:'system'}}};
+let prefs=read(),audio=null,lastTone=0,lastStatus='',toastTimer=0,unlockAttempted=false;
+const reduced=()=>!!window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
+const motion=()=>prefs.motion!=='off'&&!reduced();
+const iconOn='<svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15 9a5 5 0 0 1 0 6"/><path d="M18 6a9 9 0 0 1 0 12"/></svg>';
+const iconOff='<svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6m0-6-5 6"/></svg>';
+function updateMotion(){
+ document.documentElement?.classList?.toggle('fp52-motion',motion());
+ document.documentElement?.classList?.toggle('fp52-static',!motion());
+}
+function updateToggle(){
+ const b=document.getElementById('fp52-settings-toggle');
+ if(b){b.innerHTML=prefs.sound?iconOn:iconOff;b.title='Erfolgsanimationen & Töne · '+(prefs.sound?'Ton an':'Ton aus');}
+ const x=document.getElementById('fp52-sound-pref');if(x)x.checked=prefs.sound;
+ const y=document.getElementById('fp52-motion-pref');if(y)y.value=prefs.motion;
+}
+function write(){try{localStorage.setItem(KEY,JSON.stringify(prefs))}catch{}updateMotion();updateToggle();}
+function context(){
+ if(!prefs.sound)return null;
+ if(audio?.state==='closed')audio=null;
+ if(!audio){
+  const Constructor=window.AudioContext||window.webkitAudioContext;
+  if(!Constructor){lastStatus='WebAudio ist in diesem Browser nicht verfügbar.';return null}
+  try{audio=new Constructor({latencyHint:'interactive'})}catch{try{audio=new Constructor()}catch{lastStatus='Audio konnte nicht initialisiert werden.';return null}}
  }
- let prefs=read(),audio=null,lastChime=0,feedbackTimer=null;
- const preferredReduced=()=>!!window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
- const motion=()=>prefs.motion!=='off'&&!preferredReduced();
- function updateMotion(){
-  document.documentElement?.classList?.toggle('fp52-motion',motion());
-  document.documentElement?.classList?.toggle('fp52-static',!motion());
- }
- function write(){
-  try{localStorage.setItem(KEY,JSON.stringify(prefs))}catch{}
-  updateMotion();updateToggle();
- }
- const iconOn='<svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15 9a5 5 0 0 1 0 6"/><path d="M18 6a9 9 0 0 1 0 12"/></svg>';
- const iconOff='<svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6m0-6-5 6"/></svg>';
- function updateToggle(){
-  const button=document.getElementById('fp52-settings-toggle');
-  if(!button)return;
-  button.innerHTML=prefs.sound?iconOn:iconOff;
-  button.setAttribute('aria-label','Animationen und Töne einstellen');
-  button.title='Animationen und Töne einstellen · Ton '+(prefs.sound?'an':'aus');
-  const sound=document.getElementById('fp52-sound-pref');if(sound)sound.checked=prefs.sound;
-  const select=document.getElementById('fp52-motion-pref');if(select)select.value=prefs.motion;
- }
- function audioContext(){
-  if(!prefs.sound||typeof window.AudioContext!=='function'&&typeof window.webkitAudioContext!=='function')return null;
-  if(!audio){try{const Ctor=window.AudioContext||window.webkitAudioContext;audio=new Ctor({latencyHint:'interactive'});}catch{return null}}
-  if(audio.state==='suspended')audio.resume?.().catch?.(()=>{});
-  return audio;
- }
- function tone(kind){
-  if(!prefs.sound)return false;
-  const now=Date.now();
-  if(now-lastChime<115)return false;
-  const context=audioContext();if(!context||context.state==='closed')return false;
-  lastChime=now;
-  try{
-   const t=context.currentTime+0.008;
-   const notes={
-    tap:[[470,0,.027,.014]],
-    correct:[[610,0,.075,.035],[815,.075,.12,.042]],
-    reward:[[540,0,.09,.045],[675,.09,.1,.047],[900,.19,.16,.05]],
-    level:[[440,0,.10,.035],[660,.10,.13,.042],[880,.23,.2,.045]],
-    retry:[[310,0,.11,.035]],
-    error:[[260,0,.14,.025]],
-    lesson:[[520,0,.09,.034],[660,.10,.11,.038],[790,.21,.16,.035]],
-    unlock:[[330,0,.07,.027],[495,.08,.10,.037],[660,.2,.15,.042]],
-    skill:[[392,0,.09,.032],[523,.10,.10,.037],[659,.20,.10,.042],[784,.31,.19,.043]],
-    promotion:[[392,0,.12,.034],[494,.12,.13,.038],[588,.25,.13,.038],[784,.39,.23,.047]],
-    shards:[[480,0,.07,.028],[610,.10,.11,.035],[730,.23,.15,.039]],
-    artifact:[[392,0,.10,.03],[587,.12,.11,.037],[740,.27,.12,.038],[987,.42,.19,.046]],
-    mission:[[523,0,.08,.03],[659,.09,.11,.037],[784,.22,.16,.040]],
-    streak:[[440,0,.08,.032],[554,.09,.11,.036],[740,.2,.17,.04]]
-   }[kind]||[];
-   for(const [frequency,offset,duration,volume] of notes){
-    const oscillator=context.createOscillator(),gain=context.createGain();
-    oscillator.type=kind==='error'||kind==='retry'?'sine':'sine';
-    oscillator.frequency.setValueAtTime(frequency,t+offset);
-    gain.gain.setValueAtTime(0.0001,t+offset);
-    gain.gain.exponentialRampToValueAtTime(Math.min(.055,volume),t+offset+.012);
-    gain.gain.exponentialRampToValueAtTime(.0001,t+offset+duration);
-    oscillator.connect(gain);gain.connect(context.destination);
-    oscillator.start(t+offset);oscillator.stop(t+offset+duration+.014);
-    oscillator.onended=()=>{try{oscillator.disconnect();gain.disconnect()}catch{}};
-   }
-   return true;
-  }catch{return false}
- }
- function flash(kind,text){
-  const root=document.getElementById('fp52-feedback');
-  if(!root||!text)return;
-  if(feedbackTimer)clearTimeout(feedbackTimer);
-  root.textContent=String(text).slice(0,170);
-  root.className='fp52-toast fp52-'+(kind==='level'?'level':kind==='reward'?'reward':kind==='error'?'error':'success');
-  root.hidden=false;
-  if(motion()){root.classList.remove('fp52-visible');void root.offsetWidth;root.classList.add('fp52-visible')}
-  feedbackTimer=setTimeout(()=>{root.hidden=true;root.classList.remove('fp52-visible');},kind==='reward'||kind==='level'?3100:1800);
- }
- function notify(kind,detail={}){
-  if(!['correct','reward','level','retry','error'].includes(kind))return;
-  tone(kind);
-  const label=typeof detail==='string'?detail:detail.text;
-  if(label)flash(kind,label);
- }
- function audioToggle(){prefs.sound=!prefs.sound;write();if(prefs.sound)tone('correct')}
- function settingsPanel(){
-  const host=document.getElementById('fp52-settings');
-  if(!host)return;
-  if(host.hidden){
-   host.hidden=false;
-   document.getElementById('fp52-motion-pref')?.focus?.();
-  }else host.hidden=true;
- }
- function mount(){
-  if(!document.body||document.getElementById('fp52-settings-toggle'))return;
-  const toolbar=document.querySelector('.header-right');
-  if(toolbar){
-   const settings=document.createElement('button');
-   settings.type='button';settings.id='fp52-settings-toggle';settings.className='fp52-settings-toggle';settings.innerHTML=iconOn;settings.title='Darstellung & Töne';
-   settings.setAttribute('aria-label','Animationen und Töne einstellen');
-   settings.addEventListener('click',settingsPanel);toolbar.prepend(settings);
+ return audio;
+}
+function unlock(){
+ if(!prefs.sound||document.hidden)return false;
+ const ctx=context();if(!ctx)return false;
+ unlockAttempted=true;
+ try{
+  // iOS Safari requires audio to be primed and resumed within the ORIGINAL touch/click.
+  // A near-silent 1ms oscillator unlocks the hardware before an awaited RPC resolves.
+  if(ctx.state==='suspended'||ctx.state==='interrupted')ctx.resume?.().catch?.(()=>{});
+  const o=ctx.createOscillator(),g=ctx.createGain(),t=ctx.currentTime;
+  g.gain.setValueAtTime(.00001,t);
+  o.connect(g);g.connect(ctx.destination);
+  o.start(t);o.stop(t+.004);
+  o.onended=()=>{o.disconnect();g.disconnect()};
+  lastStatus=ctx.state==='running'?'Tonwiedergabe bereit.':'Audiowiedergabe wird freigeschaltet …';
+  return true;
+ }catch{lastStatus='Das Gerät hat die Audiowiedergabe blockiert.';return false}
+}
+const NOTES={
+ tap:[[470,0,.045,.045]],
+ correct:[[640,0,.09,.075],[820,.10,.12,.085]],
+ lesson:[[523,0,.11,.08],[659,.12,.14,.09],[784,.29,.19,.11]],
+ unlock:[[392,0,.11,.08],[494,.13,.12,.085],[659,.27,.19,.12]],
+ skill:[[392,0,.11,.085],[523,.12,.12,.09],[659,.26,.13,.10],[784,.40,.22,.12]],
+ promotion:[[392,0,.13,.09],[494,.14,.13,.095],[588,.29,.15,.11],[784,.46,.28,.13]],
+ artifact:[[392,0,.12,.09],[587,.14,.14,.11],[740,.30,.15,.11],[988,.49,.26,.14]],
+ shards:[[475,0,.09,.07],[610,.11,.13,.085],[740,.27,.16,.10]],
+ mission:[[523,0,.12,.09],[659,.14,.13,.095],[784,.29,.20,.11]],
+ streak:[[440,0,.11,.08],[554,.13,.14,.095],[740,.30,.22,.115]],
+ reward:[[540,0,.1,.09],[675,.12,.13,.11],[900,.28,.22,.12]],
+ level:[[440,0,.12,.09],[660,.15,.16,.11],[880,.34,.22,.13]],
+ retry:[[325,0,.12,.055]],
+ error:[[280,0,.12,.055]]
+};
+function tone(kind,force=false){
+ if(!prefs.sound||document.hidden)return false;
+ const now=Date.now();if(!force&&now-lastTone<90)return false;
+ const ctx=context();if(!ctx)return false;
+ if(ctx.state==='suspended'||ctx.state==='interrupted')ctx.resume?.().catch?.(()=>{});
+ const notes=NOTES[kind]||NOTES.reward;
+ try{
+  const t=ctx.currentTime+.016;
+  for(const [hz,offset,length,volume] of notes){
+   const o=ctx.createOscillator(),g=ctx.createGain(),when=t+offset;
+   o.type='sine';o.frequency.setValueAtTime(hz,when);
+   g.gain.setValueAtTime(.0001,when);
+   g.gain.exponentialRampToValueAtTime(Math.min(.15,volume),when+.018);
+   g.gain.exponentialRampToValueAtTime(.0001,when+length);
+   o.connect(g);g.connect(ctx.destination);
+   o.start(when);o.stop(when+length+.018);
+   o.onended=()=>{try{o.disconnect();g.disconnect()}catch{}};
   }
-  const panel=document.createElement('div');
-  panel.id='fp52-settings';panel.className='fp52-settings';panel.hidden=true;
-  panel.innerHTML='<div class="fp52-settings-head"><strong>Darstellung & Töne</strong><button type="button" data-fp52-close aria-label="Einstellungen schließen">×</button></div>'+
-   '<label><input type="checkbox" id="fp52-sound-pref"> Kurze Bestätigungstöne</label>'+
-   '<label>Animationen<select id="fp52-motion-pref"><option value="system">Systemeinstellung beachten</option><option value="on">An</option><option value="off">Aus</option></select></label>'+
-   '<p>Alle Töne entstehen lokal durch kurze Signale nach einer Bedienung. Keine Musik, Downloads oder automatische Wiedergabe. Die iPhone-Einstellung „Bewegung reduzieren“ hat immer Vorrang.</p>';
-  document.body.append(panel);
-  panel.querySelector('[data-fp52-close]')?.addEventListener('click',()=>{panel.hidden=true});
-  panel.querySelector('#fp52-sound-pref')?.addEventListener('change',e=>{prefs.sound=e.target.checked;write();if(prefs.sound)tone('correct')});
-  panel.querySelector('#fp52-motion-pref')?.addEventListener('change',e=>{prefs.motion=e.target.value;write()});
-  const toast=document.createElement('div');toast.id='fp52-feedback';toast.className='fp52-toast';toast.hidden=true;toast.setAttribute('role','status');toast.setAttribute('aria-live','polite');document.body.append(toast);
-  updateToggle();
+  lastTone=now;lastStatus=ctx.state==='running'?'Ton abgespielt.':'Ton eingeplant – Audio noch nicht freigegeben.';
+  return true;
+ }catch{lastStatus='Audioausgabe fehlgeschlagen.';return false;}
+}
+function flash(kind,label){
+ const root=document.getElementById('fp52-feedback');if(!root||!label)return;
+ if(toastTimer)clearTimeout(toastTimer);
+ root.textContent=String(label).slice(0,160);
+ root.className='fp52-toast fp52-'+(kind==='error'?'error':'success');
+ root.hidden=false;
+ toastTimer=setTimeout(()=>{root.hidden=true},1600);
+}
+function notify(kind,detail={}){
+ if(!['correct','reward','level','retry','error'].includes(kind))return;
+ tone(kind);
+ const label=typeof detail==='string'?detail:detail.text;if(label)flash(kind,label);
+}
+function soundTest(){
+ if(!prefs.sound){prefs.sound=true;write()}
+ unlock();
+ // Test is initiated directly by user touch; force immediate start irrespective of previous tone.
+ const played=tone('promotion',true);
+ const s=document.getElementById('fp52-audio-status');
+ if(s)s.textContent=played?'Testsignal gestartet. Kein Ton? Medienlautstärke prüfen und beim iPhone den Lautlosmodus testweise ausschalten.':'Audio konnte nicht gestartet werden. Töne sind möglicherweise vom Gerät blockiert.';
+}
+function panelToggle(){
+ const p=document.getElementById('fp52-settings');if(!p)return;
+ p.hidden=!p.hidden;
+ if(!p.hidden)document.getElementById('fp52-sound-test')?.focus?.();
+}
+function mount(){
+ if(!document.body)return;
+ if(document.getElementById('fp52-settings-toggle'))return;
+ const toolbar=document.querySelector('.header-right');
+ if(toolbar){
+  const b=document.createElement('button');b.type='button';b.id='fp52-settings-toggle';b.className='fp52-settings-toggle';
+  b.setAttribute('aria-label','Erfolgsanimationen und Töne einstellen');b.addEventListener('click',panelToggle);toolbar.prepend(b);
  }
- function onClick(event){
-  const target=event.target?.closest?.('button');
-  if(!target||target.disabled)return;
-  if(target.matches('#fp52-settings-toggle,.fp52-settings button'))return;
-  if(target.matches('[data-fp51-choice],[data-fp41-answer],[data-fp41-enroll],[data-fp41-buy],[data-fp44-craft],[data-journey-complete],[data-inventory-confirm]'))audioContext();
- }
- document.addEventListener('click',onClick,{passive:true});
- document.addEventListener('visibilitychange',()=>{if(document.hidden&&audio?.state==='running')audio.suspend?.().catch?.(()=>{})});
- const query=window.matchMedia?.('(prefers-reduced-motion: reduce)');
- query?.addEventListener?.('change',updateMotion);
- window.FinanzPilotFeedback={notify,tone,mount,get preferences(){return {...prefs}},setPreferences(next){prefs={sound:next.sound!==false,motion:['system','on','off'].includes(next.motion)?next.motion:'system'};write()}};
- updateMotion();
- if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
+ const settings=document.createElement('div');settings.id='fp52-settings';settings.className='fp52-settings';settings.hidden=true;
+ settings.innerHTML='<div class="fp52-settings-head"><strong>Erfolge & Töne</strong><button type="button" data-fp52-close aria-label="Einstellungen schließen">×</button></div>'+
+ '<label><input type="checkbox" id="fp52-sound-pref"> Erfolgs- und Bestätigungstöne</label>'+
+ '<button type="button" class="fp52-test-button" id="fp52-sound-test">▶ Ton testen</button>'+
+ '<p id="fp52-audio-status" class="fp52-audio-status" role="status">Tippe auf „Ton testen“, um die Audiowiedergabe auf deinem iPhone zu prüfen.</p>'+
+ '<label>Animationen<select id="fp52-motion-pref"><option value="system">Systemeinstellung beachten</option><option value="on">An</option><option value="off">Aus</option></select></label>'+
+ '<button type="button" class="fp52-test-button fp52-demo-button" id="fp52-animation-test">✦ Belohnungsanimation ansehen</button>'+
+ '<p>Die Vorschau vergibt keine Punkte. Belohnungseffekte laufen von selbst aus, ohne Fenster. Bei fehlendem Ton die Medienlautstärke und den iPhone-Lautlosmodus prüfen.</p>';
+ document.body.append(settings);
+ settings.querySelector('[data-fp52-close]')?.addEventListener('click',()=>{settings.hidden=true});
+ settings.querySelector('#fp52-sound-pref')?.addEventListener('change',e=>{prefs.sound=e.target.checked;write();if(prefs.sound)unlock()});
+ settings.querySelector('#fp52-motion-pref')?.addEventListener('change',e=>{prefs.motion=e.target.value;write()});
+ settings.querySelector('#fp52-sound-test')?.addEventListener('click',soundTest);
+ settings.querySelector('#fp52-animation-test')?.addEventListener('click',()=>{
+  if(prefs.sound)unlock();
+  settings.hidden=true;window.FinanzPilotCelebrations?.preview?.('artifact');
+ });
+ const toast=document.createElement('div');toast.id='fp52-feedback';toast.className='fp52-toast';toast.hidden=true;toast.setAttribute('role','status');document.body.append(toast);
+ updateToggle();
+}
+// Unlock on every explicit user touch/keyboard gesture while enabled; not on page load.
+document.addEventListener('pointerdown',unlock,{capture:true,passive:true});
+document.addEventListener('touchstart',unlock,{capture:true,passive:true});
+document.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')unlock()},{capture:true});
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&audio?.state==='running')audio.suspend?.().catch?.(()=>{})});
+window.matchMedia?.('(prefers-reduced-motion: reduce)')?.addEventListener?.('change',updateMotion);
+window.FinanzPilotFeedback={tone,notify,unlock,mount,test:soundTest,get audioStatus(){return{state:audio?.state||'uninitialized',unlockAttempted,lastStatus}},get preferences(){return{...prefs}},setPreferences(next){prefs={sound:next.sound!==false,motion:['system','on','off'].includes(next.motion)?next.motion:'system'};write()}};
+updateMotion();
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 })();
