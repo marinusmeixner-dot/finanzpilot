@@ -5264,7 +5264,7 @@
           "transferPrompt": "Übertrage das Vorgehen von „Brier-Score für Prognosen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "(0,8 − 0)²: Brier-Score?",
+            "prompt": "Fiktive Rechenübung: (0,8 − 0)²: Brier-Score?",
             "answer": 0.64,
             "unit": "Score",
             "explanation": "Fiktiv: Du vergibst eine Wahrscheinlichkeit von 0,8, aber das Ereignis tritt nicht ein. Der Brier-Score beträgt 0,8² = 0,64, wobei kleinere Werte besser sind. Rechne den Wert unabhängig nach: 0,64 Score. Das ist ein fiktiver Übungsfall.",
