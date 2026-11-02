@@ -29,3 +29,28 @@
 .fp60-depot-pill{gap:5px;font-variant-numeric:tabular-nums}
 #top-depot{font-variant-numeric:tabular-nums}
 @media(max-width:650px){.fp60-depot-pill{padding:6px 7px;font-size:10px}.fp60-depot-pill strong{font-size:11px}}
+
+/* V63: give portfolio wealth, FP and streak enough room at every iPhone width.
+   Desktop remains a single line; phones use a calm two-line header. */
+.topbar .header-right{min-width:0}
+#fp43-depot-trigger{font-variant-numeric:tabular-nums;min-width:0}
+#top-depot{font-variant-numeric:tabular-nums}
+@media(max-width:700px){
+ .topbar{display:grid!important;grid-template-columns:minmax(0,1fr);grid-template-rows:auto auto;align-content:center;justify-items:stretch;row-gap:7px;min-height:calc(92px + env(safe-area-inset-top,0px))!important}
+ .topbar .fp-mobile-brand{grid-row:1;grid-column:1;flex:none;min-width:0}
+ .topbar .header-right{grid-row:2;grid-column:1;margin:0!important;width:100%;display:flex;gap:6px;justify-content:space-between;align-items:center;min-width:0}
+ .topbar .header-right #today-date{display:none!important}
+ .topbar .header-right .fp43-header-pill{flex:0 1 auto;min-width:0;font-size:11px;padding:7px 9px;justify-content:center}
+ .topbar .header-right .fp60-depot-pill{flex:1 1 auto;min-width:104px;padding:7px 8px;gap:4px}
+ .topbar .header-right .fp60-depot-pill strong{overflow:hidden;text-overflow:ellipsis;min-width:0;font-size:12px}
+ .topbar .header-right .fp-small-streak{display:inline-flex!important;align-items:center;justify-content:center;flex:none;padding:8px 7px;font-size:11px;white-space:nowrap}
+ .topbar .header-right .fp-topbar-sync{width:33px;height:33px;min-height:33px;min-width:33px;border-radius:10px;padding:5px}
+ .topbar .header-right .fp-topbar-sync svg{width:17px;height:17px}
+}
+@media(max-width:360px){
+ .topbar .header-right{gap:4px}
+ .topbar .header-right .fp43-header-pill{padding:7px 6px;font-size:10px}
+ .topbar .header-right .fp60-depot-pill{min-width:90px}
+ .topbar .header-right .fp-small-streak{padding:7px 5px}
+ .topbar .header-right .fp-topbar-sync{width:29px;min-width:29px;height:30px;min-height:30px}
+}
