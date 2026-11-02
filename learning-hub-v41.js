@@ -255,7 +255,7 @@ async function action(kind,skill,lesson,payment,answer){
   notice=data?.message||'Gespeichert.';
   if(kind==='submit'&&data?.correct===true)window.FinanzPilotStudy?.seed?.(lesson);
   if(kind==='submit'&&typeof data?.correct==='boolean')window.FinanzPilotLessonView?.feedback?.(lesson,data.correct);
-  if(kind==='submit'&&data?.correct===false)window.FinanzPilotFeedback?.notify?.('retry',{text:'Noch nicht richtig – Erklärung prüfen.'});
+  if(kind==='submit'&&data?.correct===false)window.FinanzPilotFeedback?.tone?.('retry');
   // Celebrate only a newly committed server transaction; revisiting completed courses is silent.
   const fresh=data?.ok===true&&data?.unchanged!==true;
   if(fresh&&kind==='enroll')window.FinanzPilotCelebrations?.show?.('skillUnlock',{confirmed:true,id:'enroll:'+skill,title:bySkill(skill)?.title||'Skill-Lernpfad',text:'Neuer Lernpfad freigeschaltet. Deine Spezialisierung beginnt jetzt.'});
