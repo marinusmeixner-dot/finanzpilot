@@ -164,7 +164,7 @@
     }}
     return changed;
   }
-  function setStatus(message,state){
+  function setStatus(message,state,showSpinner=false){
     lastStatus=String(message||'');
     const panel=document.getElementById('fp-account-state');
     if(panel)panel.textContent=lastStatus;
@@ -173,7 +173,7 @@
     const status=state||(offline?'offline':!user?'guest':/fehlgeschlagen|fehler|nicht erreichbar/i.test(lastStatus)?'error':/wird abgeglichen|synchronisiere|wird geprüft/i.test(lastStatus)?'pending':/gespeichert und synchronisiert/i.test(lastStatus)?'success':'pending');
     if(btn){
       btn.dataset.syncState=status;
-      btn.setAttribute('aria-busy',String(status==='pending'));
+      btn.setAttribute('aria-busy',String(status==='pending'&&showSpinner));
       btn.setAttribute('aria-label',(user?'Fortschritt synchronisieren. ':'Anmelden und Fortschritt sichern. ')+lastStatus);
       btn.title=lastStatus;
     }
@@ -277,7 +277,7 @@
     if(error){e.target.checked=!next;setStatus('Freigabe konnte nicht gespeichert werden: '+statusMessage(error))}else{canAnalyze=next;setStatus(next?'Analysefreigabe aktiviert':'Analysefreigabe ausgeschaltet')}
   }
   async function signedIn(session){if(!session?.user){user=null;ready=false;canAnalyze=false;showAccount();return}
-    if(user?.id===session.user.id&&ready)return;user=session.user;ready=false;showAccount();window.dispatchEvent(new Event('fp-auth-change'));await sync(true,true)
+    if(user?.id===session.user.id&&ready)return;user=session.user;ready=false;showAccount();window.dispatchEvent(new Event('fp-auth-change'));await sync(true,false)
   }
   async function sync(force=false,visible=false){
     if(!client||!user)return;
@@ -286,7 +286,7 @@
     if(typeof navigator!=='undefined'&&navigator.onLine===false){setStatus('Offline – dein Lernfortschritt bleibt auf dem Gerät gespeichert.','offline');return}
     busy=true;
     // Periodic and queued sync stays invisible in the header; only a manual/initial request spins.
-    if(visible||!ready)setStatus('Lernstand wird abgeglichen …','pending');
+    if(visible||!ready)setStatus('Lernstand wird abgeglichen …','pending',visible);
     let localBefore='';
     try{
       // Nie den Zustand eines anderen Logins in diesen Nutzeraccount hochladen.
