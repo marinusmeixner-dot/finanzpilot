@@ -6,6 +6,17 @@
 const DATA='./data/journey-v39.json';
 const STORAGE='finanzpilot_journey_v1';
 const QUESTION_DATA='./data/journey-questions-v55.json';
+let questionBankLoaded=false;
+function reconcileQuestionSessions(){
+ if(!questionBankLoaded)return;
+ let changed=false;
+ for(const m of all()){
+  const p=state.lessons?.[m.id];if(!p||state.completed?.[m.id]||p.questionVersion===55)continue;
+  p.answers={};p.page=Math.min(2,Number(p.page)||0);p.questionVersion=55;p.updatedAt=Date.now();changed=true;
+ }
+ if(changed)persist();
+}
+
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=()=>{try{const x=JSON.parse(localStorage.getItem(STORAGE)||'{}');return x&&typeof x==='object'?x:{}}catch{return{}}};
 let data=null,loading=false,error='',state={completed:{},lessons:{},...read()},selectedId=String(read().selected||'');
@@ -151,13 +162,14 @@ async function load(force=false){
    if(response.ok){const bank=await response.json();const selected=all();
     if(bank.schema_version===1&&selected.length===18&&selected.every(m=>Array.isArray(bank.questions?.[m.id])&&bank.questions[m.id].length===2&&bank.questions[m.id].every(q=>q.options?.length===4&&Number.isInteger(q.correct)))){
       selected.forEach(m=>{const origin=data.stages.flatMap(s=>s.modules).find(x=>x.id===m.id);if(origin)origin.questions=bank.questions[m.id]});
+      questionBankLoaded=true;reconcileQuestionSessions();
     }
    }
   }catch(e){console.warn('FinanzPilot questions fallback:',e)}
  }catch(e){error='Lerninhalte sind derzeit nicht erreichbar. Bitte erneut laden.';console.warn('FinanzPilot Journey:',e)}
  finally{loading=false;redraw()}
 }
-window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};selectedId=String(state.selected||'');redraw()}});
+window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};selectedId=String(state.selected||'');reconcileQuestionSessions();redraw()}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
 window.FinanzPilotJourney={renderHome:brief,renderFor,bind,load,open,start,complete,stageOf,firstIncomplete,get modules(){return all()},get catalog(){return data},get completed(){return state.completed},canOpen,get state(){return state}};
 })();
