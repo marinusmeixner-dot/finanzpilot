@@ -1,5 +1,5 @@
 {
-  "version": 66,
-  "release": "2026-11-02-v66",
-  "notes": "Kopfzeile auf iPhone exakt symmetrisch um 12px eingerückt: FinanzPilot-Zeichen und Schrift werden etwas nach rechts verschoben; FP, Depotwert und Sync gemeinsam entsprechend nach links. Vorheriger V65-Fehler war padding-inline:0 bei einem mobil 100% breiten Header; jetzt border-box mit 12px Innenabstand auf beiden Seiten, ohne unterschiedliche Button-Abstände. Keine Änderungen an Login, Spieldaten, Fortschritt oder Synchronisierung."
+  "version": 67,
+  "release": "2026-11-02-v67",
+  "notes": "Der gesamte FP/Depotwert/Sync-Block wird auf iPhones weitere 16px nach links eingerückt. Ursache: Die zweite Header-Gridzeile nahm trotz vorheriger Korrekturen die volle Breite ein und ließ den Sync-Button optisch zu weit am rechten Rand. Die Position des FinanzPilot-Symbols und -Schriftzugs links bleibt unverändert. Gemeinsames Innenpadding am Aktionsblock statt einzeln verschobener Tasten. Keine Änderung an Daten oder Belohnungen."
 }
