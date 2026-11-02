@@ -57,3 +57,9 @@
 .fp48-tools small{color:#b8d4c9;font-size:11px;line-height:1.5}
 @media(max-width:740px){.fp48-daily-grid{grid-template-columns:1fr}.fp48-news-grid{grid-template-columns:1fr}.fp48-hero{padding:21px;min-height:0}.fp48-circle{width:100px;height:100px;min-width:100px;border-width:6px}.fp48-circle b{font-size:27px}.fp48-hero h1{font-size:30px}.fp48-hero p{font-size:13px}.fp48-hero small{font-size:11px}.fp48-tools{gap:7px}.fp48-tools button{padding:11px}.fp48-tools b{font-size:12px}.fp48-discover{padding:16px}}
 @media(max-width:410px){.fp48-home{gap:18px}.fp48-hero{gap:12px}.fp48-circle{width:82px;height:82px;min-width:82px}.fp48-circle b{font-size:22px}.fp48-hero h1{font-size:26px}.fp48-stats button{padding:12px 9px}.fp48-stats button b{font-size:17px}.fp48-stats button span{font-size:10px}.fp48-featured button{padding:18px}.fp48-tools{grid-template-columns:1fr}.fp48-tools button{grid-template-columns:25px 1fr;column-gap:9px}.fp48-tools button small{grid-column:2}}
+
+/* Watchlist news take priority without changing the underlying publication date. */
+.fp48-watch-spotlight{display:grid;gap:13px;padding:16px;border:1px solid #567c73;border-radius:16px;background:rgba(37,83,73,.30)}
+.fp48-watch-heading{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+.fp48-watch-heading h3{margin:0;color:#dcf6e6;font-size:18px}
+.fp48-watch-heading .btn{font-size:12px;padding:9px 13px}
