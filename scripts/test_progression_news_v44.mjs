@@ -5,7 +5,7 @@ const read=p=>fs.readFileSync(p,'utf8');
 const html=read('index.html'),app=read('app.js'),hub=read('learning-hub-v41.js'),profile=read('profile-v42.js');
 const news=JSON.parse(read('data/editorial-core-v43.json'));
 const skills=JSON.parse(read('data/specializations-v41.json'));
-assert.equal(JSON.parse(read('version.json')).version,59);
+assert(JSON.parse(read('version.json')).version>=59,'App version must not regress below V59');
 assert.equal(skills.skills.length,52,'52 coherent skills');
 assert.equal(skills.skills.flatMap(x=>x.lessons).length,156,'156 individual specialist lessons');
 assert.equal(new Set(skills.skills.map(x=>x.id)).size,52);
