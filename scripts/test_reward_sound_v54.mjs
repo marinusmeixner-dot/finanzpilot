@@ -4,7 +4,7 @@ import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
 const audioJs=read('feedback-v52.js'),revealJs=read('celebrations-v53.js'),css=read('celebrations-v53.css');
 const html=read('index.html');
-assert(html.includes('feedback-v52.js?v=54')&&html.includes('celebrations-v53.js?v=55'));
+assert(html.includes('feedback-v52.js?v=57')&&html.includes('celebrations-v53.js?v=55'));
 assert(css.includes('.fp53-venue{')&&css.includes('pointer-events:none'));
 assert(!css.includes('.fp53-card{')&&!revealJs.includes('fp53-card'),'No window/cards.');
 assert(!revealJs.includes('fp53-close'),'No close button: disappears automatically.');
