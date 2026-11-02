@@ -16,10 +16,12 @@ for(const s of cat.skills){
  assert(s.lessons.every((l,i)=>l.xp>=15&&l.xp<=50&&(!i||l.xp>=s.lessons[i-1].xp)),'Skill lesson XP must vary with learning demand');
  byTier.set(s.tier,(byTier.get(s.tier)||0)+1);net.push(s.cost-s.rewardPoints);
 }
-assert.deepEqual([...byTier.entries()].sort((a,b)=>a[0]-b[0]),[[1,9],[2,9],[3,12],[4,16],[5,6]]);
-assert.equal(net.reduce((a,b)=>a+b,0),209,'Full 52 skill tree must be an FP sink.');
+assert.deepEqual([...byTier.entries()].sort((a,b)=>a[0]-b[0]),[[1,9],[2,9],[3,11],[4,16],[5,7]]);
+assert.equal(net.reduce((a,b)=>a+b,0),211,'Full 52 skill tree must be an FP sink.');
 assert(SQL.includes("WHEN 1 THEN 3 WHEN 2 THEN 5 WHEN 3 THEN 7 WHEN 4 THEN 9 ELSE 11"));
 assert(SQL.includes("WHEN 1 THEN 1 WHEN 2 THEN 2 WHEN 3 THEN 3 WHEN 4 THEN 4 ELSE 5"));
+const alignment=read('supabase/economy_tier_alignment_v56.sql');
+assert(alignment.includes("realrendite-kaufkraft")&&alignment.includes("etf-tracking-steuern"),'Irregular deeper ETF skills must match client difficulty tiers.');
 assert(SQL.includes("v_reward_points:=2"),'Promotion should not inject escalating infinite FP.');
 assert(SQL.includes("when 'daily' then 1 when 'weekly' then 3 else 1"),'Missions must have balanced server rewards');
 assert(SQL.includes("v_bonus_points:=0"),'Promotions must not compound daily FP inflation');
