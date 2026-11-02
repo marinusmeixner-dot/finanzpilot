@@ -1,6 +1,6 @@
 {
   "date": "2026-11-02",
-  "updated_at": "2026-11-02T09:08:00+01:00",
+  "updated_at": "2026-11-02T11:58:35+01:00",
   "editor": "FinanzPilot Tagesredaktion – geprüfte kostenlose Primärquellen",
   "intro": "Acht vollständig innerhalb der App lesbare Eigenartikel. Quellen wurden am 02.11.2026 geprüft; published ist das tatsächliche Datum der zugrunde liegenden Originalmeldung, nicht das heutige Recherchedatum. Keine Live-Kurse oder vorweggenommenen Geschäftszahlen.",
   "lesson_id": "valuation",
@@ -374,6 +374,54 @@
           }
         ],
         "conclusion": "Die Veröffentlichung am 3. November ist ein Ausblick, kein Ergebnis. Die entscheidende Prüfung beginnt mit den tatsächlich publizierten Tabellen."
+      }
+    },
+    {
+      "id": "2026-11-02-alphabet-q3-cloud-cashflow",
+      "title": "Alphabet: Cloud-Umsatz verdoppelt – doch der freie Cashflow ist negativ",
+      "published": "2026-10-28",
+      "category": "Unternehmen",
+      "symbols": [
+        "GOOG",
+        "GOOGL"
+      ],
+      "source": "Alphabet Inc. – Q3 2026 Ergebnisbericht (SEC, Exhibit 99.1)",
+      "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "why": "Der Quartalsbericht trennt starkes operatives Wachstum von deutlich gestiegenen KI-Investitionen und volatilen Beteiligungsergebnissen.",
+      "impact": "Für die Bewertung sind künftig die Erträge aus Cloud und Suche, der Kapitalbedarf sowie die Qualität des bilanzierten Vermögens entscheidend.",
+      "article": {
+        "lead": "Alphabet veröffentlichte am 28. Oktober 2026 seine ungeprüften Zahlen für das dritte Quartal bis 30. September. Der Konzernumsatz stieg von 102,346 auf 127,577 Milliarden US-Dollar (+25 %), der operative Gewinn von 31,228 auf 40,576 Milliarden US-Dollar. Trotzdem sank der den Stammaktionären zurechenbare Nettogewinn von 34,979 auf 26,170 Milliarden US-Dollar. Diese Entwicklung ist ohne Blick auf die Geldflüsse und Beteiligungsbewertungen missverständlich.",
+        "sections": [
+          {
+            "heading": "Was tatsächlich gewachsen ist",
+            "paragraphs": [
+              "Google Services erzielte im dritten Quartal 96,302 Milliarden US-Dollar Umsatz nach 87,052 Milliarden ein Jahr zuvor. Darin stieg Google Search & other von 56,567 auf 63,350 Milliarden US-Dollar. Die Suche wächst also weiter, aber die Geschwindigkeit ist nicht identisch mit dem Wachstum des gesamten Konzerns.",
+              "Google Cloud erhöhte den Quartalsumsatz von 15,157 auf 30,709 Milliarden US-Dollar. Der operative Cloud-Gewinn stieg von 3,594 auf 11,121 Milliarden US-Dollar. Das ist ein belegter Fortschritt der Segmentprofitabilität, beweist aber noch nicht, dass jede zusätzliche KI-Investition eine ausreichende Rendite erwirtschaftet."
+            ]
+          },
+          {
+            "heading": "Warum der Nettogewinn trotz höherem Betriebsgewinn sank",
+            "paragraphs": [
+              "Das operative Konzernergebnis stieg um rund 30 % auf 40,576 Milliarden US-Dollar. Gleichzeitig drehte das sonstige Finanzergebnis von +12,759 Milliarden US-Dollar im Vorjahresquartal auf −8,221 Milliarden US-Dollar. Alphabet erläutert, dass allein Veränderungen im Wert von Aktienanlagen im Quartal einen Verlust von 8,7 Milliarden US-Dollar verursachten.",
+              "Das verwässerte Ergebnis je Stammaktie sank von 2,87 auf 2,12 US-Dollar. Ein Rückgang des ausgewiesenen Nettogewinns ist daher nicht automatisch ein Einbruch des Such- oder Cloud-Geschäfts. Umgekehrt dürfen Bewertungsverluste nicht einfach als dauerhaft irrelevant abgetan werden: Beteiligungen und ihre Volatilität gehören zum ökonomischen Risiko."
+            ]
+          },
+          {
+            "heading": "Cashflow: Hohe Investitionen übersteigen den Mittelzufluss",
+            "paragraphs": [
+              "Alphabet wies für das Quartal 42,290 Milliarden US-Dollar operativen Cashflow aus, aber 51,355 Milliarden US-Dollar Auszahlungen für Sachanlagen. Nach der vom Unternehmen verwendeten Rechnung ergibt das einen freien Cashflow von −9,065 Milliarden US-Dollar. Diese Kennzahl ist nicht der Nettogewinn und auch keine Aussage über einen sofortigen Liquiditätsengpass.",
+              "Für die zurückliegenden zwölf Monate meldete Alphabet noch +19,747 Milliarden US-Dollar freien Cashflow. Das zeigt, warum Quartal und Zwölfmonatszeitraum getrennt gelesen werden müssen. Ob die Rechenzentren künftig genügend zusätzliche Cashflows liefern, lässt sich aus dem Investitionsvolumen allein nicht beantworten."
+            ]
+          },
+          {
+            "heading": "Bilanz, Gegenhypothese und prüfbare Beobachtungen",
+            "paragraphs": [
+              "Zum 30. September 2026 meldete Alphabet 265,098 Milliarden US-Dollar an Barmitteln, Zahlungsmitteläquivalenten und marktfähigen Wertpapieren. Darin stecken laut 10-Q auch 75,2 Milliarden US-Dollar SpaceX-Aktien mit kurzfristigen Veräußerungsbeschränkungen. Der Gesamtbetrag darf daher nicht vollständig mit sofort frei verfügbarem Bargeld gleichgesetzt werden.",
+              "Die positive These lautet: starkes Cloud-Wachstum und mehr KI-Nutzung erhöhen langfristig den operativen Cashflow. Die Gegenhypothese lautet: hohe Sachinvestitionen, Wettbewerb und schwankende Beteiligungswerte drücken die für Aktionäre verfügbare Rendite. Überprüfbar wird dies an Cloud-Marge, Suchumsatz, Kapitalausgaben, freiem Cashflow über mehrere Quartale und der tatsächlichen Liquidierbarkeit von Anlagen. GOOG ist die Class-C-, GOOGL die Class-A-Aktie desselben Emittenten."
+            ]
+          }
+        ],
+        "conclusion": "Das operative Geschäft wuchs im dritten Quartal 2026 deutlich, während der Quartals-Free-Cashflow negativ war. Eine fundierte Bewertung muss operative Entwicklung, Kapitalbindung und Beteiligungsrisiken getrennt modellieren. Die Zahlen stammen aus dem veröffentlichten Bericht vom 28. Oktober, nicht aus einer Echtzeit-Kursprognose."
       }
     }
   ],
