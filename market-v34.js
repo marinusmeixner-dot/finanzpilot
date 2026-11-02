@@ -61,7 +61,7 @@ function getAsset(symbol,type,force=false,range=rangeOf(symbol)){
 }
 
 async function loadFinancials(force=false){
- try{const response=await fetch('./data/company-financials-v47.json?v=47'+(force?'&t='+Date.now():''),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
+ try{const response=await fetch('./data/company-financials-v47.json?v=62'+(force?'&t='+Date.now():''),{cache:'no-store'});if(!response.ok)throw Error('HTTP '+response.status);
  const document=await response.json();if(!Array.isArray(document?.companies))throw Error('Finanzbericht-Katalog unvollständig');
  financials=document.companies.filter(c=>c&&valid(c.symbol)&&Array.isArray(c.report_sections)&&c.report_sections.some(section=>Array.isArray(section.metrics)&&section.metrics.length>0)&&c.source?.url&&/^https:\/\//.test(c.source.url));financialsDate=document.generated_at||'';
  }catch(e){financialsDate='';console.warn('Finanzberichte:',String(e.message||e));}
