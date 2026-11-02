@@ -1,5 +1,5 @@
 {
-  "version": 61,
-  "release": "2026-11-02-v61",
-  "notes": "Oben statt Level der Gesamtwert des virtuellen Depots inklusive Eurokasse und aktuell bewertbaren Wertpapierpositionen; fehlende Kurs-/Wechselkursdaten werden nicht als 0 € ausgegeben. Levelpfad im Profil. Genau zwei unabhängige persistente Profil-Schalter Töne und Animationen; Header-Lautsprecher sowie sämtliche Testtöne und Animationsvorschauen entfernt. Alle bestätigten Spielbelohnungen lösen selbst ausblendende Effekte aus: täglich neue Streak mit konkretem Euro-/FP-Bonus, jedes einzelne Level, Lektionen, Skills, Missionen, Artefakte, Prämieneinlösungen und freigeschaltete Designs. Warteschlange verwirft keine echten Erfolge; Animation aus unterdrückt die gesamte Anzeige ohne Sound zu deaktivieren. XP, FP, virtuelles Depot und Lernfortschritte bleiben erhalten."
+  "version": 62,
+  "release": "2026-11-02-v62",
+  "notes": "Märkte > Kennzahlen lädt jetzt tatsächlich das V47-Berichtsformat mit report_sections statt alle gültigen Unternehmen herauszufiltern. Alphabet GOOG und GOOGL teilen sich einen vollständig quellengestützten Quartalsbericht aus SEC Q3 2026 mit 117 Kennzahlen in 8 Themenbereichen, inklusive Quartals- und Neunmonats-Cashflow, Bilanz, Gewinnrechnung, Segmenten und Regionen. Ursprüngliche Quellen- und Berichtsdatumsangaben bleiben erhalten; kein Eingriff in Depot, Belohnungen, Lernstand, Einstellungen oder Missionen."
 }
