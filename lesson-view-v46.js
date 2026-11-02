@@ -49,7 +49,9 @@ function bind(root=document){
   if(!/^[+-]?(?:\d+(?:\.\d*)?|\.\d+)$/.test(raw)){out.textContent='Bitte eine Zahl eingeben. Beispiel: 3,8 oder -12.';return}
   const value=Number(raw),cat=window.FinanzPilotLearningHub?.catalog,lesson=cat?.skills?.flatMap(s=>s.lessons).find(l=>l.id===selected),p=lesson?.practice;
   if(!p||!Number.isFinite(value))return;
-  out.textContent=Math.abs(value-p.answer)<=Number(p.tolerance||0.001)?'Richtig. '+p.explanation:'Noch nicht. Prüfe die Formel und die Ausgangswerte. '+p.explanation;
+  const correct=Math.abs(value-p.answer)<=Number(p.tolerance||0.001);
+  if(correct)window.FinanzPilotFeedback?.tone?.('correct');
+  out.textContent=correct?'Richtig. '+p.explanation:'Noch nicht. Prüfe die Formel und die Ausgangswerte. '+p.explanation;
  });
 
  window.FinanzPilotStudy?.bind?.(root);
