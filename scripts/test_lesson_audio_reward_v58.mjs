@@ -12,7 +12,7 @@ assert(/wrong:\[\[\d+/.test(audio),'A distinct error tone exists.');
 assert(audio.includes('role="switch" id="fp52-sound-pref"')&&audio.includes('role="switch" id="fp52-motion-pref"'),'Two simple switches replace all test/demo buttons.');
 assert(js.includes("i===q.correct?'answer':'wrong'"),'Every correct/incorrect Grundlagen choice plays its own ping.');
 assert(read('lesson-view-v46.js').includes("correct?'answer':'wrong'"),'Special practice also signals wrong answers.');
-assert(read('learning-hub-v41.js').includes("tone?.('wrong')"),'Server-verified wrong specialization answer signals error.');
+assert(read('learning-hub-v41.js').includes("data.correct?'answer':'wrong'"),'Server-verified correct and wrong specialization results have separate sounds.');
 assert(!css.includes(':root.fp52-motion'),'Reward display should not depend on fragile initialization class.');
 assert(css.includes('html:not(.fp52-static)')&&css.includes('pointer-events:none'),'Visible, self-fading, nonblocking animation when motion is enabled.');
 assert(celebrate.includes("duration:2600,level:2"),'Completed lessons get noticeable, particle-backed celebrations.');
