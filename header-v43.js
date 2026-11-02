@@ -6,7 +6,7 @@ const client=()=>window.FinanzPilotCloud?.paperClient;
 const stateNow=()=>typeof state!=='undefined'?state:{xp:0};
 let specialXp=0,points=0,currentUser=null,lastFetch=0,busy=false;
 const officialXP=()=>user()?specialXp:(Number(stateNow().xp)||0);
-const level=()=>Math.max(1,Math.min(100,Math.floor(officialXP()/100)+1));
+const level=()=>{let lv=1,xp=officialXP();while(lv<100&&xp>=100*lv+10*lv*(lv-1))lv++;return lv;};
 const pretty=n=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:0}).format(Number(n)||0);
 function paint(){
  const fp=document.getElementById('top-fp'),lv=document.getElementById('top-level');
