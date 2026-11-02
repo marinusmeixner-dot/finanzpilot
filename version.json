@@ -1,5 +1,5 @@
 {
-  "version": 51,
-  "release": "2026-11-02-v51",
-  "notes": "Neuer Lernen-Bereich Missionen & Wiederholungen mit servergeprüften Tagesquizfragen, fälligen Kompetenzwiederholungen und fünfteiliger Wochenfallstudie. Echte Postgres-Synchronisierung über zwei Supabase-RPCs; periodensichere Antworten, Lernfeedback, einmalige FP-Prämien, mobiler Fragenmodus, Authentifizierung und direkter Einstieg zu fortgeschrittenen Freitext-Researchaufgaben. Bestehende Lern-, Reward-, Depot- und Forschungsdaten bleiben erhalten."
+  "version": 52,
+  "release": "2026-11-02-v52",
+  "notes": "Missionen erhalten eine erweiterbare serverseitige Fragen- und Wochenfallbank (18 Tagesfragen, 13 Kompetenzwiederholungen, 4 fünfteilige Wochenfälle); neue Fragen werden erst am Folgetag und neue Wochenfälle erst nach dem beginnenden Montag zugeordnet. Laufende Wochenfälle bleiben stabil. Eine automatische redaktionelle Aufgabe hält Inhalte frisch. Dezent animierte App mit lokal synthetisierten, stummschaltbaren Erfolgs-, Lern- und Artefakttönen, Rücksicht auf iOS-Bewegung reduzieren, ohne Daueranimationen oder Audiodateien. Bestehende Fortschritte, Skills, FP und Artefakte bleiben unverändert."
 }
