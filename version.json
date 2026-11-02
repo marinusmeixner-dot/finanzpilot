@@ -1,5 +1,5 @@
 {
-  "version": 67,
-  "release": "2026-11-02-v67",
-  "notes": "Der gesamte FP/Depotwert/Sync-Block wird auf iPhones weitere 16px nach links eingerückt. Ursache: Die zweite Header-Gridzeile nahm trotz vorheriger Korrekturen die volle Breite ein und ließ den Sync-Button optisch zu weit am rechten Rand. Die Position des FinanzPilot-Symbols und -Schriftzugs links bleibt unverändert. Gemeinsames Innenpadding am Aktionsblock statt einzeln verschobener Tasten. Keine Änderung an Daten oder Belohnungen."
+  "version": 68,
+  "release": "2026-11-02-v68",
+  "notes": "Kopfzeile auf iPhone technisch neu aufgebaut: Originale einzeilige Flex-Ausrichtung wiederhergestellt und alle widersprüchlichen 100%-Breite-/Grid-Overrides aus V63–V67 entfernt. FP, kompletter oder nötigenfalls gekürzter Depotwert und Sync passen gemeinsam neben das echte Logo-Element .mobile-logo; Sync hat feste 34px und kann nicht aus dem Display gedrückt werden. Browser-Geometrie bei 320, 360, 375, 390, 393, 416, 430 und 700 px geprüft: kein horizontaler Überlauf, rechter Sync-Rand stets innerhalb des Displays. iOS-Cache neu versioniert; keine Änderungen an Lernfortschritt, Konten oder Depotwert."
 }
