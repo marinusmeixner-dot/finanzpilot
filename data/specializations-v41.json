@@ -4391,10 +4391,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Forderungen und Umsatz“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die Veränderung der Forderungen im fiktiven Beispiel in Mio. €.",
+            "prompt": "Forderungen von 70 auf 96 Mio. €: Wie viel Mio. € mehr?",
             "answer": 26,
-            "unit": "Mio. / Mrd. (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Forderungen und Umsatz“: Fiktiv: Der Umsatz beträgt 120 Mio. €, während offene Forderungen von 70 auf 96 Mio. € steigen. Der Anstieg von 26 Mio. € ist ein Prüfhinweis, kein Beweis für Fehlverhalten. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "Mio. €",
+            "explanation": "Fiktiv: Der Umsatz beträgt 120 Mio. €, während offene Forderungen von 70 auf 96 Mio. € steigen. Der Anstieg von 26 Mio. € ist ein Prüfhinweis, kein Beweis für Fehlverhalten. Rechne den Wert unabhängig nach: 26 Mio. €. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4406,8 +4406,8 @@
           "example": "Fiktiv: Ein Wartungsanbieter erhält 60 Mio. € im Dezember für zwölf Monate nachfolgender Leistungen. Nicht alle 60 Mio. € sind automatisch Dezember-Umsatz.",
           "question": "Was ist bei der Vorauszahlung entscheidend?",
           "options": [
-            "Nur das Eingangsdatum",
             "Die tatsächliche Erfüllung der Leistungsverpflichtung",
+            "Nur das Eingangsdatum",
             "Nur die Steuerquote"
           ],
           "correct": 1,
@@ -4423,13 +4423,7 @@
             "Begründe die korrekte Antwort auf „Was ist bei der Vorauszahlung entscheidend?“ und erkläre, warum die beiden anderen Antworten nicht passen."
           ],
           "transferPrompt": "Übertrage das Vorgehen von „Vorauszahlungen richtig lesen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
-          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
-          "practice": {
-            "prompt": "Berechne die zum Beispiel „Vorauszahlungen richtig lesen“ gehörige Kennzahl. Gib nur die Zahl ein.",
-            "unit": "Mio. / Mrd. (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Vorauszahlungen richtig lesen“: Fiktiv: Ein Wartungsanbieter erhält 60 Mio. € im Dezember für zwölf Monate nachfolgender Leistungen. Nicht alle 60 Mio. € sind automatisch Dezember-Umsatz. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
-            "tolerance": 0.02
-          }
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg."
         },
         {
           "id": "umsatzqualitaet-vertraege-3",
@@ -4439,9 +4433,9 @@
           "example": "Fiktiv: 10 Mio. € Anfangsumsatz aus Bestandskunden, 2 Mio. € Kündigungen und 3 Mio. € Erweiterungen ergeben 11 Mio. € oder 110 % Netto-Umsatzbindung.",
           "question": "Wie misst man Netto-Umsatzbindung?",
           "options": [
-            "Nur neue Verträge",
             "Nur die Zahl der Neukunden",
-            "Verbliebener Umsatz bestehender Kunden plus Erweiterungen"
+            "Verbliebener Umsatz bestehender Kunden plus Erweiterungen",
+            "Nur neue Verträge"
           ],
           "correct": 2,
           "xp": 46,
@@ -4458,10 +4452,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Bestandskundenumsatz bewerten“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die Netto-Bindungsquote des Beispiels in Prozent.",
+            "prompt": "(10 − 2 + 3) / 10 × 100: Bestandskunden-Bindung in Prozent?",
             "answer": 110,
-            "unit": "Mio. / Mrd. (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Bestandskundenumsatz bewerten“: Fiktiv: 10 Mio. € Anfangsumsatz aus Bestandskunden, 2 Mio. € Kündigungen und 3 Mio. € Erweiterungen ergeben 11 Mio. € oder 110 % Netto-Umsatzbindung. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: 10 Mio. € Anfangsumsatz aus Bestandskunden, 2 Mio. € Kündigungen und 3 Mio. € Erweiterungen ergeben 11 Mio. € oder 110 % Netto-Umsatzbindung. Rechne den Wert unabhängig nach: 110 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         }
@@ -4488,8 +4482,8 @@
           "example": "Fiktiv: Gewinn 110 Mio. € und 55 Mio. gewichtete Aktien ergeben 2 € Gewinn je Aktie. Im Vorjahr waren es 100 Mio. € Gewinn und 50 Mio. Aktien, ebenfalls 2 €.",
           "question": "Welche Aussage stimmt?",
           "options": [
-            "Der Konzerngewinn ist identisch mit EPS",
             "Eine höhere Aktienzahl kann EPS-Wachstum verhindern",
+            "Der Konzerngewinn ist identisch mit EPS",
             "Die Aktienzahl ändert die Eigentümerquote nie"
           ],
           "correct": 1,
@@ -4507,10 +4501,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Gewinn je Aktie“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Gewinn je Aktie oder das Verhältnis aus den im Beispiel genannten Zahlen.",
+            "prompt": "110 Mio. € Gewinn / 55 Mio. Aktien: Gewinn pro Aktie?",
             "answer": 2,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Gewinn je Aktie“: Fiktiv: Gewinn 110 Mio. € und 55 Mio. gewichtete Aktien ergeben 2 € Gewinn je Aktie. Im Vorjahr waren es 100 Mio. € Gewinn und 50 Mio. Aktien, ebenfalls 2 €. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "€/Aktie",
+            "explanation": "Fiktiv: Gewinn 110 Mio. € und 55 Mio. gewichtete Aktien ergeben 2 € Gewinn je Aktie. Im Vorjahr waren es 100 Mio. € Gewinn und 50 Mio. Aktien, ebenfalls 2 €. Rechne den Wert unabhängig nach: 2 €/Aktie. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4522,9 +4516,9 @@
           "example": "Fiktiv: Von 100 Mio. Aktien werden 6 Mio. zurückgekauft und 4 Mio. neue Aktien ausgegeben. Am Ende bestehen 98 Mio. Aktien statt der oft beworbenen 94 Mio.",
           "question": "Was gehört zur Rückkaufsanalyse?",
           "options": [
-            "Nur der angekündigte Rückkauf",
             "Nur die Dividendenrendite",
-            "Nettoaktienzahl und tatsächlich gezahlter Preis"
+            "Nettoaktienzahl und tatsächlich gezahlter Preis",
+            "Nur der angekündigte Rückkauf"
           ],
           "correct": 2,
           "xp": 34,
@@ -4541,10 +4535,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Rückkäufe nach Verwässerung“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Nettoaktienbestand in Millionen.",
+            "prompt": "100 − 6 + 4 Mio. Aktien: Neuer Netto-Aktienbestand?",
             "answer": 98,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Rückkäufe nach Verwässerung“: Fiktiv: Von 100 Mio. Aktien werden 6 Mio. zurückgekauft und 4 Mio. neue Aktien ausgegeben. Am Ende bestehen 98 Mio. Aktien statt der oft beworbenen 94 Mio. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "Mio. Aktien",
+            "explanation": "Fiktiv: Von 100 Mio. Aktien werden 6 Mio. zurückgekauft und 4 Mio. neue Aktien ausgegeben. Am Ende bestehen 98 Mio. Aktien statt der oft beworbenen 94 Mio. Rechne den Wert unabhängig nach: 98 Mio. Aktien. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4575,10 +4569,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Eigenkapitalwert je Anteil“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Modellwert je Aktie in Euro.",
+            "prompt": "1.200 Mio. € Eigenkapitalwert / 75 Mio. Aktien: Wert pro Aktie?",
             "answer": 16,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Eigenkapitalwert je Anteil“: Fiktiv: 1.200 Mio. € Eigenkapitalwert geteilt durch 75 Mio. voll verwässerte Aktien entspricht 16 € Modellwert je Aktie. Das ist keine Preisgarantie. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "€/Aktie",
+            "explanation": "Fiktiv: 1.200 Mio. € Eigenkapitalwert geteilt durch 75 Mio. voll verwässerte Aktien entspricht 16 € Modellwert je Aktie. Das ist keine Preisgarantie. Rechne den Wert unabhängig nach: 16 €/Aktie. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         }
@@ -4605,8 +4599,8 @@
           "example": "Fiktiv: Ein Depot fällt von 10.000 € auf 7.500 €. Der Rückgang beträgt 25 %, aber eine Erholung benötigt 2.500 / 7.500 = 33,33 % Anstieg.",
           "question": "Wie hoch ist die Erholung nach 25 % Verlust?",
           "options": [
-            "25 %",
             "33,33 %",
+            "25 %",
             "50 %"
           ],
           "correct": 1,
@@ -4624,10 +4618,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Drawdowns und Erholung“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den erforderlichen prozentualen Wertanstieg nach dem Verlust.",
+            "prompt": "Von 7.500 € auf 10.000 €: Wie groß ist die benötigte Erholung in Prozent?",
             "answer": 33.333333333,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Drawdowns und Erholung“: Fiktiv: Ein Depot fällt von 10.000 € auf 7.500 €. Der Rückgang beträgt 25 %, aber eine Erholung benötigt 2.500 / 7.500 = 33,33 % Anstieg. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: Ein Depot fällt von 10.000 € auf 7.500 €. Der Rückgang beträgt 25 %, aber eine Erholung benötigt 2.500 / 7.500 = 33,33 % Anstieg. Rechne den Wert unabhängig nach: 33,333333333 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.02
           }
         },
@@ -4658,10 +4652,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Korrelation unter Stress“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den gewichteten Depotverlust in Prozent.",
+            "prompt": "0,6 × 30 + 0,4 × 10: Gesamtverlust in Prozent?",
             "answer": 22,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Korrelation unter Stress“: Fiktiv: 60 % des Depots fallen um 30 %, die übrigen 40 % um 10 %. Der direkte Portfolioverlust ist 0,6 × 30 + 0,4 × 10 = 22 %. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: 60 % des Depots fallen um 30 %, die übrigen 40 % um 10 %. Der direkte Portfolioverlust ist 0,6 × 30 + 0,4 × 10 = 22 %. Rechne den Wert unabhängig nach: 22 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4673,9 +4667,9 @@
           "example": "Fiktiv: Bei 8.000 € Depotwert und angenommenen 35 % Krisenverlust entstehen 2.800 € Verlust. Ob das tragbar ist, hängt von Liquidität und Verpflichtungen ab.",
           "question": "Was folgt aus einem Stressszenario?",
           "options": [
-            "Es garantiert eine Verlustobergrenze",
             "Man muss automatisch alle Anlagen verkaufen",
-            "Liquidität und Verlusttragfähigkeit überprüfen"
+            "Liquidität und Verlusttragfähigkeit überprüfen",
+            "Es garantiert eine Verlustobergrenze"
           ],
           "correct": 2,
           "xp": 46,
@@ -4692,10 +4686,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Risikotragfähigkeit prüfen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Szenarioverlust in Euro.",
+            "prompt": "8.000 € Depot, 35 % Verlust: Eurobetrag?",
             "answer": 2800,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Risikotragfähigkeit prüfen“: Fiktiv: Bei 8.000 € Depotwert und angenommenen 35 % Krisenverlust entstehen 2.800 € Verlust. Ob das tragbar ist, hängt von Liquidität und Verpflichtungen ab. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "€",
+            "explanation": "Fiktiv: Bei 8.000 € Depotwert und angenommenen 35 % Krisenverlust entstehen 2.800 € Verlust. Ob das tragbar ist, hängt von Liquidität und Verpflichtungen ab. Rechne den Wert unabhängig nach: 2800 €. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         }
@@ -4722,8 +4716,8 @@
           "example": "Fiktiv: Ein Produkt steigt von 100 € auf 105 €, die Absatzmenge fällt von 1.000 auf 920 Stück. Der neue Umsatz beträgt 96.600 € statt ursprünglich 100.000 €.",
           "question": "Welche Größen belegen Preissetzungsmacht?",
           "options": [
-            "Nur der Marktanteil",
             "Absatz, Preis und Gewinnmarge im Zeitvergleich",
+            "Nur der Marktanteil",
             "Nur der Kursanstieg"
           ],
           "correct": 1,
@@ -4741,10 +4735,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Preissetzungsmacht testen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den neuen Umsatz in Euro aus Preis und Menge.",
+            "prompt": "105 € pro Stück, 920 Stück: Umsatz in Euro?",
             "answer": 96600,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Preissetzungsmacht testen“: Fiktiv: Ein Produkt steigt von 100 € auf 105 €, die Absatzmenge fällt von 1.000 auf 920 Stück. Der neue Umsatz beträgt 96.600 € statt ursprünglich 100.000 €. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "€",
+            "explanation": "Fiktiv: Ein Produkt steigt von 100 € auf 105 €, die Absatzmenge fällt von 1.000 auf 920 Stück. Der neue Umsatz beträgt 96.600 € statt ursprünglich 100.000 €. Rechne den Wert unabhängig nach: 96600 €. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4775,10 +4769,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Kundenbindung und Wechselkosten“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die Bestandskunden-Bindungsquote in Prozent.",
+            "prompt": "500 Kunden, 25 Kündigungen: Bindungsquote in Prozent?",
             "answer": 95,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Kundenbindung und Wechselkosten“: Fiktiv: Von 500 Bestandskunden kündigen im Jahr 25. Eine Bindung von 95 % nach Anzahl ist erfreulich, sagt jedoch noch nichts über die Umsatzstärke dieser 25 Kunden aus. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: Von 500 Bestandskunden kündigen im Jahr 25. Eine Bindung von 95 % nach Anzahl ist erfreulich, sagt jedoch noch nichts über die Umsatzstärke dieser 25 Kunden aus. Rechne den Wert unabhängig nach: 95 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4790,9 +4784,9 @@
           "example": "Fiktiv: Ein Chipproduzent profitiert von Knappheit. Beobachte nach neuen Konkurrenzfabriken die Preisentwicklung, die Auslastung und die Bruttomarge über mehrere Quartale.",
           "question": "Welcher Test widerlegt mögliche Marktmacht?",
           "options": [
-            "Nur Managerzitate",
             "Nur Analystenratings",
-            "Konkurrenzkapazität, Preise und Margen beobachten"
+            "Konkurrenzkapazität, Preise und Margen beobachten",
+            "Nur Managerzitate"
           ],
           "correct": 2,
           "xp": 46,
@@ -4832,8 +4826,8 @@
           "example": "Fiktiv: 900 Mrd. € Staatsschulden zu Jahresbeginn, ein Defizit von 40 Mrd. € und keine sonstigen Anpassungen ergeben 940 Mrd. € Endstand.",
           "question": "Was ist eine Flussgröße?",
           "options": [
-            "Der Stichtags-Schuldenstand",
             "Das jährliche Haushaltsdefizit",
+            "Der Stichtags-Schuldenstand",
             "Eine Bilanzquote zum Stichtag"
           ],
           "correct": 1,
@@ -4851,10 +4845,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Defizit und Schuldenstand“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den fiktiven Schuldenstand am Jahresende in Mrd. €.",
+            "prompt": "900 Mrd. € Schulden + 40 Mrd. € Defizit: Endstand?",
             "answer": 940,
-            "unit": "Mio. / Mrd. (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Defizit und Schuldenstand“: Fiktiv: 900 Mrd. € Staatsschulden zu Jahresbeginn, ein Defizit von 40 Mrd. € und keine sonstigen Anpassungen ergeben 940 Mrd. € Endstand. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "Mrd. €",
+            "explanation": "Fiktiv: 900 Mrd. € Staatsschulden zu Jahresbeginn, ein Defizit von 40 Mrd. € und keine sonstigen Anpassungen ergeben 940 Mrd. € Endstand. Rechne den Wert unabhängig nach: 940 Mrd. €. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4885,10 +4879,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Schuldenquote statt nur Schuldenhöhe“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die Staatsschuldenquote in Prozent.",
+            "prompt": "1.000 Mrd. € Schulden / 2.000 Mrd. € BIP: Prozent?",
             "answer": 50,
-            "unit": "Mio. / Mrd. (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Schuldenquote statt nur Schuldenhöhe“: Fiktiv: 1.000 Mrd. € Schulden bei 2.000 Mrd. € nominalem BIP entsprechen 50 % Schuldenquote. Bei 2.200 Mrd. € BIP und gleichen Schulden sinkt die Quote. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: 1.000 Mrd. € Schulden bei 2.000 Mrd. € nominalem BIP entsprechen 50 % Schuldenquote. Bei 2.200 Mrd. € BIP und gleichen Schulden sinkt die Quote. Rechne den Wert unabhängig nach: 50 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -4900,8 +4894,8 @@
           "example": "Fiktiv: Eine Schuldenquote von 60 %, effektiver Zins von 4 % und nominales Wachstum von 2 % ergeben vereinfacht etwa 1,2 Prozentpunkte Zins-Wachstums-Beitrag.",
           "question": "Welche Information fehlt für eine Gesamtprognose?",
           "options": [
-            "Nur die jüngste Schlagzeile",
             "Primärsaldo und Laufzeiten",
+            "Nur die jüngste Schlagzeile",
             "Nur die Aktienmarktentwicklung"
           ],
           "correct": 1,
@@ -4919,10 +4913,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Zins-Wachstums-Szenario“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den näherungsweisen Zins-Wachstums-Beitrag in Prozentpunkten.",
+            "prompt": "(0,04 − 0,02) × 60: Prozentpunkte?",
             "answer": 1.2,
-            "unit": "Mio. / Mrd. (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Zins-Wachstums-Szenario“: Fiktiv: Eine Schuldenquote von 60 %, effektiver Zins von 4 % und nominales Wachstum von 2 % ergeben vereinfacht etwa 1,2 Prozentpunkte Zins-Wachstums-Beitrag. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "Prozentpunkte",
+            "explanation": "Fiktiv: Eine Schuldenquote von 60 %, effektiver Zins von 4 % und nominales Wachstum von 2 % ergeben vereinfacht etwa 1,2 Prozentpunkte Zins-Wachstums-Beitrag. Rechne den Wert unabhängig nach: 1,2 Prozentpunkte. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.02
           }
         }
@@ -4949,8 +4943,8 @@
           "example": "Fiktiv: Ein Index legt in einem Jahr 8 % zu und ein ETF erzielt 7,6 % Gesamtrendite. Die Tracking-Differenz des ETFs beträgt −0,4 Prozentpunkte, nicht zwangsläufig seine TER.",
           "question": "Was ist die Tracking-Differenz?",
           "options": [
-            "Nur die jährliche TER",
             "ETF-Gesamtrendite minus passende Indexrendite",
+            "Nur die jährliche TER",
             "Nur die Veränderung des Schlusskurses"
           ],
           "correct": 1,
@@ -4968,10 +4962,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Tracking-Differenz und TER“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die Tracking-Differenz ETF minus Index in Prozentpunkten.",
+            "prompt": "7,6 % ETF-Rendite minus 8 % Indexrendite: Differenz in Prozentpunkten?",
             "answer": -0.4,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Tracking-Differenz und TER“: Fiktiv: Ein Index legt in einem Jahr 8 % zu und ein ETF erzielt 7,6 % Gesamtrendite. Die Tracking-Differenz des ETFs beträgt −0,4 Prozentpunkte, nicht zwangsläufig seine TER. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "Prozentpunkte",
+            "explanation": "Fiktiv: Ein Index legt in einem Jahr 8 % zu und ein ETF erzielt 7,6 % Gesamtrendite. Die Tracking-Differenz des ETFs beträgt −0,4 Prozentpunkte, nicht zwangsläufig seine TER. Rechne den Wert unabhängig nach: -0,4 Prozentpunkte. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.02
           }
         },
@@ -5002,10 +4996,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Ausschüttung und Kursgewinn“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die einfache Gesamtrendite inklusive Ausschüttung.",
+            "prompt": "Start 100 €, Ende 103 €, Ausschüttung 2 €: Gesamtrendite in Prozent?",
             "answer": 5,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Ausschüttung und Kursgewinn“: Fiktiv: 100 € Startwert, 103 € Schlusskurs und 2 € Ausschüttung ergeben eine einfache Gesamtrendite von 5 % ohne Wiederanlage statt nur 3 % Kursgewinn. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: 100 € Startwert, 103 € Schlusskurs und 2 € Ausschüttung ergeben eine einfache Gesamtrendite von 5 % ohne Wiederanlage statt nur 3 % Kursgewinn. Rechne den Wert unabhängig nach: 5 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -5017,9 +5011,9 @@
           "example": "Reines Rechenbeispiel, keine Steuerrechtsaussage: Bei 100 € steuerpflichtigem Gewinn und angenommenem effektiven Steuersatz von 20 % bleiben 80 € Gewinn.",
           "question": "Welche Aussage ist fachlich korrekt?",
           "options": [
-            "Immer dieselbe Steuer weltweit verwenden",
             "Nur die Bruttorendite anzeigen",
-            "Aktuelles Recht und Modellannahmen getrennt ausweisen"
+            "Aktuelles Recht und Modellannahmen getrennt ausweisen",
+            "Immer dieselbe Steuer weltweit verwenden"
           ],
           "correct": 2,
           "xp": 46,
@@ -5036,10 +5030,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Nettorendite als Modell“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Nettogewinn mit dem ausdrücklich fiktiven Steuersatz.",
+            "prompt": "100 € Gewinn, fiktive 20 % Steuer: Nettogewinn in Euro?",
             "answer": 80,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Nettorendite als Modell“: Reines Rechenbeispiel, keine Steuerrechtsaussage: Bei 100 € steuerpflichtigem Gewinn und angenommenem effektiven Steuersatz von 20 % bleiben 80 € Gewinn. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "€",
+            "explanation": "Reines Rechenbeispiel, keine Steuerrechtsaussage: Bei 100 € steuerpflichtigem Gewinn und angenommenem effektiven Steuersatz von 20 % bleiben 80 € Gewinn. Rechne den Wert unabhängig nach: 80 €. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         }
@@ -5085,10 +5079,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Positionsgröße aus Risikobudget“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die vereinfachte risikobasierte Stückzahl.",
+            "prompt": "50 € Verlustbudget / (25 € − 23 €): Stückzahl?",
             "answer": 25,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Positionsgröße aus Risikobudget“: Fiktiv: Ein Verlustbudget von 50 €, Einstieg 25 € und Stop 23 € ergeben rechnerisch 25 Aktien. Das benötigte Kaufkapital beträgt 625 €, eine Stopausführung ist nicht garantiert. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "Stück",
+            "explanation": "Fiktiv: Ein Verlustbudget von 50 €, Einstieg 25 € und Stop 23 € ergeben rechnerisch 25 Aktien. Das benötigte Kaufkapital beträgt 625 €, eine Stopausführung ist nicht garantiert. Rechne den Wert unabhängig nach: 25 Stück. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -5100,9 +5094,9 @@
           "example": "Fiktiv: 20 Aktien wurden zu 50 € gekauft; trotz Stop bei 47 € erfolgt die Ausführung nach einer Kurslücke zu 44 €. Der Verlust steigt von geplanten 60 € auf 120 €.",
           "question": "Was charakterisiert die Kurslücke?",
           "options": [
-            "Garantiert exakte Ausführung am Stop",
             "Der Kurs kann nie unter den Stop fallen",
-            "Ausführungspreis kann schlechter sein als der Stop"
+            "Ausführungspreis kann schlechter sein als der Stop",
+            "Garantiert exakte Ausführung am Stop"
           ],
           "correct": 2,
           "xp": 34,
@@ -5119,10 +5113,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Gap-Risiko beim Stop“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Verlust in Euro beim tatsächlichen Ausführungskurs.",
+            "prompt": "20 Aktien von 50 € auf 44 €: Verlust in Euro?",
             "answer": 120,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Gap-Risiko beim Stop“: Fiktiv: 20 Aktien wurden zu 50 € gekauft; trotz Stop bei 47 € erfolgt die Ausführung nach einer Kurslücke zu 44 €. Der Verlust steigt von geplanten 60 € auf 120 €. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "€",
+            "explanation": "Fiktiv: 20 Aktien wurden zu 50 € gekauft; trotz Stop bei 47 € erfolgt die Ausführung nach einer Kurslücke zu 44 €. Der Verlust steigt von geplanten 60 € auf 120 €. Rechne den Wert unabhängig nach: 120 €. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -5134,8 +5128,8 @@
           "example": "Fiktiv: Einstieg 100 €, Ziel 112 €, Stop 94 € ergeben 12 € geplante Chance und 6 € geplantes Risiko, also 2:1. Das garantiert keinen positiven Gewinn.",
           "question": "Was fehlt für die Bewertung einer Strategie?",
           "options": [
-            "Nur ein hohes nominelles Ziel",
             "Eintrittswahrscheinlichkeiten und Handelskosten",
+            "Nur ein hohes nominelles Ziel",
             "Nur ein größerer Hebel"
           ],
           "correct": 1,
@@ -5153,10 +5147,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Chance-Risiko-Verhältnis prüfen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Gewinn je Aktie oder das Verhältnis aus den im Beispiel genannten Zahlen.",
+            "prompt": "(112 − 100)/(100 − 94): Verhältnis zu 1?",
             "answer": 2,
-            "unit": "Ergebnis laut Frage",
-            "explanation": "Rechenbeispiel „Chance-Risiko-Verhältnis prüfen“: Fiktiv: Einstieg 100 €, Ziel 112 €, Stop 94 € ergeben 12 € geplante Chance und 6 € geplantes Risiko, also 2:1. Das garantiert keinen positiven Gewinn. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "zu 1",
+            "explanation": "Fiktiv: Einstieg 100 €, Ziel 112 €, Stop 94 € ergeben 12 € geplante Chance und 6 € geplantes Risiko, also 2:1. Das garantiert keinen positiven Gewinn. Rechne den Wert unabhängig nach: 2 zu 1. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         }
@@ -5183,8 +5177,8 @@
           "example": "Fiktiv: Von 100 vergleichbaren Start-ups erreichen 10 ein Ziel. Die erste empirische Schätzung lautet 10 %, nicht 80 %, nur weil ein Gründer überzeugend spricht.",
           "question": "Was gehört zuerst zur Prognose?",
           "options": [
-            "Nur eine Erfolgsgeschichte",
             "Die relevante Vergleichsgruppe",
+            "Nur eine Erfolgsgeschichte",
             "Nur das aktuelle Kursmuster"
           ],
           "correct": 1,
@@ -5202,10 +5196,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Basisraten vor Geschichten“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne die Basisrate in Prozent.",
+            "prompt": "10 von 100 Fällen: Basisrate in Prozent?",
             "answer": 10,
-            "unit": "% oder Score (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Basisraten vor Geschichten“: Fiktiv: Von 100 vergleichbaren Start-ups erreichen 10 ein Ziel. Die erste empirische Schätzung lautet 10 %, nicht 80 %, nur weil ein Gründer überzeugend spricht. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: Von 100 vergleichbaren Start-ups erreichen 10 ein Ziel. Die erste empirische Schätzung lautet 10 %, nicht 80 %, nur weil ein Gründer überzeugend spricht. Rechne den Wert unabhängig nach: 10 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.01
           }
         },
@@ -5217,9 +5211,9 @@
           "example": "Fiktiv: Ein Modell erkennt 8 tatsächliche Erfolge, aber meldet 18 weitere Fälle fälschlich positiv. Unter 26 positiven Signalen beträgt der echte Trefferanteil nur 30,77 %.",
           "question": "Wie berechnest du die positive Trefferquote?",
           "options": [
-            "Nur echte Erfolge geteilt durch alle Fälle",
             "Nur die Modellsensitivität",
-            "Echte Treffer durch alle positiven Signale"
+            "Echte Treffer durch alle positiven Signale",
+            "Nur echte Erfolge geteilt durch alle Fälle"
           ],
           "correct": 2,
           "xp": 34,
@@ -5236,10 +5230,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Falsch positive Signale“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Anteil echter Treffer an allen positiven Signalen.",
+            "prompt": "8 echte Treffer bei insgesamt 26 positiven Signalen: Trefferanteil in Prozent?",
             "answer": 30.769230769,
-            "unit": "% oder Score (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Falsch positive Signale“: Fiktiv: Ein Modell erkennt 8 tatsächliche Erfolge, aber meldet 18 weitere Fälle fälschlich positiv. Unter 26 positiven Signalen beträgt der echte Trefferanteil nur 30,77 %. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "%",
+            "explanation": "Fiktiv: Ein Modell erkennt 8 tatsächliche Erfolge, aber meldet 18 weitere Fälle fälschlich positiv. Unter 26 positiven Signalen beträgt der echte Trefferanteil nur 30,77 %. Rechne den Wert unabhängig nach: 30,769230769 %. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.02
           }
         },
@@ -5270,10 +5264,10 @@
           "transferPrompt": "Übertrage das Vorgehen von „Brier-Score für Prognosen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
           "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
           "practice": {
-            "prompt": "Berechne den Brier-Score für das nicht eingetretene Ereignis.",
+            "prompt": "(0,8 − 0)²: Brier-Score?",
             "answer": 0.64,
-            "unit": "% oder Score (laut Aufgabe)",
-            "explanation": "Rechenbeispiel „Brier-Score für Prognosen“: Fiktiv: Du vergibst eine Wahrscheinlichkeit von 0,8, aber das Ereignis tritt nicht ein. Der Brier-Score beträgt 0,8² = 0,64, wobei kleinere Werte besser sind. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "unit": "Score",
+            "explanation": "Fiktiv: Du vergibst eine Wahrscheinlichkeit von 0,8, aber das Ereignis tritt nicht ein. Der Brier-Score beträgt 0,8² = 0,64, wobei kleinere Werte besser sind. Rechne den Wert unabhängig nach: 0,64 Score. Das ist ein fiktiver Übungsfall.",
             "tolerance": 0.02
           }
         }
