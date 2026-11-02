@@ -5,7 +5,7 @@ const read=p=>fs.readFileSync(p,'utf8');
 const editorial=JSON.parse(read('data/editorial-core-v43.json'));
 const legacy=JSON.parse(read('data/daily.json'));
 const catalog=JSON.parse(read('data/specializations-v41.json'));
-assert.equal(JSON.parse(read('version.json')).version,59);
+assert(JSON.parse(read('version.json')).version>=59,'App version must not regress below V59');
 assert(editorial.stories.length>=10);
 assert(editorial.stories.every(s=>s.article?.sections?.length>=4));
 const index=read('index.html');
