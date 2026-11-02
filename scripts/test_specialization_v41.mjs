@@ -75,7 +75,7 @@ assert.equal(routes.at(-1),'skilllessons');
 const lessons=api.skillIndex();
 assert(lessons.includes('3 Forschungspunkte'));
 assert(lessons.includes('Geschäftsjahre und Quartale'));
-assert(lessons.includes('Zuerst')||lessons.includes('vorherige Lektion'));
+assert(lessons.includes('Vorherige Lektion erst abschließen'),'Locked lessons must explain prerequisite order');
 assert(lessons.includes('kostenlos speichern'));
 const specials=api.specials();
 assert(specials.includes('Kreditkrise im Stresstest'));
