@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-01",
+  "updated": "2026-11-02",
   "branches": [
     {
       "id": "reporting",
@@ -80,13 +80,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Geschäftsjahre und Quartale sauber vergleichen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Geschäftsjahre und Quartale sauber vergleichen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Umsatz des dritten Quartals im Vorjahr“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Geschäftsjahre und Quartale sauber vergleichen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Der Vergleich eines Quartals mit einem Gesamtjahr ist ohne Umrechnung keine Wachstumsanalyse. Suche das passende Vorjahresquartal in den Berichten.",
+            "Überprüfe die Antwort auf „Welche Vergleichszahl ist für den Umsatz des dritten Quartals am besten?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Geschäftsjahre und Quartale sauber vergleichen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Geschäftsjahre und Quartale sauber vergleichen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -107,13 +107,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zahlen mit Quelle und Einheit dokumentieren",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Zahlen mit Quelle und Einheit dokumentieren“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Quelle, Datum, Einheit und Berechnung“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Zahlen mit Quelle und Einheit dokumentieren“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Betrieb veröffentlicht eine angepasste operative Kennzahl. Dokumentiere die offizielle Definition und welche Einmaleffekte ausgeschlossen wurden.",
+            "Überprüfe die Antwort auf „Welche Dokumentation macht eine Zahl überprüfbar?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Zahlen mit Quelle und Einheit dokumentieren“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Zahlen mit Quelle und Einheit dokumentieren“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -134,13 +134,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Ergebnis und Zahlungsströme hinterfragen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Ergebnis und Zahlungsströme hinterfragen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „30 Mio. € verbleiben rechnerisch ohne diesen einmaligen Effekt, weitere Einflüsse sind zu prüfen“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Ergebnis und Zahlungsströme hinterfragen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen meldet 80 Mio. € Gewinn, davon 50 Mio. € durch einen einmaligen Verkauf. Stelle berichteten Gewinn und die verbleibenden 30 Mio. € separat dar.",
+            "Überprüfe die Antwort auf „Welche Aussage ist zulässig?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Ergebnis und Zahlungsströme hinterfragen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Ergebnis und Zahlungsströme hinterfragen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
@@ -173,13 +173,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Nichtzahlungswirksame Effekte erkennen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Nichtzahlungswirksame Effekte erkennen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Er bindet normalerweise liquide Mittel“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Nichtzahlungswirksame Effekte erkennen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen meldet 60 Mio. € Gewinn, 15 Mio. € Abschreibungen und 20 Mio. € zusätzliche Mittelbindung im Lager. Vereinfacht entstehen 55 Mio. € operativer Geldzufluss.",
+            "Überprüfe die Antwort auf „Was passiert bei steigendem Lagerbestand bei sonst gleichen Bedingungen?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Nichtzahlungswirksame Effekte erkennen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Nichtzahlungswirksame Effekte erkennen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -200,13 +200,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Investitionen richtig abziehen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Investitionen richtig abziehen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „35 Mio. €“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Investitionen richtig abziehen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: 100 Mio. € operativer Cashflow und 65 Mio. € Investitionen entsprechen vereinfacht 35 Mio. € frei verfügbarem Cashflow.",
+            "Überprüfe die Antwort auf „Welche Zahl entspricht in diesem Beispiel dem freien Cashflow?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Investitionen richtig abziehen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Investitionen richtig abziehen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
           "practice": {
             "prompt": "Ein Unternehmen erzielt 160 Mio. € operativen Cashflow und gibt 60 Mio. € für Sachanlagen aus. Vereinfachter freier Cashflow?",
@@ -234,13 +234,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Einmalige Effekte offen ausweisen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Einmalige Effekte offen ausweisen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Berichteten und bereinigten Wert mit Annahmen getrennt zeigen“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Einmalige Effekte offen ausweisen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Jahr enthält 20 Mio. € einmalige Investitionen; die bereinigte Modellzahl liegt deshalb höher als der berichtete freie Cashflow. Kennzeichne beide Zahlen deutlich.",
+            "Überprüfe die Antwort auf „Welche Darstellungsweise ist seriös?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Einmalige Effekte offen ausweisen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Einmalige Effekte offen ausweisen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
@@ -273,13 +273,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kasse und verzinsliche Schulden vergleichen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Kasse und verzinsliche Schulden vergleichen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „270 Mio. €“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Kasse und verzinsliche Schulden vergleichen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: 450 Mio. € Finanzschulden und 180 Mio. € liquide Mittel ergeben 270 Mio. € Nettofinanzschulden.",
+            "Überprüfe die Antwort auf „Welche Zahl ist die vereinfachte Nettofinanzverschuldung?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Kasse und verzinsliche Schulden vergleichen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Kasse und verzinsliche Schulden vergleichen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
           "practice": {
             "prompt": "Ein Betrieb hat 380 Mio. € verzinsliche Schulden und 70 Mio. € frei verfügbare Kasse. Wie hoch sind die vereinfachten Nettoschulden?",
@@ -307,13 +307,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Risiko durch Laufzeiten beurteilen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Risiko durch Laufzeiten beurteilen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Finanzierungs- und Rückzahlungsplan“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Risiko durch Laufzeiten beurteilen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen muss in sechs Monaten 300 Mio. € zurückzahlen, verfügt aber nur über 40 Mio. € liquide Mittel. Plane mögliche Refinanzierung oder Liquiditätsquellen ein.",
+            "Überprüfe die Antwort auf „Was ist hier besonders zu prüfen?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Risiko durch Laufzeiten beurteilen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Risiko durch Laufzeiten beurteilen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -334,13 +334,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Schlechte Geschäftsjahre durchdenken",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Schlechte Geschäftsjahre durchdenken“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Die Zahlungsdeckung kann unzureichend werden“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Schlechte Geschäftsjahre durchdenken“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Der operative Cashflow könnte von 100 auf 50 Mio. € sinken, während Zinsen und Tilgungen bei 70 Mio. € bleiben. Ohne Reserven entsteht eine Finanzierungslücke.",
+            "Überprüfe die Antwort auf „Was zeigt das Szenario?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Schlechte Geschäftsjahre durchdenken“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Schlechte Geschäftsjahre durchdenken“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
@@ -1267,13 +1267,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Einmalige Erträge bereinigen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Einmalige Erträge bereinigen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Einmalige Erträge offen getrennt betrachten“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Einmalige Erträge bereinigen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen zeigt 120 Mio. € Gewinn. Davon stammen 35 Mio. € aus einem Grundstücksverkauf. Ohne diesen Effekt bleiben rechnerisch 85 Mio. €; weitere Effekte können hinzukommen.",
+            "Überprüfe die Antwort auf „Was ist bei einer Qualitätsprüfung richtig?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Einmalige Erträge bereinigen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Einmalige Erträge bereinigen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -1294,13 +1294,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Forderungen gegen Umsatz abgleichen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Forderungen gegen Umsatz abgleichen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Zahlungseingänge, Forderungslaufzeiten und Cashflow“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Forderungen gegen Umsatz abgleichen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Der Umsatz steigt um zehn Prozent, ausstehende Kundenforderungen um vierzig Prozent. Prüfe Zahlungsziele, Kundenmix und Cashflow.",
+            "Überprüfe die Antwort auf „Welche Daten sollte man zusätzlich prüfen?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Forderungen gegen Umsatz abgleichen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Forderungen gegen Umsatz abgleichen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -1321,13 +1321,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Bilanzrisiko zusammenführen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Bilanzrisiko zusammenführen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Marge, Lager, Fälligkeiten und Zahlungsmittel gemeinsam untersuchen“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Bilanzrisiko zusammenführen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen verbessert die operative Marge, hat aber zugleich hohe Lagerbestände und steigende kurzfristige Schulden. Stelle daraus mindestens zwei prüfbare Risiken zusammen.",
+            "Überprüfe die Antwort auf „Welche Analyse ist sinnvoll?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Bilanzrisiko zusammenführen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Bilanzrisiko zusammenführen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
@@ -1360,13 +1360,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zahlenreihen konsistent machen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Zahlenreihen konsistent machen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Konsolidierung, Zukäufe und Berechnungsmethoden“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Zahlenreihen konsistent machen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Eine Gruppe meldet 25 Prozent Umsatzwachstum, hat aber einen großen Wettbewerber gekauft. Ohne die Übernahme kann das zugrunde liegende Wachstum deutlich niedriger sein.",
+            "Überprüfe die Antwort auf „Was muss vor einem Langfristvergleich geprüft werden?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Zahlenreihen konsistent machen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Zahlenreihen konsistent machen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -1387,13 +1387,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Cashflow mit Bilanz versöhnen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Cashflow mit Bilanz versöhnen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Veränderungen in der Bilanz und im Cashflow abgleichen“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Cashflow mit Bilanz versöhnen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Eine Firma meldet Gewinnwachstum, während sich hohe Forderungen aufbauen. Berechne den möglichen Einfluss auf das Working Capital und vergleiche die Entwicklung mit dem Bericht.",
+            "Überprüfe die Antwort auf „Was gilt als gute Vorgehensweise?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Cashflow mit Bilanz versöhnen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Cashflow mit Bilanz versöhnen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -1414,13 +1414,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Prüfvermerk und Unsicherheiten",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Prüfvermerk und Unsicherheiten“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Eine Prüfung nach vorgegebenen Standards, keine Zukunftsgarantie“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Prüfvermerk und Unsicherheiten“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Geschäftsbericht enthält einen Hinweis auf erhebliche Unsicherheit bei der Finanzierung. Dokumentiere die genaue Passage und untersuche spätere Anschlussberichte.",
+            "Überprüfe die Antwort auf „Was bedeutet ein uneingeschränkter Prüfvermerk?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Prüfvermerk und Unsicherheiten“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Prüfvermerk und Unsicherheiten“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
@@ -2018,13 +2018,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Leasing und echte Verpflichtungen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Leasing und echte Verpflichtungen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Leasingverbindlichkeiten und verwendete Bewertungsdefinition abstimmen“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Leasing und echte Verpflichtungen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Konzern hat 100 Mio. Euro Bankdarlehen und 35 Mio. Euro Leasingverbindlichkeiten. Die Frage ist nicht, ob es 100 oder 135 Millionen Verbindlichkeiten gibt, sondern welche Definition der ausgewiesenen Nettofinanzschulden verwendet wird.",
+            "Überprüfe die Antwort auf „Welche Prüfung verhindert eine Doppelzählung?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Leasing und echte Verpflichtungen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Leasing und echte Verpflichtungen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -2045,13 +2045,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Rückstellungen kritisch lesen",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Rückstellungen kritisch lesen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Bilanzaufwand und späterer Zahlungsmittelabfluss können zeitlich auseinanderfallen“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Rückstellungen kritisch lesen“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen bildet für einen Rechtsstreit eine Rückstellung von 40 Mio. Euro. Der aktuelle Gewinn sinkt, obwohl die entsprechende Auszahlung erst später oder möglicherweise in anderer Höhe erfolgt. Prüfe die Notes.",
+            "Überprüfe die Antwort auf „Welche Unterscheidung ist wichtig?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Rückstellungen kritisch lesen“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Rückstellungen kritisch lesen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -2072,13 +2072,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Bilanzänderungen erklären",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Bilanzänderungen erklären“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Anhang und Kaufpreisallokation des Geschäftsberichts“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Bilanzänderungen erklären“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen übernimmt einen Wettbewerber: Sachanlagen steigen, Schulden wachsen ebenfalls. Ein Teil des Bilanzanstiegs stammt aus Kaufpreisallokation und nicht aus eigenständig erwirtschaftetem Cashflow.",
+            "Überprüfe die Antwort auf „Welche Quelle hilft zur Erklärung?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Bilanzänderungen erklären“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Bilanzänderungen erklären“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
@@ -2111,13 +2111,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Forderungen gegen Umsatz halten",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Forderungen gegen Umsatz halten“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Zahlungsziele und Forderungsqualität im Anhang nachprüfen“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Forderungen gegen Umsatz halten“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Die Umsätze wachsen um 5 Prozent, offene Forderungen aber um 30 Prozent. Prüfe Forderungslaufzeiten, Kundenstruktur und Einmaleffekte, bevor du einen Verdacht formulierst.",
+            "Überprüfe die Antwort auf „Was ist die seriöse Reaktion?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Forderungen gegen Umsatz halten“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Forderungen gegen Umsatz halten“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -2138,13 +2138,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Lageraufbau interpretieren",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Lageraufbau interpretieren“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Warenumschlag oder Lagerreichweite“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Lageraufbau interpretieren“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Industriebetrieb meldet 20 Prozent mehr Lager bei unverändertem Absatz. Das kann Kapital binden. Vergleiche Auftragslage und Abwertungen, um die Ursache einzuschätzen.",
+            "Überprüfe die Antwort auf „Welche Kennzahl hilft ergänzend?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Lageraufbau interpretieren“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Lageraufbau interpretieren“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         },
         {
@@ -2165,13 +2165,13 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Qualitätsurteil formulieren",
-          "pitfall": "Kennzahlen unterschiedlicher Zeiträume, Abgrenzungen oder Rechnungslegungsdefinitionen dürfen nicht unbemerkt verglichen werden.",
+          "pitfall": "Bei „Qualitätsurteil formulieren“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Mehrere Finanzdaten und Gegenargumente gemeinsam dokumentieren“ wirklich zutrifft.",
           "workedSteps": [
-            "Ordne die Zahlen dem richtigen Quartal, Konzernbereich und Rechnungslegungsstandard zu.",
-            "Prüfe, ob berichtete oder bereinigte Werte beziehungsweise einmalige Effekte gemeint sind.",
-            "Formuliere eine nachvollziehbare Aussage zu Gewinnqualität und möglichen Datenlücken."
+            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Qualitätsurteil formulieren“.",
+            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen wächst bei Umsatz und EBIT, aber operativer Cashflow sinkt. Möglicherweise werden mehr Forderungen aufgebaut; erst Berichte und Zahlungsentwicklung erklären, was dahintersteckt.",
+            "Überprüfe die Antwort auf „Welche Darstellung ist belastbar?“ und nenne ein Gegenargument."
           ],
-          "transferPrompt": "Zum Thema „Qualitätsurteil formulieren“: Welche Angabe im Anhang oder in der Cashflow-Rechnung würdest du prüfen, bevor du diese Aussage übernimmst?",
+          "transferPrompt": "Übertrage die Methode von „Qualitätsurteil formulieren“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
         }
       ]
@@ -4348,6 +4348,934 @@
           "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kreditfälligkeit & Covenants“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
+        }
+      ]
+    },
+    {
+      "id": "umsatzqualitaet-vertraege",
+      "title": "Umsatzqualität & Kundenverträge",
+      "branch": "reporting",
+      "parent": "quality-of-earnings",
+      "prerequisites": [
+        "working-capital-diagnose"
+      ],
+      "tier": 5,
+      "description": "Analysiere periodengerechte Umsätze, Forderungen, Vorauszahlungen und Bestandskundenbindung, um echten Geldzufluss von bloßen Wachstumsbehauptungen zu trennen.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "umsatzqualitaet-vertraege-1",
+          "title": "Forderungen und Umsatz",
+          "goal": "Forderungen und Umsatz",
+          "explanation": "Umsatz ist periodengerecht erfasste Leistung, nicht zwangsläufig bereits eingegangene Zahlung. Wachsende Forderungen können aus längeren Zahlungszielen, gutem Wachstum oder Einzugsproblemen stammen; die Gründe müssen mit Cashflow und Forderungsalter geprüft werden.",
+          "example": "Fiktiv: Der Umsatz beträgt 120 Mio. €, während offene Forderungen von 70 auf 96 Mio. € steigen. Der Anstieg von 26 Mio. € ist ein Prüfhinweis, kein Beweis für Fehlverhalten.",
+          "question": "Was hilft die Umsatzqualität zu prüfen?",
+          "options": [
+            "Forderungsalter und Zahlungseingänge",
+            "Nur die Aktienkursentwicklung",
+            "Nur das Umsatzwachstum"
+          ],
+          "correct": 0,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Forderungen und Umsatz",
+          "pitfall": "Bei „Forderungen und Umsatz“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Forderungen und Umsatz“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Der Umsatz beträgt 120 Mio. €, während offene Forderungen von 70 auf 96 Mio. € steigen. Der Anstieg von 26 Mio. € ist ein Prüfhinweis, kein Beweis für Fehlverhalten.",
+            "Begründe die korrekte Antwort auf „Was hilft die Umsatzqualität zu prüfen?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Forderungen und Umsatz“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die Veränderung der Forderungen im fiktiven Beispiel in Mio. €.",
+            "answer": 26,
+            "unit": "Mio. / Mrd. (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Forderungen und Umsatz“: Fiktiv: Der Umsatz beträgt 120 Mio. €, während offene Forderungen von 70 auf 96 Mio. € steigen. Der Anstieg von 26 Mio. € ist ein Prüfhinweis, kein Beweis für Fehlverhalten. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "umsatzqualitaet-vertraege-2",
+          "title": "Vorauszahlungen richtig lesen",
+          "goal": "Vorauszahlungen richtig lesen",
+          "explanation": "Zahlungen für noch nicht erbrachte Leistungen erzeugen häufig Vertragsverbindlichkeiten. Der Geldeingang kann vor der Umsatzrealisierung liegen; wann der Betrag als Umsatz gilt, hängt von tatsächlicher Vertragserfüllung ab.",
+          "example": "Fiktiv: Ein Wartungsanbieter erhält 60 Mio. € im Dezember für zwölf Monate nachfolgender Leistungen. Nicht alle 60 Mio. € sind automatisch Dezember-Umsatz.",
+          "question": "Was ist bei der Vorauszahlung entscheidend?",
+          "options": [
+            "Nur das Eingangsdatum",
+            "Die tatsächliche Erfüllung der Leistungsverpflichtung",
+            "Nur die Steuerquote"
+          ],
+          "correct": 1,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Vorauszahlungen richtig lesen",
+          "pitfall": "Bei „Vorauszahlungen richtig lesen“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Vorauszahlungen richtig lesen“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Ein Wartungsanbieter erhält 60 Mio. € im Dezember für zwölf Monate nachfolgender Leistungen. Nicht alle 60 Mio. € sind automatisch Dezember-Umsatz.",
+            "Begründe die korrekte Antwort auf „Was ist bei der Vorauszahlung entscheidend?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Vorauszahlungen richtig lesen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die zum Beispiel „Vorauszahlungen richtig lesen“ gehörige Kennzahl. Gib nur die Zahl ein.",
+            "unit": "Mio. / Mrd. (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Vorauszahlungen richtig lesen“: Fiktiv: Ein Wartungsanbieter erhält 60 Mio. € im Dezember für zwölf Monate nachfolgender Leistungen. Nicht alle 60 Mio. € sind automatisch Dezember-Umsatz. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.02
+          }
+        },
+        {
+          "id": "umsatzqualitaet-vertraege-3",
+          "title": "Bestandskundenumsatz bewerten",
+          "goal": "Bestandskundenumsatz bewerten",
+          "explanation": "Wiederkehrender Umsatz lässt sich nur bewerten, wenn Kündigungen, Erweiterungen vorhandener Verträge und neue Kunden getrennt werden. Die Netto-Bindung kann über 100 Prozent liegen, obwohl einzelne Kunden kündigen.",
+          "example": "Fiktiv: 10 Mio. € Anfangsumsatz aus Bestandskunden, 2 Mio. € Kündigungen und 3 Mio. € Erweiterungen ergeben 11 Mio. € oder 110 % Netto-Umsatzbindung.",
+          "question": "Wie misst man Netto-Umsatzbindung?",
+          "options": [
+            "Nur neue Verträge",
+            "Nur die Zahl der Neukunden",
+            "Verbliebener Umsatz bestehender Kunden plus Erweiterungen"
+          ],
+          "correct": 2,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Bestandskundenumsatz bewerten",
+          "pitfall": "Bei „Bestandskundenumsatz bewerten“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Bestandskundenumsatz bewerten“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: 10 Mio. € Anfangsumsatz aus Bestandskunden, 2 Mio. € Kündigungen und 3 Mio. € Erweiterungen ergeben 11 Mio. € oder 110 % Netto-Umsatzbindung.",
+            "Begründe die korrekte Antwort auf „Wie misst man Netto-Umsatzbindung?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Bestandskundenumsatz bewerten“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die Netto-Bindungsquote des Beispiels in Prozent.",
+            "answer": 110,
+            "unit": "Mio. / Mrd. (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Bestandskundenumsatz bewerten“: Fiktiv: 10 Mio. € Anfangsumsatz aus Bestandskunden, 2 Mio. € Kündigungen und 3 Mio. € Erweiterungen ergeben 11 Mio. € oder 110 % Netto-Umsatzbindung. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "id": "aktienverwaesserung-eps",
+      "title": "Aktienverwässerung & Eigentümerwert",
+      "branch": "valuation",
+      "parent": "werttreiber",
+      "prerequisites": [
+        "risiko-basis"
+      ],
+      "tier": 3,
+      "description": "Prüfe den tatsächlichen Gewinn je Aktie, den Effekt von Rückkäufen und Aktienvergütung sowie den fairen Wert pro verwässertem Eigentümeranteil.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "aktienverwaesserung-eps-1",
+          "title": "Gewinn je Aktie",
+          "goal": "Gewinn je Aktie",
+          "explanation": "Der Gewinn je Aktie ist nicht gleich dem Gesamtgewinn. EPS ergibt sich aus dem geeigneten Periodengewinn geteilt durch die gewichtete durchschnittliche Aktienzahl; neue Aktien können EPS-Wachstum bremsen.",
+          "example": "Fiktiv: Gewinn 110 Mio. € und 55 Mio. gewichtete Aktien ergeben 2 € Gewinn je Aktie. Im Vorjahr waren es 100 Mio. € Gewinn und 50 Mio. Aktien, ebenfalls 2 €.",
+          "question": "Welche Aussage stimmt?",
+          "options": [
+            "Der Konzerngewinn ist identisch mit EPS",
+            "Eine höhere Aktienzahl kann EPS-Wachstum verhindern",
+            "Die Aktienzahl ändert die Eigentümerquote nie"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Gewinn je Aktie",
+          "pitfall": "Bei „Gewinn je Aktie“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Gewinn je Aktie“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Gewinn 110 Mio. € und 55 Mio. gewichtete Aktien ergeben 2 € Gewinn je Aktie. Im Vorjahr waren es 100 Mio. € Gewinn und 50 Mio. Aktien, ebenfalls 2 €.",
+            "Begründe die korrekte Antwort auf „Welche Aussage stimmt?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Gewinn je Aktie“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Gewinn je Aktie oder das Verhältnis aus den im Beispiel genannten Zahlen.",
+            "answer": 2,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Gewinn je Aktie“: Fiktiv: Gewinn 110 Mio. € und 55 Mio. gewichtete Aktien ergeben 2 € Gewinn je Aktie. Im Vorjahr waren es 100 Mio. € Gewinn und 50 Mio. Aktien, ebenfalls 2 €. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "aktienverwaesserung-eps-2",
+          "title": "Rückkäufe nach Verwässerung",
+          "goal": "Rückkäufe nach Verwässerung",
+          "explanation": "Rückkäufe senken die Aktienzahl nur netto, soweit sie nicht durch neue Aktien für Vergütung oder Finanzierung ausgeglichen werden. Der Kaufpreis und alternative Kapitalverwendung sind zusätzlich für den Wert wichtig.",
+          "example": "Fiktiv: Von 100 Mio. Aktien werden 6 Mio. zurückgekauft und 4 Mio. neue Aktien ausgegeben. Am Ende bestehen 98 Mio. Aktien statt der oft beworbenen 94 Mio.",
+          "question": "Was gehört zur Rückkaufsanalyse?",
+          "options": [
+            "Nur der angekündigte Rückkauf",
+            "Nur die Dividendenrendite",
+            "Nettoaktienzahl und tatsächlich gezahlter Preis"
+          ],
+          "correct": 2,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Rückkäufe nach Verwässerung",
+          "pitfall": "Bei „Rückkäufe nach Verwässerung“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Rückkäufe nach Verwässerung“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Von 100 Mio. Aktien werden 6 Mio. zurückgekauft und 4 Mio. neue Aktien ausgegeben. Am Ende bestehen 98 Mio. Aktien statt der oft beworbenen 94 Mio.",
+            "Begründe die korrekte Antwort auf „Was gehört zur Rückkaufsanalyse?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Rückkäufe nach Verwässerung“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Nettoaktienbestand in Millionen.",
+            "answer": 98,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Rückkäufe nach Verwässerung“: Fiktiv: Von 100 Mio. Aktien werden 6 Mio. zurückgekauft und 4 Mio. neue Aktien ausgegeben. Am Ende bestehen 98 Mio. Aktien statt der oft beworbenen 94 Mio. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "aktienverwaesserung-eps-3",
+          "title": "Eigenkapitalwert je Anteil",
+          "goal": "Eigenkapitalwert je Anteil",
+          "explanation": "Ein Bewertungsmodell muss Eigenkapitalwert und Aktienzahl konsistent verwenden. Der Unternehmenswert vor Nettoschulden ist nicht gleich dem für Aktionäre verbleibenden Wert; erwartete Verwässerung darf nicht verschwinden.",
+          "example": "Fiktiv: 1.200 Mio. € Eigenkapitalwert geteilt durch 75 Mio. voll verwässerte Aktien entspricht 16 € Modellwert je Aktie. Das ist keine Preisgarantie.",
+          "question": "Wie berechnet man einen Modellwert je Aktie?",
+          "options": [
+            "Eigenkapitalwert geteilt durch passende Aktienzahl",
+            "Umsatz multipliziert mit Schulden",
+            "Aktienzahl geteilt durch Gewinn"
+          ],
+          "correct": 0,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Eigenkapitalwert je Anteil",
+          "pitfall": "Bei „Eigenkapitalwert je Anteil“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Eigenkapitalwert je Anteil“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: 1.200 Mio. € Eigenkapitalwert geteilt durch 75 Mio. voll verwässerte Aktien entspricht 16 € Modellwert je Aktie. Das ist keine Preisgarantie.",
+            "Begründe die korrekte Antwort auf „Wie berechnet man einen Modellwert je Aktie?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Eigenkapitalwert je Anteil“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Modellwert je Aktie in Euro.",
+            "answer": 16,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Eigenkapitalwert je Anteil“: Fiktiv: 1.200 Mio. € Eigenkapitalwert geteilt durch 75 Mio. voll verwässerte Aktien entspricht 16 € Modellwert je Aktie. Das ist keine Preisgarantie. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "id": "depot-stresstests",
+      "title": "Depots unter Stress testen",
+      "branch": "risk",
+      "parent": "faktor-risiken-lesen",
+      "prerequisites": [
+        "portfolio-resilienz"
+      ],
+      "tier": 5,
+      "description": "Simuliere Wertverluste, korrelierte Krisen und notwendige Erholungen und verknüpfe die Ergebnisse mit einer realistischen Risikotragfähigkeit.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "depot-stresstests-1",
+          "title": "Drawdowns und Erholung",
+          "goal": "Drawdowns und Erholung",
+          "explanation": "Ein Drawdown misst den Verlust vom bisherigen Hoch zum späteren Tief. Der Prozentsatz zur vollständigen Erholung ist wegen der kleineren neuen Basis höher als der ursprüngliche prozentuale Rückgang.",
+          "example": "Fiktiv: Ein Depot fällt von 10.000 € auf 7.500 €. Der Rückgang beträgt 25 %, aber eine Erholung benötigt 2.500 / 7.500 = 33,33 % Anstieg.",
+          "question": "Wie hoch ist die Erholung nach 25 % Verlust?",
+          "options": [
+            "25 %",
+            "33,33 %",
+            "50 %"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Drawdowns und Erholung",
+          "pitfall": "Bei „Drawdowns und Erholung“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Drawdowns und Erholung“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Ein Depot fällt von 10.000 € auf 7.500 €. Der Rückgang beträgt 25 %, aber eine Erholung benötigt 2.500 / 7.500 = 33,33 % Anstieg.",
+            "Begründe die korrekte Antwort auf „Wie hoch ist die Erholung nach 25 % Verlust?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Drawdowns und Erholung“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den erforderlichen prozentualen Wertanstieg nach dem Verlust.",
+            "answer": 33.333333333,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Drawdowns und Erholung“: Fiktiv: Ein Depot fällt von 10.000 € auf 7.500 €. Der Rückgang beträgt 25 %, aber eine Erholung benötigt 2.500 / 7.500 = 33,33 % Anstieg. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.02
+          }
+        },
+        {
+          "id": "depot-stresstests-2",
+          "title": "Korrelation unter Stress",
+          "goal": "Korrelation unter Stress",
+          "explanation": "Viele Aktien können von denselben Zinsen, Lieferketten oder Wirtschaftszyklen abhängen. Im Stresstest werden die Verluste nach tatsächlichen Depotgewichten addiert; eine historische Korrelation ist keine sichere Zukunftsannahme.",
+          "example": "Fiktiv: 60 % des Depots fallen um 30 %, die übrigen 40 % um 10 %. Der direkte Portfolioverlust ist 0,6 × 30 + 0,4 × 10 = 22 %.",
+          "question": "Wie berechnet sich der Portfolioverlust?",
+          "options": [
+            "Mit gewichteten Szenarioverlusten",
+            "Nur aus dem größten Einzelverlust",
+            "Als ungewichteter Durchschnitt"
+          ],
+          "correct": 0,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Korrelation unter Stress",
+          "pitfall": "Bei „Korrelation unter Stress“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Korrelation unter Stress“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: 60 % des Depots fallen um 30 %, die übrigen 40 % um 10 %. Der direkte Portfolioverlust ist 0,6 × 30 + 0,4 × 10 = 22 %.",
+            "Begründe die korrekte Antwort auf „Wie berechnet sich der Portfolioverlust?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Korrelation unter Stress“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den gewichteten Depotverlust in Prozent.",
+            "answer": 22,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Korrelation unter Stress“: Fiktiv: 60 % des Depots fallen um 30 %, die übrigen 40 % um 10 %. Der direkte Portfolioverlust ist 0,6 × 30 + 0,4 × 10 = 22 %. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "depot-stresstests-3",
+          "title": "Risikotragfähigkeit prüfen",
+          "goal": "Risikotragfähigkeit prüfen",
+          "explanation": "Ein Verlustszenario ist erst mit einem Zeithorizont, verfügbarem Notgroschen und einem konkreten Handlungsplan sinnvoll. Selbst ein historischer Extremfall ist keine garantierte Verlustobergrenze.",
+          "example": "Fiktiv: Bei 8.000 € Depotwert und angenommenen 35 % Krisenverlust entstehen 2.800 € Verlust. Ob das tragbar ist, hängt von Liquidität und Verpflichtungen ab.",
+          "question": "Was folgt aus einem Stressszenario?",
+          "options": [
+            "Es garantiert eine Verlustobergrenze",
+            "Man muss automatisch alle Anlagen verkaufen",
+            "Liquidität und Verlusttragfähigkeit überprüfen"
+          ],
+          "correct": 2,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Risikotragfähigkeit prüfen",
+          "pitfall": "Bei „Risikotragfähigkeit prüfen“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Risikotragfähigkeit prüfen“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Bei 8.000 € Depotwert und angenommenen 35 % Krisenverlust entstehen 2.800 € Verlust. Ob das tragbar ist, hängt von Liquidität und Verpflichtungen ab.",
+            "Begründe die korrekte Antwort auf „Was folgt aus einem Stressszenario?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Risikotragfähigkeit prüfen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Szenarioverlust in Euro.",
+            "answer": 2800,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Risikotragfähigkeit prüfen“: Fiktiv: Bei 8.000 € Depotwert und angenommenen 35 % Krisenverlust entstehen 2.800 € Verlust. Ob das tragbar ist, hängt von Liquidität und Verpflichtungen ab. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "id": "wettbewerbsvorteile-pruefen",
+      "title": "Wettbewerbsvorteile belegen",
+      "branch": "research",
+      "parent": "nachrichten-einordnen",
+      "prerequisites": [
+        "werttreiber"
+      ],
+      "tier": 3,
+      "description": "Bewerte Preissetzungsmacht, Kündigungsquoten und Wettbewerbsvorteile mit belastbaren Nachweisen und bewusst formulierten Gegenhypothesen.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "wettbewerbsvorteile-pruefen-1",
+          "title": "Preissetzungsmacht testen",
+          "goal": "Preissetzungsmacht testen",
+          "explanation": "Höhere Verkaufspreise sind kein eindeutiger Beleg für einen Wettbewerbsvorteil. Absatzentwicklung, Kosten, Branchenpreise und Margen müssen gemeinsam betrachtet werden, damit ein Rückgang der Nachfrage nicht übersehen wird.",
+          "example": "Fiktiv: Ein Produkt steigt von 100 € auf 105 €, die Absatzmenge fällt von 1.000 auf 920 Stück. Der neue Umsatz beträgt 96.600 € statt ursprünglich 100.000 €.",
+          "question": "Welche Größen belegen Preissetzungsmacht?",
+          "options": [
+            "Nur der Marktanteil",
+            "Absatz, Preis und Gewinnmarge im Zeitvergleich",
+            "Nur der Kursanstieg"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Preissetzungsmacht testen",
+          "pitfall": "Bei „Preissetzungsmacht testen“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Preissetzungsmacht testen“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Ein Produkt steigt von 100 € auf 105 €, die Absatzmenge fällt von 1.000 auf 920 Stück. Der neue Umsatz beträgt 96.600 € statt ursprünglich 100.000 €.",
+            "Begründe die korrekte Antwort auf „Welche Größen belegen Preissetzungsmacht?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Preissetzungsmacht testen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den neuen Umsatz in Euro aus Preis und Menge.",
+            "answer": 96600,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Preissetzungsmacht testen“: Fiktiv: Ein Produkt steigt von 100 € auf 105 €, die Absatzmenge fällt von 1.000 auf 920 Stück. Der neue Umsatz beträgt 96.600 € statt ursprünglich 100.000 €. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "wettbewerbsvorteile-pruefen-2",
+          "title": "Kundenbindung und Wechselkosten",
+          "goal": "Kundenbindung und Wechselkosten",
+          "explanation": "Wechselkosten können einen Vorteil schaffen, müssen aber durch Kündigungs- und Umsatzbindungen überprüft werden. Gerade bei Großkunden kann eine gute einfache Kundenbindungsquote einen bedeutenden Umsatzverlust verdecken.",
+          "example": "Fiktiv: Von 500 Bestandskunden kündigen im Jahr 25. Eine Bindung von 95 % nach Anzahl ist erfreulich, sagt jedoch noch nichts über die Umsatzstärke dieser 25 Kunden aus.",
+          "question": "Welcher Wert ergänzt die einfache Kundenbindung?",
+          "options": [
+            "Umsatzgewichtete Kündigungsrate",
+            "Nur die Zahl der Presseberichte",
+            "Nur die Börsenbewertung"
+          ],
+          "correct": 0,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Kundenbindung und Wechselkosten",
+          "pitfall": "Bei „Kundenbindung und Wechselkosten“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Kundenbindung und Wechselkosten“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Von 500 Bestandskunden kündigen im Jahr 25. Eine Bindung von 95 % nach Anzahl ist erfreulich, sagt jedoch noch nichts über die Umsatzstärke dieser 25 Kunden aus.",
+            "Begründe die korrekte Antwort auf „Welcher Wert ergänzt die einfache Kundenbindung?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Kundenbindung und Wechselkosten“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die Bestandskunden-Bindungsquote in Prozent.",
+            "answer": 95,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Kundenbindung und Wechselkosten“: Fiktiv: Von 500 Bestandskunden kündigen im Jahr 25. Eine Bindung von 95 % nach Anzahl ist erfreulich, sagt jedoch noch nichts über die Umsatzstärke dieser 25 Kunden aus. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "wettbewerbsvorteile-pruefen-3",
+          "title": "Gegenhypothese formulieren",
+          "goal": "Gegenhypothese formulieren",
+          "explanation": "Ein Burggraben muss auch gegenüber einer alternativen Erklärung bestehen. Besonders hohe Margen während eines Angebotsengpasses können zyklisch sein und nach dem Ausbau der Konkurrenzkapazitäten wieder verschwinden.",
+          "example": "Fiktiv: Ein Chipproduzent profitiert von Knappheit. Beobachte nach neuen Konkurrenzfabriken die Preisentwicklung, die Auslastung und die Bruttomarge über mehrere Quartale.",
+          "question": "Welcher Test widerlegt mögliche Marktmacht?",
+          "options": [
+            "Nur Managerzitate",
+            "Nur Analystenratings",
+            "Konkurrenzkapazität, Preise und Margen beobachten"
+          ],
+          "correct": 2,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Gegenhypothese formulieren",
+          "pitfall": "Bei „Gegenhypothese formulieren“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Gegenhypothese formulieren“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Ein Chipproduzent profitiert von Knappheit. Beobachte nach neuen Konkurrenzfabriken die Preisentwicklung, die Auslastung und die Bruttomarge über mehrere Quartale.",
+            "Begründe die korrekte Antwort auf „Welcher Test widerlegt mögliche Marktmacht?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Gegenhypothese formulieren“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg."
+        }
+      ]
+    },
+    {
+      "id": "fiskalpolitik-staatsschulden",
+      "title": "Fiskalpolitik & Staatsschulden",
+      "branch": "macro",
+      "parent": "inflation-zinsen",
+      "prerequisites": [
+        "anleihen-rendite"
+      ],
+      "tier": 3,
+      "description": "Unterscheide staatliche Haushaltsflüsse, Schuldenbestand und Schuldenquote; prüfe, wie Wachstum, Zinssätze und Primärsaldo den Haushalt beeinflussen.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "fiskalpolitik-staatsschulden-1",
+          "title": "Defizit und Schuldenstand",
+          "goal": "Defizit und Schuldenstand",
+          "explanation": "Ein Staatsdefizit ist der negative Haushaltssaldo eines Zeitraums, während ein Schuldenstand zu einem Stichtag gemessen wird. Die Entwicklung der Staatsschulden kann außerdem Bestandsanpassungen enthalten.",
+          "example": "Fiktiv: 900 Mrd. € Staatsschulden zu Jahresbeginn, ein Defizit von 40 Mrd. € und keine sonstigen Anpassungen ergeben 940 Mrd. € Endstand.",
+          "question": "Was ist eine Flussgröße?",
+          "options": [
+            "Der Stichtags-Schuldenstand",
+            "Das jährliche Haushaltsdefizit",
+            "Eine Bilanzquote zum Stichtag"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Defizit und Schuldenstand",
+          "pitfall": "Bei „Defizit und Schuldenstand“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Defizit und Schuldenstand“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: 900 Mrd. € Staatsschulden zu Jahresbeginn, ein Defizit von 40 Mrd. € und keine sonstigen Anpassungen ergeben 940 Mrd. € Endstand.",
+            "Begründe die korrekte Antwort auf „Was ist eine Flussgröße?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Defizit und Schuldenstand“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den fiktiven Schuldenstand am Jahresende in Mrd. €.",
+            "answer": 940,
+            "unit": "Mio. / Mrd. (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Defizit und Schuldenstand“: Fiktiv: 900 Mrd. € Staatsschulden zu Jahresbeginn, ein Defizit von 40 Mrd. € und keine sonstigen Anpassungen ergeben 940 Mrd. € Endstand. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "fiskalpolitik-staatsschulden-2",
+          "title": "Schuldenquote statt nur Schuldenhöhe",
+          "goal": "Schuldenquote statt nur Schuldenhöhe",
+          "explanation": "Eine Schuldenquote stellt den aktuellen Schuldenbestand dem nominalen jährlichen Bruttoinlandsprodukt gegenüber. Die Quote kann trotz unverändert hoher Schulden sinken, wenn das nominale BIP wächst.",
+          "example": "Fiktiv: 1.000 Mrd. € Schulden bei 2.000 Mrd. € nominalem BIP entsprechen 50 % Schuldenquote. Bei 2.200 Mrd. € BIP und gleichen Schulden sinkt die Quote.",
+          "question": "Welche Veränderung kann die Quote senken?",
+          "options": [
+            "Höheres nominales BIP",
+            "Ein höherer Schuldenstand bei gleichem BIP",
+            "Eine neue Schuldenaufnahme"
+          ],
+          "correct": 0,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Schuldenquote statt nur Schuldenhöhe",
+          "pitfall": "Bei „Schuldenquote statt nur Schuldenhöhe“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Schuldenquote statt nur Schuldenhöhe“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: 1.000 Mrd. € Schulden bei 2.000 Mrd. € nominalem BIP entsprechen 50 % Schuldenquote. Bei 2.200 Mrd. € BIP und gleichen Schulden sinkt die Quote.",
+            "Begründe die korrekte Antwort auf „Welche Veränderung kann die Quote senken?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Schuldenquote statt nur Schuldenhöhe“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die Staatsschuldenquote in Prozent.",
+            "answer": 50,
+            "unit": "Mio. / Mrd. (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Schuldenquote statt nur Schuldenhöhe“: Fiktiv: 1.000 Mrd. € Schulden bei 2.000 Mrd. € nominalem BIP entsprechen 50 % Schuldenquote. Bei 2.200 Mrd. € BIP und gleichen Schulden sinkt die Quote. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "fiskalpolitik-staatsschulden-3",
+          "title": "Zins-Wachstums-Szenario",
+          "goal": "Zins-Wachstums-Szenario",
+          "explanation": "In einer vereinfachten Schuldendynamik beeinflussen effektiver Zins, nominales Wirtschaftswachstum und Primärsaldo den künftigen Schuldenpfad. Laufzeiten und einmalige Anpassungen bleiben zusätzlich relevant.",
+          "example": "Fiktiv: Eine Schuldenquote von 60 %, effektiver Zins von 4 % und nominales Wachstum von 2 % ergeben vereinfacht etwa 1,2 Prozentpunkte Zins-Wachstums-Beitrag.",
+          "question": "Welche Information fehlt für eine Gesamtprognose?",
+          "options": [
+            "Nur die jüngste Schlagzeile",
+            "Primärsaldo und Laufzeiten",
+            "Nur die Aktienmarktentwicklung"
+          ],
+          "correct": 1,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Zins-Wachstums-Szenario",
+          "pitfall": "Bei „Zins-Wachstums-Szenario“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Zins-Wachstums-Szenario“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Eine Schuldenquote von 60 %, effektiver Zins von 4 % und nominales Wachstum von 2 % ergeben vereinfacht etwa 1,2 Prozentpunkte Zins-Wachstums-Beitrag.",
+            "Begründe die korrekte Antwort auf „Welche Information fehlt für eine Gesamtprognose?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Zins-Wachstums-Szenario“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den näherungsweisen Zins-Wachstums-Beitrag in Prozentpunkten.",
+            "answer": 1.2,
+            "unit": "Mio. / Mrd. (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Zins-Wachstums-Szenario“: Fiktiv: Eine Schuldenquote von 60 %, effektiver Zins von 4 % und nominales Wachstum von 2 % ergeben vereinfacht etwa 1,2 Prozentpunkte Zins-Wachstums-Beitrag. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.02
+          }
+        }
+      ]
+    },
+    {
+      "id": "etf-tracking-steuern",
+      "title": "ETF-Tracking & Nettorendite",
+      "branch": "etfs",
+      "parent": "realrendite-kaufkraft",
+      "prerequisites": [
+        "etf-strukturen"
+      ],
+      "tier": 5,
+      "description": "Berechne Renditeabweichungen, beachte Ausschüttungen und modelliere hypothetische Nettorenditen ohne unzutreffende Pauschalaussagen zum geltenden Steuerrecht.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "etf-tracking-steuern-1",
+          "title": "Tracking-Differenz und TER",
+          "goal": "Tracking-Differenz und TER",
+          "explanation": "Die Total Expense Ratio deckt bestimmte laufende Fondskosten ab. Die Tracking-Differenz ist die tatsächliche Renditeabweichung des ETFs vom passenden Index über denselben Zeitraum und in derselben Währung.",
+          "example": "Fiktiv: Ein Index legt in einem Jahr 8 % zu und ein ETF erzielt 7,6 % Gesamtrendite. Die Tracking-Differenz des ETFs beträgt −0,4 Prozentpunkte, nicht zwangsläufig seine TER.",
+          "question": "Was ist die Tracking-Differenz?",
+          "options": [
+            "Nur die jährliche TER",
+            "ETF-Gesamtrendite minus passende Indexrendite",
+            "Nur die Veränderung des Schlusskurses"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Tracking-Differenz und TER",
+          "pitfall": "Bei „Tracking-Differenz und TER“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Tracking-Differenz und TER“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Ein Index legt in einem Jahr 8 % zu und ein ETF erzielt 7,6 % Gesamtrendite. Die Tracking-Differenz des ETFs beträgt −0,4 Prozentpunkte, nicht zwangsläufig seine TER.",
+            "Begründe die korrekte Antwort auf „Was ist die Tracking-Differenz?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Tracking-Differenz und TER“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die Tracking-Differenz ETF minus Index in Prozentpunkten.",
+            "answer": -0.4,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Tracking-Differenz und TER“: Fiktiv: Ein Index legt in einem Jahr 8 % zu und ein ETF erzielt 7,6 % Gesamtrendite. Die Tracking-Differenz des ETFs beträgt −0,4 Prozentpunkte, nicht zwangsläufig seine TER. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.02
+          }
+        },
+        {
+          "id": "etf-tracking-steuern-2",
+          "title": "Ausschüttung und Kursgewinn",
+          "goal": "Ausschüttung und Kursgewinn",
+          "explanation": "Bei ausschüttenden ETFs genügt es nicht, nur den letzten und ersten Kurs zu vergleichen. Ausgezahlte Erträge gehören zur Gesamtrendite und Wiederanlageeffekte müssen bei einem weiteren Vergleich konsistent modelliert werden.",
+          "example": "Fiktiv: 100 € Startwert, 103 € Schlusskurs und 2 € Ausschüttung ergeben eine einfache Gesamtrendite von 5 % ohne Wiederanlage statt nur 3 % Kursgewinn.",
+          "question": "Welche Formel erfasst die Gesamtrendite?",
+          "options": [
+            "(Endkurs − Startkurs + Ausschüttung) / Startkurs",
+            "Nur der Kursgewinn",
+            "Nur die Ausschüttung"
+          ],
+          "correct": 0,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Ausschüttung und Kursgewinn",
+          "pitfall": "Bei „Ausschüttung und Kursgewinn“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Ausschüttung und Kursgewinn“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: 100 € Startwert, 103 € Schlusskurs und 2 € Ausschüttung ergeben eine einfache Gesamtrendite von 5 % ohne Wiederanlage statt nur 3 % Kursgewinn.",
+            "Begründe die korrekte Antwort auf „Welche Formel erfasst die Gesamtrendite?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Ausschüttung und Kursgewinn“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die einfache Gesamtrendite inklusive Ausschüttung.",
+            "answer": 5,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Ausschüttung und Kursgewinn“: Fiktiv: 100 € Startwert, 103 € Schlusskurs und 2 € Ausschüttung ergeben eine einfache Gesamtrendite von 5 % ohne Wiederanlage statt nur 3 % Kursgewinn. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "etf-tracking-steuern-3",
+          "title": "Nettorendite als Modell",
+          "goal": "Nettorendite als Modell",
+          "explanation": "Die Steuerbelastung hängt vom aktuellen Recht, Wohnsitz, Fondstyp, Freibeträgen und individuellen Umständen ab. Zum Lernen sollte nur ein ausdrücklich hypothetischer effektiver Steuersatz verwendet werden.",
+          "example": "Reines Rechenbeispiel, keine Steuerrechtsaussage: Bei 100 € steuerpflichtigem Gewinn und angenommenem effektiven Steuersatz von 20 % bleiben 80 € Gewinn.",
+          "question": "Welche Aussage ist fachlich korrekt?",
+          "options": [
+            "Immer dieselbe Steuer weltweit verwenden",
+            "Nur die Bruttorendite anzeigen",
+            "Aktuelles Recht und Modellannahmen getrennt ausweisen"
+          ],
+          "correct": 2,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Nettorendite als Modell",
+          "pitfall": "Bei „Nettorendite als Modell“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Nettorendite als Modell“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Reines Rechenbeispiel, keine Steuerrechtsaussage: Bei 100 € steuerpflichtigem Gewinn und angenommenem effektiven Steuersatz von 20 % bleiben 80 € Gewinn.",
+            "Begründe die korrekte Antwort auf „Welche Aussage ist fachlich korrekt?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Nettorendite als Modell“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Nettogewinn mit dem ausdrücklich fiktiven Steuersatz.",
+            "answer": 80,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Nettorendite als Modell“: Reines Rechenbeispiel, keine Steuerrechtsaussage: Bei 100 € steuerpflichtigem Gewinn und angenommenem effektiven Steuersatz von 20 % bleiben 80 € Gewinn. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "id": "trade-risiko-plan",
+      "title": "Risikobudget pro Trade",
+      "branch": "trading",
+      "parent": "backtests-kritisch",
+      "prerequisites": [
+        "position-sizing"
+      ],
+      "tier": 4,
+      "description": "Berechne risikobasierte Stückzahlen, verstehe Gap-Risiken bei Stop-Orders und beurteile die Grenzen des nominellen Chance-Risiko-Verhältnisses.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "trade-risiko-plan-1",
+          "title": "Positionsgröße aus Risikobudget",
+          "goal": "Positionsgröße aus Risikobudget",
+          "explanation": "Eine vereinfachte risikobasierte Stückzahl ergibt sich aus maximal geplantem Euroverlust geteilt durch den Abstand zwischen Einstand und Stop. Handelskosten, Slippage und Kaufwert können die praktische Größe begrenzen.",
+          "example": "Fiktiv: Ein Verlustbudget von 50 €, Einstieg 25 € und Stop 23 € ergeben rechnerisch 25 Aktien. Das benötigte Kaufkapital beträgt 625 €, eine Stopausführung ist nicht garantiert.",
+          "question": "Welche Rechnung ist sachgerecht?",
+          "options": [
+            "Verlustrisiko geteilt durch Kursabstand",
+            "Depotwert geteilt durch Stoppkurs",
+            "Einstiegskurs mal Gewinnziel"
+          ],
+          "correct": 0,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Positionsgröße aus Risikobudget",
+          "pitfall": "Bei „Positionsgröße aus Risikobudget“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Positionsgröße aus Risikobudget“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Ein Verlustbudget von 50 €, Einstieg 25 € und Stop 23 € ergeben rechnerisch 25 Aktien. Das benötigte Kaufkapital beträgt 625 €, eine Stopausführung ist nicht garantiert.",
+            "Begründe die korrekte Antwort auf „Welche Rechnung ist sachgerecht?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Positionsgröße aus Risikobudget“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die vereinfachte risikobasierte Stückzahl.",
+            "answer": 25,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Positionsgröße aus Risikobudget“: Fiktiv: Ein Verlustbudget von 50 €, Einstieg 25 € und Stop 23 € ergeben rechnerisch 25 Aktien. Das benötigte Kaufkapital beträgt 625 €, eine Stopausführung ist nicht garantiert. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "trade-risiko-plan-2",
+          "title": "Gap-Risiko beim Stop",
+          "goal": "Gap-Risiko beim Stop",
+          "explanation": "Stop-Market-Aufträge werden nach ihrer Auslösung gewöhnlich zum verfügbaren Marktpreis abgewickelt, nicht zu einem garantierten Grenzkurs. Stop-Limit-Aufträge können bei fehlenden Gegenangeboten unausgeführt bleiben.",
+          "example": "Fiktiv: 20 Aktien wurden zu 50 € gekauft; trotz Stop bei 47 € erfolgt die Ausführung nach einer Kurslücke zu 44 €. Der Verlust steigt von geplanten 60 € auf 120 €.",
+          "question": "Was charakterisiert die Kurslücke?",
+          "options": [
+            "Garantiert exakte Ausführung am Stop",
+            "Der Kurs kann nie unter den Stop fallen",
+            "Ausführungspreis kann schlechter sein als der Stop"
+          ],
+          "correct": 2,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Gap-Risiko beim Stop",
+          "pitfall": "Bei „Gap-Risiko beim Stop“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Gap-Risiko beim Stop“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: 20 Aktien wurden zu 50 € gekauft; trotz Stop bei 47 € erfolgt die Ausführung nach einer Kurslücke zu 44 €. Der Verlust steigt von geplanten 60 € auf 120 €.",
+            "Begründe die korrekte Antwort auf „Was charakterisiert die Kurslücke?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Gap-Risiko beim Stop“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Verlust in Euro beim tatsächlichen Ausführungskurs.",
+            "answer": 120,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Gap-Risiko beim Stop“: Fiktiv: 20 Aktien wurden zu 50 € gekauft; trotz Stop bei 47 € erfolgt die Ausführung nach einer Kurslücke zu 44 €. Der Verlust steigt von geplanten 60 € auf 120 €. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "trade-risiko-plan-3",
+          "title": "Chance-Risiko-Verhältnis prüfen",
+          "goal": "Chance-Risiko-Verhältnis prüfen",
+          "explanation": "Das Verhältnis aus Zielabstand und Stopabstand ist nur eine rechnerische Beschreibung des Handelsplans. Ohne Trefferquote, Transaktionskosten und Informationen zur Ausführung ist der Erwartungswert nicht bekannt.",
+          "example": "Fiktiv: Einstieg 100 €, Ziel 112 €, Stop 94 € ergeben 12 € geplante Chance und 6 € geplantes Risiko, also 2:1. Das garantiert keinen positiven Gewinn.",
+          "question": "Was fehlt für die Bewertung einer Strategie?",
+          "options": [
+            "Nur ein hohes nominelles Ziel",
+            "Eintrittswahrscheinlichkeiten und Handelskosten",
+            "Nur ein größerer Hebel"
+          ],
+          "correct": 1,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Chance-Risiko-Verhältnis prüfen",
+          "pitfall": "Bei „Chance-Risiko-Verhältnis prüfen“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Chance-Risiko-Verhältnis prüfen“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Einstieg 100 €, Ziel 112 €, Stop 94 € ergeben 12 € geplante Chance und 6 € geplantes Risiko, also 2:1. Das garantiert keinen positiven Gewinn.",
+            "Begründe die korrekte Antwort auf „Was fehlt für die Bewertung einer Strategie?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Chance-Risiko-Verhältnis prüfen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Gewinn je Aktie oder das Verhältnis aus den im Beispiel genannten Zahlen.",
+            "answer": 2,
+            "unit": "Ergebnis laut Frage",
+            "explanation": "Rechenbeispiel „Chance-Risiko-Verhältnis prüfen“: Fiktiv: Einstieg 100 €, Ziel 112 €, Stop 94 € ergeben 12 € geplante Chance und 6 € geplantes Risiko, also 2:1. Das garantiert keinen positiven Gewinn. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        }
+      ]
+    },
+    {
+      "id": "basisraten-entscheidungen",
+      "title": "Basisraten & Prognosefehler",
+      "branch": "psychology",
+      "parent": "prognosen-kalibrieren",
+      "prerequisites": [
+        "evidence-auditor"
+      ],
+      "tier": 4,
+      "description": "Lerne, mit repräsentativen Basisraten, bedingten Wahrscheinlichkeiten und Brier-Scores belastbare eigene Vorhersagen statt überoptimistischer Geschichten zu erstellen.",
+      "cost": 3,
+      "rewardPoints": 12,
+      "lessons": [
+        {
+          "id": "basisraten-entscheidungen-1",
+          "title": "Basisraten vor Geschichten",
+          "goal": "Basisraten vor Geschichten",
+          "explanation": "Die Basisrate ist die Häufigkeit eines Ereignisses in einer geeigneten Vergleichsgruppe. Eine überzeugende Einzelfallgeschichte kann die Ausgangswahrscheinlichkeit verändern, ersetzt aber keine überprüfbare neue Evidenz.",
+          "example": "Fiktiv: Von 100 vergleichbaren Start-ups erreichen 10 ein Ziel. Die erste empirische Schätzung lautet 10 %, nicht 80 %, nur weil ein Gründer überzeugend spricht.",
+          "question": "Was gehört zuerst zur Prognose?",
+          "options": [
+            "Nur eine Erfolgsgeschichte",
+            "Die relevante Vergleichsgruppe",
+            "Nur das aktuelle Kursmuster"
+          ],
+          "correct": 1,
+          "xp": 26,
+          "sequence": 1,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Basisraten vor Geschichten",
+          "pitfall": "Bei „Basisraten vor Geschichten“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Basisraten vor Geschichten“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Von 100 vergleichbaren Start-ups erreichen 10 ein Ziel. Die erste empirische Schätzung lautet 10 %, nicht 80 %, nur weil ein Gründer überzeugend spricht.",
+            "Begründe die korrekte Antwort auf „Was gehört zuerst zur Prognose?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Basisraten vor Geschichten“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne die Basisrate in Prozent.",
+            "answer": 10,
+            "unit": "% oder Score (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Basisraten vor Geschichten“: Fiktiv: Von 100 vergleichbaren Start-ups erreichen 10 ein Ziel. Die erste empirische Schätzung lautet 10 %, nicht 80 %, nur weil ein Gründer überzeugend spricht. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.01
+          }
+        },
+        {
+          "id": "basisraten-entscheidungen-2",
+          "title": "Falsch positive Signale",
+          "goal": "Falsch positive Signale",
+          "explanation": "Bei seltenen Ereignissen können falsch positive Hinweise die echten Treffer überwiegen. Die Chance für einen tatsächlichen Erfolg unter positiven Signalen berechnet sich aus echten Treffern geteilt durch alle positiven Signale.",
+          "example": "Fiktiv: Ein Modell erkennt 8 tatsächliche Erfolge, aber meldet 18 weitere Fälle fälschlich positiv. Unter 26 positiven Signalen beträgt der echte Trefferanteil nur 30,77 %.",
+          "question": "Wie berechnest du die positive Trefferquote?",
+          "options": [
+            "Nur echte Erfolge geteilt durch alle Fälle",
+            "Nur die Modellsensitivität",
+            "Echte Treffer durch alle positiven Signale"
+          ],
+          "correct": 2,
+          "xp": 34,
+          "sequence": 2,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Falsch positive Signale",
+          "pitfall": "Bei „Falsch positive Signale“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Falsch positive Signale“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Ein Modell erkennt 8 tatsächliche Erfolge, aber meldet 18 weitere Fälle fälschlich positiv. Unter 26 positiven Signalen beträgt der echte Trefferanteil nur 30,77 %.",
+            "Begründe die korrekte Antwort auf „Wie berechnest du die positive Trefferquote?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Falsch positive Signale“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Anteil echter Treffer an allen positiven Signalen.",
+            "answer": 30.769230769,
+            "unit": "% oder Score (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Falsch positive Signale“: Fiktiv: Ein Modell erkennt 8 tatsächliche Erfolge, aber meldet 18 weitere Fälle fälschlich positiv. Unter 26 positiven Signalen beträgt der echte Trefferanteil nur 30,77 %. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.02
+          }
+        },
+        {
+          "id": "basisraten-entscheidungen-3",
+          "title": "Brier-Score für Prognosen",
+          "goal": "Brier-Score für Prognosen",
+          "explanation": "Der Brier-Score bewertet binäre Wahrscheinlichkeitsprognosen mit (vorhergesagte Wahrscheinlichkeit minus tatsächliches Ereignis 0 oder 1) zum Quadrat. Für einen Vergleich braucht es definierte Ereignisse und Fristen.",
+          "example": "Fiktiv: Du vergibst eine Wahrscheinlichkeit von 0,8, aber das Ereignis tritt nicht ein. Der Brier-Score beträgt 0,8² = 0,64, wobei kleinere Werte besser sind.",
+          "question": "Welche Aussage ist nachträglich prüfbar?",
+          "options": [
+            "80 % Wahrscheinlichkeit bis zum festgelegten Stichtag",
+            "Irgendwann wird die Aktie steigen",
+            "Ich bin mir ziemlich sicher"
+          ],
+          "correct": 0,
+          "xp": 46,
+          "sequence": 3,
+          "cost": 1,
+          "eurCost": 10,
+          "keyTakeaway": "Brier-Score für Prognosen",
+          "pitfall": "Bei „Brier-Score für Prognosen“ können plausible Kurzschlüsse zu falschen Entscheidungen führen. Prüfe deshalb die Definitionen, die Ausgangsbedingungen und eine mögliche alternative Erklärung zum konkreten Fall.",
+          "workedSteps": [
+            "Kläre zuerst das Ziel von „Brier-Score für Prognosen“ und markiere Zeitraum, Bezugsgröße und den verwendeten Maßstab.",
+            "Rechne das Fallbeispiel nach bzw. begründe es: Fiktiv: Du vergibst eine Wahrscheinlichkeit von 0,8, aber das Ereignis tritt nicht ein. Der Brier-Score beträgt 0,8² = 0,64, wobei kleinere Werte besser sind.",
+            "Begründe die korrekte Antwort auf „Welche Aussage ist nachträglich prüfbar?“ und erkläre, warum die beiden anderen Antworten nicht passen."
+          ],
+          "transferPrompt": "Übertrage das Vorgehen von „Brier-Score für Prognosen“ auf einen anderen fiktiven Fall. Was müsstest du zuerst nachprüfen, und unter welcher Bedingung wäre deine ursprüngliche Aussage falsch?",
+          "transferHint": "Trenne sichere Daten, Rechenschritte und Annahmen. Benenne einen möglichen Gegenbeleg.",
+          "practice": {
+            "prompt": "Berechne den Brier-Score für das nicht eingetretene Ereignis.",
+            "answer": 0.64,
+            "unit": "% oder Score (laut Aufgabe)",
+            "explanation": "Rechenbeispiel „Brier-Score für Prognosen“: Fiktiv: Du vergibst eine Wahrscheinlichkeit von 0,8, aber das Ereignis tritt nicht ein. Der Brier-Score beträgt 0,8² = 0,64, wobei kleinere Werte besser sind. Die Zahl ist eine rechnerische Übung, keine reale Unternehmens- oder Kursprognose.",
+            "tolerance": 0.02
+          }
         }
       ]
     }
