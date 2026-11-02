@@ -81,3 +81,14 @@
 /* V56: explicitly show difficulty-based XP and rare stage FP before opening a foundation. */
 .fp56-foundation-reward{display:block;margin-top:5px;font-size:11px;font-weight:750;color:#9fdbbd;letter-spacing:.1px}
 .fp39-module.locked .fp56-foundation-reward{color:#94a7a9}
+
+/* V57: earned XP is visible inside each foundation and on each stage; pre-quiz concepts are explicitly taught. */
+.fp57-earnings{display:flex;gap:10px;align-items:center;justify-content:space-between;flex-wrap:wrap;border:1px solid #467469;background:rgba(67,137,109,.10);color:#d4f3e4;border-radius:12px;padding:10px 13px;font-size:12px;margin:12px 0}
+.fp57-earnings strong{font-variant-numeric:tabular-nums;color:#a6edc1;font-size:14px}
+.fp57-bridge{padding:15px 16px;border:1px solid #456b7b;border-radius:14px;background:#18333e;margin:18px 0;color:#d5e9eb}
+.fp57-bridge h3{font-size:15px;margin:0 0 9px;color:#a9e3d7}
+.fp57-bridge p{font-size:13px;line-height:1.65;margin:0}
+.fp57-reminder{padding:12px 14px;margin:16px 0}
+.fp57-reminder summary{font-size:13px;font-weight:700;cursor:pointer;color:#b6e6ec}
+.fp57-reminder p{margin-top:9px}
+@media(max-width:520px){.fp57-earnings{gap:4px;padding:9px 11px;font-size:11px}.fp57-bridge{padding:13px}}
