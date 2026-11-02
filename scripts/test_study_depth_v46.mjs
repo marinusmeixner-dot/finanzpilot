@@ -57,4 +57,4 @@ assert(Math.abs(JSON.parse(store.finanzpilot_study_v46).reviews[example.lessons[
 w.FinanzPilotStudy.note(example.lessons[0].id,'Working Capital: 22+17-13=26');
 assert(JSON.parse(store.finanzpilot_study_v46).notes[example.lessons[0].id].text.includes('26'));
 assert(!Object.keys(store).some(k=>k.includes('economy')));
-console.log('v46 PASS: 36 enriched Grundlagen, 44 skills, 132 lessons, 8 numeric tasks, private spaced review and no extra rewards.');
+console.log('v46 PASS: 36 enriched Grundlagen, 44 skills, 132 lessons, 24 numeric tasks, private spaced review and no extra rewards.');
