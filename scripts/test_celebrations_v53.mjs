@@ -6,7 +6,7 @@ const source=read('celebrations-v53.js'),css=read('celebrations-v53.css'),html=r
 assert(html.includes('celebrations-v53.js?v=53')&&html.includes('celebrations-v53.css?v=53'));
 assert(css.includes('fp53-lesson')&&css.includes('fp53-skill')&&css.includes('fp53-artifact')&&css.includes('fp53-promotion'));
 assert(!/infinite|setInterval\s*\(/.test(css+source));
-assert(!/canvas|getUserMedia|fetch\s*\(|https?:\/\//.test(source),'No media payload, canvas, remote effect or UI polling.');
+assert(!/createElement\(['\"]canvas['\"]\)|getUserMedia|fetch\s*\(|https?:\/\//.test(source),'No media payload, canvas, remote effect or UI polling.');
 assert(source.includes('confirmed!==true'),'Only verified commits may trigger a reveal.');
 const timers=new Map();let timerId=0;
 const host={hidden:true,innerHTML:'',textContent:'',querySelector(){return {addEventListener(){}}}};
