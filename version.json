@@ -1,5 +1,5 @@
 {
-  "version": 53,
-  "release": "2026-11-02-v53",
-  "notes": "Belohnungszentrierte Animationen und passende WebAudio-Tonfolgen: Lernabschluss, Skill-Lernpfad, neue Lektion, kompletter Skill, echte Beförderung mit Artefaktscherben, individuell enthülltes und dauerhaft gespeichertes Artefakt, FP-Mission, Streak-Meilenstein und Grundlagen. Nur neu bestätigte Serveraktionen, keine Wiederholungsanimation beim Lesen; reduzierte Bewegung und Soundeinstellung, keine Endlosschleifen oder Remote-Audiodateien. Eingeführte Missionsredaktion, 52 Skills und alle bestehenden Daten erhalten."
+  "version": 54,
+  "release": "2026-11-02-v54",
+  "notes": "Belohnungen werden jetzt mit rahmenlosen, automatisch ausblendenden Symbol-/Licht-/Funkenanimationen direkt über der App gefeiert, ohne Popup oder Interaktionsblockade. Unveränderte geprüfte Lern-/Belohnungsereignisse, iOS Safari/WebKit WebAudio beim ursprünglichen Berühren freischalten, deutlichere kurze Erfolgstöne, direkter Testton und reine Animationsvorschau in den Einstellungen. Hintergrund/Navigation ohne unnötige Animationen. Vorherige Skills, Gewinne, Marktdaten und Missionen bleiben gespeichert."
 }
