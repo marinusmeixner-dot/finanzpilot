@@ -24,3 +24,8 @@
 .fp43-header-pill:hover,.fp43-header-pill:focus-visible{border-color:#99e9c4}
 .fp43-header-pill strong{font-size:13px}
 @media(max-width:650px){.topbar .header-right{gap:5px;flex-wrap:nowrap}.topbar .header-right #today-date{display:none}.fp43-header-pill{font-size:11px;padding:6px 8px}.fp43-header-pill strong{font-size:11px}.fp43-shard-page{padding:15px}.fp43-shard-balances b{font-size:19px}}
+
+/* V61: compact real-valued depot wealth pill, not a level badge. */
+.fp60-depot-pill{gap:5px;font-variant-numeric:tabular-nums}
+#top-depot{font-variant-numeric:tabular-nums}
+@media(max-width:650px){.fp60-depot-pill{padding:6px 7px;font-size:10px}.fp60-depot-pill strong{font-size:11px}}
