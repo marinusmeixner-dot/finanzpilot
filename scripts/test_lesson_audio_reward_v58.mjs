@@ -5,7 +5,7 @@ import vm from 'node:vm';
 const read=file=>fs.readFileSync(file,'utf8');
 const audio=read('feedback-v52.js'),celebrate=read('celebrations-v53.js');
 const js=read('journey-v39.js'),css=read('celebrations-v53.css'),markup=read('index.html');
-assert(markup.includes('feedback-v52.js?v=61')&&markup.includes('celebrations-v53.js?v=61'),'iPhone must fetch new scripts rather than old PWA cache.');
+assert(markup.includes('feedback-v52.js?v=63')&&markup.includes('celebrations-v53.js?v=61'),'iPhone must fetch new scripts rather than old PWA cache.');
 assert(markup.includes('celebrations-v53.css?v=58'),'Fresh animation stylesheet loaded.');
 assert(/answer:\[\[\d+/.test(audio),'A defined confirmation tone exists.');
 assert(/wrong:\[\[\d+/.test(audio),'A distinct error tone exists.');
