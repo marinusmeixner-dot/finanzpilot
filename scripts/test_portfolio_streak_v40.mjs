@@ -28,7 +28,7 @@ assert(streak.includes("fp-streak-trigger"));
 assert(streak.includes('fp40-streak-count'));
 const html=read('index.html');
 assert(html.includes('streak-v40.js?v=61')&&html.includes('streak-v40.css?v=40'));
-assert(html.includes('portfolio.js?v=44'));
+assert(html.includes('portfolio.js?v=61'));
 const mem={},events={};
 let identity='u1',num=0;
 const quotes=[
