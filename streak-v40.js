@@ -72,7 +72,7 @@
     if(userId!==window.FinanzPilotCloud.user)return;
     result=data;
     if(data?.awarded_now){
-     if(Number(data.milestone)>0)window.FinanzPilotCelebrations?.show?.('streak',{confirmed:true,id:'streak:'+data.today,title:data.milestone+' Tage in Folge!',text:'Dein Streak-Meilenstein wurde bestätigt. Die zusätzliche Tagesprämie ist gutgeschrieben.',value:'+'+Number(data.today_points||0)+' FP'});
+     window.FinanzPilotCelebrations?.show?.('streak',{confirmed:true,id:'streak:'+data.today,title:Math.max(1,Number(data.day)||1)+' Tage in Folge!',text:'Heute erhalten: +'+Number(data.today_euros||0).toLocaleString('de-DE')+' € virtuelles Depotgeld und +'+Number(data.today_points||0)+' FP'+(Number(data.milestone)>0?' · Streak-Meilenstein!':''),value:'+'+Number(data.today_points||0)+' FP'});
      window.dispatchEvent?.(new Event('fp-streak-reward'));
      if(typeof state!=='undefined'&&state.view==='depot')window.FinanzPilotPortfolio?.load?.();
      if(typeof state!=='undefined'&&state.view==='inventory')window.FinanzPilotEconomy?.refresh?.();
