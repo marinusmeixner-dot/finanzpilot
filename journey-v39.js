@@ -133,7 +133,7 @@ function answer(choice){
  if(!Number.isInteger(i)||i<0||i>=q.options.length||p.answers[page-2]?.correct)return;
  p.answers[page-2]={selected:i,correct:i===q.correct,updatedAt:Date.now()};
  // A correct answer is acknowledged by sound only. The larger animation belongs to the lesson finish.
- if(i===q.correct)window.FinanzPilotFeedback?.tone?.('answer');
+ window.FinanzPilotFeedback?.tone?.(i===q.correct?'answer':'wrong');
  p.updatedAt=Date.now();persist();redraw();
 }
 function complete(){
@@ -141,9 +141,27 @@ function complete(){
  const p=localSession(m.id);
  if(p.page!==4||!m.questions.every((q,i)=>p.answers[i]?.correct))return;
  const firstFinish=!state.completed[m.id];state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();window.FinanzPilotStudy?.seed?.(m.id);
- if(firstFinish){
-   if(window.FinanzPilotCloud?.user)window.FinanzPilotLevels?.awardFoundation?.(m.id,m.title,true);
-   else window.FinanzPilotCelebrations?.show?.('basics',{confirmed:true,id:'basics:'+m.id,title:m.title||'Grundlage abgeschlossen',text:'Lokal abgeschlossen. Melde dich an, um die XP und FP deinem Konto gutzuschreiben.'});
+ // The lesson itself is completed locally and verified by two correct answers.
+ // Celebrate this immediately on the user's completion tap; never wait for cloud latency.
+ // Revisiting a finished lesson is celebratory but grants no new XP or FP.
+ window.FinanzPilotCelebrations?.show?.('basics',{
+  confirmed:true,id:'finish:'+m.id+':'+p.updatedAt,title:m.title||'Grundlage abgeschlossen',
+  text:firstFinish?'Lektion geschafft! Deine Belohnung wird geprüft.':'Wiederholung abgeschlossen · keine zusätzlichen Punkte.'
+ });
+ if(firstFinish&&window.FinanzPilotCloud?.user){
+  // Show EXACTLY the amount of server-awarded XP/FP, never optimistic amounts.
+  // Previous completion animations must not be lost if the server is slow or offline.
+  const account=window.FinanzPilotCloud.user;
+  Promise.resolve(window.FinanzPilotLevels?.awardFoundation?.(m.id,m.title,false))
+   .then(reward=>{
+    if(account!==window.FinanzPilotCloud?.user||!reward?.awarded_now)return;
+    window.FinanzPilotCelebrations?.show?.('reward',{
+     confirmed:true,id:'foundation-paid:'+account+':'+m.id,title:'Deine Lernbelohnung',
+     text:'Punkte für die abgeschlossene Grundlage gutgeschrieben.',
+     value:'+'+Number(reward.xp_awarded||0)+' XP'+(Number(reward.fp_awarded)>0?' · +'+Number(reward.fp_awarded)+' FP':'')
+    });
+    window.FinanzPilotLevels?.refresh?.(true);
+   }).catch(error=>console.warn('Grundlagenbelohnung bleibt zur Nachbuchung vorgemerkt:',String(error)));
  }
  const n=stageNum(m.id);
  selectedId='';state.selected='';persist();
