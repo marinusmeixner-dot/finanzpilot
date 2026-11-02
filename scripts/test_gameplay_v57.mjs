@@ -11,7 +11,7 @@ assert(journey.includes('terms(q.prompt)')&&journey.includes('terms(opt)')&&jour
 for(const acronym of ['ETF','SaaS','FCF','DCF','EPS','KGV','EBITDA','EBIT','USD','EUR'])assert(journey.includes(acronym+':'),'Missing acronym expansion '+acronym);
 assert(journey.includes('Das brauchst du für die Fragen')&&journey.includes('Begriffe und Verbindung zur Lektion wiederholen'),'Teaching appears before questions and as optional reference during quiz.');
 assert(journey.includes('xpBadge(n)'),'Visible XP on lesson and stage.');
-assert(journey.includes("tone?.(i===q.correct?'answer':'wrong')"),'Correct answers only get subtle audio, not celebrations.');
+assert(journey.includes("window.FinanzPilotFeedback?.tone?.(i===q.correct?'answer':'wrong')")||journey.includes("FinanzPilotFeedback?.tone?.(i===q.correct?'answer':'wrong')"),'Checking answers gives subtle audio; selection remains silent.');
 assert(/answer:\[\[\d+/.test(feedback),'A defined confirmation tone exists.');
 assert(app.includes("const auth=!!window.FinanzPilotCloud?.user")&&app.includes("window.FinanzPilotHeader?.xp"),'Sidebar shares authenticated server XP.');
 assert(levels.includes('data?.xp??window.FinanzPilotHeader?.xp')&&levels.includes('fromXp(xp)'),'Level map and topbar agree before remote data arrives.');
