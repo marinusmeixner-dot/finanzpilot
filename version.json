@@ -1,5 +1,5 @@
 {
-  "version": 52,
-  "release": "2026-11-02-v52",
-  "notes": "Missionen erhalten eine erweiterbare serverseitige Fragen- und Wochenfallbank (18 Tagesfragen, 13 Kompetenzwiederholungen, 4 fünfteilige Wochenfälle); neue Fragen werden erst am Folgetag und neue Wochenfälle erst nach dem beginnenden Montag zugeordnet. Laufende Wochenfälle bleiben stabil. Eine automatische redaktionelle Aufgabe hält Inhalte frisch. Dezent animierte App mit lokal synthetisierten, stummschaltbaren Erfolgs-, Lern- und Artefakttönen, Rücksicht auf iOS-Bewegung reduzieren, ohne Daueranimationen oder Audiodateien. Bestehende Fortschritte, Skills, FP und Artefakte bleiben unverändert."
+  "version": 53,
+  "release": "2026-11-02-v53",
+  "notes": "Belohnungszentrierte Animationen und passende WebAudio-Tonfolgen: Lernabschluss, Skill-Lernpfad, neue Lektion, kompletter Skill, echte Beförderung mit Artefaktscherben, individuell enthülltes und dauerhaft gespeichertes Artefakt, FP-Mission, Streak-Meilenstein und Grundlagen. Nur neu bestätigte Serveraktionen, keine Wiederholungsanimation beim Lesen; reduzierte Bewegung und Soundeinstellung, keine Endlosschleifen oder Remote-Audiodateien. Eingeführte Missionsredaktion, 52 Skills und alle bestehenden Daten erhalten."
 }
