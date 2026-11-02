@@ -32,6 +32,7 @@ function context(){
 function unlock(){
  if(!prefs.sound||document.hidden)return false;
  const ctx=context();if(!ctx)return false;
+ if(unlockAttempted&&ctx.state==='running')return true;
  unlockAttempted=true;
  try{
   // iOS Safari requires audio to be primed and resumed within the ORIGINAL touch/click.
