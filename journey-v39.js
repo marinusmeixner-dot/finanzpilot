@@ -114,7 +114,8 @@ function complete(){
  const m=current();if(!m)return;
  const p=localSession(m.id);
  if(p.page!==4||!m.questions.every((q,i)=>p.answers[i]?.correct))return;
- state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();window.FinanzPilotStudy?.seed?.(m.id);
+ const firstFinish=!state.completed[m.id];state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();window.FinanzPilotStudy?.seed?.(m.id);
+ if(firstFinish)window.FinanzPilotCelebrations?.show?.('basics',{confirmed:true,id:'basics:'+m.id,title:m.title||'Grundlage abgeschlossen',text:'Du hast dieses Grundlagenmodul erfolgreich beendet. Der nächste Lernschritt ist bereit.'});
  const n=stageNum(m.id);
  selectedId='';state.selected='';persist();
  if(!window.FinanzPilotNavigation?.goBack?.())go('journey-'+n);
