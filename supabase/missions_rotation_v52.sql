@@ -1,3 +1,12 @@
+-- V52: content published no earlier than next local day; weekly case no earlier than next Monday.
+-- Protects users from mid-session question or reward assignment drift.
+alter table public.fp_mission_questions_v51 add column if not exists available_from date;
+update public.fp_mission_questions_v51
+set available_from=case when id like 'd-z-%' or id like 'r-z-%' then date '2026-11-03' else date '2026-11-02' end
+where available_from is null;
+alter table public.fp_mission_questions_v51 alter column available_from set not null;
+alter table public.fp_mission_questions_v51 alter column available_from set default ((now() at time zone 'Europe/Berlin')::date + 1);
+
 -- FINANZPILOT V52: append-only weekly case pool rotation. Apply AFTER missions_v51.sql.
 -- A user's already-started weekly case is bound by their recorded week attempts.
 -- Only fully authored 5-step cases with 5 private answer keys enter the rotation.
@@ -9,7 +18,7 @@ as $$
  with daily_pool as (
   select q.id,q.topic, (row_number() over(partition by q.topic order by q.id)-1)::int as rn,
   count(*) over(partition by q.topic)::int as cnt
-  from public.fp_mission_questions_v51 q where q.kind='daily'
+  from public.fp_mission_questions_v51 q where q.kind='daily' and q.available_from<=p_day
  ),
  completed as (
   select c.id from public.fp_specialization_catalog c
@@ -30,7 +39,7 @@ as $$
    where a.user_id=p_user and a.mission_kind='review' and a.question_id=q.id
    and a.period_key <> 'r:'||to_char(p_day,'YYYY-MM-DD')
   ) pr on true
-  where q.kind='review' and (pr.last_day is null or
+  where q.kind='review' and q.available_from<=p_day and (pr.last_day is null or
    pr.last_day <= p_day - (case when pr.visits<1 then 1 when pr.visits<3 then 3 else 7 end))
   order by coalesce(pr.last_day,date '2000-01-01'),q.id limit 2
  ),
@@ -40,7 +49,7 @@ as $$
  complete_cases as (
  select q.case_no from public.fp_mission_questions_v51 q
  left join fp_mission_private.fp_answers_v51 ans on ans.id=q.id
- where q.kind='weekly' and q.case_no>0
+ where q.kind='weekly' and q.available_from<=(select day from monday) and q.case_no>0
  group by q.case_no
  having count(*)=5 and count(ans.id)=5 and count(distinct q.step)=5
  ),case_count as (
