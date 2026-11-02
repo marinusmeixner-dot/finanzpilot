@@ -44,7 +44,8 @@ vm.runInContext(js,vmctx,{filename:'journey-v39.js'});
 const j=win.FinanzPilotJourney;
 await j.load();
 assert.equal(j.modules.length,18);
-assert(j.open('geld-wofuer'));
+j.open('geld-wofuer');
+assert.equal(j.state.selected,'geld-wofuer','First foundation lesson is opened.');
 function button(dataset={}){const handlers={};return {dataset,addEventListener(n,cb){handlers[n]=cb},click(){assert(handlers.click,'missing click');handlers.click()}}}
 function tap(which,index){
  const nodes={
