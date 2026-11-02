@@ -106,3 +106,11 @@
 .fp59-glossary-entry dt{font-weight:820;color:#aaf1ca}
 .fp59-glossary-entry dd{margin:0;color:#d2e9e5}
 @media(max-width:520px){.fp59-glossary-entry{grid-template-columns:minmax(42px,60px) minmax(0,1fr);gap:9px;font-size:12px}.fp59-glossary summary{padding:11px 12px}}
+
+/* V63 – choose first, then explicitly verify; never color a draft as correct/wrong. */
+.fp39-choice.selected:not(.correct):not(.wrong){border:2px solid #8dd4bf;background:#203e46;box-shadow:0 0 0 2px rgba(141,212,191,.13)}
+.fp39-choice[aria-pressed=true]:not(:disabled){font-weight:700}
+.fp39-finish-inline{margin-top:17px;padding:14px;border-radius:12px;border:1px solid #40796a;background:#18382f;color:#dcf4e5;line-height:1.6}
+.fp39-finish-inline p{margin:7px 0;font-size:13px}
+.fp39-finish-inline small{color:#aecdc1;font-size:11px}
+.fp39-lesson-buttons>[data-journey-check]{min-width:154px}
