@@ -25,7 +25,7 @@ assert(journey.includes('QUESTION_DATA')&&journey.includes('questionBankLoaded=t
 assert(journey.includes('reconcileQuestionSessions()'),'Migrate pending attempts when content changes');
 assert(journey.includes('state.completed?.[m.id]'),'Previously completed foundation lessons must survive');
 assert(journey.includes('FinanzPilotLevels?.awardFoundation?.(m.id,m.title,true)'));
-assert(journey.includes('FinanzPilotFeedback?.tone?.(\\'correct\\')'),'Correct answer should have sound, not animation.');
+assert(journey.includes("FinanzPilotFeedback?.tone?.('correct')"),'Correct answer should have sound, not animation.');
 const sync=read('sync.js');
 assert(sync.includes("status==='pending'&&showSpinner"),'Invisible progress sync should not spin.');
 assert(sync.includes("await sync(true,false)"),'Initial account sync must run without spinner.');
