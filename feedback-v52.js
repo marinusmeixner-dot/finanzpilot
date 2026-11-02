@@ -49,8 +49,9 @@ function unlock(){
 }
 const NOTES={
  tap:[[470,0,.045,.045]],
- correct:[[640,0,.09,.075],[820,.10,.12,.085]],
- answer:[[580,0,.095,.060],[870,.018,.065,.018]], // Soft, dry two-layer affirmation; no reward fanfare.
+ correct:[[1030,0,.072,.070]],
+ answer:[[1030,0,.072,.070]], // One clean, high 72ms confirmation ping, not a jingle.
+ wrong:[[710,0,.090,.067]], // A slightly lower, single 90ms error ping; no dramatic buzzer.
  lesson:[[523,0,.11,.08],[659,.12,.14,.09],[784,.29,.19,.11]],
  unlock:[[392,0,.11,.08],[494,.13,.12,.085],[659,.27,.19,.12]],
  skill:[[392,0,.11,.085],[523,.12,.12,.09],[659,.26,.13,.10],[784,.40,.22,.12]],
@@ -61,12 +62,12 @@ const NOTES={
  streak:[[440,0,.11,.08],[554,.13,.14,.095],[740,.30,.22,.115]],
  reward:[[540,0,.1,.09],[675,.12,.13,.11],[900,.28,.22,.12]],
  level:[[440,0,.12,.09],[660,.15,.16,.11],[880,.34,.22,.13]],
- retry:[[325,0,.12,.055]],
- error:[[280,0,.12,.055]]
+ retry:[[710,0,.090,.067]],
+ error:[[710,0,.090,.067]]
 };
 function tone(kind,force=false){
  if(!prefs.sound||document.hidden)return false;
- const now=Date.now();if(!force&&now-lastTone<90)return false;
+ const now=Date.now();if(!force&&now-lastTone<45)return false;
  const ctx=context();if(!ctx)return false;
  if(ctx.state==='suspended'||ctx.state==='interrupted')ctx.resume?.().catch?.(()=>{});
  const notes=NOTES[kind]||NOTES.reward;
@@ -76,7 +77,7 @@ function tone(kind,force=false){
    const o=ctx.createOscillator(),g=ctx.createGain(),when=t+offset;
    o.type='sine';o.frequency.setValueAtTime(hz,when);
    g.gain.setValueAtTime(.0001,when);
-   g.gain.exponentialRampToValueAtTime(Math.min(.15,volume),when+.018);
+   g.gain.exponentialRampToValueAtTime(Math.min(.15,volume),when+(['correct','answer','wrong','retry','error'].includes(kind)? .006:.018));
    g.gain.exponentialRampToValueAtTime(.0001,when+length);
    o.connect(g);g.connect(ctx.destination);
    o.start(when);o.stop(when+length+.018);
@@ -95,7 +96,7 @@ function flash(kind,label){
  toastTimer=setTimeout(()=>{root.hidden=true},1600);
 }
 function notify(kind,detail={}){
- if(!['correct','reward','level','retry','error'].includes(kind))return;
+ if(!['correct','answer','wrong','reward','level','retry','error'].includes(kind))return;
  tone(kind);
  const label=typeof detail==='string'?detail:detail.text;if(label)flash(kind,label);
 }
@@ -103,7 +104,7 @@ function soundTest(){
  if(!prefs.sound){prefs.sound=true;write()}
  unlock();
  // Test is initiated directly by user touch; force immediate start irrespective of previous tone.
- const played=tone('promotion',true);
+ const played=tone('answer',true);
  const s=document.getElementById('fp52-audio-status');
  if(s)s.textContent=played?'Testsignal gestartet. Kein Ton? Medienlautstärke prüfen und beim iPhone den Lautlosmodus testweise ausschalten.':'Audio konnte nicht gestartet werden. Töne sind möglicherweise vom Gerät blockiert.';
 }
@@ -123,7 +124,9 @@ function mount(){
  const settings=document.createElement('div');settings.id='fp52-settings';settings.className='fp52-settings';settings.hidden=true;
  settings.innerHTML='<div class="fp52-settings-head"><strong>Erfolge & Töne</strong><button type="button" data-fp52-close aria-label="Einstellungen schließen">×</button></div>'+
  '<label><input type="checkbox" id="fp52-sound-pref"> Erfolgs- und Bestätigungstöne</label>'+
- '<button type="button" class="fp52-test-button" id="fp52-sound-test">▶ Ton testen</button>'+
+ '<button type="button" class="fp52-test-button" id="fp52-sound-test">▶ Richtig-Ton testen</button>'+ 
+ '<button type="button" class="fp52-test-button fp52-test-wrong" id="fp52-sound-wrong-test">▶ Falsch-Ton testen</button>'+ 
+
  '<p id="fp52-audio-status" class="fp52-audio-status" role="status">Tippe auf „Ton testen“, um die Audiowiedergabe auf deinem iPhone zu prüfen.</p>'+
  '<label>Animationen<select id="fp52-motion-pref"><option value="system">Systemeinstellung beachten</option><option value="on">An</option><option value="off">Aus</option></select></label>'+
  '<button type="button" class="fp52-test-button fp52-demo-button" id="fp52-animation-test">✦ Belohnungsanimation ansehen</button>'+
@@ -133,6 +136,7 @@ function mount(){
  settings.querySelector('#fp52-sound-pref')?.addEventListener('change',e=>{prefs.sound=e.target.checked;write();if(prefs.sound)unlock()});
  settings.querySelector('#fp52-motion-pref')?.addEventListener('change',e=>{prefs.motion=e.target.value;write()});
  settings.querySelector('#fp52-sound-test')?.addEventListener('click',soundTest);
+ settings.querySelector('#fp52-sound-wrong-test')?.addEventListener('click',()=>{if(!prefs.sound){prefs.sound=true;write()}unlock();const played=tone('wrong',true);const el=document.getElementById('fp52-audio-status');if(el)el.textContent=played?'Kurzer Fehlerton abgespielt.':'Das Gerät blockiert die Audioausgabe.'});
  settings.querySelector('#fp52-animation-test')?.addEventListener('click',()=>{
   if(prefs.sound)unlock();
   settings.hidden=true;window.FinanzPilotCelebrations?.preview?.('artifact');
