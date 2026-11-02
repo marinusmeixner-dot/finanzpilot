@@ -42,7 +42,7 @@ assert(nav.includes("skilltree:'learn'"));
 assert(nav.includes("skilllessons:'learn'"));
 assert(nav.includes("speciallessons:'learn'"));
 assert(nav.includes("if(to==='skills')to='skilltree'"));
-assert(!career.includes('data-view="skills"'),'Skillbaum must be removed from profile');
+assert(!read('profile-v42.js').includes('data-section-route="skilltree"'),'Profile dashboard must not embed or promote the skill tree');
 assert(app.includes("FinanzPilotLearningHub.tree()"));
 assert(app.includes("FinanzPilotLearningHub.skillIndex()"));
 assert(app.includes("FinanzPilotLearningHub.specials()"));
