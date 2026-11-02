@@ -112,8 +112,8 @@ async function submit(id,index){
   if(!result?.dashboard||!Array.isArray(result.dashboard.daily))throw Error('Der Server hat keine bestätigte Ergebnisübersicht zurückgegeben.');
   data=result.dashboard;loadedAt=Date.now();loadedUser=identity;
   if(result.points_awarded>0){window.FinanzPilotCelebrations?.show?.('mission',{confirmed:true,id:'mission:'+kind+':'+id,title:kind==='weekly'?'Wochenfall gemeistert':kind==='review'?'Wissen gefestigt':'Tagesmission erfüllt',text:'Alle erforderlichen Antworten wurden bestätigt. Die Forschungspunkte sind gutgeschrieben.',value:'+'+result.points_awarded+' FP'});notice='Mission abgeschlossen: +'+result.points_awarded+' Forschungspunkte wurden serverseitig gutgeschrieben.';window.FinanzPilotEconomy?.refresh?.(false);window.FinanzPilotLearningHub?.load?.(true);}
-  else if(result.correct){window.FinanzPilotFeedback?.tone?.('correct');notice='Richtig – deine Antwort ist auf dem Server gespeichert.';}
-  else {window.FinanzPilotFeedback?.tone?.('retry');notice=result.resolved?'Bewertet. Die Musterlösung wird jetzt angezeigt.' :'Noch nicht richtig – ein zweiter Versuch ist möglich.';}
+  else if(result.correct){window.FinanzPilotFeedback?.tone?.('answer');notice='Richtig – deine Antwort ist auf dem Server gespeichert.';}
+  else {window.FinanzPilotFeedback?.tone?.('wrong');notice=result.resolved?'Bewertet. Die Musterlösung wird jetzt angezeigt.' :'Noch nicht richtig – ein zweiter Versuch ist möglich.';}
  }catch(e){error='Antwort wurde nicht bestätigt: '+String(e.message||e)}
  finally{working=false;if(typeof state!=='undefined'&&state.view==='missions')window.render?.()}
 }
