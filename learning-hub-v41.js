@@ -255,7 +255,10 @@ async function action(kind,skill,lesson,payment,answer){
   notice=data?.message||'Gespeichert.';
   if(kind==='submit'&&data?.correct===true)window.FinanzPilotStudy?.seed?.(lesson);
   if(kind==='submit'&&typeof data?.correct==='boolean')window.FinanzPilotLessonView?.feedback?.(lesson,data.correct);
-  if(kind==='submit'&&data?.correct===false)window.FinanzPilotFeedback?.tone?.('retry');
+  if(kind==='submit'&&data?.correct===false)window.FinanzPilotFeedback?.tone?.('wrong');
+  // When an already-completed lesson is checked again, signal success with a short answer ping,
+  // but never award additional XP or imply a new server milestone.
+  if(kind==='submit'&&data?.correct===true&&data?.unchanged===true)window.FinanzPilotFeedback?.tone?.('answer');
   // Celebrate only a newly committed server transaction; revisiting completed courses is silent.
   const fresh=data?.ok===true&&data?.unchanged!==true;
   if(fresh&&kind==='enroll')window.FinanzPilotCelebrations?.show?.('skillUnlock',{confirmed:true,id:'enroll:'+skill,title:bySkill(skill)?.title||'Skill-Lernpfad',text:'Neuer Lernpfad freigeschaltet. Deine Spezialisierung beginnt jetzt.'});
