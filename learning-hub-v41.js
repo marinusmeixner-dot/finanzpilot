@@ -44,7 +44,8 @@ function home(){
   ['basics','Grundlagen','18 kurze Einstiegsmodule in sechs übersichtlichen Etappen. Lerne zuerst die wichtigsten Zusammenhänge.','book-open','01'],
   ['skilltree','Skillbaum','Ein echter verzweigter Kompetenzbaum. Wähle deine Fachrichtung und arbeite dich zu großen Fähigkeiten vor.','network','02'],
   ['skilllessons','Skill-Lektionen','Die vertiefenden Kurse zu deinen ausgewählten Skills – mit eigenen Aufgaben, XP und Freischaltungen.','graduation-cap','03'],
-  ['speciallessons','Speziallektionen','Besondere mehrteilige Firmenfälle und Herausforderungen, freischaltbar über Beförderungen und Artefakte.','gem','04']
+  ['speciallessons','Speziallektionen','Besondere mehrteilige Firmenfälle und Herausforderungen, freischaltbar über Beförderungen und Artefakte.','gem','04'],
+  ['missions','Missionen & Wiederholungen','Drei Tagesfragen, passende Wiederholungen deiner Skills und eine große fünfteilige Wochen-Challenge. Alle Antworten werden automatisch bewertet und mit deinem Konto synchronisiert.','target','05']
  ];
  return '<section class="fp42-learn-home"><div class="fp42-learn-intro"><span class="eyebrow">DEINE FINANZAUSBILDUNG</span><h1>Lernen</h1><p>Starte mit dem kurzen Fundament und vertiefe anschließend die Themen, die dich interessieren. Jeder abgeschlossene Skill bringt dich fachlich und in deiner Karriere weiter.</p></div>'+
  (window.FinanzPilotStudy?.dueCount?.()>0?'<button type="button" data-fp41-route="skilllessons" class="fp46-review-banner">'+window.FinanzPilotStudy.dueCount()+' gelernte Inhalte wiederholen →</button>':'')+
