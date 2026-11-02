@@ -13,7 +13,7 @@ assert(terms.modules.every(m=>m.steps[1]?.reasoningRequired),'All financial arit
 assert(guv.steps[1].reasoningQuestion.includes('Begründe'));
 assert(c.includes('const explain=text')&&!c.includes('fp-training-definitions\" open'),'Inline abbreviation expansion replaces duplicate glossary panels');
 assert(c.includes('fp-training-reason'));
-assert(!sync.includes('location.reload()'),'Cloud import must NOT force a page refresh');
+assert(sync.includes('if(resetApplied){window.dispatchEvent')&&(sync.match(/location\.reload\(\)/g)||[]).length===1,'Only a confirmed explicit account reset may reload; normal cloud imports must not');
 assert(sync.includes("fp-cloud-progress-imported"));
 assert(sync.includes('if(changed.length)'));
 assert(sync.includes("detail:{keys:changed}"));
