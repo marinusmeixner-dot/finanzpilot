@@ -1,24 +1,28 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
+
 const read=p=>fs.readFileSync(p,'utf8');
 const css=read('ui-v43.css'),mobile=read('mobile-layout-v19.css'),html=read('index.html');
-const index=css.lastIndexOf('/* V65/V66: Header controls align');
-assert(index>=0,'Right-edge alignment override exists after legacy declarations');
-const patch=css.slice(index);
-assert(mobile.includes('margin-right:-15px'),'Regression test recreates older negative-margin source');
-assert(/\.main-area>\.topbar\s*\{[^}]*width:100%!important;[^}]*margin-inline:0!important;[^}]*padding-inline:12px!important;/s.test(patch),'Mobile header uses border-box width and equal 12px internal inset on BOTH sides (logo moves right; FP, depot and Sync move left).');
-assert(/\.main-area>\.topbar>\.header-right\s*\{[^}]*width:100%;[^}]*max-width:100%;[^}]*margin-inline:0!important;[^}]*justify-content:flex-end!important;/s.test(patch),'Every button ends at same content right edge, not outside viewport');
-assert(patch.includes('>#fp-quick-sync')&&patch.includes('margin-right:0!important;'),'Sync icon has no stray right offset');
-assert(patch.includes('@media(min-width:701px)'),'Desktop retains right alignment');
-const top=html.match(/<header class="topbar">[\s\S]*?<\/header>/)?.[0]||'';
-assert(top.includes('id="top-fp"')&&top.includes('id="top-depot"'),'FP and numeric portfolio total remain');
-assert(!top.includes('fp-streak-trigger'),'Streak stays in Profile, not in topbar');
-assert(read('sync.js').includes("quick.id='fp-quick-sync'"),'Sync remains available');
-assert(html.includes('ui-v43.css?v=67'),'iPhone loads new right-edge CSS instead of stale cache');
-assert(JSON.parse(read('version.json')).version>=67,'App update detects new layout');
-assert(/\.main-area>\.topbar>\.header-right\s*\{[^}]*padding-left:0!important;[^}]*padding-right:16px!important;/s.test(patch),'The entire FP + Depot + Sync group moves another 16px LEFT; no per-button transforms.');
-assert(patch.includes('padding-inline:12px!important;'),'Logo keeps the V66 corrected position.');
-// The CSS box-model at a 390px portrait viewport, with 15px main gutters:
-// logo starts at 15+12=27px, while Sync right edge = 390-15-12-16=347px.
-assert.equal(390-15-12-16,347,'Rightmost sync button ends 43px inside the iPhone viewport, not at its edge.');
-console.log('V67 PASS: FP, virtual portfolio and Sync moved 16px left together, logo unchanged; no right overflow.');
+const original=mobile.match(/\.topbar\s*\{[\s\S]*?margin-left:-15px;[\s\S]*?display:flex!important;[\s\S]*?\}/);
+assert(original,'Legacy mobile sticky header is flex and uses negative gutters.');
+const start=css.indexOf('/* V68: Single-row iPhone topbar');
+assert(start>0,'V68 replaces V63–V67 layout overrides.');
+const patch=css.slice(start);
+assert(!css.includes('grid-template-rows:auto auto'),'Do not use second grid row with a single-row mobile header.');
+assert(!patch.includes('.fp-mobile-brand'),'Actual HTML class is .mobile-logo, not former .fp-mobile-brand.');
+assert(!patch.includes('width:100%!important;')&&!patch.includes('width:100%;'),'Never set entire action group to 100% width in flex – this hid Sync.');
+assert(/\.main-area>\.topbar\s*\{\s*display:flex!important;[\s\S]*?width:calc\(100% \+ 30px\)!important;[\s\S]*?padding-left:15px!important;\s*padding-right:15px!important;/.test(patch),'Header restores original edge-to-edge area with correct content insets.');
+assert(/\.main-area>\.topbar>\.header-right\s*\{\s*display:flex!important;[\s\S]*?flex:0 1 auto!important;[\s\S]*?width:auto!important;[\s\S]*?max-width:calc\(100% - 114px\)!important;/.test(patch),'The button group shrinks to fit after the logo, no 100% width.');
+assert(patch.includes('>.mobile-logo{')===false,'Target actual nested logo selector, not a generic class.');
+assert(patch.includes('>.mobile-logo')||patch.includes('>.topbar>.mobile-logo'),'True .mobile-logo selector must exist.');
+assert(patch.includes('flex:0 0 34px!important')&&patch.includes('width:34px!important'),'Sync button cannot be shrunk or cropped by longer balances.');
+assert(patch.includes('max-width:135px!important')&&patch.includes('text-overflow:ellipsis'),'Long depot values may truncate before they push Sync outside.');
+assert(patch.includes('@media(max-width:370px)'),'Extra small iPhone layout included.');
+const header=html.match(/<header class="topbar">[\s\S]*?<\/header>/)?.[0]||'';
+assert(header.includes('class="mobile-logo"')&&header.includes('class="header-right"'),'Selectors refer to actual header elements.');
+assert(header.includes('id="top-fp"')&&header.includes('id="top-depot"'),'FP and EUR still present.');
+assert(!header.includes('top-streak'),'Streak remains in Profile.');
+assert(read('sync.js').includes("quick.id='fp-quick-sync'"),'Sync still joins header-right dynamically.');
+assert(html.includes('ui-v43.css?v=68'),'Fresh stylesheet must load instead of cached V67.');
+assert(JSON.parse(read('version.json')).version===68,'PWA update version exactly V68.');
+console.log('V68 PASS: actual mobile-logo + finite flex action group, no grid/100%-width overflow, unshrinkable Sync and cache-busted iPhone CSS.');
