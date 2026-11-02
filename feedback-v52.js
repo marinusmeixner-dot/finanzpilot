@@ -46,9 +46,9 @@ function unlock(){
 }
 const NOTES={
  tap:[[470,0,.045,.045]],
- correct:[[660,0,.075,.055],[880,.077,.095,.06]],
- answer:[[660,0,.075,.055],[880,.077,.095,.06]], // Familiar soft rising two-note confirmation.
- wrong:[[440,0,.13,.055]], // Neutral low, short wrong-answer cue.
+ correct:[[1030,0,.072,.070]],
+ answer:[[1030,0,.072,.070]], // One high, short confirmation ping.
+ wrong:[[710,0,.090,.067]], // One brief, neutral wrong-answer ping.
  lesson:[[523,0,.11,.08],[659,.12,.14,.09],[784,.29,.19,.11]],
  unlock:[[392,0,.11,.08],[494,.13,.12,.085],[659,.27,.19,.12]],
  skill:[[392,0,.11,.085],[523,.12,.12,.09],[659,.26,.13,.10],[784,.40,.22,.12]],
