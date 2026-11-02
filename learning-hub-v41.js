@@ -9,7 +9,7 @@ const nav=()=>window.FinanzPilotNavigation;
 const client=()=>window.FinanzPilotCloud?.paperClient;
 const user=()=>window.FinanzPilotCloud?.user;
 const routes=[['basics','Grundlagen'],['skilltree','Skillbaum'],['skilllessons','Skill-Lektionen'],['speciallessons','Speziallektionen']];
-let catalog=null,problem='',busy=false,loadedFor=null,fetching=false,notice='',selectedSkill='',selectedLesson='',selectedSpecial='';
+let catalog=null,problem='',busy=false,loadedFor=null,fetching=false,notice='',selectedSkill='',selectedLesson='',selectedSpecial='',pendingSuccess=null;
 let enrollments=[],lessons=[],profiles=[],promotions=[],accounts=[],claims=[];
 const redraw=()=>window.render?.();
 const currentSkill=()=>catalog?.skills?.find(s=>s.id===selectedSkill);
@@ -193,13 +193,14 @@ function renderLesson(skill,id){
  const l=skill.lessons.find(x=>x.id===id);
  if(!l)return '<div class="fp41-loading">Die Lektion existiert nicht.</div>';
  const done=completed(id);
- const improved=window.FinanzPilotLessonView?.render?.(skill,l,{completed:done});if(improved)return improved;
+ const improved=window.FinanzPilotLessonView?.render?.(skill,l,{completed:done,busy});if(improved)return improved;
  return '<div class="fp41-study">'+
  '<div class="eyebrow">'+escape(skill.title)+' · LEKTION '+l.sequence+'</div><h2>'+escape(l.title)+'</h2>'+
  '<div class="fp41-reading"><h3>Den Zusammenhang verstehen</h3><p>'+escape(l.explanation)+'</p><h3>Beispiel aus der Praxis</h3><p>'+escape(l.example)+'</p></div>'+
  '<section class="fp41-question"><span class="eyebrow">WISSENSCHECK</span><h3>'+escape(l.question)+'</h3>'+
  l.options.map((opt,i)=>'<button type="button" data-fp41-answer="'+i+'" '+(done?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+escape(opt)+'</button>').join('')+
- '<div class="fp41-answer-status">'+(done?'✓ Bereits erfolgreich abgeschlossen. Du kannst die Erklärung jederzeit wiederholen.':'Die Antwort wird vom Server geprüft. Du kannst bei einem Fehler erneut versuchen.')+'</div></section></div>';
+ '<div class="fp41-answer-status">'+(done?'✓ Bereits erfolgreich abgeschlossen.':'Wähle zuerst eine Antwort, danach „Antwort prüfen“.')+'</div></section>'+
+ (done?'<button type="button" class="btn" data-fp41-finish>Lektion abschließen →</button>':'<button class="btn" type="button" data-fp41-check disabled>Antwort prüfen</button>')+'</div>';
 }
 function specials(){
  if(!catalog)return shell('speciallessons','<div class="fp41-loading">Spezialfälle werden geladen.</div>');
@@ -255,10 +256,8 @@ async function action(kind,skill,lesson,payment,answer){
   notice=data?.message||'Gespeichert.';
   if(kind==='submit'&&data?.correct===true)window.FinanzPilotStudy?.seed?.(lesson);
   if(kind==='submit'&&typeof data?.correct==='boolean')window.FinanzPilotLessonView?.feedback?.(lesson,data.correct);
-  if(kind==='submit'&&data?.correct===false)window.FinanzPilotFeedback?.tone?.('wrong');
-  // When an already-completed lesson is checked again, signal success with a short answer ping,
-  // but never award additional XP or imply a new server milestone.
-  if(kind==='submit'&&data?.correct===true&&data?.unchanged===true)window.FinanzPilotFeedback?.tone?.('answer');
+  if(kind==='submit'&&typeof data?.correct==='boolean')
+   window.FinanzPilotFeedback?.tone?.(data.correct?'answer':'wrong');
   // Celebrate only a newly committed server transaction; revisiting completed courses is silent.
   const fresh=data?.ok===true&&data?.unchanged!==true;
   if(fresh&&kind==='enroll')window.FinanzPilotCelebrations?.show?.('skillUnlock',{confirmed:true,id:'enroll:'+skill,title:bySkill(skill)?.title||'Skill-Lernpfad',text:'Neuer Lernpfad freigeschaltet. Deine Spezialisierung beginnt jetzt.'});
@@ -268,15 +267,25 @@ async function action(kind,skill,lesson,payment,answer){
    const event=data.promotion?'promotion':data.skill_completed?'skill':'lesson';
    const reward=event==='promotion'?'Skill '+(learningSkill?.title||'gemeistert')+' · +2 Artefaktscherben · +'+Number(data.promotion_euro||0).toLocaleString('de-DE')+' € Spielgeld':event==='skill'?'Alle Lektionen gemeistert. Dein neuer Skill gehört dir.':'Dein Wissen wurde serverseitig bestätigt.';
    const value=event==='promotion'?'Rang '+data.promotion:event==='skill'?'+'+Number(data.skill_reward||0)+' FP':'+'+Number(data.xp||0)+' XP';
-   window.FinanzPilotCelebrations?.show?.(event,{confirmed:true,id:'mastery:'+lesson,title:event==='promotion'?'Beförderung Nr. '+data.promotion:event==='skill'?learningSkill?.title||'Skill abgeschlossen':learningLesson?.title||'Lektion bestanden',text:reward,value});
-   if(data.promotion)window.FinanzPilotCelebrations?.show?.('shards',{confirmed:true,id:'shards:promotion:'+data.promotion,title:'Zwei Artefaktscherben',text:'Echte Scherben erhalten. Sammle drei und stelle daraus ein neues Artefakt her.',value:'+2 Scherben'});
+   // The server books the reward now, but presentation waits for explicit "Lektion abschließen".
+   pendingSuccess={lesson,kind:event,detail:{confirmed:true,id:'mastery:'+lesson,title:event==='promotion'?'Beförderung Nr. '+data.promotion:event==='skill'?learningSkill?.title||'Skill abgeschlossen':learningLesson?.title||'Lektion bestanden',text:reward,value},shards:data.promotion?{confirmed:true,id:'shards:promotion:'+data.promotion,title:'Zwei Artefaktscherben',text:'Echte Scherben erhalten.',value:'+2 Scherben'}:null};
   }
   if(kind==='submit'&&data?.correct===false)notice='Noch nicht richtig. Lies die Erklärung erneut und versuche es wieder.';
   if(kind==='submit'&&data?.correct===true&&data?.promotion)notice+=' Beförderung Nr. '+data.promotion+' erreicht! Forschungspunkte und virtuelles Depotgeld wurden gutgeschrieben.';
   await load(true);window.FinanzPilotEconomy?.refresh?.(false);
-  if(fresh&&kind==='submit'&&data?.correct===true)window.FinanzPilotLevels?.refresh?.(true);
+  // Level-up presentation follows the explicit final completion button.
  }catch(e){notice='Nicht ausgeführt: '+String(e.message||e)}
  finally{busy=false;redraw()}
+}
+function finishLesson(){
+ if(!selectedLesson||!completed(selectedLesson))return;
+ const id=selectedLesson,done=pendingSuccess?.lesson===id?pendingSuccess:null;
+ if(done){
+  window.FinanzPilotCelebrations?.show?.(done.kind,done.detail);
+  if(done.shards)window.FinanzPilotCelebrations?.show?.('shards',done.shards);
+ }else window.FinanzPilotCelebrations?.show?.('lesson',{confirmed:true,id:'revision:'+id+':'+Date.now(),title:'Lektion wiederholt',text:'Wissen aufgefrischt – keine neuen XP oder FP.'});
+ pendingSuccess=null;selectedLesson='';redraw();
+ window.FinanzPilotLevels?.refresh?.(true);
 }
 function bind(root=document){
  bindMap(root);
@@ -300,11 +309,16 @@ function bind(root=document){
  });
  root.querySelectorAll('[data-fp41-enroll]').forEach(b=>b.addEventListener('click',()=>action('enroll',b.dataset.fp41Enroll)));
  root.querySelectorAll('[data-fp41-buy]').forEach(b=>b.addEventListener('click',()=>action('unlock',selectedSkill,b.dataset.fp41Buy,b.dataset.fp41Currency)));
- root.querySelectorAll('[data-fp41-open]').forEach(b=>b.addEventListener('click',()=>{selectedLesson=b.dataset.fp41Open;window.FinanzPilotLessonView?.open?.(selectedLesson);redraw()}));
+ root.querySelectorAll('[data-fp41-open]').forEach(b=>b.addEventListener('click',()=>{pendingSuccess=null;selectedLesson=b.dataset.fp41Open;window.FinanzPilotLessonView?.open?.(selectedLesson);redraw()}));
  window.FinanzPilotLessonView?.bind?.(root);
  if(!root.querySelector('.fp46-stepper'))window.FinanzPilotStudy?.bind?.(root);
- root.querySelectorAll('[data-fp41-answer]').forEach(b=>b.addEventListener('click',()=>action('submit',selectedSkill,selectedLesson,null,Number(b.dataset.fp41Answer))));
- root.querySelector('[data-fp41-lesson-back]')?.addEventListener('click',()=>{selectedLesson='';redraw()});
+ root.querySelector('[data-fp41-check]')?.addEventListener('click',()=>{
+  const choice=window.FinanzPilotLessonView?.chosen;
+  if(!Number.isInteger(choice)||busy||completed(selectedLesson))return;
+  action('submit',selectedSkill,selectedLesson,null,choice);
+ });
+ root.querySelector('[data-fp41-finish]')?.addEventListener('click',finishLesson);
+ root.querySelector('[data-fp41-lesson-back]')?.addEventListener('click',()=>{pendingSuccess=null;selectedLesson='';redraw()});
  root.querySelectorAll('[data-fp41-special]').forEach(b=>b.addEventListener('click',()=>{selectedSpecial=b.dataset.fp41Special;redraw()}));
  root.querySelector('[data-fp41-special-back]')?.addEventListener('click',()=>{selectedSpecial='';redraw()});
  root.querySelectorAll('[data-fp41-login]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotCloud?.openLogin?.()));
