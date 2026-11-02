@@ -1,5 +1,5 @@
 {
-  "version": 64,
-  "release": "2026-11-02-v64",
-  "notes": "Kopfzeile: tatsächlicher Depotgesamtwert NUR als formatierter €-Betrag ohne Text 'Depot'; FP und manuelle Synchronisierung bleiben oben. Besuchs-Streak vollständig aus dem Header entfernt und als eigenständige Profil-Unterseite 'Streak & Tagesbelohnungen' mit sieben Besuchstagen, Meilensteinen, Tagesbelohnung und Live-Sync eingebaut; Streak-Belohnungsanimation beim serverbestätigten ersten Tagesbesuch erhalten. Auf kleinen iPhones kompaktes zweizeiliges Layout. Älterer Top-Streak-Zugriff entfernt, um Render-Fehler zu verhindern. In Grundlagen, Speziallektionen und klassischen Altlektionen: Antwort zuerst auswählen, erst 'Antwort prüfen' bewertet und spielt kurzen Ton; danach wird derselbe Button zu Weiter bzw. 'Lektion abschließen'. Keine Fortschritts- oder Belohnungsrücksetzung."
+  "version": 65,
+  "release": "2026-11-02-v65",
+  "notes": "Kopfzeilen-Ausrichtung auf schmalen Displays: FP, virtueller Depotgesamtwert und manueller Sync-Button enden bündig an derselben rechten Inhaltskante. Fehlerursache waren ältere negative Außenränder und volle Breite einer zweiten Grid-Zeile. Die Topbar nutzt nun den vorhandenen Inhaltsbereich ohne Überstand; auf Desktop ebenfalls rechts ausgerichtet. Funktionen und Daten bleiben unverändert."
 }
