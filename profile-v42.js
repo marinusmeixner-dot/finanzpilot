@@ -39,6 +39,7 @@ function render(){
  (v.promotions?'<small>Jede neue Beförderung erhöht deine täglichen Streak-Belohnungen. Aktuell '+v.promotions+' bestätigte neue Beförderung(en).</small>':'<small>Mit jedem dritten neuen Skill erhältst du eine größere Belohnung und bessere tägliche Streak-Prämien.</small>')+
  '<button class="btn" type="button" data-section-route="learn">Im Lernen-Tab weitermachen →</button></section>'+
  '<section class="fp42-profile-more"><h2>Deine Erfolge und Werkzeuge</h2><p>Öffne die Details nur dann, wenn du sie brauchst.</p><div class="fp42-profile-links">'+
+ btn('missions','Missionen & Wiederholungen','Tagesquiz, gelernte Skills wiederholen und Wochenmission lösen','◎')+
  btn('inventory','Artefaktscherben & Inventar','Artefakte aus Scherben herstellen und Forschungspunkte einsehen','◇')+
  btn('career','Karriere & Analysewerkzeuge','Erreichte frühere Ränge, Analysehilfen und dauerhafte Auszeichnungen','✦')+
  btn('learningstats','Lernstatistik','Abgeschlossene Grundlagen, Skills und Entwicklung im Detail','◫')+
