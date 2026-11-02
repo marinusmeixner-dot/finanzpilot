@@ -2,8 +2,8 @@
 (function(){
 'use strict';
 const KINDS={
- lesson:{caption:'LEKTION BESTANDEN',icon:'✓',tone:'lesson',duration:1850,level:1},
- basics:{caption:'GRUNDLAGE ABGESCHLOSSEN',icon:'✓',tone:'lesson',duration:1850,level:1},
+ lesson:{caption:'LEKTION BESTANDEN',icon:'✓',tone:'lesson',duration:2600,level:2},
+ basics:{caption:'GRUNDLAGE ABGESCHLOSSEN',icon:'✓',tone:'lesson',duration:2600,level:2},
  lessonUnlock:{caption:'LEKTION FREIGESCHALTET',icon:'◇',tone:'unlock',duration:2000,level:1},
  skillUnlock:{caption:'SKILL FREIGESCHALTET',icon:'✧',tone:'unlock',duration:2250,level:2},
  skill:{caption:'SKILL GEMEISTERT',icon:'✦',tone:'skill',duration:2650,level:2},
@@ -18,7 +18,7 @@ const KINDS={
 const escape=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const prefersReduced=()=>!!window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches||window.FinanzPilotFeedback?.preferences?.motion==='off';
 let active=null,queue=[],dismissTimer=0,seen=new Map(),lastGesture=0;
-const MAX_QUEUE=2;
+const MAX_QUEUE=4; // Bounded: lesson, server XP/FP, possible level-up and shard rewards must all survive.
 function mount(){
  if(!document.body)return null;
  let host=document.getElementById('fp53-celebration');
@@ -83,7 +83,9 @@ document.addEventListener('pointerdown',()=>{lastGesture=Date.now()},{passive:tr
 document.addEventListener('touchstart',()=>{lastGesture=Date.now()},{passive:true});
 document.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')lastGesture=Date.now()});
 document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
-window.addEventListener('fp-auth-change',stop);
+// An auth refresh must not erase an earned achievement mid-animation. A genuine sign-out
+// may clear stale account-specific overlays; current interactions remain nonblocking.
+window.addEventListener('fp-auth-change',()=>{if(!window.FinanzPilotCloud?.user)stop()});
 window.FinanzPilotCelebrations={show,preview,stop,mount,get active(){return active?.kind||null},get queued(){return [active,...queue].filter(Boolean).map(x=>x.kind)}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',mount,{once:true});else mount();
 })();
