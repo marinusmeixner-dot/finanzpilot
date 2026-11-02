@@ -1,5 +1,5 @@
 {
-  "version": 49,
-  "release": "2026-11-02-v49",
-  "notes": "Lernen: eight new advanced skills (52 total) with 24 sourced-independent case lessons (156 total), 46 optional numeric exercises, more individually explained mistakes and transfer steps in 21 prior lessons, append-only Supabase catalog registration with cross prerequisites and matching server quiz answer keys. All existing user progress, achievements and V48 home/V47 financial statements preserved. Added dedicated V49 learning-quality and dependency regression tests; complete GitHub Actions verification."
+  "version": 50,
+  "release": "2026-11-02-v50",
+  "notes": "Earned professional toolkit: seven new server-skill-unlocked functional analysis tools for financial reports, cash-flow reconciliation, five-year DCF sensitivity, portfolio shocks, trade position sizing, ETF after-cost purchasing power and research thesis auditing. Full numeric inputs, explanatory methods, risk warnings, primary report source link and date, account-scoped local saved analyses and copy/export; existing seven legacy tools, progress, XP, FP, rewards, research and simulation untouched. Dedicated V50 CI tests for calculator math and verified unlocks."
 }
