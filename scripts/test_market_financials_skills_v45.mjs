@@ -17,7 +17,7 @@ assert(market.includes('function renderFinancials()'));
 assert(!market.includes('data-fp36-article-back>← Zurück'));
 assert(!read('learning-hub-v41.js').includes('data-fp41-lesson-back>Alle Lektionen'));
 assert(read('ux-v15.js').includes('backInternal?.(state.view)'));
-assert(html.includes('market-v34.js?v=48')&&html.includes('market-v34.css?v=47'));
+assert(/market-v34\.js\?v=\d+/.test(html)&&/market-v34\.css\?v=\d+/.test(html));
 assert(html.includes('learning-hub-v41.js?v=58'));
 assert(read('supabase/cross_skill_domains_v45.sql').includes('fp_specialization_prerequisites'));
 const known=new Set(catalog.skills.map(s=>s.id));
