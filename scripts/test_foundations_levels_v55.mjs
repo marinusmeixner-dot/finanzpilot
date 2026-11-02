@@ -24,7 +24,7 @@ const journey=read('journey-v39.js');
 assert(journey.includes('QUESTION_DATA')&&journey.includes('questionBankLoaded=true'));
 assert(journey.includes('reconcileQuestionSessions()'),'Migrate pending attempts when content changes');
 assert(journey.includes('state.completed?.[m.id]'),'Previously completed foundation lessons must survive');
-assert(journey.includes('FinanzPilotLevels?.awardFoundation?.(m.id,m.title,true)'));
+assert(journey.includes('FinanzPilotLevels?.awardFoundation?.(m.id,m.title,false)'),'Server XP is credited only after a local, immediately celebrated completion.');
 assert(journey.includes("FinanzPilotFeedback?.tone?.(i===q.correct?'answer':'wrong')"),'Correct answer should have sound, not animation.');
 const sync=read('sync.js');
 assert(sync.includes("status==='pending'&&showSpinner"),'Invisible progress sync should not spin.');
