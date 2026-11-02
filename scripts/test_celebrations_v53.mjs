@@ -9,7 +9,7 @@ assert(!/infinite|setInterval\s*\(/.test(css+source));
 assert(!/createElement\(['\"]canvas['\"]\)|getUserMedia|fetch\s*\(|https?:\/\//.test(source),'No media payload, canvas, remote effect or UI polling.');
 assert(source.includes('confirmed!==true'),'Only verified commits may trigger a reveal.');
 const timers=new Map();let timerId=0;
-const host={hidden:true,innerHTML:'',textContent:'',querySelector(){return {addEventListener(){}}}};
+const host={hidden:true,innerHTML:'',textContent:'',setAttribute(){},querySelector(){return {addEventListener(){}}}};
 const docEvents={},winEvents={};
 let hidden=false,reduce=false,gesture=false;
 const doc={
