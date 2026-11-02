@@ -1,5 +1,5 @@
 {
-  "version": 58,
-  "release": "2026-11-02-v58",
-  "notes": "Erfolgs-/Fehlerton: zwei klare, sehr kurze, hohe Einzeltöne (richtig 1030 Hz 72 ms, falsch 710 Hz 90 ms), getrennt testbar in Einstellungen. Grundlagen zeigen bei erstem und wiederholtem echten Abschluss sofort eine automatisch ausblendende rahmenlose Animation mit Partikeln. Nur serverseitig gutgeschriebene XP/FP erhalten einen nachgelagerten echten Belohnungseffekt; Wiederholungen vergeben keine zusätzlichen Punkte. CSS-Animationen hängen nicht mehr an unzuverlässiger Initialisierungs-CSS-Klasse, verwenden Motion-Präferenzen und CSS-Sparmodus. Längere Belohnungswarteschlange sichert XP, Skill, Level und Scherben. Eigenständige Abschlussvorschau und vollständige Funktionstests; Spielbalance, Konten und gespeicherter Fortschritt bleiben erhalten."
+  "version": 59,
+  "release": "2026-11-02-v59",
+  "notes": "Abkürzungen in den Grundlagen nicht mehr automatisch in Klammern hinter jedem Vorkommen ausschreiben. Stattdessen ein kompaktes, ausklappbares Glossar „Abkürzungen erklären“ in jeder relevanten Lektion, inklusive EBIT, EBITDA, KGV, ETF, EPS, FCF, DCF, SaaS, USD, EUR mit einfachen Definitionen. Nur Abkürzungen anzeigen, die in den jeweiligen Lektionstexten und Quizfragen verwendet werden. Die Aufklapp-Einstellung bleibt beim Seitenwechsel innerhalb der Lektion erhalten. Lehrinhalte, Antworten, Belohnungen, Töne, XP/FP und Nutzerfortschritte bleiben unverändert."
 }
