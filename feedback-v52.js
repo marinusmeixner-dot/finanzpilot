@@ -8,7 +8,7 @@
   try{const s=JSON.parse(localStorage.getItem(KEY)||'{}');return {sound:s.sound!==false,motion:['system','on','off'].includes(s.motion)?s.motion:'system'};}
   catch{return defaultPrefs()}
  }
- let prefs=read(),audio=null,lastNav=0,lastChime=0,feedbackTimer=null;
+ let prefs=read(),audio=null,lastChime=0,feedbackTimer=null;
  const preferredReduced=()=>!!window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches;
  const motion=()=>prefs.motion!=='off'&&!preferredReduced();
  function updateMotion(){
@@ -50,7 +50,15 @@
     reward:[[540,0,.09,.045],[675,.09,.1,.047],[900,.19,.16,.05]],
     level:[[440,0,.10,.035],[660,.10,.13,.042],[880,.23,.2,.045]],
     retry:[[310,0,.11,.035]],
-    error:[[260,0,.14,.025]]
+    error:[[260,0,.14,.025]],
+    lesson:[[520,0,.09,.034],[660,.10,.11,.038],[790,.21,.16,.035]],
+    unlock:[[330,0,.07,.027],[495,.08,.10,.037],[660,.2,.15,.042]],
+    skill:[[392,0,.09,.032],[523,.10,.10,.037],[659,.20,.10,.042],[784,.31,.19,.043]],
+    promotion:[[392,0,.12,.034],[494,.12,.13,.038],[588,.25,.13,.038],[784,.39,.23,.047]],
+    shards:[[480,0,.07,.028],[610,.10,.11,.035],[730,.23,.15,.039]],
+    artifact:[[392,0,.10,.03],[587,.12,.11,.037],[740,.27,.12,.038],[987,.42,.19,.046]],
+    mission:[[523,0,.08,.03],[659,.09,.11,.037],[784,.22,.16,.040]],
+    streak:[[440,0,.08,.032],[554,.09,.11,.036],[740,.2,.17,.04]]
    }[kind]||[];
    for(const [frequency,offset,duration,volume] of notes){
     const oscillator=context.createOscillator(),gain=context.createGain();
@@ -117,21 +125,9 @@
   const target=event.target?.closest?.('button');
   if(!target||target.disabled)return;
   if(target.matches('#fp52-settings-toggle,.fp52-settings button'))return;
-  if(target.matches('[data-fp51-choice],[data-fp41-answer],[data-fp44-craft]')){audioContext();return;}
-  if(target.matches('[data-section-main],[data-section-route],[data-fp41-route],[data-fp51-tab],[data-section-back],[data-fp41-skill],[data-fp42-node],[data-fp51-route]')){
-   if(Date.now()-lastNav<80)return;
-   lastNav=Date.now();tone('tap');
-  }
+  if(target.matches('[data-fp51-choice],[data-fp41-answer],[data-fp41-enroll],[data-fp41-buy],[data-fp44-craft],[data-journey-complete],[data-inventory-confirm]'))audioContext();
  }
  document.addEventListener('click',onClick,{passive:true});
- window.addEventListener('fp-navigation',()=>{
-  if(!motion())return;
-  const root=document.getElementById('view-root');
-  if(!root)return;
-  root.classList.remove('fp52-view-enter');
-  if(window.requestAnimationFrame)window.requestAnimationFrame(()=>root.classList.add('fp52-view-enter'));
-  else root.classList.add('fp52-view-enter');
- });
  document.addEventListener('visibilitychange',()=>{if(document.hidden&&audio?.state==='running')audio.suspend?.().catch?.(()=>{})});
  const query=window.matchMedia?.('(prefers-reduced-motion: reduce)');
  query?.addEventListener?.('change',updateMotion);
