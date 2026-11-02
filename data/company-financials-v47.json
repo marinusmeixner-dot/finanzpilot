@@ -1564,8 +1564,8 @@
             },
             {
               "label": "Bruttomarge",
-              "value": 59.695,
-              "previous": 59.581,
+              "value": 59.696,
+              "previous": 59.579,
               "unit": "%",
               "period": "Q3 2026",
               "previous_period": "Q3 2025",
@@ -2588,7 +2588,7 @@
             {
               "label": "Google Cloud Segmentmarge",
               "value": 36.214,
-              "previous": 23.711,
+              "previous": 23.712,
               "unit": "%",
               "period": "Q3 2026",
               "previous_period": "Q3 2025",
