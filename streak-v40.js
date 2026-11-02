@@ -27,18 +27,18 @@
  function panelHtml(){
   const day=Math.min(30,Number(result?.day)||0),signed=Boolean(connected());
   const next=day<10?10:day<20?20:day<30?30:null;
-  const goal=next===10?'+100 € virtuelles Depotgeld & +15 Forschungspunkte':next===20?'+125 € & +20 Forschungspunkte':next===30?'+150 € & +30 Forschungspunkte':'Alle drei großen Meilensteine erreicht';
+  const goal=next===10?'+100 € virtuelles Depotgeld & +2 Forschungspunkte':next===20?'+125 € & +3 Forschungspunkte':next===30?'+150 € & +4 Forschungspunkte':'Alle drei großen Meilensteine erreicht';
   return '<div class="fp40-streak-head"><div><span class="eyebrow">FINANZPILOT · BESUCHSSERIE</span><h2>Deine Streak</h2><p>Einmal täglich FinanzPilot öffnen. Maximal 30 Tage werden angezeigt.</p></div><button type="button" class="fp40-streak-close" data-fp40-streak-close aria-label="Schließen">×</button></div>'+
    '<div class="fp40-streak-count"><strong>'+day+'</strong><span> / 30 Tage</span></div>'+(Number(result?.promotion_count)>0?'<p class="fp41-streak-promotion">Deine '+Number(result.promotion_count)+' neue(n) Beförderung(en) verbessern die tägliche Belohnung um +'+euro(result.daily_euro_bonus)+' und +'+Number(result.daily_points_bonus)+' Forschungspunkte.</p>':'')+
    '<div class="fp40-streak-week" aria-label="Besuche der letzten sieben Tage">'+week()+'</div>'+
    (result?'<div class="fp40-streak-today"><b>Heutige Belohnung '+(result.awarded_now?'erhalten':'bereits verbucht')+'</b>'+
-    '<p>+'+euro(result.today_euros)+' Depotgeld · +'+Number(result.today_points)+' Forschungspunkte'+
+    '<p>+'+euro(result.today_euros)+' Depotgeld · +'+Number(result.today_points)+' FP'+
     (result.milestone?' · Meilenstein Tag '+result.milestone:'')+'</p><small>Depotguthaben und Punkte werden im Profil und im Inventar geführt.</small></div>':
-    '<div class="fp40-streak-today"><b>'+(signed?'Tagesbesuch wird geprüft':'Für Belohnungen anmelden')+'</b><p>Jeder bestätigte Besuchstag bringt +10 € virtuelles Depotgeld und +1 Forschungspunkt.</p></div>')+
+    '<div class="fp40-streak-today"><b>'+(signed?'Tagesbesuch wird geprüft':'Für Belohnungen anmelden')+'</b><p>Jeder Besuch bringt virtuelles Depotgeld. FP gibt es an Tag 7, 14 und 21 sowie an großen Streak-Meilensteinen.</p></div>')+
    '<div class="fp40-streak-milestones"><h3>Deine Meilensteine</h3><div class="fp40-streak-milestone-list">'+[
-    [10,'Große 10-Tage-Belohnung','+100 € und +15 zusätzliche Forschungspunkte'],
-    [20,'20-Tage-Belohnung','+125 € und +20 zusätzliche Forschungspunkte'],
-    [30,'30-Tage-Abschluss','+150 € und +30 zusätzliche Forschungspunkte']
+    [10,'Große 10-Tage-Belohnung','+100 € und +2 FP'],
+    [20,'20-Tage-Belohnung','+125 € und +3 FP'],
+    [30,'30-Tage-Abschluss','+150 € und +4 FP']
    ].map(([n,title,desc])=>'<div class="'+(day>=n?'achieved':'')+'"><span>'+n+'</span><div><b>'+title+'</b><small>'+desc+'</small></div><span>'+(day>=n?'✓':'○')+'</span></div>').join('')+'</div>'+
    '<p class="fp40-streak-next">'+(next?'Nächste größere Belohnung an Tag '+next+': '+goal:'Maximale Streak erreicht. Neue Tage verlängern die Anzeige nicht über 30; kleine Tagesbelohnungen werden weiter einmal täglich gutgeschrieben.')+'</p></div>'+
    (error?'<p class="fp40-streak-error" role="status">'+esc(error)+'</p>':'')+
