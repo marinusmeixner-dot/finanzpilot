@@ -5,8 +5,8 @@ const read=p=>fs.readFileSync(p,'utf8');
 const skills=JSON.parse(read('data/specializations-v41.json')),foundations=JSON.parse(read('data/journey-v39.json'));
 assert.equal(JSON.parse(read('version.json')).version,48);
 assert.equal(skills.branches.length,8);
-assert.equal(skills.skills.length,44);
-assert.equal(skills.skills.flatMap(x=>x.lessons).length,132);
+assert.equal(skills.skills.length,52);
+assert.equal(skills.skills.flatMap(x=>x.lessons).length,156);
 assert.equal(foundations.stages.flatMap(x=>x.modules).length,36);
 for(const mod of foundations.stages.flatMap(x=>x.modules)){
  assert(mod.details?.length>=2,mod.id+' lacks scaffolded explanation');
@@ -20,7 +20,7 @@ for(const skill of skills.skills)for(const l of skill.lessons){
  assert(l.options.length===3&&l.correct>=0&&l.correct<=2);
 }
 const numeric=skills.skills.flatMap(s=>s.lessons).filter(l=>l.practice);
-assert.equal(numeric.length,24);
+assert.equal(numeric.length,46);
 for(const l of numeric)assert(Number.isFinite(l.practice.answer)&&Number.isFinite(l.practice.tolerance)&&l.practice.explanation.length>20);
 for(const id of ['working-capital-diagnose','realrendite-kaufkraft','backtests-kritisch','kreditrisiko-unternehmen'])assert(skills.skills.some(s=>s.id===id));
 const html=read('index.html'),hub=read('learning-hub-v41.js'),sync=read('sync.js');
@@ -42,7 +42,7 @@ vm.runInContext(read('lesson-view-v46.js'),ctx);
 vm.runInContext(read('learning-hub-v41.js'),ctx);
 await w.FinanzPilotLearningHub.load();
 const graph=w.FinanzPilotLearningHub.tree();
-assert.equal((graph.match(/data-fp42-node="/g)||[]).length,44);
+assert.equal((graph.match(/data-fp42-node="/g)||[]).length,52);
 assert((graph.match(/fp45-cross-line/g)||[]).length>=12);
 assert.equal((w.FinanzPilotLearningHub.home().match(/class="fp42-learn-entry/g)||[]).length,4);
 const example=skills.skills.find(x=>x.id==='working-capital-diagnose');
@@ -57,4 +57,4 @@ assert(Math.abs(JSON.parse(store.finanzpilot_study_v46).reviews[example.lessons[
 w.FinanzPilotStudy.note(example.lessons[0].id,'Working Capital: 22+17-13=26');
 assert(JSON.parse(store.finanzpilot_study_v46).notes[example.lessons[0].id].text.includes('26'));
 assert(!Object.keys(store).some(k=>k.includes('economy')));
-console.log('v46 PASS: 36 enriched Grundlagen, 44 skills, 132 lessons, 24 numeric tasks, private spaced review and no extra rewards.');
+console.log('v46 PASS: 36 enriched Grundlagen, 52 skills, 156 lessons, 24 numeric tasks, private spaced review and no extra rewards.');
