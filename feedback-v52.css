@@ -1,0 +1,27 @@
+/* V52: short, composited micro-interactions. No perpetual animation loops. */
+.fp52-audio-toggle,.fp52-settings-toggle{display:inline-grid;place-items:center;flex:none;width:32px;height:32px;border:1px solid var(--border,#405765);border-radius:10px;background:var(--surface,#182e3a);color:var(--text,#e0ecea);cursor:pointer;padding:0}
+.fp52-settings-toggle{font-family:inherit;font-size:19px;line-height:1}
+.fp52-audio-toggle:focus-visible,.fp52-settings-toggle:focus-visible,.fp52-settings button:focus-visible{outline:2px solid #a7efd1;outline-offset:2px}
+.fp52-settings[hidden],.fp52-toast[hidden]{display:none!important}
+.fp52-settings{position:fixed;z-index:10050;top:calc(env(safe-area-inset-top,0px) + 70px);right:15px;width:min(340px,calc(100vw - 30px));padding:18px;border:1px solid #526f78;border-radius:16px;background:#172d39;color:#e4f4f1;box-shadow:0 13px 32px rgba(0,0,0,.25);display:flex;flex-direction:column;gap:14px}
+.fp52-settings-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+.fp52-settings-head button{width:32px;height:32px;border:1px solid #49646f;border-radius:8px;background:transparent;color:#d9e9eb;cursor:pointer}
+.fp52-settings label{display:flex;align-items:center;gap:9px;color:#e6f1ee;font-size:13px}
+.fp52-settings label:has(select){flex-direction:column;align-items:flex-start}
+.fp52-settings select{width:100%;padding:9px 12px;border:1px solid #526c75;border-radius:9px;background:#102630;color:#f2f8f8;font:inherit}
+.fp52-settings input{accent-color:#82d4af;width:19px;height:19px}
+.fp52-settings p{font-size:11px;line-height:1.6;color:#b7cccf}
+.fp52-toast{position:fixed;z-index:10060;bottom:calc(env(safe-area-inset-bottom,0px) + 82px);left:50%;max-width:min(440px,calc(100vw - 30px));transform:translateX(-50%);padding:12px 18px;border:1px solid #5e927e;border-radius:13px;background:#203d3a;box-shadow:0 8px 22px rgba(0,0,0,.16);color:#edfff6;font-size:13px;font-weight:650;text-align:center;pointer-events:none}
+.fp52-toast.fp52-error{background:#482f39;border-color:#93616b;color:#ffe0e0}
+.fp52-toast.fp52-reward,.fp52-toast.fp52-level{background:#2a4438;border-color:#9dcf9d;color:#f4ffdf}
+@media(prefers-reduced-motion:no-preference){
+ :root.fp52-motion #view-root.fp52-view-enter> :first-child{animation:fp52-view .24s ease-out both}
+ :root.fp52-motion .fp52-toast.fp52-visible{animation:fp52-toast .29s ease-out both}
+ :root.fp52-motion .fp51-option:not(:disabled),:root.fp52-motion .fp42-learn-entry,:root.fp52-motion .fp51-tabs button,:root.fp52-motion .fp50-card,:root.fp52-motion .btn:not(:disabled),:root.fp52-motion .fp-main-link{transition:transform .15s ease,background-color .16s ease,border-color .16s ease}
+ :root.fp52-motion .fp51-option:not(:disabled):active,:root.fp52-motion .fp42-learn-entry:active,:root.fp52-motion .fp50-card:active,:root.fp52-motion .btn:not(:disabled):active,:root.fp52-motion .fp-main-link:active{transform:scale(.985)}
+ :root.fp52-motion .fp51-meter>span,:root.fp52-motion .fp42-profile-track>div{transition:width .28s ease-out}
+}
+@keyframes fp52-view{from{opacity:.8;transform:translateY(5px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fp52-toast{from{opacity:0;transform:translate(-50%,10px)}to{opacity:1;transform:translate(-50%,0)}}
+@media(prefers-reduced-motion:reduce){:root.fp52-motion #view-root>*,.fp52-toast{animation:none!important;transition:none!important}}
+@media(max-width:520px){.fp52-audio-toggle,.fp52-settings-toggle{width:28px;height:28px;border-radius:8px}.fp52-settings{top:calc(env(safe-area-inset-top,0px) + 66px)}}
