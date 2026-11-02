@@ -60,7 +60,7 @@
       "tier": 1,
       "description": "Du lernst, einen Geschäftsbericht aufzuschlagen und Berichtszeitraum, Konzernabgrenzung und die wichtigsten Kennzahlen korrekt zu finden.",
       "cost": 3,
-      "rewardPoints": 7,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "berichte-lesen-1",
@@ -152,8 +152,8 @@
       "parent": "berichte-lesen",
       "tier": 2,
       "description": "Du verfolgst, wie Gewinn, Working Capital und Investitionen zusammen den frei verfügbaren Cashflow bilden.",
-      "cost": 3,
-      "rewardPoints": 9,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "cashflow-architekt-1",
@@ -252,8 +252,8 @@
       "parent": "cashflow-architekt",
       "tier": 3,
       "description": "Du erkennst, ob Verschuldung, Fälligkeiten und Zahlungsströme langfristig zusammenpassen. Dabei werden Zinskosten, kurzfristige Fälligkeiten und laufende Zahlungsströme gemeinsam geprüft.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "bilanz-pruefer-1",
@@ -353,7 +353,7 @@
       "tier": 1,
       "description": "Du lernst, Bewertungsmultiples zu berechnen und Unternehmensunterschiede fair zu beurteilen.",
       "cost": 3,
-      "rewardPoints": 7,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "bewertung-multiples-1",
@@ -459,8 +459,8 @@
       "parent": "bewertung-multiples",
       "tier": 2,
       "description": "Du verbindest Umsatz, Margen, Investitionen und Kapitalkosten zu einer begründeten Bewertungskette.",
-      "cost": 3,
-      "rewardPoints": 9,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "werttreiber-1",
@@ -559,8 +559,8 @@
       "parent": "werttreiber",
       "tier": 3,
       "description": "Du baust ein mehrjähriges Szenario und prüfst, wie Annahmen einen möglichen fairen Wert verändern.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "unternehmenswert-1",
@@ -660,7 +660,7 @@
       "tier": 1,
       "description": "Du verstehst, welche Verluste realistisch möglich sind und wie Risikotoleranz und Anlagehorizont zusammenwirken.",
       "cost": 3,
-      "rewardPoints": 7,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "risiko-basis-1",
@@ -760,8 +760,8 @@
       "parent": "risiko-basis",
       "tier": 2,
       "description": "Du bewertest Positionsgewichte, Gleichlauf und die Risiken eines virtuellen Depots. Du berechnest Gewichte, mögliche Verluste und die Auswirkungen gemeinsamer Risikofaktoren.",
-      "cost": 3,
-      "rewardPoints": 9,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "portfolio-architekt-1",
@@ -867,8 +867,8 @@
       "parent": "portfolio-architekt",
       "tier": 3,
       "description": "Du verknüpfst Zinsen, Währungen, Konjunktur und Liquidität mit einzelnen Unternehmen und deinem Depot.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "makro-risiken-1",
@@ -968,7 +968,7 @@
       "tier": 1,
       "description": "Du recherchierst Geschäftsberichte und Pflichtmitteilungen und trennst Belege von Behauptungen.",
       "cost": 3,
-      "rewardPoints": 7,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "quellenfinder-1",
@@ -1060,8 +1060,8 @@
       "parent": "quellenfinder",
       "tier": 2,
       "description": "Du überprüfst, ob eine Meldung wirklich neue Informationen enthält und welche Erwartungen sie verändert.",
-      "cost": 3,
-      "rewardPoints": 9,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "nachrichten-einordnen-1",
@@ -1153,8 +1153,8 @@
       "parent": "nachrichten-einordnen",
       "tier": 3,
       "description": "Du erarbeitest eine schriftliche, überprüfbare These mit Bewertung, Risiken und Bedingungen für eine Revision.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "investment-these-1",
@@ -1246,8 +1246,8 @@
       "parent": "bilanz-pruefer",
       "tier": 4,
       "description": "Untersuche, ob berichtete Gewinne dauerhaft, cashwirksam und mit den Risiken der Bilanz vereinbar sind.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "quality-of-earnings-1",
@@ -1339,8 +1339,8 @@
       "parent": "quality-of-earnings",
       "tier": 5,
       "description": "Rekonstruiere eine vollständige Unternehmensgeschichte aus mehreren Berichtsperioden und erkenne widersprüchliche Kennzahlen.",
-      "cost": 3,
-      "rewardPoints": 15,
+      "cost": 11,
+      "rewardPoints": 5,
       "lessons": [
         {
           "id": "financial-statement-forensics-1",
@@ -1432,8 +1432,8 @@
       "parent": "unternehmenswert",
       "tier": 4,
       "description": "Baue verknüpfte Modelle, die Wachstum, Margen, Kapitalbedarf und Unternehmenswert in mehreren Fällen nachvollziehbar verbinden.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "scenario-master-1",
@@ -1525,8 +1525,8 @@
       "parent": "scenario-master",
       "tier": 5,
       "description": "Verteidige eine Bewertung gegenüber Gegenmeinungen und entscheide, wann ein gutes Unternehmen trotzdem zu teuer ist.",
-      "cost": 3,
-      "rewardPoints": 15,
+      "cost": 11,
+      "rewardPoints": 5,
       "lessons": [
         {
           "id": "valuation-committee-1",
@@ -1618,8 +1618,8 @@
       "parent": "makro-risiken",
       "tier": 4,
       "description": "Bestimme, wie viel eine Einzelidee das gesamte Depot gefährden darf, und plane sinnvolle Anpassungen ohne hektischen Aktionismus.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "position-sizing-1",
@@ -1718,8 +1718,8 @@
       "parent": "position-sizing",
       "tier": 5,
       "description": "Verbinde Stresstests, Liquidität und Verhaltensrisiken zu einer vollständigen Depotregel, die in schwierigen Phasen tragfähig bleibt.",
-      "cost": 3,
-      "rewardPoints": 15,
+      "cost": 11,
+      "rewardPoints": 5,
       "lessons": [
         {
           "id": "portfolio-risk-chief-1",
@@ -1811,8 +1811,8 @@
       "parent": "investment-these",
       "tier": 4,
       "description": "Bewerte Primärquellen, Interessenkonflikte und statistische Aussagen so, dass eine Investmentanalyse reproduzierbar wird.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "evidence-auditor-1",
@@ -1904,8 +1904,8 @@
       "parent": "evidence-auditor",
       "tier": 5,
       "description": "Verbinde Kennzahlen, Bewertung, Gegenargumente und Portfolio-Risiko in einer unabhängigen schriftlichen Analyse mit nachvollziehbarer Revision.",
-      "cost": 3,
-      "rewardPoints": 15,
+      "cost": 11,
+      "rewardPoints": 5,
       "lessons": [
         {
           "id": "senior-investigator-1",
@@ -1997,8 +1997,8 @@
       "parent": "bilanz-pruefer",
       "tier": 4,
       "description": "Du prüfst Rückstellungen, Leasingverpflichtungen und nicht zahlungswirksame Erträge, bevor du aus der Bilanz auf die tatsächliche Finanzierungslage schließt.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "rechnungslegungs-fallen-1",
@@ -2090,8 +2090,8 @@
       "parent": "bilanz-pruefer",
       "tier": 4,
       "description": "Du kombinierst Forderungen, Lagerbestände und Margen zu einer nachvollziehbaren Prüfung der Gewinnqualität und möglicher Bilanzrisiken.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "bilanzqualitaet-1",
@@ -2183,8 +2183,8 @@
       "parent": "unternehmenswert",
       "tier": 4,
       "description": "Du verstehst die Wirkung von Finanzierung, Risikoprämie und Verschuldung auf Bewertungsmodelle, ohne eine Scheingenauigkeit als fairen Wert auszugeben.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "kapitalkosten-schaetzen-1",
@@ -2283,8 +2283,8 @@
       "parent": "unternehmenswert",
       "tier": 4,
       "description": "Du erstellst aus mehreren voneinander unabhängigen Bewertungswegen ein begründetes Urteil und erklärst offen, welche Annahmen den größten Unterschied erzeugen.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "bewertungs-komitee-1",
@@ -2383,8 +2383,8 @@
       "parent": "makro-risiken",
       "tier": 4,
       "description": "Du erkennst, wenn verschiedene Aktien von denselben Wirtschafts-, Währungs- oder Zinsrisiken abhängen und ein Depot deshalb weniger gestreut ist als es aussieht.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "faktor-risiken-lesen-1",
@@ -2476,8 +2476,8 @@
       "parent": "makro-risiken",
       "tier": 4,
       "description": "Du entwirfst eine nachvollziehbare Risikostrategie mit Grenzen, Liquiditätsreserve und möglichen Anpassungen für schlechte Marktphasen.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "portfolio-resilienz-1",
@@ -2569,8 +2569,8 @@
       "parent": "investment-these",
       "tier": 4,
       "description": "Du bewertest Belegqualität, Interessenkonflikte und Datenlücken und baust daraus eine überprüfbare Übersicht für eine Researchentscheidung.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "evidenz-matrix-1",
@@ -2662,8 +2662,8 @@
       "parent": "investment-these",
       "tier": 4,
       "description": "Du verteidigst vor einem fiktiven Ausschuss eine Unternehmensanalyse mit überprüfbaren Zahlen, Chancen, Gegenhypothesen und Ausstiegskriterien.",
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "analysten-ausschuss-1",
@@ -2757,7 +2757,7 @@
       "tier": 1,
       "description": "Du ordnest Wachstum, Beschäftigung und Frühindikatoren zeitlich ein, ohne aus einem Einzelwert eine sichere Börsenprognose abzuleiten.",
       "cost": 3,
-      "rewardPoints": 8,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "konjunktur-lesen-1",
@@ -2850,8 +2850,8 @@
       "prerequisites": [],
       "tier": 2,
       "description": "Du verstehst Verbraucherpreise, Inflationserwartungen und geldpolitische Entscheidungen als unterschiedliche, zeitlich verknüpfte Einflussgrößen.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "inflation-zinsen-1",
@@ -2953,8 +2953,8 @@
       ],
       "tier": 3,
       "description": "Du kombinierst Makroerwartungen mit Anleiherenditen und lernst, was eine steile oder inverse Zinskurve tatsächlich aussagen kann.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "zinskurve-szenarien-1",
@@ -3048,7 +3048,7 @@
       "tier": 1,
       "description": "Du lernst, wie Kupon, Marktpreis, Rückzahlung und Ausfallrisiko zusammenhängen und warum Anleihen nicht automatisch risikofrei sind.",
       "cost": 3,
-      "rewardPoints": 8,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "anleihen-rendite-1",
@@ -3149,7 +3149,7 @@
       "tier": 1,
       "description": "Du untersuchst Indexmethodik, Fondsgröße, Tracking-Differenz, Kosten und Konzentration und erkennst den Unterschied zwischen ETF-Verpackung und dem tatsächlichen Risiko.",
       "cost": 3,
-      "rewardPoints": 8,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "etf-strukturen-1",
@@ -3245,8 +3245,8 @@
       ],
       "tier": 2,
       "description": "Du verbindest Index- und Fondskenntnis mit Positionsgewichten und Anleihen, um ein nachvollziehbares Portfolio für konkrete Zeithorizonte zu planen.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "etf-depotbau-1",
@@ -3340,7 +3340,7 @@
       "tier": 1,
       "description": "Du lernst, weshalb Börsenkurse aus Kauf- und Verkaufsaufträgen entstehen und welche Kosten sich hinter einer scheinbar einfachen Order verbergen.",
       "cost": 3,
-      "rewardPoints": 8,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "orderbuch-liquiditaet-1",
@@ -3435,8 +3435,8 @@
       ],
       "tier": 2,
       "description": "Du berechnest Gebühren, Spread und Slippage und erkennst, wann eine Handelsstrategie allein an ihren realen Kosten scheitert.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "orderkosten-slippage-1",
@@ -3538,8 +3538,8 @@
       ],
       "tier": 3,
       "description": "Du verstehst Options- und Terminkontrakte als riskante Instrumente und lernst Hebel, Sicherheitsleistungen und mögliche Verluste korrekt einzuordnen.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "derivate-und-hebel-1",
@@ -3633,7 +3633,7 @@
       "tier": 1,
       "description": "Du erkennst Ankereffekte, Verlustaversion und Bestätigungsfehler und lernst, deine Urteile gegen emotionale Schnellschlüsse abzusichern.",
       "cost": 3,
-      "rewardPoints": 8,
+      "rewardPoints": 1,
       "lessons": [
         {
           "id": "biases-mentalmodelle-1",
@@ -3728,8 +3728,8 @@
       ],
       "tier": 2,
       "description": "Du erstellst vor einer virtuellen Entscheidung ein prüfbares Protokoll mit Quellen, erwarteten Ergebnissen und Bedingungen zum Überdenken.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 5,
+      "rewardPoints": 2,
       "lessons": [
         {
           "id": "entscheidungsjournal-1",
@@ -3824,8 +3824,8 @@
       ],
       "tier": 3,
       "description": "Du überprüfst Prognosen über viele Fälle, misst die Güte deiner Wahrscheinlichkeiten und erkennst, wann du dein eigenes Wissen überschätzt.",
-      "cost": 3,
-      "rewardPoints": 11,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "prognosen-kalibrieren-1",
@@ -3919,8 +3919,8 @@
         "risiko-basis"
       ],
       "tier": 4,
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 9,
+      "rewardPoints": 4,
       "description": "Du erkennst, wie Forderungen, Vorräte und Lieferantenverbindlichkeiten operative Liquidität binden oder freisetzen. Du prüfst dabei saisonale und buchhalterische Effekte.",
       "lessons": [
         {
@@ -4036,8 +4036,8 @@
         "inflation-zinsen"
       ],
       "tier": 4,
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 9,
+      "rewardPoints": 4,
       "description": "Du berechnest Kaufkraftentwicklung und erkennst, wie Inflation, Gebühren, Wiederanlage und lange Zeiträume die tatsächliche Anlagewirkung beeinflussen.",
       "lessons": [
         {
@@ -4146,8 +4146,8 @@
         "entscheidungsjournal"
       ],
       "tier": 3,
-      "cost": 3,
-      "rewardPoints": 13,
+      "cost": 7,
+      "rewardPoints": 3,
       "description": "Du erkennst Zukunftswissen, Auswahlverzerrungen, Kosten und Überanpassung in historischen Handelstests und lernst, was ein belastbarer Strategietest leisten kann.",
       "lessons": [
         {
@@ -4250,8 +4250,8 @@
         "bilanz-pruefer"
       ],
       "tier": 2,
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 5,
+      "rewardPoints": 2,
       "description": "Du beurteilst Nettofinanzschulden, Zinsdeckung, Kreditfälligkeiten und vertragliche Kennzahlengrenzen. Aktien- und Anleiheperspektive werden sinnvoll verbunden.",
       "lessons": [
         {
@@ -4361,8 +4361,8 @@
       ],
       "tier": 5,
       "description": "Analysiere periodengerechte Umsätze, Forderungen, Vorauszahlungen und Bestandskundenbindung, um echten Geldzufluss von bloßen Wachstumsbehauptungen zu trennen.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 11,
+      "rewardPoints": 5,
       "lessons": [
         {
           "id": "umsatzqualitaet-vertraege-1",
@@ -4471,8 +4471,8 @@
       ],
       "tier": 3,
       "description": "Prüfe den tatsächlichen Gewinn je Aktie, den Effekt von Rückkäufen und Aktienvergütung sowie den fairen Wert pro verwässertem Eigentümeranteil.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "aktienverwaesserung-eps-1",
@@ -4588,8 +4588,8 @@
       ],
       "tier": 5,
       "description": "Simuliere Wertverluste, korrelierte Krisen und notwendige Erholungen und verknüpfe die Ergebnisse mit einer realistischen Risikotragfähigkeit.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 11,
+      "rewardPoints": 5,
       "lessons": [
         {
           "id": "depot-stresstests-1",
@@ -4705,8 +4705,8 @@
       ],
       "tier": 3,
       "description": "Bewerte Preissetzungsmacht, Kündigungsquoten und Wettbewerbsvorteile mit belastbaren Nachweisen und bewusst formulierten Gegenhypothesen.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "wettbewerbsvorteile-pruefen-1",
@@ -4815,8 +4815,8 @@
       ],
       "tier": 3,
       "description": "Unterscheide staatliche Haushaltsflüsse, Schuldenbestand und Schuldenquote; prüfe, wie Wachstum, Zinssätze und Primärsaldo den Haushalt beeinflussen.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 7,
+      "rewardPoints": 3,
       "lessons": [
         {
           "id": "fiskalpolitik-staatsschulden-1",
@@ -4932,8 +4932,8 @@
       ],
       "tier": 5,
       "description": "Berechne Renditeabweichungen, beachte Ausschüttungen und modelliere hypothetische Nettorenditen ohne unzutreffende Pauschalaussagen zum geltenden Steuerrecht.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 11,
+      "rewardPoints": 5,
       "lessons": [
         {
           "id": "etf-tracking-steuern-1",
@@ -5049,8 +5049,8 @@
       ],
       "tier": 4,
       "description": "Berechne risikobasierte Stückzahlen, verstehe Gap-Risiken bei Stop-Orders und beurteile die Grenzen des nominellen Chance-Risiko-Verhältnisses.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "trade-risiko-plan-1",
@@ -5166,8 +5166,8 @@
       ],
       "tier": 4,
       "description": "Lerne, mit repräsentativen Basisraten, bedingten Wahrscheinlichkeiten und Brier-Scores belastbare eigene Vorhersagen statt überoptimistischer Geschichten zu erstellen.",
-      "cost": 3,
-      "rewardPoints": 12,
+      "cost": 9,
+      "rewardPoints": 4,
       "lessons": [
         {
           "id": "basisraten-entscheidungen-1",
