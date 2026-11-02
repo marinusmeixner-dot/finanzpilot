@@ -16,6 +16,8 @@ jobs:
         run: find . -type f -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -r -n1 node --check
       - name: Validate JSON files
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
+      - name: "V64: Profile Streak section, total-only portfolio header and retained sync"
+        run: node scripts/test_profile_streak_header_v64.mjs
       - name: "V63: Select, verify, then finish with earned rewards and responsive portfolio header"
         run: node scripts/test_answer_flow_v63.mjs
       - name: "V56: Economically sustainable XP/FP and balanced skill investment"
