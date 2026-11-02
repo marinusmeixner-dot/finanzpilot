@@ -7,7 +7,7 @@ hub=read('learning-hub-v41.js'),journey=read('journey-v39.js'),special=read('les
 header=read('header-v43.js'),streak=read('streak-v40.js'),reveal=read('celebrations-v53.js'),css=read('ui-v43.css');
 assert(main.includes('id="fp43-depot-trigger"')&&main.includes('id="top-depot"'),'Header shows total paper-portfolio wealth.');
 assert(!main.includes('id="top-level"')&&!main.includes('id="fp52-settings-toggle"'),'No level or sound buttons in header.');
-assert(main.includes('id="top-fp"')&&main.includes('id="fp-streak-trigger"'),'Keep FP and streak accessible.');
+assert(main.includes('id="top-fp"')&&!main.includes('id="fp-streak-trigger"')&&profile.includes("btn('streaks'"),'Header keeps FP, while Streak is its own Profile route.');
 assert(header.includes('p.complete&&Number.isFinite(p.total)'),'Do not claim a total when positions are unpriced.');
 assert(profile.includes('settingsHtml?.()')&&profile.includes('bindSettings?.(root)'),'Both sound and motion switches belong in profile.');
 assert(sound.includes('role="switch" id="fp52-sound-pref"')&&sound.includes('role="switch" id="fp52-motion-pref"'),'Only two toggles.');
