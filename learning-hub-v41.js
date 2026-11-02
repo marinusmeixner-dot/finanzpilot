@@ -58,7 +58,7 @@ function mapNode(s){
  const {x,y,w}=nodePos(s),done=mastered(s.id),active=enrolled(s.id),ready=purchaseReady(s);
  const cls=done?'done':active?'selected':ready?'ready':'locked';
  return '<button type="button" class="fp42-map-node '+cls+(w<200?' compact':'')+(selectedMap===s.id?' focused':'')+'" style="left:'+x+'px;top:'+y+'px;width:'+w+'px" data-fp42-node="'+escape(s.id)+'" aria-label="'+escape(s.title)+', '+(done?'erlernt':active?'ausgewählt':ready?'freischaltbar':'Voraussetzung fehlt')+'">'+
- '<span class="fp42-map-symbol">'+(done?'✓':s.tier)+'</span><strong>'+escape(s.title)+'</strong><small>'+escape(s.description)+'</small><em>'+(done?'✓ Erlernt':active?'Lernweg aktiv':ready?'Für 3 FP auswählbar':'Voriger Skill fehlt')+'</em></button>';
+ '<span class="fp42-map-symbol">'+(done?'✓':s.tier)+'</span><strong>'+escape(s.title)+'</strong><small>'+escape(s.description)+'</small><em>'+(done?'✓ Erlernt':active?'Lernweg aktiv':ready?'Für '+s.cost+' FP auswählbar':'Voriger Skill fehlt')+'</em></button>';
 }
 function skillDetail(){
  if(!selectedMap)return '<div class="fp42-detail-empty"><h3>Wähle einen Skill</h3><p>Tippe auf einen Knoten in der Karte. Hier siehst du, was du lernst, welche Voraussetzungen fehlen und wie du zu den Lektionen kommst.</p></div>';
@@ -69,7 +69,7 @@ function skillDetail(){
  (required(s).length?'<div class="fp42-detail-condition"><b>Voraussetzungen – alle erforderlich</b><span>'+required(s).map(id=>escape(titleOf(id))+(mastered(id)?' ✓':' · noch nicht erlernt')).join('<br>')+'</span></div>':
  '<div class="fp42-detail-condition"><b>Einstieg</b><span>Ohne vorherigen Spezialskill möglich</span></div>')+
  '<div class="fp42-detail-condition"><b>Deine Lektionen</b><span>'+s.lessons.filter(l=>completed(l.id)).length+' / '+s.lessons.length+' abgeschlossen</span></div>'+
- '<div class="fp42-detail-condition"><b>Freischaltung</b><span>'+(done?'Skill bereits erlernt':active?'Lernpfad aktiv':ready?'3 Forschungspunkte':'Vorherigen Skill abschließen')+'</span></div>'+
+ '<div class="fp42-detail-condition"><b>Freischaltung</b><span>'+(done?'Skill bereits erlernt':active?'Lernpfad aktiv':ready?s.cost+' Forschungspunkte':'Vorherigen Skill abschließen')+'</span></div>'+
  '<div class="fp42-detail-reward">Bei Abschluss: <b>Skill + '+s.rewardPoints+' Forschungspunkte</b>, dazu individuelle Lern-XP</div>'+
  '<button type="button" class="btn" data-fp42-open="'+escape(s.id)+'">Zu den Skill-Lektionen →</button></div>';
 }
@@ -157,7 +157,7 @@ function guest(){
 function skillIndex(){
  if(!catalog)return shell('skilllessons','<div class="fp41-loading">Skill-Lektionen werden geladen.</div>');
  const current=currentSkill();
- let body='<div class="fp41-intro"><span class="eyebrow">FACHLICHE SPEZIALISIERUNGEN</span><h1>Deine Skill-Lektionen</h1><p>Jeder ausgewählte Skill besteht aus mehreren inhaltlich zusammenhängenden Lernaufgaben. Du kannst eine Erklärung jederzeit erneut lesen; die XP und Forschungspunkte werden nur nach bestandenem, serverseitig bestätigtem Abschluss vergeben.</p></div>'+profileLine();
+ let body='<div class="fp41-intro"><span class="eyebrow">FACHLICHE SPEZIALISIERUNGEN</span><h1>Deine Skill-Lektionen</h1><p>Skillfreischaltungen kosten mit jeder fachlichen Stufe mehr FP. Der Abschluss erstattet nur einen Teil der Punkte. Jeder Skill besteht aus mehreren Lernaufgaben. Du kannst eine Erklärung jederzeit erneut lesen; die XP und Forschungspunkte werden nur nach bestandenem, serverseitig bestätigtem Abschluss vergeben.</p></div>'+profileLine();
  if(!user())body+=guest();
  if(!current){
   if(window.FinanzPilotStudy)body+=window.FinanzPilotStudy.reviewWidget();
@@ -177,8 +177,8 @@ function skillIndex(){
  body+='<div class="fp41-detail"><span class="eyebrow">'+escape(catalog.branches.find(b=>b.id===current.branch)?.title||'Spezialisierung')+' · AUFBAUSTUFE '+current.tier+'</span>'+
  '<h2>'+escape(current.title)+'</h2><p>'+escape(current.description)+'</p>'+
  (required(current).length?'<p class="fp41-precondition"><b>Voraussetzungen:</b> '+required(current).map(id=>escape(titleOf(id))+(mastered(id)?' ✓':' · noch gesperrt')).join(' · ')+'</p>':'')+
- '<div class="fp41-detail-status">'+(done?'Skill erlernt · Abschlussbelohnung erhalten':selected?'Lernpfad freigeschaltet':ready?'Noch nicht gewählt · Kosten 3 Forschungspunkte':'Noch gesperrt')+'</div>'+
- (!selected?'<button class="btn" data-fp41-enroll="'+escape(current.id)+'" '+(!ready||!user()?'disabled':'')+'>Skill für 3 Forschungspunkte auswählen</button>':'')+'</div>';
+ '<div class="fp41-detail-status">'+(done?'Skill erlernt · Abschlussbelohnung erhalten':selected?'Lernpfad freigeschaltet':ready?'Noch nicht gewählt · Kosten '+current.cost+' Forschungspunkte':'Noch gesperrt')+'</div>'+
+ (!selected?'<button class="btn" data-fp41-enroll="'+escape(current.id)+'" '+(!ready||!user()?'disabled':'')+'>Skill für '+current.cost+' Forschungspunkte auswählen</button>':'')+'</div>';
  body+='<div class="fp41-lesson-list">'+current.lessons.map(l=>{
  const available=lessonAvailable(current,l),open=unlocked(l.id),done=completed(l.id);
  return '<article class="fp41-lesson-card'+(done?' done':available?' ready':' locked')+'"><span class="eyebrow">LEKTION '+l.sequence+' VON '+current.lessons.length+'</span><h3>'+escape(l.title)+'</h3><p>'+escape(l.explanation)+'</p><div class="fp41-lesson-info"><span>'+l.xp+' XP bei Abschluss</span><span>'+(done?'✓ Abgeschlossen':open?'Bereit zum Lernen':available?'1 FP oder 10 € Spielgeld':'Vorherige Lektion erst abschließen')+'</span></div>'+
