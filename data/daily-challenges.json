@@ -1,45 +1,63 @@
 {
   "schema_version": 1,
-  "date": "2026-11-01",
-  "updated_at": "2026-11-01T08:18:00+01:00",
-  "editor": "FinanzPilot Tagesredaktion – Originalquellenprüfung",
-  "explanation": "Sonntag ohne neue reguläre Börsenschlusskurse. Zwei neue Aufgaben mit Quellen vom 29.–30.10.2026. Alle Prognosen sind vom Lernenden begründete Szenarien, nicht Tatsachen.",
+  "date": "2026-11-02",
+  "updated_at": "2026-11-02T09:08:00+01:00",
+  "editor": "FinanzPilot Tagesredaktion – Originalquellen 29./30.10. und 26.08.2026",
+  "explanation": "Drei neue Aufgaben für Montag, 02.11.2026. Keine behaupteten Intraday-Kurse; ältere veröffentlichte Unternehmensberichte sind als historische Daten gekennzeichnet. Alle Szenarien sind Lernannahmen, keine Ergebnisprognosen.",
   "tasks": [
     {
-      "id": "2026-11-01:market:gdp-vergleich",
+      "id": "2026-11-02:market:inflation-energie-kern",
       "kind": "market",
-      "date": "2026-11-01",
-      "title": "Konjunktur: US-Wachstum korrekt mit Europa vergleichen",
-      "context": "BEA-Erstschätzung vom 29.10.: US-BIP Q3 2026 +3,4 % annualisiert (rund +0,84 % nicht annualisiert je Quartal). Eurostat vom 30.10.: Eurozone +0,4 % zum Vorquartal, Deutschland laut Destatis +0,2 %. Die Erhebungen sind vorläufig.",
-      "question": "Leite aus (1+0,034)^(1/4)-1 die nicht annualisierte US-Quartalsrate her, vergleiche sie methodisch sauber mit +0,4 % Eurozone und +0,2 % Deutschland und entwirf eine widerlegbare 6-Monats-These zu Zinsen, Unternehmensgewinnen und Aktienbewertungen. Welche Daten könnten die These widerlegen? Begründe eine plausible Gegenhypothese.",
+      "date": "2026-11-02",
+      "title": "Inflation: Was erklärt die Lücke zwischen 2,8 % und 2,1 %?",
+      "context": "Destatis-Schätzung vom 30.10.2026: deutsche Verbraucherpreise +2,8 % gegenüber Oktober 2025; Kernrate ohne Energie und Nahrungsmittel +2,1 %; Energiepreise +12,2 % gegenüber Vorjahr, nach +14,9 % im September. Die Monatsrate des Gesamtindex beträgt −0,2 %. Zahlen sind vorläufig.",
+      "question": "Berechne die Differenz zwischen Gesamt- und Kerninflation in Prozentpunkten sowie die Veränderung der Energie-Jahresrate zwischen September und Oktober. Erkläre, warum die Differenz nicht der direkte rechnerische Beitrag der Energie zur Gesamtinflation ist. Entwickle zwei gegensätzliche Zins-/Aktienbewertungsszenarien für die nächsten sechs Monate und nenne jeweils mindestens zwei Indikatoren, die deine These widerlegen würden.",
       "rubric": [
-        "US-Rate als ca. +0,84 % pro Quartal korrekt herleiten und annualisierte mit nicht annualisierten Raten nicht vermischen",
-        "Zeitpunkt, Revisionen, Wachstumszusammensetzung und Preisbereinigung benennen",
-        "Zwei gegensätzliche Wirkungswege über Gewinne und Diskontierung erklären",
-        "Mindestens zwei überprüfbare Indikatoren und konkreten 6-Monats-Prüftermin angeben"
+        "0,7 Prozentpunkte Abstand Gesamt- minus Kernrate und −2,7 Prozentpunkte Veränderung der Energie-Jahresrate korrekt berechnen",
+        "Warenkorbgewichte, Nahrungsmittel und unterschiedliche Indexzusammensetzung als Grund gegen die naive Beitragsrechnung benennen",
+        "Energieschock, Zweitrundeneffekte, Wachstum, Diskontsatz und Gewinne in beiden Szenarien trennen",
+        "Zwei überprüfbare Indikatoren je Szenario mit Quelle und Prüftermin bis April 2027 nennen"
       ],
-      "source": "U.S. BEA Q3 2026 GDP advance estimate; Eurostat Q3 2026 flash estimate",
-      "source_url": "https://www.bea.gov/news/2026/gdp-advance-estimate-3rd-quarter-2026",
-      "source_date": "2026-10-29",
-      "symbol": "AMEX:SPY"
+      "source": "Statistisches Bundesamt – Verbraucherpreise Oktober 2026, vorläufig",
+      "source_url": "https://www.destatis.de/EN/Press/2026/10/PE26_382_611.html",
+      "source_date": "2026-10-30",
+      "symbol": ""
     },
     {
-      "id": "2026-11-01:research:amazon-fcf-bridge",
+      "id": "2026-11-02:research:nvidia-cashflow-gaap",
       "kind": "research",
-      "date": "2026-11-01",
-      "title": "Amazon: Warum 13,9 % operative Marge keinen positiven FCF garantieren",
-      "context": "Amazon Q3 2026: Umsatz 201,9 Mrd. USD, operativer Gewinn 28,1 Mrd. USD, AWS-Umsatz 46,0 Mrd. USD und AWS-Betriebsgewinn 17,8 Mrd. USD. Zwölfmonats-Cashflow aus dem Geschäft 168,3 Mrd. USD, Sachinvestitionen netto 210,7 Mrd. USD, freier Cashflow rund −42,4 Mrd. USD. Alle Angaben vom 29.10.2026.",
-      "question": "Berechne Konzern- und AWS-Quartalsmarge (28,1/201,9 bzw. 17,8/46,0) sowie die Zwölfmonats-FCF-Bridge (168,3−210,7). Entwickle Bear/Base/Bull für die nächsten acht Quartale mit nachvollziehbaren Investitions-, Margen- und Bewertungsannahmen. Welcher Befund würde die optimistische These widerlegen und warum ist ein negatives FCF-Jahr allein kein abschließendes Verkaufsargument?",
+      "date": "2026-11-02",
+      "title": "NVIDIA: Umsatzwachstum, Cashflow und zwei EPS-Definitionen",
+      "context": "NVIDIA Q2 Geschäftsjahr 2027, veröffentlicht 26.08.2026, Quartal bis 26.07.2026: Umsatz 96.221 Mio. USD, Vorjahresquartal 46.743 Mio. USD; operativer Cashflow 24.077 Mio. USD; Free Cashflow 21.341 Mio. USD; GAAP-EPS verwässert 2,46 USD, Non-GAAP-EPS 2,22 USD. Der am 26.08. kommunizierte Q3-Umsatzausblick von 108 Mrd. USD ±2 % ist keine Ist-Zahl.",
+      "question": "Rechne das Umsatzwachstum gegenüber dem Vorjahresquartal, den FCF-Abstand zum operativen Cashflow und die Cashflow-Umwandlungsquote FCF/operativer Cashflow. Erkläre, warum das bereinigte EPS niedriger als GAAP-EPS sein kann, ohne einen unbewiesenen Einzeleffekt zu behaupten. Entwirf Bear/Base/Bull für die Bewertung und formuliere mindestens zwei konkrete Widerlegungsbedingungen.",
       "rubric": [
-        "Konzernmarge ca. 13,9 %, AWS-Marge ca. 38,7 % und Zwölfmonats-FCF ca. −42,4 Mrd. USD korrekt rechnen",
-        "Quartalsmargen und TTM-Cashflow nicht in dieselbe Periode mischen",
-        "Kapitalbedarf, Auslastung, Abschreibungen, Rendite auf Investitionen und Bewertungsniveau begründet diskutieren",
-        "Bear/Base/Bull mit expliziten Annahmen, stärkstem Gegenargument und messbarer Widerlegung für 2027–2028 formulieren"
+        "96.221/46.743−1 ≈ 105,9 % Umsatzwachstum korrekt rechnen, beide Perioden identisch halten",
+        "24.077−21.341 = 2.736 Mio. USD Differenz und 21.341/24.077 ≈ 88,6 % FCF/CFO korrekt ableiten; Definition der FCF-Überleitung prüfen",
+        "GAAP und Non-GAAP anhand offizieller Überleitung statt pauschaler Gleichsetzung behandeln",
+        "Drei Szenarien mit Margen-, Nachfrage-, Bewertungs- und Konzentrationsrisiken sowie datierten Prüfkriterien formulieren"
       ],
-      "source": "Amazon Q3 2026 Earnings Release",
-      "source_url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
-      "source_date": "2026-10-29",
-      "symbol": "NASDAQ:AMZN"
+      "source": "NVIDIA Investor Relations – Q2 FY2027 Results",
+      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
+      "source_date": "2026-08-26",
+      "symbol": "NVDA"
+    },
+    {
+      "id": "2026-11-02:learning:baywa-disclosure-risk",
+      "kind": "learning",
+      "date": "2026-11-02",
+      "title": "BayWa: Was darfst du aus einem verschobenen Bericht schließen?",
+      "context": "BayWa IR-Finanzkalender, am 02.11.2026 geprüft: Q1-Mitteilung 26.05.2026; Konzernfinanzbericht 2025 angekündigt für 22.12.2026; Halbjahresfinanzbericht 2026 für 26.02.2027; Q3-Termin noch offen. Das sind Veröffentlichungstermine, keine Geschäftszahlen.",
+      "question": "Entwirf ein transparentes Analyseprotokoll für eine hoch verschuldete Firma bei unvollständiger Berichtslage: Welche Aussagen sind Fakten, welche nur Erwartungen? Wie würdest du Liquidität, Finanzierung, Bilanzqualität und Verwässerungsrisiko prüfen, ohne fehlende Zahlen als null anzusetzen? Formuliere eine optimistische und eine skeptische These mit konkreten Bedingungen, die beide widerlegen können.",
+      "rubric": [
+        "Letzte tatsächlich veröffentlichte Q1-Mitteilung und spätere bloß angekündigte Berichte strikt trennen",
+        "Mindestens vier konkret zu beschaffende Bilanz-/Liquiditäts-/Finanzierungsnachweise nennen und Datenlücken offenlassen",
+        "Fortführungswahrscheinlichkeit und Wert je Altaktie getrennt analysieren, Kapitalmaßnahmen und Gläubigervorrang berücksichtigen",
+        "Zwei Gegenhypothesen mit messbaren Bedingungen und nächstem Berichtstermin entwickeln"
+      ],
+      "source": "BayWa AG – offizieller Finanzkalender 2026/2027",
+      "source_url": "https://www.baywa.com/investor-relations/finanzkalender/finanztermine",
+      "source_date": "2026-11-02",
+      "symbol": "BYW.MU"
     }
   ]
 }
