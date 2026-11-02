@@ -45,7 +45,7 @@ let cloudData=null;
 const user={id:'signed-test-user',email:'example@example.com'};
 const session={user,access_token:'test-token'};
 const db={
- from(table){assert.equal(table,'finanzpilot_progress');return{
+ from(table){if(table==='fp_progress_reset_marks')return{select(){return{eq(){return{async maybeSingle(){return {data:null,error:null}}}}}}};assert.equal(table,'finanzpilot_progress');return{
   select(){return{eq(){return{async maybeSingle(){reads++;return {data:cloudData,error:null}}}}}},
   async upsert(data){writes++;cloudData={progress_data:data.progress_data,allow_coach_analysis:false};return {error:null}},
   update(){return{eq:async()=>({error:null})}}
