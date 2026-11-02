@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 const read=x=>fs.readFileSync(x,'utf8');
 const mission=read('missions-v51.js'),html=read('index.html'),hub=read('learning-hub-v41.js'),nav=read('ux-v15.js'),app=read('app.js');
-assert(html.includes('missions-v51.css?v=51')&&html.includes('missions-v51.js?v=52'));
+assert(html.includes('missions-v51.css?v=51')&&html.includes('missions-v51.js?v=53'));
 assert(hub.includes("['missions','Missionen & Wiederholungen'"));
 assert(nav.includes("missions:'learn'"));
 assert(app.includes("window.FinanzPilotMissions.render()")&&app.includes("window.FinanzPilotMissions?.bind(root)"));
