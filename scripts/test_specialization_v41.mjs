@@ -6,7 +6,7 @@ const data=JSON.parse(read('data/specializations-v41.json'));
 const sql=read('supabase/specialization_progress_v41.sql');
 const streak=read('supabase/streak_promotion_upgrade_v41.sql');
 const app=read('app.js'),nav=read('ux-v15.js'),career=read('career.js'),html=read('index.html');
-assert.equal(JSON.parse(read('version.json')).version,51);
+assert.equal(JSON.parse(read('version.json')).version,52);
 assert.equal(data.branches.length,8);
 assert.equal(data.skills.length,52);
 assert.equal(data.special.length,3);
@@ -46,7 +46,7 @@ assert(!read('profile-v42.js').includes('data-section-route="skilltree"'),'Profi
 assert(app.includes("FinanzPilotLearningHub.tree()"));
 assert(app.includes("FinanzPilotLearningHub.skillIndex()"));
 assert(app.includes("FinanzPilotLearningHub.specials()"));
-assert(html.includes("learning-hub-v41.js?v=51")&&html.includes("learning-hub-v41.css?v=46"));
+assert(html.includes("learning-hub-v41.js?v=52")&&html.includes("learning-hub-v41.css?v=46"));
 assert(read('docs/CONNECTED_LEARNING_ARTIFACTS_V41.md').includes('maximal **vier aktive'));
 
 const routes=[];
