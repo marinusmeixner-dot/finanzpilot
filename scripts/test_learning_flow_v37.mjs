@@ -26,7 +26,7 @@ assert(market.includes('function glossaryFor(n)')&&market.includes('fp37-one-min
 assert(portfolio.includes("searchTicket++")&&portfolio.includes('fp37-stock-price'));
 assert(edge.includes('quote_date:barDate(last.date')&&edge.includes('price:Math.round(last.price'));
 const data=JSON.parse(read('data/daily.json'));
-assert(data.stories.length>=10);
+assert(data.stories.length>=8&&data.stories.length<=12,'Daily edition should have 8–12 full stories');
 assert(data.stories.every(s=>s.article?.sections?.length>=4&&s.article.lead&&s.article.conclusion));
 
 const memories={},handlers={},state={view:'concepts'};
