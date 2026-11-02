@@ -30,7 +30,7 @@ const html=read('index.html'),market=read('market-v34.js'),renderSrc=read('finan
 assert(html.includes('financial-report-v47.js?v=47'));
 assert(html.includes('financial-report-v47.css?v=47'));
 assert(/market-v34\.js\?v=\d+/.test(html));
-assert(market.includes('company-financials-v47.json?v=47'));
+assert(market.includes('company-financials-v47.json?v=62'),'The loader should fetch the V62 report cache key');
 assert(market.includes('FinanzPilotFinancialReports.render('));
 assert(market.includes('Array.isArray(c.report_sections)'),'The loader must accept schema-v2 sectioned financial reports, not filter them out');
 const w={render(){}},ctx=vm.createContext({window:w,document:{},URL,Intl,Number,console});
