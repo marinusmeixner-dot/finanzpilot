@@ -6,9 +6,9 @@ const html=read('index.html'),app=read('app.js'),hub=read('learning-hub-v41.js')
 const news=JSON.parse(read('data/editorial-core-v43.json'));
 const skills=JSON.parse(read('data/specializations-v41.json'));
 assert.equal(JSON.parse(read('version.json')).version,48);
-assert.equal(skills.skills.length,44,'44 coherent skills');
-assert.equal(skills.skills.flatMap(x=>x.lessons).length,132,'132 individual specialist lessons');
-assert.equal(new Set(skills.skills.map(x=>x.id)).size,44);
+assert.equal(skills.skills.length,52,'52 coherent skills');
+assert.equal(skills.skills.flatMap(x=>x.lessons).length,156,'156 individual specialist lessons');
+assert.equal(new Set(skills.skills.map(x=>x.id)).size,52);
 for(const x of skills.skills){assert(x.description.length>=70);assert(skills.skills.some(p=>p.id===x.parent)||x.parent===null);assert(x.lessons.length>=3);for(const l of x.lessons){assert(l.explanation.length>95&&l.example.length>60);assert(l.options.length===3);assert(l.correct>=0&&l.correct<3);}}
 assert(hub.includes('fp44-skill-overview'));
 assert(hub.includes('nodePos=s=>'));
@@ -46,8 +46,8 @@ vm.runInContext(hub,context);
 await w.FinanzPilotLearningHub.load();
 const main=w.FinanzPilotLearningHub.home(),tree=w.FinanzPilotLearningHub.tree(),lesson=w.FinanzPilotLearningHub.skillIndex();
 assert((main.match(/fp42-learn-entry/g)||[]).length===4,'Four vertically listed learning sections');
-assert((tree.match(/data-fp42-node=/g)||[]).length===44,'All skills mapped');
+assert((tree.match(/data-fp42-node=/g)||[]).length===52,'All skills mapped');
 assert((tree.match(/class="fp42-line/g)||[]).length>=44,'Parent edges exist');
 assert(lesson.includes('Alle Skill-Lektionen nach Fachgebiet'));
 assert(lesson.includes('fp44-skill-overview'));
-console.log('v44 regression passed: 3-skill promotion markers, 44 connected skills/132 lessons, single header counters, full free newsroom, reset-safe sync, shard forge and directly navigable learning.');
+console.log('v44 regression passed: 3-skill promotion markers, 52 connected skills/156 lessons, single header counters, full free newsroom, reset-safe sync, shard forge and directly navigable learning.');
