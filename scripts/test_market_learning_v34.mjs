@@ -10,7 +10,7 @@ const portfolio=read('portfolio.js');
 const stylesheet=read('market-v34.css');
 const daily=JSON.parse(read('data/daily.json'));
 const learning=JSON.parse(read('data/learning-news.json'));
-assert.equal(JSON.parse(read('version.json')).version,59);
+assert(JSON.parse(read('version.json')).version>=59,'App version must not regress below V59');
 assert(/market-v34\.js\?v=\d+/.test(html)&&/learning-news-v34\.js\?v=\d+/.test(html));
 assert(/market-v34\.css\?v=\d+/.test(html));
 assert(stylesheet.includes('position:fixed!important')&&stylesheet.includes('env(safe-area-inset-bottom'));
