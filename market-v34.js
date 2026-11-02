@@ -76,7 +76,7 @@ async function refresh(force=false){
   const rows=await client().from('fp_paper_watchlist').select('symbol,created_at').eq('user_id',uid).order('created_at',{ascending:false}).limit(500);
   if(rows.error)throw rows.error;if(uid!==user())return;
   const previouslyKnown=new Set(watch.map(x=>x.symbol));
-  watch=rows.data||[];window.dispatchEvent(new Event('fp-market-watchlist-ready'));const newSymbols=watch.map(x=>x.symbol).filter(x=>!previouslyKnown.has(x));
+  watch=rows.data||[];if(typeof Event!=='undefined')window.dispatchEvent?.(new Event('fp-market-watchlist-ready'));const newSymbols=watch.map(x=>x.symbol).filter(x=>!previouslyKnown.has(x));
   const syms=[...new Set([...watch.map(x=>x.symbol),...(active?[active]:[])])];
   if(syms.length){
    const result=await client().from('fp_paper_quotes').select('symbol,asset_name,currency,price,quote_date,source').in('symbol',syms);
