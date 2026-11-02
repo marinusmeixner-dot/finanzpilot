@@ -116,7 +116,8 @@
  function onClick(event){
   const target=event.target?.closest?.('button');
   if(!target||target.disabled)return;
-  if(target.matches('#fp52-audio-toggle,#fp52-settings-toggle,.fp52-settings button'))return;
+  if(target.matches('#fp52-settings-toggle,.fp52-settings button'))return;
+  if(target.matches('[data-fp51-choice],[data-fp41-answer],[data-fp44-craft]')){audioContext();return;}
   if(target.matches('[data-section-main],[data-section-route],[data-fp41-route],[data-fp51-tab],[data-section-back],[data-fp41-skill],[data-fp42-node],[data-fp51-route]')){
    if(Date.now()-lastNav<80)return;
    lastNav=Date.now();tone('tap');
