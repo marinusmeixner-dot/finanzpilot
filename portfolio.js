@@ -205,7 +205,9 @@
  }
  async function pick(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();jump('fp-depot-order-panel')}
  async function focus(code){symbol=String(code||'').toUpperCase();window.FinanzPilotNavigation?.route('depot');await load();const rows=[...document.querySelectorAll('#fp-depot-watchlist [data-fp34-inspect],.fp-depot-positions [data-depot-inspect],[data-fp34-inspect]')];const row=rows.find(x=>x.dataset.fp34Inspect===symbol||x.dataset.depotInspect===symbol);if(row)row.scrollIntoView({behavior:'smooth',block:'center'});else jump('fp-depot-order-panel')}
- window.FinanzPilotPortfolio={render,bind,load,trade,pick,focus,searchStocks,registerStock,removeWatch,calcPortfolio,currencyStats,isFresh,get quotes(){return quotes},get trades(){return trades},get watchlist(){return watchlist}};
+ window.FinanzPilotPortfolio={render,bind,load,trade,pick,focus,searchStocks,registerStock,removeWatch,calcPortfolio,currencyStats,isFresh,
+ get status(){const valid=hasLoaded&&!!user()&&currentUser===user();const stats=valid?currencyStats():null;return {loaded:valid,complete:valid&&!stats.unpriced,total:stats?.total??null,cash:stats?.cash??null,positions:stats?.positionCount??0,unpriced:!!stats?.unpriced}},
+ get quotes(){return quotes},get trades(){return trades},get watchlist(){return watchlist}};
  window.addEventListener('fp-auth-change',load);
  window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='depot'&&user())load()});
  window.addEventListener('online',()=>{if(user())load()});
