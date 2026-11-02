@@ -67,14 +67,14 @@ function weeklyEnd(){
 function dailyPage(){
  const q=rows('daily');
  return blockTitle('daily',q,'Deine Tagesmissionen','Drei kurze Aufgaben aus verschiedenen Bereichen – neue Auswahl jeden Tag nach Berliner Zeit.')+
- '<div class="fp51-rewardline"><b>3 FP</b> bei vollständig richtig gelösten drei Tagesfragen · '+(reward('daily')?'✓ Heute gutgeschrieben':'Einmal pro Kalendertag')+'</div>'+
+ '<div class="fp51-rewardline"><b>1 FP</b> bei vollständig richtig gelösten drei Tagesfragen · '+(reward('daily')?'✓ Heute gutgeschrieben':'Einmal pro Kalendertag')+'</div>'+
  q.map((r,i)=>entry(r,'daily',i)).join('')+
  '<p class="fp51-subtle">Jede Frage hat höchstens zwei Versuche. Die Antworten werden direkt vom Server bewertet; ein erneutes Laden bringt keine Extra-Punkte.</p>';
 }
 function reviewPage(){
  const q=rows('reviews');
  return blockTitle('review',q,'Wissen überprüfen','Fragen zu bereits vollständig gemeisterten Skills werden zeitversetzt erneut vorgelegt.')+
- '<div class="fp51-rewardline"><b>2 FP</b> für zwei vollständig richtig gelöste, fällige Wiederholungen · '+(reward('review')?'✓ Gutgeschrieben':'Nur wenn zwei passende Wiederholungen fällig sind')+'</div>'+
+ '<div class="fp51-rewardline"><b>1 FP</b> für zwei vollständig richtig gelöste, fällige Wiederholungen · '+(reward('review')?'✓ Gutgeschrieben':'Nur wenn zwei passende Wiederholungen fällig sind')+'</div>'+
  (q.length?q.map((r,i)=>entry(r,'review',i)).join(''):'<div class="fp51-empty"><h3>Gerade keine Wiederholungen fällig</h3><p>Schließe neue Skills vollständig ab. Danach erscheinen hier passende Fragen. Bereits überprüfte Inhalte werden abhängig von deinen bisherigen Wiederholungen später erneut abgefragt.</p><button class="btn secondary" type="button" data-fp51-route="skilllessons">Zu meinen Skill-Lektionen</button></div>')+
  '<p class="fp51-subtle">Die Wiederholungsintervalle beginnen mit einem Tag, werden später auf drei und sieben Tage ausgeweitet. Nur passende nachgewiesene Skills zählen.</p>';
 }
@@ -82,7 +82,7 @@ function weeklyPage(){
  const q=rows('weekly');
  return blockTitle('weekly',q,'Wochen-Challenge: Finanzfallstudie','Fünf aufeinander aufbauende Prüfschritte: erst rechnen, dann Bilanz, Risiko und Investmenturteil verbinden.')+
  '<div class="fp51-week-meta"><span>Woche ab '+esc(dateDisplay(data?.week_start))+'</span><span>Abgabeschluss Sonntag, '+esc(weeklyEnd())+'</span></div>'+
- '<div class="fp51-rewardline"><b>15 FP</b> für alle fünf richtig gelösten Schritte · '+(reward('weekly')?'✓ Diese Woche gutgeschrieben':'Einmal je Kalenderwoche')+'</div>'+
+ '<div class="fp51-rewardline"><b>3 FP</b> für alle fünf richtig gelösten Schritte · '+(reward('weekly')?'✓ Diese Woche gutgeschrieben':'Einmal je Kalenderwoche')+'</div>'+
  q.map((r,i)=>entry(r,'weekly',i)).join('')+
  '<p class="fp51-subtle">Rechenbeispiele der Fallstudien sind ausdrücklich fiktiv. Die Aufgabe ist kein Börsenhandel und löst keine Depotransaktionen aus.</p>';
 }
