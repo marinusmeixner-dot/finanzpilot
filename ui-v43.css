@@ -54,3 +54,6 @@
  .topbar .header-right .fp-small-streak{padding:7px 5px}
  .topbar .header-right .fp-topbar-sync{width:29px;min-width:29px;height:30px;min-height:30px}
 }
+
+/* V63: a draft choice has no correctness or failure color before explicit verification. */
+.option.selected:not(.correct):not(.wrong){background:#223d49;border:2px solid #8dd4bf;box-shadow:0 0 0 2px rgba(141,212,191,.12)}
