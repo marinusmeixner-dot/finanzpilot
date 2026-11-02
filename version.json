@@ -1,5 +1,5 @@
 {
-  "version": 55,
-  "release": "2026-11-02-v55",
-  "notes": "Stiller Hintergrund-Sync (Ladeanimation nur auf manuelles Auslösen); 36 anspruchsvollere Grundlagen-Multiple-Choice-Aufgaben für 18 Module mit plausiblen Antworten; nachweislich einmalige, nachträglich anrechenbare Grundlagenprämie 20 XP/1 FP je vollständige Lektion; eigene 100-Level-Karte mit echten, idempotenten FP-Prämien (+2, +5, +10 FP), Fortschritt und automatischer Level-Aufstiegsanimation; erste serverbestätigte Tages-Streak mit Belohnungsanzeige; korrekte Antworten nur mit kleinem Ton und ohne Animation, bestehende Daten bleiben erhalten."
+  "version": 56,
+  "release": "2026-11-02-v56",
+  "notes": "Neu austarierte Lernökonomie: Grundlagen 8–18 XP nach Schwierigkeit, 1 FP je abgeschlossener Etappe; 52 Skills kosten 3/5/7/9/11 FP und geben bei Abschluss nur 1/2/3/4/5 FP zurück. Level-XP-Schwellen steigen, FP nur in 5er- und 10er-Meilensteinen. Tagesmission +1 FP, Wissensprüfung +1 FP, Wochenfall +3 FP. Streak: vorwiegend virtuelles Euro-Guthaben, selten FP; Beförderung +2 FP und unverändert zwei Artefaktscherben. Alle serverseitigen Buchungen sind weiterhin einmalig; historische Guthaben und Belohnungen bleiben unberührt. Laufende und schon abgeschlossene Skills bleiben erhalten."
 }
