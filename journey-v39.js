@@ -133,15 +133,21 @@ function lesson(){
  if(page===0)content='<article class="fp39-reading"><span class="eyebrow">01 · VERSTEHEN</span><h2>Erst die Idee verstehen</h2><p>'+terms(m.explain)+'</p>'+(Array.isArray(m.details)?m.details.map(d=>'<section class="fp40-lesson-detail"><h3>'+esc(d.heading)+'</h3><p>'+terms(d.text)+'</p></section>').join(''):'')+'<div class="fp39-hint"><b>Dein Lernziel</b><p>'+esc(m.goal)+'</p></div></article>';
  if(page===1)content='<article class="fp39-reading"><span class="eyebrow">02 · BEISPIEL</span><h2>So sieht das im Alltag aus</h2><p>'+terms(m.example)+'</p>'+(m.challenge?'<section class="fp40-lesson-challenge"><h3>Jetzt selbst überlegen</h3><p>'+terms(m.challenge.prompt)+'</p><details><summary>Eine begründete Beispielantwort ansehen</summary><p>'+terms(m.challenge.solution)+'</p></details></section>':'')+'<div class="fp39-hint"><b>Verbindung zur Erklärung</b><p>Versuche, das Beispiel mit den gerade erklärten Grundlagen in eigenen Worten nachzuvollziehen. Die Fragen auf den nächsten Seiten prüfen genau diesen Zusammenhang.</p></div>'+(preparation?'<section class="fp57-bridge"><h3>Das brauchst du für die Fragen</h3><p>'+terms(preparation)+'</p></section>':'')+'</article>';
  if(page===2||page===3){
- const index=page-2,q=questions[index],a=answers[index],selected=a?.selected;
- content='<article class="fp39-reading"><span class="eyebrow">0'+(page+1)+' · VERSTÄNDNISCHECK</span><h2>'+terms(q.prompt)+'</h2><p>Wähle die fachlich beste Antwort. Bei Fehlern kannst du die Erklärung nochmals nachlesen und neu antworten.</p>'+(preparation?'<details class="fp57-bridge fp57-reminder"><summary>Begriffe und Verbindung zur Lektion wiederholen</summary><p>'+terms(preparation)+'</p></details>':'')+'<div class="fp39-choices">'+q.options.map((opt,i)=>'<button type="button" class="fp39-choice'+(selected===i?(a.correct?' correct':' wrong'):'')+'" data-journey-answer="'+i+'" '+(a?.correct?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+terms(opt)+'</button>').join('')+'</div>'+
- (a?'<div class="fp39-feedback '+(a.correct?'correct':'retry')+'"><b>'+(a.correct?'Richtig.':'Noch nicht. Du kannst es erneut versuchen.')+'</b><p>'+terms(q.explanation)+'</p></div>':'')+'</article>';
+ const index=page-2,q=questions[index],a=answers[index],draft=session.drafts?.[index],selected=a?.correct?a.selected:draft;
+ const judged=!!a,passed=a?.correct===true;
+ content='<article class="fp39-reading"><span class="eyebrow">0'+(page+1)+' · VERSTÄNDNISCHECK</span><h2>'+terms(q.prompt)+'</h2><p>Wähle die fachlich beste Antwort. Bei Fehlern kannst du die Erklärung nochmals nachlesen und neu antworten.</p>'+(preparation?'<details class="fp57-bridge fp57-reminder"><summary>Begriffe und Verbindung zur Lektion wiederholen</summary><p>'+terms(preparation)+'</p></details>':'')+'<div class="fp39-choices">'+q.options.map((opt,i)=>'<button type="button" class="fp39-choice'+(selected===i?(judged?(passed?' correct':' wrong'):' selected'):'')+'" data-journey-answer="'+i+'" aria-pressed="'+(selected===i)+'" '+(passed?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+terms(opt)+'</button>').join('')+'</div>'+
+ (judged?'<div class="fp39-feedback '+(passed?'correct':'retry')+'" role="status"><b>'+(passed?'Richtig.':'Noch nicht richtig. Wähle eine andere Antwort und prüfe erneut.')+'</b><p>'+terms(q.explanation)+'</p></div>':'')+
+ (page===3&&passed?'<div class="fp39-finish-inline"><b>Beide Fragen geschafft.</b><p>'+terms(m.goal)+'</p><small>Erst mit „Lektion abschließen“ wird dein Fortschritt abgeschlossen. Bereits erhaltene Belohnungen werden nicht erneut ausgezahlt.</small></div>':'')+'</article>';
  }
  if(page===4)content='<article class="fp39-reading fp39-finish"><span class="eyebrow">05 · LEKTION ABSCHLIESSEN</span><h2>Wissen gesichert</h2><p>'+esc(m.goal)+'</p><p>Beide Verständnisfragen wurden richtig beantwortet. Die nächste Lektion knüpft an das Gelernte an; du kannst diese Erklärung jederzeit noch einmal öffnen.</p><p class="fp39-plain-note">Belohnung beim ersten Abschluss mit Konto: +'+(6+2*n)+' XP'+(stageOf(n)?.modules.at(-1)?.id===m.id?' und +1 FP für die abgeschlossene Etappe':'')+'. Die XP steigen mit dem Schwierigkeitsgrad der Etappe. Bereits gebuchte Altprämien bleiben erhalten; erneutes Lesen gibt keine Punkte.</p></article>';
  const canAdvance=page<2||(page===2||page===3)&&Boolean(answers[page-2]?.correct);
  return '<div class="fp39-lesson">'+header+acronymGlossary(m,preparation)+content+'<div class="fp39-lesson-buttons">'+
  (page>0?'<button type="button" class="btn secondary" data-journey-prev>← Vorherige Seite</button>':'')+
- (page<4?'<button type="button" class="btn" data-journey-next '+(!canAdvance?'disabled':'')+'>'+(page===1?'Zu den Fragen':'Weiter')+' →</button>':
+ (page===2||page===3? (answers[page-2]?.correct?
+  (page===3?'<button type="button" class="btn" data-journey-complete>Lektion abschließen →</button>':
+   '<button type="button" class="btn" data-journey-next>Weiter zur Frage 2 →</button>'):
+  '<button type="button" class="btn" data-journey-check '+(session.drafts?.[page-2]===undefined?'disabled':'')+'>Antwort prüfen</button>'):
+ page<4?'<button type="button" class="btn" data-journey-next '+(!canAdvance?'disabled':'')+'>'+(page===1?'Zu den Fragen':'Weiter')+' →</button>':
  '<button type="button" class="btn" data-journey-complete>Lektion abschließen →</button>')+
  '</div><small class="fp39-lesson-note">Zurückblättern verändert keine richtige Antwort und löscht keinen Fortschritt.</small></div>';
 }
@@ -156,21 +162,31 @@ function showPage(page){
  const p=localSession(m.id);p.page=Math.max(0,Math.min(4,page));p.updatedAt=Date.now();persist();redraw();
  if(typeof window.scrollTo==='function')window.scrollTo({top:0,behavior:'instant'});
 }
+// Selection never grades or plays a sound; only the explicit check button does.
 function answer(choice){
  const m=current(),p=m&&localSession(m.id);if(!m||!p)return;
  const page=Math.max(0,Math.min(4,Number(p.page)||0));
  if(page<2||page>3)return;
- const q=m.questions[page-2],i=Number(choice);
- if(!Number.isInteger(i)||i<0||i>=q.options.length||p.answers[page-2]?.correct)return;
- p.answers[page-2]={selected:i,correct:i===q.correct,updatedAt:Date.now()};
- // A correct answer is acknowledged by sound only. The larger animation belongs to the lesson finish.
+ const index=page-2,q=m.questions[index],i=Number(choice);
+ if(!Number.isInteger(i)||i<0||i>=q.options.length||p.answers[index]?.correct)return;
+ p.drafts??={};p.drafts[index]=i;
+ if(p.answers[index]&&!p.answers[index].correct)delete p.answers[index];
+ p.updatedAt=Date.now();persist();redraw();
+}
+function checkAnswer(){
+ const m=current(),p=m&&localSession(m.id);if(!m||!p)return;
+ const page=Math.max(0,Math.min(4,Number(p.page)||0));
+ if(page<2||page>3)return;
+ const index=page-2,q=m.questions[index],i=p.drafts?.[index];
+ if(!Number.isInteger(i)||i<0||i>=q.options.length||p.answers[index]?.correct)return;
+ p.answers[index]={selected:i,correct:i===q.correct,updatedAt:Date.now()};
  window.FinanzPilotFeedback?.tone?.(i===q.correct?'answer':'wrong');
  p.updatedAt=Date.now();persist();redraw();
 }
 function complete(){
  const m=current();if(!m)return;
  const p=localSession(m.id);
- if(p.page!==4||!m.questions.every((q,i)=>p.answers[i]?.correct))return;
+ if(![3,4].includes(p.page)||!m.questions.every((q,i)=>p.answers[i]?.correct))return;
  const firstFinish=!state.completed[m.id];state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();window.FinanzPilotStudy?.seed?.(m.id);
  // The lesson itself is completed locally and verified by two correct answers.
  // Celebrate this immediately on the user's completion tap; never wait for cloud latency.
@@ -204,6 +220,7 @@ function bind(root=document){
  root.querySelectorAll('[data-journey-stage]').forEach(b=>b.addEventListener('click',()=>go('journey-'+b.dataset.journeyStage)));
  root.querySelectorAll('[data-journey-open]').forEach(b=>b.addEventListener('click',()=>open(b.dataset.journeyOpen)));
  root.querySelectorAll('[data-journey-answer]').forEach(b=>b.addEventListener('click',()=>answer(b.dataset.journeyAnswer)));
+ root.querySelector('[data-journey-check]')?.addEventListener('click',checkAnswer);
  root.querySelector('[data-fp59-glossary]')?.addEventListener('toggle',event=>{
   const m=current();if(!m)return;
   if(event.currentTarget.open)openedGlossaries.add(m.id);else openedGlossaries.delete(m.id);
