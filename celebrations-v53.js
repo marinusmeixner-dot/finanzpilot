@@ -18,7 +18,8 @@ const KINDS={
 const escape=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const prefersReduced=()=>!!window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches||window.FinanzPilotFeedback?.preferences?.motion==='off';
 let active=null,queue=[],dismissTimer=0,seen=new Map(),lastGesture=0;
-const MAX_QUEUE=4; // Bounded: lesson, server XP/FP, possible level-up and shard rewards must all survive.
+// Every unique confirmed reward must be shown; do not evict other earned effects.
+const MAX_QUEUE=24; // Informational soft cap for previews only.
 function mount(){
  if(!document.body)return null;
  let host=document.getElementById('fp53-celebration');
@@ -53,7 +54,6 @@ function clear(){
 function advance(){
  clear();
  if(queue.length&&!document.hidden)present(queue.shift());
- else queue.length=0;
 }
 function present(item){
  if(document.hidden)return;
@@ -64,14 +64,23 @@ function present(item){
  dismissTimer=setTimeout(advance,prefersReduced()?1400:KINDS[item.kind].duration);
 }
 function show(kind,detail={}){
- if(!Object.prototype.hasOwnProperty.call(KINDS,kind)||detail.confirmed!==true||document.hidden)return false;
+ if(!Object.prototype.hasOwnProperty.call(KINDS,kind)||detail.confirmed!==true)return false;
  const id=typeof detail.id==='string'?kind+':'+detail.id:'',now=Date.now();
  for(const [key,at] of seen){if(now-at>60000)seen.delete(key);}
  if(id&&seen.has(id))return false;
  if(id){seen.set(id,now);if(seen.size>40)seen.delete(seen.keys().next().value);}
  const entry={kind,detail:{title:String(detail.title||'').slice(0,85),text:String(detail.text||'').slice(0,150),value:String(detail.value||'').slice(0,50),sound:detail.sound!==false,demo:detail.demo===true}};
- if(kind==='promotion'&&active?.kind==='skill'){queue.length=0;clear();}
- if(active){if(queue.length===MAX_QUEUE)queue.shift();queue.push(entry);}else present(entry);
+ // The user can turn animations off without turning audio off. The award remains
+ // server-owned, and a confirmed cash reward still refreshes the displayed depot.
+ if(!entry.detail.demo&&['streak','level','promotion','artifact','reward','shards','skill','mission'].includes(kind)&&typeof Event==='function')
+  window.dispatchEvent?.(new Event('fp-reward-confirmed'));
+ if(window.FinanzPilotFeedback?.preferences?.motion==='off'){
+  if(!document.hidden&&entry.detail.sound!==false&&Date.now()-lastGesture<60000)
+   window.FinanzPilotFeedback?.tone?.(KINDS[kind].tone);
+  return true;
+ }
+ // Never drop a real achievement because another award animation is running.
+ if(active||document.hidden)queue.push(entry);else present(entry);
  return true;
 }
 function preview(kind='artifact'){
@@ -84,7 +93,7 @@ function stop(){queue.length=0;clear();}
 document.addEventListener('pointerdown',()=>{lastGesture=Date.now()},{passive:true});
 document.addEventListener('touchstart',()=>{lastGesture=Date.now()},{passive:true});
 document.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')lastGesture=Date.now()});
-document.addEventListener('visibilitychange',()=>{if(document.hidden)stop()});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden&&!active&&queue.length)present(queue.shift())});
 // An auth refresh must not erase an earned achievement mid-animation. A genuine sign-out
 // may clear stale account-specific overlays; current interactions remain nonblocking.
 window.addEventListener('fp-auth-change',()=>{if(!window.FinanzPilotCloud?.user)stop()});
