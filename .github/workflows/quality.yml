@@ -16,6 +16,8 @@ jobs:
         run: find . -type f -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -r -n1 node --check
       - name: Validate JSON files
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
+      - name: "V50: real earned analyst toolbox, calculations, security and account isolation"
+        run: node scripts/test_toolbox_v50.mjs
       - name: Check financial calculations and unlocks
         run: node scripts/test_career.mjs
       - name: Check economy idempotency and rewards
