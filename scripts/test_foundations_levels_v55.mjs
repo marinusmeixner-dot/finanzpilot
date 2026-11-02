@@ -25,14 +25,14 @@ assert(journey.includes('QUESTION_DATA')&&journey.includes('questionBankLoaded=t
 assert(journey.includes('reconcileQuestionSessions()'),'Migrate pending attempts when content changes');
 assert(journey.includes('state.completed?.[m.id]'),'Previously completed foundation lessons must survive');
 assert(journey.includes('FinanzPilotLevels?.awardFoundation?.(m.id,m.title,true)'));
-assert(journey.includes("FinanzPilotFeedback?.tone?.('answer')"),'Correct answer should have sound, not animation.');
+assert(journey.includes("FinanzPilotFeedback?.tone?.(i===q.correct?'answer':'wrong')"),'Correct answer should have sound, not animation.');
 const sync=read('sync.js');
 assert(sync.includes("status==='pending'&&showSpinner"),'Invisible progress sync should not spin.');
 assert(sync.includes("await sync(true,false)"),'Initial account sync must run without spinner.');
 assert(sync.includes('sync:()=>sync(true)'),'Explicit user manual sync must still be possible.');
 const levels=read('levels-v55.js'),css=read('levels-v55.css');
 assert(html.includes('levels-v55.js?v=57')&&html.includes('levels-v55.css?v=55'));
-assert(html.includes('journey-v39.js?v=57')&&html.includes('sync.js?v=57'));
+assert(html.includes('journey-v39.js?v=58')&&html.includes('sync.js?v=57'));
 assert(levels.includes('fp_foundation_complete_v55')&&levels.includes('fp_level_claim_v55'));
 assert(levels.includes('fp55-level')&&css.includes('.fp55-level.current'));
 assert(read('streak-v40.js').includes("show?.('streak'")&&read('streak-v40.js').includes('data?.awarded_now'));
