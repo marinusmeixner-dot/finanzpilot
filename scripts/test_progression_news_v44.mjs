@@ -27,7 +27,7 @@ assert(html.includes('economy.js?v=61'));
 assert(/market-v34\.js\?v=\d+/.test(html));
 assert(html.includes('learning-hub-v41.js?v=63'));
 assert(html.includes('header-v43.js?v=61'));
-assert(html.includes('ui-v43.css?v=64'));
+assert(html.includes('ui-v43.css?v=65'));
 assert(read('sync.js').includes('__reset_confirmed'));
 assert(read('sync.js').includes('fp_progress_reset_marks'));
 assert(read('supabase/reset_guard_v44.sql').includes("fp_guard_progress_reset_trigger"));
