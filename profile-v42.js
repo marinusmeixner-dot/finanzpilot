@@ -25,7 +25,7 @@ const btn=(id,name,description,numOrIcon)=>'<button type="button" class="fp42-pr
 function render(){
  const v=current(),remaining=Math.max(0,3-v.mastered%3),complete=v.mastered>0&&v.mastered%3===0?3:v.mastered%3;
  return '<div class="fp42-profile"><div class="fp42-profile-heading"><span class="eyebrow">DEIN FINANZPILOT</span><h1>Profil</h1><p>Deine Entwicklung, Erfolge und der nächste Schritt – ohne zusätzlichen Lernbaum auf dieser Seite.</p></div>'+
- '<section class="fp42-profile-hero"><div><span class="eyebrow">DEINE ENTWICKLUNG</span><h2>Level '+esc(v.oldLevel)+'</h2><p>'+num(v.oldXp)+' bisherige Lern-XP · '+num(v.sxp)+' neue Spezialisierungs-XP</p><small>Beide XP-Konten bleiben bis zur sicheren Zusammenführung getrennt gespeichert.</small></div>'+
+ '<section class="fp42-profile-hero"><div><span class="eyebrow">DEINE ENTWICKLUNG</span><h2>Level '+esc(v.oldLevel)+'</h2><p>'+num(window.FinanzPilotHeader?.xp||0)+' bestätigte XP · '+num(v.oldXp)+' bisherige Kurs-XP separat erhalten</p><small>XP aus Grundlagen und Spezialisierungen zählen zum neuen Levelpfad.</small><button type="button" class="btn secondary" data-section-route="levels">Level & Belohnungen ansehen</button></div>'+
  '<div class="fp42-profile-hero-orb"><strong>'+v.mastered+'</strong><span>Skills</span></div></section>'+
  '<div class="fp42-profile-stats">'+[
  ['Grundlagen',v.done+' / '+v.total,'Kurzlehrgang'],
@@ -39,6 +39,7 @@ function render(){
  (v.promotions?'<small>Jede neue Beförderung erhöht deine täglichen Streak-Belohnungen. Aktuell '+v.promotions+' bestätigte neue Beförderung(en).</small>':'<small>Mit jedem dritten neuen Skill erhältst du eine größere Belohnung und bessere tägliche Streak-Prämien.</small>')+
  '<button class="btn" type="button" data-section-route="learn">Im Lernen-Tab weitermachen →</button></section>'+
  '<section class="fp42-profile-more"><h2>Deine Erfolge und Werkzeuge</h2><p>Öffne die Details nur dann, wenn du sie brauchst.</p><div class="fp42-profile-links">'+
+ btn('levels','Level & Belohnungen','Dein XP-Fortschritt, nächster Levelaufstieg und alle einmaligen FP-Prämien','✦')+
  btn('missions','Missionen & Wiederholungen','Tagesquiz, gelernte Skills wiederholen und Wochenmission lösen','◎')+
  btn('inventory','Artefaktscherben & Inventar','Artefakte aus Scherben herstellen und Forschungspunkte einsehen','◇')+
  btn('career','Karriere & Analysewerkzeuge','Erreichte frühere Ränge, Analysehilfen und dauerhafte Auszeichnungen','✦')+
