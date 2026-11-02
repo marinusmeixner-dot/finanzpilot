@@ -1,5 +1,5 @@
 {
-  "version": 50,
-  "release": "2026-11-02-v50",
-  "notes": "Earned professional toolkit: seven new server-skill-unlocked functional analysis tools for financial reports, cash-flow reconciliation, five-year DCF sensitivity, portfolio shocks, trade position sizing, ETF after-cost purchasing power and research thesis auditing. Full numeric inputs, explanatory methods, risk warnings, primary report source link and date, account-scoped local saved analyses and copy/export; existing seven legacy tools, progress, XP, FP, rewards, research and simulation untouched. Dedicated V50 CI tests for calculator math and verified unlocks."
+  "version": 51,
+  "release": "2026-11-02-v51",
+  "notes": "Neuer Lernen-Bereich Missionen & Wiederholungen mit servergeprüften Tagesquizfragen, fälligen Kompetenzwiederholungen und fünfteiliger Wochenfallstudie. Echte Postgres-Synchronisierung über zwei Supabase-RPCs; periodensichere Antworten, Lernfeedback, einmalige FP-Prämien, mobiler Fragenmodus, Authentifizierung und direkter Einstieg zu fortgeschrittenen Freitext-Researchaufgaben. Bestehende Lern-, Reward-, Depot- und Forschungsdaten bleiben erhalten."
 }
