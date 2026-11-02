@@ -46,9 +46,9 @@ function unlock(){
 }
 const NOTES={
  tap:[[470,0,.045,.045]],
- correct:[[740,0,.085,.060]],
- answer:[[740,0,.085,.060]], // Standard, soft 85 ms confirmation; not a jingle.
- wrong:[[450,0,.11,.055]], // Neutral 110 ms lower failure cue; not an alarm.
+ correct:[[660,0,.080,.055]],
+ answer:[[660,0,.080,.055]], // Neutral, single 80 ms confirmation, no jingle.
+ wrong:[[440,0,.095,.050]], // Plain, slightly lower 95 ms error cue, no harsh buzz.
  lesson:[[523,0,.11,.08],[659,.12,.14,.09],[784,.29,.19,.11]],
  unlock:[[392,0,.11,.08],[494,.13,.12,.085],[659,.27,.19,.12]],
  skill:[[392,0,.11,.085],[523,.12,.12,.09],[659,.26,.13,.10],[784,.40,.22,.12]],
@@ -59,8 +59,8 @@ const NOTES={
  streak:[[440,0,.11,.08],[554,.13,.14,.095],[740,.30,.22,.115]],
  reward:[[540,0,.1,.09],[675,.12,.13,.11],[900,.28,.22,.12]],
  level:[[440,0,.12,.09],[660,.15,.16,.11],[880,.34,.22,.13]],
- retry:[[450,0,.11,.055]],
- error:[[450,0,.11,.055]]
+ retry:[[440,0,.095,.050]],
+ error:[[440,0,.095,.050]]
 };
 function tone(kind,force=false){
  if(!prefs.sound||document.hidden)return false;
