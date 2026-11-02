@@ -70,3 +70,7 @@
 .fp48-feedback summary{font-size:13px;font-weight:650;cursor:pointer}
 .fp48-feedback details p{margin-top:8px}
 .fp48-feedback .btn{justify-self:start;border-radius:11px}
+
+/* V63 – selected specialist answer remains provisional until 'Antwort prüfen'. */
+.fp41-question button.fp63-special-choice.selected:not(:disabled){border:2px solid #8dd4bf!important;background:#203e46!important;color:#e5fff0}
+.fp46-study-controls [data-fp41-check],.fp46-study-controls [data-fp41-finish]{min-width:165px}
