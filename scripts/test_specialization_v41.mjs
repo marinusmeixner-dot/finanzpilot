@@ -14,7 +14,7 @@ assert.equal(data.skills.reduce((n,s)=>n+s.lessons.length,0),156);
 const names=new Set(data.skills.map(x=>x.id));
 assert.equal(names.size,52);
 for(const s of data.skills){
- assert(s.description.length>=65&&s.cost===3);
+ assert(s.description.length>=65&&s.cost===2*s.tier+1&&s.rewardPoints===s.tier&&s.cost>s.rewardPoints);
  assert(s.lessons.length===3);
  assert(!s.parent||names.has(s.parent));
  assert(s.lessons.every((l,i)=>l.sequence===i+1));
