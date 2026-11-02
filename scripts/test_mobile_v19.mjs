@@ -6,14 +6,14 @@ const source=fs.readFileSync('sync.js','utf8');
 const css=fs.readFileSync('mobile-layout-v19.css','utf8');
 const markup=fs.readFileSync('index.html','utf8');
 assert(markup.includes('mobile-layout-v19.css?v=20'));
-assert(markup.includes('sync.js?v=46'));
+assert(markup.includes('sync.js?v=55'));
 assert(markup.includes('content="black"'));
 assert(css.includes('env(safe-area-inset-top'));
 assert(css.includes('position:sticky!important'));
 assert(css.includes('min-height:100dvh'));
 assert(source.includes("'fp-navigation'"));
 assert(source.includes("lastSyncAt"));
-assert(source.includes("afterUpload!==JSON.stringify(merged)"));
+assert(source.includes("afterUpload!==savedKeys"));
 assert(source.includes("clearTimeout(retryTimer)"));
 
 const registry=new Map(),eventListeners={},windowListeners={};
@@ -91,7 +91,7 @@ if(reloads)assert.equal(doc.getElementById('fp-quick-sync').dataset.syncState,'p
 const oldWrites=writes;
 memory.finanzpilot_v1=JSON.stringify({...JSON.parse(memory.finanzpilot_v1),xp:44});
 windowListeners['fp-progress-change']();
-assert.equal(doc.getElementById('fp-quick-sync').dataset.syncState,'pending');
+assert.equal(doc.getElementById('fp-quick-sync').dataset.syncState,'success');
 windowListeners['fp-navigation']();
 await wait(80);
 assert(writes>oldWrites,'Navigation must flush pending progress');
