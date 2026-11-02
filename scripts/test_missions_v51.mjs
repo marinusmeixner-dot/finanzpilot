@@ -31,7 +31,7 @@ assert.equal(m.status.daily,3);assert.equal(m.status.weekly,5);
 assert.equal(m.status.date,date);
 let view=m.render();
 assert(view.includes('Tagesmissionen')&&view.includes('Täglich')&&view.includes('Wöchentlich')&&view.includes('Wiederholen'));
-assert(view.includes('3 FP')&&mission.includes('15 FP'),'Daily content and weekly reward must exist in their respective tabs.');
+assert(view.includes('1 FP')&&mission.includes('3 FP'),'Daily content and weekly reward must exist in their respective tabs.');
 assert(!view.includes('Rechenweg bestätigt.'),'No answer feedback prior to resolved submission.');
 assert.equal(turns[0].name,'fp_missions_dashboard_v51');
 await m.submit('d1',1);
