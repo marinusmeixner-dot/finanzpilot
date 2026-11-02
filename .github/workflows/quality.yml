@@ -18,6 +18,8 @@ jobs:
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
       - name: "V56: Economically sustainable XP/FP and balanced skill investment"
         run: node scripts/test_economy_v56.mjs
+      - name: "V58: Audible high correct/wrong feedback and guaranteed lesson completion animations"
+        run: node scripts/test_lesson_audio_reward_v58.mjs
       - name: "V57: Balanced progression, idempotent EUR rewards, taught questions and correct back navigation"
         run: node scripts/test_gameplay_v57.mjs
       - name: "V55: Harder fundamentals, real XP/FP, background sync and level progression"
