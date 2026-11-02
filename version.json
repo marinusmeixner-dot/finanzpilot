@@ -1,5 +1,5 @@
 {
-  "version": 62,
-  "release": "2026-11-02-v62",
-  "notes": "Märkte > Kennzahlen lädt jetzt tatsächlich das V47-Berichtsformat mit report_sections statt alle gültigen Unternehmen herauszufiltern. Alphabet GOOG und GOOGL teilen sich einen vollständig quellengestützten Quartalsbericht aus SEC Q3 2026 mit 117 Kennzahlen in 8 Themenbereichen, inklusive Quartals- und Neunmonats-Cashflow, Bilanz, Gewinnrechnung, Segmenten und Regionen. Ursprüngliche Quellen- und Berichtsdatumsangaben bleiben erhalten; kein Eingriff in Depot, Belohnungen, Lernstand, Einstellungen oder Missionen."
+  "version": 63,
+  "release": "2026-11-02-v63",
+  "notes": "Lektionsantworten werden in Grundlagen und Skill-Lektionen zuerst nur ausgewählt, erst über 'Antwort prüfen' bewertet. Richtig/falsch bleiben stumm bis zum Prüfen; danach kurze einzelne Standardtöne. Derselbe Hauptbutton führt nach richtig geprüften Fragen weiter oder wird zu 'Lektion abschließen'. Server bestärkt Skill-Lektion erst nach Prüfung, echte Belohnungs-/Skill-/Levelanimationen beim Abschluss, ohne doppeltes XP/FP; historische Fortschritte und gesicherte Quizzes bleiben. Header zeigt Depotgesamtwert einschließlich Kasse und bewerteten Aktienpositionen, FP und Streak übersichtlich in zwei iPhone-Zeilen, keine Levelanzeige oder Tontests oben. Profil enthält genau zwei unabhängige Schalter für Animationen und Töne; alle bestätigten Streak-, Level-, Missions-, Artefakt- und Skillbelohnungen bleiben sichtbar. Laufende Finanzberichte, Märkte und Redaktion bleiben erhalten."
 }
