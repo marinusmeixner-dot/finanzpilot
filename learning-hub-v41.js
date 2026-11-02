@@ -255,6 +255,8 @@ async function action(kind,skill,lesson,payment,answer){
   notice=data?.message||'Gespeichert.';
   if(kind==='submit'&&data?.correct===true)window.FinanzPilotStudy?.seed?.(lesson);
   if(kind==='submit'&&typeof data?.correct==='boolean')window.FinanzPilotLessonView?.feedback?.(lesson,data.correct);
+  if(kind==='submit'&&data?.correct===false)window.FinanzPilotFeedback?.notify?.('retry',{text:'Noch nicht richtig – Erklärung prüfen.'});
+  if(kind==='submit'&&data?.correct===true)window.FinanzPilotFeedback?.notify?.(data?.promotion?'level':'correct',{text:data?.promotion?'Beförderung erreicht!':'Lektion erfolgreich abgeschlossen.'});
   if(kind==='submit'&&data?.correct===false)notice='Noch nicht richtig. Lies die Erklärung erneut und versuche es wieder.';
   if(kind==='submit'&&data?.correct===true&&data?.promotion)notice+=' Beförderung Nr. '+data.promotion+' erreicht! Forschungspunkte und virtuelles Depotgeld wurden gutgeschrieben.';
   await load(true);window.FinanzPilotEconomy?.refresh?.(false);
