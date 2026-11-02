@@ -25,7 +25,7 @@ assert(html.includes('sync.js?v=55'));
 assert(html.includes('economy.js?v=53'));
 assert(html.includes('market-v34.js?v=48'));
 assert(html.includes('learning-hub-v41.js?v=55'));
-assert(html.includes('header-v43.js?v=43'));
+assert(html.includes('header-v43.js?v=55'));
 assert(html.includes('ui-v43.css?v=43'));
 assert(read('sync.js').includes('__reset_confirmed'));
 assert(read('sync.js').includes('fp_progress_reset_marks'));
