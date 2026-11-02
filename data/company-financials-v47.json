@@ -1480,6 +1480,1245 @@
         "Keine aktuelle Q1-Bilanz, operative Cashflow-Rechnung oder geprüfte Verschuldungsaufstellung.",
         "Stand 02.11.2026 keine neuere veröffentlichte Quartalsrechnung im IR-Archiv; zukünftige Berichte nicht vorwegnehmen."
       ]
+    },
+    {
+      "symbol": "GOOG",
+      "aliases": [
+        "GOOGL"
+      ],
+      "name": "Alphabet Inc. (Google; Aktienklassen GOOG / GOOGL)",
+      "period": "Q3 2026 (Kalenderjahr)",
+      "period_end": "2026-09-30",
+      "published": "2026-10-28",
+      "currency": "USD",
+      "unit": "Mio.",
+      "source": {
+        "title": "Alphabet Inc. – Q3 2026 Earnings Release, 28.10.2026 (SEC Form 8-K, Exhibit 99.1)",
+        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+      },
+      "sources": [
+        {
+          "title": "Alphabet Q3 2026 – SEC 8-K Exhibit 99.1, veröffentlichte GuV, Cashflow, Segment- und Bilanzdaten (28.10.2026)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm"
+        },
+        {
+          "title": "Alphabet Form 10-Q für das Quartal zum 30.09.2026, SEC EDGAR (29.10.2026)",
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        }
+      ],
+      "verified_at": "2026-11-02",
+      "report_scope": "SEC_Form_10-Q_und_Earnings_Release",
+      "completeness": "umfangreich_quellenbasiert",
+      "report_overview": {
+        "summary": "Im dritten Quartal 2026 stieg der Alphabet-Umsatz um 25 % auf 127,6 Mrd. USD. Das operative Ergebnis wuchs auf 40,6 Mrd. USD. Der Quartalsüberschuss für Stammaktionäre fiel hingegen auf 26,2 Mrd. USD: Eine erhebliche Wertänderung von Aktienanlagen belastete das nicht-operative Ergebnis. Google Cloud verdoppelte den Umsatz ungefähr, während die Investitionen in technische Infrastruktur mit 51,4 Mrd. USD den operativen Cashflow von 42,3 Mrd. USD überstiegen. Der Free Cashflow war deshalb mit −9,1 Mrd. USD negativ. Das ist ein Cashflow-/Investitionsproblem, kein gleichzeitiger operativer Verlust.",
+        "positives": [
+          "Konzernumsatz 127.577 Mio. USD (+25 %), Google Cloud 30.709 Mio. USD (+103 % gegenüber Q3 2025).",
+          "Operativer Konzerngewinn 40.576 Mio. USD, gegenüber 31.228 Mio. USD im Vorjahresquartal.",
+          "Kassenbestand und marktgängige Wertpapiere: 265.098 Mio. USD zum 30. September 2026 – kein Quartalsumsatz."
+        ],
+        "negatives": [
+          "Free Cashflow Q3 2026 −9.065 Mio. USD: 42.290 Mio. USD operativer Cashflow minus 51.355 Mio. USD Anlageninvestitionen.",
+          "Nicht-operative Aufwendungen netto −8.221 Mio. USD statt +12.759 Mio. USD, vor allem durch Verluste auf Aktienwertpapiere.",
+          "Langfristige Schulden und Aktienemissionen nahmen zu; die Finanzierung und die Verwässerung gehören zur Analyse."
+        ],
+        "watch": [
+          "Trägt das Wachstum von Cloud und Suche die weiter steigenden Rechenzentrumsinvestitionen?",
+          "Cloud-Margen und Segmentgewinne separat prüfen; die Gesamtmarge ist nicht die Cloud-Marge.",
+          "Schulden, Kapitalerhöhungen und Investitionsrenditen verfolgen, nicht nur Umsatzwachstum.",
+          "Sondereffekte im nicht-operativen Ergebnis von wiederkehrender operativer Ertragskraft unterscheiden."
+        ]
+      },
+      "report_sections": [
+        {
+          "id": "guv_q3",
+          "title": "Gewinn- und Verlustrechnung – Quartal",
+          "description": "SEC-Konzern-GuV für Juli–September 2026; Vorjahresvergleich ausschließlich Q3 2025. Alle Beträge in Mio. USD außer je Aktie.",
+          "metrics": [
+            {
+              "label": "Konzernumsatz",
+              "value": 127577,
+              "previous": 102346,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Umsatzkosten",
+              "value": 51419,
+              "previous": 41369,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Bruttoergebnis (Umsatz − Umsatzkosten)",
+              "value": 76158,
+              "previous": 60977,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "derived",
+              "note": "Berechnung: 127.577 − 51.419 = 76.158 Mio. USD; Vergleich: 102.346 − 41.369 = 60.977."
+            },
+            {
+              "label": "Bruttomarge",
+              "value": 59.695,
+              "previous": 59.581,
+              "unit": "%",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "ratio",
+              "note": "Berechnung: Bruttoergebnis / Umsatz × 100; gerundet."
+            },
+            {
+              "label": "Forschung und Entwicklung",
+              "value": 20640,
+              "previous": 15151,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Vertrieb und Marketing",
+              "value": 8804,
+              "previous": 7205,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Allgemeine Verwaltung",
+              "value": 6138,
+              "previous": 7393,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Gesamtkosten und Aufwendungen",
+              "value": 87001,
+              "previous": 71118,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Operatives Ergebnis (Operating Income)",
+              "value": 40576,
+              "previous": 31228,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Operative Marge",
+              "value": 31.8,
+              "previous": 30.51,
+              "unit": "%",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "ratio",
+              "note": "Operating Income / Umsatz × 100; gerundet. Exakt berechneter Wert statt der auf ganze Prozent gerundeten SEC-Übersicht."
+            },
+            {
+              "label": "Sonstige Erträge / Aufwendungen netto",
+              "value": -8221,
+              "previous": 12759,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Nicht-operativ; darin erhebliche Marktwertverluste auf Eigenkapitalanlagen."
+            },
+            {
+              "label": "Ergebnis vor Steuern",
+              "value": 32355,
+              "previous": 43987,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Ertragsteueraufwand",
+              "value": 5887,
+              "previous": 9008,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Konzernüberschuss (Net income)",
+              "value": 26468,
+              "previous": 34979,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Dividenden auf Vorzugsaktien",
+              "value": 298,
+              "previous": 0,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Gewinn für Stammaktionäre",
+              "value": 26170,
+              "previous": 34979,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Unverwässertes Ergebnis je Aktie",
+              "value": 2.14,
+              "previous": 2.89,
+              "unit": "USD/Aktie",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Für Stammaktien laut SEC; Betrag in USD je Aktie."
+            },
+            {
+              "label": "Verwässertes Ergebnis je Aktie",
+              "value": 2.12,
+              "previous": 2.87,
+              "unit": "USD/Aktie",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Diluted EPS, verwässerte Basis; nicht bereinigt."
+            },
+            {
+              "label": "Gewichtete Anzahl Stammaktien – unverwässert",
+              "value": 12256,
+              "previous": 12086,
+              "unit": "Mio. Aktien",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Millionen Aktien."
+            },
+            {
+              "label": "Gewichtete Anzahl Stammaktien – verwässert",
+              "value": 12368,
+              "previous": 12203,
+              "unit": "Mio. Aktien",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Millionen Aktien."
+            }
+          ]
+        },
+        {
+          "id": "guv_9m",
+          "title": "Gewinn- und Verlustrechnung – neun Monate",
+          "description": "1. Januar bis 30. September, kein einzelnes Quartal. Vorjahresvergleich 9M 2025.",
+          "metrics": [
+            {
+              "label": "Konzernumsatz 9M",
+              "value": 357269,
+              "previous": 289007,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Umsatzkosten 9M",
+              "value": 138633,
+              "previous": 116768,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Forschung und Entwicklung 9M",
+              "value": 55891,
+              "previous": 42515,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Vertrieb und Marketing 9M",
+              "value": 24813,
+              "previous": 20478,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Allgemeine Verwaltung 9M",
+              "value": 16890,
+              "previous": 16141,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Gesamtkosten und Aufwendungen 9M",
+              "value": 236227,
+              "previous": 195902,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Operativer Gewinn 9M",
+              "value": 121042,
+              "previous": 93105,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Sonstige Erträge / Aufwendungen netto 9M",
+              "value": 127478,
+              "previous": 26604,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Ergebnis vor Steuern 9M",
+              "value": 248520,
+              "previous": 119709,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Ertragsteueraufwand 9M",
+              "value": 47281,
+              "previous": 21994,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Konzernüberschuss 9M",
+              "value": 201239,
+              "previous": 97715,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Gewinn für Stammaktionäre 9M",
+              "value": 200855,
+              "previous": 97715,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Verwässertes EPS 9M",
+              "value": 16.33,
+              "previous": 7.99,
+              "unit": "USD/Aktie",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported",
+              "note": "Neunmonatswert, nicht Q3."
+            }
+          ]
+        },
+        {
+          "id": "cash_q3",
+          "title": "Operativer Cashflow, Investitionen & Finanzierung – Q3",
+          "description": "Kapitalflussrechnung für Juli–September 2026; negative CapEx-Auszahlungen als positive Investitionshöhe separat gekennzeichnet.",
+          "metrics": [
+            {
+              "label": "Operativer Cashflow",
+              "value": 42290,
+              "previous": 48414,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Abschreibung Sachanlagen",
+              "value": 8369,
+              "previous": 5611,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Aktienbasierte Vergütung (nicht liquiditätswirksam)",
+              "value": 8630,
+              "previous": 6368,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Latente Ertragsteuern – Cashflow-Anpassung",
+              "value": 5539,
+              "previous": 8726,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Wertpapiergewinn/-verlust – Cashflow-Anpassung",
+              "value": 9048,
+              "previous": -10855,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Forderungen – Veränderung im operativen Cashflow",
+              "value": -3917,
+              "previous": -2381,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Vorräte – Veränderung im operativen Cashflow",
+              "value": -3220,
+              "previous": -526,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Andere Vermögenswerte – operativer Cashflow",
+              "value": -7807,
+              "previous": -767,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Verbindlichkeiten aus Lieferungen – operativer Cashflow",
+              "value": -165,
+              "previous": -444,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Abgegrenzte Erlöse – operativer Cashflow",
+              "value": 2551,
+              "previous": 681,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Sachanlageninvestitionen (CapEx, Auszahlungen)",
+              "value": 51355,
+              "previous": 23953,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "SEC-Auszahlungsbetrag 51.355 Mio. USD wird positiv als Investitionshöhe gezeigt; in der Kapitalflussrechnung steht −51.355."
+            },
+            {
+              "label": "Free Cashflow (operativer CF − CapEx)",
+              "value": -9065,
+              "previous": 24461,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "derived",
+              "note": "Nicht-GAAP-Kennzahl laut SEC-Reconciliation: 42.290 − 51.355 = −9.065 Mio. USD; 2025: 48.414 − 23.953 = 24.461."
+            },
+            {
+              "label": "Investitions-Cashflow netto",
+              "value": -71349,
+              "previous": -27777,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Finanzierungs-Cashflow netto",
+              "value": 29437,
+              "previous": -18383,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Zahlungen auf Aktiendividenden und Vorzüge",
+              "value": 2936,
+              "previous": 2537,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "SEC nennt negative Cashflow-Buchungen; positiv als gezahlter Betrag dargestellt."
+            },
+            {
+              "label": "Erlöse aus Ausgabe von Stammaktien netto",
+              "value": 12371,
+              "previous": 0,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Erlöse aus neuem Fremdkapital",
+              "value": 28996,
+              "previous": 6624,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Tilgung von Fremdkapital",
+              "value": 3626,
+              "previous": 7696,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Als positive Summe der Tilgungen dargestellt."
+            },
+            {
+              "label": "Rückkäufe von Aktien (Zahlungen)",
+              "value": 0,
+              "previous": 11504,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "SEC-Kapitalflussrechnung, keine Aussage über Aktienverwässerung allein."
+            }
+          ]
+        },
+        {
+          "id": "cash_9m",
+          "title": "Cashflow – neun Monate und letzte zwölf Monate",
+          "description": "Neunmonatssummen (Januar–September) sind von Quartalsgrößen und TTM (letzte 12 Monate) getrennt.",
+          "metrics": [
+            {
+              "label": "Operativer Cashflow 9M",
+              "value": 127149,
+              "previous": 112311,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Sachanlageninvestitionen 9M",
+              "value": 131953,
+              "previous": 63596,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported",
+              "note": "Auszahlungen als positiver Investitionsbetrag erfasst."
+            },
+            {
+              "label": "Free Cashflow 9M",
+              "value": -4804,
+              "previous": 48715,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "derived",
+              "note": "127.149 − 131.953 = −4.804 Mio. USD (2026); 112.311 − 63.596 = 48.715 Mio. USD (2025)."
+            },
+            {
+              "label": "Cashflow Investitionstätigkeit 9M",
+              "value": -217171,
+              "previous": -68515,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Cashflow Finanzierungstätigkeit 9M",
+              "value": 115757,
+              "previous": -44416,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Aktienbasierte Vergütung 9M",
+              "value": 23338,
+              "previous": 17882,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Aktienemissionen netto 9M",
+              "value": 42870,
+              "previous": 0,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Neue Fremdmittel netto eingezahlt 9M",
+              "value": 85222,
+              "previous": 38002,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Schuldentilgung 9M",
+              "value": 8879,
+              "previous": 26094,
+              "unit": "Mio. USD",
+              "period": "9M 2026",
+              "previous_period": "9M 2025",
+              "kind": "reported",
+              "note": "Tilgungsbetrag positiv dargestellt."
+            },
+            {
+              "label": "Operativer Cashflow TTM",
+              "value": 179551,
+              "unit": "Mio. USD",
+              "period": "TTM bis 30.09.2026",
+              "kind": "reported",
+              "note": "Letzte vier Quartale bis 30.09.2026."
+            },
+            {
+              "label": "CapEx TTM",
+              "value": 159804,
+              "unit": "Mio. USD",
+              "period": "TTM bis 30.09.2026",
+              "kind": "reported",
+              "note": "Letzte vier Quartale bis 30.09.2026."
+            },
+            {
+              "label": "Free Cashflow TTM",
+              "value": 19747,
+              "unit": "Mio. USD",
+              "period": "TTM bis 30.09.2026",
+              "kind": "derived",
+              "note": "179.551 − 159.804 = 19.747 Mio. USD; nicht mit Q3-Wert verwechseln."
+            }
+          ]
+        },
+        {
+          "id": "bilanz_aktiv",
+          "title": "Bilanz – Vermögen & Liquidität",
+          "description": "Stichtag 30.09.2026 gegenüber 31.12.2025. Der Vergleich ist KEIN Vorjahresquartal.",
+          "metrics": [
+            {
+              "label": "Zahlungsmittel",
+              "value": 56334,
+              "previous": 30708,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Marktgängige Wertpapiere",
+              "value": 208764,
+              "previous": 96135,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Liquidität aus Cash + marktfähigen Anlagen",
+              "value": 265098,
+              "previous": 126843,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock",
+              "note": "Von Alphabet gesondert ausgewiesene kombinierte Position, umfasst Wertpapiere."
+            },
+            {
+              "label": "Forderungen aus Lieferungen",
+              "value": 72784,
+              "previous": 62886,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Vorräte",
+              "value": 13308,
+              "previous": 2439,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Sonstiges Umlaufvermögen",
+              "value": 23475,
+              "previous": 13870,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Umlaufvermögen gesamt",
+              "value": 374665,
+              "previous": 206038,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Nicht börsengehandelte Wertpapiere",
+              "value": 135230,
+              "previous": 68687,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Aktive latente Steuern",
+              "value": 1458,
+              "previous": 9113,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Sachanlagen netto",
+              "value": 372827,
+              "previous": 246597,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Aktivierte Nutzungsrechte aus Leasing",
+              "value": 20273,
+              "previous": 15221,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Geschäfts- oder Firmenwert",
+              "value": 58117,
+              "previous": 33380,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Immaterielle Vermögenswerte netto",
+              "value": 8817,
+              "previous": 1283,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Übrige langfristige Vermögenswerte",
+              "value": 31925,
+              "previous": 14962,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Bilanzsumme",
+              "value": 1003312,
+              "previous": 595281,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            }
+          ]
+        },
+        {
+          "id": "bilanz_passiv",
+          "title": "Bilanz – Schulden, Finanzierung & Eigenkapital",
+          "description": "Stichtag 30.09.2026 und 31.12.2025; nicht mit Quartalsergebnissen gleichsetzen.",
+          "metrics": [
+            {
+              "label": "Verbindlichkeiten aus Lieferungen",
+              "value": 21975,
+              "previous": 12200,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Abgegrenzte Personalaufwendungen",
+              "value": 17729,
+              "previous": 17546,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Sonstige kurzfristige Verbindlichkeiten",
+              "value": 74317,
+              "previous": 55557,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Erlösanteile an Partner (abgegrenzt)",
+              "value": 11051,
+              "previous": 10864,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Abgegrenzte Umsatzerlöse",
+              "value": 9429,
+              "previous": 6578,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Kurzfristige Verbindlichkeiten gesamt",
+              "value": 134501,
+              "previous": 102745,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Langfristige Finanzschulden",
+              "value": 125102,
+              "previous": 46547,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock",
+              "note": "Kurzfristige Schuldenteile nicht enthalten; keine Net-Debt-Aussage."
+            },
+            {
+              "label": "Langfristige Ertragsteuerverbindlichkeiten",
+              "value": 12219,
+              "previous": 9531,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Passive latente Steuern",
+              "value": 27833,
+              "previous": 919,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Leasingverbindlichkeiten",
+              "value": 16815,
+              "previous": 12744,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Sonstige langfristige Verbindlichkeiten",
+              "value": 9293,
+              "previous": 7530,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Verbindlichkeiten gesamt",
+              "value": 325763,
+              "previous": 180016,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Eigenkapital aus Vorzugsaktien und Kapitalrücklagen",
+              "value": 18023,
+              "previous": 0,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Stammkapital und Kapitalrücklagen",
+              "value": 147068,
+              "previous": 93126,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Sonstiges kumuliertes Gesamtergebnis",
+              "value": -4326,
+              "previous": -1916,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Gewinnrücklagen",
+              "value": 516784,
+              "previous": 324055,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            },
+            {
+              "label": "Eigenkapital gesamt",
+              "value": 677549,
+              "previous": 415265,
+              "unit": "Mio. USD",
+              "period": "30.09.2026",
+              "previous_period": "31.12.2025",
+              "kind": "stock"
+            }
+          ]
+        },
+        {
+          "id": "segmente",
+          "title": "Google-Geschäftsbereiche & Ergebnisse",
+          "description": "Segmentwerte Q3 2026 gegenüber Q3 2025, inklusive konzerninterner nicht zugeordneten Kosten.",
+          "metrics": [
+            {
+              "label": "Google Services Umsatz",
+              "value": 96302,
+              "previous": 87052,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Google Cloud Umsatz",
+              "value": 30709,
+              "previous": 15157,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Other Bets Umsatz",
+              "value": 372,
+              "previous": 344,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Absicherungseffekte auf Konzernerlöse",
+              "value": 194,
+              "previous": -207,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Google Services operatives Ergebnis",
+              "value": 39157,
+              "previous": 33527,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Google Cloud operatives Ergebnis",
+              "value": 11121,
+              "previous": 3594,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Other Bets operatives Ergebnis",
+              "value": -2047,
+              "previous": -1426,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Nicht Segmenten zugeordnete Konzernkosten",
+              "value": -7655,
+              "previous": -4467,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Google Search und weitere Suche",
+              "value": 63350,
+              "previous": 56567,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Teilmenge von Google Services; nicht zusätzlich zum Segmentumsatz addieren."
+            },
+            {
+              "label": "YouTube Werbeerlöse",
+              "value": 11207,
+              "previous": 10261,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Teilmenge des Google-Werbeumsatzes."
+            },
+            {
+              "label": "Google Network Werbeerlöse",
+              "value": 7455,
+              "previous": 7354,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Google Werbeerlöse insgesamt",
+              "value": 82012,
+              "previous": 74182,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Abos, Plattformen & Geräte",
+              "value": 14290,
+              "previous": 12870,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Werbekosten für Traffic Acquisition (TAC)",
+              "value": 16366,
+              "previous": 14876,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Traffic Acquisition Costs, Aufwand nicht separater Erlös."
+            },
+            {
+              "label": "Google Cloud Segmentmarge",
+              "value": 36.214,
+              "previous": 23.711,
+              "unit": "%",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "derived",
+              "note": "11.121 / 30.709 × 100 (Q3 2026); 3.594 / 15.157 × 100 (Q3 2025)."
+            }
+          ]
+        },
+        {
+          "id": "regionen",
+          "title": "Umsatz nach Regionen",
+          "description": "Q3 2026 gegenüber Q3 2025, offizielle geografische SEC-Abgrenzung.",
+          "metrics": [
+            {
+              "label": "USA",
+              "value": 67681,
+              "previous": 48758,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "EMEA (Europa/Naher Osten/Afrika)",
+              "value": 32695,
+              "previous": 29911,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "APAC (Asien/Pazifik)",
+              "value": 19906,
+              "previous": 17819,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Übriges Amerika",
+              "value": 7101,
+              "previous": 6065,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported"
+            },
+            {
+              "label": "Währungsbereinigter Konzernumsatz",
+              "value": 128085,
+              "previous": 102553,
+              "unit": "Mio. USD",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Non-GAAP-Reconciliation ohne Hedging; Gegenbasis 2025 ohne Hedging. Nicht parallel als berichteten Umsatz verwenden."
+            },
+            {
+              "label": "Mitarbeitende zum Quartalsende",
+              "value": 204757,
+              "previous": 190167,
+              "unit": "Personen",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "stock",
+              "note": "Bestandsgröße zum 30.09.2026 vs. 30.09.2025, kein Fluss."
+            }
+          ]
+        }
+      ],
+      "assessment": "Die Quartalszahlen zeigen zwei verschiedene Entwicklungen. Der operative Konzerngewinn nahm auf 40,6 Mrd. USD zu, vor allem weil der Umsatz von Google Cloud und Google Services stieg. Der Gewinn für Stammaktionäre fiel trotzdem auf 26,2 Mrd. USD. Ausschlaggebend für die Differenz sind nicht-operative Wertpapierverluste: 8,7 Mrd. USD Verluste auf Eigenkapitalanlagen gegenüber Gewinnen im Vorjahresquartal. Diese Marktwertbewegungen sind nicht der gewöhnliche Ertrag des Werbe- oder Cloudgeschäfts. Die Cashflow-Rechnung zeigt wiederum eine andere Belastung: Trotz 42,3 Mrd. USD operativem Mittelzufluss wurden 51,4 Mrd. USD in Sachanlagen investiert, überwiegend technische Infrastruktur. Dadurch war der Quartals-Free-Cashflow −9,1 Mrd. USD, während der FCF der zurückliegenden zwölf Monate noch +19,7 Mrd. USD erreichte. Der Sachanlagebestand, die langfristigen Schulden, Aktienemissionen und Abschreibungen sind parallel deutlich gestiegen. Wachstum ist damit real, seine Finanzierung und Kapitalrendite aber offen. Googles Such- und Werbeumsatz stieg ebenfalls, doch bleibt abzuwarten, welche Teile der KI-Investitionen dauerhaft ausreichende Renditen erzielen. Der Bericht enthält historische Ergebnisse, keine gesicherten Prognosen oder Aussagen darüber, ob die Aktie derzeit günstig ist.",
+      "risks": [
+        "Weiter steigende Infrastrukturinvestitionen können den freien Cashflow erneut negativ halten.",
+        "Wettbewerb bei KI-Suche, Suchwerbung und Cloud sowie Preisdruck.",
+        "Schwankende Ergebnisse auf Wertpapieranlagen verzerren Quartals-Nettoergebnis und Gewinn je Aktie.",
+        "Langfristige Verschuldung, Finanzierungskosten, Aktienemissionen und Verwässerung.",
+        "Regulatorische und kartellrechtliche Risiken, einschließlich 2026 gezahlter europäischer Android-Strafe.",
+        "Cloud-Wachstum nicht automatisch auf zukünftige Gewinne und Renditen hochrechnen."
+      ],
+      "data_limitations": [
+        "SEC-Q3-Ergebnisveröffentlichung und Form 10-Q wurden verwendet; keine Audit-Bestätigung des unauditierten Quartals.",
+        "Bilanzen vergleichen 30.09.2026 mit 31.12.2025, nicht mit 30.09.2025. Die Umsatz-/GuV- und Cashflowvergleiche sind Q3 bzw. 9M gegen dieselbe Periode 2025.",
+        "Nicht-GAAP Free Cashflow = operativer Mittelzufluss minus CapEx; nicht identisch mit GAAP-Nettoergebnis oder Cashbestand. TTM ist ein anderer Zeitraum.",
+        "Cloud-Umsatz von 30.709 Mio. USD ist ein Teil der Gesamterlöse. Werbe-, Search- und Servicepositionen nicht miteinander doppelt addieren.",
+        "Keine Börsenkurse oder Bewertungen; keine Schätzung des aktuellen Kurs-Gewinn-Verhältnisses oder zukünftiger Renditen.",
+        "Einzelne Detailangaben (z. B. regionale Bruttoergebnisse, zukünftiger Cashflow) liegen nicht in den SEC-Segmenttabellen vor und werden nicht erfunden."
+      ],
+      "metrics": [
+        {
+          "key": "revenue",
+          "label": "Konzernumsatz",
+          "value": 127.577,
+          "previous": 102.346,
+          "unit": "Mrd. USD",
+          "comparison": "Q3 2025"
+        },
+        {
+          "key": "operating_income",
+          "label": "Operatives Ergebnis",
+          "value": 40.576,
+          "previous": 31.228,
+          "unit": "Mrd. USD",
+          "comparison": "Q3 2025"
+        },
+        {
+          "key": "net_income",
+          "label": "Gewinn Stammaktionäre",
+          "value": 26.17,
+          "previous": 34.979,
+          "unit": "Mrd. USD",
+          "comparison": "Q3 2025"
+        },
+        {
+          "key": "fcf",
+          "label": "Free Cashflow",
+          "value": -9.065,
+          "unit": "Mrd. USD",
+          "note": "Q3 2026, nicht-GAAP nach SEC: 42.290 Mio. operativer CF minus 51.355 Mio. CapEx"
+        },
+        {
+          "key": "cloud",
+          "label": "Google Cloud Umsatz",
+          "value": 30.709,
+          "previous": 15.157,
+          "unit": "Mrd. USD",
+          "comparison": "Q3 2025"
+        }
+      ]
     }
   ]
 }
