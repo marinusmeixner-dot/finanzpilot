@@ -19,6 +19,9 @@ assert(reveal.includes('dismissTimer=setTimeout(advance'),'Every award automatic
 assert(reveal.includes("level:{caption:'LEVEL AUFGESTIEGEN!'")&&reveal.includes("artifact:{caption:'NEUES ARTEFAKT'"),'Level and artifacts have distinct animations.');
 assert(hub.includes("data-fp41-check")&&hub.includes("data-fp41-finish"),'Special lessons check and finish in separate steps.');
 assert(!hub.includes("action('submit',selectedSkill,selectedLesson,null,Number(b.dataset.fp41Answer))"),'Selecting a specialist choice must not call RPC.');
+const legacy=read('app.js');
+assert(legacy.includes('function checkAnswer()')&&legacy.includes('id="\\${quiz.answered&&quiz.selected===q[2]?\'next-question\':\'check-answer\'}"'),'Classic lesson fallback also waits for explicit answer check.');
+assert(!legacy.includes('quiz.selected=i;quiz.answered=true;'),'Classic choice cannot grade immediately.');
 assert(hub.includes("action('submit',selectedSkill,selectedLesson,null,choice)"),'Only explicit check triggers RPC.');
 assert(hub.includes('pendingSuccess={lesson,kind:event'),'Store real reward for completion action.');
 assert(hub.includes("show?.(done.kind,done.detail)"),'Only finishing skill lesson presents its earned animation.');
