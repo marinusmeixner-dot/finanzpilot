@@ -266,6 +266,7 @@ async function action(kind,skill,lesson,payment,answer){
    const reward=event==='promotion'?'Skill '+(learningSkill?.title||'gemeistert')+' · +2 Artefaktscherben · +'+Number(data.promotion_euro||0).toLocaleString('de-DE')+' € Spielgeld':event==='skill'?'Alle Lektionen gemeistert. Dein neuer Skill gehört dir.':'Dein Wissen wurde serverseitig bestätigt.';
    const value=event==='promotion'?'Rang '+data.promotion:event==='skill'?'+'+Number(data.skill_reward||0)+' FP':'+'+Number(data.xp||0)+' XP';
    window.FinanzPilotCelebrations?.show?.(event,{confirmed:true,id:'mastery:'+lesson,title:event==='promotion'?'Beförderung Nr. '+data.promotion:event==='skill'?learningSkill?.title||'Skill abgeschlossen':learningLesson?.title||'Lektion bestanden',text:reward,value});
+   if(data.promotion)window.FinanzPilotCelebrations?.show?.('shards',{confirmed:true,id:'shards:promotion:'+data.promotion,title:'Zwei Artefaktscherben',text:'Echte Scherben erhalten. Sammle drei und stelle daraus ein neues Artefakt her.',value:'+2 Scherben'});
   }
   if(kind==='submit'&&data?.correct===false)notice='Noch nicht richtig. Lies die Erklärung erneut und versuche es wieder.';
   if(kind==='submit'&&data?.correct===true&&data?.promotion)notice+=' Beförderung Nr. '+data.promotion+' erreicht! Forschungspunkte und virtuelles Depotgeld wurden gutgeschrieben.';
