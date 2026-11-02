@@ -100,7 +100,6 @@ function bind(root=document){root.querySelector('[data-fp55-reload]')?.addEventL
 function start(){
  window.addEventListener('fp-auth-change',()=>{clearAccount();refresh(true);backfill()});
  window.addEventListener('fp-cloud-progress-imported',()=>{backfill()});
- window.addEventListener('fp-progress-change',()=>{if(user()&&!backfillRunning)backfill()});
  window.addEventListener('fp-account-reset-applied',()=>{const id=user();if(id)try{localStorage.removeItem(cacheKey(id))}catch{}clearAccount()});
  window.addEventListener('fp-navigation',()=>{if(user()&&Date.now()-lastFetch>120000)refresh();});
  refresh();backfill();
