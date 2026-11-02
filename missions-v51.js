@@ -111,9 +111,9 @@ async function submit(id,index){
   if(identity!==account())return;
   if(!result?.dashboard||!Array.isArray(result.dashboard.daily))throw Error('Der Server hat keine bestätigte Ergebnisübersicht zurückgegeben.');
   data=result.dashboard;loadedAt=Date.now();loadedUser=identity;
-  if(result.points_awarded>0){notice='Mission abgeschlossen: +'+result.points_awarded+' Forschungspunkte wurden serverseitig gutgeschrieben.';window.FinanzPilotEconomy?.refresh?.(false);window.FinanzPilotLearningHub?.load?.(true);}
-  else if(result.correct)notice='Richtig – deine Antwort ist auf dem Server gespeichert.';
-  else notice=result.resolved?'Bewertet. Die Musterlösung wird jetzt angezeigt.':'Noch nicht richtig – ein zweiter Versuch ist möglich.';
+  if(result.points_awarded>0){window.FinanzPilotFeedback?.notify?.('reward',{text:'Mission abgeschlossen: +'+result.points_awarded+' FP'});notice='Mission abgeschlossen: +'+result.points_awarded+' Forschungspunkte wurden serverseitig gutgeschrieben.';window.FinanzPilotEconomy?.refresh?.(false);window.FinanzPilotLearningHub?.load?.(true);}
+  else if(result.correct){window.FinanzPilotFeedback?.notify?.('correct',{text:'Richtig! Wissen gesichert.'});notice='Richtig – deine Antwort ist auf dem Server gespeichert.';}
+  else {window.FinanzPilotFeedback?.notify?.('retry',{text:result.resolved?'Erklärung ansehen und weiterlernen.':'Versuche es erneut.'});notice=result.resolved?'Bewertet. Die Musterlösung wird jetzt angezeigt.' :'Noch nicht richtig – ein zweiter Versuch ist möglich.';}
  }catch(e){error='Antwort wurde nicht bestätigt: '+String(e.message||e)}
  finally{working=false;if(typeof state!=='undefined'&&state.view==='missions')window.render?.()}
 }
