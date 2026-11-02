@@ -42,8 +42,8 @@ const memory={};
 const doc={readyState:'loading',addEventListener(){}};
 let calls={foundation:0,level:0},uid='account123';
 const client={rpc:async(name,params)=>{
- if(name==='fp_foundation_complete_v55'){calls.foundation++;return {data:{ok:true,awarded_now:true,module_id:params.p_module_id,xp_awarded:20,fp_awarded:1,xp_total:120},error:null}}
- if(name==='fp_level_claim_v55'){calls.level++;return {data:{ok:true,xp:120,level:2,next_xp:200,level_points_awarded:2,new_levels:[{level:2,points:2}],foundation_completed:1},error:null}}
+ if(name==='fp_foundation_complete_v55'){calls.foundation++;return {data:{ok:true,awarded_now:true,module_id:params.p_module_id,xp_awarded:8,fp_awarded:0,xp_total:120},error:null}}
+ if(name==='fp_level_claim_v55'){calls.level++;return {data:{ok:true,xp:120,level:2,next_xp:220,level_points_awarded:0,new_levels:[{level:2,points:0}],foundation_completed:1},error:null}}
  throw Error('unexpected RPC '+name);
 }};
 const events={};
@@ -53,9 +53,9 @@ const cx=vm.createContext({window:w,document:doc,localStorage:{getItem:key=>memo
 vm.runInContext(levels,cx,{filename:'levels-v55.js'});
 const manager=w.FinanzPilotLevels;
 assert(manager.render().includes('Level & Belohnungen'));
-assert(manager.render().includes('Level 10')&&manager.render().includes('+ 10 FP'));
+assert(manager.render().includes('Level 10')&&manager.render().includes('+ 2 FP')&&manager.render().includes('Level 5'));
 let response=await manager.awardFoundation('geld-wofuer','Finanzgrundlagen',true);
-assert.equal(response.xp_awarded,20);
+assert.equal(response.xp_awarded,8);
 assert.equal(calls.foundation,1);
 assert.equal(calls.level,1);
 assert(notices.some(n=>n.kind==='basics'));
@@ -65,5 +65,5 @@ assert.equal(response,null,'Idempotent client reward completion.');
 assert.equal(calls.foundation,1);
 assert(manager.render().includes('120'));
 assert(manager.render().includes('Level 2'));
-assert(manager.render().includes('+ 2 FP'));
-console.log('V55: 36 challenging foundations, synced one-time 20XP/1FP, level roadmap, audible correct answer, first streak and non-spinning background sync PASS.');
+assert(manager.render().includes('XP-Fortschritt'),'Ordinary levels do not mint FP');
+console.log('V55: 36 challenging foundations, difficulty XP/stage FP, level roadmap, audible correct answer, first streak and non-spinning background sync PASS.');
