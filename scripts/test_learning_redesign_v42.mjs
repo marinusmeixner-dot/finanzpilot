@@ -11,7 +11,7 @@ assert.equal(specials.skills.length,52);
 assert.equal(specials.skills.flatMap(s=>s.lessons).length,156,'No purchased course removed');
 assert(html.includes('learning-hub-v41.js?v=58'));
 assert(html.includes('learning-hub-v41.css?v=46'));
-assert(html.includes('profile-v42.js?v=56'));
+assert(html.includes('profile-v42.js?v=61'));
 assert(html.includes('profile-v42.css?v=44'));
 assert(!portfolio.includes('fp-depot-chart'),'No second stock chart at bottom of Depot');
 assert(!portfolio.includes('FinanzPilotCharts.html('),'Depot must not duplicate Märkte charts');
