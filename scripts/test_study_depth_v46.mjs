@@ -15,12 +15,12 @@ for(const mod of foundations.stages.flatMap(x=>x.modules)){
 for(const skill of skills.skills)for(const l of skill.lessons){
  assert(l.explanation.length>=130,l.id+' has thin explanation');
  assert(l.example.length>=60,l.id+' has thin example');
- assert(l.workedSteps?.length===3,l.id+' lacks 3 worked steps');
+ assert(l.workedSteps?.length>=3,l.id+' lacks at least 3 worked steps');
  assert(l.pitfall?.length>65&&l.transferPrompt?.length>50,l.id+' lacks error analysis or reflection');
  assert(l.options.length===3&&l.correct>=0&&l.correct<=2);
 }
 const numeric=skills.skills.flatMap(s=>s.lessons).filter(l=>l.practice);
-assert.equal(numeric.length,8);
+assert.equal(numeric.length,24);
 for(const l of numeric)assert(Number.isFinite(l.practice.answer)&&Number.isFinite(l.practice.tolerance)&&l.practice.explanation.length>20);
 for(const id of ['working-capital-diagnose','realrendite-kaufkraft','backtests-kritisch','kreditrisiko-unternehmen'])assert(skills.skills.some(s=>s.id===id));
 const html=read('index.html'),hub=read('learning-hub-v41.js'),sync=read('sync.js');
