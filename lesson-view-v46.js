@@ -50,7 +50,7 @@ function bind(root=document){
   const value=Number(raw),cat=window.FinanzPilotLearningHub?.catalog,lesson=cat?.skills?.flatMap(s=>s.lessons).find(l=>l.id===selected),p=lesson?.practice;
   if(!p||!Number.isFinite(value))return;
   const correct=Math.abs(value-p.answer)<=Number(p.tolerance||0.001);
-  if(correct)window.FinanzPilotFeedback?.tone?.('correct');
+  window.FinanzPilotFeedback?.tone?.(correct?'answer':'wrong');
   out.textContent=correct?'Richtig. '+p.explanation:'Noch nicht. Prüfe die Formel und die Ausgangswerte. '+p.explanation;
  });
 
