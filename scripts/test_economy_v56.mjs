@@ -41,7 +41,7 @@ assert(levels.includes("Number(result.fp_awarded)>0"));
 assert(hub.includes("'Für '+s.cost+' FP auswählbar")&&hub.includes("current.cost+' Forschungspunkte"));
 assert(!hub.includes("Skill für 3 Forschungspunkte auswählen"));
 assert(missions.includes("<b>1 FP</b>")&&missions.includes("<b>3 FP</b>"));
-assert(streak.includes("'+Number(result.today_points)+' FP'")&&streak.includes("TAGESBESUCH BESTÄTIGT"));
+assert(streak.includes("show?.('streak'")&&streak.includes("euro(data.today_euros||0)")&&streak.includes("data?.awarded_now"),'Daily streak animation shows exact confirmed virtual euros and optional FP, never generic placeholder.');
 assert(foundation.includes("fp56-foundation-reward")&&foundation.includes("(6+2*n)"));
 const threshold=n=>100*(n-1)+10*(n-1)*(n-2);
 assert.deepEqual([1,2,3,4,5,10,20].map(threshold),[0,100,220,360,520,1620,5320]);
