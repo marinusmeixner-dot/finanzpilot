@@ -57,7 +57,7 @@ userId=null;
 await assert.rejects(()=>api.submit(api.tasks[1],content));
 assert.equal(rows.length,1);
 assert(read('app.js').includes("state.view==='dailyreview'"));
-assert(read('ux-v15.js').includes("dailyreview:'markets'"));
+assert(read('ux-v15.js').includes("dailyreview:'learn'"));
 assert(read('academy.js').includes('data-academy-opinion="daily"'));
 assert(!read('academy.js').includes('data-academy-opinion="github"'));
 assert(read('sync.js').includes('get reviewClient()'));
