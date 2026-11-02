@@ -159,7 +159,7 @@ function render(){
   if(!g.available)html+='<p>'+esc(g.reason)+'</p><button type="button" class="btn secondary" data-fp50-learn>Zum passenden Skill</button>';
   else html+='<p>'+esc(d.desc)+'</p>'+(d.id==='report'&&reportProblem?'<p>'+esc(reportProblem)+'</p>':'')+
    '<form class="fp50-form" data-fp50-form="'+esc(d.id)+'"><div class="fp50-fields">'+fieldsHtml(d)+'</div><button class="btn" type="submit">'+(d.id==='report'?'Bericht prüfen':'Auswerten')+'</button></form>'+
-   '<div class="fp50-result-slot" id="fp50-result" aria-live="polite">'+(output||'')+'</div>'+
+   '<div class="fp50-result-slot" id="fp50-result" aria-live="polite">'+(output||'')+'</div><p class="fp50-feedback" id="fp50-feedback" role="status"></p>'+
    (d.id!=='report'?'<div class="fp50-actions"><button class="btn secondary" type="button" data-fp50-save>Analyse lokal speichern</button><button class="btn secondary" type="button" data-fp50-copy>Ergebnis kopieren</button></div>':'');
   html+='</article>';
  }
@@ -175,14 +175,14 @@ function currentValues(root){
  const v={};for(const el of form.querySelectorAll('[name]'))v[el.name]=el.value;
  return v;
 }
-function setFeedback(s){const out=document.getElementById('fp50-result');if(out)out.textContent=String(s);}
+function setFeedback(s){const out=document.getElementById('fp50-feedback');if(out)out.textContent=String(s);}
 function bind(root=document){
  root.querySelectorAll('[data-fp50-open]').forEach(b=>b.addEventListener('click',()=>{active=b.dataset.fp50Open;output='';lastRaw=null;if(active==='report')loadReports();window.render?.();document.querySelector('.fp50-panel')?.scrollIntoView?.({block:'start',behavior:'smooth'});}));
  root.querySelector('[data-fp50-close]')?.addEventListener('click',()=>{active=null;output='';lastRaw=null;window.render?.()});
  root.querySelector('[data-fp50-learn]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.('skilllessons'));
  const form=root.querySelector('[data-fp50-form]');
  form?.addEventListener('submit',e=>{
-  e.preventDefault();try{const v=currentValues(root);lastRaw=null;
+  e.preventDefault();try{setFeedback('');const v=currentValues(root);lastRaw=null;
    if(active==='report'){output=reportView(v.symbol);lastRaw={tool:active,values:v,summary:'Bericht '+v.symbol};}
    else{const a=calc(active,v);output=htmlResult(a);lastRaw={tool:active,values:v,summary:a.summary,plain:a.facts.map(row=>row[0]+': '+row[1]+(row[2]?' '+row[2]:'')).join('\n')+'\n'+a.math+'\n'+a.caution};}
    const out=document.getElementById('fp50-result');if(out)out.innerHTML=output;
