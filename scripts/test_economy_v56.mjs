@@ -36,7 +36,7 @@ assert(!/delete\s+from\s+public\.fp_(foundation_rewards_v55|level_rewards_v55)/i
 assert(levels.includes("const threshold=n=>100*(n-1)+10*(n-1)*(n-2)"));
 assert(levels.includes("n%10===0?2:n%5===0?1:0"));
 assert(levels.includes("const end=100;"),'Show complete roadmap to level 100.');
-assert(levels.includes("Array.isArray(answer.new_levels)&&answer.new_levels.length"),'Real level-up effect even when no FP prize.');
+assert(levels.includes("for(const reached of freshLevels)"),'Real level-up effect even when no FP prize.');
 assert(levels.includes("Number(result.fp_awarded)>0"));
 assert(hub.includes("'Für '+s.cost+' FP auswählbar")&&hub.includes("current.cost+' Forschungspunkte"));
 assert(!hub.includes("Skill für 3 Forschungspunkte auswählen"));
