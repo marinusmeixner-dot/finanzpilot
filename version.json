@@ -1,5 +1,5 @@
 {
-  "version": 60,
-  "release": "2026-11-02-v60",
-  "notes": "Watchlist-Unternehmensartikel (einschließlich Alphabet GOOG) werden auf der Startseite zusätzlich in einem hervorgehobenen eigenen Bereich angezeigt, ohne ihre Originaldaten umzudatieren. Startseite aktualisiert sich nach Laden der privaten Watchlist automatisch. Alle anderen Lern-/Depotdaten, XP, FP und serverseitigen Belohnungen bleiben unangetastet."
+  "version": 61,
+  "release": "2026-11-02-v61",
+  "notes": "Profil enthält genau zwei persistente Schalter für Antwort-/Belohnungstöne und automatisch ausblendende Erfolgsanimationen; keine Sound-/Animationstests, keine Schalter in der Kopfzeile. Kopfzeile zeigt statt Level den servergeladenen virtuellen Gesamtdepotwert in EUR aus Kassenbestand plus bewerteten Aktienpositionen, bei unvollständigen Börsendaten statt irreführendem Wert einen Strich. Standardisierte leise, gewöhnliche Richtig-/Falsch-Töne. Jede bestätigte Belohnung wird mit einer Animation visualisiert: Level, Streak, abgeschlossene Lektion, Skill, Beförderung, FP, Scherben, Artefakt und deren Auszahlung/Freischaltung. Mehrere Levelprämien werden einzeln gezeigt. Keine neuen künstlichen XP oder FP, bestehende Konten und Spielstände bleiben erhalten. V60 Ergänzung der Watchlist-Unternehmensartikel auf Start bleibt bestehen."
 }
