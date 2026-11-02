@@ -18,9 +18,9 @@ assert(app.includes("if(state.view==='streaks')window.FinanzPilotStreak?.bind(ro
 assert(streak.includes('function render()')&&streak.includes("panelHtml(true)"),'The Streak view shows the seven-day history and milestone ladder without a modal.');
 assert(streak.includes("if(typeof state!=='undefined'&&state.view==='streaks')window.render?.()"),'Fresh checkin repaints the profile view.');
 assert(streak.includes("show?.('streak'")&&streak.includes('data?.awarded_now'),'A new confirmed Streak still triggers celebration.');
-assert(css.includes('grid-template-rows:auto auto')&&css.includes('#fp-quick-sync'),'Mobile header displays sync without overflow.');
+assert(css.includes('flex-flow:row nowrap!important')&&css.includes('#fp-quick-sync'),'Mobile header displays sync without overflow.');
 assert(html.includes('app.js?v=64')&&html.includes('streak-v40.js?v=64')&&html.includes('profile-v42.js?v=64'),'iOS receives fresh JS instead of cached versions.');
-assert(html.includes('ui-v43.css?v=67')&&html.includes('streak-v40.css?v=64'),'iOS receives fresh responsive layout.');
+assert(html.includes('ui-v43.css?v=68')&&html.includes('streak-v40.css?v=64'),'iOS receives fresh responsive layout.');
 let onInit=null;
 const doc={readyState:'loading',getElementById:()=>null,addEventListener:(type,cb)=>{if(type==='DOMContentLoaded')onInit=cb}};
 const win={FinanzPilotCloud:{user:null,paperClient:null},addEventListener(){},FinanzPilotCelebrations:{show(){throw Error('No award without confirmed checkin.')}}};
