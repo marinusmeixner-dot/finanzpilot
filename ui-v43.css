@@ -57,3 +57,19 @@
 
 /* V63: a draft choice has no correctness or failure color before explicit verification. */
 .option.selected:not(.correct):not(.wrong){background:#223d49;border:2px solid #8dd4bf;box-shadow:0 0 0 2px rgba(141,212,191,.12)}
+
+/* V64: no Streak in the topbar; only FP, portfolio value and manual sync on phones. */
+#fp43-depot-trigger.fp60-depot-pill{min-width:0}
+#fp43-depot-trigger.fp60-depot-pill strong{white-space:nowrap}
+@media(max-width:700px){
+ .topbar .header-right{justify-content:flex-end;gap:7px}
+ .topbar .header-right #fp43-fp-trigger{flex:0 0 auto;white-space:nowrap}
+ .topbar .header-right #fp43-depot-trigger{flex:0 1 auto;min-width:0;max-width:100%;padding-inline:11px}
+ .topbar .header-right #fp43-depot-trigger strong{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-variant-numeric:tabular-nums}
+ .topbar .header-right #fp-quick-sync{flex:0 0 34px;width:34px;min-width:34px;min-height:34px}
+}
+@media(max-width:360px){
+ .topbar .header-right{gap:5px}
+ .topbar .header-right #fp43-depot-trigger{padding-inline:7px}
+ .topbar .header-right #fp-quick-sync{flex-basis:30px;width:30px;min-width:30px}
+}
