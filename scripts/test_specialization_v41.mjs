@@ -8,11 +8,11 @@ const streak=read('supabase/streak_promotion_upgrade_v41.sql');
 const app=read('app.js'),nav=read('ux-v15.js'),career=read('career.js'),html=read('index.html');
 assert.equal(JSON.parse(read('version.json')).version,48);
 assert.equal(data.branches.length,8);
-assert.equal(data.skills.length,44);
+assert.equal(data.skills.length,52);
 assert.equal(data.special.length,3);
-assert.equal(data.skills.reduce((n,s)=>n+s.lessons.length,0),132);
+assert.equal(data.skills.reduce((n,s)=>n+s.lessons.length,0),156);
 const names=new Set(data.skills.map(x=>x.id));
-assert.equal(names.size,44);
+assert.equal(names.size,52);
 for(const s of data.skills){
  assert(s.description.length>=65&&s.cost===3);
  assert(s.lessons.length===3);
