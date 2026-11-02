@@ -1,5 +1,5 @@
 {
-  "version": 68,
-  "release": "2026-11-02-v68",
-  "notes": "Kopfzeile auf iPhone technisch neu aufgebaut: Originale einzeilige Flex-Ausrichtung wiederhergestellt und alle widersprüchlichen 100%-Breite-/Grid-Overrides aus V63–V67 entfernt. FP, kompletter oder nötigenfalls gekürzter Depotwert und Sync passen gemeinsam neben das echte Logo-Element .mobile-logo; Sync hat feste 34px und kann nicht aus dem Display gedrückt werden. Browser-Geometrie bei 320, 360, 375, 390, 393, 416, 430 und 700 px geprüft: kein horizontaler Überlauf, rechter Sync-Rand stets innerhalb des Displays. iOS-Cache neu versioniert; keine Änderungen an Lernfortschritt, Konten oder Depotwert."
+  "version": 69,
+  "release": "2026-11-02-v69",
+  "notes": "V69: Der originale mobile Markenblock bleibt nach dem Start erhalten. Bisher entfernte die Navigation das Element .mobile-logo und ersetzte es durch .fp-mobile-brand, das von den V68-Layoutregeln nicht erfasst wurde. Der Sync-Knopf bleibt auch auf sehr schmalen iPhones 34px breit. Ein Regressionstest prüft den Laufzeit-DOM-Umbau. Depot, Lernstände und Belohnungen bleiben unverändert."
 }
