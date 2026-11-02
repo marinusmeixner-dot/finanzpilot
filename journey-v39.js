@@ -5,6 +5,7 @@
 'use strict';
 const DATA='./data/journey-v39.json';
 const STORAGE='finanzpilot_journey_v1';
+const QUESTION_DATA='./data/journey-questions-v55.json';
 const esc=value=>String(value??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=()=>{try{const x=JSON.parse(localStorage.getItem(STORAGE)||'{}');return x&&typeof x==='object'?x:{}}catch{return{}}};
 let data=null,loading=false,error='',state={completed:{},lessons:{},...read()},selectedId=String(read().selected||'');
@@ -82,7 +83,7 @@ function lesson(){
  content='<article class="fp39-reading"><span class="eyebrow">0'+(page+1)+' · VERSTÄNDNISCHECK</span><h2>'+esc(q.prompt)+'</h2><p>Wähle die fachlich beste Antwort. Bei Fehlern kannst du die Erklärung nochmals nachlesen und neu antworten.</p><div class="fp39-choices">'+q.options.map((opt,i)=>'<button type="button" class="fp39-choice'+(selected===i?(a.correct?' correct':' wrong'):'')+'" data-journey-answer="'+i+'" '+(a?.correct?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+esc(opt)+'</button>').join('')+'</div>'+
  (a?'<div class="fp39-feedback '+(a.correct?'correct':'retry')+'"><b>'+(a.correct?'Richtig.':'Noch nicht. Du kannst es erneut versuchen.')+'</b><p>'+esc(q.explanation)+'</p></div>':'')+'</article>';
  }
- if(page===4)content='<article class="fp39-reading fp39-finish"><span class="eyebrow">05 · LEKTION ABSCHLIESSEN</span><h2>Wissen gesichert</h2><p>'+esc(m.goal)+'</p><p>Beide Verständnisfragen wurden richtig beantwortet. Die nächste Lektion knüpft an das Gelernte an; du kannst diese Erklärung jederzeit noch einmal öffnen.</p><p class="fp39-plain-note">Der neue Lernweg dokumentiert den Abschluss, vergibt aber noch keine zusätzlichen XP oder Artefakte. Das gemeinsame Belohnungssystem ist derzeit in Planung.</p></article>';
+ if(page===4)content='<article class="fp39-reading fp39-finish"><span class="eyebrow">05 · LEKTION ABSCHLIESSEN</span><h2>Wissen gesichert</h2><p>'+esc(m.goal)+'</p><p>Beide Verständnisfragen wurden richtig beantwortet. Die nächste Lektion knüpft an das Gelernte an; du kannst diese Erklärung jederzeit noch einmal öffnen.</p><p class="fp39-plain-note">Belohnung beim ersten Abschluss mit Konto: +20 XP und +1 FP. Levelprämien werden automatisch zusätzlich gutgeschrieben. Bereits abgeschlossene Lektionen werden nicht doppelt vergütet.</p></article>';
  const canAdvance=page<2||(page===2||page===3)&&Boolean(answers[page-2]?.correct);
  return '<div class="fp39-lesson">'+header+content+'<div class="fp39-lesson-buttons">'+
  (page>0?'<button type="button" class="btn secondary" data-journey-prev>← Vorherige Seite</button>':'')+
@@ -117,7 +118,10 @@ function complete(){
  const p=localSession(m.id);
  if(p.page!==4||!m.questions.every((q,i)=>p.answers[i]?.correct))return;
  const firstFinish=!state.completed[m.id];state.completed[m.id]=Date.now();p.updatedAt=Date.now();persist();window.FinanzPilotStudy?.seed?.(m.id);
- if(firstFinish)window.FinanzPilotCelebrations?.show?.('basics',{confirmed:true,id:'basics:'+m.id,title:m.title||'Grundlage abgeschlossen',text:'Du hast dieses Grundlagenmodul erfolgreich beendet. Der nächste Lernschritt ist bereit.'});
+ if(firstFinish){
+   if(window.FinanzPilotCloud?.user)window.FinanzPilotLevels?.awardFoundation?.(m.id,m.title,true);
+   else window.FinanzPilotCelebrations?.show?.('basics',{confirmed:true,id:'basics:'+m.id,title:m.title||'Grundlage abgeschlossen',text:'Lokal abgeschlossen. Melde dich an, um die XP und FP deinem Konto gutzuschreiben.'});
+ }
  const n=stageNum(m.id);
  selectedId='';state.selected='';persist();
  if(!window.FinanzPilotNavigation?.goBack?.())go('journey-'+n);
@@ -142,6 +146,14 @@ async function load(force=false){
   const received=await res.json();
   if(received.schema_version!==1||received.stages?.length!==6||received.stages.some(s=>s.modules?.length!==6))throw Error('Ungültiger Lehrplan');
   data=received;error='';
+  try{
+   const response=await fetch(QUESTION_DATA+'?v=55',{cache:'no-store'});
+   if(response.ok){const bank=await response.json();const selected=all();
+    if(bank.schema_version===1&&selected.length===18&&selected.every(m=>Array.isArray(bank.questions?.[m.id])&&bank.questions[m.id].length===2&&bank.questions[m.id].every(q=>q.options?.length===4&&Number.isInteger(q.correct)))){
+      selected.forEach(m=>{const origin=data.stages.flatMap(s=>s.modules).find(x=>x.id===m.id);if(origin)origin.questions=bank.questions[m.id]});
+    }
+   }
+  }catch(e){console.warn('FinanzPilot questions fallback:',e)}
  }catch(e){error='Lerninhalte sind derzeit nicht erreichbar. Bitte erneut laden.';console.warn('FinanzPilot Journey:',e)}
  finally{loading=false;redraw()}
 }
