@@ -1,127 +1,116 @@
 {
   "schema_version": 1,
-  "date": "2026-11-01",
-  "updated_at": "2026-11-01T08:18:00+01:00",
-  "editor_note": "Zwei neue Primärquellenfälle vom 29.–30.10.2026, nicht die bisherigen IDs überschrieben. Schwierige Interpretationsfragen; Sonntag ohne neue Börsenschlusskurse.",
+  "date": "2026-11-02",
+  "updated_at": "2026-11-02T09:08:00+01:00",
+  "editor_note": "Zwei neue eigenständige Lernfälle zu geprüften Q3-/Q2-Unternehmensberichten. Historische Quellendaten korrekt datiert, keine vorweggenommenen Novemberzahlen; bestehende private Bewertungen bleiben separat.",
   "cases": [
     {
-      "id": "2026-11-01-aixtron-order-conversion",
-      "title": "AIXTRON: 122 % mehr Bestellungen – was wird daraus wirklich Gewinn?",
-      "goal": "Auftragseingang, Umsatz, Zeitversatz und Bewertung getrennt beurteilen",
-      "source": "AIXTRON SE, Q3 2026 Unternehmensmeldung",
-      "url": "https://www.aixtron.com/en/press/press-releases/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801",
-      "published": "29.10.2026",
-      "facts": "Q3 2026 Auftragseingang 274,9 Mio. EUR (Q3 2025: 124,0 Mio. EUR), also rund +121,7 %; Q3-Umsatz 183,6 Mio. EUR. Neunmonatsumsatz 358,1 Mio. EUR nach 369,5 Mio. EUR im Vorjahreszeitraum (rund −3,1 %).",
-      "context": "Halbleiteranlagen für Optoelektronik werden oft vor Umsatzrealisierung bestellt. Bestellungs- und Umsatzdaten betreffen unterschiedliche Leistungs- und Lieferzeitpunkte. Der Unternehmenswert hängt von Konversion, Marge, Cashflow und bereits eingepreisten Erwartungen ab.",
-      "caveat": "Auftragseingang ist nicht gleich Umsatz, Umsatz nicht gleich Gewinn, und Q3-Aufträge sind nicht direkt mit Q3-Umsatz zu verrechnen. Weder Auftragseingang noch diese Meldung belegen einen fairen Aktienkurs.",
+      "id": "2026-11-02-siemens-orders-cash",
+      "title": "Siemens: Warum 1,34 Book-to-Bill keine Gewinnmarge ist",
+      "goal": "Auftragseingang, Umsatz, Marge und freien Cashflow über identische Perioden richtig deuten",
+      "source": "Siemens AG – Ergebnisveröffentlichung Q3 GJ 2026",
+      "url": "https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q3-gj-2026",
+      "published": "06.08.2026",
+      "facts": "Q3 GJ 2026: Auftragseingang 27,9 Mrd. EUR, Umsatz 20,8 Mrd. EUR, Ergebnis Industrielles Geschäft 3,5 Mrd. EUR, dessen Marge 17,3 %, Konzern-Free-Cashflow 4,1 Mrd. EUR. Q4-GJ2026-Bericht erst für 12.11.2026 angekündigt.",
+      "context": "Ein Auftrag ist eine Kundenbestellung, der Umsatz entsteht typischerweise erst bei Erfüllung. Book-to-Bill = Auftragseingang/Umsatz. Die Marge des industriellen Geschäfts verwendet einen anderen Ergebnis- und Umsatzumfang als der gesamte Konzern.",
+      "caveat": "Gerundete 27,9/20,8 ≈ 1,341; Siemens berichtet 1,34. Aus einem einzelnen Quartal lassen sich keine garantierten Umsätze, Margen oder Aktienkurse ableiten.",
       "questions": [
         {
-          "question": "Ein Analyst behauptet, AIXTRONs Umsatz sei im dritten Quartal um 122 % gestiegen. Welche Korrektur ist am belastbarsten?",
+          "question": "Welche Interpretation von 27,9/20,8 ≈ 1,34 ist fachlich korrekt?",
           "options": [
-            "122 % bezieht sich auf den Auftragseingang; der Neunmonatsumsatz liegt sogar rund 3 % unter Vorjahr",
-            "122 % ist der Anstieg des operativen Gewinns und damit die richtige Umsatzaussage",
-            "Auftragseingang und Umsatz sind bei Anlagenbauern immer identisch",
-            "Die Aussage ist korrekt, wenn man den Quartalsumsatz durch den Auftragsbestand dividiert"
-          ],
-          "correct": 0,
-          "explanation": "274,9/124,0−1 ergibt rund 121,7 % Auftragseingangswachstum. Der berichtete Neunmonatsumsatz sinkt dagegen von 369,5 auf 358,1 Mio. EUR. Unterschiedliche Größen und Perioden dürfen nicht verwechselt werden."
-        },
-        {
-          "question": "Was ist die aussagekräftigste nächste Prüfung für eine positive Bewertungsthese?",
-          "options": [
-            "Auftragseingang 274,9 Mio. EUR sofort vollständig als freien Cashflow ansetzen",
-            "Künftige Umsatzkonversion, Lieferzeitpunkte, Bruttomargen, Working Capital und Kapitalkosten prüfen",
-            "Den Aktienkurs um genau 122 % erhöhen, weil neue Bestellungen zu Gewinnen führen",
-            "Nur den Neunmonatsumsatz betrachten und die neuen Aufträge ignorieren"
+            "Siemens hat 34 % Nettogewinnmarge erzielt.",
+            "Neue Aufträge waren rund 34 % höher als der Quartalsumsatz; das ist keine garantierte spätere Umsatzsteigerung.",
+            "Der freie Cashflow beträgt 34 % des Konzernumsatzes.",
+            "Die Q4-Umsätze stehen bereits fest."
           ],
           "correct": 1,
-          "explanation": "Aufträge können storniert oder verschoben werden und verursachen Material- und Personalaufwand. Erst die Auslieferung mit belastbaren Margen, Zahlungen und Investitionen bestimmt künftigen Cashflow und Wert."
+          "explanation": "Book-to-Bill ist das Verhältnis von Auftragseingang und Umsatz derselben Periode. Aufträge können später, mit anderen Margen oder nicht vollständig umsatzwirksam werden. Eine Gewinnmarge setzt ein Ergebnis in Relation zu einer passenden Umsatzbasis."
         },
         {
-          "question": "Welche Entwicklung würde die These 'starker Auftragseingang verbessert die langfristige Profitabilität' am ehesten widerlegen?",
+          "question": "Warum wäre 3,5/20,8 als angebliche offizielle Siemens-Industriegeschäftsmarge problematisch?",
           "options": [
-            "Eine leichte Schwankung des Aktienkurses bei unveränderten Geschäftszahlen",
-            "Ein Anstieg des Auftragsbestands, auch wenn die Auslieferungen noch nicht stattgefunden haben",
-            "Mehr Auslieferungen mit dauerhaft schwacher Marge und wachsendem Working-Capital-Bedarf trotz hoher Bestellungen",
-            "Ein einzelner optimistischer Managementkommentar ohne Zahlen"
+            "Weil man für Margen immer den Aktienkurs statt Umsatz verwenden muss.",
+            "Weil die 3,5 Mrd. EUR ein prognostizierter Wert für November sind.",
+            "Weil Ergebnis des industriellen Geschäfts und gesamter Konzernumsatz nicht dieselbe Abgrenzung haben; Siemens weist 17,3 % auf passender Basis aus.",
+            "Weil 3,5 Mrd. EUR eine Steuerzahlung und kein Ergebnis sind."
           ],
           "correct": 2,
-          "explanation": "Wenn hohe Aufträge zwar in Umsatz übergehen, aber kaum operativen Cashflow nach Lageraufbau, Forderungen und Investitionen liefern, wäre die angenommene Wertschöpfung widerlegt."
+          "explanation": "3,5/20,8 ergibt rund 16,8 %, nicht die berichtete Industriegeschäftsmarge von 17,3 %. Unterschiedliche Bezugsgrößen dürfen nicht unbemerkt gemischt werden. Die korrekte Segmentabgrenzung steht in der Originalmeldung."
         },
         {
-          "question": "Welche Aussage zur Zahl 274,9/183,6 ≈ 1,50 ist methodisch korrekt?",
+          "question": "Welche Beobachtung würde die These 'hoher Auftragseingang führt zu nachhaltig hohem Wertzuwachs' am stärksten widerlegen?",
           "options": [
-            "Der Wert ist eine sichere Book-to-Bill-Kennzahl für den gesamten Neunmonatszeitraum",
-            "Der Wert beweist eine Umsatzrendite von 50 %",
-            "Der Wert zeigt den freien Cashflow des Quartals",
-            "Der Quotient vergleicht Q3-Auftragseingang mit Q3-Umsatz, ist aber keine garantierte zukünftige Umsatzsteigerung"
-          ],
-          "correct": 3,
-          "explanation": "Ein Q3-Book-to-Bill von etwa 1,50 kann Nachfrage relativ zur fakturierten Leistung anzeigen. Auftragsabgrenzung, Stornierungen, Lieferzeiten und Vorjahresbasis bleiben für Prognosen wesentlich."
-        }
-      ],
-      "reflectionPrompt": "Entwirf eine AIXTRON-Investmentthese bis Ende 2027: Unter welchen belegbaren Konversions-, Margen- und Cashflow-Bedingungen wären die neuen Bestellungen wertsteigernd? Nenne den stärksten Gegenfall und zwei überprüfbare Widerlegungszahlen.",
-      "rubric": [
-        "Q3-Auftragseingang und Neunmonatsumsatz mit Datum korrekt unterscheiden",
-        "Umsatzkonversion und Margen/Working Capital analysieren",
-        "Bewertung nur mit klar gekennzeichneten Annahmen beurteilen",
-        "Konkrete Gegenhypothese, Kennzahlen und Prüftermin nennen"
-      ],
-      "sample": "Die hohen Q3-Aufträge könnten künftige Umsätze stützen, wenn sie fristgerecht mit stabilen Bruttomargen ausgeliefert werden. Ich würde den Auftragsbestand, den Anteil realisierter Bestellungen, die operative Marge und den operativen Cashflow bis Ende 2027 verfolgen. Bei dauerhaft sinkender Konversionsmarge oder negativem Cashflow trotz wachsender Aufträge müsste ich die These revidieren."
-    },
-    {
-      "id": "2026-11-01-eurozone-us-gdp-method",
-      "title": "Eurozone und USA: Wachstumszahlen ohne Rechenfalle vergleichen",
-      "goal": "Annualisierung, Quartalsvergleich und Konjunkturwirkung richtig interpretieren",
-      "source": "Eurostat Q3 2026 Schnellschätzung und U.S. BEA Q3 2026 Advance Estimate",
-      "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-30102026-ap",
-      "published": "30.10.2026",
-      "facts": "Eurozone: Q3 2026 reales BIP +0,4 % zum Vorquartal, EU +0,5 %. USA: +3,4 % annualisierte Quartalsrate laut BEA vom 29.10.2026; nicht annualisiert rund +0,84 % je Quartal. Deutschland: +0,2 % gegenüber Q2 laut Destatis.",
-      "context": "US-Wachstum wird üblicherweise auf ein Jahr hochgerechnet; europäische Schnellschätzungen geben Quartalsveränderungen direkt an. Gewinne und Bewertungsmultiplikatoren können sich gegensinnig verändern, wenn die Konjunktur Zinserwartungen beeinflusst.",
-      "caveat": "Die Schätzungen sind vorläufig, die Zusammensetzung des Wachstums unterscheidet sich und die Daten sind keine direkte Prognose für Aktienkurse. Quellen: BEA 29.10., Eurostat und Destatis 30.10.",
-      "questions": [
-        {
-          "question": "Wie lässt sich die US-Rate von +3,4 % annualisiert methodisch mit +0,4 % Eurozone zum Vorquartal vergleichen?",
-          "options": [
-            "3,4 durch 4 exakt als jährliche Inflationsrate interpretieren",
-            "Beide Zahlen ohne Umrechnung direkt als Quartalswachstum vergleichen",
-            "US-Quartalswachstum aus (1,034)^(1/4)−1 ≈ 0,84 % ableiten und dann Zeiträume prüfen",
-            "Die Eurozonenrate mit zwölf multiplizieren, ohne Zinseszinseffekt"
-          ],
-          "correct": 2,
-          "explanation": "Annualisierte Wachstumsraten unterstellen vier gleichartige Quartale: (1+g_q)^4=1,034, daher g_q≈0,0084 bzw. +0,84 %. Eurozone +0,4 % ist bereits eine Quartalsrate."
-        },
-        {
-          "question": "Warum folgt aus höherem US-BIP-Wachstum nicht zwingend eine höhere US-Aktienrendite?",
-          "options": [
-            "Weil Gewinne, Zinserwartungen, Risikoprämien und bereits eingepreiste Erwartungen gegenläufig wirken können",
-            "Weil Aktienkurse ausschließlich die aktuelle BIP-Rate abbilden",
-            "Weil das BIP per Definition die Unternehmensgewinne eines Börsenindex misst",
-            "Weil die jährliche BIP-Rate die Dividendenrendite bestimmt"
+            "Ein späterer Rückgang von Auftragsmargen und freiem Cashflow trotz hoher Bestellungen.",
+            "Ein steigender Auftragseingang bei unveränderter Auftragsqualität.",
+            "Ein vorübergehend volatiler Aktienkurs ohne neue Geschäftsdaten.",
+            "Die Veröffentlichung eines nächsten Ergebnisberichts am angekündigten Termin."
           ],
           "correct": 0,
-          "explanation": "Stärkeres Wachstum kann Umsätze und Gewinne stützen, zugleich aber Zinssenkungen verzögern und den Diskontsatz erhöhen. Börsenpreise reflektieren Erwartungen, nicht nur veröffentlichte Ist-Daten."
-        },
-        {
-          "question": "Welche Beobachtung wäre die stärkste Gegenhypothese zu 'US-Wachstum beschleunigt nachhaltig'?",
-          "options": [
-            "Ein einziger höherer Börsenkurs nach Veröffentlichung",
-            "Ein Pressekommentar ohne neue Daten",
-            "Ein einmaliger Unterschied zwischen US- und Eurozonen-Quartalsraten",
-            "Abwärtsrevisionen der BIP-Schätzung plus schwächere private Endnachfrage in folgenden Quartalen"
-          ],
-          "correct": 3,
-          "explanation": "Die BEA-Erstschätzung ist revisionsanfällig. Dauerhafte Konjunkturstärke muss sich in mehreren Quartalen und in der privaten Endnachfrage zeigen; kurzfristige Lageraufstockung allein wäre ein schwächeres Signal."
+          "explanation": "Wert entsteht durch künftige freie Mittelzuflüsse nach Kosten und Investitionen. Wenn hohe Aufträge nicht in profitablen Cashflow übergehen, reicht die reine Nachfragezahl nicht als Bewertungsthese."
         }
       ],
-      "reflectionPrompt": "Formuliere eine Sechsmonatsprognose, wie unterschiedlich starkes US-/Eurozonenwachstum über Gewinne und Zinsen auf Aktienbewertungen wirken könnte. Trenne belegte Q3-Fakten, Annahmen und konkrete Gegenbelege.",
+      "reflectionPrompt": "Berechne Book-to-Bill aus den gerundeten Q3-Zahlen. Leite zwei unterschiedliche Szenarien für die Umwandlung der Aufträge in Umsatz und Cashflow ab; welche offiziellen Zahlen würdest du am 12.11. prüfen?",
       "rubric": [
-        "Annualisierte und Quartalsraten sauber umrechnen",
-        "BIP-Komponenten und Vorläufigkeit berücksichtigen",
-        "Gewinn- und Diskontsatzkanal gegeneinander abwägen",
-        "Messbare Widerlegungsbedingungen und Datum angeben"
+        "1,34 korrekt als Aufträge/Umsatz berechnen und Perioden nennen",
+        "Industriegeschäftsmarge von Konzernumsatzabgrenzung trennen",
+        "Cashflow und Auftragsumsetzung als Werttreiber mit Verzögerung erklären",
+        "Stärkstes Gegenargument und zwei nachprüfbare Indikatoren angeben"
       ],
-      "sample": "US +3,4 % annualisiert entspricht rund +0,84 % zum Vorquartal und liegt damit über den +0,4 % der Eurozone. Ein Gewinnvorteil wäre denkbar, doch ein höherer Diskontsatz könnte ihn kompensieren. Ich würde Q4-/Q1-Revisionen, private Endnachfrage, Anleiherenditen und Gewinnschätzungen prüfen."
+      "sample": "27,9/20,8≈1,34 zeigt mehr Bestellungen als Umsatz im Quartal. Das kann künftige Erlöse stützen, sofern Aufträge ausgeliefert und bezahlt werden. Ich würde im Q4-Bericht Auftragsbestand, Segmentmargen und Free Cashflow vergleichen. Sinkende Konversionsmargen trotz wachsendem Auftragseingang wären ein Gegenbeleg."
+    },
+    {
+      "id": "2026-11-02-bayer-ebitda-cash",
+      "title": "Bayer: Bereinigter Gewinn und Geld auf dem Konto sind nicht dasselbe",
+      "goal": "EBITDA vor Sondereinflüssen, Konzernergebnis und freien Cashflow unterscheiden und Rechtszahlungen einordnen",
+      "source": "Bayer AG – Q2 2026 Media Update",
+      "url": "https://www.bayer.com/de-de/ueber-uns/veranstaltungen/2026-08-04-media-update-q2",
+      "published": "04.08.2026",
+      "facts": "Q2 2026: Konzernumsatz 10,872 Mrd. EUR, EBITDA vor Sondereinflüssen 2,144 Mrd. EUR, Konzernergebnis 219 Mio. EUR, Free Cashflow −371 Mio. EUR, Nettofinanzverschuldung 33,647 Mrd. EUR. Bayer nennt unter anderem Vergleichszahlungen als Belastung.",
+      "context": "Bereinigtes EBITDA ist eine unternehmensdefinierte operative Kennzahl vor bestimmten Kosten und Sondereffekten. Free Cashflow erfasst tatsächliche Zahlungsmittel nach der verwendeten Investitionsdefinition; rechtliche Zahlungen können den Cashflow belasten.",
+      "caveat": "2,144/10,872≈19,72 % ist eine grobe bereinigte EBITDA-Umsatzrelation, keine Nettogewinnmarge. Nettofinanzverschuldung ist ein Bilanzstichtagswert und nicht mit dem Quartals-Cashflow zu verrechnen, als wären beide Ströme.",
+      "questions": [
+        {
+          "question": "Was zeigt die Kombination aus 2,144 Mrd. EUR EBITDA vor Sondereinflüssen und −371 Mio. EUR Free Cashflow am besten?",
+          "options": [
+            "Die Werte müssen identisch sein; die Quelle enthält einen Rechenfehler.",
+            "Bayer hatte sicher 371 Mio. EUR operativen Verlust.",
+            "Ein bereinigtes operatives Ergebnis kann positiv sein, während Zahlungen und Investitionen zu negativem Free Cashflow führen.",
+            "Der Free Cashflow wird grundsätzlich aus dem Aktienkurs abgeleitet."
+          ],
+          "correct": 2,
+          "explanation": "EBITDA und Free Cashflow unterscheiden sich in Abgrenzung und Zahlungswirksamkeit. Vergleichszahlungen, Investitionen und Veränderungen des Working Capital können Geld abfließen lassen, obwohl die bereinigte Ertragskennzahl positiv ist."
+        },
+        {
+          "question": "Welche Aussage zur Nettofinanzverschuldung von 33,647 Mrd. EUR ist richtig?",
+          "options": [
+            "Sie beschreibt einen Stichtagsbestand; die Veränderung erfordert einen passenden früheren Bilanzstichtag und eine Überleitung.",
+            "Sie ist automatisch der Jahresverlust 2026.",
+            "Sie muss durch den Q2-Umsatz geteilt werden, um den freien Cashflow zu erhalten.",
+            "Sie ist eine Q3-Prognose und noch nicht veröffentlicht."
+          ],
+          "correct": 0,
+          "explanation": "Nettofinanzverschuldung ist eine Bestandsgröße. Quartalsumsatz und Cashflow sind Flussgrößen. Für eine Schuldenanalyse müssen Bilanzstichtage, Zahlungsmittel, Finanzverbindlichkeiten und weitere Überleitungsposten geprüft werden."
+        },
+        {
+          "question": "Welcher Befund würde eine positive Entschuldungsthese am stärksten stützen?",
+          "options": [
+            "Einmalig höhere bereinigte EBITDA-Marge ohne weitere Angaben.",
+            "Ein steigender Aktienkurs am Berichtstag.",
+            "Eine unverbindliche Managementaussage ohne Zahlen.",
+            "Mehrere Quartale mit operativen Mittelzuflüssen, beherrschbaren Rechtszahlungen und tatsächlich sinkender Nettoverschuldung."
+          ],
+          "correct": 3,
+          "explanation": "Entschuldung erfordert verfügbare Zahlungsmittel und eine sinkende Nettoschuld auf vergleichbarer Definition. Ein Quartal oder eine Prognose allein reicht nicht. Die für 3.11. angekündigten Q3-Ergebnisse sind erst nach Veröffentlichung zu prüfen."
+        }
+      ],
+      "reflectionPrompt": "Berechne die bereinigte EBITDA-Umsatzrelation für Q2 und erläutere, warum sie nicht als Cashflow-Marge bezeichnet werden darf. Entwirf eine vorsichtige und eine optimistische These zur Verschuldung bis Ende 2027.",
+      "rubric": [
+        "2,144/10,872≈19,72 % korrekt und als bereinigte EBITDA-Relation kennzeichnen",
+        "EBITDA, Nettoergebnis, Cashflow und Stichtagsschulden sauber unterscheiden",
+        "Rechtszahlungen, Investitionen und Working Capital als mögliche Treiber prüfen",
+        "Zwei Szenarien mit konkreten Gegenargumenten und künftigen Datenprüfungen formulieren"
+      ],
+      "sample": "Die bereinigte EBITDA-Relation liegt bei etwa 19,7 %, sagt aber nicht aus, wie viel Geld nach Rechtszahlungen und Investitionen übrig bleibt. Trotz positiven EBITDA war der Free Cashflow in Q2 negativ. Ich würde die folgenden Quartale auf Cashflow und sinkende Nettoschulden prüfen und bei erneuten hohen Abflüssen die optimistische These verwerfen."
     }
   ]
 }
