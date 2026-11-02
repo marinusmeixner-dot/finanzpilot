@@ -49,12 +49,12 @@ assert.equal(j.state.selected,'geld-wofuer','First foundation lesson is opened.'
 function button(dataset={}){const handlers={};return {dataset,addEventListener(n,cb){handlers[n]=cb},click(){assert(handlers.click,'missing click');handlers.click()}}}
 function tap(which,index){
  const nodes={
-  next:button(),complete:button(),prev:button(),
+  next:button(),check:button(),complete:button(),prev:button(),
   answers:Array.from({length:4},(_,i)=>button({journeyAnswer:String(i)}))
  };
  const root={
   querySelectorAll(sel){return sel==='[data-journey-answer]'?nodes.answers:[]},
-  querySelector(sel){return {'[data-journey-next]':nodes.next,'[data-journey-complete]':nodes.complete,'[data-journey-prev]':nodes.prev}[sel]||null}
+  querySelector(sel){return {'[data-journey-next]':nodes.next,'[data-journey-check]':nodes.check,'[data-journey-complete]':nodes.complete,'[data-journey-prev]':nodes.prev}[sel]||null}
  };
  j.bind(root);
  (which==='answer'?nodes.answers[index]:nodes[which]).click();
@@ -63,12 +63,18 @@ tap('next');tap('next');
 assert.equal(j.state.lessons['geld-wofuer'].page,2);
 const q=bank.questions['geld-wofuer'];
 tap('answer',(q[0].correct+1)%4);
-assert(tones.includes('wrong'),'Wrong first answer must be audible.');
+assert.equal(tones.length,0,'Selection must never emit a sound.');
+assert(!j.renderFor('journeycourse').includes('Noch nicht richtig.'));
+tap('check');
+assert(tones.includes('wrong'),'Only checking plays the failure sound.');
 tap('answer',q[0].correct);
-assert(tones.includes('answer'),'Correct first answer must be audible.');
+assert.equal(tones.length,1,'Selecting a replacement answer stays silent.');
+tap('check');
+assert(tones.includes('answer'),'Correct check plays simple confirmation sound.');
 assert.equal(effects.length,0,'No animated correct-choice toast.');
-tap('next');tap('answer',q[1].correct);tap('next');
-assert.equal(j.state.lessons['geld-wofuer'].page,4);
+tap('next');tap('answer',q[1].correct);tap('check');
+assert(j.renderFor('journeycourse').includes('Lektion abschließen'));
+assert.equal(j.state.lessons['geld-wofuer'].page,3);
 tap('complete');
 assert.equal(effects[0].kind,'basics','Completion is celebrated immediately on user gesture, even before asynchronous RPC.');
 assert(!effects[0].payload.value,'No premature or fabricated XP before cloud award.');
