@@ -8,7 +8,7 @@ assert.equal(JSON.parse(read('version.json')).version,51);
 assert.equal(catalog.branches.length,8);
 assert.equal(catalog.skills.length,52);
 assert.equal(catalog.skills.flatMap(s=>s.lessons).length,156);
-assert.equal(reports.companies.length,5);
+assert.equal(reports.companies.length,4);
 assert(html.includes('<strong id="top-fp">0</strong> FP'),'Show points before FP suffix');
 assert(nav.includes("['marketfinancials','Kennzahlen'"));
 assert(nav.includes("marketfinancials:'markets'"));
