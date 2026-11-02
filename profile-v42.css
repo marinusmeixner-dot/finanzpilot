@@ -36,3 +36,20 @@
 .fp42-profile-link-arrow{color:#9ddabd;font-size:24px}
 .fp42-profile-account{border-top:1px solid #38565d;padding:22px 0 0;margin-top:8px}
 @media(max-width:620px){.fp42-profile-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.fp42-profile-hero{padding:18px}.fp42-profile-hero-orb{width:73px;height:73px}.fp42-profile-hero-orb strong{font-size:23px}.fp42-profile-stat b{font-size:20px}}
+
+/* V60: accessible, compact switches inside Profil instead of a header sound menu. */
+.fp60-preferences{background:#172f3b;border:1px solid #3f6468;border-radius:17px;padding:19px 20px;display:grid;gap:5px}
+.fp60-preferences h2{font-size:19px;margin:0}
+.fp60-preferences>p{color:#bad0ce;font-size:12px;line-height:1.6;margin:3px 0 9px}
+.fp60-switch-row{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 0;cursor:pointer}
+.fp60-switch-row+.fp60-switch-row{border-top:1px solid #36535e}
+.fp60-switch-row span{display:grid;gap:4px;min-width:0}
+.fp60-switch-row strong{font-size:14px;color:#effaf5}
+.fp60-switch-row small{color:#b2cdca;font-size:12px;line-height:1.45}
+.fp60-switch-row input[role=switch]{appearance:none;-webkit-appearance:none;flex:none;width:47px;height:28px;border:1px solid #718b95;background:#526571;border-radius:99px;position:relative;cursor:pointer;transition:background .18s ease,border .18s ease}
+.fp60-switch-row input[role=switch]::before{content:"";display:block;position:absolute;top:3px;left:3px;width:20px;height:20px;background:#f3f9f7;border-radius:50%;box-shadow:0 1px 3px #0005;transition:transform .18s ease}
+.fp60-switch-row input[role=switch]:checked{background:#3a9875;border-color:#9ae7bd}
+.fp60-switch-row input[role=switch]:checked::before{transform:translateX(19px)}
+.fp60-switch-row input[role=switch]:focus-visible{outline:3px solid #d8ffe8;outline-offset:3px}
+@media(prefers-reduced-motion:reduce){.fp60-switch-row input[role=switch],.fp60-switch-row input[role=switch]::before{transition:none}}
+@media(max-width:520px){.fp60-preferences{padding:16px}}
