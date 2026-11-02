@@ -7,8 +7,8 @@ const old=JSON.parse(read('data/journey-v39.json')),specials=JSON.parse(read('da
 assert.equal(JSON.parse(read('version.json')).version,48);
 assert.equal(old.stages.length,6);
 assert.equal(old.stages.flatMap(s=>s.modules).length,36,'Original learning assets preserved');
-assert.equal(specials.skills.length,44);
-assert.equal(specials.skills.flatMap(s=>s.lessons).length,132,'No purchased course removed');
+assert.equal(specials.skills.length,52);
+assert.equal(specials.skills.flatMap(s=>s.lessons).length,156,'No purchased course removed');
 assert(html.includes('learning-hub-v41.js?v=48'));
 assert(html.includes('learning-hub-v41.css?v=46'));
 assert(html.includes('profile-v42.js?v=44'));
@@ -40,7 +40,7 @@ assert(!home.includes('fp41-tabs'),'Four learning sections must be listed, not t
 for(const r of ['basics','skilltree','skilllessons','speciallessons'])assert(home.includes('data-fp41-route="'+r+'"'));
 assert(tree.includes('fp42-map-viewport'));
 assert(tree.includes('<svg class="fp42-map-lines"'));
-assert.equal((tree.match(/data-fp42-node="/g)||[]).length,44);
+assert.equal((tree.match(/data-fp42-node="/g)||[]).length,52);
 assert((tree.match(/class="fp42-line/g)||[]).length>=28);
 assert(tree.includes('fp42-skill-detail'));
 assert(!tree.includes('fp41-branches'),'Not a four-card list');
