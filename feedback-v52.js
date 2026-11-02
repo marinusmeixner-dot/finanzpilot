@@ -22,12 +22,11 @@
  const iconOn='<svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15 9a5 5 0 0 1 0 6"/><path d="M18 6a9 9 0 0 1 0 12"/></svg>';
  const iconOff='<svg viewBox="0 0 24 24" aria-hidden="true" width="19" height="19" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="m16 9 5 6m0-6-5 6"/></svg>';
  function updateToggle(){
-  const button=document.getElementById('fp52-audio-toggle');
+  const button=document.getElementById('fp52-settings-toggle');
   if(!button)return;
   button.innerHTML=prefs.sound?iconOn:iconOff;
-  button.setAttribute('aria-pressed',String(prefs.sound));
-  button.setAttribute('aria-label',prefs.sound?'App-Töne ausschalten':'App-Töne einschalten');
-  button.title=prefs.sound?'Töne eingeschaltet – zum Ausschalten tippen':'Töne ausgeschaltet – zum Einschalten tippen';
+  button.setAttribute('aria-label','Animationen und Töne einstellen');
+  button.title='Animationen und Töne einstellen · Ton '+(prefs.sound?'an':'aus');
   const sound=document.getElementById('fp52-sound-pref');if(sound)sound.checked=prefs.sound;
   const select=document.getElementById('fp52-motion-pref');if(select)select.value=prefs.motion;
  }
@@ -93,14 +92,11 @@
   }else host.hidden=true;
  }
  function mount(){
-  if(!document.body||document.getElementById('fp52-audio-toggle'))return;
+  if(!document.body||document.getElementById('fp52-settings-toggle'))return;
   const toolbar=document.querySelector('.header-right');
   if(toolbar){
-   const button=document.createElement('button');
-   button.type='button';button.id='fp52-audio-toggle';button.className='fp52-audio-toggle';button.addEventListener('click',audioToggle);
-   toolbar.prepend(button);
    const settings=document.createElement('button');
-   settings.type='button';settings.id='fp52-settings-toggle';settings.className='fp52-settings-toggle';settings.textContent='⚙';settings.title='Darstellung & Töne';
+   settings.type='button';settings.id='fp52-settings-toggle';settings.className='fp52-settings-toggle';settings.innerHTML=iconOn;settings.title='Darstellung & Töne';
    settings.setAttribute('aria-label','Animationen und Töne einstellen');
    settings.addEventListener('click',settingsPanel);toolbar.prepend(settings);
   }
