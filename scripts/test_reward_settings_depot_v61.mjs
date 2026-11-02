@@ -1,0 +1,50 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const get=p=>fs.readFileSync(p,'utf8');
+const html=get('index.html'),sound=get('feedback-v52.js'),profile=get('profile-v42.js'),header=get('header-v43.js'),portfolio=get('portfolio.js'),celebrate=get('celebrations-v53.js'),streak=get('streak-v40.js'),levels=get('levels-v55.js'),economy=get('economy.js');
+assert(html.includes('id="top-depot"')&&html.includes('id="fp43-depot-trigger"'),'Header must link to paper depot total.');
+assert(!html.includes('id="top-level"')&&!html.includes('id="fp43-level-trigger"'),'No level in header.');
+assert(!sound.includes('fp52-settings-toggle')&&!sound.includes('fp52-animation-test')&&!sound.includes('fp52-sound-test'),'No speaker icon or sound/animation test controls.');
+assert(profile.includes('FinanzPilotFeedback?.settingsHtml')&&profile.includes('FinanzPilotFeedback?.bindSettings'),'Profile must host and bind both toggles.');
+assert(sound.includes('role="switch" id="fp52-sound-pref"')&&sound.includes('role="switch" id="fp52-motion-pref"'),'Exactly two actual setting switches.');
+assert(sound.includes("prefs.motion=event.currentTarget.checked?'on':'off'"),'Animation switch must actually enable/disable animation.');
+assert(sound.includes("prefs.sound=!!event.currentTarget.checked"),'Sound switch must actually enable/disable tones.');
+assert(header.includes("window.FinanzPilotPortfolio?.status"),'Header must use same portfolio total as actual depot.');
+assert(portfolio.includes("total:round(balance+value)")&&portfolio.includes("complete:valid&&!stats.unpriced"),'Cash and priced assets must be included; incomplete valuation must be marked.');
+assert(portfolio.includes("currentUser===user()"),'Never show stale balance from another account.');
+for(const file of ['portfolio.js','header-v43.js','profile-v42.js','feedback-v52.js','celebrations-v53.js','streak-v40.js','levels-v55.js','economy.js'])assert(html.includes(file+'?v=61'),file+' must bypass old iOS PWA cache.');
+assert(html.includes('profile-v42.css?v=61')&&html.includes('ui-v43.css?v=61'),'Settings and wealth badge styles refreshed.');
+assert(streak.includes("show?.('streak'")&&streak.includes("value:'+'+euro(data.today_euros"),'Every confirmed daily streak shows exact earned euros.');
+assert(levels.includes('for(const reached of freshLevels)')&&levels.includes("show?.('level'"),'All newly reached levels get their own animation.');
+for(const mark of ["'artifact'","'mission'","'reward'"])assert(economy.includes("show?.("+mark),'Confirmed economy reward animation missing: '+mark);
+assert(celebrate.includes("if(active||document.hidden)queue.push(entry);else present(entry);"),'One confirmed effect may not remove another.');
+assert(!celebrate.includes("if(queue.length===MAX_QUEUE)queue.shift()"),'No eviction of earned rewards.');
+assert(celebrate.includes("window.FinanzPilotFeedback?.preferences?.motion==='off'"),'Animation off suppresses the actual overlay, not just keyframes.');
+assert(celebrate.includes("window.FinanzPilotFeedback?.tone?.(KINDS[kind].tone)"),'Sound remains independent when motion disabled.');
+assert(celebrate.includes("window.dispatchEvent?.(new Event('fp-reward-confirmed'))"),'Cash awards refresh the header.');
+const domEvents={},windowEvents={},prefsStorage={},nodes={};
+let appended=[],audioTones=[];
+const doc={hidden:false,readyState:'loading',body:{append(node){appended.push(node)}},documentElement:{classList:{toggle(){}}},addEventListener(n,fn){domEvents[n]=fn},
+ getElementById(id){return nodes[id]||null},createElement(tag){return {tag,hidden:false,setAttribute(){},className:'',id:'',textContent:''}}};
+const fakeWin={addEventListener(n,fn){windowEvents[n]=fn},matchMedia(){return {matches:false,addEventListener(){}}},FinanzPilotCelebrations:{stop(){}},
+ AudioContext:class{constructor(){this.state='running';this.currentTime=0;this.destination={}}createGain(){return{gain:{setValueAtTime(){},exponentialRampToValueAtTime(){}},connect(){},disconnect(){}}}createOscillator(){return{frequency:{setValueAtTime(){}},connect(){},start(){},stop(){},disconnect(){}}}}
+};
+const c=vm.createContext({window:fakeWin,document:doc,localStorage:{getItem:k=>prefsStorage[k]||null,setItem:(k,v)=>prefsStorage[k]=v},console,Date,Math,Number,String,JSON,Promise,setTimeout(){return 1},clearTimeout(){}});
+vm.runInContext(sound,c);
+const feedback=fakeWin.FinanzPilotFeedback;
+assert.equal(appended.length,0,'Before DOM ready, no header button or sound settings are mounted.');
+const settings=feedback.settingsHtml();
+assert.equal((settings.match(/role="switch"/g)||[]).length,2,'Only two on/off switches; no test controls.');
+feedback.setPreferences({motion:'off',sound:true});assert.equal(feedback.preferences.motion,'off');assert.equal(feedback.preferences.sound,true);
+feedback.setPreferences({sound:false});assert.equal(feedback.preferences.motion,'off','Changing sound must preserve animation preference.');
+const toggles={};
+const mockRoot={querySelector(sel){return toggles[sel]||null}};
+for(const id of ['#fp52-sound-pref','#fp52-motion-pref']){const el={checked:false,addEventListener(type,cb){el.callback=cb}};toggles[id]=el}
+feedback.bindSettings(mockRoot);
+toggles['#fp52-motion-pref'].callback({currentTarget:{checked:true}});
+assert.equal(feedback.preferences.motion,'on');
+toggles['#fp52-sound-pref'].callback({currentTarget:{checked:true}});
+assert.equal(feedback.preferences.sound,true);
+assert(prefsStorage.finanzpilot_feedback_preferences_v52.includes('"motion":"on"'),'Preferences must persist across page reloads.');
+console.log('V61 pass: Header paper-cash plus holdings, no level/speaker header, profile has exactly 2 persistent toggles, awards retained, audio independent of visual animation.');
