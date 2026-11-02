@@ -2,7 +2,7 @@ import assert from 'node:assert/strict';
 import fs from 'node:fs';
 
 const read=p=>fs.readFileSync(p,'utf8');
-const css=read('ui-v43.css'),mobile=read('mobile-layout-v19.css'),html=read('index.html');
+const css=read('ui-v43.css'),mobile=read('mobile-layout-v19.css'),html=read('index.html'),ux=read('ux-v15.js');
 const original=mobile.match(/\.topbar\s*\{[\s\S]*?margin-left:-15px;[\s\S]*?display:flex!important;[\s\S]*?\}/);
 assert(original,'Legacy mobile sticky header is flex and uses negative gutters.');
 const start=css.indexOf('/* V68: Single-row iPhone topbar');
@@ -15,7 +15,11 @@ assert(groupRule.includes('width:auto!important;')&&!/\bwidth:100%\s*;/.test(gro
 assert(/\.main-area>\.topbar\s*\{\s*display:flex!important;[\s\S]*?width:calc\(100% \+ 30px\)!important;[\s\S]*?padding-left:15px!important;\s*padding-right:15px!important;/.test(patch),'Header restores original edge-to-edge area with correct content insets.');
 assert(/\.main-area>\.topbar>\.header-right\s*\{\s*display:flex!important;[\s\S]*?flex:0 1 auto!important;[\s\S]*?width:auto!important;[\s\S]*?max-width:calc\(100% - 114px\)!important;/.test(patch),'The button group shrinks to fit after the logo, no 100% width.');
 assert(patch.includes('.main-area>.topbar>.mobile-logo{'),'True nested .mobile-logo selector must exist.');
+assert(!ux.includes("top.querySelector('.mobile-logo')?.remove()"),'Runtime must not remove the real logo after page load.');
+assert(!ux.includes("top.insertAdjacentHTML('afterbegin','<div class=\"fp-mobile-brand\""),'Runtime must not replace the logo with an unstyled clone.');
+assert(ux.includes("top.querySelector('.fp-mobile-brand')?.remove()"),'Runtime cleans up only obsolete clone.');
 assert(patch.includes('flex:0 0 34px!important')&&patch.includes('width:34px!important'),'Sync button cannot be shrunk or cropped by longer balances.');
+assert(!/flex-basis:30px!important|width:30px!important/.test(patch),'Sync must stay 34px even on 320px screens.');
 assert(patch.includes('max-width:135px!important')&&patch.includes('text-overflow:ellipsis'),'Long depot values may truncate before they push Sync outside.');
 assert(patch.includes('@media(max-width:370px)'),'Extra small iPhone layout included.');
 const header=html.match(/<header class="topbar">[\s\S]*?<\/header>/)?.[0]||'';
@@ -23,6 +27,6 @@ assert(header.includes('class="mobile-logo"')&&header.includes('class="header-ri
 assert(header.includes('id="top-fp"')&&header.includes('id="top-depot"'),'FP and EUR still present.');
 assert(!header.includes('top-streak'),'Streak remains in Profile.');
 assert(read('sync.js').includes("quick.id='fp-quick-sync'"),'Sync still joins header-right dynamically.');
-assert(html.includes('ui-v43.css?v=68'),'Fresh stylesheet must load instead of cached V67.');
-assert(JSON.parse(read('version.json')).version===68,'PWA update version exactly V68.');
-console.log('V68 PASS: actual mobile-logo + finite flex action group, no grid/100%-width overflow, unshrinkable Sync and cache-busted iPhone CSS.');
+assert(html.includes('ui-v43.css?v=69')&&html.includes('ux-v15.js?v=69'),'Fresh layout and runtime logo code must bypass iPhone cache.');
+assert(JSON.parse(read('version.json')).version>=69,'PWA update version must include the runtime logo fix.');
+console.log('V69 PASS: real mobile-logo survives runtime build; one-row flex header, 34px Sync and cache-busted iPhone assets.');
