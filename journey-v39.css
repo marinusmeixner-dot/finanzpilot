@@ -92,3 +92,17 @@
 .fp57-reminder summary{font-size:13px;font-weight:700;cursor:pointer;color:#b6e6ec}
 .fp57-reminder p{margin-top:9px}
 @media(max-width:520px){.fp57-earnings{gap:4px;padding:9px 11px;font-size:11px}.fp57-bridge{padding:13px}}
+
+/* V59: one voluntary, relevant abbreviation glossary per lesson. */
+.fp59-glossary{background:#17313c;border:1px solid #3e6770;border-radius:13px;margin:9px 0 17px;color:#deefea;overflow:hidden}
+.fp59-glossary summary{display:flex;align-items:center;flex-wrap:wrap;gap:9px;cursor:pointer;font-size:14px;font-weight:730;padding:12px 15px;list-style:inside}
+.fp59-glossary summary::marker{color:#a7e5c7}
+.fp59-glossary summary:focus-visible{outline:2px solid #a7e5c7;outline-offset:-2px}
+.fp59-glossary-count{font-weight:550;font-size:11px;color:#a8c6be;margin-left:auto}
+.fp59-glossary[open] summary{border-bottom:1px solid #385963}
+.fp59-glossary-list{display:grid;gap:0;margin:0;padding:0 15px 5px}
+.fp59-glossary-entry{display:grid;grid-template-columns:minmax(46px,80px) minmax(0,1fr);align-items:start;gap:12px;padding:11px 0;font-size:13px;line-height:1.5}
+.fp59-glossary-entry+.fp59-glossary-entry{border-top:1px solid #2e4e55}
+.fp59-glossary-entry dt{font-weight:820;color:#aaf1ca}
+.fp59-glossary-entry dd{margin:0;color:#d2e9e5}
+@media(max-width:520px){.fp59-glossary-entry{grid-template-columns:minmax(42px,60px) minmax(0,1fr);gap:9px;font-size:12px}.fp59-glossary summary{padding:11px 12px}}
