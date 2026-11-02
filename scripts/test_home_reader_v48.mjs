@@ -14,7 +14,7 @@ assert(read('app.js').includes("state.view==='home'&&window.FinanzPilotHome"));
 assert(read('app.js').includes("FinanzPilotHome?.bind(root)"));
 assert(read('market-v34.js').includes("function openEditorialStory(story)"));
 const practices=catalog.skills.flatMap(x=>x.lessons).filter(x=>x.practice);
-assert.equal(practices.length,24);
+assert.equal(practices.length,46);
 for(const l of practices)assert(Number.isFinite(l.practice.answer)&&Number.isFinite(l.practice.tolerance)&&l.practice.explanation.length>35);
 assert(read('lesson-view-v46.js').includes('function feedback(lessonId,correct)'));
 assert(read('learning-hub-v41.js').includes('FinanzPilotLessonView?.feedback?.(lesson,data.correct)'));
