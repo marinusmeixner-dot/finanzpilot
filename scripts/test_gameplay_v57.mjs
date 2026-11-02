@@ -12,7 +12,7 @@ for(const acronym of ['ETF','SaaS','FCF','DCF','EPS','KGV','EBITDA','EBIT','USD'
 assert(journey.includes('Das brauchst du für die Fragen')&&journey.includes('Begriffe und Verbindung zur Lektion wiederholen'),'Teaching appears before questions and as optional reference during quiz.');
 assert(journey.includes('xpBadge(n)'),'Visible XP on lesson and stage.');
 assert(journey.includes("tone?.(i===q.correct?'answer':'wrong')"),'Correct answers only get subtle audio, not celebrations.');
-assert(feedback.includes('answer:[[660,0,.075,.055],[880,.077,.095,.06]'),'Soft answer sound is implemented.');
+assert(feedback.includes('answer:[[1030,0,.072,.070]]'),'Soft answer sound is implemented.');
 assert(app.includes("const auth=!!window.FinanzPilotCloud?.user")&&app.includes("window.FinanzPilotHeader?.xp"),'Sidebar shares authenticated server XP.');
 assert(levels.includes('data?.xp??window.FinanzPilotHeader?.xp')&&levels.includes('fromXp(xp)'),'Level map and topbar agree before remote data arrives.');
 assert(levels.includes('levelEuros')&&levels.includes('level_euros_awarded'),'Level UI presents actual EUR prizes.');
