@@ -1,0 +1,439 @@
+{
+  "schema_version": 1,
+  "editorial_version": 55,
+  "description": "36 scenario-based, numerically and conceptually demanding foundation MCQs. Four plausible alternatives and worked explanations; completions preserved.",
+  "questions": {
+    "geld-wofuer": [
+      {
+        "prompt": "Im Oktober kommen 2.150 € Gehalt und 100 € Nebenverdienst herein. Ausgaben: 920 € Wohnen, 500 € Alltag, 420 € Auto, 270 € Freizeit. Wie hoch ist der Überschuss vor Steuern auf den Nebenverdienst?",
+        "options": [
+          "140 €",
+          "240 €",
+          "340 €",
+          "40 €"
+        ],
+        "correct": 0,
+        "explanation": "2.150 + 100 − 920 − 500 − 420 − 270 = 140 €. Ein positiver Monatsüberschuss ist noch nicht automatisch verfügbares Anlagekapital; unter anderem sind Steuern und unregelmäßige Ausgaben zu prüfen."
+      },
+      {
+        "prompt": "Du besitzt 7.200 € auf Konten, ein Auto im realistisch geschätzten Verkaufswert von 3.000 € und offene Kredite von 4.500 €. Welche Kombination stimmt?",
+        "options": [
+          "Nettovermögen 10.200 €, liquide Mittel 7.200 €",
+          "Nettovermögen 5.700 €, liquide Mittel 10.200 €",
+          "Nettovermögen 5.700 €, liquide Mittel 7.200 €",
+          "Nettovermögen 7.200 €, liquide Mittel 5.700 €"
+        ],
+        "correct": 2,
+        "explanation": "Nettovermögen: 7.200 + 3.000 − 4.500 = 5.700 €. Liquid ist zunächst nur der Kontobestand; ein Auto müsste erst verkauft werden."
+      }
+    ],
+    "was-ist-boerse": [
+      {
+        "prompt": "Eine Firma steigert den Gewinn um 12 %, die Aktie verliert nach Veröffentlichung 7 %. Welche Erklärung ist am plausibelsten?",
+        "options": [
+          "Der Aktienkurs muss später exakt um 12 % steigen",
+          "Die Markterwartung könnte vorab höher gewesen sein oder der Ausblick enttäuscht haben",
+          "Die Firma hatte zwingend einen negativen Cashflow",
+          "Der Gewinn je Aktie ist definitionsgemäß der Aktienpreis"
+        ],
+        "correct": 1,
+        "explanation": "Der Kurs hängt von erwarteten künftigen Ergebnissen und Risiken ab. Gute veröffentlichte Zahlen können gegenüber vorher eingepreisten Erwartungen enttäuschen."
+      },
+      {
+        "prompt": "Aktie A handelt bei 25 €, Aktie B bei 90 €. Welche Aussage ist ohne weitere Informationen vertretbar?",
+        "options": [
+          "B ist teurer bewertet, weil der Stückkurs höher ist",
+          "A besitzt zwangsläufig mehr Kurspotenzial",
+          "B hat einen höheren Unternehmenswert",
+          "Der Stückkurs allein reicht nicht, um Größe oder Bewertung zu vergleichen"
+        ],
+        "correct": 3,
+        "explanation": "Aktienzahl, Gewinn, Schulden und Cashflows entscheiden über die Aussagekraft. Der Preis einer einzelnen Aktie ist kein fairer Bewertungsvergleich."
+      }
+    ],
+    "anlagearten": [
+      {
+        "prompt": "Du kaufst einen breit streuenden Aktien-ETF statt einer Einzelaktie. Welche Risikoveränderung ist am ehesten zu erwarten?",
+        "options": [
+          "Das einzelne Unternehmensrisiko sinkt, Marktschwankungen bleiben möglich",
+          "Das gesamte Kursrisiko verschwindet",
+          "Die Dividende und der Kapitalerhalt sind garantiert",
+          "Die Höhe der Streuung hängt ausschließlich vom ETF-Preis ab"
+        ],
+        "correct": 0,
+        "explanation": "Ein diversifizierter Fonds reduziert typischerweise das unternehmensspezifische Risiko, aber nicht das gemeinsame Markt- und Bewertungsrisiko."
+      },
+      {
+        "prompt": "Du besitzt eine festverzinsliche Anleihe mit 2 % Kupon und vier Jahren Restlaufzeit. Neue vergleichbare Anleihen rentieren nun 4 %. Was passiert typischerweise?",
+        "options": [
+          "Der Kupon der alten Anleihe wird automatisch auf 4 % erhöht",
+          "Der Preis der alten Anleihe fällt, wenn das Kreditrisiko gleich bleibt",
+          "Der Preis steigt, weil 2 % weniger als 4 % sind",
+          "Alle Anleihekurse bleiben bis zur Endfälligkeit konstant"
+        ],
+        "correct": 1,
+        "explanation": "Höhere Marktzinssätze machen den alten niedrigen Kupon unattraktiver; deshalb fällt bei sonst gleichen Bedingungen der Marktpreis."
+      }
+    ],
+    "unternehmen-geschaeft": [
+      {
+        "prompt": "Ein SaaS-Unternehmen gewinnt viele Kunden, muss aber jedem Neukunden hohe Einrichtungsrabatte geben. Welche zwei Größen helfen besonders, das Wachstum zu beurteilen?",
+        "options": [
+          "Mitarbeiterzahl und Aktiennennwert",
+          "Marktkapitalisierung und Sitzland",
+          "Kundenakquisekosten und Kundenbindung",
+          "Dividendenausschüttung und Aktienkurs vom Vortag"
+        ],
+        "correct": 2,
+        "explanation": "Akquisekosten und Kundenbindung zeigen, ob Neukunden über ihre gesamte Kundenlebensdauer voraussichtlich mehr Wert schaffen als sie kosten."
+      },
+      {
+        "prompt": "Eine Firma erhöht ihre wiederkehrenden Abo-Umsätze von 50 auf 60 Mio. €, die Kündigungsquote verdoppelt sich. Was ist die tragfähigste Einordnung?",
+        "options": [
+          "Ein höherer Abo-Umsatz schließt jedes Problem aus",
+          "Die Firma wird deshalb sicher insolvent",
+          "Die Erhöhung der Kündigungen ist ausschließlich saisonal",
+          "Das Wachstum ist positiv, aber die Kundenbindung könnte künftige Erlöse schwächen"
+        ],
+        "correct": 3,
+        "explanation": "Abo-Umsatz und Abwanderung sollten gemeinsam betrachtet werden. Mehr Neukunden können schwächere Kundenbindung vorübergehend verdecken."
+      }
+    ],
+    "umsatz-kosten": [
+      {
+        "prompt": "Umsatz steigt von 100 auf 120 Mio. €, Gesamtkosten von 85 auf 108 Mio. €. Wie verändert sich der vereinfachte Gewinn?",
+        "options": [
+          "Von 15 auf 12 Mio. € trotz höheren Umsatzes",
+          "Von 15 auf 20 Mio. €",
+          "Von 85 auf 108 Mio. €",
+          "Von 15 auf 18 Mio. €"
+        ],
+        "correct": 0,
+        "explanation": "100 − 85 = 15 Mio. €; 120 − 108 = 12 Mio. €. Der Gewinn sinkt um 3 Mio. €, weil die Kosten relativ stärker wachsen."
+      },
+      {
+        "prompt": "Umsatz 100 Mio. €, variable Kosten 60 Mio. €, Fixkosten 25 Mio. €. Bei 10 % höherem Umsatz steigen variable Kosten proportional, Fixkosten bleiben gleich. Neuer Gewinn?",
+        "options": [
+          "16 Mio. €",
+          "19 Mio. €",
+          "15 Mio. €",
+          "21 Mio. €"
+        ],
+        "correct": 1,
+        "explanation": "Neuer Umsatz 110 Mio. €, variable Kosten 66 Mio. €, Fixkosten 25 Mio. €; Gewinn 19 Mio. €. Fixkosten bewirken operativen Hebel."
+      }
+    ],
+    "cashflow-einfach": [
+      {
+        "prompt": "Eine Firma erzielt 30 Mio. € buchhalterischen Gewinn, aber Forderungen aus Lieferungen steigen um 12 Mio. €. Andere Posten unverändert. Wie wirkt sich dies vereinfacht auf den operativen Cashflow aus?",
+        "options": [
+          "Cashflow steigt um 12 Mio. €",
+          "Cashflow bleibt zwingend bei 30 Mio. €",
+          "Cashflow sinkt im Vergleich zum Gewinn um 12 Mio. €",
+          "Die Forderungen zählen als Investitionsauszahlung"
+        ],
+        "correct": 2,
+        "explanation": "Bei sonst unveränderten Angaben binden höhere Forderungen Mittel. Vereinfacht: Gewinn 30 Mio. € minus 12 Mio. € gebundene Forderungen ergibt 18 Mio. € operativen Geldzufluss."
+      },
+      {
+        "prompt": "Operativer Cashflow 80 Mio. €, Investitionsauszahlungen 50 Mio. €, aufgenommenes Darlehen 40 Mio. €. Wie hoch ist der vereinfachte FCF vor Finanzierung?",
+        "options": [
+          "70 Mio. €",
+          "120 Mio. €",
+          "−10 Mio. €",
+          "30 Mio. €"
+        ],
+        "correct": 3,
+        "explanation": "FCF = operativer Cashflow − Capex = 80 − 50 = 30 Mio. €. Das Darlehen ist Finanzierung, nicht operativer freier Cashflow."
+      }
+    ],
+    "wachstum-marge": [
+      {
+        "prompt": "Umsatz steigt von 100 auf 125 Mio. €, operativer Gewinn von 15 auf 16 Mio. €. Welche Aussage ist korrekt?",
+        "options": [
+          "Die operative Marge sinkt von 15 % auf 12,8 %",
+          "Die Marge steigt um 1 Prozentpunkt",
+          "Das operative Gewinnwachstum beträgt 25 %",
+          "Die operative Marge bleibt konstant"
+        ],
+        "correct": 0,
+        "explanation": "Vorjahr 15/100 = 15 %; aktuell 16/125 = 12,8 %. Absoluter Gewinn wächst, die Marge sinkt um 2,2 Prozentpunkte."
+      },
+      {
+        "prompt": "Unternehmen A hat 10 % Marge bei 200 Mio. € Umsatz, B 15 % bei 100 Mio. € Umsatz. Welche Aussage stimmt?",
+        "options": [
+          "B erzielt den höheren absoluten Gewinn",
+          "A erzielt 20 Mio. € und B 15 Mio. € operativen Gewinn",
+          "A ist wegen der geringeren Marge zwingend schlechter bewertet",
+          "Beide erzielen jeweils 15 Mio. €"
+        ],
+        "correct": 1,
+        "explanation": "A: 200 × 10 % = 20 Mio. €, B: 100 × 15 % = 15 Mio. €. Höhe des Gewinns und relative Marge beantworten verschiedene Fragen."
+      }
+    ],
+    "aktienpreis-wert": [
+      {
+        "prompt": "Eine Aktie notiert bei 80 €. Dein begründeter Bewertungsbereich liegt bei 70–95 €, mit hoher Unsicherheit. Was ist die sinnvollste Aussage?",
+        "options": [
+          "Bei 80 € existiert garantiert eine Sicherheitsmarge",
+          "Der faire Wert beträgt exakt 95 €",
+          "Bei 80 € ist der Preis innerhalb der Schätzung; keine eindeutige Unterbewertung erkennbar",
+          "Die Aktie muss sich auf 70 € zurückbewegen"
+        ],
+        "correct": 2,
+        "explanation": "Ein plausibler Bewertungsbereich ist kein objektiver Kursanspruch. Mit 80 € innerhalb von 70–95 € gibt es keine klare, belastbare Sicherheitsmarge."
+      },
+      {
+        "prompt": "Die erwarteten Cashflows einer Firma bleiben gleich, der risikoadjustierte Diskontsatz steigt. Was bedeutet das für den DCF-Wert?",
+        "options": [
+          "Er steigt, weil Risiko immer einen Aufschlag verdient",
+          "Er bleibt bei unveränderten Cashflows gleich",
+          "Er steigt nur im ersten Prognosejahr",
+          "Er sinkt, weil künftige Zahlungen stärker abgezinst werden"
+        ],
+        "correct": 3,
+        "explanation": "Ein höherer Diskontsatz senkt bei gleichen zukünftigen Cashflows die Summe ihrer Gegenwartswerte."
+      }
+    ],
+    "bewertungsvergleiche": [
+      {
+        "prompt": "Firma A: Kurs 60 €, EPS 4 €. Firma B: Kurs 48 €, EPS 2 €. Wie unterscheiden sich die KGVs?",
+        "options": [
+          "A: 15, B: 24",
+          "A: 24, B: 15",
+          "A: 15, B: 12",
+          "A: 60, B: 48"
+        ],
+        "correct": 0,
+        "explanation": "KGV A = 60/4 = 15; KGV B = 48/2 = 24. Das geringere KGV ist kein automatischer Kaufgrund."
+      },
+      {
+        "prompt": "A hat KGV 12, aber sinkende Gewinne und hohe Schulden. B hat KGV 18, aber stabiles Wachstum und geringe Nettoschulden. Was ist der beste nächste Schritt?",
+        "options": [
+          "A kaufen, weil 12 kleiner als 18 ist",
+          "Cashflow, Risiken und nachhaltige Gewinne beider Unternehmen vergleichbar analysieren",
+          "B kaufen, weil ein höheres KGV immer Qualität beweist",
+          "Beide Unternehmen ohne weitere Daten gleich bewerten"
+        ],
+        "correct": 1,
+        "explanation": "KGV hängt von Gewinnqualität und Zukunftserwartungen ab. Ein isolierter Multiplikator ist keine vollständige Investmententscheidung."
+      }
+    ],
+    "rechnen-veraenderung": [
+      {
+        "prompt": "Ein Umsatz steigt erst um 20 % und sinkt im Folgejahr um 20 %. Wie hoch ist die Veränderung gegenüber dem Ausgangswert?",
+        "options": [
+          "0 %",
+          "+4 %",
+          "−4 %",
+          "−20 %"
+        ],
+        "correct": 2,
+        "explanation": "Aus 100 werden 120 und danach 96. Die Änderung gegenüber 100 ist −4 %. Prozentuale Zu- und Abnahmen haben verschiedene Bezugsgrößen."
+      },
+      {
+        "prompt": "Ein Depot fällt von 250 € auf 175 €. Welche Rendite ist anschließend nötig, um wieder 250 € zu erreichen?",
+        "options": [
+          "+30,0 %",
+          "+42,9 %",
+          "+75,0 %",
+          "+25,0 %"
+        ],
+        "correct": 1,
+        "explanation": "Benötigter Zuwachs: (250−175)/175 ×100 = 42,86 %. Bei Verlusten verkleinert sich die Basis."
+      }
+    ],
+    "rechnen-marge": [
+      {
+        "prompt": "Firma A Umsatz 160 Mio. €, EBIT 24 Mio. €. Firma B Umsatz 300 Mio. €, EBIT 39 Mio. €. Wie groß sind ihre EBIT-Margen?",
+        "options": [
+          "A 13 %, B 15 %",
+          "A 15 %, B 13 %",
+          "A 15 %, B 15 %",
+          "A 24 %, B 39 %"
+        ],
+        "correct": 1,
+        "explanation": "A 24/160 = 15 %; B 39/300 = 13 %. A hat eine höhere prozentuale Marge, B den größeren absoluten Gewinn."
+      },
+      {
+        "prompt": "Eine EBIT-Marge fällt von 18 % auf 15 %. Welche Aussage ist mathematisch korrekt?",
+        "options": [
+          "3 % relative Abnahme",
+          "−3 Prozentpunkte und −16,7 % relativ",
+          "−16,7 Prozentpunkte",
+          "−20 % relative Abnahme"
+        ],
+        "correct": 1,
+        "explanation": "Differenz = 15 − 18 = −3 Prozentpunkte. Relative Änderung = (15−18)/18 ≈ −16,7 %."
+      }
+    ],
+    "rechnen-bewertung": [
+      {
+        "prompt": "Eine Aktie kostet 72 €, das erwartete EPS liegt bei 4 €, das vergangene EPS bei 3 €. Welche KGV-Aussage stimmt?",
+        "options": [
+          "Vergangenheits-KGV 18, erwartetes KGV 24",
+          "Beide KGV 18",
+          "Vergangenheits-KGV 24, erwartetes KGV 18",
+          "Vergangenheits-KGV 3, erwartetes KGV 4"
+        ],
+        "correct": 2,
+        "explanation": "72/3 = 24 auf Basis der Vergangenheit; 72/4 = 18 mit der erwarteten Gewinnschätzung. Die Perioden dürfen nicht verwechselt werden."
+      },
+      {
+        "prompt": "Ein Unternehmen hat 25 Mio. Aktien und 75 Mio. € Jahresgewinn. Der Börsenkurs beträgt 45 €. Welches KGV ergibt sich?",
+        "options": [
+          "15",
+          "9",
+          "25",
+          "45"
+        ],
+        "correct": 0,
+        "explanation": "EPS = 75/25 = 3 €; KGV = 45/3 = 15. Berechnung setzt konsistenten Gewinnbegriff und Aktienzahl voraus."
+      }
+    ],
+    "analysieren-fragestellung": [
+      {
+        "prompt": "Du willst bewerten, ob eine Preiserhöhung den Gewinn eines Herstellers steigern kann. Welche Untersuchung ist am besten geeignet?",
+        "options": [
+          "Nur den Kurs einen Tag vor und nach der Preiserhöhung vergleichen",
+          "Den Marktanteil aus einem Werbeplakat ablesen",
+          "Vorab festlegen, dass die Preiserhöhung erfolgreich war",
+          "Verkaufspreise, Absatzmengen, Bruttomarge und Wettbewerbsreaktionen vergleichen"
+        ],
+        "correct": 3,
+        "explanation": "Preiserhöhungen können Absatzrückgänge auslösen. Eine belastbare Frage verbindet Preis, Menge, Marge und Wettbewerb."
+      },
+      {
+        "prompt": "Der Umsatz eines Softwareunternehmens wächst um 30 %, der FCF ist negativ. Welche präzise Anschlussfrage hilft?",
+        "options": [
+          "Ob die Aktie gestern über dem Wochenhoch lag",
+          "Wie hoch sind Kundenakquisekosten, Forderungsaufbau und Investitionszahlungen?",
+          "Ob das Firmenlogo modern aussieht",
+          "Ob die positive Wachstumsrate die Bilanzprüfung ersetzt"
+        ],
+        "correct": 1,
+        "explanation": "Wachstum allein reicht nicht. Cash Conversion, Neukundenkosten und Investitionen helfen, die wirtschaftliche Tragfähigkeit einzuschätzen."
+      }
+    ],
+    "analysieren-quellen": [
+      {
+        "prompt": "Ein Quartalsbericht nennt 2026-Umsatz in USD, ein Portal zeigt einen Euro-Wert ohne Datum. Wie gehst du für einen Vergleich vor?",
+        "options": [
+          "Die größere Zahl verwenden",
+          "USD und EUR direkt addieren",
+          "Berichtszeitraum und Originalquelle prüfen und gegebenenfalls den Umrechnungskurs offenlegen",
+          "Auf den ältesten Blogpost vertrauen"
+        ],
+        "correct": 2,
+        "explanation": "Vergleiche benötigen gleiche Zeiträume, Einheiten und dokumentierte Umrechnung. Ein Portalwert ohne Datum ist keine hinreichende Primärquelle."
+      },
+      {
+        "prompt": "Eine Präsentation nennt ein bereinigtes EBITDA, der geprüfte Bericht einen niedrigeren operativen Gewinn. Welche Vorgehensweise ist am sinnvollsten?",
+        "options": [
+          "Die Kennzahlen definieren, Überleitung prüfen und die Unterschiede erklären",
+          "Die beiden Beträge mitteln, um den wahren Gewinn zu erhalten",
+          "Das höhere Ergebnis als zwingend korrekt ansehen",
+          "EBITDA und EBIT als identisch behandeln"
+        ],
+        "correct": 0,
+        "explanation": "Bereinigtes EBITDA und operativer Gewinn unterscheiden sich sachlich. Überleitungen, Abschreibungen und Sondereffekte sind wesentlich."
+      }
+    ],
+    "analysieren-kurzbericht": [
+      {
+        "prompt": "Eine Firma meldet 15 % Umsatzwachstum, ihre operative Marge fällt von 16 % auf 11 %. Welcher Kurzbericht trennt Fakten und Analyse sauber?",
+        "options": [
+          "15 % Wachstum beweist überragende Ertragskraft",
+          "Das Management muss für den Margenrückgang verantwortlich sein",
+          "Die Aktie sollte deshalb sofort verkauft werden",
+          "Umsatz +15 %, Marge −5 Prozentpunkte; die Kostenentwicklung muss untersucht werden"
+        ],
+        "correct": 3,
+        "explanation": "Fakten: Umsatz plus 15 %, Marge minus 5 Prozentpunkte. Eine Erklärung des Margenrückgangs benötigt zusätzliche Kostendaten."
+      },
+      {
+        "prompt": "In deinem Bericht fehlt die Entwicklung des Forderungsbestands. Was ist fachlich am besten?",
+        "options": [
+          "Cash Conversion ohne Zahlen als gut deklarieren",
+          "Die fehlende Größe als Unsicherheit nennen und im Anhang/Working Capital nachprüfen",
+          "Eine plausible Zahl frei schätzen und als Fakt schreiben",
+          "Das Thema aus der Analyse streichen"
+        ],
+        "correct": 1,
+        "explanation": "Gute Analyse trennt bekannte Fakten von offenen Daten und nennt präzise, was zur Prüfung noch fehlt."
+      }
+    ],
+    "urteil-fakt-vs-deutung": [
+      {
+        "prompt": "Welche Formulierung unterscheidet Beobachtung und Schlussfolgerung korrekt?",
+        "options": [
+          "Beobachtung: Kurs fällt 8 %; Folgerung: das Unternehmen ist insolvent",
+          "Beobachtung: EBIT-Marge fällt von 18 % auf 13 %; mögliche Interpretation: Kosten steigen relativ zum Umsatz",
+          "Beobachtung: Das Management ist inkompetent; Interpretation: Umsatz 100 Mio. €",
+          "Beobachtung: der faire Kurs muss bei 90 € liegen"
+        ],
+        "correct": 1,
+        "explanation": "Die gemessene Marge ist Beobachtung. Für die Erklärung braucht man zusätzliche Daten; sie bleibt deshalb eine Hypothese."
+      },
+      {
+        "prompt": "Ein Gewinn steigt von 20 auf 26 Mio. €, aber der operative Cashflow sinkt. Was ist ein sauberer Berichtssatz?",
+        "options": [
+          "Der Gewinn ist in jedem Fall manipuliert",
+          "Die Aktie ist deshalb definitiv billig",
+          "Die Gewinne stiegen um 30 %, während der Cashflow sank; Ursachen im Working Capital prüfen",
+          "Die Liquiditätslage muss automatisch besser sein"
+        ],
+        "correct": 2,
+        "explanation": "Gewinnplus (26−20)/20=30 % und sinkender operativer Cashflow sind getrennte Fakten. Forderungen und Bestände könnten Erklärungen liefern."
+      }
+    ],
+    "urteil-chancen-risiken": [
+      {
+        "prompt": "Du planst für einen Hersteller ein negatives Szenario. Welche Kombination ist fachlich am sinnvollsten?",
+        "options": [
+          "Umsatz −10 %, unveränderte Fixkosten, niedrigere Marge; Risiko durch schwache Nachfrage",
+          "Umsatz −10 %, Gewinnmarge garantiert höher",
+          "Aktienkurs −40 % ohne irgendeine Annahme",
+          "Einmalige negative Nachricht ohne finanzielle Auswirkung"
+        ],
+        "correct": 0,
+        "explanation": "Ein operatives Szenario braucht überprüfbare Treiber: Absatz, Kostenverlauf, Margen und daraus folgenden Cashflow."
+      },
+      {
+        "prompt": "Ein SaaS-Unternehmen hat 60 % wiederkehrenden Umsatz und plant starkes Wachstum. Welche Szenarien verbessern die Entscheidung?",
+        "options": [
+          "Dreimal dieselbe Wachstumsprognose",
+          "Drei Kursziele, die nur aus dem jüngsten Höchstkurs abgeleitet werden",
+          "Eine einzige optimistische Managementprognose",
+          "Basis-, Positiv- und Negativfall mit Annahmen für Kündigungsrate, Neukunden und Marge"
+        ],
+        "correct": 3,
+        "explanation": "Szenarien sollen unterschiedliche plausible operative Entwicklungen und überprüfbare Kennzahlen beschreiben."
+      }
+    ],
+    "urteil-these-protokoll": [
+      {
+        "prompt": "Deine These lautet: 'Der Cashflow verbessert sich spätestens 2027, weil Forderungen langsamer wachsen.' Welche Änderung macht sie besser überprüfbar?",
+        "options": [
+          "Ein festes Kursziel ohne Begründung ergänzen",
+          "Messgrößen für Forderungstage und operativen Cashflow festlegen, dann zum Quartalstermin prüfen",
+          "Nur erfolgreiche Quartale in die Bewertung aufnehmen",
+          "Jedes schlechte Ergebnis als kurzfristige Ausnahme deklarieren"
+        ],
+        "correct": 1,
+        "explanation": "Eine überprüfbare These benötigt Falsifikationskriterien und Zeitpunkte. Forderungstage und operativer Cashflow sind passende Messgrößen."
+      },
+      {
+        "prompt": "Eine Aktie steigt 25 %, obwohl der erwartete Cashflow nicht erreicht wurde. Was ist bei der Überprüfung deiner ursprünglichen These methodisch sinnvoll?",
+        "options": [
+          "Der Kursanstieg beweist die Richtigkeit der Cashflow-Annahme",
+          "Die nicht erreichte Prognose rückwirkend löschen",
+          "Kursentwicklung und operative These separat bewerten, Annahmefehler dokumentieren",
+          "Die These nie wieder prüfen"
+        ],
+        "correct": 2,
+        "explanation": "Ein Kursanstieg kann andere Gründe haben. Ein Lerntagebuch bewertet die ursprüngliche Hypothese anhand der vorher definierten Daten."
+      }
+    ]
+  }
+}
