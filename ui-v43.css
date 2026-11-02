@@ -91,7 +91,8 @@
   width:100%;
   max-width:100%;
   margin-inline:0!important;
-  padding-inline:0!important;
+  padding-left:0!important;
+  padding-right:16px!important; /* V67: correct the 3 controls together, independent of logo */
   box-sizing:border-box;
   display:flex;
   justify-content:flex-end!important;
