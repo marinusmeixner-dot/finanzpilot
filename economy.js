@@ -66,6 +66,7 @@ window.FinanzPilotEconomy=(()=>{
  async function craft(){
   const c=api()?.paperClient;if(!c)return;
   try{const {data,error}=await c.rpc('fp_craft_artifact');if(error)throw error;
+    window.FinanzPilotFeedback?.notify?.('reward',{text:'Artefakt hergestellt!'});
     notice='Neues einmaliges Artefakt hergestellt. Seine zufällige Eigenschaft ist dauerhaft gespeichert.';
     await refresh(false);window.render?.();
   }catch(e){notice='Artefakt nicht hergestellt: '+String(e.message||e);window.render?.()}
