@@ -77,7 +77,7 @@
   function render(){
    if(!content)return '<section class="fp-career-loading"><h1>Analystenkarriere</h1><p>'+esc(problem||'Ränge und Werkzeuge werden geladen …')+'</p></section>';
    const st=status(),earned=content.collectibles.filter(x=>st.collected(x)).length,unlocked=content.tools.filter(x=>st.unlockedTool(x).available).length;
-   return `<div class="fp-career-page">${levelsHtml(st)}<div class="fp-career-stats"><div><b>${unlocked}/${content.tools.length}</b><small>Research-Werkzeuge</small></div><div><b>${earned}/${content.collectibles.length}</b><small>Sammlerstücke</small></div></div>${toolMenu(st)}${selected?toolsView(selected):''}${awards(st)}<section class="fp41-career-link"><h3>Neue Spezialisierungskarriere</h3><p>Zusätzlich zu deinen bestehenden Kursnachweisen zählt jede fünf erfolgreich bestandenen neuen Spezialisierungen als ein geprüfter Beförderungsmeilenstein. Die neue Streak berücksichtigt diese Beförderungen bereits.</p><p>Neue Beförderungen: ${window.FinanzPilotLearningHub?.status?.profiles?.[0]?.promotion_count||0}. Der Skillbaum und alle spezialisierten Kurse sind ausschließlich im Bereich <strong>Lernen</strong> zu finden.</p></section><p class="fp-career-foot">Deine bisher erworbenen Karriereabzeichen und Forschungswerkzeuge bleiben erhalten. Sie werden bei der späteren Zusammenführung nicht gelöscht.</p></div>`;
+   return `<div class="fp-career-page">${levelsHtml(st)}<div class="fp-career-stats"><div><b>${unlocked}/${content.tools.length}</b><small>Research-Werkzeuge</small></div><div><b>${earned}/${content.collectibles.length}</b><small>Sammlerstücke</small></div></div>${toolMenu(st)}${selected?toolsView(selected):''}${window.FinanzPilotToolbox?.render?.()||''}${awards(st)}<section class="fp41-career-link"><h3>Neue Spezialisierungskarriere</h3><p>Zusätzlich zu deinen bestehenden Kursnachweisen zählt jede drei erfolgreich bestandenen neuen Spezialisierungen als ein geprüfter Beförderungsmeilenstein. Die neue Streak berücksichtigt diese Beförderungen bereits.</p><p>Neue Beförderungen: ${window.FinanzPilotLearningHub?.status?.profiles?.[0]?.promotion_count||0}. Der Skillbaum und alle spezialisierten Kurse sind ausschließlich im Bereich <strong>Lernen</strong> zu finden.</p></section><p class="fp-career-foot">Die bisherigen sieben historischen Karrierewerkzeuge bleiben erhalten. Die neuen Analyse-Arbeitsplätze werden dagegen durch serverbestätigte Speziallektionen freigeschaltet.</p></div>`;
   }
   function numberOf(v){
    const s=String(v||'').trim();
@@ -142,6 +142,7 @@
     try{const html=evaluate(form.dataset.careerCalc,values);result={tool:selected,html};output.innerHTML=html}
     catch(e){output.textContent=e.message||'Bitte die Zahlen prüfen.'}
    });
+   window.FinanzPilotToolbox?.bind?.(root);
    if(content&&selected==='dcf'){const tool=content.tools.find(t=>t.id==='dcf');if(tool&&status().unlockedTool(tool).available)window.FinanzPilotValuation?.mount(root)}
   }
   async function load(){
