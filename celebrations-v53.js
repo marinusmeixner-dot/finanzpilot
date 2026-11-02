@@ -12,6 +12,7 @@ const KINDS={
  artifact:{caption:'NEUES ARTEFAKT',icon:'◈',tone:'artifact',duration:3100,level:3},
  mission:{caption:'MISSION GESCHAFFT',icon:'★',tone:'mission',duration:2400,level:2},
  streak:{caption:'STREAK-MEILENSTEIN',icon:'✶',tone:'streak',duration:2450,level:2},
+ level:{caption:'LEVEL AUFGESTIEGEN!',icon:'⬆',tone:'level',duration:2800,level:3},
  reward:{caption:'BELOHNUNG',icon:'✦',tone:'reward',duration:2100,level:2}
 };
 const escape=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
