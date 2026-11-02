@@ -40,6 +40,7 @@ function render(){
  '<button class="btn" type="button" data-section-route="learn">Im Lernen-Tab weitermachen →</button></section>'+
  '<section class="fp42-profile-more"><h2>Deine Erfolge und Werkzeuge</h2><p>Öffne die Details nur dann, wenn du sie brauchst.</p><div class="fp42-profile-links">'+
  btn('levels','Level & Belohnungen','Dein XP-Fortschritt, nächster Levelaufstieg und alle einmaligen FP-Prämien','✦')+
+ btn('streaks','Streak & Tagesbelohnungen','Besuchstage, Wochenübersicht und Meilensteinprämien im eigenen Bereich','◈')+
  btn('missions','Missionen & Wiederholungen','Tagesquiz, gelernte Skills wiederholen und Wochenmission lösen','◎')+
  btn('inventory','Artefaktscherben & Inventar','Artefakte aus Scherben herstellen und Forschungspunkte einsehen','◇')+
  btn('career','Karriere & Analysewerkzeuge','Erreichte frühere Ränge, Analysehilfen und dauerhafte Auszeichnungen','✦')+
