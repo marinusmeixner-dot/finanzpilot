@@ -9,9 +9,16 @@ const officialXP=()=>user()?specialXp:(Number(stateNow().xp)||0);
 const level=()=>{let lv=1,xp=officialXP();while(lv<100&&xp>=100*lv+10*lv*(lv-1))lv++;return lv;};
 const pretty=n=>new Intl.NumberFormat('de-DE',{maximumFractionDigits:0}).format(Number(n)||0);
 function paint(){
- const fp=document.getElementById('top-fp'),lv=document.getElementById('top-level');
+ const fp=document.getElementById('top-fp'),total=document.getElementById('top-depot');
  if(fp)fp.textContent=pretty(points);
- if(lv)lv.textContent=String(level());
+ if(total){
+  const p=window.FinanzPilotPortfolio?.status;
+  const canShow=!!user()&&p?.loaded&&p.complete&&Number.isFinite(p.total);
+  total.textContent=canShow?new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:2}).format(p.total):'—';
+  const parent=document.getElementById('fp43-depot-trigger');
+  if(parent)parent.title=canShow?'Virtuelles Depot: Gesamtwert inklusive Kasse und bewerteten Aktienpositionen.':!user()?'Für den virtuellen Depotwert anmelden.':p?.unpriced?'Depotbewertung unvollständig: Kurs oder Wechselkurs fehlt.':'Virtueller Depotwert wird geladen.';
+ }
+
 }
 async function refresh(force=false){
  const current=user();if(current!==currentUser){specialXp=0;points=0;currentUser=current;lastFetch=0}
@@ -30,9 +37,15 @@ async function refresh(force=false){
 }
 function init(){
  document.getElementById('fp43-fp-trigger')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('inventory'));
- document.getElementById('fp43-level-trigger')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('levels'));
- window.addEventListener('fp-auth-change',()=>refresh(true));
+ document.getElementById('fp43-depot-trigger')?.addEventListener('click',()=>window.FinanzPilotNavigation?.route('depot'));
+ window.addEventListener('fp-portfolio-loaded',paint);
+ window.addEventListener('fp-auth-change',()=>{paint();refresh(true)});
  window.addEventListener('fp-streak-reward',()=>refresh(true));
+ let refreshDepotTimer=0;
+ window.addEventListener('fp-reward-confirmed',()=>{
+  if(refreshDepotTimer)clearTimeout(refreshDepotTimer);
+  refreshDepotTimer=setTimeout(()=>{refreshDepotTimer=0;if(user())window.FinanzPilotPortfolio?.load?.()},250);
+ });
  window.addEventListener('fp-progress-change',()=>{paint();refresh()});
  window.addEventListener('fp-navigation',()=>refresh());
  window.addEventListener('focus',()=>refresh(true));
