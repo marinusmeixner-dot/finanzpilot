@@ -1,5 +1,5 @@
 {
-  "version": 69,
-  "release": "2026-11-02-v69",
-  "notes": "V69: Der originale mobile Markenblock bleibt nach dem Start erhalten. Bisher entfernte die Navigation das Element .mobile-logo und ersetzte es durch .fp-mobile-brand, das von den V68-Layoutregeln nicht erfasst wurde. Der Sync-Knopf bleibt auch auf sehr schmalen iPhones 34px breit. Ein Regressionstest prüft den Laufzeit-DOM-Umbau. Depot, Lernstände und Belohnungen bleiben unverändert."
+  "version": 70,
+  "release": "2026-11-02-v70",
+  "notes": "V70: Mobile FinanzPilot-Wortmarke um 4 px (sehr schmale Displays 2 px) nach rechts korrigiert. Rechte Header-Elemente Depotwert, FP und Sync behalten unveränderte Position und Größen. Keine Änderungen an Lernfortschritt, Accounts, Daten oder Geschäftslogik."
 }
