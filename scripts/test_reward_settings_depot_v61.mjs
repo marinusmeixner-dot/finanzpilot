@@ -14,7 +14,7 @@ assert(header.includes("window.FinanzPilotPortfolio?.status"),'Header must use s
 assert(portfolio.includes("total:round(balance+value)")&&portfolio.includes("complete:valid&&!stats.unpriced"),'Cash and priced assets must be included; incomplete valuation must be marked.');
 assert(portfolio.includes("currentUser===user()"),'Never show stale balance from another account.');
 for(const file of ['portfolio.js','header-v43.js','profile-v42.js','feedback-v52.js','celebrations-v53.js','streak-v40.js','levels-v55.js','economy.js'])assert(new RegExp(file.replaceAll('.','\\.')+'\\?v=\\d+').test(html),file+' must have a versioned asset URL.');
-assert(html.includes('profile-v42.css?v=61')&&html.includes('ui-v43.css?v=64'),'Settings and wealth badge styles refreshed.');
+assert(html.includes('profile-v42.css?v=61')&&html.includes('ui-v43.css?v=65'),'Settings and wealth badge styles refreshed.');
 assert(streak.includes("show?.('streak'")&&streak.includes("value:'+'+euro(data.today_euros"),'Every confirmed daily streak shows exact earned euros.');
 assert(levels.includes('for(const reached of freshLevels)')&&levels.includes("show?.('level'"),'All newly reached levels get their own animation.');
 for(const mark of ["'artifact'","'mission'","'reward'"])assert(economy.includes("show?.("+mark),'Confirmed economy reward animation missing: '+mark);
