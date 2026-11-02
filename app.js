@@ -44,7 +44,7 @@ function newsPanel(limit=3){const latest=daily.stories||[];const age=(new Date()
 function chooseView(v){state.view=v;document.querySelectorAll('[data-view]').forEach(b=>b.classList.toggle('active',b.dataset.view===v));window.scrollTo({top:0,behavior:'instant'});render()}
 function navControls(){document.querySelectorAll('[data-view]').forEach(b=>b.addEventListener('click',()=>chooseView(b.dataset.view)))}
 function updateNav(){
- document.getElementById('top-streak').textContent=window.FinanzPilotStreak?.status?.day??0;
+ // Streak lives in the Profile section; no topbar element is required.
  document.getElementById('today-date').textContent=new Intl.DateTimeFormat('de-DE',{timeZone:'Europe/Berlin',day:'numeric',month:'short',year:'numeric'}).format(new Date());
  // Same authoritative server XP and progressive thresholds as Header / the Level roadmap.
  const auth=!!window.FinanzPilotCloud?.user;
