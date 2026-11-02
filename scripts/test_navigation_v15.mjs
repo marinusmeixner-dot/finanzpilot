@@ -133,7 +133,7 @@ assert(app.includes("state.view==='marketoverview'&&window.FinanzPilotMarkets"))
 assert(app.includes("state.view==='learningstats'?window.FinanzPilotLab.renderProgress()"));
 assert(app.includes("state.view==='researchcatalog'&&window.FinanzPilotResearch"));
 assert(app.includes("state.view==='depot'&&window.FinanzPilotPortfolio"));
-assert(html.includes('portfolio.js?v=44'));
+assert(html.includes('portfolio.js?v=61'));
 assert(html.includes('portfolio-v26.css?v=30'));
 assert(research.includes("state.view='researchcatalog'"));
 
