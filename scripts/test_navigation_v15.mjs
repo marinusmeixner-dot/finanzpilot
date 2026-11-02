@@ -9,17 +9,17 @@ const research=fs.readFileSync('research.js','utf8');
 const manifest=JSON.parse(fs.readFileSync('manifest.webmanifest','utf8'));
 const current=JSON.parse(fs.readFileSync('version.json','utf8'));
 const updater=fs.readFileSync('updates.js','utf8');
-assert.equal(current.version,50);
-assert.equal(manifest.start_url,'./?v=50');
+assert.equal(current.version,51);
+assert.equal(manifest.start_url,'./?v=51');
 assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
-assert(html.includes('ux-v15.js?v=46'));
+assert(html.includes('ux-v15.js?v=51'));
 assert(html.includes('ux-v15.css?v=18'));
-assert(html.includes('app.js?v=48'));
+assert(html.includes('app.js?v=51'));
 assert(html.includes('research.js?v=18'));
-assert(html.includes('updates.js?v=50'));
+assert(html.includes('updates.js?v=51'));
 assert(!html.includes('src="ux.js'));
 assert(!navSource.includes('fp-section-overlay'));
 assert(!navSource.includes('data-section-open'));
@@ -45,9 +45,9 @@ const document={
  body:{classList:{add(){},remove(){}}}
 };
 const scrolls=[];const sent=[];const w={scrollY:0,scrollTo(...args){scrolls.push(args)},dispatchEvent(ev){sent.push(ev.type)},addEventListener(){},FinanzPilotLab:null,FinanzPilotJourney:{renderHome:()=>'<div class="fp39-home"><button data-journey-start>Starten</button><button data-journey-stage="1">Orientieren</button><button data-journey-stage="2">Verstehen</button><button data-journey-stage="3">Verknüpfen</button><button data-journey-stage="4">Anwenden</button><button data-journey-stage="5">Analysieren</button><button data-journey-stage="6">Urteil</button></div>'}};
-w.FinanzPilotLearningHub={home:()=>'<section class="fp42-learn-home">'+['basics','skilltree','skilllessons','speciallessons'].map(x=>'<button data-fp41-route="'+x+'">'+x+'</button>').join('')+'</section>'};
+w.FinanzPilotLearningHub={home:()=>'<section class="fp42-learn-home">'+['basics','skilltree','skilllessons','speciallessons','missions'].map(x=>'<button data-fp41-route="'+x+'">'+x+'</button>').join('')+'</section>'};
 w.FinanzPilotProfile={render:()=>'<section class="fp42-profile"><button data-section-route="learningstats">Statistik</button><button data-section-route="career">Karriere</button><button data-section-route="inventory">Artefakte</button><button data-section-account>Konto</button></section>'};
-const location={hash:'',pathname:'/finanzpilot/',search:'?v=50'};
+const location={hash:'',pathname:'/finanzpilot/',search:'?v=51'};
 const history={replaceState:(_,__,url)=>{location.hash=url.includes('#')?'#'+url.split('#')[1]:''}};
 const context=vm.createContext({window:w,document,localStorage:{getItem:k=>memory[k]??null,setItem:(k,v)=>memory[k]=v},state,chooseView:v=>{state.view=v},
  MutationObserver:class{observe(){}},requestAnimationFrame:fn=>fn(),history,location,URLSearchParams,console,Date,JSON,
@@ -90,7 +90,7 @@ assert.equal(nav.parentOf('stockhub'),'learn');
 assert(nav.renderHub('stockhub').includes('data-section-route="researchcatalog"'));
 assert(nav.renderHub('learn').includes('fp42-learn-home'));
 assert(!nav.renderHub('learn').includes('fp41-tabs'));
-for(const route of ['basics','skilltree','skilllessons','speciallessons'])assert(nav.renderHub('learn').includes('data-fp41-route="'+route+'"'));
+for(const route of ['basics','skilltree','skilllessons','speciallessons','missions'])assert(nav.renderHub('learn').includes('data-fp41-route="'+route+'"'));
 for(let i=1;i<=6;i++)assert.equal(nav.parentOf('journey-'+i),'learn');
 assert.equal(nav.parentOf('basics'),'learn');
 assert.equal(nav.parentOf('journeycourse'),'learn');
@@ -137,8 +137,8 @@ assert(html.includes('portfolio.js?v=44'));
 assert(html.includes('portfolio-v26.css?v=30'));
 assert(research.includes("state.view='researchcatalog'"));
 
-let serverVersion=50,replaced=null,syncCalls=0;
-const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=50#view=training',hash:'#view=training',
+let serverVersion=51,replaced=null,syncCalls=0;
+const pageLoc={href:'https://marinusmeixner-dot.github.io/finanzpilot/?v=51#view=training',hash:'#view=training',
  replace:url=>{replaced=url}};
 const updaterWindow={FinanzPilotCloud:{sync:async()=>{syncCalls++}},addEventListener(){}};
 const updateContext=vm.createContext({window:updaterWindow,document:{readyState:'loading',addEventListener(){}},
@@ -147,8 +147,8 @@ const updateContext=vm.createContext({window:updaterWindow,document:{readyState:
 vm.runInContext(updater,updateContext,{filename:'updates.js'});
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(replaced,null);
-serverVersion=51;
+serverVersion=52;
 await updaterWindow.FinanzPilotUpdate.check(true);
 assert.equal(syncCalls,1);
-assert(replaced.includes('?v=51#view=training'));
+assert(replaced.includes('?v=52#view=training'));
 console.log('Version 47 tests passed: Start preserved; Depot as a main tab, nested Markt Aktienanalysen, contextual back, PWA icon.');
