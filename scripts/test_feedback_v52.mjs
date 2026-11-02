@@ -26,7 +26,7 @@ assert.equal(feedback.preferences.sound,true);
 assert.equal(feedback.preferences.motion,'system');
 feedback.notify('correct',{text:'Verified answer'});
 assert.equal(contexts,1);
-assert.equal(oscillators,2,'Two short pleasant confirmation notes.');
+assert.equal(oscillators,1,'One short, discreet user-requested confirmation tone.');
 feedback.setPreferences({sound:false,motion:'off'});
 assert.equal(feedback.preferences.sound,false);
 assert.equal(activeClasses['fp52-motion'],false);
