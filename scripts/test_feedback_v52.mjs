@@ -38,6 +38,6 @@ feedback.setPreferences({sound:true,motion:'on'});
 assert.equal(activeClasses['fp52-motion'],true);
 assert(!css.includes('infinite'),'Never use infinitely running CSS animation.');
 assert(fs.readFileSync('missions-v51.js','utf8').includes("FinanzPilotCelebrations?.show?.('mission'"));
-assert(fs.readFileSync('learning-hub-v41.js','utf8').includes("FinanzPilotCelebrations?.show?.(event"));
+assert(fs.readFileSync('learning-hub-v41.js','utf8').includes("FinanzPilotCelebrations?.show?.(done.kind,done.detail"),'Verified specialist reward animations run on the final finish button.');
 assert(fs.readFileSync('economy.js','utf8').includes("FinanzPilotCelebrations?.show?.('artifact'"));
 console.log('V52 sound and motion: opt-in interactions, bounded oscillator nodes, user mute, reduced-motion controls, events and app-wide reward signaling PASS.');
