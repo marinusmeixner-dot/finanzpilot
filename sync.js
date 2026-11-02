@@ -128,7 +128,7 @@
         const aa=l.answers?.[q],bb=r.answers?.[q];
         answers[q]=aa?.correct?aa:bb?.correct?bb:latest.answers?.[q]||aa||bb;
       }
-      lessons[id]={...latest,answers,page:Math.max(Number(l.page)||0,Number(r.page)||0),
+      lessons[id]={...latest,answers,page:Math.max(0,Math.min(4,Number(latest.page)||0)),
         updatedAt:Math.max(Number(l.updatedAt)||0,Number(r.updatedAt)||0)};
     }
     return {...b,...a,completed,lessons};
