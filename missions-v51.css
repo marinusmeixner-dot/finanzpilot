@@ -1,0 +1,60 @@
+/* FinanzPilot V51 – Missionen, spaced repetition, weekly case review. */
+.fp51-missions{display:flex;flex-direction:column;gap:20px;min-width:0;padding:0 0 35px}
+.fp51-hero{border:1px solid #406a6c;border-radius:20px;background:linear-gradient(120deg,#173d40,#172a41);padding:clamp(17px,3vw,26px);display:flex;flex-direction:column;gap:10px}
+.fp51-hero .eyebrow,.fp51-section-title .eyebrow{color:#9de9cf}
+.fp51-hero h1{font-size:clamp(25px,4vw,36px);line-height:1.12;margin:0;color:#e8f7f2}
+.fp51-hero p,.fp51-advanced p{font-size:13px;color:#bed2d6;line-height:1.7;max-width:760px}
+.fp51-hero-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin-top:10px}
+.fp51-hero-stats>div{display:flex;flex-direction:column;gap:4px;border:1px solid #47696c;border-radius:12px;background:#1e4148;padding:12px;min-width:0}
+.fp51-hero-stats b{font-size:21px;color:#c9f1df}
+.fp51-hero-stats small{font-size:11px;color:#abc6ce}
+.fp51-refresh{align-self:flex-start;margin-top:5px}
+.fp51-tabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.fp51-tabs button{border:1px solid #395d69;border-radius:12px;background:#102b39;color:#bfced4;padding:12px 9px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer;font-weight:650;font-size:13px}
+.fp51-tabs button.active{background:#245345;border-color:#6ebf9b;color:#eff9f0}
+.fp51-tabs button small{color:#a8cabd;font-size:11px}
+.fp51-tabs button:focus-visible,.fp51-option:focus-visible,.fp51-advanced button:focus-visible{outline:2px solid #aff8db;outline-offset:3px}
+.fp51-content{display:flex;flex-direction:column;gap:14px}
+.fp51-section-title{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.fp51-section-title h2{font-size:clamp(19px,3vw,24px);margin:6px 0}
+.fp51-section-title p{font-size:13px;color:#b5cbd1;line-height:1.5}
+.fp51-section-title>strong{flex:none;font-size:22px;color:#a8ebd2}
+.fp51-meter{height:8px;border-radius:12px;background:#2b4756;overflow:hidden}
+.fp51-meter>span{display:block;height:100%;background:#68bd99;border-radius:12px}
+.fp51-rewardline{padding:10px 13px;border:1px solid #4d736b;border-radius:10px;font-size:12px;color:#badbd0;line-height:1.5}
+.fp51-rewardline b{color:#abf3ce}
+.fp51-question{padding:clamp(14px,3vw,23px);border:1px solid #3e5a65;background:#122b38;border-radius:15px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.fp51-question.finished{border-color:#517166}
+.fp51-question.gated{opacity:.75}
+.fp51-question-top{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap}
+.fp51-topic{font-size:10px;font-weight:750;letter-spacing:.65px;color:#a6e0d0}
+.fp51-question-status{font-size:11px;color:#bed0d4}
+.fp51-question h3{margin:0;font-size:18px;color:#e7f4ed}
+.fp51-prompt{font-size:14px;line-height:1.6;color:#e2ebee}
+.fp51-case-context{font-size:12px;line-height:1.65;color:#c5d9d9;background:#1f3c46;border-radius:10px;padding:13px;white-space:pre-wrap}
+.fp51-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.fp51-option{border:1px solid #46636e;border-radius:10px;background:#192f3d;display:flex;align-items:flex-start;text-align:left;gap:10px;padding:12px;color:#e1eeee;cursor:pointer;font-size:13px;line-height:1.45}
+.fp51-option span{width:22px;height:22px;border:1px solid #688489;border-radius:7px;display:grid;place-items:center;flex:none;font-size:11px}
+.fp51-option b{font-weight:500;overflow-wrap:anywhere}
+.fp51-option:hover:not(:disabled){border-color:#86c2ae;background:#21423f}
+.fp51-option:disabled{cursor:default;opacity:.7}
+.fp51-option.right{border-color:#70c69c;background:#255343;opacity:1}
+.fp51-option.wrong{border-color:#b97979;background:#523b41;opacity:1}
+.fp51-explain{font-size:12px;color:#cee2df;line-height:1.65;border-left:3px solid #80cba8;padding:8px 10px;background:#193b3d;border-radius:0 7px 7px 0}
+.fp51-try{font-size:12px;color:#ebcb9e}
+.fp51-subtle{font-size:12px;color:#b4c7cd;line-height:1.6}
+.fp51-week-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;color:#aec8d1;font-size:12px}
+.fp51-advanced{padding:20px;border:1px solid #476c73;border-radius:14px;background:#183442;display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.fp51-advanced h2{font-size:20px;margin:0}
+.fp51-empty{display:flex;flex-direction:column;align-items:flex-start;gap:12px;padding:20px;background:#173241;border:1px solid #41606d;border-radius:13px}
+.fp51-empty h2,.fp51-empty h3{margin:0;font-size:19px}
+.fp51-empty p{color:#c2d4da;font-size:13px;line-height:1.7}
+.fp51-footer{padding-top:14px;border-top:1px solid #3d5863;font-size:12px;color:#b2c6ce;line-height:1.6}
+.fp51-error,.fp51-notice{padding:12px 14px;border-radius:10px;background:#274345;border:1px solid #49776f;color:#e5f3eb;font-size:13px;line-height:1.5}
+.fp51-error{border-color:#aa7572;background:#50393e;color:#f7d3ce}
+@media(max-width:600px){
+ .fp51-hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fp51-options{grid-template-columns:1fr}
+ .fp51-tabs button{flex-direction:column;gap:4px;font-size:12px;padding:10px 6px}
+ .fp51-question h3{font-size:16px}
+}
