@@ -1,5 +1,5 @@
 {
-  "version": 59,
-  "release": "2026-11-02-v59",
-  "notes": "Abkürzungen in den Grundlagen nicht mehr automatisch in Klammern hinter jedem Vorkommen ausschreiben. Stattdessen ein kompaktes, ausklappbares Glossar „Abkürzungen erklären“ in jeder relevanten Lektion, inklusive EBIT, EBITDA, KGV, ETF, EPS, FCF, DCF, SaaS, USD, EUR mit einfachen Definitionen. Nur Abkürzungen anzeigen, die in den jeweiligen Lektionstexten und Quizfragen verwendet werden. Die Aufklapp-Einstellung bleibt beim Seitenwechsel innerhalb der Lektion erhalten. Lehrinhalte, Antworten, Belohnungen, Töne, XP/FP und Nutzerfortschritte bleiben unverändert."
+  "version": 60,
+  "release": "2026-11-02-v60",
+  "notes": "Watchlist-Unternehmensartikel (einschließlich Alphabet GOOG) werden auf der Startseite zusätzlich in einem hervorgehobenen eigenen Bereich angezeigt, ohne ihre Originaldaten umzudatieren. Startseite aktualisiert sich nach Laden der privaten Watchlist automatisch. Alle anderen Lern-/Depotdaten, XP, FP und serverseitigen Belohnungen bleiben unangetastet."
 }
