@@ -256,7 +256,17 @@ async function action(kind,skill,lesson,payment,answer){
   if(kind==='submit'&&data?.correct===true)window.FinanzPilotStudy?.seed?.(lesson);
   if(kind==='submit'&&typeof data?.correct==='boolean')window.FinanzPilotLessonView?.feedback?.(lesson,data.correct);
   if(kind==='submit'&&data?.correct===false)window.FinanzPilotFeedback?.notify?.('retry',{text:'Noch nicht richtig – Erklärung prüfen.'});
-  if(kind==='submit'&&data?.correct===true)window.FinanzPilotFeedback?.notify?.(data?.promotion?'level':'correct',{text:data?.promotion?'Beförderung erreicht!':'Lektion erfolgreich abgeschlossen.'});
+  // Celebrate only a newly committed server transaction; revisiting completed courses is silent.
+  const fresh=data?.ok===true&&data?.unchanged!==true;
+  if(fresh&&kind==='enroll')window.FinanzPilotCelebrations?.show?.('skillUnlock',{confirmed:true,id:'enroll:'+skill,title:bySkill(skill)?.title||'Skill-Lernpfad',text:'Neuer Lernpfad freigeschaltet. Deine Spezialisierung beginnt jetzt.'});
+  if(fresh&&kind==='unlock')window.FinanzPilotCelebrations?.show?.('lessonUnlock',{confirmed:true,id:'unlock:'+lesson,title:skillLessons(skill).find(l=>l.id===lesson)?.title||'Neue Lektion',text:'Die nächste Lernstufe ist freigeschaltet.'});
+  if(fresh&&kind==='submit'&&data?.correct===true){
+   const learningSkill=bySkill(skill),learningLesson=learningSkill?.lessons?.find(l=>l.id===lesson);
+   const event=data.promotion?'promotion':data.skill_completed?'skill':'lesson';
+   const reward=event==='promotion'?'Skill '+(learningSkill?.title||'gemeistert')+' · +2 Artefaktscherben · +'+Number(data.promotion_euro||0).toLocaleString('de-DE')+' € Spielgeld':event==='skill'?'Alle Lektionen gemeistert. Dein neuer Skill gehört dir.':'Dein Wissen wurde serverseitig bestätigt.';
+   const value=event==='promotion'?'Rang '+data.promotion:event==='skill'?'+'+Number(data.skill_reward||0)+' FP':'+'+Number(data.xp||0)+' XP';
+   window.FinanzPilotCelebrations?.show?.(event,{confirmed:true,id:'mastery:'+lesson,title:event==='promotion'?'Beförderung Nr. '+data.promotion:event==='skill'?learningSkill?.title||'Skill abgeschlossen':learningLesson?.title||'Lektion bestanden',text:reward,value});
+  }
   if(kind==='submit'&&data?.correct===false)notice='Noch nicht richtig. Lies die Erklärung erneut und versuche es wieder.';
   if(kind==='submit'&&data?.correct===true&&data?.promotion)notice+=' Beförderung Nr. '+data.promotion+' erreicht! Forschungspunkte und virtuelles Depotgeld wurden gutgeschrieben.';
   await load(true);window.FinanzPilotEconomy?.refresh?.(false);
