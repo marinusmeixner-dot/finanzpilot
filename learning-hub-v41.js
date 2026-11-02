@@ -271,6 +271,7 @@ async function action(kind,skill,lesson,payment,answer){
   if(kind==='submit'&&data?.correct===false)notice='Noch nicht richtig. Lies die Erklärung erneut und versuche es wieder.';
   if(kind==='submit'&&data?.correct===true&&data?.promotion)notice+=' Beförderung Nr. '+data.promotion+' erreicht! Forschungspunkte und virtuelles Depotgeld wurden gutgeschrieben.';
   await load(true);window.FinanzPilotEconomy?.refresh?.(false);
+  if(fresh&&kind==='submit'&&data?.correct===true)window.FinanzPilotLevels?.refresh?.(true);
  }catch(e){notice='Nicht ausgeführt: '+String(e.message||e)}
  finally{busy=false;redraw()}
 }
