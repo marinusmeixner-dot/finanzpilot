@@ -4,7 +4,7 @@ import vm from 'node:vm';
 const read=p=>fs.readFileSync(p,'utf8');
 const catalog=JSON.parse(read('data/specializations-v41.json')),reports=JSON.parse(read('data/company-financials-v45.json'));
 const market=read('market-v34.js'),nav=read('ux-v15.js'),app=read('app.js'),html=read('index.html');
-assert.equal(JSON.parse(read('version.json')).version,56);
+assert.equal(JSON.parse(read('version.json')).version,57);
 assert.equal(catalog.branches.length,8);
 assert.equal(catalog.skills.length,52);
 assert.equal(catalog.skills.flatMap(s=>s.lessons).length,156);
