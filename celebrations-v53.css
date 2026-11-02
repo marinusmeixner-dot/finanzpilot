@@ -34,16 +34,16 @@
 .fp54-p11{--dx:16px;--dy:-206px;--r:125deg}
 @media(prefers-reduced-motion:no-preference){
  html:not(.fp52-static) .fp54-motion{animation:fp54-end 2.5s ease-in both}
- :root.fp52-motion .fp54-lesson.fp54-motion,:root.fp52-motion .fp54-basics.fp54-motion{animation-duration:2.6s}
- :root.fp52-motion .fp54-promotion.fp54-motion,:root.fp52-motion .fp54-artifact.fp54-motion{animation-duration:3.1s}
- :root.fp52-motion .fp54-motion .fp54-icon{animation:fp54-reveal .68s cubic-bezier(.1,1.25,.2,1) both}
- :root.fp52-motion .fp54-artifact.fp54-motion .fp54-icon{animation:fp54-discover .95s cubic-bezier(.1,1.25,.2,1) both}
- :root.fp52-motion .fp54-promotion.fp54-motion .fp54-icon{animation:fp54-crown .75s cubic-bezier(.1,1.35,.2,1) both}
- :root.fp52-motion .fp54-motion .fp54-title,:root.fp52-motion .fp54-motion .fp54-caption,:root.fp52-motion .fp54-motion .fp54-detail,:root.fp52-motion .fp54-motion .fp54-value{animation:fp54-words .65s .24s ease-out both}
- :root.fp52-motion .fp54-motion .fp54-rings i:first-child{animation:fp54-ring .9s .18s ease-out both}
- :root.fp52-motion .fp54-motion .fp54-rings i:last-child{animation:fp54-ring 1.05s .34s ease-out both}
- :root.fp52-motion .fp54-motion .fp54-particle{animation:fp54-shower .85s .18s cubic-bezier(.16,.63,.31,1) both}
- :root.fp52-motion .fp54-motion .fp54-particle:nth-child(2n){animation-delay:.31s}
+ html:not(.fp52-static) .fp54-lesson.fp54-motion,html:not(.fp52-static) .fp54-basics.fp54-motion{animation-duration:2.6s}
+ html:not(.fp52-static) .fp54-promotion.fp54-motion,html:not(.fp52-static) .fp54-artifact.fp54-motion{animation-duration:3.1s}
+ html:not(.fp52-static) .fp54-motion .fp54-icon{animation:fp54-reveal .68s cubic-bezier(.1,1.25,.2,1) both}
+ html:not(.fp52-static) .fp54-artifact.fp54-motion .fp54-icon{animation:fp54-discover .95s cubic-bezier(.1,1.25,.2,1) both}
+ html:not(.fp52-static) .fp54-promotion.fp54-motion .fp54-icon{animation:fp54-crown .75s cubic-bezier(.1,1.35,.2,1) both}
+ html:not(.fp52-static) .fp54-motion .fp54-title,html:not(.fp52-static) .fp54-motion .fp54-caption,html:not(.fp52-static) .fp54-motion .fp54-detail,html:not(.fp52-static) .fp54-motion .fp54-value{animation:fp54-words .65s .24s ease-out both}
+ html:not(.fp52-static) .fp54-motion .fp54-rings i:first-child{animation:fp54-ring .9s .18s ease-out both}
+ html:not(.fp52-static) .fp54-motion .fp54-rings i:last-child{animation:fp54-ring 1.05s .34s ease-out both}
+ html:not(.fp52-static) .fp54-motion .fp54-particle{animation:fp54-shower .85s .18s cubic-bezier(.16,.63,.31,1) both}
+ html:not(.fp52-static) .fp54-motion .fp54-particle:nth-child(2n){animation-delay:.31s}
 }
 @keyframes fp54-end{0%,78%{opacity:1}100%{opacity:0}}
 @keyframes fp54-reveal{0%{transform:scale(.35) rotate(-22deg);opacity:0}52%{transform:scale(1.24) rotate(4deg);opacity:1}76%{transform:scale(.94) rotate(-2deg)}100%{transform:scale(1);opacity:1}}
