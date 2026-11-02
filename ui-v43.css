@@ -74,7 +74,7 @@
  .topbar .header-right #fp-quick-sync{flex-basis:30px;width:30px;min-width:30px}
 }
 
-/* V65: Header controls align with the SAME right content edge as the rest of the app.
+/* V65/V66: Header controls align with the SAME right content edge as the rest of the app.
    Older mobile CSS gave the sticky topbar negative side margins, causing the
    100%-wide second grid row to drift beyond the visible content boundary. */
 @media(max-width:700px){
@@ -82,7 +82,7 @@
   width:100%!important;
   max-width:100%!important;
   margin-inline:0!important;
-  padding-inline:0!important;
+  padding-inline:12px!important; /* symmetric inset for logo left and action group right */
   box-sizing:border-box;
  }
  .main-area>.topbar>.header-right{
