@@ -167,7 +167,7 @@ async function load(force=false){
    }
   }catch(e){console.warn('FinanzPilot questions fallback:',e)}
  }catch(e){error='Lerninhalte sind derzeit nicht erreichbar. Bitte erneut laden.';console.warn('FinanzPilot Journey:',e)}
- finally{loading=false;redraw()}
+ finally{loading=false;redraw();window.FinanzPilotLevels?.backfill?.()}
 }
 window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(STORAGE)){state={completed:{},lessons:{},...read()};selectedId=String(state.selected||'');reconcileQuestionSessions();redraw()}});
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
