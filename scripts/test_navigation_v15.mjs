@@ -15,7 +15,7 @@ assert.equal(manifest.display,'standalone');
 assert(manifest.icons.some(i=>i.type==='image/png'&&i.sizes==='180x180'));
 assert(html.includes('rel="apple-touch-icon"'));
 assert(fs.statSync('apple-touch-icon.png').size>1000);
-assert(html.includes('ux-v15.js?v=55'));
+assert(html.includes('ux-v15.js?v=64'));
 assert(html.includes('ux-v15.css?v=18'));
 assert(/app\.js\?v=\d+/.test(html));
 assert(html.includes('research.js?v=18'));
