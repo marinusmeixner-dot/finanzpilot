@@ -76,7 +76,9 @@ function show(kind,detail={}){
 }
 function preview(kind='artifact'){
  if(!KINDS[kind])kind='artifact';
- return show(kind,{confirmed:true,demo:true,id:'preview-'+Date.now(),title:kind==='artifact'?'Datenprisma entdeckt!':'Neue Auszeichnung',text:'So werden deine echten Erfolge präsentiert.',value:kind==='artifact'?'ARTEFAKT':'ERFOLG'});
+ const demo={artifact:['Datenprisma entdeckt!','ARTEFAKT'],basics:['Grundlage gemeistert','LEKTION GESCHAFFT'],lesson:['Lektion bestanden','LEKTION GESCHAFFT'],level:['Levelaufstieg!','LEVEL ERREICHT'],streak:['Tagesbesuch bestätigt','STREAK GEHALTEN']};
+ const [title,value]=demo[kind]||['Neue Auszeichnung','ERFOLG'];
+ return show(kind,{confirmed:true,demo:true,id:'preview-'+Date.now(),title,text:'Vorschau ohne echte XP, FP oder Auszahlungen.',value});
 }
 function stop(){queue.length=0;clear();}
 document.addEventListener('pointerdown',()=>{lastGesture=Date.now()},{passive:true});
