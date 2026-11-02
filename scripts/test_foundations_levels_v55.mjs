@@ -25,7 +25,7 @@ assert(journey.includes('QUESTION_DATA')&&journey.includes('questionBankLoaded=t
 assert(journey.includes('reconcileQuestionSessions()'),'Migrate pending attempts when content changes');
 assert(journey.includes('state.completed?.[m.id]'),'Previously completed foundation lessons must survive');
 assert(journey.includes('FinanzPilotLevels?.awardFoundation?.(m.id,m.title,true)'));
-assert(journey.includes("FinanzPilotFeedback?.tone?.('correct')"),'Correct answer should have sound, not animation.');
+assert(journey.includes("FinanzPilotFeedback?.tone?.('answer')"),'Correct answer should have sound, not animation.');
 const sync=read('sync.js');
 assert(sync.includes("status==='pending'&&showSpinner"),'Invisible progress sync should not spin.');
 assert(sync.includes("await sync(true,false)"),'Initial account sync must run without spinner.');
@@ -53,7 +53,7 @@ const cx=vm.createContext({window:w,document:doc,localStorage:{getItem:key=>memo
 vm.runInContext(levels,cx,{filename:'levels-v55.js'});
 const manager=w.FinanzPilotLevels;
 assert(manager.render().includes('Level & Belohnungen'));
-assert(manager.render().includes('Level 10')&&manager.render().includes('+ 2 FP')&&manager.render().includes('Level 5'));
+assert(manager.render().includes('Level 10')&&manager.render().includes('+2 FP')&&manager.render().includes('Level 5'));
 let response=await manager.awardFoundation('geld-wofuer','Finanzgrundlagen',true);
 assert.equal(response.xp_awarded,8);
 assert.equal(calls.foundation,1);
@@ -65,5 +65,5 @@ assert.equal(response,null,'Idempotent client reward completion.');
 assert.equal(calls.foundation,1);
 assert(manager.render().includes('120'));
 assert(manager.render().includes('Level 2'));
-assert(manager.render().includes('XP-Fortschritt'),'Ordinary levels do not mint FP');
+assert(manager.render().includes('Depotguthaben'),'Ordinary levels earn small cash, not FP');
 console.log('V55: 36 challenging foundations, difficulty XP/stage FP, level roadmap, audible correct answer, first streak and non-spinning background sync PASS.');
