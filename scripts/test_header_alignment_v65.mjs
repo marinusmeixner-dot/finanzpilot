@@ -27,6 +27,11 @@ assert(header.includes('class="mobile-logo"')&&header.includes('class="header-ri
 assert(header.includes('id="top-fp"')&&header.includes('id="top-depot"'),'FP and EUR still present.');
 assert(!header.includes('top-streak'),'Streak remains in Profile.');
 assert(read('sync.js').includes("quick.id='fp-quick-sync'"),'Sync still joins header-right dynamically.');
-assert(html.includes('ui-v43.css?v=69')&&html.includes('ux-v15.js?v=69'),'Fresh layout and runtime logo code must bypass iPhone cache.');
-assert(JSON.parse(read('version.json')).version>=69,'PWA update version must include the runtime logo fix.');
-console.log('V69 PASS: real mobile-logo survives runtime build; one-row flex header, 34px Sync and cache-busted iPhone assets.');
+const buildVersion=JSON.parse(read('version.json')).version;
+const uxVersion=Number(html.match(/ux-v15\\.js\\?v=(\\d+)/)?.[1]);
+assert(html.includes('ui-v43.css?v='+buildVersion)&&Number.isInteger(uxVersion)&&uxVersion>=69,'Current CSS URL and v69+ runtime logo code must bypass iPhone cache.');
+assert(buildVersion>=71,'The visible mobile header alignment fix must be included in this release.');
+const brandRule=patch.match(/\\.main-area>\\.topbar>\\.mobile-logo\\s*\\{([^}]*)\\}/)?.[1]||'';
+assert(brandRule.includes('position:relative!important')&&brandRule.includes('left:8px!important')&&brandRule.includes('transform:none!important'),'Brand moves right without changing flex layout or displacing FP, Depot, Sync.');
+assert(patch.includes('.main-area>.topbar>.mobile-logo{font-size:15px;left:3px!important}'),'Small screens limit brand offset to avoid collision.');
+console.log('V71 PASS: mobile logo right offset, one-row flex header, 34px Sync and current cache-busted assets.');

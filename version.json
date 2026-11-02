@@ -1,5 +1,5 @@
 {
-  "version": 70,
-  "release": "2026-11-02-v70",
-  "notes": "V70: Mobile FinanzPilot-Wortmarke um 4 px (sehr schmale Displays 2 px) nach rechts korrigiert. Rechte Header-Elemente Depotwert, FP und Sync behalten unveränderte Position und Größen. Keine Änderungen an Lernfortschritt, Accounts, Daten oder Geschäftslogik."
+  "version": 71,
+  "release": "2026-11-02-v71",
+  "notes": "V71: Mobile FinanzPilot-Marke klar um 8px nach rechts verschoben (<=370px: 3px), per relativem Versatz ohne Verschieben der FP/Depot/Sync-Gruppe. Veralteten V69-Test auf dynamische Asset-Version und explizite Positionsprüfung aktualisiert; keine Lern-/Kontodaten verändert."
 }
