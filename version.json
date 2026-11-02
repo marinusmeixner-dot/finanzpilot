@@ -1,5 +1,5 @@
 {
-  "version": 56,
-  "release": "2026-11-02-v56",
-  "notes": "Neu austarierte Lernökonomie: Grundlagen 8–18 XP nach Schwierigkeit, 1 FP je abgeschlossener Etappe; 52 Skills kosten 3/5/7/9/11 FP und geben bei Abschluss nur 1/2/3/4/5 FP zurück. Level-XP-Schwellen steigen, FP nur in 5er- und 10er-Meilensteinen. Tagesmission +1 FP, Wissensprüfung +1 FP, Wochenfall +3 FP. Streak: vorwiegend virtuelles Euro-Guthaben, selten FP; Beförderung +2 FP und unverändert zwei Artefaktscherben. Alle serverseitigen Buchungen sind weiterhin einmalig; historische Guthaben und Belohnungen bleiben unberührt. Laufende und schon abgeschlossene Skills bleiben erhalten."
+  "version": 57,
+  "release": "2026-11-02-v57",
+  "notes": "XP- und Levelanzeige aus demselben Server-Kontostand, sichtbare Grundlagen-XP, auf Schwierigkeit abgestufte XP, knappe FP (Grundlagen nur Etappenabschluss +1, Skills graduell, Level FP nur 5er/10er); normale Level vergeben jetzt +5 € virtuelles Depotgeld, 5er +8 € und 1 FP, 10er +12 € und 2 FP, einmalig und ohne Rücksetzung bisheriger Buchungen. Cloud-Merge bewahrt tatsächliche zuletzt angesehene Lektionenseite beim Zurückblättern, statt stets maximale Seite zu erzwingen. 18 lektionsspezifische Begriffserklärungen bereiten alle 36 Quizzes vor; wichtige Akronyme werden ausgeschrieben. Richtige Antworten spielen einen leisen eigenen Bestätigungsklang ohne Animation. FP-Wirtschaft und frühere verdiente Belohnungen geschützt."
 }
