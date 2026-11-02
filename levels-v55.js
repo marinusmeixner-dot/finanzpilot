@@ -29,11 +29,17 @@ async function refresh(force=false){
   if(!answer?.ok||!Number.isInteger(answer.level))throw Error('Ungültige Antwort des Levelservers.');
   data=answer;loadedUser=id;lastFetch=Date.now();
   window.FinanzPilotHeader?.refresh?.(true);
-  if(Array.isArray(answer.new_levels)&&answer.new_levels.length){
-   const latest=answer.new_levels.at(-1),earned=Number(answer.level_points_awarded)||0,euros=Number(answer.level_euros_awarded)||0;
-   window.FinanzPilotCelebrations?.show?.('level',{confirmed:true,id:'level-awarded:'+id+':'+latest.level,title:'Level '+latest.level+' erreicht!',text:earned?'Meilenstein erreicht: Seltene Forschungspunkte und virtuelles Depotguthaben erhalten.':'Du hast dir eine neue Depotprämie erspielt. Weitere FP gibt es an Meilensteinen.',value:(earned?'+'+earned+' FP · ':'')+'+'+cash(euros)+' Depot'});
-  }else if(Number(answer.level_euros_awarded)>0){
-   window.FinanzPilotCelebrations?.show?.('reward',{confirmed:true,id:'level-cash-backfill:'+id+':'+answer.level,title:'Alte Levelprämien nachgetragen',text:'Deine bereits erreichten Level haben ihr einmaliges virtuelles Depotguthaben erhalten.',value:'+'+cash(answer.level_euros_awarded)});
+  const freshLevels=Array.isArray(answer.new_levels)?answer.new_levels:[];
+  for(const reached of freshLevels){
+   const lvl=Number(reached.level)||1,earned=Number(reached.points)||0,euros=Number(reached.euros)||0;
+   window.FinanzPilotCelebrations?.show?.('level',{confirmed:true,
+    id:'level-awarded:'+id+':'+lvl,title:'Level '+lvl+' erreicht!',
+    text:earned>0?'Meilenstein geschafft: Depotguthaben und seltene Forschungspunkte erhalten.':'Dein Lernen hat sich ausgezahlt: eine weitere Depotprämie.',
+    value:'+'+cash(euros)+(earned>0?' · +'+earned+' FP':'')});
+  }
+  const retroCash=Number(answer.level_euros_awarded||0)-freshLevels.reduce((sum,l)=>sum+Number(l.euros||0),0);
+  if(retroCash>0){
+   window.FinanzPilotCelebrations?.show?.('reward',{confirmed:true,id:'level-cash-backfill:'+id+':'+answer.level,title:'Alte Levelprämien nachgetragen',text:'Bereits erreichte Level haben ihre einmaligen Depotprämien erhalten.',value:'+'+cash(retroCash)});
   }
   repaint();return answer;
  }catch(e){lastError=String(e.message||e);repaint();return null}
