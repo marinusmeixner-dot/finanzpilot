@@ -29,10 +29,10 @@
   const next=day<10?10:day<20?20:day<30?30:null;
   const goal=next===10?'+100 € virtuelles Depotgeld & +2 Forschungspunkte':next===20?'+125 € & +3 Forschungspunkte':next===30?'+150 € & +4 Forschungspunkte':'Alle drei großen Meilensteine erreicht';
   return '<div class="fp40-streak-head"><div><span class="eyebrow">FINANZPILOT · BESUCHSSERIE</span><h2>Deine Streak</h2><p>Einmal täglich FinanzPilot öffnen. Maximal 30 Tage werden angezeigt.</p></div><button type="button" class="fp40-streak-close" data-fp40-streak-close aria-label="Schließen">×</button></div>'+
-   '<div class="fp40-streak-count"><strong>'+day+'</strong><span> / 30 Tage</span></div>'+(Number(result?.promotion_count)>0?'<p class="fp41-streak-promotion">Deine '+Number(result.promotion_count)+' neue(n) Beförderung(en) verbessern die tägliche Belohnung um +'+euro(result.daily_euro_bonus)+' und +'+Number(result.daily_points_bonus)+' Forschungspunkte.</p>':'')+
+   '<div class="fp40-streak-count"><strong>'+day+'</strong><span> / 30 Tage</span></div>'+(Number(result?.promotion_count)>0?'<p class="fp41-streak-promotion">Deine '+Number(result.promotion_count)+' neue(n) Beförderung(en) verbessern die tägliche Belohnung um +'+euro(result.daily_euro_bonus)+' Spielgeldbonus. Zusätzliche tägliche FP durch Beförderungen entfallen im neuen Balancing.</p>':'')+
    '<div class="fp40-streak-week" aria-label="Besuche der letzten sieben Tage">'+week()+'</div>'+
    (result?'<div class="fp40-streak-today"><b>Heutige Belohnung '+(result.awarded_now?'erhalten':'bereits verbucht')+'</b>'+
-    '<p>+'+euro(result.today_euros)+' Depotgeld · +'+Number(result.today_points)+' FP'+
+    '<p>+'+euro(result.today_euros)+' Depotgeld'+(Number(result.today_points)>0?' · +'+Number(result.today_points)+' FP':' · heute keine FP')+
     (result.milestone?' · Meilenstein Tag '+result.milestone:'')+'</p><small>Depotguthaben und Punkte werden im Profil und im Inventar geführt.</small></div>':
     '<div class="fp40-streak-today"><b>'+(signed?'Tagesbesuch wird geprüft':'Für Belohnungen anmelden')+'</b><p>Jeder Besuch bringt virtuelles Depotgeld. FP gibt es an Tag 7, 14 und 21 sowie an großen Streak-Meilensteinen.</p></div>')+
    '<div class="fp40-streak-milestones"><h3>Deine Meilensteine</h3><div class="fp40-streak-milestone-list">'+[
@@ -72,7 +72,7 @@
     if(userId!==window.FinanzPilotCloud.user)return;
     result=data;
     if(data?.awarded_now){
-     window.FinanzPilotCelebrations?.show?.('streak',{confirmed:true,id:'streak:'+data.today,title:Math.max(1,Number(data.day)||1)+' Tage in Folge!',text:'Heute erhalten: +'+Number(data.today_euros||0).toLocaleString('de-DE')+' € virtuelles Depotgeld und +'+Number(data.today_points||0)+' FP'+(Number(data.milestone)>0?' · Streak-Meilenstein!':''),value:'+'+Number(data.today_points||0)+' FP'});
+     window.FinanzPilotCelebrations?.show?.('streak',{confirmed:true,id:'streak:'+data.today,title:Math.max(1,Number(data.day)||1)+' Tage in Folge!',text:'Heute erhalten: +'+Number(data.today_euros||0).toLocaleString('de-DE')+' € virtuelles Depotgeld'+(Number(data.today_points)>0?' und +'+Number(data.today_points)+' FP':'')+(Number(data.milestone)>0?' · Streak-Meilenstein!':''),value:Number(data.today_points)>0?'+'+Number(data.today_points)+' FP':'TAGESBESUCH BESTÄTIGT'});
      window.dispatchEvent?.(new Event('fp-streak-reward'));
      if(typeof state!=='undefined'&&state.view==='depot')window.FinanzPilotPortfolio?.load?.();
      if(typeof state!=='undefined'&&state.view==='inventory')window.FinanzPilotEconomy?.refresh?.();
