@@ -42,7 +42,7 @@ function blocks(r){
 function render(props){
  const watch=Array.isArray(props.watch)?props.watch:[],records=Array.isArray(props.reports)?props.reports:[],loggedIn=!!props.loggedIn;
  if(!loggedIn)return '<div class="fp34 fp47-report"><h1>Finanzberichte & Kennzahlen</h1><p>Deine persönlichen Watchlist-Titel sind nach Anmeldung sichtbar. Die Berichte selbst basieren auf öffentlichen Originalveröffentlichungen.</p><button class="btn" data-fp34-login>Anmelden</button></div>';
- const list=watch.map(w=>({symbol:w.symbol,name:props.nameOf?.(w.symbol)||w.symbol,report:records.filter(r=>r.symbol===w.symbol).reduce((a,b)=>a?latest(a,b):b,null)}));
+ const list=watch.map(w=>({symbol:w.symbol,name:props.nameOf?.(w.symbol)||w.symbol,report:records.filter(r=>r.symbol===w.symbol||(Array.isArray(r.aliases)&&r.aliases.includes(w.symbol))).reduce((a,b)=>a?latest(a,b):b,null)}));
  const current=list.find(x=>x.symbol===active)||list[0];
  if(!current)return '<section class="fp34 fp47-report"><h1>Unternehmensberichte & Kennzahlen</h1><p>Deine Watchlist ist leer. Lege im Depot zuerst eine Aktie auf die Merkliste.</p><button type="button" class="btn secondary" data-fp34-depot>Zum Depot</button></section>';
  active=current.symbol;
@@ -52,7 +52,7 @@ function render(props){
  if(!r)return '<section class="fp34 fp47-report">'+body+'<div class="fp47-unavailable"><h2>'+esc(current.name)+'</h2><p>Für diese Watchlist-Aktie liegt noch kein verifizierter umfangreicher Bericht im redaktionellen Datenbestand. Die tägliche Aufgabe soll neue Finanzberichte recherchieren. Zahlen anderer Titel oder Börsenplätze werden nicht stillschweigend übernommen.</p><button class="btn secondary" data-fp45-refresh>Datei neu laden</button></div></section>';
  const ov=r.report_overview||{},sections=r.report_sections||[],count=sections.reduce((a,s)=>a+(s.metrics?.length||0),0),limited=r.completeness==='eingeschraenkt';
  body+='<article class="fp47-report-body"><header class="fp47-company-head"><div><span class="eyebrow">'+(limited?'EINGESCHRÄNKTER BERICHT':'LETZTER VERIFIZIERTER BERICHT')+'</span><h2>'+esc(r.name)+'</h2><p>'+esc(r.period)+' · Ende '+esc(date(r.period_end))+' · veröffentlicht '+esc(date(r.published))+' · '+count+' verifizierte Datenpositionen</p>'+
- '<small>Geprüft: '+esc(date(r.verified_at))+' · Originalwährung '+esc(r.currency)+'</small></div><div class="fp47-report-actions"><button class="btn secondary" data-fp34-chart="'+esc(r.symbol)+'">Kurschart</button><button class="btn secondary" data-fp45-refresh>Berichtdaten neu laden</button></div></header>'+
+ '<small>Geprüft: '+esc(date(r.verified_at))+' · Originalwährung '+esc(r.currency)+'</small></div><div class="fp47-report-actions"><button class="btn secondary" data-fp34-chart="'+esc(current.symbol)+'">Kurschart</button><button class="btn secondary" data-fp45-refresh>Berichtdaten neu laden</button></div></header>'+
  (limited?'<div class="fp47-critical" role="status"><b>Wichtige Berichtsgrenze</b><p>Das Unternehmen veröffentlichte zuletzt nur eingeschränkte Quartalsdaten. Die fehlenden Gewinn-, Bilanz- und Cashflowgrößen sind keine Nullen und werden nicht durch frühere Zahlen ersetzt.</p></div>':'')+
  '<section class="fp47-executive"><h3>Das Wichtigste verstehen</h3><p>'+esc(ov.summary||r.assessment||'')+'</p><div class="fp47-takeaways">'+
  '<div><h4>Was positiv auffällt</h4><ul>'+((ov.positives||[]).map(x=>'<li>'+esc(x)+'</li>').join('')||'<li>Noch keine ausreichend überprüfte positive Entwicklung.</li>')+'</ul></div>'+
