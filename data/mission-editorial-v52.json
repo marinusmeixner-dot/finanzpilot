@@ -1,17 +1,17 @@
 {
   "schema": 1,
-  "version": 52,
-  "updated_berlin_date": "2026-11-02",
-  "last_mission_question_expansion": "2026-11-02",
+  "version": 53,
+  "updated_berlin_date": "2026-11-03",
+  "last_mission_question_expansion": "2026-11-03",
   "last_weekly_case_expansion": "2026-11-02",
   "last_review_question_expansion": "2026-11-02",
   "bank_totals": {
-    "daily": 18,
+    "daily": 21,
     "review": 13,
     "weekly_questions": 20,
     "weekly_cases": 4
   },
-  "next_automatic_content_review": "2026-11-03",
+  "next_automatic_content_review": "2026-11-04",
   "approval_rules": [
     "Every new quiz item is inserted with a unique immutable ID and exactly four unambiguous answer choices.",
     "Correct answer indexes and concise worked explanations live in Supabase private schema; never publish answer keys in this GitHub file.",
