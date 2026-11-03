@@ -144,6 +144,20 @@ function chosenOptions(v,n){
  const m=v.options?.length||0,rotation=m? (n*3+1)%m:0;
  return (v.options||[]).map((text,i)=>({text,i})).map((_,i)=>({text:v.options[(i+rotation)%m],i:(i+rotation)%m}));
 }
+function numericDiagnosis(value,expected,tolerance=.001){
+ const input=Number(value),target=Number(expected);
+ if(!Number.isFinite(input)||!Number.isFinite(target))return {kind:'invalid',text:'Gib eine gültige Zahl ein.'};
+ const close=(a,b)=>Math.abs(a-b)<=Math.max(Number(tolerance)||.001,Math.abs(b)*.002);
+ if(close(input,target))return {kind:'correct',text:''};
+ if(target!==0&&close(input,-target))return {kind:'sign',text:'Möglicher Vorzeichenfehler: Der Betrag passt, aber das Ergebnis hat das entgegengesetzte Vorzeichen.'};
+ if(target!==0&&(close(input,target/100)||close(input,target*100)))
+  return {kind:'percent',text:'Möglicher Prozentfehler: Prüfe, ob du eine Dezimalzahl (z. B. 0,075) oder einen Prozentwert (7,5 %) eingeben solltest.'};
+ if(target!==0&&(close(input,target/1000)||close(input,target*1000)))
+  return {kind:'units',text:'Möglicher Einheitenfehler: Tausend, Millionen und Milliarden müssen vor dem Rechnen einheitlich umgerechnet werden.'};
+ if(target!==0&&close(input,1/target))
+  return {kind:'inverse',text:'Möglicherweise hast du Zähler und Nenner vertauscht. Prüfe, welche Größe oben und welche unten in die Formel gehört.'};
+ return {kind:'method',text:'Prüfe die eingesetzten Ausgangswerte und den Rechenweg Schritt für Schritt. Achte auf Prozentbasis, Zeitraum und Einheit.'};
+}
 function resultExplanation(a){
  const v=a.variant,selected=a.selected,wrong=v.type==='mcq'&&selected!==v.correct;
  const specific=wrong?String(v.diagnosis?.[selected]||'').trim():'';
@@ -152,7 +166,7 @@ function resultExplanation(a){
   msg+='<p>Du hast „'+esc(v.options[selected])+'“ gewählt. Fachlich korrekt ist „'+esc(v.options[v.correct])+'“.</p>';
   msg+='<p>'+(specific?esc(specific):'Vergleiche deine Schlussfolgerung mit der vollständigen Begründung und prüfe, welche Annahme in deiner Antwort nicht trägt.')+'</p>';
  }
- if(v.type==='numeric')msg+='<p>Ergebnis: <b>'+esc(v.answer)+' '+esc(v.unit||'')+'</b>. '+(a.correct?'Deine Rechnung passt.':'Prüfe Formel, Vorzeichen und Einheit.')+'</p>';
+ if(v.type==='numeric'){const d=numericDiagnosis(a.input,v.answer,v.tolerance);msg+='<p>Ergebnis: <b>'+esc(v.answer)+' '+esc(v.unit||'')+'</b>. '+(a.correct?'Deine Rechnung passt.':esc(d.text))+'</p>'}
  msg+='<p>'+esc(v.explanation||v.solution||'')+'</p>';
  if(v.steps?.length)msg+='<details><summary>Rechen- und Denkweg Schritt für Schritt</summary><ol>'+v.steps.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></details>';
  if(v.pitfall)msg+='<p><b>Typischer Fehler:</b> '+esc(v.pitfall)+'</p>';
@@ -234,7 +248,7 @@ function objective(){
  if(!hasChoice&&!validNumeric)return false;
  const correct=v.type==='mcq'?active.selected===v.correct:Math.abs(n-v.answer)<=Number(v.tolerance||.001);
  const q=correct?(active.hint?2:active.confidence===3?4:active.confidence===2?3:2):0;
- const errorType=correct?'':v.type==='numeric'?'arithmetic':v.diagnosis?.[active.selected]?'conceptual':'conceptual';
+ const errorType=correct?'':v.type==='numeric'?numericDiagnosis(n,v.answer,v.tolerance).kind:'conceptual';
  record(active.item.id,{mode:v.type,variant:v.id,ok:correct,confidence:active.confidence,hint:active.hint,quality:q,errorType});
  active.correct=correct;active.stage='feedback';
  return true;
@@ -290,7 +304,7 @@ async function load(){
  }catch(e){console.info('Adaptive extra practice variants unavailable; existing lesson questions remain usable.')}
 }
 hydrate();
-window.FinanzPilotAdaptive={renderReview,bind,dueCount,queue,knowledge,stats,variants,selectVariant,start,objective,reflect,observeLesson,record,hydrate,load,
+window.FinanzPilotAdaptive={renderReview,bind,dueCount,queue,knowledge,stats,variants,selectVariant,start,objective,reflect,observeLesson,record,numericDiagnosis,hydrate,load,
  get state(){return state},get active(){return active},get variantBank(){return variantBank}};
 window.addEventListener('fp-cloud-progress-imported',e=>{if(e?.detail?.keys?.includes(KEY))hydrate()});
 window.addEventListener('fp-auth-change',hydrate);
