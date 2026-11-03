@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T10:03:20Z",
+  "updated_at": "2026-11-03T10:58:55.329Z",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
   "intro": "Neue verifizierte Vollartikel zu Apple Q4 2026, Bayer, Siemens und deutschem Einzelhandel ergänzen den bestehenden datierten Nachrichtenbestand.",
   "lesson_id": "valuation",
@@ -656,6 +656,51 @@
           }
         ],
         "conclusion": "Apple wächst kräftig, aber der ausgewiesene Gewinn enthält messbare positive Zollerstattungen. Für eine tragfähige Investmentthese zählen die wiederkehrende Ertragskraft und der tatsächlich nach Investitionen verfügbare Cashflow."
+      }
+    },
+    {
+      "id": "2026-10-22-schaeffler-wandelbots-physical-ai",
+      "title": "Schaeffler und Wandelbots: Robotikplattform soll Automatisierung günstiger machen – die 40-Prozent-Zahl ist ein Ziel",
+      "published": "2026-10-22",
+      "category": "Unternehmen",
+      "symbols": [],
+      "source": "Schaeffler AG, Pressemitteilung vom 22. Oktober 2026",
+      "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88223232",
+      "why": "Die Partnerschaft zeigt, wie Hersteller industrielle KI und Robotik über viele Werke standardisieren wollen. Die kommunizierte Kostenersparnis ist ein Ziel und keine bereits ausgewiesene Bilanzwirkung.",
+      "impact": "Eine erfolgreiche Einführung könnte Automatisierungsaufwand und Flexibilität verbessern; ob daraus messbare Margen und Cashflows entstehen, ist bislang offen.",
+      "article": {
+        "lead": "Schaeffler und das deutsche Robotikunternehmen Wandelbots haben am 22. Oktober 2026 eine Technologiepartnerschaft angekündigt. Im Zentrum steht die offene Plattform Wandelbots NOVA: Robotikanwendungen sollen entwickelt, virtuell getestet und anschließend leichter in verschiedenen Schaeffler-Werken eingesetzt werden. Die häufig genannte Kostensenkung von bis zu 40 Prozent ist eine Zielvorstellung für Automatisierungslösungen, kein bereits gemessener Konzerngewinn.",
+        "sections": [
+          {
+            "heading": "Was die Unternehmen tatsächlich vereinbart haben",
+            "paragraphs": [
+              "Laut der offiziellen Mitteilung wollen Schaeffler und Wandelbots die Plattform NOVA als Standard für die Entwicklung und Übertragung von Robotikanwendungen etablieren. Die Zusammenarbeit betrifft nicht nur humanoide Roboter, sondern auch industrielle Anwendungen und deren weltweiten Einsatz in Schaefflers Produktionsnetzwerk.",
+              "Eine Partnerschaftsankündigung bedeutet jedoch weder, dass die Software schon an sämtlichen Standorten ausgerollt ist, noch dass alle geplanten Einsparungen realisiert wurden. Angaben zu einem garantierten Investitionsvolumen, bereits erzielten Einsparungen oder einem konkreten zusätzlichen Konzerngewinn enthält die Mitteilung nicht."
+            ]
+          },
+          {
+            "heading": "Warum digitale Tests wirtschaftlich interessant sind",
+            "paragraphs": [
+              "Die Partner wollen Robotersysteme und Abläufe zunächst digital simulieren und validieren. Schaeffler nennt hierfür die Technologien NVIDIA Omniverse und Isaac Sim. Erst danach sollen bewährte Anwendungen in realen Fertigungsumgebungen eingesetzt und auf andere Werke übertragen werden.",
+              "Der wirtschaftliche Ansatz: Eine einmal entwickelte und getestete Fähigkeit könnte mehrfach nutzbar sein, statt an jedem Standort von Grund auf neu programmiert zu werden. Das kann Entwicklung und Inbetriebnahme erleichtern; Schnittstellen, unterschiedliche Anlagen und Sicherheitsanforderungen bleiben dennoch mögliche Kostentreiber."
+            ]
+          },
+          {
+            "heading": "Die 40 Prozent richtig lesen",
+            "paragraphs": [
+              "Schaeffler formuliert das Ziel, die Kosten von Automatisierungslösungen über deren gesamten Lebenszyklus um bis zu 40 Prozent zu reduzieren. Das ist keine Aussage, dass der gesamte Produktionsaufwand des Konzerns um 40 Prozent sinkt. Die Bezugsgröße sind bestimmte Automatisierungslösungen einschließlich Entwicklung, Einsatz und Wartung.",
+              "Auch der Zusatz 'bis zu' ist wichtig: Er beschreibt ein mögliches oberes Potenzial und keine zugesicherte durchschnittliche Ersparnis. Für eine belastbare Bewertung wären Pilotprojekte, reale Kosten vor und nach Einführung, Einmalkosten der Umstellung sowie der Zeitraum bis zur Amortisation nötig. Diese Zahlen werden in der Ankündigung nicht offengelegt."
+            ]
+          },
+          {
+            "heading": "Chancen, Gegenargumente und Kennzahlen für Anleger",
+            "paragraphs": [
+              "Bei erfolgreicher Skalierung könnten die Werke flexibler auf neue Produkte reagieren und Roboterfähigkeiten schneller wiederverwenden. Die Plattform könnte Schaeffler außerdem Know-how für industrielle KI sichern. Das wäre ein strategischer Vorteil, falls die technische Umsetzung zuverlässig und wirtschaftlich funktioniert.",
+              "Das Gegenargument: Standardisierung über unterschiedliche Robotertypen, Werke und bestehende Produktionsanlagen ist anspruchsvoll. Zusätzliche Software-, Integrations- und Schulungskosten könnten Einsparungen zunächst übersteigen. Anleger sollten später auf dokumentierte Roll-out-Zahlen, tatsächlich realisierte Kostensenkungen, Investitionsausgaben, operative Margen und freien Cashflow achten statt die Ankündigung unmittelbar als Gewinnsteigerung zu verbuchen."
+            ]
+          }
+        ],
+        "conclusion": "Die Kooperation ist ein konkreter Technologieschritt mit nachvollziehbarer wirtschaftlicher Logik. Wie viel Geld sie tatsächlich spart, bleibt offen. Die Meldung stammt vom 22. Oktober 2026 und wird hier als nachträglich aufgearbeitete Unternehmensnachricht eingeordnet, nicht als neue Bekanntgabe vom 3. November."
       }
     }
   ],
