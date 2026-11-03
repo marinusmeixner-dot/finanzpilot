@@ -1,0 +1,20 @@
+/* V80: editorial worked cases; no repeated generic accordion stacks */
+.fp80-case .fp80-case-story{font-size:15px;line-height:1.85;color:#e5f1ea;margin:5px 0 17px}
+.fp80-case-route{border:1px solid #5a8474;background:#193e3d;padding:17px 19px;border-radius:14px;margin:15px 0}
+.fp80-case-route h4{margin:0 0 13px;color:#e4f8e9;font-size:14px;font-weight:750}
+.fp80-case-route .fp46-worked-steps{margin:0;padding-left:24px;gap:14px}
+.fp80-case-route .fp46-worked-steps li{padding-left:8px;line-height:1.75}
+.fp80-case-route .fp46-worked-steps li::marker{color:#a9eec2;font-weight:750}
+.fp80-case-warning{background:#253d42;border-left:3px solid #d4b778;border-radius:10px;padding:14px 16px;margin:14px 0}
+.fp80-case-warning b{font-size:13px;color:#f2ddae}
+.fp80-case-warning p{font-size:13px;color:#e2e7df;line-height:1.75;margin:7px 0 0}
+.fp80-try{border:1px solid #527b76;border-radius:11px;background:#17323c;margin:17px 0 0;overflow:hidden}
+.fp80-try summary{padding:13px 15px;color:#bcead5;font-size:13px;font-weight:680;cursor:pointer;line-height:1.55}
+.fp80-try[open] summary{border-bottom:1px solid #486e6d}
+.fp80-try .fp46-calculation{margin:13px;background:#244345}
+.fp80-try .fp46-calculation small{display:block;color:#a8d1bc;font-size:11px;line-height:1.65;margin-top:9px}
+.fp80-reflect-note{color:#c7e0d6;line-height:1.75;font-size:13px}
+.fp80-retry{border:1px solid #557974;border-radius:9px;padding:13px}
+.fp80-retry summary{cursor:pointer;font-weight:680;color:#cbeacb}
+.fp80-retry ol{padding:0 0 0 20px;display:grid;gap:9px;line-height:1.7}
+@media(max-width:650px){.fp80-case-route{padding:13px 12px}.fp80-case .fp80-case-story{font-size:14px}.fp80-case-route .fp46-worked-steps li{font-size:13px}.fp80-case-warning{padding:12px}}

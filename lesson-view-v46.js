@@ -3,7 +3,7 @@
 'use strict';
 let selected='',page=0,lastFeedback=null,chosen=null;
 const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const labels=['Verstehen','Beispiel lösen','Selbst erklären','Wissen prüfen'];
+const labels=['Verstehen','Fallbeispiel','Eigene Gedanken','Wissen prüfen'];
 function open(id){if(selected!==id){selected=id;page=0;lastFeedback=null;chosen=null}}
 function feedback(lessonId,correct){
  if(lessonId!==selected)return;
@@ -16,27 +16,25 @@ function render(skill,lesson,info={}){
  const steps='<nav class="fp46-study-steps" aria-label="Lernphasen">'+labels.map((label,i)=>
   '<button type="button" data-fp46-study-step="'+i+'" class="'+(i===step?'active':'')+'" aria-current="'+(i===step?'step':'false')+'"><span>'+String(i+1)+'</span>'+label+'</button>').join('')+'</nav>';
  let content='';
- if(step===0)content='<section class="fp46-study-panel"><span class="eyebrow">01 · DIE IDEE VERSTEHEN</span><h3>Was steckt dahinter?</h3><p>'+esc(lesson.explanation)+'</p>'+ (window.FinanzPilotExplain?.skill?.(lesson,skill,'concept')||'')+
-  '<div class="fp46-didactic-tip"><b>Dein Lernziel</b><p>'+esc(lesson.keyTakeaway||lesson.goal)+'</p></div>'+
-  (lesson.pitfall?'<details class="fp46-mistake"><summary>Typischen Denkfehler erkennen</summary><p>'+esc(lesson.pitfall)+'</p></details>':'')+'</section>';
- if(step===1)content='<section class="fp46-study-panel"><span class="eyebrow">02 · AN EINEM FALL LERNEN</span><h3>Beispiel durchdenken</h3><p>'+esc(lesson.example)+'</p>'+(window.FinanzPilotVisuals?.render?.(lesson.id)||'')+ (window.FinanzPilotExplain?.skill?.(lesson,skill,'apply')||'')+
-  (lesson.workedSteps?.length?'<ol class="fp46-worked-steps">'+lesson.workedSteps.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>':'')+
-  (lesson.practice?'<div class="fp46-calculation"><span class="eyebrow">KURZE RECHENÜBUNG · UNBENOTET</span><h4>'+esc(lesson.practice.prompt)+'</h4><div class="fp46-calculation-controls"><input type="text" inputmode="text" autocomplete="off" spellcheck="false" data-fp46-calc-input placeholder="Ergebnis eingeben, auch mit Komma oder Minus"><span>'+esc(lesson.practice.unit)+'</span><button type="button" class="btn secondary" data-fp46-calc-check>Prüfen</button></div><output data-fp46-calc-result aria-live="polite"></output></div>':'')+
-  '<p class="fp46-study-pause">Überlege selbst: Welche Zahl oder Annahme trägt die Schlussfolgerung?</p></section>';
- if(step===2)content='<section class="fp46-study-panel"><span class="eyebrow">03 · TRANSFER</span><h3>Wissen mit eigenen Worten erklären</h3>'+
-  
-  (window.FinanzPilotStudy?.noteWidget?.(lesson.id,lesson.title,lesson.transferPrompt)||'<p>Erkläre den Zusammenhang in eigenen Worten.</p>')+
-  (lesson.transferHint?'<details class="fp46-transfer-hint"><summary>Prüfkriterien zur Erklärung</summary><p>'+esc(lesson.transferHint)+'</p></details>':'')+'</section>';
+  if(step===0)content='<section class="fp46-study-panel fp80-concept"><span class="eyebrow">01 · KERNIDEE</span><h3>Das solltest du verstehen</h3><p>'+esc(lesson.explanation)+'</p></section>';
+ if(step===1)content='<section class="fp46-study-panel fp80-case"><span class="eyebrow">02 · KONKRETER FALL</span><h3>'+esc(lesson.title)+' – so funktioniert es</h3>'+
+  '<p class="fp80-case-story">'+esc(lesson.example)+'</p>'+
+  (window.FinanzPilotVisuals?.render?.(lesson.id)||'')+
+  (lesson.workedSteps?.length?'<div class="fp80-case-route"><h4>So lässt sich der Fall nachvollziehen</h4><ol class="fp46-worked-steps">'+lesson.workedSteps.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></div>':'')+
+  (lesson.pitfall?'<aside class="fp80-case-warning"><b>Darauf kommt es bei diesem Fall an</b><p>'+esc(lesson.pitfall)+'</p></aside>':'')+
+  (lesson.practice?'<details class="fp80-try"><summary>Optional: Ähnliche Rechnung selbst ausprobieren</summary><div class="fp46-calculation"><h4>'+esc(lesson.practice.prompt)+'</h4><div class="fp46-calculation-controls"><input type="text" inputmode="text" autocomplete="off" spellcheck="false" data-fp46-calc-input placeholder="Ergebnis eingeben, z. B. 3,8 oder -12"><span>'+esc(lesson.practice.unit)+'</span><button type="button" class="btn secondary" data-fp46-calc-check>Prüfen</button></div><output data-fp46-calc-result aria-live="polite"></output><small>Freiwillig · keine Bewertung für deinen Lektionsabschluss.</small></div></details>':'')+
+  '</section>';
+ if(step===2)content='<section class="fp46-study-panel fp80-reflect"><span class="eyebrow">03 · FREIWILLIGER TRANSFER</span><h3>Was hast du daraus mitgenommen?</h3>'+
+  '<p class="fp80-reflect-note">Du musst hier nichts schreiben. Wenn du einen Gedanken oder eine eigene Frage festhalten möchtest, bleibt sie in deinem privaten Lernjournal.</p>'+
+  (window.FinanzPilotStudy?.noteWidget?.(lesson.id,lesson.title,lesson.transferPrompt)||'<p>Erkläre den Zusammenhang mit eigenen Worten, falls du möchtest.</p>')+'</section>';
  if(step===3)content='<section class="fp41-question fp46-study-panel"><span class="eyebrow">04 · AKTIVES ABRUFEN</span><h3>'+esc(lesson.question)+'</h3><p>Versuche ohne Nachlesen zu antworten. Die Bewertung erfolgt weiterhin auf dem Server.</p>'+
   lesson.options.map((opt,i)=>'<button type="button" class="fp63-special-choice'+(chosen===i?' selected':'')+'" data-fp41-answer="'+i+'" aria-pressed="'+(chosen===i)+'" '+(done?'disabled':'')+'><span>'+String.fromCharCode(65+i)+'</span>'+esc(opt)+'</button>').join('')+
   '<div class="fp41-answer-status">'+(done?'✓ Bereits bestanden. Erneutes Lesen vergibt keine doppelten XP.':'Wähle zunächst eine Antwort. Erst „Antwort prüfen“ sendet sie zur Bewertung.')+'</div>'+
-  (lastFeedback?.id===lesson.id?'<div class="fp48-feedback '+(lastFeedback.correct?'correct':'retry')+'" role="status"><h4>'+(lastFeedback.correct?'Richtig – das solltest du mitnehmen':'Noch nicht richtig – so kannst du es prüfen')+'</h4>'+
-  '<p>'+esc(lastFeedback.correct?(lesson.keyTakeaway||lesson.goal):(lesson.pitfall||'Vergleiche deine Antwort nochmals mit dem Beispiel und kontrolliere die zugrunde liegende Definition.'))+'</p>'+
-  '<details><summary>'+(lastFeedback.correct?'Den Zusammenhang noch einmal nachvollziehen':'Hilfestellung: Was ist entscheidend?')+'</summary><p>'+esc(lastFeedback.correct?lesson.explanation:(lesson.transferHint||lesson.explanation))+'</p></details>'+
-  (window.FinanzPilotExplain?.skill?.(lesson,skill,'check')||'')+
-  (lastFeedback.correct?'':'<button type="button" class="btn secondary" data-fp46-study-step="0">Erklärung erneut lesen →</button>')+'</div>':'')+'</section>';
+  (lastFeedback?.id===lesson.id?'<div class="fp48-feedback '+(lastFeedback.correct?'correct':'retry')+'" role="status"><h4>'+(lastFeedback.correct?'Richtig – die Kernidee sitzt':'Noch nicht richtig – dieser Punkt ist entscheidend')+'</h4>'+
+  '<p>'+esc(lastFeedback.correct?lesson.explanation:lesson.pitfall)+'</p>'+
+  (lastFeedback.correct?'':'<details class="fp80-retry"><summary>Diesen Fall Schritt für Schritt prüfen</summary><ol>'+ (lesson.workedSteps||[]).map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol></details><button type="button" class="btn secondary" data-fp46-study-step="1">Fallbeispiel noch einmal ansehen</button>')+'</div>':'')+'</section>';
  return '<div class="fp41-study fp46-stepper"><div class="eyebrow">'+esc(skill.title)+' · LEKTION '+lesson.sequence+' VON '+skill.lessons.length+'</div><h2>'+esc(lesson.title)+'</h2>'+
-  '<p class="fp46-study-goal"><b>Danach kannst du:</b> '+esc(lesson.goal)+'</p>'+steps+content+
+  steps+content+
   '<div class="fp46-study-controls">'+(step>0?'<button type="button" class="btn secondary" data-fp46-study-step="'+(step-1)+'">← Vorheriger Lernschritt</button>':'')+
   (step<3?'<button type="button" class="btn" data-fp46-study-step="'+(step+1)+'">Weiter: '+labels[step+1]+' →</button>':
    done?'<button type="button" class="btn" data-fp41-finish>Lektion abschließen →</button>':

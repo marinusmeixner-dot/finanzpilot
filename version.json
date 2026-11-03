@@ -1,5 +1,5 @@
 {
-  "version": 79,
-  "release": "2026-11-03-v79",
-  "notes": "Vier optionale Lernvisualisierungen: Candlestick-Charts mit OHLC/MA/Support/Widerstand/Trend, Umsatz–EBIT–Cashflow-Rechenbrücke, Trade-Risiko und Positionsgröße mit Slippage, sowie Anleihepreis bei Marktzinsänderungen. Mobile SVG-Interaktion ohne externe Bibliothek, keine Änderungen an Prüfungen, XP oder FP."
+  "version": 80,
+  "release": "2026-11-03-v80",
+  "notes": "Skill-Lektionen: 156 individuell formulierte Fallherleitungen mit 156 eigenen Fehlerhinweisen statt wiederholter Branch-Schablonen. Direkt verständliche Beispiele, optionale Rechnungen und Visualisierungen, keine doppelt identischen Dropdown-Hilfen mehr. Unveränderte Quizzes, XP/FP und Lernstände."
 }
