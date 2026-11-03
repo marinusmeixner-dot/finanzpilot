@@ -971,11 +971,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Originaldokumente priorisieren",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Ein einzelner Blogwert ohne Periode kann ein Segment, eine bereinigte Zahl oder schlicht einen anderen Zeitraum meinen.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Das Blog nennt 40 % Wachstum, aber weder Quartal noch Geschäftsjahr.",
+            "Suche die Originalmeldung und notiere Umsatz, Bezugszeitraum sowie Vorjahreswert, bevor du die 40 % übernimmst."
           ],
           "transferPrompt": "Zum Thema „Originaldokumente priorisieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -998,11 +997,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Einheit, Zeitraum und Definition prüfen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Aus +12 % in einem Segment folgt kein +12 % für den gesamten Konzern – Gewichtung und andere Sparten fehlen.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Der Konzern berichtet 12 % Wachstum eines Teilbereichs, die Schlagzeile spricht vom gesamten Unternehmen.",
+            "Lies die Segmenttabelle: Welchen Umsatzanteil hatte das Segment und wie entwickelten sich die übrigen Bereiche?"
           ],
           "transferPrompt": "Zum Thema „Einheit, Zeitraum und Definition prüfen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1025,11 +1023,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Widersprüche transparent behandeln",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Zwei korrekte Angaben können unterschiedlich sein, wenn eine nach Übernahmen oder Wechselkurseffekten bereinigt ist.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Zwei Umsatzangaben widersprechen sich scheinbar: Prüfe zuerst Berichtsperiode, Währung und Konsolidierungskreis.",
+            "Erstelle eine nachvollziehbare Überleitung, etwa von berichteten zu währungsbereinigten Umsätzen, bevor du die Quellen bewertest."
           ],
           "transferPrompt": "Zum Thema „Widersprüche transparent behandeln“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1064,11 +1061,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Meldung und Markterwartung unterscheiden",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Ein fallender Kurs nach guten Zahlen beweist nicht, dass die Zahlen falsch sind. Erwartungen sind für die Überraschung entscheidend.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Ein Quartal ist absolut stark, aber der Aktienkurs sinkt: notiere die Erwartungen vor der Veröffentlichung.",
+            "Vergleiche Istzahlen und neuen Ausblick mit dem Marktkonsens. Ein verfehlter Ausblick könnte die negative Reaktion erklären."
           ],
           "transferPrompt": "Zum Thema „Meldung und Markterwartung unterscheiden“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1091,11 +1087,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Mechanismus hinter der Schlagzeile finden",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Öffentliche Ausgaben sind nicht gleich einem bereits gebuchten Auftrag oder frei verfügbarem Gewinn.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Ein angekündigtes Infrastrukturprogramm schafft mögliche Nachfrage, aber noch keinen Unternehmensumsatz.",
+            "Prüfe, ob der Maschinenbauer tatsächlich Aufträge gewinnt, welche Teile er liefert und welche Marge dafür realistisch ist."
           ],
           "transferPrompt": "Zum Thema „Mechanismus hinter der Schlagzeile finden“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1118,11 +1113,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Interpretationen kritisch testen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Ein Auftragseingangsrekord kann bei stark steigenden Produktionskosten mit sinkender Profitabilität zusammenfallen.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Mehr Nachfrage erhöht zunächst das mögliche Absatzvolumen.",
+            "Wenn Material oder Fertigungskapazität knapp werden, können Lieferkosten steigen; prüfe Bruttomarge und Auftragserfüllung zugleich."
           ],
           "transferPrompt": "Zum Thema „Interpretationen kritisch testen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1157,11 +1151,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Fakten, Prognosen und Preis getrennt halten",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Eine Umsatzstory ohne Kapitalbedarf und Geldkonversion kann trotz korrektem Wachstum ein schlechtes Investment sein.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "15 % Umsatzwachstum ist nur der Start der These – daraus entsteht nicht automatisch Geld auf dem Konto.",
+            "Schätze die operative Marge, Investitionsauszahlungen und zusätzlich gebundenes Working Capital, um den möglichen Mehr-Free-Cashflow abzuleiten."
           ],
           "transferPrompt": "Zum Thema „Fakten, Prognosen und Preis getrennt halten“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1184,11 +1177,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Überprüfbare Meilensteine definieren",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Eine Prognose ohne Termin und überprüfbaren Messwert kann rückblickend beliebig umgedeutet werden.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Du erwartest eine Margenerholung innerhalb von vier Quartalen: notiere Ausgangsmarge und Zielspanne.",
+            "Definiere vorab, nach welchem Quartal welche Marge erreicht sein sollte und welche Kostenursache einen Fehlschlag erklären könnte."
           ],
           "transferPrompt": "Zum Thema „Überprüfbare Meilensteine definieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1211,11 +1203,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Eine Gegenmeinung begründet entkräften",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Bullen- und Bärenfall dürfen nicht nur unterschiedliche Kursziele sein; sie brauchen andere Ursachen und Zahlen.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Erstelle einen positiven Fall mit steigenden Margen und einen negativen mit stärkerem Wettbewerb.",
+            "Lege je Fall konkrete Auslöser und überprüfbare Berichtszahlen fest, die dich zu einer Neubewertung bewegen."
           ],
           "transferPrompt": "Zum Thema „Eine Gegenmeinung begründet entkräften“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1803,11 +1794,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Quellenkette dokumentieren",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Ein professionell wirkender Screenshot ohne zugängliche Quelle lässt die behauptete Wachstumsrate nicht überprüfen.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Ein Screenshot zeigt 30 % Wachstum. Suche im Originalbericht das aktuelle Quartal und den passenden Vergleichswert.",
+            "Berechne das Wachstum selbst und kontrolliere Einheit, Konzern-/Segmentumfang und eventuelle Bereinigungen."
           ],
           "transferPrompt": "Zum Thema „Quellenkette dokumentieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1830,11 +1820,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Korrelation von Ursache unterscheiden",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Aus zeitlicher Nähe allein darfst du keine eindeutige Ursache des Kursanstiegs ableiten.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Die Aktie steigt während einer KI-Konferenz; das ist zunächst nur eine zeitliche Überschneidung.",
+            "Suche zeitgleiche Branchen-, Markt- und Zinsbewegungen und gegebenenfalls kursrelevante Unternehmensmeldungen."
           ],
           "transferPrompt": "Zum Thema „Korrelation von Ursache unterscheiden“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1857,11 +1846,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Interessenkonflikte untersuchen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Die Höhe eines Kursziels oder die Reichweite einer Person ersetzt keinen transparenten Bewertungsweg.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Der Influencer nennt ein Kursziel. Prüfe offengelegte Werbung, Beteiligungen und mögliche Interessenkonflikte.",
+            "Fordere das Bewertungsmodell: Welche Cashflows, Wachstumsschätzungen und Kapitalkosten tragen das Ziel?"
           ],
           "transferPrompt": "Zum Thema „Interessenkonflikte untersuchen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1896,11 +1884,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Analysedossier erstellen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Drei Jahre steigende Marge reichen für ein dauerhaftes Urteil nicht, wenn der Effekt auf Sondereinflüsse zurückgeht.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Lege Umsatz und operative Marge für drei aufeinanderfolgende Jahre nebeneinander.",
+            "Prüfe, ob die Margenänderung aus Preisen, Produktmix, Kosten oder Einmaleffekten stammt; formuliere den stärksten Gegenbeleg."
           ],
           "transferPrompt": "Zum Thema „Analysedossier erstellen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1923,11 +1910,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Investitionsausschuss simulieren",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Ein hervorragendes Unternehmen ist kein automatisch attraktiver Kauf, wenn die erwartete Zukunft bereits teuer bezahlt wird.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Trenne die Qualität des Geschäftsmodells von dem aktuell verlangten Börsenpreis.",
+            "Vergleiche den konservativen Wert aus erwarteten Geldflüssen mit dem Börsenkurs und benenne, was für den Preis schon eingepreist ist."
           ],
           "transferPrompt": "Zum Thema „Investitionsausschuss simulieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1950,11 +1936,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Thesen nachprüfen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Nur das Kursziel kosmetisch zu senken, ohne die neue Cashflow-Annahme zu dokumentieren, macht die These nicht überprüfbar.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Nach dem Quartalsbericht liegt der erwartete freie Cashflow niedriger. Identifiziere die neue Ursache: Investitionen, Marge oder Working Capital.",
+            "Ändere im Modell genau diesen Treiber und diskontiere die aktualisierten Geldflüsse neu."
           ],
           "transferPrompt": "Zum Thema „Thesen nachprüfen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2549,11 +2534,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Quellen nach Qualität ordnen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Eine vom Unternehmen genannte Branchenprognose ist weder bestätigter Marktumsatz noch garantiertes Firmenwachstum.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Der Konzern erwartet 25 % jährliches Marktwachstum – kennzeichne diese Zahl als Unternehmensprognose.",
+            "Suche unabhängige Daten zu Marktgröße, Wettbewerb und bereits bestätigten Aufträgen; gewichte ihre Aussagekraft getrennt."
           ],
           "transferPrompt": "Zum Thema „Quellen nach Qualität ordnen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2576,11 +2560,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kausalität statt nur Gleichlauf",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Gleichzeitig eintretende Ereignisse können die beobachtete Kursbewegung gemeinsam beeinflussen.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Zum Zeitpunkt der Produktankündigung steigt der Aktienkurs.",
+            "Prüfe zugleich Marktindex, Branchenkurse und Zinsnachrichten, bevor du den gesamten Anstieg allein der Ankündigung zuschreibst."
           ],
           "transferPrompt": "Zum Thema „Kausalität statt nur Gleichlauf“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2603,11 +2586,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Unsicherheiten dokumentieren",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Eine bestätigte Umsatzbasis macht langfristig aggressive Margenannahmen noch nicht belastbar.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Trenne gesicherte historische Umsatzwerte von der ungesicherten Prognose stark steigender Margen.",
+            "Teste die Bewertung einmal mit stabilen statt steigenden Margen und beobachte, wie viel Modellwert von der Prognose abhängt."
           ],
           "transferPrompt": "Zum Thema „Unsicherheiten dokumentieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2642,11 +2624,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Ein Forschungsmandat festlegen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Ein großer Auftragsbestand kann trotz hoher Nachfrage zu wenig Gewinn bringen, wenn Kosten, Liefertermine und Zahlungen ungünstig sind.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Ein Maschinenbauer meldet hohe Aufträge; frage nicht sofort nach dem Aktienkurs.",
+            "Formuliere die konkrete Prüfaufgabe: Werden Aufträge termingerecht zu ausreichender Marge abgearbeitet und in Cashflow umgewandelt?"
           ],
           "transferPrompt": "Zum Thema „Ein Forschungsmandat festlegen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2669,11 +2650,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Eine Gegenrede prüfen",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Hoher Umsatz durch KI-Nachfrage beweist nicht, dass nach Investitionen viel zusätzlicher freier Cashflow entsteht.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Die KI-These erwartet dauerhaft hohe operative Margen.",
+            "Der Gegenredner verweist auf Konkurrenz und hohe Investitionen. Vergleiche über mehrere Quartale Margenentwicklung, Capex und realisierten Cashflow."
           ],
           "transferPrompt": "Zum Thema „Eine Gegenrede prüfen“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2696,11 +2676,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Revisionsregeln definieren",
-          "pitfall": "Eine plausible Geschichte und ein steigender Börsenkurs beweisen noch keine Ursache und keine Qualität der Quelle.",
+          "pitfall": "Eine These ohne vorab definierte Widerlegungskriterien ist gegen schlechte Nachrichten leicht immunisierbar.",
           "workedSteps": [
-            "Trenne belegte Tatsachen, Prognosen und Interpretationen im Beispiel.",
-            "Suche eine Primärquelle und dokumentiere Zeitpunkt sowie mögliche Interessenkonflikte.",
-            "Formuliere ein Gegenargument und eine Bedingung, die deine These widerlegt."
+            "Du sagst innerhalb von vier Quartalen einen höheren Free Cashflow voraus.",
+            "Schreibe vorab fest, welcher Wert und welche Annahme erreicht werden müssen; prüfe danach die tatsächlichen Berichte."
           ],
           "transferPrompt": "Zum Thema „Revisionsregeln definieren“: Welche Originalquelle und welche Gegenhypothese brauchst du, damit du die Aussage einem kritischen Dritten erklären könntest?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2736,11 +2715,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Bruttoinlandsprodukt einordnen",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Quartalswachstum darf nicht ohne Kennzeichnung als Jahreswachstum gelesen oder einfach aufs Jahr hochgerechnet werden.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "+0,3 % reales BIP gegenüber dem Vorquartal und +0,1 % im Quartal davor beschreiben zwei einzelne Quartalsraten.",
+            "Bevor du einen Jahrestrend behauptest, prüfe Saisonbereinigung, Vorjahresvergleich und spätere Revisionen."
           ],
           "transferPrompt": "Zum Thema „Bruttoinlandsprodukt einordnen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2763,11 +2741,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Früh- und Spätindikatoren unterscheiden",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Ein besserer Stimmungsindikator bedeutet nicht, dass die Produktion bereits wieder wächst.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Der Einkaufsmanagerindex verbessert sich, während die tatsächliche Produktion noch sinkt.",
+            "Das kann ein frühes Stimmungssignal sein. Prüfe nachfolgende Aufträge und reale Produktionsdaten, ob sich die Erwartungen bestätigen."
           ],
           "transferPrompt": "Zum Thema „Früh- und Spätindikatoren unterscheiden“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2790,11 +2767,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Konjunkturszenario für Firmen erstellen",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Der Firmensitz ist nicht mit dem geografischen Umsatzrisiko gleichzusetzen.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Der Maschinenbauer erzielt 70 % Umsatz außerhalb Deutschlands.",
+            "Trenne die Umsatzregionen und ordne ihnen relevante Konjunkturdaten zu; deutsches BIP erklärt nur einen Teil der Nachfrage."
           ],
           "transferPrompt": "Zum Thema „Konjunkturszenario für Firmen erstellen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2830,11 +2806,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Inflation richtig lesen",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Sinkende Inflation (Disinflation) ist etwas anderes als ein fallendes allgemeines Preisniveau (Deflation).",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Die Inflationsrate sinkt von 5 % auf 2 %: Das ist eine langsamere Preissteigerung.",
+            "Ein Warenkorb für 100 € kostet bei +2 % im folgenden Jahr dennoch 102 € – die Preise fallen nicht allein wegen der niedrigeren Rate."
           ],
           "transferPrompt": "Zum Thema „Inflation richtig lesen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -2864,11 +2839,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Leitzinsen und Übertragung",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Eine Leitzinsänderung wirkt bei einem langfristigen Festzinskredit nicht sofort wie bei einer unmittelbar fälligen Finanzierung.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Unternehmen A muss in einem Jahr refinanzieren; Unternehmen B hat noch zehn Jahre fest vereinbarte Kreditzinsen.",
+            "Vergleiche für beide den Zeitpunkt, zu dem höhere Marktzinsen in die tatsächlichen Zinszahlungen übergehen."
           ],
           "transferPrompt": "Zum Thema „Leitzinsen und Übertragung“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2891,11 +2865,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Inflationsrisiken vergleichen",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Inflation ist für Unternehmen nicht automatisch gut oder schlecht; entscheidend sind Preissetzungsmacht und Kostenstruktur.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Der Händler kauft Ware teurer ein, kann seinen Verkaufspreis aber nur teilweise erhöhen.",
+            "Vergleiche den Anstieg der Einkaufskosten mit der tatsächlichen Weitergabe an Kunden; dadurch kann die Bruttomarge sinken."
           ],
           "transferPrompt": "Zum Thema „Inflationsrisiken vergleichen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2933,11 +2906,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zinskurve verstehen",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Eine inverse Zinskurve ist kein sicherer Terminplan für eine Rezession; zusätzliche Wirtschaftsindikatoren sind nötig.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Zweijährige Anleihen rentieren mit 4 %, zehnjährige mit 3 %.",
+            "4 % − 3 % = +1 Prozentpunkt Kurzfristaufschlag: Der langfristige Zinssatz liegt niedriger, die gezeigte Kurve ist invers."
           ],
           "transferPrompt": "Zum Thema „Zinskurve verstehen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2960,11 +2932,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Duration und Zinsänderung",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Die Duration liefert eine lineare Näherung; bei großen Zinssprüngen verändern Konvexität und andere Merkmale das Ergebnis.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Die modifizierte Duration beträgt 6 Jahre, die Marktrendite steigt um 1 Prozentpunkt.",
+            "Näherungsweise: −6 × 0,01 = −6 % Kursänderung, solange sonst alles gleich bleibt."
           ],
           "transferPrompt": "Zum Thema „Duration und Zinsänderung“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2987,11 +2958,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zinskurve in ein Szenario übersetzen",
-          "pitfall": "Ein einzelner Konjunkturindikator oder eine Zinssenkung bestimmt niemals automatisch die Richtung einer Aktie.",
+          "pitfall": "Eine inverse Kurve belastet Banken nicht automatisch gleich; Einlagenstruktur, Zinsbindungen und Absicherung unterscheiden sich.",
           "workedSteps": [
-            "Prüfe Veröffentlichungsdatum, betrachteten Zeitraum und ob Werte nominal oder real sind.",
-            "Unterscheide beobachtete Daten von Erwartungen über Zinsen und Konjunktur.",
-            "Übertrage zwei widersprüchliche Makroszenarien auf ein konkretes Geschäftsmodell."
+            "Eine Bank nimmt kurzfristig Einlagen auf und verleiht langfristig.",
+            "Sind kurzfristige Refinanzierungskosten höher als die langfristig vereinbarten Kreditzinsen, kann die Zinsmarge schrumpfen. Prüfe Laufzeiten und Hedging."
           ],
           "transferPrompt": "Zum Thema „Zinskurve in ein Szenario übersetzen“: Wie könnten dieselben Wirtschaftsdaten für zwei Unternehmen mit unterschiedlichen Schulden und Kunden gegensätzlich wirken?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3027,11 +2997,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kupon und Marktrendite trennen",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Die Kuponrendite ist nicht die vollständige Rendite bis zur Fälligkeit, weil Kaufpreis und spätere Rückzahlung fehlen.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "Der feste Jahreskupon beträgt 4 € je 100 € Nennwert, aber der Kaufpreis ist nur 90 €.",
+            "Die laufende Kuponrendite auf den Kaufpreis beträgt 4 ÷ 90 ≈ 4,44 %, bevor Kursveränderung und Rückzahlung betrachtet werden."
           ],
           "transferPrompt": "Zum Thema „Kupon und Marktrendite trennen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -3061,11 +3030,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kurs und Marktzins",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Ein niedrigerer Kurs ändert nicht den vertraglichen Kuponbetrag; er verändert die Rendite auf den tatsächlich gezahlten Preis.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "Eine alte Anleihe zahlt 2 % festen Kupon, vergleichbare neue Papiere bieten etwa 5 % Marktrendite.",
+            "Ein Käufer wird für die niedrigen festen Zahlungen einen niedrigeren Preis verlangen, um eine vergleichbare Gesamtrendite zu erzielen."
           ],
           "transferPrompt": "Zum Thema „Kurs und Marktzins“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3088,11 +3056,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Ausfall und Nachrang",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Eine ungewöhnlich hohe versprochene Rendite kann gerade eine Entschädigung für hohe Ausfallwahrscheinlichkeit und Verlustquote sein.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "12 % angebotene Rendite einer nachrangigen Anleihe wirkt attraktiv.",
+            "Prüfe Verschuldung und Rangfolge: Im Insolvenzfall werden vorrangige Forderungen vor nachrangigen bedient."
           ],
           "transferPrompt": "Zum Thema „Ausfall und Nachrang“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3128,11 +3095,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Index und Fonds vergleichen",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Zwei ETF-Namen mit „World“ können sehr unterschiedliche Risiken und regionale Gewichte abbilden.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "ETF A enthält nur Industrieländer; ETF B zusätzlich Schwellenländer.",
+            "Vergleiche ihre zugrunde liegenden Indizes, Ländergewichte und wichtigsten Positionen statt den Aufdruck „Welt“."
           ],
           "transferPrompt": "Zum Thema „Index und Fonds vergleichen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3155,11 +3121,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kosten und Tracking-Differenz",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "TER und tatsächliche Indexabweichung sind nicht dasselbe; die gesamte Differenz ist nicht automatisch nur ein Gebühreneffekt.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "Die laufende Kostenquote beträgt 0,2 %, die beobachtete Tracking-Differenz aber −0,5 Prozentpunkte.",
+            "Untersuche Indexmethode, Steuern auf Dividenden, Transaktionskosten und Wertpapierleihe als mögliche zusätzliche Einflussfaktoren."
           ],
           "transferPrompt": "Zum Thema „Kosten und Tracking-Differenz“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3182,11 +3147,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Fondsrisiken lesen",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Ein Kursabschlag am Ex-Tag bedeutet nicht automatisch denselben Vermögensverlust, weil der Anleger den ausgeschütteten Betrag erhält.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "Ein ETF zahlt eine Ausschüttung aus und der Anteilskurs sinkt bei unveränderten sonstigen Bedingungen ungefähr um den Betrag.",
+            "Addiere beim Vergleich der Gesamtrendite Kursentwicklung und ausgezahlte Dividende."
           ],
           "transferPrompt": "Zum Thema „Fondsrisiken lesen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3225,11 +3189,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zielgewicht festlegen",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Eine rechnerisch ausgewogene Mischung ist kein Ersatz für eine Liquiditätsreserve für feststehende Ausgaben.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "Bei 1.000 € Kapital und 60/40-Zielgewicht entstehen 600 € Aktien und 400 € Anleihen.",
+            "Kontrolliere, ob kurzfristig benötigtes Geld vorher als separate Reserve zurückgelegt wurde."
           ],
           "transferPrompt": "Zum Thema „Zielgewicht festlegen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3252,11 +3215,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Überschneidungen prüfen",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Zwei ETF-Ticker bedeuten keine echte Diversifikation, wenn die wichtigsten zugrunde liegenden Aktien gleich sind.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "Der Welt-ETF hält bereits viele große Technologiekonzerne.",
+            "Ein zusätzlicher Tech-ETF kann dieselben Firmen nochmals stark gewichten. Addiere die Überschneidungen auf Unternehmensebene."
           ],
           "transferPrompt": "Zum Thema „Überschneidungen prüfen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3279,11 +3241,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Portfolio nach Regeln pflegen",
-          "pitfall": "Ein günstiger Produktname, ein hoher Kupon oder eine Ausschüttung allein ist kein Beleg für höhere Gesamtrendite.",
+          "pitfall": "Rebalancing soll die Risikoverteilung erhalten, nicht den kurzfristig besten Verkaufszeitpunkt vorhersagen.",
           "workedSteps": [
-            "Bestimme zuerst Index, Bestandteile, Kosten und die genaue Berechnungsbasis.",
-            "Berücksichtige Währung, Laufzeit beziehungsweise Ausschüttungen und zusätzliche Risiken.",
-            "Unterscheide den beabsichtigten Portfolioeffekt von einem bloßen Produktnamen."
+            "Die Aktienquote hat sich von 60 % auf 75 % erhöht.",
+            "Rebalancing würde den Aktienanteil durch Teilverkauf oder frische Zuflüsse wieder Richtung 60 % bringen, sofern die Zielquote noch gilt."
           ],
           "transferPrompt": "Zum Thema „Portfolio nach Regeln pflegen“: Welche zwei Produktmerkmale müsstest du vergleichen, bevor du ein ähnliches ETF- oder Anleiheangebot auswählst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3319,11 +3280,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Bid und Ask unterscheiden",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Der zuletzt gehandelte Kurs muss nicht der Preis sein, zu dem deine nächste Market-Order ausgeführt wird.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "99,80 € ist das höchste aktuell angezeigte Kaufgebot (Bid), 100,20 € der günstigste angebotene Verkaufspreis (Ask).",
+            "Wer sofort eine kleine Menge kauft, trifft typischerweise den Ask; der Spread beträgt hier 0,40 € je Aktie."
           ],
           "transferPrompt": "Zum Thema „Bid und Ask unterscheiden“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3346,11 +3306,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Limit und Marktorder",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Ein Limit schützt vor einem schlechteren Kaufpreis, aber nicht davor, dass die Order gar nicht oder nur teilweise ausgeführt wird.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Im Kursfenster steht 50 €, das Orderbuch ist jedoch dünn.",
+            "Eine Marktorder nimmt vorhandene Verkaufsangebote der Reihe nach. Mit einer Limitorder kann der maximale Kaufpreis begrenzt werden, allerdings ohne Ausführungsgarantie."
           ],
           "transferPrompt": "Zum Thema „Limit und Marktorder“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3373,11 +3332,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Liquidität im Stresstest",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Eine angezeigte Best-Ask-Notierung garantiert diesen Preis nicht für die gesamte geplante Stückzahl.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Du möchtest 2.000 Aktien sofort kaufen; auf der besten Ask-Stufe liegen nur 50 Stück.",
+            "Für die übrigen 1.950 Aktien müssten höhere Preisstufen genutzt werden, falls das Orderbuch keine zusätzliche Liquidität nachliefert."
           ],
           "transferPrompt": "Zum Thema „Liquidität im Stresstest“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3415,11 +3373,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Gesamtkosten ermitteln",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Gerade bei kleinen Orders können fixe Gebühren einen großen Prozentanteil des Handelsvolumens ausmachen.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Für eine Order über 100 € fallen 1 € explizite Gebühr und modellhaft 0,40 € Spreadkosten an.",
+            "1,40 ÷ 100 × 100 = 1,4 % Kosten beim Einstieg; Kosten eines späteren Verkaufs sind noch nicht berücksichtigt."
           ],
           "transferPrompt": "Zum Thema „Gesamtkosten ermitteln“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -3449,11 +3406,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Slippage nachvollziehen",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Slippage ist nicht identisch mit der Brokergebühr; beide können die Strategie belasten.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Du planst 20,00 € Einstieg, tatsächlich werden im Mittel 20,18 € ausgeführt.",
+            "Die ungünstige Abweichung von 0,18 € je Aktie entspricht 0,9 % des geplanten Kurses, zuzüglich möglicher Gebühren."
           ],
           "transferPrompt": "Zum Thema „Slippage nachvollziehen“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3476,11 +3432,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Tradingstrategie gegen Kosten prüfen",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Eine profitable Bruttostrategie ist nicht automatisch nach Spread, Gebühren, Steuern und Slippage profitabel.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Eine Strategie erzielt 4 % Vor-Kosten-Rendite pro Jahr.",
+            "Wenn häufiges Handeln 5 Prozentpunkte Kosten verursacht, bleibt näherungsweise −1 % nach Kosten, bevor weitere Effekte einbezogen werden."
           ],
           "transferPrompt": "Zum Thema „Tradingstrategie gegen Kosten prüfen“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3518,11 +3473,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Hebelwirkung",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Die 5x-Rechnung ignoriert Finanzierungskosten, Margin-Veränderungen und mögliche Verluste über den Einsatz hinaus.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Ein Hebel von fünf macht eine Kursbewegung von −10 % modellhaft zu rund −50 % auf das eingesetzte Eigenkapital.",
+            "Prüfe danach Margin-Anforderungen und mögliche Zwangsschließung: Verlust und Liquidation können früher eintreten als die einfache Rechnung nahelegt."
           ],
           "transferPrompt": "Zum Thema „Hebelwirkung“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3545,11 +3499,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Optionsrisiken verstehen",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Eine gekaufte Option kann wertlos verfallen, obwohl der Basiswert keine besonders große Gegenbewegung gemacht hat.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Die bezahlte Prämie für die Kaufoption beträgt 200 €.",
+            "Verfällt die Option ohne inneren Wert, ist diese gesamte Prämie verloren – unabhängig davon, ob der Basiswert nur leicht fällt oder seitwärts verläuft."
           ],
           "transferPrompt": "Zum Thema „Optionsrisiken verstehen“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3572,11 +3525,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Margin und Liquidationsrisiko",
-          "pitfall": "Eine letzte Kursnotierung ist weder eine Ausführungsgarantie noch ein garantierter Stop-Loss-Preis.",
+          "pitfall": "Ein Stop oder eine Marginregel garantiert nicht, dass der Gesamtverlust genau auf den ursprünglich hinterlegten Betrag begrenzt bleibt.",
           "workedSteps": [
-            "Trenne angezeigten Preis, tatsächlich ausführbaren Preis und handelbare Menge.",
-            "Berücksichtige Spread, Gebühren, Ausführung und mögliche Liquiditätsprobleme.",
-            "Formuliere den schlimmsten plausiblen Ausgang und ein klares Risikolimit."
+            "Ein schneller Kursrückgang verringert die hinterlegte Sicherheitsleistung für den Terminkontrakt.",
+            "Unterschreitet sie die Anforderungen, kann der Broker die Position schließen; der endgültige Ausführungspreis ist dann ungewiss."
           ],
           "transferPrompt": "Zum Thema „Margin und Liquidationsrisiko“: Was könnte bei geringer Liquidität oder hoher Volatilität an der im Beispiel gezeigten Ausführung scheitern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
