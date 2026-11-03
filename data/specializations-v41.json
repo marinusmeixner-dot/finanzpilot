@@ -373,11 +373,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kurs und Ergebnis richtig verknüpfen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Ein KGV von 15 sagt ohne Gewinnqualität, Schulden und Wachstum nichts darüber aus, ob die Aktie günstig ist.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "90 € Aktienkurs geteilt durch 6 € Jahresgewinn je Aktie ergeben ein KGV von 15.",
+            "Ermittle, ob die 6 € wiederkehrend erwirtschaftet wurden; ein einmaliger Verkauf kann das KGV künstlich niedrig aussehen lassen."
           ],
           "transferPrompt": "Zum Thema „Kurs und Ergebnis richtig verknüpfen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -407,11 +406,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Schulden und liquide Mittel berücksichtigen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Wird später ein EV/EBITDA berechnet, muss die Gewinnkennzahl zum gesamten Unternehmenswert passen – nicht nur zu den Aktionären.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Starte beim Eigenkapital-Börsenwert von 1.000 Mio. €.",
+            "Addiere 300 Mio. € Nettofinanzschulden: Der vereinfachte Enterprise Value beträgt 1.300 Mio. €."
           ],
           "transferPrompt": "Zum Thema „Schulden und liquide Mittel berücksichtigen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -441,11 +439,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Unterschiedliche Risiken und Wachstum einordnen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Billiger nach KGV kann lediglich höheres Insolvenz-, Zins- oder Gewinnrisiko bedeuten.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Stelle die beiden KGVs nebeneinander, prüfe dann aber auch die Nettoverschuldung und Fälligkeiten.",
+            "Verändere gedanklich den Gewinn der stärker verschuldeten Firma bei höheren Zinskosten – ihr vermeintlich günstiges KGV könnte täuschen."
           ],
           "transferPrompt": "Zum Thema „Unterschiedliche Risiken und Wachstum einordnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -480,11 +477,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Rendite auf eingesetztes Kapital beurteilen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Die 8 % sind nur wertschaffend, wenn sie nachhaltig oberhalb der passenden Kapitalkosten liegen; eine Rendite allein ist kein Beweis.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "200 Mio. € zusätzlich eingesetztes Kapital stehen 16 Mio. € zusätzlichem jährlichem operativem Nachsteuergewinn gegenüber.",
+            "16 ÷ 200 = 8 % vereinfachte zusätzliche Kapitalrendite. Vergleiche diese mit den Kapitalkosten des Projekts."
           ],
           "transferPrompt": "Zum Thema „Rendite auf eingesetztes Kapital beurteilen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -514,11 +510,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zahlungen über mehrere Jahre vergleichen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Mehrere Zahlungen in verschiedenen Jahren dürfen nicht mit nur einem gemeinsamen Jahresfaktor abgezinst werden.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Der versprochene Betrag beträgt 100 € erst in einem Jahr, nicht heute.",
+            "Bei 10 % geforderter Rendite: 100 ÷ 1,10 ≈ 90,91 € heutiger Gegenwartswert."
           ],
           "transferPrompt": "Zum Thema „Zahlungen über mehrere Jahre vergleichen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -541,11 +536,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Skalierung auf Cashflow prüfen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Umsatzwachstum ohne Berücksichtigung des Kapitalbedarfs ist noch kein neuer Unternehmenswert.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Mehr Maschinen können zunächst mehr Umsatz ermöglichen, verlangen aber eine Investitionsauszahlung.",
+            "Vergleiche zusätzlichen operativen Cashflow mit der dafür nötigen Investition und späteren Ersatzinvestitionen."
           ],
           "transferPrompt": "Zum Thema „Skalierung auf Cashflow prüfen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -580,11 +574,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Cashflows über Jahre fortschreiben",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "110 Mio. € im zweiten Jahr sind nicht heute 110 Mio. € wert; der Zeitwert muss für jedes Jahr berücksichtigt werden.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Die 100 Mio. € Cashflow in Jahr 1 werden durch (1 + Diskontsatz) geteilt.",
+            "Die 110 Mio. € in Jahr 2 werden durch (1 + Diskontsatz)² geteilt. Summiere erst die getrennt abgezinsten Werte."
           ],
           "transferPrompt": "Zum Thema „Cashflows über Jahre fortschreiben“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -614,11 +607,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Restwert nicht dominieren lassen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Ein unrealistisch hoher Restwert kann fast den gesamten berechneten Wert bestimmen und scheinbare Genauigkeit vortäuschen.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Ein Modell lässt das Unternehmen über Jahrzehnte zweistellig wachsen; das kann größer als der gesamte erreichbare Markt werden.",
+            "Setze eine langfristig tragfähige Wachstumsannahme und berechne, wie stark der Restwert dadurch sinkt oder steigt."
           ],
           "transferPrompt": "Zum Thema „Restwert nicht dominieren lassen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -641,11 +633,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Unsichere Bewertung als Bandbreite formulieren",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Der Sicherheitsabstand hängt vom Nenner ab; eine Modellspanne ist keine Garantie, dass 65 € realisierbar sind.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Berechne den Abstand vom Kurs 50 € zum angenommenen Wert 65 €: 15 ÷ 65 ≈ 23,1 % Sicherheitsabstand bezogen auf den Wert.",
+            "Prüfe, ob sich der Wert bei ungünstigeren Margen oder höherem Diskontsatz unter den Kurs verschieben würde."
           ],
           "transferPrompt": "Zum Thema „Unsichere Bewertung als Bandbreite formulieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -715,11 +706,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Einzelrisiken und Abhängigkeiten",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Fünf verschiedene Firmen desselben Sektors sind keine fünf voneinander unabhängigen Risikofaktoren.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Zähle nicht nur fünf Halbleiteraktien, sondern ermittle den Anteil jeder Firma am Gesamtdepot.",
+            "Frage, wie ein Nachfrageeinbruch bei Chips gleichzeitig Umsatz und Gewinne aller fünf Positionen beeinträchtigen könnte."
           ],
           "transferPrompt": "Zum Thema „Einzelrisiken und Abhängigkeiten“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -742,11 +732,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Verlusttragfähigkeit definieren",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Die prozentuale Verlustgröße der Aktie wird nicht eins zu eins auf das gesamte Depot übertragen, sondern mit ihrem Gewicht multipliziert.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "60 % Depotgewicht × 40 % Wertverlust ergeben 24 % Verlust des gesamten Depots allein aus dieser Position.",
+            "Ein Depot von 5.000 € verlöre dadurch 1.200 €, bevor andere Anlagen berücksichtigt werden."
           ],
           "transferPrompt": "Zum Thema „Verlusttragfähigkeit definieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -781,11 +770,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kapitalverteilung sichtbar machen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Ein kleiner Kaufbetrag in Euro kann bei einem kleinen Depot trotzdem eine große Konzentration bedeuten.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Das Depot ist 2.000 € wert, eine Aktie macht 500 € aus.",
+            "500 ÷ 2.000 = 0,25 = 25 % Portfolioanteil. Überlege, ob das zu deiner Diversifikationsgrenze passt."
           ],
           "transferPrompt": "Zum Thema „Kapitalverteilung sichtbar machen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -815,11 +803,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Gleichlauf von Anlagen verstehen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Eine historische Korrelation nahe null ist kein Versprechen, dass die Anlagen in einer Krise stabil gegeneinander laufen.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Vergleiche zwei verschiedene Branchen unter normalen Marktbedingungen und bei einem gemeinsamen Liquiditätsschock.",
+            "Zeige gedanklich: Beide Positionen können bei steigender Risikovermeidung gleichzeitig fallen, auch wenn ihre normale Korrelation niedrig war."
           ],
           "transferPrompt": "Zum Thema „Gleichlauf von Anlagen verstehen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -842,11 +829,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Szenarien auf den Gesamtwert übertragen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Nicht mit einem Depotverlust von 30 % rechnen: Der Einzeltitel ist nur mit 40 % gewichtet.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "40 % Depotgewicht × −30 % Kursänderung = −12 Prozentpunkte Depotbeitrag.",
+            "Bei 10.000 € Ausgangswert entspricht das −1.200 €, solange die restlichen Positionen unverändert bleiben."
           ],
           "transferPrompt": "Zum Thema „Szenarien auf den Gesamtwert übertragen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -888,11 +874,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Auswirkungen auf Finanzierung und Bewertung",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Höhere Marktzinsen treffen einen alten Festzinskredit erst dann unmittelbar, wenn neue Finanzierung oder variable Zinskonditionen relevant werden.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Suche den Zeitpunkt der nächsten Kreditfälligkeit und den bisherigen Vertragszins.",
+            "Bei höherem Refinanzierungszins steigen die künftigen Zinszahlungen; schätze die mögliche jährliche Zusatzbelastung des Free Cashflows."
           ],
           "transferPrompt": "Zum Thema „Auswirkungen auf Finanzierung und Bewertung“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -915,11 +900,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Wechselkurse korrekt umrechnen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Dollar-Kursgewinn und Euro-Wechselkursbewegung dürfen nicht unkritisch als identische Rendite addiert werden.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Rechne zuerst die Dollarrendite von +5 % in einen Wertfaktor von 1,05 um.",
+            "Berücksichtige anschließend, ob ein starker Euro den umgerechneten Dollarwert verringert; beide Renditen müssen multiplikativ kombiniert werden."
           ],
           "transferPrompt": "Zum Thema „Wechselkurse korrekt umrechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -949,11 +933,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Finanzierungsrisiken unter Druck",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Eine buchhalterisch profitable Firma kann trotzdem scheitern, wenn fällige Zahlungen nicht refinanziert werden.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Eine schwache Gewinnmeldung verschlechtert häufig Bonität und Finanzierungsspielraum.",
+            "Prüfe, wann neues Kapital nötig ist und ob dafür höhere Zinsen, zusätzliche Sicherheiten oder neue Eigenkapitalanteile verlangt werden."
           ],
           "transferPrompt": "Zum Thema „Finanzierungsrisiken unter Druck“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1453,11 +1436,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Operatives Modell strukturieren",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Eine pauschale Gleichsetzung von 10 % mehr Umsatz mit 10 % mehr Gewinn ignoriert Kostenstruktur und operative Hebel.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Schätze den Umsatzanstieg getrennt von der Entwicklung fixer und variabler Kosten.",
+            "Wenn fixe Kosten zunächst gleich bleiben, kann der Gewinn stärker als der Umsatz steigen; bei höherer Materialquote kann er dennoch sinken."
           ],
           "transferPrompt": "Zum Thema „Operatives Modell strukturieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1480,11 +1462,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Drei Szenarien bewerten",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Eine Gewichtung ist deine Einschätzung, keine empirisch bekannte Eintrittswahrscheinlichkeit; zu optimistische Annahmen verschieben alle Fälle.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Ordne den Werten 60, 90 und 120 € klar benannte negative, mittlere und positive Annahmen zu.",
+            "Bei Beispielgewichten 25 %, 50 % und 25 % ergäbe sich 15 + 45 + 30 = 90 € erwarteter Modellwert."
           ],
           "transferPrompt": "Zum Thema „Drei Szenarien bewerten“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1507,11 +1488,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Sensitivität interpretieren",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Wenn du zugleich Cashflows und Diskontsatz veränderst, weißt du nicht mehr, welcher Faktor den Unterschied verursacht hat.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Halte die prognostizierten Zahlungen konstant und erhöhe ausschließlich den Diskontsatz.",
+            "Der Barwert späterer Zahlungen sinkt dadurch stärker als der einer kurzfristigen Zahlung; eine Sensitivitätstabelle macht das sichtbar."
           ],
           "transferPrompt": "Zum Thema „Sensitivität interpretieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1546,11 +1526,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Annahmen angreifen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Eine hohe Prozentzahl klingt plausibel, bis sie über zehn Jahre auf eine unrealistische Unternehmensgröße aufgezinst wird.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "20 % Wachstum über zehn Jahre entsprechen einem Umsatzfaktor von etwa 6,2.",
+            "Stelle diesem Faktor die Größe des erreichbaren Marktes und nötige Investitionen gegenüber: Passt die Firma dann überhaupt noch in den Markt?"
           ],
           "transferPrompt": "Zum Thema „Annahmen angreifen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1573,11 +1552,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Preis und Wert trennen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Eine qualitativ ausgezeichnete Firma kann als Aktie überbewertet sein; Produktqualität ersetzt keinen Preisvergleich.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Ein defensiv geschätzter Wert von 80 € liegt unter dem aktuellen Preis von 110 €.",
+            "Für einen Einstieg müsste der pessimistische Fall entschärft oder der künftig erzielbare Cashflow höher begründet werden."
           ],
           "transferPrompt": "Zum Thema „Preis und Wert trennen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1600,11 +1578,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Revisionsregeln festlegen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Ohne vorab notierte Abbruchkriterien kann jede enttäuschende Zahl nachträglich als bloßer Ausreißer erklärt werden.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Notiere vorab, welche Cashflow- und Margenwerte du im nächsten Quartal erwartest.",
+            "Lege eine klare Regel fest: Beispielsweise erneute Bewertung, wenn Umsatz wächst, aber die freie Geldkonversion dauerhaft zurückgeht."
           ],
           "transferPrompt": "Zum Thema „Revisionsregeln festlegen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1639,11 +1616,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Risikoanteile berechnen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Ein 40-%-Rückgang einer kleinen Position bedeutet nicht automatisch 40 % Gesamtdepotverlust.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Die Aktie wiegt 250 € von 1.000 € Depotwert: 25 %.",
+            "Bei −40 % Kursbewegung verliert die Position 100 €, das Gesamtdepot also 10 %, sofern sonst alles unverändert bleibt."
           ],
           "transferPrompt": "Zum Thema „Risikoanteile berechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -1673,11 +1649,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Rebalancing erklären",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Rebalancing bedeutet Risikoprofilpflege, nicht die Vorhersage, dass die gestiegene Anlage ab jetzt fallen muss.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Das Gewicht ist von 20 % auf 35 % gestiegen; dadurch trägt die Position einen viel größeren Anteil am Gesamtrisiko.",
+            "Ein Teilverkauf könnte die Zielgewichtung wiederherstellen. Bewerte Handelskosten, Steuern und deine vorher festgelegte Toleranz."
           ],
           "transferPrompt": "Zum Thema „Rebalancing erklären“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1700,11 +1675,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Risikobudget dokumentieren",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Eine attraktive Aktienchance ist keine passende Finanzierung für eine kurzfristig sichere Ausgabe.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Lege den Rechnungsbetrag und den Zahlungstermin in sechs Monaten fest.",
+            "Halte diese Liquidität getrennt von schwankungsanfälligen Aktien, damit ein Kursrückgang keine Zwangsverkäufe auslöst."
           ],
           "transferPrompt": "Zum Thema „Risikobudget dokumentieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1739,11 +1713,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Klumpenrisiken identifizieren",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Ein technologisch verbundener Sektor kann selbst dann ein Klumpenrisiko bilden, wenn die Firmen formal unterschiedlichen Branchen zugeordnet sind.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Addiere die Gewichte aller Depotpositionen, die an KI- und Rechenzentrumsinvestitionen hängen.",
+            "70 % Gesamtgewicht reagieren potenziell auf denselben Nachfragetreiber – unabhängig von verschiedenen Firmennamen."
           ],
           "transferPrompt": "Zum Thema „Klumpenrisiken identifizieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1766,11 +1739,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Liquiditätskrise simulieren",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Risikotragfähigkeit ist nicht allein eine Frage der mentalen Verlusttoleranz, sondern auch des tatsächlichen Liquiditätsbedarfs.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Ein 30-%-Depotverlust mindert das Kapital, während gleichzeitig eine unaufschiebbare Reparatur ansteht.",
+            "Ein gesonderter Notgroschen würde verhindern, dass du nach dem Kursrückgang zwingend Wertpapiere verkaufen musst."
           ],
           "transferPrompt": "Zum Thema „Liquiditätskrise simulieren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1793,11 +1765,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Regeln gegen Denkfehler",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Der Wunsch, wieder zum Einstiegskurs zurückzukehren, ist keine wirtschaftliche Begründung fürs Halten.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Blende den alten Kaufkurs bewusst aus und analysiere die Aktie zum heutigen Preis.",
+            "Vergleiche aktuelle Erwartungen, Risiken und eine alternative Verwendung deines noch vorhandenen Kapitals."
           ],
           "transferPrompt": "Zum Thema „Regeln gegen Denkfehler“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2204,11 +2175,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Eigenkapitalrendite verstehen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Eine höhere geforderte Rendite macht denselben Cashflow nicht wertvoller; sie bedeutet eine stärkere Abzinsung.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Ein Aktienertrag in fünf Jahren ist wegen Zeit und Unsicherheit weniger wert als dieselbe Zahlung heute.",
+            "Erhöhe die Renditeforderung im Gedankenmodell: Der Nenner des Barwerts wächst und der heutige Wert sinkt."
           ],
           "transferPrompt": "Zum Thema „Eigenkapitalrendite verstehen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2231,11 +2201,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Finanzierungsmix berechnen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Für einen tatsächlichen WACC müsste auch der relevante steuerliche Zinsvorteil und eine passende Marktwertgewichtung geprüft werden.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Eigenkapitalgewicht 60 % × 10 % Renditeforderung = 6 Prozentpunkte.",
+            "Fremdkapitalgewicht 40 % × 5 % Fremdkapitalzins = 2 Prozentpunkte. Vor Steuern zusammen 8 %."
           ],
           "transferPrompt": "Zum Thema „Finanzierungsmix berechnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -2265,11 +2234,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Falsche Präzision vermeiden",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Ein Wert auf zwei Nachkommastellen ist nicht präzise, wenn schon eine kleine Änderung der Kapitalkosten den Modellwert stark verschiebt.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Berechne den Unternehmenswert jeweils getrennt mit 7 %, 9 % und 11 % Diskontsatz.",
+            "Vergleiche die Spannweite und finde heraus, ob deine Investmentthese nur bei einem besonders niedrigen Satz funktioniert."
           ],
           "transferPrompt": "Zum Thema „Falsche Präzision vermeiden“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2304,11 +2272,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "DCF und Marktvergleich kombinieren",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "DCF und Peer-Methode messen nicht zwingend denselben Sachverhalt; den Mittelwert zu nehmen, ohne Unterschiede aufzuklären, verdeckt Fehler.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Dein DCF ergibt 85 €, vergleichbare Börsenunternehmen liefern 55–70 €.",
+            "Untersuche konkret, ob dein Modell höhere Margen, längeres Wachstum oder niedrigere Kapitalkosten unterstellt als die Peers."
           ],
           "transferPrompt": "Zum Thema „DCF und Marktvergleich kombinieren“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2331,11 +2298,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Verwässerung berechnen",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Nur die erhöhte Aktienzahl als Verwässerung anzusetzen, ohne den Mittelzufluss zu berücksichtigen, kann ebenfalls zu falschen Wertschätzungen führen.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Vor der Kapitalerhöhung teilen 100 Mio. Aktien den Eigenkapitalwert untereinander.",
+            "Nach Ausgabe von 20 Mio. Aktien sind es 120 Mio. Anteile; berücksichtige aber auch das zusätzlich eingezahlte Geld auf Unternehmensseite."
           ],
           "transferPrompt": "Zum Thema „Verwässerung berechnen“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -2365,11 +2331,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Ein Gegenmodell vertreten",
-          "pitfall": "Ein berechneter Unternehmenswert ist keine garantierte zukünftige Börsennotierung.",
+          "pitfall": "Ein Gegenmodell ist nur hilfreich, wenn es echte Zahlen und Annahmen ändert – nicht nur das Kursziel pessimistisch formuliert.",
           "workedSteps": [
-            "Markiere im Beispiel die angenommene operative Größe und ihren Zeitraum.",
-            "Verfolge, wie Wachstum, Marge oder Diskontierung den geschätzten Unternehmenswert verändern.",
-            "Überlege einen konservativen Gegenfall und dokumentiere die größte Unsicherheit."
+            "Schreibe auf, welche Marge und Investitionsquote im optimistischen Modell benötigt wird.",
+            "Im Gegenmodell steigen die Investitionen bei gleichzeitigem Preisdruck; ermittle, wie beide Effekte den Free Cashflow verändern."
           ],
           "transferPrompt": "Zum Thema „Ein Gegenmodell vertreten“: Welche Annahme im Bewertungsmodell würde das Ergebnis am stärksten verändern, und wie würdest du sie prüfen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2404,11 +2369,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Gemeinsame Risikofaktoren",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Risikofaktoren sind nicht dasselbe wie Branchenbezeichnungen; indirekte Lieferketten können gemeinsam betroffen sein.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Cloud-Anbieter, Chipdesigner und Rechenzentrumszulieferer wirken wie drei Geschäftsmodelle.",
+            "Bei schwächeren KI-Ausgaben würden sich jedoch Auftragseingänge, Bewertungen und Gewinne mehrerer Positionen zugleich verschlechtern."
           ],
           "transferPrompt": "Zum Thema „Gemeinsame Risikofaktoren“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2431,11 +2395,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Währungsgewicht berechnen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "50 % US-Aktienquote bedeutet nicht automatisch 50 % direktes und ungesichertes Dollar-Geschäftsrisiko.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Trenne Kurswährung der Aktie, Rechnungswährung des Konzerns und die Währungen seiner operativen Umsätze.",
+            "Prüfe, ob die Firma einen Wechselkursschock durch Preisgestaltung, Ausgaben oder Sicherungsgeschäfte teilweise abfedern kann."
           ],
           "transferPrompt": "Zum Thema „Währungsgewicht berechnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2458,11 +2421,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Faktorszenario durchführen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Die gemeinsame Wirkung unterschätzt, wer nur die Kursänderung eines der beiden Titel betrachtet.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "30 % und 20 % Depotgewicht hängen vom selben Zinsfaktor ab.",
+            "Wenn beide Positionen bei einem Zinsschock um 15 % fallen, beträgt ihr gemeinsamer Depotbeitrag −4,5 % −3 % = −7,5 %."
           ],
           "transferPrompt": "Zum Thema „Faktorszenario durchführen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2497,11 +2459,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Maximalverlust verstehen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Ein Verlust von 35 % wird nicht durch einen anschließenden Anstieg von 35 % aufgehoben.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "2.000 € Ausgangswert × (1 − 0,35) = 1.300 € nach dem Schock.",
+            "Für die Rückkehr zu 2.000 € wäre von 1.300 € aus ein Zuwachs von rund 53,85 % nötig."
           ],
           "transferPrompt": "Zum Thema „Maximalverlust verstehen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2524,11 +2485,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Rebalancing einordnen",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Ein Risikoabbau durch Teilverkauf kann Rendite kosten; er ist trotzdem sinnvoll, wenn er zum vorher festgelegten Plan passt.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "Das Wertpapiergewicht ist von 20 auf 40 % gestiegen, das Depot hängt stärker an seinem Kurs.",
+            "Lege die zulässige Gewichtsspanne fest und berechne, wie viel du bei einer Rückkehr zur Zielquote umschichten müsstest."
           ],
           "transferPrompt": "Zum Thema „Rebalancing einordnen“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2551,11 +2511,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Liquiditätsreserve im Depot",
-          "pitfall": "Viele verschiedene Ticker bedeuten noch keine unabhängig gestreuten Risiken.",
+          "pitfall": "Vergangene Kursgewinne garantieren keine rechtzeitige Auszahlung zum benötigten Termin.",
           "workedSteps": [
-            "Bestimme die betroffene Position und ihr Gewicht im gesamten Portfolio.",
-            "Rechne die Wirkung einer negativen Entwicklung auf das Gesamtdepot durch.",
-            "Prüfe, ob andere Positionen denselben Risikofaktor teilen."
+            "700 € müssen in drei Monaten verfügbar sein; stelle dafür eine zeitlich sichere Reserve bereit.",
+            "Das verbleibende Depot darf weiterhin schwanken, ohne die Rechnung in drei Monaten zu gefährden."
           ],
           "transferPrompt": "Zum Thema „Liquiditätsreserve im Depot“: Wie würde sich das Gesamtrisiko verändern, wenn zwei Depotpositionen im Stressfall gleichzeitig fallen?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
