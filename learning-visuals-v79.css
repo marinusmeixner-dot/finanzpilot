@@ -1,0 +1,74 @@
+/* FinanzPilot V79 — optional visual learning. Mobile-first, native HTML/SVG only. */
+.fp79-visual{margin:20px 0 14px;border:1px solid #57877f;background:#173741;border-radius:16px;color:#e7f2ef;overflow:hidden}
+.fp79-visual>summary{list-style:none;display:flex;align-items:center;gap:12px;padding:15px 16px;cursor:pointer;min-height:58px;user-select:none}
+.fp79-visual>summary::-webkit-details-marker{display:none}
+.fp79-visual>summary::after{content:"⌄";color:#bcdfce;font-size:23px;margin-left:auto;transition:transform .15s}
+.fp79-visual[open]>summary::after{transform:rotate(180deg)}
+.fp79-visual>summary span:nth-child(2){flex:1;min-width:0}
+.fp79-visual>summary b{display:block;font-size:15px;line-height:1.35}
+.fp79-visual>summary small{display:block;margin-top:5px;color:#b4d4c9;font-size:11px;line-height:1.4}
+.fp79-visual-icon{display:grid;place-items:center;flex:0 0 34px;width:34px;height:34px;border-radius:10px;background:#255b52;color:#d8f5de;font-size:19px}
+.fp79-body{padding:0 16px 18px}
+.fp79-body>p{color:#c4d9d4;line-height:1.65;font-size:13px;margin:4px 0 15px}
+.fp79-controls{display:grid;gap:14px;margin:12px 0 15px}
+.fp79-slider-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px 17px}
+.fp79-slider{display:grid;gap:10px;font-size:13px;color:#d1e7df;min-width:0}
+.fp79-slider>span{display:flex;justify-content:space-between;align-items:baseline;gap:6px;flex-wrap:wrap}
+.fp79-slider output{font-weight:750;color:#c4f6d6;font-variant-numeric:tabular-nums}
+.fp79-slider input[type=range]{width:100%;height:27px;cursor:pointer;accent-color:#8cdbad;touch-action:pan-y}
+.fp79-choice{display:flex;align-items:center;flex-wrap:wrap;gap:9px;font-size:13px;color:#dceee8}
+.fp79-choice select{font-size:14px;min-height:42px;max-width:100%;padding:8px 11px;border-radius:10px;background:#102f3b;color:#e8f6ee;border:1px solid #80b4a1}
+.fp79-toggles{display:flex;gap:8px 18px;flex-wrap:wrap;font-size:12px;line-height:1.4}
+.fp79-toggles label{display:inline-flex;align-items:center;gap:5px;min-height:35px;cursor:pointer}
+.fp79-toggles input{accent-color:#8edbad;width:16px;height:16px}
+.fp79-controls small{color:#bed9d0;font-size:11px;line-height:1.5}
+.fp79-output{display:grid;gap:13px}
+.fp79-figure{padding:8px;border:1px solid #456e69;border-radius:13px;background:#122d3a;overflow:hidden}
+.fp79-figure svg{display:block;max-width:100%;width:100%;height:auto;touch-action:pan-y}
+.fp79-chart-svg [data-fp79-candle]{cursor:pointer;outline:none}
+.fp79-chart-svg [data-fp79-candle]:focus .fp79-candle{stroke:#ffffff;stroke-width:3.5}
+.fp79-chart-svg .fp79-hit{fill:transparent}
+.fp79-grid{stroke:#416271;stroke-width:1;stroke-dasharray:3 5}
+.fp79-axis{fill:#c1d4d3;font-size:12px;font-family:ui-sans-serif,system-ui,sans-serif}
+.fp79-wick.up{stroke:#8eddb3;stroke-width:2}
+.fp79-wick.down{stroke:#f0a399;stroke-width:2}
+.fp79-candle.up{fill:#69c799;stroke:#a2f6c0;stroke-width:1}
+.fp79-candle.down{fill:#e58179;stroke:#fac2b1;stroke-width:1}
+.fp79-candle.chosen{stroke:#ffffff;stroke-width:3}
+.fp79-resistance{stroke:#f7b087;stroke-dasharray:8 4;stroke-width:2}
+.fp79-support{stroke:#80d8b1;stroke-dasharray:8 4;stroke-width:2}
+.fp79-zone-label{fill:#e1ece5;font-size:13px;font-weight:650}
+.fp79-ma{fill:none;stroke:#ffd27f;stroke-width:3;stroke-linejoin:round}
+.fp79-trend{stroke:#bfabff;stroke-width:2.5;stroke-dasharray:10 5}
+.fp79-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:7px}
+.fp79-stats span{border:1px solid #50786b;border-radius:10px;padding:10px 8px;display:grid;gap:5px;background:#22453e;min-width:0}
+.fp79-stats small{color:#c3ddd0;font-size:10px;line-height:1.3}
+.fp79-stats strong{color:#e5fff2;font-size:13px;overflow-wrap:anywhere;font-variant-numeric:tabular-nums}
+.fp79-insight{background:#234b45;border-left:3px solid #8de0b2;border-radius:9px;padding:13px;font-size:13px;line-height:1.7;color:#e2f4eb;margin:0}
+.fp79-explain{font-size:12px;line-height:1.75;color:#c3d9d2;margin:0}
+.fp79-disclaimer{display:block;margin-top:14px;color:#acc6bd;font-size:10px;line-height:1.5}
+.fp79-bar-label{fill:#d2e6df;font-size:12px;font-weight:600}
+.fp79-bar-value{fill:#dbf4e7;font-size:15px;font-weight:700;text-anchor:end}
+.fp79-positive{fill:#68bf9b}
+.fp79-negative{fill:#ce8076}
+.fp79-highlight{fill:#d0ba80}
+.fp79-zero{stroke:#d5e7dc;stroke-width:1;stroke-dasharray:2 3}
+.fp79-risk-bg{fill:#1c3946;stroke:#456f73}
+.fp79-reward-area{fill:#2c7456;opacity:.62}
+.fp79-loss-area{fill:#9b4d4f;opacity:.57}
+.fp79-risk-target{stroke:#a1eeae;stroke-width:2}
+.fp79-risk-entry{stroke:#edd28c;stroke-width:2}
+.fp79-risk-stop{stroke:#e69b93;stroke-width:2}
+.fp79-warning{padding:13px;border-radius:10px;background:#5b3434;color:#ffe3d6;line-height:1.65}
+.fp79-bond-line{fill:none;stroke:#92dec1;stroke-width:3;stroke-linejoin:round}
+.fp79-bond-dot{fill:#ffe0a5;stroke:#182f3e;stroke-width:2}
+@media(max-width:650px){
+ .fp79-visual>summary{padding:12px;min-height:55px}
+ .fp79-body{padding:0 11px 15px}
+ .fp79-slider-grid{grid-template-columns:1fr;gap:12px}
+ .fp79-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .fp79-slider input[type=range]{min-height:34px}
+ .fp79-insight{font-size:12px}
+ .fp79-toggles{gap:4px 10px}
+}
+@media(prefers-reduced-motion:reduce){.fp79-visual>summary::after{transition:none}}

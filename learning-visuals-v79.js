@@ -127,7 +127,7 @@ function flow(p){
  const max=Math.max(300,Math.abs(fcf),Math.abs(ocf),Math.abs(ebit),revenue,costs,capex,Math.abs(wc))+15;
  const min=Math.min(-50,fcf-10,ocf-10,ebit-10);
  const rows=[['Umsatz',revenue,'fp79-positive'],['− Betriebskosten',-costs,'fp79-negative'],['EBIT',ebit,'fp79-highlight'],['Operativer Cashflow',ocf,'fp79-positive'],['− Investitionen',-capex,'fp79-negative'],['Free Cashflow',fcf,'fp79-highlight']];
- const svg='<svg viewBox="0 0 760 350" role="img" aria-label="Balkendiagramm für Umsatz, Betriebskosten, EBIT, operativen Cashflow und Free Cashflow" preserveAspectRatio="xMidYMid meet">'+rows.map((row,i)=>'<g transform="translate(0 '+(i*56+5)+')">'+bar(...row,min,max).replace('class="'+row[2]+'"','class="'+row[2]+'"')+'</g>').join('')+'</svg>';
+ const svg='<svg viewBox="0 0 760 350" role="img" aria-label="Balkendiagramm für Umsatz, Betriebskosten, EBIT, operativen Cashflow und Free Cashflow" preserveAspectRatio="xMidYMid meet">'+rows.map((row,i)=>'<g transform="translate(0 '+(i*56+5)+')">'+bar(row[0],row[1],min,max,row[2]).replace('class="'+row[2]+'"','class="'+row[2]+'"')+'</g>').join('')+'</svg>';
  const diff=fcf-ebit;
  return '<div class="fp79-figure">'+svg+'</div>'+
   '<div class="fp79-stats">'+[['EBIT',ebit],['Operativer CF',ocf],['Free Cashflow',fcf]].map(x=>'<span><small>'+x[0]+'</small><strong>'+num(x[1],0)+' Mio. €</strong></span>').join('')+'</div>'+
