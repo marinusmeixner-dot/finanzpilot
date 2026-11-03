@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T15:04:38.000Z",
-  "editor_note": "Neuer Destatis-Q3-BIP-Lernfall mit drei individuellen Transferfragen ergänzt; alle bisherigen Fälle und IDs erhalten.",
+  "updated_at": "2026-11-03T21:04:00.000Z",
+  "editor_note": "StromVKG-Lernfall mit Kapazitäts-/Energie-Unterscheidung und Rechenaufgabe ergänzt; vorhandene Fälle unverändert.",
   "cases": [
     {
       "id": "2026-11-03-bayer-q3-non-gaap-and-fcf",
@@ -219,6 +219,60 @@
         "Vorläufigkeit und amtliche Primärquelle mit Veröffentlichungsdatum korrekt einordnen"
       ],
       "sample": "Die Erstschätzung zeigt ein kleines reales Quartalsplus von 0,2 %, aber noch keinen breit getragenen Aufschwung. Der leicht positive Konsum stützt die Nachfrage; rückläufige Investitionen und schwächere Exporte sprechen für Fragilität. Die Vorjahresrate von 1,3 % ist wegen der anderen Basis kein zusätzlicher Quartalsgewinn. Meine These wäre widerlegt, wenn die detaillierten Daten am 25. November robuste Investitionszuwächse und eine breitere Wertschöpfungsdynamik zeigen; umgekehrt würde eine Abwärtsrevision die Skepsis verstärken."
+    },
+    {
+      "id": "2026-11-03-stromvkg-capacity-vs-energy",
+      "title": "Stromreserve: Warum 155.296 €/MW/Jahr kein Strompreis ist",
+      "goal": "Kapazitätsvergütung, elektrische Leistung, Energieerzeugung und Projektrendite rechnerisch sauber unterscheiden",
+      "source": "Bundesnetzagentur – Zuschlagsbekanntgabe zur ersten StromVKG-Langzeitkapazitätsausschreibung vom 3. November 2026",
+      "url": "https://www.bundesnetzagentur.de/DE/Fachthemen/ElektrizitaetundGas/Kapazitaetsmarkt/Ausschreibung/Gebotstermin_Sep26/start.html",
+      "published": "03.11.2026",
+      "facts": "Am 3. November 2026 wurden elf Zuschläge für rund 5.160 MW installierte Kapazität veröffentlicht; der berichtete durchschnittliche Zuschlagswert liegt bei 155.296 EUR je MW reduzierter Leistung und Jahr. Ausschreibungsvolumen und Zuschlagsmenge können sich aufgrund der Unterscheidung von installierter und reduzierter Leistung unterscheiden.",
+      "context": "MW misst Leistung, MWh die über Zeit erzeugte Energie. Ein jährlicher Kapazitätspreis vergütet Bereitstellung beziehungsweise Verfügbarkeit, nicht automatisch jede erzeugte MWh. Für die Wirtschaftlichkeit zählen unter anderem reduzierte bezuschlagte Leistung, Baukosten, Finanzierung, Brennstoff, Betrieb, Auslastung und Vertragsbedingungen.",
+      "caveat": "Der durchschnittliche Zuschlagswert darf nicht pauschal mit der gesamten installierten Leistung multipliziert und als garantierter Unternehmensgewinn bezeichnet werden. Ein Zuschlag ist kein Nachweis einer bereits fertiggestellten oder profitablen Anlage.",
+      "questions": [
+        {
+          "question": "Ein Betreiber erhält hypothetisch für 100 MW reduzierte Leistung einen Zuschlagswert von 155.296 EUR je MW und Jahr. Wie hoch wäre die rechnerische jährliche Kapazitätsvergütung vor Kosten?",
+          "options": [
+            "15.529.600 EUR",
+            "155.296 EUR",
+            "1.552.960 MWh",
+            "155,296 EUR je erzeugter MWh"
+          ],
+          "correct": 0,
+          "explanation": "100 MW × 155.296 EUR/(MW·Jahr) = 15.529.600 EUR/Jahr. Das ist eine Modellrechnung mit einem hypothetischen Zuschlag zum berichteten Durchschnittswert; tatsächliche individuelle Gebote und Bedingungen können abweichen."
+        },
+        {
+          "question": "Welche Aussage zur Ausschreibung ist fachlich am besten begründet?",
+          "options": [
+            "5.160 MW bedeuten 5.160 MWh Strom pro Jahr.",
+            "Ein Zuschlag beweist, dass die Kraftwerke schon Strom erzeugen.",
+            "Die Vergütung für gesicherte Leistung ist von einem Börsenstrompreis je MWh zu unterscheiden.",
+            "Die durchschnittliche Vergütung entspricht dem Nettogewinn der Betreiber."
+          ],
+          "correct": 2,
+          "explanation": "Leistung (MW), Energie (MWh) und Kapazitätsvergütung (EUR je MW und Jahr) sind unterschiedliche Größen. Ein Zuschlag ist noch kein operativer Ertrag und keine Nettomarge."
+        },
+        {
+          "question": "Welche neue Information würde eine optimistische Bewertung eines bezuschlagten Kraftwerks am stärksten schwächen?",
+          "options": [
+            "Deutlich höhere Bau- und Finanzierungskosten sowie Verzögerungen bei der Inbetriebnahme.",
+            "Ein veröffentlichter durchschnittlicher Zuschlagswert.",
+            "Die bloße Anzahl der Zuschläge.",
+            "Eine Erläuterung der Einheit MW."
+          ],
+          "correct": 0,
+          "explanation": "Der Wert eines Projekts hängt von künftigen Nettozahlungen ab. Höhere Investitionskosten und spätere Erlöse können den Barwert trotz vertraglicher Kapazitätsvergütung stark verringern."
+        }
+      ],
+      "reflectionPrompt": "Prüfe die These: 'Die elf Zuschläge garantieren den Betreibern sofort hohe Gewinne.' Entwickle ein positives und ein negatives Szenario mit mindestens drei konkreten Kosten- oder Erlösfaktoren, unterscheide installierte und reduzierte Leistung und benenne zwei offizielle Nachweise, die du vor einer Investitionsentscheidung benötigst.",
+      "rubric": [
+        "Einheiten MW, MWh und EUR je MW und Jahr korrekt unterscheiden",
+        "Kapazitätszahlung nicht mit Nettogewinn oder Stromverkauf verwechseln",
+        "Bau-, Finanzierungs-, Betriebs- und Umsetzungsrisiken differenziert abwägen",
+        "Originalbekanntgabe und konkrete Projekt- beziehungsweise Vertragsdaten als Prüfgrundlage nennen"
+      ],
+      "sample": "Ein Zuschlag kann künftige Kapazitätserlöse absichern, aber die Anlagen müssen zunächst errichtet und betriebsbereit werden. Für 100 MW reduzierte Leistung wären 155.296 EUR/MW/Jahr rechnerisch rund 15,53 Mio. EUR pro Jahr, nicht Gewinn. Hohe Baukosten, Zinsen, Betriebskosten oder Verzögerungen könnten den Barwert stark senken. Ich würde den individuellen Zuschlagswert, die reduzierte Leistung und den Projektstatus prüfen."
     }
   ]
 }
