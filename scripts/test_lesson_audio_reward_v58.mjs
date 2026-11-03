@@ -29,7 +29,7 @@ const win={
  FinanzPilotStudy:{seed(){}},FinanzPilotFeedback:{tone(kind){tones.push(kind)}},
  FinanzPilotCloud:{user:'account-1'},
  FinanzPilotLevels:{
-  awardFoundation(id,title,celebrate){assert.equal(celebrate,false,'No duplicate animation before server confirms reward.');calls.push(['serverAward',id]);return Promise.resolve({awarded_now:true,xp_awarded:8,fp_awarded:0})},
+  awardFoundation(id,title,celebrate){assert.equal(celebrate,false,'No duplicate animation before server confirms reward.');calls.push(['serverAward',id]);const fresh=calls.filter(x=>x[0]==='serverAward').length===1;return Promise.resolve({awarded_now:fresh,xp_awarded:fresh?8:0,fp_awarded:0})},
   refresh(){}
  },
  FinanzPilotCelebrations:{show(kind,payload){effects.push({kind,payload});return true}},
@@ -84,7 +84,8 @@ assert(effects.some(x=>x.kind==='reward'&&x.payload.value==='+8 XP'),'Server-ear
 const priorAwards=calls.filter(x=>x[0]==='serverAward').length;
 const priorEffects=effects.length;
 j.open('geld-wofuer');tap('complete');
-assert.equal(calls.filter(x=>x[0]==='serverAward').length,priorAwards,'Repeat does not earn points again.');
-assert.equal(effects.length,priorEffects+1,'Repeat completion still gets satisfying animation.');
+assert.equal(calls.filter(x=>x[0]==='serverAward').length,priorAwards+1,'Repeat confirms the server ledger, even if browser state is stale.');
+await Promise.resolve();await Promise.resolve();
+assert.equal(effects.length,priorEffects+1,'Repeat is celebrated locally, but produces no duplicate XP reward.');
 assert(effects.at(-1).payload.text.includes('keine zusätzlichen Punkte'),'Repeat reward clearly has no XP/FP.');
 console.log('V58 PASS: correct and wrong high short pings, instant first and repeat lesson animation, no answer animation, server-only points, bounded self-fading effects, responsive PWA assets.');
