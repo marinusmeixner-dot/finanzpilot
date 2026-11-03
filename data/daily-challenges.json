@@ -1,40 +1,40 @@
 {
   "schema_version": 1,
-  "date": "2026-11-02",
-  "updated_at": "2026-11-02T09:08:00+01:00",
-  "editor": "FinanzPilot Tagesredaktion – Originalquellen 29./30.10. und 26.08.2026",
-  "explanation": "Drei neue Aufgaben für Montag, 02.11.2026. Keine behaupteten Intraday-Kurse; ältere veröffentlichte Unternehmensberichte sind als historische Daten gekennzeichnet. Alle Szenarien sind Lernannahmen, keine Ergebnisprognosen.",
+  "date": "2026-11-03",
+  "updated_at": "2026-11-03T10:25:00+01:00",
+  "editor": "FinanzPilot Lernredaktion – neue Aufgaben auf Basis zuvor dokumentierter Primärquellen",
+  "explanation": "Drei neue eigenständige Lernaufgaben für Dienstag, 03.11.2026. Historische Quelldaten sind datiert, neue Rechenszenarien ausdrücklich fiktiv. Keine Behauptung einer erneuten Live-Quellenprüfung.",
   "tasks": [
     {
-      "id": "2026-11-02:market:inflation-energie-kern",
+      "id": "2026-11-03:market:energie-basis-effekt",
       "kind": "market",
-      "date": "2026-11-02",
-      "title": "Inflation: Was erklärt die Lücke zwischen 2,8 % und 2,1 %?",
-      "context": "Destatis-Schätzung vom 30.10.2026: deutsche Verbraucherpreise +2,8 % gegenüber Oktober 2025; Kernrate ohne Energie und Nahrungsmittel +2,1 %; Energiepreise +12,2 % gegenüber Vorjahr, nach +14,9 % im September. Die Monatsrate des Gesamtindex beträgt −0,2 %. Zahlen sind vorläufig.",
-      "question": "Berechne die Differenz zwischen Gesamt- und Kerninflation in Prozentpunkten sowie die Veränderung der Energie-Jahresrate zwischen September und Oktober. Erkläre, warum die Differenz nicht der direkte rechnerische Beitrag der Energie zur Gesamtinflation ist. Entwickle zwei gegensätzliche Zins-/Aktienbewertungsszenarien für die nächsten sechs Monate und nenne jeweils mindestens zwei Indikatoren, die deine These widerlegen würden.",
+      "date": "2026-11-03",
+      "title": "Energieinflation: Basiseffekt gegen echten Preisrückgang",
+      "context": "Historische Ausgangsdaten: Destatis-Schnellschätzung vom 30.10.2026 meldete Energiepreise +12,2 % gegenüber Oktober 2025, nach +14,9 % im September 2026. Für die Aufgabe sind weitere Preisstände hypothetisch.",
+      "question": "Erkläre, warum der Rückgang der Energie-Jahresrate um 2,7 Prozentpunkte nicht beweist, dass Energie im Oktober absolut billiger wurde. Berechne in einem klar als fiktiv gekennzeichneten Beispiel die Jahresraten für Oktober 2025 = 100, Oktober 2026 = 112,2 und November 2025 = 110, November 2026 = 115. Formuliere zwei konkurrierende Erklärungen und welche Monatsindexdaten du zur Prüfung benötigst.",
       "rubric": [
-        "0,7 Prozentpunkte Abstand Gesamt- minus Kernrate und −2,7 Prozentpunkte Veränderung der Energie-Jahresrate korrekt berechnen",
-        "Warenkorbgewichte, Nahrungsmittel und unterschiedliche Indexzusammensetzung als Grund gegen die naive Beitragsrechnung benennen",
-        "Energieschock, Zweitrundeneffekte, Wachstum, Diskontsatz und Gewinne in beiden Szenarien trennen",
-        "Zwei überprüfbare Indikatoren je Szenario mit Quelle und Prüftermin bis April 2027 nennen"
+        "Differenz der berichteten Jahresraten korrekt als −2,7 Prozentpunkte bestimmen",
+        "Fiktive November-Jahresrate 115/110−1 ≈ 4,55 % und Vergleichsperioden korrekt unterscheiden",
+        "Basiseffekt und aktuelle monatliche Preisbewegung getrennt erklären",
+        "Mindestens zwei überprüfbare Hypothesen und benötigte Indexstände nennen"
       ],
-      "source": "Statistisches Bundesamt – Verbraucherpreise Oktober 2026, vorläufig",
+      "source": "Destatis – Verbraucherpreise Oktober 2026 (vorläufig)",
       "source_url": "https://www.destatis.de/EN/Press/2026/10/PE26_382_611.html",
       "source_date": "2026-10-30",
       "symbol": ""
     },
     {
-      "id": "2026-11-02:research:nvidia-cashflow-gaap",
+      "id": "2026-11-03:research:nvidia-fcf-reinvestment",
       "kind": "research",
-      "date": "2026-11-02",
-      "title": "NVIDIA: Umsatzwachstum, Cashflow und zwei EPS-Definitionen",
-      "context": "NVIDIA Q2 Geschäftsjahr 2027, veröffentlicht 26.08.2026, Quartal bis 26.07.2026: Umsatz 96.221 Mio. USD, Vorjahresquartal 46.743 Mio. USD; operativer Cashflow 24.077 Mio. USD; Free Cashflow 21.341 Mio. USD; GAAP-EPS verwässert 2,46 USD, Non-GAAP-EPS 2,22 USD. Der am 26.08. kommunizierte Q3-Umsatzausblick von 108 Mrd. USD ±2 % ist keine Ist-Zahl.",
-      "question": "Rechne das Umsatzwachstum gegenüber dem Vorjahresquartal, den FCF-Abstand zum operativen Cashflow und die Cashflow-Umwandlungsquote FCF/operativer Cashflow. Erkläre, warum das bereinigte EPS niedriger als GAAP-EPS sein kann, ohne einen unbewiesenen Einzeleffekt zu behaupten. Entwirf Bear/Base/Bull für die Bewertung und formuliere mindestens zwei konkrete Widerlegungsbedingungen.",
+      "date": "2026-11-03",
+      "title": "NVIDIA: Wie belastbar ist die Cashflow-Quote?",
+      "context": "Historische Unternehmensdaten aus dem Q2-FY2027-Bericht vom 26.08.2026: operativer Cashflow 24.077 Mio. USD, Free Cashflow 21.341 Mio. USD. Die nachfolgenden Stressannahmen sind rein fiktiv.",
+      "question": "Berechne den aus den veröffentlichten Werten abgeleiteten Abstand CFO minus FCF und die FCF/CFO-Quote. Unterstelle dann für ein fiktives Folgequartal einen um 20 % niedrigeren CFO bei unverändertem Abstand: Wie hoch wäre FCF und die neue Quote? Erkläre, weshalb CFO−FCF nicht ohne Prüfung der Unternehmensdefinition pauschal mit sämtlichen Investitionen gleichgesetzt werden darf. Nenne drei Prüfpunkte aus dem nächsten Bericht.",
       "rubric": [
-        "96.221/46.743−1 ≈ 105,9 % Umsatzwachstum korrekt rechnen, beide Perioden identisch halten",
-        "24.077−21.341 = 2.736 Mio. USD Differenz und 21.341/24.077 ≈ 88,6 % FCF/CFO korrekt ableiten; Definition der FCF-Überleitung prüfen",
-        "GAAP und Non-GAAP anhand offizieller Überleitung statt pauschaler Gleichsetzung behandeln",
-        "Drei Szenarien mit Margen-, Nachfrage-, Bewertungs- und Konzentrationsrisiken sowie datierten Prüfkriterien formulieren"
+        "Historische Differenz 2.736 Mio. USD und Quote rund 88,64 % korrekt berechnen",
+        "Fiktiven CFO 19.261,6 Mio. USD und FCF 16.525,6 Mio. USD mit rund 85,80 % Quote berechnen",
+        "Unternehmensspezifische FCF-Definition und mögliche weitere Cashflow-Komponenten prüfen",
+        "Drei konkrete Berichtsposten und mindestens eine Gegenhypothese angeben"
       ],
       "source": "NVIDIA Investor Relations – Q2 FY2027 Results",
       "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
@@ -42,19 +42,19 @@
       "symbol": "NVDA"
     },
     {
-      "id": "2026-11-02:learning:baywa-disclosure-risk",
+      "id": "2026-11-03:learning:baywa-liquidity-waterfall",
       "kind": "learning",
-      "date": "2026-11-02",
-      "title": "BayWa: Was darfst du aus einem verschobenen Bericht schließen?",
-      "context": "BayWa IR-Finanzkalender, am 02.11.2026 geprüft: Q1-Mitteilung 26.05.2026; Konzernfinanzbericht 2025 angekündigt für 22.12.2026; Halbjahresfinanzbericht 2026 für 26.02.2027; Q3-Termin noch offen. Das sind Veröffentlichungstermine, keine Geschäftszahlen.",
-      "question": "Entwirf ein transparentes Analyseprotokoll für eine hoch verschuldete Firma bei unvollständiger Berichtslage: Welche Aussagen sind Fakten, welche nur Erwartungen? Wie würdest du Liquidität, Finanzierung, Bilanzqualität und Verwässerungsrisiko prüfen, ohne fehlende Zahlen als null anzusetzen? Formuliere eine optimistische und eine skeptische These mit konkreten Bedingungen, die beide widerlegen können.",
+      "date": "2026-11-03",
+      "title": "BayWa: Liquiditätsbrücke ohne aktuelle Bilanz erfinden",
+      "context": "BayWa-Finanzkalender, zuletzt am 02.11.2026 im Projekt geprüft: weitere Berichte angekündigt, aber kein dortiger Zukunftstermin ist eine bereits veröffentlichte Bilanz. Das Rechenbeispiel ist vollständig fiktiv.",
+      "question": "Ein fiktives Unternehmen hat 80 Mio. EUR freie Kasse, 120 Mio. EUR in zwölf Monaten fällige Zahlungen, 35 Mio. EUR erwartete operative Mittelzuflüsse und 25 Mio. EUR zwingende Investitionen. Berechne die einfache Liquiditätslücke vor neuen Finanzierungen und prüfe ein Stressszenario mit 40 % weniger operativen Zuflüssen. Welche vier realen Nachweise würdest du vor einer Aussage über BayWa verlangen? Trenne Zahlungsfähigkeit von Wert für Altaktionäre.",
       "rubric": [
-        "Letzte tatsächlich veröffentlichte Q1-Mitteilung und spätere bloß angekündigte Berichte strikt trennen",
-        "Mindestens vier konkret zu beschaffende Bilanz-/Liquiditäts-/Finanzierungsnachweise nennen und Datenlücken offenlassen",
-        "Fortführungswahrscheinlichkeit und Wert je Altaktie getrennt analysieren, Kapitalmaßnahmen und Gläubigervorrang berücksichtigen",
-        "Zwei Gegenhypothesen mit messbaren Bedingungen und nächstem Berichtstermin entwickeln"
+        "Basis-Lücke 80+35−25−120 = −30 Mio. EUR korrekt rechnen",
+        "Stress-Lücke 80+21−25−120 = −44 Mio. EUR korrekt rechnen",
+        "Fiktive Szenariowerte ausdrücklich nicht BayWa zuschreiben",
+        "Mindestens vier konkrete Primärnachweise, Finanzierungsrisiko und mögliche Verwässerung differenzieren"
       ],
-      "source": "BayWa AG – offizieller Finanzkalender 2026/2027",
+      "source": "BayWa AG – Finanzkalender 2026/2027",
       "source_url": "https://www.baywa.com/investor-relations/finanzkalender/finanztermine",
       "source_date": "2026-11-02",
       "symbol": "BYW.MU"
