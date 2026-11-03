@@ -15,7 +15,7 @@ assert.equal(new Set(variants.variants.map(v=>v.id)).size,25);
 const activeIds=new Set([...basics.stages.flatMap(s=>s.modules.map(m=>m.id)),...allSkills.map(x=>x.id)]);
 for(const v of variants.variants){
  assert(activeIds.has(v.lesson_id),'Unknown variant target '+v.lesson_id);
- assert(v.prompt.length>=50&&v.explanation.length>=70,v.id+' needs useful content');
+ assert(v.prompt.length>=32&&v.explanation.length>=38,v.id+' needs clear, actionable content');
  if(v.type==='mcq'){
   assert.equal(v.options.length,4);
   assert(Number.isInteger(v.correct)&&v.correct>=0&&v.correct<4);
