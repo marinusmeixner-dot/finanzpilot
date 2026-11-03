@@ -254,6 +254,11 @@ async function action(kind,skill,lesson,payment,answer){
   });
   if(error)throw error;
   notice=data?.message||'Gespeichert.';
+  if(kind==='submit'&&data?.ok===true&&data?.correct===true&&data?.unchanged!==true){
+   notice+=' +'+Number(data.xp||0)+' XP wurden serverseitig gutgeschrieben.';
+   window.FinanzPilotLevels?.refresh?.(true);
+   window.FinanzPilotHeader?.refresh?.(true);
+  }
   if(kind==='submit'&&data?.correct===true)window.FinanzPilotStudy?.seed?.(lesson);
   if(kind==='submit'&&typeof data?.correct==='boolean')window.FinanzPilotLessonView?.feedback?.(lesson,data.correct);
   if(kind==='submit'&&typeof data?.correct==='boolean')
