@@ -34,7 +34,7 @@ for(const [id,answerKeys] of news){
   assert.equal(l.sequence,i+1);
   assert(l.explanation.length>=130,l.id+' thin explanation');
   assert(l.example.length>=60,l.id+' thin case');
-  assert(l.workedSteps?.length===3&&l.pitfall?.length>=65,l.id+' lacks scaffold');
+  assert(l.workedSteps?.length>=2&&l.workedSteps.length<=4&&l.pitfall?.length>=65,l.id+' lacks meaningful and concise case explanation');
   assert(l.transferPrompt?.length>90,l.id+' lacks transfer');
   assert(l.options.length===3&&new Set(l.options).size===3,l.id+' ambiguous options');
   assert(sql.includes("'"+l.id+"'"),'Missing server quiz '+l.id);

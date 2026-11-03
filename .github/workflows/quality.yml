@@ -18,6 +18,8 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_refresh_news.py' -v
       - name: Validate JSON files
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
+      - name: "V80: Distinct useful examples in all 156 skills, no identical dropdowns"
+        run: node scripts/test_unique_examples_v80.mjs
       - name: "V77: Verify adaptive learning, 174 objectives, mixed question variants and private-sync merge"
         run: node scripts/test_adaptive_learning_v77.mjs
       - name: "V76: Test understandable explanations, 18 foundation guides and all 156 unchanged exams"

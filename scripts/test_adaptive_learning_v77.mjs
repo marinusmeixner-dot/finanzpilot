@@ -120,10 +120,10 @@ const cloud={owner:'user-123',attempts:{'cashflow-einfach':[existing[1],existing
 const result=merge(local,cloud);
 assert.equal(result.attempts['cashflow-einfach'].length,4,'Devices preserve all events without duplicate counting');
 assert.deepEqual(result.attempts['cashflow-einfach'].map(x=>x.id),merge(result,cloud).attempts['cashflow-einfach'].map(x=>x.id),'Re-sync is idempotent');
-assert(index.includes('adaptive-study-v77.js?v='+JSON.parse(read('version.json')).version)&&index.includes('adaptive-study-v77.css?v='+JSON.parse(read('version.json')).version),'Adaptive runtime and UI are loaded');
-assert(index.includes('study-coach-v46.js?v='+JSON.parse(read('version.json')).version)&&index.includes('sync.js?v='+JSON.parse(read('version.json')).version));
+assert(index.includes('adaptive-study-v77.js?v=78')&&index.includes('adaptive-study-v77.css?v=78'),'Unchanged adaptive runtime and style remain loaded');
+assert(index.includes('study-coach-v46.js?v=78')&&index.includes('sync.js?v=78'));
 assert(read('study-coach-v46.js').includes('FinanzPilotAdaptive?.renderReview'),'Original review tab delegates to adaptive review');
 assert(read('journey-v39.js').includes('FinanzPilotAdaptive?.observeLesson'),'Foundations feed objective grades');
 assert(read('learning-hub-v41.js').includes('FinanzPilotAdaptive?.observeLesson'),'Only server-confirmed skills feed objective grades');
-assert.equal(JSON.parse(read('version.json')).version,78);
+assert(JSON.parse(read('version.json')).version>=78);
 console.log('V77 adaptive learning PASS: 174 lesson topics, 25 curated variants, mixed questions, secure objective grading, confidence/feedback, 7- and 30-day observation, distributed review schedule, CRDT-safe merge, no XP changes.');

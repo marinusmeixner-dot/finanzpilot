@@ -15,7 +15,7 @@ for(const mod of foundations.stages.flatMap(x=>x.modules)){
 for(const skill of skills.skills)for(const l of skill.lessons){
  assert(l.explanation.length>=130,l.id+' has thin explanation');
  assert(l.example.length>=60,l.id+' has thin example');
- assert(l.workedSteps?.length>=3,l.id+' lacks at least 3 worked steps');
+ assert(l.workedSteps?.length>=2&&l.workedSteps.length<=4,l.id+' lacks a concise, meaningful worked example');
  assert(l.pitfall?.length>65&&l.transferPrompt?.length>50,l.id+' lacks error analysis or reflection');
  assert(l.options.length===3&&l.correct>=0&&l.correct<=2);
 }
@@ -24,7 +24,7 @@ assert.equal(numeric.length,46);
 for(const l of numeric)assert(Number.isFinite(l.practice.answer)&&Number.isFinite(l.practice.tolerance)&&l.practice.explanation.length>20);
 for(const id of ['working-capital-diagnose','realrendite-kaufkraft','backtests-kritisch','kreditrisiko-unternehmen'])assert(skills.skills.some(s=>s.id===id));
 const html=read('index.html'),hub=read('learning-hub-v41.js'),sync=read('sync.js');
-for(const file of ['study-coach-v46.js?v=78','lesson-view-v46.js?v=76','study-v46.css?v=63'])assert(html.includes(file));
+for(const file of ['study-coach-v46.js?v=78','lesson-view-v46.js?v=80','study-v46.css?v=63'])assert(html.includes(file));
 assert(sync.includes("'finanzpilot_study_v46'")&&sync.includes('function mergeStudy'));
 assert(hub.includes("FinanzPilotLessonView?.render")&&hub.includes("FinanzPilotStudy.reviewWidget()"));
 assert(hub.includes('data-fp46-skill-search'));
@@ -47,7 +47,8 @@ assert((graph.match(/fp45-cross-line/g)||[]).length>=12);
 assert.equal((w.FinanzPilotLearningHub.home().match(/class="fp42-learn-entry/g)||[]).length,5);
 const example=skills.skills.find(x=>x.id==='working-capital-diagnose');
 const v=w.FinanzPilotLessonView.render(example,example.lessons[0],{completed:false});
-assert(v.includes('01 · DIE IDEE VERSTEHEN')&&v.includes('data-fp46-study-step="3"'));
+assert(v.includes('01 · KERNIDEE')&&v.includes('data-fp46-study-step="3"'));
+assert(!read('lesson-view-v46.js').includes("FinanzPilotExplain?.skill?.(lesson,skill,'apply')"),'Second step must not inject repeated branch-wide explanations');
 w.FinanzPilotStudy.seed(example.lessons[0].id);
 assert(JSON.parse(store.finanzpilot_study_v46).reviews[example.lessons[0].id].dueAt>Date.now()+20*3600000);
 w.FinanzPilotStudy.recall(example.lessons[0].id,true);
