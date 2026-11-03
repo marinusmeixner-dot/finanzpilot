@@ -1,9 +1,72 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-03T09:49:10.881412Z",
+  "updated_at": "2026-11-03T17:50:39.157050Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-7eb3588ab6bd3fe72d",
+      "title": "Weihnachtsgeschäft: Kinderwünsche und Händlerträume",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/spielwaren-hde-weihnachtsgeschaeft-rofu-100.html",
+      "published_at": "2026-11-03T15:47:04Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-fc79173b33e1fa130c",
+      "title": "Erster Spot vor 70 Jahren: Als die Werbung ins Fernsehen kam",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/70-jahre-werbefernsehen-100.html",
+      "published_at": "2026-11-03T15:46:23Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6ba6e11ca74806cca7",
+      "title": "Evonik wehrt sich gegen Chemieriese BASF",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/evonik-basf-fusion-100.html",
+      "published_at": "2026-11-03T14:59:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f79ea5c85290c6c6a5",
+      "title": "Cyberangriffe auf Kühlanlagen auch in deutschen Supermärkten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/digitales/cyberangriffe-supermarkt-hacker-100.html",
+      "published_at": "2026-11-03T13:49:27Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-442665eb43c6146d94",
+      "title": "Anspannung am Wahltag: Was die Midterms für die Börse bedeuten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-midterms-boerse-100.html",
+      "published_at": "2026-11-03T13:33:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d750d2b7d74794fc9a",
+      "title": "EU genehmigt MediaMarktSaturn-Übernahme durch JD.com",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/eu-mediamarkt-saturn-jd-genehmigung-100.html",
+      "published_at": "2026-11-03T13:25:20Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-698d6cf4b0b9ed95d7",
+      "title": "Bundesnetzagentur fördert den Bau elf neuer Gaskraftwerke",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/energie/bundesnetzagentur-gaskraftwerke-100.html",
+      "published_at": "2026-11-03T10:28:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-026efd763a1236d593",
       "title": "Marktbericht: Anleger scheuen vor US-Zwischenwahlen das Risiko",
