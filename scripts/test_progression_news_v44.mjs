@@ -25,7 +25,7 @@ assert(!html.includes('id="fp44-level"'));
 assert(html.includes('sync.js?v=57'));
 assert(html.includes('economy.js?v=61'));
 assert(/market-v34\.js\?v=\d+/.test(html));
-assert(html.includes('learning-hub-v41.js?v=74'));
+assert(html.includes('learning-hub-v41.js?v=76'));
 assert(html.includes('header-v43.js?v=74'));
 assert(html.includes('ui-v43.css?v='+JSON.parse(read('version.json')).version));
 assert(read('sync.js').includes('__reset_confirmed'));
