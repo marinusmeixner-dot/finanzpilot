@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
-  "date": "2026-11-02",
-  "updated_at": "2026-11-02T09:08:00+01:00",
-  "editor_note": "Zwei neue eigenständige Lernfälle zu geprüften Q3-/Q2-Unternehmensberichten. Historische Quellendaten korrekt datiert, keine vorweggenommenen Novemberzahlen; bestehende private Bewertungen bleiben separat.",
+  "date": "2026-11-03",
+  "updated_at": "2026-11-03T09:51:13.482Z",
+  "editor_note": "Neuer anhand offizieller Bayer-Quartalsmitteilung verifizierter Fall; bisherige Lernfälle bleiben mit ihren IDs erhalten.",
   "cases": [
+    {
+      "id": "2026-11-03-bayer-q3-non-gaap-and-fcf",
+      "title": "Bayer Q3: Warum bereinigtes EBITDA und Cashflow nicht austauschbar sind",
+      "goal": "Umsatzwachstum, bereinigte Gewinnkennzahlen, Unternehmensprognosen und tatsächliche Zahlungen getrennt beurteilen",
+      "source": "Bayer AG – Q3-2026-Quartalsmitteilung",
+      "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
+      "published": "03.11.2026",
+      "facts": "Q3 2026: Umsatz 10,053 Mrd. EUR (+4,1 % nominal, +1,9 % währungs- und portfoliobereinigt), EBITDA vor Sondereinflüssen 1,615 Mrd. EUR (+6,9 %), EBIT -110 Mio. EUR, Konzerngewinn -672 Mio. EUR, Free Cashflow -293 Mio. EUR. Neue Prognose Free Cashflow 2026: -1,5 bis -0,5 Mrd. EUR.",
+      "context": "Die Gewinnstufen unterscheiden sich wegen Abschreibungen, Steuern, Zinsen und Sondereinflüssen. Der Free Cashflow basiert auf tatsächlichen Zahlungsströmen, das EBITDA ist eine Ergebnisgröße. Eine positive Prognoseänderung bedeutet nicht automatisch positive Ist-Zahlen.",
+      "caveat": "Quartalszahlen dürfen nicht ohne weitere Informationen auf das Gesamtjahr hochgerechnet werden; die EBITDA-Prognose ist währungsbereinigt, nicht der berichtete Q3-Istwert.",
+      "questions": [
+        {
+          "question": "Welche Aussage trennt die Q3-Kennzahlen korrekt?",
+          "options": [
+            "1,615 Mrd. EUR EBITDA vor Sondereinflüssen sind gleich 1,615 Mrd. EUR verfügbarer Cashflow.",
+            "Der negative Konzerngewinn widerlegt zwangsläufig jedes operative Wachstum.",
+            "Bereinigtes EBITDA kann steigen, obwohl berichteter Gewinn und Free Cashflow negativ sind.",
+            "Die neue FCF-Prognose beweist bereits einen positiven Jahres-Free-Cashflow."
+          ],
+          "correct": 2,
+          "explanation": "EBITDA vor Sondereinflüssen ist eine bereinigte Ergebniskennzahl. Konzernergebnis berücksichtigt andere Aufwandsposten, Free Cashflow berücksichtigt Zahlungsabflüsse. Q3-Ergebnis und Prognose bleiben voneinander getrennt."
+        },
+        {
+          "question": "Was zeigt die Differenz von nominal +4,1 % zu währungs-/portfoliobereinigt +1,9 % Umsatzwachstum?",
+          "options": [
+            "Zusammengerechnet stieg der Umsatz um 6,0 %.",
+            "Die nominale Veränderung ist größer; Währungs- und Portfolioeffekte beeinflussen den Vergleich.",
+            "Die bereinigte Wachstumsrate misst den Gewinn je Aktie.",
+            "Die nominale Zahl ist die Cashflow-Rendite."
+          ],
+          "correct": 1,
+          "explanation": "Die beiden Wachstumsraten sind unterschiedliche Darstellungen derselben Umsatzentwicklung. Sie dürfen nicht addiert werden. Die bereinigte Veränderung soll Währungseffekte und Portfolioänderungen herausrechnen."
+        },
+        {
+          "question": "Welche neue Information wäre für die These einer nachhaltigen Bayer-Cashflow-Wende am wichtigsten?",
+          "options": [
+            "Eine bestätigte positive Entwicklung des operativen Cashflows und geringere Sonderauszahlungen über mehrere Perioden.",
+            "Die bloße Wiederholung der unveränderten 2026-Umsatzprognose.",
+            "Die Veröffentlichung weiterer Werbeunterlagen zu einem einzelnen Medikament.",
+            "Ein kurzfristiger Kursanstieg ohne neue Finanzzahlen."
+          ],
+          "correct": 0,
+          "explanation": "Eine Cashflow-Wende muss sich in tatsächlichen Ein- und Auszahlungen zeigen. Ein einzelnes bereinigtes Ergebnis oder eine Meldung ohne Zahlungsverbindung belegt sie nicht."
+        }
+      ],
+      "reflectionPrompt": "Beurteile, ob die angehobene Bayer-Prognose mit einem negativen Q3-Free-Cashflow vereinbar ist. Nenne mindestens drei getrennte Kennzahlen und zwei überprüfbare Gegenargumente zur These einer nachhaltigen Verbesserung.",
+      "rubric": [
+        "Quartalsergebnis und Jahresprognose nicht verwechseln",
+        "EBITDA, EBIT, Konzerngewinn und Free Cashflow klar unterscheiden",
+        "Zwei konkrete Risiken mit möglichen Gegennachweisen benennen",
+        "Offizielle Originalquelle und Berichtszeitraum korrekt anführen"
+      ],
+      "sample": "Das bereinigte EBITDA wuchs auf 1,615 Mrd. EUR, doch der freie Cashflow im Q3 lag bei -293 Mio. EUR. Die verbesserte Gesamtjahresprognose auf -1,5 bis -0,5 Mrd. EUR bleibt ebenfalls negativ. Ich würde prüfen, ob Cashflow vor Sondereffekten wächst, Zahlungen aus Rechtsfällen abnehmen und sich die Verschuldung ohne Einmaltransaktionen verbessert."
+    },
     {
       "id": "2026-11-02-siemens-orders-cash",
       "title": "Siemens: Warum 1,34 Book-to-Bill keine Gewinnmarge ist",

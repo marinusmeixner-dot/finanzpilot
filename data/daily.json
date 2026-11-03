@@ -1,10 +1,196 @@
 {
-  "date": "2026-11-02",
-  "updated_at": "2026-11-02T11:58:35+01:00",
-  "editor": "FinanzPilot Tagesredaktion – geprüfte kostenlose Primärquellen",
-  "intro": "Acht vollständig innerhalb der App lesbare Eigenartikel. Quellen wurden am 02.11.2026 geprüft; published ist das tatsächliche Datum der zugrunde liegenden Originalmeldung, nicht das heutige Recherchedatum. Keine Live-Kurse oder vorweggenommenen Geschäftszahlen.",
+  "date": "2026-11-03",
+  "updated_at": "2026-11-03T09:51:13.478Z",
+  "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
+  "intro": "Neue originale Vollartikel zu den Bayer-Quartalszahlen, zwei Siemens-Meldungen und dem deutschen Einzelhandel ergänzen den bisherigen geprüften Nachrichtenbestand. Erscheinungsdatum jeder Primärquelle steht am Artikel.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-03-bayer-q3-cashflow",
+      "title": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
+      "published": "2026-11-03",
+      "category": "Unternehmen",
+      "symbols": [
+        "BAYN.DE"
+      ],
+      "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
+      "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
+      "why": "Die neuen offiziellen Zahlen trennen erstmals den verbesserten Q3-2026-Ausblick vom tatsächlich ausgewiesenen negativen Quartals-Cashflow.",
+      "impact": "Entscheidend für den Aktienwert ist, ob aus dem operativen Fortschritt nach Zahlungen, Investitionen und Rechtsstreitkosten nachhaltig freies Geld entsteht.",
+      "article": {
+        "lead": "Bayer meldete am 3. November 2026 für das dritte Quartal 10,053 Milliarden Euro Umsatz und 1,615 Milliarden Euro EBITDA vor Sondereinflüssen. Gleichzeitig lagen das Konzernergebnis bei minus 672 Millionen Euro und der Free Cashflow bei minus 293 Millionen Euro. Die Kennzahlen messen unterschiedliche Dinge.",
+        "sections": [
+          {
+            "heading": "Was sich im dritten Quartal verbessert hat",
+            "paragraphs": [
+              "Der Umsatz stieg gegenüber dem entsprechenden Vorjahresquartal nominal um 4,1 Prozent; währungs- und portfoliobereinigt betrug das Plus 1,9 Prozent. Die beiden Werte unterscheiden sich wegen Wechselkursen und Veränderungen des Unternehmensportfolios. Sie dürfen nicht als zwei unabhängige Wachstumsraten addiert werden.",
+              "Das EBITDA vor Sondereinflüssen nahm um 6,9 Prozent auf 1,615 Milliarden Euro zu. Eine solche bereinigte Ergebnisgröße kann die operative Entwicklung sichtbarer machen, ist aber weder Konzerngewinn noch verfügbarer Zahlungsmittelüberschuss."
+            ]
+          },
+          {
+            "heading": "Warum trotz höherem EBITDA Verluste und Geldabflüsse entstehen",
+            "paragraphs": [
+              "Bayer wies ein negatives EBIT von 110 Millionen Euro und einen Konzernverlust von 672 Millionen Euro aus. Das EBIT enthält unter anderem Wertminderungen und Sonderaufwendungen; der Vergleich des bereinigten EBITDA mit dem nicht bereinigten Jahresüberschuss ohne diese Abgrenzung wäre irreführend.",
+              "Der Free Cashflow fiel im Quartal auf minus 293 Millionen Euro, nach plus 596 Millionen Euro im Vorjahresquartal. Laut Unternehmen trugen höhere Auszahlungen für die Beilegung von Rechtsverfahren dazu bei. Ein negativer Cashflow bedeutet, dass die frei verfügbare Zahlungsgröße in dieser Periode nicht positiv war – selbst wenn die bereinigte Gewinnkennzahl steigt."
+            ]
+          },
+          {
+            "heading": "Welche Sparten das Gesamtbild treiben",
+            "paragraphs": [
+              "Das Pharmageschäft erreichte 4,680 Milliarden Euro Umsatz und wuchs währungs- und portfoliobereinigt um 6,4 Prozent. Die bereinigte EBITDA-Marge lag dort bei 27,6 Prozent. Bayer nennt insbesondere Nubeqa und Kerendia als Wachstumstreiber.",
+              "Crop Science meldete 3,884 Milliarden Euro Umsatz, währungs- und portfoliobereinigt 2,4 Prozent weniger als ein Jahr zuvor; das bereinigte EBITDA der Sparte sank auf 101 Millionen Euro. Consumer Health erzielte 1,445 Milliarden Euro Umsatz, aber ein um 4,4 Prozent niedrigeres EBITDA vor Sondereinflüssen von 347 Millionen Euro. Die unterschiedlichen Segmenttrends relativieren die positive Konzernschlagzeile."
+            ]
+          },
+          {
+            "heading": "Neuer Ausblick ist keine bereits verdiente Rendite",
+            "paragraphs": [
+              "Bayer erhöhte die währungsbereinigte Prognose für das Konzern-EBITDA vor Sondereinflüssen 2026 auf 9,8 bis 10,3 Milliarden Euro. Auch die Free-Cashflow-Prognose wurde verbessert, liegt nun aber weiterhin im negativen Bereich zwischen minus 1,5 und minus 0,5 Milliarden Euro. Es handelt sich um Unternehmensziele, nicht um feststehende Geschäftsergebnisse.",
+              "Die Nettofinanzverschuldung wurde per Ende September mit 31,083 Milliarden Euro angegeben. Bei der Beurteilung sollte berücksichtigt werden, welche Sondereffekte – einschließlich einer vom Unternehmen genannten Beteiligungstransaktion – die Finanzverschuldung beeinflussen. Für ein Investmenturteil sind Rechtsstreitrisiken, künftige Liquidität, operative Entwicklung und aktuelle Bewertung gemeinsam zu prüfen."
+            ]
+          }
+        ],
+        "conclusion": "Die operative Verbesserung ist real, aber kein Beweis für eine nachhaltige Cashflow-Wende. Für eine Bewertung müssen berichtete Ergebnisse, bereinigte Margen, tatsächliche Zahlungsströme und der neue Ausblick getrennt bleiben."
+      }
+    },
+    {
+      "id": "2026-11-03-siemens-medevac-mou",
+      "title": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
+      "published": "2026-11-03",
+      "category": "Unternehmen",
+      "symbols": [
+        "SIE.DE"
+      ],
+      "source": "Siemens Mobility – Pressemitteilung vom 3. November 2026",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-and-lufthansa-technik-defense-develop-medical-evacuation-train",
+      "why": "Siemens Mobility kündigt ein konkretes Entwicklungsprojekt an; der Unterschied zwischen Absichtserklärung, Auftrag und Umsatz ist dabei entscheidend.",
+      "impact": "Ein möglicher zusätzlicher Markt für Schienenfahrzeuge ist nicht automatisch ein heute bezifferbarer neuer Auftragsbestand.",
+      "article": {
+        "lead": "Siemens Mobility und Lufthansa Technik Defense haben eine Absichtserklärung für die gemeinsame Entwicklung eines medizinischen Evakuierungszuges unterzeichnet. Ein verbindlicher Kundenauftrag mit genanntem Auftragsvolumen wurde in der Mitteilung nicht gemeldet.",
+        "sections": [
+          {
+            "heading": "Was die Partner angekündigt haben",
+            "paragraphs": [
+              "Die am 3. November veröffentlichte Absichtserklärung beschreibt einen Zug, der mehr als 150 kranke oder verletzte Menschen während einer Verlegung medizinisch betreuen soll. Siemens stellt Zug- und Lokomotivtechnik bereit; Lufthansa Technik Defense soll medizinische Ausrüstung für unterschiedliche Versorgungsstufen beisteuern.",
+              "Geplant ist eine Anwendung für militärische Evakuierungen und zivile Katastropheneinsätze. Die Mitteilung nennt die Bundeswehr und NATO-Partner als Zielgruppen, bestätigt aber noch keine Beschaffungsentscheidung, kein Auftragsvolumen und keinen Liefertermin."
+            ]
+          },
+          {
+            "heading": "Warum die Technik wirtschaftlich interessant sein könnte",
+            "paragraphs": [
+              "Der Entwurf kombiniert Vectouro-Reisezugwagen und Vectron-X-Lokomotiven. Fahrzeuge sollen zwischen Patienten- und Passagierbetrieb umgerüstet werden können. Das könnte ihre Auslastung im Lebenszyklus verbessern, sofern die spätere Zulassung, Nachfrage und Umrüstung in der Praxis funktionieren.",
+              "Das Konzept bietet Platz für bis zu 90 medizinische und begleitende Kräfte. Eine Dual-Mode-Lokomotive soll auch auf nicht elektrifizierten Strecken fahren können. Solche Anforderungen erhöhen den technischen Wert, können aber zugleich Zertifizierung, Komplexität und Kosten beeinflussen."
+            ]
+          },
+          {
+            "heading": "Absichtserklärung ist keine Umsatzbuchung",
+            "paragraphs": [
+              "Eine Absichtserklärung (Memorandum of Understanding, MoU) dokumentiert zunächst eine geplante Zusammenarbeit. Sie ist nicht dasselbe wie eine rechtsverbindliche Bestellung durch einen Kunden und nicht mit einem bereits erzielten Umsatz zu verwechseln.",
+              "Auch aus einer angekündigten Zielkapazität von 150 Patienten lässt sich kein finanzieller Auftragswert ableiten. Selbst bei einer späteren Bestellung wären Fertigung, Auslieferung, Abnahme und Zahlungsbedingungen entscheidend für Umsatz und Cashflow."
+            ]
+          },
+          {
+            "heading": "Welche Meilensteine Anleger prüfen sollten",
+            "paragraphs": [
+              "Wichtige Folgemeldungen wären ein konkreter Beschaffungsauftrag mit Auftraggeber, Auftragsvolumen, Zeitplan und technischen Anforderungen. Zudem wäre zu prüfen, ob die Ausrüstung in nationalen und grenzüberschreitenden Einsätzen zugelassen wird.",
+              "Eine positive langfristige Geschäftschance kann bestehen, ihre finanzielle Größe bleibt derzeit offen. Die Pressemitteilung nennt keine neue Siemens-Mobility-Umsatzprognose. Die vernünftige Gegenhypothese lautet daher, dass aus der Zusammenarbeit zunächst kein nennenswerter zusätzlicher Konzern-Cashflow entsteht."
+            ]
+          }
+        ],
+        "conclusion": "Neue Technologiekooperation ist eine mögliche Geschäftschance – ohne Auftrag, Preis und Lieferplan aber noch kein belastbarer Umsatz- oder Gewinnbeitrag."
+      }
+    },
+    {
+      "id": "2026-11-03-siemens-elv-mobile-robots",
+      "title": "Siemens stellt 24/48-Volt-Antriebe für mobile Roboter vor – Chance und offene Fragen",
+      "published": "2026-11-02",
+      "category": "Unternehmen",
+      "symbols": [
+        "SIE.DE"
+      ],
+      "source": "Siemens Digital Industries – Pressemitteilung vom 2. November 2026",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-launches-new-elv-drive-solution-agvs-and-mobile-robotics",
+      "why": "Die neue Sinamics-E210-/Simotics-E-1EE1-Kombination könnte die Integration autonomer Transportfahrzeuge vereinfachen.",
+      "impact": "Ein technisches Produktangebot ist für die Aktie erst dann finanziell relevant, wenn Umsatz, Marge und Marktakzeptanz erkennbar werden.",
+      "article": {
+        "lead": "Siemens erweitert sein Antriebsportfolio um Sinamics E210 und Simotics E-1EE1 für batteriebetriebene mobile Roboter und fahrerlose Transportsysteme mit 24 oder 48 Volt. Die Vorstellung ist technisch konkret, sagt aber noch nichts über tatsächliche Auftragseingänge.",
+        "sections": [
+          {
+            "heading": "Welche Produkte vorgestellt wurden",
+            "paragraphs": [
+              "Der Sinamics-E210-Umrichter wurde für Niederspannungs-Batteriesysteme mit 24 und 48 Volt ausgelegt und kann beispielsweise Fahr-, Lenk- und Hubachsen regeln. Ergänzt wird er um die Simotics-E-1EE1-Servomotoren. Siemens adressiert damit Automated Guided Vehicles (AGV) und Autonomous Mobile Robots (AMR).",
+              "Laut Unternehmensangaben sind Kommunikations- und Sicherheitsfunktionen wie PROFINET IRT und PROFIsafe vorgesehen, ebenso die Integration in TIA Portal und Simove. Diese Angaben beschreiben Produkteigenschaften und geplante Einsatzmöglichkeiten, keinen unabhängigen Wirkungsnachweis bei Kunden."
+            ]
+          },
+          {
+            "heading": "Welches Problem Kunden lösen wollen",
+            "paragraphs": [
+              "Bei mobilen Anlagen müssen Motor, Umrichter, Fahrzeugsteuerung, Sicherheitstechnik und Batterie harmonieren. Wenn Produkte aufeinander abgestimmt sind, kann die Engineering- und Inbetriebnahmezeit sinken, sofern Schnittstellen und Einsatzprofil passen.",
+              "Für Siemens ist die Verknüpfung mit bestehender Automatisierungssoftware potenziell interessant: Sie könnte Bestandskunden einen einfacheren Weg zu mobilen Anwendungen eröffnen. Daraus folgt jedoch weder ein garantierter technischer Vorteil gegenüber Wettbewerbern noch eine messbare Gewinnsteigerung."
+            ]
+          },
+          {
+            "heading": "Wie daraus wirtschaftlicher Wert entstehen könnte",
+            "paragraphs": [
+              "Eine Investition in das Produktportfolio lohnt sich wirtschaftlich nur bei ausreichender Nachfrage und einem positiven Beitrag nach Entwicklungs-, Produktions- und Vertriebskosten. Die Pressemitteilung enthält keine Stückpreise, Verkaufszahlen, Auftragswerte oder eigene Ergebnisprognose.",
+              "Der relevante Finanzindikator wäre langfristig die Entwicklung der Umsätze und Margen im passenden Siemens-Geschäftsbereich, ergänzt um die Investitionen und den operativen Cashflow. Produktankündigungen sollten nicht als bereits realisierte Zahlungen interpretiert werden."
+            ]
+          },
+          {
+            "heading": "Welche Risiken und Gegenargumente bleiben",
+            "paragraphs": [
+              "Mobile Robotik wächst nicht automatisch in jedem Markt. Investitionszurückhaltung der Industrie, Integrationsprobleme, Sicherheitsnormen oder konkurrierende Systeme können die Adoption bremsen. Außerdem kann ein neues Angebot bestehende Siemens-Antriebsprodukte teilweise ersetzen.",
+              "Ein späterer Nachweis wären Kundenreferenzen, verifizierte Auftragszahlen oder nachvollziehbare Wachstumsbeiträge. Bis dahin bleibt die positive Wirkung auf den Konzernwert eine Hypothese, keine Tatsache."
+            ]
+          }
+        ],
+        "conclusion": "Die Vorstellung erweitert das Siemens-Angebot für mobile Automatisierung. Für eine Aktienbewertung sind Umsatz- und Cashflow-Nachweise wichtiger als die bloße Existenz des Produkts."
+      }
+    },
+    {
+      "id": "2026-11-03-retail-september-destatis",
+      "title": "Deutscher Einzelhandel im September: real minus 2,0 % – warum nominal etwas anderes misst",
+      "published": "2026-11-02",
+      "category": "Gesamtmarkt",
+      "symbols": [],
+      "source": "Statistisches Bundesamt – Einzelhandelsumsatz September 2026, Pressemitteilung Nr. 383",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_383_45212.html",
+      "why": "Die neue Statistik zeigt einen realen Umsatzrückgang, während die nominalen Jahresumsätze noch steigen.",
+      "impact": "Für Konsumunternehmen sind Mengenentwicklung, Preiserhöhungen und Margen getrennt zu analysieren.",
+      "article": {
+        "lead": "Destatis meldete am 2. November für den deutschen Einzelhandel im September 2026 einen kalender- und saisonbereinigten realen Umsatzrückgang von 2,0 Prozent gegenüber August. Gegenüber September 2025 ging der preisbereinigte Umsatz um 2,3 Prozent zurück, obwohl der nominale Umsatz um 1,2 Prozent stieg.",
+        "sections": [
+          {
+            "heading": "Monatsvergleich und Vorjahresvergleich auseinanderhalten",
+            "paragraphs": [
+              "Der reale Rückgang von 2,0 Prozent bezieht sich auf September gegenüber August 2026 und ist kalender- und saisonbereinigt. Der reale Rückgang von 2,3 Prozent bezieht sich dagegen auf September des Vorjahres. Beide Aussagen können gleichzeitig stimmen; sie beschreiben unterschiedliche Vergleichszeiträume.",
+              "Destatis revidierte den realen August-Monatsanstieg auf plus 1,2 Prozent. Eine einzelne Monatszahl muss deshalb in einer Folge von Monatsdaten betrachtet werden, statt sofort als Beweis für einen dauerhaft schwächeren Konsum zu gelten."
+            ]
+          },
+          {
+            "heading": "Warum mehr Euro-Umsatz nicht mehr verkaufte Ware bedeutet",
+            "paragraphs": [
+              "Im Jahresvergleich stieg der nominale Einzelhandelsumsatz um 1,2 Prozent, der reale sank zugleich um 2,3 Prozent. Nominal misst Umsätze zu laufenden Preisen, real versucht den Preiseffekt herauszurechnen. Preissteigerungen können einen Rückgang der verkauften Mengen daher in Euro-Werten verdecken.",
+              "Für Unternehmen ist der Unterschied entscheidend: Höhere Verkaufspreise bringen nicht automatisch höhere Gewinne. Wenn Kosten stärker steigen oder Kunden weniger kaufen, können die Margen trotz steigender Nominalumsätze unter Druck geraten."
+            ]
+          },
+          {
+            "heading": "Was sich hinter dem Gesamtdurchschnitt verbirgt",
+            "paragraphs": [
+              "Der Lebensmitteleinzelhandel verzeichnete gegenüber August real minus 1,4 Prozent. Bei Nicht-Lebensmitteln lag das reale Monatsminus bei 2,4 Prozent; der Internet- und Versandhandel meldete minus 2,2 Prozent. Damit waren mehrere Bereiche von der Schwäche betroffen.",
+              "Gegenüber dem Vorjahresmonat stieg der reale Internet- und Versandumsatz dagegen um 4,4 Prozent. Ein negatives Monatsbild und ein positiver Jahresvergleich sind kein Widerspruch. Sie zeigen, warum die Auswahl eines Vergleichsmaßstabs die Interpretation verändert."
+            ]
+          },
+          {
+            "heading": "Worauf man in der nächsten Veröffentlichung achten sollte",
+            "paragraphs": [
+              "Destatis weist auf einen Stichprobenwechsel und mögliche Revisionen bei den Daten seit Januar 2026 hin. Die Zahlen für September sind zunächst vorläufig. Die Veröffentlichung allein lässt keine gesicherte Aussage über die Gewinnentwicklung einzelner Handelsunternehmen zu.",
+              "Für eine fundierte Aktienanalyse müsste man preisbereinigte Absatzmengen, Filial- beziehungsweise Online-Mix, Bruttomargen, Personalkosten und die Entwicklung des freien Cashflows prüfen. Ein einzelner Makroindikator ist kein konkretes Kaufsignal."
+            ]
+          }
+        ],
+        "conclusion": "Die realen Einzelhandelsumsätze gingen im September zurück, obwohl nominale Umsätze im Jahresvergleich wuchsen. Preis- und Mengeneffekte sollten in Unternehmensanalysen getrennt werden."
+      }
+    },
     {
       "id": "2026-11-02-de-inflation-energy",
       "title": "Deutschland: 2,8 % Inflation – Energie ist der entscheidende Unterschied",
