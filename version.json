@@ -1,5 +1,5 @@
 {
-  "version": 78,
-  "release": "2026-11-03-v78",
-  "notes": "Adaptives evidenzbasiertes Lernen: 174 Themen, echte gemischte Wiederholung, Auswahl-/Rechen-/Transferformate, 25 neue fachliche Varianten, persönliche Wiederholungsintervalle nach Antwortqualität, Sicherheit und Hilfen, Nachweise nach 7/30 Tagen, gezielte Denkfehlerdiagnose, privater Geräteabgleich. Prüfungsantworten, alte XP und FP unverändert."
+  "version": 79,
+  "release": "2026-11-03-v79",
+  "notes": "Vier optionale Lernvisualisierungen: Candlestick-Charts mit OHLC/MA/Support/Widerstand/Trend, Umsatz–EBIT–Cashflow-Rechenbrücke, Trade-Risiko und Positionsgröße mit Slippage, sowie Anleihepreis bei Marktzinsänderungen. Mobile SVG-Interaktion ohne externe Bibliothek, keine Änderungen an Prüfungen, XP oder FP."
 }

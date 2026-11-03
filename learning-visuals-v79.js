@@ -208,5 +208,5 @@ function bind(root=document){
   if(panel.open)update(panel);
  });
 }
-window.FinanzPilotVisuals={render,bind,bondPrice,chartBars,kindFor:id=>map[id]||null,ids:Object.keys(map)};
+window.FinanzPilotVisuals={render,bind,update,bondPrice,chartBars,kindFor:id=>map[id]||null,ids:Object.keys(map)};
 })();

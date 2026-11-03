@@ -19,7 +19,7 @@ function render(skill,lesson,info={}){
  if(step===0)content='<section class="fp46-study-panel"><span class="eyebrow">01 · DIE IDEE VERSTEHEN</span><h3>Was steckt dahinter?</h3><p>'+esc(lesson.explanation)+'</p>'+ (window.FinanzPilotExplain?.skill?.(lesson,skill,'concept')||'')+
   '<div class="fp46-didactic-tip"><b>Dein Lernziel</b><p>'+esc(lesson.keyTakeaway||lesson.goal)+'</p></div>'+
   (lesson.pitfall?'<details class="fp46-mistake"><summary>Typischen Denkfehler erkennen</summary><p>'+esc(lesson.pitfall)+'</p></details>':'')+'</section>';
- if(step===1)content='<section class="fp46-study-panel"><span class="eyebrow">02 · AN EINEM FALL LERNEN</span><h3>Beispiel durchdenken</h3><p>'+esc(lesson.example)+'</p>'+ (window.FinanzPilotExplain?.skill?.(lesson,skill,'apply')||'')+
+ if(step===1)content='<section class="fp46-study-panel"><span class="eyebrow">02 · AN EINEM FALL LERNEN</span><h3>Beispiel durchdenken</h3><p>'+esc(lesson.example)+'</p>'+(window.FinanzPilotVisuals?.render?.(lesson.id)||'')+ (window.FinanzPilotExplain?.skill?.(lesson,skill,'apply')||'')+
   (lesson.workedSteps?.length?'<ol class="fp46-worked-steps">'+lesson.workedSteps.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>':'')+
   (lesson.practice?'<div class="fp46-calculation"><span class="eyebrow">KURZE RECHENÜBUNG · UNBENOTET</span><h4>'+esc(lesson.practice.prompt)+'</h4><div class="fp46-calculation-controls"><input type="text" inputmode="text" autocomplete="off" spellcheck="false" data-fp46-calc-input placeholder="Ergebnis eingeben, auch mit Komma oder Minus"><span>'+esc(lesson.practice.unit)+'</span><button type="button" class="btn secondary" data-fp46-calc-check>Prüfen</button></div><output data-fp46-calc-result aria-live="polite"></output></div>':'')+
   '<p class="fp46-study-pause">Überlege selbst: Welche Zahl oder Annahme trägt die Schlussfolgerung?</p></section>';
@@ -44,6 +44,7 @@ function render(skill,lesson,info={}){
   '<small class="fp46-study-foot">Notizen und Wiederholungen sind freiwillig und vergeben keine XP. Den offiziellen Abschluss prüft nur der Server.</small></div>';
 }
 function bind(root=document){
+ window.FinanzPilotVisuals?.bind?.(root);
  root.querySelectorAll('[data-fp41-answer]').forEach(button=>button.addEventListener('click',()=>{
   const next=Number(button.dataset.fp41Answer);
   if(!Number.isInteger(next)||next<0||next>3)return;

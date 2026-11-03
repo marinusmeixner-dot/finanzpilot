@@ -141,7 +141,7 @@ function lesson(){
  '<h1>'+esc(m.title)+'</h1><p class="fp39-course-goal">'+esc(m.goal)+'</p>';
  let content='';
  if(page===0)content='<article class="fp39-reading"><span class="eyebrow">01 · VERSTEHEN</span><h2>Erst die Idee verstehen</h2><p>'+terms(m.explain)+'</p>'+(window.FinanzPilotExplain?.basics?.(m.id,'idea')||'')+(Array.isArray(m.details)?m.details.map(d=>'<section class="fp40-lesson-detail"><h3>'+esc(d.heading)+'</h3><p>'+terms(d.text)+'</p></section>').join(''):'')+'<div class="fp39-hint"><b>Dein Lernziel</b><p>'+esc(m.goal)+'</p></div></article>';
- if(page===1)content='<article class="fp39-reading"><span class="eyebrow">02 · BEISPIEL</span><h2>So sieht das im Alltag aus</h2><p>'+terms(m.example)+'</p>'+(m.challenge?'<section class="fp40-lesson-challenge"><h3>Jetzt selbst überlegen</h3><p>'+terms(m.challenge.prompt)+'</p><details><summary>Eine begründete Beispielantwort ansehen</summary><p>'+terms(m.challenge.solution)+'</p></details></section>':'')+(window.FinanzPilotExplain?.basics?.(m.id,'example')||'')+'<div class="fp39-hint"><b>Verbindung zur Erklärung</b><p>Versuche, das Beispiel mit den gerade erklärten Grundlagen in eigenen Worten nachzuvollziehen. Die Fragen auf den nächsten Seiten prüfen genau diesen Zusammenhang.</p></div>'+(preparation?'<section class="fp57-bridge"><h3>Das brauchst du für die Fragen</h3><p>'+terms(preparation)+'</p></section>':'')+'</article>';
+ if(page===1)content='<article class="fp39-reading"><span class="eyebrow">02 · BEISPIEL</span><h2>So sieht das im Alltag aus</h2><p>'+terms(m.example)+'</p>'+(window.FinanzPilotVisuals?.render?.(m.id)||'')+(m.challenge?'<section class="fp40-lesson-challenge"><h3>Jetzt selbst überlegen</h3><p>'+terms(m.challenge.prompt)+'</p><details><summary>Eine begründete Beispielantwort ansehen</summary><p>'+terms(m.challenge.solution)+'</p></details></section>':'')+(window.FinanzPilotExplain?.basics?.(m.id,'example')||'')+'<div class="fp39-hint"><b>Verbindung zur Erklärung</b><p>Versuche, das Beispiel mit den gerade erklärten Grundlagen in eigenen Worten nachzuvollziehen. Die Fragen auf den nächsten Seiten prüfen genau diesen Zusammenhang.</p></div>'+(preparation?'<section class="fp57-bridge"><h3>Das brauchst du für die Fragen</h3><p>'+terms(preparation)+'</p></section>':'')+'</article>';
  if(page===2||page===3){
  const index=page-2,q=questions[index],a=answers[index],draft=session.drafts?.[index],selected=a?.correct?a.selected:draft;
  const judged=!!a,passed=a?.correct===true;
@@ -228,6 +228,7 @@ function complete(){
  redraw();
 }
 function bind(root=document){
+ window.FinanzPilotVisuals?.bind?.(root);
  root.querySelectorAll('[data-journey-start]').forEach(b=>b.addEventListener('click',start));
  root.querySelectorAll('[data-journey-stage]').forEach(b=>b.addEventListener('click',()=>go('journey-'+b.dataset.journeyStage)));
  root.querySelectorAll('[data-journey-open]').forEach(b=>b.addEventListener('click',()=>open(b.dataset.journeyOpen)));
