@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updated": "2026-11-02",
+  "updated": "2026-11-03-v76",
   "branches": [
     {
       "id": "reporting",
@@ -80,11 +80,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Geschäftsjahre und Quartale sauber vergleichen",
-          "pitfall": "Bei „Geschäftsjahre und Quartale sauber vergleichen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Umsatz des dritten Quartals im Vorjahr“ wirklich zutrifft.",
+          "pitfall": "Ein Quartal mit einem Gesamtjahr zu vergleichen, lässt die Änderung künstlich klein erscheinen. Auch verschiedene Segmente oder Währungen verfälschen den Vergleich.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Geschäftsjahre und Quartale sauber vergleichen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Der Vergleich eines Quartals mit einem Gesamtjahr ist ohne Umrechnung keine Wachstumsanalyse. Suche das passende Vorjahresquartal in den Berichten.",
-            "Überprüfe die Antwort auf „Welche Vergleichszahl ist für den Umsatz des dritten Quartals am besten?“ und nenne ein Gegenargument."
+            "Schreibe beide Zeiträume neben die Zahlen: Q3 (drei Monate) und Vorjahr (zwölf Monate).",
+            "Suche im Vorjahresbericht gezielt das gleiche Quartal Q3, den gleichen Unternehmensumfang und dieselbe Umsatzdefinition.",
+            "Berechne erst dann die Veränderung: (Q3 aktuell − Q3 Vorjahr) ÷ Q3 Vorjahr × 100."
           ],
           "transferPrompt": "Übertrage die Methode von „Geschäftsjahre und Quartale sauber vergleichen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -107,11 +107,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zahlen mit Quelle und Einheit dokumentieren",
-          "pitfall": "Bei „Zahlen mit Quelle und Einheit dokumentieren“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Quelle, Datum, Einheit und Berechnung“ wirklich zutrifft.",
+          "pitfall": "Ein Screenshot ohne Datum und Quellenangabe beweist weder den Zeitraum noch die Kennzahlendefinition. Ein Konzern-EBIT ist nicht automatisch das Segment-EBIT.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Zahlen mit Quelle und Einheit dokumentieren“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Betrieb veröffentlicht eine angepasste operative Kennzahl. Dokumentiere die offizielle Definition und welche Einmaleffekte ausgeschlossen wurden.",
-            "Überprüfe die Antwort auf „Welche Dokumentation macht eine Zahl überprüfbar?“ und nenne ein Gegenargument."
+            "Suche den veröffentlichten Bericht und die konkrete Tabellenzeile für die Zahl.",
+            "Notiere Datum, Berichtszeitraum, Einheit (z. B. Mio. €), Konzern oder Segment und den Originalbegriff.",
+            "Wenn die Größe bereinigt ist, dokumentiere Definition und ausgeschlossene Posten; erst dann darfst du vergleichen."
           ],
           "transferPrompt": "Übertrage die Methode von „Zahlen mit Quelle und Einheit dokumentieren“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -134,11 +134,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Ergebnis und Zahlungsströme hinterfragen",
-          "pitfall": "Bei „Ergebnis und Zahlungsströme hinterfragen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „30 Mio. € verbleiben rechnerisch ohne diesen einmaligen Effekt, weitere Einflüsse sind zu prüfen“ wirklich zutrifft.",
+          "pitfall": "Die rechnerischen 30 Mio. € sind noch kein nachgewiesener nachhaltiger Cashflow. Ein einmaliger Verkauf kann einen Buchgewinn und zugleich einen separaten Zahlungseingang bewirken.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Ergebnis und Zahlungsströme hinterfragen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen meldet 80 Mio. € Gewinn, davon 50 Mio. € durch einen einmaligen Verkauf. Stelle berichteten Gewinn und die verbleibenden 30 Mio. € separat dar.",
-            "Überprüfe die Antwort auf „Welche Aussage ist zulässig?“ und nenne ein Gegenargument."
+            "Trenne im gemeldeten Gewinn von 80 Mio. € den einmaligen Veräußerungsgewinn von 50 Mio. € ab.",
+            "80 − 50 = 30 Mio. € verbleibender rechnerischer Gewinn, ohne weitere möglicherweise vorhandene Effekte.",
+            "Vergleiche operative Zahlungsströme und Wiederholbarkeit des Kerngeschäfts, bevor du eine nachhaltige Ertragskraft schätzt."
           ],
           "transferPrompt": "Übertrage die Methode von „Ergebnis und Zahlungsströme hinterfragen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -173,11 +173,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Nichtzahlungswirksame Effekte erkennen",
-          "pitfall": "Bei „Nichtzahlungswirksame Effekte erkennen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Er bindet normalerweise liquide Mittel“ wirklich zutrifft.",
+          "pitfall": "Ein höherer Lagerbestand bindet unter sonst gleichen Bedingungen Geld, statt es freizusetzen. Die Abschreibung ist umgekehrt keine zweite Auszahlung in dieser Periode.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Nichtzahlungswirksame Effekte erkennen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen meldet 60 Mio. € Gewinn, 15 Mio. € Abschreibungen und 20 Mio. € zusätzliche Mittelbindung im Lager. Vereinfacht entstehen 55 Mio. € operativer Geldzufluss.",
-            "Überprüfe die Antwort auf „Was passiert bei steigendem Lagerbestand bei sonst gleichen Bedingungen?“ und nenne ein Gegenargument."
+            "Beginne mit dem gemeldeten Gewinn von 60 Mio. €.",
+            "Addiere die nicht erneut zahlungswirksamen Abschreibungen von 15 Mio. € zurück: 75 Mio. €.",
+            "Ziehe die 20 Mio. € zusätzliche Lagerbindung ab: vereinfachter operativer Geldzufluss 55 Mio. €."
           ],
           "transferPrompt": "Übertrage die Methode von „Nichtzahlungswirksame Effekte erkennen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -200,11 +200,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Investitionen richtig abziehen",
-          "pitfall": "Bei „Investitionen richtig abziehen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „35 Mio. €“ wirklich zutrifft.",
+          "pitfall": "Nicht der Investitionsaufwand auf dem Papier, sondern die passende Zahlung ist relevant. Die Zahl von 35 Mio. € ist kein garantierter frei ausschüttbarer Betrag.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Investitionen richtig abziehen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: 100 Mio. € operativer Cashflow und 65 Mio. € Investitionen entsprechen vereinfacht 35 Mio. € frei verfügbarem Cashflow.",
-            "Überprüfe die Antwort auf „Welche Zahl entspricht in diesem Beispiel dem freien Cashflow?“ und nenne ein Gegenargument."
+            "Suche den operativen Cashflow im selben Berichtszeitraum: 100 Mio. €.",
+            "Ermittle tatsächlich ausgezahlte Investitionen (Capex) in der zugehörigen Kapitalflussrechnung: 65 Mio. €.",
+            "Rechne vereinfacht 100 − 65 = 35 Mio. € Free Cashflow und vermerke die verwendete Definition."
           ],
           "transferPrompt": "Übertrage die Methode von „Investitionen richtig abziehen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -234,11 +234,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Einmalige Effekte offen ausweisen",
-          "pitfall": "Bei „Einmalige Effekte offen ausweisen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Berichteten und bereinigten Wert mit Annahmen getrennt zeigen“ wirklich zutrifft.",
+          "pitfall": "Die um 20 Mio. € höhere bereinigte Modellgröße ist kein zusätzlich eingegangenes Geld. Dauerhaft nötige Investitionen auszublenden würde den Unternehmenswert überhöhen.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Einmalige Effekte offen ausweisen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Jahr enthält 20 Mio. € einmalige Investitionen; die bereinigte Modellzahl liegt deshalb höher als der berichtete freie Cashflow. Kennzeichne beide Zahlen deutlich.",
-            "Überprüfe die Antwort auf „Welche Darstellungsweise ist seriös?“ und nenne ein Gegenargument."
+            "Zeige zuerst den tatsächlich berichteten Free Cashflow ohne Änderungen.",
+            "Stelle separat dar, welche belegte, einmalige Investition von 20 Mio. € du hypothetisch herausrechnest.",
+            "Begründe die Anpassung und berücksichtige, dass irgendwann Ersatzinvestitionen erneut nötig sein können."
           ],
           "transferPrompt": "Übertrage die Methode von „Einmalige Effekte offen ausweisen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -273,11 +273,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kasse und verzinsliche Schulden vergleichen",
-          "pitfall": "Bei „Kasse und verzinsliche Schulden vergleichen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „270 Mio. €“ wirklich zutrifft.",
+          "pitfall": "Schulden minus Bankguthaben ist nur eine vereinfachte Definition. Nicht jeder als Cash bilanzierte Betrag kann uneingeschränkt zur Rückzahlung verwendet werden.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Kasse und verzinsliche Schulden vergleichen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: 450 Mio. € Finanzschulden und 180 Mio. € liquide Mittel ergeben 270 Mio. € Nettofinanzschulden.",
-            "Überprüfe die Antwort auf „Welche Zahl ist die vereinfachte Nettofinanzverschuldung?“ und nenne ein Gegenargument."
+            "Erfasse verzinsliche Schulden: 450 Mio. €, und verfügbare liquide Mittel: 180 Mio. €.",
+            "Berechne die vereinfachte Nettofinanzverschuldung: 450 − 180 = 270 Mio. €.",
+            "Prüfe, ob in der Unternehmensdefinition Leasing, gebundene Zahlungsmittel oder andere Finanzpositionen enthalten sind."
           ],
           "transferPrompt": "Übertrage die Methode von „Kasse und verzinsliche Schulden vergleichen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?",
@@ -307,11 +307,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Risiko durch Laufzeiten beurteilen",
-          "pitfall": "Bei „Risiko durch Laufzeiten beurteilen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Finanzierungs- und Rückzahlungsplan“ wirklich zutrifft.",
+          "pitfall": "Eine hohe Jahresgewinnzahl deckt keine kurzfristige Kredittilgung, wenn das Geld nicht rechtzeitig verfügbar ist. Eine Kreditlinie muss verbindlich nutzbar sein.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Risiko durch Laufzeiten beurteilen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen muss in sechs Monaten 300 Mio. € zurückzahlen, verfügt aber nur über 40 Mio. € liquide Mittel. Plane mögliche Refinanzierung oder Liquiditätsquellen ein.",
-            "Überprüfe die Antwort auf „Was ist hier besonders zu prüfen?“ und nenne ein Gegenargument."
+            "Setze den fälligen Kreditbetrag in sechs Monaten an: 300 Mio. €.",
+            "Vergleiche damit die verfügbaren 40 Mio. €; rechnerische Lücke 260 Mio. € vor neuen Zuflüssen.",
+            "Prüfe Kreditlinien, Refinanzierungsbedingungen, operative Zuflüsse und den exakten Fälligkeitstermin."
           ],
           "transferPrompt": "Übertrage die Methode von „Risiko durch Laufzeiten beurteilen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -334,11 +334,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Schlechte Geschäftsjahre durchdenken",
-          "pitfall": "Bei „Schlechte Geschäftsjahre durchdenken“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Die Zahlungsdeckung kann unzureichend werden“ wirklich zutrifft.",
+          "pitfall": "Aus einem einzelnen Minus von 20 Mio. € folgt nicht zwingend Insolvenz; verfügbare Reserven und Finanzierungszusagen können die Lücke decken. Ohne sie besteht Risiko.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Schlechte Geschäftsjahre durchdenken“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Der operative Cashflow könnte von 100 auf 50 Mio. € sinken, während Zinsen und Tilgungen bei 70 Mio. € bleiben. Ohne Reserven entsteht eine Finanzierungslücke.",
-            "Überprüfe die Antwort auf „Was zeigt das Szenario?“ und nenne ein Gegenargument."
+            "Stelle für das Stressszenario den operativen Cashflow von nur 50 Mio. € fest.",
+            "Vergleiche Zinsen und Tilgung von 70 Mio. €; es entsteht vor Reserven eine Lücke von 20 Mio. €.",
+            "Prüfe den Kassenbestand, Kreditlinien und ob Teile der Tilgung refinanziert werden können."
           ],
           "transferPrompt": "Übertrage die Methode von „Schlechte Geschäftsjahre durchdenken“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1267,11 +1267,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Einmalige Erträge bereinigen",
-          "pitfall": "Bei „Einmalige Erträge bereinigen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Einmalige Erträge offen getrennt betrachten“ wirklich zutrifft.",
+          "pitfall": "85 Mio. € sind ein vereinfachter Vergleichswert, nicht automatisch ein wiederkehrender Netto-Cashflow. Steuern und andere Sondereffekte können die Anpassung verändern.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Einmalige Erträge bereinigen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen zeigt 120 Mio. € Gewinn. Davon stammen 35 Mio. € aus einem Grundstücksverkauf. Ohne diesen Effekt bleiben rechnerisch 85 Mio. €; weitere Effekte können hinzukommen.",
-            "Überprüfe die Antwort auf „Was ist bei einer Qualitätsprüfung richtig?“ und nenne ein Gegenargument."
+            "Beginne beim ausgewiesenen Gewinn von 120 Mio. €.",
+            "Ziehe den einmaligen Grundstücksverkaufsertrag von 35 Mio. € separat ab: rechnerisch 85 Mio. €.",
+            "Prüfe zusätzliche Sondereffekte und operative Zahlungsmittel, bevor du aus 85 Mio. € eine Dauerprognose ableitest."
           ],
           "transferPrompt": "Übertrage die Methode von „Einmalige Erträge bereinigen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1294,11 +1294,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Forderungen gegen Umsatz abgleichen",
-          "pitfall": "Bei „Forderungen gegen Umsatz abgleichen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Zahlungseingänge, Forderungslaufzeiten und Cashflow“ wirklich zutrifft.",
+          "pitfall": "Eine schnellere Forderungszunahme ist ein Warnsignal, aber kein Betrugsbeweis. Geschäftswachstum, Saison und veränderte Vertragsbedingungen können ebenfalls Erklärungen liefern.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Forderungen gegen Umsatz abgleichen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Der Umsatz steigt um zehn Prozent, ausstehende Kundenforderungen um vierzig Prozent. Prüfe Zahlungsziele, Kundenmix und Cashflow.",
-            "Überprüfe die Antwort auf „Welche Daten sollte man zusätzlich prüfen?“ und nenne ein Gegenargument."
+            "Vergleiche für denselben Zeitraum Umsatzwachstum (+10 %) und Wachstum offener Kundenforderungen (+40 %).",
+            "Frage, ob längere Zahlungsziele, ein anderer Kundenmix oder spätere Rechnungszahlungen die Differenz erklären.",
+            "Prüfe Forderungslaufzeiten, Altersstruktur und den operativen Cashflow vor einem Qualitätsurteil."
           ],
           "transferPrompt": "Übertrage die Methode von „Forderungen gegen Umsatz abgleichen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1321,11 +1321,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Bilanzrisiko zusammenführen",
-          "pitfall": "Bei „Bilanzrisiko zusammenführen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Marge, Lager, Fälligkeiten und Zahlungsmittel gemeinsam untersuchen“ wirklich zutrifft.",
+          "pitfall": "Nur aus der besseren Marge auf ein finanziell robustes Unternehmen zu schließen, ignoriert Bilanzrisiken. Lager, Schulden und Zahlungsströme können sich gegenläufig entwickeln.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Bilanzrisiko zusammenführen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen verbessert die operative Marge, hat aber zugleich hohe Lagerbestände und steigende kurzfristige Schulden. Stelle daraus mindestens zwei prüfbare Risiken zusammen.",
-            "Überprüfe die Antwort auf „Welche Analyse ist sinnvoll?“ und nenne ein Gegenargument."
+            "Markiere die verbesserte operative Marge als positives Signal.",
+            "Stelle steigenden Lagerbestand und höhere kurzfristige Schulden gegenüber: Das bindet potenziell Liquidität und erhöht Fälligkeitsdruck.",
+            "Leite zwei prüfbare Fragen ab: Werden Vorräte verkauft? Reichen Zahlungsmittel für kommende Fälligkeiten?"
           ],
           "transferPrompt": "Übertrage die Methode von „Bilanzrisiko zusammenführen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1360,11 +1360,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Zahlenreihen konsistent machen",
-          "pitfall": "Bei „Zahlenreihen konsistent machen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Konsolidierung, Zukäufe und Berechnungsmethoden“ wirklich zutrifft.",
+          "pitfall": "Gesamtumsatzwachstum nach einer Akquisition ist nicht gleich organischem Wachstum. Ohne vergleichbaren Konsolidierungskreis kann die zugrunde liegende Geschäftsdynamik falsch erscheinen.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Zahlenreihen konsistent machen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Eine Gruppe meldet 25 Prozent Umsatzwachstum, hat aber einen großen Wettbewerber gekauft. Ohne die Übernahme kann das zugrunde liegende Wachstum deutlich niedriger sein.",
-            "Überprüfe die Antwort auf „Was muss vor einem Langfristvergleich geprüft werden?“ und nenne ein Gegenargument."
+            "Trenne die gemeldeten +25 % Umsatzwachstum nach organischem Wachstum und erworbenem Umsatz.",
+            "Suche im Anhang Zeitpunkt, Konsolidierung und Umsatzbeitrag des zugekauften Wettbewerbers.",
+            "Vergleiche auf gleicher Basis und kennzeichne Währungs- und Buchungsmethodeneffekte separat."
           ],
           "transferPrompt": "Übertrage die Methode von „Zahlenreihen konsistent machen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1387,11 +1387,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Cashflow mit Bilanz versöhnen",
-          "pitfall": "Bei „Cashflow mit Bilanz versöhnen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Veränderungen in der Bilanz und im Cashflow abgleichen“ wirklich zutrifft.",
+          "pitfall": "Gewinnanstieg und schwächerer Cashflow können zugleich stimmen. Eine Forderungszunahme ist kein automatischer Nachweis gefälschter Gewinne, sondern muss erklärt werden.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Cashflow mit Bilanz versöhnen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Eine Firma meldet Gewinnwachstum, während sich hohe Forderungen aufbauen. Berechne den möglichen Einfluss auf das Working Capital und vergleiche die Entwicklung mit dem Bericht.",
-            "Überprüfe die Antwort auf „Was gilt als gute Vorgehensweise?“ und nenne ein Gegenargument."
+            "Zeige zunächst Gewinnentwicklung und operativen Cashflow in demselben Berichtszeitraum.",
+            "Untersuche den Anstieg der Forderungen: Umsatz kann gebucht sein, während Kunden noch nicht bezahlt haben.",
+            "Rechne den Working-Capital-Effekt in der Kapitalflussrechnung nach und prüfe andere Korrekturen."
           ],
           "transferPrompt": "Übertrage die Methode von „Cashflow mit Bilanz versöhnen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -1414,11 +1414,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Prüfvermerk und Unsicherheiten",
-          "pitfall": "Bei „Prüfvermerk und Unsicherheiten“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Eine Prüfung nach vorgegebenen Standards, keine Zukunftsgarantie“ wirklich zutrifft.",
+          "pitfall": "Ein uneingeschränkter Prüfvermerk garantiert weder eine positive Kursentwicklung noch die Zahlungsfähigkeit auf unbegrenzte Zeit. Zukunftsrisiken bleiben möglich.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Prüfvermerk und Unsicherheiten“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Geschäftsbericht enthält einen Hinweis auf erhebliche Unsicherheit bei der Finanzierung. Dokumentiere die genaue Passage und untersuche spätere Anschlussberichte.",
-            "Überprüfe die Antwort auf „Was bedeutet ein uneingeschränkter Prüfvermerk?“ und nenne ein Gegenargument."
+            "Lies genau, was der Bestätigungsvermerk und die besonders wichtigen Prüfungssachverhalte aussagen.",
+            "Unterscheide die Prüfung des veröffentlichten Abschlusses von Aussagen über zukünftige Gewinne oder Börsenkurse.",
+            "Bei Liquiditätswarnungen suche die betreffende Anhangstelle und überprüfe spätere Finanzierungsnachweise."
           ],
           "transferPrompt": "Übertrage die Methode von „Prüfvermerk und Unsicherheiten“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2018,11 +2018,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Leasing und echte Verpflichtungen",
-          "pitfall": "Bei „Leasing und echte Verpflichtungen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Leasingverbindlichkeiten und verwendete Bewertungsdefinition abstimmen“ wirklich zutrifft.",
+          "pitfall": "Leasingverbindlichkeiten pauschal auszublenden oder doppelt in Nettoschulden und Bewertung zu zählen, verfälscht den Unternehmenswert. Die Definition ist entscheidend.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Leasing und echte Verpflichtungen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Konzern hat 100 Mio. Euro Bankdarlehen und 35 Mio. Euro Leasingverbindlichkeiten. Die Frage ist nicht, ob es 100 oder 135 Millionen Verbindlichkeiten gibt, sondern welche Definition der ausgewiesenen Nettofinanzschulden verwendet wird.",
-            "Überprüfe die Antwort auf „Welche Prüfung verhindert eine Doppelzählung?“ und nenne ein Gegenargument."
+            "Notiere Bankdarlehen (100 Mio. €) und Leasingverbindlichkeiten (35 Mio. €) als unterschiedliche Posten.",
+            "Prüfe, ob die verwendete Kennzahl 'Net Debt' die 35 Mio. € bereits umfasst: dann nicht nochmals addieren.",
+            "Kontrolliere, ob die Cashflow- oder Ergebniskennzahl Leasingzahlungen bereits berücksichtigt, bevor du einen Multiple-Vergleich machst."
           ],
           "transferPrompt": "Übertrage die Methode von „Leasing und echte Verpflichtungen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2045,11 +2045,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Rückstellungen kritisch lesen",
-          "pitfall": "Bei „Rückstellungen kritisch lesen“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Bilanzaufwand und späterer Zahlungsmittelabfluss können zeitlich auseinanderfallen“ wirklich zutrifft.",
+          "pitfall": "Eine Rückstellung ist nicht automatisch eine heute fällige Rechnung. Wer Gewinnaufwand und zukünftige Cashzahlung als denselben Zeitpunkt behandelt, verfehlt die Liquiditätswirkung.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Rückstellungen kritisch lesen“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen bildet für einen Rechtsstreit eine Rückstellung von 40 Mio. Euro. Der aktuelle Gewinn sinkt, obwohl die entsprechende Auszahlung erst später oder möglicherweise in anderer Höhe erfolgt. Prüfe die Notes.",
-            "Überprüfe die Antwort auf „Welche Unterscheidung ist wichtig?“ und nenne ein Gegenargument."
+            "Ein Rechtsstreit erfüllt unter Umständen die Voraussetzungen für eine Rückstellung: hier 40 Mio. €.",
+            "Die Aufwandserfassung kann den Gewinn heute mindern, obwohl die Zahlung später oder in abweichender Höhe erfolgt.",
+            "Lies im Anhang die Annahmen, Fälligkeiten und die Entwicklung von Rückstellung, Zahlungen und Auflösungen."
           ],
           "transferPrompt": "Übertrage die Methode von „Rückstellungen kritisch lesen“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2072,11 +2072,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Bilanzänderungen erklären",
-          "pitfall": "Bei „Bilanzänderungen erklären“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Anhang und Kaufpreisallokation des Geschäftsberichts“ wirklich zutrifft.",
+          "pitfall": "Steigende Sachanlagen infolge eines Zukaufs sind keine direkt erwirtschafteten Cashflows. Akquisition und operatives Geschäft brauchen unterschiedliche Analysen.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Bilanzänderungen erklären“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen übernimmt einen Wettbewerber: Sachanlagen steigen, Schulden wachsen ebenfalls. Ein Teil des Bilanzanstiegs stammt aus Kaufpreisallokation und nicht aus eigenständig erwirtschaftetem Cashflow.",
-            "Überprüfe die Antwort auf „Welche Quelle hilft zur Erklärung?“ und nenne ein Gegenargument."
+            "Vergleiche die Bilanz vor und nach dem Unternehmenskauf, inklusive Schulden und zusätzlichen Vermögenswerten.",
+            "Lies die Kaufpreisallokation: Welche Werte wurden neu bilanziert, welcher Goodwill entstand, welche Schulden wurden übernommen?",
+            "Trenne Effekte des Zukaufs von selbst erwirtschaftetem Wachstum und kontrolliere dazu die Kapitalflussrechnung."
           ],
           "transferPrompt": "Übertrage die Methode von „Bilanzänderungen erklären“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2111,11 +2111,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Forderungen gegen Umsatz halten",
-          "pitfall": "Bei „Forderungen gegen Umsatz halten“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Zahlungsziele und Forderungsqualität im Anhang nachprüfen“ wirklich zutrifft.",
+          "pitfall": "Ein Forderungsplus von 30 % beweist allein keine Bilanzmanipulation. Längere Zahlungsziele, Wachstum, Währungen oder die Zusammensetzung der Kunden können eine Rolle spielen.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Forderungen gegen Umsatz halten“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Die Umsätze wachsen um 5 Prozent, offene Forderungen aber um 30 Prozent. Prüfe Forderungslaufzeiten, Kundenstruktur und Einmaleffekte, bevor du einen Verdacht formulierst.",
-            "Überprüfe die Antwort auf „Was ist die seriöse Reaktion?“ und nenne ein Gegenargument."
+            "Markiere Umsatz +5 % und Forderungen +30 % für vergleichbare Zeiträume.",
+            "Prüfe, wie lange Kunden durchschnittlich bis zur Zahlung brauchen und ob Forderungen überfällig sind.",
+            "Vergleiche operativen Cashflow, Umsatzmix und die Angaben im Anhang, bevor du die Bilanzqualität beurteilst."
           ],
           "transferPrompt": "Übertrage die Methode von „Forderungen gegen Umsatz halten“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2138,11 +2138,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Lageraufbau interpretieren",
-          "pitfall": "Bei „Lageraufbau interpretieren“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Warenumschlag oder Lagerreichweite“ wirklich zutrifft.",
+          "pitfall": "Lagerwachstum kann eine bewusste Vorbereitung auf Nachfrage sein – oder ein Warnsignal für Ladenhüter. Ohne Aufträge, Umschlag und Wertberichtigung bleibt beides offen.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Lageraufbau interpretieren“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Industriebetrieb meldet 20 Prozent mehr Lager bei unverändertem Absatz. Das kann Kapital binden. Vergleiche Auftragslage und Abwertungen, um die Ursache einzuschätzen.",
-            "Überprüfe die Antwort auf „Welche Kennzahl hilft ergänzend?“ und nenne ein Gegenargument."
+            "Erkenne: Lager +20 % bei gleichem Absatz bedeutet grundsätzlich mehr gebundenes Kapital.",
+            "Berechne oder vergleiche Lagerumschlag und Reichweite auf der gleichen Periodenbasis.",
+            "Prüfe Auftragseingang, mögliche Vorproduktion, Überalterung und nötige Lagerwertberichtigungen."
           ],
           "transferPrompt": "Übertrage die Methode von „Lageraufbau interpretieren“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -2165,11 +2165,11 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Qualitätsurteil formulieren",
-          "pitfall": "Bei „Qualitätsurteil formulieren“ kann eine gute Faustregel versagen, wenn Zeitraum, Definition oder Datenbasis nicht stimmen. Prüfe am konkreten Beispiel, unter welchen Voraussetzungen „Mehrere Finanzdaten und Gegenargumente gemeinsam dokumentieren“ wirklich zutrifft.",
+          "pitfall": "Nur die höhere Marge zu nennen blendet die schwächere Geldkonversion aus. Aus einem Quartal allein darfst du aber auch keinen nachhaltigen negativen Trend behaupten.",
           "workedSteps": [
-            "Markiere die wichtigen Zahlen, Begriffe und Annahmen zu „Qualitätsurteil formulieren“.",
-            "Arbeite das tatsächliche Beispiel vollständig durch: Ein Unternehmen wächst bei Umsatz und EBIT, aber operativer Cashflow sinkt. Möglicherweise werden mehr Forderungen aufgebaut; erst Berichte und Zahlungsentwicklung erklären, was dahintersteckt.",
-            "Überprüfe die Antwort auf „Welche Darstellung ist belastbar?“ und nenne ein Gegenargument."
+            "Halte fest: Umsatz und EBIT steigen, operativer Cashflow geht zurück.",
+            "Leite mögliche Ursachen ab, beispielsweise wachsende Forderungen, Lageraufbau oder Steuerzahlungen.",
+            "Suche Belege in Bilanz, Cashflow-Rechnung und Anhang und nenne mindestens eine alternative harmlose Erklärung."
           ],
           "transferPrompt": "Übertrage die Methode von „Qualitätsurteil formulieren“ auf einen anderen fiktiven Fall: Welche Belege wären nötig und welche Annahme könnte dein Ergebnis verändern?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
