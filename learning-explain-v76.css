@@ -1,0 +1,14 @@
+/* V76: supportive explanations, visually secondary to the required lesson and answer controls. */
+.fp76-guide{display:flex;flex-direction:column;gap:11px;margin:15px 0 12px;padding:16px 18px;border:1px solid #547c76;border-radius:14px;background:#17383b;color:#e5f3ea;max-width:100%}
+.fp76-guide .eyebrow{letter-spacing:.08em;font-size:11px;color:#a9e7c4}
+.fp76-explain-line strong{font-size:14px;color:#d5fae0}
+.fp76-explain-line p,.fp76-guide>p,.fp76-guide details p{margin:6px 0 0;font-size:14px;line-height:1.75;color:#d6e5df}
+.fp76-guide details{display:block;padding:11px 12px;border:1px solid #52756f;border-radius:10px;background:#153138}
+.fp76-guide details summary,.fp76-guide.fp76-review summary{cursor:pointer;font-size:14px;font-weight:700;color:#c9f2d6;line-height:1.5}
+.fp76-guide details[open] summary{margin-bottom:7px}
+.fp76-guide small{font-size:12px;line-height:1.5;color:#afc9c1}
+.fp76-guide .fp76-prompt{font-weight:600;color:#eff7e8}
+.fp76-guide.fp76-review{display:block;margin-top:12px;background:#1c333c}
+.fp76-guide.fp76-review[open]{padding:15px}
+@media(max-width:650px){.fp76-guide{padding:13px 14px}.fp76-explain-line p,.fp76-guide>p,.fp76-guide details p{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.fp76-guide *{scroll-behavior:auto!important;transition:none!important}}
