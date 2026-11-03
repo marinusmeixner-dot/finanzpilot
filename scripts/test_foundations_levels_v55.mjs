@@ -31,7 +31,7 @@ assert(sync.includes("status==='pending'&&showSpinner"),'Invisible progress sync
 assert(sync.includes("await sync(true,false)"),'Initial account sync must run without spinner.');
 assert(sync.includes('sync:()=>sync(true)'),'Explicit user manual sync must still be possible.');
 const levels=read('levels-v55.js'),css=read('levels-v55.css');
-assert(html.includes('levels-v55.js?v=61')&&html.includes('levels-v55.css?v=55'));
+assert(html.includes('levels-v55.js?v='+JSON.parse(read('version.json')).version)&&html.includes('levels-v55.css?v=55'));
 assert(html.includes('journey-v39.js?v='+JSON.parse(fs.readFileSync('version.json','utf8')).version)&&html.includes('sync.js?v=57'));
 assert(levels.includes('fp_foundation_complete_v55')&&levels.includes('fp_level_claim_v55'));
 assert(levels.includes('fp55-level')&&css.includes('.fp55-level.current'));
@@ -42,7 +42,7 @@ const memory={};
 const doc={readyState:'loading',addEventListener(){}};
 let calls={foundation:0,level:0},uid='account123';
 const client={rpc:async(name,params)=>{
- if(name==='fp_foundation_complete_v55'){calls.foundation++;return {data:{ok:true,awarded_now:true,module_id:params.p_module_id,xp_awarded:8,fp_awarded:0,xp_total:120},error:null}}
+ if(name==='fp_foundation_complete_v55'){calls.foundation++;const fresh=calls.foundation===1;return {data:{ok:true,awarded_now:fresh,module_id:params.p_module_id,xp_awarded:fresh?8:0,fp_awarded:0,xp_total:120},error:null}}
  if(name==='fp_level_claim_v55'){calls.level++;return {data:{ok:true,xp:120,level:2,next_xp:220,level_points_awarded:0,new_levels:[{level:2,points:0}],foundation_completed:1},error:null}}
  throw Error('unexpected RPC '+name);
 }};
@@ -61,8 +61,8 @@ assert.equal(calls.level,1);
 assert(notices.some(n=>n.kind==='basics'));
 assert(notices.some(n=>n.kind==='level'));
 response=await manager.awardFoundation('geld-wofuer','Finanzgrundlagen',true);
-assert.equal(response,null,'Idempotent client reward completion.');
-assert.equal(calls.foundation,1);
+assert.equal(response.awarded_now,false,'The server confirms an already-paid lesson without crediting it twice.');
+assert.equal(calls.foundation,2,'A stale browser cache must not block server verification.');
 assert(manager.render().includes('120'));
 assert(manager.render().includes('Level 2'));
 assert(manager.render().includes('Depotguthaben'),'Ordinary levels earn small cash, not FP');

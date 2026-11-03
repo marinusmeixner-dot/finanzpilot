@@ -1,5 +1,5 @@
 {
-  "version": 73,
-  "release": "2026-11-03-v73",
-  "notes": "V73: Fragebezogene Erläuterung von Fachwörtern und Abkürzungen in ausklappbarem Feld. 193 redaktionell definierte Begriffe, unter anderem Forderungsbestand, Working Capital, FCFF, Current Ratio. Grundlagen, Skills, Wiederholungen, Akademie, Praxis und Missionen. Antworten, IDs, Lernstände und Rewards unverändert."
+  "version": 74,
+  "release": "2026-11-03-v74",
+  "notes": "XP-Abgleich: Server-Belohnungsdaten statt lokaler Cache-Flags; automatische Nachbuchung bei Login, Sync, Online und Fokus, auch bei parallelen Imports; erzwungene Header- und Level-Aktualisierung bei Grundlagen und 156 Skilllektionen. Lern-/Kontodaten unverändert; keine doppelten XP."
 }
