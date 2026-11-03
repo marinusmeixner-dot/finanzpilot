@@ -42,7 +42,8 @@ for(const [id,answerKeys] of news){
   if(l.practice){assert(Number.isFinite(l.practice.answer),l.id+' not numeric');assert(Number.isFinite(l.practice.tolerance));assert(l.practice.prompt.length>25);assert(l.practice.unit);}
  }
 }
-const changed=data.skills.slice(0,44).flatMap(s=>s.lessons).filter(l=>l.pitfall.includes('Bei „'));
-assert(changed.length>=21,'Expected existing lessons improved');
+const first=data.skills.slice(0,44).flatMap(s=>s.lessons);
+assert.equal(first.filter(l=>l.pitfall.includes('Bei „')).length,0,'No original template pitfall should remain');
+assert(first.filter(l=>l.workedSteps?.[0]?.includes('Markiere die wichtigen Zahlen')).length===0,'First 21 lessons now have real worked steps, not a generic template');
 assert.equal(data.special.length,3,'Legacy multi-part special cases must remain intact');
 console.log('v49 learning QA passed: 52 skills, 156 lessons, 46 numeric exercises, 21 improved existing lessons, verified client/server answer keys, full DAG and legacy content intact.');
