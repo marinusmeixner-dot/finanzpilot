@@ -39,17 +39,27 @@ const terms=value=>esc(String(value??'')
  .replace(/\bEBITDA-Ergebnisse\s*\(Ergebnis vor Zinsen, Steuern und Abschreibungen\)/g,'EBITDA-Ergebnisse'));
 const openedGlossaries=new Set();
 function acronymGlossary(module,preparation){
+ // Fachbegriffe aus den konkreten Fragen zuerst zeigen, bevor Antwortoptionen beurteilt werden.
+ const quiz=[...(module.questions||[]).flatMap(q=>[q.prompt,...(q.options||[])])].filter(Boolean).join(' ');
  const source=[module.title,module.goal,module.explain,module.example,
   ...(module.details||[]).flatMap(d=>[d.heading,d.text]),
-  module.challenge?.prompt,module.challenge?.solution,preparation,
-  ...(module.questions||[]).flatMap(q=>[q.prompt,q.explanation,...(q.options||[])])
+  module.challenge?.prompt,module.challenge?.solution,preparation,quiz
  ].filter(Boolean).join(' ');
- const found=Object.keys(FP57_ACRONYMS).filter(code=>new RegExp('\\b'+code+'\\b','i').test(source));
- if(!found.length)return '';
+ const termApi=window.FinanzPilotTerms;
+ const rows=[...(termApi?.entries?.(quiz,30)||[]),...(termApi?.entries?.(source,30)||[])];
+ const seen=new Set(rows.map(r=>r.label.toLocaleLowerCase('de-DE')));
+ for(const code of Object.keys(FP57_ACRONYMS)){
+  if(new RegExp('\\b'+code+'\\b','i').test(source)&&!seen.has(code.toLocaleLowerCase('de-DE'))){
+   rows.push({label:code,definition:FP57_ACRONYMS[code]});
+   seen.add(code.toLocaleLowerCase('de-DE'));
+  }
+ }
+ const unique=rows.filter((row,i)=>rows.findIndex(r=>r.label.toLocaleLowerCase('de-DE')===row.label.toLocaleLowerCase('de-DE'))===i).slice(0,35);
+ if(!unique.length)return '';
  return '<details class="fp59-glossary" data-fp59-glossary'+(openedGlossaries.has(module.id)?' open':'')+'>'+
-  '<summary>Abkürzungen erklären <span class="fp59-glossary-count">'+found.length+' Begriffe</span></summary>'+
-  '<dl class="fp59-glossary-list">'+found.map(code=>
-   '<div class="fp59-glossary-entry"><dt>'+esc(code)+'</dt><dd>'+esc(FP57_ACRONYMS[code])+'</dd></div>'
+  '<summary>Abkürzungen und Fachbegriffe <span class="fp59-glossary-count">'+unique.length+' Erklärungen</span></summary>'+
+  '<dl class="fp59-glossary-list">'+unique.map(row=>
+   '<div class="fp59-glossary-entry"><dt>'+esc(row.label)+'</dt><dd>'+esc(row.definition)+'</dd></div>'
   ).join('')+'</dl></details>';
 }
 const QUIZ_PREP={"geld-wofuer":"Überschuss = Einnahmen minus Ausgaben; Nettovermögen = Konten und Besitz minus Schulden; liquide Mittel sind kurzfristig verfügbares Geld.","was-ist-boerse":"Der Kurs spiegelt Erwartungen: Gewinne können steigen und Kurse trotzdem fallen, wenn die Erwartungen höher lagen. Ein Aktien-Stückpreis allein zeigt weder Unternehmensgröße noch Bewertung.","anlagearten":"Ein Fonds reduziert das Risiko einzelner Firmen, nicht sämtliche Marktschwankungen. Kupon bedeutet feste Zinszahlung einer Anleihe. Wenn vergleichbare Marktzinsen steigen, fällt meist der Kurs älterer Anleihen.","unternehmen-geschaeft":"Bei Software-Abonnements zählen nicht nur neue Kunden, sondern auch Akquisekosten und Bindung. Hohe Rabatte und steigende Kündigungen können künftige Gewinne belasten.","umsatz-kosten":"Gewinn = Umsatz minus relevante Kosten. Fixkosten bleiben kurzfristig gleich, variable Kosten wachsen mit der Menge. Für neue Umsätze auch die zusätzlichen Kosten berücksichtigen.","cashflow-einfach":"Unbezahlte Rechnungen sind Forderungen und kein eingegangener Geldfluss. Freier Cashflow = operativer Cashflow minus Investitionsauszahlungen; Kredite sind Finanzierung und gehören nicht dazu.","wachstum-marge":"Marge = Gewinn geteilt durch Umsatz. Steigender Umsatz kann bei schneller steigenden Kosten trotzdem eine sinkende Marge ergeben. Prozent und Prozentpunkte unterscheiden.","aktienpreis-wert":"Fairer Wert ist eine begründete, unsichere Schätzung. Das DCF-Verfahren zinst zukünftige Geldflüsse ab: Ein höherer angenommener Zinssatz senkt bei gleichen Geldflüssen den heutigen Wert.","bewertungsvergleiche":"Das Kurs-Gewinn-Verhältnis vergleicht den Preis je Aktie mit dem Jahresgewinn je Aktie. Mehr Schulden, ungleiches Wachstum oder verzerrte Gewinne machen einfache Zahlenvergleiche unzuverlässig.","rechnen-veraenderung":"Prozentänderungen bauen auf dem jeweils neuen Ausgangswert auf. Rechne nacheinander mit Faktoren; ein Verlust erfordert für die Erholung einen höheren Prozentanstieg.","rechnen-marge":"EBIT bezeichnet Gewinn vor Zinsen und Steuern. EBIT-Marge = EBIT geteilt durch Umsatz mal 100. Der Unterschied von 18 zu 15 Prozent sind 3 Prozentpunkte, relativ 16,7 Prozent Rückgang.","rechnen-bewertung":"Das Kurs-Gewinn-Verhältnis nutzt Kurs geteilt durch Gewinn je Aktie. Gewinn je Aktie = Jahresgewinn durch Aktienzahl. Unterscheide berichtete Jahreswerte von noch unsicheren Prognosen.","analysieren-fragestellung":"Formuliere prüfbare Fragen zum Geschäftsmodell: Marge, Kosten, Kundenbindung und freier Geldfluss sind hilfreicher als bloße Hoffnungen auf einen Kursanstieg.","analysieren-quellen":"Wähle gleiche Zeiträume und Währungen. US-Dollar und Euro brauchen einen Wechselkurs mit Datum. Bereinigte EBITDA-Ergebnisse (Ergebnis vor Zinsen, Steuern und Abschreibungen) sind nicht direkt mit dem unbereinigten Gewinn gleichzusetzen.","analysieren-kurzbericht":"Trenne belegte Fakten von deinen Vermutungen; benenne fehlende Daten wie Forderungen, bevor du aus dem Wachstum eine Prognose machst.","urteil-fakt-vs-deutung":"Eine veröffentlichte Gewinnzahl ist eine Beobachtung; die Aussage zur Bewertung ist eine Deutung. Prüfe, ob der operative Cashflow den Gewinn bestätigt.","urteil-chancen-risiken":"Ein gutes Basis-, Chancen- und Risikoszenario nennt konkrete Bedingungen, die sich später an Zahlen überprüfen lassen.","urteil-these-protokoll":"Eine überprüfbare These nennt Ausgangswerte, einen Zeitpunkt und klare Gegenbelege. Ein Kursanstieg allein beweist deine ursprüngliche Geschäftsannahme nicht."};

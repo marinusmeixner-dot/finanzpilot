@@ -1,5 +1,5 @@
 {
-  "version": 72,
-  "release": "2026-11-02-v72",
-  "notes": "V72: PWA-Manifest-Startadresse und alle für Header und Update nötigen Asset-URLs auf v72 synchronisiert; vorheriges V71-Header-Layout mit 8px Rechtsversatz bleibt. Veraltete Navigations-Testversion korrigiert. Lern-/Account-Daten unverändert."
+  "version": 73,
+  "release": "2026-11-03-v73",
+  "notes": "V73: Fragebezogene Erläuterung von Fachwörtern und Abkürzungen in ausklappbarem Feld. 193 redaktionell definierte Begriffe, unter anderem Forderungsbestand, Working Capital, FCFF, Current Ratio. Grundlagen, Skills, Wiederholungen, Akademie, Praxis und Missionen. Antworten, IDs, Lernstände und Rewards unverändert."
 }

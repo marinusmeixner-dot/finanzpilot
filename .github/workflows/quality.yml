@@ -16,6 +16,8 @@ jobs:
         run: find . -type f -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -r -n1 node --check
       - name: Validate JSON files
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
+      - name: "V73: Explain relevant financial terms before quiz answers"
+        run: node scripts/test_learning_terms_v73.mjs
       - name: "V68: Mobile browser-aligned one-row flex header without cropped Sync"
         run: node scripts/test_header_alignment_v65.mjs
       - name: "V64: Profile Streak section, total-only portfolio header and retained sync"
