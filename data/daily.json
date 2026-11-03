@@ -1,6 +1,6 @@
 {
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T14:03:32.000Z",
+  "updated_at": "2026-11-03T16:55:45.000Z",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
   "intro": "Verifizierte Vollartikel zu Unternehmen, Konjunktur und Arbeitsmarkt; neue Beschäftigungsanalyse anhand Destatis ergänzt.",
   "lesson_id": "valuation",
@@ -793,6 +793,54 @@
           }
         ],
         "conclusion": "Der September zeigt kurzfristige Stagnation bei weiterhin negativer Jahresbilanz. Für eine Konjunkturthese sind mehrere vergleichbar bereinigte Perioden und zusätzliche Wirtschaftsindikatoren wichtiger als eine einzelne Schlagzeile."
+      }
+    },
+    {
+      "id": "2026-10-19-siemens-nvidia-erlangen-autonomous-factory",
+      "title": "Siemens und NVIDIA testen KI-Fabrik in Erlangen: 85 % weniger Engineering-Aufwand sind kein Konzerngewinn",
+      "published": "2026-10-19",
+      "category": "Unternehmen",
+      "symbols": [
+        "SIE.DE",
+        "NVDA"
+      ],
+      "source": "Siemens AG – Pressemitteilung vom 19. Oktober 2026",
+      "url": "https://press.siemens.com/global/en/pressrelease/siemens-partners-nvidia-advance-ai-driven-autonomous-factories",
+      "why": "Die bereits am 19. Oktober vorgestellten Anwendungen verbinden KI-Agenten, digitale Zwillinge und reale Fabrikplanung. Der nachträglich aufgearbeitete Bericht ist für zwei Watchlist-Unternehmen relevant.",
+      "impact": "Entscheidend sind übertragbare Effizienzgewinne, Softwareumsätze, Hardwarebedarf und Implementierungskosten; die genannten Maximalwerte sind keine ausgewiesenen Konzernmargen.",
+      "article": {
+        "lead": "Siemens und NVIDIA haben am 19. Oktober 2026 Anwendungen für eine stärker KI-gestützte Fertigung im Siemens-Elektronikwerk Erlangen vorgestellt. Laut Siemens kann ein vollständig virtueller Produktionsanlauf den Engineering-Aufwand um bis zu 85 Prozent verringern; KI-gestützte Produktionsplanung soll Kosteneinsparungen von bis zu 20 Prozent ermöglichen. Diese Zahlen betreffen spezifische Anwendungen und sind weder bereits erzielte Einsparungen des gesamten Konzerns noch eine Prognose für dessen Aktienkurs.",
+        "sections": [
+          {
+            "heading": "Was in Erlangen tatsächlich erprobt wird",
+            "paragraphs": [
+              "Ein KI-Agent erzeugt bei neuen Aufträgen unterschiedliche Produktionsszenarien. Er zeigt Planern die Auswirkungen anhand definierter Kennzahlen und lässt die Varianten vor einer Änderung in der realen Fabrik in einem digitalen Zwilling prüfen. Damit ist die Software eine Entscheidungshilfe und nicht automatisch ein System, das ohne menschliche Verantwortung alle Fabrikentscheidungen trifft.",
+              "Siemens beschreibt Erlangen als Entwicklungs- und Teststandort für den späteren Einsatz in anderen Fabriken. Nach Unternehmensangaben sind dort bereits mehr als 100 KI-Algorithmen in Produktion, Logistik, Qualitätssicherung und Instandhaltung aktiv. Das ist ein Hinweis auf praktische Anwendung, belegt aber noch keine identischen Ergebnisse bei anderen Herstellern."
+            ]
+          },
+          {
+            "heading": "Die 85- und 20-Prozent-Zahlen richtig einordnen",
+            "paragraphs": [
+              "Die Reduktion des Engineering-Aufwands um bis zu 85 Prozent bezieht sich auf einen vollständig virtuellen Produktionsanlauf. Engineering-Aufwand ist eine Prozessgröße; er entspricht weder dem Gesamtaufwand einer Fabrik noch deren Umsatz oder operativem Gewinn. Ohne Angaben zu Basisprozess, Messmethode und Roll-out lässt sich daraus kein jährlicher Eurobetrag für Siemens ableiten.",
+              "Bis zu 20 Prozent Einsparung nennt Siemens für agentengestützte Produktionsplanung. Auch hier sind ein bestimmter Anwendungsfall und die Formulierung 'bis zu' entscheidend. Ein belastbarer Business Case müsste Lizenzkosten, Integrationsarbeit, IT-Infrastruktur, Wartung, Schulung und die tatsächliche Auslastung gegenüberstellen."
+            ]
+          },
+          {
+            "heading": "Wer profitiert wirtschaftlich – Siemens oder NVIDIA?",
+            "paragraphs": [
+              "Siemens bringt Industrieautomation, Fertigungssoftware und das Wissen über Produktionsprozesse ein. Wiederholbare Softwarelösungen könnten Lizenz- und Serviceumsätze stützen, falls Kunden sie nach erfolgreichem Test produktiv übernehmen. Aus der Pressemitteilung geht jedoch weder ein konkreter neuer Vertragswert noch eine gesonderte Umsatzprognose für diese Anwendungen hervor.",
+              "NVIDIA liefert unter anderem Simulationstechnologien und KI-Bausteine. Deren Einsatz kann Nachfrage nach Rechenleistung fördern, aber nicht jeder industrielle KI-Einsatz bedeutet automatisch den Verkauf zusätzlicher großer Rechenzentren. Hardwareeinsatz, Lizenzmodell und Kundeninvestitionen müssten getrennt untersucht werden."
+            ]
+          },
+          {
+            "heading": "Welche Belege für eine belastbare Anlagethese fehlen",
+            "paragraphs": [
+              "Für Siemens wären die Zahl zahlender Industriekunden, wiederkehrende Softwareumsätze, nachweisbare Einsparungen bei Kunden, operative Marge und freier Cashflow wichtige Messpunkte. Bei NVIDIA wären der tatsächlich zuordenbare Umsatz, das Wachstum außerhalb der größten Rechenzentrumskunden und die Kapitalintensität der industriellen KI-Nachfrage zu prüfen.",
+              "Die Gegenhypothese ist, dass digitale Zwillinge in hochstandardisierten Fabriken gut funktionieren, aber in heterogenen Altanlagen hohe Daten- und Integrationskosten verursachen. Eine belastbare Bewertung sollte deshalb Referenzprojekte mit Vorher-Nachher-Messungen, unabhängige Kundenberichte und die zeitliche Skalierung vergleichen."
+            ]
+          }
+        ],
+        "conclusion": "Die Demonstration in Erlangen zeigt konkrete industrielle Anwendungen statt nur eine abstrakte KI-Vision. Die ausgewiesenen Maximalwerte bleiben jedoch an einzelne Prozesse gebunden. Dieser Beitrag arbeitet die Originalmeldung vom 19. Oktober 2026 nachträglich auf und ist keine neue Ankündigung vom 3. November."
       }
     }
   ],
