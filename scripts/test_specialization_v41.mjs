@@ -46,7 +46,7 @@ assert(!read('profile-v42.js').includes('data-section-route="skilltree"'),'Profi
 assert(app.includes("FinanzPilotLearningHub.tree()"));
 assert(app.includes("FinanzPilotLearningHub.skillIndex()"));
 assert(app.includes("FinanzPilotLearningHub.specials()"));
-assert(html.includes("learning-hub-v41.js?v=76")&&html.includes("learning-hub-v41.css?v=46"));
+assert(html.includes("learning-hub-v41.js?v=77")&&html.includes("learning-hub-v41.css?v=46"));
 assert(read('docs/CONNECTED_LEARNING_ARTIFACTS_V41.md').includes('maximal **vier aktive'));
 
 const routes=[];

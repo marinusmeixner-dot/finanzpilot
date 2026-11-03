@@ -24,7 +24,7 @@ assert.equal(numeric.length,46);
 for(const l of numeric)assert(Number.isFinite(l.practice.answer)&&Number.isFinite(l.practice.tolerance)&&l.practice.explanation.length>20);
 for(const id of ['working-capital-diagnose','realrendite-kaufkraft','backtests-kritisch','kreditrisiko-unternehmen'])assert(skills.skills.some(s=>s.id===id));
 const html=read('index.html'),hub=read('learning-hub-v41.js'),sync=read('sync.js');
-for(const file of ['study-coach-v46.js?v=46','lesson-view-v46.js?v=76','study-v46.css?v=63'])assert(html.includes(file));
+for(const file of ['study-coach-v46.js?v=77','lesson-view-v46.js?v=76','study-v46.css?v=63'])assert(html.includes(file));
 assert(sync.includes("'finanzpilot_study_v46'")&&sync.includes('function mergeStudy'));
 assert(hub.includes("FinanzPilotLessonView?.render")&&hub.includes("FinanzPilotStudy.reviewWidget()"));
 assert(hub.includes('data-fp46-skill-search'));
