@@ -1,7 +1,179 @@
 {
   "schema_version": 1,
-  "updated_at": null,
+  "updated_at": "2026-11-03T09:49:10.881412Z",
   "editorial_status": "unverified_candidates_only",
-  "note": "Automatic hourly source discovery. Not fact-checked; never shown as an in-app article.",
-  "candidates": []
+  "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
+  "candidates": [
+    {
+      "id": "rss-026efd763a1236d593",
+      "title": "Marktbericht: Anleger scheuen vor US-Zwischenwahlen das Risiko",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-apple-midterms-100.html",
+      "published_at": "2026-11-03T09:15:35Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-bc7ec95ca7fa69eed2",
+      "title": "Update Wirtschaft vom 03.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1677148.html",
+      "published_at": "2026-11-03T09:08:43Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f52dff25f896947aeb",
+      "title": "Kahlschlag bei Schaeffler: Stellenabbau und Standortschließungen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/schaeffler-154.html",
+      "published_at": "2026-11-03T09:02:12Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6268726bab7edf53ae",
+      "title": "Starkes iPhone-Geschäft sorgt für Rekordumsatz bei Apple",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/apple-rekordumsatz-100.html",
+      "published_at": "2026-11-03T08:13:13Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-912e762a4781505847",
+      "title": "Was Polens Wirtschaft boomen lässt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/polen-boom-wirtschaftswunder-100.html",
+      "published_at": "2026-11-03T07:23:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7e27abbd965ce57d95",
+      "title": "Blackstone president calls for more equity to fund AI buildout as debt risks mount",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/03/equity-ai-debt-blackstone-pimco-financing.html",
+      "published_at": "2026-11-03T06:46:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-eced5724f02cd73cb4",
+      "title": "11KM-Podcast: Chip im Gehirn - wie KI und Mensch verbunden werden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/podcast/11km/chips-hirn-schnittstelle-ki-100.html",
+      "published_at": "2026-11-03T06:03:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-c1c24dc10d0b724c0e",
+      "title": "Stock market after midterm elections: What S&P 500 history shows",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/02/stock-market-after-midterm-elections-sp-500-history.html",
+      "published_at": "2026-11-02T23:13:34Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-ea6d46625f894421c4",
+      "title": "Texas governor race tightens in prediction markets, but Abbott remains favored",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/02/texas-governor-prediction-markets-abbott-hinojosa.html",
+      "published_at": "2026-11-02T21:13:43Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-16af9f058f910d8ae8",
+      "title": "Wirtschaft vor acht vom 02.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1676936.html",
+      "published_at": "2026-11-02T20:02:11Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6542a78868a41ec2ca",
+      "title": "Digitalgipfel in Berlin: Merz fordert mehr digitale Souveränität",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/digitalgipfel-wildberger-merz-ki-100.html",
+      "published_at": "2026-11-02T18:33:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-fa27ab3fc7311a6a3b",
+      "title": "Cyberangriffe haben Supermärkte in Europa offenbar lahmgelegt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/technologie/cyberangriff-supermaerkte-100.html",
+      "published_at": "2026-11-02T16:10:17Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-00744d1c4a2d5059a8",
+      "title": "Vor den US-Zwischenwahlen: Wie ist Trumps Wirtschaftsbilanz?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/zwischenstand-us-wirtschaft-entwicklung-100.html",
+      "published_at": "2026-11-02T11:25:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-ba30697f1ff096ce34",
+      "title": "Binance-Kunden heben nach Hackerangriff Milliarden ab",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/binance-kundengelder-100.html",
+      "published_at": "2026-11-02T08:59:47Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-94a74c5c97f1e3b413",
+      "title": "IG Metall weitet im Tarifstreit Warnstreiks aus",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ig-metall-warnstreiks-120.html",
+      "published_at": "2026-11-02T02:15:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-2fa3cb1d1b231c33a3",
+      "title": "Grüner Flugkraftstoff: Wird Fliegen in Zukunft teurer?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/energie/umweltfreundlich-fliegen-flugverkehr-100.html",
+      "published_at": "2026-11-01T16:22:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-324274ece6b33ab6f1",
+      "title": "Wie KI Entwicklung und Alltag verändert - kreativ auf Knopfdruck?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
+      "published_at": "2026-11-01T08:00:49Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7b9037600d465ab6ca",
+      "title": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/technologie/salz-142.html",
+      "published_at": "2026-10-31T16:21:31Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-2f2b140a16afaaa2b1",
+      "title": "Binance’s $6.3 billion hack raises questions about crypto wallet safety",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/10/31/binance-hack-crypto-wallet-safety.html",
+      "published_at": "2026-10-31T12:47:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    }
+  ]
 }
