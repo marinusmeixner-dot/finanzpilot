@@ -1,0 +1,41 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const read=x=>fs.readFileSync(x,'utf8');
+const lessons=JSON.parse(read('data/specializations-v41.json'));
+const questions=JSON.parse(read('data/journey-questions-v55.json'));
+const journey=JSON.parse(read('data/journey-v39.json'));
+function fnv(str){let h=2166136261;for(let i=0;i<str.length;i++){h^=str.charCodeAt(i);h=Math.imul(h,16777619)>>>0}return h.toString(16).padStart(8,'0')}
+const skills=lessons.skills.flatMap(s=>s.lessons);
+const skillKey=lessons.skills.flatMap(s=>s.lessons.map(l=>[l.id,l.question,l.options,l.correct,l.xp]));
+const foundationKey=Object.entries(questions.questions).sort(([a],[b])=>a.localeCompare(b)).map(([id,qs])=>[id,qs.map(q=>[q.prompt,q.options,q.correct])]);
+assert.equal(skills.length,156,'Do not remove specialist lessons');
+assert.equal(fnv(JSON.stringify(skillKey)),'2fa1cbf7','All 156 questions, options, answers and XP must stay unchanged');
+assert.equal(fnv(JSON.stringify(foundationKey)),'5f06f6e1','All 36 foundation questions and answers must stay unchanged');
+assert.equal(skills.filter(l=>l.workedSteps?.[0]?.startsWith('Markiere die wichtigen Zahlen')).length,0,'No generic first-batch worked steps remain');
+assert(skills.every(l=>l.workedSteps?.length===3&&l.workedSteps.every(x=>x.length>=40)),'Each skill needs substantive stepwise worked guidance');
+const window={};vm.runInNewContext(read('learning-explain-v76.js'),{window,console});
+const api=window.FinanzPilotExplain;
+assert(api&&api.basicsCount===18&&api.branchesCount===8,'All basic modules and expert branches covered');
+const indexes=[[0,3,4],[0,1,4],[0,3,4],[0,1,3],[0,1,4],[0,2,4]];
+const active=journey.stages.flatMap((stage,i)=>indexes[i].map(index=>stage.modules[index]));
+assert.equal(active.length,18);
+for(const m of active)for(const phase of ['idea','example','review'])assert(api.basics(m.id,phase).includes('fp76-guide'),'Missing guide '+m.id+' '+phase);
+for(const branch of lessons.branches){
+ const skill=lessons.skills.find(s=>s.branch===branch.id);
+ for(const phase of ['concept','apply','check'])assert(api.skill(skill.lessons[0],skill,phase).includes('fp76-guide'),'Missing guide '+branch.id+' '+phase);
+}
+const example=api.basics('rechnen-marge','example');
+assert(example.includes('45 ÷ 500 × 100 = 9 %')&&example.includes('<details>'),'Calculations have a hidden self-check with worked solution');
+assert(!api.basics('geld-wofuer','idea').includes('data-journey-check'),'Explanations cannot grade questions');
+assert(!read('learning-explain-v76.js').includes('awardFoundation'),'Explanations must not award XP');
+const html=read('index.html');
+assert(html.indexOf('learning-explain-v76.js?v=76')<html.indexOf('lesson-view-v46.js?v=76'),'Guide loads before specialist view');
+assert(html.includes('learning-explain-v76.css?v=76'));
+assert(html.includes('journey-v39.js?v=76')&&html.includes('learning-hub-v41.js?v=76'));
+assert(read('lesson-view-v46.js').includes("FinanzPilotExplain?.skill?.(lesson,skill,'concept')"));
+assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'idea')"));
+assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'example')"));
+assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'review')"));
+assert.equal(JSON.parse(read('version.json')).version,76);
+console.log('V76 PASS: 18 original foundational explanations with voluntary self-check; 8 branch guides covering 156 skills; 21 genuinely worked lessons; official answers and XP unchanged.');

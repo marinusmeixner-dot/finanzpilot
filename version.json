@@ -1,5 +1,5 @@
 {
-  "version": 74,
-  "release": "2026-11-03-v74",
-  "notes": "XP-Abgleich: Server-Belohnungsdaten statt lokaler Cache-Flags; automatische Nachbuchung bei Login, Sync, Online und Fokus, auch bei parallelen Imports; erzwungene Header- und Level-Aktualisierung bei Grundlagen und 156 Skilllektionen. Lern-/Kontodaten unverändert; keine doppelten XP."
+  "version": 76,
+  "release": "2026-11-03-v76",
+  "notes": "Didaktische Vertiefung: 18 individuell erklärte Grundlagen mit einfachen Merksätzen, anschaulichem Warum, Denkfallen und freiwilligem Mini-Selbsttest; alle 156 Skilllektionen erhalten fachrichtungsbezogene Denkwege, 21 zuvor generische Lektionen konkrete Herleitungen. Fragen, Lösungen, XP/FP und Konto unverändert."
 }

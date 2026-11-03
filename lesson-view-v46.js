@@ -16,10 +16,10 @@ function render(skill,lesson,info={}){
  const steps='<nav class="fp46-study-steps" aria-label="Lernphasen">'+labels.map((label,i)=>
   '<button type="button" data-fp46-study-step="'+i+'" class="'+(i===step?'active':'')+'" aria-current="'+(i===step?'step':'false')+'"><span>'+String(i+1)+'</span>'+label+'</button>').join('')+'</nav>';
  let content='';
- if(step===0)content='<section class="fp46-study-panel"><span class="eyebrow">01 · DIE IDEE VERSTEHEN</span><h3>Was steckt dahinter?</h3><p>'+esc(lesson.explanation)+'</p>'+
+ if(step===0)content='<section class="fp46-study-panel"><span class="eyebrow">01 · DIE IDEE VERSTEHEN</span><h3>Was steckt dahinter?</h3><p>'+esc(lesson.explanation)+'</p>'+ (window.FinanzPilotExplain?.skill?.(lesson,skill,'concept')||'')+
   '<div class="fp46-didactic-tip"><b>Dein Lernziel</b><p>'+esc(lesson.keyTakeaway||lesson.goal)+'</p></div>'+
   (lesson.pitfall?'<details class="fp46-mistake"><summary>Typischen Denkfehler erkennen</summary><p>'+esc(lesson.pitfall)+'</p></details>':'')+'</section>';
- if(step===1)content='<section class="fp46-study-panel"><span class="eyebrow">02 · AN EINEM FALL LERNEN</span><h3>Beispiel durchdenken</h3><p>'+esc(lesson.example)+'</p>'+
+ if(step===1)content='<section class="fp46-study-panel"><span class="eyebrow">02 · AN EINEM FALL LERNEN</span><h3>Beispiel durchdenken</h3><p>'+esc(lesson.example)+'</p>'+ (window.FinanzPilotExplain?.skill?.(lesson,skill,'apply')||'')+
   (lesson.workedSteps?.length?'<ol class="fp46-worked-steps">'+lesson.workedSteps.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ol>':'')+
   (lesson.practice?'<div class="fp46-calculation"><span class="eyebrow">KURZE RECHENÜBUNG · UNBENOTET</span><h4>'+esc(lesson.practice.prompt)+'</h4><div class="fp46-calculation-controls"><input type="text" inputmode="text" autocomplete="off" spellcheck="false" data-fp46-calc-input placeholder="Ergebnis eingeben, auch mit Komma oder Minus"><span>'+esc(lesson.practice.unit)+'</span><button type="button" class="btn secondary" data-fp46-calc-check>Prüfen</button></div><output data-fp46-calc-result aria-live="polite"></output></div>':'')+
   '<p class="fp46-study-pause">Überlege selbst: Welche Zahl oder Annahme trägt die Schlussfolgerung?</p></section>';
@@ -33,6 +33,7 @@ function render(skill,lesson,info={}){
   (lastFeedback?.id===lesson.id?'<div class="fp48-feedback '+(lastFeedback.correct?'correct':'retry')+'" role="status"><h4>'+(lastFeedback.correct?'Richtig – das solltest du mitnehmen':'Noch nicht richtig – so kannst du es prüfen')+'</h4>'+
   '<p>'+esc(lastFeedback.correct?(lesson.keyTakeaway||lesson.goal):(lesson.pitfall||'Vergleiche deine Antwort nochmals mit dem Beispiel und kontrolliere die zugrunde liegende Definition.'))+'</p>'+
   '<details><summary>'+(lastFeedback.correct?'Den Zusammenhang noch einmal nachvollziehen':'Hilfestellung: Was ist entscheidend?')+'</summary><p>'+esc(lastFeedback.correct?lesson.explanation:(lesson.transferHint||lesson.explanation))+'</p></details>'+
+  (window.FinanzPilotExplain?.skill?.(lesson,skill,'check')||'')+
   (lastFeedback.correct?'':'<button type="button" class="btn secondary" data-fp46-study-step="0">Erklärung erneut lesen →</button>')+'</div>':'')+'</section>';
  return '<div class="fp41-study fp46-stepper"><div class="eyebrow">'+esc(skill.title)+' · LEKTION '+lesson.sequence+' VON '+skill.lessons.length+'</div><h2>'+esc(lesson.title)+'</h2>'+
   '<p class="fp46-study-goal"><b>Danach kannst du:</b> '+esc(lesson.goal)+'</p>'+steps+content+

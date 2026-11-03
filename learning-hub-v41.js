@@ -220,7 +220,7 @@ function specials(){
 }
 async function load(force=false){
  if(!catalog||force){
-  try{const r=await fetch(URI+'?v=56',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);
+  try{const r=await fetch(URI+'?v=76',{cache:'no-store'});if(!r.ok)throw Error('HTTP '+r.status);
   const j=await r.json();if(!Array.isArray(j.skills)||j.skills.length<4)throw Error('Katalog unvollständig');catalog=j;problem='';
   }catch(e){problem=String(e.message||e);return}
  }
