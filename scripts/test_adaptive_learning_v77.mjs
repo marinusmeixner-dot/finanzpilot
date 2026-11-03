@@ -5,6 +5,8 @@ const read=file=>fs.readFileSync(file,'utf8');
 const basics=JSON.parse(read('data/journey-v39.json'));
 const questions=JSON.parse(read('data/journey-questions-v55.json'));
 const skills=JSON.parse(read('data/specializations-v41.json'));
+// The Journey loader upgrades active lessons to the verified four-option foundation bank.
+for(const stage of basics.stages)for(const module of stage.modules){if(questions.questions[module.id])module.questions=questions.questions[module.id];}
 const variants=JSON.parse(read('data/adaptive-variants-v77.json'));
 const main=read('adaptive-study-v77.js'),sync=read('sync.js'),index=read('index.html');
 const allSkills=skills.skills.flatMap(s=>s.lessons);
