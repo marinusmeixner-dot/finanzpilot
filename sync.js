@@ -149,11 +149,11 @@
     const a=isObject(local)?local:{},b=isObject(remote)?remote:{};
     const attempts={};
     for(const lesson of new Set([...Object.keys(a.attempts||{}),...Object.keys(b.attempts||{})])){
-      if(!/^[\\w-]{2,100}$/.test(lesson))continue;
+      if(!/^[\w-]{2,100}$/.test(lesson))continue;
       const events=new Map();
       for(const e of [...(Array.isArray(b.attempts?.[lesson])?b.attempts[lesson]:[]),
                       ...(Array.isArray(a.attempts?.[lesson])?a.attempts[lesson]:[])]){
-        if(!e||typeof e.id!=='string'||!/^at-[\\w-]{5,100}$/.test(e.id)||!Number.isFinite(Number(e.t)))continue;
+        if(!e||typeof e.id!=='string'||!/^at-[\w-]{5,100}$/.test(e.id)||!Number.isFinite(Number(e.t)))continue;
         if(!events.has(e.id))events.set(e.id,e);
       }
       const sorted=[...events.values()].sort((x,y)=>Number(x.t)-Number(y.t)||x.id.localeCompare(y.id)).slice(-24);
