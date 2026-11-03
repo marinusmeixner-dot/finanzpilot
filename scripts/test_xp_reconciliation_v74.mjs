@@ -25,7 +25,7 @@ assert(hub.includes("FinanzPilotLevels?.refresh?.(true)"),'Skill rewards refresh
 
 // Simulate a browser whose local cache incorrectly says an unpaid lesson was paid.
 const paid=new Set(['geld-wofuer']);const user='xp-account';let xp=20,calls=0,reads=0;
-const memory={'finanzpilot_foundation_rewards_v55_'+user:JSON.stringify({'geld-wofuer':true,'was-ist-boerse':true})};
+const memory={['finanzpilot_foundation_rewards_v55_'+user]:JSON.stringify({'geld-wofuer':true,'was-ist-boerse':true})};
 const done={'geld-wofuer':1711111111,'was-ist-boerse':1711112222};
 const modules=[{id:'geld-wofuer',title:'Geld'},{id:'was-ist-boerse',title:'Börse'},{id:'anlagearten',title:'ETF'}];
 let defer=null;
