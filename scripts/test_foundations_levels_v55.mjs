@@ -32,7 +32,7 @@ assert(sync.includes("await sync(true,false)"),'Initial account sync must run wi
 assert(sync.includes('sync:()=>sync(true)'),'Explicit user manual sync must still be possible.');
 const levels=read('levels-v55.js'),css=read('levels-v55.css');
 assert(html.includes('levels-v55.js?v='+JSON.parse(read('version.json')).version)&&html.includes('levels-v55.css?v=55'));
-assert(html.includes('journey-v39.js?v='+JSON.parse(fs.readFileSync('version.json','utf8')).version)&&html.includes('sync.js?v=77'));
+assert(html.includes('journey-v39.js?v='+JSON.parse(fs.readFileSync('version.json','utf8')).version)&&html.includes('sync.js?v=78'));
 assert(levels.includes('fp_foundation_complete_v55')&&levels.includes('fp_level_claim_v55'));
 assert(levels.includes('fp55-level')&&css.includes('.fp55-level.current'));
 assert(read('streak-v40.js').includes("show?.('streak'")&&read('streak-v40.js').includes('data?.awarded_now'));

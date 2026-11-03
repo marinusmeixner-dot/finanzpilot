@@ -22,10 +22,10 @@ assert(html.match(/id="fp43-depot-trigger"/g)?.length===1,'V61 replaced top leve
 assert(!html.includes('id="fp43-level-trigger"'),'Do not reintroduce obsolete level pill');
 assert(!html.includes('id="fp44-fp"'));
 assert(!html.includes('id="fp44-level"'));
-assert(html.includes('sync.js?v=77'));
+assert(html.includes('sync.js?v=78'));
 assert(html.includes('economy.js?v=61'));
 assert(/market-v34\.js\?v=\d+/.test(html));
-assert(html.includes('learning-hub-v41.js?v=77'));
+assert(html.includes('learning-hub-v41.js?v=78'));
 assert(html.includes('header-v43.js?v=74'));
 assert(html.includes('ui-v43.css?v='+JSON.parse(read('version.json')).version));
 assert(read('sync.js').includes('__reset_confirmed'));

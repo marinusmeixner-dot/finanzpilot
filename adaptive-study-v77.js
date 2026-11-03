@@ -12,7 +12,7 @@ function read(){
  try{
   const src=JSON.parse(localStorage.getItem(KEY)||'{}');
   if(!src||typeof src!=='object'||Array.isArray(src))return {schema_version:1,attempts:{}};
-  if(src.owner&&owner()&&src.owner!==owner())return {schema_version:1,attempts:{}};
+  if(src.owner&&src.owner!==owner())return {schema_version:1,attempts:{}};
   return {schema_version:1,owner:src.owner||owner()||null,attempts:src.attempts&&typeof src.attempts==='object'?src.attempts:{}};
  }catch{return {schema_version:1,attempts:{}}}
 }
@@ -299,7 +299,7 @@ function bind(root=document){
 }
 async function load(){
  try{
-  const r=await fetch('./data/adaptive-variants-v77.json?v=77',{cache:'no-store'});
+  const r=await fetch('./data/adaptive-variants-v77.json?v=78',{cache:'no-store'});
   if(r.ok){const x=await r.json();if(x.schema_version===1&&Array.isArray(x.variants))variantBank=x.variants}
  }catch(e){console.info('Adaptive extra practice variants unavailable; existing lesson questions remain usable.')}
 }
