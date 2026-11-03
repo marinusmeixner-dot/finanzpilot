@@ -1,88 +1,120 @@
 #!/usr/bin/env python3
-"""Kostenloser RSS-Fallback für die FinanzPilot-Web-App, ohne API-Schlüssel.
+"""Hourly, untrusted *discovery* inbox for the FinanzPilot editorial agent.
 
-GitHub Actions führt ihn täglich aus. Der tägliche ChatGPT-Finanzcoach kann
-anschließend die Quellen prüfen und eigene kurze Erklärungen ergänzen.
-Er setzt nie erfundene Nachrichten ein. Bei Feed-Ausfall bleibt das letzte
-funktionierende JSON mit seinem alten Zeitstempel erhalten.
+IMPORTANT: This script NEVER writes curated public articles to data/daily.json.
+RSS headlines (including Google News) are not fact-checked and are not shown
+as published FinanzPilot editorial. A human/AI editor must verify original
+primary sources and write complete German articles before publication.
 """
+from __future__ import annotations
+
 import datetime as dt
 import email.utils
+import hashlib
 import json
 import pathlib
 import urllib.request
-from zoneinfo import ZoneInfo
 import xml.etree.ElementTree as ET
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
-DEST = ROOT / 'data' / 'daily.json'
+DEST = ROOT / "data" / "editorial-candidates.json"
 FEEDS = [
-    ('Tagesschau Wirtschaft', 'https://www.tagesschau.de/wirtschaft/index~rss2.xml'),
-    ('CNBC Markets', 'https://www.cnbc.com/id/10000664/device/rss/rss.html'),
-    ('Google News Aktien', 'https://news.google.com/rss/search?q=Microsoft%20Nvidia%20Siemens%20Aktie%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade'),
-    ('Google News Finanzen', 'https://news.google.com/rss/search?q=Aktien%20ETF%20EZB%20B%C3%B6rse%20when%3A1d&hl=de&gl=DE&ceid=DE%3Ade'),
-    ('Google News Bilanzberichte', 'https://news.google.com/rss/search?q=Unternehmenszahlen%20Gewinn%20Quartal%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade'),
+    ("Destatis", "https://www.destatis.de/SiteGlobals/Functions/RSSFeed/DE/Presse/Pressemitteilungen/rss.xml"),
+    ("Tagesschau Wirtschaft", "https://www.tagesschau.de/wirtschaft/index~rss2.xml"),
+    ("CNBC Markets", "https://www.cnbc.com/id/10000664/device/rss/rss.html"),
+    ("Google News: EU/Deutschland", "https://news.google.com/rss/search?q=EZB%20Destatis%20Wirtschaft%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade"),
+    ("Google News: Watchlist", "https://news.google.com/rss/search?q=Siemens%20Bayer%20Nvidia%20Alphabet%20BayWa%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade"),
+    ("Google News: Finanzen", "https://news.google.com/rss/search?q=Quartalszahlen%20Inflation%20Anleihen%20ETF%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade"),
 ]
 
-def get_feed(label, url):
-    req = urllib.request.Request(url, headers={'User-Agent': 'FinanzPilot/1.0 (educational RSS reader; contact GitHub repo owner)'})
-    with urllib.request.urlopen(req, timeout=16) as response:
-        data = response.read(1_000_000)
-    tree = ET.fromstring(data)
-    results = []
-    for item in tree.findall('.//item')[:16]:
-        def node(tag):
-            found = item.find(tag)
-            return (found.text or '').strip() if found is not None else ''
-        title = node('title')
-        link = node('link')
-        if not title or not link.startswith('https://'):
+def parse_pub(value):
+    try:
+        d = email.utils.parsedate_to_datetime(value)
+        if d.tzinfo is None:
+            d = d.replace(tzinfo=dt.timezone.utc)
+        return d.astimezone(dt.timezone.utc)
+    except (TypeError, ValueError):
+        return None
+
+def collect_feed(label, url, now):
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "FinanzPilot-EditorialDiscovery/1.0 (noncommercial news index; source verification required)"
+    })
+    with urllib.request.urlopen(req, timeout=12) as response:
+        body = response.read(1_000_000)
+    root = ET.fromstring(body)
+    candidates = []
+    for entry in root.findall(".//item")[:24]:
+        def field(name):
+            node = entry.find(name)
+            return (node.text or "").strip() if node is not None else ""
+        title = " ".join(field("title").split())[:180]
+        link = field("link")
+        when = parse_pub(field("pubDate"))
+        if not title or not link.startswith("https://") or not when:
             continue
-        pub = node('pubDate')
+        age = now - when
+        if age < dt.timedelta(minutes=-15) or age > dt.timedelta(hours=72):
+            continue
+        token = hashlib.sha256((label + "|" + link).encode("utf-8")).hexdigest()[:18]
+        candidates.append({
+            "id": "rss-" + token, "title": title, "source": label, "url": link,
+            "published_at": when.isoformat().replace("+00:00", "Z"),
+            "verification": "unverified_candidate", "status": "needs_primary_source"
+        })
+    return candidates
+
+def build_candidates(prior, fetched, now):
+    cutoff = now - dt.timedelta(hours=96)
+    by_id = {}
+    # Preserve unreviewed candidates temporarily, with stable IDs.
+    for item in prior.get("candidates", []):
+        if not isinstance(item, dict) or item.get("verification") != "unverified_candidate":
+            continue
         try:
-            when = email.utils.parsedate_to_datetime(pub)
-            if when.tzinfo is None: when = when.replace(tzinfo=dt.timezone.utc)
-            if dt.datetime.now(dt.timezone.utc) - when.astimezone(dt.timezone.utc) > dt.timedelta(days=3):
-                continue
-            pub = when.astimezone(ZoneInfo('Europe/Berlin')).strftime('%d.%m. %H:%M')
-        except (ValueError, TypeError):
-            pub = ''
-        results.append({'title':title[:160], 'source':label, 'url':link, 'published':pub, 'why':'', 'impact':''})
-    return results
+            stamped = dt.datetime.fromisoformat(item["published_at"].replace("Z", "+00:00"))
+        except (KeyError, ValueError, TypeError):
+            continue
+        if stamped >= cutoff and item.get("id") and str(item.get("url", "")).startswith("https://"):
+            by_id[item["id"]] = item
+    for item in fetched:
+        if item["id"] in by_id:
+            continue
+        by_id[item["id"]] = item
+    ordered = sorted(by_id.values(), key=lambda c: (c["published_at"], c["id"]), reverse=True)[:100]
+    return ordered
 
 def main():
-    prior = json.loads(DEST.read_text(encoding='utf-8')) if DEST.exists() else {}
-    stories=[]
-    for label,url in FEEDS:
+    try:
+        prior = json.loads(DEST.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        prior = {"schema_version": 1, "candidates": []}
+    now = dt.datetime.now(dt.timezone.utc)
+    found, successes = [], 0
+    for label, url in FEEDS:
         try:
-            stories.extend(get_feed(label,url))
+            result = collect_feed(label, url, now)
+            successes += 1
+            found.extend(result)
+            print(f"READ {label}: {len(result)} possible headlines")
         except (TimeoutError, OSError, ET.ParseError, ValueError) as ex:
-            print(f'FEED FAILED {label}: {type(ex).__name__}: {ex}')
-    seen=set()
-    unique=[]
-    for story in stories:
-        key=story['title'].strip().lower()
-        if key in seen:continue
-        seen.add(key)
-        unique.append(story)
-    if not unique:
-        print('Keine verwertbaren Nachrichten: bestehende Daten behalten.')
+            print(f"SOURCE FAILED {label}: {type(ex).__name__}: {str(ex)[:150]}")
+    if not successes:
+        print("No reachable feeds; previously verified content and inbox unchanged.")
         return
-    now=dt.datetime.now(dt.timezone.utc)
-    berlin_date=now.astimezone(ZoneInfo('Europe/Berlin')).strftime('%Y-%m-%d')
-    # Falls ChatGPT am gleichen Tag bereits geprüfte Erklärungen geliefert hat, diese nicht überschreiben.
-    if prior.get('date')==berlin_date and str(prior.get('editor','')).startswith('ChatGPT'):
-        print('ChatGPT-Bericht ist schon aktuell; RSS-Fallback schreibt nicht darüber.')
+    updated = build_candidates(prior, found, now)
+    if updated == prior.get("candidates", []):
+        print("No new editorial candidates; file unchanged.")
         return
-    prior.update({
-        'date':berlin_date,
-        'updated_at':now.isoformat(),
-        'editor':'RSS-Fallback; keine redaktionelle KI-Einordnung',
-        'intro':'Aktuelle Überschriften aus öffentlichen Quellen. Erst die Quellen öffnen und prüfen, bevor daraus eine Anlageentscheidung abgeleitet wird.',
-        'stories':unique[:15],
-        'important':'Öffentliche Schlagzeilen sind keine Kaufempfehlungen. Wichtiger ist, was ein Ereignis langfristig verändert.'
-    })
-    DEST.write_text(json.dumps(prior,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
-    print(f'{len(unique[:15])} Nachrichten gespeichert.')
+    outgoing = {
+        "schema_version": 1,
+        "updated_at": now.isoformat().replace("+00:00", "Z"),
+        "editorial_status": "unverified_candidates_only",
+        "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
+        "candidates": updated
+    }
+    DEST.write_text(json.dumps(outgoing, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(f"INBOX UPDATED: {len(updated)} unverified candidates; curated articles untouched.")
 
-if __name__=='__main__':main()
+if __name__ == "__main__":
+    main()
