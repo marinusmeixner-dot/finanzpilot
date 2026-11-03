@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
-  "generated_at": "2026-11-02",
-  "verified_at": "2026-11-02",
+  "generated_at": "2026-11-03",
+  "verified_at": "2026-11-03",
   "coverage_policy": "Zahlen ausschließlich aus tatsächlich publizierten Finanzberichten/Investor-Relations-Primärquellen; Berichtsperioden getrennt; alle im Stand überprüften Kennzahlen nach Kategorien. Nicht verifizierte Positionen bleiben unbekannt. Vollständige Berichte enthalten zudem Anhangs-/Detailpositionen; die App erfindet keine Zahlen.",
   "companies": [
     {
@@ -324,67 +324,447 @@
     {
       "symbol": "BAYN.DE",
       "name": "Bayer AG",
-      "period": "Q2 2026",
-      "period_end": "2026-06-30",
-      "published": "2026-08-04",
+      "period": "Q3 2026",
+      "period_end": "2026-09-30",
+      "published": "2026-11-03",
       "currency": "EUR",
       "unit": "Mrd.",
       "source": {
-        "title": "Bayer Halbjahresfinanzbericht Q2 2026",
-        "url": "https://reports.bayer.com/halbjahresfinanzbericht-q2-2026/de/"
+        "title": "Bayer AG – offizielle Quartalsmitteilung Q3 2026 (3. November 2026)",
+        "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/"
       },
       "metrics": [
         {
           "key": "revenue",
           "label": "Konzernumsatz",
-          "value": 10.872,
-          "previous": 10.739,
+          "value": 10.053,
           "unit": "Mrd. €",
-          "comparison": "Vorjahresquartal",
-          "note": "Die separat gemeldete währungs- und portfoliobereinigte Wachstumsrate beträgt 2,2 %."
+          "comparison": "Q3 2026",
+          "note": "Nominal +4,1 %, währungs-/portfoliobereinigt +1,9 % gegenüber Q3 2025."
         },
         {
           "key": "adjusted_ebitda",
           "label": "EBITDA vor Sondereinflüssen",
-          "value": 2.144,
-          "previous": 2.105,
+          "value": 1.615,
           "unit": "Mrd. €",
-          "comparison": "Vorjahresquartal",
-          "note": "Bereinigte Kennzahl; nicht mit unbereinigtem EBIT verwechseln."
+          "comparison": "Q3 2026",
+          "note": "Bereinigte Größe, +6,9 % gegenüber Q3 2025."
         },
         {
           "key": "fcf",
           "label": "Free Cashflow",
-          "value": -0.371,
+          "value": -0.293,
+          "previous": 0.596,
           "unit": "Mrd. €",
-          "note": "Negativer freier Cashflow unter anderem wegen Vergleichszahlungen. Kein Vorjahreswert im geprüften Ausgangsmaterial."
+          "comparison": "Q3 2025",
+          "note": "Quartals-Cashflow inklusive Rechtsstreit-Zahlungseffekten."
         },
         {
           "key": "net_debt",
           "label": "Nettofinanzverschuldung",
-          "value": 33.647,
+          "value": 31.083,
+          "previous": 33.647,
           "unit": "Mrd. €",
-          "note": "Bestandsgröße zum 30.06.2026, kein Quartals-Cashflow."
+          "comparison": "30.06.2026",
+          "note": "Stichtag 30.09.2026 vs 30.06.2026; kein Quartals-Cashflow."
         },
         {
           "key": "net_income",
           "label": "Konzernergebnis",
-          "value": 0.219,
+          "value": -0.672,
+          "previous": -0.963,
           "unit": "Mrd. €",
-          "note": "Veröffentlichter Quartalswert."
+          "comparison": "Q3 2025",
+          "note": "Nicht identisch mit bereinigtem EBITDA."
         }
       ],
-      "assessment": "Das bereinigte operative Ergebnis verbessert sich leicht, während negativer Free Cashflow und hohe Nettofinanzschulden besondere Aufmerksamkeit verlangen. Sondereffekte, Rechtsrisiken und Finanzierungsbedarf separat prüfen.",
+      "assessment": "Bayer meldet für Q3 2026 mehr Umsatz und steigendes bereinigtes EBITDA, jedoch ein negatives Konzern-EBIT, einen Konzernverlust und negativen Free Cashflow. Die Prognose für Cashflow und Nettofinanzschulden wurde verbessert, bleibt aber mit negativem Jahres-Free-Cashflow verbunden. Ein positiver operativer Trend ist noch kein Beleg für nachhaltig freie Zahlungsmittel; Bayer nennt insbesondere Vergleichszahlungen und Sondereinflüsse. Der Q2-2026-Detailbericht bleibt in ausdrücklich gekennzeichneten Archivabschnitten einsehbar.",
       "risks": [
-        "Rechtliche Verpflichtungen und Zahlungen",
-        "Verschuldung und Refinanzierung",
-        "Bereinigte und berichtete Gewinne nicht verwechseln"
+        "Künftige Zahlungen und Rückstellungen aus Rechtsstreitigkeiten",
+        "Nettoverschuldung, Refinanzierung und Abhängigkeit von Einmaltransaktionen",
+        "Abweichung zwischen bereinigtem EBITDA, berichteten Verlusten und freiem Cashflow",
+        "Patentabläufe bei Xarelto/Eylea und Segmentunterschiede in Crop Science/Consumer Health"
       ],
       "report_sections": [
         {
-          "id": "ergebnis",
-          "title": "Umsatz & Gewinn",
-          "description": "Konzernergebnis für das zweite Quartal 2026; berichtete und bereinigte Werte bleiben getrennt.",
+          "id": "ergebnis-q3",
+          "title": "Q3 2026 · Umsatz, Ergebnis und Sondereinflüsse",
+          "description": "Istwerte für das Quartal bis 30.09.2026 aus der Bayer-Quartalsmitteilung; berichtete und bereinigte Gewinnstufen getrennt.",
+          "metrics": [
+            {
+              "label": "Konzernumsatz",
+              "value": 10053,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Nominales Umsatzwachstum",
+              "value": 4.1,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio",
+              "note": "Vorjahresquartal Q3 2025; nicht mit organischem Wachstum addieren"
+            },
+            {
+              "label": "Währungs- und portfoliobereinigtes Umsatzwachstum",
+              "value": 1.9,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio",
+              "note": "Gegenüber Q3 2025; ohne die ausgewiesenen Währungs- und Portfolioeffekte"
+            },
+            {
+              "label": "Positiver Währungseffekt auf Umsatz",
+              "value": 246,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "EBITDA vor Sondereinflüssen",
+              "value": 1615,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "note": "Bereinigt, nicht identisch mit EBIT, Konzerngewinn oder Free Cashflow"
+            },
+            {
+              "label": "Wachstum des EBITDA vor Sondereinflüssen",
+              "value": 6.9,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio",
+              "note": "Veränderung gegenüber Q3 2025"
+            },
+            {
+              "label": "Währungseffekt auf EBITDA vor Sondereinflüssen",
+              "value": 36,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "EBIT (berichtet)",
+              "value": -110,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "previous": -543,
+              "previous_period": "Q3 2025"
+            },
+            {
+              "label": "Sonderaufwendungen netto",
+              "value": 407,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "previous": 1064,
+              "previous_period": "Q3 2025",
+              "note": "Aufwendungen; als positive Größen der Belastung angegeben"
+            },
+            {
+              "label": "Wertminderung Marke Xofigo",
+              "value": 307,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "note": "Teil der genannten Q3-Belastungen"
+            },
+            {
+              "label": "Wertminderung Marke Claritin",
+              "value": 215,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "note": "Teil der genannten Q3-Belastungen"
+            },
+            {
+              "label": "Konzernergebnis",
+              "value": -672,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "previous": -963,
+              "previous_period": "Q3 2025"
+            },
+            {
+              "label": "Bereinigtes Ergebnis je Aktie",
+              "value": 0.31,
+              "unit": "€ je Aktie",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "previous": 0.49,
+              "previous_period": "Q3 2025",
+              "note": "Unternehmensdefinition, nicht mit berichtetem EPS gleichsetzen"
+            }
+          ]
+        },
+        {
+          "id": "cashflow-q3",
+          "title": "Q3 2026 · Cashflow und Finanzschulden",
+          "description": "Free Cashflow ist eine Zahlungsgröße im Quartal; Nettofinanzschulden sind eine Bestandsgröße zum Bilanzstichtag.",
+          "metrics": [
+            {
+              "label": "Free Cashflow",
+              "value": -293,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "previous": 596,
+              "previous_period": "Q3 2025",
+              "note": "Laut Bayer zum Teil durch höhere Zahlungen aus Rechtsverfahren beeinflusst; Definition laut Mitteilung"
+            },
+            {
+              "label": "Nettofinanzverschuldung",
+              "value": 31083,
+              "unit": "Mio. €",
+              "period": "30.09.2026",
+              "kind": "stock",
+              "previous": 33647,
+              "previous_period": "30.06.2026",
+              "note": "Vorheriger Wert ist der Stand aus dem geprüften Q2-2026-Bericht, kein Vorjahresvergleich"
+            },
+            {
+              "label": "Rückgang Nettofinanzverschuldung im Vorquartal",
+              "value": 2564,
+              "unit": "Mio. €",
+              "period": "30.09.2026",
+              "kind": "reported",
+              "note": "Von Bayer direkt berichtete Differenz ggü. 30.06.2026; nicht mit laufendem Cashflow verwechseln"
+            },
+            {
+              "label": "Zufluss aus Apollo-Minderheitsbeteiligung",
+              "value": 3000,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported",
+              "note": "Einmalige Finanz-/Transaktionskomponente laut Bayer, nicht aus operativem Verkaufsgeschäft"
+            }
+          ]
+        },
+        {
+          "id": "segmente-q3",
+          "title": "Q3 2026 · Segmentumsatz und Profitabilität",
+          "description": "Quartalsdaten der drei Geschäftsbereiche mit klar gekennzeichneten bereinigten Ergebnisgrößen.",
+          "metrics": [
+            {
+              "label": "Crop Science – Umsatz",
+              "value": 3884,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Crop Science – nominales Wachstum",
+              "value": 0.7,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Crop Science – währungs-/portfoliobereinigtes Wachstum",
+              "value": -2.4,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Crop Science – bereinigtes EBITDA",
+              "value": 101,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Crop Science – EBITDA-Entwicklung bereinigt",
+              "value": -41.3,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Crop Science – bereinigte EBITDA-Marge",
+              "value": 2.6,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio",
+              "note": "Vorjahresabweichung laut Bayer -1,9 Prozentpunkte"
+            },
+            {
+              "label": "Pharmaceuticals – Umsatz",
+              "value": 4680,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Pharmaceuticals – nominales Wachstum",
+              "value": 8,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Pharmaceuticals – währungs-/portfoliobereinigtes Wachstum",
+              "value": 6.4,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Pharmaceuticals – EBITDA vor Sondereinflüssen",
+              "value": 1292,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Pharmaceuticals – EBITDA-Wachstum bereinigt",
+              "value": 23.6,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Pharmaceuticals – bereinigte EBITDA-Marge",
+              "value": 27.6,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio",
+              "note": "Laut Bayer +3,5 Prozentpunkte ggü. Vorjahresquartal"
+            },
+            {
+              "label": "Consumer Health – Umsatz",
+              "value": 1445,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Consumer Health – nominales Wachstum",
+              "value": 2.1,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Consumer Health – währungs-/portfoliobereinigtes Wachstum",
+              "value": 0.1,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Consumer Health – EBITDA vor Sondereinflüssen",
+              "value": 347,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "kind": "reported"
+            },
+            {
+              "label": "Consumer Health – EBITDA-Wachstum bereinigt",
+              "value": -4.4,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio"
+            },
+            {
+              "label": "Consumer Health – bereinigte EBITDA-Marge",
+              "value": 24,
+              "unit": "%",
+              "period": "Q3 2026",
+              "kind": "ratio",
+              "note": "Laut Bayer -1,7 Prozentpunkte ggü. Vorjahresquartal"
+            }
+          ]
+        },
+        {
+          "id": "ausblick-q3",
+          "title": "Prognose für 2026 nach Q3 (keine Istwerte)",
+          "description": "Am 03.11.2026 aktualisierte Bayer-Guidance. Alle Werte sind Erwartungen der Gesellschaft für das Gesamtjahr / Jahresende und KEINE bereits realisierten Q3-Ergebnisse.",
+          "metrics": [
+            {
+              "label": "Prognose Konzern-EBITDA vor Sondereinflüssen – Untergrenze",
+              "value": 9.8,
+              "unit": "Mrd. €",
+              "period": "GJ 2026",
+              "kind": "forecast",
+              "previous": 9.6,
+              "previous_period": "GJ 2026 (vorherige Prognose)",
+              "note": "Währungsbereinigte Prognose"
+            },
+            {
+              "label": "Prognose Konzern-EBITDA vor Sondereinflüssen – Obergrenze",
+              "value": 10.3,
+              "unit": "Mrd. €",
+              "period": "GJ 2026",
+              "kind": "forecast",
+              "previous": 10.1,
+              "previous_period": "GJ 2026 (vorherige Prognose)",
+              "note": "Währungsbereinigte Prognose"
+            },
+            {
+              "label": "Prognose Free Cashflow – Untergrenze",
+              "value": -1.5,
+              "unit": "Mrd. €",
+              "period": "GJ 2026",
+              "kind": "forecast",
+              "previous": -2.5,
+              "previous_period": "GJ 2026 (vorherige Prognose)"
+            },
+            {
+              "label": "Prognose Free Cashflow – Obergrenze",
+              "value": -0.5,
+              "unit": "Mrd. €",
+              "period": "GJ 2026",
+              "kind": "forecast",
+              "previous": -1.5,
+              "previous_period": "GJ 2026 (vorherige Prognose)",
+              "note": "Weiterhin negativ"
+            },
+            {
+              "label": "Prognose Nettofinanzverschuldung – Untergrenze",
+              "value": 28,
+              "unit": "Mrd. €",
+              "period": "31.12.2026",
+              "kind": "forecast",
+              "previous": 29,
+              "previous_period": "31.12.2026 (vorherige Prognose)"
+            },
+            {
+              "label": "Prognose Nettofinanzverschuldung – Obergrenze",
+              "value": 29,
+              "unit": "Mrd. €",
+              "period": "31.12.2026",
+              "kind": "forecast",
+              "previous": 30,
+              "previous_period": "31.12.2026 (vorherige Prognose)"
+            },
+            {
+              "label": "Pharmaceuticals – Prognose bereinigte EBITDA-Marge Untergrenze",
+              "value": 25,
+              "unit": "%",
+              "period": "GJ 2026",
+              "kind": "forecast",
+              "previous": 23,
+              "previous_period": "GJ 2026 (vorherige Prognose)"
+            },
+            {
+              "label": "Pharmaceuticals – Prognose bereinigte EBITDA-Marge Obergrenze",
+              "value": 27,
+              "unit": "%",
+              "period": "GJ 2026",
+              "kind": "forecast",
+              "previous": 25,
+              "previous_period": "GJ 2026 (vorherige Prognose)"
+            }
+          ]
+        },
+        {
+          "id": "archiv-q2-ergebnis",
+          "title": "Archiv Q2 2026 · Umsatz & Gewinn",
+          "description": "HISTORISCHE WERTE: Q2 2026 (oder klar bezeichnete Bestands-/Forecastperiode); NICHT Q3-Istwerte. Konzernergebnis für das zweite Quartal 2026; berichtete und bereinigte Werte bleiben getrennt.",
           "metrics": [
             {
               "label": "Umsatz",
@@ -518,9 +898,9 @@
           ]
         },
         {
-          "id": "cashflow",
-          "title": "Cashflow & Investitionen",
-          "description": "Zahlungsströme Q2 2026, nicht mit Halbjahreswerten vermischen.",
+          "id": "archiv-q2-cashflow",
+          "title": "Archiv Q2 2026 · Cashflow & Investitionen",
+          "description": "HISTORISCHE WERTE: Q2 2026 (oder klar bezeichnete Bestands-/Forecastperiode); NICHT Q3-Istwerte. Zahlungsströme Q2 2026, nicht mit Halbjahreswerten vermischen.",
           "metrics": [
             {
               "label": "Operativer Cashflow",
@@ -590,9 +970,9 @@
           ]
         },
         {
-          "id": "bilanz",
-          "title": "Bilanz & Finanzierung",
-          "description": "Stichtagswerte und Risikoindikatoren, nicht als Quartalserträge lesen.",
+          "id": "archiv-q2-bilanz",
+          "title": "Archiv Q2 2026 · Bilanz & Finanzierung",
+          "description": "HISTORISCHE WERTE: Q2 2026 (oder klar bezeichnete Bestands-/Forecastperiode); NICHT Q3-Istwerte. Stichtagswerte und Risikoindikatoren, nicht als Quartalserträge lesen.",
           "metrics": [
             {
               "label": "Nettofinanzverschuldung",
@@ -627,9 +1007,9 @@
           ]
         },
         {
-          "id": "segmente",
-          "title": "Geschäftsbereiche",
-          "description": "Segmentumsatz und bereinigtes EBITDA im Q2, nach Definition des Unternehmens.",
+          "id": "archiv-q2-segmente",
+          "title": "Archiv Q2 2026 · Geschäftsbereiche",
+          "description": "HISTORISCHE WERTE: Q2 2026 (oder klar bezeichnete Bestands-/Forecastperiode); NICHT Q3-Istwerte. Segmentumsatz und bereinigtes EBITDA im Q2, nach Definition des Unternehmens.",
           "metrics": [
             {
               "label": "Crop Science – Umsatz",
@@ -697,9 +1077,9 @@
           ]
         },
         {
-          "id": "regionen",
-          "title": "Regionale Umsätze",
-          "description": "Geografischer Konzernumsatz; Veränderungen überwiegend nominal.",
+          "id": "archiv-q2-regionen",
+          "title": "Archiv Q2 2026 · Regionale Umsätze",
+          "description": "HISTORISCHE WERTE: Q2 2026 (oder klar bezeichnete Bestands-/Forecastperiode); NICHT Q3-Istwerte. Geografischer Konzernumsatz; Veränderungen überwiegend nominal.",
           "metrics": [
             {
               "label": "Europa/Nahost/Afrika",
@@ -740,9 +1120,9 @@
           ]
         },
         {
-          "id": "ausblick",
-          "title": "Ausblick & Risiken",
-          "description": "Prognosen sind keine abgeschlossenen Ergebnisse.",
+          "id": "archiv-q2-ausblick",
+          "title": "Archiv Q2 2026 · Ausblick & Risiken",
+          "description": "HISTORISCHE WERTE: Q2 2026 (oder klar bezeichnete Bestands-/Forecastperiode); NICHT Q3-Istwerte. Prognosen sind keine abgeschlossenen Ergebnisse.",
           "metrics": [
             {
               "label": "Prognose Umsatz 2026 – Untergrenze",
@@ -807,10 +1187,14 @@
           ]
         }
       ],
-      "verified_at": "2026-11-02",
-      "report_scope": "halbjahresbericht",
+      "verified_at": "2026-11-03",
+      "report_scope": "quartalsmitteilung_q3_2026_mit_archiv_q2_2026",
       "completeness": "umfangreich_quellenbasiert",
       "sources": [
+        {
+          "title": "Bayer AG – offizielle Quartalsmitteilung Q3 2026 (3. November 2026)",
+          "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/"
+        },
         {
           "title": "Offizieller Halbjahresbericht Q2 2026",
           "url": "https://reports.bayer.com/halbjahresfinanzbericht-q2-2026/de/"
@@ -821,23 +1205,27 @@
         }
       ],
       "report_overview": {
-        "summary": "Bereinigtes EBITDA steigt leicht, trotz starkem EBIT-Anstieg bleibt der freie Cashflow negativ. Hohe Nettofinanzschulden und mögliche rechtliche Zahlungen sind wesentlich.",
+        "summary": "Die Q3-2026-Mitteilung vom 03.11. bestätigt bessere operative Kennzahlen und eine angehobene Jahresprognose. Trotz 10,053 Mrd. € Umsatz und 1,615 Mrd. € bereinigtem EBITDA meldete Bayer -672 Mio. € Konzernergebnis und -293 Mio. € Free Cashflow. Ältere Q2-2026-Tabellen sind unten explizit als Archiv gekennzeichnet.",
         "positives": [
-          "Q2-Konzernergebnis kehrt in die Gewinnzone zurück.",
-          "Crop-Science-Marge vor Sondereinflüssen verbessert sich deutlich."
+          "Pharmaceuticals wächst währungs-/portfoliobereinigt um 6,4 % und erreicht 27,6 % bereinigte EBITDA-Marge.",
+          "Bayer hebt EBITDA-, Free-Cashflow- und Schuldenprognose für 2026 an."
         ],
         "negatives": [
-          "Q2-Free-Cashflow −371 Mio. €, Halbjahr −2.691 Mio. €.",
-          "Bereinigtes EPS fällt auf 0,95 €, Nettofinanzschulden 33,647 Mrd. €."
+          "Free Cashflow Q3 -293 Mio. € gegenüber +596 Mio. € im Vorjahresquartal.",
+          "Berichtetes EBIT -110 Mio. € und Konzernergebnis -672 Mio. €, auch wegen Sonderaufwendungen.",
+          "Die aktualisierte Jahres-FCF-Prognose liegt weiter zwischen -1,5 und -0,5 Mrd. €."
         ],
         "watch": [
-          "Offizielle Angaben zu Rechtsrisiken und Rückstellungen prüfen.",
-          "Cashflow-Entwicklung gegenüber Quartals- und Halbjahreswerten trennen."
+          "Künftige Rechtsstreit-Zahlungen und Einmaleffekte bei Nettofinanzschulden prüfen.",
+          "Q4: Cashflow-Konversion, Segmentmargen und tatsächliche Jahresergebnisse mit Ausblick vergleichen."
         ]
       },
       "data_limitations": [
-        "Gesetzliche Rechnungslegungsgrößen und eigene/alternative Kennzahlen sind ausdrücklich gekennzeichnet.",
-        "Prognosewerte nicht als Ist-Ergebnisse behandeln."
+        "Die neue Q3-Sektion ist eine sorgfältige Auswahl aus der offiziellen Quartalsmitteilung vom 03.11.2026, kein Ersatz für alle Tabellen und Fußnoten des digitalen Quartalsberichts.",
+        "Die darunter stehenden Q2-2026-Abschnitte sind als HISTORISCHES ARCHIV überschrieben; ihre Bestands-, Quartals- und Forecast-Perioden bleiben ausdrücklich Q2/Juni und sind keine neuen Q3-Zahlen.",
+        "Währungs- und portfoliobereinigte Wachstumsraten sind keine zusätzlichen Umsätze; bereinigte EBITDA-Angaben sind nicht berichtetes Konzernergebnis oder Free Cashflow.",
+        "Die Jahresprognose 2026 ist nach Q3 aktualisiert und ausdrücklich als Forecast gekennzeichnet; historische Q2-Prognosen bleiben separat als Archiv erkennbar.",
+        "Abweichungen aufgrund von Rechtsstreit-Zahlungen und einmaligen Beteiligungszuflüssen beachten; weitere Primärquellenzahlen des digitalen Q3-Berichts redaktionell nachtragen."
       ]
     },
     {
