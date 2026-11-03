@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-03T17:50:39.157050Z",
+  "updated_at": "2026-11-03T23:21:41.902094Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-6ae65918c2707191a4",
+      "title": "<strong>Wirtschaft vor acht vom 03.11.2026</strong>",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1677572.html",
+      "published_at": "2026-11-03T18:52:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-7eb3588ab6bd3fe72d",
       "title": "Weihnachtsgeschäft: Kinderwünsche und Händlerträume",
