@@ -9,7 +9,7 @@ assert.equal(old.stages.length,6);
 assert.equal(old.stages.flatMap(s=>s.modules).length,36,'Original learning assets preserved');
 assert.equal(specials.skills.length,52);
 assert.equal(specials.skills.flatMap(s=>s.lessons).length,156,'No purchased course removed');
-assert(html.includes('learning-hub-v41.js?v=78'));
+assert(html.includes('learning-hub-v41.js?v=80'));
 assert(html.includes('learning-hub-v41.css?v=46'));
 assert(html.includes('profile-v42.js?v=64'));
 assert(/profile-v42\.css\?v=\d+/.test(html),'Profile CSS is loaded with refreshed PWA cache version.');

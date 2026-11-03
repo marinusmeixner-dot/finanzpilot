@@ -9,7 +9,7 @@ assert(JSON.parse(read('version.json')).version>=59,'App version must not regres
 assert(editorial.stories.length>=10);
 assert(editorial.stories.every(s=>s.article?.sections?.length>=4));
 const index=read('index.html');
-for(const path of ['app.js?v=64','lesson-view-v46.js?v=76'])assert(index.includes(path),path);
+for(const path of ['app.js?v=64','lesson-view-v46.js?v=80'])assert(index.includes(path),path);
 for(const resource of ['home-v48.js','home-v48.css','market-v34.js'])assert(new RegExp(resource.replaceAll('.','\\.')+'\\?v=\\d+').test(index),'Missing versioned '+resource);
 assert(read('app.js').includes("state.view==='home'&&window.FinanzPilotHome"));
 assert(read('app.js').includes("FinanzPilotHome?.bind(root)"));
