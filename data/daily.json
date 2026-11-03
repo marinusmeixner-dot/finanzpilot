@@ -1,8 +1,8 @@
 {
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T09:51:13.478Z",
+  "updated_at": "2026-11-03T10:03:20Z",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Neue originale Vollartikel zu den Bayer-Quartalszahlen, zwei Siemens-Meldungen und dem deutschen Einzelhandel ergänzen den bisherigen geprüften Nachrichtenbestand. Erscheinungsdatum jeder Primärquelle steht am Artikel.",
+  "intro": "Neue verifizierte Vollartikel zu Apple Q4 2026, Bayer, Siemens und deutschem Einzelhandel ergänzen den bestehenden datierten Nachrichtenbestand.",
   "lesson_id": "valuation",
   "stories": [
     {
@@ -608,6 +608,54 @@
           }
         ],
         "conclusion": "Das operative Geschäft wuchs im dritten Quartal 2026 deutlich, während der Quartals-Free-Cashflow negativ war. Eine fundierte Bewertung muss operative Entwicklung, Kapitalbindung und Beteiligungsrisiken getrennt modellieren. Die Zahlen stammen aus dem veröffentlichten Bericht vom 28. Oktober, nicht aus einer Echtzeit-Kursprognose."
+      }
+    },
+    {
+      "id": "2026-11-03-apple-fy26-q4-revenue-tariff",
+      "title": "Apple meldet 114,5 Milliarden Dollar Quartalsumsatz – Zollerstattungen beeinflussen die Marge",
+      "published": "2026-11-02",
+      "date": "2026-11-02",
+      "category": "Unternehmen",
+      "symbols": [
+        "AAPL"
+      ],
+      "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
+      "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+      "why": "Apple veröffentlicht Rekordumsatz im Septemberquartal und weist ausdrücklich einen Sondereffekt aus Zollerstattungen in Bruttomarge und Gewinn je Aktie aus.",
+      "impact": "Für die Bewertung sind nachhaltiges Wachstum, wiederkehrende Services-Erlöse und die um Sondereffekte bereinigte Profitabilität wichtiger als ein einzelner Rekordwert.",
+      "article": {
+        "lead": "Apple hat am 2. November 2026 für sein viertes Geschäftsquartal (bis 26. September) 114,5 Milliarden US-Dollar Umsatz gemeldet, zwölf Prozent mehr als im Vorjahresquartal. Die ausgewiesene Bruttomarge von 47,9 Prozent enthält laut Unternehmen einen positiven Effekt von ungefähr einem Prozentpunkt aus Zollerstattungen. Ein Rekordumsatz allein sagt daher noch nicht, wie dauerhaft die Profitabilität ist.",
+        "sections": [
+          {
+            "heading": "Was Apple tatsächlich berichtet hat",
+            "paragraphs": [
+              "Das Geschäftsjahr 2026 endete bei Apple am 26. September; das vierte Quartal ist also nicht mit dem Kalenderquartal Oktober bis Dezember gleichzusetzen. Der Konzernumsatz erreichte im Septemberquartal 114,5 Milliarden US-Dollar und stieg nach Unternehmensangaben gegenüber dem Vorjahr um zwölf Prozent.",
+              "Apple nennt für das Quartal einen verwässerten Gewinn je Aktie von 2,10 US-Dollar, 14 Prozent mehr als ein Jahr zuvor. Die Zahlen sind berichtete Ist-Werte. Eine Prognose für künftige iPhone-Verkäufe lässt sich daraus nicht unmittelbar ableiten."
+            ]
+          },
+          {
+            "heading": "Warum die Bruttomarge besonders sorgfältig gelesen werden muss",
+            "paragraphs": [
+              "Die Bruttomarge beträgt laut Pressemitteilung 47,9 Prozent. Darin stecken rund ein Prozentpunkt positiver Effekt aus Zollerstattungen. Ohne diesen benannten Sondereffekt läge die Marge rechnerisch näher bei 46,9 Prozent; dies ist nur eine vereinfachte eigene Bereinigung, keine von Apple veröffentlichte alternative Kennzahl.",
+              "Auch der verwässerte Gewinn je Aktie enthält laut Apple einen positiven Beitrag von 0,05 US-Dollar aus Zollerstattungen. Eine vereinfachte Differenz ergibt 2,05 US-Dollar je Aktie ohne diesen Beitrag. Daraus darf man keine vollständig bereinigte Ergebnisrechnung konstruieren, weil weitere Kosten- und Steuereffekte nicht separat quantifiziert sind."
+            ]
+          },
+          {
+            "heading": "Cashflow und Geschäftsmodell: der zweite Blick",
+            "paragraphs": [
+              "Apple beziffert den operativen Cashflow des Quartals auf rund 28 Milliarden US-Dollar. Das ist ein Zahlungsstrom aus laufender Geschäftstätigkeit und nicht mit Nettogewinn oder freiem Cashflow gleichzusetzen. Für den freien Cashflow müssten unter anderem die Investitionsauszahlungen aus der Kapitalflussrechnung abgezogen werden.",
+              "Das Unternehmen meldet zudem einen neuen Höchststand bei Services-Umsätzen und einen Septemberquartalsrekord beim iPhone. Die Pressemitteilung nennt für das Gesamtgeschäftsjahr 479 Milliarden US-Dollar Umsatz. Bei der Einordnung sollte man das gesamte Geschäftsjahr nicht mit dem isolierten vierten Quartal vermischen."
+            ]
+          },
+          {
+            "heading": "Was Anleger daraus ableiten können – und was offenbleibt",
+            "paragraphs": [
+              "Positiv sind zweistelliges Umsatzwachstum, der ausgewiesene operative Cashflow und die Stärke des Servicegeschäfts. Ein mögliches Gegenargument: Rekordumsätze garantieren keine ebenso stark wachsenden Gewinne, wenn Komponentenpreise, Handelszölle oder Produktmix die Margen belasten.",
+              "Die Mitteilung weist ausdrücklich auf makroökonomische, geopolitische, regulatorische und Lieferkettenrisiken hin. Wer Apple bewertet, sollte deshalb in den vollständigen Finanzaufstellungen die Entwicklung von Segmenten, Investitionen, Aktienrückkäufen und operativer Marge über mehrere Quartale prüfen – nicht nur die Schlagzeile zum Umsatzrekord."
+            ]
+          }
+        ],
+        "conclusion": "Apple wächst kräftig, aber der ausgewiesene Gewinn enthält messbare positive Zollerstattungen. Für eine tragfähige Investmentthese zählen die wiederkehrende Ertragskraft und der tatsächlich nach Investitionen verfügbare Cashflow."
       }
     }
   ],
