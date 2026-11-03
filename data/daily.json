@@ -1,8 +1,8 @@
 {
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T18:03:45.000Z",
+  "updated_at": "2026-11-03T18:55:00.000Z",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Verifizierte Vollartikel zu Unternehmen, Konjunktur und Regulierung; neu: EU-Auflagen für die geplante JD.com-Ceconomy-Übernahme.",
+  "intro": "Neue, primärquellengeprüfte Analyse zur ersten StromVKG-Kapazitätsauktion; weitere bestehende Artikel bleiben im Archiv.",
   "lesson_id": "valuation",
   "stories": [
     {
@@ -888,6 +888,51 @@
           }
         ],
         "conclusion": "Die EU hat JD.coms geplante Ceconomy-Übernahme am 3. November 2026 unter zehnjährigen, überwachten Auflagen freigegeben. Das schafft regulatorische Klarheit, verhindert aber keine operativen Risiken. Für die wirtschaftliche Bewertung zählt nun, welche Synergien unter fairen Marktbedingungen tatsächlich realisiert werden und ob sie nach Investitionen und Integrationskosten im Cashflow ankommen."
+      }
+    },
+    {
+      "id": "2026-11-03-bnetza-stromvkg-5160mw-auction",
+      "title": "Stromreserve: 11 Zuschläge für rund 5.160 MW – was der Kapazitätspreis wirklich bedeutet",
+      "published": "2026-11-03",
+      "category": "Wirtschaft",
+      "symbols": [],
+      "source": "Bundesnetzagentur – Pressemitteilung vom 3. November 2026",
+      "url": "https://www.bundesnetzagentur.de/SharedDocs/Pressemitteilungen/DE/2026/20261103_StromVKG.html",
+      "why": "Erstmals veröffentlichte Zuschläge für steuerbare Langzeitkapazitäten konkretisieren Investitionen und künftige Kosten der Versorgungssicherheit.",
+      "impact": "Die Auktion liefert einen Preis für gesicherte Leistung, nicht für tatsächlich erzeugte Kilowattstunden; Chancen für Anlagenbetreiber stehen langfristigen Kosten und Realisierungsrisiken gegenüber.",
+      "article": {
+        "lead": "Die Bundesnetzagentur hat am 3. November 2026 die Ergebnisse der ersten Ausschreibung für Langzeitkapazitäten bekannt gegeben. Elf Gebote erhielten Zuschläge über zusammen rund 5.160 Megawatt reduzierte Leistung. Der mengengewichtete Zuschlagswert beträgt 155.296 Euro pro Megawatt und Jahr. Diese Zahl ist ein Kapazitäts- und kein Strompreis: Bezahlt wird die Bereitstellung gesicherter Leistung, nicht jede erzeugte Kilowattstunde.",
+        "sections": [
+          {
+            "heading": "Warum 5.160 Megawatt bezuschlagt wurden",
+            "paragraphs": [
+              "Ausgeschrieben waren 4.500 Megawatt reduzierte Leistung. Eingereicht wurden 41 Gebote über zusammen etwa 11.958 Megawatt; sieben Gebote wurden unter anderem wegen fehlender Angaben oder Nachweise ausgeschlossen. Letztlich erhielten elf Gebote einen Zuschlag. Das ist das Ergebnis der Auswahl, nicht die Zahl der bereits errichteten oder betriebenen Kraftwerke.",
+              "Die bezuschlagte Leistung liegt oberhalb des Ausschreibungsvolumens, weil das erste Gebot, das die Grenze überschritt, noch vollständig berücksichtigt wurde. Das zeigt, warum ein Zuschlagsvolumen nicht zwingend exakt dem ursprünglich ausgeschriebenen Ziel entsprechen muss. Reduzierte Leistung ist außerdem eine regulatorisch definierte Vergleichsgröße und nicht ohne Weiteres mit der installierten Nennleistung gleichzusetzen."
+            ]
+          },
+          {
+            "heading": "Was die Zuschlagswerte aussagen – und was nicht",
+            "paragraphs": [
+              "Der durchschnittliche mengengewichtete Zuschlagswert beträgt 155.296 Euro je Megawatt reduzierter Leistung und Jahr. Er liegt unter dem zulässigen Höchstwert von 244.000 Euro. Die einzelnen erfolgreichen Gebote reichen laut Zuschlagsveröffentlichung von 129.551 bis 189.970 Euro pro Megawatt und Jahr. Die Werte werden auf eine bereitgestellte Kapazität bezogen.",
+              "Ein Rechenbeispiel zur Größenordnung: 5.160 Megawatt mal 155.296 Euro je Megawatt und Jahr ergeben rechnerisch rund 801 Millionen Euro pro Jahr. Das ist lediglich eine grobe Multiplikation der veröffentlichten aggregierten Größen, keine amtlich bestätigte jährliche Gesamtauszahlung und keine Stromrechnung. Tatsächliche Zahlungsströme hängen unter anderem von den jeweiligen Vertrags- und Förderbedingungen, der anrechenbaren Leistung und der Realisierung ab."
+            ]
+          },
+          {
+            "heading": "Regionen, Zeitplan und wirtschaftliche Chancen",
+            "paragraphs": [
+              "Die Bundesnetzagentur nennt für Nordrhein-Westfalen rund 2.118 Megawatt mit drei Zuschlägen, Brandenburg rund 1.819 Megawatt mit vier Zuschlägen, Sachsen rund 910 Megawatt mit zwei Zuschlägen, Bayern rund 269 Megawatt mit einem Zuschlag und Baden-Württemberg rund 45 Megawatt mit einem Zuschlag. Diese regionale Verteilung kann lokale Bau- und Netzprojekte beeinflussen, bedeutet aber noch keinen sofortigen Kapazitätszuwachs.",
+              "Die Zuschläge gelten nach der Veröffentlichung vom 3. November eine Woche später als bekanntgegeben. Erfolgreiche Bieter müssen bei längeren Verpflichtungszeiträumen bis zum 8. Dezember 2026 eine Realisierungssicherheit leisten. Für Projektentwickler schafft ein Zuschlag Planbarkeit; Anlagenbau, Finanzierung, Genehmigungen, Netzanbindung und mögliche Verzögerungen bleiben eigenständige Risiken. Die gesicherte Leistung soll spätestens ab 2031 zur Verfügung stehen."
+            ]
+          },
+          {
+            "heading": "Was Anleger und Stromkunden kritisch prüfen sollten",
+            "paragraphs": [
+              "Für Hersteller von Kraftwerkstechnik, Speicheranbietern, Bauunternehmen und Betreiber können neue Projekte Umsatzchancen eröffnen. Aus einem erfolgreichen Gebot folgt jedoch nicht automatisch ein Auftrag für ein bestimmtes börsennotiertes Unternehmen. Auch der Gewinn eines Betreibers lässt sich aus dem Zuschlagswert allein nicht ableiten: Baukosten, Brennstoffpreise, Finanzierung und Verfügbarkeit sind entscheidend.",
+              "Für Stromkunden ist ein niedrigerer Zuschlagswert gegenüber dem Höchstpreis zunächst ein Hinweis auf Wettbewerb, nicht der Beweis sinkender Endkundenpreise. Kapazitätszahlungen können die Versorgungssicherheit erhöhen, verursachen aber Kosten; die Gesamtwirkung hängt von Finanzierung, Netzkosten, Marktpreisen und tatsächlich vermiedenen Engpässen ab. Zudem bleibt offen, ob alle bezuschlagten Vorhaben termingerecht umgesetzt werden."
+            ]
+          }
+        ],
+        "conclusion": "Die erste Ausschreibung macht Deutschlands Kapazitätsstrategie konkreter: elf Zuschläge und rund 5.160 Megawatt reduzierte Leistung sind ein messbarer Schritt. Der zentrale Denkfehler wäre, den jährlichen Kapazitätspreis mit einem Strompreis, einer garantierten Rendite oder bereits gebauter Leistung gleichzusetzen. Für die wirtschaftliche Bewertung zählen künftig Projektfortschritt, tatsächliche Kosten und die Versorgungssicherheitswirkung."
       }
     }
   ],
