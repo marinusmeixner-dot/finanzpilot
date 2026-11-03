@@ -1,10 +1,57 @@
 {
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T10:58:55.329Z",
+  "updated_at": "2026-11-03T11:56:53.804Z",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
   "intro": "Neue verifizierte Vollartikel zu Apple Q4 2026, Bayer, Siemens und deutschem Einzelhandel ergänzen den bestehenden datierten Nachrichtenbestand.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-03-schaeffler-restructuring-3460",
+      "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+      "published": "2026-11-03",
+      "category": "Unternehmen",
+      "symbols": [
+        "SHA0.DE"
+      ],
+      "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
+      "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
+      "why": "Das neue Restrukturierungsprogramm nennt konkrete Stellenzahlen, Standorte, einmalige Kosten und ein langfristiges Ergebnisziel.",
+      "impact": "Für die Bewertung zählt der zeitliche Abstand zwischen kurzfristigen Umbaukosten und erst ab 2030 angestrebten Ergebnisverbesserungen.",
+      "article": {
+        "lead": "Schaeffler hat am 3. November 2026 ein weiteres Spar- und Umbauprogramm angekündigt: 3.460 Stellen sollen europaweit wegfallen, darunter rund 2.660 in Deutschland. Vier deutsche Standorte sollen schließen. Ab 2030 strebt das Unternehmen jährliche Ergebnisverbesserungen von rund 300 Millionen Euro an; dafür nennt es einmalige Aufwendungen von etwa 480 Millionen Euro.",
+        "sections": [
+          {
+            "heading": "Was tatsächlich beschlossen und angekündigt wurde",
+            "paragraphs": [
+              "Die Unternehmensmitteilung begründet den Schritt mit Überkapazitäten und dem schwierigen Umfeld der europäischen Automobilindustrie. Neben geringeren Personalkosten soll eine vereinfachte Organisation die Wettbewerbsfähigkeit verbessern. Die 3.460 Stellen sind eine angekündigte Maßnahme, keine bereits vollständig realisierte Reduktion.",
+              "Schaeffler spricht von vier Standortschließungen in Deutschland und einer Umsetzung im Dialog mit Arbeitnehmervertretungen. Die konkrete Durchführung, die Zeitpunkte und die sozialen Auswirkungen hängen von weiteren Verhandlungen und operativen Entscheidungen ab."
+            ]
+          },
+          {
+            "heading": "Einmalige Kosten gegen spätere Einsparungen rechnen",
+            "paragraphs": [
+              "Das Unternehmen beziffert die einmaligen Aufwendungen auf rund 480 Millionen Euro und den angestrebten jährlichen Ergebnisverbesserungseffekt ab 2030 auf etwa 300 Millionen Euro. Diese Größen dürfen nicht unmittelbar als heute realisierter Gewinn oder Cashflow verbucht werden.",
+              "Rein rechnerisch entsprechen 480 Millionen Euro etwa 1,6 Jahren eines vollen jährlichen Effekts von 300 Millionen Euro. Das ist ausdrücklich keine belastbare Amortisationsprognose: Bis 2030 können Kosten, schrittweise Einsparungen, Steuern, Zahlungen und weitere Umstrukturierungen die tatsächliche Geldwirkung verändern."
+            ]
+          },
+          {
+            "heading": "Warum ein Sparprogramm kein automatisches Wachstum bedeutet",
+            "paragraphs": [
+              "Eine kleinere Kostenbasis kann die Profitabilität erhöhen, sofern Umsatz, Lieferfähigkeit und Produktqualität stabil bleiben. Der Erfolg hängt auch davon ab, ob Schaeffler die verbleibenden Produktionskapazitäten besser auslastet und den Wandel des Antriebsgeschäfts bewältigt.",
+              "Das Gegenargument: Personalabbau und Werksschließungen können Know-how, Umsetzungskapazität und Beschäftigtenbindung belasten. Wenn der europäische Automobilmarkt weiter schwach bleibt, können Umsatzeinbußen einen Teil der erwarteten Einsparungen aufzehren."
+            ]
+          },
+          {
+            "heading": "Welche Kennzahlen Anleger künftig verfolgen sollten",
+            "paragraphs": [
+              "Wichtig sind die tatsächlich verbuchten Restrukturierungsaufwendungen, die zeitliche Entwicklung der Einsparungen und die operativen Margen. Eine Ergebnisverbesserung auf bereinigter Basis ist nicht identisch mit einer Verbesserung des freien Cashflows; Zahlungen für den Umbau können zeitlich anders anfallen.",
+              "Zudem sollte geprüft werden, ob Aufträge, Umsatz und Investitionen die strategische Neuausrichtung tragen. Die 300 Millionen Euro sind ein Unternehmensziel für die Zukunft, keine Garantie. Eine Aktienkurswirkung lässt sich aus der Pressemitteilung allein nicht seriös ableiten."
+            ]
+          }
+        ],
+        "conclusion": "Das Programm könnte Schaefflers Kostenbasis langfristig verbessern, verursacht aber zunächst erhebliche Aufwendungen und Umsetzungsrisiken. Für eine fundierte Bewertung sind tatsächliche Einsparungen, Cashflow und Nachfrageentwicklung entscheidend."
+      }
+    },
     {
       "id": "2026-11-03-bayer-q3-cashflow",
       "title": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
