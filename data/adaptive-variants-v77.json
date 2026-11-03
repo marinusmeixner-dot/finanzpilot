@@ -1,0 +1,417 @@
+{
+  "schema_version": 1,
+  "updated": "2026-11-03",
+  "policy": "Source-validated case variations; optional review only; no server-graded rewards or pre-publication answers changed.",
+  "variants": [
+    {
+      "id": "v77-rechnen-marge-calculation",
+      "lesson_id": "rechnen-marge",
+      "type": "numeric",
+      "prompt": "Ein Betrieb erzielt 720 Mio. € Umsatz und 54 Mio. € EBIT. Wie hoch ist die EBIT-Marge in Prozent?",
+      "answer": 7.5,
+      "unit": "%",
+      "tolerance": 0.0001,
+      "explanation": "EBIT-Marge = 54 ÷ 720 × 100 = 7,5 %. Gleicher Zeitraum, gleiche Unternehmensabgrenzung.",
+      "steps": [
+        "54 durch 720 teilen.",
+        "Ergebnis mit 100 multiplizieren.",
+        "Prüfen, dass es EBIT und Umsatz desselben Zeitraums sind."
+      ]
+    },
+    {
+      "id": "v77-rechnen-veraenderung-calculation",
+      "lesson_id": "rechnen-veraenderung",
+      "type": "numeric",
+      "prompt": "Ein Jahresumsatz wächst von 160 Mio. € auf 200 Mio. €. Wie hoch ist die prozentuale Veränderung?",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.0001,
+      "explanation": "(200 − 160) ÷ 160 × 100 = 25 %. Der Nenner ist der Ausgangswert.",
+      "steps": [
+        "Absolute Änderung 200 − 160 = 40.",
+        "40 ÷ 160 = 0,25.",
+        "× 100 = 25 %."
+      ]
+    },
+    {
+      "id": "v77-geld-wofuer-calculation",
+      "lesson_id": "geld-wofuer",
+      "type": "numeric",
+      "prompt": "Du erhältst 1.600 € im Monat, gibst 1.090 € für Alltag und 310 € für Fahrtkosten aus. Wie hoch ist der monatliche Überschuss?",
+      "answer": 200,
+      "unit": "€",
+      "tolerance": 0.0001,
+      "explanation": "1.600 − 1.090 − 310 = 200 €. Der Überschuss ist noch nicht dein gesamtes Vermögen.",
+      "steps": [
+        "Alle Geldzuflüsse erfassen.",
+        "Ausgaben addieren: 1.400 €.",
+        "Vom Einkommen abziehen: 200 €."
+      ]
+    },
+    {
+      "id": "v77-umsatz-kosten-calculation",
+      "lesson_id": "umsatz-kosten",
+      "type": "numeric",
+      "prompt": "Ein Laden verkauft 25 Artikel zu je 32 €. Die zurechenbaren Kosten betragen 690 €. Wie hoch ist der Gewinn?",
+      "answer": 110,
+      "unit": "€",
+      "tolerance": 0.0001,
+      "explanation": "Umsatz = 25 × 32 = 800 €. Ergebnis = 800 − 690 = 110 €.",
+      "steps": [
+        "25 × 32 = 800 € Umsatz.",
+        "690 € Kosten abziehen.",
+        "800 − 690 = 110 € Ergebnis."
+      ]
+    },
+    {
+      "id": "v77-wachstum-marge-calculation",
+      "lesson_id": "wachstum-marge",
+      "type": "numeric",
+      "prompt": "Ein Unternehmen erzielt 2 Mio. € Umsatz bei 12 % operativer Marge. Wie hoch ist das operative Ergebnis in Euro?",
+      "answer": 240000,
+      "unit": "€",
+      "tolerance": 0.0001,
+      "explanation": "2.000.000 × 0,12 = 240.000 € operatives Ergebnis. Prozent erst als Dezimalzahl verwenden.",
+      "steps": [
+        "12 % = 0,12.",
+        "2.000.000 × 0,12.",
+        "Operatives Ergebnis = 240.000 €."
+      ]
+    },
+    {
+      "id": "v77-rechnen-bewertung-calculation",
+      "lesson_id": "rechnen-bewertung",
+      "type": "numeric",
+      "prompt": "Eine Aktie kostet 72 €. Der jährliche Gewinn je Aktie beträgt 6 €. Wie hoch ist das KGV?",
+      "answer": 12,
+      "unit": "",
+      "tolerance": 0.0001,
+      "explanation": "KGV = Aktienkurs ÷ jährlicher Gewinn je Aktie = 72 ÷ 6 = 12.",
+      "steps": [
+        "Nutze Jahres-EPS statt unkommentiertem Quartals-EPS.",
+        "72 ÷ 6 = 12.",
+        "Das KGV ist keine Renditegarantie."
+      ]
+    },
+    {
+      "id": "v77-working-capital-diagnose-1-calculation",
+      "lesson_id": "working-capital-diagnose-1",
+      "type": "numeric",
+      "prompt": "Kurzfristige Vermögenswerte: 480 Mio. €. Kurzfristige Verbindlichkeiten: 325 Mio. €. Wie hoch ist das Netto-Umlaufvermögen in Mio. €?",
+      "answer": 155,
+      "unit": "Mio. €",
+      "tolerance": 0.0001,
+      "explanation": "Vereinfachtes Netto-Umlaufvermögen = 480 − 325 = 155 Mio. €. Diese breite Definition unterscheidet sich von operativem Working Capital.",
+      "steps": [
+        "Aktuelle Vermögenswerte auswählen.",
+        "Kurzfristige Verbindlichkeiten abziehen.",
+        "480 − 325 = 155 Mio. €; Definition angeben."
+      ]
+    },
+    {
+      "id": "v77-working-capital-diagnose-2-calculation",
+      "lesson_id": "working-capital-diagnose-2",
+      "type": "numeric",
+      "prompt": "Ein Unternehmen weist 45 Mio. € durchschnittliche Forderungen und 270 Mio. € Jahresumsatz aus. Wie viele Tage beträgt die vereinfachte Forderungslaufzeit bei 360 Tagen?",
+      "answer": 60,
+      "unit": "Tage",
+      "tolerance": 0.0001,
+      "explanation": "DSO ≈ durchschnittliche Forderungen ÷ Umsatz × 360 = 45 ÷ 270 × 360 = 60 Tage. Kreditumsatz und Umsatzsteuer können die exakte Definition ändern.",
+      "steps": [
+        "45 ÷ 270 = 1/6.",
+        "1/6 × 360 = 60 Tage.",
+        "Konsistente Forderungs- und Umsatzdefinition prüfen."
+      ]
+    },
+    {
+      "id": "v77-working-capital-diagnose-3-calculation",
+      "lesson_id": "working-capital-diagnose-3",
+      "type": "numeric",
+      "prompt": "Lagerdauer 48 Tage, Forderungslaufzeit 37 Tage, Verbindlichkeitenlaufzeit 52 Tage. Wie groß ist der vereinfachte Cash Conversion Cycle?",
+      "answer": 33,
+      "unit": "Tage",
+      "tolerance": 0.0001,
+      "explanation": "CCC = 48 + 37 − 52 = 33 Tage. Längere Zahlungsziele der Lieferanten verkürzen den CCC in diesem Modell.",
+      "steps": [
+        "Lagerdauer plus Forderungslaufzeit = 85 Tage.",
+        "Verbindlichkeitenlaufzeit abziehen.",
+        "85 − 52 = 33 Tage."
+      ]
+    },
+    {
+      "id": "v77-trade-risiko-plan-1-calculation",
+      "lesson_id": "trade-risiko-plan-1",
+      "type": "numeric",
+      "prompt": "Ein virtuelles Depot hat 5.000 €, das Risikobudget pro Trade ist 1 %. Einstieg 80 €, Stop 75 €. Wie viele Aktien sind rechnerisch maximal möglich, wenn Gebühren und Gaps ignoriert werden?",
+      "answer": 10,
+      "unit": "Aktien",
+      "tolerance": 0.0001,
+      "explanation": "Risikobudget 5.000 × 0,01 = 50 €. Verlust je Aktie: 80 − 75 = 5 €. 50 ÷ 5 = 10 Aktien. Die reale Stop-Ausführung ist nicht garantiert.",
+      "steps": [
+        "1 % von 5.000 € = 50 €.",
+        "80 − 75 = 5 € pro Aktie.",
+        "50 ÷ 5 = 10 Aktien."
+      ]
+    },
+    {
+      "id": "v77-orderkosten-slippage-1-calculation",
+      "lesson_id": "orderkosten-slippage-1",
+      "type": "numeric",
+      "prompt": "Du kaufst 100 Aktien; Spread-Kosten betragen 0,08 € je Aktie und die Ordergebühr 2 €. Wie hoch sind diese direkten Kosten insgesamt in Euro?",
+      "answer": 10,
+      "unit": "€",
+      "tolerance": 0.0001,
+      "explanation": "100 × 0,08 € + 2 € = 10 €. Zusätzliche Slippage und spätere Verkaufskosten können hinzukommen.",
+      "steps": [
+        "Spreadkosten 100 × 0,08 € = 8 €.",
+        "Ordergebühr 2 € addieren.",
+        "Gesamtkosten 10 €."
+      ]
+    },
+    {
+      "id": "v77-depot-stresstests-1-calculation",
+      "lesson_id": "depot-stresstests-1",
+      "type": "numeric",
+      "prompt": "Ein Depot fällt von 2.500 € auf 1.875 €. Wie hoch ist der Drawdown als positiver Verlustprozentsatz?",
+      "answer": 25,
+      "unit": "%",
+      "tolerance": 0.0001,
+      "explanation": "(2.500 − 1.875) ÷ 2.500 × 100 = 25 %. Erholung bis 2.500 € braucht danach mehr als 25 %.",
+      "steps": [
+        "Verlust 625 € berechnen.",
+        "625 ÷ 2.500 = 0,25.",
+        "25 % Drawdown."
+      ]
+    },
+    {
+      "id": "v77-aktienverwaesserung-eps-1-calculation",
+      "lesson_id": "aktienverwaesserung-eps-1",
+      "type": "numeric",
+      "prompt": "Ein Unternehmen hat 360 Mio. € Gewinn und 120 Mio. gewichtete Aktien. Wie hoch ist der Gewinn je Aktie?",
+      "answer": 3,
+      "unit": "€ je Aktie",
+      "tolerance": 0.0001,
+      "explanation": "360 Mio. € ÷ 120 Mio. Aktien = 3 € je Aktie. Verwässerte und unverwässerte Aktienzahlen unterscheiden sich gegebenenfalls.",
+      "steps": [
+        "Gewinn durch gewichtete Aktien teilen.",
+        "Mio.-Einheiten kürzen sich.",
+        "360 ÷ 120 = 3 € je Aktie."
+      ]
+    },
+    {
+      "id": "v77-kreditrisiko-unternehmen-2-calculation",
+      "lesson_id": "kreditrisiko-unternehmen-2",
+      "type": "numeric",
+      "prompt": "EBIT 240 Mio. €, jährlicher Zinsaufwand 60 Mio. €. Wie hoch ist die vereinfachte Zinsdeckung?",
+      "answer": 4,
+      "unit": "",
+      "tolerance": 0.0001,
+      "explanation": "Zinsdeckung = EBIT ÷ Zinsaufwand = 240 ÷ 60 = 4. Sie sagt nichts über Tilgungspläne allein.",
+      "steps": [
+        "EBIT und Zinsaufwand für den gleichen Zeitraum.",
+        "240 ÷ 60 = 4.",
+        "Zusätzlich Cashflow und Fälligkeiten betrachten."
+      ]
+    },
+    {
+      "id": "v77-realrendite-kaufkraft-1-calculation",
+      "lesson_id": "realrendite-kaufkraft-1",
+      "type": "numeric",
+      "prompt": "Eine Anlage erzielt nominal 6 % Rendite, die Inflation liegt bei 3 %. Wie hoch ist die exakte reale Rendite in Prozent (auf zwei Nachkommastellen)?",
+      "answer": 2.91,
+      "unit": "%",
+      "tolerance": 0.015,
+      "explanation": "(1,06 ÷ 1,03 − 1) × 100 ≈ 2,91 %. Einfach 6 − 3 = 3 % ist nur die Näherung.",
+      "steps": [
+        "Bruttowachstumsfaktoren 1,06 und 1,03.",
+        "1,06 ÷ 1,03 ≈ 1,029126.",
+        "Minus 1, mal 100 ≈ 2,91 %."
+      ]
+    },
+    {
+      "id": "v77-berichte-lesen-1-transfer",
+      "lesson_id": "berichte-lesen-1",
+      "type": "mcq",
+      "prompt": "Ein Konzern veröffentlicht Q3-Umsatz von 500 Mio. € und Jahresumsatz 2025 von 1,9 Mrd. €. Welche Zahl brauchst du für eine saubere Wachstumsrate des Q3-Umsatzes?",
+      "options": [
+        "Nur den letzten Börsenkurs.",
+        "Q3-Umsatz des Vorjahres mit gleicher Abgrenzung.",
+        "Den Vorjahresjahresgewinn.",
+        "Die Summe der nächsten vier Quartale."
+      ],
+      "correct": 1,
+      "explanation": "Das Q3 wird dem Q3 des Vorjahres unter gleichen Bilanzierungsregeln, Währungen und Unternehmensgrenzen gegenübergestellt.",
+      "diagnosis": [
+        "Ein Börsenkurs misst keine Umsatzveränderung.",
+        "",
+        "Gewinn und Umsatz sind verschiedene Größen.",
+        "Eine Zukunftssumme ist kein passender historischer Vergleich."
+      ]
+    },
+    {
+      "id": "v77-cashflow-einfach-transfer",
+      "lesson_id": "cashflow-einfach",
+      "type": "mcq",
+      "prompt": "Ein Unternehmen stellt heute eine Kundenrechnung über 12.000 €; Zahlungsziel 60 Tage. Welche Aussage ist ohne weitere Informationen sicher?",
+      "options": [
+        "Die 12.000 € sind bereits bar eingegangen.",
+        "Der Kassenbestand steigt sofort um 12.000 €.",
+        "Ein Umsatz kann erfasst sein, obwohl noch eine Kundenforderung besteht.",
+        "Es entsteht zwingend ein Free Cashflow von 12.000 €."
+      ],
+      "correct": 2,
+      "explanation": "Bei einer Lieferung mit Rechnung kann ein Umsatz buchhalterisch entstehen, obwohl die Zahlung erst später erfolgt. Forderungen sind keine Bankeinzahlungen.",
+      "diagnosis": [
+        "Rechnung und Zahlung verwechseln.",
+        "Eine offene Rechnung ist keine sofortige Bankbuchung.",
+        "",
+        "Umsatz und Free Cashflow messen unterschiedliche Größen."
+      ]
+    },
+    {
+      "id": "v77-anlagearten-transfer",
+      "lesson_id": "anlagearten",
+      "type": "mcq",
+      "prompt": "Ein ETF enthält nur Aktien eines einzelnen kleinen Industriesektors. Was lässt sich über sein Risiko sagen?",
+      "options": [
+        "Er ist automatisch so sicher wie Tagesgeld.",
+        "Das Risiko hängt stark von den enthaltenen Aktien und Konzentrationen ab.",
+        "Ein ETF hat immer garantierte Rückzahlung.",
+        "Die Anzahl ETF-Anteile garantiert Diversifikation."
+      ],
+      "correct": 1,
+      "explanation": "ETF ist die Fondsstruktur. Die Risikostreuung hängt von den tatsächlich gehaltenen Wertpapieren, ihrer Gewichtung und ihren gemeinsamen Risiken ab.",
+      "diagnosis": [
+        "Die ETF-Hülle garantiert keinen Schutz.",
+        "",
+        "Ein Aktien-ETF hat keine pauschale Kapitalgarantie.",
+        "Die Stückzahl deiner Anteile ändert die Risikokonzentration nicht."
+      ]
+    },
+    {
+      "id": "v77-quality-of-earnings-2-transfer",
+      "lesson_id": "quality-of-earnings-2",
+      "type": "mcq",
+      "prompt": "Umsatz +8 %, offene Forderungen +35 % gegenüber vergleichbarem Vorjahr. Was ist die beste erste Schlussfolgerung?",
+      "options": [
+        "Das beweist zweifelsfrei Betrug.",
+        "Die Dividende muss sofort steigen.",
+        "Zahlungsziele, Kundenmix und operativen Cashflow prüfen, bevor die Gewinnqualität bewertet wird.",
+        "Forderungen haben mit Zahlungseingängen nichts zu tun."
+      ],
+      "correct": 2,
+      "explanation": "Überproportional steigende Forderungen können die Geldkonversion schwächen. Ursache, Saison, Unternehmensabgrenzung und Kreditbedingungen müssen geprüft werden.",
+      "diagnosis": [
+        "Ein Indiz ist kein Beweis für Betrug.",
+        "Die Dividende folgt nicht unmittelbar aus Forderungen.",
+        "",
+        "Forderungen entstehen gerade bei noch offenen Zahlungen."
+      ]
+    },
+    {
+      "id": "v77-urteil-fakt-vs-deutung-transfer",
+      "lesson_id": "urteil-fakt-vs-deutung",
+      "type": "mcq",
+      "prompt": "Ein Geschäftsbericht nennt 9 % Umsatzwachstum. Ein Kommentar folgert: 'Die Aktie wird nächstes Jahr steigen.' Was ist korrekt?",
+      "options": [
+        "Beides sind gesicherte Tatsachen.",
+        "Die Umsatzangabe ist bei korrekter Quelle ein Fakt, der Kursanstieg eine unsichere Prognose.",
+        "Die Kursprognose macht die veröffentlichte Umsatzangabe falsch.",
+        "Ein steigender Umsatz garantiert eine höhere Aktie."
+      ],
+      "correct": 1,
+      "explanation": "Fakten beschreiben überprüfbare vergangene Angaben. Aus ihnen folgt ohne Bewertung, Risiken und Marktpreise keine sichere zukünftige Aktienrendite.",
+      "diagnosis": [
+        "Eine Prognose ist kein gesicherter Fakt.",
+        "",
+        "Die Prognose ändert den berichteten Umsatz nicht.",
+        "Wachstum kann bereits im Kurs eingepreist sein."
+      ]
+    },
+    {
+      "id": "v77-urteil-chancen-risiken-transfer",
+      "lesson_id": "urteil-chancen-risiken",
+      "type": "mcq",
+      "prompt": "Du prognostizierst höhere Margen bei einem Industrieunternehmen. Was ist die beste Gegenhypothese?",
+      "options": [
+        "Es kann grundsätzlich nichts schiefgehen.",
+        "Der Aktienkurs steigt vielleicht an einem Tag.",
+        "Lieferantenkosten und Löhne steigen stärker als die Verkaufspreise; die Marge fällt trotz stabilem Umsatz.",
+        "Die Dividende vom Vorjahr wird erneut gezahlt."
+      ],
+      "correct": 2,
+      "explanation": "Die Gegenhypothese benennt einen kausalen Margentreiber und kann anhand von Kosten, Preisgestaltung und späterer Gewinnmarge geprüft werden.",
+      "diagnosis": [
+        "Eine These ohne Gegenfall ist nicht überprüfbar.",
+        "Ein Tageskurs ist keine Margenursache.",
+        "",
+        "Eine historische Dividende erklärt künftige Margen nicht."
+      ]
+    },
+    {
+      "id": "v77-basisraten-entscheidungen-2-transfer",
+      "lesson_id": "basisraten-entscheidungen-2",
+      "type": "mcq",
+      "prompt": "Ein Signal erkennt 90 % der echten Betrugsfälle, meldet aber bei 10 % ehrlicher Firmen fälschlich Alarm. Nur 1 % aller Firmen sind betroffen. Welche Aussage ist richtig?",
+      "options": [
+        "Bei Alarm ist Betrug zu 90 % sicher.",
+        "Die Basisrate spielt keine Rolle.",
+        "Der Großteil der Alarme kann trotz guter Trefferquote falsch sein, weil Betrug selten ist.",
+        "Die Falsch-positiv-Rate ist automatisch 0 %."
+      ],
+      "correct": 2,
+      "explanation": "Von 10.000 Firmen sind 100 betroffen: etwa 90 echte Alarme. Von 9.900 ehrlichen Firmen lösen etwa 990 falschen Alarm aus. Trotz Alarm ist die Wahrscheinlichkeit hier 90/(90+990) ≈ 8,3 %.",
+      "diagnosis": [
+        "90 % Sensitivität ist nicht der positive Vorhersagewert.",
+        "Seltene Ereignisse machen die Basisrate wichtig.",
+        "",
+        "10 % falsch-positive Treffer sind explizit angegeben."
+      ]
+    },
+    {
+      "id": "v77-prognosen-kalibrieren-2-calculation",
+      "lesson_id": "prognosen-kalibrieren-2",
+      "type": "numeric",
+      "prompt": "Du gibst einem Ereignis 70 % Wahrscheinlichkeit. Es tritt nicht ein. Wie groß ist der Brier-Score für diese eine Vorhersage?",
+      "answer": 0.49,
+      "unit": "",
+      "tolerance": 0.0001,
+      "explanation": "Brier-Score = (Vorhersagewahrscheinlichkeit − eingetretener Wert)² = (0,7 − 0)² = 0,49. Kleinere Werte sind besser.",
+      "steps": [
+        "Ereignis tritt nicht ein ⇒ Istwert 0.",
+        "Vorhersage 0,7.",
+        "(0,7 − 0)² = 0,49."
+      ]
+    },
+    {
+      "id": "v77-etf-tracking-steuern-1-calculation",
+      "lesson_id": "etf-tracking-steuern-1",
+      "type": "numeric",
+      "prompt": "Ein Vergleichsindex steigt in einem Jahr um 8,4 %, der ETF um 7,9 %. Wie hoch ist die Tracking-Differenz als ETF-Rendite minus Indexrendite in Prozentpunkten?",
+      "answer": -0.5,
+      "unit": "Prozentpunkte",
+      "tolerance": 0.0001,
+      "explanation": "7,9 % − 8,4 % = −0,5 Prozentpunkte. Tracking-Differenz ist nicht automatisch exakt die TER.",
+      "steps": [
+        "ETF minus Index.",
+        "7,9 − 8,4 = −0,5.",
+        "Die Einheit lautet Prozentpunkte."
+      ]
+    },
+    {
+      "id": "v77-orderbuch-liquiditaet-1-calculation",
+      "lesson_id": "orderbuch-liquiditaet-1",
+      "type": "numeric",
+      "prompt": "Eine Aktie hat einen Bid von 24,90 € und einen Ask von 25,06 €. Wie groß ist der absolute Spread?",
+      "answer": 0.16,
+      "unit": "€",
+      "tolerance": 0.0001,
+      "explanation": "25,06 − 24,90 = 0,16 € je Aktie. Beim sofortigen Kauf zählt typischerweise der Ask, beim Verkauf der Bid.",
+      "steps": [
+        "Ask 25,06 €.",
+        "Bid 24,90 €.",
+        "Ask − Bid = 0,16 €."
+      ]
+    }
+  ]
+}
