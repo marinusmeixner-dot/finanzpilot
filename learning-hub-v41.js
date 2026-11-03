@@ -260,6 +260,7 @@ async function action(kind,skill,lesson,payment,answer){
    window.FinanzPilotHeader?.refresh?.(true);
   }
   if(kind==='submit'&&data?.correct===true)window.FinanzPilotStudy?.seed?.(lesson);
+  if(kind==='submit'&&data?.ok===true&&typeof data?.correct==='boolean')window.FinanzPilotAdaptive?.observeLesson?.(lesson,data.correct,'skill-server-quiz');
   if(kind==='submit'&&typeof data?.correct==='boolean')window.FinanzPilotLessonView?.feedback?.(lesson,data.correct);
   if(kind==='submit'&&typeof data?.correct==='boolean')
    window.FinanzPilotFeedback?.tone?.(data.correct?'answer':'wrong');

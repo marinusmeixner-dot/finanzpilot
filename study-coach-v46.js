@@ -47,8 +47,9 @@ function queue(){
  return pool.map(l=>({...l,review:db.reviews[l.id]||null,due:!(db.reviews[l.id])||Number(db.reviews[l.id].dueAt)<=now}))
  .sort((a,b)=>(a.due===b.due?(a.review?.dueAt||0)-(b.review?.dueAt||0):a.due?-1:1));
 }
-function dueCount(){return queue().filter(x=>x.due).length}
+function dueCount(){return window.FinanzPilotAdaptive?.dueCount?.()??queue().filter(x=>x.due).length}
 function reviewWidget(){
+ if(window.FinanzPilotAdaptive?.renderReview)return window.FinanzPilotAdaptive.renderReview();
  const items=queue(),due=items.filter(x=>x.due),show=(reviewFilter==='all'?items:due).slice(0,6);
  return '<section class="fp46-review"><div class="fp46-review-head"><div><span class="eyebrow">WISSEN LANGFRISTIG SICHERN</span><h2>Wiederholen statt nur abhaken</h2><p>Kurze aktive Abruffragen aus deinen bereits bestandenen Lektionen. Du schätzt selbst ein, ob du die Antwort wirklich wusstest. Keine zusätzlichen XP oder FP.</p></div><span class="fp46-review-count">'+due.length+' fällig</span></div>'+
  '<div class="fp46-review-filters"><button type="button" data-fp46-filter="due" class="'+(reviewFilter==='due'?'active':'')+'">Heute fällig ('+due.length+')</button><button type="button" data-fp46-filter="all" class="'+(reviewFilter==='all'?'active':'')+'">Alle gelernten Inhalte ('+items.length+')</button></div>'+
@@ -69,6 +70,7 @@ function noteWidget(id,topic,refPrompt){
  '<div class="fp46-reflection-actions"><button type="button" class="btn secondary" data-fp46-save="'+esc(id)+'">Notiz speichern</button><small>Privates Lernjournal · kein benoteter Test</small></div></section>';
 }
 function bind(root=document){
+ window.FinanzPilotAdaptive?.bind?.(root);
  root.querySelectorAll('[data-fp46-reveal]').forEach(b=>b.addEventListener('click',()=>{showAnswer=b.dataset.fp46Reveal;window.render?.()}));
  root.querySelectorAll('[data-fp46-recall]').forEach(b=>b.addEventListener('click',()=>{recall(b.dataset.fp46Recall,b.dataset.fp46Known==='1');window.render?.()}));
  root.querySelectorAll('[data-fp46-filter]').forEach(b=>b.addEventListener('click',()=>{reviewFilter=b.dataset.fp46Filter;showAnswer='';window.render?.()}));

@@ -36,10 +36,10 @@ assert(!read('learning-explain-v76.js').includes('awardFoundation'),'Explanation
 const html=read('index.html');
 assert(html.indexOf('learning-explain-v76.js?v=76')<html.indexOf('lesson-view-v46.js?v=76'),'Guide loads before specialist view');
 assert(html.includes('learning-explain-v76.css?v=76'));
-assert(html.includes('journey-v39.js?v=76')&&html.includes('learning-hub-v41.js?v=76'));
+assert(html.includes('journey-v39.js?v='+JSON.parse(read('version.json')).version)&&html.includes('learning-hub-v41.js?v='+JSON.parse(read('version.json')).version));
 assert(read('lesson-view-v46.js').includes("FinanzPilotExplain?.skill?.(lesson,skill,'concept')"));
 assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'idea')"));
 assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'example')"));
 assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'review')"));
-assert.equal(JSON.parse(read('version.json')).version,76);
+assert(JSON.parse(read('version.json')).version>=76);
 console.log('V76 PASS: 18 original foundational explanations with voluntary self-check; 8 branch guides covering 156 skills; 21 genuinely worked lessons; official answers and XP unchanged.');

@@ -190,6 +190,7 @@ function checkAnswer(){
  const index=page-2,q=m.questions[index],i=p.drafts?.[index];
  if(!Number.isInteger(i)||i<0||i>=q.options.length||p.answers[index]?.correct)return;
  p.answers[index]={selected:i,correct:i===q.correct,updatedAt:Date.now()};
+ window.FinanzPilotAdaptive?.observeLesson?.(m.id,i===q.correct,'foundation-question-'+index);
  window.FinanzPilotFeedback?.tone?.(i===q.correct?'answer':'wrong');
  p.updatedAt=Date.now();persist();redraw();
 }
