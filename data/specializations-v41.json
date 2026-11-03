@@ -3564,11 +3564,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Ankereffekt erkennen",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Der eigene Einstiegskurs ist für die zukünftige Bewertung kein fairer Zielwert; er beschreibt nur deine Vergangenheit.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Der frühere Kaufpreis von 100 € dient als mentaler Anker, obwohl der heutige Kurs 60 € beträgt.",
+            "Stelle die Gegenfrage: Würdest du die Aktie heute bei 60 € erstmals kaufen, wenn du dieselben aktuellen Informationen hättest?"
           ],
           "transferPrompt": "Zum Thema „Ankereffekt erkennen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3591,11 +3590,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Verlustaversion einordnen",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Nachkaufen kann rational sein, aber nicht allein, weil der rote Depotwert psychisch unangenehm ist.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Nach −20 % Verlust wird die Position ohne neue Fakten verdoppelt.",
+            "Dadurch steigen Depotgewicht und möglicher weiterer Verlust; prüfe die These unabhängig vom Wunsch, den bisherigen Verlust aufzuholen."
           ],
           "transferPrompt": "Zum Thema „Verlustaversion einordnen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3618,11 +3616,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Bestätigungsfehler umgehen",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Eine große Menge bestätigender Artikel ist keine unabhängige Evidenz, wenn alle dieselben positiven Annahmen wiederholen.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Du liest nur optimistische Analysen für die eigene Halbleiteraktie.",
+            "Suche bewusst Aussagen zu Capex, Konkurrenz und Margendruck und definiere ein Datenereignis, bei dem du deine These ändern würdest."
           ],
           "transferPrompt": "Zum Thema „Bestätigungsfehler umgehen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3660,11 +3657,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Vorab-These dokumentieren",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Ein nachträglich formulierter Grund kann überzeugend klingen, obwohl er vor dem Kauf nie Teil deiner These war.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Schreibe vor der Entscheidung auf, welche Marge und welchen Free Cashflow du erwartest.",
+            "Nenne Berichtsdatum und Schwellenwerte, die eine spätere Kursbewegung nicht nachträglich verändern darf."
           ],
           "transferPrompt": "Zum Thema „Vorab-These dokumentieren“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3687,11 +3683,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Konfidenz statt Gewissheit",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Die Zahl 60 % wirkt präzise, ist aber zunächst eine persönliche Schätzung und muss langfristig kalibriert werden.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Schätze eine Margenverbesserung mit einer konkreten Wahrscheinlichkeit, etwa 60 %.",
+            "Nach mehreren vergleichbaren Prognosen prüfst du, wie oft Ereignisse mit rund 60 % tatsächlich eingetreten sind."
           ],
           "transferPrompt": "Zum Thema „Konfidenz statt Gewissheit“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3714,11 +3709,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Entscheidung und Ergebnis trennen",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Ein guter Trade kann Glück sein und ein Verlust trotz sauberer Entscheidung entstehen; bewerte beides getrennt.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Eine gut begründete Prognose scheitert an einem vorher nicht erkennbaren Ereignis.",
+            "Trenne im Rückblick die Qualität deiner damaligen Informationsbasis vom zufälligen Endergebnis."
           ],
           "transferPrompt": "Zum Thema „Entscheidung und Ergebnis trennen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3756,11 +3750,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Kalibrierung verstehen",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Zwanzig Prognosen sind statistisch wenig; auch bei gut kalibrierten Wahrscheinlichkeiten schwanken die tatsächlichen Trefferquoten.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Du stellst zwanzig 70-%-Prognosen und beobachtest vierzehn Treffer.",
+            "14 ÷ 20 = 70 % Trefferquote – das passt als kleine Stichprobe, beweist aber keine perfekte Kalibrierung."
           ],
           "transferPrompt": "Zum Thema „Kalibrierung verstehen“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3783,11 +3776,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Brier-Score als Denkwerkzeug",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Der Brier-Score bewertet nicht nur richtig oder falsch, sondern wie gut die vorab genannte Wahrscheinlichkeit zum Ergebnis passte.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Du prognostizierst 80 % Eintrittswahrscheinlichkeit, das Ereignis tritt ein.",
+            "Brier-Score für dieses Ereignis: (0,8 − 1)² = 0,04. Kleine Werte bedeuten bessere Vorhersagequalität."
           ],
           "transferPrompt": "Zum Thema „Brier-Score als Denkwerkzeug“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3810,11 +3802,10 @@
           "cost": 1,
           "eurCost": 10,
           "keyTakeaway": "Eigene Prognosen verbessern",
-          "pitfall": "Ein guter Ausgang beweist keine gute Entscheidung; ein schlechter Ausgang beweist nicht automatisch einen Denkfehler.",
+          "pitfall": "Eine insgesamt hohe Trefferquote kann triviale häufige Ereignisse widerspiegeln und schlechte Vorhersagen seltener Risiken verdecken.",
           "workedSteps": [
-            "Beschreibe zuerst die Entscheidung so, wie du sie VOR dem tatsächlichen Ergebnis begründet hättest.",
-            "Kennzeichne den möglichen Denkfehler und eine alternative Erklärung.",
-            "Formuliere eine prüfbare Regel, mit der du dich bei der nächsten Entscheidung kontrollierst."
+            "Trenne seltene Ereignisse von häufigen und gruppiere deine Prognosen nach Wahrscheinlichkeit.",
+            "Vergleiche zum Beispiel alle 20-%-Prognosen mit ihrem tatsächlichen Eintrittsanteil; suche systematische Über- oder Unterschätzung."
           ],
           "transferPrompt": "Zum Thema „Eigene Prognosen verbessern“: Welche schriftliche Regel könnte verhindern, dass du den beschriebenen Denkfehler beim nächsten Mal wiederholst?",
           "transferHint": "Prüfe deine Erklärung anhand von drei Fragen: Welche Größen oder Quellen sind tatsächlich gegeben? Welche Annahme ist unsicher? Was wäre eine plausible Gegenhypothese?"
@@ -3852,12 +3843,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Berichtszeitraum, konzernweite Abgrenzung und maßgebliche Definition notieren.",
-            "Die verwendete Bilanz- oder Cashflowposition rechnerisch nachvollziehen.",
-            "Veränderungen mit einer möglichen alternativen Ursache vergleichen."
+            "Addiere kurzfristige operative Forderungen und Lager: 30 + 40 = 70 Mio. €.",
+            "Ziehe 25 Mio. € Lieferantenverbindlichkeiten ab: operatives Working Capital ≈ 45 Mio. €. Zusätzlicher Lageraufbau um 20 Mio. € bindet bei gleichen Bedingungen weitere Zahlungsmittel."
           ],
           "keyTakeaway": "Net Working Capital berechnen",
-          "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
+          "pitfall": "Das operative Working Capital ist nicht identisch mit allen kurzfristigen Bilanzposten: Kasse und Finanzkredite werden in dieser engen Definition meist separat betrachtet.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Net Working Capital berechnen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -3886,12 +3876,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Berichtszeitraum, konzernweite Abgrenzung und maßgebliche Definition notieren.",
-            "Die verwendete Bilanz- oder Cashflowposition rechnerisch nachvollziehen.",
-            "Veränderungen mit einer möglichen alternativen Ursache vergleichen."
+            "Rechne mit einem 90-Tage-Quartal und durchschnittlichen Forderungen von 18 Mio. €.",
+            "18 ÷ 90 Mio. € Quartalsumsatz × 90 Tage = 18 Tage vereinfachte DSO. Höhere DSO deuten auf langsamere Einzüge hin."
           ],
           "keyTakeaway": "Forderungslaufzeit untersuchen",
-          "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
+          "pitfall": "Eine Forderungslaufzeit aus Quartalsumsatz und einer 360-Tage-Basis würde den Wert künstlich vervierfachen.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Forderungslaufzeit untersuchen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -3920,12 +3909,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Berichtszeitraum, konzernweite Abgrenzung und maßgebliche Definition notieren.",
-            "Die verwendete Bilanz- oder Cashflowposition rechnerisch nachvollziehen.",
-            "Veränderungen mit einer möglichen alternativen Ursache vergleichen."
+            "Das Unternehmen braucht 35 Tage, bis die Ware verkauft ist, und weitere 40 Tage bis zur Kundenzahlung.",
+            "35 + 40 − 30 Tage Zahlungsziel bei Lieferanten = 45 Tage Cash Conversion Cycle."
           ],
           "keyTakeaway": "Cash Conversion Cycle",
-          "pitfall": "Ein einzelner Anstieg in der Bilanz ist keine Gewinnverbesserung; die Zahlungswirkung muss separat geprüft werden.",
+          "pitfall": "Die Lieferantenfrist wird abgezogen: Ein längeres Zahlungsziel verringert die selbst zu finanzierende Zeit.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Cash Conversion Cycle“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -3969,12 +3957,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Klären, ob Wertänderungen nominal, real oder nach Gebühren beschrieben werden.",
-            "Bei der Rechnung die Bezugsgröße und den vollständigen Zeitraum verwenden.",
-            "Kosten, Steuern und unsichere künftige Entwicklungen getrennt behandeln."
+            "Nominal steigt das Depot um 7 %, der Preisindex um 3 %.",
+            "Die Kaufkraftrechnung verwendet Faktoren: 1,07 ÷ 1,03 − 1 ≈ 3,88 % reale Rendite."
           ],
           "keyTakeaway": "Nominale und reale Rendite",
-          "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
+          "pitfall": "Die Näherung 7 − 3 = 4 % ist nicht exakt; bei größeren Inflationsraten vergrößert sich die Abweichung.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Nominale und reale Rendite“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -4003,12 +3990,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Klären, ob Wertänderungen nominal, real oder nach Gebühren beschrieben werden.",
-            "Bei der Rechnung die Bezugsgröße und den vollständigen Zeitraum verwenden.",
-            "Kosten, Steuern und unsichere künftige Entwicklungen getrennt behandeln."
+            "Beide Portfolios beginnen mit 6 % Bruttorendite im Jahr.",
+            "Ziehe modellhaft 0,2 % beziehungsweise 1,2 % laufende Kosten ab: 5,8 % gegenüber 4,8 % vor weiteren Effekten."
           ],
           "keyTakeaway": "Kosten und Wiederanlage",
-          "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
+          "pitfall": "Ein scheinbar kleiner jährlicher Kostenunterschied wirkt bei langfristiger Wiederanlage über den Zinseszinseffekt.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kosten und Wiederanlage“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
         },
@@ -4030,12 +4016,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Klären, ob Wertänderungen nominal, real oder nach Gebühren beschrieben werden.",
-            "Bei der Rechnung die Bezugsgröße und den vollständigen Zeitraum verwenden.",
-            "Kosten, Steuern und unsichere künftige Entwicklungen getrennt behandeln."
+            "Ein Warenkorb kostet heute 1.000 €, der Preis steigt fünf Jahre jeweils um 2 %.",
+            "1.000 × 1,02⁵ ≈ 1.104 € künftig erforderlicher Betrag für ungefähr dieselbe Kaufkraft."
           ],
           "keyTakeaway": "Kaufkraftziel mit Szenarien",
-          "pitfall": "Nominale und reale Rendite niemals gleichsetzen, Kosten nicht doppelt abziehen.",
+          "pitfall": "Ein unveränderter Eurobetrag nach fünf Jahren bewahrt die heutige Kaufkraft bei positiver Inflation nicht.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kaufkraftziel mit Szenarien“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -4079,12 +4064,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Zeitpunkt und damals bekannte Informationen des Signals festhalten.",
-            "Tatsächlich handelbare Preise und vollständige Kosten berücksichtigen.",
-            "Das Ergebnis an bislang ungesehenen Zeiträumen und Gegenbeispielen überprüfen."
+            "Der Test trifft eine Entscheidung am 1. Januar, der verwendete Jahresbericht erscheint erst am 20. Februar.",
+            "Streiche die am Entscheidungstag noch unbekannte Zahl und wiederhole den Test mit einem tatsächlich vorher publizierten Bericht."
           ],
           "keyTakeaway": "Look-ahead-Bias vermeiden",
-          "pitfall": "Gute historische Ergebnisse ohne realistische Zeit- und Kostengrenzen beweisen keine zukünftige Strategie.",
+          "pitfall": "Look-ahead-Bias entsteht schon durch eine einzige Information aus der Zukunft, nicht erst durch bewusstes Schummeln.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Look-ahead-Bias vermeiden“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
         },
@@ -4106,12 +4090,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Zeitpunkt und damals bekannte Informationen des Signals festhalten.",
-            "Tatsächlich handelbare Preise und vollständige Kosten berücksichtigen.",
-            "Das Ergebnis an bislang ungesehenen Zeiträumen und Gegenbeispielen überprüfen."
+            "Ein Backtest für 2010 enthält nur Aktien, die heute noch im Index sind.",
+            "Rekonstruiere die damaligen tatsächlichen Indexmitglieder einschließlich später ausgeschiedener, fusionierter oder insolventer Firmen."
           ],
           "keyTakeaway": "Survivorship Bias erkennen",
-          "pitfall": "Gute historische Ergebnisse ohne realistische Zeit- und Kostengrenzen beweisen keine zukünftige Strategie.",
+          "pitfall": "Die historische Rendite kann künstlich gut aussehen, wenn gescheiterte Unternehmen aus der ursprünglichen Auswahl fehlen.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Survivorship Bias erkennen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
         },
@@ -4133,12 +4116,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Zeitpunkt und damals bekannte Informationen des Signals festhalten.",
-            "Tatsächlich handelbare Preise und vollständige Kosten berücksichtigen.",
-            "Das Ergebnis an bislang ungesehenen Zeiträumen und Gegenbeispielen überprüfen."
+            "8 % Strategierendite vor Kosten minus 5 Prozentpunkte Gesamtkosten ergeben modellhaft nur 3 % netto.",
+            "Prüfe das System anschließend in bisher ungesehenen Daten und mit realistischen Spreads, Gebühren sowie Liquiditätsgrenzen."
           ],
           "keyTakeaway": "Out-of-Sample & Gebühren",
-          "pitfall": "Gute historische Ergebnisse ohne realistische Zeit- und Kostengrenzen beweisen keine zukünftige Strategie.",
+          "pitfall": "Auch ein hübsches Out-of-Sample-Ergebnis ist nicht belastbar, wenn Trades zum damaligen Zeitpunkt nicht ausführbar gewesen wären.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Out-of-Sample & Gebühren“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -4183,12 +4165,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Den Zusammenhang aus Schulden, Cashflow und Finanzierung dokumentieren.",
-            "Die Kennzahl mit gleicher Definition und gleichem Zeitraum berechnen.",
-            "Ein schwächeres Szenario und die fälligen Zahlungen prüfen."
+            "350 Mio. € verzinsliche Schulden minus 50 Mio. € freie Kasse ergeben 300 Mio. € vereinfachte Nettoschulden.",
+            "300 ÷ 100 Mio. € EBITDA = 3,0-fache Verschuldung; vergiss nicht die Cashflow- und Bilanzdefinition."
           ],
           "keyTakeaway": "Nettoschulden und Ergebnis vergleichen",
-          "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
+          "pitfall": "Ein EBITDA-Multiple von 3 zeigt nicht, ob in drei Jahren genug Zahlungsmittel zur tatsächlichen Tilgung entstehen.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Nettoschulden und Ergebnis vergleichen“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -4217,12 +4198,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Den Zusammenhang aus Schulden, Cashflow und Finanzierung dokumentieren.",
-            "Die Kennzahl mit gleicher Definition und gleichem Zeitraum berechnen.",
-            "Ein schwächeres Szenario und die fälligen Zahlungen prüfen."
+            "EBIT von 50 Mio. € deckt 10 Mio. € jährliche Zinsen etwa fünfmal.",
+            "Sinkt EBIT auf 20 Mio. €, beträgt die Deckung bei unverändertem Zinsaufwand nur noch 2,0."
           ],
           "keyTakeaway": "Zinsdeckung bewerten",
-          "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
+          "pitfall": "Die EBIT-basierte Zinsdeckung berücksichtigt die Rückzahlung der Darlehenssumme selbst nicht.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Zinsdeckung bewerten“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese.",
           "practice": {
@@ -4251,12 +4231,11 @@
           "cost": 1,
           "eurCost": 10,
           "workedSteps": [
-            "Den Zusammenhang aus Schulden, Cashflow und Finanzierung dokumentieren.",
-            "Die Kennzahl mit gleicher Definition und gleichem Zeitraum berechnen.",
-            "Ein schwächeres Szenario und die fälligen Zahlungen prüfen."
+            "Der jährliche operative Cashflow beträgt 80 Mio. €, binnen sechs Monaten werden 300 Mio. € Kredite fällig.",
+            "Prüfe verfügbare Kasse, verbindliche Kreditlinien und Refinanzierungszusagen; selbst ein profitables Jahr löst die fälligen 300 Mio. € nicht automatisch."
           ],
           "keyTakeaway": "Kreditfälligkeit & Covenants",
-          "pitfall": "Verschuldungsquoten und Zahlungsfähigkeit sind nicht dasselbe; Fälligkeiten und Bilanzierung verändern das Risiko.",
+          "pitfall": "Eine hohe jährliche Ertragskraft garantiert keine Zahlungsfähigkeit zu einem konkreten kurzfristigen Fälligkeitstermin.",
           "transferPrompt": "Übertrage den Rechen- oder Entscheidungsweg aus „Kreditfälligkeit & Covenants“ auf einen anderen Zeitraum. Welche Zahl und welche Annahme würdest du als Erstes prüfen?",
           "transferHint": "Nenne die Ausgangsgrößen und die Rechenoperation oder Schlussfolgerung, dokumentiere den passenden Zeitraum und formuliere eine plausible Gegenhypothese."
         }
