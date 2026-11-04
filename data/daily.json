@@ -611,53 +611,6 @@
       }
     },
     {
-      "id": "2026-11-02-bayer-results-tomorrow",
-      "title": "Bayer berichtet am 3. November: Diese Fragen sind wichtiger als eine Kurswette",
-      "published": "2026-10-30",
-      "category": "Unternehmen",
-      "symbols": [
-        "BAYN.DE"
-      ],
-      "source": "Bayer AG – Q3-2026 Investoren-Terminseite",
-      "url": "https://www.bayer.com/en/investors/events/q3-2026-investor-video-call",
-      "why": "Die bevorstehende Veröffentlichung ist bestätigt; Ergebnisse selbst liegen noch nicht vor.",
-      "impact": "Anleger können Cashflow, Nettoverschuldung und Segmenttrends vorab als Prüfliste festlegen.",
-      "article": {
-        "lead": "Bayer kündigt die Veröffentlichung der Q3-2026-Zahlen für den 3. November 2026 um 07:30 Uhr MEZ an. Am Morgen des 2. November liegen diese Ergebnisse noch nicht vor; es wäre falsch, sie bereits als Ist-Werte zu berichten.",
-        "sections": [
-          {
-            "heading": "Was tatsächlich bekannt ist",
-            "paragraphs": [
-              "Die Investor-Relations-Seite nennt einen Veröffentlichungstermin und eine anschließende Analystenkonferenz. Ein Terminkalender ist eine Primärquelle für das Datum, nicht für die künftige Höhe von Umsatz oder Gewinn.",
-              "Die letzten hier verifizierten Zahlen stammen aus dem Halbjahresbericht und der Q2-Mitteilung vom 4. August 2026. Diese müssen als historische Vergleichsbasis und nicht als Q3-Ergebnis gekennzeichnet werden."
-            ]
-          },
-          {
-            "heading": "Erster Prüfblock: Geschäftsbereiche",
-            "paragraphs": [
-              "Crop Science, Pharmaceuticals und Consumer Health haben unterschiedliche Nachfrage-, Margen- und Währungsrisiken. Ein Konzernwachstum kann Rückgänge in einzelnen Segmenten überdecken.",
-              "Prüfe die Umsatzveränderung je Sparte sowohl nominal als auch währungs- und portfoliobereinigt. Für einen belastbaren Vergleich braucht man die identische Vorjahresperiode."
-            ]
-          },
-          {
-            "heading": "Zweiter Prüfblock: Geldfluss und Schulden",
-            "paragraphs": [
-              "Nach Q2 lag die Nettofinanzverschuldung bei 33,647 Milliarden Euro und der freie Cashflow des Quartals bei minus 371 Millionen Euro. Rechtszahlungen und Investitionen können die Cashflow-Entwicklung deutlich verändern.",
-              "Für Q3 sollten operativer Cashflow, Investitionen, freie Mittel und Verschuldung gemeinsam geprüft werden. Ein Anstieg des bereinigten EBITDA allein beweist keine verbesserte Schuldentragfähigkeit."
-            ]
-          },
-          {
-            "heading": "Was eine positive These widerlegen könnte",
-            "paragraphs": [
-              "Ein höherer Umsatz bei schlechterem Cashflow, steigenden Finanzierungskosten oder ungünstigeren Rechtsrisiken könnte eine positive Gewinnmeldung relativieren. Umgekehrt kann ein einmaliger Mittelabfluss die nachhaltige Entwicklung verzerren.",
-              "Erst die veröffentlichten Tabellen und der Ausblick erlauben eine Neubewertung. Auch eine positive Überraschung führt nicht automatisch zu steigenden Kursen, wenn der Markt noch bessere Zahlen erwartet hatte."
-            ]
-          }
-        ],
-        "conclusion": "Die Veröffentlichung am 3. November ist ein Ausblick, kein Ergebnis. Die entscheidende Prüfung beginnt mit den tatsächlich publizierten Tabellen."
-      }
-    },
-    {
       "id": "2026-11-02-alphabet-q3-cloud-cashflow",
       "title": "Alphabet: Cloud-Umsatz verdoppelt – doch der freie Cashflow ist negativ",
       "published": "2026-10-28",
