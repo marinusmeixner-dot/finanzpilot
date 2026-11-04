@@ -1,10 +1,58 @@
 {
   "date": "2026-11-03",
-  "updated_at": "2026-11-03T18:55:00.000Z",
+  "updated_at": "2026-11-04T02:56:00.000Z",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Neue, primärquellengeprüfte Analyse zur ersten StromVKG-Kapazitätsauktion; weitere bestehende Artikel bleiben im Archiv.",
+  "intro": "Primärquellengeprüfte Ergänzung: Evonik bestätigt BASF-Interesse und lehnt Verhandlungen ab; bestehendes Nachrichtenarchiv bleibt erhalten.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
+      "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+      "published": "2026-10-30",
+      "category": "Unternehmen",
+      "symbols": [
+        "EVK.DE",
+        "BAS.DE"
+      ],
+      "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
+      "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+      "why": "Die offizielle Ad-hoc-Mitteilung bestätigt ein konkretes Interessenschreiben von BASF und die Ablehnung von Übernahmeverhandlungen durch Evoniks Vorstand; damit lässt sich das Stadium des Vorgangs von Marktgerüchten unterscheiden.",
+      "impact": "Ein möglicher Übernahmeaufschlag ist spekulativ, solange kein verbindliches öffentliches Angebot mit Preis und Bedingungen vorliegt. Auch für BASF sind Synergien, Finanzierung und regulatorische Hürden offen.",
+      "article": {
+        "lead": "Evonik hat am 30. Oktober 2026 offiziell mitgeteilt, dass BASF am 22. Oktober Interesse an einem freiwilligen öffentlichen Übernahmeangebot bekundet hatte. Evoniks Vorstand will auf Grundlage der vorliegenden Informationen keine Verhandlungen aufnehmen. Ein vertraulicher Informationsaustausch bleibt möglich. Ein konkreter Angebotspreis oder eine abgeschlossene Transaktion wird in dieser Mitteilung nicht genannt.",
+        "sections": [
+          {
+            "heading": "Was die Ad-hoc-Mitteilung tatsächlich bestätigt",
+            "paragraphs": [
+              "Der Vorstand von Evonik berichtet über ein Schreiben der BASF SE vom 22. Oktober 2026, das Interesse an einem freiwilligen öffentlichen Übernahmeangebot ausdrückt. Das ist eine bestätigte Interessenbekundung und nicht mit einem veröffentlichten verbindlichen Angebot gleichzusetzen. Die Quelle nennt weder einen Angebotspreis noch eine Annahmefrist oder gesicherte Finanzierung.",
+              "Nach Prüfung der vorliegenden Informationen entschied der Evonik-Vorstand, nicht in Verhandlungen einzutreten. Zugleich bietet er einen rein informativen und vertraulichen Austausch an, damit BASF ihre Motive erläutern kann. Diese Gesprächsbereitschaft hebt die Ablehnung von Verhandlungen nicht auf und bedeutet keine Zustimmung zu einer Übernahme."
+            ]
+          },
+          {
+            "heading": "Wie Übernahmefantasie die Bewertung verzerren kann",
+            "paragraphs": [
+              "Bei Übernahmegerüchten rechnen Marktteilnehmer häufig mit einem Aufschlag auf den unbeeinflussten Börsenkurs. Ohne veröffentlichten Angebotspreis lässt sich daraus jedoch kein seriöser fairer Wert oder sicherer Gewinn berechnen. Selbst ein späteres Angebot kann an Bedingungen scheitern oder verändert werden.",
+              "Für Evonik wären neben einem möglichen Preis insbesondere die Interessen der Aktionäre, der Fortbestand von Geschäftsfeldern und die strategische Alternative als unabhängiges Unternehmen relevant. Anleger sollten deshalb zwischen dem Stand der offiziellen Kommunikation und möglichen Szenarien unterscheiden, statt eine hypothetische Prämie als bereits realisierten Unternehmenswert zu behandeln."
+            ]
+          },
+          {
+            "heading": "Welche wirtschaftlichen Fragen BASF beantworten müsste",
+            "paragraphs": [
+              "Ein potenzieller Erwerber müsste erklären, welche operativen Synergien durch die Verbindung zweier Chemieunternehmen entstehen könnten. Denkbar wären gemeinsame Beschaffung, Produktionsnetzwerke oder Vertriebsvorteile; diese Möglichkeiten sind hier keine bestätigten BASF-Ziele und erst recht keine gesicherten Einsparungen.",
+              "Synergien können mit Integrationskosten, kulturellen Konflikten, Desinvestitionen und Finanzierungsbedarf einhergehen. Auch eine wettbewerbsrechtliche Prüfung könnte bestimmte Geschäftsbereiche betreffen. Ohne konkrete Transaktionsunterlagen ist weder eine belastbare Synergie-Rechnung noch eine Prognose für die künftige Verschuldung oder den Gewinn je Aktie möglich."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und nächste überprüfbare Signale",
+            "paragraphs": [
+              "Die Gegenhypothese lautet, dass Evonik eigenständig mehr Wert schaffen kann als durch ein derzeit nicht konkretisiertes Übernahmevorhaben. Die Ablehnung von Verhandlungen könnte auch bedeuten, dass die vorliegenden Informationen für den Vorstand nicht überzeugend waren; die Ad-hoc-Mitteilung nennt jedoch keine detaillierte Begründung, die eine solche Interpretation belegen würde.",
+              "Entscheidend wären neue Pflichtmitteilungen, eine mögliche formelle Angebotsankündigung mit Preis und Bedingungen, die Position zuständiger Unternehmensorgane sowie Angaben zu Finanzierung und regulatorischer Genehmigung. Bis dahin bleibt der Ausgang offen. Ein Kursanstieg allein ist kein Nachweis, dass ein Erwerb tatsächlich stattfinden wird."
+            ]
+          }
+        ],
+        "conclusion": "Bestätigt ist das Übernahmeinteresse von BASF und Evoniks derzeitige Ablehnung von Verhandlungen, nicht aber ein verbindlicher Kaufvertrag. Wer den Vorgang bewertet, muss mögliche Übernahmeprämien gegen Scheiterns-, Finanzierungs- und Integrationsrisiken abwägen."
+      }
+    },
     {
       "id": "2026-11-03-schaeffler-restructuring-3460",
       "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
