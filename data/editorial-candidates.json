@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-04T06:18:00.803666Z",
+  "updated_at": "2026-11-04T14:43:33.295991Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-f14e696ca92fc57619",
+      "title": "Neuer EZB-Chef: Niederlande nominieren Ex-Zentralbanker Knot",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/knot-nominierung-ezb-100.html",
+      "published_at": "2026-11-04T14:30:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-48df61b42530d9dbd9",
+      "title": "Marktbericht: Demokraten-Sieg gibt DAX Rückenwind",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/reaktionen-midterms-102.html",
+      "published_at": "2026-11-04T13:11:29Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-4fa7f6ee28b85440c8",
+      "title": "Inflation im Euroraum steigt auf 4,0 Prozent",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html",
+      "published_at": "2026-11-04T11:12:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-dd47410b5fa8e29f69",
+      "title": "Marktbericht: DAX-Anleger reagieren gelassen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
+      "published_at": "2026-11-04T09:46:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-53911198a1768a4e81",
+      "title": "Update Wirtschaft vom 04.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1677864.html",
+      "published_at": "2026-11-04T09:29:34Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f91dfcaa4547357839",
+      "title": "BMW erwirtschaftet noch weniger Gewinn",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/bmw-gewinnwarnung-100.html",
+      "published_at": "2026-11-04T08:21:37Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-275c3c70f931403b1e",
       "title": "Airlines streichen Flüge: Verliert Deutschland den Anschluss?",
@@ -253,15 +307,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/technologie/salz-142.html",
       "published_at": "2026-10-31T16:21:31Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-2f2b140a16afaaa2b1",
-      "title": "Binance’s $6.3 billion hack raises questions about crypto wallet safety",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/10/31/binance-hack-crypto-wallet-safety.html",
-      "published_at": "2026-10-31T12:47:08Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
