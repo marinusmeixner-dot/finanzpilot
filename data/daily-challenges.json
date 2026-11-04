@@ -46,7 +46,7 @@
       "kind": "learning",
       "date": "2026-11-04",
       "title": "Anleihen: Warum der gleiche Kupon nicht den gleichen Preis bedeutet",
-      "context": "Der Lernfall verwendet ausschließlich fiktive Anleihedaten. Hintergrund zur Preis-Rendite-Beziehung: US SEC Investor.gov – Bonds or Bond Funds.",
+      "context": "Der Lernfall verwendet ausschließlich fiktive Anleihedaten. Hintergrund zur Preis-Rendite-Beziehung: undatierter SEC-Anlegerleitfaden, am 04.11.2026 als Referenz notiert; kein datierter Originalbericht.",
       "question": "Eine fiktive ausfallsichere Anleihe zahlt am Ende jedes der nächsten zwei Jahre 4 € Kupon und im zweiten Jahr zusätzlich 100 € Nennwert zurück. Berechne den heutigen Barwert bei 3 % und 6 % jährlicher Marktrendite. Begründe die inverse Kurs-Zins-Beziehung anhand der beiden Zahlungszeitpunkte. Welche Gegenhypothese könnte trotz fallender Marktrenditen einen Kursrückgang verursachen?",
       "rubric": [
         "Bei 3 % korrekt 4/1,03 + 104/1,03² ≈ 101,91 € berechnen",
@@ -56,7 +56,7 @@
       ],
       "source": "U.S. Securities and Exchange Commission – Bonds or Bond Funds",
       "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-bond-funds",
-      "source_date": "2026-11-04",
+      "source_date": "undatiert (Zugriff 2026-11-04)",
       "symbol": ""
     }
   ]
