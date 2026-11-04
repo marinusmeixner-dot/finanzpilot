@@ -1,10 +1,57 @@
 {
   "date": "2026-11-04",
-  "updated_at": "2026-11-04T15:55:00+01:00",
+  "updated_at": "2026-11-04T21:04:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Neue Eurostat-Schnellschätzung vom 4. November: Euroraum-Inflation 4,0 %, Energie 20,8 %; die bestehenden datierten Originalartikel bleiben erhalten.",
+  "intro": "BMW veröffentlicht Q3-Zahlen und senkt wegen Umbaukosten den Margenausblick; Eurostat meldete heute die Inflations-Schnellschätzung.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-04-bmw-q3-guidance-realignment",
+      "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+      "published": "2026-11-04",
+      "category": "Unternehmen",
+      "symbols": [
+        "BMW.DE"
+      ],
+      "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
+      "url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
+      "why": "BMW meldet 30,452 Mrd. Euro Umsatz, 3,4 % Automobil-EBIT-Marge und senkt wegen Strukturmaßnahmen den Jahresausblick für die berichtete Automobilmarge auf −0,5 bis +0,5 %.",
+      "impact": "Möglicher mittelfristiger Erholungskandidat bei erfolgreicher Modellumstellung, aber schwacher Cashflow und Umbaukosten begrenzen die Aussagekraft; keine belegte Unterbewertung.",
+      "article": {
+        "lead": "Die BMW AG (Börsenticker BMW.DE, Xetra) baut und verkauft Premiumautos der Marken BMW, MINI und Rolls-Royce und verdient außerdem an Leasing und Autofinanzierung. Am 4. November meldete der Münchner Hersteller sinkende Quartalsumsätze und einen deutlich gesenkten Ausblick für die berichtete Automobilmarge 2026. Für die Aktie zählen jetzt die tatsächlichen Umbaukosten, der Cashflow und die Wettbewerbsfähigkeit neuer Modelle.",
+        "sections": [
+          {
+            "heading": "Quartalszahlen: Geschäft und Gewinn getrennt lesen",
+            "paragraphs": [
+              "BMW Group verkauft unter den Marken BMW, MINI und Rolls-Royce Premiumautos und bietet über die Finanzdienstleistungssparte Finanzierung und Leasing an. Die Kunden sind private und gewerbliche Autokäufer sowie Leasingnehmer; Einnahmen entstehen durch Fahrzeuge, Finanzierungs- und Serviceleistungen. Im dritten Quartal 2026 sank der Konzernumsatz laut BMW um 5,8 % auf 30,452 Milliarden Euro, nach 32,314 Milliarden Euro im Vorjahr.",
+              "Das Ergebnis vor Steuern lag bei 2,083 Milliarden Euro und damit 10,6 % unter Vorjahr. Die Vorsteuermarge betrug 6,8 %. Diese Konzernkennzahl darf nicht mit der operativen Marge des Automobilsegments verwechselt werden, die bei 3,4 % nach 5,2 % lag."
+            ]
+          },
+          {
+            "heading": "Warum BMW den Jahresausblick gesenkt hat",
+            "paragraphs": [
+              "BMW erwartet für 2026 im Automobilsegment nun eine berichtete EBIT-Marge zwischen minus 0,5 und plus 0,5 %, statt zuvor 1 bis 3 %. EBIT bezeichnet das Ergebnis vor Zinsen und Steuern; die Segmentmarge setzt dieses Ergebnis ins Verhältnis zum Segmentumsatz. Eine niedrigere Marge bedeutet nicht automatisch, dass der gesamte Konzern einen Verlust schreibt.",
+              "Der Hersteller begründet die Änderung mit zusätzlichen Portfolio- und Strukturmaßnahmen, deren Ergebnisbelastung vor allem im vierten Quartal anfällt. Vor diesen Maßnahmen erwartet BMW für das Gesamtjahr weiterhin eine operative Automobilmarge von mehr als 2 %. Die Differenz ist wichtig: Einmalige Umbaukosten und dauerhafte Ertragskraft sind getrennt zu beurteilen."
+            ]
+          },
+          {
+            "heading": "Absatz, Elektromobilität und Cashflow",
+            "paragraphs": [
+              "BMW lieferte im Quartal 551.075 Automobile aus, 6,3 % weniger als ein Jahr zuvor. Der Anteil rein elektrischer Autos an den Auslieferungen lag bei 20 %. Der Absatzrückgang und der Druck auf die operative Marge sind Risiken; der Elektroanteil zeigt zugleich eine mögliche Wachstumsrichtung, ohne bereits eine profitable Trendwende zu beweisen.",
+              "Der freie Cashflow des Automobilsegments betrug im Quartal minus 566 Millionen Euro, nach plus 343 Millionen Euro im Vorjahresquartal. Über neun Monate lag er bei plus 724 Millionen Euro, nach 2,688 Milliarden Euro im Vorjahr. BMW hält dennoch an der Erwartung von mehr als 2,5 Milliarden Euro für das Gesamtjahr fest. Quartals- und Neunmonatswerte dürfen nicht addiert werden."
+            ]
+          },
+          {
+            "heading": "Aktienidee: Was Anleger jetzt prüfen sollten",
+            "paragraphs": [
+              "BMW ist als Beobachtung interessant, weil die laufende Modellumstellung und die erwartete operative Marge vor Umbaukosten einen möglichen Erholungspfad darstellen. Für eine belastbare These müssen aber die tatsächlichen Kosten der Maßnahmen, die Entwicklung in China, die Profitabilität neuer Elektroautos und der Cashflow im vierten Quartal geprüft werden. Der Zeithorizont reicht mindestens bis zum Jahresabschluss 2026 und den folgenden Modellanläufen.",
+              "Die Gegenhypothese ist, dass der Wettbewerbsdruck und die Umbaukosten länger anhalten und die erwartete Cashflow-Erholung ausbleibt. Ohne verifizierten aktuellen Aktienkurs, Aktienzahl und vergleichbare Gewinn-/Cashflow-Basis lässt sich hier weder ein fairer Wert noch eine Unterbewertung behaupten. Das ist eine Beobachtung, keine Feststellung, dass die Aktie günstig sei, und keine Kaufempfehlung."
+            ]
+          }
+        ],
+        "conclusion": "BMW ist wegen Modellwechsel und möglicher operativer Erholung eine prüfenswerte Beobachtung, aber noch keine nachgewiesen günstige Aktie. Die gesenkte berichtete Jahresmarge, rückläufige Auslieferungen und schwächere Cashflows sind gewichtige Gegenargumente. Primärquelle: BMW Group, 4. November 2026; Bewertungs- und Kursdaten wurden nicht verifiziert."
+      }
+    },
     {
       "id": "2026-11-04-eurostat-eurozone-inflation-october-flash",
       "title": "Eurozone-Inflation steigt auf 4,0 %: Warum der Energieschub nicht mit Kerninflation gleichzusetzen ist",
