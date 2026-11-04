@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
-  "date": "2026-11-03",
-  "updated_at": "2026-11-03T21:04:00.000Z",
-  "editor_note": "StromVKG-Lernfall mit Kapazitäts-/Energie-Unterscheidung und Rechenaufgabe ergänzt; vorhandene Fälle unverändert.",
+  "date": "2026-11-04",
+  "updated_at": "2026-11-04T03:57:00.000Z",
+  "editor_note": "Neuer quellengeprüfter Lernfall zu Evonik/BASF und Übernahmeprämien; bisherige Fälle unverändert.",
   "cases": [
     {
       "id": "2026-11-03-bayer-q3-non-gaap-and-fcf",
@@ -273,6 +273,60 @@
         "Originalbekanntgabe und konkrete Projekt- beziehungsweise Vertragsdaten als Prüfgrundlage nennen"
       ],
       "sample": "Ein Zuschlag kann künftige Kapazitätserlöse absichern, aber die Anlagen müssen zunächst errichtet und betriebsbereit werden. Für 100 MW reduzierte Leistung wären 155.296 EUR/MW/Jahr rechnerisch rund 15,53 Mio. EUR pro Jahr, nicht Gewinn. Hohe Baukosten, Zinsen, Betriebskosten oder Verzögerungen könnten den Barwert stark senken. Ich würde den individuellen Zuschlagswert, die reduzierte Leistung und den Projektstatus prüfen."
+    },
+    {
+      "id": "2026-11-04-evonik-basf-interest-vs-binding-offer",
+      "title": "Evonik und BASF: Warum eine Interessenbekundung keine sichere Übernahmeprämie ist",
+      "goal": "Übernahmeinteresse, formelles Angebot, Prämienrechnung und Scheiternsrisiko voneinander trennen",
+      "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
+      "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+      "published": "30.10.2026",
+      "facts": "Evonik bestätigte am 30. Oktober ein Schreiben der BASF SE vom 22. Oktober 2026 mit Interesse an einem freiwilligen öffentlichen Übernahmeangebot. Der Evonik-Vorstand lehnte auf Basis der vorliegenden Informationen Verhandlungen ab, bot jedoch einen rein informativen vertraulichen Austausch an. Die Mitteilung nennt keinen Angebotspreis.",
+      "context": "Ein unverbindliches Interesse ist weder ein veröffentlichtes Angebot noch ein Kaufvertrag. Eine Übernahmeprämie lässt sich erst auf Basis eines tatsächlich genannten Preises und eines klar definierten unbeeinflussten Referenzkurses berechnen. Auch dann bleibt die Durchführung von Bedingungen abhängig.",
+      "caveat": "Hypothetische Kurse und Preise in den Aufgaben sind ausdrücklich keine beobachteten Börsendaten und keine BASF-Offerte. Aus der Gesprächsbereitschaft darf keine Annahme des Vorstands abgeleitet werden.",
+      "questions": [
+        {
+          "question": "Welche Aussage ist durch Evoniks Ad-hoc-Mitteilung tatsächlich belegt?",
+          "options": [
+            "BASF hat bereits einen verbindlichen Angebotspreis veröffentlicht.",
+            "Evonik hat die Übernahme zugestimmt.",
+            "BASF hat Interesse bekundet, Evonik lehnt Verhandlungen ab und lässt einen informativen Austausch zu.",
+            "Die Kartellbehörden haben den Zusammenschluss bereits genehmigt."
+          ],
+          "correct": 2,
+          "explanation": "Die Meldung vom 30.10. bestätigt das BASF-Schreiben vom 22.10., die Ablehnung von Verhandlungen und die Bereitschaft zu einem vertraulichen informativen Austausch. Ein Angebotspreis oder Vollzug ist nicht genannt."
+        },
+        {
+          "question": "Nur als Rechenbeispiel: Ein unbeeinflusster Aktienkurs beträgt 20 €, ein später tatsächlich angebotenes Barangebot 25 €. Wie hoch wäre die Prämie relativ zum unbeeinflussten Kurs?",
+          "options": [
+            "5 %",
+            "20 %",
+            "25 %",
+            "125 %"
+          ],
+          "correct": 2,
+          "explanation": "(25 € − 20 €) / 20 € × 100 = 25 %. Die beiden Preise sind frei erfundene Lernwerte, keine Evonik-Kurse und kein BASF-Angebot. Die Bezugsbasis muss vor der Rechnung definiert sein."
+        },
+        {
+          "question": "Welches Szenario spricht am stärksten gegen die Annahme, ein kursgetriebener Übernahmegewinn sei sicher?",
+          "options": [
+            "Ein öffentliches Interesse wird nie zurückgezogen.",
+            "Der Vorstand lehnt Verhandlungen ab und es kommt möglicherweise nie zu einem verbindlichen Angebot.",
+            "Eine Prämie ist mathematisch immer identisch mit einer Aktienrendite.",
+            "Die Börse kann einen Kaufpreis vorwegnehmen, der bereits garantiert ist."
+          ],
+          "correct": 1,
+          "explanation": "Die Ablehnung von Verhandlungen ist bestätigt; der spätere Ablauf bleibt offen. Ohne bindende Konditionen und erfolgreiche Durchführung ist eine mögliche Prämie spekulativ, und ein Rückfall des Kurses ist denkbar."
+        }
+      ],
+      "reflectionPrompt": "Ein Anleger behauptet: 'BASF will Evonik kaufen, deshalb ist die Übernahmeprämie praktisch sicher.' Widerlege oder stütze die These mit einer klaren Trennung zwischen bestätigten Fakten, mindestens zwei denkbaren positiven Entwicklungen und mindestens drei Gegenrisiken. Beschreibe, welche konkreten Dokumente du vor einer Bewertung prüfen würdest.",
+      "rubric": [
+        "Schreiben vom 22.10. und Evonik-Mitteilung vom 30.10. korrekt wiedergeben",
+        "Interesse, Verhandlung, formelles Angebot und Vollzug rechtlich und wirtschaftlich trennen",
+        "Übernahmeprämie nur mit definiertem Referenzkurs und hypothetische Zahlen als solche ausweisen",
+        "Scheitern, Finanzierung, Wettbewerb und Integrationsrisiken mit überprüfbaren Folgesignalen abwägen"
+      ],
+      "sample": "Evonik bestätigt ein BASF-Interessenschreiben, aber keinen verbindlichen Angebotspreis. Der Vorstand lehnt Verhandlungen ab und bietet lediglich einen vertraulichen Informationsaustausch an. Eine Prämie ist daher nicht gesichert. Ein späteres formelles Angebot könnte einen Aufschlag enthalten; ebenso könnte BASF das Interesse verlieren oder die Transaktion an Finanzierung, Gremien oder Behörden scheitern. Ich würde zuerst neue Ad-hoc-Mitteilungen, eine formelle Angebotsunterlage und deren Bedingungen prüfen."
     }
   ]
 }
