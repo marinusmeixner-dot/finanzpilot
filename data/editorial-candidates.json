@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-04T14:43:33.295991Z",
+  "updated_at": "2026-11-04T21:52:11.586597Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-c956b7a44ae64daa4c",
+      "title": "Wirtschaft vor acht vom 04.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1678250.html",
+      "published_at": "2026-11-04T18:58:13Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-32d2a66c31cb7aabfd",
+      "title": "Deutsche verbrauchen 2026 weniger Energie - das hat einen Grund",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/energie/energiebilanz-heizoel-100.html",
+      "published_at": "2026-11-04T16:05:31Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-f14e696ca92fc57619",
       "title": "Neuer EZB-Chef: Niederlande nominieren Ex-Zentralbanker Knot",
@@ -298,15 +316,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
       "published_at": "2026-11-01T08:00:49Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7b9037600d465ab6ca",
-      "title": "Was Salz aus 1.000 Metern Tiefe so wertvoll macht",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/salz-142.html",
-      "published_at": "2026-10-31T16:21:31Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
