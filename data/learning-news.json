@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
   "date": "2026-11-04",
-  "updated_at": "2026-11-04T03:57:00.000Z",
-  "editor_note": "Neuer quellengeprüfter Lernfall zu Evonik/BASF und Übernahmeprämien; bisherige Fälle unverändert.",
+  "updated_at": "2026-11-04T04:59:00.000Z",
+  "editor_note": "Neuer quellengeprüfter Lernfall zur bedingten EU-Genehmigung JD.com/Ceconomy; alle bisherigen Fälle erhalten.",
   "cases": [
+    {
+      "id": "2026-11-04-jd-ceconomy-foreign-subsidies-commitments",
+      "title": "JD.com und Ceconomy: Warum eine EU-Genehmigung mit Auflagen kein Freifahrtschein ist",
+      "goal": "Bedingte Genehmigung, drittstaatliche Subventionen, Marktpreisprinzip und Transaktionsrisiken unterscheiden",
+      "source": "Europäische Kommission – Genehmigung der Ceconomy-Übernahme unter Bedingungen vom 3. November 2026",
+      "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
+      "published": "03.11.2026",
+      "facts": "Die Europäische Kommission genehmigte am 3. November 2026 die Übernahme von Ceconomy durch JD.com unter der Voraussetzung vollständiger Umsetzung von Verpflichtungszusagen. Sie identifizierte chinesische Vorzugsfinanzierungen, Steueranreize und Zuschüsse als potenziell wettbewerbsverzerrend. Die Zusagen betreffen marktübliche gruppeninterne Transaktionen und diskriminierungsfreien Zugang Dritter zu Logistik- und Technologiedienstleistungen; sie gelten zehn Jahre und werden von einem unabhängigen Treuhänder überwacht.",
+      "context": "Die Kommission prüfte nach der EU-Verordnung über drittstaatliche Subventionen, ob finanzielle Vorteile aus einem Drittstaat den Binnenmarkt verzerren können. Eine bedingte Freigabe ist eine regulatorische Entscheidung, kein Beleg für einen vollzogenen Eigentumsübergang, höhere Gewinne oder eine sichere Rendite.",
+      "caveat": "Die Entscheidung allein belegt weder den tatsächlichen Vollzug noch die zukünftige Entwicklung von Margen, Aktienkursen oder Endkundenpreisen. Die Veröffentlichung nennt keine verlässliche Prognose über die Gewinnwirkung der Zusagen.",
+      "questions": [
+        {
+          "question": "Welche Schlussfolgerung entspricht dem Beschluss der EU-Kommission vom 3. November?",
+          "options": [
+            "Die Übernahme ist ohne weitere Bedingungen abgeschlossen.",
+            "Die EU genehmigt unter Auflagen; die zugesagten Maßnahmen müssen vollständig umgesetzt werden.",
+            "Die EU untersagt JD.com sämtliche Logistikaktivitäten in Europa.",
+            "Die Kommission garantiert sinkende Elektronikpreise."
+          ],
+          "correct": 1,
+          "explanation": "Die Genehmigung ist ausdrücklich an die vollständige Umsetzung von Verpflichtungen gebunden. Aus der regulatorischen Freigabe folgt weder ein bestätigter Vollzug noch ein garantierter Preiseffekt."
+        },
+        {
+          "question": "Welche Regel soll das Risiko einer Quersubventionierung von Ceconomy besonders direkt begrenzen?",
+          "options": [
+            "JD.com darf Ceconomy dauerhaft kostenlos finanzieren.",
+            "Gruppeninterne Finanzierungen und Geschäfte müssen zu Marktbedingungen erfolgen.",
+            "Ceconomy darf nur noch in China verkaufen.",
+            "Alle Wettbewerber müssen die gleichen Aktienkurse haben."
+          ],
+          "correct": 1,
+          "explanation": "Marktübliche Konditionen sollen verhindern, dass Ceconomy durch bevorzugte gruppeninterne Finanzierung einen künstlichen Vorteil erhält. Ergänzend sollen Logistik und Technologie Dritten zu gleichen Bedingungen offenstehen."
+        },
+        {
+          "question": "Welche Aussage zur Zehnjahresfrist ist fachlich richtig?",
+          "options": [
+            "Die Zusagen laufen zehn Jahre und werden durch einen unabhängigen Treuhänder überwacht.",
+            "Die EU garantiert zehn Jahre lang den Umsatz von Ceconomy.",
+            "Der Übernahmepreis wird zehn Jahre eingefroren.",
+            "Die Prüfung verbietet zehn Jahre lang sämtliche Fusionen im Elektronikhandel."
+          ],
+          "correct": 0,
+          "explanation": "Die Kommission nennt zehn Jahre Geltungsdauer und die Überwachung durch einen unabhängigen Treuhänder unter ihrer Aufsicht. Umsatz, Preise oder künftige Akquisitionen werden dadurch nicht garantiert."
+        }
+      ],
+      "reflectionPrompt": "Ein Investor behauptet: 'Die EU hat die JD.com-Übernahme von Ceconomy genehmigt, also werden MediaMarkt und Saturn automatisch günstiger und profitabler.' Prüfe die Behauptung anhand der Entscheidung vom 03.11.2026. Nenne mindestens zwei mögliche wirtschaftliche Chancen, drei Gegenhypothesen und die Daten, mit denen du die tatsächliche Wirkung nach dem Vollzug messen würdest.",
+      "rubric": [
+        "Bedingte Genehmigung von tatsächlichem Transaktionsvollzug unterscheiden",
+        "Drittstaatliche Subventionen und Marktbedingungen korrekt erklären",
+        "Zehnjährige Zusagen, Zugang Dritter und Treuhänderaufsicht nennen",
+        "Preis-, Margen- und Wettbewerbswirkungen als offene Hypothesen behandeln"
+      ],
+      "sample": "Die EU-Kommission hat die Übernahme nur unter verbindlichen Zusagen genehmigt. Marktübliche gruppeninterne Finanzierung sowie gleicher Zugang Dritter zu Logistik und Technologie sollen Wettbewerbsverzerrungen verhindern. Effizientere Logistik und bessere Technologie könnten Ceconomy helfen; zugleich können Compliance-Kosten, starker Preiswettbewerb und Integrationsprobleme die Marge belasten. Ob Verbraucherpreise fallen, müsste man anhand vergleichbarer Warenkörbe, Margen, Lieferzeiten und Marktanteile über mehrere Quartale prüfen. Die Genehmigung allein bestätigt weder den Vollzug noch einen Gewinnanstieg."
+    },
     {
       "id": "2026-11-03-bayer-q3-non-gaap-and-fcf",
       "title": "Bayer Q3: Warum bereinigtes EBITDA und Cashflow nicht austauschbar sind",
