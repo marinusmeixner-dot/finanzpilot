@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated": "2026-11-03",
+  "updated": "2026-11-04",
   "policy": "Source-validated case variations; optional review only; no server-graded rewards or pre-publication answers changed.",
   "variants": [
     {
@@ -411,6 +411,41 @@
         "Ask 25,06 €.",
         "Bid 24,90 €.",
         "Ask − Bid = 0,16 €."
+      ]
+    },
+    {
+      "id": "v77-2026-11-04-cashflow-einfach-rechnungsziel-transfer",
+      "lesson_id": "cashflow-einfach",
+      "type": "mcq",
+      "prompt": "Ein Händler liefert im November Ware für 40.000 € auf Rechnung (Zahlungsziel Januar). Die Ware kostete 25.000 € und wurde bereits im Oktober bezahlt. Welche Aussage ist für November am besten begründet, wenn keine weiteren Buchungen vorliegen?",
+      "options": [
+        "Der November-Umsatz von 40.000 € bedeutet automatisch 40.000 € operativen Zahlungsmittelzufluss.",
+        "Die Lieferung kann im November 40.000 € Umsatz und 15.000 € Bruttoergebnis auslösen, ohne dass die 40.000 € schon auf dem Bankkonto sind.",
+        "Der im Oktober bezahlte Wareneinsatz darf erst im Januar als Zahlungsmittelabfluss erfasst werden.",
+        "Der November-Free-Cashflow beträgt zwingend 15.000 €."
+      ],
+      "correct": 1,
+      "explanation": "Bei periodengerechter Erfassung fallen Umsatz und Forderung im November an; der Zahlungseingang wird erst bei Begleichung der Forderung erfasst. Bruttoergebnis = 40.000 € minus 25.000 € Wareneinsatz = 15.000 €. Der tatsächliche November-Cashflow hängt von Zahlungszeitpunkten und weiteren Zahlungen ab. Die 25.000 € wurden bereits im Oktober bezahlt.",
+      "diagnosis": [
+        "Die Forderung ist noch kein Zahlungseingang.",
+        "",
+        "Ein bereits im Oktober erfolgter Zahlungsmittelabfluss wird nicht in den Januar verschoben.",
+        "Bruttoergebnis ist weder operativer Cashflow noch Free Cashflow."
+      ]
+    },
+    {
+      "id": "v77-2026-11-04-realrendite-zwei-jahre-numeric",
+      "lesson_id": "realrendite-kaufkraft-1",
+      "type": "numeric",
+      "prompt": "Ein hypothetisches Guthaben steigt in einem Jahr nominal um 8 %, während das allgemeine Preisniveau im selben Jahr um 5 % steigt. Wie hoch ist die exakte reale Rendite in Prozent (auf zwei Nachkommastellen)?",
+      "answer": 2.86,
+      "unit": "%",
+      "tolerance": 0.01,
+      "explanation": "Reale Rendite = (1 + 0,08) / (1 + 0,05) − 1 = 0,028571… = rund 2,86 %. Die bloße Differenz 8 % − 5 % = 3 Prozentpunkte ist nur eine Näherung; die nominale Wachstumsrate muss durch den Preisindexfaktor dividiert werden.",
+      "steps": [
+        "Nominalen Wachstumsfaktor 1,08 und Preisfaktor 1,05 bilden.",
+        "1,08 ÷ 1,05 = 1,028571… berechnen.",
+        "1 abziehen, mit 100 multiplizieren und auf 2,86 % runden."
       ]
     }
   ]
