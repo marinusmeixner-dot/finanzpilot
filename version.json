@@ -1,5 +1,5 @@
 {
-  "version": 88,
-  "release": "2026-11-05-v88",
-  "notes": "Offener, automatisch aktualisierter Aktienradar mit 54+ Unternehmen: neue veröffentlichte Firmen werden für die tägliche Kurshistorie einbezogen, Raw-Schlusskurse für bestehende Fundamentaldossiers separat nachgezogen. Aktualitätsgewichtete, quellendatierte Investmentanlässe statt alter Nachrichten; Research- und ETF-Vergleiche sowie unveränderliche Thesenhistorie bleiben. QS vor jedem Datencommit, keine feste Neunergrenze."
+  "version": 89,
+  "release": "2026-11-05-v89",
+  "notes": "Dynamischer Aktienradar (mindestens 54 Unternehmen) mit quellengestützter Research-Warteschlange, aktuellen Unternehmensanlässen, drei konkreten nächsten Prüfschritten, ETFs/Peers, begründeter Investmentprüfung und langfristigem Thesen-/Benchmark-Vergleich. Technische Signale sind nicht Kaufempfehlungen. Stündlicher Rechercheprozess und tägliche Kurshistorien-Aktualisierung bleiben getrennt von redaktionell bestätigten Meldungen."
 }
