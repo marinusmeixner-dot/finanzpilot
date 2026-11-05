@@ -308,6 +308,46 @@
         "source_kind": "secondary_market_data_provider",
         "caution": "Finanzverbindlichkeiten beinhalten ggf. Lease-/Financial-Services-Finanzierung. Nicht ohne Segment-Brücke als einfache EV-Nettoschulden verwenden; Free Cashflow nahe null."
       }
+    },
+    {
+      "id": "apple",
+      "ticker": "AAPL",
+      "name": "Apple",
+      "quote": {
+        "close": 349.51,
+        "exchange": "NASDAQ",
+        "currency": "USD",
+        "price_type": "regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://investor.apple.com/stock-price/"
+      },
+      "fundamentals": {
+        "shares_m": 14532.182,
+        "shares_basis": "14.532,182 Mio. tatsächlich ausstehende Aktien am 23.10.2026. Das verwässerte 2026-Jahresmittel von 14.720,306 Mio. gehört nur in die Ergebnis-je-Aktie-/DCF-Brücke.",
+        "eps_ttm": 8.98,
+        "cash_m": 136935,
+        "debt_m": 80111,
+        "operating_cf_m": 145097,
+        "capex_m": 9041,
+        "free_cf_m": 136056,
+        "ttm_end": "2026-09-26",
+        "observed_date": "2026-11-05",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+        "source_kind": "primary_issuer_10k",
+        "primary_verified_fields": [
+          "shares_m",
+          "eps_ttm",
+          "cash_m",
+          "debt_m",
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "primary_ttm_sources": [
+          "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm"
+        ],
+        "caution": "Barmittel umfassen auch kurz- und langfristige Wertpapiere (36.305+20.417+80.213 Mio USD), Schulden Commercial Paper + aktuelle und langfristige Term Debt (1.997+9.906+68.208 Mio USD). Lease-Liabilities, nicht-operatives Cash und sonstige Verpflichtungen sind noch nicht zur auditierten Eigenkapital-Brücke abgestimmt. Ausgewiesener FCF spiegelt ein Jahr wider, langfristiges Wachstum und SBC nicht abgesichert. Der Schlusskurs ist vom 04.11.2026 und nicht live."
+      }
     }
   ]
 }
