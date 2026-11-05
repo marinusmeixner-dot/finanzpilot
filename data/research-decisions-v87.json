@@ -4,15 +4,118 @@
   "purpose": "Dynamische, nicht auf neun Aktien begrenzte Prüf- und Vergleichsschicht zwischen öffentlichem Radar und belastbarem Unternehmensresearch.",
   "policy": "Technische Research-Priorität != faire Bewertung. Sekundärpreise und Cashflows sind als solche beschriftet; ohne normalisierte Cashflows, vollständige Equity-Bridge und Quellen-Prüfung kein Buy, Sell, überbewertet oder unterbewertet.",
   "status_counts": {
-    "source_based_watch": 4,
+    "source_based_watch": 5,
     "financial_data_review": 2,
-    "financial_audit_pending": 4,
+    "financial_audit_pending": 3,
     "editorial_screen": 10,
     "technical_screen": 34,
     "archived": 0
   },
   "benchmark_method": "Nur identische Notierungswährung und gleiches 63-Handelstage-Fenster. ETF-Rendite ist historische Opportunitätskosteninformation, keine Prognose und kein Risikomatch.",
   "rows": [
+    {
+      "id": "profile-evk-de",
+      "ticker": "EVK.DE",
+      "company": "Evonik Industries AG",
+      "sector": "Spezialchemie",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "A_research_first",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+        "date": "2026-10-30",
+        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": 17.72
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": 18.76
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-04",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
     {
       "id": "apple",
       "ticker": "AAPL",
@@ -21,11 +124,11 @@
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "A_research_first",
-      "research_stage": "financial_audit_pending",
-      "decision": "Analystenthese vorhanden. Vollständiger Primärdatenabgleich und belastbarer fairer Wert stehen noch aus.",
+      "research_stage": "source_based_watch",
+      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
       "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
       "evidence_readiness": {
-        "value": 45,
+        "value": 100,
         "max": 100,
         "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
         "criteria": [
@@ -46,17 +149,17 @@
           },
           {
             "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
+            "ready": true,
             "points": 25
           },
           {
             "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
+            "ready": true,
             "points": 15
           },
           {
             "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
+            "ready": true,
             "points": 15
           }
         ]
@@ -67,21 +170,48 @@
       "why_now": "Apple meldet 114,5 Milliarden Dollar Quartalsumsatz – Zollerstattungen beeinflussen die Marge",
       "what_would_confirm": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
       "what_would_invalidate": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
+      "financials": {
+        "price": 349.51,
+        "price_date": "2026-11-04",
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "market_cap_m": 5079142.93,
+        "ttm_pe": 38.92,
+        "ttm_fcf_yield_pct": 2.68,
+        "ttm_fcf_m": 136056.0,
+        "eps_ttm": 8.98,
+        "fundamental_observed_date": "2026-11-05",
+        "source_price": "https://investor.apple.com/stock-price/",
+        "source_fundamentals": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+        "primary_verified_fields": [
+          "shares_m",
+          "eps_ttm",
+          "cash_m",
+          "debt_m",
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "cash_flow_method_warning": "Barmittel umfassen auch kurz- und langfristige Wertpapiere (36.305+20.417+80.213 Mio USD), Schulden Commercial Paper + aktuelle und langfristige Term Debt (1.997+9.906+68.208 Mio USD). Lease-Liabilities, nicht-operatives Cash und sonstige Verpflichtungen sind noch nicht zur auditierten Eigenkapital-Brücke abgestimmt. Ausgewiesener FCF spiegelt ein Jahr wider, langfristiges Wachstum und SBC nicht abgesichert. Der Schlusskurs ist vom 04.11.2026 und nicht live.",
+        "date_alignment_warning": true
+      },
+      "primary_financial_status": "primary_ttm_reconciled",
+      "valuation_status": "audited_cashflow_no_fair_value",
       "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
+        "Nachhaltige FCF-Basis inklusive Wiederanlagebedarf, SBC und Produktzyklen normalisieren",
+        "Bei KGV-/DCF-Analysen Q4-Zollerstattungseffekte und künftige Steuern prüfen",
+        "Aktuelle Aktienzahl, Wandel-/Leasingverbindlichkeiten und langfristige Wertpapiere vollständig mit Marktwert überleiten",
+        "Eigenkapitalkosten, Szenarien, Peer-Multiples und Sicherheitsmarge unabhängig herleiten"
       ],
       "editorial_source": {
         "title": "Apple meldet 114,5 Milliarden Dollar Quartalsumsatz – Zollerstattungen beeinflussen die Marge",
         "date": "2026-11-02",
         "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
       },
-      "primary_source_urls": [],
+      "primary_source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+        "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+      ],
       "original_idea_source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
       "comparison_family": null,
       "peer_valuations": [],
@@ -490,6 +620,109 @@
           "currency": "EUR",
           "return_63d_pct": -0.16,
           "excess_return_pp": 9.05
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-04",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "profile-eoan-de",
+      "ticker": "EOAN.DE",
+      "company": "E.ON SE",
+      "sector": "Energienetze und Kundenlösungen",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "A_research_first",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+        "date": "2026-11-01",
+        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": -1.64
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": -0.6
         }
       ],
       "relative_performance": {
@@ -2594,6 +2827,109 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
+      "id": "profile-rwe-de",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "sector": "Energieversorgung",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+        "date": "2026-11-01",
+        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": 1.04
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": 2.08
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-04",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
       "id": "crowdstrike",
       "ticker": "CRWD",
       "company": "CrowdStrike",
@@ -2792,6 +3128,117 @@
           "currency": "USD",
           "return_63d_pct": -3.08,
           "excess_return_pp": 13.2
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-04",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "profile-jd",
+      "ticker": "JD",
+      "company": "JD.com Inc.",
+      "sector": "Onlinehandel und Logistik",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+        "date": "2026-11-03",
+        "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -1.01,
+          "excess_return_pp": -14.47
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": 0.02,
+          "excess_return_pp": -15.5
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -3.08,
+          "excess_return_pp": -12.4
         }
       ],
       "relative_performance": {
@@ -3744,6 +4191,109 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
+      "id": "profile-sha0-de",
+      "ticker": "SHA0.DE",
+      "company": "Schaeffler AG",
+      "sector": "Industrie- und Automobilzulieferer",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+        "date": "2026-11-03",
+        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": -21.47
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": -20.43
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-04",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
       "id": "telekom",
       "ticker": "DTE.DE",
       "company": "Deutsche Telekom",
@@ -4012,6 +4562,109 @@
       },
       "radar_asof": "2026-11-04",
       "next_review": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "profile-enr-de",
+      "ticker": "ENR.DE",
+      "company": "Siemens Energy AG",
+      "sector": "Energietechnik",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
+        "date": "2026-11-01",
+        "url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": -23.08
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": -22.04
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-04",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
@@ -5401,474 +6054,6 @@
       },
       "primary_source_urls": [],
       "original_idea_source": "https://www.eqs-news.com/company/baywa-ag/news/5b74ed9f-ea7c-11e8-902f-2c44fd856d8c",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-04",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "profile-eoan-de",
-      "ticker": "EOAN.DE",
-      "company": "E.ON SE",
-      "sector": "Energienetze und Kundenlösungen",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-        "date": "2026-11-01",
-        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-04",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "profile-evk-de",
-      "ticker": "EVK.DE",
-      "company": "Evonik Industries AG",
-      "sector": "Spezialchemie",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-        "date": "2026-10-30",
-        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-04",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "profile-jd",
-      "ticker": "JD",
-      "company": "JD.com Inc.",
-      "sector": "Onlinehandel und Logistik",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
-        "date": "2026-11-03",
-        "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-04",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "profile-rwe-de",
-      "ticker": "RWE.DE",
-      "company": "RWE AG",
-      "sector": "Energieversorgung",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-        "date": "2026-11-01",
-        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-04",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "profile-sha0-de",
-      "ticker": "SHA0.DE",
-      "company": "Schaeffler AG",
-      "sector": "Industrie- und Automobilzulieferer",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
-        "date": "2026-11-03",
-        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-04",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "profile-enr-de",
-      "ticker": "ENR.DE",
-      "company": "Siemens Energy AG",
-      "sector": "Energietechnik",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
-        "date": "2026-11-01",
-        "url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
       "comparison_family": null,
       "peer_valuations": [],
       "etf_alternatives": [],

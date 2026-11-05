@@ -5,22 +5,22 @@
   "methodology": "Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und geprüfter redaktioneller Ereigniszuordnung. A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
   "total_issuers": 54,
-  "with_price_history": 47,
-  "research_priority_count": 4,
-  "missing_quote_count": 7,
+  "with_price_history": 53,
+  "research_priority_count": 6,
+  "missing_quote_count": 1,
   "front_page_candidate_ids": [
+    "profile-evk-de",
     "apple",
     "microsoft",
     "basf",
     "bayer",
+    "profile-eoan-de",
     "munichre",
     "visa",
     "mastercard",
     "walmart",
     "sap",
-    "costco",
-    "lilly",
-    "tesla"
+    "costco"
   ],
   "benchmark_universe": [
     {
@@ -85,6 +85,83 @@
     }
   ],
   "candidates": [
+    {
+      "id": "profile-evk-de",
+      "ticker": "EVK.DE",
+      "company": "Evonik Industries AG",
+      "sector": "Spezialchemie",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "A_research_first",
+      "technical_research_score": 88,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-04",
+        "sessions": 253,
+        "adjusted_close": 21.36,
+        "return_21d_pct": 2.79,
+        "return_63d_pct": 18.6,
+        "return_126d_pct": 29.57,
+        "benchmark_63d_pct": 0.88,
+        "relative_63d_pp": 17.72,
+        "ma50": 19.752,
+        "ma200": 16.7157,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -0.28,
+        "volatility_21d_annualized_pct": 19.2,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
+        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+        "date": "2026-10-30",
+        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "unverified_discovery_hint": {
+        "id": "rss-6ba6e11ca74806cca7",
+        "date": "2026-11-03",
+        "status": "unverified_headline_only"
+      },
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": 17.72,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": 18.76,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
     {
       "id": "apple",
       "ticker": "AAPL",
@@ -387,6 +464,79 @@
           "currency": "EUR",
           "return_63d_pct": -0.16,
           "excess_return_pp": 9.05,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "profile-eoan-de",
+      "ticker": "EOAN.DE",
+      "company": "E.ON SE",
+      "sector": "Energienetze und Kundenlösungen",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "A_research_first",
+      "technical_research_score": 72,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-04",
+        "sessions": 253,
+        "adjusted_close": 18.88,
+        "return_21d_pct": 10.18,
+        "return_63d_pct": -0.76,
+        "return_126d_pct": 4.25,
+        "benchmark_63d_pct": 0.88,
+        "relative_63d_pp": -1.64,
+        "ma50": 17.6558,
+        "ma200": 18.1884,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -4.18,
+        "volatility_21d_annualized_pct": 19.5,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "gas-storage-winter-2026",
+        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+        "date": "2026-11-01",
+        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": -1.64,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": -0.6,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -1796,6 +1946,79 @@
       }
     },
     {
+      "id": "profile-rwe-de",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "sector": "Energieversorgung",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "B_watchlist",
+      "technical_research_score": 52,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-04",
+        "sessions": 253,
+        "adjusted_close": 57.3,
+        "return_21d_pct": -1.85,
+        "return_63d_pct": 1.92,
+        "return_126d_pct": -1.58,
+        "benchmark_63d_pct": 0.88,
+        "relative_63d_pp": 1.04,
+        "ma50": 58.5352,
+        "ma200": 56.4664,
+        "above_ma50": false,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -5.73,
+        "volatility_21d_annualized_pct": 26.5,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "gas-storage-winter-2026",
+        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+        "date": "2026-11-01",
+        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": 1.04,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": 2.08,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "crowdstrike",
       "ticker": "CRWD",
       "company": "CrowdStrike",
@@ -1929,6 +2152,88 @@
           "currency": "USD",
           "return_63d_pct": -3.08,
           "excess_return_pp": 13.2,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
+      "id": "profile-jd",
+      "ticker": "JD",
+      "company": "JD.com Inc.",
+      "sector": "Onlinehandel und Logistik",
+      "country": "US",
+      "currency": "USD",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 42,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-04",
+        "sessions": 251,
+        "adjusted_close": 27.73,
+        "return_21d_pct": 4.64,
+        "return_63d_pct": -15.48,
+        "return_126d_pct": -9.64,
+        "benchmark_63d_pct": -1.01,
+        "relative_63d_pp": -14.47,
+        "ma50": 26.8726,
+        "ma200": 28.2988,
+        "above_ma50": true,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -17.89,
+        "volatility_21d_annualized_pct": 25.1,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-03-eu-jd-ceconomy-conditional-clearance",
+        "title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+        "date": "2026-11-03",
+        "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
+        "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -1.01,
+          "excess_return_pp": -14.47,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": 0.02,
+          "excess_return_pp": -15.5,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -3.08,
+          "excess_return_pp": -12.4,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -2544,6 +2849,83 @@
       }
     },
     {
+      "id": "profile-sha0-de",
+      "ticker": "SHA0.DE",
+      "company": "Schaeffler AG",
+      "sector": "Industrie- und Automobilzulieferer",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 14,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-04",
+        "sessions": 253,
+        "adjusted_close": 5.67,
+        "return_21d_pct": -10.85,
+        "return_63d_pct": -20.59,
+        "return_126d_pct": -38.3,
+        "benchmark_63d_pct": 0.88,
+        "relative_63d_pp": -21.47,
+        "ma50": 6.4714,
+        "ma200": 8.0341,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -50.56,
+        "volatility_21d_annualized_pct": 45.6,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-03-schaeffler-restructuring-3460",
+        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+        "date": "2026-11-03",
+        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
+        "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "unverified_discovery_hint": {
+        "id": "rss-f52dff25f896947aeb",
+        "date": "2026-11-03",
+        "status": "unverified_headline_only"
+      },
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": -21.47,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": -20.43,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "telekom",
       "ticker": "DTE.DE",
       "company": "Deutsche Telekom",
@@ -2693,6 +3075,79 @@
         "relative_to_benchmark_pp": 0.0,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
+      "id": "profile-enr-de",
+      "ticker": "ENR.DE",
+      "company": "Siemens Energy AG",
+      "sector": "Energietechnik",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 10,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-04",
+        "sessions": 253,
+        "adjusted_close": 119.46,
+        "return_21d_pct": -18.98,
+        "return_63d_pct": -22.2,
+        "return_126d_pct": -29.51,
+        "benchmark_63d_pct": 0.88,
+        "relative_63d_pp": -23.08,
+        "ma50": 138.9488,
+        "ma200": 154.1298,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -36.33,
+        "volatility_21d_annualized_pct": 62.7,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "siemens-energy-year-end-2026-preview",
+        "title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
+        "date": "2026-11-01",
+        "url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
+        "source": "FinanzPilot-Redaktion · Deutsche Börse Terminvorschau",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.88,
+          "excess_return_pp": -23.08,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.16,
+          "excess_return_pp": -22.04,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-04",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
     },
     {
@@ -3575,218 +4030,6 @@
         "date": "2026-09-16",
         "url": "https://www.eqs-news.com/company/baywa-ag/news/5b74ed9f-ea7c-11e8-902f-2c44fd856d8c",
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "unverified_discovery_hint": null,
-      "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": null
-    },
-    {
-      "id": "profile-eoan-de",
-      "ticker": "EOAN.DE",
-      "company": "E.ON SE",
-      "sector": "Energienetze und Kundenlösungen",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "gas-storage-winter-2026",
-        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-        "date": "2026-11-01",
-        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "unverified_discovery_hint": null,
-      "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": null
-    },
-    {
-      "id": "profile-evk-de",
-      "ticker": "EVK.DE",
-      "company": "Evonik Industries AG",
-      "sector": "Spezialchemie",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
-        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-        "date": "2026-10-30",
-        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
-        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "unverified_discovery_hint": {
-        "id": "rss-6ba6e11ca74806cca7",
-        "date": "2026-11-03",
-        "status": "unverified_headline_only"
-      },
-      "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": null
-    },
-    {
-      "id": "profile-jd",
-      "ticker": "JD",
-      "company": "JD.com Inc.",
-      "sector": "Onlinehandel und Logistik",
-      "country": "US",
-      "currency": "USD",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-03-eu-jd-ceconomy-conditional-clearance",
-        "title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
-        "date": "2026-11-03",
-        "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
-        "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "unverified_discovery_hint": null,
-      "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": null
-    },
-    {
-      "id": "profile-rwe-de",
-      "ticker": "RWE.DE",
-      "company": "RWE AG",
-      "sector": "Energieversorgung",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "gas-storage-winter-2026",
-        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-        "date": "2026-11-01",
-        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "unverified_discovery_hint": null,
-      "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": null
-    },
-    {
-      "id": "profile-sha0-de",
-      "ticker": "SHA0.DE",
-      "company": "Schaeffler AG",
-      "sector": "Industrie- und Automobilzulieferer",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-03-schaeffler-restructuring-3460",
-        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
-        "date": "2026-11-03",
-        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
-        "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "unverified_discovery_hint": {
-        "id": "rss-f52dff25f896947aeb",
-        "date": "2026-11-03",
-        "status": "unverified_headline_only"
-      },
-      "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": null
-    },
-    {
-      "id": "profile-enr-de",
-      "ticker": "ENR.DE",
-      "company": "Siemens Energy AG",
-      "sector": "Energietechnik",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "siemens-energy-year-end-2026-preview",
-        "title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
-        "date": "2026-11-01",
-        "url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
-        "source": "FinanzPilot-Redaktion · Deutsche Börse Terminvorschau",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
       "unverified_discovery_hint": null,

@@ -181,6 +181,24 @@
       "evidence_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
       "classification": "public_source_research_revision_not_trade",
       "note": "Eine dokumentierte These/Prüfstufe änderte sich; keine Anlageentscheidung oder Anlageberatung."
+    },
+    {
+      "id": "evidence-e14b96783cd63164",
+      "issuer_id": "apple",
+      "ticker": "AAPL",
+      "company": "Apple",
+      "date": "2026-11-04",
+      "event_type": "evidence_stage_changed",
+      "signature": "b5099437794dd1d889",
+      "prior_signature": "3e4e0c3dc4e3dcdfb8",
+      "thesis": "Hohe Cashflow-Erzeugung und wachsendes Services-Geschäft unterstützen das Geschäftsmodell. Bewertungsfrage: Rechtfertigen die nachhaltigen Gewinne einen Schlusskurs von 349,51 USD vom 04.11.2026?",
+      "counter_thesis": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
+      "what_would_confirm": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
+      "primary_financial_status": "primary_ttm_reconciled",
+      "valuation_status": "audited_cashflow_no_fair_value",
+      "evidence_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+      "classification": "public_source_research_revision_not_trade",
+      "note": "Eine dokumentierte These/Prüfstufe änderte sich; keine Anlageentscheidung oder Anlageberatung."
     }
   ]
 }
