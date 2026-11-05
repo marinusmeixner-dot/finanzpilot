@@ -367,6 +367,42 @@
         "Aktuelle ausgegebene und vollständig verwässerte Aktien sowie Übernahme-SBC prüfen",
         "Organisches Wachstum und 3D-Robotik-Margen belegen, unabhängige Bewertung ableiten"
       ]
+    },
+    {
+      "id": "apple",
+      "ticker": "AAPL",
+      "company": "Apple",
+      "financial_status": "primary_ttm_reconciled",
+      "model_status": "blocked",
+      "cashflow_method": "GJ2026-Zwölfmonatsabschluss ist direkt der TTM-Zeitraum",
+      "fiscal_period_end": "2026-09-26",
+      "primary_sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+          "label": "SEC-Form 10-K GJ2026",
+          "period_end": "2026-09-26"
+        },
+        {
+          "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+          "label": "Apple FY2026-Q4 Unternehmensmeldung",
+          "period_end": "2026-09-26"
+        }
+      ],
+      "reported_ttm": {
+        "operating_cf_m": 145097,
+        "capex_m": 9041,
+        "free_cf_m": 136056,
+        "unit": "Mio. USD",
+        "explanation": "Direkt berichteter 12-Monats-CFO minus Zahlungen für Sachanlagen; keine automatische Prognose zukünftiger freier Mittel."
+      },
+      "balance": null,
+      "dcf": null,
+      "gaps": [
+        "Nachhaltige FCF-Basis inklusive Wiederanlagebedarf, SBC und Produktzyklen normalisieren",
+        "Bei KGV-/DCF-Analysen Q4-Zollerstattungseffekte und künftige Steuern prüfen",
+        "Aktuelle Aktienzahl, Wandel-/Leasingverbindlichkeiten und langfristige Wertpapiere vollständig mit Marktwert überleiten",
+        "Eigenkapitalkosten, Szenarien, Peer-Multiples und Sicherheitsmarge unabhängig herleiten"
+      ]
     }
   ]
 }
