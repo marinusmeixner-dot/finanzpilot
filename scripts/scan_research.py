@@ -208,9 +208,13 @@ def signal_priority(m, editorial_event):
     relative=max(0,min(30,15+outperformance*1.0)) if outperformance is not None else 0
     vol=m["volatility_21d_annualized_pct"] or 0
     risk=max(0,min(20,20-0.35*vol))
-    evidence=10 if editorial_event else 0
+    published=parse_date(editorial_event.get("date")) if editorial_event else None
+    age=(dt.date.today()-published).days if published else None
+    # Recent grounded events matter more than a months-old article; an RSS headline
+    # never qualifies as editorial evidence or improves this ranking.
+    evidence=12 if age is not None and 0<=age<=14 else 6 if age is not None and 15<=age<=35 else 0
     score=int(round(min(100,max(0,base+relative+risk+evidence))))
-    if score>=68 and editorial_event:
+    if score>=68 and evidence>0:
         status="A_research_first"
     elif score>=52:
         status="B_watchlist"
@@ -321,6 +325,7 @@ def build_radar(root=ROOT):
          "lifecycle":"archived" if archived else "active",
          "research_priority":status,"technical_research_score":score,
          "signals":m,"editorial_evidence":article,
+         "editorial_age_days":(dt.date.today()-parse_date(article["date"])).days if article and parse_date(article.get("date")) else None,
          "unverified_discovery_hint":weak,
          "benchmarks":alt,
          "next_review":idea.get("next") if idea else (
@@ -346,7 +351,7 @@ def build_radar(root=ROOT):
         benchmark_meta.append({**b,"last_price_date":r.get("asof"),
            "sessions":len(r.get("points",[])),"source":r.get("source")})
     return {"schema_version":1,"asof":max((x["signals"].get("asof") or "" for x in candidates),default=""),
-      "methodology_version":1,"methodology":"Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und geprüfter redaktioneller Ereigniszuordnung. A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
+      "methodology_version":1,"methodology":"Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und maximal 35 Tage alten redaktionellen Anlässen (RSS nie als Beleg). A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
       "quote_method":"Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
       "total_issuers":len(candidates),
       "with_price_history":sum(1 for x in candidates if x["signals"]["status"]=="history_available"),
