@@ -4,10 +4,10 @@
   "methodology_version": 1,
   "methodology": "Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und geprüfter redaktioneller Ereigniszuordnung. A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
-  "total_issuers": 57,
+  "total_issuers": 55,
   "with_price_history": 9,
   "research_priority_count": 2,
-  "missing_quote_count": 48,
+  "missing_quote_count": 46,
   "front_page_candidate_ids": [
     "apple",
     "microsoft",
@@ -657,32 +657,6 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung."
     },
     {
-      "id": "aixtron",
-      "ticker": "AIXA",
-      "company": "AIXTRON",
-      "sector": "Halbleiter-Produktionsanlagen",
-      "country": "US",
-      "currency": "USD",
-      "origin": "editorially_existing",
-      "curated_id": "aixtron",
-      "has_curated_dossier": true,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "USD"
-      },
-      "editorial_evidence": null,
-      "unverified_discovery_hint": null,
-      "benchmarks": [],
-      "next_review": "Backlog in Umsatz und FCF überführen, Margen und Kundenmix prüfen; danach DCF- und Multiples-Modell.",
-      "risks": "Zyklischer Anlagenabsatz, hohe Kundenzentrierung und mögliche Verschiebungen von Auslieferungen; Auftragseingang ist nicht sofort Umsatz oder Cashflow.",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung."
-    },
-    {
       "id": "amd",
       "ticker": "AMD",
       "company": "AMD",
@@ -843,39 +817,6 @@
       "benchmarks": [],
       "next_review": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen.",
       "risks": "Cloud-Wachstum ist nicht gleich Free Cashflow. 51,355 Mrd. USD Quartals-Capex und regulatorische Risiken sind materiell.",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung."
-    },
-    {
-      "id": "profile-goog",
-      "ticker": "GOOG",
-      "company": "Alphabet Inc.",
-      "sector": "Internettechnologie und Werbung",
-      "country": "US",
-      "currency": "USD",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "insufficient_data",
-      "technical_research_score": null,
-      "signals": {
-        "status": "needs_price_history",
-        "available_sessions": 0,
-        "asof": null,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-02-alphabet-q3-cloud-cashflow",
-        "title": "Alphabet: Cloud-Umsatz verdoppelt – doch der freie Cashflow ist negativ",
-        "date": "2026-10-28",
-        "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
-        "source": "Alphabet Inc. – Q3 2026 Ergebnisbericht (SEC, Exhibit 99.1)",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "unverified_discovery_hint": null,
-      "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung."
     },
     {
@@ -1460,15 +1401,15 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung."
     },
     {
-      "id": "profile-kgx",
+      "id": "kion",
       "ticker": "KGX",
-      "company": "KION Group AG",
-      "sector": "Intralogistik und Lagerautomation",
+      "company": "KION Group",
+      "sector": "Lagerautomation / Gabelstapler",
       "country": "US",
       "currency": "USD",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
+      "origin": "editorially_existing",
+      "curated_id": "kion",
+      "has_curated_dossier": true,
       "lifecycle": "active",
       "research_priority": "insufficient_data",
       "technical_research_score": null,
@@ -1481,8 +1422,8 @@
       "editorial_evidence": null,
       "unverified_discovery_hint": null,
       "benchmarks": [],
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "risks": null,
+      "next_review": "Nächste Quartale: neuer Auftragseingang ITS, IAS-Marge, Working Capital und Finanzierungs-Bridge.",
+      "risks": "FCF-Definition 2026, Schulden und zyklische Auftragslage erschweren einen robusten fairen Wert.",
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung."
     },
     {
