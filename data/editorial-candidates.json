@@ -1,9 +1,36 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-04T21:52:11.586597Z",
+  "updated_at": "2026-11-05T10:10:50.071798Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-c1fb5bdbe2afdefe95",
+      "title": "Marktbericht: DAX springt auf Rekordhoch",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
+      "published_at": "2026-11-05T09:20:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-af204101f6ebd3a303",
+      "title": "Update Wirtschaft vom 05.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1678462.html",
+      "published_at": "2026-11-05T09:08:58Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-0a86663498f22db194",
+      "title": "What the Democratic midterms sweep changes for U.S.-China relations",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html",
+      "published_at": "2026-11-05T06:54:52Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-c956b7a44ae64daa4c",
       "title": "Wirtschaft vor acht vom 04.11.2026",
@@ -19,6 +46,15 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/energie/energiebilanz-heizoel-100.html",
       "published_at": "2026-11-04T16:05:31Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-870c8bee1b90608d0b",
+      "title": "Weitere Fälle von gehackten Kühlanlagen bekannt geworden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/technologie/cyberangriff-kuehlanlagen-100.html",
+      "published_at": "2026-11-04T14:42:11Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -307,15 +343,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/energie/umweltfreundlich-fliegen-flugverkehr-100.html",
       "published_at": "2026-11-01T16:22:32Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-324274ece6b33ab6f1",
-      "title": "Wie KI Entwicklung und Alltag verändert - kreativ auf Knopfdruck?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-veraenderung-wirtschaft-alltag-100.html",
-      "published_at": "2026-11-01T08:00:49Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
