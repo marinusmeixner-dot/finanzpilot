@@ -25,7 +25,7 @@ function companyContext(story,full=false){
  const people=profilesFor(story);
  if(!people.length)return '<div class="fp82-context fp82-missing"><strong>Unternehmensprofil wird überprüft</strong><p>Für die genannten Börsenticker liegen noch keine vollständig redaktionell bestätigten Geschäftsprofile vor. Die Langfassung und die Originalquelle enthalten die Einordnung.</p></div>';
  return '<div class="fp82-company-set">'+people.slice(0,3).map(p=>{
-  const lead=ideaFor(p.symbol);
+  const lead=ideaFor(p.symbol)||window.FinanzPilotRadar?.findByTicker?.(p.symbol);
   return '<div class="fp82-context"><div class="fp82-context-meta"><strong>'+esc(p.name)+'</strong><span>'+esc(p.symbol)+' · '+esc(p.sector)+'</span></div>'+
     '<p>'+esc(p.business)+'</p>'+
     (full?'<p><strong>Wie verdient das Unternehmen Geld?</strong> '+esc(p.revenue)+'</p>':'')+
@@ -57,18 +57,21 @@ function ideaCards(){
 }
 function renderIdeas(){
  const visible=ideas.filter(x=>filter==='all'||analyses.some(a=>a.id===x.id));
- return '<section class="fp82-ideas-page fp34"><span class="eyebrow">MÄRKTE · AKTIENIDEEN</span><h1>Aktien auf dem Radar</h1>'+
- '<p class="fp82-subtitle">Fundierte Unternehmensideen statt Kurs-Hype: Wie die Firma Geld verdient, warum sie interessant sein könnte, was dagegen spricht und was bei einer Bewertung noch fehlt.</p>'+
+ return '<section class="fp82-ideas-page fp34">'+
+ (window.FinanzPilotRadar?.dashboard?.()||'<p class="fp82-data-note">Der offene Aktienradar lädt – bis dahin bleiben alle bestehenden Unternehmensanalysen verfügbar.</p>')+
+ '<details class="fp86-existing"><summary>Fundamentalanalysen und Bewertungsmodelle ('+ideas.length+' Unternehmen)</summary><div class="fp86-curated"><span class="eyebrow">MÄRKTE · VERTIEFTE ANALYSEN</span><h2>Bestehende Research-Dossiers</h2>'+
+ '<p class="fp82-subtitle">Diese ausführlichen Untersuchungen sind von den automatisch gescreenten Kandidaten getrennt. Sie werden bei neuen Berichten nach Quellenlage aktualisiert.</p>'+
  '<div class="fp82-data-note">Research-Stand: '+esc(updatedAt||'noch unbekannt')+'. Die jeweiligen Originalquellen können älter sein. <strong>Beobachtung ist keine Kaufempfehlung.</strong></div>'+
  '<div class="fp82-filter" role="group" aria-label="Aktienideen filtern"><button type="button" data-fp82-filter="all" aria-pressed="'+(filter==='all')+'">Alle Ideen ('+ideas.length+')</button>'+
  '<button type="button" data-fp82-filter="report" aria-pressed="'+(filter==='report')+'">Mit ausführlichen Finanzdaten</button></div>'+
  (visible.length?'<div class="fp82-ideas-grid">'+ideaCards()+'</div>':'<p class="fp82-empty">Für diese Auswahl liegen derzeit keine veröffentlichten Analysen vor.</p>')+
  '<div class="fp82-method"><h2>Wie eine Aktie zum Kandidaten wird</h2><p>Unternehmensmodell, veröffentlichte Zahlen, Gründe für mögliches Wachstum, offene Risiken, konkrete Auslöser und eine nachvollziehbare Bewertung werden getrennt untersucht. Fehlen aktuelle Kurse oder Gewinnschätzungen, ist keine zuverlässige Aussage über einen günstigen Einstieg möglich.</p>'+
- '<button type="button" class="btn secondary" data-fp82-route="marketnews">Relevante Nachrichten ansehen</button></div></section>';
+ '<button type="button" class="btn secondary" data-fp82-route="marketnews">Relevante Nachrichten ansehen</button></div></div></details></section>';
 }
 function selectedIdea(){return ideas.find(x=>x.id===selected)||null}
 function renderIdea(){
  const idea=selectedIdea();
+ if(!idea&&window.FinanzPilotRadar?.get?.(selected))return window.FinanzPilotRadar.candidateDetail(selected);
  if(!idea)return '<section class="fp34 fp82-ideas-page"><h1>Aktienanalyse nicht gefunden</h1><p>Die gesuchte Idee wurde möglicherweise überarbeitet oder aus der aktiven Liste entfernt.</p><button class="btn" data-fp82-route="marketideas">Zur Ideenübersicht</button></section>';
  const r=analyses.find(a=>a.id===idea.id),profilesOf=profilesFor({symbols:[idea.symbol?.split(':').at(-1),idea.ticker]});
  const p=profilesOf[0]||null,figures=Array.isArray(r?.figures)?r.figures:[];
@@ -100,6 +103,7 @@ function renderIdea(){
   (window.FinanzPilotFairValue?.renderFor?.(idea.id)||'')+
   (window.FinanzPilotMarketValue?.renderFor?.(idea.id)||'')+
   (window.FinanzPilotValuation?.renderFor?.(idea.id)||'')+
+  (window.FinanzPilotRadar?.addendum?.(idea.id)||'')+
   '</main><aside><div class="fp82-aside"><h3>Research-Kompass</h3><p><strong>Worauf achten?</strong></p><p>'+esc(idea.next||'Die nächsten Geschäftsberichte und die Bewertungsannahmen.')+'</p>'+
     '<p><strong>Was spricht dagegen?</strong></p><p>'+esc(idea.counter)+'</p><div class="fp82-sources"><strong>Originalquellen</strong>'+
     sourceLink(idea.source,'Unternehmensmeldung')+(idea.supporting_source?sourceLink(idea.supporting_source,'Ergänzende Quelle'):'')+'</div>'+
@@ -108,7 +112,7 @@ function renderIdea(){
  '</section>';
 }
 function openIdea(id){
- if(!ideas.some(x=>x.id===id))return false;
+ if(!ideas.some(x=>x.id===id)&&!window.FinanzPilotRadar?.get?.(id))return false;
  selected=id;
  try{localStorage.setItem('fp82_selected_idea',id)}catch{}
  window.FinanzPilotNavigation?.route?.('marketidea');
@@ -131,12 +135,13 @@ async function load(force=false){
 }
 function bind(root=document){
  root.querySelectorAll('[data-fp82-idea]').forEach(b=>b.addEventListener('click',()=>openIdea(b.dataset.fp82Idea)));
- root.querySelectorAll('[data-fp82-open-ticker]').forEach(b=>b.addEventListener('click',()=>{const idea=ideaFor(b.dataset.fp82OpenTicker);if(idea)openIdea(idea.id)}));
+ root.querySelectorAll('[data-fp82-open-ticker]').forEach(b=>b.addEventListener('click',()=>{const idea=ideaFor(b.dataset.fp82OpenTicker)||window.FinanzPilotRadar?.findByTicker?.(b.dataset.fp82OpenTicker);if(idea)openIdea(idea.curated_id||idea.id)}));
  root.querySelectorAll('[data-fp82-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.fp82Filter==='report'?'report':'all';window.render?.()}));
  root.querySelectorAll('[data-fp82-route]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.(b.dataset.fp82Route)));
  window.FinanzPilotValuation?.bind?.(root);
  window.FinanzPilotMarketValue?.bind?.(root);
  window.FinanzPilotFairValue?.bind?.(root);
+ window.FinanzPilotRadar?.bind?.(root);
 }
 try{selected=localStorage.getItem('fp82_selected_idea')||''}catch{}
 window.FinanzPilotInsights={companyContext,articleContext,renderIdeas,renderIdea,openIdea,bind,load,ideaFor,get ideas(){return ideas;},get profiles(){return profiles;}};
