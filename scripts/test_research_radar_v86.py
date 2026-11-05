@@ -127,5 +127,22 @@ class ResearchDiscoveryTests(unittest.TestCase):
         self.assertIsNone(screen.signal_priority({"status":"needs_price_history"},True)[1])
         self.assertEqual(screen.parse_date("04.11.2026"),dt.date(2026,11,4))
 
+
+class CatalystFreshnessTests(unittest.TestCase):
+    def test_old_editorial_and_unverified_rss_cannot_create_priority_a(self):
+        market={"status":"history_available","above_ma50":True,"above_ma200":True,
+                "relative_63d_pp":15,"volatility_21d_annualized_pct":10}
+        now=dt.date.today()
+        current={"date":(now-dt.timedelta(days=2)).isoformat()}
+        expired={"date":(now-dt.timedelta(days=120)).isoformat()}
+        recent_rank,recent_score=screen.signal_priority(market,current)
+        expired_rank,expired_score=screen.signal_priority(market,expired)
+        without_rank,without_score=screen.signal_priority(market,None)
+        self.assertEqual(recent_rank,"A_research_first")
+        self.assertNotEqual(expired_rank,"A_research_first")
+        self.assertNotEqual(without_rank,"A_research_first")
+        self.assertGreater(recent_score,expired_score)
+        self.assertEqual(expired_score,without_score)
+
 if __name__=="__main__":
     unittest.main()
