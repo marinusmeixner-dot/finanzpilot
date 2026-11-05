@@ -1,0 +1,435 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-05",
+  "model_policy": "Szenarioannahmen sind illustrative redaktionelle Hypothesen, keine geprüften Unternehmensprognosen oder Echtzeitkursziele. Jedes Szenario projiziert denselben Berichtszeitraum drei Jahre in die Zukunft (Jahr auf Jahr gleiche Zeitspanne). Betriebsgewinn = Umsatz × angenommene Marge. Bei fehlender vollständiger Unternehmensbewertung keine Kaufempfehlung. Für EPS-Multiple zusätzlich dokumentierte Einschränkungen beachten.",
+  "models": [
+    {
+      "id": "microsoft",
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "baseline": {
+        "period": "GJ 2026",
+        "period_kind": "year",
+        "currency": "USD",
+        "unit": "Mio.",
+        "revenue_m": 331839,
+        "operating_income_m": 155237,
+        "profit_label": "GAAP operatives Ergebnis",
+        "source_published": "2026-10-15",
+        "source_url": "https://www.microsoft.com/investor/reports/ar26/",
+        "source_note": "Berichtetes Geschäftsjahr bis 30.06.2026; Q1 GJ 2027 wurde danach veröffentlicht und muss getrennt beurteilt werden.",
+        "secondary_source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -3,
+          "margin_pct": 39,
+          "thesis": "Schwächeres Cloud-Wachstum und steigende Investitionskosten."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 11,
+          "margin_pct": 46,
+          "thesis": "Weiteres Software- und Azure-Wachstum bei stabilen Margen."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 20,
+          "margin_pct": 52,
+          "thesis": "Starker Cloud-Absatz und hohe operative Skalierung."
+        }
+      },
+      "drivers": [
+        "Cloudwachstum, Gewinn je Aktie und tatsächliche KI-Capex",
+        "Gewinnrevisionen und Cashflow nach Investitionen",
+        "Marktpreis und Forward-Multiples auf Datumsbasis"
+      ],
+      "checks": {
+        "type": "discounted_earnings_multiple",
+        "eps": 17.28,
+        "eps_kind": "Bereinigtes verwässertes Ergebnis je Aktie (non-GAAP), ohne Investitionsgewinne",
+        "eps_period": "GJ 2026",
+        "source_url": "https://www.microsoft.com/investor/reports/ar26/",
+        "discount_pct": 10,
+        "case_assumptions": {
+          "bear": {
+            "eps_growth_pct": 0,
+            "terminal_pe": 18
+          },
+          "base": {
+            "eps_growth_pct": 12,
+            "terminal_pe": 27
+          },
+          "bull": {
+            "eps_growth_pct": 20,
+            "terminal_pe": 34
+          }
+        },
+        "limitations": "Vereinfachter Gegenwartswert des künftigen EPS × angenommenes KGV; keine DCF-Bewertung, keine Dividenden, keine Aktualisierung auf Quartals-TTM-EPS; Aktienkurs und Abweichung zur Börsenbewertung fehlen."
+      },
+      "valuation": null
+    },
+    {
+      "id": "nvidia",
+      "company": "NVIDIA",
+      "ticker": "NVDA",
+      "baseline": {
+        "period": "Q2 GJ 2027",
+        "period_kind": "quarter",
+        "currency": "USD",
+        "unit": "Mio.",
+        "revenue_m": 96221,
+        "operating_income_m": 63734,
+        "profit_label": "GAAP operatives Ergebnis",
+        "source_published": "2026-08-26",
+        "source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+        "source_note": "Ein Quartal: nicht mit einem Geschäftsjahr gleichsetzen, keine automatisierte Jahreshochrechnung. Das zuletzt genannte Gesamtjahresergebnis stammt aus GJ 2026.",
+        "secondary_source_url": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026"
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -8,
+          "margin_pct": 45,
+          "thesis": "Kundeninvestitionen normalisieren sich und Wettbewerb drückt die Margen."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 10,
+          "margin_pct": 59,
+          "thesis": "KI-Investitionen bleiben hoch, das Wachstum normalisiert sich."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 24,
+          "margin_pct": 67,
+          "thesis": "Neue Generationen und Rechenzentrumsausbau beschleunigen das Wachstum."
+        }
+      },
+      "drivers": [
+        "Rechenzentrum-Umsatz und Bruttomarge nach Produktgeneration",
+        "Investitionen der wichtigsten KI-Kunden",
+        "Exportbeschränkungen, Wettbewerber und Kundenkonzentration"
+      ],
+      "valuation": null
+    },
+    {
+      "id": "siemens",
+      "company": "Siemens AG",
+      "ticker": "SIE.DE",
+      "baseline": {
+        "period": "Q3 GJ 2026",
+        "period_kind": "quarter",
+        "currency": "EUR",
+        "unit": "Mio.",
+        "revenue_m": 20800,
+        "operating_income_m": null,
+        "profit_label": "Kein mit Konzernumsatz vergleichbares EBIT hinterlegt",
+        "source_published": "2026-08-06",
+        "source_url": "https://press.siemens.com/global/de/pressemitteilung/siemens-steigert-ergebnis-und-barmittelzufluss-im-dritten-quartal-2026",
+        "source_note": "Der berichtete Umsatz beträgt 20,8 Mrd. EUR. Ergebnisse des industriellen Geschäfts sind nicht identisch mit dem GAAP-EBIT auf Konzernebene. Die unten verwendeten Margen sind deshalb vollständig hypothetisch.",
+        "secondary_source_url": null
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -5,
+          "margin_pct": 9,
+          "thesis": "Schwache Industrienachfrage und Margendruck."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 5,
+          "margin_pct": 14,
+          "thesis": "Automatisierung und Infrastruktur wachsen moderat."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 12,
+          "margin_pct": 19,
+          "thesis": "Stärkere Software- und Infrastrukturnachfrage bei höheren Margen."
+        }
+      },
+      "drivers": [
+        "Organisches Wachstum und Divisionsergebnisse",
+        "Auftragseingang, Softwareerlöse und Cashflow",
+        "Nächster Jahresabschluss und Konzernprofitabilität"
+      ],
+      "valuation": null
+    },
+    {
+      "id": "amazon",
+      "company": "Amazon",
+      "ticker": "AMZN",
+      "baseline": {
+        "period": "Q3 2026",
+        "period_kind": "quarter",
+        "currency": "USD",
+        "unit": "Mio.",
+        "revenue_m": 201900,
+        "operating_income_m": 28100,
+        "profit_label": "GAAP operatives Ergebnis",
+        "source_published": "2026-10-29",
+        "source_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+        "source_note": "AWS wuchs im Q3 um 39,3 %; der FCF der letzten zwölf Monate war −42,4 Mrd. USD. EBIT allein bildet Investitionsbedarf nicht ab.",
+        "secondary_source_url": null
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -2,
+          "margin_pct": 9,
+          "thesis": "Handel und Cloud schwächer, hohe Capex und Logistikkosten."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 10,
+          "margin_pct": 15,
+          "thesis": "AWS wächst, Logistik und Werbung verbessern sich."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 18,
+          "margin_pct": 19,
+          "thesis": "Cloud und Werbegeschäft skalieren schneller als die Kosten."
+        }
+      },
+      "drivers": [
+        "AWS-Wachstum und operative Cloud-Marge",
+        "TTM-Free-Cashflow nach KI- und Logistik-Capex",
+        "Wettbewerb, Regulierung und Nachfrage der Verbraucher"
+      ],
+      "valuation": null
+    },
+    {
+      "id": "meta",
+      "company": "Meta Platforms",
+      "ticker": "META",
+      "baseline": {
+        "period": "Q3 2026",
+        "period_kind": "quarter",
+        "currency": "USD",
+        "unit": "Mio.",
+        "revenue_m": 64601,
+        "operating_income_m": 12988,
+        "profit_label": "GAAP operatives Ergebnis, inkl. 9.890 Mio. USD Rechtsrückstellung",
+        "source_published": "2026-10-21",
+        "source_url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+        "source_note": "9,89 Mrd. USD vereinbarungsbezogene Rückstellung im Quartal. Einmalige und potenziell wiederkehrende regulatorische Kosten sind getrennt zu analysieren.",
+        "secondary_source_url": null
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -3,
+          "margin_pct": 14,
+          "thesis": "Regulierung und KI-Investitionen drücken die Ertragskraft."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 11,
+          "margin_pct": 31,
+          "thesis": "Werbegeschäft wächst; Rechtskosten normalisieren teilweise."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 19,
+          "margin_pct": 40,
+          "thesis": "Werbeeffizienz, KI-Monetarisierung und Margen steigen deutlich."
+        }
+      },
+      "drivers": [
+        "Werbepreise, Reichweite und wiederkehrende Betriebsaufwendungen",
+        "Neue Gerichtsentscheidungen und tatsächliche Zahlungen",
+        "Investitionshöhe in KI, Reality Labs und Infrastruktur"
+      ],
+      "valuation": null
+    },
+    {
+      "id": "alphabet",
+      "company": "Alphabet Inc.",
+      "ticker": "GOOGL",
+      "baseline": {
+        "period": "Q3 2026",
+        "period_kind": "quarter",
+        "currency": "USD",
+        "unit": "Mio.",
+        "revenue_m": 127577,
+        "operating_income_m": 40576,
+        "profit_label": "GAAP operatives Ergebnis",
+        "source_published": "2026-10-28",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+        "source_note": "Q3 Free Cashflow −9,065 Mrd. USD bei 51,355 Mrd. USD Capex. Q3-FCF nicht als dauerhaftes Jahresniveau fortschreiben.",
+        "secondary_source_url": null
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -3,
+          "margin_pct": 23,
+          "thesis": "KI-Suche verändert Werbeeinnahmen, Rechenzentren kosten viel."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 10,
+          "margin_pct": 31,
+          "thesis": "Werbung stabil, Cloud wächst und Investitionsrenditen steigen."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 18,
+          "margin_pct": 37,
+          "thesis": "Cloud und neue KI-Dienste skalieren stark mit profitabler Auslastung."
+        }
+      },
+      "drivers": [
+        "Cloud-Wachstum, Search-Umsätze und Wettbewerb",
+        "Operativer Cashflow, Capex und TTM-FCF",
+        "Kartellrecht, KI-Suchverhalten und Cashflow-Konversion"
+      ],
+      "valuation": null
+    },
+    {
+      "id": "aixtron",
+      "company": "AIXTRON SE",
+      "ticker": "AIXA",
+      "baseline": {
+        "period": "9M 2026",
+        "period_kind": "nine_months",
+        "currency": "EUR",
+        "unit": "Mio.",
+        "revenue_m": 358.1,
+        "operating_income_m": 49.1,
+        "profit_label": "GAAP EBIT",
+        "source_published": "2026-10-29",
+        "source_url": "https://www.aixtron.com/de/investoren/KI-getriebene%20Nachfrage%20sorgt%20f%C3%BCr%20starke%20Auftragsdynamik_n6508801",
+        "source_note": "Auftragseingang Q3 274,9 Mio. EUR; Anlagenauftragsbestand 549,4 Mio. EUR. Hohe Q3-Marge (31 %) darf nicht mit der 9M-Marge (14 %) verwechselt werden.",
+        "secondary_source_url": null
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -12,
+          "margin_pct": 4,
+          "thesis": "Stornierungen, verzögerte Auslieferungen und Margendruck."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 12,
+          "margin_pct": 15,
+          "thesis": "Auftragsbestand wird schrittweise in Umsatz und EBIT umgewandelt."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 28,
+          "margin_pct": 24,
+          "thesis": "Hohe Nachfrage nach InP-Optik und vorteilhafter Produktmix."
+        }
+      },
+      "drivers": [
+        "Auftragseingang, Auftragsbestand und Umsatzkonversion",
+        "InP- und SiC-Nachfrage, Margen und Lageraufbau",
+        "Konvertierung von Anzahlungen in echte nachhaltige Cashflows"
+      ],
+      "valuation": null
+    },
+    {
+      "id": "kion",
+      "company": "KION Group AG",
+      "ticker": "KGX",
+      "baseline": {
+        "period": "9M 2026",
+        "period_kind": "nine_months",
+        "currency": "EUR",
+        "unit": "Mio.",
+        "revenue_m": 8522,
+        "operating_income_m": 632.5,
+        "profit_label": "Bereinigtes EBIT, nicht GAAP",
+        "source_published": "2026-10-29",
+        "source_url": "https://www.kiongroup.com/en/Press/Press-Releases/Press-Releases-Detail.html?id=486077511",
+        "source_note": "IAS-Umsatz +16,9 %, Konzernauftragseingang −4,9 %. Bereinigtes EBIT enthält Adjustierungen; FCF 9M 121,1 Mio. EUR, neue FCF-Definition in FY26.",
+        "secondary_source_url": "https://www.kiongroup.com/en/Investors/Events-Publications/Financial-News/Press-Releases-Detail.html?id=425724911"
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -4,
+          "margin_pct": 4.5,
+          "thesis": "Schwacher Staplerabsatz und struktureller Margendruck."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 5,
+          "margin_pct": 8,
+          "thesis": "Wachstum der Lagerautomation stabilisiert Gesamtgeschäft."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 11,
+          "margin_pct": 11,
+          "thesis": "Stärkere Industrienachfrage und ertragskräftige Automation."
+        }
+      },
+      "drivers": [
+        "ITS-Auftragseingang und IAS-Margen",
+        "Realisierung der angepassten 2026-Prognose",
+        "Free Cashflow nach neuer Definition und Schuldentragfähigkeit"
+      ],
+      "valuation": null
+    },
+    {
+      "id": "cgnx",
+      "company": "Cognex Corporation",
+      "ticker": "CGNX",
+      "baseline": {
+        "period": "Q2 2026",
+        "period_kind": "quarter",
+        "currency": "USD",
+        "unit": "Mio.",
+        "revenue_m": 291.263,
+        "operating_income_m": 86,
+        "profit_label": "GAAP operatives Ergebnis (gerundet)",
+        "source_published": "2026-08-05",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000061/a07052026-xex991xq22026ear.htm",
+        "source_note": "Umsatz +17 % yoy und Operating Margin 29,4 %. Neues Geschäftssegment aus RealSense-Übernahme mit Integrations- und Verwässerungsrisiken.",
+        "secondary_source_url": null
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -5,
+          "margin_pct": 17,
+          "thesis": "Automationsnachfrage schwächer und Integrationskosten steigen."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 8,
+          "margin_pct": 27,
+          "thesis": "Kamera- und Vision-Nachfrage wächst, Margen normalisieren."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 17,
+          "margin_pct": 34,
+          "thesis": "Robotik und 3D-Wahrnehmung skalieren profitabel."
+        }
+      },
+      "drivers": [
+        "Organisches statt akquisitionsbedingtes Wachstum",
+        "Integrationskosten und Finanzierung der Übernahme",
+        "Industriezyklus, Cashflow und Aktienverwässerung"
+      ],
+      "valuation": null
+    }
+  ]
+}
