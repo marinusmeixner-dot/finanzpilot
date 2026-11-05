@@ -1,9 +1,36 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T13:57:18.113017Z",
+  "updated_at": "2026-11-05T14:48:35.234212Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-959dee7dcb4c58e1cb",
+      "title": "Barkin sees interest rate hikes ahead, but at a gradual pace",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
+      "published_at": "2026-11-05T14:38:28Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e7aede63543ab6424c",
+      "title": "Bund und Eigentümerfamilien einigen sich auf Kaufpreis bei KNDS",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/knds-bundesregierung-100.html",
+      "published_at": "2026-11-05T14:11:59Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-bf9c0df3ebd473a632",
+      "title": "Wie sich der Wahlsieg der Demokraten auf Big Tech auswirkt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/digitales/midterms-bigtech-reaktionen-100.html",
+      "published_at": "2026-11-05T14:04:42Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-92c9eaa9ec02ce6fe0",
       "title": "Ölpreise fallen weiter, DAX steigt auf Rekordhoch",
