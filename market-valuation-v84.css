@@ -53,3 +53,5 @@
 .fp84-idea-snapshot>div:last-child{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px 14px}
 .fp84-idea-snapshot span{font-size:11px;color:#bed6c9}
 .fp84-idea-snapshot span strong{font-size:12px}
+
+.fp84-mismatch{border:1px solid #8a8055;background:rgba(103,88,45,.18);padding:11px 13px;border-radius:10px;color:#f0dfbb!important;line-height:1.65}
