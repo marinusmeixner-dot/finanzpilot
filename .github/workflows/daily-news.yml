@@ -12,6 +12,11 @@ on:
       - 'data/market-valuations-v84.json'
       - 'data/fair-value-audit-v85.json'
       - 'scripts/refresh_prices.py'
+      - 'scripts/refresh_market_quotes_v88.py'
+      - 'data/company-profiles-v82.json'
+      - 'data/daily.json'
+      - 'data/editorial-core-v43.json'
+      - 'scripts/test_research_quote_refresh_v88.py'
       - 'data/research-universe-v86.json'
   workflow_dispatch:
   schedule:
@@ -41,17 +46,32 @@ jobs:
         run: |
           python -m pip install --quiet yfinance
           python scripts/refresh_prices.py
+      - name: Refresh only verified completed, unadjusted regular-session closes in issuer valuation snapshots
+        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.schedule == '25 6 * * *'
+        continue-on-error: true
+        run: python scripts/refresh_market_quotes_v88.py
       - name: Recompute open equity research radar and append-only thesis priority history
         run: python scripts/scan_research.py
       - name: Reevaluate source-grounded investment decision status and append-only fundamental thesis revisions
         run: python scripts/build_research_decisions.py
+      - name: Validate research invariants and renderability before publishing any data
+        run: |
+          set -eu
+          python -m unittest discover -s scripts -p "test_research_quote_refresh_v88.py" -v
+          python -m unittest discover -s scripts -p "test_research_radar_v86.py" -v
+          python -m unittest discover -s scripts -p "test_investment_decisions_v87.py" -v
+          node scripts/test_valuation_v83.mjs
+          node scripts/test_market_valuation_v84.mjs
+          node scripts/test_fair_value_v85.mjs
+          node scripts/test_market_radar_v86.mjs
+          node scripts/test_investment_decisions_v87.mjs
       - name: Commit source inbox, prices, research radar and immutable priority history
         id: publish
         run: |
           set -eu
           git config user.name "finanzpilot-source-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/editorial-candidates.json data/prices.json data/research-radar-v86.json data/thesis-ledger-v86.json data/research-decisions-v87.json data/investment-thesis-events-v87.json
+          git add data/editorial-candidates.json data/prices.json data/market-valuations-v84.json data/research-radar-v86.json data/thesis-ledger-v86.json data/research-decisions-v87.json data/investment-thesis-events-v87.json
           if git diff --cached --quiet; then
             echo "No new relevant source, price, or investment-priority evidence."
             exit 0
