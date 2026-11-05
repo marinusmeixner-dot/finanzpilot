@@ -11,6 +11,8 @@ const home=read('home-v48.js');
 assert.equal(radar.schema_version,1);
 assert.equal(ledger.schema_version,1);
 assert.equal(radar.candidates.length,radar.total_issuers);
+assert(radar.with_price_history>=9,'Radar must retain the audited seed histories and expand as public daily data arrives');
+assert(radar.front_page_candidate_ids.every(id=>radar.candidates.some(c=>c.id===id)),'Every featured stock must exist in the dynamically scanned universe');
 assert(radar.total_issuers>=45,'Search needs meaningful breadth across industries and countries');
 assert(universe.equities.length>=40,'Universe cannot remain nine stock picks');
 assert(new Set(radar.candidates.map(c=>c.id)).size===radar.total_issuers,'Issuer IDs must be unique');
