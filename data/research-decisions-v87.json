@@ -6,8 +6,8 @@
   "status_counts": {
     "source_based_watch": 4,
     "financial_data_review": 2,
-    "financial_audit_pending": 3,
-    "editorial_screen": 11,
+    "financial_audit_pending": 4,
+    "editorial_screen": 10,
     "technical_screen": 34,
     "archived": 0
   },
@@ -21,11 +21,11 @@
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "A_research_first",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "research_stage": "financial_audit_pending",
+      "decision": "Analystenthese vorhanden. Vollständiger Primärdatenabgleich und belastbarer fairer Wert stehen noch aus.",
       "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
       "evidence_readiness": {
-        "value": 25,
+        "value": 45,
         "max": 100,
         "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
         "criteria": [
@@ -41,7 +41,7 @@
           },
           {
             "label": "Begründete These und Gegenargument",
-            "ready": false,
+            "ready": true,
             "points": 20
           },
           {
@@ -61,12 +61,12 @@
           }
         ]
       },
-      "thesis": null,
-      "counter_thesis": null,
+      "thesis": "Hohe Cashflow-Erzeugung und wachsendes Services-Geschäft unterstützen das Geschäftsmodell. Bewertungsfrage: Rechtfertigen die nachhaltigen Gewinne einen Schlusskurs von 349,51 USD vom 04.11.2026?",
+      "counter_thesis": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
       "thesis_invalidated": false,
       "why_now": "Apple meldet 114,5 Milliarden Dollar Quartalsumsatz – Zollerstattungen beeinflussen die Marge",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "what_would_confirm": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
+      "what_would_invalidate": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
       "financials": {},
       "primary_financial_status": "not_audited",
       "valuation_status": "no_source_audited_fair_value",
@@ -82,7 +82,7 @@
         "url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
       },
       "primary_source_urls": [],
-      "original_idea_source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+      "original_idea_source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
       "comparison_family": null,
       "peer_valuations": [],
       "etf_alternatives": [
@@ -121,7 +121,7 @@
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
       "radar_asof": "2026-11-04",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "next_review": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {

@@ -93,8 +93,8 @@
       "country": "US",
       "currency": "USD",
       "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
+      "curated_id": "apple",
+      "has_curated_dossier": true,
       "lifecycle": "active",
       "research_priority": "A_research_first",
       "technical_research_score": 84,
@@ -158,8 +158,8 @@
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
+      "next_review": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
+      "risks": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
