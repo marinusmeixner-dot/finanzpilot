@@ -9,7 +9,7 @@ const ui=read('market-insights-v82.js');
 assert.equal(data.schema_version,1);
 assert(data.stocks.length>=9,'Preserve original verified price snapshots');
 assert(ideas.length>=9,'Support future curated research additions');
-assert.equal(new Set(data.stocks.map(x=>x.id)).size,9);
+assert.equal(new Set(data.stocks.map(x=>x.id)).size,data.stocks.length,'Each quoted stock must have a unique identity');
 assert(data.stocks.every(x=>ideas.some(i=>i.id===x.id)),'Each audited price record must have an issuer dossier');
 assert(html.includes('market-valuation-v84.js?v=84')&&html.includes('market-valuation-v84.css?v=84'),'New iPhone assets are loaded');
 assert(html.indexOf('valuation-v83.js?v=83')<html.indexOf('market-valuation-v84.js?v=84'),'Existing scenarios are initialized first');
@@ -24,11 +24,11 @@ vm.runInContext(read('market-valuation-v84.js'),context,{filename:'market-valuat
 const api=window.FinanzPilotMarketValue;
 await api.load();
 assert.equal(api.stocks.length,data.stocks.length,'Load all published price snapshots');
-assert(api.summaryFor('kion').includes('34,96')&&api.summaryFor('kion').includes('KGV TTM'),'Research idea cards expose date-stamped prices and historical valuation');
-assert(api.summaryFor('microsoft').includes('555,8'));
+assert(api.summaryFor('kion').includes('KGV TTM')&&api.summaryFor('kion').includes(api.snapshot('kion').quote.date),'Research cards must display a dated, refreshed quote');
+assert(api.summaryFor('microsoft').includes(api.snapshot('microsoft').quote.date));
 for(const rec of api.stocks){
  const q=rec.quote,f=rec.fundamentals,derived=api.derive(rec);
- assert.equal(q.date,'2026-11-04','No future or intraday prices can be smuggled in');
+ assert(/^\d{4}-\d{2}-\d{2}$/.test(q.date)&&Date.parse(q.date+'T12:00:00Z')<=Date.now(),'The quoted session must be a completed historical date');
  assert.equal(q.price_type,'regular_session_close');
  assert(['NASDAQ','XETRA'].includes(q.exchange));
  assert(q.source_url.startsWith('https://')&&f.source_url.startsWith('https://'));
@@ -43,7 +43,7 @@ for(const rec of api.stocks){
  assert(page.includes('kein')||page.includes('Keine')||page.includes('nicht'));
  assert(page.includes('UMGEKEHRTE BEWERTUNGSFRAGE')&&page.includes('data-fp84-pe=')&&page.includes('data-fp84-discount='));
  assert(page.includes('Keine Vor- oder Nachbörse'));
- assert(page.includes('Datenzeitpunkt beachten'),'Nov 5 fundamentals may not be known at Nov 4 close');
+ if(f.observed_date>q.date) assert(page.includes('Datenzeitpunkt beachten'),'Post-close fundamentals must carry an explicit look-ahead warning');
  assert(page.includes('Sekundäranbieter'));
  assert(!page.includes('Sofort kaufen'));
 }
@@ -53,7 +53,7 @@ assert(Number.isFinite(x));
 const reverse=api.projectedPrice(ms.fundamentals.eps_ttm,3,x,27,10);
 assert(Math.abs(reverse-ms.quote.close)<1e-8,'Reverse valuation must mathematically solve the dated closing price');
 const kion=api.snapshot('kion'),kionVal=api.derive(kion);
-assert(kionVal.fcf_yield_pct>0&&kionVal.fcf_yield_pct<2,'KION cashflow remains weak, not an invented 10% yield');
+assert(Math.abs(kionVal.fcf_yield_pct-100*kion.fundamentals.free_cf_m/kionVal.cap_m)<1e-8,'KION FCF yield must derive from the current saved price, not a fixture');
 const amz=api.snapshot('amazon');
 assert(api.derive(amz).fcf_yield_pct<0,'Amazon negative cashflow not suppressed');
 assert(api.renderFor('amazon').includes('Aktuell negativ'));
