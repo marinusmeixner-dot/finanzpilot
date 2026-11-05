@@ -50,6 +50,7 @@ function ideaCards(){
    '<p>'+esc(x.interest)+'</p>'+
    '<div class="fp82-idea-label">Wichtige Gegenargumente</div><p class="fp82-risk">'+esc(x.counter)+'</p>'+
    (window.FinanzPilotMarketValue?.summaryFor?.(x.id)||'')+
+   '<div class="fp85-card-status">'+(window.FinanzPilotFairValue?.get?.(x.id)?.financial_status==='primary_ttm_reconciled'?'Cashflow aus Originalberichten geprüft':'Primärdatenabgleich steht aus')+'</div>'+
    '<div class="fp82-card-actions"><button type="button" class="btn secondary" data-fp82-idea="'+esc(x.id)+'">Investmentthese ansehen</button>'+
    (full?'<span class="fp82-evidence">Finanzdaten vorhanden</span>':'<span class="fp82-evidence">Vertiefung offen</span>')+'</div></article>';
  }).join('');
@@ -96,6 +97,7 @@ function renderIdea(){
   '<p>Unten siehst du einen überprüften Börsenschlusskurs und historische Gewinn- und Cashflowkennzahlen. Ein echtes Kaufurteil erfordert darüber hinaus nachhaltige zukünftige Cashflows, Kapitalstruktur-Abgleich und geeignete Vergleichswerte. Ein gutes Unternehmen ist nicht automatisch eine günstig bewertete Aktie.</p>'+
   '<p><strong>Aktueller Prüfstand:</strong> Der datierte Marktpreis ist bekannt; die Normalisierung der Cashflows, der Bilanz-Brückenaudit und die Schätzung zukünftiger Gewinne bleiben eigenständige Aufgaben.</p>'+
   '<div class="fp82-verdict">Status: <strong>Marktpreis und historische Bewertungskennzahlen geprüft – belastbarer fairer Wert noch offen</strong></div></section>'+
+  (window.FinanzPilotFairValue?.renderFor?.(idea.id)||'')+
   (window.FinanzPilotMarketValue?.renderFor?.(idea.id)||'')+
   (window.FinanzPilotValuation?.renderFor?.(idea.id)||'')+
   '</main><aside><div class="fp82-aside"><h3>Research-Kompass</h3><p><strong>Worauf achten?</strong></p><p>'+esc(idea.next||'Die nächsten Geschäftsberichte und die Bewertungsannahmen.')+'</p>'+
@@ -134,6 +136,7 @@ function bind(root=document){
  root.querySelectorAll('[data-fp82-route]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.(b.dataset.fp82Route)));
  window.FinanzPilotValuation?.bind?.(root);
  window.FinanzPilotMarketValue?.bind?.(root);
+ window.FinanzPilotFairValue?.bind?.(root);
 }
 try{selected=localStorage.getItem('fp82_selected_idea')||''}catch{}
 window.FinanzPilotInsights={companyContext,articleContext,renderIdeas,renderIdea,openIdea,bind,load,ideaFor,get ideas(){return ideas;},get profiles(){return profiles;}};
