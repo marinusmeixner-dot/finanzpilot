@@ -10,6 +10,7 @@ const age=s=>{const d=Date.parse(String(s||'')+'T12:00:00Z');return Number.isFin
 const numberUnit=(n,c='USD')=>fmt(n/1000,2)+' Mrd. '+(c==='EUR'?'€':'USD');
 const titles={primary_ttm_reconciled:'Cashflow aus Primärberichten abgeglichen',secondary_only:'Primärbericht-Abgleich noch offen'};
 const bridge=(o)=>{
+ if(o?.reported_ttm){const x=o.reported_ttm;if(![x.operating_cf_m,x.capex_m,x.free_cf_m].every(finite))return null;if(x.operating_cf_m<0||x.capex_m<0||Math.abs(x.operating_cf_m-x.capex_m-x.free_cf_m)>0.2)return null;return {operating_cf_m:x.operating_cf_m,capex_m:x.capex_m,fcf_m:x.free_cf_m};}
  if(!o?.ttm_bridge)return null;
  const a=o.ttm_bridge.operating_cash_m,b=o.ttm_bridge.capex_m;
  if(![a?.annual,a?.prior_ytd,a?.current_ytd,b?.annual,b?.prior_ytd,b?.current_ytd].every(finite))return null;
@@ -96,8 +97,9 @@ function verified(rec,ttm){
  '<div class="fp85-audit-grid"><div><small>Operativer Cashflow (TTM)</small><strong>'+numberUnit(ttm.operating_cf_m)+'</strong></div>'+
  '<div><small>Sachanlagenausgaben (TTM)</small><strong>'+numberUnit(ttm.capex_m)+'</strong></div>'+
  '<div><small>Ermittelter FCF (TTM)</small><strong>'+numberUnit(ttm.fcf_m)+'</strong></div></div>'+
- '<p>Rechnung: Jahresabschluss − entsprechender Vorjahres-Zwischenzeitraum + aktueller Zwischenzeitraum. '+esc(rec.ttm_bridge.explanation)+
+ '<p>Berechnung: '+(rec.reported_ttm?'Direkte TTM-Veröffentlichung des Unternehmens. ':'Jahresabschluss − entsprechender Vorjahres-Zwischenzeitraum + aktueller Zwischenzeitraum. ')+esc(rec.ttm_bridge?.explanation||rec.reported_ttm?.explanation||'Definition der originalen Cashflow-Rechnung prüfen.')+
  (delta===null?'':(delta<=5?' Abgleich mit Kurs-Snapshot: rundungsbedingt konsistent.':' <strong>Abweichung zum Marktdaten-Snapshot: '+numberUnit(delta)+'; keine Mischberechnung freigeben.</strong>'))+'</p>'+
+ (rec.additional_adjustments?.company_defined_fcf_finance_lease_principal_m?'<p><strong>Unternehmens-FCF nach Finance-Leases:</strong> '+numberUnit(ttm.fcf_m-rec.additional_adjustments.company_defined_fcf_finance_lease_principal_m)+'. '+esc(rec.additional_adjustments.company_fcf_explanation)+'</p>':'')+
  '<div class="fp85-sources">'+rec.primary_sources.map(x=>link(x.url,x.label+' · '+x.period_end)).join('')+'</div></div>';
 }
 function renderFor(id){
