@@ -70,7 +70,11 @@ def discovery_universe(universe, profiles, curated, editorial):
         if ticker in by_ticker:
             return
         # Different share classes should not masquerade as independent ideas.
-        nkey = re.sub(r"[^a-z0-9]", "", name.lower())
+        words=re.findall(r"[a-z0-9]+",name.lower())
+        # Legal suffixes/share-class names do not define different businesses.
+        suffixes={"ag","se","inc","corp","corporation","plc","ltd","group","holdings","co","sa","nv","incorporated"}
+        meaningful=[w for w in words if w not in suffixes]
+        nkey="".join(meaningful) or re.sub(r"[^a-z0-9]", "", name.lower())
         if nkey in by_name and len(nkey) > 4:
             return
         by_ticker[ticker] = dict(entry)
