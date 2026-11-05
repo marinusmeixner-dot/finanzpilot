@@ -40,7 +40,18 @@ function perf(c){
  '</div>':'<p class="fp86-no-price">Es liegt noch keine ausreichend lange Kursreihe vor. Keine Performance- oder Marktvergleichsaussage möglich.</p>';
 }
 function sourceTag(c){
- return c.editorial_evidence?'Redaktioneller Anlass mit Quelle':c.unverified_discovery_hint?'Ungeprüfter Hinweis – keine Investmentthese':'Noch kein belegter Unternehmensanlass';
+ if(c.editorial_evidence)return Number.isFinite(c.editorial_age_days)&&c.editorial_age_days>35?
+  'Älterer redaktioneller Anlass – neue Zahlen prüfen':'Nachvollziehbarer redaktioneller Anlass';
+ return c.unverified_discovery_hint?'Ungeprüfter Hinweis – keine Investmentthese':'Noch kein belegter Unternehmensanlass';
+}
+function catalyst(c){
+ const e=c.editorial_evidence;
+ if(!e)return '<div class="fp88-catalyst fp88-catalyst-unchecked"><strong>Warum auf dem Radar?</strong><p>Aktuell nur Kurs- und Branchen-Screening. Ein belastbarer Geschäftskatalysator und eine Bewertung müssen unabhängig recherchiert werden.</p></div>';
+ const old=Number.isFinite(c.editorial_age_days)&&c.editorial_age_days>35;
+ return '<div class="fp88-catalyst"><strong>'+(old?'Älterer recherchierter Anlass':'Warum jetzt prüfen?')+'</strong>'+
+ '<p>'+esc(e.title||'Unternehmensmeldung')+'</p>'+
+ '<small>Veröffentlicht: '+esc(e.date||'Datumsprüfung nötig')+(old?' · Nicht mehr als neues Ereignis gewertet':'')+'</small>'+
+ link(e.url,'Beleg der redaktionellen Meldung')+'</div>';
 }
 function card(c){
  const p=c.research_priority,ready=c.signals?.status==='history_available';
@@ -51,7 +62,7 @@ function card(c){
  return '<article class="fp86-card">'+
  '<div class="fp86-card-top"><span class="fp86-symbol">'+esc(c.ticker)+'</span>'+badge+'</div>'+
  '<h3>'+esc(c.company)+'</h3><p class="fp86-sector">'+esc(c.sector||'Branche prüfen')+' · '+esc(c.currency||'Währung prüfen')+'</p>'+
- k+(window.FinanzPilotDecisions?.badge?.(c.id)||'')+'<p class="fp86-proof">'+esc(sourceTag(c))+'</p>'+
+ k+(window.FinanzPilotDecisions?.badge?.(c.id)||'')+'<p class="fp86-proof">'+esc(sourceTag(c))+'</p>'+catalyst(c)+
  '<p class="fp86-risk"><strong>Gegenprüfung:</strong> '+esc(blurb)+'</p>'+
  '<div class="fp86-actions"><button type="button" data-fp86-open="'+esc(c.id)+'">'+(c.has_curated_dossier?'Analyse ansehen':'Recherche ansehen')+'</button>'+
  '<button type="button" class="fp86-soft" aria-pressed="'+tracked.has(c.id)+'" data-fp86-track="'+esc(c.id)+'">'+(tracked.has(c.id)?'Gemerkt ✓':'Merken')+'</button></div></article>';
@@ -102,7 +113,7 @@ function dashboard(){
  '<p class="fp86-date">Kursstand der Radarreihe: '+esc(meta.asof||'noch nicht verfügbar')+' · keine Realtime-Daten</p></div>'+
  '<div class="fp86-tabs" role="group" aria-label="Aktienradar durchsuchen">'+tabs.map(([k,label])=>'<button type="button" data-fp86-tab="'+k+'" aria-pressed="'+(view===k)+'">'+label+'</button>').join('')+'</div>'+
  (view==='history'?renderHistoryBoard():view==='decision'?(window.FinanzPilotDecisions?.board?.()||'<p>Investmentprüfung lädt …</p>'):view==='compare'?(window.FinanzPilotDecisions?.comparison?.()||'<p>Aktienvergleich lädt …</p>'):results.length?'<div class="fp86-grid">'+results.slice(0,view==='all'?120:50).map(card).join('')+'</div>':'<p class="fp86-empty">In dieser Ansicht gibt es derzeit keine geprüften Einträge. Die Radarhistorie wird beim nächsten sachlichen Signalwechsel ergänzt.</p>')+
- '<div class="fp86-method"><h3>Warum erscheint eine Aktie hier?</h3><p>Der Scanner berücksichtigt 50-/200-Tage-Trends, 63-Tage-Relative Performance, historische Schwankungen und – falls vorhanden – eine veröffentlichte, redaktionell eingeordnete Unternehmensmeldung. Eine A-Priorität heißt ausschließlich <strong>„zuerst recherchieren“</strong>, nicht „kaufen“. ETF-Alternativen, Cashflow, reale Verschuldung und Bewertung müssen separat geprüft werden.</p><p>Das Ausgangsuniversum ist offen: neue Unternehmen aus der gepflegten Unternehmensliste und veröffentlichten Berichten werden ergänzt. Bei fehlender Kursreihe zeigt die App bewusst keinen erfundenen Score.</p></div></section>';
+ '<div class="fp86-method"><h3>Warum erscheint eine Aktie hier?</h3><p>Der Scanner berücksichtigt 50-/200-Tage-Trends, 63-Tage-Relative Performance, historische Schwankungen und – falls vorhanden – eine maximal 35 Tage alte, veröffentlichte, redaktionell eingeordnete Unternehmensmeldung. Eine A-Priorität heißt ausschließlich <strong>„zuerst recherchieren“</strong>, nicht „kaufen“. ETF-Alternativen, Cashflow, reale Verschuldung und Bewertung müssen separat geprüft werden.</p><p>Das Ausgangsuniversum ist offen: neue Unternehmen aus der gepflegten Unternehmensliste und veröffentlichten Berichten werden ergänzt. Bei fehlender Kursreihe zeigt die App bewusst keinen erfundenen Score.</p></div></section>';
 }
 function renderHistoryBoard(){
  const rows=ledger.slice(-40).reverse();
