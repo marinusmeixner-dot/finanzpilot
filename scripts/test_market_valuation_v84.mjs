@@ -13,7 +13,7 @@ assert.equal(new Set(data.stocks.map(x=>x.id)).size,9);
 assert(ideas.every(x=>data.stocks.some(s=>s.id===x.id)));
 assert(html.includes('market-valuation-v84.js?v=84')&&html.includes('market-valuation-v84.css?v=84'),'New iPhone assets are loaded');
 assert(html.indexOf('valuation-v83.js?v=83')<html.indexOf('market-valuation-v84.js?v=84'),'Existing scenarios are initialized first');
-assert(html.indexOf('market-valuation-v84.js?v=84')<html.indexOf('market-insights-v82.js?v=84'),'Comparable quotes are initialized before research dossiers');
+assert(html.indexOf('market-valuation-v84.js?v=84')<html.indexOf('market-insights-v82.js?v=85'),'Comparable quotes are initialized before research dossiers');
 assert(ui.includes('FinanzPilotMarketValue?.renderFor?.(idea.id)')&&ui.includes('FinanzPilotMarketValue?.bind?.(root)'),'Comparison is shown and bound in actual market research');
 const events={},state={view:'marketidea'};
 const window={addEventListener:(n,f)=>events[n]=f,render(){},FinanzPilotValuation:null};
