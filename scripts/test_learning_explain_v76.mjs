@@ -34,9 +34,9 @@ assert(example.includes('45 ÷ 500 × 100 = 9 %')&&example.includes('<details>')
 assert(!api.basics('geld-wofuer','idea').includes('data-journey-check'),'Explanations cannot grade questions');
 assert(!read('learning-explain-v76.js').includes('awardFoundation'),'Explanations must not award XP');
 const html=read('index.html');
-assert(html.indexOf('learning-explain-v76.js?v=76')<html.indexOf('lesson-view-v46.js?v='+JSON.parse(read('version.json')).version),'Guide loads before specialist view');
+assert(html.indexOf('learning-explain-v76.js?v=76')>=0&&html.indexOf('learning-explain-v76.js?v=76')<html.indexOf('lesson-view-v46.js?v=80'),'Guide loads before specialist view');
 assert(html.includes('learning-explain-v76.css?v=76'));
-assert(html.includes('journey-v39.js?v='+JSON.parse(read('version.json')).version)&&html.includes('learning-hub-v41.js?v='+JSON.parse(read('version.json')).version));
+assert(html.includes('journey-v39.js?v=80')&&html.includes('learning-hub-v41.js?v=80'),'Cached lesson modules remain correctly linked after app-only version bump');
 assert(!read('lesson-view-v46.js').includes('FinanzPilotExplain?.skill?.(lesson,skill,'),'Expert lessons no longer repeat branch-wide explanation dropdowns');
 assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'idea')"));
 assert(read('journey-v39.js').includes("FinanzPilotExplain?.basics?.(m.id,'example')"));
