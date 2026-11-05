@@ -80,6 +80,7 @@ function renderFor(id){
  '<header><span class="eyebrow">AKTIENBEWERTUNG · VERIFIZIERTER KURSSTAND</span><h2>Was kostet die Aktie tatsächlich – und was ist eingepreist?</h2>'+
  '<p>Historischer Marktpreis und nachprüfbare Kennzahlen werden getrennt von Modellannahmen gezeigt. Kurse vom '+esc(q.date)+' sind <strong>keine Live-Kurse</strong>.</p></header>'+
  (stale?'<p class="fp84-stale" role="status">Der Kurs ist '+a+' Tage alt. Für eine aktuelle Investmententscheidung muss ein neuer Schlusskurs geprüft werden. Alle Vergleiche beziehen sich ausdrücklich auf diesen historischen Stichtag.</p>':'')+
+ (f.observed_date>q.date?'<p class="fp84-mismatch" role="status">Datenzeitpunkt beachten: Der Börsenschluss stammt vom '+esc(q.date)+', die Fundamentaldaten wurden erst am '+esc(f.observed_date)+' ausgelesen. Später publizierte Ergebnisse könnten enthalten sein; die Bewertungskennzahlen sind kein zum damaligen Börsenschluss verfügbarer Live-Vergleich.</p>':'')+
  '<div class="fp84-quote"><div><small>'+esc(q.exchange)+' · Schlusskurs '+esc(q.date)+'</small><strong>'+fmt(q.close,cur)+'</strong><small>Keine Vor- oder Nachbörse</small></div>'+
  '<div class="fp84-quote-source">'+link(q.source_url,'Kursquelle')+'<p>Fundamentaldaten laut Sekundäranbieter – eigene Originalbericht-Prüfung noch offen.</p>'+link(f.source_url,'Kennzahlenquelle')+'</div></div>'+
  '<div class="fp84-metrics">'+
