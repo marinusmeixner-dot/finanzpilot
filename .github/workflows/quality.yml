@@ -120,6 +120,8 @@ jobs:
         run: node scripts/test_valuation_v83.mjs
       - name: "v84: Validate actual closing prices, KGV, cash flow, reversed EPS valuation and interactive sliders"
         run: node scripts/test_market_valuation_v84.mjs
+      - name: "v85: Audit primary-source cashflows, fair-value blockers and five-year equity DCF"
+        run: node scripts/test_fair_value_v85.mjs
       - name: "v46: Audit all 36 fundamentals, all 132 specialist lessons, learning stages and reward-free spaced practice"
         run: node scripts/test_study_depth_v46.mjs
       - name: "v49: Verify eight new skill pathways, client/server answers and teaching quality"
