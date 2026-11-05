@@ -16,7 +16,7 @@ assert(data.records.filter(x=>x.financial_status==='primary_ttm_reconciled').len
 assert(data.records.filter(x=>x.dcf).length>=1,'Original example remains, later source-audited DCF models may be added');
 assert(data.records.every(r=>r.gaps.length>0&&r.primary_sources.every(s=>s.url.startsWith('https://'))));
 assert(html.includes('fair-value-v85.js?v=85')&&html.includes('fair-value-v85.css?v=85'));
-assert(html.includes('market-insights-v82.js?v=86')&&html.includes('manifest.webmanifest?v=86'),'Current research bundle and PWA manifest must be loaded');
+assert(html.includes('market-insights-v82.js?v=86')&&html.includes('manifest.webmanifest?v=87'),'Current research bundle and PWA manifest must be loaded');
 assert(html.indexOf('valuation-v83.js?v=83')<html.indexOf('fair-value-v85.js?v=85'));
 assert(html.indexOf('fair-value-v85.js?v=85')<html.indexOf('market-insights-v82.js?v=86'));
 assert(research.includes('FinanzPilotFairValue?.renderFor?.(idea.id)'));
