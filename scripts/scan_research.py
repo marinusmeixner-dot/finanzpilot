@@ -75,7 +75,7 @@ def discovery_universe(universe, profiles, curated, editorial):
         suffixes={"ag","se","inc","corp","corporation","plc","ltd","group","holdings","co","sa","nv","incorporated"}
         meaningful=[w for w in words if w not in suffixes]
         nkey="".join(meaningful) or re.sub(r"[^a-z0-9]", "", name.lower())
-        if nkey in by_name and len(nkey) > 4:
+        if nkey in by_name and len(nkey) > 2:
             return
         by_ticker[ticker] = dict(entry)
         by_name[nkey] = ticker
@@ -85,9 +85,11 @@ def discovery_universe(universe, profiles, curated, editorial):
     curated_names = {norm(i.get("ticker")): i for i in curated.get("ideas", [])}
     for idea in curated.get("ideas", []):
         ticker = norm(idea.get("ticker"))
-        if ticker in by_ticker:
-            by_ticker[ticker]["curated_id"] = idea["id"]
-            by_ticker[ticker]["editorial_status"] = idea.get("lifecycle", "active")
+        canonical=ticker if ticker in by_ticker else next(
+            (key for key in by_ticker if key.split(".")[0]==ticker and key!=ticker), None)
+        if canonical:
+            by_ticker[canonical]["curated_id"] = idea["id"]
+            by_ticker[canonical]["editorial_status"] = idea.get("lifecycle", "active")
             continue
         # Recognized alternative listings in prior curated dossiers.
         ticker = norm(idea.get("symbol", "")).split(":")[-1] or ticker
