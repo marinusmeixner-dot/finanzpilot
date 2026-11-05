@@ -116,6 +116,8 @@ jobs:
         run: node scripts/test_home_reader_v48.mjs
       - name: "v82: Check in-market ideas, business context and research dossiers"
         run: node scripts/test_market_insights_v82.mjs
+      - name: "v83: Validate dated baseline facts, nine three-case financial models and sensitivity controls"
+        run: node scripts/test_valuation_v83.mjs
       - name: "v46: Audit all 36 fundamentals, all 132 specialist lessons, learning stages and reward-free spaced practice"
         run: node scripts/test_study_depth_v46.mjs
       - name: "v49: Verify eight new skill pathways, client/server answers and teaching quality"
