@@ -72,7 +72,7 @@ assert(bear.per_share<result.per_share&&result.per_share<bull.per_share);
 assert(api.dcfCashflow(-50,7446,ms.dcf.default)===null);
 assert(api.dcfCashflow(500,7446,{annual_growth_pct:10,discount_pct:3,terminal_growth_pct:4,fcf_normalization_factor:1})===null);
 const page=api.renderFor('microsoft');
-for(const x of ['Fünfjährige Cashflow-Sensitivität','Barwert','Bilanzbrücke','Keine Doppelzählung','3','data-fp85-growth','data-fp85-factor','Endwert'])assert(page.includes(x),x);
+for(const x of ['Fünfjährige Cashflow-Sensitivität','Barwert','Bilanzbrücke','keine Doppelzählung','3','data-fp85-growth','data-fp85-factor','Endwert'])assert(page.includes(x),x);
 assert(page.includes('29,03')||page.includes('29,028')||page.includes('29,02'),'Cash − debt bridge not displayed or mathematically wrong');
 assert(page.includes('kein belastbares Kursziel'));
 assert(!page.includes('Jetzt kaufen'));
