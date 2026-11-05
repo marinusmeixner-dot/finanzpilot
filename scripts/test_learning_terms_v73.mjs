@@ -22,6 +22,6 @@ assert(foundation.includes('termApi?.entries?.(quiz,30)'), 'Foundation merges qu
 assert(foundation.includes('data-fp59-glossary'),'Original accessible collapsible glossary remains');
 const index=read('index.html'),version=JSON.parse(read('version.json')).version;
 assert(index.includes('terms-v73.js?v=73'),'All learning views load glossary script');
-assert(index.includes('journey-v39.js?v='+version),'Foundation glossary update bypasses cache');
+assert(index.includes('journey-v39.js?v=80'),'Foundation glossary module keeps its dedicated version after an unrelated home update');
 assert(index.includes('ui-v43.css?v='+version)&&index.includes('manifest.webmanifest?v='+version));
 console.log('V73 PASS: 193 term definitions, Forderungsbestand and Working Capital on foundation questions, neutral explanations across learning views.');
