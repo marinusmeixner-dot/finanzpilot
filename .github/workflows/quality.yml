@@ -126,6 +126,10 @@ jobs:
         run: node scripts/test_fair_value_v85.mjs
       - name: "v86: Validate expandable candidate universe, market-vs-ETF comparison and thesis history UI"
         run: node scripts/test_market_radar_v86.mjs
+      - name: "v87: Validate dynamic investor decisions, alternatives and fundamental thesis revision history"
+        run: node scripts/test_investment_decisions_v87.mjs
+      - name: "v87: Unit-test evidence gates, changing research universe and append-only analyst revision ledger"
+        run: python -m unittest discover -s scripts -p "test_investment_decisions_v87.py" -v
       - name: "v46: Audit all 36 fundamentals, all 132 specialist lessons, learning stages and reward-free spaced practice"
         run: node scripts/test_study_depth_v46.mjs
       - name: "v49: Verify eight new skill pathways, client/server answers and teaching quality"
