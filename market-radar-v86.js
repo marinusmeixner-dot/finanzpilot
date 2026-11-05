@@ -73,7 +73,7 @@ function peerComparison(c){
 function history(c){
  const matches=ledger.filter(e=>e.ticker===c.ticker).slice(-8).reverse();
  const performance=c.since_first_screen;
- return '<section class="fp86-history"><h3>Was hat sich seit der ersten Beobachtung verändert?</h3>'+
+ return '<section class="fp86-history"><h3>Thesenverlauf: Was hat sich seit der ersten Beobachtung verändert?</h3>'+
  (performance?'<div class="fp86-scoreboard"><div><small>Seit '+esc(performance.first_seen)+'</small><strong>'+pct(performance.adjusted_return_pct)+'</strong></div>'+
  '<div><small>Passender ETF</small><strong>'+pct(performance.benchmark_return_pct)+'</strong></div>'+
  '<div><small>Relative Entwicklung</small><strong>'+pct(performance.relative_to_benchmark_pp,' %-Punkte')+'</strong></div></div>'+
