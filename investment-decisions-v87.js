@@ -165,7 +165,7 @@ function bind(root=document){
   window.render?.();
  }));
 }
-window.FinanzPilotDecisions={load,bind,get,badge,mini,candidateSection,board,comparison,revisions,alternatives,
+window.FinanzPilotDecisions={load,bind,get,badge,mini,candidateSection,board,comparison,revisions,alternatives,researchOnly:id=>{const x=get(id);return x?scrutiny(x)+revisions(x.id):'';},
  get items(){return items},get events(){return events},get error(){return error}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
 window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&['marketideas','marketidea'].includes(state.view)&&Date.now()-lastLoad>120000)load()});
