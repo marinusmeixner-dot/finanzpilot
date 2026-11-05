@@ -24,7 +24,7 @@ assert(events.events.length>=ideas.ideas.length,'Every curated hypothesis needs 
 assert(events.events.every(e=>e.classification==='public_source_research_revision_not_trade'));
 assert(events.events.every(e=>e.evidence_url?.startsWith('https://')));
 assert(html.includes('investment-decisions-v87.js?v=87')&&html.includes('investment-decisions-v87.css?v=87'));
-assert(html.indexOf('investment-decisions-v87.js?v=87')<html.indexOf('market-radar-v86.js?v=87'));
+assert(html.indexOf('investment-decisions-v87.js?v=87')<html.indexOf('market-radar-v86.js?v=88'));
 assert(nav.includes("['decision','Investmentprüfung']"));
 assert(nav.includes("['compare','Aktien vergleichen']"));
 assert(nav.includes('FinanzPilotDecisions?.researchOnly?.(c.id)'));
