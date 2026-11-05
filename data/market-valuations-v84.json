@@ -1,0 +1,252 @@
+{
+  "schema_version": 1,
+  "asof": "2026-11-05",
+  "price_policy": "Bestätigte Schlusskurse vom 04.11.2026 (letzter abgeschlossener Handelstag zum Zeitpunkt der Erhebung), keine Realtime-Kurse. Pro Titel ein Börsenplatz; keine Vor-/Nachbörse und keine Währungsumrechnung. Jede Kursaktualisierung benötigt realen Stichtag und Handelsplatz.",
+  "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen.",
+  "valuation_policy": "KGV und FCF-Rendite sind Momentaufnahmen und weder Kursziel noch fairer Wert. Reverse-EPS-Modell ist nur die mathematische Wachstumsanforderung unter offen hypothetischem End-KGV/Abzinsung, ohne Dividenden/Verwässerung. Keine automatischen Kaufempfehlungen. Für negative oder nicht nachhaltig normalisierte Cashflows kein DCF-Kursziel.",
+  "stocks": [
+    {
+      "id": "microsoft",
+      "ticker": "MSFT",
+      "name": "Microsoft",
+      "quote": {
+        "close": 555.8,
+        "exchange": "NASDAQ",
+        "currency": "USD",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/stocks/msft/history/"
+      },
+      "fundamentals": {
+        "shares_m": 7430,
+        "eps_ttm": 19.15,
+        "cash_m": 64510,
+        "debt_m": 133930,
+        "operating_cf_m": 195880,
+        "capex_m": 135920,
+        "free_cf_m": 59960,
+        "ttm_end": "2026-09-30",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/stocks/msft/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "Annual FY2026 EPS non-GAAP 17,28 USD separat vom aktuellen GAAP-TTM-EPS 19,15 USD beurteilen. Hohe KI-Capex, FCF nicht automatisch dauerhaft."
+      }
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "name": "NVIDIA",
+      "quote": {
+        "close": 200.13,
+        "exchange": "NASDAQ",
+        "currency": "USD",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/stocks/nvda/history/"
+      },
+      "fundamentals": {
+        "shares_m": 24147,
+        "eps_ttm": 7.91,
+        "cash_m": 62470,
+        "debt_m": 38860,
+        "operating_cf_m": 134360,
+        "capex_m": 7350,
+        "free_cf_m": 127010,
+        "ttm_end": "2026-07-31",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/stocks/nvda/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "Ausgesprochen hohe KI-Nachfrage und Gewinnmargen; Normalisierung und Kunden-Capex können TTM-EPS/FCF schnell verändern."
+      }
+    },
+    {
+      "id": "amazon",
+      "ticker": "AMZN",
+      "name": "Amazon",
+      "quote": {
+        "close": 266.03,
+        "exchange": "NASDAQ",
+        "currency": "USD",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/stocks/amzn/history/"
+      },
+      "fundamentals": {
+        "shares_m": 10810,
+        "eps_ttm": 12.37,
+        "cash_m": 114230,
+        "debt_m": 304840,
+        "operating_cf_m": 168300,
+        "capex_m": 215190,
+        "free_cf_m": -46890,
+        "ttm_end": "2026-09-30",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/stocks/amzn/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "Negativer TTM-FCF trotz positivem EPS. EPS enthält nicht alle laufenden KI- und Logistik-Investitionen; FCF-Rendite nicht als nachhaltige Ertragskraft interpretieren."
+      }
+    },
+    {
+      "id": "meta",
+      "ticker": "META",
+      "name": "Meta Platforms",
+      "quote": {
+        "close": 630,
+        "exchange": "NASDAQ",
+        "currency": "USD",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/stocks/meta/history/"
+      },
+      "fundamentals": {
+        "shares_m": 2560,
+        "eps_ttm": 29.33,
+        "cash_m": 82450,
+        "debt_m": 114840,
+        "operating_cf_m": 133090,
+        "capex_m": 104440,
+        "free_cf_m": 28650,
+        "ttm_end": "2026-09-30",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/stocks/meta/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "Einmalige Rechtsrückstellungen und große KI-Capex machen historische Earnings und Cashflow zeitweise schwer vergleichbar."
+      }
+    },
+    {
+      "id": "alphabet",
+      "ticker": "GOOGL",
+      "name": "Alphabet (Class A)",
+      "quote": {
+        "close": 288.93,
+        "exchange": "NASDAQ",
+        "currency": "USD",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/stocks/googl/history/"
+      },
+      "fundamentals": {
+        "shares_m": 12290,
+        "eps_ttm": 19.15,
+        "cash_m": 265100,
+        "debt_m": 150330,
+        "operating_cf_m": 179550,
+        "capex_m": 159800,
+        "free_cf_m": 19750,
+        "ttm_end": "2026-09-30",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/stocks/googl/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "TTM-EPS durch Gewinne aus Beteiligungen verzerrbar; Q3 2026 FCF negativ bei 51,355 Mrd. USD Investitionen. GAAP-KGV nicht isoliert als günstig werten."
+      }
+    },
+    {
+      "id": "cgnx",
+      "ticker": "CGNX",
+      "name": "Cognex",
+      "quote": {
+        "close": 53.06,
+        "exchange": "NASDAQ",
+        "currency": "USD",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/stocks/cgnx/history/"
+      },
+      "fundamentals": {
+        "shares_m": 168.22,
+        "eps_ttm": 1.43,
+        "cash_m": 695.69,
+        "debt_m": 70.36,
+        "operating_cf_m": 276.63,
+        "capex_m": 8.34,
+        "free_cf_m": 268.29,
+        "ttm_end": null,
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/stocks/cgnx/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "RealSense-Übernahme und mögliche Veränderungen der Aktienzahl/Verwässerung berücksichtigen. Zeitpunkt des vollständig eingearbeiteten Quartalsberichts erneut prüfen."
+      }
+    },
+    {
+      "id": "siemens",
+      "ticker": "SIE",
+      "name": "Siemens AG",
+      "quote": {
+        "close": 275.65,
+        "exchange": "XETRA",
+        "currency": "EUR",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/quote/etr/SIE/history/"
+      },
+      "fundamentals": {
+        "shares_m": 767.99,
+        "eps_ttm": 10.1,
+        "cash_m": 10930,
+        "debt_m": 49920,
+        "operating_cf_m": 14340,
+        "capex_m": 2490,
+        "free_cf_m": 11850,
+        "ttm_end": "2026-06-30",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/quote/etr/SIE/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "Konzerndaten und Finanzdienstleistungsgeschäft unterscheiden: ausgewiesene Gesamtschulden sind nicht automatisch industrielle Nettoverschuldung. FCF nach Segment und Definition prüfen."
+      }
+    },
+    {
+      "id": "aixtron",
+      "ticker": "AIXA",
+      "name": "AIXTRON SE",
+      "quote": {
+        "close": 32.08,
+        "exchange": "XETRA",
+        "currency": "EUR",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/quote/etr/AIXA/history/"
+      },
+      "fundamentals": {
+        "shares_m": 112.79,
+        "eps_ttm": 0.72,
+        "cash_m": 944.83,
+        "debt_m": 357.39,
+        "operating_cf_m": 390.95,
+        "capex_m": 26.58,
+        "free_cf_m": 364.37,
+        "ttm_end": "2026-09-30",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/quote/etr/AIXA/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "FCF/OCF enthält möglicherweise erhebliche Kundenanzahlungen und Working-Capital-Effekte. Eine TTM-FCF-Rendite von über 10 % ist kein geprüfter nachhaltiger Cashflow."
+      }
+    },
+    {
+      "id": "kion",
+      "ticker": "KGX",
+      "name": "KION Group AG",
+      "quote": {
+        "close": 34.96,
+        "exchange": "XETRA",
+        "currency": "EUR",
+        "price_type": "official_regular_session_close",
+        "date": "2026-11-04",
+        "source_url": "https://stockanalysis.com/quote/etr/KGX/history/"
+      },
+      "fundamentals": {
+        "shares_m": 131.12,
+        "eps_ttm": 2.82,
+        "cash_m": 398.6,
+        "debt_m": 7760,
+        "operating_cf_m": 420.4,
+        "capex_m": 380.7,
+        "free_cf_m": 39.7,
+        "ttm_end": "2026-09-30",
+        "observed_date": "2026-11-05",
+        "source_url": "https://stockanalysis.com/quote/etr/KGX/statistics/",
+        "source_kind": "secondary_market_data_provider",
+        "caution": "Finanzverbindlichkeiten beinhalten ggf. Lease-/Financial-Services-Finanzierung. Nicht ohne Segment-Brücke als einfache EV-Nettoschulden verwenden; Free Cashflow nahe null."
+      }
+    }
+  ]
+}
