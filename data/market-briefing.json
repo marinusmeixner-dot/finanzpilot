@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "date": "2026-11-04",
+  "source_updated_at": "2026-11-04T21:04:00+01:00",
+  "title": "Inflation, Automobilindustrie und Cashflow – drei Signale im Blick",
+  "summary": "Ein Energieschub im Euroraum verändert den Blick auf Inflation und Zinsen. Zugleich zeigen Unternehmensberichte, wie unterschiedlich die Herausforderungen bei Autokonzernen und Gesundheits- und Agrarunternehmen sind. Entscheidend ist, was die neuen Zahlen für künftige Gewinne und freie Mittel bedeuten.",
+  "interpretation": "Höhere Kosten, Umbauprogramme und schwache freie Cashflows können die Bewertung belasten, auch wenn einzelne operative Kennzahlen stabil aussehen. Aus solchen Meldungen allein entsteht noch kein Kaufsignal.",
+  "highlights": [
+    {
+      "story_id": "2026-11-04-eurostat-eurozone-inflation-october-flash",
+      "title": "Inflation: Energie treibt die Teuerung",
+      "why": "Ein unerwarteter Preisschub kann Zinserwartungen und Unternehmensmargen beeinflussen.",
+      "watch": "Weitere Inflationsdaten, Kernrate und Entscheidungen der EZB"
+    },
+    {
+      "story_id": "2026-11-04-bmw-q3-guidance-realignment",
+      "title": "BMW: Ausblick und Umbaukosten",
+      "why": "Ein ordentlicher Quartalsgewinn genügt nicht, wenn der Jahresausblick und der Cashflow unter Druck geraten.",
+      "watch": "Automobilmarge, Investitionen und Tempo der Modellumstellung"
+    },
+    {
+      "story_id": "2026-11-03-bayer-q3-cashflow",
+      "title": "Bayer: Ergebnis ist nicht Cashflow",
+      "why": "Operative Verbesserungen und tatsächlich verfügbares Geld können deutlich auseinanderfallen.",
+      "watch": "Freier Cashflow, Verschuldung und Rechtsstreitkosten"
+    }
+  ],
+  "next_watch": "Prüfen, ob neue amtliche Inflationszahlen oder Unternehmensberichte die dargestellten Zusammenhänge verändern.",
+  "methodology": "Redaktionelle Einordnung zu bereits vollständig belegten FinanzPilot-Artikeln. Jede Aussage wird durch den verlinkten Originalartikel mit Primärquellen und tatsächlichem Datum gestützt. Keine Live-Kurse, Prognose oder Kaufempfehlung."
+}
