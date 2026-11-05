@@ -474,6 +474,56 @@
         "Gewinn und Free Cashflow über mehrere Quartale vergleichen",
         "Aktuellen Kurs, Gewinnprognose und andere Machine-Vision-Unternehmen prüfen"
       ]
+    },
+    {
+      "id": "apple",
+      "company": "Apple",
+      "ticker": "AAPL",
+      "baseline": {
+        "period": "GJ2026 (bis 26.09.2026)",
+        "period_kind": "year",
+        "currency": "USD",
+        "unit": "Mio.",
+        "revenue_m": 478834,
+        "operating_income_m": 158063,
+        "profit_label": "GAAP operatives Ergebnis",
+        "source_published": "2026-11-03",
+        "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+        "source_note": "Apple FY2026 10-K. Die Bruttomarge von Q4 enthält positive Zollerstattungen; die drei Wachstums-/Margenpfade sind keine Unternehmensguidance.",
+        "secondary_source_url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/"
+      },
+      "horizon_years": 3,
+      "scenarios": {
+        "bear": {
+          "label": "Negativ",
+          "growth_pct": -3,
+          "margin_pct": 25,
+          "thesis": "Schwächere Gerätekäufe, Zölle und Preis-/Mixdruck begrenzen Wachstum und Profitabilität."
+        },
+        "base": {
+          "label": "Basis",
+          "growth_pct": 8,
+          "margin_pct": 32,
+          "thesis": "Moderates Gerätewachstum und Services stützen die Marge, ohne Einmalzolleffekte fortzuschreiben."
+        },
+        "bull": {
+          "label": "Positiv",
+          "growth_pct": 14,
+          "margin_pct": 38,
+          "thesis": "Starke Services-Ausweitung und hohe Gerätebindung erhöhen operative Skalierung."
+        }
+      },
+      "drivers": [
+        "Nachhaltiges Wachstum von Services und aktivem Gerätebestand",
+        "iPhone-/Mac-Umsätze in den großen Regionen, insbesondere China",
+        "Freier Cashflow nach Capex und aktienbasierter Vergütung"
+      ],
+      "checks": [
+        "Q4-Zollerstattungen aus wiederkehrender Bruttomarge herausrechnen",
+        "Aktienrückkäufe, Verwässerung und Nettofinanzposition regelmäßig neu prüfen",
+        "Kostensatz, Szenariogewinn, zukünftigen FCF und wettbewerbsfähige Peers vor einem Kursziel nachvollziehen"
+      ],
+      "valuation": null
     }
   ]
 }
