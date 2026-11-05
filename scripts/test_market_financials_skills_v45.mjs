@@ -10,7 +10,7 @@ assert.equal(catalog.skills.length,52);
 assert.equal(catalog.skills.flatMap(s=>s.lessons).length,156);
 assert.equal(reports.companies.length,4);
 assert(html.includes('<strong id="top-fp">0</strong> FP'),'Show points before FP suffix');
-assert(nav.includes("['marketfinancials','Kennzahlen'"));
+assert(nav.includes("['marketfinancials','Finanzberichte'"),"Financial reports remain a dedicated Markets section");
 assert(nav.includes("marketfinancials:'markets'"));
 assert(app.includes('FinanzPilotMarkets.renderFinancials()'));
 assert(market.includes('function renderFinancials()'));
