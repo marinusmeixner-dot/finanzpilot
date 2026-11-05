@@ -78,6 +78,8 @@ assert(page.includes('kein belastbares Kursziel'));
 assert(!page.includes('Jetzt kaufen'));
 const ev=api.get('microsoft').balance;
 assert.equal(ev.cash_and_st_investments_m-ev.debt_short_m-ev.debt_long_m,29028);
+assert.equal(prices.stocks.find(x=>x.id==='microsoft').fundamentals.shares_m,7427,'Market cap uses actual outstanding shares at balance-sheet date, not diluted weighted average');
+assert.equal(ev.diluted_weighted_shares_m,7446,'Forecast per-share uses diluted average shares; do not mix with actual outstanding count');
 const handlers={},els={};
 const make=(tag,value)=>({dataset:{[tag]:'microsoft'},value:String(value),addEventListener:(type,fn)=>handlers[tag+':'+type]=fn});
 const controls={
