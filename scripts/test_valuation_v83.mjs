@@ -10,7 +10,7 @@ assert.equal(data.models.length,9,'Nine source-backed companies required');
 assert.equal(new Set(data.models.map(m=>m.id)).size,9,'No duplicate model IDs');
 assert.equal(ideas.length,9);
 assert(data.models.every(m=>ideas.some(i=>i.id===m.id)));
-assert(index.includes('valuation-v83.js?v=83')&&index.includes('valuation-v83.css?v=83')&&index.includes('market-insights-v82.js?v=83'));
+assert(index.includes('valuation-v83.js?v=83')&&index.includes('valuation-v83.css?v=83')&&index.includes('market-insights-v82.js?v=84'));
 assert(index.indexOf('valuation-v83.js?v=83')<index.indexOf('market-insights-v82.js?v=83'),'Valuation available before dossier rendering');
 assert(research.includes('FinanzPilotValuation?.renderFor?.(idea.id)'),'Every dossier embeds quantitative scenario review');
 assert(research.includes('FinanzPilotValuation?.bind?.(root)'),'Slider controls are wired');
