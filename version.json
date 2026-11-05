@@ -1,5 +1,5 @@
 {
-  "version": 80,
-  "release": "2026-11-03-v80",
-  "notes": "Skill-Lektionen: 156 individuell formulierte Fallherleitungen mit 156 eigenen Fehlerhinweisen statt wiederholter Branch-Schablonen. Direkt verständliche Beispiele, optionale Rechnungen und Visualisierungen, keine doppelt identischen Dropdown-Hilfen mehr. Unveränderte Quizzes, XP/FP und Lernstände."
+  "version": 81,
+  "release": "2026-11-05-v81",
+  "notes": "Start neu gestaltet: datiertes Marktbriefing mit überprüfbaren Meldungen, Zusammenhangsketten, aktualisierbarem Aktienradar und kompaktem Lernzugang. Alter Lernstand, Depot und Nachrichtenleser bleiben unverändert."
 }
