@@ -1,0 +1,26 @@
+/* V89: candid, source-first investment research prioritization. */
+.fp89-shell,.fp89-diligence{background:#1a3640;border:1px solid #527970;border-radius:15px;padding:19px;color:#e8f6ee;display:grid;gap:13px;margin:12px 0}
+.fp89-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;flex-wrap:wrap}
+.fp89-heading h3,.fp89-diligence h3{font-size:clamp(19px,2.6vw,24px);line-height:1.32;margin:5px 0}
+.fp89-heading p,.fp89-diligence p,.fp89-shell>p{font-size:12px;line-height:1.65;color:#c7dfd2;max-width:800px}
+.fp89-date{font-size:11px;color:#c0dccd;line-height:1.5}
+.fp89-counts{display:flex;gap:8px;flex-wrap:wrap}
+.fp89-counts span{font-size:11px;border:1px solid #4c7068;border-radius:8px;background:#21413f;padding:8px 10px;color:#c9e0d2}
+.fp89-counts strong{font-size:16px;font-variant-numeric:tabular-nums;color:#f3fff2;margin-right:4px}
+.fp89-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.fp89-item{display:grid;align-content:start;gap:10px;background:#1c3943;border:1px solid #4c7168;border-radius:12px;padding:15px;min-width:0}
+.fp89-item header{display:flex;justify-content:space-between;gap:6px;flex-wrap:wrap;align-items:center}
+.fp89-ticker{border-radius:7px;background:#27594e;border:1px solid #6c967f;padding:4px 8px;font-size:11px;font-weight:750}
+.fp89-kind{font-size:10px;line-height:1.4;color:#c7e4cf}
+.fp89-item h3{font-size:17px;line-height:1.3;margin:0}
+.fp89-why{font-size:12px;line-height:1.55;color:#e0f2e6}
+.fp89-item .fp89-date{font-size:10px;color:#b0cbbe}
+.fp89-item a,.fp89-diligence a{color:#b6f0cd;font-size:12px;text-decoration:underline;text-underline-offset:3px}
+.fp89-next{font-size:12px;line-height:1.62;color:#cadfd3}
+.fp89-item button{align-self:end;text-align:center;margin-top:auto;border-radius:9px;border:1px solid #84b99d;background:#285b4b;padding:10px 11px;font-size:12px;color:#e9faee;font-weight:690;cursor:pointer}
+.fp89-item button:hover{background:#346c56}
+.fp89-note{font-size:11px!important;line-height:1.75!important;color:#aec9bb!important}
+.fp89-diligence ol{padding-left:22px;display:grid;gap:8px}
+.fp89-diligence li{font-size:12px;line-height:1.6;color:#d4e7dc}
+@media(max-width:980px){.fp89-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.fp89-shell,.fp89-diligence{padding:14px}.fp89-grid{grid-template-columns:1fr}.fp89-heading{display:grid;gap:8px}.fp89-item{padding:13px}}
