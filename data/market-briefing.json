@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
-  "date": "2026-11-04",
-  "source_updated_at": "2026-11-04T21:04:00+01:00",
-  "title": "Inflation, Automobilindustrie und Cashflow – drei Signale im Blick",
-  "summary": "Ein Energieschub im Euroraum verändert den Blick auf Inflation und Zinsen. Zugleich zeigen Unternehmensberichte, wie unterschiedlich die Herausforderungen bei Autokonzernen und Gesundheits- und Agrarunternehmen sind. Entscheidend ist, was die neuen Zahlen für künftige Gewinne und freie Mittel bedeuten.",
-  "interpretation": "Höhere Kosten, Umbauprogramme und schwache freie Cashflows können die Bewertung belasten, auch wenn einzelne operative Kennzahlen stabil aussehen. Aus solchen Meldungen allein entsteht noch kein Kaufsignal.",
+  "date": "2026-11-05",
+  "source_updated_at": "2026-11-05T00:00:00+01:00",
+  "title": "Industrieaufträge erholen sich – Inflation und Firmen-Cashflows bleiben entscheidend",
+  "summary": "Die heute von Destatis veröffentlichten Septemberdaten zeigen 4,4 % mehr reale deutsche Industrieaufträge als im Vormonat. Das ist nach dem kräftigen August-Einbruch eine Erholung, aber im Dreimonatsvergleich kaum Wachstum. Gleichzeitig bleiben die jüngsten Inflationsdaten und Unternehmensberichte wichtig für die Einschätzung von Finanzierungskosten und Gewinnqualität.",
+  "interpretation": "Bessere Aufträge könnten mittelfristig Maschinenbau und Automobilzulieferer stützen, falls daraus Umsatz mit ausreichender Marge entsteht. Die Quartalsdaten zeigen jedoch noch keine robuste Trendwende. Höhere Energiekosten und schwache freie Cashflows einzelner Unternehmen sind weiterhin Risiken; daraus folgt kein unmittelbares Aktienkaufsignal.",
   "highlights": [
+    {
+      "story_id": "2026-11-05-destatis-industry-orders-september",
+      "title": "Industrie: Auftragseingang +4,4 %",
+      "why": "Aufträge ohne Großaufträge steigen um 5,1 %, doch das Gesamtquartal liegt nur 0,2 % über dem Vorquartal.",
+      "watch": "Folgende Produktions- und Auftragsdaten, tatsächliche Umsätze und Unternehmensmargen"
+    },
     {
       "story_id": "2026-11-04-eurostat-eurozone-inflation-october-flash",
       "title": "Inflation: Energie treibt die Teuerung",
@@ -17,14 +23,8 @@
       "title": "BMW: Ausblick und Umbaukosten",
       "why": "Ein ordentlicher Quartalsgewinn genügt nicht, wenn der Jahresausblick und der Cashflow unter Druck geraten.",
       "watch": "Automobilmarge, Investitionen und Tempo der Modellumstellung"
-    },
-    {
-      "story_id": "2026-11-03-bayer-q3-cashflow",
-      "title": "Bayer: Ergebnis ist nicht Cashflow",
-      "why": "Operative Verbesserungen und tatsächlich verfügbares Geld können deutlich auseinanderfallen.",
-      "watch": "Freier Cashflow, Verschuldung und Rechtsstreitkosten"
     }
   ],
-  "next_watch": "Prüfen, ob neue amtliche Inflationszahlen oder Unternehmensberichte die dargestellten Zusammenhänge verändern.",
-  "methodology": "Redaktionelle Einordnung zu bereits vollständig belegten FinanzPilot-Artikeln. Jede Aussage wird durch den verlinkten Originalartikel mit Primärquellen und tatsächlichem Datum gestützt. Keine Live-Kurse, Prognose oder Kaufempfehlung."
+  "next_watch": "Prüfen, ob die nächsten Industrie- und Inflationsdaten den September-Aufholeffekt bestätigen und ob sich neue Aufträge in Margen und Cashflows niederschlagen.",
+  "methodology": "Aktuelle neue Primärquelle: Destatis, Pressemitteilung 385 vom 05.11.2026; übrige Highlights bleiben datierte ältere Originalberichte. Keine Live-Kurse oder Kaufempfehlung."
 }
