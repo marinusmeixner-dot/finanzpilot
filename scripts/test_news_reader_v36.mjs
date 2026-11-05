@@ -42,7 +42,7 @@ api.openNews('AMZN');
 await new Promise(r=>setTimeout(r,0));
 const result=api.renderNews();
 assert(result.includes('Amazon')&&result.includes('Microsoft'),'Both watchlist stocks must receive editorial coverage');
-assert(result.includes('Vollständigen kostenlosen FinanzPilot-Artikel lesen'));
+assert(result.includes('Die vollständige Einordnung lesen'),'Complete articles remain directly readable inside FinanzPilot');
 const bayer=daily.stories.find(s=>s.symbols?.includes('AMZN'));
 assert(api.openArticle(bayer.id));
 assert.equal(page,'marketarticle');
