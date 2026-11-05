@@ -2,7 +2,7 @@
   "schema_version": 1,
   "asof": "2026-11-05",
   "price_policy": "Bestätigte, bei datierten Börsenhistorien reproduzierbare reguläre Schlusskurse vom 04.11.2026; keine direkt beim Börsenbetreiber auditierten offiziellen Schlusskurse und keine Echtzeitdaten. Pro Titel ein Börsenplatz (NASDAQ/Xetra) und eine Währung; keine Vor-/Nachbörse und keine Währungsumrechnung. Jede künftige Aktualisierung braucht realen Handelsstichtag, Primärquelle soweit verfügbar und Zeitstempel. Die erst am 05.11.2026 abgerufenen TTM-Fundamentaldaten könnten Geschäftsberichte enthalten, die beim Kursstand 04.11.2026 noch nicht bekannt waren.",
-  "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen. Zusätzlich 05.11.2026: Originalberichts-TTM-Bridges für Microsoft, NVIDIA und Alphabet in data/fair-value-audit-v85.json dokumentiert; die dort markierten Cashflow-Felder wurden abgestimmt. Microsoft: 7.446 Mio. verwässerte gewichtete Aktien, übrige Titel teils sekundär. Amazon und Meta: TTM-Flow-Daten nun ebenfalls aus veröffentlichten SEC-/IR-Unterlagen bestätigt; Meta non-GAAP-FCF zusätzlich unter Berücksichtigung von Finance-Lease-Tilgungen. Keine primär vollständig validierte Equity-Bridge.",
+  "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen. Zusätzlich 05.11.2026: Originalberichts-TTM-Bridges für Microsoft, NVIDIA und Alphabet in data/fair-value-audit-v85.json dokumentiert; die dort markierten Cashflow-Felder wurden abgestimmt. Microsoft-Kapitalisierung: 7.427 Mio. tatsächlich ausstehende Aktien zum 30.09.2026; für DCF-Rechnung getrennt 7.446 Mio. verwässerte durchschnittliche Aktien, übrige Titel teils sekundär. Amazon und Meta: TTM-Flow-Daten nun ebenfalls aus veröffentlichten SEC-/IR-Unterlagen bestätigt; Meta non-GAAP-FCF zusätzlich unter Berücksichtigung von Finance-Lease-Tilgungen. Keine primär vollständig validierte Equity-Bridge.",
   "valuation_policy": "KGV und FCF-Rendite sind Momentaufnahmen und weder Kursziel noch fairer Wert. Reverse-EPS-Modell ist nur die mathematische Wachstumsanforderung unter offen hypothetischem End-KGV/Abzinsung, ohne Dividenden/Verwässerung. Keine automatischen Kaufempfehlungen. Für negative oder nicht nachhaltig normalisierte Cashflows kein DCF-Kursziel.",
   "stocks": [
     {
@@ -18,7 +18,7 @@
         "source_url": "https://stockanalysis.com/stocks/msft/history/"
       },
       "fundamentals": {
-        "shares_m": 7446,
+        "shares_m": 7427,
         "eps_ttm": 19.15,
         "cash_m": 64509,
         "debt_m": 35481,
@@ -42,7 +42,8 @@
           "operating_cf_m",
           "capex_m",
           "free_cf_m"
-        ]
+        ],
+        "shares_basis": "Aktien am 30.09.2026 im Umlauf, nicht gewichtet verwässert. Für DCF-Sensitivität wird separat mit 7.446 Mio. verwässerten Durchschnittsaktien gerechnet."
       }
     },
     {
