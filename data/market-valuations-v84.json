@@ -262,14 +262,23 @@
         "eps_ttm": 0.72,
         "cash_m": 944.83,
         "debt_m": 357.39,
-        "operating_cf_m": 390.95,
-        "capex_m": 26.58,
-        "free_cf_m": 364.37,
+        "operating_cf_m": 391,
+        "capex_m": 29.5,
+        "free_cf_m": 361.5,
         "ttm_end": "2026-09-30",
         "observed_date": "2026-11-05",
         "source_url": "https://stockanalysis.com/quote/etr/AIXA/statistics/",
-        "source_kind": "secondary_market_data_provider",
-        "caution": "FCF/OCF enthält möglicherweise erhebliche Kundenanzahlungen und Working-Capital-Effekte. Eine TTM-FCF-Rendite von über 10 % ist kein geprüfter nachhaltiger Cashflow."
+        "source_kind": "mixed_primary_secondary",
+        "caution": "FCF/OCF enthält möglicherweise erhebliche Kundenanzahlungen und Working-Capital-Effekte. Eine TTM-FCF-Rendite von über 10 % ist kein geprüfter nachhaltiger Cashflow. Jetzt mit FY2025/9M2025/9M2026 Originalquellen auf TTM-EBENE rekonstruiert; die 'Capex'-Restgröße umfasst AIXTRON-spezifische Investitions-/Desinvestitionspositionen, nicht nur klassische Sachanlagenkäufe. Hoher 2026 FCF möglicherweise durch nicht wiederholbare Kundenanzahlungen aufgebläht.",
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "primary_ttm_sources": [
+          "https://www.aixtron.com/en/investors/AIXTRON%20with%20robust%20results%20in%20a%20soft%20market%20environment_n13896",
+          "https://aixtron.com/en/investors/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801"
+        ]
       }
     },
     {
