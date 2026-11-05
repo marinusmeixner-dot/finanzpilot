@@ -146,7 +146,7 @@ def decision(root=ROOT):
                           "audited_cashflow_no_fair_value" if audit and audit.get("financial_status")=="primary_ttm_reconciled" else
                           "no_source_audited_fair_value")
         candidates=radar.get("candidates",[])
-        alt=[{"id":v["id"],"name":v["name"],"ticker":v["ticker"],"currency":v["currency"],
+        alt=[{"id":v["benchmark_id"],"name":v["name"],"ticker":v["ticker"],"currency":v["currency"],
               "return_63d_pct":v["return_63d_pct"],"excess_return_pp":v["excess_return_pp"]}
               for v in item.get("benchmarks",[]) if v.get("currency")==item.get("currency") and v.get("return_63d_pct") is not None]
         risk=(idea or {}).get("counter") or item.get("risks") or "Geschäftsmodell, Bewertung und Bilanz sind noch zu verifizieren."
