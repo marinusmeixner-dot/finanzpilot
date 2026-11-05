@@ -1,5 +1,5 @@
 {
-  "version": 81,
-  "release": "2026-11-05-v81",
-  "notes": "Start neu gestaltet: datiertes Marktbriefing mit überprüfbaren Meldungen, Zusammenhangsketten, aktualisierbarem Aktienradar und kompaktem Lernzugang. Alter Lernstand, Depot und Nachrichtenleser bleiben unverändert."
+  "version": 82,
+  "release": "2026-11-05-v82",
+  "notes": "Märkte: News mit Branchenprofilen, Ursachen und möglichen Folgen, verknüpfte Aktienideen mit Geschäftsmodell, Risiken, Primärquellen und integrierter Research-Detailseite. Start-Briefing, Depot und Lernfortschritt bleiben erhalten."
 }
