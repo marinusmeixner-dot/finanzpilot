@@ -95,6 +95,7 @@ function renderIdea(){
   '<p>Diese Frage bleibt offen, solange keine aktuellen, datierten Kurs- und Gewinn- beziehungsweise Cashflow-Daten vollständig gegenübergestellt sind. Ein gutes Unternehmen ist nicht automatisch ein gutes Investment.</p>'+
   '<p><strong>Für eine vollständige Entscheidung erforderlich:</strong> Aktueller Aktienkurs und Handelsplatz, nachhaltig erzielbarer Free Cashflow, Schulden, angemessene Vergleichsunternehmen sowie Basis-, Negativ- und Positivszenario mit offengelegten Annahmen.</p>'+
   '<div class="fp82-verdict">Status: <strong>Interessante Beobachtung – Bewertung noch nicht abgeschlossen</strong></div></section>'+
+  (window.FinanzPilotValuation?.renderFor?.(idea.id)||'')+
   '</main><aside><div class="fp82-aside"><h3>Research-Kompass</h3><p><strong>Worauf achten?</strong></p><p>'+esc(idea.next||'Die nächsten Geschäftsberichte und die Bewertungsannahmen.')+'</p>'+
     '<p><strong>Was spricht dagegen?</strong></p><p>'+esc(idea.counter)+'</p><div class="fp82-sources"><strong>Originalquellen</strong>'+
     sourceLink(idea.source,'Unternehmensmeldung')+(idea.supporting_source?sourceLink(idea.supporting_source,'Ergänzende Quelle'):'')+'</div>'+
@@ -129,6 +130,7 @@ function bind(root=document){
  root.querySelectorAll('[data-fp82-open-ticker]').forEach(b=>b.addEventListener('click',()=>{const idea=ideaFor(b.dataset.fp82OpenTicker);if(idea)openIdea(idea.id)}));
  root.querySelectorAll('[data-fp82-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.fp82Filter==='report'?'report':'all';window.render?.()}));
  root.querySelectorAll('[data-fp82-route]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.(b.dataset.fp82Route)));
+ window.FinanzPilotValuation?.bind?.(root);
 }
 try{selected=localStorage.getItem('fp82_selected_idea')||''}catch{}
 window.FinanzPilotInsights={companyContext,articleContext,renderIdeas,renderIdea,openIdea,bind,load,ideaFor,get ideas(){return ideas;},get profiles(){return profiles;}};
