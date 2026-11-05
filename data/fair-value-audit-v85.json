@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "created_at": "2026-11-05",
-  "overall_status": "Für 5 Unternehmen (Microsoft, NVIDIA, Alphabet, Amazon, Meta) sind TTM-Cashflows anhand veröffentlichter Primärdokumente nachvollzogen, für 4 weitere fehlen quellengebundene TTM-Bridges. Ein Equity-Cashflow-Szenariomodell für Microsoft bleibt illustrativ. Keine der neun Aktien besitzt einen endgültig validierten fairen Wert.",
+  "overall_status": "Für 6 Unternehmen (Microsoft, NVIDIA, Alphabet, Amazon, Meta, AIXTRON) sind TTM-Cashflows durch Primärquellen direkt oder über vergleichbare Berichtsperioden rekonstruiert. Für Siemens, KION und Cognex fehlt noch ein konsistenter TTM-Abgleich. Fair-Value-Kursziele sind für alle neun weiterhin ungeprüft; Microsoft hat ein reines illustratives Equity-DCF.",
   "readiness_definition": {
     "primary_ttm_reconciled": "Cashflow und Ausgaben aus Primärquelle entweder direkt als TTM veröffentlicht oder rechnerisch aus Jahressumme minus alter und plus neuer Zwischenperiode überprüft. Unternehmerisch abweichende FCF-Definitionen separat.",
     "secondary_only": "Vorhandene V84-Werte überwiegend aus Markt-Datenaggregator; noch kein Primärbericht-Abgleich.",
@@ -290,21 +290,43 @@
       "id": "aixtron",
       "ticker": "AIXA",
       "company": "AIXTRON",
-      "financial_status": "secondary_only",
+      "financial_status": "primary_ttm_reconciled",
       "model_status": "blocked",
       "primary_sources": [
         {
-          "url": "https://www.aixtron.com/en/press/press-releases/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801",
-          "label": "Q3 2026 Meldung",
+          "url": "https://www.aixtron.com/en/investors/AIXTRON%20with%20robust%20results%20in%20a%20soft%20market%20environment_n13896",
+          "label": "GJ2025 Unternehmensmeldung: CFO & FCF",
+          "period_end": "2025-12-31"
+        },
+        {
+          "url": "https://aixtron.com/en/investors/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801",
+          "label": "9M2026 Unternehmensmeldung inkl. 9M2025 Vergleich",
           "period_end": "2026-09-30"
         }
       ],
       "gaps": [
-        "Aktuellen 9M- und FY-Abschluss: Cashflow-Anzahlungen aus Working Capital bereinigen",
-        "Jahres-CFO/Capex für echte TTM-Basis mit Primärdokumenten abgleichen",
-        "Nettofinanzschulden, tatsächliche Aktienzahl und Backlog-Konversion auditieren",
-        "Erlös-/Margenschwankungen und Halbleiterzyklus in nachhaltigem FCF abbilden"
-      ]
+        "Hohe Kundenvorauszahlungen (veröffentlichte Contract Liabilities 309,0 Mio. € gegenüber 44,5 Mio. € 2025) von wiederkehrendem, nachhaltig verfügbarem FCF trennen",
+        "Netto-Cash und Wandler-Schuldkomponente/Finanzanlagen vollständig primär auf Aktienwert überleiten",
+        "Aktienzahl vollständig verwässert inklusive Wandelschuld und langfristigen Vergütungsprogrammen prüfen",
+        "Auftragseingang / Backlog in Umsatz und Cashflows des nächsten Konjunkturzyklus übertragen",
+        "Cashflow-Szenarien erst mit normalisierter FCF-Basis, diskontierten fünf Jahren und geprüfter Equity-Bridge zur Aktienbewertung freigeben"
+      ],
+      "cashflow_method": "GJ 2025 minus 9M 2025 plus 9M 2026; Unternehmens-FCF-Definition inkl. Netto-Anlage-/Finanzinvestitionen",
+      "fiscal_period_end": "2026-09-30",
+      "ttm_bridge": {
+        "operating_cash_m": {
+          "annual": 208.4,
+          "prior_ytd": 128.5,
+          "current_ytd": 311.1
+        },
+        "capex_m": {
+          "annual": 26.5,
+          "prior_ytd": 18.2,
+          "current_ytd": 21.2
+        },
+        "unit": "Mio. EUR",
+        "explanation": "CFO wurde primär belegt. Als 'Capex' wird hier die Differenz CFO minus vom Unternehmen definiertem FCF verwendet (inkl. Netto-Anlagen-/Finanzinvestitionen und Erlösen aus Verkäufen), NICHT ausschließlich Sachanlagenkäufe; daher EV-DCF weiter gesperrt. Jahres- und Zwischenbericht gerundet (Abweichungen um 0,1 Mio. EUR möglich). 9M-CFO 2026 durch Kundenvorauszahlungen beeinflusst."
+      }
     },
     {
       "id": "kion",
