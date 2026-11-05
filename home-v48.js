@@ -70,9 +70,7 @@ function ideaCards(){
   '<h3>'+esc(x.company)+'</h3><div class="fp81-sector">'+esc(x.sector||'Branche noch zu prüfen')+'</div>'+
   '<p>'+esc(x.interest)+'</p>'+
   '<details><summary>Was spricht dagegen?</summary><p>'+esc(x.counter)+'</p><p class="fp81-muted">'+esc(x.next||'Weitere Bewertung und Quellenprüfung erforderlich.')+'</p></details>'+
-  (x.id==='kion'
-   ?'<button type="button" class="fp81-story-link" data-idea-course="kion-deep-valuation-2026">Vertiefung öffnen →</button>'
-   :'<button type="button" class="fp81-story-link" data-idea-request="'+esc(x.ticker)+'">Research anfordern →</button>')+
+  '<button type="button" class="fp81-story-link" data-fp82-home-idea="'+esc(x.id)+'">Investmentthese ansehen →</button>'+
   '</article>').join('');
 }
 function render(){
@@ -111,8 +109,9 @@ function bind(root=document){
  root.querySelectorAll('[data-fp48-action]').forEach(b=>b.addEventListener('click',()=>{
   const id=b.dataset.fp48Action;
   if(id==='continue'){if(window.FinanzPilotJourney?.modules?.length)window.FinanzPilotJourney.start();else route('basics');}
-  else route(({tree:'skilltree',review:'skilllessons',ideas:'academy',news:'marketnews',charts:'marketoverview'})[id]||'learn');
+  else route(({tree:'skilltree',review:'skilllessons',ideas:'marketideas',news:'marketnews',charts:'marketoverview'})[id]||'learn');
  }));
+ root.querySelectorAll('[data-fp82-home-idea]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotInsights?.openIdea?.(b.dataset.fp82HomeIdea)));
  root.querySelectorAll('[data-fp48-read]').forEach(b=>b.addEventListener('click',()=>{
   const s=storyById(b.dataset.fp48Read);
   if(!s||!window.FinanzPilotMarkets?.openEditorialStory?.(s)){error='Der Artikel konnte nicht geöffnet werden.';window.render?.();}
