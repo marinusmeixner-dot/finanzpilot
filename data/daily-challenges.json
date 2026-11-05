@@ -1,22 +1,22 @@
 {
   "schema_version": 1,
-  "date": "2026-11-04",
-  "updated_at": "2026-11-04T08:15:00+01:00",
+  "date": "2026-11-05",
+  "updated_at": "2026-11-05T01:03:00+01:00",
   "editor": "FinanzPilot Tagesredaktion – datierte Originalquellen und ausdrücklich hypothetische Szenarien",
-  "explanation": "Drei neue offene Aufgaben für Mittwoch, 04.11.2026. Die Quellen sind datierte, bereits dokumentierte Originalveröffentlichungen; alle Stressannahmen sind fiktiv. Keine Behauptung einer heutigen Live-Abfrage.",
+  "explanation": "Drei neue Aufgaben für Donnerstag, 05.11.2026. Alle Modellwerte ausdrücklich fiktiv; datierte Originalquellen werden nicht als heutige Live-Publikationen ausgegeben.",
   "tasks": [
     {
-      "id": "2026-11-04:market:inflation-index-basis",
+      "id": "2026-11-05:market:inflation-base-comparison",
       "kind": "market",
-      "date": "2026-11-04",
-      "title": "Inflationsraten: Monatsbewegung und Basiseffekt auseinanderhalten",
-      "context": "Destatis meldete in der Schnellschätzung vom 30.10.2026 für Energiepreise im Oktober 2026 eine Jahresrate von +12,2 % gegenüber +14,9 % im September. Die folgenden Indexstände sind ausdrücklich hypothetisch.",
-      "question": "Berechne für die fiktiven Energiepreisindizes Oktober 2025 = 100, September 2026 = 111 und Oktober 2026 = 112,2 sowohl die Oktober-Jahresrate als auch die September-Oktober-Monatsrate. Erkläre, warum die tatsächlich berichtete Abnahme der Jahresrate um 2,7 Prozentpunkte keine monatliche Verbilligung beweist. Formuliere eine Gegenhypothese, die du anhand von September 2025 überprüfen würdest.",
+      "date": "2026-11-05",
+      "title": "Inflationsschock: Indexstand, Jahresrate und Kaufkraft",
+      "context": "Ausgehend von der Destatis-Schnellschätzung vom 30.10.2026. Alle Indexstände und Portfolioannahmen in dieser Aufgabe sind ausdrücklich fiktiv.",
+      "question": "Ein fiktiver Verbraucherpreisindex steigt von 108 im Oktober 2025 auf 113,4 im Oktober 2026; im September 2026 lag er bei 114. Berechne Jahres- und Monatsinflation, den realen Wert von 10.000 € nominalem Vermögen nach einem Jahr und erläutere, warum eine sinkende Monatsrate nicht automatisch sinkende Jahresinflation bedeutet. Welche Gegenhypothese würdest du mit September 2025 prüfen?",
       "rubric": [
-        "Fiktive Oktober-Jahresrate 12,2 % richtig berechnen und als Modell kennzeichnen",
-        "Fiktive Monatsrate (112,2/111−1)×100 ≈ 1,08 % korrekt bestimmen",
-        "Jahresratenänderung −2,7 Prozentpunkte von einer Preisniveauänderung unterscheiden",
-        "Gegenhypothese zum Basiseffekt und fehlenden September-2025-Index explizit formulieren"
+        "Jahresrate (113,4/108−1)×100 = 5,00 %",
+        "Monatsrate (113,4/114−1)×100 ≈ −0,526 %",
+        "Reale Kaufkraft 10.000/1,05 ≈ 9.523,81 € in Vorjahres-Euro",
+        "Basiseffekt und September-2025-Vergleich als Gegenhypothese sauber erklären"
       ],
       "source": "Destatis – Verbraucherpreise Oktober 2026 (vorläufig)",
       "source_url": "https://www.destatis.de/EN/Press/2026/10/PE26_382_611.html",
@@ -24,17 +24,17 @@
       "symbol": ""
     },
     {
-      "id": "2026-11-04:research:nvidia-cfo-sensitivity",
+      "id": "2026-11-05:research:nvidia-cashflow-capex",
       "kind": "research",
-      "date": "2026-11-04",
-      "title": "NVIDIA: Cashflow-Konversion unter Stress",
-      "context": "Im NVIDIA-Bericht zu Q2 FY2027 vom 26.08.2026 wurden 24.077 Mio. USD operativer Cashflow und 21.341 Mio. USD Free Cashflow berichtet. Die nachfolgenden Veränderungen sind fiktiv.",
-      "question": "Berechne die FCF/CFO-Quote und den absoluten Abstand beider veröffentlichten Größen. Unterstelle anschließend fiktiv 10 % mehr operativen Cashflow und 40 % mehr Abstand CFO−FCF: Wie verändern sich FCF und Konversionsquote? Nenne mindestens drei Primärberichtsposten zur Prüfung, ob die Veränderung nachhaltig wäre, sowie eine plausible Gegenhypothese.",
+      "date": "2026-11-05",
+      "title": "Cashflow ist nicht Gewinn: Investitionsintensität analysieren",
+      "context": "NVIDIA veröffentlichte am 26.08.2026 für Q2 FY2027 operativen Cashflow von 24.077 Mio. USD und Free Cashflow von 21.341 Mio. USD. Die Stressannahmen sind fiktiv.",
+      "question": "Berechne die Differenz und die FCF-Konversionsquote. Angenommen, der operative Cashflow fällt fiktiv um 15 %, während die Differenz CFO minus FCF um 25 % steigt: Berechne neuen FCF und Quote. Erkläre drei mögliche Ursachen für die Veränderung und eine Gegenhypothese, weshalb sie temporär sein könnte. Welche Berichtspositionen würdest du nachschlagen?",
       "rubric": [
-        "Historische Quote 21.341/24.077 ≈ 88,64 % und Abstand 2.736 Mio. USD korrekt",
-        "Fiktiver CFO 26.484,7 Mio. USD und Abstand 3.830,4 Mio. USD korrekt",
-        "Fiktiver FCF 22.654,3 Mio. USD und Quote ≈ 85,54 % korrekt",
-        "Investitionsauszahlungen, Working Capital und FCF-Definition prüfen sowie alternative Erklärung nennen"
+        "Historische Differenz 2.736 Mio. USD und Quote ≈ 88,64 %",
+        "Stress-CFO 20.465,45 Mio. USD und Stress-Differenz 3.420 Mio. USD",
+        "Stress-FCF 17.045,45 Mio. USD und Konversionsquote ≈ 83,29 %",
+        "Working Capital, Investitionsauszahlungen, FCF-Definition und Gegenhypothese konkret abgrenzen"
       ],
       "source": "NVIDIA Investor Relations – Q2 FY2027 Results",
       "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
@@ -42,21 +42,21 @@
       "symbol": "NVDA"
     },
     {
-      "id": "2026-11-04:learning:bond-duration-cashflows",
+      "id": "2026-11-05:learning:bond-discount-sensitivity",
       "kind": "learning",
-      "date": "2026-11-04",
-      "title": "Anleihen: Warum der gleiche Kupon nicht den gleichen Preis bedeutet",
-      "context": "Der Lernfall verwendet ausschließlich fiktive Anleihedaten. Hintergrund zur Preis-Rendite-Beziehung: undatierter SEC-Anlegerleitfaden, am 04.11.2026 als Referenz notiert; kein datierter Originalbericht.",
-      "question": "Eine fiktive ausfallsichere Anleihe zahlt am Ende jedes der nächsten zwei Jahre 4 € Kupon und im zweiten Jahr zusätzlich 100 € Nennwert zurück. Berechne den heutigen Barwert bei 3 % und 6 % jährlicher Marktrendite. Begründe die inverse Kurs-Zins-Beziehung anhand der beiden Zahlungszeitpunkte. Welche Gegenhypothese könnte trotz fallender Marktrenditen einen Kursrückgang verursachen?",
+      "date": "2026-11-05",
+      "title": "Zinsanstieg und Anleihepreis: Zwei Zahlungsströme bewerten",
+      "context": "Die SEC erklärt den Zusammenhang zwischen Anleihepreisen und Marktzinsen. Das Rechenbeispiel ist vollständig hypothetisch.",
+      "question": "Eine fiktive zweijährige Anleihe zahlt jährlich 40 € Kupon und am Ende 1.000 € Nennwert zurück. Berechne den Barwert bei 4 % und 6 % Marktrendite mit jährlicher Verzinsung. Begründe, warum die Kursreaktion nicht einfach 2 % beträgt, und formuliere eine Gegenhypothese, unter der das höhere Renditeniveau nicht allein aus einem allgemeinen Zinsanstieg stammt.",
       "rubric": [
-        "Bei 3 % korrekt 4/1,03 + 104/1,03² ≈ 101,91 € berechnen",
-        "Bei 6 % korrekt 4/1,06 + 104/1,06² ≈ 96,33 € berechnen",
-        "Barwert jeder Zahlung und inverse Zins-Kurs-Beziehung nachvollziehbar erläutern",
-        "Ausfallrisiko, Liquidität oder Bonitätsaufschlag als Gegenhypothese begründen"
+        "Bei 4 %: 40/1,04 + 1.040/1,04² = 1.000 €",
+        "Bei 6 %: 40/1,06 + 1.040/1,06² ≈ 963,33 €",
+        "Preisrückgang ≈ 3,67 % und Zahlungsstromdiskontierung nachvollziehbar",
+        "Kreditrisiko/Spread als alternative Ursache und Abgrenzung zur Marktzinsbewegung"
       ],
       "source": "U.S. Securities and Exchange Commission – Bonds or Bond Funds",
       "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-bond-funds",
-      "source_date": "undatiert (Zugriff 2026-11-04)",
+      "source_date": "undatiert (bereits redaktionell referenziert am 2026-11-04)",
       "symbol": ""
     }
   ]
