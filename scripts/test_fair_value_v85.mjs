@@ -99,4 +99,4 @@ assert(els['[data-fp85-factor-label]'].textContent.includes('1,5'));
 handlers['reset:click']();
 assert.equal(Number(controls['[data-fp85-growth]'].value),ms.dcf.default.annual_growth_pct);
 assert.equal(Number(controls['[data-fp85-factor]'].value),1);
-console.log('V85 PASS: nine explicit issuer audit gates; six primary reconstructed or issuer-reported TTM cashflows; Microsoft equity-CF PV, terminal, share bridge and sliders; no unsupported fair values.');
+console.log('V85 PASS: expandable issuer audit gates and primary reconciled cashflows; Microsoft equity-CF PV, terminal, share bridge and sliders; no unsupported fair values.');
