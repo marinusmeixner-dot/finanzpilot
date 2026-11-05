@@ -955,6 +955,24 @@
       "evidence_url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-3d2b7710a8c692d",
+      "ticker": "SIE.DE",
+      "company": "Siemens AG",
+      "date": "2026-11-04",
+      "event_type": "priority_changed",
+      "signal_signature": "A_research_first|2026-11-03-siemens-medevac-mou|active",
+      "from_priority": "B_watchlist",
+      "priority": "A_research_first",
+      "adjusted_close": 275.65,
+      "currency": "EUR",
+      "benchmark_id": "VWCE",
+      "benchmark_adjusted_return_63d_pct": 0.88,
+      "editorial_story_id": "2026-11-03-siemens-medevac-mou",
+      "evidence_url": "https://press.siemens.com/global/en/pressrelease/siemens-and-lufthansa-technik-defense-develop-medical-evacuation-train",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }
