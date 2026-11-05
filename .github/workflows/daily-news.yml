@@ -6,6 +6,9 @@ on:
       - '.github/workflows/daily-news.yml'
       - 'scripts/refresh_news.py'
       - 'scripts/scan_research.py'
+      - 'scripts/build_opportunity_queue_v89.py'
+      - 'scripts/test_opportunity_queue_v89.py'
+      - 'data/opportunity-queue-v89.json'
       - 'scripts/build_research_decisions.py'
       - 'data/ideas.json'
       - 'data/valuation-scenarios-v83.json'
@@ -54,10 +57,13 @@ jobs:
         run: python scripts/scan_research.py
       - name: Reevaluate source-grounded investment decision status and append-only fundamental thesis revisions
         run: python scripts/build_research_decisions.py
+      - name: Build open, source-first research opportunity queue and proof obligations
+        run: python scripts/build_opportunity_queue_v89.py
       - name: Validate research invariants and renderability before publishing any data
         run: |
           set -eu
           python -m unittest discover -s scripts -p "test_research_quote_refresh_v88.py" -v
+          python -m unittest discover -s scripts -p "test_opportunity_queue_v89.py" -v
           python -m unittest discover -s scripts -p "test_research_radar_v86.py" -v
           python -m unittest discover -s scripts -p "test_investment_decisions_v87.py" -v
           node scripts/test_valuation_v83.mjs
@@ -65,13 +71,14 @@ jobs:
           node scripts/test_fair_value_v85.mjs
           node scripts/test_market_radar_v86.mjs
           node scripts/test_investment_decisions_v87.mjs
+          node scripts/test_market_priorities_v89.mjs
       - name: Commit source inbox, prices, research radar and immutable priority history
         id: publish
         run: |
           set -eu
           git config user.name "finanzpilot-source-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/editorial-candidates.json data/prices.json data/market-valuations-v84.json data/research-radar-v86.json data/thesis-ledger-v86.json data/research-decisions-v87.json data/investment-thesis-events-v87.json
+          git add data/editorial-candidates.json data/prices.json data/market-valuations-v84.json data/research-radar-v86.json data/thesis-ledger-v86.json data/research-decisions-v87.json data/investment-thesis-events-v87.json data/opportunity-queue-v89.json
           if git diff --cached --quiet; then
             echo "No new relevant source, price, or investment-priority evidence."
             exit 0
