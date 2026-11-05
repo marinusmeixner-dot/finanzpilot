@@ -62,6 +62,15 @@ function reverseControls(id,rec,attrs){
  '</section>';
 }
 function metric(k,v){return '<div class="fp84-metric"><small>'+esc(k)+'</small><strong>'+v+'</strong></div>'}
+function summaryFor(id){
+ const rec=snapshot(id);
+ if(!rec)return '<div class="fp84-idea-snapshot"><small>Kurs- und Bewertungsdaten werden geladen</small></div>';
+ const k=derive(rec);
+ return '<div class="fp84-idea-snapshot"><div><strong>'+fmt(rec.quote.close,rec.quote.currency)+'</strong>'+
+ '<small>'+esc(rec.quote.exchange)+' · Schlusskurs '+esc(rec.quote.date)+'</small></div>'+
+ '<div><span>KGV TTM <strong>'+displayRatio(k.pe,'×',1)+'</strong></span><span>FCF-Rendite <strong>'+displayRatio(k.fcf_yield_pct,' %',1)+'</strong></span></div>'+
+ '</div>';
+}
 function renderFor(id){
  const rec=snapshot(id);
  if(!rec)return '<section class="fp84-module fp84-empty"><h2>Kurs und Unternehmensbewertung</h2><p>'+esc(message||'Das datierte Kurs- und Kennzahlenpaket wird geprüft. Bis dahin wird keine Bewertung behauptet.')+'</p></section>';
@@ -116,7 +125,7 @@ async function load(force=false){
   if(usable.length!==d.stocks.length||new Set(usable.map(x=>x.id)).size!==usable.length)throw Error('Eine Quelle oder ein Wert der Kursdaten ist ungültig');
   stocks=usable;lastLoad=Date.now();seen=d.asof||'';
  }catch(e){message='Keine ausreichend geprüften Kurs- und Kennzahldaten verfügbar: '+String(e.message||e);console.warn('Market value snapshot:',e);}
- finally{loading=false;if(typeof state!=='undefined'&&state.view==='marketidea')window.render?.()}
+ finally{loading=false;if(typeof state!=='undefined'&&['marketidea','marketideas'].includes(state.view))window.render?.()}
 }
 function refresh(section,rec){
  const state=current(rec.id),g=requiredEpsGrowth(rec.quote.close,rec.fundamentals.eps_ttm,3,state.pe,state.discount);
@@ -144,7 +153,7 @@ function bind(root=document){
   });
  });
 }
-window.FinanzPilotMarketValue={load,renderFor,bind,derive,requiredEpsGrowth,projectedPrice,snapshot,get stocks(){return stocks},get status(){return message}};
+window.FinanzPilotMarketValue={load,renderFor,summaryFor,bind,derive,requiredEpsGrowth,projectedPrice,snapshot,get stocks(){return stocks},get status(){return message}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
-window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&state.view==='marketidea'&&Date.now()-lastLoad>120000)load()});
+window.addEventListener('fp-navigation',()=>{if(typeof state!=='undefined'&&['marketidea','marketideas'].includes(state.view)&&Date.now()-lastLoad>120000)load()});
 })();
