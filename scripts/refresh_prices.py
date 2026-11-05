@@ -26,10 +26,12 @@ LEGACY={
  "KION":("KGX.DE","EUR"),"AIXTRON":("AIXA.DE","EUR"),"CGNX":("CGNX","USD")
 }
 
-def requested_symbols(universe,legacy=LEGACY):
+def requested_symbols(universe,legacy=LEGACY,discovered=None):
     symbols=dict(legacy)
     already={v[0].upper() for v in symbols.values()}
-    for item in list(universe.get("equities",[]))+list(universe.get("benchmarks",[])):
+    # Scanner-derived verified profiles and published issuers are first-class quote requests.
+    # Unverified RSS headlines are intentionally never inserted into this set.
+    for item in list(universe.get("equities",[]))+list(universe.get("benchmarks",[]))+list(discovered or []):
         ticker=str(item.get("ticker","")).strip().upper()
         currency=item.get("currency")
         if not ticker or currency not in ("USD","EUR") or ticker in already:
@@ -68,7 +70,19 @@ def main():
         universe=json.loads(UNIVERSE.read_text(encoding="utf-8"))
     except (OSError,ValueError):
         universe={"equities":[],"benchmarks":[]}
-    requested=requested_symbols(universe)
+    import scan_research as screen
+    profiles=json.loads((ROOT/"data/company-profiles-v82.json").read_text(encoding="utf-8")) if (ROOT/"data/company-profiles-v82.json").exists() else {"companies":{}}
+    curated=json.loads((ROOT/"data/ideas.json").read_text(encoding="utf-8")) if (ROOT/"data/ideas.json").exists() else {"ideas":[]}
+    stories=[]
+    for name in ("daily.json","editorial-core-v43.json"):
+        file=ROOT/"data"/name
+        if file.exists():
+            try: stories.extend(json.loads(file.read_text(encoding="utf-8")).get("stories",[]))
+            except (ValueError,OSError): pass
+    discovered=screen.discovery_universe(universe,profiles,curated,stories)
+    requested=requested_symbols(universe,discovered=discovered)
+    print(f"Quote collection: {len(requested)} symbols across the seed universe, verified profiles and editorial dossiers.")
+
     result.setdefault("assets",{})
     now=datetime.now(timezone.utc)
     def collect(pair):
