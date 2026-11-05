@@ -24,8 +24,8 @@ assert(radar.candidates.every(c=>c.signals&&c.next_review&&c.research_disclaimer
 assert(radar.candidates.every(c=>c.research_priority!=='A_research_first'||c.editorial_evidence),'Top research priority needs an editorial source');
 assert(radar.candidates.every(c=>c.benchmarks.every(b=>b.currency===c.currency)),'ETF comparison must not mix listing currency');
 assert(ledger.events.length>0&&ledger.events.every(e=>e.classification==='public_research_queue_change_not_investment_decision'),'Immutable event records cannot be mistaken for trades');
-assert(html.includes('market-radar-v86.js?v=88')&&html.includes('market-radar-v86.css?v=88'));
-assert(html.indexOf('market-radar-v86.js?v=88')<html.indexOf('market-insights-v82.js?v=86'));
+assert(html.includes('market-radar-v86.js?v=89')&&html.includes('market-radar-v86.css?v=88'));
+assert(html.indexOf('market-radar-v86.js?v=89')<html.indexOf('market-insights-v82.js?v=86'));
 assert(insights.includes('FinanzPilotRadar?.dashboard?.()')&&insights.includes('FinanzPilotRadar.candidateDetail(selected)'));
 assert(insights.includes('FinanzPilotRadar?.addendum?.(idea.id)'));
 assert(home.includes('FinanzPilotRadar?.homePreview?.()'));
