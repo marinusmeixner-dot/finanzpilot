@@ -127,7 +127,7 @@ function candidateDetail(id){
  '<li>Operativen Cashflow, Investitionen und Nettoschulden aus Primärquellen abstimmen</li>'+
  '<li>Bewertung gegenüber tatsächlichem Aktienkurs und vergleichbaren Unternehmen nachvollziehen</li>'+
  '<li>Negativ-, Basis- und Positivszenario und Gründe für eine widerlegte These festhalten</li></ol>'+
- '<div class="fp86-actions"><button type="button" data-fp86-theses>Eigene Investmentthese erfassen</button>'+
+ '<div class="fp86-actions"><button type="button" data-fp86-theses="'+esc(c.id)+'">Eigene Investmentthese erfassen</button>'+
  '<button type="button" class="fp86-soft" data-fp86-track="'+esc(c.id)+'">'+(tracked.has(c.id)?'Aus Merkliste lösen':'Für Research merken')+'</button></div></section>'+
  history(c)+'</section>';
 }
@@ -139,7 +139,7 @@ function addendum(id){
  '<p>Die Kombination aus tatsächlichen Finanzkennzahlen, Bewertung, Wettbewerbsvergleich und ETF-Alternative ist entscheidend. Die technische Research-Priorität ist getrennt vom Unternehmens- und Investmenturteil.</p>'+
  '<p class="fp86-statusline"><strong>Research-Priorität:</strong> '+esc(priority[c.research_priority]||'offen')+' · '+esc(sourceTag(c))+'</p>'+
  '<h3>Renditevergleich mit ETFs</h3>'+benchmark(c)+peerComparison(c)+history(c)+
- '<div class="fp86-actions"><button type="button" data-fp86-theses>Eigene Investmentthese und Revisionen</button>'+
+ '<div class="fp86-actions"><button type="button" data-fp86-theses="'+esc(c.id)+'">Eigene Investmentthese und Revisionen</button>'+
  '<button type="button" class="fp86-soft" data-fp86-track="'+esc(c.id)+'">'+(tracked.has(c.id)?'Gemerkt ✓':'Für Research merken')+'</button></div></section>';
 }
 function homePreview(){
@@ -175,7 +175,14 @@ function bind(root=document){
   saveTracked();window.render?.();
  }));
  root.querySelectorAll('[data-fp86-ideas]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.('marketideas')));
- root.querySelectorAll('[data-fp86-theses]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.('theses')));
+ root.querySelectorAll('[data-fp86-theses]').forEach(b=>b.addEventListener('click',()=>{
+  const c=get(b.dataset.fp86Theses);
+  const course=c?{symbol:c.ticker,symbol_name:c.company,
+    source_url:c.editorial_evidence?.url||'',date:c.editorial_evidence?.date||c.signals?.asof||''}:null;
+  const draft=c?'Ungeprüfte Recherchehypothese zu '+c.company+': Zunächst Geschäftsmodell, Cashflows, Bewertungsniveau und mögliche Gegenargumente unabhängig prüfen. Die relative Kursentwicklung ist noch kein Investitionsargument.':'';
+  if(!course||!window.FinanzPilotTheses?.draftFromAcademy?.(course,null,draft))
+   window.FinanzPilotNavigation?.route?.('theses');
+ }));
 }
 window.FinanzPilotRadar={load,bind,dashboard,candidateDetail,addendum,homePreview,get,findByTicker,
  get candidates(){return candidates},get ledger(){return ledger},get error(){return error}};
