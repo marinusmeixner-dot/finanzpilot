@@ -92,9 +92,10 @@ function renderIdea(){
   '<section class="fp82-section"><span class="eyebrow">'+(r?'04':'03')+' · RISIKEN</span><h2>Was könnte die These widerlegen?</h2><p>'+esc(idea.counter)+'</p>'+
   (r?.risks?.length?'<ul>'+r.risks.map(s=>'<li>'+esc(s)+'</li>').join('')+'</ul>':'')+'</section>'+
   '<section class="fp82-section"><span class="eyebrow">BEWERTUNG · ENTSCHEIDUNG</span><h2>Ist die Aktie zu diesem Preis attraktiv?</h2>'+
-  '<p>Diese Frage bleibt offen, solange keine aktuellen, datierten Kurs- und Gewinn- beziehungsweise Cashflow-Daten vollständig gegenübergestellt sind. Ein gutes Unternehmen ist nicht automatisch ein gutes Investment.</p>'+
-  '<p><strong>Für eine vollständige Entscheidung erforderlich:</strong> Aktueller Aktienkurs und Handelsplatz, nachhaltig erzielbarer Free Cashflow, Schulden, angemessene Vergleichsunternehmen sowie Basis-, Negativ- und Positivszenario mit offengelegten Annahmen.</p>'+
-  '<div class="fp82-verdict">Status: <strong>Interessante Beobachtung – Bewertung noch nicht abgeschlossen</strong></div></section>'+
+  '<p>Unten siehst du einen überprüften Börsenschlusskurs und historische Gewinn- und Cashflowkennzahlen. Ein echtes Kaufurteil erfordert darüber hinaus nachhaltige zukünftige Cashflows, Kapitalstruktur-Abgleich und geeignete Vergleichswerte. Ein gutes Unternehmen ist nicht automatisch eine günstig bewertete Aktie.</p>'+
+  '<p><strong>Aktueller Prüfstand:</strong> Der datierte Marktpreis ist bekannt; die Normalisierung der Cashflows, der Bilanz-Brückenaudit und die Schätzung zukünftiger Gewinne bleiben eigenständige Aufgaben.</p>'+
+  '<div class="fp82-verdict">Status: <strong>Marktpreis und historische Bewertungskennzahlen geprüft – belastbarer fairer Wert noch offen</strong></div></section>'+
+  (window.FinanzPilotMarketValue?.renderFor?.(idea.id)||'')+
   (window.FinanzPilotValuation?.renderFor?.(idea.id)||'')+
   '</main><aside><div class="fp82-aside"><h3>Research-Kompass</h3><p><strong>Worauf achten?</strong></p><p>'+esc(idea.next||'Die nächsten Geschäftsberichte und die Bewertungsannahmen.')+'</p>'+
     '<p><strong>Was spricht dagegen?</strong></p><p>'+esc(idea.counter)+'</p><div class="fp82-sources"><strong>Originalquellen</strong>'+
@@ -131,6 +132,7 @@ function bind(root=document){
  root.querySelectorAll('[data-fp82-filter]').forEach(b=>b.addEventListener('click',()=>{filter=b.dataset.fp82Filter==='report'?'report':'all';window.render?.()}));
  root.querySelectorAll('[data-fp82-route]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.(b.dataset.fp82Route)));
  window.FinanzPilotValuation?.bind?.(root);
+ window.FinanzPilotMarketValue?.bind?.(root);
 }
 try{selected=localStorage.getItem('fp82_selected_idea')||''}catch{}
 window.FinanzPilotInsights={companyContext,articleContext,renderIdeas,renderIdea,openIdea,bind,load,ideaFor,get ideas(){return ideas;},get profiles(){return profiles;}};
