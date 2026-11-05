@@ -1,10 +1,55 @@
 {
-  "date": "2026-11-04",
-  "updated_at": "2026-11-04T21:04:00+01:00",
+  "date": "2026-11-05",
+  "updated_at": "2026-11-05T14:55:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "BMW veröffentlicht Q3-Zahlen und senkt wegen Umbaukosten den Margenausblick; Eurostat meldete heute die Inflations-Schnellschätzung.",
+  "intro": "Destatis meldet am 5. November einen Anstieg der deutschen Industrieaufträge im September; die jüngsten Unternehmens- und Inflationsberichte bleiben relevant.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-05-destatis-industry-orders-september",
+      "title": "Industrieaufträge steigen im September um 4,4 % – warum das noch keine Trendwende beweist",
+      "published": "2026-11-05",
+      "category": "Wirtschaft",
+      "symbols": [],
+      "source": "Statistisches Bundesamt (Destatis), Pressemitteilung Nr. 385 vom 5. November 2026",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
+      "why": "Die realen Industrieaufträge legten im September saison- und kalenderbereinigt um 4,4 % zum Vormonat zu; im August waren sie revidiert um 10,1 % gefallen.",
+      "impact": "Mehr Bestellungen können später Umsatz und Kapazitätsauslastung von Industrieunternehmen stützen; die schwache Dreimonatsentwicklung und die Lücke zwischen Auftrag und Umsatz verhindern eine sichere Gewinnprognose.",
+      "article": {
+        "lead": "Das Statistische Bundesamt meldete am 5. November 2026 für den September 4,4 % mehr reale Auftragseingänge im deutschen Verarbeitenden Gewerbe als im August. Nach dem starken August-Rückgang ist das ein positives Monatssignal, aber noch kein Beweis einer nachhaltigen Erholung. Für Aktien aus Maschinenbau, Automobilindustrie und Zulieferketten zählt, ob daraus profitable Lieferungen und Cashflow werden.",
+        "sections": [
+          {
+            "heading": "Was die amtliche Statistik tatsächlich zeigt",
+            "paragraphs": [
+              "Der preisbereinigte Auftragseingang stieg im September gegenüber August saison- und kalenderbereinigt um 4,4 %. Ohne Großaufträge betrug der Anstieg 5,1 %. Im Vergleich zum September des Vorjahres lag der kalenderbereinigte Wert um 3,3 % höher.",
+              "Der August-Wert wurde auf minus 10,1 % gegenüber Juli revidiert. Im gesamten dritten Quartal lagen die Bestellungen nur 0,2 % über dem zweiten Quartal; ohne Großaufträge waren es lediglich 0,1 %. Monatsanstieg und Quartalstrend sind daher ausdrücklich unterschiedliche Aussagen."
+            ]
+          },
+          {
+            "heading": "Welche Branchen den Ausschlag gaben",
+            "paragraphs": [
+              "Die Bestellungen der Automobilindustrie stiegen im September um 10,5 % gegenüber dem Vormonat. Destatis verweist darauf, dass Produktionsumstellungen und Werksferien die beiden vorangegangenen Monate belastet hatten. Ein Teil des Anstiegs kann deshalb Aufholeffekt statt zusätzlicher Endkundennachfrage sein.",
+              "Im Maschinenbau stiegen die Aufträge um 8,3 %, auch unterstützt durch einen größeren Auftrag bei Maschinenverbrennungsmotoren und Turbinen. Im sonstigen Fahrzeugbau sanken sie dagegen um 10,4 %. Einzelne Branchen entwickeln sich somit deutlich unterschiedlich."
+            ]
+          },
+          {
+            "heading": "Was das für Unternehmen und Aktien bedeuten könnte",
+            "paragraphs": [
+              "Ein wachsender Auftragsbestand kann für Hersteller spätere Umsätze ankündigen, sofern Kunden nicht stornieren und die Betriebe liefern können. Für Zulieferer können höhere Stückzahlen die Auslastung verbessern; entscheidend bleiben aber Verkaufspreise, Materialkosten, Löhne und Investitionen.",
+              "Der reale Industrieumsatz stieg im September nur um 0,2 % gegenüber August und lag 2,0 % unter dem Vorjahresmonat. Aufträge sind keine sofort verbuchten Umsätze und erst recht kein freier Cashflow. Eine positive Aktienbewertung lässt sich aus dieser Statistik allein nicht ableiten."
+            ]
+          },
+          {
+            "heading": "Gegenargumente und nächste Prüfungen",
+            "paragraphs": [
+              "Die sehr schwache August-Basis kann den September-Anstieg optisch verstärken. Zudem können einzelne Großaufträge, Lieferverzögerungen und Branchenverschiebungen Monatsdaten verzerren. Der Dreimonatsvergleich ist deshalb ein wichtiger Plausibilitätscheck.",
+              "Als Nächstes sind die folgenden Produktions- und Auftragseingangsdaten sowie die tatsächlich gemeldeten Margen und Cashflows der betroffenen Unternehmen zu prüfen. Erst eine breitere Verbesserung über mehrere Monate würde die These einer stabileren Industrienachfrage stärken."
+            ]
+          }
+        ],
+        "conclusion": "Das September-Plus ist ein überprüfbares positives Konjunktursignal, keine bestätigte Trendwende und kein Kaufargument für eine einzelne Industrieaktie. Quelle und Vergleichszeiträume sind entscheidend."
+      }
+    },
     {
       "id": "2026-11-04-bmw-q3-guidance-realignment",
       "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
