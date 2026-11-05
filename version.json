@@ -1,5 +1,5 @@
 {
-  "version": 86,
-  "release": "2026-11-05-v86",
-  "notes": "Offener, automatisiert neu berechneter Aktienradar über mindestens 47 redaktionell definierte und weitere profilbasierte Unternehmen, echter Kandidaten-Suchlauf, Markt-/ETF-Vergleich, Research-Prio A/B/C, neue Einzelaktienansicht, Merkliste und append-only Thesenverlauf. Originale neun vertieften Analysen bleiben erhalten. Kein automatisches Kaufsignal."
+  "version": 87,
+  "release": "2026-11-05-v87",
+  "notes": "Dynamischer offener Aktienradar, separat dokumentierte Research-Entscheidungsqualität, nachweisbasierte Prüfung/Beobachtung statt Kaufempfehlungen, Zwei-Aktien- und ETF-Vergleich und unveränderlich ergänzte fundamentale These-/Quellen-Revisionshistorie. Stündliche automatische Prüfung. Alte neun vertiefte Analysen bleiben, Suchuniversum ist offen."
 }
