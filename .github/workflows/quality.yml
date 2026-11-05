@@ -16,6 +16,8 @@ jobs:
         run: find . -type f -name '*.js' -not -path './node_modules/*' -print0 | xargs -0 -r -n1 node --check
       - name: Validate hourly unverified source collector (no editorial overwrite)
         run: python -m unittest discover -s scripts -p 'test_refresh_news.py' -v
+      - name: "v86: Validate dynamic multi-country issuer scanning, source classification and immutable ledger"
+        run: python -m unittest discover -s scripts -p "test_research_radar_v86.py" -v
       - name: Validate JSON files
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
       - name: "V80: Distinct useful examples in all 156 skills, no identical dropdowns"
@@ -122,6 +124,8 @@ jobs:
         run: node scripts/test_market_valuation_v84.mjs
       - name: "v85: Audit primary-source cashflows, fair-value blockers and five-year equity DCF"
         run: node scripts/test_fair_value_v85.mjs
+      - name: "v86: Validate expandable candidate universe, market-vs-ETF comparison and thesis history UI"
+        run: node scripts/test_market_radar_v86.mjs
       - name: "v46: Audit all 36 fundamentals, all 132 specialist lessons, learning stages and reward-free spaced practice"
         run: node scripts/test_study_depth_v46.mjs
       - name: "v49: Verify eight new skill pathways, client/server answers and teaching quality"
