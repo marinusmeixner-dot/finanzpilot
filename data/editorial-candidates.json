@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T10:23:54.652804Z",
+  "updated_at": "2026-11-05T13:57:18.113017Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-92c9eaa9ec02ce6fe0",
+      "title": "Ölpreise fallen weiter, DAX steigt auf Rekordhoch",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/oelpreise-sinken-100.html",
+      "published_at": "2026-11-05T13:18:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-83d5d5b635e3c84d89",
       "title": "Bankenpleite stürzt Paraguay in eine Krise",
