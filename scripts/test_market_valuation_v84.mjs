@@ -24,6 +24,8 @@ vm.runInContext(read('market-valuation-v84.js'),context,{filename:'market-valuat
 const api=window.FinanzPilotMarketValue;
 await api.load();
 assert.equal(api.stocks.length,9);
+assert(api.summaryFor('kion').includes('34,96')&&api.summaryFor('kion').includes('KGV TTM'),'Research idea cards expose date-stamped prices and historical valuation');
+assert(api.summaryFor('microsoft').includes('555,8'));
 for(const rec of api.stocks){
  const q=rec.quote,f=rec.fundamentals,derived=api.derive(rec);
  assert.equal(q.date,'2026-11-04','No future or intraday prices can be smuggled in');
