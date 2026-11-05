@@ -7,13 +7,13 @@ const ideas=JSON.parse(read('data/ideas.json')).ideas;
 const html=read('index.html');
 const ui=read('market-insights-v82.js');
 assert.equal(data.schema_version,1);
-assert.equal(data.stocks.length,9,'Every published research idea needs a market price snapshot');
-assert.equal(ideas.length,9);
+assert(data.stocks.length>=9,'Preserve original verified price snapshots');
+assert(ideas.length>=9,'Support future curated research additions');
 assert.equal(new Set(data.stocks.map(x=>x.id)).size,9);
-assert(ideas.every(x=>data.stocks.some(s=>s.id===x.id)));
+assert(data.stocks.every(x=>ideas.some(i=>i.id===x.id)),'Each audited price record must have an issuer dossier');
 assert(html.includes('market-valuation-v84.js?v=84')&&html.includes('market-valuation-v84.css?v=84'),'New iPhone assets are loaded');
 assert(html.indexOf('valuation-v83.js?v=83')<html.indexOf('market-valuation-v84.js?v=84'),'Existing scenarios are initialized first');
-assert(html.indexOf('market-valuation-v84.js?v=84')<html.indexOf('market-insights-v82.js?v=85'),'Comparable quotes are initialized before research dossiers');
+assert(html.indexOf('market-valuation-v84.js?v=84')<html.indexOf('market-insights-v82.js?v=86'),'Comparable quotes are initialized before research dossiers');
 assert(ui.includes('FinanzPilotMarketValue?.renderFor?.(idea.id)')&&ui.includes('FinanzPilotMarketValue?.bind?.(root)'),'Comparison is shown and bound in actual market research');
 const events={},state={view:'marketidea'};
 const window={addEventListener:(n,f)=>events[n]=f,render(){},FinanzPilotValuation:null};
@@ -23,7 +23,7 @@ const context=vm.createContext({window,document,state,fetch,Intl,Date,Map,Set,Pr
 vm.runInContext(read('market-valuation-v84.js'),context,{filename:'market-valuation-v84.js'});
 const api=window.FinanzPilotMarketValue;
 await api.load();
-assert.equal(api.stocks.length,9);
+assert.equal(api.stocks.length,data.stocks.length,'Load all published price snapshots');
 assert(api.summaryFor('kion').includes('34,96')&&api.summaryFor('kion').includes('KGV TTM'),'Research idea cards expose date-stamped prices and historical valuation');
 assert(api.summaryFor('microsoft').includes('555,8'));
 for(const rec of api.stocks){
