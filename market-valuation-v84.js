@@ -79,7 +79,7 @@ function renderFor(id){
  metric('FCF-Rendite auf Börsenwert',displayRatio(m.fcf_yield_pct,' %',2))+
  metric('Verwässerter EPS-Wert (TTM)',fmt(f.eps_ttm,cur))+
  metric('Ausstehende Aktien',n(f.shares_m,2)+' Mio.')+
- metric('Netto-Cash (Cash − Schulden)',fmt(m.net_cash_m/1000,2).replace(/\s(USD|€)$/, ' Mrd. $1') )+
+ metric('Netto-Cash (Cash − Schulden)',n(m.net_cash_m/1000,2)+' Mrd. '+(cur==='EUR'?'€':'USD'))+
  '</div>'+
  '<div class="fp84-evidence"><h3>Was die Kennzahlen aussagen</h3>'+
  '<p><strong>Free Cashflow:</strong> '+fmt(f.free_cf_m/1000,cur)+' Mrd. ('+fmt(f.operating_cf_m/1000,cur)+' Mrd. operativer Cashflow − '+fmt(f.capex_m/1000,cur)+' Mrd. Sachanlageninvestitionen).'+(f.free_cf_m<0?' Aktuell negativ – ein FCF-Multiple ist nicht sinnvoll.':'')+'</p>'+
