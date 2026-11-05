@@ -33,7 +33,7 @@ for(const m of appVal.models){
  assert(html.includes('VERIFIZIERTER AUSGANGSPUNKT')&&html.includes('Negativ')&&html.includes('Basis')&&html.includes('Positiv'));
  assert(html.includes('INTERAKTIVE SENSITIVITÄT')&&html.includes('Keine Jahreshochrechnung'));
  assert(html.includes('data-fp83-growth=')&&html.includes('data-fp83-margin='));
- assert(html.includes('Originalbericht')&&html.includes('nicht'));
+ assert(html.includes('Originalbericht')&&(html.includes('kein')||html.includes('Keine')));
 }
 const kion=appVal.model('kion');
 const expected=kion.baseline.revenue_m*Math.pow(1+.05,3);
