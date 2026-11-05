@@ -10,7 +10,9 @@ assert.equal(data.schema_version,1);
 assert.equal(data.records.length,9);
 assert.equal(new Set(data.records.map(x=>x.id)).size,9);
 assert(ideas.every(x=>data.records.some(r=>r.id===x.id)));
-assert.equal(data.records.filter(x=>x.ttm_bridge).length,3);
+assert.equal(data.records.filter(x=>x.ttm_bridge).length,4);
+assert.equal(data.records.filter(x=>x.reported_ttm).length,1);
+assert.equal(data.records.filter(x=>x.financial_status==='primary_ttm_reconciled').length,5);
 assert.equal(data.records.filter(x=>x.dcf).length,1,'No unaudited DCFs may be presented as fair values');
 assert(data.records.every(r=>r.gaps.length>0&&r.primary_sources.every(s=>s.url.startsWith('https://'))));
 assert(html.includes('fair-value-v85.js?v=85')&&html.includes('fair-value-v85.css?v=85'));
@@ -30,7 +32,9 @@ assert.equal(api.records.length,9);
 const expected={
  microsoft:{cfo:195878,capex:135921,fcf:59957},
  nvidia:{cfo:134360,capex:7354,fcf:127006},
- alphabet:{cfo:179551,capex:159804,fcf:19747}
+ alphabet:{cfo:179551,capex:159804,fcf:19747},
+ amazon:{cfo:168300,capex:210657,fcf:-42357},
+ meta:{cfo:133087,capex:104438,fcf:28649}
 };
 for(const [id,e] of Object.entries(expected)){
  const r=api.get(id),b=api.bridge(r);
@@ -43,7 +47,9 @@ for(const [id,e] of Object.entries(expected)){
  assert(page.includes(r.primary_sources[0].url));
  assert(page.includes('noch offen')||page.includes('gesperrt')||page.includes('kein'));
 }
-for(const id of ['amazon','meta','siemens','aixtron','kion','cgnx']){
+assert(api.renderFor('meta').includes('Unternehmens-FCF nach Finance-Leases'));
+assert(api.renderFor('amazon').includes('Direkte TTM-Veröffentlichung'));
+for(const id of ['siemens','aixtron','kion','cgnx']){
  const r=api.get(id);assert.equal(api.bridge(r),null);
  const page=api.renderFor(id);
  assert(page.includes('DCF-Kursziel bewusst gesperrt'),'Missing source prerequisites must gate valuation for '+id);
@@ -89,4 +95,4 @@ assert(els['[data-fp85-factor-label]'].textContent.includes('1,5'));
 handlers['reset:click']();
 assert.equal(Number(controls['[data-fp85-growth]'].value),ms.dcf.default.annual_growth_pct);
 assert.equal(Number(controls['[data-fp85-factor]'].value),1);
-console.log('V85 PASS: nine explicit issuer audit gates; three primary reconstructed TTM cashflows; Microsoft equity-CF PV, terminal, share bridge and sliders; no unsupported fair values.');
+console.log('V85 PASS: nine explicit issuer audit gates; five primary reconstructed or issuer-reported TTM cashflows; Microsoft equity-CF PV, terminal, share bridge and sliders; no unsupported fair values.');
