@@ -12,7 +12,7 @@ assert(story.article.sections.length>=4,'The freely readable story must be compl
 assert.equal(story.published,'2026-10-28','Do not falsify original SEC publication dates');
 
 const html=read('index.html'),market=read('market-v34.js');
-assert(html.includes('home-v48.js?v=60')&&html.includes('market-v34.js?v=62'),'New iPhone PWA bundles must be loaded');
+assert(/home-v48\.js\?v=(?:8[1-9]|9\d|[1-9]\d\d)/.test(html)&&html.includes('market-v34.js?v=62'),'New iPhone PWA bundles must be loaded');
 assert(market.includes('fp-market-watchlist-ready'),'Watchlist-loaded event should refresh the home article cards');
 
 const events={};
