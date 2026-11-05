@@ -1,0 +1,139 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-11-05",
+  "editor_note": "Fachliche Hintergrundprofile: keine Kursdaten, keine individuellen Anlageempfehlungen. Bei neuen Firmennachrichten verifizieren und ergänzen.",
+  "companies": {
+    "BMW.DE": {
+      "name": "BMW AG",
+      "sector": "Automobilindustrie",
+      "business": "Hersteller von Premiumautos und Motorrädern, unter anderem der Marken BMW, MINI und Rolls-Royce.",
+      "revenue": "Umsätze aus Fahrzeugverkäufen, Dienstleistungen, Leasing und Finanzierung."
+    },
+    "EVK.DE": {
+      "name": "Evonik Industries AG",
+      "sector": "Spezialchemie",
+      "business": "Produziert chemische Spezialprodukte und Materialien für Industriebranchen wie Kunststoffe, Gesundheit und Konsumgüter.",
+      "revenue": "Umsätze vor allem durch Lieferungen chemischer Erzeugnisse an Geschäftskunden."
+    },
+    "BAS.DE": {
+      "name": "BASF SE",
+      "sector": "Chemie",
+      "business": "Hersteller von Basischemikalien, Spezialchemie und Materialien für zahlreiche Industrien.",
+      "revenue": "Verkauf von Chemikalien und Industrieprodukten, abhängig von Mengen, Preisen und Produktionskosten."
+    },
+    "SHA0.DE": {
+      "name": "Schaeffler AG",
+      "sector": "Industrie- und Automobilzulieferer",
+      "business": "Produziert Lager, Bewegungs-, Antriebs- und Automatisierungstechnik für Fahrzeughersteller und Industrieunternehmen.",
+      "revenue": "Verkauf von Komponenten und Systemen an Industrie- und Fahrzeugkunden."
+    },
+    "BAYN.DE": {
+      "name": "Bayer AG",
+      "sector": "Gesundheit und Agrar",
+      "business": "Entwickelt und vertreibt verschreibungspflichtige Medikamente, Gesundheitsprodukte sowie Saatgut und Pflanzenschutz.",
+      "revenue": "Umsätze aus den Sparten Pharma, Consumer Health und Crop Science."
+    },
+    "SIE.DE": {
+      "name": "Siemens AG",
+      "sector": "Industrieautomation und Infrastruktur",
+      "business": "Bietet Automatisierungstechnik, Industriesoftware, intelligente Infrastruktur und Bahntechnik.",
+      "revenue": "Verkauf von Anlagen, Software, Wartung und digitalen Dienstleistungen an Industrie- und Infrastrukturkunden."
+    },
+    "NVDA": {
+      "name": "NVIDIA Corporation",
+      "sector": "Halbleiter und KI-Rechenplattformen",
+      "business": "Entwickelt Grafikprozessoren, KI-Beschleuniger und die dazugehörigen Rechen- und Softwareplattformen.",
+      "revenue": "Umsätze überwiegend durch Chips, Systeme und Plattformen an Rechenzentrums- und weitere Technologiekunden."
+    },
+    "BYW.MU": {
+      "name": "BayWa AG",
+      "sector": "Agrar, Baustoffe und Handel",
+      "business": "Handels- und Dienstleistungsunternehmen mit Schwerpunkten in Landwirtschaft, Agrarprodukten und Bau.",
+      "revenue": "Erträge durch Warenhandel, Dienstleistungen und weitere Geschäftsaktivitäten; Finanzierungslage ist entscheidend."
+    },
+    "BYW.DE": {
+      "name": "BayWa AG",
+      "sector": "Agrar, Baustoffe und Handel",
+      "business": "Handels- und Dienstleistungsunternehmen mit Schwerpunkten in Landwirtschaft, Agrarprodukten und Bau.",
+      "revenue": "Erträge durch Warenhandel, Dienstleistungen und weitere Geschäftsaktivitäten; Finanzierungslage ist entscheidend."
+    },
+    "GOOG": {
+      "name": "Alphabet Inc.",
+      "sector": "Internettechnologie und Werbung",
+      "business": "Mutterkonzern von Google, YouTube und Google Cloud; bietet Suche, digitale Werbung und Cloud-Dienste.",
+      "revenue": "Großer Teil der Erlöse kommt aus Werbung, zusätzlich aus Cloud und weiteren Services."
+    },
+    "GOOGL": {
+      "name": "Alphabet Inc.",
+      "sector": "Internettechnologie und Werbung",
+      "business": "Mutterkonzern von Google, YouTube und Google Cloud; bietet Suche, digitale Werbung und Cloud-Dienste.",
+      "revenue": "Großer Teil der Erlöse kommt aus Werbung, zusätzlich aus Cloud und weiteren Services."
+    },
+    "AAPL": {
+      "name": "Apple Inc.",
+      "sector": "Hardware und digitale Dienste",
+      "business": "Entwickelt Geräte wie iPhone, Mac, iPad und Wearables sowie Software und Dienste.",
+      "revenue": "Erlöse aus Geräteverkäufen, Serviceabonnements und Plattformdienstleistungen."
+    },
+    "JD": {
+      "name": "JD.com Inc.",
+      "sector": "Onlinehandel und Logistik",
+      "business": "Betreibt Onlinehandel, Handelsplattformen und Logistikdienstleistungen insbesondere in China.",
+      "revenue": "Erlöse aus Warenverkäufen, Marktplatz- und Logistikdienstleistungen."
+    },
+    "AMZN": {
+      "name": "Amazon.com Inc.",
+      "sector": "Onlinehandel, Cloud und Werbung",
+      "business": "Betreibt Onlinehandel, Marktplatzdienste und Cloud-Infrastruktur über Amazon Web Services.",
+      "revenue": "Erlöse aus Handel, Händlerdiensten, Cloud-Angeboten und Werbung."
+    },
+    "MSFT": {
+      "name": "Microsoft Corporation",
+      "sector": "Software, Cloud und KI",
+      "business": "Bietet Microsoft 365, Windows, Azure-Cloud, Entwickler- und weitere Unternehmenssoftware.",
+      "revenue": "Umsätze aus Softwarelizenzen, Abonnements und Cloud-Nutzungsgebühren."
+    },
+    "RWE.DE": {
+      "name": "RWE AG",
+      "sector": "Energieversorgung",
+      "business": "Erzeugt und vermarktet Strom, investiert in erneuerbare Energie und weitere Kraftwerkstechnologien.",
+      "revenue": "Erlöse aus Energieerzeugung, Stromvermarktung und zugehörigen Geschäften."
+    },
+    "EOAN.DE": {
+      "name": "E.ON SE",
+      "sector": "Energienetze und Kundenlösungen",
+      "business": "Betreibt Strom- und Gasnetze und versorgt Kunden mit Energie- und Energiedienstleistungen.",
+      "revenue": "Erlöse aus regulierten Netzen, Energievertrieb und Kundenlösungen."
+    },
+    "ENR.DE": {
+      "name": "Siemens Energy AG",
+      "sector": "Energietechnik",
+      "business": "Lieferant von Energietechnik für Netze, Stromerzeugung und Windkraft, unter anderem über Siemens Gamesa.",
+      "revenue": "Verkauf von Ausrüstung, Dienstleistungen und langfristigen Energieprojekten."
+    },
+    "ENR": {
+      "name": "Siemens Energy AG",
+      "sector": "Energietechnik",
+      "business": "Lieferant von Energietechnik für Netze, Stromerzeugung und Windkraft, unter anderem über Siemens Gamesa.",
+      "revenue": "Verkauf von Ausrüstung, Dienstleistungen und langfristigen Energieprojekten."
+    },
+    "AIXA": {
+      "name": "AIXTRON SE",
+      "sector": "Halbleiter-Produktionsanlagen",
+      "business": "Liefert Anlagen, mit denen Hersteller Spezialhalbleiter und optoelektronische Bauteile produzieren.",
+      "revenue": "Umsätze durch Verkauf und Service von Fertigungsanlagen an Halbleiterhersteller."
+    },
+    "KGX": {
+      "name": "KION Group AG",
+      "sector": "Intralogistik und Lagerautomation",
+      "business": "Hersteller von Gabelstaplern, Lagertechnik und Automatisierungslösungen für Logistikzentren.",
+      "revenue": "Erlöse aus Fahrzeugen, Automationsanlagen, Wartung und weiteren Services."
+    },
+    "CGNX": {
+      "name": "Cognex Corporation",
+      "sector": "Industrielle Bildverarbeitung und Robotik",
+      "business": "Entwickelt Kameras und industrielle Machine-Vision-Systeme für Qualitätskontrolle und Robotik.",
+      "revenue": "Verkauf von Bildverarbeitungssystemen, Software und Zubehör an Industriekunden."
+    }
+  }
+}
