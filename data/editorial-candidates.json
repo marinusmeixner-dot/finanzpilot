@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T14:48:35.234212Z",
+  "updated_at": "2026-11-05T17:01:11.454894Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -379,15 +379,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ig-metall-warnstreiks-120.html",
       "published_at": "2026-11-02T02:15:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-2fa3cb1d1b231c33a3",
-      "title": "Grüner Flugkraftstoff: Wird Fliegen in Zukunft teurer?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/energie/umweltfreundlich-fliegen-flugverkehr-100.html",
-      "published_at": "2026-11-01T16:22:32Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
