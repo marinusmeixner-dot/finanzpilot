@@ -51,7 +51,7 @@ function card(c){
  return '<article class="fp86-card">'+
  '<div class="fp86-card-top"><span class="fp86-symbol">'+esc(c.ticker)+'</span>'+badge+'</div>'+
  '<h3>'+esc(c.company)+'</h3><p class="fp86-sector">'+esc(c.sector||'Branche prüfen')+' · '+esc(c.currency||'Währung prüfen')+'</p>'+
- k+'<p class="fp86-proof">'+esc(sourceTag(c))+'</p>'+
+ k+(window.FinanzPilotDecisions?.badge?.(c.id)||'')+'<p class="fp86-proof">'+esc(sourceTag(c))+'</p>'+
  '<p class="fp86-risk"><strong>Gegenprüfung:</strong> '+esc(blurb)+'</p>'+
  '<div class="fp86-actions"><button type="button" data-fp86-open="'+esc(c.id)+'">'+(c.has_curated_dossier?'Analyse ansehen':'Recherche ansehen')+'</button>'+
  '<button type="button" class="fp86-soft" aria-pressed="'+tracked.has(c.id)+'" data-fp86-track="'+esc(c.id)+'">'+(tracked.has(c.id)?'Gemerkt ✓':'Merken')+'</button></div></article>';
@@ -85,13 +85,13 @@ function rowsForView(){
  if(view==='all')return candidates.filter(x=>x.lifecycle!=='archived');
  if(view==='tracked')return candidates.filter(x=>tracked.has(x.id));
  if(view==='archived')return candidates.filter(x=>x.lifecycle==='archived');
- if(view==='history')return [];
+ if(['history','decision','compare'].includes(view))return [];
  const selected=new Set(front);
  return candidates.filter(c=>selected.has(c.id)&&c.lifecycle!=='archived');
 }
 function dashboard(){
  const results=rowsForView();
- const tabs=[['priority','Recherche-Chancen'],['all','Alle Unternehmen'],['tracked','Gemerkt'],['history','Thesenverlauf'],['archived','Archiv']];
+ const tabs=[['priority','Recherche-Chancen'],['decision','Investmentprüfung'],['compare','Aktien vergleichen'],['all','Alle Unternehmen'],['tracked','Gemerkt'],['history','Thesenverlauf'],['archived','Archiv']];
  return '<section class="fp86-dashboard"><div class="fp86-hero"><span class="eyebrow">INVESTMENTRESEARCH · DYNAMISCHER MARKTSCAN</span>'+
  '<h2>Neue Aktien entdecken – unabhängig von deiner Watchlist</h2>'+
  '<p>Der Radar sucht laufend in mehreren Branchen und Märkten nach Unternehmen, die weitere Analyse verdienen. Ein technisches Signal ist keine günstige Bewertung. Neue Unternehmen beginnen ausdrücklich als Prüfkandidaten.</p>'+
@@ -101,7 +101,7 @@ function dashboard(){
  '<div><strong>'+meta.missing_quote_count+'</strong><small>Kursdaten noch offen</small></div></div>'+
  '<p class="fp86-date">Kursstand der Radarreihe: '+esc(meta.asof||'noch nicht verfügbar')+' · keine Realtime-Daten</p></div>'+
  '<div class="fp86-tabs" role="group" aria-label="Aktienradar durchsuchen">'+tabs.map(([k,label])=>'<button type="button" data-fp86-tab="'+k+'" aria-pressed="'+(view===k)+'">'+label+'</button>').join('')+'</div>'+
- (view==='history'?renderHistoryBoard():results.length?'<div class="fp86-grid">'+results.slice(0,view==='all'?120:50).map(card).join('')+'</div>':'<p class="fp86-empty">In dieser Ansicht gibt es derzeit keine geprüften Einträge. Die Radarhistorie wird beim nächsten sachlichen Signalwechsel ergänzt.</p>')+
+ (view==='history'?renderHistoryBoard():view==='decision'?(window.FinanzPilotDecisions?.board?.()||'<p>Investmentprüfung lädt …</p>'):view==='compare'?(window.FinanzPilotDecisions?.comparison?.()||'<p>Aktienvergleich lädt …</p>'):results.length?'<div class="fp86-grid">'+results.slice(0,view==='all'?120:50).map(card).join('')+'</div>':'<p class="fp86-empty">In dieser Ansicht gibt es derzeit keine geprüften Einträge. Die Radarhistorie wird beim nächsten sachlichen Signalwechsel ergänzt.</p>')+
  '<div class="fp86-method"><h3>Warum erscheint eine Aktie hier?</h3><p>Der Scanner berücksichtigt 50-/200-Tage-Trends, 63-Tage-Relative Performance, historische Schwankungen und – falls vorhanden – eine veröffentlichte, redaktionell eingeordnete Unternehmensmeldung. Eine A-Priorität heißt ausschließlich <strong>„zuerst recherchieren“</strong>, nicht „kaufen“. ETF-Alternativen, Cashflow, reale Verschuldung und Bewertung müssen separat geprüft werden.</p><p>Das Ausgangsuniversum ist offen: neue Unternehmen aus der gepflegten Unternehmensliste und veröffentlichten Berichten werden ergänzt. Bei fehlender Kursreihe zeigt die App bewusst keinen erfundenen Score.</p></div></section>';
 }
 function renderHistoryBoard(){
@@ -120,6 +120,7 @@ function candidateDetail(id){
  '<div class="fp86-warning">Dies ist eine automatisch erkannte Research-Konstellation, <strong>noch keine vollständige Fundamentalanalyse oder Kaufempfehlung</strong>. Unternehmensmeldungen sind von Prognosen zu unterscheiden; keine Kursziele ohne Quellenprüfung.</div>'+
  '<section class="fp86-section"><h2>Was hat die Aktie auffällig gemacht?</h2>'+perf(c)+sourceContext(c)+
  '<p><strong>Fachliche nächste Prüfung:</strong> '+esc(c.next_review)+'</p></section>'+
+ (window.FinanzPilotDecisions?.researchOnly?.(c.id)||'')+
  '<section class="fp86-section"><h2>Welche ETF-Alternative gibt es?</h2>'+benchmark(c)+'</section>'+
  peerComparison(c)+
  '<section class="fp86-section"><h2>Was fehlt für ein tatsächliches Investmenturteil?</h2>'+
@@ -138,6 +139,7 @@ function addendum(id){
  '<h2>Ist diese Aktie interessanter als die Alternativen?</h2>'+
  '<p>Die Kombination aus tatsächlichen Finanzkennzahlen, Bewertung, Wettbewerbsvergleich und ETF-Alternative ist entscheidend. Die technische Research-Priorität ist getrennt vom Unternehmens- und Investmenturteil.</p>'+
  '<p class="fp86-statusline"><strong>Research-Priorität:</strong> '+esc(priority[c.research_priority]||'offen')+' · '+esc(sourceTag(c))+'</p>'+
+ (window.FinanzPilotDecisions?.researchOnly?.(c.id)||'')+
  '<h3>Renditevergleich mit ETFs</h3>'+benchmark(c)+peerComparison(c)+history(c)+
  '<div class="fp86-actions"><button type="button" data-fp86-theses="'+esc(c.id)+'">Eigene Investmentthese und Revisionen</button>'+
  '<button type="button" class="fp86-soft" data-fp86-track="'+esc(c.id)+'">'+(tracked.has(c.id)?'Gemerkt ✓':'Für Research merken')+'</button></div></section>';
@@ -167,6 +169,7 @@ async function load(force=false){
  finally{busy=false;if(typeof state!=='undefined'&&['marketideas','marketidea','home'].includes(state.view))window.render?.()}
 }
 function bind(root=document){
+ window.FinanzPilotDecisions?.bind?.(root);
  root.querySelectorAll('[data-fp86-tab]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.fp86Tab;window.render?.()}));
  root.querySelectorAll('[data-fp86-open]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotInsights?.openIdea?.(b.dataset.fp86Open)));
  root.querySelectorAll('[data-fp86-track]').forEach(b=>b.addEventListener('click',()=>{
