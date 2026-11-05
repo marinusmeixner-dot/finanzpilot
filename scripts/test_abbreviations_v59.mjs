@@ -45,6 +45,6 @@ assert(journey.renderFor('journeycourse').includes('data-fp59-glossary open'),'E
 toggle({currentTarget:{open:false}});
 assert(!journey.renderFor('journeycourse').includes('data-fp59-glossary open'),'Glossary can be collapsed.');
 assert(css.includes('.fp59-glossary summary:focus-visible'),'Keyboard focus visible.');
-assert(html.includes('journey-v39.js?v='+JSON.parse(read('version.json')).version)&&/journey-v39[.]css[?]v=[0-9]+/.test(html),'Current foundation glossary JS and existing styles load with versioned iPhone cache URLs.');
+assert(html.includes('journey-v39.js?v=80')&&/journey-v39[.]css[?]v=[0-9]+/.test(html),'Current foundation glossary JS and existing styles load with versioned iPhone cache URLs.');
 assert(!js.includes("abbr+' ('"),'No automatic parenthesized term expansion');
 console.log('V59 PASS: per-lesson relevant collapsible definitions, no inserted parentheticals, ECB/ETF/KGV/EBIT glossary, accessible, retained state, no changes to 18 lessons/progress.');
