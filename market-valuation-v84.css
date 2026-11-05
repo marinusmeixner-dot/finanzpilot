@@ -1,0 +1,47 @@
+/* v84 historic equity price comparison: verified market close, EPS/FCF ratios and reverse-valuation */
+.fp84-module{border:1px solid #557568;background:#172f38;border-radius:18px;display:grid;gap:15px;padding:20px;margin:18px 0;color:var(--text,#edf8f0)}
+.fp84-module>header{display:grid;gap:7px}
+.fp84-module h2{font-size:clamp(22px,2.8vw,27px);letter-spacing:-.025em;line-height:1.23}
+.fp84-module h3{font-size:19px;line-height:1.35;margin:0}
+.fp84-module p{font-size:12px;line-height:1.72;color:#c7ded2}
+.fp84-module strong{color:#edf9ef}
+.fp84-quote{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:13px;background:linear-gradient(105deg,#245448,#193a42);border:1px solid #688c76;border-radius:14px;padding:18px}
+.fp84-quote>div:first-child{display:grid;gap:7px}
+.fp84-quote strong{font-size:clamp(25px,4vw,34px);font-variant-numeric:tabular-nums}
+.fp84-quote small{color:#b7d9c5;font-size:11px}
+.fp84-quote-source{display:grid;gap:7px;max-width:360px}
+.fp84-quote-source p{font-size:11px}
+.fp84-module a{font-size:12px;color:#a9eac5;text-decoration:underline;text-underline-offset:2px}
+.fp84-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px}
+.fp84-metric{border:1px solid #4d746b;border-radius:11px;padding:13px;background:#1d3b44;display:grid;gap:7px;min-width:0}
+.fp84-metric small{font-size:11px;line-height:1.5;color:#b5d2c6}
+.fp84-metric strong{font-size:18px;line-height:1.4;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+.fp84-evidence{background:#1e3a40;border:1px solid #4b6e68;border-radius:13px;padding:16px;display:grid;gap:10px}
+.fp84-evidence p strong{font-size:12px}
+.fp84-reverse{border:1px solid #6b947c;background:#1d4143;border-radius:14px;padding:18px;display:grid;gap:12px}
+.fp84-section-header{display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+.fp84-section-header h3{margin-top:7px}
+.fp84-section-header button{border:1px solid #588474;background:#235449;color:#c7eed6;border-radius:9px;padding:8px 10px;cursor:pointer;font-size:11px;flex-shrink:0}
+.fp84-controls{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.fp84-controls label{display:grid;gap:10px;color:#dceee1;font-size:12px;font-weight:650}
+.fp84-controls label strong{color:#b3f4cd;font-variant-numeric:tabular-nums}
+.fp84-controls input{width:100%;accent-color:#a1e7be;min-height:24px;cursor:pointer}
+.fp84-reverse-result{background:#16363b;border:1px solid #6c8d77;border-radius:12px;padding:17px;display:grid;gap:8px}
+.fp84-reverse-result small{font-size:11px;color:#c1d9c8}
+.fp84-reverse-result>strong{font-size:clamp(23px,3vw,29px);font-variant-numeric:tabular-nums}
+.fp84-reverse-result p{max-width:780px}
+.fp84-formula{color:#a8c9b9!important;font-size:11px!important}
+.fp84-stale{border:1px solid #a1844a;background:rgba(135,96,31,.18);padding:11px 13px;border-radius:10px;color:#f2d2a3!important}
+.fp84-msft{border:1px solid #506e70;border-radius:13px;padding:17px;background:#1a3943;display:grid;gap:11px}
+.fp84-msft h3{margin-top:3px}
+.fp84-msft-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.fp84-msft-grid>div{display:grid;gap:8px;padding:12px;border:1px solid #567a72;border-radius:10px;background:#21443f;min-width:0}
+.fp84-msft-grid small{font-size:10px;line-height:1.45;color:#c2d9cb}
+.fp84-msft-grid strong{font-size:17px;font-variant-numeric:tabular-nums}
+.fp84-msft-grid span{font-size:11px;color:#b9dcca;overflow-wrap:anywhere}
+.fp84-warning{border-left:3px solid #b5925a;padding-left:11px}
+.fp84-disclaimer{font-size:11px!important;color:#acc6b8!important}
+.fp84-empty{padding:16px}
+@media(max-width:830px){.fp84-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.fp84-msft-grid{grid-template-columns:1fr}.fp84-quote-source{max-width:100%}}
+@media(max-width:620px){.fp84-module{padding:15px}.fp84-reverse,.fp84-evidence{padding:14px}.fp84-controls{grid-template-columns:1fr}.fp84-quote{padding:15px}.fp84-metric strong{font-size:16px}.fp84-section-header{flex-wrap:wrap}}
+@media(max-width:370px){.fp84-metrics{grid-template-columns:1fr}}
