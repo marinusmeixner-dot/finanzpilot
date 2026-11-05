@@ -1,0 +1,311 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-05",
+  "overall_status": "3 TTM-Cashflows mathematisch aus Originalquellen rekonstruiert; 6 weitere Unternehmen benötigen Primärdaten-Tieout. Ein illustratives Cashflow-to-Equity-Modell für Microsoft ist freigeschaltet. Für KEIN Unternehmen liegt bereits ein von Szenarien unabhängiger, vollständig geprüfter fairer Wert oder Handelsempfehlung vor.",
+  "readiness_definition": {
+    "primary_ttm_reconciled": "Operativer Cashflow und Sachanlageinvestitionen wurden über vergleichbare Periode anhand Originalquellen rekonstruiert.",
+    "secondary_only": "Vorhandene V84-Werte überwiegend aus Markt-Datenaggregator; noch kein Primärbericht-Abgleich.",
+    "illustrative_equity_dcf": "Modellszenario zur Sensitivität, ohne unabhängig validierte nachhaltige Kapitalbindung und Eigenkapitalkosten.",
+    "blocked": "Keine freigegebene Equity-/EV-DCF-Veröffentlichung, da Bilanz-/Cashflow-Überleitung unvollständig."
+  },
+  "records": [
+    {
+      "id": "microsoft",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "financial_status": "primary_ttm_reconciled",
+      "model_status": "illustrative_equity_dcf",
+      "cashflow_method": "FY2026 10-K minus Q1 FY2026 plus Q1 FY2027",
+      "fiscal_period_end": "2026-09-30",
+      "primary_sources": [
+        {
+          "url": "https://www.microsoft.com/investor/reports/ar26/",
+          "label": "FY2026-Geschäftsbericht",
+          "period_end": "2026-06-30"
+        },
+        {
+          "url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+          "label": "Q1 GJ2027 Ergebnis und Vorjahresvergleich",
+          "period_end": "2026-09-30"
+        }
+      ],
+      "ttm_bridge": {
+        "operating_cash_m": {
+          "annual": 182935,
+          "prior_ytd": 45057,
+          "current_ytd": 58000
+        },
+        "capex_m": {
+          "annual": 115948,
+          "prior_ytd": 19394,
+          "current_ytd": 39367
+        },
+        "unit": "Mio. USD",
+        "explanation": "TTM = vollständiges Geschäftsjahr − Vergleichsquartal Vorjahr + aktuelles Quartal; Capex positiv als Ausgabensumme."
+      },
+      "balance": {
+        "period_end": "2026-09-30",
+        "cash_and_st_investments_m": 64509,
+        "debt_short_m": 4391,
+        "debt_long_m": 31090,
+        "lease_liabilities_long_m": 21719,
+        "other_investments_m": 37808,
+        "diluted_weighted_shares_m": 7446,
+        "shares_outstanding_m": 7427,
+        "source_url": "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast",
+        "bridge_note": "Liquidität umfasst Cash plus kurzfristige Wertpapiere; andere Investments und langfristige Leasingverbindlichkeiten nicht ohne eigene Wert- und Schuldenanalyse hinzurechnen. Verwässerte durchschnittliche Aktienzahl ist NICHT die Stichtagsaktienzahl."
+      },
+      "dcf": {
+        "type": "equity_fcf_proxy",
+        "years": 5,
+        "normalization_note": "Historisches CFO − Capex als Näherung für Eigenkapital-Cashflows vor Finanzierungstransaktionen. Hohe KI-Investitionen, Änderungen des Working Capital, Nettoneuverschuldung und SBC können die nachhaltige Aktionärs-Cashflow-Basis stark verändern. Es ist KEIN FCFF-/WACC-DCF, EV-Bridge wird nicht aufaddiert.",
+        "default": {
+          "annual_growth_pct": 13,
+          "discount_pct": 10,
+          "terminal_growth_pct": 3,
+          "fcf_normalization_factor": 1
+        },
+        "cases": {
+          "bear": {
+            "annual_growth_pct": 4,
+            "discount_pct": 12,
+            "terminal_growth_pct": 2,
+            "fcf_normalization_factor": 0.85
+          },
+          "base": {
+            "annual_growth_pct": 13,
+            "discount_pct": 10,
+            "terminal_growth_pct": 3,
+            "fcf_normalization_factor": 1
+          },
+          "bull": {
+            "annual_growth_pct": 22,
+            "discount_pct": 9,
+            "terminal_growth_pct": 3.5,
+            "fcf_normalization_factor": 1.3
+          }
+        },
+        "caveats": [
+          "Mit Q1 GJ2027 aktualisierte Jahres-TTM-Zahlen, jedoch keine explizite Unternehmensprognose zukünftiger freier Cashflows.",
+          "FCF enthält mögliche Wachstumsinvestitionsspitzen; Normalisierungsfaktor ist rein hypothetisch.",
+          "Eigenkapital-DCF auf Cashflows nach Zinsen: Kassenbestand/Schulden nicht nochmals pauschal als EV-Brücke hinzufügen.",
+          "Diskontsatz wird als Szenarioannahme gewählt, nicht als empirisch validierte Eigenkapitalkosten-Schätzung."
+        ]
+      },
+      "gaps": [
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
+        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
+        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
+        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
+      ]
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "financial_status": "primary_ttm_reconciled",
+      "model_status": "restricted_no_fair_value",
+      "cashflow_method": "GJ2026 10-K minus H1 GJ2026 plus H1 GJ2027",
+      "fiscal_period_end": "2026-07-26",
+      "primary_sources": [
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+          "label": "GJ2026-Jahresabschluss",
+          "period_end": "2026-01-25"
+        },
+        {
+          "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/",
+          "label": "GJ2027 Q2 / Halbjahr",
+          "period_end": "2026-07-26"
+        }
+      ],
+      "ttm_bridge": {
+        "operating_cash_m": {
+          "annual": 102718,
+          "prior_ytd": 42779,
+          "current_ytd": 74421
+        },
+        "capex_m": {
+          "annual": 6042,
+          "prior_ytd": 3122,
+          "current_ytd": 4434
+        },
+        "unit": "Mio. USD",
+        "explanation": "Gleichartige 6-Monatszeiträume. Capex = Käufe von Sachanlagen/immateriellen Vermögenswerten; Tilgungszahlungen hierfür separat, daher nicht identisch mit NVIDIA-non-GAAP-FCF."
+      },
+      "balance": null,
+      "dcf": null,
+      "gaps": [
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
+        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
+        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
+        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
+        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
+      ]
+    },
+    {
+      "id": "alphabet",
+      "ticker": "GOOGL",
+      "company": "Alphabet",
+      "financial_status": "primary_ttm_reconciled",
+      "model_status": "restricted_no_fair_value",
+      "cashflow_method": "Kalenderjahr 2025 minus 9M 2025 plus 9M 2026",
+      "fiscal_period_end": "2026-09-30",
+      "primary_sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+          "label": "10-K 2025",
+          "period_end": "2025-12-31"
+        },
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm",
+          "label": "10-Q 9M 2026",
+          "period_end": "2026-09-30"
+        }
+      ],
+      "ttm_bridge": {
+        "operating_cash_m": {
+          "annual": 164713,
+          "prior_ytd": 112311,
+          "current_ytd": 127149
+        },
+        "capex_m": {
+          "annual": 91447,
+          "prior_ytd": 63596,
+          "current_ytd": 131953
+        },
+        "unit": "Mio. USD",
+        "explanation": "TTM über volles Kalenderjahr minus vergleichbare 9M plus neue 9M; Sachanlageausgaben 2026 stark gestiegen."
+      },
+      "balance": null,
+      "dcf": null,
+      "gaps": [
+        "Bilanzüberleitung einschließlich Preferred Shares, Wandelinstrumente und liquider nichtoperativer Beteiligungen",
+        "Wirtschaftlich verwässerte Aktienzahl über Aktienklassen A/B/C und Preferred Share berücksichtigen",
+        "Nettofinanzschulden und potenzielle nichtoperativ bewertete Investments primär abgleichen",
+        "Cashflow aus KI- und Cloud-Investitionen normalisieren; Beteiligungsgewinne vom Betrieb trennen",
+        "DCF-Methode (FCFF/FCFE), WACC, Terminalwert und Vergleichsbewertung belegen"
+      ]
+    },
+    {
+      "id": "amazon",
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "financial_status": "secondary_only",
+      "model_status": "blocked",
+      "primary_sources": [
+        {
+          "url": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+          "label": "Q3-2026-Ergebnis als Recherchegrundlage",
+          "period_end": "2026-09-30"
+        }
+      ],
+      "gaps": [
+        "FY2025 und Q3-2026-Cashflow-Tabellen mit Vorjahresvergleich für TTM aus Primärunterlagen belegen",
+        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten",
+        "Trennung von AWS/Handel, Finanzierung und IT-Immobilienverpflichtungen",
+        "Nettoschulden/Leases, verwässerte Aktienzahl, nachhaltiger Cashflow und DCF-WACC"
+      ]
+    },
+    {
+      "id": "meta",
+      "ticker": "META",
+      "company": "Meta",
+      "financial_status": "secondary_only",
+      "model_status": "blocked",
+      "primary_sources": [
+        {
+          "url": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+          "label": "Q3-2026-Ergebnis",
+          "period_end": "2026-09-30"
+        }
+      ],
+      "gaps": [
+        "Primärquellen-TTM-Überleitung zu FCF und Anlagencapex",
+        "Q3-Rechtsrückstellung von wiederkehrenden Rechts-/Cashkosten abgrenzen",
+        "Aktuelle Schulden, liquide Investments und verwässerte Aktienzahlen prüfen",
+        "KI-Capex, Reality-Labs-Kosten und Peer-Multiples in begründeten Szenarien"
+      ]
+    },
+    {
+      "id": "siemens",
+      "ticker": "SIE.DE",
+      "company": "Siemens",
+      "financial_status": "secondary_only",
+      "model_status": "blocked",
+      "primary_sources": [
+        {
+          "url": "https://press.siemens.com/global/de/pressemitteilung/siemens-steigert-ergebnis-und-barmittelzufluss-im-dritten-quartal-2026",
+          "label": "Q3 GJ2026",
+          "period_end": "2026-06-30"
+        }
+      ],
+      "gaps": [
+        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex",
+        "Separate Schulden/Leasing der Finanzierungssparte aus industrieller EV-Bridge herausrechnen",
+        "Beteiligungen und Sonderergebnisse gegenüber normalisiertem EBIT trennen",
+        "Aktuelle verwässerte Aktien, Kapitalstruktur und Segment-Multiples bestätigen"
+      ]
+    },
+    {
+      "id": "aixtron",
+      "ticker": "AIXA",
+      "company": "AIXTRON",
+      "financial_status": "secondary_only",
+      "model_status": "blocked",
+      "primary_sources": [
+        {
+          "url": "https://www.aixtron.com/en/press/press-releases/AI-driven%20demand%20fuels%20strong%20order%20momentum_n6508801",
+          "label": "Q3 2026 Meldung",
+          "period_end": "2026-09-30"
+        }
+      ],
+      "gaps": [
+        "Aktuellen 9M- und FY-Abschluss: Cashflow-Anzahlungen aus Working Capital bereinigen",
+        "Jahres-CFO/Capex für echte TTM-Basis mit Primärdokumenten abgleichen",
+        "Nettofinanzschulden, tatsächliche Aktienzahl und Backlog-Konversion auditieren",
+        "Erlös-/Margenschwankungen und Halbleiterzyklus in nachhaltigem FCF abbilden"
+      ]
+    },
+    {
+      "id": "kion",
+      "ticker": "KGX",
+      "company": "KION",
+      "financial_status": "secondary_only",
+      "model_status": "blocked",
+      "primary_sources": [
+        {
+          "url": "https://www.kiongroup.com/de/Presse/Pressemitteilungen/Pressemitteilungen-Detail.html?id=486077516",
+          "label": "9M 2026 Meldung",
+          "period_end": "2026-09-30"
+        }
+      ],
+      "gaps": [
+        "9M/CY2025-CFO/Capex/FCF anhand echter Geschäftsbericht-Tabellen zum TTM überleiten",
+        "Finanzdienstleistungs- und Leasingverbindlichkeiten vom operativen Industriegeschäft abgrenzen",
+        "FCF-Definitionswechsel 2026 nachvollziehbar rückrechnen",
+        "IAS/ITS separat bewerten, Aktienzahl sowie Normalisierungsannahmen validieren"
+      ]
+    },
+    {
+      "id": "cgnx",
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "financial_status": "secondary_only",
+      "model_status": "blocked",
+      "primary_sources": [
+        {
+          "url": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000061/a07052026-xex991xq22026ear.htm",
+          "label": "Q2 2026 Ergebnis",
+          "period_end": "2026-06-30"
+        }
+      ],
+      "gaps": [
+        "Q3-2026-10-Q und RealSense-Akquisitionsabschluss, TTM-FCF aus Cashflows neu bilden",
+        "Barmittel/Verbindlichkeiten/Übernahmepreis um Verwässerung und Finanzierung bereinigen",
+        "Aktuelle ausgegebene und vollständig verwässerte Aktien sowie Übernahme-SBC prüfen",
+        "Organisches Wachstum und 3D-Robotik-Margen belegen, unabhängige Bewertung ableiten"
+      ]
+    }
+  ]
+}
