@@ -128,6 +128,21 @@
       "date": "2026-10-28",
       "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
       "next": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen."
+    },
+    {
+      "id": "apple",
+      "company": "Apple",
+      "ticker": "AAPL",
+      "symbol": "NASDAQ:AAPL",
+      "sector": "Smartphones, Hardware und digitale Services",
+      "status": "Erweitertes Research: FY2026-10-K und Cashflow primär belegt; nachhaltiger fairer Wert noch offen",
+      "interest": "Hohe Cashflow-Erzeugung und wachsendes Services-Geschäft unterstützen das Geschäftsmodell. Bewertungsfrage: Rechtfertigen die nachhaltigen Gewinne einen Schlusskurs von 349,51 USD vom 04.11.2026?",
+      "counter": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
+      "metric": "GJ2026: Umsatz 478,834 Mrd. USD, GAAP-EBIT 158,063 Mrd. USD, CFO 145,097 Mrd. USD, Sachanlageinvestitionen 9,041 Mrd. USD, daraus FCF 136,056 Mrd. USD.",
+      "date": "2026-11-03",
+      "source": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+      "supporting_source": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+      "next": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten."
     }
   ]
 }
