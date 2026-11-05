@@ -6,12 +6,12 @@ const data=JSON.parse(read('data/valuation-scenarios-v83.json'));
 const ideas=JSON.parse(read('data/ideas.json')).ideas;
 const index=read('index.html'),app=read('app.js'),research=read('market-insights-v82.js');
 assert.equal(data.schema_version,1);
-assert.equal(data.models.length,9,'Nine source-backed companies required');
+assert(data.models.length>=9,'Keep all verified baseline models while supporting future names');
 assert.equal(new Set(data.models.map(m=>m.id)).size,9,'No duplicate model IDs');
-assert.equal(ideas.length,9);
+assert(ideas.length>=9,'The research universe is not capped at nine');
 assert(data.models.every(m=>ideas.some(i=>i.id===m.id)));
-assert(index.includes('valuation-v83.js?v=83')&&index.includes('valuation-v83.css?v=83')&&index.includes('market-insights-v82.js?v=85'));
-assert(index.indexOf('valuation-v83.js?v=83')<index.indexOf('market-insights-v82.js?v=85'),'Valuation available before dossier rendering');
+assert(index.includes('valuation-v83.js?v=83')&&index.includes('valuation-v83.css?v=83')&&index.includes('market-insights-v82.js?v=86'));
+assert(index.indexOf('valuation-v83.js?v=83')<index.indexOf('market-insights-v82.js?v=86'),'Valuation available before dossier rendering');
 assert(research.includes('FinanzPilotValuation?.renderFor?.(idea.id)'),'Every dossier embeds quantitative scenario review');
 assert(research.includes('FinanzPilotValuation?.bind?.(root)'),'Slider controls are wired');
 const mockWindow={addEventListener(){},render(){},FinanzPilotNavigation:{route(){}}},mockDocument={readyState:'loading',addEventListener(){}};
@@ -20,7 +20,7 @@ const context=vm.createContext({window:mockWindow,document:mockDocument,fetch:mo
 vm.runInContext(read('valuation-v83.js'),context,{filename:'valuation-v83.js'});
 const appVal=mockWindow.FinanzPilotValuation;
 await appVal.load();
-assert.equal(appVal.models.length,9,'All valid models must load');
+assert.equal(appVal.models.length,data.models.length,'All published source-backed models must load');
 for(const m of appVal.models){
  assert(m.baseline.revenue_m>0&&m.baseline.source_url.startsWith('https:')&&/^\d{4}-\d\d-\d\d$/.test(m.baseline.source_published));
  assert(['year','quarter','nine_months'].includes(m.baseline.period_kind));
