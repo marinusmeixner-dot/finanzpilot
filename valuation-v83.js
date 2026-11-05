@@ -9,7 +9,7 @@ const sourceLink=(url,label)=>{const safe=external(url);return safe?'<a href="'+
 const finite=x=>typeof x==='number'&&Number.isFinite(x);
 const range=(n,lo,hi)=>Math.max(lo,Math.min(hi,n));
 const dateAge=iso=>{const n=Date.parse(String(iso||'')+'T12:00:00Z');return Number.isFinite(n)?Math.max(0,Math.floor((Date.now()-n)/86400000)):Infinity;};
-const modelOkay=m=>m&&typeof m.id==='string'&&m.baseline&&finite(m.baseline.revenue_m)&&m.baseline.revenue_m>0&&m.horizon_years>=1&&m.horizon_years<=7&&['year','quarter','nine_months'].includes(m.baseline.period_kind)&&['EUR','USD'].includes(m.baseline.currency)&&Object.values(m.scenarios||{}).length===3&&['bear','base','bull'].every(k=>m.scenarios[k]&&finite(m.scenarios[k].growth_pct)&&finite(m.scenarios[k].margin_pct)&&m.scenarios[k].growth_pct>-100);
+const modelOkay=m=>m&&typeof m.id==='string'&&m.baseline&&finite(m.baseline.revenue_m)&&m.baseline.revenue_m>0&&m.horizon_years>=1&&m.horizon_years<=7&&['year','quarter','nine_months'].includes(m.baseline.period_kind)&&['EUR','USD'].includes(m.baseline.currency)&&Object.values(m.scenarios||{}).length===3&&['bear','base','bull'].every(k=>m.scenarios[k]&&finite(m.scenarios[k].growth_pct)&&finite(m.scenarios[k].margin_pct)&&m.scenarios[k].growth_pct>-100)&&Array.isArray(m.drivers)&&m.drivers.length>=2&&Array.isArray(m.checks)&&m.checks.length>=2&&typeof m.baseline.source_published==='string'&&/^\d{4}-\d{2}-\d{2}$/.test(m.baseline.source_published)&&!!external(m.baseline.source_url);
 let models=[],loading=false,lastLoad=0,updated='',status='';
 const chosen=new Map();
 function model(id){return models.find(x=>x.id===id)||null}
@@ -37,7 +37,7 @@ function inlineCard(m,k){
  '<dl><div><dt>Umsatzwachstum p. a.</dt><dd>'+signed(c.growth_pct)+' %</dd></div>'+
  '<div><dt>Angenommene operative Marge</dt><dd>'+number(c.margin_pct)+' %</dd></div>'+
  '<div><dt>Umsatz (gleicher Zeitraum)</dt><dd>'+displayCurrency(m,v.projected_revenue_m)+'</dd></div>'+
- '<div><dt>'+esc(m.baseline.profit_label||'Operativer Modellgewinn')+'</dt><dd>'+displayCurrency(m,v.projected_profit_m)+'</dd></div></dl></div>';
+ '<div><dt>Hypothetischer operativer Modellgewinn</dt><dd>'+displayCurrency(m,v.projected_profit_m)+'</dd></div></dl></div>';
 }
 function valuationSection(m){
  const v=m.valuation;
