@@ -1,62 +1,65 @@
 {
   "schema_version": 1,
-  "date": "2026-11-05",
-  "updated_at": "2026-11-05T01:03:00+01:00",
+  "date": "2026-11-06",
+  "updated_at": "2026-11-06T00:03:46+01:00",
   "editor": "FinanzPilot Tagesredaktion – datierte Originalquellen und ausdrücklich hypothetische Szenarien",
-  "explanation": "Drei neue Aufgaben für Donnerstag, 05.11.2026. Alle Modellwerte ausdrücklich fiktiv; datierte Originalquellen werden nicht als heutige Live-Publikationen ausgegeben.",
+  "explanation": "Drei neue Aufgaben für Freitag, 06.11.2026. Datierte Originalquellen; Modellannahmen sind ausdrücklich fiktiv.",
   "tasks": [
     {
-      "id": "2026-11-05:market:inflation-base-comparison",
+      "id": "2026-11-06:market:orders-base-effect",
       "kind": "market",
-      "date": "2026-11-05",
-      "title": "Inflationsschock: Indexstand, Jahresrate und Kaufkraft",
-      "context": "Ausgehend von der Destatis-Schnellschätzung vom 30.10.2026. Alle Indexstände und Portfolioannahmen in dieser Aufgabe sind ausdrücklich fiktiv.",
-      "question": "Ein fiktiver Verbraucherpreisindex steigt von 108 im Oktober 2025 auf 113,4 im Oktober 2026; im September 2026 lag er bei 114. Berechne Jahres- und Monatsinflation, den realen Wert von 10.000 € nominalem Vermögen nach einem Jahr und erläutere, warum eine sinkende Monatsrate nicht automatisch sinkende Jahresinflation bedeutet. Welche Gegenhypothese würdest du mit September 2025 prüfen?",
+      "date": "2026-11-06",
+      "title": "Industrieaufträge: Monatsanstieg gegen Quartalstrend prüfen",
+      "context": "Destatis meldete am 05.11.2026 für September 2026 +4,4 % reale Aufträge gegenüber August; August war um 10,1 % gefallen. Das Rechenbeispiel setzt Juli fiktiv auf 100 Indexpunkte.",
+      "question": "Berechne den fiktiven August- und Septemberindex und die Veränderung September gegen Juli. Warum ist +4,4 % im September kein Beweis einer Trendwende? Erkläre zwei plausible Gegenhypothesen und zwei weitere Datenreihen, die du prüfen würdest.",
       "rubric": [
-        "Jahresrate (113,4/108−1)×100 = 5,00 %",
-        "Monatsrate (113,4/114−1)×100 ≈ −0,526 %",
-        "Reale Kaufkraft 10.000/1,05 ≈ 9.523,81 € in Vorjahres-Euro",
-        "Basiseffekt und September-2025-Vergleich als Gegenhypothese sauber erklären"
+        "Augustindex 100×0,899=89,9",
+        "Septemberindex 89,9×1,044=93,8556",
+        "September gegen Juli −6,1444 %; Prozentänderungen nicht addieren",
+        "Basis- und Großauftragseffekt differenzieren; Dreimonatsvergleich und realen Umsatz prüfen",
+        "Gegenhypothesen explizit formulieren und falsifizierbare Daten benennen"
+      ],
+      "source": "Destatis – Auftragseingang im Verarbeitenden Gewerbe September 2026, Pressemitteilung 385",
+      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
+      "source_date": "2026-11-05",
+      "symbol": ""
+    },
+    {
+      "id": "2026-11-06:research:cashflow-stress",
+      "kind": "research",
+      "date": "2026-11-06",
+      "title": "Freier Cashflow unter Investitionsdruck",
+      "context": "Die Aufgabe knüpft methodisch an die am 03.11.2026 veröffentlichte Bayer-Q3-Mitteilung an; sämtliche folgenden Zahlen sind rein hypothetisch und keine Bayer-Kennzahlen.",
+      "question": "Ein fiktiver Konzern meldet operativen Jahres-Cashflow von 2,4 Mrd. €, Sachinvestitionen von 1,8 Mrd. € und einen einmaligen Working-Capital-Zufluss von 0,5 Mrd. €. Berechne berichteten und um diesen Einmaleffekt bereinigten CFO−Capex-Cashflow. Wie verändert sich das Ergebnis bei 20 % höheren Investitionen? Nenne zwei Grenzen der Kennzahl und eine Gegenhypothese zur Nachhaltigkeit.",
+      "rubric": [
+        "Berichteter CFO−Capex = 0,6 Mrd. €",
+        "Bereinigt um einmaligen Zufluss = 0,1 Mrd. €",
+        "Gestresste Capex = 2,16 Mrd. €; berichteter FCF 0,24 Mrd. €, bereinigter FCF −0,26 Mrd. €",
+        "Leasing, Akquisitionen, Restrukturierung und Definitionen als mögliche Grenzen prüfen",
+        "Einmaliger Zufluss kann reversieren; Gegenhypothese und Primärbericht-Nachprüfung nennen"
+      ],
+      "source": "Bayer – Q3 2026 Unternehmensmitteilung",
+      "source_url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
+      "source_date": "2026-11-03",
+      "symbol": "BAYN.DE"
+    },
+    {
+      "id": "2026-11-06:learning:portfolio-real-return",
+      "kind": "learning",
+      "date": "2026-11-06",
+      "title": "Nominale Rendite, Kaufkraft und Risikovergleich",
+      "context": "Die Destatis-Inflationsmeldung vom 30.10.2026 liefert den wirtschaftlichen Anlass; alle nachstehenden Renditen und Gebühren sind fiktive Szenariowerte.",
+      "question": "Ein fiktiver ETF steigt in einem Jahr um 8 %, verursacht 0,3 % Kosten auf den Anfangswert und die Verbraucherpreise steigen um 3 %. Berechne bei 10.000 € Anfangskapital den Endwert nach Kosten und die reale Jahresrendite. Vergleiche mit einer risikofreien fiktiven Alternative von 3,5 % nominal vor gleichen Kosten. Warum reichen diese Zahlen nicht für eine Kaufentscheidung?",
+      "rubric": [
+        "ETF-Endwert 10.000×1,08−30=10.770 €",
+        "Reale ETF-Rendite 10.770/10.000/1,03−1≈4,5631 %",
+        "Alternative 10.000×1,035−30=10.320 €; real ≈0,1942 %",
+        "Gebührenannahme explizit; nominal und real nicht einfach subtrahieren",
+        "Risiko, Zeithorizont, Steuern, Liquidität und unbekannte künftige Renditen als Gegenargumente"
       ],
       "source": "Destatis – Verbraucherpreise Oktober 2026 (vorläufig)",
       "source_url": "https://www.destatis.de/EN/Press/2026/10/PE26_382_611.html",
       "source_date": "2026-10-30",
-      "symbol": ""
-    },
-    {
-      "id": "2026-11-05:research:nvidia-cashflow-capex",
-      "kind": "research",
-      "date": "2026-11-05",
-      "title": "Cashflow ist nicht Gewinn: Investitionsintensität analysieren",
-      "context": "NVIDIA veröffentlichte am 26.08.2026 für Q2 FY2027 operativen Cashflow von 24.077 Mio. USD und Free Cashflow von 21.341 Mio. USD. Die Stressannahmen sind fiktiv.",
-      "question": "Berechne die Differenz und die FCF-Konversionsquote. Angenommen, der operative Cashflow fällt fiktiv um 15 %, während die Differenz CFO minus FCF um 25 % steigt: Berechne neuen FCF und Quote. Erkläre drei mögliche Ursachen für die Veränderung und eine Gegenhypothese, weshalb sie temporär sein könnte. Welche Berichtspositionen würdest du nachschlagen?",
-      "rubric": [
-        "Historische Differenz 2.736 Mio. USD und Quote ≈ 88,64 %",
-        "Stress-CFO 20.465,45 Mio. USD und Stress-Differenz 3.420 Mio. USD",
-        "Stress-FCF 17.045,45 Mio. USD und Konversionsquote ≈ 83,29 %",
-        "Working Capital, Investitionsauszahlungen, FCF-Definition und Gegenhypothese konkret abgrenzen"
-      ],
-      "source": "NVIDIA Investor Relations – Q2 FY2027 Results",
-      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx",
-      "source_date": "2026-08-26",
-      "symbol": "NVDA"
-    },
-    {
-      "id": "2026-11-05:learning:bond-discount-sensitivity",
-      "kind": "learning",
-      "date": "2026-11-05",
-      "title": "Zinsanstieg und Anleihepreis: Zwei Zahlungsströme bewerten",
-      "context": "Die SEC erklärt den Zusammenhang zwischen Anleihepreisen und Marktzinsen. Das Rechenbeispiel ist vollständig hypothetisch.",
-      "question": "Eine fiktive zweijährige Anleihe zahlt jährlich 40 € Kupon und am Ende 1.000 € Nennwert zurück. Berechne den Barwert bei 4 % und 6 % Marktrendite mit jährlicher Verzinsung. Begründe, warum die Kursreaktion nicht einfach 2 % beträgt, und formuliere eine Gegenhypothese, unter der das höhere Renditeniveau nicht allein aus einem allgemeinen Zinsanstieg stammt.",
-      "rubric": [
-        "Bei 4 %: 40/1,04 + 1.040/1,04² = 1.000 €",
-        "Bei 6 %: 40/1,06 + 1.040/1,06² ≈ 963,33 €",
-        "Preisrückgang ≈ 3,67 % und Zahlungsstromdiskontierung nachvollziehbar",
-        "Kreditrisiko/Spread als alternative Ursache und Abgrenzung zur Marktzinsbewegung"
-      ],
-      "source": "U.S. Securities and Exchange Commission – Bonds or Bond Funds",
-      "source_url": "https://www.investor.gov/introduction-investing/investing-basics/investment-products/bonds-or-bond-funds",
-      "source_date": "undatiert (bereits redaktionell referenziert am 2026-11-04)",
       "symbol": ""
     }
   ]
