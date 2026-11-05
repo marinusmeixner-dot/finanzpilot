@@ -1,0 +1,2076 @@
+{
+  "schema_version": 1,
+  "asof": "2026-11-04",
+  "selection_method": "Source-first research queue",
+  "total_issuers": 54,
+  "curated_dossiers": 10,
+  "bucket_counts": {
+    "review_now": 19,
+    "watch_and_verify": 34,
+    "source_gap": 1
+  },
+  "spotlight_ids": [
+    "bayer",
+    "siemens",
+    "apple",
+    "profile-eoan-de",
+    "microsoft",
+    "basf"
+  ],
+  "methodology": "Neue belegte Unternehmensanlässe (0–21 Kalendertage vor Kursstichtag) zuerst; laufende Fundamentalthesen als separate Nachprüfung; technische Signale ohne geprüften Geschäftsbeleg nur in Beobachtung. Klassifizierung auf Beleg- und Forschungsreife, nicht auf erwarteter Rendite oder Unterbewertung. Peer-/ETF-Daten nur bei identischer Vergleichswährung aus vorherigem Audit.",
+  "readiness_warning": "Hier steht kein Kaufurteil. Nur Primärbericht, nachhaltiger Cashflow, Kapitalstruktur, Bewertung, Zeitstempel und Widerlegungskriterien können ein Investmenturteil rechtfertigen.",
+  "candidates": [
+    {
+      "id": "bayer",
+      "ticker": "BAYN.DE",
+      "company": "Bayer",
+      "sector": "Healthcare & Agriculture",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-03",
+      "evidence_age_days": 1,
+      "evidence_url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
+      "evidence_title": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
+      "why_now": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "siemens",
+      "ticker": "SIE.DE",
+      "company": "Siemens AG",
+      "sector": "Industrial Automation",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "financial_audit_pending",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-03",
+      "evidence_age_days": 1,
+      "evidence_url": "https://press.siemens.com/global/en/pressrelease/siemens-and-lufthansa-technik-defense-develop-medical-evacuation-train",
+      "evidence_title": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
+      "why_now": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
+      "first_rejection": "Zyklische Fabrikinvestitionen und ein komplexes Portfolio; Umsatz und Ergebnis industrielles Geschäft sind nicht dieselbe Margenbasis.",
+      "needs_before_investment": [
+        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex",
+        "Separate Schulden/Leasing der Finanzierungssparte aus industrieller EV-Bridge herausrechnen",
+        "Beteiligungen und Sonderergebnisse gegenüber normalisiertem EBIT trennen",
+        "Aktuelle verwässerte Aktien, Kapitalstruktur und Segment-Multiples bestätigen"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex"
+      ],
+      "alternatives": {
+        "peer_count": 1,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "apple",
+      "ticker": "AAPL",
+      "company": "Apple",
+      "sector": "Consumer Technology",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-02",
+      "evidence_age_days": 2,
+      "evidence_url": "https://www.apple.com/newsroom/2026/11/apple-reports-fourth-quarter-results/",
+      "evidence_title": "Apple meldet 114,5 Milliarden Dollar Quartalsumsatz – Zollerstattungen beeinflussen die Marge",
+      "why_now": "Apple meldet 114,5 Milliarden Dollar Quartalsumsatz – Zollerstattungen beeinflussen die Marge",
+      "first_rejection": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
+      "needs_before_investment": [
+        "Nachhaltige FCF-Basis inklusive Wiederanlagebedarf, SBC und Produktzyklen normalisieren",
+        "Bei KGV-/DCF-Analysen Q4-Zollerstattungseffekte und künftige Steuern prüfen",
+        "Aktuelle Aktienzahl, Wandel-/Leasingverbindlichkeiten und langfristige Wertpapiere vollständig mit Marktwert überleiten",
+        "Eigenkapitalkosten, Szenarien, Peer-Multiples und Sicherheitsmarge unabhängig herleiten"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Nachhaltige FCF-Basis inklusive Wiederanlagebedarf, SBC und Produktzyklen normalisieren"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-eoan-de",
+      "ticker": "EOAN.DE",
+      "company": "E.ON SE",
+      "sector": "Energienetze und Kundenlösungen",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 3,
+      "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "evidence_title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "microsoft",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "sector": "Software & Cloud",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 3,
+      "evidence_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "evidence_title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "first_rejection": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
+      "needs_before_investment": [
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
+        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
+        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
+        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre"
+      ],
+      "alternatives": {
+        "peer_count": 3,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "basf",
+      "ticker": "BAS.DE",
+      "company": "BASF",
+      "sector": "Chemicals",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-10-30",
+      "evidence_age_days": 5,
+      "evidence_url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+      "evidence_title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+      "why_now": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-evk-de",
+      "ticker": "EVK.DE",
+      "company": "Evonik Industries AG",
+      "sector": "Spezialchemie",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-10-30",
+      "evidence_age_days": 5,
+      "evidence_url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+      "evidence_title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+      "why_now": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "bmw",
+      "ticker": "BMW.DE",
+      "company": "BMW",
+      "sector": "Automotive",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-04",
+      "evidence_age_days": 0,
+      "evidence_url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
+      "evidence_title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+      "why_now": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "amazon",
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "sector": "Retail & Cloud",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 3,
+      "evidence_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "evidence_title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "first_rejection": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
+      "needs_before_investment": [
+        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten",
+        "Trennung von AWS/Handel, Finanzierung und IT-Immobilienverpflichtungen",
+        "Nettoschulden/Leases, verwässerte Aktienzahl, nachhaltiger Cashflow und DCF-WACC",
+        "Nachhaltig finanzierbares Capex-Niveau bei AWS-Wachstum und 2027-Guidance prüfen"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten"
+      ],
+      "alternatives": {
+        "peer_count": 3,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-rwe-de",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "sector": "Energieversorgung",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 3,
+      "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "evidence_title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-jd",
+      "ticker": "JD",
+      "company": "JD.com Inc.",
+      "sector": "Onlinehandel und Logistik",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-03",
+      "evidence_age_days": 1,
+      "evidence_url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
+      "evidence_title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+      "why_now": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-sha0-de",
+      "ticker": "SHA0.DE",
+      "company": "Schaeffler AG",
+      "sector": "Industrie- und Automobilzulieferer",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-03",
+      "evidence_age_days": 1,
+      "evidence_url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
+      "evidence_title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+      "why_now": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "alphabet",
+      "ticker": "GOOGL",
+      "company": "Alphabet",
+      "sector": "Advertising & Cloud",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 3,
+      "evidence_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "evidence_title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "first_rejection": "Cloud-Wachstum ist nicht gleich Free Cashflow. 51,355 Mrd. USD Quartals-Capex und regulatorische Risiken sind materiell.",
+      "needs_before_investment": [
+        "Bilanzüberleitung einschließlich Preferred Shares, Wandelinstrumente und liquider nichtoperativer Beteiligungen",
+        "Wirtschaftlich verwässerte Aktienzahl über Aktienklassen A/B/C und Preferred Share berücksichtigen",
+        "Nettofinanzschulden und potenzielle nichtoperativ bewertete Investments primär abgleichen",
+        "Cashflow aus KI- und Cloud-Investitionen normalisieren; Beteiligungsgewinne vom Betrieb trennen",
+        "DCF-Methode (FCFF/FCFE), WACC, Terminalwert und Vergleichsbewertung belegen"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Bilanzüberleitung einschließlich Preferred Shares, Wandelinstrumente und liquider nichtoperativer Beteiligungen"
+      ],
+      "alternatives": {
+        "peer_count": 3,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-enr-de",
+      "ticker": "ENR.DE",
+      "company": "Siemens Energy AG",
+      "sector": "Energietechnik",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 3,
+      "evidence_url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
+      "evidence_title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
+      "why_now": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "Semiconductors",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-04",
+      "evidence_date": "2026-10-28",
+      "evidence_age_days": 7,
+      "evidence_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+      "evidence_title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
+      "why_now": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
+      "first_rejection": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "needs_before_investment": [
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
+        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
+        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
+        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
+        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "aixtron",
+      "ticker": "AIXA.DE",
+      "company": "AIXTRON SE",
+      "sector": "Semiconductor Equipment",
+      "bucket": "review_now",
+      "review_kind": "fundamental_watch",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "financial_data_review",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Existierende Fundamentalthese – neue Zahlen und Bewertung prüfen",
+      "first_rejection": "Zyklischer Anlagenabsatz, hohe Kundenzentrierung und mögliche Verschiebungen von Auslieferungen; Auftragseingang ist nicht sofort Umsatz oder Cashflow.",
+      "needs_before_investment": [
+        "Hohe Kundenvorauszahlungen (veröffentlichte Contract Liabilities 309,0 Mio. € gegenüber 44,5 Mio. € 2025) von wiederkehrendem, nachhaltig verfügbarem FCF trennen",
+        "Netto-Cash und Wandler-Schuldkomponente/Finanzanlagen vollständig primär auf Aktienwert überleiten",
+        "Aktienzahl vollständig verwässert inklusive Wandelschuld und langfristigen Vergütungsprogrammen prüfen",
+        "Auftragseingang / Backlog in Umsatz und Cashflows des nächsten Konjunkturzyklus übertragen",
+        "Cashflow-Szenarien erst mit normalisierter FCF-Basis, diskontierten fünf Jahren und geprüfter Equity-Bridge zur Aktienbewertung freigeben"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Hohe Kundenvorauszahlungen (veröffentlichte Contract Liabilities 309,0 Mio. € gegenüber 44,5 Mio. € 2025) von wiederkehrendem, nachhaltig verfügbarem FCF trennen"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "cgnx",
+      "ticker": "CGNX",
+      "company": "Cognex",
+      "sector": "Industrial Automation",
+      "bucket": "review_now",
+      "review_kind": "fundamental_watch",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "financial_audit_pending",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Existierende Fundamentalthese – neue Zahlen und Bewertung prüfen",
+      "first_rejection": "Kaufpreis 500 Mio. $ plus erwartete Mitarbeiterbindungs- und aktienbasierte Vergütungen erhöhen Kapitalbedarf und Verwässerungsrisiken.",
+      "needs_before_investment": [
+        "Q3-2026-10-Q und RealSense-Akquisitionsabschluss, TTM-FCF aus Cashflows neu bilden",
+        "Barmittel/Verbindlichkeiten/Übernahmepreis um Verwässerung und Finanzierung bereinigen",
+        "Aktuelle ausgegebene und vollständig verwässerte Aktien sowie Übernahme-SBC prüfen",
+        "Organisches Wachstum und 3D-Robotik-Margen belegen, unabhängige Bewertung ableiten"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Q3-2026-10-Q und RealSense-Akquisitionsabschluss, TTM-FCF aus Cashflows neu bilden"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "kion",
+      "ticker": "KGX.DE",
+      "company": "KION Group",
+      "sector": "Warehouse Automation",
+      "bucket": "review_now",
+      "review_kind": "fundamental_watch",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "financial_audit_pending",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Existierende Fundamentalthese – neue Zahlen und Bewertung prüfen",
+      "first_rejection": "FCF-Definition 2026, Schulden und zyklische Auftragslage erschweren einen robusten fairen Wert.",
+      "needs_before_investment": [
+        "9M/CY2025-CFO/Capex/FCF anhand echter Geschäftsbericht-Tabellen zum TTM überleiten",
+        "Finanzdienstleistungs- und Leasingverbindlichkeiten vom operativen Industriegeschäft abgrenzen",
+        "FCF-Definitionswechsel 2026 nachvollziehbar rückrechnen",
+        "IAS/ITS separat bewerten, Aktienzahl sowie Normalisierungsannahmen validieren"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "9M/CY2025-CFO/Capex/FCF anhand echter Geschäftsbericht-Tabellen zum TTM überleiten"
+      ],
+      "alternatives": {
+        "peer_count": 1,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "meta",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "sector": "Advertising & Platforms",
+      "bucket": "review_now",
+      "review_kind": "fundamental_watch",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "financial_data_review",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Existierende Fundamentalthese – neue Zahlen und Bewertung prüfen",
+      "first_rejection": "Rechtsrisiken, hohe KI-Kapazitätsinvestitionen und einzelne Sondereffekte erschweren die Schätzung nachhaltiger Margen.",
+      "needs_before_investment": [
+        "Q3-Rechtsrückstellung von wiederkehrenden Rechts-/Cashkosten abgrenzen",
+        "Aktuelle Schulden, liquide Investments und verwässerte Aktienzahlen prüfen",
+        "KI-Capex, Reality-Labs-Kosten und Peer-Multiples in begründeten Szenarien",
+        "TTM-FCF der Finanzierungsleasing-Variante und künftige Verpflichtungen als wiederkehrend bewerten"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Q3-Rechtsrückstellung von wiederkehrenden Rechts-/Cashkosten abgrenzen"
+      ],
+      "alternatives": {
+        "peer_count": 3,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "airbus",
+      "ticker": "AIR.PA",
+      "company": "Airbus",
+      "sector": "Aerospace",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "allianz",
+      "ticker": "ALV.DE",
+      "company": "Allianz",
+      "sector": "Insurance",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "costco",
+      "ticker": "COST",
+      "company": "Costco",
+      "sector": "Consumer Staples",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "deere",
+      "ticker": "DE",
+      "company": "Deere & Company",
+      "sector": "Industrials",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "lilly",
+      "ticker": "LLY",
+      "company": "Eli Lilly",
+      "sector": "Pharmaceuticals",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "jnj",
+      "ticker": "JNJ",
+      "company": "Johnson & Johnson",
+      "sector": "Pharmaceuticals",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "jpmorgan",
+      "ticker": "JPM",
+      "company": "JPMorgan Chase",
+      "sector": "Banks",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "mastercard",
+      "ticker": "MA",
+      "company": "Mastercard",
+      "sector": "Payments",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "munichre",
+      "ticker": "MUV2.DE",
+      "company": "Munich Re",
+      "sector": "Insurance",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "nextera",
+      "ticker": "NEE",
+      "company": "NextEra Energy",
+      "sector": "Utilities",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "salesforce",
+      "ticker": "CRM",
+      "company": "Salesforce",
+      "sector": "Enterprise Software",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "sap",
+      "ticker": "SAP.DE",
+      "company": "SAP SE",
+      "sector": "Enterprise Software",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "tesla",
+      "ticker": "TSLA",
+      "company": "Tesla",
+      "sector": "Automotive",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "unitedhealth",
+      "ticker": "UNH",
+      "company": "UnitedHealth Group",
+      "sector": "Healthcare Services",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "visa",
+      "ticker": "V",
+      "company": "Visa",
+      "sector": "Payments",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "walmart",
+      "ticker": "WMT",
+      "company": "Walmart",
+      "sector": "Consumer Staples",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "adobe",
+      "ticker": "ADBE",
+      "company": "Adobe",
+      "sector": "Software",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "amd",
+      "ticker": "AMD",
+      "company": "AMD",
+      "sector": "Semiconductors",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "appliedmaterials",
+      "ticker": "AMAT",
+      "company": "Applied Materials",
+      "sector": "Semiconductor Equipment",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "asml",
+      "ticker": "ASML.AS",
+      "company": "ASML",
+      "sector": "Semiconductor Equipment",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "broadcom",
+      "ticker": "AVGO",
+      "company": "Broadcom",
+      "sector": "Semiconductors",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "caterpillar",
+      "ticker": "CAT",
+      "company": "Caterpillar",
+      "sector": "Industrials",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "crowdstrike",
+      "ticker": "CRWD",
+      "company": "CrowdStrike",
+      "sector": "Cybersecurity",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "telekom",
+      "ticker": "DTE.DE",
+      "company": "Deutsche Telekom",
+      "sector": "Telecom",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "eaton",
+      "ticker": "ETN",
+      "company": "Eaton",
+      "sector": "Power Equipment",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "gevernova",
+      "ticker": "GEV",
+      "company": "GE Vernova",
+      "sector": "Power Equipment",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "infineon",
+      "ticker": "IFX.DE",
+      "company": "Infineon",
+      "sector": "Semiconductors",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "lvmh",
+      "ticker": "MC.PA",
+      "company": "LVMH",
+      "sector": "Luxury",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "oracle",
+      "ticker": "ORCL",
+      "company": "Oracle",
+      "sector": "Cloud & Software",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "palantir",
+      "ticker": "PLTR",
+      "company": "Palantir",
+      "sector": "Enterprise Software",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "paloalto",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "sector": "Cybersecurity",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "rheinmetall",
+      "ticker": "RHM.DE",
+      "company": "Rheinmetall",
+      "sector": "Defense",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "tsmc",
+      "ticker": "TSM",
+      "company": "TSMC ADR",
+      "sector": "Semiconductor Foundry",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "uber",
+      "ticker": "UBER",
+      "company": "Uber",
+      "sector": "Mobility Platform",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-04",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-byw-mu",
+      "ticker": "BYW.MU",
+      "company": "BayWa AG",
+      "sector": "Agrar, Baustoffe und Handel",
+      "bucket": "source_gap",
+      "review_kind": "source_gap",
+      "radar_priority": "insufficient_data",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": null,
+      "evidence_date": "2026-09-16",
+      "evidence_age_days": 49,
+      "evidence_url": "https://www.eqs-news.com/company/baywa-ag/news/5b74ed9f-ea7c-11e8-902f-2c44fd856d8c",
+      "evidence_title": "BayWa: Warum eine Sanierungsvereinbarung noch keine abgeschlossene Rettung ist",
+      "why_now": "Verifizierte, ausreichend lange Kurshistorie fehlt",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 0,
+        "benchmark_names": []
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    }
+  ]
+}
