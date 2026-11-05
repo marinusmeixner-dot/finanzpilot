@@ -9,7 +9,7 @@ const research=JSON.parse(read('data/research.json'));
 assert.equal(profiles.schema_version,1);
 assert(Object.keys(profiles.companies).length>=20,'Meaningful coverage for the major company news tickers');
 assert(ideas.ideas.length>=3,'Must preserve the researched ideas');
-assert(html.includes('market-insights-v82.js?v=83')&&html.includes('market-insights-v82.css?v=82'),'Module must be loaded');
+assert(html.includes('market-insights-v82.js?v=84')&&html.includes('market-insights-v82.css?v=82'),'Module must be loaded');
 assert(html.includes('market-v34.js?v=82')&&html.includes('app.js?v=82'),'Modified modules must bypass iOS cache');
 assert(nav.includes("['marketideas','Aktienideen'"),'Research belongs in the existing Märkte tab');
 assert(nav.includes("marketidea:'marketideas'"),'Research detail is a child of ideas');
