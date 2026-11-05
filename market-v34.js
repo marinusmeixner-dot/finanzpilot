@@ -7,7 +7,7 @@ const valid=s=>/^[A-Z0-9][A-Z0-9.\-]{0,23}$/.test(String(s||''));
 const client=()=>window.FinanzPilotCloud?.paperClient;
 const user=()=>window.FinanzPilotCloud?.user;
 const currency=(n,c)=>{try{return new Intl.NumberFormat('de-DE',{style:'currency',currency:c||'USD'}).format(Number(n))}catch{return String(n)}};
-let watch=[],quotes=[],editorial=[],financials=[],financialsDate='',feedDate='',active='',tab='general',newsFocus='',message='',busy=false,queued=false,lastRefresh=0;
+let watch=[],quotes=[],editorial=[],financials=[],financialsDate='',feedDate='',active='',tab='all',newsFocus='',message='',busy=false,queued=false,lastRefresh=0;
 let selectedArticle=null;const articleRegistry=new Map();
 const articleKey=n=>String(n.id||n.url||n.title||'').slice(0,400);
 
@@ -155,11 +155,16 @@ function renderDetail(){
 }
 function newsCard(n,extra=''){
  const link=safe(n.url),id=articleKey(n);articleRegistry.set(id,n);
- return '<article class="fp34-news-card"><small>'+esc(n.source||n.publisher||'Nachrichtenanbieter')+' · '+esc(n.published||'Datum prüfen')+'</small>'+
- '<button class="fp36-news-title" type="button" data-fp36-read="'+esc(id)+'"><h3>'+esc(n.title||'Nachricht')+'</h3><small>Vollständigen kostenlosen FinanzPilot-Artikel lesen →</small></button>'+
- (n.why?'<p>'+esc(n.why)+'</p>':'')+(extra?'<p>'+extra+'</p>':'')+
- (link?'<a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Originalquelle öffnen</a>':'')+'</article>';
+ const context=window.FinanzPilotInsights?.companyContext?.(n,false)||'';
+ return '<article class="fp34-news-card fp82-news-card"><div class="fp82-news-head"><span class="fp82-news-index">'+esc(n.category||'Finanzmarkt')+'</span><span>'+esc(n.published||'Datum prüfen')+'</span></div>'+
+ '<button class="fp36-news-title" type="button" data-fp36-read="'+esc(id)+'"><h3>'+esc(n.title||'Nachricht')+'</h3><small>Die vollständige Einordnung lesen →</small></button>'+
+ context+
+ '<div class="fp82-news-explain">'+(n.why?'<div><strong>WAS IST PASSIERT?</strong><p>'+esc(n.why)+'</p></div>':'')+
+ (n.impact?'<div><strong>WELCHE FOLGEN SIND MÖGLICH?</strong><p>'+esc(n.impact)+'</p></div>':'')+'</div>'+
+ (extra?'<p>'+extra+'</p>':'')+
+ (link?'<a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Primärquelle öffnen ↗</a>':'')+'</article>';
 }
+
 function openEditorialStory(story){
  if(!story||!Array.isArray(story.article?.sections)||story.article.sections.length<4||
  story.article.sections.some(section=>!section.heading||!Array.isArray(section.paragraphs)||!section.paragraphs.length))return false;
@@ -178,6 +183,7 @@ function renderArticle(){
  const n=selectedArticle;if(!n)return '<div class="fp34"><h1>Artikel nicht gefunden</h1><p>Nutze oben „Zurück“.</p></div>';
  const link=safe(n.url),article=n.article;
  const common='<div class="fp36-article-meta">'+esc(n.source||n.publisher||'Quelle')+' · '+esc(n.published||'Datum unbekannt')+'</div>';
+ const investmentContext=window.FinanzPilotInsights?.articleContext?.(n)||'';
  let body='';
  if(article?.sections?.length){
   body='<div class="fp37-one-minute"><small>DAS WICHTIGSTE IN EINER MINUTE</small><p>'+friendlyParagraph(article.lead||'')+'</p></div>'+
@@ -196,7 +202,7 @@ function renderArticle(){
   (similar.length?'<section class="fp36-article-section"><h2>Passende redaktionelle Hintergrundberichte</h2>'+similar.map(x=>{const k=articleKey(x);articleRegistry.set(k,x);return '<button type="button" class="fp36-related" data-fp36-read="'+esc(k)+'">'+esc(x.title)+' →</button>'}).join('')+'</section>':'<p>Es liegt noch keine eigenständig recherchierte Langfassung zu dieser einzelnen Schlagzeile vor.</p>');
  }
  return '<div class="fp34 fp36-article">'+
- '<span class="eyebrow">FINANZPILOT · '+(article?.sections?.length?'EIGENER HINTERGRUNDBERICHT':'QUELLEN &amp; EINORDNUNG')+'</span><h1>'+esc(n.title||'Nachricht')+'</h1>'+common+body+
+ '<span class="eyebrow">FINANZPILOT · '+(article?.sections?.length?'EIGENER HINTERGRUNDBERICHT':'QUELLEN &amp; EINORDNUNG')+'</span><h1>'+esc(n.title||'Nachricht')+'</h1>'+common+investmentContext+body+
  (link?'<div class="fp36-article-source"><strong>Originalquelle</strong><p>Überprüfe für weitere Einzelheiten den Originalbericht. Dieser kann extern zugangsbeschränkt sein.</p><a href="'+esc(link)+'" target="_blank" rel="noopener noreferrer">Zur Veröffentlichung von '+esc(n.source||n.publisher||'Anbieter')+'</a></div>':'')+'</div>';
 }
 
@@ -207,24 +213,42 @@ function stockNews(symbol){
 }
 
 function renderNews(){
- const tabs=[['general','Gesamtmarkt'],['watch','Meine Aktien'],['discover','Entdecken']];
- const navigation='<div class="fp34-news-tabs" role="group" aria-label="Nachrichtenbereich">'+tabs.map(([id,name])=>'<button type="button" class="'+(tab===id?'selected':'')+'" data-fp34-news-tab="'+id+'">'+name+'</button>').join('')+'</div>';
+ const tabs=[['all','Alle News'],['general','Gesamtmarkt'],['companies','Unternehmen'],['watch','Meine Aktien'],['discover','Entdecken']];
+ const navigation='<div class="fp34-news-tabs" role="group" aria-label="Nachrichtenbereich">'+tabs.map(([id,name])=>'<button type="button" aria-pressed="'+(tab===id)+'" class="'+(tab===id?'selected':'')+'" data-fp34-news-tab="'+id+'">'+name+'</button>').join('')+'</div>';
+ const dated=s=>{const d=String(s||'');const m=d.match(/^(\d{2})\.(\d{2})\.(\d{4})$/);const n=Date.parse(m?m[3]+'-'+m[2]+'-'+m[1]:d);return Number.isFinite(n)?n:0;};
+ const sorted=editorial.slice().sort((a,b)=>dated(b.published)-dated(a.published));
+ const general=s=>!s.symbols?.length||['Markt','Zinsen','Wirtschaft','Gesamtmarkt'].includes(s.category);
+ const hasCompany=s=>Array.isArray(s.symbols)&&s.symbols.length>0;
  let body='';
- if(tab==='general'){
-  const general=editorial.filter(n=>!Array.isArray(n.symbols)||n.symbols.length===0||['Markt','Zinsen','Wirtschaft'].includes(n.category));
-  body='<h2>Allgemeine Finanzmarktnachrichten</h2><p>Redaktionell datierte Nachrichten, keine Lernaufgaben.</p>'+(general.length?general.map(n=>newsCard(n)).join(''):'<p>Für den heutigen Tag liegen keine aktuellen redaktionellen Nachrichten vor.</p>');
+ if(tab==='all'){
+  body='<h2>Die wichtigsten Nachrichten</h2><p>Chronologisch sortiert. Jede Meldung erklärt den Sachverhalt und die möglichen Folgen; ein Unternehmen erhält ein Geschäftsprofil.</p>'+
+  (sorted.length?sorted.slice(0,30).map(n=>newsCard(n)).join(''):'<p>Derzeit liegen keine redaktionell geprüften Artikel vor.</p>');
+ }else if(tab==='general'){
+  const news=sorted.filter(general);
+  body='<h2>Wirtschaft & Gesamtmarkt</h2><p>Zinsen, Inflation, Konjunktur und politische Entscheidungen – mit Blick auf mögliche Börsenauswirkungen.</p>'+
+  (news.length?news.map(n=>newsCard(n)).join(''):'<p>Momentan keine geprüften Nachrichten aus diesem Bereich.</p>');
+ }else if(tab==='companies'){
+  const news=sorted.filter(hasCompany);
+  body='<h2>Unternehmen im Fokus</h2><p>Was macht die Firma, womit verdient sie Geld, was ist passiert und warum könnte das für Anleger relevant sein?</p>'+
+  (news.length?news.map(n=>newsCard(n)).join(''):'<p>Momentan keine geprüften firmenspezifischen Nachrichten.</p>');
  }else if(tab==='watch'){
-  body='<h2>Nachrichten zu deiner Watchlist</h2><p>Nach Unternehmen sortierte, vollständig und kostenlos lesbare FinanzPilot-Beiträge. Keine Paywall-Meldungen.</p>'+
+  body='<h2>Meine Aktien</h2><p>Unternehmensnews zu deiner privaten Watchlist – vollständig in der App lesbar.</p>'+
   (watch.length?watch.map(w=>'<section class="fp34-news-company" id="fp34-news-'+esc(w.symbol)+'"><header><h3>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</h3><button class="btn secondary" data-fp34-chart="'+esc(w.symbol)+'">Zum Chart</button></header>'+
-   (stockNews(w.symbol).length?stockNews(w.symbol).map(n=>newsCard(n)).join(''):'<p>'+ 'Für diese Aktie liegt noch kein vollständig frei lesbarer FinanzPilot-Artikel vor. Neue Watchlist-Titel werden automatisch in die private Redaktionswarteschlange aufgenommen und stündlich geprüft. Sobald ein geprüfter Artikel veröffentlicht wurde, erscheint er hier nach dem Aktualisieren. Für eine vollständige Aktienanalyse ist weiterhin eine ausdrückliche Anfrage nötig.'+'</p>')+'</section>').join(''):'<p>Merke zuerst Unternehmen in deinem Depot.</p>');
+   (stockNews(w.symbol).length?stockNews(w.symbol).slice().sort((a,b)=>dated(b.published)-dated(a.published)).map(n=>newsCard(n)).join(''):'<p>Für diesen Titel liegt noch kein aktueller vollständig geprüfter Artikel vor. Die stündliche Redaktion berücksichtigt neue Watchlist-Titel.</p>')+'</section>').join(''):'<p>Merke zuerst Aktien in deinem Depot, um persönliche Unternehmensnews zu sehen.</p>');
  }else{
-  const candidates=editorial.filter(n=>Array.isArray(n.article?.sections)&&n.article.sections.length>=4&&Array.isArray(n.symbols)&&n.symbols.length&&n.symbols.some(s=>!watch.some(w=>w.symbol===s)));
-  body='<h2>Interessante Aktien entdecken</h2><p>Unternehmensmeldungen der Redaktion, die nicht bereits in deiner Watchlist sind. Keine Kaufempfehlungen.</p>'+
-    (candidates.length?candidates.slice(0,12).map(n=>{const s=n.symbols.find(x=>!watch.some(w=>w.symbol===x));return '<article class="fp34-discover"><div><strong>'+esc(s)+'</strong><small>Unternehmensmeldung · '+esc(n.published)+'</small></div>'+newsCard(n)+'<button class="btn secondary" data-fp34-add="'+esc(s)+'">Auf meine Watchlist</button></article>'}).join(''):'<p>Heute keine neuen recherchierten Unternehmen außerhalb deiner Watchlist.</p>');
+  const candidates=sorted.filter(n=>hasCompany(n)&&n.symbols.some(sym=>!watch.some(w=>w.symbol===sym)));
+  body='<h2>Unternehmen entdecken</h2><p>Diese Unternehmensmeldungen betreffen Firmen außerhalb deiner Watchlist. Eine interessante Nachricht ist noch keine Investmentthese.</p>'+
+  '<button type="button" class="btn" data-fp82-to-ideas>Zu den fundierten Aktienideen →</button>'+
+  (candidates.length?candidates.slice(0,8).map(n=>newsCard(n)).join(''):'<p>Keine neu analysierten Unternehmen außerhalb deiner Watchlist.</p>');
  }
- return '<div class="fp34"><span class="eyebrow">MÄRKTE · NACHRICHTEN</span><h1>News</h1><p>Redaktioneller Stand: '+esc(feedDate||'wird geladen')+'. Hier stehen ausschließlich vollständig in FinanzPilot lesbare redaktionelle Artikel. Schlagzeilen ohne eigenen vollständigen FinanzPilot-Bericht werden nicht als Artikel angezeigt. Frei lesbare, selbst geschriebene Hintergrundberichte mit Originalquellen findest du direkt hier.</p><button type="button" class="btn secondary" data-fp38-news-refresh>Neuigkeiten aktualisieren</button>'+navigation+
- (message?'<p role="status">'+esc(message)+'</p>':'')+'<div class="fp34-news-body">'+body+'</div></div>';
+ return '<section class="fp34 fp82-news-page"><span class="eyebrow">MÄRKTE · FINANZREDAKTION</span><h1>News verstehen</h1>'+
+ '<p>Was ist passiert? Welche Branchen und Unternehmen sind betroffen? Und wo stehen mögliche Chancen und Risiken? Alle Beiträge sind unabhängig formuliert und mit Originalquellen belegt.</p>'+
+ '<div class="fp82-news-toolbar"><p>Redaktioneller Stand: '+esc(feedDate||'wird geladen')+' · keine ungeprüften Paywall-Schlagzeilen</p>'+
+ '<button type="button" class="btn secondary" data-fp38-news-refresh>Artikel aktualisieren</button></div>'+
+ navigation+(message?'<p role="status">'+esc(message)+'</p>':'')+
+ '<div class="fp34-news-body fp82-news-body">'+body+'</div></section>';
 }
+
 function stockDetail(s){
  if(!valid(s))return;
  active=s;window.FinanzPilotNavigation?.route('marketdetail');
@@ -284,6 +308,8 @@ function bind(root=document){
  });
 
  root.querySelectorAll('[data-fp34-news-tab]').forEach(b=>b.addEventListener('click',()=>{tab=b.dataset.fp34NewsTab;newsFocus='';ui();if(tab==='watch')loadWatchNews()}));
+ root.querySelectorAll('[data-fp82-to-ideas]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotNavigation?.route?.('marketideas')));
+ window.FinanzPilotInsights?.bind?.(root);
  root.querySelectorAll('[data-fp36-read]').forEach(b=>b.addEventListener('click',()=>openArticle(b.dataset.fp36Read)));
  root.querySelector('[data-fp36-article-back]')?.addEventListener('click',()=>window.FinanzPilotNavigation?.goBack?.());
  root.querySelectorAll('[data-fp34-stock-news]').forEach(b=>b.addEventListener('click',()=>openNews(b.dataset.fp34StockNews)));
