@@ -46,7 +46,12 @@
         "Gewinnrevisionen und Cashflow nach Investitionen",
         "Marktpreis und Forward-Multiples auf Datumsbasis"
       ],
-      "checks": {
+      "checks": [
+        "Aktueller Börsenkurs mit Zeitstempel und vergleichbares bereinigtes Forward-EPS",
+        "Capex und künftiger Free Cashflow nach neuen Quartalszahlen",
+        "Rückkäufe, aktienbasierte Vergütung und Bewertungsabschlag"
+      ],
+      "valuation": {
         "type": "discounted_earnings_multiple",
         "eps": 17.28,
         "eps_kind": "Bereinigtes verwässertes Ergebnis je Aktie (non-GAAP), ohne Investitionsgewinne",
@@ -68,8 +73,7 @@
           }
         },
         "limitations": "Vereinfachter Gegenwartswert des künftigen EPS × angenommenes KGV; keine DCF-Bewertung, keine Dividenden, keine Aktualisierung auf Quartals-TTM-EPS; Aktienkurs und Abweichung zur Börsenbewertung fehlen."
-      },
-      "valuation": null
+      }
     },
     {
       "id": "nvidia",
@@ -114,7 +118,12 @@
         "Investitionen der wichtigsten KI-Kunden",
         "Exportbeschränkungen, Wettbewerber und Kundenkonzentration"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "Aktueller Preis und erwartete zukünftige Gewinne; nicht nur historische Rekordquartale",
+        "Dauerhafte Nachfrage nach KI-Beschleunigern und Verhältnis zum Umsatz der Kunden",
+        "Capex, Cashflows und Margen in einem vollständigen Jahresmodell"
+      ]
     },
     {
       "id": "siemens",
@@ -159,7 +168,12 @@
         "Auftragseingang, Softwareerlöse und Cashflow",
         "Nächster Jahresabschluss und Konzernprofitabilität"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "GAAP-Konzern-EBIT statt segmentbezogener Industrieergebnisse ergänzen",
+        "Aktuelle Bewertung mit Nettoverschuldung und Aktienzahl nach Geschäftsbericht",
+        "Diversifikation des Portfolios und Risiko durch zyklische Nachfrage"
+      ]
     },
     {
       "id": "amazon",
@@ -204,7 +218,12 @@
         "TTM-Free-Cashflow nach KI- und Logistik-Capex",
         "Wettbewerb, Regulierung und Nachfrage der Verbraucher"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "Cashflow und langfristig tragfähigen Investitionsbedarf getrennt modellieren",
+        "Aktuellen Unternehmenswert, Nettofinanzverbindlichkeiten und Aktienzahl nachprüfen",
+        "Unternehmenssegmente statt nur konsolidierte Quartalsmarge vergleichen"
+      ]
     },
     {
       "id": "meta",
@@ -249,7 +268,12 @@
         "Neue Gerichtsentscheidungen und tatsächliche Zahlungen",
         "Investitionshöhe in KI, Reality Labs und Infrastruktur"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "Wiederkehrende Rechtskosten gegenüber einmaligen Rückstellungen abgrenzen",
+        "Free Cashflow und Finanzierung der KI-Investitionen plausibilisieren",
+        "Aktuelle Aktienbewertung mit vergleichbaren Peer-Multiples prüfen"
+      ]
     },
     {
       "id": "alphabet",
@@ -294,7 +318,12 @@
         "Operativer Cashflow, Capex und TTM-FCF",
         "Kartellrecht, KI-Suchverhalten und Cashflow-Konversion"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "TTM-Free-Cashflow nach Capex normalisieren und Aktienklassen beachten",
+        "Aktuellen Aktienkurs, Nettoliquidität und verwässerte Aktienzahl prüfen",
+        "Cashflow-Szenarien unter realistischen Rechenzentrumsinvestitionen testen"
+      ]
     },
     {
       "id": "aixtron",
@@ -339,7 +368,12 @@
         "InP- und SiC-Nachfrage, Margen und Lageraufbau",
         "Konvertierung von Anzahlungen in echte nachhaltige Cashflows"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "Backlog, Nettofinanzposition und Stückzahl aus jüngstem Quartalsbericht prüfen",
+        "Laufzeit und Konversionsrisiko großer Kundenaufträge modellieren",
+        "Preis-/Multiple-Vergleich erst mit vergleichbarem Jahresergebnis erstellen"
+      ]
     },
     {
       "id": "kion",
@@ -384,7 +418,12 @@
         "Realisierung der angepassten 2026-Prognose",
         "Free Cashflow nach neuer Definition und Schuldentragfähigkeit"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "Bereinigtes EBIT und GAAP-Kennzahlen sauber überleiten",
+        "Nettofinanzposition und neue FCF-Definition vor einer Equity-Bewertung prüfen",
+        "Verschlechterung des Auftragsbestands und IAS/ITS-Margentreiber einzeln bewerten"
+      ]
     },
     {
       "id": "cgnx",
@@ -429,7 +468,12 @@
         "Integrationskosten und Finanzierung der Übernahme",
         "Industriezyklus, Cashflow und Aktienverwässerung"
       ],
-      "valuation": null
+      "valuation": null,
+      "checks": [
+        "RealSense-Kosten und etwaige Verwässerung in einer Equity-Bridge erfassen",
+        "Gewinn und Free Cashflow über mehrere Quartale vergleichen",
+        "Aktuellen Kurs, Gewinnprognose und andere Machine-Vision-Unternehmen prüfen"
+      ]
     }
   ]
 }
