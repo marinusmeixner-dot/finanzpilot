@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T10:10:50.071798Z",
+  "updated_at": "2026-11-05T10:23:54.652804Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-83d5d5b635e3c84d89",
+      "title": "Bankenpleite stürzt Paraguay in eine Krise",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bankenkrise-paraguay-100.html",
+      "published_at": "2026-11-05T10:18:28Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-c1fb5bdbe2afdefe95",
       "title": "Marktbericht: DAX springt auf Rekordhoch",
