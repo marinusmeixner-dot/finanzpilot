@@ -18,6 +18,8 @@ jobs:
         run: python -m unittest discover -s scripts -p 'test_refresh_news.py' -v
       - name: "v86: Validate dynamic multi-country issuer scanning, source classification and immutable ledger"
         run: python -m unittest discover -s scripts -p "test_research_radar_v86.py" -v
+      - name: "v88: Validate automatic discovery of new price symbols and full-session quote provenance"
+        run: python -m unittest discover -s scripts -p "test_research_quote_refresh_v88.py" -v
       - name: Validate JSON files
         run: node -e "const fs=require('fs');for(const x of fs.readdirSync('data')){if(x.endsWith('.json'))JSON.parse(fs.readFileSync('data/'+x,'utf8'))}"
       - name: "V80: Distinct useful examples in all 156 skills, no identical dropdowns"
