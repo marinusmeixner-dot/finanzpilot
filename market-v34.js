@@ -234,7 +234,7 @@ function renderNews(){
  }else if(tab==='watch'){
   body='<h2>Meine Aktien</h2><p>Unternehmensnews zu deiner privaten Watchlist – vollständig in der App lesbar.</p>'+
   (watch.length?watch.map(w=>'<section class="fp34-news-company" id="fp34-news-'+esc(w.symbol)+'"><header><h3>'+esc(q(w.symbol)?.asset_name||w.symbol)+'</h3><button class="btn secondary" data-fp34-chart="'+esc(w.symbol)+'">Zum Chart</button></header>'+
-   (stockNews(w.symbol).length?stockNews(w.symbol).slice().sort((a,b)=>dated(b.published)-dated(a.published)).map(n=>newsCard(n)).join(''):'<p>Für diesen Titel liegt noch kein aktueller vollständig geprüfter Artikel vor. Die stündliche Redaktion berücksichtigt neue Watchlist-Titel.</p>')+'</section>').join(''):'<p>Merke zuerst Aktien in deinem Depot, um persönliche Unternehmensnews zu sehen.</p>');
+   (stockNews(w.symbol).length?stockNews(w.symbol).slice().sort((a,b)=>dated(b.published)-dated(a.published)).map(n=>newsCard(n)).join(''):'<p>Für diesen Titel liegt noch kein aktueller vollständig geprüfter Artikel vor. Neue Watchlist-Titel werden automatisch in die private Redaktionswarteschlange aufgenommen und stündlich geprüft.</p>')+'</section>').join(''):'<p>Merke zuerst Aktien in deinem Depot, um persönliche Unternehmensnews zu sehen.</p>');
  }else{
   const candidates=sorted.filter(n=>hasCompany(n)&&n.symbols.some(sym=>!watch.some(w=>w.symbol===sym)));
   body='<h2>Unternehmen entdecken</h2><p>Diese Unternehmensmeldungen betreffen Firmen außerhalb deiner Watchlist. Eine interessante Nachricht ist noch keine Investmentthese.</p>'+
