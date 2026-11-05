@@ -7,7 +7,7 @@ const ideas=JSON.parse(read('data/ideas.json')).ideas;
 const index=read('index.html'),app=read('app.js'),research=read('market-insights-v82.js');
 assert.equal(data.schema_version,1);
 assert(data.models.length>=9,'Keep all verified baseline models while supporting future names');
-assert.equal(new Set(data.models.map(m=>m.id)).size,9,'No duplicate model IDs');
+assert.equal(new Set(data.models.map(m=>m.id)).size,data.models.length,'No duplicate model IDs; the research universe can expand beyond nine');
 assert(ideas.length>=9,'The research universe is not capped at nine');
 assert(data.models.every(m=>ideas.some(i=>i.id===m.id)));
 assert(index.includes('valuation-v83.js?v=83')&&index.includes('valuation-v83.css?v=83')&&index.includes('market-insights-v82.js?v=86'));
