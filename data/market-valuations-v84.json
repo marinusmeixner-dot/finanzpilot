@@ -2,7 +2,7 @@
   "schema_version": 1,
   "asof": "2026-11-05",
   "price_policy": "Bestätigte, bei datierten Börsenhistorien reproduzierbare reguläre Schlusskurse vom 04.11.2026; keine direkt beim Börsenbetreiber auditierten offiziellen Schlusskurse und keine Echtzeitdaten. Pro Titel ein Börsenplatz (NASDAQ/Xetra) und eine Währung; keine Vor-/Nachbörse und keine Währungsumrechnung. Jede künftige Aktualisierung braucht realen Handelsstichtag, Primärquelle soweit verfügbar und Zeitstempel. Die erst am 05.11.2026 abgerufenen TTM-Fundamentaldaten könnten Geschäftsberichte enthalten, die beim Kursstand 04.11.2026 noch nicht bekannt waren.",
-  "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen. Zusätzlich 05.11.2026: Originalberichts-TTM-Bridges für Microsoft, NVIDIA und Alphabet in data/fair-value-audit-v85.json dokumentiert; die dort markierten Cashflow-Felder wurden abgestimmt. Microsoft: 7.446 Mio. verwässerte gewichtete Aktien, übrige Titel teils sekundär.",
+  "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen. Zusätzlich 05.11.2026: Originalberichts-TTM-Bridges für Microsoft, NVIDIA und Alphabet in data/fair-value-audit-v85.json dokumentiert; die dort markierten Cashflow-Felder wurden abgestimmt. Microsoft: 7.446 Mio. verwässerte gewichtete Aktien, übrige Titel teils sekundär. Amazon und Meta: TTM-Flow-Daten nun ebenfalls aus veröffentlichten SEC-/IR-Unterlagen bestätigt; Meta non-GAAP-FCF zusätzlich unter Berücksichtigung von Finance-Lease-Tilgungen. Keine primär vollständig validierte Equity-Bridge.",
   "valuation_policy": "KGV und FCF-Rendite sind Momentaufnahmen und weder Kursziel noch fairer Wert. Reverse-EPS-Modell ist nur die mathematische Wachstumsanforderung unter offen hypothetischem End-KGV/Abzinsung, ohne Dividenden/Verwässerung. Keine automatischen Kaufempfehlungen. Für negative oder nicht nachhaltig normalisierte Cashflows kein DCF-Kursziel.",
   "stocks": [
     {
@@ -99,13 +99,22 @@
         "cash_m": 114230,
         "debt_m": 304840,
         "operating_cf_m": 168300,
-        "capex_m": 215190,
-        "free_cf_m": -46890,
+        "capex_m": 210657,
+        "free_cf_m": -42357,
         "ttm_end": "2026-09-30",
         "observed_date": "2026-11-05",
         "source_url": "https://stockanalysis.com/stocks/amzn/statistics/",
-        "source_kind": "secondary_market_data_provider",
-        "caution": "Negativer TTM-FCF trotz positivem EPS. EPS enthält nicht alle laufenden KI- und Logistik-Investitionen; FCF-Rendite nicht als nachhaltige Ertragskraft interpretieren."
+        "source_kind": "mixed_primary_secondary",
+        "caution": "Negativer TTM-FCF trotz positivem EPS. EPS enthält nicht alle laufenden KI- und Logistik-Investitionen; FCF-Rendite nicht als nachhaltige Ertragskraft interpretieren. TTM-CFO, Capex und CFO−Capex jetzt anhand Q3/2026- und FY2025-Originalberichten überprüft; Bilanz/Anzahl Aktien noch nicht primär vollständig abgeglichen.",
+        "primary_ttm_sources": [
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+          "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
+        ],
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ]
       }
     },
     {
@@ -125,14 +134,25 @@
         "eps_ttm": 29.33,
         "cash_m": 82450,
         "debt_m": 114840,
-        "operating_cf_m": 133090,
-        "capex_m": 104440,
-        "free_cf_m": 28650,
+        "operating_cf_m": 133087,
+        "capex_m": 104438,
+        "free_cf_m": 28649,
         "ttm_end": "2026-09-30",
         "observed_date": "2026-11-05",
         "source_url": "https://stockanalysis.com/stocks/meta/statistics/",
-        "source_kind": "secondary_market_data_provider",
-        "caution": "Einmalige Rechtsrückstellungen und große KI-Capex machen historische Earnings und Cashflow zeitweise schwer vergleichbar."
+        "source_kind": "mixed_primary_secondary",
+        "caution": "Einmalige Rechtsrückstellungen und große KI-Capex machen historische Earnings und Cashflow zeitweise schwer vergleichbar. TTM-CFO, Capex und CFO−Capex jetzt anhand Q3/2026- und FY2025-Originalberichten überprüft; Bilanz/Anzahl Aktien noch nicht primär vollständig abgeglichen.",
+        "primary_ttm_sources": [
+          "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+          "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/"
+        ],
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "company_defined_free_cf_m": 25126,
+        "company_defined_free_cf_note": "Unternehmens-FCF zusätzlich um 3.523 Mio. USD Finanzierungsleasing-Tilgungen bereinigt."
       }
     },
     {
