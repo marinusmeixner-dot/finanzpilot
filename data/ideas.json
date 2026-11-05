@@ -1,6 +1,6 @@
 {
-  "asof": "2026-10-31",
-  "purpose": "Redaktionelle Research-Watchlist: keine Kaufempfehlung oder Ergebnis der persönlichen Portfolioanalyse.",
+  "asof": "2026-11-05",
+  "purpose": "Öffentliches, quellebasiertes Ideenuniversum (derzeit neun Unternehmen). Jede These erhält drei transparent hypothetische operative Szenarien; Kursziel, Unterbewertung und Kaufempfehlung bleiben ohne nachgewiesenen aktuellen Kurs und geeignete Equity-Bridge ausdrücklich offen.",
   "ideas": [
     {
       "id": "kion",
@@ -44,6 +44,90 @@
       "source": "https://investor.cognex.com/news/news-details/2026/Cognex-to-Acquire-RealSense-Expanding-Machine-Vision-Leadership-into-High-Growth-Robotic-Perception-Market/default.aspx",
       "supporting_source": "https://www.sec.gov/Archives/edgar/data/851205/000085120526000061/a07052026-xex991xq22026ear.htm",
       "next": "Unabhängig prüfen: organisches Wachstum, Integration, Cashbestand nach Übernahme, Verwässerung, Preis und Multiples."
+    },
+    {
+      "id": "microsoft",
+      "company": "Microsoft",
+      "ticker": "MSFT",
+      "symbol": "NASDAQ:MSFT",
+      "sector": "Unternehmenssoftware und Cloud",
+      "status": "Fundamentaldaten und Drei-Szenarien-Modell verfügbar; aktueller Kursvergleich offen",
+      "interest": "Cloud-Wachstum und wiederkehrende Verträge können zukünftige Cashflows unterstützen; der Kurs kann dieses Wachstum jedoch schon vorwegnehmen.",
+      "counter": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
+      "metric": "GJ 2026 Umsatz 331,839 Mrd. USD, operativer Gewinn 155,237 Mrd. USD (GAAP).",
+      "date": "2026-10-15",
+      "source": "https://www.microsoft.com/investor/reports/ar26/",
+      "next": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen."
+    },
+    {
+      "id": "nvidia",
+      "company": "NVIDIA",
+      "ticker": "NVDA",
+      "symbol": "NASDAQ:NVDA",
+      "sector": "KI-Beschleuniger und Halbleiter",
+      "status": "Fundamentaldaten und Drei-Szenarien-Modell verfügbar; aktueller Kursvergleich offen",
+      "interest": "Hohe Nachfrage nach KI-Infrastruktur unterstützt Umsatz und Gewinne; Bewertungsrisiken steigen, wenn die Nachfrage früher als erwartet abflacht.",
+      "counter": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "metric": "GJ 2026 Umsatz 215,938 Mrd. USD; neuere Q2-GJ27-Daten getrennt berücksichtigen.",
+      "date": "2026-08-26",
+      "source": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+      "next": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen."
+    },
+    {
+      "id": "siemens",
+      "company": "Siemens AG",
+      "ticker": "SIE.DE",
+      "symbol": "XETR:SIE",
+      "sector": "Industrieautomation, Software und Infrastruktur",
+      "status": "Fundamentaldaten und Drei-Szenarien-Modell verfügbar; aktueller Kursvergleich offen",
+      "interest": "Solide Auftragsbasis, Automatisierung und Infrastruktur können die Entwicklung stützen; Zyklik und Konzernumbauten erhöhen die Komplexität.",
+      "counter": "Zyklische Fabrikinvestitionen und ein komplexes Portfolio; Umsatz und Ergebnis industrielles Geschäft sind nicht dieselbe Margenbasis.",
+      "metric": "Q3 GJ 2026 20,8 Mrd. EUR Umsatz, 4,1 Mrd. EUR FCF laut bestehendem FinanzPilot-Bericht.",
+      "date": "2026-08-06",
+      "source": "https://press.siemens.com/global/de/pressemitteilung/ergebnisveroeffentlichung-und-finanzkennzahlen-q4-2025",
+      "next": "Anstehende FY26-Geschäftszahlen, Cashflow und Konzern-EBIT separat auditieren."
+    },
+    {
+      "id": "amazon",
+      "company": "Amazon",
+      "ticker": "AMZN",
+      "symbol": "NASDAQ:AMZN",
+      "sector": "Cloud, Onlinehandel und Werbung",
+      "status": "Fundamentaldaten und Drei-Szenarien-Modell verfügbar; aktueller Kursvergleich offen",
+      "interest": "Hohes AWS-Wachstum könnte zukünftige Ertragskraft stärken. Die Preisfrage ist, wie viel Cashflow nach dem Ausbau der Infrastruktur verbleibt.",
+      "counter": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
+      "metric": "Q3 2026: 201,9 Mrd. USD Umsatz, 28,1 Mrd. USD operativer Gewinn, TTM-FCF −42,4 Mrd. USD.",
+      "date": "2026-10-29",
+      "source": "https://press.aboutamazon.com/2026/10/amazon-com-announces-third-quarter-results",
+      "next": "AWS-Wachstum, Free Cashflow, Capex und aktuelle Bewertung prüfen."
+    },
+    {
+      "id": "meta",
+      "company": "Meta Platforms",
+      "ticker": "META",
+      "symbol": "NASDAQ:META",
+      "sector": "Digitale Werbung und Plattformen",
+      "status": "Fundamentaldaten und Drei-Szenarien-Modell verfügbar; aktueller Kursvergleich offen",
+      "interest": "Wachstum des Werbegeschäfts und KI-Effizienz können die Ertragskraft stützen; zugleich sind Rechtskosten, Investitionen und Marktpreis zu berücksichtigen.",
+      "counter": "Rechtsrisiken, hohe KI-Kapazitätsinvestitionen und einzelne Sondereffekte erschweren die Schätzung nachhaltiger Margen.",
+      "metric": "Q3 2026: 64,601 Mrd. USD Umsatz, 12,988 Mrd. USD GAAP-EBIT nach 9,89 Mrd. USD Rückstellung.",
+      "date": "2026-10-21",
+      "source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+      "next": "Normalized EBIT, Rechtszahlungen, Werbepreise und Cashflow getrennt prüfen."
+    },
+    {
+      "id": "alphabet",
+      "company": "Alphabet Inc. (Google)",
+      "ticker": "GOOGL",
+      "symbol": "NASDAQ:GOOGL",
+      "sector": "Internetsuche, Werbung und Cloud",
+      "status": "Fundamentaldaten und Drei-Szenarien-Modell verfügbar; aktueller Kursvergleich offen",
+      "interest": "Die Cloud-Dynamik und die 31,8-%-Konzernmarge zeigen operative Stärke. Der entscheidende offene Punkt ist, ob die Rekordinvestitionen dauerhaft genügend zusätzliche freie Cashflows erzeugen. Q3-FCF −9,065 Mrd. USD, TTM-FCF +19,747 Mrd. USD; der Bewertungsmaßstab hängt von einem normalisierten Cashflow ab.",
+      "counter": "Cloud-Wachstum ist nicht gleich Free Cashflow. 51,355 Mrd. USD Quartals-Capex und regulatorische Risiken sind materiell.",
+      "metric": "Q3 2026: 127,577 Mrd. USD Umsatz, 40,576 Mrd. USD EBIT, Quartals-FCF −9,065 Mrd. USD.",
+      "date": "2026-10-28",
+      "source": "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000080/googexhibit991q32026.htm",
+      "next": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen."
     }
   ]
 }
