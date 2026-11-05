@@ -8,7 +8,7 @@ const ideas=JSON.parse(read('data/ideas.json')).ideas;
 const html=read('index.html'),research=read('market-insights-v82.js');
 assert.equal(data.schema_version,1);
 assert(data.records.length>=9);
-assert.equal(new Set(data.records.map(x=>x.id)).size,9);
+assert.equal(new Set(data.records.map(x=>x.id)).size,data.records.length,'Source-audit IDs remain unique as new companies join');
 assert(ideas.every(x=>data.records.some(r=>r.id===x.id)));
 assert(data.records.filter(x=>x.ttm_bridge).length>=5);
 assert(data.records.filter(x=>x.reported_ttm).length>=1);
