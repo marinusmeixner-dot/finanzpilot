@@ -42,5 +42,5 @@ assert(!view.includes('fp46-transfer-hint'),'Remove duplicated generic reflectio
 assert(!view.includes('fp46-study-pause'),'Remove identical repeated end-of-example prompt');
 assert(html.includes('study-example-v80.css?v=80')&&html.includes('lesson-view-v46.js?v=80'),'New UI styles and runtime load with correct cache version');
 assert(html.includes('learning-hub-v41.js?v=80'),'Revised examples must refresh from server');
-assert.equal(JSON.parse(read('version.json')).version,80);
+assert(JSON.parse(read('version.json')).version>=80,'Do not regress below v80');
 console.log('V80 PASS: 156 unique worked case explanations, 156 distinct misconceptions, no templated accordion stacks, optional calculation, official assessment untouched.');
