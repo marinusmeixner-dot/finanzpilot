@@ -392,12 +392,51 @@ def update_ledger(existing, radar):
             events.append(e);last[c["ticker"]]=e
     return {"schema_version":1,"policy":"Append-only public research-priority events, not a trading log. The original underwriting, entry decisions, and private thesis journal are separate. Do not backfill investment performance from prices alone.", "events":events}
 
+def annotate_history(radar, ledger, provider_file):
+    """Independent scorecard since first sighting, never a simulated purchase."""
+    first={}
+    for e in ledger.get("events",[]):
+        ticker=e.get("ticker")
+        if ticker and ticker not in first and e.get("adjusted_close") and e.get("date"):
+            first[ticker]=e
+    series=prices_by_ticker(provider_file)
+    benchmarks={b["id"]:b for b in radar.get("benchmark_universe",[])}
+    for c in radar["candidates"]:
+        start=first.get(c["ticker"])
+        recent=c.get("signals",{})
+        if not start or recent.get("status")!="history_available":
+            c["since_first_screen"]=None
+            continue
+        inception=start["adjusted_close"]
+        current=recent.get("adjusted_close")
+        if not isinstance(current,(int,float)) or inception<=0:
+            c["since_first_screen"]=None
+            continue
+        returned=pct(inception,current)
+        data={"first_seen":start["date"],"last_session":recent.get("asof"),
+              "adjusted_return_pct":returned,"benchmark_return_pct":None,
+              "relative_to_benchmark_pp":None,
+              "interpretation":"Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs."}
+        bid=start.get("benchmark_id")
+        bench=benchmarks.get(bid)
+        if bench and bench.get("currency")==c.get("currency"):
+            p=clean_points(series.get(norm(bench.get("ticker")),{}) )
+            old_price=price_at(p,start["date"],lag=4)
+            latest_price=price_at(p,recent.get("asof"),lag=4)
+            br=pct(old_price,latest_price)
+            if br is not None:
+                data["benchmark_return_pct"]=br
+                data["relative_to_benchmark_pp"]=rounded(returned-br,2)
+                data["benchmark_name"]=bench.get("name")
+        c["since_first_screen"]=data
+
 def main(root=ROOT):
     radar=build_radar(root)
     ledger_path=root/"data"/"thesis-ledger-v86.json"
     radar_path=root/"data"/"research-radar-v86.json"
     prior=load(ledger_path,{"schema_version":1,"events":[]})
     ledger=update_ledger(prior,radar)
+    annotate_history(radar,ledger,load(root/'data'/'prices.json',{}))
     a=write_changed(radar_path,radar)
     b=write_changed(ledger_path,ledger)
     print(f"Research scanner: {radar['total_issuers']} issuers / "
