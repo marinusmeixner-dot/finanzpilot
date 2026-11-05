@@ -12,8 +12,8 @@ const main=read('adaptive-study-v77.js'),sync=read('sync.js'),index=read('index.
 const allSkills=skills.skills.flatMap(s=>s.lessons);
 assert.equal(allSkills.length,156);
 assert.equal(variants.schema_version,1);
-assert.equal(variants.variants.length,25);
-assert.equal(new Set(variants.variants.map(v=>v.id)).size,25);
+assert(variants.variants.length>=25,'The curated variants must not shrink below the verified baseline');
+assert.equal(new Set(variants.variants.map(v=>v.id)).size,variants.variants.length,'Every curated variant needs a unique stable ID');
 const activeIds=new Set([...basics.stages.flatMap(s=>s.modules.map(m=>m.id)),...allSkills.map(x=>x.id)]);
 for(const v of variants.variants){
  assert(activeIds.has(v.lesson_id),'Unknown variant target '+v.lesson_id);
@@ -126,4 +126,4 @@ assert(read('study-coach-v46.js').includes('FinanzPilotAdaptive?.renderReview'),
 assert(read('journey-v39.js').includes('FinanzPilotAdaptive?.observeLesson'),'Foundations feed objective grades');
 assert(read('learning-hub-v41.js').includes('FinanzPilotAdaptive?.observeLesson'),'Only server-confirmed skills feed objective grades');
 assert(JSON.parse(read('version.json')).version>=78);
-console.log('V77 adaptive learning PASS: 174 lesson topics, 25 curated variants, mixed questions, secure objective grading, confidence/feedback, 7- and 30-day observation, distributed review schedule, CRDT-safe merge, no XP changes.');
+console.log('V77 adaptive learning PASS: 174 lesson topics, 25+ curated variants, mixed questions, secure objective grading, confidence/feedback, 7- and 30-day observation, distributed review schedule, CRDT-safe merge, no XP changes.');
