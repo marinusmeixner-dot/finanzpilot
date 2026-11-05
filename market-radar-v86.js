@@ -111,6 +111,7 @@ function dashboard(){
  '<div><strong>'+meta.research_priority_count+'</strong><small>Hohe Research-Priorität</small></div>'+
  '<div><strong>'+meta.missing_quote_count+'</strong><small>Kursdaten noch offen</small></div></div>'+
  '<p class="fp86-date">Kursstand der Radarreihe: '+esc(meta.asof||'noch nicht verfügbar')+' · keine Realtime-Daten</p></div>'+
+ (view==='priority'?(window.FinanzPilotPriorities?.summary?.()||''):'')+
  '<div class="fp86-tabs" role="group" aria-label="Aktienradar durchsuchen">'+tabs.map(([k,label])=>'<button type="button" data-fp86-tab="'+k+'" aria-pressed="'+(view===k)+'">'+label+'</button>').join('')+'</div>'+
  (view==='history'?renderHistoryBoard():view==='decision'?(window.FinanzPilotDecisions?.board?.()||'<p>Investmentprüfung lädt …</p>'):view==='compare'?(window.FinanzPilotDecisions?.comparison?.()||'<p>Aktienvergleich lädt …</p>'):results.length?'<div class="fp86-grid">'+results.slice(0,view==='all'?120:50).map(card).join('')+'</div>':'<p class="fp86-empty">In dieser Ansicht gibt es derzeit keine geprüften Einträge. Die Radarhistorie wird beim nächsten sachlichen Signalwechsel ergänzt.</p>')+
  '<div class="fp86-method"><h3>Warum erscheint eine Aktie hier?</h3><p>Der Scanner berücksichtigt 50-/200-Tage-Trends, 63-Tage-Relative Performance, historische Schwankungen und – falls vorhanden – eine maximal 35 Tage alte, veröffentlichte, redaktionell eingeordnete Unternehmensmeldung. Eine A-Priorität heißt ausschließlich <strong>„zuerst recherchieren“</strong>, nicht „kaufen“. ETF-Alternativen, Cashflow, reale Verschuldung und Bewertung müssen separat geprüft werden.</p><p>Das Ausgangsuniversum ist offen: neue Unternehmen aus der gepflegten Unternehmensliste und veröffentlichten Berichten werden ergänzt. Bei fehlender Kursreihe zeigt die App bewusst keinen erfundenen Score.</p></div></section>';
@@ -132,6 +133,7 @@ function candidateDetail(id){
  '<section class="fp86-section"><h2>Was hat die Aktie auffällig gemacht?</h2>'+perf(c)+sourceContext(c)+
  '<p><strong>Fachliche nächste Prüfung:</strong> '+esc(c.next_review)+'</p></section>'+
  (window.FinanzPilotDecisions?.researchOnly?.(c.id)||'')+
+ (window.FinanzPilotPriorities?.detail?.(c.id)||'')+
  '<section class="fp86-section"><h2>Welche ETF-Alternative gibt es?</h2>'+benchmark(c)+'</section>'+
  peerComparison(c)+
  '<section class="fp86-section"><h2>Was fehlt für ein tatsächliches Investmenturteil?</h2>'+
@@ -181,6 +183,7 @@ async function load(force=false){
 }
 function bind(root=document){
  window.FinanzPilotDecisions?.bind?.(root);
+ window.FinanzPilotPriorities?.bind?.(root);
  root.querySelectorAll('[data-fp86-tab]').forEach(b=>b.addEventListener('click',()=>{view=b.dataset.fp86Tab;window.render?.()}));
  root.querySelectorAll('[data-fp86-open]').forEach(b=>b.addEventListener('click',()=>window.FinanzPilotInsights?.openIdea?.(b.dataset.fp86Open)));
  root.querySelectorAll('[data-fp86-track]').forEach(b=>b.addEventListener('click',()=>{
