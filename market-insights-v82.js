@@ -49,6 +49,7 @@ function ideaCards(){
    '<h3>'+esc(x.company)+'</h3><p class="fp82-industry">'+esc(x.sector)+'</p>'+
    '<p>'+esc(x.interest)+'</p>'+
    '<div class="fp82-idea-label">Wichtige Gegenargumente</div><p class="fp82-risk">'+esc(x.counter)+'</p>'+
+   (window.FinanzPilotMarketValue?.summaryFor?.(x.id)||'')+
    '<div class="fp82-card-actions"><button type="button" class="btn secondary" data-fp82-idea="'+esc(x.id)+'">Investmentthese ansehen</button>'+
    (full?'<span class="fp82-evidence">Finanzdaten vorhanden</span>':'<span class="fp82-evidence">Vertiefung offen</span>')+'</div></article>';
  }).join('');
