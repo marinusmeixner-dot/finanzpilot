@@ -63,6 +63,8 @@ function highlights(){
   storyButton(s,'Zusammenhang verstehen')+'</article>').join('');
 }
 function ideaCards(){
+ const dynamic=window.FinanzPilotRadar?.homePreview?.();
+ if(dynamic)return dynamic;
  const recent=ideas.slice().sort((a,b)=>stamp(b.date)-stamp(a.date)).slice(0,2);
  if(!recent.length)return '<p class="fp81-muted">Es liegen noch keine ausreichend dokumentierten Aktienideen vor. Der Radar bleibt bis zur nächsten geprüften Analyse leer.</p>';
  return recent.map(x=>'<article class="fp81-idea">'+
@@ -117,6 +119,7 @@ function bind(root=document){
   if(!s||!window.FinanzPilotMarkets?.openEditorialStory?.(s)){error='Der Artikel konnte nicht geöffnet werden.';window.render?.();}
  }));
  root.querySelector('[data-fp48-watch-news]')?.addEventListener('click',()=>window.FinanzPilotMarkets?.openNews?.(''));
+ window.FinanzPilotRadar?.bind?.(root);
 }
 window.FinanzPilotHome={render,bind,load,get stories(){return stories;},get briefing(){return briefing;},get ideas(){return ideas;}};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>load(),{once:true});else load();
