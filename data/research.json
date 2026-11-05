@@ -543,6 +543,63 @@
           "why": "Ein DCF bewertet künftige Cashflows nach Kapitalkosten. Ohne verifizierte Kapitalstruktur und Cashflowannahmen wäre ein numerisches Kursziel Scheingenauigkeit."
         }
       ]
+    },
+    {
+      "id": "apple",
+      "company": "Apple",
+      "ticker": "AAPL",
+      "symbol": "NASDAQ:AAPL",
+      "period": "Geschäftsjahr 2026 (bis 26.09.2026), Form 10-K vom 03.11.2026",
+      "source": "Apple Inc. Form 10-K FY2026",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019326000026/aapl-20260926.htm",
+      "summary": "Rekordjahr mit 478,834 Mrd. USD Umsatz und 132,175 Mrd. USD Nettogewinn. Hohe Cashflows sind keine Garantie für attraktiv bewertete Aktien; positive Zollerstattungen beeinflussen die Quartalsmarge.",
+      "business": "iPhone, Mac, iPad, Wearables, AppleCare, App Store und Abonnementdienste. Geräteverkauf und wiederkehrende Services-Erlöse ergänzen sich im Produkt-Ökosystem.",
+      "figures": [
+        [
+          "Umsatz GJ2025",
+          416161,
+          "Mio. USD"
+        ],
+        [
+          "Umsatz GJ2026",
+          478834,
+          "Mio. USD"
+        ],
+        [
+          "Operatives Ergebnis GJ2026",
+          158063,
+          "Mio. USD"
+        ],
+        [
+          "Cashflow operativ GJ2026",
+          145097,
+          "Mio. USD"
+        ],
+        [
+          "Sachanlageinvestitionen GJ2026",
+          9041,
+          "Mio. USD"
+        ],
+        [
+          "Free Cashflow GJ2026",
+          136056,
+          "Mio. USD"
+        ]
+      ],
+      "thesis": "Apple kann mit seiner Plattform und wachsendem Servicegeschäft hohe wiederkehrende Cashflows erzielen. Entscheidend ist, ob zukünftiges Wachstum nach Steuern, Wettbewerb und Investitionen den bereits hohen Kurs rechtfertigt.",
+      "risks": [
+        "Produkt- und Lieferantenkonzentration, China und Handelszölle",
+        "Positiver Q4-Zollerstattungseffekt auf Marge und EPS ist nicht unbedingt wiederkehrend",
+        "Hohes historisches KGV bei möglichen geringeren künftigen Wachstumsraten",
+        "Aktienrückkäufe, aktienbasierte Vergütung und echte Netto-Liquidität müssen getrennt bewertet werden"
+      ],
+      "methods": [
+        "GAAP-Ergebnis und CFO/Capex aus dem 10-K abstimmen",
+        "Quartals-Sondereffekt getrennt von nachhaltiger Marge analysieren",
+        "Jahres-FCF und Aktienrückkäufe vergleichen, Verwässerung prüfen",
+        "Szenarien mit passender Eigenkapitalkosten-Basis und Peers gegenüberstellen"
+      ],
+      "questions": []
     }
   ]
 }
