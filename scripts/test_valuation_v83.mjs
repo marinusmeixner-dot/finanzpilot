@@ -1,0 +1,67 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import vm from 'node:vm';
+const read=path=>fs.readFileSync(path,'utf8');
+const data=JSON.parse(read('data/valuation-scenarios-v83.json'));
+const ideas=JSON.parse(read('data/ideas.json')).ideas;
+const index=read('index.html'),app=read('app.js'),research=read('market-insights-v82.js');
+assert.equal(data.schema_version,1);
+assert.equal(data.models.length,9,'Nine source-backed companies required');
+assert.equal(new Set(data.models.map(m=>m.id)).size,9,'No duplicate model IDs');
+assert.equal(ideas.length,9);
+assert(data.models.every(m=>ideas.some(i=>i.id===m.id)));
+assert(index.includes('valuation-v83.js?v=83')&&index.includes('valuation-v83.css?v=83')&&index.includes('market-insights-v82.js?v=83'));
+assert(index.indexOf('valuation-v83.js?v=83')<index.indexOf('market-insights-v82.js?v=83'),'Valuation available before dossier rendering');
+assert(research.includes('FinanzPilotValuation?.renderFor?.(idea.id)'),'Every dossier embeds quantitative scenario review');
+assert(research.includes('FinanzPilotValuation?.bind?.(root)'),'Slider controls are wired');
+const mockWindow={addEventListener(){},render(){},FinanzPilotNavigation:{route(){}}},mockDocument={readyState:'loading',addEventListener(){}};
+const mockFetch=async()=>({ok:true,json:async()=>data});
+const context=vm.createContext({window:mockWindow,document:mockDocument,fetch:mockFetch,Date,Intl,Math,Number,String,Array,Map,Set,Promise,URL,console});
+vm.runInContext(read('valuation-v83.js'),context,{filename:'valuation-v83.js'});
+const appVal=mockWindow.FinanzPilotValuation;
+await appVal.load();
+assert.equal(appVal.models.length,9,'All valid models must load');
+for(const m of appVal.models){
+ assert(m.baseline.revenue_m>0&&m.baseline.source_url.startsWith('https:')&&/^\d{4}-\d\d-\d\d$/.test(m.baseline.source_published));
+ assert(['year','quarter','nine_months'].includes(m.baseline.period_kind));
+ for(const key of ['bear','base','bull']){
+  const c=m.scenarios[key],o=appVal.evaluate(m,c.growth_pct,c.margin_pct);
+  assert(o&&Number.isFinite(o.projected_revenue_m)&&Number.isFinite(o.projected_profit_m));
+  assert(o.projected_revenue_m>0,'Scenario may not imply a negative revenue base');
+ }
+ const html=appVal.renderFor(m.id);
+ assert(html.includes('VERIFIZIERTER AUSGANGSPUNKT')&&html.includes('Negativ')&&html.includes('Basis')&&html.includes('Positiv'));
+ assert(html.includes('INTERAKTIVE SENSITIVITÄT')&&html.includes('Keine Jahreshochrechnung'));
+ assert(html.includes('data-fp83-growth=')&&html.includes('data-fp83-margin='));
+ assert(html.includes('Originalbericht')&&html.includes('nicht'));
+}
+const kion=appVal.model('kion');
+const expected=kion.baseline.revenue_m*Math.pow(1+.05,3);
+assert(Math.abs(appVal.evaluate(kion,5,8).projected_revenue_m-expected)<1e-6);
+const ms=appVal.model('microsoft'),v=appVal.epsValue(ms,'base');
+const epsExpected=17.28*Math.pow(1+.12,3)*27/Math.pow(1+.10,3);
+assert(v&&Math.abs(v.present-epsExpected)<1e-8,'EPS multiple method must apply all four assumptions correctly');
+assert(appVal.renderFor('microsoft').includes('kein Kursziel und kein fairer Wert'));
+assert(appVal.renderFor('siemens').includes('Nicht vergleichbar veröffentlicht'),'Do not fake Siemens GAAP profit from segment metric');
+assert(appVal.renderFor('aixtron').includes('9M 2026'));
+assert(appVal.renderFor('meta').includes('9.890 Mio. USD Rechtsrückstellung'));
+assert.equal(appVal.evaluate(kion,-100,50),null,'Invalid revenue growth must not yield a negative forecast');
+assert.equal(appVal.epsValue(kion,'base'),null,'No invented per-share valuation for missing EPS');
+assert(!appVal.renderFor('kion').includes('jetzt kaufen'),'No misleading action signal');
+// Slider DOM binding: simulate a mobile range change and check both recalculated amounts.
+const handlers={},nodes={};
+const growth={value:String(kion.scenarios.base.growth_pct),dataset:{fp83Growth:'kion'},addEventListener:(name,fn)=>handlers['g:'+name]=fn};
+const margin={value:String(kion.scenarios.base.margin_pct),dataset:{fp83Margin:'kion'},addEventListener:(name,fn)=>handlers['m:'+name]=fn};
+const reset={addEventListener:(name,fn)=>handlers['reset:'+name]=fn};
+for(const selector of ['[data-fp83-g-label]','[data-fp83-m-label]','[data-fp83-revenue]','[data-fp83-profit]'])nodes[selector]={textContent:''};
+const section={dataset:{fp83Module:'kion'},querySelectorAll:()=>[growth,margin],querySelector:sel=>sel==='[data-fp83-reset]'?reset:sel==='[data-fp83-growth]'?growth:sel==='[data-fp83-margin]'?margin:nodes[sel]??null};
+appVal.bind({querySelectorAll:()=>[section]});
+growth.value='20';handlers['g:input']();
+assert(nodes['[data-fp83-g-label]'].textContent.includes('+20'));
+assert(nodes['[data-fp83-revenue]'].textContent.includes('Mio.'));
+margin.value='12';handlers['m:input']();
+assert(nodes['[data-fp83-m-label]'].textContent.includes('12'));
+handlers['reset:click']();
+assert.equal(Number(growth.value),kion.scenarios.base.growth_pct);
+assert.equal(Number(margin.value),kion.scenarios.base.margin_pct);
+console.log('V83 PASS: nine source-backed models, consistent comparable periods, 27 scenario calculations, EPS formula, honest missing-price caveats and interactive sliders.');
