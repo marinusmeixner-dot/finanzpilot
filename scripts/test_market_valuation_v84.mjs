@@ -29,7 +29,7 @@ assert(api.summaryFor('microsoft').includes('555,8'));
 for(const rec of api.stocks){
  const q=rec.quote,f=rec.fundamentals,derived=api.derive(rec);
  assert.equal(q.date,'2026-11-04','No future or intraday prices can be smuggled in');
- assert.equal(q.price_type,'official_regular_session_close');
+ assert.equal(q.price_type,'regular_session_close');
  assert(['NASDAQ','XETRA'].includes(q.exchange));
  assert(q.source_url.startsWith('https://')&&f.source_url.startsWith('https://'));
  assert(Math.abs((f.operating_cf_m-f.capex_m)-f.free_cf_m)<=0.2,'FCF must reconcile from cash flow and CapEx');
@@ -43,6 +43,7 @@ for(const rec of api.stocks){
  assert(page.includes('kein')||page.includes('Keine')||page.includes('nicht'));
  assert(page.includes('UMGEKEHRTE BEWERTUNGSFRAGE')&&page.includes('data-fp84-pe=')&&page.includes('data-fp84-discount='));
  assert(page.includes('Keine Vor- oder Nachbörse'));
+ assert(page.includes('Datenzeitpunkt beachten'),'Nov 5 fundamentals may not be known at Nov 4 close');
  assert(page.includes('Sekundäranbieter'));
  assert(!page.includes('Sofort kaufen'));
 }
