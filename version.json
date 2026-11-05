@@ -1,5 +1,5 @@
 {
-  "version": 85,
-  "release": "2026-11-05-v85",
-  "notes": "Für Microsoft, NVIDIA und Alphabet TTM-Cashflows aus Originalberichten rekonstruiert; für alle neun Aktien transparente Prüfung offener Bewertungsbausteine. Microsoft: illustratives 5-Jahres-Equity-Cashflow-DCF mit Drei-Szenarien-/Sensitivitätsrechnung und überprüfter Bilanzbrücke; kein vollständiges Fair-Value- oder Kaufsignal. Bestehende Daten, Depot und Lernfortschritt bleiben."
+  "version": 86,
+  "release": "2026-11-05-v86",
+  "notes": "Offener, automatisiert neu berechneter Aktienradar über mindestens 47 redaktionell definierte und weitere profilbasierte Unternehmen, echter Kandidaten-Suchlauf, Markt-/ETF-Vergleich, Research-Prio A/B/C, neue Einzelaktienansicht, Merkliste und append-only Thesenverlauf. Originale neun vertieften Analysen bleiben erhalten. Kein automatisches Kaufsignal."
 }
