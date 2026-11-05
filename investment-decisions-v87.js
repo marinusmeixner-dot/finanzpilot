@@ -39,6 +39,7 @@ function scrutiny(x){
  return '<div class="fp87-decision"><span class="eyebrow">UNABHÄNGIGE RESEARCH-EINORDNUNG</span>'+
  '<h3>'+esc(statuses[x.research_stage]||'Bewertung offen')+'</h3>'+
  '<p>'+esc(x.decision)+'</p>'+
+ (!x.thesis?'<p><strong>Noch keine Investmentthese:</strong> Eine Kurs- oder Nachrichtenauffälligkeit reicht allein nicht für eine Fundamentalaussage.</p>':'')+
  '<p class="fp87-no-buy">'+esc(x.conclusion)+'</p>'+
  factor(x)+
  '<div class="fp87-questions"><div><strong>Was würde die These stützen?</strong><p>'+esc(x.what_would_confirm)+'</p></div>'+
