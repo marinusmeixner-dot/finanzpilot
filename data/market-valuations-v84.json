@@ -2,7 +2,7 @@
   "schema_version": 1,
   "asof": "2026-11-05",
   "price_policy": "Bestätigte, bei datierten Börsenhistorien reproduzierbare reguläre Schlusskurse vom 04.11.2026; keine direkt beim Börsenbetreiber auditierten offiziellen Schlusskurse und keine Echtzeitdaten. Pro Titel ein Börsenplatz (NASDAQ/Xetra) und eine Währung; keine Vor-/Nachbörse und keine Währungsumrechnung. Jede künftige Aktualisierung braucht realen Handelsstichtag, Primärquelle soweit verfügbar und Zeitstempel. Die erst am 05.11.2026 abgerufenen TTM-Fundamentaldaten könnten Geschäftsberichte enthalten, die beim Kursstand 04.11.2026 noch nicht bekannt waren.",
-  "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen.",
+  "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen. Zusätzlich 05.11.2026: Originalberichts-TTM-Bridges für Microsoft, NVIDIA und Alphabet in data/fair-value-audit-v85.json dokumentiert; die dort markierten Cashflow-Felder wurden abgestimmt. Microsoft: 7.446 Mio. verwässerte gewichtete Aktien, übrige Titel teils sekundär.",
   "valuation_policy": "KGV und FCF-Rendite sind Momentaufnahmen und weder Kursziel noch fairer Wert. Reverse-EPS-Modell ist nur die mathematische Wachstumsanforderung unter offen hypothetischem End-KGV/Abzinsung, ohne Dividenden/Verwässerung. Keine automatischen Kaufempfehlungen. Für negative oder nicht nachhaltig normalisierte Cashflows kein DCF-Kursziel.",
   "stocks": [
     {
@@ -18,18 +18,31 @@
         "source_url": "https://stockanalysis.com/stocks/msft/history/"
       },
       "fundamentals": {
-        "shares_m": 7430,
+        "shares_m": 7446,
         "eps_ttm": 19.15,
-        "cash_m": 64510,
-        "debt_m": 133930,
-        "operating_cf_m": 195880,
-        "capex_m": 135920,
-        "free_cf_m": 59960,
+        "cash_m": 64509,
+        "debt_m": 35481,
+        "operating_cf_m": 195878,
+        "capex_m": 135921,
+        "free_cf_m": 59957,
         "ttm_end": "2026-09-30",
         "observed_date": "2026-11-05",
         "source_url": "https://stockanalysis.com/stocks/msft/statistics/",
-        "source_kind": "secondary_market_data_provider",
-        "caution": "Annual FY2026 EPS non-GAAP 17,28 USD separat vom aktuellen GAAP-TTM-EPS 19,15 USD beurteilen. Hohe KI-Capex, FCF nicht automatisch dauerhaft."
+        "source_kind": "mixed_primary_reconciled",
+        "caution": "Annual FY2026 EPS non-GAAP 17,28 USD separat vom aktuellen GAAP-TTM-EPS 19,15 USD beurteilen. Hohe KI-Capex, FCF nicht automatisch dauerhaft. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
+        "primary_ttm_sources": [
+          "https://www.microsoft.com/investor/reports/ar26/",
+          "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+        ],
+        "primary_verified_fields": [
+          "shares_m",
+          "eps_ttm",
+          "cash_m",
+          "debt_m",
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ]
       }
     },
     {
@@ -50,13 +63,22 @@
         "cash_m": 62470,
         "debt_m": 38860,
         "operating_cf_m": 134360,
-        "capex_m": 7350,
-        "free_cf_m": 127010,
+        "capex_m": 7354,
+        "free_cf_m": 127006,
         "ttm_end": "2026-07-31",
         "observed_date": "2026-11-05",
         "source_url": "https://stockanalysis.com/stocks/nvda/statistics/",
-        "source_kind": "secondary_market_data_provider",
-        "caution": "Ausgesprochen hohe KI-Nachfrage und Gewinnmargen; Normalisierung und Kunden-Capex können TTM-EPS/FCF schnell verändern."
+        "source_kind": "mixed_primary_secondary",
+        "caution": "Ausgesprochen hohe KI-Nachfrage und Gewinnmargen; Normalisierung und Kunden-Capex können TTM-EPS/FCF schnell verändern. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
+        "primary_ttm_sources": [
+          "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+          "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+        ],
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ]
       }
     },
     {
@@ -130,14 +152,23 @@
         "eps_ttm": 19.15,
         "cash_m": 265100,
         "debt_m": 150330,
-        "operating_cf_m": 179550,
-        "capex_m": 159800,
-        "free_cf_m": 19750,
+        "operating_cf_m": 179551,
+        "capex_m": 159804,
+        "free_cf_m": 19747,
         "ttm_end": "2026-09-30",
         "observed_date": "2026-11-05",
         "source_url": "https://stockanalysis.com/stocks/googl/statistics/",
-        "source_kind": "secondary_market_data_provider",
-        "caution": "TTM-EPS durch Gewinne aus Beteiligungen verzerrbar; Q3 2026 FCF negativ bei 51,355 Mrd. USD Investitionen. GAAP-KGV nicht isoliert als günstig werten."
+        "source_kind": "mixed_primary_secondary",
+        "caution": "TTM-EPS durch Gewinne aus Beteiligungen verzerrbar; Q3 2026 FCF negativ bei 51,355 Mrd. USD Investitionen. GAAP-KGV nicht isoliert als günstig werten. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
+        "primary_ttm_sources": [
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000018/goog-20251231.htm",
+          "https://www.sec.gov/Archives/edgar/data/1652044/000165204426000084/goog-20260930.htm"
+        ],
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ]
       }
     },
     {
