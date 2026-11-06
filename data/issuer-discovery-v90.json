@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "last_checked_date": "2026-11-06",
+  "index_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+  "index_rows": 500,
+  "new_companies": [],
+  "already_known": 47,
+  "total_universe": 47,
+  "quote_checks": 24,
+  "quote_failures": [
+    "OKTA",
+    "TWLO",
+    "ILMN",
+    "P",
+    "RDDT",
+    "FLEX",
+    "MRVL",
+    "VEEV",
+    "COHR",
+    "ECHO",
+    "LITE",
+    "CIEN"
+  ],
+  "source_status": "secondary_index_and_price_crosschecked",
+  "warning": "Keine Primärquellen-Unternehmensanalyse, keine Kaufaussage; neu aufgenommene Firmen sind unbewertete Screening-Kandidaten."
+}
