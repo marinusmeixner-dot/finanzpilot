@@ -20,8 +20,8 @@ assert(data.candidates.filter(x=>x.review_kind==='technical_only').every(x=>!x.e
 assert(data.candidates.every(x=>x.bucket!=='archived'||x.review_kind==='archived'));
 assert.equal(Object.values(data.bucket_counts).reduce((a,b)=>a+b,0),data.total_issuers);
 assert(html.includes('market-priorities-v89.js?v=89')&&html.includes('market-priorities-v89.css?v=89'));
-assert(html.includes('market-radar-v86.js?v=89'));
-assert(html.indexOf('market-priorities-v89.js?v=89')<html.indexOf('market-radar-v86.js?v=89'));
+assert(html.includes('market-radar-v86.js?v=90'));
+assert(html.indexOf('market-priorities-v89.js?v=89')<html.indexOf('market-radar-v86.js?v=90'));
 assert(radarScript.includes('FinanzPilotPriorities?.summary?.()'));
 assert(radarScript.includes('FinanzPilotPriorities?.detail?.(c.id)'));
 assert(radarScript.includes('FinanzPilotPriorities?.bind?.(root)'));
