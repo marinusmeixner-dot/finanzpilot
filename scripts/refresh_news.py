@@ -19,7 +19,7 @@ import xml.etree.ElementTree as ET
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 DEST = ROOT / "data" / "editorial-candidates.json"
 FEEDS = [
-    ("Destatis", "https://www.destatis.de/SiteGlobals/Functions/RSSFeed/DE/Presse/Pressemitteilungen/rss.xml"),
+    ("Destatis", "https://www.destatis.de/SiteGlobals/Functions/RSSFeed/DE/RSSNewsfeed/Aktuell.xml?nn=3624"),
     ("Tagesschau Wirtschaft", "https://www.tagesschau.de/wirtschaft/index~rss2.xml"),
     ("CNBC Markets", "https://www.cnbc.com/id/10000664/device/rss/rss.html"),
     ("Google News: EU/Deutschland", "https://news.google.com/rss/search?q=EZB%20Destatis%20Wirtschaft%20when%3A2d&hl=de&gl=DE&ceid=DE%3Ade"),
