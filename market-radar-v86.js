@@ -95,6 +95,7 @@ function history(c){
  '</section>';
 }
 function rowsForView(){
+ if(view==='new')return candidates.filter(c=>c.origin==='secondary_index_quote_crosscheck'&&c.lifecycle!=='archived').slice().sort((a,b)=>String(b.discovery_date||'').localeCompare(String(a.discovery_date||'')));
  if(view==='all')return candidates.filter(x=>x.lifecycle!=='archived');
  if(view==='tracked')return candidates.filter(x=>tracked.has(x.id));
  if(view==='archived')return candidates.filter(x=>x.lifecycle==='archived');
@@ -104,7 +105,7 @@ function rowsForView(){
 }
 function dashboard(){
  const results=rowsForView();
- const tabs=[['priority','Recherche-Chancen'],['decision','Investmentprüfung'],['compare','Aktien vergleichen'],['all','Alle Unternehmen'],['tracked','Gemerkt'],['history','Thesenverlauf'],['archived','Archiv']];
+ const tabs=[['priority','Recherche-Chancen'],['new','Neu entdeckt'],['decision','Investmentprüfung'],['compare','Aktien vergleichen'],['all','Alle Unternehmen'],['tracked','Gemerkt'],['history','Thesenverlauf'],['archived','Archiv']];
  return '<section class="fp86-dashboard"><div class="fp86-hero"><span class="eyebrow">INVESTMENTRESEARCH · DYNAMISCHER MARKTSCAN</span>'+
  '<h2>Neue Aktien entdecken – unabhängig von deiner Watchlist</h2>'+
  '<p>Der Radar sucht laufend in mehreren Branchen und Märkten nach Unternehmen, die weitere Analyse verdienen. Ein technisches Signal ist keine günstige Bewertung. Neue Unternehmen beginnen ausdrücklich als Prüfkandidaten.</p>'+
@@ -112,7 +113,7 @@ function dashboard(){
  '<div><strong>'+meta.with_price_history+'</strong><small>Mit ausreichender Historie</small></div>'+
  '<div><strong>'+meta.research_priority_count+'</strong><small>Hohe Research-Priorität</small></div>'+
  '<div><strong>'+meta.missing_quote_count+'</strong><small>Kursdaten noch offen</small></div></div>'+
- '<p class="fp86-date">Kursstand der Radarreihe: '+esc(meta.asof||'noch nicht verfügbar')+' · keine Realtime-Daten</p></div>'+
+ '<p class="fp86-date">Kursstand der Radarreihe: '+esc(meta.asof||'noch nicht verfügbar')+' · keine Realtime-Daten · Extern entdeckte Firmen: '+esc(meta.newly_discovered_count||0)+'</p></div>'+
  (view==='priority'?(window.FinanzPilotPriorities?.summary?.()||''):'')+
  '<div class="fp86-tabs" role="group" aria-label="Aktienradar durchsuchen">'+tabs.map(([k,label])=>'<button type="button" data-fp86-tab="'+k+'" aria-pressed="'+(view===k)+'">'+label+'</button>').join('')+'</div>'+
  (view==='history'?renderHistoryBoard():view==='decision'?(window.FinanzPilotDecisions?.board?.()||'<p>Investmentprüfung lädt …</p>'):view==='compare'?(window.FinanzPilotDecisions?.comparison?.()||'<p>Aktienvergleich lädt …</p>'):results.length?'<div class="fp86-grid">'+results.slice(0,view==='all'?120:50).map(card).join('')+'</div>':'<p class="fp86-empty">In dieser Ansicht gibt es derzeit keine geprüften Einträge. Die Radarhistorie wird beim nächsten sachlichen Signalwechsel ergänzt.</p>')+
@@ -178,7 +179,8 @@ async function load(force=false){
   ledger=history.events;front=radar.front_page_candidate_ids||[];
   benchmarkInfo=radar.benchmark_universe||[];
   meta={total_issuers:radar.total_issuers,with_price_history:radar.with_price_history,
-    research_priority_count:radar.research_priority_count,missing_quote_count:radar.missing_quote_count,asof:radar.asof};
+    research_priority_count:radar.research_priority_count,missing_quote_count:radar.missing_quote_count,asof:radar.asof,
+    newly_discovered_count:candidates.filter(x=>x.origin==='secondary_index_quote_crosscheck').length};
   loaded=true;error='';
  }catch(e){error=String(e.message||e);console.warn('Dynamic research radar:',e)}
  finally{busy=false;if(typeof state!=='undefined'&&['marketideas','marketidea','home'].includes(state.view))window.render?.()}
