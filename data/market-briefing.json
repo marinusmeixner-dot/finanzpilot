@@ -3,8 +3,8 @@
   "date": "2026-11-06",
   "source_updated_at": "2026-11-06",
   "title": "Industrieproduktion: Auto-Aufholeffekt statt bestätigter Trendwende",
-  "summary": "Destatis meldet für September 2026 real +0,7 % Produktion im deutschen Produzierenden Gewerbe. Besonders die Autoindustrie (+17,1 % gegenüber August) trug dazu bei; zugleich wurde der Augustwert auf +1,0 % revidiert und das Gesamtquartal lag 0,4 % unter dem Vorquartal. Industrieaufträge, Preisentwicklung und Gewinnqualität bleiben wichtige Folgesignale.",
-  "interpretation": "Ein hoher Monatsanstieg nach Werksferien ist nicht automatisch ein nachhaltiger Umschwung in Umsatz, Margen und Cashflows. Für deutsche Industrieunternehmen zählen der künftige Auftragseingang, nachweisbarer Geschäftsbezug, Investitionen und reale Kosten. Einzelne Aktien oder ETFs dürfen aus der Statistik nicht allein als attraktiv bewertet werden.",
+  "summary": "Destatis meldet für September 2026 real +0,7 % Produktion im deutschen Produzierenden Gewerbe. Besonders die Autoindustrie (+17,1 % gegenüber August) trug dazu bei; zugleich wurde der Augustwert auf +1,0 % revidiert und das Gesamtquartal lag 0,4 % unter dem Vorquartal. Industrieaufträge, Preisentwicklung und Gewinnqualität bleiben wichtige Folgesignale. Daimler Trucks neuer Quartalsbericht zeigt gleichzeitig, wie eine bessere operative Marge und ein durch Einmaleffekte gestützter Cashflow auseinanderfallen können.",
+  "interpretation": "Ein hoher Monatsanstieg nach Werksferien ist nicht automatisch ein nachhaltiger Umschwung in Umsatz, Margen und Cashflows. Für deutsche Industrieunternehmen zählen der künftige Auftragseingang, nachweisbarer Geschäftsbezug, Investitionen und reale Kosten. Einzelne Aktien oder ETFs dürfen aus der Statistik nicht allein als attraktiv bewertet werden. Beim Lkw-Hersteller Daimler Truck ist die verbesserte Industriemarge ein positives operatives Signal, während der berichtete freie Cashflow wegen des Beteiligungsverkaufs nicht unbereinigt fortgeschrieben werden darf.",
   "highlights": [
     {
       "story_id": "2026-11-06-destatis-industrial-production-september",
@@ -19,12 +19,12 @@
       "watch": "Weitere Inflationsdaten, Kernrate und Entscheidungen der EZB"
     },
     {
-      "story_id": "2026-11-04-bmw-q3-guidance-realignment",
-      "title": "BMW: Ausblick und Umbaukosten",
-      "why": "Ein ordentlicher Quartalsgewinn genügt nicht, wenn der Jahresausblick und der Cashflow unter Druck geraten.",
-      "watch": "Automobilmarge, Investitionen und Tempo der Modellumstellung"
+      "story_id": "2026-11-06-daimler-truck-q3-margin-cashflow",
+      "title": "Daimler Truck: bessere Marge, Cashflow mit Einmaleffekt",
+      "why": "Der am 6. November veröffentlichte Quartalsbericht zeigt deutlich höhere Industrieumsätze und Margen; der hohe freie Cashflow enthält aber einen Beitrag aus einem Beteiligungsverkauf und ist nicht vollständig als wiederkehrend anzusehen.",
+      "watch": "Operativer Cashflow ohne Beteiligungsveräußerung, Nachfrage in Nordamerika, Auftragseingang und Margen im nächsten Quartal"
     }
   ],
-  "next_watch": "Prüfen, ob der September-Anstieg in Aufträgen und Produktion in den nächsten Monaten bestätigt wird. Für neue Industrieaktien unabhängig vom Kursmomentum Primärberichte, tatsächliche Cashflows und ETF-Alternativen vergleichen.",
-  "methodology": "Erste neue Primärquelle: Statistisches Bundesamt, Pressemitteilung 389 vom 06.11.2026. Weitere Highlights sind ältere, getrennt datierte Originalberichte. FinanzPilot zeigt keine Live-Kurse oder automatischen Kaufurteile."
+  "next_watch": "Prüfen, ob der September-Anstieg in Aufträgen und Produktion in den nächsten Monaten bestätigt wird. Für neue Industrieaktien unabhängig vom Kursmomentum Primärberichte, tatsächliche Cashflows und ETF-Alternativen vergleichen. Bei Daimler Truck die tatsächlichen wiederkehrenden Cashflows vom ARCHION-Verkauf trennen und Aufträge sowie US-Nachfrage weiter prüfen.",
+  "methodology": "Erste neue Primärquelle: Statistisches Bundesamt, Pressemitteilung 389 vom 06.11.2026. Weitere Highlights sind ältere, getrennt datierte Originalberichte. FinanzPilot zeigt keine Live-Kurse oder automatischen Kaufurteile. Drittes Highlight ersetzt die ältere BMW-Meldung durch die bereits primärbelegte Daimler-Truck-Q3-Meldung vom 06.11.2026 (aktive Story-ID); BMW bleibt im Newsarchiv erhalten."
 }
