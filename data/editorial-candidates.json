@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T08:20:16.770375Z",
+  "updated_at": "2026-11-06T09:03:56.491922Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-662c34acfe67fa5c3d",
+      "title": "Update Wirtschaft vom 06.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1679068.html",
+      "published_at": "2026-11-06T08:52:22Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-3817788aed839cf7c6",
       "title": "Chipaktien an den internationalen Börsen im freien Fall",
@@ -496,15 +505,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/zwischenstand-us-wirtschaft-entwicklung-100.html",
       "published_at": "2026-11-02T11:25:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ba30697f1ff096ce34",
-      "title": "Binance-Kunden heben nach Hackerangriff Milliarden ab",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/binance-kundengelder-100.html",
-      "published_at": "2026-11-02T08:59:47Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

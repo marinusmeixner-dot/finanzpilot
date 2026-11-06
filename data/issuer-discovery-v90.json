@@ -3,29 +3,13 @@
   "last_checked_date": "2026-11-06",
   "index_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "index_rows": 500,
-  "new_companies": [
-    {
-      "ticker": "RDDT",
-      "company": "Reddit",
-      "sector": "Communication Services",
-      "cik": "0001713445"
-    },
-    {
-      "ticker": "CRH",
-      "company": "CRH plc",
-      "sector": "Materials",
-      "cik": "0000849395"
-    }
-  ],
-  "already_known": 49,
+  "new_companies": [],
+  "already_known": 51,
   "total_universe": 51,
-  "quote_checks": 2,
-  "quote_failures": [
-    "RDDT",
-    "CRH"
-  ],
+  "quote_checks": 0,
+  "quote_failures": [],
   "quote_crosschecked_added": 0,
-  "quote_pending_added": 2,
+  "quote_pending_added": 0,
   "total_quote_pending": 4,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."

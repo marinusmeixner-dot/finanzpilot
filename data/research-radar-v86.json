@@ -4463,8 +4463,15 @@
         "asof": null,
         "currency": "USD"
       },
-      "editorial_evidence": null,
-      "editorial_age_days": null,
+      "editorial_evidence": {
+        "id": "2026-11-06-reddit-q3-advertising-search-risk",
+        "title": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
+        "date": "2026-11-06",
+        "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
+        "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 0,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",

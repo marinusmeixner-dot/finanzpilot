@@ -248,12 +248,16 @@
       "ticker": "SIE",
       "name": "Siemens AG",
       "quote": {
-        "close": 275.65,
+        "close": 273.25,
         "exchange": "XETRA",
         "currency": "EUR",
         "price_type": "regular_session_close",
-        "date": "2026-11-04",
-        "source_url": "https://stockanalysis.com/quote/etr/SIE/history/"
+        "date": "2026-11-05",
+        "source_url": "https://finance.yahoo.com/quote/SIE.DE/history/",
+        "source_kind": "third_party_yahoo_unadjusted_close",
+        "observed_at": "2026-11-06T09:04:16.216258Z",
+        "provider_ticker": "SIE.DE",
+        "exchange_verified_by_operator": false
       },
       "fundamentals": {
         "shares_m": 767.99,
@@ -275,12 +279,16 @@
       "ticker": "AIXA",
       "name": "AIXTRON SE",
       "quote": {
-        "close": 32.08,
+        "close": 28.93,
         "exchange": "XETRA",
         "currency": "EUR",
         "price_type": "regular_session_close",
-        "date": "2026-11-04",
-        "source_url": "https://stockanalysis.com/quote/etr/AIXA/history/"
+        "date": "2026-11-05",
+        "source_url": "https://finance.yahoo.com/quote/AIXA.DE/history/",
+        "source_kind": "third_party_yahoo_unadjusted_close",
+        "observed_at": "2026-11-06T09:04:16.216258Z",
+        "provider_ticker": "AIXA.DE",
+        "exchange_verified_by_operator": false
       },
       "fundamentals": {
         "shares_m": 112.79,
@@ -311,12 +319,16 @@
       "ticker": "KGX",
       "name": "KION Group AG",
       "quote": {
-        "close": 34.96,
+        "close": 34.04,
         "exchange": "XETRA",
         "currency": "EUR",
         "price_type": "regular_session_close",
-        "date": "2026-11-04",
-        "source_url": "https://stockanalysis.com/quote/etr/KGX/history/"
+        "date": "2026-11-05",
+        "source_url": "https://finance.yahoo.com/quote/KGX.DE/history/",
+        "source_kind": "third_party_yahoo_unadjusted_close",
+        "observed_at": "2026-11-06T09:04:16.216258Z",
+        "provider_ticker": "KGX.DE",
+        "exchange_verified_by_operator": false
       },
       "fundamentals": {
         "shares_m": 131.12,
@@ -378,5 +390,5 @@
       }
     }
   ],
-  "last_quote_refresh_at": "2026-11-06T08:20:33.501580Z"
+  "last_quote_refresh_at": "2026-11-06T09:04:16.216258Z"
 }
