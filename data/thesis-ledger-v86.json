@@ -1081,6 +1081,42 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-707d652a71868f3",
+      "ticker": "CRH",
+      "company": "CRH plc",
+      "date": "2026-11-05",
+      "event_type": "entered_radar",
+      "signal_signature": "B_watchlist|2026-11-06-crh-q3-guidance-cut-arcosa|active",
+      "from_priority": null,
+      "priority": "B_watchlist",
+      "adjusted_close": 95.45,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -5.58,
+      "editorial_story_id": "2026-11-06-crh-q3-guidance-cut-arcosa",
+      "evidence_url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-6e1d86d40375d0d",
+      "ticker": "RDDT",
+      "company": "Reddit",
+      "date": "2026-11-05",
+      "event_type": "entered_radar",
+      "signal_signature": "C_screen_only|2026-11-06-reddit-q3-advertising-search-risk|active",
+      "from_priority": null,
+      "priority": "C_screen_only",
+      "adjusted_close": 93.81,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -5.58,
+      "editorial_story_id": "2026-11-06-reddit-q3-advertising-search-risk",
+      "evidence_url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

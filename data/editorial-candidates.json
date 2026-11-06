@@ -1,9 +1,45 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T11:04:30.893316Z",
+  "updated_at": "2026-11-06T14:26:35.309141Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-2a8823f40241372dbc",
+      "title": "Marktbericht: Zweifel am KI-Geschäft belasten die Branche",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/ki-boom-unter-druck-100.html",
+      "published_at": "2026-11-06T13:22:11Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-563346ed37b6a6d88c",
+      "title": "Tesla will Cybertruck-Produktion in Texas einstellen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/tesla-produktion-cybertruck-100.html",
+      "published_at": "2026-11-06T13:09:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b6da8328e7fb220ba0",
+      "title": "Millionen Euro verschwunden: Vucic-nahe Bank in Serbien geschlossen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/nationalbank-serbien-diebstahl-400-millionen-100.html",
+      "published_at": "2026-11-06T11:58:26Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-517bc30b2013bac24f",
+      "title": "Welche Folgen die US-Midterms für die deutsche Wirtschaft haben",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/midterms-wirtschaft-handelspolitik-100.html",
+      "published_at": "2026-11-06T11:17:25Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-8bf2f63b7747d5d71c",
       "title": "Industrieproduktion wächst überraschend - Autobranche legt zu",
@@ -523,15 +559,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/technologie/cyberangriff-supermaerkte-100.html",
       "published_at": "2026-11-02T16:10:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-00744d1c4a2d5059a8",
-      "title": "Vor den US-Zwischenwahlen: Wie ist Trumps Wirtschaftsbilanz?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/zwischenstand-us-wirtschaft-entwicklung-100.html",
-      "published_at": "2026-11-02T11:25:40Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

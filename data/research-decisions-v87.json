@@ -91,28 +91,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 17.72
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 21.3
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 18.76
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 20.18
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 0.75,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 3.03,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -252,6 +252,212 @@
       },
       "radar_asof": "2026-11-05",
       "next_review": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "basf",
+      "ticker": "BAS.DE",
+      "company": "BASF",
+      "sector": "Chemicals",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "A_research_first",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+        "date": "2026-10-30",
+        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 10.12
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 9.0
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 3.3,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 5.58,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "bayer",
+      "ticker": "BAYN.DE",
+      "company": "Bayer",
+      "sector": "Healthcare & Agriculture",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "A_research_first",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
+        "date": "2026-11-03",
+        "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 15.68
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 14.56
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 3.65,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 5.93,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
@@ -430,212 +636,6 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "basf",
-      "ticker": "BAS.DE",
-      "company": "BASF",
-      "sector": "Chemicals",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "A_research_first",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-        "date": "2026-10-30",
-        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 4.56
-        },
-        {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 5.6
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      },
-      "radar_asof": "2026-11-04",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "bayer",
-      "ticker": "BAYN.DE",
-      "company": "Bayer",
-      "sector": "Healthcare & Agriculture",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "A_research_first",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
-        "date": "2026-11-03",
-        "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 8.01
-        },
-        {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 9.05
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      },
-      "radar_asof": "2026-11-04",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
       "id": "profile-eoan-de",
       "ticker": "EOAN.DE",
       "company": "E.ON SE",
@@ -713,28 +713,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -1.64
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 3.92
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -0.6
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 2.8
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 2.33,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 4.61,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -847,28 +847,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -2.36
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 0.14
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -1.32
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -0.98
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -0.87,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 1.41,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Anstehende FY26-Geschäftszahlen, Cashflow und Konzern-EBIT separat auditieren.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -1117,28 +1117,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 12.51
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 16.45
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 13.55
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 15.33
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 1.75,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 4.03,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -1244,6 +1244,105 @@
         "relative_to_benchmark_pp": 5.65,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "sap",
+      "ticker": "SAP.DE",
+      "company": "SAP SE",
+      "sector": "Enterprise Software",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 21.81
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 20.69
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 0.68,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 2.96,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
       "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
@@ -1464,105 +1563,6 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "sap",
-      "ticker": "SAP.DE",
-      "company": "SAP SE",
-      "sector": "Enterprise Software",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "B_watchlist",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 19.54
-        },
-        {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 20.58
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      },
-      "radar_asof": "2026-11-04",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
       "id": "visa",
       "ticker": "V",
       "company": "Visa",
@@ -1771,6 +1771,105 @@
         "relative_to_benchmark_pp": 0.06,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "allianz",
+      "ticker": "ALV.DE",
+      "company": "Allianz",
+      "sector": "Insurance",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 7.74
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 6.62
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 1.46,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 3.74,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
       "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
@@ -1991,105 +2090,6 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "allianz",
-      "ticker": "ALV.DE",
-      "company": "Allianz",
-      "sector": "Insurance",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "B_watchlist",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 4.86
-        },
-        {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 5.9
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      },
-      "radar_asof": "2026-11-04",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
       "id": "profile-jd",
       "ticker": "JD",
       "company": "JD.com Inc.",
@@ -2195,6 +2195,109 @@
         "relative_to_benchmark_pp": 7.1,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "bmw",
+      "ticker": "BMW.DE",
+      "company": "BMW",
+      "sector": "Automotive",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 25,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": {
+        "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+        "date": "2026-11-04",
+        "url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/"
+      },
+      "primary_source_urls": [],
+      "original_idea_source": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 4.92
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 3.8
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 0.59,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 2.87,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
       "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
@@ -2308,18 +2411,18 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "bmw",
-      "ticker": "BMW.DE",
-      "company": "BMW",
-      "sector": "Automotive",
+      "id": "airbus",
+      "ticker": "AIR.PA",
+      "company": "Airbus",
+      "sector": "Aerospace",
       "currency": "EUR",
       "lifecycle": "active",
       "radar_priority": "B_watchlist",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
       "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
       "evidence_readiness": {
-        "value": 25,
+        "value": 10,
         "max": 100,
         "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
         "criteria": [
@@ -2330,7 +2433,7 @@
           },
           {
             "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
+            "ready": false,
             "points": 15
           },
           {
@@ -2358,7 +2461,7 @@
       "thesis": null,
       "counter_thesis": null,
       "thesis_invalidated": false,
-      "why_now": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+      "why_now": null,
       "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
       "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
       "financials": {},
@@ -2370,13 +2473,9 @@
         "Nachvollziehbare künftige Cashflows",
         "Bewertung mit Sicherheitsspanne"
       ],
-      "editorial_source": {
-        "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
-        "date": "2026-11-04",
-        "url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/"
-      },
+      "editorial_source": null,
       "primary_source_urls": [],
-      "original_idea_source": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
+      "original_idea_source": null,
       "comparison_family": null,
       "peer_valuations": [],
       "etf_alternatives": [
@@ -2385,28 +2484,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 1.13
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -5.87
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 2.17
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -6.99
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -0.61,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 1.67,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -2488,44 +2587,44 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": 1.04
+          "return_63d_pct": -1.48,
+          "excess_return_pp": 2.47
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": 2.08
+          "return_63d_pct": -0.36,
+          "excess_return_pp": 1.35
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -0.42,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 1.86,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "airbus",
-      "ticker": "AIR.PA",
-      "company": "Airbus",
-      "sector": "Aerospace",
-      "currency": "EUR",
+      "id": "index-crh",
+      "ticker": "CRH",
+      "company": "CRH plc",
+      "sector": "Materials",
+      "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "B_watchlist",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
       "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
       "evidence_readiness": {
-        "value": 10,
+        "value": 25,
         "max": 100,
         "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
         "criteria": [
@@ -2536,7 +2635,7 @@
           },
           {
             "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
+            "ready": true,
             "points": 15
           },
           {
@@ -2564,7 +2663,7 @@
       "thesis": null,
       "counter_thesis": null,
       "thesis_invalidated": false,
-      "why_now": null,
+      "why_now": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
       "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
       "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
       "financials": {},
@@ -2576,39 +2675,51 @@
         "Nachvollziehbare künftige Cashflows",
         "Bewertung mit Sicherheitsspanne"
       ],
-      "editorial_source": null,
+      "editorial_source": {
+        "title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
+        "date": "2026-11-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm"
+      },
       "primary_source_urls": [],
-      "original_idea_source": null,
+      "original_idea_source": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
       "comparison_family": null,
       "peer_valuations": [],
       "etf_alternatives": [
         {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -7.2
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.58,
+          "excess_return_pp": 0.95
         },
         {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -6.16
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.97,
+          "excess_return_pp": 0.34
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -10.42,
+          "excess_return_pp": 5.79
         }
       ],
       "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
+        "first_seen": "2026-11-05",
+        "last_session": "2026-11-05",
         "adjusted_return_pct": 0.0,
         "benchmark_return_pct": 0.0,
         "relative_to_benchmark_pp": 0.0,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+        "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -3328,28 +3439,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -14.16
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -11.74
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -13.12
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -12.86
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": 0.58,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 2.86,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -4268,28 +4379,127 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -21.47
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -21.86
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -20.43
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -22.98
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -2.12,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 0.16,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "telekom",
+      "ticker": "DTE.DE",
+      "company": "Deutsche Telekom",
+      "sector": "Telecom",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -5.28
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -6.4
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -2.09,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": 0.19,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -4466,18 +4676,18 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "telekom",
-      "ticker": "DTE.DE",
-      "company": "Deutsche Telekom",
-      "sector": "Telecom",
-      "currency": "EUR",
+      "id": "index-rddt",
+      "ticker": "RDDT",
+      "company": "Reddit",
+      "sector": "Communication Services",
+      "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "C_screen_only",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
       "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
       "evidence_readiness": {
-        "value": 10,
+        "value": 25,
         "max": 100,
         "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
         "criteria": [
@@ -4488,7 +4698,7 @@
           },
           {
             "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
+            "ready": true,
             "points": 15
           },
           {
@@ -4516,7 +4726,7 @@
       "thesis": null,
       "counter_thesis": null,
       "thesis_invalidated": false,
-      "why_now": null,
+      "why_now": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
       "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
       "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
       "financials": {},
@@ -4528,39 +4738,51 @@
         "Nachvollziehbare künftige Cashflows",
         "Bewertung mit Sicherheitsspanne"
       ],
-      "editorial_source": null,
+      "editorial_source": {
+        "title": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
+        "date": "2026-11-06",
+        "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx"
+      },
       "primary_source_urls": [],
-      "original_idea_source": null,
+      "original_idea_source": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
       "comparison_family": null,
       "peer_valuations": [],
       "etf_alternatives": [
         {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -8.73
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.58,
+          "excess_return_pp": -36.41
         },
         {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -7.69
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.97,
+          "excess_return_pp": -37.02
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -10.42,
+          "excess_return_pp": -31.57
         }
       ],
       "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
+        "first_seen": "2026-11-05",
+        "last_session": "2026-11-05",
         "adjusted_return_pct": 0.0,
         "benchmark_return_pct": 0.0,
         "relative_to_benchmark_pp": 0.0,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+        "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -4642,127 +4864,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -23.08
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -24.88
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -22.04
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -26.0
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -4.7,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": -2.42,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "asml",
-      "ticker": "ASML.AS",
-      "company": "ASML",
-      "sector": "Semiconductor Equipment",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "C_screen_only",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -11.53
-        },
-        {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -10.49
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -4871,128 +4994,29 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -15.09
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -13.01
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -14.05
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -14.13
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.06,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.06,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -2.58,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": -0.3,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Nächste Quartale: neuer Auftragseingang ITS, IAS-Marge, Working Capital und Finanzierungs-Bridge.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "rheinmetall",
-      "ticker": "RHM.DE",
-      "company": "Rheinmetall",
-      "sector": "Defense",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "C_screen_only",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -13.35
-        },
-        {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -12.31
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      },
-      "radar_asof": "2026-11-04",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
@@ -5210,6 +5234,105 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
+      "id": "asml",
+      "ticker": "ASML.AS",
+      "company": "ASML",
+      "sector": "Semiconductor Equipment",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -15.84
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -16.96
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -6.55,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": -4.27,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
       "id": "caterpillar",
       "ticker": "CAT",
       "company": "Caterpillar",
@@ -5313,105 +5436,6 @@
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
       "radar_asof": "2026-11-05",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "infineon",
-      "ticker": "IFX.DE",
-      "company": "Infineon",
-      "sector": "Semiconductors",
-      "currency": "EUR",
-      "lifecycle": "active",
-      "radar_priority": "C_screen_only",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -19.95
-        },
-        {
-          "id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -18.91
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      },
-      "radar_asof": "2026-11-04",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -5523,6 +5547,105 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
+      "id": "infineon",
+      "ticker": "IFX.DE",
+      "company": "Infineon",
+      "sector": "Semiconductors",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -25.04
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -26.16
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -8.54,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": -6.26,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
       "id": "aixtron",
       "ticker": "AIXA.DE",
       "company": "AIXTRON SE",
@@ -5620,28 +5743,28 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": 0.88,
-          "excess_return_pp": -20.9
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -27.03
         },
         {
           "id": "EXSA",
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -0.16,
-          "excess_return_pp": -19.86
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -28.15
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-04",
-        "adjusted_return_pct": 0.28,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.28,
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -9.57,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": -7.29,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
-      "radar_asof": "2026-11-04",
+      "radar_asof": "2026-11-05",
       "next_review": "Backlog in Umsatz und FCF überführen, Margen und Kundenmix prüfen; danach DCF- und Multiples-Modell.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -6199,6 +6322,105 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
+      "id": "rheinmetall",
+      "ticker": "RHM.DE",
+      "company": "Rheinmetall",
+      "sector": "Defense",
+      "currency": "EUR",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.48,
+          "excess_return_pp": -24.85
+        },
+        {
+          "id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.36,
+          "excess_return_pp": -25.97
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-05",
+        "adjusted_return_pct": -16.14,
+        "benchmark_return_pct": -2.28,
+        "relative_to_benchmark_pp": -13.86,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      },
+      "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
       "id": "profile-byw-mu",
       "ticker": "BYW.MU",
       "company": "BayWa AG",
@@ -6268,162 +6490,6 @@
       },
       "primary_source_urls": [],
       "original_idea_source": "https://www.eqs-news.com/company/baywa-ag/news/5b74ed9f-ea7c-11e8-902f-2c44fd856d8c",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-05",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "index-crh",
-      "ticker": "CRH",
-      "company": "CRH plc",
-      "sector": "Materials",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
-        "date": "2026-11-06",
-        "url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [],
-      "relative_performance": null,
-      "radar_asof": "2026-11-05",
-      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "index-rddt",
-      "ticker": "RDDT",
-      "company": "Reddit",
-      "sector": "Communication Services",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "insufficient_data",
-      "research_stage": "editorial_screen",
-      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 25,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": {
-        "title": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
-        "date": "2026-11-06",
-        "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx"
-      },
-      "primary_source_urls": [],
-      "original_idea_source": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
       "comparison_family": null,
       "peer_valuations": [],
       "etf_alternatives": [],
