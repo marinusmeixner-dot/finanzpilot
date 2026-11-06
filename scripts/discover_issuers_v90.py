@@ -91,7 +91,7 @@ def completed_quote_check(ticker,history,day):
         except (TypeError,ValueError,AttributeError):continue
         if asof>=today or not (0<v<1000000):continue
         points.append((asof,v))
-    return len(points)>=20 and (today-max(d for d,_ in points)).days<=8
+    return len({d for d,_ in points})>=20 and (today-max(d for d,_ in points)).days<=8
 
 def select_additions(universe,index,day,quote_ok,max_new=MAX_PER_DATE):
     existing_today=sum(1 for x in universe.get("equities",[])
