@@ -5,34 +5,28 @@
   "index_rows": 500,
   "new_companies": [
     {
-      "ticker": "OKTA",
-      "company": "Okta, Inc.",
-      "sector": "Information Technology",
-      "cik": "0001660134"
+      "ticker": "RDDT",
+      "company": "Reddit",
+      "sector": "Communication Services",
+      "cik": "0001713445"
     },
     {
-      "ticker": "ILMN",
-      "company": "Illumina, Inc.",
-      "sector": "Health Care",
-      "cik": "0001110803"
+      "ticker": "CRH",
+      "company": "CRH plc",
+      "sector": "Materials",
+      "cik": "0000849395"
     }
   ],
-  "already_known": 47,
-  "total_universe": 49,
-  "quote_checks": 8,
+  "already_known": 49,
+  "total_universe": 51,
+  "quote_checks": 2,
   "quote_failures": [
-    "OKTA",
-    "ILMN",
     "RDDT",
-    "ECHO",
-    "CRH",
-    "CVNA",
-    "ARES",
-    "APP"
+    "CRH"
   ],
   "quote_crosschecked_added": 0,
   "quote_pending_added": 2,
-  "total_quote_pending": 2,
+  "total_quote_pending": 4,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }
