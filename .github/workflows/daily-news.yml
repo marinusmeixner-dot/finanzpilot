@@ -1,4 +1,4 @@
-name: FinanzPilot – Quellen-Inbox und Schlusskurse
+name: FinanzPilot – Firmenentdeckung, News-Inbox und Schlusskurse
 on:
   push:
     branches: [main]
