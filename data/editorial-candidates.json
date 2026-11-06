@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T00:14:30.157851Z",
+  "updated_at": "2026-11-06T06:50:33.593343Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-392dbb70a2d999375d",
+      "title": "Marktbericht: Aus Wahleuphorie wird Wahlkater",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-nasdaq-wall-street-100.html",
+      "published_at": "2026-11-06T06:26:17Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-77ad52cec0f8a0830b",
       "title": "Nasdaq drops into correction territory — here’s what typically happens next",
@@ -406,15 +415,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/binance-kundengelder-100.html",
       "published_at": "2026-11-02T08:59:47Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-94a74c5c97f1e3b413",
-      "title": "IG Metall weitet im Tarifstreit Warnstreiks aus",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ig-metall-warnstreiks-120.html",
-      "published_at": "2026-11-02T02:15:40Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
