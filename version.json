@@ -1,5 +1,5 @@
 {
-  "version": 89,
-  "release": "2026-11-05-v89",
-  "notes": "Dynamischer Aktienradar (mindestens 54 Unternehmen) mit quellengestützter Research-Warteschlange, aktuellen Unternehmensanlässen, drei konkreten nächsten Prüfschritten, ETFs/Peers, begründeter Investmentprüfung und langfristigem Thesen-/Benchmark-Vergleich. Technische Signale sind nicht Kaufempfehlungen. Stündlicher Rechercheprozess und tägliche Kurshistorien-Aktualisierung bleiben getrennt von redaktionell bestätigten Meldungen."
+  "version": 90,
+  "release": "2026-11-06-v90",
+  "notes": "Marktradarsuche jetzt über unabhängiges S&P-500-Firmenverzeichnis plus SEC-CIK und eigene Kursprüfung, mit klar gekennzeichneten quote-pending Neuzugängen; neue Rubrik Neu entdeckt. Reparierter Destatis-RSS-Feed, stündliche Quote-Frischeprüfung mit begrenzten Provider-Retries, bestehende stündliche FinanzPilot-Redaktion ergänzt. Keine automatische Kaufwertung, keinerlei Änderungen an privaten Depots oder Lernständen."
 }
