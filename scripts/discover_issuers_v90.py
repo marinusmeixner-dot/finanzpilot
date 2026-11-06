@@ -95,32 +95,42 @@ def completed_quote_check(ticker,history,day):
 
 def select_additions(universe,index,day,quote_ok,max_new=MAX_PER_DATE):
     existing_today=sum(1 for x in universe.get("equities",[])
-      if x.get("discovery_date")==day.isoformat() and x.get("discovery_class")=="secondary_index_quote_crosscheck")
+      if x.get("discovery_date")==day.isoformat() and str(x.get("discovery_class","")).startswith("secondary_index_"))
+    # If the quote vendor is blocked, do not flood the radar with hundreds of
+    # unconfirmed index securities. Keep at most 24 total quote-pending issuers.
+    pending_total=sum(1 for x in universe.get("equities",[]) if x.get("discovery_class")=="secondary_index_quote_pending")
     budget=max(0,min(max_new,MAX_PER_DATE-existing_today))
-    selected=[];attempts=0;failed=[]
+    selected=[];attempts=0;failed=[];pending_added=0
     if not budget:return selected,attempts,failed
-    # Attempt a few extra tickers if a provider endpoint fails.
+    # Never allow Yahoo rate limits to block independent index discovery.
+    # A *small* fallback can enter as clearly unverified quote-pending names.
+    # This avoids fake price signals and protects the existing nine dossiers.
+    fallback_budget=min(2,max(0,24-pending_total))
     for item in shortlist(index,universe,day):
-        if len(selected)>=budget or attempts>=max(14,budget*6):break
-        # Allow scanning the complete catalogue to obtain sector diversity,
-        # but cap the number of expensive remote quote checks.
+        if len(selected)>=budget or attempts>=max(8,budget*2):break
         if any(x["sector"]==item["sector"] for x in selected):continue
         attempts+=1
+        verified=False
         try:
-            if not quote_ok(item["ticker"]):
-                failed.append(item["ticker"])
-                continue
+            verified=bool(quote_ok(item["ticker"]))
         except Exception:
+            pass
+        if not verified:
             failed.append(item["ticker"])
-            continue
+            if pending_added>=fallback_budget:continue
+            pending_added+=1
         selected.append({
            "id":"index-"+item["ticker"].lower(),
            "ticker":item["ticker"],
            "company":item["company"],
            "sector":item["sector"],
            "currency":"USD","country":"US","market":"US","benchmark_id":"ACWI",
-           "discovery_class":"secondary_index_quote_crosscheck",
-           "verification":"S&P 500 constituent from a secondary catalogue plus observed historical trading; company fundamentals and catalyst NOT audited",
+           "discovery_class":"secondary_index_quote_crosscheck" if verified else "secondary_index_quote_pending",
+           "verification":("S&P 500 membership catalogue with SEC CIK and secondary completed history;"
+                " fundamental thesis NOT audited" if verified else
+                "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation"
+                " NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis"),
+           "quote_crosschecked":verified,
            "cik":item["cik"],
            "index_added":item["index_added"],
            "discovery_date":day.isoformat(),
@@ -135,8 +145,9 @@ def build(universe,index,day,quote_ok):
     result={**universe,"equities":[*universe["equities"],*selected]}
     result["universe_policy"]=(
        "Offenes Startuniversum, kein fixes Renditeranking. Neue liquide US-Firmen dürfen "
-       "aus dem datierten externen S&P-500-Mitgliedsverzeichnis nach einem zweiten "
-       "historischen Kurs-Nachweis aufgenommen werden (maximal vier pro Berliner Tag); "
+       "aus einem datierten externen S&P-500-Verzeichnis mit CIK aufgenommen werden (maximal vier "
+       "pro Berliner Tag); Kursvergleich separat nachführen und bei Provider-Ausfall "
+       "höchstens 24 ungeprüfte Börsenkurs-Kandidaten zulassen; "
        "Europa- und Spezialwerte stammen weiterhin aus verifizierten Profilen/Artikeln. "
        "Indexaufnahme und Kursmuster bedeuten KEIN bestätigtes Geschäftsmodell, "
        "Unterbewertung oder Investmenturteil. Bei Quellenfehlern alte Daten erhalten.")
@@ -145,8 +156,11 @@ def build(universe,index,day,quote_ok):
         "company":x["company"],"sector":x["sector"],"cik":x["cik"]} for x in selected],
       "already_known":len(universe["equities"]),"total_universe":len(result["equities"]),
       "quote_checks":attempts,"quote_failures":failed[:12],
-      "source_status":"secondary_index_and_price_crosschecked",
-      "warning":"Keine Primärquellen-Unternehmensanalyse, keine Kaufaussage; neu aufgenommene Firmen sind unbewertete Screening-Kandidaten."}
+      "quote_crosschecked_added":sum(1 for x in selected if x["quote_crosschecked"]),
+      "quote_pending_added":sum(1 for x in selected if not x["quote_crosschecked"]),
+      "total_quote_pending":pending_total+sum(1 for x in selected if not x["quote_crosschecked"]),
+      "source_status":"secondary_index_with_explicit_quote_audit_status",
+      "warning":"Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."}
     return result,stats
 
 def main():
