@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_at": "2026-11-03",
-  "verified_at": "2026-11-03",
+  "verified_at": "2026-11-06",
   "coverage_policy": "Zahlen ausschließlich aus tatsächlich publizierten Finanzberichten/Investor-Relations-Primärquellen; Berichtsperioden getrennt; alle im Stand überprüften Kennzahlen nach Kategorien. Nicht verifizierte Positionen bleiben unbekannt. Vollständige Berichte enthalten zudem Anhangs-/Detailpositionen; die App erfindet keine Zahlen.",
   "companies": [
     {
@@ -378,7 +378,7 @@
           "note": "Nicht identisch mit bereinigtem EBITDA."
         }
       ],
-      "assessment": "Bayer meldet für Q3 2026 mehr Umsatz und steigendes bereinigtes EBITDA, jedoch ein negatives Konzern-EBIT, einen Konzernverlust und negativen Free Cashflow. Die Prognose für Cashflow und Nettofinanzschulden wurde verbessert, bleibt aber mit negativem Jahres-Free-Cashflow verbunden. Ein positiver operativer Trend ist noch kein Beleg für nachhaltig freie Zahlungsmittel; Bayer nennt insbesondere Vergleichszahlungen und Sondereinflüsse. Der Q2-2026-Detailbericht bleibt in ausdrücklich gekennzeichneten Archivabschnitten einsehbar.",
+      "assessment": "Bayer meldet für Q3 2026 mehr Umsatz und steigendes bereinigtes EBITDA, jedoch ein negatives Konzern-EBIT, einen Konzernverlust und negativen Free Cashflow. Die Prognose für Cashflow und Nettofinanzschulden wurde verbessert, bleibt aber mit negativem Jahres-Free-Cashflow verbunden. Ein positiver operativer Trend ist noch kein Beleg für nachhaltig freie Zahlungsmittel; Bayer nennt insbesondere Vergleichszahlungen und Sondereinflüsse. Der Q2-2026-Detailbericht bleibt in ausdrücklich gekennzeichneten Archivabschnitten einsehbar. Die detaillierte Q3-Kapitalflussrechnung weist 631 Mio. € operativen Cashflow (Vorjahr 1.685 Mio. €) und 1.121 Mio. € Nettozahlungen für Rechtsstreitigkeiten (Vorjahr 703 Mio. €) aus. Der Apollo-Zufluss ist keine operative Cashflow-Verbesserung.",
       "risks": [
         "Künftige Zahlungen und Rückstellungen aus Rechtsstreitigkeiten",
         "Nettoverschuldung, Refinanzierung und Abhängigkeit von Einmaltransaktionen",
@@ -506,6 +506,16 @@
           "description": "Free Cashflow ist eine Zahlungsgröße im Quartal; Nettofinanzschulden sind eine Bestandsgröße zum Bilanzstichtag.",
           "metrics": [
             {
+              "label": "Operativer Cashflow",
+              "value": 631,
+              "previous": 1685,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Original-Kapitalflussrechnung Q3 2026; durch Rechtsstreit-Zahlungen belastet. Nicht mit Free Cashflow oder Apollo-Finanzierungseingang gleichsetzen."
+            },
+            {
               "label": "Free Cashflow",
               "value": -293,
               "unit": "Mio. €",
@@ -540,6 +550,16 @@
               "period": "Q3 2026",
               "kind": "reported",
               "note": "Einmalige Finanz-/Transaktionskomponente laut Bayer, nicht aus operativem Verkaufsgeschäft"
+            },
+            {
+              "label": "Nettozahlungen für Rechtsstreitigkeiten",
+              "value": 1121,
+              "previous": 703,
+              "unit": "Mio. €",
+              "period": "Q3 2026",
+              "previous_period": "Q3 2025",
+              "kind": "reported",
+              "note": "Zahlungsabflüsse, darunter Glyphosat-/PCB-Verfahren; positive Beträge bezeichnen die Höhe des Abflusses, nicht einen Zufluss."
             }
           ]
         },
@@ -1187,7 +1207,7 @@
           ]
         }
       ],
-      "verified_at": "2026-11-03",
+      "verified_at": "2026-11-06",
       "report_scope": "quartalsmitteilung_q3_2026_mit_archiv_q2_2026",
       "completeness": "umfangreich_quellenbasiert",
       "sources": [
@@ -1202,6 +1222,10 @@
         {
           "title": "Kapitalflussrechnung des Bayer-Konzerns",
           "url": "https://reports.bayer.com/halbjahresfinanzbericht-q2-2026/de/verkuerzter-konzernzwischenabschluss/verkuerzte-kapitalflussrechnung.html"
+        },
+        {
+          "title": "Bayer Q3 2026 – Original-Kapitalflussrechnung",
+          "url": "https://reports.bayer.com/quarterly-statement-q3-2026/en/financial-position/statement-of-cash-flows.html"
         }
       ],
       "report_overview": {
