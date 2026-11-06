@@ -27,7 +27,7 @@ function sourceContext(c){
   const e=c.editorial_evidence;
   return '<div class="fp86-source"><strong>Veröffentlichte FinanzPilot-Recherche · '+esc(e.date||'Datum prüfen')+'</strong><p>'+esc(e.title||'Unternehmensmeldung')+'</p>'+link(e.url,'Originalquelle des Artikels')+'</div>';
  }
- if(c.origin==='secondary_index_quote_crosscheck')return '<div class="fp86-source fp86-unproven"><strong>Neue Indexfirma – unabhängig von bisherigen FinanzPilot-Ideen entdeckt</strong><p>Die Firma wurde über einen extern gepflegten S&amp;P-500-Mitgliedsbestand und eine zweite historische Kursquelle als möglicher Börsentitel eingeordnet. <strong>Indexmitgliedschaft ist keine Unternehmenseinschätzung.</strong> Ein aktueller Geschäftsbericht, wirtschaftlicher Anlass, Liquidität und Bewertung müssen noch unabhängig geprüft werden.</p><small>Erfassungsdatum '+esc(c.discovery_date||'unbekannt')+'</small>'+link(c.discovery_source_url,'Quelle der Indexmitgliedschaft')+'</div>';
+ if(['secondary_index_quote_crosscheck','secondary_index_quote_pending'].includes(c.origin))return '<div class="fp86-source fp86-unproven"><strong>Neue Indexfirma – unabhängig von der bisherigen Watchlist entdeckt</strong><p>Ein extern gepflegtes S&amp;P-500-Mitgliedsverzeichnis nennt dieses Unternehmen samt SEC-Firmenkennung. '+(c.origin==='secondary_index_quote_pending'?'<strong>Historischer Börsenkurs und Identitätsabgleich sind wegen fehlender Anbieterbestätigung noch offen.</strong>':'Zusätzlich liegt eine abgeschlossene Historie des Börsenkurses vor.')+' <strong>Indexmitgliedschaft bedeutet keine fundamentale Kaufchance.</strong> Geschäftsbericht, Katalysator, Liquidität und Bewertung müssen unabhängig geprüft werden.</p><small>Erfasst am '+esc(c.discovery_date||'unbekannt')+'</small>'+link(c.discovery_source_url,'Sekundärquelle zur Indexmitgliedschaft')+'</div>';
  return '<div class="fp86-source fp86-unproven"><strong>Unternehmens-Katalysator noch nicht belegt</strong><p>Der Algorithmus hat bislang nur eine Marktkurs-Konstellation identifiziert. Ohne Unternehmensbericht, Ergebnis- oder Auftragsdaten entsteht daraus keine Investmentthese.</p></div>';
 }
 function perf(c){
@@ -43,6 +43,7 @@ function perf(c){
 function sourceTag(c){
  if(c.editorial_evidence)return Number.isFinite(c.editorial_age_days)&&c.editorial_age_days>35?
   'Älterer redaktioneller Anlass – neue Zahlen prüfen':'Nachvollziehbarer redaktioneller Anlass';
+ if(c.origin==='secondary_index_quote_pending')return 'Neu aus Indexuniversum – Kursdaten noch ungeprüft';
  if(c.origin==='secondary_index_quote_crosscheck')return 'Neu aus externem Indexuniversum – Fundamentalanalyse offen';
  return c.unverified_discovery_hint?'Ungeprüfter Hinweis – keine Investmentthese':'Noch kein belegter Unternehmensanlass';
 }
@@ -95,7 +96,7 @@ function history(c){
  '</section>';
 }
 function rowsForView(){
- if(view==='new')return candidates.filter(c=>c.origin==='secondary_index_quote_crosscheck'&&c.lifecycle!=='archived').slice().sort((a,b)=>String(b.discovery_date||'').localeCompare(String(a.discovery_date||'')));
+ if(view==='new')return candidates.filter(c=>String(c.origin||'').startsWith('secondary_index_')&&c.lifecycle!=='archived').slice().sort((a,b)=>String(b.discovery_date||'').localeCompare(String(a.discovery_date||'')));
  if(view==='all')return candidates.filter(x=>x.lifecycle!=='archived');
  if(view==='tracked')return candidates.filter(x=>tracked.has(x.id));
  if(view==='archived')return candidates.filter(x=>x.lifecycle==='archived');
@@ -180,7 +181,7 @@ async function load(force=false){
   benchmarkInfo=radar.benchmark_universe||[];
   meta={total_issuers:radar.total_issuers,with_price_history:radar.with_price_history,
     research_priority_count:radar.research_priority_count,missing_quote_count:radar.missing_quote_count,asof:radar.asof,
-    newly_discovered_count:candidates.filter(x=>x.origin==='secondary_index_quote_crosscheck').length};
+    newly_discovered_count:candidates.filter(x=>String(x.origin||'').startsWith('secondary_index_')).length};
   loaded=true;error='';
  }catch(e){error=String(e.message||e);console.warn('Dynamic research radar:',e)}
  finally{busy=false;if(typeof state!=='undefined'&&['marketideas','marketidea','home'].includes(state.view))window.render?.()}
