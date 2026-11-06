@@ -83,8 +83,11 @@ class DiscoveryTests(unittest.TestCase):
         self.assertTrue(all(x["discovery_class"]=="secondary_index_quote_pending" and not x["quote_crosschecked"]
             for x in no["equities"][1:]),"Pending quotes must NEVER masquerade as verified stock listings")
         again,next_meta=mod.build(no,self.records,self.day,lambda ticker: False)
-        self.assertEqual(len(again["equities"]),3,"Quote-pending daily cap must prevent repeated false promotions")
-        self.assertEqual(next_meta["new_companies"],[])
+        self.assertEqual(len(again["equities"]),5,"Second check may fill the same four-per-day quota")
+        self.assertEqual(len(next_meta["new_companies"]),2)
+        third,last_meta=mod.build(again,self.records,self.day,lambda ticker: False)
+        self.assertEqual(len(third["equities"]),5,"A third daily check cannot exceed the daily cap")
+        self.assertEqual(last_meta["new_companies"],[])
     def test_real_quote_window_cannot_include_today_or_fake_one_candle(self):
         pts=[(self.day-dt.timedelta(days=i),100+i) for i in range(1,32)]
         self.assertTrue(mod.completed_quote_check("CABC",pts,self.day))
