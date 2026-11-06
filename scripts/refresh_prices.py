@@ -72,7 +72,7 @@ def from_timedelta(days):
     from datetime import timedelta
     return timedelta(days=days)
 
-def price_refresh_due(data, now, min_retry_hours=4):
+def price_refresh_due(data, now, min_retry_hours=4, universe=None):
     """Quick hourly check; download full price history only when yesterday's
     completed U.S. session is missing. Holidays retry with a cooldown."""
     target=completed_us_session_day(now).isoformat()
@@ -81,7 +81,11 @@ def price_refresh_due(data, now, min_retry_hours=4):
     anchor=assets.get("SPY",{})
     if anchor.get("ticker")!="SPY":
         anchor=next((x for x in assets.values() if x.get("ticker")=="SPY"),{})
-    if anchor.get("asof","")>=target:
+    tracked={str(x.get('ticker','')).upper() for x in (universe or {}).get('equities',[]) if x.get('ticker')}
+    provider={str(x.get('ticker','')).upper() for x in assets.values() if isinstance(x,dict)}
+    missing=tracked-provider
+    # Newly verified members must receive a history even if the main ETF is current.
+    if not missing and anchor.get("asof","")>=target:
         return False
     try:
         last=datetime.fromisoformat(str(data.get("last_price_attempt_at","")).replace("Z","+00:00"))
@@ -101,7 +105,7 @@ def main():
     except (OSError,ValueError):
         universe={"equities":[],"benchmarks":[]}
     now=datetime.now(timezone.utc)
-    if not price_refresh_due(result,now):
+    if not price_refresh_due(result,now,universe=universe):
         print('HOURLY PRICE AUDIT: latest complete U.S. session is already present, or provider retry cooldown; no quote fetch necessary.')
         return
     result['last_price_attempt_at']=now.isoformat()
