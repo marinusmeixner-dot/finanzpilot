@@ -158,7 +158,7 @@ def build(universe,index,day,quote_ok):
       "quote_checks":attempts,"quote_failures":failed[:12],
       "quote_crosschecked_added":sum(1 for x in selected if x["quote_crosschecked"]),
       "quote_pending_added":sum(1 for x in selected if not x["quote_crosschecked"]),
-      "total_quote_pending":pending_total+sum(1 for x in selected if not x["quote_crosschecked"]),
+      "total_quote_pending":sum(1 for x in result["equities"] if x.get("discovery_class")=="secondary_index_quote_pending"),
       "source_status":"secondary_index_with_explicit_quote_audit_status",
       "warning":"Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."}
     return result,stats
