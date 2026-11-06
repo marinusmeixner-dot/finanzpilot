@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T09:56:36.993974Z",
+  "updated_at": "2026-11-06T11:04:30.893316Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-8bf2f63b7747d5d71c",
+      "title": "Industrieproduktion wächst überraschend - Autobranche legt zu",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/industrieproduktion-wachstum-deutschland-100.html",
+      "published_at": "2026-11-06T10:42:54Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-63646e57298fbf9d8f",
+      "title": "Paraguay: Die Bankenkrise wird zur Staatskrise",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/amerika/paraguay-pena-ruecktritt-ueno-bank-100.html",
+      "published_at": "2026-11-06T09:29:54Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-d76938ffcacf8e4d34",
       "title": "Daimler Truck meldet deutlichen Gewinnsprung wegen USA-Geschäft",
