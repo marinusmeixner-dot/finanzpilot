@@ -333,6 +333,9 @@ def build_radar(root=ROOT):
            if m["status"]=="history_available" else
            "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen."),
          "risks":idea.get("counter") if idea else None,
+         "discovery_source_url":entry.get("discovery_source_url"),
+         "discovery_date":entry.get("discovery_date"),
+         "issuer_identity_status":entry.get("verification"),
          "research_disclaimer":"Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung."})
     candidates.sort(key=priority_sort)
     # Sector caps for the front-page queue; the complete universe remains accessible.
