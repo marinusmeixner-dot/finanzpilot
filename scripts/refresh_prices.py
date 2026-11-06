@@ -60,8 +60,38 @@ def usable_history(rows,ticker,now=None):
         result[d.isoformat()]=round(val,5)
     return [{"d":d,"c":result[d]} for d in sorted(result)][-300:]
 
+def completed_us_session_day(now):
+    """Last eligible session date for an intentionally one-day-delayed daily bar."""
+    ny=now.astimezone(ZoneInfo("America/New_York")).date()
+    d=ny-from_timedelta(1)
+    while d.weekday()>=5:
+        d=d-from_timedelta(1)
+    return d
+
+def from_timedelta(days):
+    from datetime import timedelta
+    return timedelta(days=days)
+
+def price_refresh_due(data, now, min_retry_hours=4):
+    """Quick hourly check; download full price history only when yesterday's
+    completed U.S. session is missing. Holidays retry with a cooldown."""
+    target=completed_us_session_day(now).isoformat()
+    assets=data.get("assets") or {}
+    # Large-index benchmark is more reliable than a thinly traded stock.
+    anchor=assets.get("SPY",{})
+    if anchor.get("ticker")!="SPY":
+        anchor=next((x for x in assets.values() if x.get("ticker")=="SPY"),{})
+    if anchor.get("asof","")>=target:
+        return False
+    try:
+        last=datetime.fromisoformat(str(data.get("last_price_attempt_at","")).replace("Z","+00:00"))
+        if last.tzinfo is None:return True
+        hours=(now-last).total_seconds()/3600
+        if 0<=hours<min_retry_hours:return False
+    except (ValueError,TypeError):pass
+    return True
+
 def main():
-    import yfinance as yf
     try:
         result=json.loads(OUT.read_text(encoding="utf-8"))
     except (OSError,ValueError):
@@ -70,6 +100,12 @@ def main():
         universe=json.loads(UNIVERSE.read_text(encoding="utf-8"))
     except (OSError,ValueError):
         universe={"equities":[],"benchmarks":[]}
+    now=datetime.now(timezone.utc)
+    if not price_refresh_due(result,now):
+        print('HOURLY PRICE AUDIT: latest complete U.S. session is already present, or provider retry cooldown; no quote fetch necessary.')
+        return
+    result['last_price_attempt_at']=now.isoformat()
+    import yfinance as yf
     import scan_research as screen
     profiles=json.loads((ROOT/"data/company-profiles-v82.json").read_text(encoding="utf-8")) if (ROOT/"data/company-profiles-v82.json").exists() else {"companies":{}}
     curated=json.loads((ROOT/"data/ideas.json").read_text(encoding="utf-8")) if (ROOT/"data/ideas.json").exists() else {"ideas":[]}
@@ -121,7 +157,10 @@ def main():
         result["last_refresh_at"]=now.isoformat()
         OUT.write_text(json.dumps(result,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
     else:
-        print("No new fully closed daily data; file unchanged.")
+        # A dated failed/no-update audit prevents rapid repeat provider calls.
+        # Source values remain untouched, so stale quotes cannot masquerade as fresh.
+        OUT.write_text(json.dumps(result,ensure_ascii=False,separators=(",",":"))+"\n",encoding="utf-8")
+        print("HOURLY PRICE AUDIT: no new fully closed daily data; historical quotes preserved, retry after cooldown.")
 
 if __name__=="__main__":
     main()
