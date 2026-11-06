@@ -2,7 +2,7 @@
   "schema_version": 1,
   "created_at": "2026-11-05",
   "mandate": "Offene Kandidatenrecherche für langfristige Unternehmensanalyse; keine feste Liste von neun Titeln und kein Handelssystem.",
-  "universe_policy": "Die Liste ist ein Startuniversum, keine abschließende Marktabdeckung. Der Scanner ergänzt bekannte, verifizierte Ticker aus veröffentlichten FinanzPilot-Artikeln/Unternehmensprofilen. Neue Werte erhalten zuerst einen reinen Screening-Status. Verifizierte Primärberichte und angemessene Bewertung sind eigene Hürden.",
+  "universe_policy": "Offenes Startuniversum, kein fixes Renditeranking. Neue liquide US-Firmen dürfen aus einem datierten externen S&P-500-Verzeichnis mit CIK aufgenommen werden (maximal vier pro Berliner Tag); Kursvergleich separat nachführen und bei Provider-Ausfall höchstens 24 ungeprüfte Börsenkurs-Kandidaten zulassen; Europa- und Spezialwerte stammen weiterhin aus verifizierten Profilen/Artikeln. Indexaufnahme und Kursmuster bedeuten KEIN bestätigtes Geschäftsmodell, Unterbewertung oder Investmenturteil. Bei Quellenfehlern alte Daten erhalten.",
   "universe_sources": "Ticker-/Branchenuniversum als redaktionelle Suchliste. Branchenetiketten sind Einordnungen und kein Nachweis einer aktuellen positiven Investmentthese.",
   "equities": [
     {
@@ -568,6 +568,42 @@
       "benchmark_id": "VWCE",
       "discovery_class": "liquid_research_universe",
       "verification": "ticker_from_editorial_universe"
+    },
+    {
+      "id": "index-okta",
+      "ticker": "OKTA",
+      "company": "Okta, Inc.",
+      "sector": "Information Technology",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001660134",
+      "index_added": "2026-11-04",
+      "discovery_date": "2026-11-06",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-ilmn",
+      "ticker": "ILMN",
+      "company": "Illumina, Inc.",
+      "sector": "Health Care",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001110803",
+      "index_added": "2026-09-21",
+      "discovery_date": "2026-11-06",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
     }
   ],
   "benchmarks": [
