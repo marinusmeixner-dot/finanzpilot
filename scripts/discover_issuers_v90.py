@@ -100,8 +100,11 @@ def select_additions(universe,index,day,quote_ok,max_new=MAX_PER_DATE):
     selected=[];attempts=0;failed=[]
     if not budget:return selected,attempts,failed
     # Attempt a few extra tickers if a provider endpoint fails.
-    for item in shortlist(index,universe,day)[:max(14,budget*6)]:
-        if len(selected)>=budget:break
+    for item in shortlist(index,universe,day):
+        if len(selected)>=budget or attempts>=max(14,budget*6):break
+        # Allow scanning the complete catalogue to obtain sector diversity,
+        # but cap the number of expensive remote quote checks.
+        if any(x["sector"]==item["sector"] for x in selected):continue
         attempts+=1
         try:
             if not quote_ok(item["ticker"]):
@@ -109,9 +112,6 @@ def select_additions(universe,index,day,quote_ok,max_new=MAX_PER_DATE):
                 continue
         except Exception:
             failed.append(item["ticker"])
-            continue
-        if any(x["sector"]==item["sector"] for x in selected):
-            # Diversity: allow only one company per index sector per date.
             continue
         selected.append({
            "id":"index-"+item["ticker"].lower(),
