@@ -20,6 +20,8 @@ jobs:
         run: python -m unittest discover -s scripts -p "test_research_radar_v86.py" -v
       - name: "v88: Validate automatic discovery of new price symbols and full-session quote provenance"
         run: python -m unittest discover -s scripts -p "test_research_quote_refresh_v88.py" -v
+      - name: "v90: Check independent index issuer discovery, Yahoo quote identity and hourly freshness gate"
+        run: python -m unittest discover -s scripts -p "test_discover_issuers_v90.py" -v
       - name: "v89: Verify source-first dynamic opportunity triage and no fixed candidate limit"
         run: python -m unittest discover -s scripts -p "test_opportunity_queue_v89.py" -v
       - name: Validate JSON files
