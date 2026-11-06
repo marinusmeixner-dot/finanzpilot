@@ -6,6 +6,53 @@
   "lesson_id": "valuation",
   "stories": [
     {
+      "id": "2026-11-06-daimler-truck-q3-margin-cashflow",
+      "title": "Daimler Truck: Gewinnsprung im Quartal – aber wie nachhaltig ist der Cashflow?",
+      "published": "2026-11-06",
+      "category": "Unternehmen",
+      "symbols": [
+        "DTG.DE"
+      ],
+      "source": "Daimler Truck Holding AG, Q3-2026-Ergebnisse vom 06.11.2026",
+      "url": "https://www.daimlertruck.com/newsroom/pressemitteilung/daimler-truck-steigert-profitabilitaet-dank-sich-erholender-marktlage-53654175",
+      "why": "Das Industriegeschäft steigert Umsatz und Marge deutlich; ein Beteiligungsverkauf trägt zum hohen freien Cashflow bei.",
+      "impact": "Höhere Lkw-Auslieferungen können die Fixkostendeckung und Profitabilität verbessern. Für eine Bewertung muss der einmalige ARCHION-Verkaufseffekt vom wiederkehrenden operativen Cashflow getrennt werden; neun Monate zeigen weiterhin Ergebnisdruck.",
+      "article": {
+        "lead": "Daimler Truck Holding AG (Frankfurter Börse: DTG) baut und verkauft Lastwagen und Busse, unter anderem unter den Marken Mercedes-Benz und Freightliner. Speditionen, Flottenbetreiber und öffentliche Verkehrsbetriebe kaufen Fahrzeuge; daneben verdient der Konzern mit Dienstleistungen und Fahrzeugfinanzierungen Geld. Am 6. November 2026 meldete das Unternehmen deutlich bessere Ergebnisse für das dritte Quartal.",
+        "sections": [
+          {
+            "heading": "Was die neuen Zahlen belegen",
+            "paragraphs": [
+              "Der Umsatz des Industriegeschäfts stieg im dritten Quartal 2026 auf 11,635 Milliarden Euro, nach 9,695 Milliarden Euro im Vorjahresquartal. Das bereinigte Konzern-EBIT erhöhte sich von 648 auf 1.124 Millionen Euro. Die bereinigte Umsatzrendite des Industriegeschäfts stieg von 6,2 auf 9,1 Prozent.",
+              "Die Fahrzeugauslieferungen stiegen von 72.277 auf 91.260 Einheiten, die Auftragseingänge von 64.412 auf 71.168. Der Konzern bestätigt für 2026 eine bereinigte Umsatzrendite des Industriegeschäfts von 7 bis 9 Prozent. Das sind berichtete Unternehmensangaben, keine Kursprognose."
+            ]
+          },
+          {
+            "heading": "Nordamerika als wichtiger Ergebnistreiber",
+            "paragraphs": [
+              "Bei Trucks North America erhöhten sich die Auslieferungen von 30.225 auf 45.629 Fahrzeuge. Der Segmentumsatz stieg von 3,996 auf 5,704 Milliarden Euro, das bereinigte EBIT von 257 auf 691 Millionen Euro.",
+              "Die Entwicklung kann auf eine Erholung der Nachfrage und eine bessere Auslastung hindeuten. Ein Gegenargument: Im Neunmonatszeitraum lag das bereinigte Konzern-EBIT mit 2,460 Milliarden Euro noch unter den 2,748 Milliarden Euro des Vorjahres. Ein starkes Einzelquartal beweist keine dauerhafte Ertragswende."
+            ]
+          },
+          {
+            "heading": "Warum der freie Cashflow besonders sorgfältig gelesen werden muss",
+            "paragraphs": [
+              "Der freie Cashflow des Industriegeschäfts erreichte im Quartal 974 Millionen Euro nach 24 Millionen Euro ein Jahr zuvor. Daimler Truck nennt neben besserem Ergebnis ausdrücklich Erlöse aus dem Teilverkauf der ARCHION-Beteiligung als Unterstützung.",
+              "Ein Beteiligungsverkauf ist nicht gleichbedeutend mit regelmäßigem Geldzufluss aus Lkw-Verkäufen. Vor einer nachhaltigen Cashflow-Prognose müssen operative Mittelzuflüsse, Investitionen und Transaktionserlöse aus dem Zwischenbericht getrennt werden. Die hohe ausgewiesene Zahl darf nicht einfach viermal hochgerechnet werden."
+            ]
+          },
+          {
+            "heading": "Was das für eine Aktienanalyse bedeutet",
+            "paragraphs": [
+              "Mehr Absatz und bessere Margen können den künftigen Gewinn erhöhen. Dagegen stehen zyklische Transportnachfrage, Zölle, Produktionskosten, Finanzierung und mögliche Schwankungen im nordamerikanischen Markt. Auch die Finanzierungssparte muss getrennt von der industriellen Nettoliquidität betrachtet werden.",
+              "Als nächste Prüfungen bieten sich der detaillierte Q3-Zwischenbericht, Auftragseingänge der kommenden Quartale, bereinigte Cashflow-Qualität und der Abstand zwischen Markterwartungen und bestätigtem Jahresausblick an. Ohne verifizierten aktuellen Aktienkurs, Aktienzahl, Schuldenbrücke und normalisierte Cashflows lässt sich kein fairer Wert oder Kaufurteil ableiten."
+            ]
+          }
+        ],
+        "conclusion": "Daimler Truck zeigt im dritten Quartal eine deutliche operative Verbesserung. Für eine belastbare Investmentthese zählt nun, ob die Margenverbesserung anhält und wie viel Cashflow ohne einmalige Beteiligungserlöse übrig bleibt. Originalquelle: https://www.daimlertruck.com/newsroom/pressemitteilung/daimler-truck-steigert-profitabilitaet-dank-sich-erholender-marktlage-53654175"
+      }
+    },
+    {
       "id": "2026-11-06-crh-q3-guidance-cut-arcosa",
       "title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
       "published": "2026-11-06",
