@@ -27,6 +27,7 @@ function sourceContext(c){
   const e=c.editorial_evidence;
   return '<div class="fp86-source"><strong>Veröffentlichte FinanzPilot-Recherche · '+esc(e.date||'Datum prüfen')+'</strong><p>'+esc(e.title||'Unternehmensmeldung')+'</p>'+link(e.url,'Originalquelle des Artikels')+'</div>';
  }
+ if(c.origin==='secondary_index_quote_crosscheck')return '<div class="fp86-source fp86-unproven"><strong>Neue Indexfirma – unabhängig von bisherigen FinanzPilot-Ideen entdeckt</strong><p>Die Firma wurde über einen extern gepflegten S&amp;P-500-Mitgliedsbestand und eine zweite historische Kursquelle als möglicher Börsentitel eingeordnet. <strong>Indexmitgliedschaft ist keine Unternehmenseinschätzung.</strong> Ein aktueller Geschäftsbericht, wirtschaftlicher Anlass, Liquidität und Bewertung müssen noch unabhängig geprüft werden.</p><small>Erfassungsdatum '+esc(c.discovery_date||'unbekannt')+'</small>'+link(c.discovery_source_url,'Quelle der Indexmitgliedschaft')+'</div>';
  return '<div class="fp86-source fp86-unproven"><strong>Unternehmens-Katalysator noch nicht belegt</strong><p>Der Algorithmus hat bislang nur eine Marktkurs-Konstellation identifiziert. Ohne Unternehmensbericht, Ergebnis- oder Auftragsdaten entsteht daraus keine Investmentthese.</p></div>';
 }
 function perf(c){
@@ -42,6 +43,7 @@ function perf(c){
 function sourceTag(c){
  if(c.editorial_evidence)return Number.isFinite(c.editorial_age_days)&&c.editorial_age_days>35?
   'Älterer redaktioneller Anlass – neue Zahlen prüfen':'Nachvollziehbarer redaktioneller Anlass';
+ if(c.origin==='secondary_index_quote_crosscheck')return 'Neu aus externem Indexuniversum – Fundamentalanalyse offen';
  return c.unverified_discovery_hint?'Ungeprüfter Hinweis – keine Investmentthese':'Noch kein belegter Unternehmensanlass';
 }
 function catalyst(c){
