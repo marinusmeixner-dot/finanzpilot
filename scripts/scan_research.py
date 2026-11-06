@@ -317,9 +317,12 @@ def build_radar(root=ROOT):
         if archived:
             status="archived"
         alt=compare_to_benchmarks(m,info,universe.get("benchmarks",[]),provider)
+        new_index=entry.get("discovery_class")=="secondary_index_quote_pending"
+        effective_origin=("secondary_index_quote_crosscheck" if new_index and m.get("status")=="history_available"
+                          else entry.get("discovery_class","universe"))
         candidates.append({"id":entry["id"],"ticker":t,"company":entry["company"],
          "sector":entry.get("sector","Unbekannt"),"country":entry.get("country"),
-         "currency":m.get("currency"),"origin":entry.get("discovery_class","universe"),
+         "currency":m.get("currency"),"origin":effective_origin,
          "curated_id":entry.get("curated_id"),
          "has_curated_dossier":bool(idea),
          "lifecycle":"archived" if archived else "active",
