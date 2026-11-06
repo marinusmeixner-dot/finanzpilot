@@ -83,7 +83,7 @@ class DiscoveryTests(unittest.TestCase):
         pts=[(self.day-dt.timedelta(days=i),100+i) for i in range(1,32)]
         self.assertTrue(mod.completed_quote_check("CABC",pts,self.day))
         self.assertFalse(mod.completed_quote_check("CABC",[(self.day,100)]*30,self.day))
-        self.assertFalse(mod.completed_quote_check("CABC",[(self.day-dt.timedelta(days=30+i),100)]*25,self.day))
+        self.assertFalse(mod.completed_quote_check("CABC",[(self.day-dt.timedelta(days=30+i),100) for i in range(25)],self.day))
     def test_price_refresh_works_after_day_rollover_and_for_new_issuers(self):
         now=dt.datetime(2026,11,6,9,tzinfo=dt.timezone.utc)
         self.assertEqual(price.completed_us_session_day(now),dt.date(2026,11,5))
