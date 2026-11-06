@@ -5,6 +5,8 @@ on:
     paths:
       - '.github/workflows/daily-news.yml'
       - 'scripts/refresh_news.py'
+      - 'scripts/discover_issuers_v90.py'
+      - 'scripts/test_discover_issuers_v90.py'
       - 'scripts/scan_research.py'
       - 'scripts/build_opportunity_queue_v89.py'
       - 'scripts/test_opportunity_queue_v89.py'
@@ -43,14 +45,15 @@ jobs:
           python-version: '3.12'
       - name: Collect unverified RSS candidates (never overwrite editorial)
         run: python scripts/refresh_news.py
-      - name: Free historical daily close prices (not intraday)
-        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.schedule == '25 6 * * *'
+      - name: Install best-effort public market data adapter for issuer identity checks
+        run: python -m pip install --quiet yfinance
+      - name: Discover independently sourced, formerly unknown public index companies
         continue-on-error: true
-        run: |
-          python -m pip install --quiet yfinance
-          python scripts/refresh_prices.py
-      - name: Refresh only verified completed, unadjusted regular-session closes in issuer valuation snapshots
-        if: github.event_name == 'workflow_dispatch' || github.event_name == 'push' || github.event.schedule == '25 6 * * *'
+        run: python scripts/discover_issuers_v90.py
+      - name: Hourly check of finished daily price bars (fetch only when the data is stale)
+        continue-on-error: true
+        run: python scripts/refresh_prices.py
+      - name: Check dated raw closing prices for researched stocks after source refresh
         continue-on-error: true
         run: python scripts/refresh_market_quotes_v88.py
       - name: Recompute open equity research radar and append-only thesis priority history
@@ -63,6 +66,7 @@ jobs:
         run: |
           set -eu
           python -m unittest discover -s scripts -p "test_research_quote_refresh_v88.py" -v
+          python -m unittest discover -s scripts -p "test_discover_issuers_v90.py" -v
           python -m unittest discover -s scripts -p "test_opportunity_queue_v89.py" -v
           python -m unittest discover -s scripts -p "test_research_radar_v86.py" -v
           python -m unittest discover -s scripts -p "test_investment_decisions_v87.py" -v
@@ -78,7 +82,7 @@ jobs:
           set -eu
           git config user.name "finanzpilot-source-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/editorial-candidates.json data/prices.json data/market-valuations-v84.json data/research-radar-v86.json data/thesis-ledger-v86.json data/research-decisions-v87.json data/investment-thesis-events-v87.json data/opportunity-queue-v89.json
+          git add data/research-universe-v86.json data/issuer-discovery-v90.json data/editorial-candidates.json data/prices.json data/market-valuations-v84.json data/research-radar-v86.json data/thesis-ledger-v86.json data/research-decisions-v87.json data/investment-thesis-events-v87.json data/opportunity-queue-v89.json
           if git diff --cached --quiet; then
             echo "No new relevant source, price, or investment-priority evidence."
             exit 0
