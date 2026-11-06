@@ -6,6 +6,53 @@
   "lesson_id": "valuation",
   "stories": [
     {
+      "id": "2026-11-06-reddit-q3-advertising-search-risk",
+      "title": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
+      "published": "2026-11-06",
+      "category": "Unternehmen",
+      "symbols": [
+        "RDDT"
+      ],
+      "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
+      "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
+      "why": "Die bislang nur als unbewerteter Screening-Kandidat geführte Reddit Inc. veröffentlichte für Q3 2026 895 Mio. USD Umsatz (+53 %); Werbeerlöse dominieren das Geschäft.",
+      "impact": "Wachsende Anzeigenumsätze und operativer Cashflow sprechen für eine starke operative Entwicklung. Die Tragfähigkeit von Nutzerwachstum, Suchmaschinenzuflüssen und Werbepreisen bleibt offen; ohne geprüften aktuellen Börsenkurs kein Bewertungsurteil.",
+      "article": {
+        "lead": "Reddit Inc. (NYSE: RDDT) betreibt eine Plattform mit thematischen Onlinegemeinschaften, in denen Nutzer Beiträge und Diskussionen veröffentlichen. Das Unternehmen verdient hauptsächlich an Werbung, die Unternehmen bei diesen Nutzern schalten; ein kleinerer Teil stammt aus sonstigen Erlösen. Am 29. Oktober 2026 veröffentlichte Reddit seine Zahlen für das dritte Quartal. Das starke Umsatzwachstum ist ein Anlass für Research, aber kein Nachweis einer günstigen Aktie.",
+        "sections": [
+          {
+            "heading": "Was Reddit tatsächlich gemeldet hat",
+            "paragraphs": [
+              "Im Quartal bis 30. September 2026 stieg der Umsatz laut Reddit auf rund 895 Mio. USD, 53 % über dem Vorjahresquartal. Davon entfielen 847 Mio. USD auf Werbung (+54 %) und 48 Mio. USD auf andere Erlöse (+35 %). Das Geschäftsmodell hängt damit besonders von Werbebudgets und der Monetarisierung der Community ab.",
+              "Die Zahl täglich aktiver eindeutiger Nutzer stieg gegenüber dem Vorjahr um 12 % auf 130,3 Mio. Diese Kennzahl ist nicht gleichbedeutend mit zahlenden Kunden; die tatsächlichen Erlöse entstehen überwiegend durch die Vermarktung der Reichweite an Werbetreibende."
+            ]
+          },
+          {
+            "heading": "Gewinn und Cashflow auseinanderhalten",
+            "paragraphs": [
+              "Reddit meldete 283 Mio. USD Nettogewinn und 364 Mio. USD operativen Cashflow. Der ausgewiesene freie Cashflow betrug 363 Mio. USD, bei rund 1 Mio. USD Sachinvestitionen im Quartal. Das zeigt hohe kurzfristige Cash-Generierung, ist aber keine Garantie für dauerhaft ähnlich niedrige Investitionen.",
+              "Das bereinigte EBITDA von 402 Mio. USD ist eine ergänzende Non-GAAP-Größe und darf nicht mit Nettogewinn oder frei verfügbarem Eigenkapital-Cashflow gleichgesetzt werden. Für eine Bewertung müssen unter anderem aktienbasierte Vergütung, Verwässerung, künftige Investitionen und nachhaltige Cashflows über mehrere Perioden geprüft werden."
+            ]
+          },
+          {
+            "heading": "Warum die Entwicklung für Anleger relevant ist",
+            "paragraphs": [
+              "Wenn Werbekunden ihre Budgets auf Reddit erhöhen und die Plattform ihre Reichweite profitabel vermarktet, können Umsatz und Cashflow wachsen. Der hohe Anteil von Werbeerlösen macht das Geschäft zugleich konjunktur- und wettbewerbssensibel.",
+              "Für das vierte Quartal 2026 nennt Reddit eine Umsatzprognose von 1,00 bis 1,03 Mrd. USD. Das ist eine Managementerwartung, kein bereits erzielter Umsatz. Zu prüfen sind die tatsächliche Nutzerentwicklung, die Werbeerlöse je Nutzer und die Erfüllung der Prognose."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Bewertungsgrenzen",
+            "paragraphs": [
+              "Eine wichtige Gegenhypothese lautet: Suchmaschinen und KI-Antwortdienste könnten weniger Nutzer auf externe Diskussionsseiten leiten; außerdem können Änderungen an Werbemärkten oder Plattformregeln das Wachstum bremsen. Die Quartalszahlen allein quantifizieren diese Risiken nicht.",
+              "Reddit ist im FinanzPilot-Screening noch ohne unabhängig geprüfte aktuelle Roh-Schlusskursbasis geführt. Deshalb lässt sich aus diesen Zahlen weder eine Sicherheitsmarge noch ein seriöser fairer Wert ableiten. Als Alternativen sind andere werbefinanzierte Plattformen, ein breit gestreuter Aktien-ETF oder Abwarten zu vergleichen."
+            ]
+          }
+        ],
+        "conclusion": "Reddit ist wegen belegten Umsatz- und Cashflow-Wachstums ein nachvollziehbarer Research-Kandidat, aber keine bestätigte günstige Aktie. Nächste Prüfungen: Suchmaschinenabhängigkeit, nachhaltige Werbemonetarisierung, Verwässerung und ein datierter, verifizierter Börsenkurs."
+      }
+    },
+    {
       "id": "2026-11-06-destatis-industrial-production-september",
       "title": "Deutsche Industrieproduktion steigt um 0,7 % – warum der Auto-Aufholeffekt noch keine Trendwende beweist",
       "published": "2026-11-06",
