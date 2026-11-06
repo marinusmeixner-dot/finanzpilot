@@ -1,15 +1,42 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T06:50:33.593343Z",
+  "updated_at": "2026-11-06T08:20:16.770375Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-3817788aed839cf7c6",
+      "title": "Chipaktien an den internationalen Börsen im freien Fall",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/boerse/tech-einbruch-ki-100.html",
+      "published_at": "2026-11-06T08:09:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-3af1e14f8a2fd750c5",
+      "title": "Produktion im September 2026: +0,7 % zum Vormonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_389_421.html",
+      "published_at": "2026-11-06T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-392dbb70a2d999375d",
       "title": "Marktbericht: Aus Wahleuphorie wird Wahlkater",
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-nasdaq-wall-street-100.html",
       "published_at": "2026-11-06T06:26:17Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-54cb439d2eeae5244e",
+      "title": "Ressourcenverbrauch vieler Rechenzentren nicht öffentlich einsehbar",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/investigativ/swr/rechenzentren-transparenz-wasserverbrauch-stromverbrauch-100.html",
+      "published_at": "2026-11-06T05:04:19Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -37,6 +64,15 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/hacker-kuehlsysteme-supermaerkte-100.html",
       "published_at": "2026-11-05T19:11:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-40c3c244a2921c6fc9",
+      "title": "Investor Benko wegen Millionenbetrugs zu weiterer Haftstrafe verurteilt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/benko-prozess-neue-strafe-100.html",
+      "published_at": "2026-11-05T17:56:47Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -109,6 +145,42 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1678462.html",
       "published_at": "2026-11-05T09:08:58Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-c478381a4e0b221c7f",
+      "title": "Arbeitskosten im Jahr 2024 in Hamburg am höchsten, in Mecklenburg-Vorpommern am niedrigsten",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_388_624.html",
+      "published_at": "2026-11-05T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a832c11b2efdb9affa",
+      "title": "Zahl der Privathaushalte kann bis zum Jahr 2050 um bis zu 5 % zurückgehen",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_386_122.html",
+      "published_at": "2026-11-05T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-3dc4238693b84b7817",
+      "title": "Umsatz im Dienstleistungsbereich im August 2026 um 0,9 % höher als im Vormonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_474.html",
+      "published_at": "2026-11-05T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-22a43ea5df9db0f4ef",
+      "title": "Auftragseingang im Verarbeitenden Gewerbe im September 2026: +4,4 % zum Vormonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
+      "published_at": "2026-11-05T07:00:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -199,6 +271,24 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/bmw-gewinnwarnung-100.html",
       "published_at": "2026-11-04T08:21:37Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e343c360012fa761ee",
+      "title": "Schuljahr 2025/2026: Knapp 9 Millionen Schülerinnen und Schüler an allgemeinbildenden Schulen",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_384_213.html",
+      "published_at": "2026-11-04T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-48396ec34af6bd5e63",
+      "title": "4,4 % aller Erwerbstätigen in Deutschland sind Führungskräfte",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N076_13.html",
+      "published_at": "2026-11-04T07:00:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
