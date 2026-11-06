@@ -1,9 +1,36 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T14:26:35.309141Z",
+  "updated_at": "2026-11-06T20:54:07.142428Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-8b08b339afc056b3ea",
+      "title": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely, Fed's Daly says",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html",
+      "published_at": "2026-11-06T19:05:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7f82e783d35720910f",
+      "title": "Wirtschaft vor acht vom 06.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1679460.html",
+      "published_at": "2026-11-06T18:51:48Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6c9a3818345f596bb5",
+      "title": "The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
+      "published_at": "2026-11-06T17:09:53Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-2a8823f40241372dbc",
       "title": "Marktbericht: Zweifel am KI-Geschäft belasten die Branche",
@@ -532,33 +559,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/02/texas-governor-prediction-markets-abbott-hinojosa.html",
       "published_at": "2026-11-02T21:13:43Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-16af9f058f910d8ae8",
-      "title": "Wirtschaft vor acht vom 02.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1676936.html",
-      "published_at": "2026-11-02T20:02:11Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6542a78868a41ec2ca",
-      "title": "Digitalgipfel in Berlin: Merz fordert mehr digitale Souveränität",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/digitalgipfel-wildberger-merz-ki-100.html",
-      "published_at": "2026-11-02T18:33:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-fa27ab3fc7311a6a3b",
-      "title": "Cyberangriffe haben Supermärkte in Europa offenbar lahmgelegt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/cyberangriff-supermaerkte-100.html",
-      "published_at": "2026-11-02T16:10:17Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
