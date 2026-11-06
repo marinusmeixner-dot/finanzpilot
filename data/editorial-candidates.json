@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-06T09:03:56.491922Z",
+  "updated_at": "2026-11-06T09:56:36.993974Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-d76938ffcacf8e4d34",
+      "title": "Daimler Truck meldet deutlichen Gewinnsprung wegen USA-Geschäft",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/daimlertruck-100.html",
+      "published_at": "2026-11-06T09:13:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-662c34acfe67fa5c3d",
       "title": "Update Wirtschaft vom 06.11.2026",

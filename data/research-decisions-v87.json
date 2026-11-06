@@ -7,8 +7,8 @@
     "source_based_watch": 5,
     "financial_data_review": 2,
     "financial_audit_pending": 3,
-    "editorial_screen": 11,
-    "technical_screen": 37,
+    "editorial_screen": 12,
+    "technical_screen": 36,
     "archived": 0
   },
   "benchmark_method": "Nur identische Notierungswährung und gleiches 63-Handelstage-Fenster. ETF-Rendite ist historische Opportunitätskosteninformation, keine Prognose und kein Risikomatch.",
@@ -6284,11 +6284,11 @@
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "insufficient_data",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "research_stage": "editorial_screen",
+      "decision": "Quellenbezogene Nachricht vorhanden. Bilanz, Wachstum und Bewertung vor einer Investmentthese erst prüfen.",
       "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
       "evidence_readiness": {
-        "value": 10,
+        "value": 25,
         "max": 100,
         "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
         "criteria": [
@@ -6299,7 +6299,7 @@
           },
           {
             "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
+            "ready": true,
             "points": 15
           },
           {
@@ -6327,7 +6327,7 @@
       "thesis": null,
       "counter_thesis": null,
       "thesis_invalidated": false,
-      "why_now": null,
+      "why_now": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
       "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
       "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
       "financials": {},
@@ -6339,9 +6339,13 @@
         "Nachvollziehbare künftige Cashflows",
         "Bewertung mit Sicherheitsspanne"
       ],
-      "editorial_source": null,
+      "editorial_source": {
+        "title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
+        "date": "2026-11-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm"
+      },
       "primary_source_urls": [],
-      "original_idea_source": null,
+      "original_idea_source": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
       "comparison_family": null,
       "peer_valuations": [],
       "etf_alternatives": [],

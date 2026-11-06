@@ -4432,8 +4432,15 @@
         "asof": null,
         "currency": "USD"
       },
-      "editorial_evidence": null,
-      "editorial_age_days": null,
+      "editorial_evidence": {
+        "id": "2026-11-06-crh-q3-guidance-cut-arcosa",
+        "title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
+        "date": "2026-11-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
+        "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 0,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
