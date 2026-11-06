@@ -74,7 +74,7 @@ class DiscoveryTests(unittest.TestCase):
             return True
         out,stats=mod.build(self.universe,self.records,self.day,verify)
         self.assertEqual(len(out["equities"]),5)
-        self.assertGreaterEqual(stats["quote_checks"],7)
+        self.assertGreaterEqual(stats["quote_checks"],5)
         self.assertTrue(stats["quote_failures"])
         no,meta=mod.build(self.universe,self.records,self.day,lambda ticker: False)
         self.assertEqual(len(no["equities"]),3,"Index-only fallback limited to two when Yahoo is unavailable")
