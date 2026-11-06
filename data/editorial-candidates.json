@@ -1,9 +1,36 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-05T18:44:16.696532Z",
+  "updated_at": "2026-11-06T00:14:30.157851Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-77ad52cec0f8a0830b",
+      "title": "Nasdaq drops into correction territory — here’s what typically happens next",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/05/nasdaq-drops-into-correction-territory-heres-what-typically-happens-next.html",
+      "published_at": "2026-11-05T22:31:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-438ff0faa52cdf5543",
+      "title": "Top Democrats call to rein in AI buildout after midterms sweep: 'National data center moratorium now'",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/05/democrats-data-center-restrictions-midterms.html",
+      "published_at": "2026-11-05T20:17:16Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e981dc6eda6bdc1260",
+      "title": "Supermärkte: Warum Kühlregale leicht zu hacken sind",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/hacker-kuehlsysteme-supermaerkte-100.html",
+      "published_at": "2026-11-05T19:11:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-1871a374225539c6ef",
       "title": "Bundestags-Votum: Mehr Vorteile für E-Autos im Stadtverkehr möglich",
