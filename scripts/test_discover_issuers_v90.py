@@ -76,13 +76,21 @@ class DiscoveryTests(unittest.TestCase):
         self.assertEqual(len(out["equities"]),5)
         self.assertGreaterEqual(stats["quote_checks"],7)
         self.assertTrue(stats["quote_failures"])
-        no,new=mod.build(self.universe,self.records,self.day,lambda ticker: False)
-        self.assertEqual(no["equities"],self.universe["equities"])
-        self.assertEqual(new["new_companies"],[])
+        no,meta=mod.build(self.universe,self.records,self.day,lambda ticker: False)
+        self.assertEqual(len(no["equities"]),3,"Index-only fallback limited to two when Yahoo is unavailable")
+        self.assertEqual(meta["quote_pending_added"],2)
+        self.assertEqual(meta["quote_crosschecked_added"],0)
+        self.assertTrue(all(x["discovery_class"]=="secondary_index_quote_pending" and not x["quote_crosschecked"]
+            for x in no["equities"][1:]),"Pending quotes must NEVER masquerade as verified stock listings")
+        again,next_meta=mod.build(no,self.records,self.day,lambda ticker: False)
+        self.assertEqual(len(again["equities"]),3,"Quote-pending daily cap must prevent repeated false promotions")
+        self.assertEqual(next_meta["new_companies"],[])
     def test_real_quote_window_cannot_include_today_or_fake_one_candle(self):
         pts=[(self.day-dt.timedelta(days=i),100+i) for i in range(1,32)]
         self.assertTrue(mod.completed_quote_check("CABC",pts,self.day))
         self.assertFalse(mod.completed_quote_check("CABC",[(self.day,100)]*30,self.day))
+        self.assertFalse(mod.completed_quote_check("CABC",[(self.day-dt.timedelta(days=1),100)]*30,self.day),
+            "Twenty repeated rows on one date are not twenty sessions")
         self.assertFalse(mod.completed_quote_check("CABC",[(self.day-dt.timedelta(days=30+i),100) for i in range(25)],self.day))
     def test_price_refresh_works_after_day_rollover_and_for_new_issuers(self):
         now=dt.datetime(2026,11,6,9,tzinfo=dt.timezone.utc)
