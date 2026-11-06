@@ -1,16 +1,16 @@
 {
   "schema_version": 1,
-  "date": "2026-11-05",
-  "source_updated_at": "2026-11-05",
-  "title": "Industrieaufträge erholen sich – Inflation und Firmen-Cashflows bleiben entscheidend",
-  "summary": "Die heute von Destatis veröffentlichten Septemberdaten zeigen 4,4 % mehr reale deutsche Industrieaufträge als im Vormonat. Das ist nach dem kräftigen August-Einbruch eine Erholung, aber im Dreimonatsvergleich kaum Wachstum. Gleichzeitig bleiben die jüngsten Inflationsdaten und Unternehmensberichte wichtig für die Einschätzung von Finanzierungskosten und Gewinnqualität.",
-  "interpretation": "Bessere Aufträge könnten mittelfristig Maschinenbau und Automobilzulieferer stützen, falls daraus Umsatz mit ausreichender Marge entsteht. Die Quartalsdaten zeigen jedoch noch keine robuste Trendwende. Höhere Energiekosten und schwache freie Cashflows einzelner Unternehmen sind weiterhin Risiken; daraus folgt kein unmittelbares Aktienkaufsignal.",
+  "date": "2026-11-06",
+  "source_updated_at": "2026-11-06",
+  "title": "Industrieproduktion: Auto-Aufholeffekt statt bestätigter Trendwende",
+  "summary": "Destatis meldet für September 2026 real +0,7 % Produktion im deutschen Produzierenden Gewerbe. Besonders die Autoindustrie (+17,1 % gegenüber August) trug dazu bei; zugleich wurde der Augustwert auf +1,0 % revidiert und das Gesamtquartal lag 0,4 % unter dem Vorquartal. Industrieaufträge, Preisentwicklung und Gewinnqualität bleiben wichtige Folgesignale.",
+  "interpretation": "Ein hoher Monatsanstieg nach Werksferien ist nicht automatisch ein nachhaltiger Umschwung in Umsatz, Margen und Cashflows. Für deutsche Industrieunternehmen zählen der künftige Auftragseingang, nachweisbarer Geschäftsbezug, Investitionen und reale Kosten. Einzelne Aktien oder ETFs dürfen aus der Statistik nicht allein als attraktiv bewertet werden.",
   "highlights": [
     {
-      "story_id": "2026-11-05-destatis-industry-orders-september",
-      "title": "Industrie: Auftragseingang +4,4 %",
-      "why": "Aufträge ohne Großaufträge steigen um 5,1 %, doch das Gesamtquartal liegt nur 0,2 % über dem Vorquartal.",
-      "watch": "Folgende Produktions- und Auftragsdaten, tatsächliche Umsätze und Unternehmensmargen"
+      "story_id": "2026-11-06-destatis-industrial-production-september",
+      "title": "Industrieproduktion: +0,7 % im September",
+      "why": "Der Autosektor holt kräftig auf, doch der August wurde nach unten revidiert und das Gesamtquartal blieb schwach.",
+      "watch": "Weitere Produktionsdaten, Maschinenbau, Energiepreise, tatsächliche Firmenmargen und CFO/FCF"
     },
     {
       "story_id": "2026-11-04-eurostat-eurozone-inflation-october-flash",
@@ -25,6 +25,6 @@
       "watch": "Automobilmarge, Investitionen und Tempo der Modellumstellung"
     }
   ],
-  "next_watch": "Prüfen, ob die nächsten Industrie- und Inflationsdaten den September-Aufholeffekt bestätigen und ob sich neue Aufträge in Margen und Cashflows niederschlagen.",
-  "methodology": "Aktuelle neue Primärquelle: Destatis, Pressemitteilung 385 vom 05.11.2026; übrige Highlights bleiben datierte ältere Originalberichte. Keine Live-Kurse oder Kaufempfehlung."
+  "next_watch": "Prüfen, ob der September-Anstieg in Aufträgen und Produktion in den nächsten Monaten bestätigt wird. Für neue Industrieaktien unabhängig vom Kursmomentum Primärberichte, tatsächliche Cashflows und ETF-Alternativen vergleichen.",
+  "methodology": "Erste neue Primärquelle: Statistisches Bundesamt, Pressemitteilung 389 vom 06.11.2026. Weitere Highlights sind ältere, getrennt datierte Originalberichte. FinanzPilot zeigt keine Live-Kurse oder automatischen Kaufurteile."
 }
