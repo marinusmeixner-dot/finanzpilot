@@ -9,19 +9,19 @@
       "id": "2026-11-07:market:production-base",
       "kind": "market",
       "date": "2026-11-07",
-      "title": "Industrieproduktion: Monatsplus gegen Quartalsminus",
-      "context": "Destatis berichtete am 06.11.2026 für September ein reales Produktionsplus von 0,7 % gegenüber August und für das dritte Quartal ein Minus von 0,4 % gegenüber dem Vorquartal. Für die Rechnung gilt ein ausdrücklich fiktiver August-Index von 100.",
-      "question": "Berechne den fiktiven September-Index. Warum widersprechen sich Monatsplus und Quartalsminus nicht? Formuliere zwei konkurrierende Ursachen für das Monatsplus und nenne je eine beobachtbare Größe, die die Hypothese widerlegen könnte. Was darf man daraus über Unternehmensgewinne NICHT folgern?",
+      "title": "Industrieaufträge: Aufholeffekt oder Trendwende?",
+      "context": "Destatis berichtete am 05.11.2026 für September einen realen Auftragseingangsanstieg von 4,4 % gegenüber August; im August waren die Aufträge um 10,1 % gefallen. Für die Rechnung gilt ein ausdrücklich fiktiver Juli-Index von 100.",
+      "question": "Berechne August- und September-Index sowie die Veränderung September gegen Juli. Warum belegt ein Septemberplus noch keine Trendwende? Formuliere zwei konkurrierende Ursachen und je ein überprüfbares Widerlegungssignal. Was darf man daraus über Unternehmensgewinne NICHT folgern?",
       "rubric": [
-        "Septemberindex 100×1,007=100,7; Indexeinheit korrekt",
-        "Monats- und Quartalsvergleich haben unterschiedliche Basis und Aggregation",
-        "Zwei konkrete Alternativhypothesen wie Produktionsnachholung und nachhaltige Auftragsbelebung",
-        "Je Hypothese eine überprüfbare Widerlegung anhand Aufträgen, Arbeitstagen oder Folgeproduktion",
-        "Keine direkte Margen-, Cashflow- oder Aktienbewertung aus dem Produktionsindex"
+        "August 100×0,899=89,9; September 89,9×1,044=93,8556",
+        "September gegen Juli −6,1444 %; Änderungen nicht addieren",
+        "Basis- und Großauftragseffekte von nachhaltiger Nachfrage unterscheiden",
+        "Zwei Gegenhypothesen mit je einer überprüfbaren Datenreihe",
+        "Keine direkte Margen-, Cashflow- oder Aktienbewertung aus Monatsaufträgen"
       ],
-      "source": "Destatis – Produktion im Produzierenden Gewerbe, September 2026",
-      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_421.html",
-      "source_date": "2026-11-06",
+      "source": "Destatis – Auftragseingang im Verarbeitenden Gewerbe September 2026, Pressemitteilung 385",
+      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
+      "source_date": "2026-11-05",
       "symbol": ""
     },
     {
