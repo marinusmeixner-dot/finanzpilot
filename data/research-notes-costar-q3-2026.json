@@ -26,7 +26,6 @@
   "analysis_de": "CoStar verkauft Immobilien-Marktplatzangebote, Daten und Analysen. Der Q3-Umsatz stieg um 14,1 %; das berichtete Ergebnis wechselte von Verlust zu Gewinn. Das bereinigte EBITDA von 229 Mio. USD liegt 50 Mio. USD über dem unbereinigten EBITDA. Das ist ein echter Prüfbedarf für Cashflow-Konversion und die Qualität der bereinigten Profitabilität, nicht bereits ein Beleg für einen günstigen Aktienkurs. Der Segmentmix aus gewerblichen und privaten Immobilienplattformen kann die Margenentwicklung wesentlich verändern.",
   "counterhypothesis_de": "Ausgaben für Wohnimmobilienplattformen, Akquisitionen und Vermarktung könnten auch bei steigenden Buchungen einen großen Teil des künftigen Cashflows aufzehren. Erwartete Kostensenkungen und Guidance sind Prognosen, keine gesicherten Zuflüsse.",
   "open_due_diligence": [
-    "Q3-10-Q: neunmonatigen CFO, Capex, Working Capital und Akquisitionscashflows mit Vorjahr periodengleich prüfen",
     "Zonda-Kaufpreis und weitere Übernahmen von organischem Wachstum und wiederkehrendem FCF trennen",
     "Bereinigtes EBITDA zu GAAP-Ergebnis, aktienbasierter Vergütung und tatsächlichem Cashflow überleiten",
     "Nettoliquidität, Leasing, wirtschaftliche Aktienzahl und potenzielle Verwässerung auditieren",
@@ -60,5 +59,11 @@
       "Vexcel-Übernahme über 730 Mio. USD als noch nicht abgeschlossene Verpflichtung separat berücksichtigen",
       "Unabhängig datierten Kurs prüfen und erst dann Peer-/ETF-Vergleich und Fair-Value-Szenarien erstellen"
     ]
+  },
+  "audit_progress_2026_11_07": {
+    "resolved": "Neunmonatiger CFO, regulärer und Campus-Capex, Vorjahresvergleich und Akquisitionszahlungen wurden im Abschnitt cashflow_audit_2026_11_07 periodengleich geprüft.",
+    "remaining": "Working-Capital-Überleitung im Detail, nachhaltiger Investitionsbedarf, Leasing, wirtschaftliche Aktienzahl und unabhängiger Kurs sind weiterhin offen.",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm",
+    "note": "Offene Prüfpunktliste nach bereits publizierter Cashflow-Analyse bereinigt; keine neuen Bilanzzahlen behauptet."
   }
 }
