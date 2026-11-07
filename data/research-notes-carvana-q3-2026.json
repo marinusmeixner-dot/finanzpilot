@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "kind": "primary_source_due_diligence",
+  "symbol": "CVNA",
+  "company": "Carvana Co.",
+  "asof": "2026-11-07",
+  "period": "9M ended 2026-09-30",
+  "currency": "USD",
+  "unit": "million",
+  "source": {
+    "title": "Carvana Q3 2026 Letter to Shareholders",
+    "date": "2026-10-28",
+    "url": "https://investors.carvana.com/~/media/Files/C/Carvana-IR/documents/cvna-shareholder-letter-q3-2026.pdf",
+    "pages": [
+      10,
+      13,
+      14
+    ]
+  },
+  "metrics": {
+    "operating_cash_flow": {
+      "current": 900,
+      "prior": 606
+    },
+    "property_equipment_purchases": {
+      "current": 166,
+      "prior": 96
+    },
+    "simple_fcf_cfo_less_capex": {
+      "current": 734,
+      "prior": 510
+    },
+    "cash_and_equivalents": 3049,
+    "restricted_cash": 123,
+    "long_term_debt_including_current": 5157,
+    "short_term_revolving_facilities": 71,
+    "operating_lease_liabilities_noncurrent": 388,
+    "tax_receivable_agreement_liability": 2130,
+    "net_income_consolidated_q3": 483,
+    "net_income_attributable_to_carvana_q3": 289
+  },
+  "analysis": "9M einfacher FCF (CFO minus Käufe von Sachanlagen) stieg von 510 auf 734 Mio. USD (+224 Mio., +43,9 %). Dies ist keine normalisierte Eigentümer-Cashflow-Prognose: Fahrzeugbestände, Forderungsverkäufe und Zahlungszeitpunkte beeinflussen CFO. Ausgewiesene Gesamtverschuldung einschließlich kurzfristiger revolvierender Kredite 5.228 Mio. USD; nicht mit 3.049 Mio. USD frei verfügbaren Barmitteln oder 123 Mio. USD restricted cash vermischen. Operative Leasingverbindlichkeiten und Tax-Receivable-Agreement-Verpflichtungen separat prüfen. Q3-Konzernergebnis 483 Mio. USD ist nicht das den Carvana-Co.-Aktionären zurechenbare Ergebnis (289 Mio. USD).",
+  "counterhypothesis": "Hoher Absatz und positive FCF-Dynamik könnten teilweise von günstiger Kreditveräußerung, Working-Capital-Timing und Kreditmarktbedingungen abhängen. Bei schwächerer Nachfrage oder teurerer Refinanzierung kann der beobachtete FCF nicht fortgeschrieben werden.",
+  "valuation_status": "No fair value: verified current price, diluted economic share count incl. LLC units, debt maturity ladder, normalized finance receivable cash conversion and cost of equity still required.",
+  "publication_status": "research_note_only_not_investment_rating"
+}
