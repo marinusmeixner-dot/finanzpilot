@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "kind": "primary_source_research_gap",
+  "symbol": "EXE",
+  "company": "Expand Energy Corporation",
+  "checked_on": "2026-11-07",
+  "period_end": "2026-09-30",
+  "source": {
+    "title": "Expand Energy Corporation Reports Third Quarter 2026 Results",
+    "published": "2026-10-27",
+    "url": "https://investors.expandenergy.com/static-files/d528805a-395b-4885-adab-e7c059250225"
+  },
+  "facts": {
+    "quarterly_operating_cashflow_usd_million": 1177,
+    "quarterly_gaap_net_income_usd_million": 519,
+    "quarterly_adjusted_net_income_usd_million": 338,
+    "quarterly_adjusted_ebitdax_usd_million": 1229,
+    "production_bcfe_per_day": 7.54,
+    "natural_gas_share_percent": 92,
+    "total_debt_quarter_end_usd_billion": 4.6,
+    "quarterly_share_repurchases_usd_million": 305,
+    "fy2026_capital_investment_guidance_usd_billion_approx": 3,
+    "fy2026_production_guidance_bcfe_per_day": [
+      7.45,
+      7.55
+    ],
+    "twin_eagle_acquisition_closed": "2026-09-16"
+  },
+  "analysis_de": "Expand Energy produziert überwiegend Erdgas und vermarktet Energielieferungen. Q3-CFO von 1.177 Mio. USD ist ein tatsächlich berichteter Quartalszufluss, aber kein Free Cashflow: Investitionen, Akquisitionen und Hedging-/Working-Capital-Effekte sind getrennt zu prüfen. 3 Mrd. USD prognostizierte Jahresinvestitionen dürfen nicht ohne Quartalsabgleich von Q3-CFO abgezogen werden. Die abgeschlossene Twin-Eagle-Übernahme verändert den Vertriebs-/Marketingmix. 4,6 Mrd. USD Bruttoschulden sind nicht mit Nettoverschuldung gleichzusetzen. EBITDAX ist eine bereinigte Non-GAAP-Kennzahl, nicht ausschüttbarer Cashflow.",
+  "counterhypothesis_de": "Hohe Fördermengen können bei fallenden realisierten Erdgaspreisen dennoch sinkende Margen und Cashflows erzeugen. Erschließungskosten und notwendige Ersatzbohrungen begrenzen die frei verfügbare Mittelgenerierung; Hedging kann sowohl schützen als auch Preischancen beschränken.",
+  "open_due_diligence": [
+    "10-Q: CFO, Sachinvestitionen und Akquisitions-Cashflows für identische Zeiträume abgleichen; normalisierten FCF ermitteln",
+    "Gaspreisrealisierung, Hedge-Buch, Transportverpflichtungen und Sensitivität der Marge gegenüber Henry-Hub-Preisen prüfen",
+    "Twin-Eagle-Kaufpreis, Finanzierung, Integration und konsolidierte Schulden/Leasing erfassen",
+    "Stichtagsaktienzahl, Rückkäufe und Verwässerung prüfen",
+    "Unabhängig datierte Kursbasis und währungsgleiche Peer-/ETF-Vergleiche vor Bewertung prüfen"
+  ],
+  "status": "research_only_quote_pending_no_fair_value",
+  "disclosure": "Offizielle Emittentenquelle vom 27.10.2026; keine unabhängig geprüfte Kursbasis, kein Fair Value, keine Kaufempfehlung."
+}
