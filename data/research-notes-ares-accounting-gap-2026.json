@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "primary_source_accounting_gap",
+  "symbol": "ARES",
+  "company": "Ares Management Corporation",
+  "asof": "2026-11-07",
+  "source": {
+    "title": "2025 Ares Management Corporation Annual Letter",
+    "date": "2026",
+    "url": "https://ir.aresmgmt.com/media/document/59d5295d-9a05-45fd-830d-98b47723baaf/assets/ARES_AnnualLetter2025_vF.pdf?disposition=inline"
+  },
+  "verified_historical_facts": {
+    "period": "FY2025",
+    "fee_related_earnings_usd_thousands": 1775300,
+    "realized_income_usd_thousands": 1848308,
+    "gaap_income_before_taxes_usd_thousands": 1286893
+  },
+  "accounting_interpretation": "Fee Related Earnings (FRE) und Realized Income sind vom Unternehmen definierte Non-GAAP-Kennzahlen und nicht gleich operativem Cashflow oder ausschüttbarem Free Cashflow. Der Jahresbrief führt Überleitungen mit unter anderem aktienbasierter Vergütung, akquisitionsbezogenen Kosten, nicht realisierten Performance-Erträgen und konsolidierten Fonds auf. 2025-Werte dürfen nicht als aktuelle Q3-2026-Werte ausgegeben werden.",
+  "open_due_diligence": [
+    "Q3-2026-Originalbericht einschließlich GAAP-zu-FRE-Überleitung und periodenvergleichbarer Cashflow-Rechnung beschaffen",
+    "Fondsverschuldung von Verbindlichkeiten der Managementgesellschaft und ihren Konsolidierungseffekten trennen",
+    "Verwaltetes Vermögen nach fee-paying AUM und effektiver Gebührenbasis aufschlüsseln",
+    "Verwässerte Aktienzahl, aktienbasierte Vergütung und tatsächliche Ausschüttungsdeckung prüfen",
+    "Unabhängigen datierten ARES-Kurs bestätigen; bis dahin keine Fair-Value-Bandbreite"
+  ],
+  "counterhypothesis": "Steigendes AUM kann aus nicht gebührenpflichtigen Zusagen, Akquisitionen oder Marktwertveränderungen stammen; es belegt für sich allein weder proportional steigende Gebühren noch höheren Eigentümer-Cashflow.",
+  "publication_status": "research_gap_only_no_valuation_no_buy_signal"
+}
