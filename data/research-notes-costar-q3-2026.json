@@ -29,7 +29,7 @@
     "Zonda-Kaufpreis und weitere Übernahmen von organischem Wachstum und wiederkehrendem FCF trennen",
     "Bereinigtes EBITDA zu GAAP-Ergebnis, aktienbasierter Vergütung und tatsächlichem Cashflow überleiten",
     "Aktuellen Kurs unabhängig prüfen und erst danach Peer-/ETF-Vergleich sowie Fair-Value-Bandbreite aufbauen",
-    "Wirtschaftliche Aktienzahl, Verwässerung und Bewertungsbrücke trotz nun geprüfter Schulden und Leasing noch auditieren"
+    "Stichtagsaktien und Optionen/DSU nach dokumentiertem RSA/RSU/PRSA/PRSU-Audit noch vollständig überleiten"
   ],
   "status": "research_only_quote_pending_no_fair_value",
   "disclosure": "Originalquelle belegt Zahlen und Notierung NASDAQ:CSGP; unabhängig geprüfter Börsenkurs fehlt. Keine Kaufempfehlung.",
@@ -92,6 +92,27 @@
       "Nachhaltigen Campus-Capex und Übernahme-/Integrationsaufwand normalisieren",
       "Vexcel-Transaktionsfinanzierung und künftige Liquidität gesondert modellieren",
       "Datierte unabhängige Aktienkursprüfung und Vergleichsunternehmen fehlen"
+    ]
+  },
+  "equity_dilution_audit_2026_11_07": {
+    "source": "CoStar Group SEC Form 10-Q filed 2026-10-28, EPS and equity compensation notes",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm",
+    "period_end": "2026-09-30",
+    "unit": "million shares except where noted",
+    "q3_basic_weighted_average": 401.6,
+    "q3_diluted_weighted_average": 401.9,
+    "nine_month_basic_weighted_average": 406.2,
+    "nine_month_diluted_weighted_average": 406.7,
+    "unvested_restricted_stock_awards": 2.273392,
+    "unvested_performance_restricted_stock_awards": 0.70536,
+    "unvested_restricted_stock_units": 2.633759,
+    "unvested_performance_restricted_stock_units": 0.608394,
+    "combined_unvested_awards_and_units": 6.220905,
+    "interpretation_de": "Der gewichtete verwässerte Q3-Durchschnitt (401,9 Mio.) liegt nur 0,3 Mio. über dem unverwässerten Durchschnitt (401,6 Mio.); über neun Monate beträgt die Differenz 0,5 Mio. Die zum Stichtag noch nicht unverfallbaren RSA/PRSA/RSU/PRSU summieren sich rein arithmetisch auf 6,221 Mio. Instrumente. Diese Summe darf NICHT pauschal zu 401,9 Mio. addiert werden: RSA sind bereits ausgegebene Aktien, Leistungsbedingungen und Treasury-Stock-Methode können den tatsächlichen Verwässerungseffekt verändern; Periodendurchschnitt ist kein Stichtagsbestand. Für eine Fair-Value-Brücke fehlen einheitlich datierte tatsächlich ausstehende Aktien, Optionen/DSU und der Kurs. Aktienrückkäufe von 668 Mio. USD in neun Monaten sind zudem nicht automatisch Netto-Wertschaffung.",
+    "remaining_gaps_de": [
+      "Stichtags-Aktienbestand und ausgegebene, bereits in der Grundzahl enthaltene RSA gegen die gewichteten EPS-Nenner abgleichen",
+      "Optionen, DSU, künftige Vergütungszusagen und Performance-Vesting vollständig quantifizieren",
+      "Kursdatum und Aktienkurs unabhängig prüfen, dann Treasury-Stock-Verwässerung und Enterprise-to-Equity-Brücke modellieren"
     ]
   }
 }
