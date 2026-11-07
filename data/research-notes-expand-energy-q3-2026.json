@@ -30,7 +30,7 @@
   "counterhypothesis_de": "Hohe Fördermengen können bei fallenden realisierten Erdgaspreisen dennoch sinkende Margen und Cashflows erzeugen. Erschließungskosten und notwendige Ersatzbohrungen begrenzen die frei verfügbare Mittelgenerierung; Hedging kann sowohl schützen als auch Preischancen beschränken.",
   "open_due_diligence": [
     "10-Q: 9M CFO und Capex periodengleich grob abgeglichen; exakte Investitionszeile, Akquisitions-Cashflows und normalisierten FCF weiter auditieren",
-    "Gaspreisrealisierung, Hedge-Buch, Transportverpflichtungen und Sensitivität der Marge gegenüber Henry-Hub-Preisen prüfen",
+    "Transportnominalwerte aus Q3-10-Q erfasst; Cashflow-Überlappung, Mindestabnahmen, Kapazitätsauslastung, Gas-Hedges und Henry-Hub-Sensitivität noch prüfen",
     "Twin-Eagle-Kaufpreis, Finanzierung, Integration und konsolidierte Schulden/Leasing erfassen",
     "Stichtagsaktienzahl, Rückkäufe und Verwässerung prüfen",
     "Unabhängig datierte Kursbasis und währungsgleiche Peer-/ETF-Vergleiche vor Bewertung prüfen"
@@ -51,5 +51,25 @@
     "simple_free_cashflow_approx": 2375,
     "caveat_de": "9-Monats-CFO minus 9-Monats-Sachinvestitionen; Capex ist auf 0,01 Mrd. gerundet, daher FCF nur ungefähr. Nicht mit Q3-CFO oder der Ganzjahresprognose verrechnen. Akquisitions-Cashflows, Förderersatzbedarf, Gas-Hedges und Transportverpflichtungen bleiben separat zu auditieren. Keine normalisierte Eigentümer-Cashflow- oder Fair-Value-Aussage.",
     "comparison_de": "Die früher offene Periodengleichheit ist für CFO und Capex auf 9M-Basis hergestellt. 9M-FCF ist weder Q3-FCF noch vollständig ausschüttbar."
+  },
+  "transport_commitments_audit_2026_09_30": {
+    "source": {
+      "title": "Expand Energy Form 10-Q Q3 2026, Note 11 Commitments, pages 17-18",
+      "filed": "2026-10-27",
+      "url": "https://investors.expandenergy.com/static-files/cd38c2b0-1832-4a5a-a7d7-71c81ba7820f"
+    },
+    "unit": "USD million, gross undiscounted",
+    "remainder_2026": 445,
+    "year_2027": 1566,
+    "year_2028": 1415,
+    "year_2029": 1055,
+    "year_2030": 941,
+    "thereafter": 3518,
+    "total": 8940,
+    "lng_delfin_fixed_determinable_components_approx_usd_million": 2900,
+    "lng_deliveries_expected_from": 2031,
+    "analysis_de": "Die 8.940 Mio. USD sind Brutto-Nominalverpflichtungen aus Gathering, Processing, Transport und Speicherung über viele Jahre, keine sofort fälligen Finanzschulden und kein Betrag, der zusätzlich vollständig vom 9M-Free-Cashflow abgezogen werden darf. Teilweise stehen Gegenleistungen, Drittvolumen-Credits und Erstattungen gegenüber; einige laufende Gebühren sind bereits im operativen Cashflow erfasst. Die Delfin-LNG-Vereinbarung betrifft geschätzte feste Preisbestandteile über 20 Jahre; die tatsächlichen Zahlungen sind variabel. Vor Fair Value sind Kapazitätsauslastung, Mindestabnahmen, erwartete Gegenumsätze und Cashflow-Modellierung ohne Doppelzählung zu prüfen.",
+    "risk_signal_de": "Bei niedriger Förderung oder niedrigen Gaspreisen können vertragliche Kapazitätsgebühren relativ zur erzielten Marge steigen. Der 10-Q nennt zudem steigende GP&T-Kosten: 9M 2026 2.002 Mio. USD vs. 1.734 Mio. USD 9M 2025, 0,98 vs. 0,89 USD/Mcfe.",
+    "limitations_de": "Nominale Verpflichtungen nicht als Barwert, Nettoschulden oder zusätzliche einmalige Cash-Abflüsse ausweisen; LNG-Verpflichtungen nicht ungeprüft zur Transporttabelle addieren."
   }
 }
