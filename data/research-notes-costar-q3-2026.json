@@ -62,9 +62,9 @@
   },
   "audit_progress_2026_11_07": {
     "resolved": "Neunmonatiger CFO, regulärer und Campus-Capex, Vorjahresvergleich und Akquisitionszahlungen wurden im Abschnitt cashflow_audit_2026_11_07 periodengleich geprüft.",
-    "remaining": "Working-Capital-Überleitung im Detail, nachhaltiger Investitionsbedarf, Leasing, wirtschaftliche Aktienzahl und unabhängiger Kurs sind weiterhin offen.",
+    "remaining": "Cashflow, Anleihen/Leasing und unvested RSA/RSU/PRSA/PRSU sind geprüft; offen bleiben Working-Capital-Normalisierung, nachhaltiger Capex, tatsächliche Stichtagsaktien/Optionen/DSU, Vexcel-Finanzierung und unabhängiger Kurs.",
     "source_url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm",
-    "note": "Offene Prüfpunktliste nach bereits publizierter Cashflow-Analyse bereinigt; keine neuen Bilanzzahlen behauptet."
+    "note": "Bereits abgeschlossene Teilprüfungen konsistent abgegrenzt; historische Prüfzahlen und Primärquellen unverändert."
   },
   "capital_structure_audit_2026_11_07": {
     "source": "SEC Form 10-Q for quarter ended 2026-09-30, filed 2026-10-28",
@@ -88,7 +88,7 @@
     "net_debt_including_lease_liabilities_using_principal": 678,
     "interpretation_de": "Zum 30.09.2026 bestehen 1.000 Mio. USD Anleihe-Nennbetrag (994 Mio. USD Bilanzbuchwert), keine Ziehung aus der 1.100-Mio.-USD-Revolverlinie und 178 Mio. USD Barwert der Leasingverbindlichkeiten (170 operativ, 8 Finanzierung). Gegen 500 Mio. USD Zahlungsmittel ergibt dies vereinfacht 500 Mio. USD Nettofinanzschulden ohne bzw. 678 Mio. USD inklusive Leasing; keine vollständige Enterprise-Value-Brücke. Die undrawn revolver capacity ist keine vorhandene Liquidität. Bei einer FCFF-Bewertung Leasingbehandlung und Cashflow-Definition konsistent halten, nicht doppelt abziehen.",
     "remaining_gaps_de": [
-      "Wirtschaftliche verwässerte Aktienzahl einschließlich ausstehender Vergütungsinstrumente prüfen",
+      "Stichtags-Aktienbestand, Optionen und DSU nach bereits abgeschlossener RSA/RSU/PRSA/PRSU-Bestandsprüfung überleiten; kein pauschales Addieren von 6,221 Mio. Instrumenten",
       "Nachhaltigen Campus-Capex und Übernahme-/Integrationsaufwand normalisieren",
       "Vexcel-Transaktionsfinanzierung und künftige Liquidität gesondert modellieren",
       "Datierte unabhängige Aktienkursprüfung und Vergleichsunternehmen fehlen"
