@@ -4,7 +4,7 @@
   "source_updated_at": "2026-11-07",
   "title": "Wochenend-Briefing: Berkshire-Rückkäufe, Industrie und Cashflow-Qualität",
   "summary": "Stand Samstag, 07.11.2026: Berkshire Hathaway hat am 07.11. seinen Q3-Bericht veröffentlicht. Trotz Umsatzwachstum sank der operative Gewinn; hohe Aktienrückkäufe müssen am gezahlten Preis und der verbleibenden Liquidität gemessen werden. Daneben bleibt Destatis' Industrieproduktion für September (+0,7 % zum Vormonat, Veröffentlichung 06.11.) ein unsicheres Erholungssignal: das Gesamtquartal lag bei −0,4 %. Kein Live-Kursbericht.",
-  "interpretation": "Berkshires Anlagegewinne und -verluste nicht mit dem operativen Ergebnis verwechseln. Rückkäufe sind nur bei angemessenem Preis und tragfähigen Reserven wertsteigernd; der schwächere Versicherungsbeitrag ist ein Gegenargument. Die deutsche Industrie-Monatsverbesserung beweist keine dauerhafte Erholung. Daimler Trucks Einmalzuflüsse aus Beteiligungsverkäufen nicht als wiederkehrenden freien Cashflow fortschreiben.",
+  "interpretation": "Berkshires Original-Pressemitteilung vom 07.11.2026 nennt 178,5 Mrd. USD Versicherungs-Float zum 30.09.2026 (plus rund 2,1 Mrd. USD seit Jahresende 2025): Float sind übernommene Netto-Versicherungsverpflichtungen, keine frei ausschüttbare Kasse. Der Q3-Underwriting-Gewinn sank von 2,369 auf 1,352 Mrd. USD; zugleich stiegen die Rückkäufe auf rund 9,6 Mrd. USD. Rückkäufe nur anhand Preis, nach Verpflichtungen verfügbarer Liquidität und nachhaltiger Erträge beurteilen. Die deutsche Industrie-Monatsverbesserung beweist keine dauerhafte Erholung; Daimler Trucks Einmalzuflüsse aus Beteiligungsverkäufen nicht als wiederkehrenden freien Cashflow fortschreiben.",
   "highlights": [
     {
       "story_id": "2026-11-07-berkshire-q3-insurance-buybacks",
@@ -26,5 +26,5 @@
     }
   ],
   "next_watch": "Berkshires Q3-Rückkäufe und Liquidität anhand des Form 10-Q detailliert auditieren; Industrie-Folgeindikatoren und Daimler Trucks Cashflow ohne Einmaleffekte beobachten. Keine ungeprüften RSS-Gerüchte als Primärfakten übernehmen.",
-  "methodology": "Am 07.11.2026 mit bereits veröffentlichtem, auf Berkshire-Originalbericht vom selben Tag gestütztem FinanzPilot-Artikel synchronisiert (https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf). Destatis 06.11. und Daimler Truck 06.11. als getrennt datierte Quellen. Drei bestehende stabile Story-IDs; keine erfundene Marktzeit oder neue Kursdaten."
+  "methodology": "Berkshire-Zahlen direkt mit Emittenten-Pressemitteilung vom 07.11.2026 abgeglichen (https://www.berkshirehathaway.com/news/nov0726.pdf); vollständige Liquiditäts- und Rückkaufpreisprüfung benötigt weiterhin Form 10-Q (https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf). Destatis 06.11. und Daimler Truck 06.11. bleiben getrennt datierte Quellen. Drei stabile Story-IDs; keine ungeprüften Kurse."
 }
