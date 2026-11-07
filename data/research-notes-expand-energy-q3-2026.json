@@ -97,5 +97,32 @@
     "analysis_de": "Stand 20.10.2026 sind für Q4 2026 67% und für 2027 illustrativ etwa 55% der Erdgasproduktion abgesichert. Die Management-Präsentation schätzt bei der damaligen Terminkurve ca. 325 Mio. USD Q4-2026- und ca. 750 Mio. USD 2027-Hedge-Zuflüsse. Diese sind keine garantierten Erlöse, nicht mit heutigen Terminkursen zu verwechseln und nicht pauschal zusätzlich zum bereits berichteten operativen Cashflow anzusetzen. Preisabsicherung glättet kurzfristige Cashflows, begrenzt bei hohen Marktpreisen teils die Partizipation; Three-Way-Collars können unterhalb verkaufter Put-Schwellen den Schutz wieder reduzieren. Die tatsächliche Hedge-Wirkung ist instrument-, basis-, volumen- und zeitabhängig. Für einen normalisierten FCFE sind E&P-Preisszenarien und Marketing-Ergebnis separat zu modellieren; Cashflow-Ausweis und Derivatebewertung nicht doppelt zählen.",
     "counterhypothesis_de": "Die vom Management prognostizierten positiven Hedge-Ergebnisse könnten bei steigenden Terminpreisen sinken oder negativ werden; bei stark fallenden Preisen bleibt die nicht abgesicherte Produktion exponiert. Die 2027-Prozentquote beruht illustrativ auf der 2026-Förderprognose.",
     "remaining_gap_de": "Noch kein vollständiges Henry-Hub-/Basis-Sensitivitätsmodell, kein Hedge-Maturity-Rollforward und kein geprüfter Marktpreis/DCF; aus den genannten Management-Prognosen folgt kein Fair Value."
+  },
+  "gas_price_sensitivity_methodology_2026_11_07": {
+    "kind": "illustrative_first_order_exposure_not_company_forecast",
+    "source_basis": {
+      "issuer": "Expand Energy Corporation",
+      "presentation_date": "2026-10-27",
+      "market_curve_asof": "2026-10-20",
+      "url": "https://investors.expandenergy.com/static-files/a9bb3c71-b187-420b-b1bc-04278a19d188",
+      "assumptions_from_existing_research": "FY2026 production guidance 7.45–7.55 Bcfe/day, Q3 gas share 92%, illustrative 2027 gas hedge coverage ~55%"
+    },
+    "hypothetical_assumptions": {
+      "daily_total_production_bcfe": 7.5,
+      "days": 365,
+      "gas_share": 0.92,
+      "unhedged_gas_fraction": 0.45,
+      "gas_price_change_usd_per_mcfe": 1
+    },
+    "calculation": {
+      "annual_total_bcfe": 2737.5,
+      "annual_gas_bcfe": 2518.5,
+      "illustrative_unhedged_gas_bcfe": 1133.325,
+      "approx_first_order_gross_revenue_change_usd_million": 1133.325,
+      "formula": "7.5 Bcfe/day × 365 × 0.92 × (1−0.55) × 1 USD/Mcfe = 1,133.325 million USD; 1 Bcfe = 1 million Mcfe"
+    },
+    "interpretation_de": "Eine rein hypothetische Änderung des realisierten Erdgaspreises um +/−1 USD/Mcfe auf dem rechnerisch ungesicherten Anteil entspräche unter konstanten Mengen und linearer Preiswirkung grob +/−1,13 Mrd. USD jährlicher Bruttoerlös-Exponierung. Das ist KEIN prognostizierter EBITDA-, CFO- oder FCF-Effekt und keine verifizierte 2027-Produktionsplanung. Die 2026er Förderannahme und Q3-Gasquote werden ausdrücklich nur als Modellannahmen verwendet.",
+    "limitations_de": "Absicherungsinstrumente können Floors, Collars, Swaps und nichtlineare Auszahlungen enthalten; 55% ist ein illustrativer Management-Wert. Henry-Hub-Preisänderungen entsprechen nicht zwingend realisierten lokalen Preisen (Basisdifferenzen). Preisabhängige Royalties, Fördersteuern, Marketing, GP&T, Volumenreaktionen, Working Capital, Capex und mögliche bereits im CFO enthaltene Hedge-Zahlungen fehlen. Kein Hedge-Zufluss zusätzlich zu bereits berichteten Cashflows addieren. Vor belastbarer Sensitivität 2027-Gasvolumen, regionale Differenziale und Kontraktstruktur aus Originalquellen abgleichen.",
+    "status": "methodology_only_no_fair_value"
   }
 }
