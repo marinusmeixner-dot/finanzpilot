@@ -28,8 +28,8 @@
   "open_due_diligence": [
     "Zonda-Kaufpreis und weitere Übernahmen von organischem Wachstum und wiederkehrendem FCF trennen",
     "Bereinigtes EBITDA zu GAAP-Ergebnis, aktienbasierter Vergütung und tatsächlichem Cashflow überleiten",
-    "Nettoliquidität, Leasing, wirtschaftliche Aktienzahl und potenzielle Verwässerung auditieren",
-    "Aktuellen Kurs unabhängig prüfen und erst danach Peer-/ETF-Vergleich sowie Fair-Value-Bandbreite aufbauen"
+    "Aktuellen Kurs unabhängig prüfen und erst danach Peer-/ETF-Vergleich sowie Fair-Value-Bandbreite aufbauen",
+    "Wirtschaftliche Aktienzahl, Verwässerung und Bewertungsbrücke trotz nun geprüfter Schulden und Leasing noch auditieren"
   ],
   "status": "research_only_quote_pending_no_fair_value",
   "disclosure": "Originalquelle belegt Zahlen und Notierung NASDAQ:CSGP; unabhängig geprüfter Börsenkurs fehlt. Keine Kaufempfehlung.",
@@ -65,5 +65,33 @@
     "remaining": "Working-Capital-Überleitung im Detail, nachhaltiger Investitionsbedarf, Leasing, wirtschaftliche Aktienzahl und unabhängiger Kurs sind weiterhin offen.",
     "source_url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm",
     "note": "Offene Prüfpunktliste nach bereits publizierter Cashflow-Analyse bereinigt; keine neuen Bilanzzahlen behauptet."
+  },
+  "capital_structure_audit_2026_11_07": {
+    "source": "SEC Form 10-Q for quarter ended 2026-09-30, filed 2026-10-28",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm",
+    "unit": "USD million",
+    "senior_notes_principal": 1000,
+    "senior_notes_net_book_value": 994,
+    "senior_notes_coupon_percent": 2.8,
+    "senior_notes_maturity": "2030-07-15",
+    "undrawn_revolver_capacity": 1100,
+    "revolver_drawn": 0,
+    "operating_lease_liability_present_value": 170,
+    "operating_lease_current": 26,
+    "operating_lease_long_term": 144,
+    "finance_lease_liability_present_value": 8,
+    "finance_lease_current": 6,
+    "finance_lease_long_term": 2,
+    "total_lease_liability_present_value": 178,
+    "cash_and_equivalents_from_prior_cashflow_audit": 500,
+    "net_financial_debt_excluding_leases_using_principal": 500,
+    "net_debt_including_lease_liabilities_using_principal": 678,
+    "interpretation_de": "Zum 30.09.2026 bestehen 1.000 Mio. USD Anleihe-Nennbetrag (994 Mio. USD Bilanzbuchwert), keine Ziehung aus der 1.100-Mio.-USD-Revolverlinie und 178 Mio. USD Barwert der Leasingverbindlichkeiten (170 operativ, 8 Finanzierung). Gegen 500 Mio. USD Zahlungsmittel ergibt dies vereinfacht 500 Mio. USD Nettofinanzschulden ohne bzw. 678 Mio. USD inklusive Leasing; keine vollständige Enterprise-Value-Brücke. Die undrawn revolver capacity ist keine vorhandene Liquidität. Bei einer FCFF-Bewertung Leasingbehandlung und Cashflow-Definition konsistent halten, nicht doppelt abziehen.",
+    "remaining_gaps_de": [
+      "Wirtschaftliche verwässerte Aktienzahl einschließlich ausstehender Vergütungsinstrumente prüfen",
+      "Nachhaltigen Campus-Capex und Übernahme-/Integrationsaufwand normalisieren",
+      "Vexcel-Transaktionsfinanzierung und künftige Liquidität gesondert modellieren",
+      "Datierte unabhängige Aktienkursprüfung und Vergleichsunternehmen fehlen"
+    ]
   }
 }
