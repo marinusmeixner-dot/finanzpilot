@@ -30,7 +30,7 @@
   "counterhypothesis_de": "Hohe Fördermengen können bei fallenden realisierten Erdgaspreisen dennoch sinkende Margen und Cashflows erzeugen. Erschließungskosten und notwendige Ersatzbohrungen begrenzen die frei verfügbare Mittelgenerierung; Hedging kann sowohl schützen als auch Preischancen beschränken.",
   "open_due_diligence": [
     "10-Q: 9M CFO und Capex periodengleich grob abgeglichen; exakte Investitionszeile, Akquisitions-Cashflows und normalisierten FCF weiter auditieren",
-    "Transportnominalwerte aus Q3-10-Q erfasst; Cashflow-Überlappung, Mindestabnahmen, Kapazitätsauslastung, Gas-Hedges und Henry-Hub-Sensitivität noch prüfen",
+    "Transportnominalwerte und Management-Hedge-Deckungsquoten erfasst; Henry-Hub-/Basis-Sensitivität, Mindestabnahmen und Cashflow-Überlappung noch prüfen",
     "Twin-Eagle-Kaufpreis, Finanzierung, Integration und konsolidierte Schulden/Leasing erfassen",
     "Stichtagsaktienzahl, Rückkäufe und Verwässerung prüfen",
     "Unabhängig datierte Kursbasis und währungsgleiche Peer-/ETF-Vergleiche vor Bewertung prüfen"
@@ -71,5 +71,31 @@
     "analysis_de": "Die 8.940 Mio. USD sind Brutto-Nominalverpflichtungen aus Gathering, Processing, Transport und Speicherung über viele Jahre, keine sofort fälligen Finanzschulden und kein Betrag, der zusätzlich vollständig vom 9M-Free-Cashflow abgezogen werden darf. Teilweise stehen Gegenleistungen, Drittvolumen-Credits und Erstattungen gegenüber; einige laufende Gebühren sind bereits im operativen Cashflow erfasst. Die Delfin-LNG-Vereinbarung betrifft geschätzte feste Preisbestandteile über 20 Jahre; die tatsächlichen Zahlungen sind variabel. Vor Fair Value sind Kapazitätsauslastung, Mindestabnahmen, erwartete Gegenumsätze und Cashflow-Modellierung ohne Doppelzählung zu prüfen.",
     "risk_signal_de": "Bei niedriger Förderung oder niedrigen Gaspreisen können vertragliche Kapazitätsgebühren relativ zur erzielten Marge steigen. Der 10-Q nennt zudem steigende GP&T-Kosten: 9M 2026 2.002 Mio. USD vs. 1.734 Mio. USD 9M 2025, 0,98 vs. 0,89 USD/Mcfe.",
     "limitations_de": "Nominale Verpflichtungen nicht als Barwert, Nettoschulden oder zusätzliche einmalige Cash-Abflüsse ausweisen; LNG-Verpflichtungen nicht ungeprüft zur Transporttabelle addieren."
+  },
+  "hedge_audit_2026_10_20": {
+    "source": {
+      "title": "Expand Energy 3Q26 Earnings Presentation, slides 16, 20",
+      "published": "2026-10-27",
+      "market_curve_asof": "2026-10-20",
+      "url": "https://investors.expandenergy.com/static-files/a9bb3c71-b187-420b-b1bc-04278a19d188"
+    },
+    "hedged_natural_gas_bcf": {
+      "2026_Q4": 422,
+      "2027_Q1": 362,
+      "2027_Q2": 375,
+      "2027_Q3": 330,
+      "2027_Q4": 282
+    },
+    "coverage_percent_2026_Q4": 67,
+    "coverage_percent_2027_approx": 55,
+    "estimated_hedge_realizations_usd_million": {
+      "2026_YTD_actual": 221,
+      "2026_Q4_estimate": 325,
+      "2027_FY_estimate": 750
+    },
+    "forecast_2027_margin_uplift_usd_per_mcfe_approx": 0.25,
+    "analysis_de": "Stand 20.10.2026 sind für Q4 2026 67% und für 2027 illustrativ etwa 55% der Erdgasproduktion abgesichert. Die Management-Präsentation schätzt bei der damaligen Terminkurve ca. 325 Mio. USD Q4-2026- und ca. 750 Mio. USD 2027-Hedge-Zuflüsse. Diese sind keine garantierten Erlöse, nicht mit heutigen Terminkursen zu verwechseln und nicht pauschal zusätzlich zum bereits berichteten operativen Cashflow anzusetzen. Preisabsicherung glättet kurzfristige Cashflows, begrenzt bei hohen Marktpreisen teils die Partizipation; Three-Way-Collars können unterhalb verkaufter Put-Schwellen den Schutz wieder reduzieren. Die tatsächliche Hedge-Wirkung ist instrument-, basis-, volumen- und zeitabhängig. Für einen normalisierten FCFE sind E&P-Preisszenarien und Marketing-Ergebnis separat zu modellieren; Cashflow-Ausweis und Derivatebewertung nicht doppelt zählen.",
+    "counterhypothesis_de": "Die vom Management prognostizierten positiven Hedge-Ergebnisse könnten bei steigenden Terminpreisen sinken oder negativ werden; bei stark fallenden Preisen bleibt die nicht abgesicherte Produktion exponiert. Die 2027-Prozentquote beruht illustrativ auf der 2026-Förderprognose.",
+    "remaining_gap_de": "Noch kein vollständiges Henry-Hub-/Basis-Sensitivitätsmodell, kein Hedge-Maturity-Rollforward und kein geprüfter Marktpreis/DCF; aus den genannten Management-Prognosen folgt kein Fair Value."
   }
 }
