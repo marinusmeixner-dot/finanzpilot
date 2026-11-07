@@ -1,30 +1,30 @@
 {
   "schema_version": 1,
   "date": "2026-11-07",
-  "source_updated_at": "2026-11-06",
-  "title": "Wochenend-Briefing: Industrie-Erholung und Cashflow-Qualität prüfen",
-  "summary": "Stand Samstag, 07.11.2026: Das jüngste bestätigte Destatis-Signal bleibt die Veröffentlichung vom 06.11. zur September-Industrieproduktion (+0,7 % zum Vormonat; Autoindustrie +17,1 %). Der Quartalsvergleich (−0,4 %) widerspricht einer bereits gesicherten Trendwende. Daimler Trucks Quartalsbericht vom 06.11. zeigt, weshalb Beteiligungsverkäufe nicht als dauerhaft wiederkehrender operativer Cashflow gelten. Dies ist eine datierte Wochenend-Einordnung bereits veröffentlichter Originalquellen, keine neue Samstagsmeldung und kein Live-Marktbericht.",
-  "interpretation": "Die am Freitag veröffentlichten Daten bleiben am Samstag relevant, liefern aber keinen neuen Kurs- oder Handelssignal-Stand. Eine positive Monatszahl kann aus Basis- und Werksferieneffekten entstehen; für die These einer nachhaltigen Erholung müssen Folgeaufträge, Umsatz, Margen und Cashflow zusammenpassen. Bei Daimler Truck sind operative Verbesserung und Einmalzufluss getrennt zu modellieren. Keine automatische Kaufempfehlung.",
+  "source_updated_at": "2026-11-07",
+  "title": "Wochenend-Briefing: Berkshire-Rückkäufe, Industrie und Cashflow-Qualität",
+  "summary": "Stand Samstag, 07.11.2026: Berkshire Hathaway hat am 07.11. seinen Q3-Bericht veröffentlicht. Trotz Umsatzwachstum sank der operative Gewinn; hohe Aktienrückkäufe müssen am gezahlten Preis und der verbleibenden Liquidität gemessen werden. Daneben bleibt Destatis' Industrieproduktion für September (+0,7 % zum Vormonat, Veröffentlichung 06.11.) ein unsicheres Erholungssignal: das Gesamtquartal lag bei −0,4 %. Kein Live-Kursbericht.",
+  "interpretation": "Berkshires Anlagegewinne und -verluste nicht mit dem operativen Ergebnis verwechseln. Rückkäufe sind nur bei angemessenem Preis und tragfähigen Reserven wertsteigernd; der schwächere Versicherungsbeitrag ist ein Gegenargument. Die deutsche Industrie-Monatsverbesserung beweist keine dauerhafte Erholung. Daimler Trucks Einmalzuflüsse aus Beteiligungsverkäufen nicht als wiederkehrenden freien Cashflow fortschreiben.",
   "highlights": [
     {
-      "story_id": "2026-11-06-destatis-industrial-production-september",
-      "title": "Industrieproduktion: +0,7 % im September",
-      "why": "Der Autosektor holt kräftig auf, doch der August wurde nach unten revidiert und das Gesamtquartal blieb schwach.",
-      "watch": "Weitere Produktionsdaten, Maschinenbau, Energiepreise, tatsächliche Firmenmargen und CFO/FCF"
+      "story_id": "2026-11-07-berkshire-q3-insurance-buybacks",
+      "title": "Berkshire: schwächeres operatives Ergebnis trotz hoher Rückkäufe",
+      "why": "Der am 07.11. veröffentlichte Q3-Bericht zeigt, dass Rückkaufvolumen und Ergebnisqualität getrennt bewertet werden müssen.",
+      "watch": "Rückkaufpreis relativ zum inneren Wert, Versicherungsreserven, operativer Gewinn und tatsächliche Liquidität"
     },
     {
-      "story_id": "2026-11-04-eurostat-eurozone-inflation-october-flash",
-      "title": "Inflation: Energie treibt die Teuerung",
-      "why": "Ein unerwarteter Preisschub kann Zinserwartungen und Unternehmensmargen beeinflussen.",
-      "watch": "Weitere Inflationsdaten, Kernrate und Entscheidungen der EZB"
+      "story_id": "2026-11-06-destatis-industrial-production-september",
+      "title": "Industrieproduktion: Septemberplus ist noch keine Trendwende",
+      "why": "+0,7 % im Monat stehen einem rückläufigen Quartal gegenüber.",
+      "watch": "Auftragseingänge, Revisionen und Margenentwicklung"
     },
     {
       "story_id": "2026-11-06-daimler-truck-q3-margin-cashflow",
-      "title": "Daimler Truck: bessere Marge, Cashflow mit Einmaleffekt",
-      "why": "Der am 6. November veröffentlichte Quartalsbericht zeigt deutlich höhere Industrieumsätze und Margen; der hohe freie Cashflow enthält aber einen Beitrag aus einem Beteiligungsverkauf und ist nicht vollständig als wiederkehrend anzusehen.",
-      "watch": "Operativer Cashflow ohne Beteiligungsveräußerung, Nachfrage in Nordamerika, Auftragseingang und Margen im nächsten Quartal"
+      "title": "Daimler Truck: Cashflow durch Einmaleffekt verzerrt",
+      "why": "Der am 06.11. veröffentlichte Bericht enthält einen Beteiligungsverkauf, der nicht als laufender Cashflow behandelt werden darf.",
+      "watch": "Cashflow ohne Beteiligungsveräußerung, Nachfrage und Aufträge"
     }
   ],
-  "next_watch": "Ab dem nächsten Daten-/Handelstag prüfen: Folgeaufträge und Produktionsrevisionen, Cashflow ohne ARCHION-Verkauf bei Daimler Truck, sowie aktuelle Unternehmens-Originalberichte. Unbestätigte CoreWeave-Anleiherenditen und Tesla-Produktionsgerüchte bleiben bis zur Primärprüfung außerhalb der drei Top-Themen.",
-  "methodology": "Briefing am 07.11.2026 redaktionell neu eingeordnet; letzte neu verwendete Primärquelle bleibt Destatis vom 06.11.2026 (Pressemitteilung 389). Drei vorhandene Story-IDs bleiben unverändert, keine neue Meldung oder Marktzeit erfunden. Weitere Highlights beruhen auf getrennt datierten Originalquellen. Kein Live-Kurs und kein Kaufurteil."
+  "next_watch": "Berkshires Q3-Rückkäufe und Liquidität anhand des Form 10-Q detailliert auditieren; Industrie-Folgeindikatoren und Daimler Trucks Cashflow ohne Einmaleffekte beobachten. Keine ungeprüften RSS-Gerüchte als Primärfakten übernehmen.",
+  "methodology": "Am 07.11.2026 mit bereits veröffentlichtem, auf Berkshire-Originalbericht vom selben Tag gestütztem FinanzPilot-Artikel synchronisiert (https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf). Destatis 06.11. und Daimler Truck 06.11. als getrennt datierte Quellen. Drei bestehende stabile Story-IDs; keine erfundene Marktzeit oder neue Kursdaten."
 }
