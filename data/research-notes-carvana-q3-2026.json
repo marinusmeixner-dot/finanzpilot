@@ -42,5 +42,46 @@
   "analysis": "9M einfacher FCF (CFO minus Käufe von Sachanlagen) stieg von 510 auf 734 Mio. USD (+224 Mio., +43,9 %). Dies ist keine normalisierte Eigentümer-Cashflow-Prognose: Fahrzeugbestände, Forderungsverkäufe und Zahlungszeitpunkte beeinflussen CFO. Ausgewiesene Gesamtverschuldung einschließlich kurzfristiger revolvierender Kredite 5.228 Mio. USD; nicht mit 3.049 Mio. USD frei verfügbaren Barmitteln oder 123 Mio. USD restricted cash vermischen. Operative Leasingverbindlichkeiten und Tax-Receivable-Agreement-Verpflichtungen separat prüfen. Q3-Konzernergebnis 483 Mio. USD ist nicht das den Carvana-Co.-Aktionären zurechenbare Ergebnis (289 Mio. USD).",
   "counterhypothesis": "Hoher Absatz und positive FCF-Dynamik könnten teilweise von günstiger Kreditveräußerung, Working-Capital-Timing und Kreditmarktbedingungen abhängen. Bei schwächerer Nachfrage oder teurerer Refinanzierung kann der beobachtete FCF nicht fortgeschrieben werden.",
   "valuation_status": "No fair value: verified current price, diluted economic share count incl. LLC units, debt maturity ladder, normalized finance receivable cash conversion and cost of equity still required.",
-  "publication_status": "research_note_only_not_investment_rating"
+  "publication_status": "research_note_only_not_investment_rating",
+  "finance_receivables_cashflow_audit": {
+    "period": "nine months ended 2026-09-30",
+    "unit": "USD million",
+    "source": {
+      "title": "Carvana Q3 2026 Letter to Shareholders",
+      "date": "2026-10-28",
+      "url": "https://investors.carvana.com/~/media/Files/C/Carvana-IR/documents/cvna-shareholder-letter-q3-2026.pdf",
+      "printed_page": 13
+    },
+    "origination": {
+      "current": -14187,
+      "prior": -9180
+    },
+    "sale_proceeds_net": {
+      "current": 14722,
+      "prior": 9583
+    },
+    "gain_on_loan_sales_adjustment": {
+      "current": -1084,
+      "prior": -878
+    },
+    "principal_repayments": {
+      "current": 201,
+      "prior": 189
+    },
+    "net_cashflow_bridge": {
+      "current": -348,
+      "prior": -296,
+      "formula": "origination + sale_proceeds_net + gain_on_loan_sales_adjustment + principal_repayments"
+    },
+    "inventory_cashflow": {
+      "current": -1025,
+      "prior": -676
+    },
+    "accounts_payable_accrual_cashflow": {
+      "current": 475,
+      "prior": 153
+    },
+    "interpretation": "Die vier ausgewiesenen Forderungspositionen ergeben 2026 netto -348 Mio. USD gegenüber -296 Mio. USD 2025. Das ist eine isolierte CFO-Überleitungsgruppe, weder das vollständige Kreditgeschäftsergebnis noch ein additiver Abzug vom bereits ausgewiesenen CFO. Fahrzeugbestandsaufbau belastet CFO um 1.025 Mio. USD; höhere Verbindlichkeiten stützen ihn um 475 Mio. USD. Deshalb sind 734 Mio. USD einfacher FCF nicht mit dauerhaft verfügbarem Eigenkapital-Cashflow gleichzusetzen.",
+    "next_gap": "Kreditverkaufsgewinne, Rückbehalte/Securitization-Risiken, nicht beherrschende LLC-Anteile, gesamte Lease-Laufzeiten und Bewertung mit datiertem unabhängigem Kurs weiter prüfen."
+  }
 }
