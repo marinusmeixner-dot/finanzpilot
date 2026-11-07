@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T07:08:24.469893Z",
+  "updated_at": "2026-11-07T13:18:56.402874Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -478,60 +478,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/eu-mediamarkt-saturn-jd-genehmigung-100.html",
       "published_at": "2026-11-03T13:25:20Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-698d6cf4b0b9ed95d7",
-      "title": "Bundesnetzagentur fördert den Bau elf neuer Gaskraftwerke",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/energie/bundesnetzagentur-gaskraftwerke-100.html",
-      "published_at": "2026-11-03T10:28:56Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-026efd763a1236d593",
-      "title": "Marktbericht: Anleger scheuen vor US-Zwischenwahlen das Risiko",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-apple-midterms-100.html",
-      "published_at": "2026-11-03T09:15:35Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bc7ec95ca7fa69eed2",
-      "title": "Update Wirtschaft vom 03.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1677148.html",
-      "published_at": "2026-11-03T09:08:43Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f52dff25f896947aeb",
-      "title": "Kahlschlag bei Schaeffler: Stellenabbau und Standortschließungen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/schaeffler-154.html",
-      "published_at": "2026-11-03T09:02:12Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6268726bab7edf53ae",
-      "title": "Starkes iPhone-Geschäft sorgt für Rekordumsatz bei Apple",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/apple-rekordumsatz-100.html",
-      "published_at": "2026-11-03T08:13:13Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-912e762a4781505847",
-      "title": "Was Polens Wirtschaft boomen lässt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/polen-boom-wirtschaftswunder-100.html",
-      "published_at": "2026-11-03T07:23:57Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

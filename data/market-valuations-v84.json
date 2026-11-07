@@ -248,14 +248,14 @@
       "ticker": "SIE",
       "name": "Siemens AG",
       "quote": {
-        "close": 273.25,
+        "close": 263.64999,
         "exchange": "XETRA",
         "currency": "EUR",
         "price_type": "regular_session_close",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "source_url": "https://finance.yahoo.com/quote/SIE.DE/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-06T09:04:16.216258Z",
+        "observed_at": "2026-11-07T13:19:13.114399Z",
         "provider_ticker": "SIE.DE",
         "exchange_verified_by_operator": false
       },
@@ -279,14 +279,14 @@
       "ticker": "AIXA",
       "name": "AIXTRON SE",
       "quote": {
-        "close": 28.93,
+        "close": 30.41,
         "exchange": "XETRA",
         "currency": "EUR",
         "price_type": "regular_session_close",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "source_url": "https://finance.yahoo.com/quote/AIXA.DE/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-06T09:04:16.216258Z",
+        "observed_at": "2026-11-07T13:19:13.114399Z",
         "provider_ticker": "AIXA.DE",
         "exchange_verified_by_operator": false
       },
@@ -319,14 +319,14 @@
       "ticker": "KGX",
       "name": "KION Group AG",
       "quote": {
-        "close": 34.04,
+        "close": 34.32,
         "exchange": "XETRA",
         "currency": "EUR",
         "price_type": "regular_session_close",
-        "date": "2026-11-05",
+        "date": "2026-11-06",
         "source_url": "https://finance.yahoo.com/quote/KGX.DE/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-06T09:04:16.216258Z",
+        "observed_at": "2026-11-07T13:19:13.114399Z",
         "provider_ticker": "KGX.DE",
         "exchange_verified_by_operator": false
       },
@@ -390,5 +390,5 @@
       }
     }
   ],
-  "last_quote_refresh_at": "2026-11-07T07:08:41.214918Z"
+  "last_quote_refresh_at": "2026-11-07T13:19:13.114399Z"
 }
