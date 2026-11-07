@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "kind": "primary_source_research_gap",
+  "symbol": "ARES",
+  "company": "Ares Management Corporation",
+  "checked_on": "2026-11-07",
+  "period_end": "2026-09-30",
+  "source": {
+    "title": "Ares Management Corporation Q3 2026 earnings release",
+    "published": "2026-10-29",
+    "url": "https://www.ir.ares.com/news/ares-management-corporation-reports-third-quarter-2026-results/9365ada6-f26c-478b-b3b8-f5532df289f6"
+  },
+  "facts": {
+    "aum_usd_billion_approx": 691,
+    "quarterly_fee_related_earnings_usd_million": 524.2,
+    "quarterly_after_tax_realized_income_usd_million": 449.6,
+    "quarterly_gaap_net_income_attributable_usd_million": 85.3,
+    "quarterly_capital_commitments_usd_billion_more_than": 31,
+    "quarterly_class_a_dividend_usd": 1.35
+  },
+  "analysis_de": "Ares verdient wiederkehrende Managementgebühren für Kredit-, Immobilien-, Private-Equity-, Infrastruktur- und Sekundärmarktfonds sowie variable leistungsabhängige Vergütungen. Gebührenbezogenes Ergebnis (FRE) und realisiertes Nachsteuerergebnis sind bereinigte Kennzahlen und dürfen nicht als frei ausschüttbarer Cashflow interpretiert werden. Das starke Fundraising kann künftig Gebühren erhöhen, sofern das Kapital tatsächlich gebührenwirksam wird. Die deutlich niedrigere GAAP-Ergebniszahl mahnt zu einer Überleitung von nicht zahlungswirksamen und variablen Komponenten.",
+  "counterhypothesis_de": "Kreditverluste, schwächere Fondsperformance, verzögerte Kapitalabrufe, Rückgaben oder sinkende Gebühren können die erwartete Umwandlung neuer Kapitalzusagen in nachhaltigen Eigentümer-Cashflow bremsen.",
+  "open_due_diligence": [
+    "Q3-2026-10-Q vom 06.11.2026 unmittelbar auf SEC EDGAR prüfen und CFO/Capex mit Vergleichsperiode abgleichen",
+    "Konsolidierte Fondsvermögenswerte und -schulden strikt von wirtschaftlicher Verschuldung der börsennotierten Managementgesellschaft trennen",
+    "Fee-paying AUM, noch nicht gebührenwirksames zugesagtes Kapital und Gebührenmargen nach Segment überleiten",
+    "Class-A-, LLC- und wandelbare Vorzugsrechte auf wirtschaftliche Verwässerung prüfen",
+    "Erst nach verifizierter Kursnotierung, Aktienzahl, normalisiertem FCFE und Peer-Abgleich Fair-Value-Bandbreite modellieren"
+  ],
+  "status": "research_only_not_fair_value_or_buy_signal",
+  "disclosure": "Kein Kurs, kein Zielpreis, keine historische Rendite behauptet; Kennzahlen stammen aus Emittentenmeldung, nicht aus einem geprüften 10-Q-Cashflow-Audit."
+}
