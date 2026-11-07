@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T00:56:00.261664Z",
+  "updated_at": "2026-11-07T07:08:24.469893Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-45b2e91dc6c161eccf",
+      "title": "Sanierung der Bahnstrecke Berlin-Hannover: Massive Probleme für Pendler",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
+      "published_at": "2026-11-07T02:54:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-8b08b339afc056b3ea",
       "title": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely, Fed's Daly says",
@@ -523,24 +532,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/polen-boom-wirtschaftswunder-100.html",
       "published_at": "2026-11-03T07:23:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7e27abbd965ce57d95",
-      "title": "Blackstone president calls for more equity to fund AI buildout as debt risks mount",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/03/equity-ai-debt-blackstone-pimco-financing.html",
-      "published_at": "2026-11-03T06:46:36Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-eced5724f02cd73cb4",
-      "title": "11KM-Podcast: Chip im Gehirn - wie KI und Mensch verbunden werden",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/podcast/11km/chips-hirn-schnittstelle-ki-100.html",
-      "published_at": "2026-11-03T06:03:56Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

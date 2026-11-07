@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "asof": "2026-11-05",
+  "asof": "2026-11-06",
   "purpose": "Dynamische, nicht auf neun Aktien begrenzte Prüf- und Vergleichsschicht zwischen öffentlichem Radar und belastbarem Unternehmensresearch.",
   "policy": "Technische Research-Priorität != faire Bewertung. Sekundärpreise und Cashflows sind als solche beschriftet; ohne normalisierte Cashflows, vollständige Equity-Bridge und Quellen-Prüfung kein Buy, Sell, überbewertet oder unterbewertet.",
   "status_counts": {
@@ -8,7 +8,7 @@
     "financial_data_review": 2,
     "financial_audit_pending": 3,
     "editorial_screen": 12,
-    "technical_screen": 38,
+    "technical_screen": 40,
     "archived": 0
   },
   "benchmark_method": "Nur identische Notierungswährung und gleiches 63-Handelstage-Fenster. ETF-Rendite ist historische Opportunitätskosteninformation, keine Prognose und kein Risikomatch.",
@@ -171,13 +171,13 @@
       "what_would_confirm": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
       "what_would_invalidate": "Der Gewinn enthält positive Zollerstattungen. Hardware-Nachfrage, China-Abhängigkeit, Lieferketten und ein historisches KGV von etwa 39 erhöhen das Bewertungsrisiko.",
       "financials": {
-        "price": 344.17001,
-        "price_date": "2026-11-05",
+        "price": 342.37,
+        "price_date": "2026-11-06",
         "currency": "USD",
         "exchange": "NASDAQ",
-        "market_cap_m": 5001541.22,
-        "ttm_pe": 38.33,
-        "ttm_fcf_yield_pct": 2.72,
+        "market_cap_m": 4975383.15,
+        "ttm_pe": 38.13,
+        "ttm_fcf_yield_pct": 2.73,
         "ttm_fcf_m": 136056.0,
         "eps_ttm": 8.98,
         "fundamental_observed_date": "2026-11-05",
@@ -221,36 +221,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 15.52
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 16.49
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 14.91
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 15.72
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 20.36
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 19.96
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -1.49,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 2.33,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -2.0,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 1.86,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Services-Marge, iPhone/China-Nachfrage und mögliche Wiederholung der Zollerstattungen prüfen; SBC, Aktienrückkäufe, Kapitalkosten, Investitionsnormalisierung und fairen Kursbereich unabhängig herleiten.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -515,13 +515,13 @@
       "what_would_confirm": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
       "what_would_invalidate": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
       "financials": {
-        "price": 535.92999,
-        "price_date": "2026-11-05",
+        "price": 530.60999,
+        "price_date": "2026-11-06",
         "currency": "USD",
         "exchange": "NASDAQ",
-        "market_cap_m": 3980352.04,
-        "ttm_pe": 27.99,
-        "ttm_fcf_yield_pct": 1.51,
+        "market_cap_m": 3940840.4,
+        "ttm_pe": 27.71,
+        "ttm_fcf_yield_pct": 1.52,
         "ttm_fcf_m": 59957.0,
         "eps_ttm": 19.15,
         "fundamental_observed_date": "2026-11-05",
@@ -565,9 +565,9 @@
           "company": "Alphabet",
           "sector": "Advertising & Cloud",
           "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 14.76,
-          "ttm_fcf_yield_pct": 0.57,
+          "price_date": "2026-11-06",
+          "ttm_pe": 14.87,
+          "ttm_fcf_yield_pct": 0.56,
           "price_source": "https://finance.yahoo.com/quote/GOOGL/history/",
           "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
         },
@@ -577,8 +577,8 @@
           "company": "Amazon",
           "sector": "Retail & Cloud",
           "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 21.04,
+          "price_date": "2026-11-06",
+          "ttm_pe": 20.96,
           "ttm_fcf_yield_pct": -1.51,
           "price_source": "https://finance.yahoo.com/quote/AMZN/history/",
           "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
@@ -589,9 +589,9 @@
           "company": "Meta Platforms",
           "sector": "Advertising & Platforms",
           "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 20.63,
-          "ttm_fcf_yield_pct": 1.85,
+          "price_date": "2026-11-06",
+          "ttm_pe": 20.8,
+          "ttm_fcf_yield_pct": 1.83,
           "price_source": "https://finance.yahoo.com/quote/META/history/",
           "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
         }
@@ -602,36 +602,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 12.97
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 10.47
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 12.36
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 9.7
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 17.81
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 13.94
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -2.52,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 1.3,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -3.48,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.38,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -873,177 +873,6 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "amazon",
-      "ticker": "AMZN",
-      "company": "Amazon",
-      "sector": "Retail & Cloud",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "A_research_first",
-      "research_stage": "source_based_watch",
-      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 100,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": true,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": true,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": true,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": "Hohes AWS-Wachstum könnte zukünftige Ertragskraft stärken. Die Preisfrage ist, wie viel Cashflow nach dem Ausbau der Infrastruktur verbleibt.",
-      "counter_thesis": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
-      "thesis_invalidated": false,
-      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-      "what_would_confirm": "AWS-Wachstum, Free Cashflow, Capex und aktuelle Bewertung prüfen.",
-      "what_would_invalidate": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
-      "financials": {
-        "price": 260.20999,
-        "price_date": "2026-11-05",
-        "currency": "USD",
-        "exchange": "NASDAQ",
-        "market_cap_m": 2812869.99,
-        "ttm_pe": 21.04,
-        "ttm_fcf_yield_pct": -1.51,
-        "ttm_fcf_m": -42357.0,
-        "eps_ttm": 12.37,
-        "fundamental_observed_date": "2026-11-05",
-        "source_price": "https://finance.yahoo.com/quote/AMZN/history/",
-        "source_fundamentals": "https://stockanalysis.com/stocks/amzn/statistics/",
-        "primary_verified_fields": [
-          "operating_cf_m",
-          "capex_m",
-          "free_cf_m"
-        ],
-        "cash_flow_method_warning": "Negativer TTM-FCF trotz positivem EPS. EPS enthält nicht alle laufenden KI- und Logistik-Investitionen; FCF-Rendite nicht als nachhaltige Ertragskraft interpretieren. TTM-CFO, Capex und CFO−Capex jetzt anhand Q3/2026- und FY2025-Originalberichten überprüft; Bilanz/Anzahl Aktien noch nicht primär vollständig abgeglichen.",
-        "date_alignment_warning": false
-      },
-      "primary_financial_status": "primary_ttm_reconciled",
-      "valuation_status": "audited_cashflow_no_fair_value",
-      "valuation_gaps": [
-        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten",
-        "Trennung von AWS/Handel, Finanzierung und IT-Immobilienverpflichtungen",
-        "Nettoschulden/Leases, verwässerte Aktienzahl, nachhaltiger Cashflow und DCF-WACC",
-        "Nachhaltig finanzierbares Capex-Niveau bei AWS-Wachstum und 2027-Guidance prüfen"
-      ],
-      "editorial_source": {
-        "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-        "date": "2026-11-01",
-        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
-      },
-      "primary_source_urls": [
-        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
-        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
-      ],
-      "original_idea_source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
-      "comparison_family": "Große Software-, Cloud- und Plattformanbieter",
-      "peer_valuations": [
-        {
-          "id": "alphabet",
-          "ticker": "GOOGL",
-          "company": "Alphabet",
-          "sector": "Advertising & Cloud",
-          "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 14.76,
-          "ttm_fcf_yield_pct": 0.57,
-          "price_source": "https://finance.yahoo.com/quote/GOOGL/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        },
-        {
-          "id": "meta",
-          "ticker": "META",
-          "company": "Meta Platforms",
-          "sector": "Advertising & Platforms",
-          "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 20.63,
-          "ttm_fcf_yield_pct": 1.85,
-          "price_source": "https://finance.yahoo.com/quote/META/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        },
-        {
-          "id": "microsoft",
-          "ticker": "MSFT",
-          "company": "Microsoft",
-          "sector": "Software & Cloud",
-          "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 27.99,
-          "ttm_fcf_yield_pct": 1.51,
-          "price_source": "https://finance.yahoo.com/quote/MSFT/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        }
-      ],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 0.38
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -0.23
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 5.22
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -3.15,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 0.67,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-05",
-      "next_review": "AWS-Wachstum, Free Cashflow, Capex und aktuelle Bewertung prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
       "id": "munichre",
       "ticker": "MUV2.DE",
       "company": "Munich Re",
@@ -1216,36 +1045,143 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 18.17
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 16.16
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 17.56
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 15.39
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 23.01
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 19.63
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 1.83,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 5.65,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.68,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 4.54,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "deere",
+      "ticker": "DE",
+      "company": "Deere & Company",
+      "sector": "Industrials",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 15.92
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 15.15
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 19.39
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -0.72,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 3.14,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -1349,10 +1285,10 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "walmart",
-      "ticker": "WMT",
-      "company": "Walmart",
-      "sector": "Consumer Staples",
+      "id": "visa",
+      "ticker": "V",
+      "company": "Visa",
+      "sector": "Payments",
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "B_watchlist",
@@ -1422,36 +1358,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 20.04
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 22.61
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 19.43
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 21.84
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 24.88
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 26.08
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -1.12,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 2.7,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -3.19,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.67,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -1529,44 +1465,44 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 22.27
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 21.49
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 21.66
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 20.72
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 27.11
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 24.96
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -2.49,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 1.33,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -2.97,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.89,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "visa",
-      "ticker": "V",
-      "company": "Visa",
-      "sector": "Payments",
+      "id": "walmart",
+      "ticker": "WMT",
+      "company": "Walmart",
+      "sector": "Consumer Staples",
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "B_watchlist",
@@ -1636,36 +1572,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 22.37
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 17.1
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 21.76
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 16.33
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 27.21
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 20.57
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -3.2,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 0.62,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -2.83,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 1.03,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -1743,36 +1679,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 20.84
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 15.49
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 20.23
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 14.72
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 25.68
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 18.96
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -3.76,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 0.06,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -4.51,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -0.65,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -1876,113 +1812,6 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "nextera",
-      "ticker": "NEE",
-      "company": "NextEra Energy",
-      "sector": "Utilities",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "B_watchlist",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 10.62
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 10.01
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 15.46
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -0.23,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 3.59,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-05",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
       "id": "jnj",
       "ticker": "JNJ",
       "company": "Johnson & Johnson",
@@ -2056,37 +1885,315 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 11.14
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 11.44
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 10.53
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 10.67
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 15.98
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 14.91
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -1.45,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 2.37,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -0.04,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 3.82,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "nextera",
+      "ticker": "NEE",
+      "company": "NextEra Energy",
+      "sector": "Utilities",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 8.85
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 8.08
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 12.32
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -1.7,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 2.16,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "amazon",
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "sector": "Retail & Cloud",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "source_based_watch",
+      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 100,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": true,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": true,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": true,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": "Hohes AWS-Wachstum könnte zukünftige Ertragskraft stärken. Die Preisfrage ist, wie viel Cashflow nach dem Ausbau der Infrastruktur verbleibt.",
+      "counter_thesis": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
+      "thesis_invalidated": false,
+      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "what_would_confirm": "AWS-Wachstum, Free Cashflow, Capex und aktuelle Bewertung prüfen.",
+      "what_would_invalidate": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
+      "financials": {
+        "price": 259.29999,
+        "price_date": "2026-11-06",
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "market_cap_m": 2803032.89,
+        "ttm_pe": 20.96,
+        "ttm_fcf_yield_pct": -1.51,
+        "ttm_fcf_m": -42357.0,
+        "eps_ttm": 12.37,
+        "fundamental_observed_date": "2026-11-05",
+        "source_price": "https://finance.yahoo.com/quote/AMZN/history/",
+        "source_fundamentals": "https://stockanalysis.com/stocks/amzn/statistics/",
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "cash_flow_method_warning": "Negativer TTM-FCF trotz positivem EPS. EPS enthält nicht alle laufenden KI- und Logistik-Investitionen; FCF-Rendite nicht als nachhaltige Ertragskraft interpretieren. TTM-CFO, Capex und CFO−Capex jetzt anhand Q3/2026- und FY2025-Originalberichten überprüft; Bilanz/Anzahl Aktien noch nicht primär vollständig abgeglichen.",
+        "date_alignment_warning": false
+      },
+      "primary_financial_status": "primary_ttm_reconciled",
+      "valuation_status": "audited_cashflow_no_fair_value",
+      "valuation_gaps": [
+        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten",
+        "Trennung von AWS/Handel, Finanzierung und IT-Immobilienverpflichtungen",
+        "Nettoschulden/Leases, verwässerte Aktienzahl, nachhaltiger Cashflow und DCF-WACC",
+        "Nachhaltig finanzierbares Capex-Niveau bei AWS-Wachstum und 2027-Guidance prüfen"
+      ],
+      "editorial_source": {
+        "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+        "date": "2026-11-01",
+        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx"
+      },
+      "primary_source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000040/amzn-20260930.htm",
+        "https://www.sec.gov/Archives/edgar/data/1018724/000101872426000038/amzn-20260930xex991.htm"
+      ],
+      "original_idea_source": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/",
+      "comparison_family": "Große Software-, Cloud- und Plattformanbieter",
+      "peer_valuations": [
+        {
+          "id": "alphabet",
+          "ticker": "GOOGL",
+          "company": "Alphabet",
+          "sector": "Advertising & Cloud",
+          "currency": "USD",
+          "price_date": "2026-11-06",
+          "ttm_pe": 14.87,
+          "ttm_fcf_yield_pct": 0.56,
+          "price_source": "https://finance.yahoo.com/quote/GOOGL/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        },
+        {
+          "id": "meta",
+          "ticker": "META",
+          "company": "Meta Platforms",
+          "sector": "Advertising & Platforms",
+          "currency": "USD",
+          "price_date": "2026-11-06",
+          "ttm_pe": 20.8,
+          "ttm_fcf_yield_pct": 1.83,
+          "price_source": "https://finance.yahoo.com/quote/META/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        },
+        {
+          "id": "microsoft",
+          "ticker": "MSFT",
+          "company": "Microsoft",
+          "sector": "Software & Cloud",
+          "currency": "USD",
+          "price_date": "2026-11-06",
+          "ttm_pe": 27.71,
+          "ttm_fcf_yield_pct": 1.52,
+          "price_source": "https://finance.yahoo.com/quote/MSFT/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        }
+      ],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -1.34
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -2.11
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 2.13
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -3.49,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.37,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
+      "next_review": "AWS-Wachstum, Free Cashflow, Capex und aktuelle Bewertung prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
@@ -2167,36 +2274,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -7.55
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -7.61
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -8.16
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -8.38
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -2.71
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -4.14
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 3.28,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 7.1,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 4.98,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 8.84,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -2377,36 +2484,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 3.39
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 2.44
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 2.78
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 1.67
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 8.23
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 5.91
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -3.34,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 0.48,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -3.72,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.14,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -2484,143 +2591,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 4.33
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 3.78
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 3.72
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 3.01
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 9.17
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 7.25
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-05",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.19,
+        "benchmark_return_pct": -0.04,
+        "relative_to_benchmark_pp": 0.23,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "index-cvna",
-      "ticker": "CVNA",
-      "company": "Carvana",
-      "sector": "Consumer Discretionary",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "B_watchlist",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 7.32
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 6.71
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 12.16
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-05",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -2720,6 +2720,113 @@
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       },
       "radar_asof": "2026-11-05",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "index-cvna",
+      "ticker": "CVNA",
+      "company": "Carvana",
+      "sector": "Consumer Discretionary",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "B_watchlist",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 4.62
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 3.85
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 8.09
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-05",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 2.07,
+        "benchmark_return_pct": -0.04,
+        "relative_to_benchmark_pp": 2.11,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -2904,36 +3011,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 0.95
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 0.04
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 0.34
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -0.73
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 5.79
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 3.51
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-05",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -0.67,
+        "benchmark_return_pct": -0.04,
+        "relative_to_benchmark_pp": -0.63,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -2944,7 +3051,7 @@
       "sector": "Enterprise Software",
       "currency": "USD",
       "lifecycle": "active",
-      "radar_priority": "B_watchlist",
+      "radar_priority": "C_screen_only",
       "research_stage": "technical_screen",
       "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
       "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
@@ -3011,143 +3118,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 21.18
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 13.78
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 20.57
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 13.01
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 26.02
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 17.25
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -2.07,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 1.75,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -5.93,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -2.07,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "deere",
-      "ticker": "DE",
-      "company": "Deere & Company",
-      "sector": "Industrials",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "B_watchlist",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 12.68
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 12.07
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 17.52
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -1.95,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 1.87,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -3225,36 +3225,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 16.24
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 16.55
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 15.63
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 15.78
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 21.08
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 20.02
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-05",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 2.47,
+        "benchmark_return_pct": -0.04,
+        "relative_to_benchmark_pp": 2.51,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -3332,36 +3332,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 20.98
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 17.31
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 20.37
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 16.54
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 25.82
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 20.78
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-05",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -1.44,
+        "benchmark_return_pct": -0.04,
+        "relative_to_benchmark_pp": -1.4,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -3439,44 +3439,44 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 0.41
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -1.15
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -0.2
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -1.92
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 5.25
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 2.32
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -4.19,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -0.37,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -5.0,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -1.14,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "crowdstrike",
-      "ticker": "CRWD",
-      "company": "CrowdStrike",
-      "sector": "Cybersecurity",
+      "id": "index-csgp",
+      "ticker": "CSGP",
+      "company": "CoStar Group",
+      "sector": "Real Estate",
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "C_screen_only",
@@ -3546,36 +3546,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 6.88
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 2.47
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 6.27
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 1.7
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 11.72
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 5.94
         }
       ],
       "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -9.88,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -6.06,
+        "first_seen": "2026-11-06",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -3679,177 +3679,10 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "meta",
-      "ticker": "META",
-      "company": "Meta Platforms",
-      "sector": "Advertising & Platforms",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "C_screen_only",
-      "research_stage": "financial_data_review",
-      "decision": "Primär-Cashflow vorhanden. Preis- und Bewertungskriterien müssen unabhängig vervollständigt werden.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 85,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": true,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": true,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": true,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": "Wachstum des Werbegeschäfts und KI-Effizienz können die Ertragskraft stützen; zugleich sind Rechtskosten, Investitionen und Marktpreis zu berücksichtigen.",
-      "counter_thesis": "Rechtsrisiken, hohe KI-Kapazitätsinvestitionen und einzelne Sondereffekte erschweren die Schätzung nachhaltiger Margen.",
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Normalized EBIT, Rechtszahlungen, Werbepreise und Cashflow getrennt prüfen.",
-      "what_would_invalidate": "Rechtsrisiken, hohe KI-Kapazitätsinvestitionen und einzelne Sondereffekte erschweren die Schätzung nachhaltiger Margen.",
-      "financials": {
-        "price": 605.08002,
-        "price_date": "2026-11-05",
-        "currency": "USD",
-        "exchange": "NASDAQ",
-        "market_cap_m": 1549004.85,
-        "ttm_pe": 20.63,
-        "ttm_fcf_yield_pct": 1.85,
-        "ttm_fcf_m": 28649.0,
-        "eps_ttm": 29.33,
-        "fundamental_observed_date": "2026-11-05",
-        "source_price": "https://finance.yahoo.com/quote/META/history/",
-        "source_fundamentals": "https://stockanalysis.com/stocks/meta/statistics/",
-        "primary_verified_fields": [
-          "operating_cf_m",
-          "capex_m",
-          "free_cf_m"
-        ],
-        "cash_flow_method_warning": "Einmalige Rechtsrückstellungen und große KI-Capex machen historische Earnings und Cashflow zeitweise schwer vergleichbar. TTM-CFO, Capex und CFO−Capex jetzt anhand Q3/2026- und FY2025-Originalberichten überprüft; Bilanz/Anzahl Aktien noch nicht primär vollständig abgeglichen.",
-        "date_alignment_warning": false
-      },
-      "primary_financial_status": "primary_ttm_reconciled",
-      "valuation_status": "audited_cashflow_no_fair_value",
-      "valuation_gaps": [
-        "Q3-Rechtsrückstellung von wiederkehrenden Rechts-/Cashkosten abgrenzen",
-        "Aktuelle Schulden, liquide Investments und verwässerte Aktienzahlen prüfen",
-        "KI-Capex, Reality-Labs-Kosten und Peer-Multiples in begründeten Szenarien",
-        "TTM-FCF der Finanzierungsleasing-Variante und künftige Verpflichtungen als wiederkehrend bewerten"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [
-        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
-        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/"
-      ],
-      "original_idea_source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
-      "comparison_family": "Große Software-, Cloud- und Plattformanbieter",
-      "peer_valuations": [
-        {
-          "id": "alphabet",
-          "ticker": "GOOGL",
-          "company": "Alphabet",
-          "sector": "Advertising & Cloud",
-          "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 14.76,
-          "ttm_fcf_yield_pct": 0.57,
-          "price_source": "https://finance.yahoo.com/quote/GOOGL/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        },
-        {
-          "id": "amazon",
-          "ticker": "AMZN",
-          "company": "Amazon",
-          "sector": "Retail & Cloud",
-          "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 21.04,
-          "ttm_fcf_yield_pct": -1.51,
-          "price_source": "https://finance.yahoo.com/quote/AMZN/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        },
-        {
-          "id": "microsoft",
-          "ticker": "MSFT",
-          "company": "Microsoft",
-          "sector": "Software & Cloud",
-          "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 27.99,
-          "ttm_fcf_yield_pct": 1.51,
-          "price_source": "https://finance.yahoo.com/quote/MSFT/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        }
-      ],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 7.85
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 7.24
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 12.69
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -4.07,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -0.25,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-05",
-      "next_review": "Normalized EBIT, Rechtszahlungen, Werbepreise und Cashflow getrennt prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "palantir",
-      "ticker": "PLTR",
-      "company": "Palantir",
-      "sector": "Enterprise Software",
+      "id": "crowdstrike",
+      "ticker": "CRWD",
+      "company": "CrowdStrike",
+      "sector": "Cybersecurity",
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "C_screen_only",
@@ -3919,37 +3752,311 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -4.31
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 1.75
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -4.92
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 0.98
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 0.53
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 5.22
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -9.73,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -5.91,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -10.0,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -6.14,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "amd",
+      "ticker": "AMD",
+      "company": "AMD",
+      "sector": "Semiconductors",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 1.05
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 0.28
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 4.52
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -8.13,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -4.27,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "meta",
+      "ticker": "META",
+      "company": "Meta Platforms",
+      "sector": "Advertising & Platforms",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "financial_data_review",
+      "decision": "Primär-Cashflow vorhanden. Preis- und Bewertungskriterien müssen unabhängig vervollständigt werden.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 85,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": true,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": true,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": true,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": "Wachstum des Werbegeschäfts und KI-Effizienz können die Ertragskraft stützen; zugleich sind Rechtskosten, Investitionen und Marktpreis zu berücksichtigen.",
+      "counter_thesis": "Rechtsrisiken, hohe KI-Kapazitätsinvestitionen und einzelne Sondereffekte erschweren die Schätzung nachhaltiger Margen.",
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Normalized EBIT, Rechtszahlungen, Werbepreise und Cashflow getrennt prüfen.",
+      "what_would_invalidate": "Rechtsrisiken, hohe KI-Kapazitätsinvestitionen und einzelne Sondereffekte erschweren die Schätzung nachhaltiger Margen.",
+      "financials": {
+        "price": 610.15002,
+        "price_date": "2026-11-06",
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "market_cap_m": 1561984.05,
+        "ttm_pe": 20.8,
+        "ttm_fcf_yield_pct": 1.83,
+        "ttm_fcf_m": 28649.0,
+        "eps_ttm": 29.33,
+        "fundamental_observed_date": "2026-11-05",
+        "source_price": "https://finance.yahoo.com/quote/META/history/",
+        "source_fundamentals": "https://stockanalysis.com/stocks/meta/statistics/",
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "cash_flow_method_warning": "Einmalige Rechtsrückstellungen und große KI-Capex machen historische Earnings und Cashflow zeitweise schwer vergleichbar. TTM-CFO, Capex und CFO−Capex jetzt anhand Q3/2026- und FY2025-Originalberichten überprüft; Bilanz/Anzahl Aktien noch nicht primär vollständig abgeglichen.",
+        "date_alignment_warning": false
+      },
+      "primary_financial_status": "primary_ttm_reconciled",
+      "valuation_status": "audited_cashflow_no_fair_value",
+      "valuation_gaps": [
+        "Q3-Rechtsrückstellung von wiederkehrenden Rechts-/Cashkosten abgrenzen",
+        "Aktuelle Schulden, liquide Investments und verwässerte Aktienzahlen prüfen",
+        "KI-Capex, Reality-Labs-Kosten und Peer-Multiples in begründeten Szenarien",
+        "TTM-FCF der Finanzierungsleasing-Variante und künftige Verpflichtungen als wiederkehrend bewerten"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [
+        "https://www.sec.gov/Archives/edgar/data/1326801/000162828026003942/meta-20251231.htm",
+        "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/"
+      ],
+      "original_idea_source": "https://investor.atmeta.com/investor-news/press-release-details/2026/Meta-Reports-Third-Quarter-2026-Results/",
+      "comparison_family": "Große Software-, Cloud- und Plattformanbieter",
+      "peer_valuations": [
+        {
+          "id": "alphabet",
+          "ticker": "GOOGL",
+          "company": "Alphabet",
+          "sector": "Advertising & Cloud",
+          "currency": "USD",
+          "price_date": "2026-11-06",
+          "ttm_pe": 14.87,
+          "ttm_fcf_yield_pct": 0.56,
+          "price_source": "https://finance.yahoo.com/quote/GOOGL/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        },
+        {
+          "id": "amazon",
+          "ticker": "AMZN",
+          "company": "Amazon",
+          "sector": "Retail & Cloud",
+          "currency": "USD",
+          "price_date": "2026-11-06",
+          "ttm_pe": 20.96,
+          "ttm_fcf_yield_pct": -1.51,
+          "price_source": "https://finance.yahoo.com/quote/AMZN/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        },
+        {
+          "id": "microsoft",
+          "ticker": "MSFT",
+          "company": "Microsoft",
+          "sector": "Software & Cloud",
+          "currency": "USD",
+          "price_date": "2026-11-06",
+          "ttm_pe": 27.71,
+          "ttm_fcf_yield_pct": 1.52,
+          "price_source": "https://finance.yahoo.com/quote/MSFT/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        }
+      ],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 8.06
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 7.29
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 11.53
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -3.26,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.6,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
+      "next_review": "Normalized EBIT, Rechtszahlungen, Werbepreise und Cashflow getrennt prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
@@ -4026,44 +4133,44 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": 10.18
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 13.68
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": 9.57
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 12.91
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 15.02
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 17.15
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -10.77,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -6.95,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -7.0,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -3.14,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "paloalto",
-      "ticker": "PANW",
-      "company": "Palo Alto Networks",
-      "sector": "Cybersecurity",
+      "id": "palantir",
+      "ticker": "PLTR",
+      "company": "Palantir",
+      "sector": "Enterprise Software",
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "C_screen_only",
@@ -4133,36 +4240,278 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -7.94
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -3.05
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -8.55
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -3.82
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -3.1
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 0.42
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -9.59,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -5.77,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -6.59,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -2.73,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "Semiconductors",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "source_based_watch",
+      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 100,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": true,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": true,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": true,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": "Hohe Nachfrage nach KI-Infrastruktur unterstützt Umsatz und Gewinne; Bewertungsrisiken steigen, wenn die Nachfrage früher als erwartet abflacht.",
+      "counter_thesis": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "thesis_invalidated": false,
+      "why_now": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
+      "what_would_confirm": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
+      "what_would_invalidate": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "financials": {
+        "price": 186.64,
+        "price_date": "2026-11-06",
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "market_cap_m": 4506796.08,
+        "ttm_pe": 23.6,
+        "ttm_fcf_yield_pct": 2.82,
+        "ttm_fcf_m": 127006.0,
+        "eps_ttm": 7.91,
+        "fundamental_observed_date": "2026-11-05",
+        "source_price": "https://finance.yahoo.com/quote/NVDA/history/",
+        "source_fundamentals": "https://stockanalysis.com/stocks/nvda/statistics/",
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "cash_flow_method_warning": "Ausgesprochen hohe KI-Nachfrage und Gewinnmargen; Normalisierung und Kunden-Capex können TTM-EPS/FCF schnell verändern. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
+        "date_alignment_warning": false
+      },
+      "primary_financial_status": "primary_ttm_reconciled",
+      "valuation_status": "audited_cashflow_no_fair_value",
+      "valuation_gaps": [
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
+        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
+        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
+        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
+        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
+      ],
+      "editorial_source": {
+        "title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
+        "date": "2026-10-28",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
+      },
+      "primary_source_urls": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+      ],
+      "original_idea_source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "comparison_family": "Halbleiter- und KI-Lieferkette",
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -8.69
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -9.46
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -5.22
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -9.55,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -5.69,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
+      "next_review": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "index-exe",
+      "ticker": "EXE",
+      "company": "Expand Energy",
+      "sector": "Energy",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -7.34
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -8.11
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -3.87
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-06",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -4240,44 +4589,44 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -2.74
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -6.68
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -3.35
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -7.45
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 2.1
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -3.21
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -1.56,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 2.26,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -1.83,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 2.03,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "adobe",
-      "ticker": "ADBE",
-      "company": "Adobe",
-      "sector": "Software",
+      "id": "paloalto",
+      "ticker": "PANW",
+      "company": "Palo Alto Networks",
+      "sector": "Cybersecurity",
       "currency": "USD",
       "lifecycle": "active",
       "radar_priority": "C_screen_only",
@@ -4347,172 +4696,37 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -1.5
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -13.07
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -2.11
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -13.84
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": 3.34
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -9.6
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -0.82,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 3.0,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -9.83,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -5.97,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "nvidia",
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "sector": "Semiconductors",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "C_screen_only",
-      "research_stage": "source_based_watch",
-      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 100,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": true,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": true,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": true,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": "Hohe Nachfrage nach KI-Infrastruktur unterstützt Umsatz und Gewinne; Bewertungsrisiken steigen, wenn die Nachfrage früher als erwartet abflacht.",
-      "counter_thesis": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
-      "thesis_invalidated": false,
-      "why_now": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
-      "what_would_confirm": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
-      "what_would_invalidate": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
-      "financials": {
-        "price": 181.60001,
-        "price_date": "2026-11-05",
-        "currency": "USD",
-        "exchange": "NASDAQ",
-        "market_cap_m": 4385095.44,
-        "ttm_pe": 22.96,
-        "ttm_fcf_yield_pct": 2.9,
-        "ttm_fcf_m": 127006.0,
-        "eps_ttm": 7.91,
-        "fundamental_observed_date": "2026-11-05",
-        "source_price": "https://finance.yahoo.com/quote/NVDA/history/",
-        "source_fundamentals": "https://stockanalysis.com/stocks/nvda/statistics/",
-        "primary_verified_fields": [
-          "operating_cf_m",
-          "capex_m",
-          "free_cf_m"
-        ],
-        "cash_flow_method_warning": "Ausgesprochen hohe KI-Nachfrage und Gewinnmargen; Normalisierung und Kunden-Capex können TTM-EPS/FCF schnell verändern. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
-        "date_alignment_warning": false
-      },
-      "primary_financial_status": "primary_ttm_reconciled",
-      "valuation_status": "audited_cashflow_no_fair_value",
-      "valuation_gaps": [
-        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
-        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
-        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
-        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
-        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
-      ],
-      "editorial_source": {
-        "title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
-        "date": "2026-10-28",
-        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
-      },
-      "primary_source_urls": [
-        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
-        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
-      ],
-      "original_idea_source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
-      "comparison_family": "Halbleiter- und KI-Lieferkette",
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -13.24
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -13.85
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -8.4
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -11.99,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -8.17,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-05",
-      "next_review": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
@@ -4718,6 +4932,113 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
+      "id": "adobe",
+      "ticker": "ADBE",
+      "company": "Adobe",
+      "sector": "Software",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "technical_screen",
+      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 10,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": false,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": false,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": false,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": false,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": null,
+      "counter_thesis": null,
+      "thesis_invalidated": false,
+      "why_now": null,
+      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
+      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "financials": {},
+      "primary_financial_status": "not_audited",
+      "valuation_status": "no_source_audited_fair_value",
+      "valuation_gaps": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "editorial_source": null,
+      "primary_source_urls": [],
+      "original_idea_source": null,
+      "comparison_family": null,
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -6.91
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -7.68
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -3.44
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -3.69,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.17,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-06",
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
       "id": "alphabet",
       "ticker": "GOOGL",
       "company": "Alphabet",
@@ -4772,13 +5093,13 @@
       "what_would_confirm": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen.",
       "what_would_invalidate": "Cloud-Wachstum ist nicht gleich Free Cashflow. 51,355 Mrd. USD Quartals-Capex und regulatorische Risiken sind materiell.",
       "financials": {
-        "price": 282.57001,
-        "price_date": "2026-11-05",
+        "price": 284.78,
+        "price_date": "2026-11-06",
         "currency": "USD",
         "exchange": "NASDAQ",
-        "market_cap_m": 3472785.42,
-        "ttm_pe": 14.76,
-        "ttm_fcf_yield_pct": 0.57,
+        "market_cap_m": 3499946.2,
+        "ttm_pe": 14.87,
+        "ttm_fcf_yield_pct": 0.56,
         "ttm_fcf_m": 19747.0,
         "eps_ttm": 19.15,
         "fundamental_observed_date": "2026-11-05",
@@ -4819,8 +5140,8 @@
           "company": "Amazon",
           "sector": "Retail & Cloud",
           "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 21.04,
+          "price_date": "2026-11-06",
+          "ttm_pe": 20.96,
           "ttm_fcf_yield_pct": -1.51,
           "price_source": "https://finance.yahoo.com/quote/AMZN/history/",
           "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
@@ -4831,9 +5152,9 @@
           "company": "Meta Platforms",
           "sector": "Advertising & Platforms",
           "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 20.63,
-          "ttm_fcf_yield_pct": 1.85,
+          "price_date": "2026-11-06",
+          "ttm_pe": 20.8,
+          "ttm_fcf_yield_pct": 1.83,
           "price_source": "https://finance.yahoo.com/quote/META/history/",
           "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
         },
@@ -4843,9 +5164,9 @@
           "company": "Microsoft",
           "sector": "Software & Cloud",
           "currency": "USD",
-          "price_date": "2026-11-05",
-          "ttm_pe": 27.99,
-          "ttm_fcf_yield_pct": 1.51,
+          "price_date": "2026-11-06",
+          "ttm_pe": 27.71,
+          "ttm_fcf_yield_pct": 1.52,
           "price_source": "https://finance.yahoo.com/quote/MSFT/history/",
           "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
         }
@@ -4856,36 +5177,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -14.61
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -14.87
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -15.22
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -15.64
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -9.77
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -11.4
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -2.2,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": 1.62,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -1.44,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 2.42,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -4967,36 +5288,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -36.41
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -34.66
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -37.02
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -35.43
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -31.57
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -31.19
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-05",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 1.38,
+        "benchmark_return_pct": -0.04,
+        "relative_to_benchmark_pp": 1.42,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -5307,143 +5628,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -10.13
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -4.62
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -10.74
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -5.39
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -5.29
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -1.15
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -10.78,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -6.96,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -5.13,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -1.27,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
-      "id": "amd",
-      "ticker": "AMD",
-      "company": "AMD",
-      "sector": "Semiconductors",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "C_screen_only",
-      "research_stage": "technical_screen",
-      "decision": "Technischer Suchhinweis. Noch keine geprüfte Investmentthese oder Unternehmensbewertung.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 10,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": false,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": false,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": false,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": false,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": null,
-      "counter_thesis": null,
-      "thesis_invalidated": false,
-      "why_now": null,
-      "what_would_confirm": "Echten Geschäftsbericht prüfen, danach Cashflows und Bewertungsniveau vergleichen.",
-      "what_would_invalidate": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "financials": {},
-      "primary_financial_status": "not_audited",
-      "valuation_status": "no_source_audited_fair_value",
-      "valuation_gaps": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "editorial_source": null,
-      "primary_source_urls": [],
-      "original_idea_source": null,
-      "comparison_family": null,
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -10.76
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -11.37
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -5.92
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -17.26,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -13.44,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -5620,36 +5834,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -28.53
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -27.73
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -29.14
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -28.5
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -23.69
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -24.26
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -6.37,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -2.55,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -5.53,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -1.67,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -5727,36 +5941,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -26.14
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -24.92
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -26.75
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -25.69
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -21.3
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -21.45
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -10.43,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -6.61,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -9.77,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -5.91,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -6056,36 +6270,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -35.14
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -30.79
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -35.75
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -31.56
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -30.3
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -27.32
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -13.58,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -9.76,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -9.93,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -6.07,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -6144,13 +6358,13 @@
       "what_would_confirm": "Unabhängig prüfen: organisches Wachstum, Integration, Cashbestand nach Übernahme, Verwässerung, Preis und Multiples.",
       "what_would_invalidate": "Kaufpreis 500 Mio. $ plus erwartete Mitarbeiterbindungs- und aktienbasierte Vergütungen erhöhen Kapitalbedarf und Verwässerungsrisiken.",
       "financials": {
-        "price": 47.5,
-        "price_date": "2026-11-05",
+        "price": 47.78,
+        "price_date": "2026-11-06",
         "currency": "USD",
         "exchange": "NASDAQ",
-        "market_cap_m": 7990.45,
-        "ttm_pe": 33.22,
-        "ttm_fcf_yield_pct": 3.36,
+        "market_cap_m": 8037.55,
+        "ttm_pe": 33.41,
+        "ttm_fcf_yield_pct": 3.34,
         "ttm_fcf_m": 268.29,
         "eps_ttm": 1.43,
         "fundamental_observed_date": "2026-11-05",
@@ -6181,36 +6395,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -23.31
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -20.24
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -23.92
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -21.01
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -18.47
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -16.77
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -16.99,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -13.17,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -16.51,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -12.65,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Unabhängig prüfen: organisches Wachstum, Integration, Cashbestand nach Übernahme, Verwässerung, Preis und Multiples.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -6288,36 +6502,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -21.54
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -17.78
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -22.15
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -18.55
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -16.7
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -14.31
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -7.38,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -3.56,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -3.22,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": 0.64,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -6395,15 +6609,15 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -16.57
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -16.41
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
+          "return_63d_pct": -4.65,
           "excess_return_pp": -17.18
         },
         {
@@ -6411,20 +6625,20 @@
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -11.73
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -12.94
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -7.48,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -3.66,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -7.05,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -3.19,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -6502,36 +6716,36 @@
           "name": "iShares MSCI ACWI ETF",
           "ticker": "ACWI",
           "currency": "USD",
-          "return_63d_pct": -5.58,
-          "excess_return_pp": -15.8
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -17.43
         },
         {
           "id": "SPY",
           "name": "SPDR S&P 500 ETF",
           "ticker": "SPY",
           "currency": "USD",
-          "return_63d_pct": -4.97,
-          "excess_return_pp": -16.41
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -18.2
         },
         {
           "id": "QQQ",
           "name": "Invesco Nasdaq-100 ETF",
           "ticker": "QQQ",
           "currency": "USD",
-          "return_63d_pct": -10.42,
-          "excess_return_pp": -10.96
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -13.96
         }
       ],
       "relative_performance": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-05",
-        "adjusted_return_pct": -6.93,
-        "benchmark_return_pct": -3.82,
-        "relative_to_benchmark_pp": -3.11,
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": -6.17,
+        "benchmark_return_pct": -3.86,
+        "relative_to_benchmark_pp": -2.31,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       },
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
@@ -6708,7 +6922,7 @@
       "peer_valuations": [],
       "etf_alternatives": [],
       "relative_performance": null,
-      "radar_asof": "2026-11-05",
+      "radar_asof": "2026-11-06",
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     }

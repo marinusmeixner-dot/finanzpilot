@@ -676,6 +676,42 @@
       "discovery_date": "2026-11-07",
       "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
       "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-exe",
+      "ticker": "EXE",
+      "company": "Expand Energy",
+      "sector": "Energy",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0000895126",
+      "index_added": "2025-03-24",
+      "discovery_date": "2026-11-07",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-csgp",
+      "ticker": "CSGP",
+      "company": "CoStar Group",
+      "sector": "Real Estate",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001057352",
+      "index_added": "2022-09-19",
+      "discovery_date": "2026-11-07",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
     }
   ],
   "benchmarks": [

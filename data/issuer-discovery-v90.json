@@ -5,34 +5,28 @@
   "index_rows": 500,
   "new_companies": [
     {
-      "ticker": "CVNA",
-      "company": "Carvana",
-      "sector": "Consumer Discretionary",
-      "cik": "0001690820"
+      "ticker": "EXE",
+      "company": "Expand Energy",
+      "sector": "Energy",
+      "cik": "0000895126"
     },
     {
-      "ticker": "ARES",
-      "company": "Ares Management",
-      "sector": "Financials",
-      "cik": "0001176948"
+      "ticker": "CSGP",
+      "company": "CoStar Group",
+      "sector": "Real Estate",
+      "cik": "0001057352"
     }
   ],
-  "already_known": 51,
-  "total_universe": 53,
-  "quote_checks": 8,
+  "already_known": 53,
+  "total_universe": 55,
+  "quote_checks": 2,
   "quote_failures": [
-    "CVNA",
-    "ARES",
     "EXE",
-    "TPL",
-    "TRGP",
-    "EQT",
-    "CSGP",
-    "INVH"
+    "CSGP"
   ],
   "quote_crosschecked_added": 0,
   "quote_pending_added": 2,
-  "total_quote_pending": 6,
+  "total_quote_pending": 8,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }
