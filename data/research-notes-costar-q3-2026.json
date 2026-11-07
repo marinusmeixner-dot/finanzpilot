@@ -33,5 +33,32 @@
     "Aktuellen Kurs unabhängig prüfen und erst danach Peer-/ETF-Vergleich sowie Fair-Value-Bandbreite aufbauen"
   ],
   "status": "research_only_quote_pending_no_fair_value",
-  "disclosure": "Originalquelle belegt Zahlen und Notierung NASDAQ:CSGP; unabhängig geprüfter Börsenkurs fehlt. Keine Kaufempfehlung."
+  "disclosure": "Originalquelle belegt Zahlen und Notierung NASDAQ:CSGP; unabhängig geprüfter Börsenkurs fehlt. Keine Kaufempfehlung.",
+  "cashflow_audit_2026_11_07": {
+    "source": "SEC Form 10-Q filed 2026-10-28",
+    "source_url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000083/csgp-20260930.htm",
+    "period": "nine months ended 2026-09-30",
+    "unit": "USD million",
+    "cfo_2026": 455,
+    "cfo_2025": 268,
+    "ordinary_capex_2026": 60,
+    "ordinary_capex_2025": 77,
+    "new_campus_capex_2026": 134,
+    "new_campus_capex_2025": 246,
+    "fcf_after_all_reported_capex_2026": 261,
+    "fcf_after_all_reported_capex_2025": -55,
+    "acquisition_cash_2026": 789,
+    "acquisition_cash_2025": 2347,
+    "share_repurchases_2026": 668,
+    "share_based_compensation_2026": 112,
+    "litigation_cashflow_impact_2026": 99,
+    "cash_end_2026": 500,
+    "interpretation_de": "CFO minus beide ausgewiesenen Sachinvestitionspositionen ergibt 261 Mio. USD (2025: −55 Mio. USD). Die 789 Mio. USD Akquisitionsauszahlungen sind nicht in diesem einfachen FCF enthalten; nach Akquisitionszahlungen verbleiben rechnerisch −528 Mio. USD vor weiteren Investitions- und Finanzierungsposten. Der CFO enthält 112 Mio. USD nicht zahlungswirksame aktienbasierte Vergütung sowie eine Rechtsstreitzahlung von rund 99 Mio. USD; diese Positionen dürfen nicht doppelt abgezogen werden. 668 Mio. USD Aktienrückkäufe sind Finanzierungscashflow, nicht Capex. Positiver laufender FCF beweist deshalb weder einen positiven Gesamt-Cashbestandstrend noch günstige Bewertung.",
+    "remaining_gaps_de": [
+      "Verwässerte wirtschaftliche Aktienzahl, Leasingverbindlichkeiten und Schulden vollständig abgleichen",
+      "Nachhaltigen Campus-Capex und Integrationskosten der Zonda-Übernahme modellieren",
+      "Vexcel-Übernahme über 730 Mio. USD als noch nicht abgeschlossene Verpflichtung separat berücksichtigen",
+      "Unabhängig datierten Kurs prüfen und erst dann Peer-/ETF-Vergleich und Fair-Value-Szenarien erstellen"
+    ]
+  }
 }
