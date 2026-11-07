@@ -29,12 +29,27 @@
   "analysis_de": "Expand Energy produziert überwiegend Erdgas und vermarktet Energielieferungen. Q3-CFO von 1.177 Mio. USD ist ein tatsächlich berichteter Quartalszufluss, aber kein Free Cashflow: Investitionen, Akquisitionen und Hedging-/Working-Capital-Effekte sind getrennt zu prüfen. 3 Mrd. USD prognostizierte Jahresinvestitionen dürfen nicht ohne Quartalsabgleich von Q3-CFO abgezogen werden. Die abgeschlossene Twin-Eagle-Übernahme verändert den Vertriebs-/Marketingmix. 4,6 Mrd. USD Bruttoschulden sind nicht mit Nettoverschuldung gleichzusetzen. EBITDAX ist eine bereinigte Non-GAAP-Kennzahl, nicht ausschüttbarer Cashflow.",
   "counterhypothesis_de": "Hohe Fördermengen können bei fallenden realisierten Erdgaspreisen dennoch sinkende Margen und Cashflows erzeugen. Erschließungskosten und notwendige Ersatzbohrungen begrenzen die frei verfügbare Mittelgenerierung; Hedging kann sowohl schützen als auch Preischancen beschränken.",
   "open_due_diligence": [
-    "10-Q: CFO, Sachinvestitionen und Akquisitions-Cashflows für identische Zeiträume abgleichen; normalisierten FCF ermitteln",
+    "10-Q: 9M CFO und Capex periodengleich grob abgeglichen; exakte Investitionszeile, Akquisitions-Cashflows und normalisierten FCF weiter auditieren",
     "Gaspreisrealisierung, Hedge-Buch, Transportverpflichtungen und Sensitivität der Marge gegenüber Henry-Hub-Preisen prüfen",
     "Twin-Eagle-Kaufpreis, Finanzierung, Integration und konsolidierte Schulden/Leasing erfassen",
     "Stichtagsaktienzahl, Rückkäufe und Verwässerung prüfen",
     "Unabhängig datierte Kursbasis und währungsgleiche Peer-/ETF-Vergleiche vor Bewertung prüfen"
   ],
   "status": "research_only_quote_pending_no_fair_value",
-  "disclosure": "Offizielle Emittentenquelle vom 27.10.2026; keine unabhängig geprüfte Kursbasis, kein Fair Value, keine Kaufempfehlung."
+  "disclosure": "Offizielle Emittentenquelle vom 27.10.2026; keine unabhängig geprüfte Kursbasis, kein Fair Value, keine Kaufempfehlung.",
+  "cashflow_audit_9m_2026": {
+    "source": {
+      "title": "Expand Energy Form 10-Q, nine months ended September 30, 2026",
+      "filed": "2026-10-27",
+      "accession": "0000895126-26-000068",
+      "url": "https://investors.expandenergy.com/"
+    },
+    "period": "2026-01-01/2026-09-30",
+    "unit": "USD million",
+    "operating_cashflow": 4675,
+    "capital_expenditures_approx": 2300,
+    "simple_free_cashflow_approx": 2375,
+    "caveat_de": "9-Monats-CFO minus 9-Monats-Sachinvestitionen; Capex ist auf 0,01 Mrd. gerundet, daher FCF nur ungefähr. Nicht mit Q3-CFO oder der Ganzjahresprognose verrechnen. Akquisitions-Cashflows, Förderersatzbedarf, Gas-Hedges und Transportverpflichtungen bleiben separat zu auditieren. Keine normalisierte Eigentümer-Cashflow- oder Fair-Value-Aussage.",
+    "comparison_de": "Die früher offene Periodengleichheit ist für CFO und Capex auf 9M-Basis hergestellt. 9M-FCF ist weder Q3-FCF noch vollständig ausschüttbar."
+  }
 }
