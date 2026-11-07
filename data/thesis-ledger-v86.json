@@ -1117,6 +1117,42 @@
       "evidence_url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-6ad31f613bb977a",
+      "ticker": "ARES",
+      "company": "Ares Management",
+      "date": "2026-11-05",
+      "event_type": "entered_radar",
+      "signal_signature": "B_watchlist||active",
+      "from_priority": null,
+      "priority": "B_watchlist",
+      "adjusted_close": 133.72,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -5.58,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-bdfb997323732d6",
+      "ticker": "CVNA",
+      "company": "Carvana",
+      "date": "2026-11-05",
+      "event_type": "entered_radar",
+      "signal_signature": "B_watchlist||active",
+      "from_priority": null,
+      "priority": "B_watchlist",
+      "adjusted_close": 72.08,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -5.58,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }
