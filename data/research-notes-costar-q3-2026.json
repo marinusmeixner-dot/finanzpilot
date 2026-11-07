@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "kind": "primary_source_research_gap",
+  "symbol": "CSGP",
+  "company": "CoStar Group, Inc.",
+  "checked_on": "2026-11-07",
+  "period_end": "2026-09-30",
+  "source": {
+    "title": "CoStar Group Q3 2026 earnings release (SEC Exhibit 99.1)",
+    "published": "2026-10-27",
+    "url": "https://www.sec.gov/Archives/edgar/data/1057352/000105735226000078/q32026earningspressrelease.htm"
+  },
+  "facts": {
+    "quarterly_revenue_usd_million": 952,
+    "prior_year_revenue_usd_million": 834,
+    "quarterly_gaap_net_income_usd_million": 74,
+    "prior_year_gaap_net_loss_usd_million": -31,
+    "quarterly_adjusted_ebitda_usd_million": 229,
+    "quarterly_gaap_ebitda_usd_million": 179,
+    "quarterly_diluted_weighted_average_shares_million": 401.9,
+    "fy2026_adjusted_ebitda_guidance_usd_million": [
+      820,
+      840
+    ]
+  },
+  "analysis_de": "CoStar verkauft Immobilien-Marktplatzangebote, Daten und Analysen. Der Q3-Umsatz stieg um 14,1 %; das berichtete Ergebnis wechselte von Verlust zu Gewinn. Das bereinigte EBITDA von 229 Mio. USD liegt 50 Mio. USD über dem unbereinigten EBITDA. Das ist ein echter Prüfbedarf für Cashflow-Konversion und die Qualität der bereinigten Profitabilität, nicht bereits ein Beleg für einen günstigen Aktienkurs. Der Segmentmix aus gewerblichen und privaten Immobilienplattformen kann die Margenentwicklung wesentlich verändern.",
+  "counterhypothesis_de": "Ausgaben für Wohnimmobilienplattformen, Akquisitionen und Vermarktung könnten auch bei steigenden Buchungen einen großen Teil des künftigen Cashflows aufzehren. Erwartete Kostensenkungen und Guidance sind Prognosen, keine gesicherten Zuflüsse.",
+  "open_due_diligence": [
+    "Q3-10-Q: neunmonatigen CFO, Capex, Working Capital und Akquisitionscashflows mit Vorjahr periodengleich prüfen",
+    "Zonda-Kaufpreis und weitere Übernahmen von organischem Wachstum und wiederkehrendem FCF trennen",
+    "Bereinigtes EBITDA zu GAAP-Ergebnis, aktienbasierter Vergütung und tatsächlichem Cashflow überleiten",
+    "Nettoliquidität, Leasing, wirtschaftliche Aktienzahl und potenzielle Verwässerung auditieren",
+    "Aktuellen Kurs unabhängig prüfen und erst danach Peer-/ETF-Vergleich sowie Fair-Value-Bandbreite aufbauen"
+  ],
+  "status": "research_only_quote_pending_no_fair_value",
+  "disclosure": "Originalquelle belegt Zahlen und Notierung NASDAQ:CSGP; unabhängig geprüfter Börsenkurs fehlt. Keine Kaufempfehlung."
+}
