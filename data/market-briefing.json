@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "source_updated_at": "2026-11-06",
-  "title": "Industrieproduktion: Auto-Aufholeffekt statt bestätigter Trendwende",
-  "summary": "Destatis meldet für September 2026 real +0,7 % Produktion im deutschen Produzierenden Gewerbe. Besonders die Autoindustrie (+17,1 % gegenüber August) trug dazu bei; zugleich wurde der Augustwert auf +1,0 % revidiert und das Gesamtquartal lag 0,4 % unter dem Vorquartal. Industrieaufträge, Preisentwicklung und Gewinnqualität bleiben wichtige Folgesignale. Daimler Trucks neuer Quartalsbericht zeigt gleichzeitig, wie eine bessere operative Marge und ein durch Einmaleffekte gestützter Cashflow auseinanderfallen können.",
-  "interpretation": "Ein hoher Monatsanstieg nach Werksferien ist nicht automatisch ein nachhaltiger Umschwung in Umsatz, Margen und Cashflows. Für deutsche Industrieunternehmen zählen der künftige Auftragseingang, nachweisbarer Geschäftsbezug, Investitionen und reale Kosten. Einzelne Aktien oder ETFs dürfen aus der Statistik nicht allein als attraktiv bewertet werden. Beim Lkw-Hersteller Daimler Truck ist die verbesserte Industriemarge ein positives operatives Signal, während der berichtete freie Cashflow wegen des Beteiligungsverkaufs nicht unbereinigt fortgeschrieben werden darf.",
+  "title": "Wochenend-Briefing: Industrie-Erholung und Cashflow-Qualität prüfen",
+  "summary": "Stand Samstag, 07.11.2026: Das jüngste bestätigte Destatis-Signal bleibt die Veröffentlichung vom 06.11. zur September-Industrieproduktion (+0,7 % zum Vormonat; Autoindustrie +17,1 %). Der Quartalsvergleich (−0,4 %) widerspricht einer bereits gesicherten Trendwende. Daimler Trucks Quartalsbericht vom 06.11. zeigt, weshalb Beteiligungsverkäufe nicht als dauerhaft wiederkehrender operativer Cashflow gelten. Dies ist eine datierte Wochenend-Einordnung bereits veröffentlichter Originalquellen, keine neue Samstagsmeldung und kein Live-Marktbericht.",
+  "interpretation": "Die am Freitag veröffentlichten Daten bleiben am Samstag relevant, liefern aber keinen neuen Kurs- oder Handelssignal-Stand. Eine positive Monatszahl kann aus Basis- und Werksferieneffekten entstehen; für die These einer nachhaltigen Erholung müssen Folgeaufträge, Umsatz, Margen und Cashflow zusammenpassen. Bei Daimler Truck sind operative Verbesserung und Einmalzufluss getrennt zu modellieren. Keine automatische Kaufempfehlung.",
   "highlights": [
     {
       "story_id": "2026-11-06-destatis-industrial-production-september",
@@ -25,6 +25,6 @@
       "watch": "Operativer Cashflow ohne Beteiligungsveräußerung, Nachfrage in Nordamerika, Auftragseingang und Margen im nächsten Quartal"
     }
   ],
-  "next_watch": "Prüfen, ob der September-Anstieg in Aufträgen und Produktion in den nächsten Monaten bestätigt wird. Für neue Industrieaktien unabhängig vom Kursmomentum Primärberichte, tatsächliche Cashflows und ETF-Alternativen vergleichen. Bei Daimler Truck die tatsächlichen wiederkehrenden Cashflows vom ARCHION-Verkauf trennen und Aufträge sowie US-Nachfrage weiter prüfen.",
-  "methodology": "Erste neue Primärquelle: Statistisches Bundesamt, Pressemitteilung 389 vom 06.11.2026. Weitere Highlights sind ältere, getrennt datierte Originalberichte. FinanzPilot zeigt keine Live-Kurse oder automatischen Kaufurteile. Drittes Highlight ersetzt die ältere BMW-Meldung durch die bereits primärbelegte Daimler-Truck-Q3-Meldung vom 06.11.2026 (aktive Story-ID); BMW bleibt im Newsarchiv erhalten."
+  "next_watch": "Ab dem nächsten Daten-/Handelstag prüfen: Folgeaufträge und Produktionsrevisionen, Cashflow ohne ARCHION-Verkauf bei Daimler Truck, sowie aktuelle Unternehmens-Originalberichte. Unbestätigte CoreWeave-Anleiherenditen und Tesla-Produktionsgerüchte bleiben bis zur Primärprüfung außerhalb der drei Top-Themen.",
+  "methodology": "Briefing am 07.11.2026 redaktionell neu eingeordnet; letzte neu verwendete Primärquelle bleibt Destatis vom 06.11.2026 (Pressemitteilung 389). Drei vorhandene Story-IDs bleiben unverändert, keine neue Meldung oder Marktzeit erfunden. Weitere Highlights beruhen auf getrennt datierten Originalquellen. Kein Live-Kurs und kein Kaufurteil."
 }
