@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T13:18:56.402874Z",
+  "updated_at": "2026-11-07T13:59:47.533054Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -451,33 +451,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/evonik-basf-fusion-100.html",
       "published_at": "2026-11-03T14:59:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f79ea5c85290c6c6a5",
-      "title": "Cyberangriffe auf Kühlanlagen auch in deutschen Supermärkten",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/digitales/cyberangriffe-supermarkt-hacker-100.html",
-      "published_at": "2026-11-03T13:49:27Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-442665eb43c6146d94",
-      "title": "Anspannung am Wahltag: Was die Midterms für die Börse bedeuten",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-midterms-boerse-100.html",
-      "published_at": "2026-11-03T13:33:24Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d750d2b7d74794fc9a",
-      "title": "EU genehmigt MediaMarktSaturn-Übernahme durch JD.com",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/eu-mediamarkt-saturn-jd-genehmigung-100.html",
-      "published_at": "2026-11-03T13:25:20Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
