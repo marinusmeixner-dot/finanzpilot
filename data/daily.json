@@ -1,10 +1,58 @@
 {
-  "date": "2026-11-06",
-  "updated_at": "2026-11-06",
+  "date": "2026-11-07",
+  "updated_at": "2026-11-07",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Destatis meldet am 6. November einen Produktionsanstieg im September, der jedoch stark von Auto-Aufholeffekten und einer revidierten August-Zahl geprägt ist. Neue Unternehmensideen werden unabhängig vom bisherigen Radar geprüft.",
+  "intro": "Berkshire Hathaway meldet am 7. November schwächere operative Gewinne bei deutlich höheren Aktienrückkäufen. Die Wirkung hängt vom Versicherungsgeschäft und dem Preis der Rückkäufe ab; ältere Industrie- und Konjunkturdaten bleiben als datierte Einordnung erhalten.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-07-berkshire-q3-insurance-buybacks",
+      "title": "Berkshire Hathaway: Rückkäufe steigen, Versicherungsergebnis sinkt",
+      "published": "2026-11-07",
+      "category": "Unternehmen",
+      "symbols": [
+        "BRK.B",
+        "BRK.A"
+      ],
+      "source": "Berkshire Hathaway, Q3-2026-Mitteilung und Form 10-Q vom 07.11.2026",
+      "url": "https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf",
+      "why": "Das operative Quartalsergebnis sank trotz Wachstum in Bahn, Energie und Industrie; gleichzeitig wurden rund 9,6 Mrd. USD eigene Aktien zurückgekauft.",
+      "impact": "Rückkäufe reduzieren die Aktienzahl, schaffen aber nur bei einem Kaufpreis unter dem inneren Wert Wert je Aktie. Versicherungsrisiken und volatile Anlageergebnisse begrenzen die Aussagekraft des Quartalsgewinns.",
+      "article": {
+        "lead": "Berkshire Hathaway (NYSE: BRK.A und BRK.B) ist ein Mischkonzern mit Versicherungen wie GEICO, der Güterbahn BNSF, Energieversorgern, Industrie-, Handels- und Dienstleistungsunternehmen sowie einem großen Wertpapierportfolio. Versicherungsprämien, Bahntransporte, Strom, Produkte und Dienstleistungen bringen Einnahmen; Anlageerträge ergänzen sie. Am 7. November 2026 veröffentlichte Berkshire die Zahlen für das dritte Quartal.",
+        "sections": [
+          {
+            "heading": "Ergebnis: Warum der Nettogewinn täuschen kann",
+            "paragraphs": [
+              "Der Umsatz stieg im dritten Quartal von 94,972 auf 105,647 Milliarden US-Dollar. Der den Aktionären zurechenbare Nettogewinn fiel dagegen von 30,796 auf 22,112 Milliarden US-Dollar. Diese Differenz ist nicht automatisch ein entsprechender Einbruch der laufenden Geschäfte.",
+              "Der Quartalsgewinn enthält auch realisierte und nicht realisierte Wertveränderungen von Anlagen. Berkshire warnt selbst davor, solche Anlageergebnisse als Maßstab für die laufende Ertragskraft eines einzelnen Quartals zu verwenden."
+            ]
+          },
+          {
+            "heading": "Was im operativen Geschäft geschah",
+            "paragraphs": [
+              "Die nach Steuern ausgewiesenen operativen Gewinne sanken von 13,485 auf 12,705 Milliarden US-Dollar, rund 5,8 Prozent. Das Versicherungsergebnis aus dem eigentlichen Versicherungsgeschäft fiel von 2,369 auf 1,352 Milliarden US-Dollar; auch die Versicherungskapitalerträge sanken von 3,181 auf 2,734 Milliarden US-Dollar.",
+              "Dagegen stieg der operative Gewinn der Güterbahn BNSF von 1,449 auf 1,729 Milliarden US-Dollar, bei Berkshire Hathaway Energy von 1,489 auf 1,612 Milliarden US-Dollar und in Produktion, Dienstleistungen und Handel von 3,616 auf 4,042 Milliarden US-Dollar. Die Segmente entwickeln sich also unterschiedlich."
+            ]
+          },
+          {
+            "heading": "Rückkäufe: Kapitaleinsatz ist nicht automatisch Wertschöpfung",
+            "paragraphs": [
+              "Berkshire erwarb im Quartal eigene Aktien für rund 9,6 Milliarden US-Dollar und in den ersten neun Monaten für rund 14,4 Milliarden US-Dollar. Zum 30. September waren 1.418.900 Class-A-äquivalente Aktien ausstehend. Eine Class-A-Aktie entspricht wirtschaftlich 1.500 Class-B-Aktien.",
+              "Rückkäufe können den Anteil jedes verbleibenden Aktionärs erhöhen, verbrauchen aber liquide Mittel. Ob sie wirtschaftlich sinnvoll sind, hängt vom gezahlten Preis relativ zum inneren Wert und von alternativen Investitionsmöglichkeiten ab. Aus dem Rückkaufvolumen allein folgt weder ein fairer Aktienkurs noch eine Kaufempfehlung."
+            ]
+          },
+          {
+            "heading": "Risiken, Gegenhypothese und Bewertungsgrenzen",
+            "paragraphs": [
+              "Eine positive These lautet, dass die wachsenden Bahn-, Energie- und Industriebetriebe sowie eine kleinere Aktienzahl langfristig den Gewinn je Aktie stützen. Eine Gegenhypothese ist, dass schwächere Versicherungsprofitabilität, höhere Schadenkosten oder teure Rückkäufe diesen Vorteil aufzehren.",
+              "Für eine belastbare Bewertung sind die getrennten Cashflows der Versicherung und der kapitalintensiven Bahn- und Energiegeschäfte, Versicherungsreserven und Float, regulatorische Kapitalanforderungen, Investitionsbedarf und die tatsächlichen Rückkaufpreise nötig. Der große Bestand an Wertpapieren und kurzfristigen Anlagen darf nicht ohne Abzug zugehöriger Verpflichtungen als frei ausschüttbares Bargeld behandelt werden. Der aktuelle Börsenkurs wurde hier nicht unabhängig geprüft."
+            ]
+          }
+        ],
+        "conclusion": "Berkshires Q3-Bericht zeigt schwächere Versicherungsergebnisse bei robusteren anderen Sparten und erheblichen Aktienrückkäufen. Die Richtung des operativen Gewinns ist aussagekräftiger als isolierte Anlagegewinne; ob Rückkäufe Wert schaffen, bleibt ohne Bewertung des Kaufpreises offen."
+      }
+    },
     {
       "id": "2026-11-06-daimler-truck-q3-margin-cashflow",
       "title": "Daimler Truck: Gewinnsprung im Quartal – aber wie nachhaltig ist der Cashflow?",
