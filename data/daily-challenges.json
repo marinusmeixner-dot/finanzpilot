@@ -1,66 +1,66 @@
 {
   "schema_version": 1,
-  "date": "2026-11-07",
-  "updated_at": "2026-11-07T01:04:00+01:00",
+  "date": "2026-11-08",
+  "updated_at": "2026-11-08T01:03:00+01:00",
   "editor": "FinanzPilot Tagesredaktion – datierte Originalquellen und ausdrücklich hypothetische Szenarien",
-  "explanation": "Drei eigenständige offene Aufgaben für Samstag, 07.11.2026; Quellen datiert, Modellwerte ausdrücklich fiktiv.",
+  "explanation": "Drei neue, voneinander unabhängige offene Aufgaben für Sonntag, 08.11.2026; Primärquellen-Anlässe und ausdrücklich hypothetische Modellzahlen.",
   "tasks": [
     {
-      "id": "2026-11-07:market:production-base",
+      "id": "2026-11-08:market:quarter-vs-month",
       "kind": "market",
-      "date": "2026-11-07",
-      "title": "Industrieaufträge: Aufholeffekt oder Trendwende?",
-      "context": "Destatis berichtete am 05.11.2026 für September einen realen Auftragseingangsanstieg von 4,4 % gegenüber August; im August waren die Aufträge um 10,1 % gefallen. Für die Rechnung gilt ein ausdrücklich fiktiver Juli-Index von 100.",
-      "question": "Berechne August- und September-Index sowie die Veränderung September gegen Juli. Warum belegt ein Septemberplus noch keine Trendwende? Formuliere zwei konkurrierende Ursachen und je ein überprüfbares Widerlegungssignal. Was darf man daraus über Unternehmensgewinne NICHT folgern?",
+      "date": "2026-11-08",
+      "title": "Monatsplus und Quartalsminus gleichzeitig?",
+      "context": "Destatis meldete am 06.11.2026 für die deutsche Industrieproduktion im September +0,7 % gegenüber August, für das dritte Quartal jedoch −0,4 % gegenüber dem Vorquartal. Die folgenden Indexwerte sind ausdrücklich fiktiv: Juli 99, August 100, September 100,7.",
+      "question": "Berechne den Durchschnitt der drei fiktiven Monatsindizes. Welchen Durchschnitt müsste das Vorquartal bei einer Quartalsänderung von −0,4 % gehabt haben? Erkläre, warum ein positiver Septemberwert keine Quartalserholung beweist. Nenne zwei konkurrierende Ursachen und je ein überprüfbares Signal.",
       "rubric": [
-        "August 100×0,899=89,9; September 89,9×1,044=93,8556",
-        "September gegen Juli −6,1444 %; Änderungen nicht addieren",
-        "Basis- und Großauftragseffekte von nachhaltiger Nachfrage unterscheiden",
-        "Zwei Gegenhypothesen mit je einer überprüfbaren Datenreihe",
-        "Keine direkte Margen-, Cashflow- oder Aktienbewertung aus Monatsaufträgen"
+        "Q3-Durchschnitt (99+100+100,7)/3=99,9",
+        "Vorquartalsdurchschnitt 99,9/0,996≈100,3012",
+        "Monats- und Quartalsvergleich haben verschiedene Basen",
+        "Zwei plausible Ursachen und messbare Widerlegungssignale",
+        "Keine direkten Rückschlüsse auf Gewinne, Aktienkurse oder nachhaltige Trendwende"
       ],
-      "source": "Destatis – Auftragseingang im Verarbeitenden Gewerbe September 2026, Pressemitteilung 385",
-      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
-      "source_date": "2026-11-05",
+      "source": "Destatis – Produktion im Produzierenden Gewerbe September 2026 (06.11.2026)",
+      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/_inhalt.html",
+      "source_date": "2026-11-06",
       "symbol": ""
     },
     {
-      "id": "2026-11-07:research:litigation-cfo",
+      "id": "2026-11-08:research:float-liquidity",
       "kind": "research",
-      "date": "2026-11-07",
-      "title": "Rechtsstreit-Zahlungen und normalisierter Cashflow",
-      "context": "Bayers Q3-Mitteilung vom 03.11.2026 zeigt, warum Rechtsstreit-Zahlungen und operative Entwicklung getrennt betrachtet werden müssen. Sämtliche Rechenwerte dieser Aufgabe sind fiktiv und keine Bayer-Zahlen: CFO 600 Mio. €, Capex 900 Mio. €, darin enthaltene Rechtsstreit-Zahlungen 1.000 Mio. €.",
-      "question": "Berechne berichteten FCF und einen rein mechanisch um die Rechtsstreit-Zahlungen bereinigten CFO und FCF. Begründe, weshalb die bereinigte Zahl weder automatisch nachhaltig noch frei ausschüttbar ist. Welche drei Informationen brauchst du vor einer Fair-Value-Schätzung? Formuliere eine Gegenhypothese zur optimistischen Normalisierung.",
+      "date": "2026-11-08",
+      "title": "Versicherungs-Float ist keine freie Kasse",
+      "context": "Berkshire Hathaway berichtete am 07.11.2026 für Ende September einen Versicherungs-Float von 178,5 Mrd. USD. Die folgende Rechnung ist vollständig hypothetisch: 50 Mrd. USD liquide Anlagen, 18 Mrd. USD Mindestliquidität und 9 Mrd. USD zusätzliche absehbare Verpflichtungen.",
+      "question": "Berechne die unter den Modellannahmen maximal verbleibende Liquidität. Begründe, warum weder Float noch dieser Rest automatisch für Rückkäufe verfügbar sind. Formuliere zwei Stressszenarien für das Versicherungsgeschäft und je einen überprüfbaren Indikator. Welche Informationen fehlen für die Bewertung eines Aktienrückkaufs?",
       "rubric": [
-        "Berichteter FCF = 600−900=−300 Mio. €",
-        "Mechanisch bereinigter CFO=1.600 Mio. €, FCF=700 Mio. €",
-        "Einmalige und künftig wiederkehrende Zahlungen nicht ohne Nachweis trennen",
-        "Mindestens drei belastbare Inputs: künftige Rechtsrisiken, Investitionsbedarf, Nettoschulden/Aktienzahl oder Steuern",
-        "Gegenhypothese und falsifizierbarer Auslöser statt automatischer Kaufthese"
+        "50−18−9=23 Mrd. USD rein rechnerischer Rest",
+        "Float ist eine Verpflichtungs- und Finanzierungsgröße, kein ungebundener Cashbestand",
+        "Liquiditätsbedarf bei Großschäden und Kapitalmarktstress differenzieren",
+        "Mindestens zwei überprüfbare Stressindikatoren",
+        "Rückkaufpreis relativ zum vorsichtig geschätzten inneren Wert und Kapitalbedarf notwendig"
       ],
-      "source": "Bayer – Quartalsmitteilung Q3 2026",
-      "source_url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
-      "source_date": "2026-11-03",
-      "symbol": "BAYN.DE"
+      "source": "Berkshire Hathaway – Third Quarter 2026 Earnings Release, 07.11.2026",
+      "source_url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+      "source_date": "2026-11-07",
+      "symbol": "BRK.B"
     },
     {
-      "id": "2026-11-07:learning:real-return",
+      "id": "2026-11-08:learning:buyback-accretion",
       "kind": "learning",
-      "date": "2026-11-07",
-      "title": "Realrendite, Steuern und unsichere Inflation",
-      "context": "Die Destatis-Schnellschätzung für Oktober 2026 ist ein Anlass, zwischen nominaler und realer Kaufkraft zu unterscheiden. Alle folgenden Werte sind fiktiv: Nominalrendite 6 %, Inflation 3 %, pauschale Steuer auf den Nominalgewinn 25 %; Freibeträge und Gebühren werden zur Übung ignoriert.",
-      "question": "Berechne erst die exakte reale Rendite vor Steuer, dann die nominale Rendite nach Steuer und schließlich die reale Rendite nach Steuer. Erkläre, warum 6−3 nur eine Näherung ist. Welche Risiken entstehen, wenn die tatsächliche Inflation oder der Anlagehorizont von der Annahme abweichen? Nenne eine Gegenposition zur Aussage '6 % Rendite sind sicher gut'.",
+      "date": "2026-11-08",
+      "title": "Aktienrückkauf: Gewinn je Aktie gegen Unternehmenswert",
+      "context": "Die aktuellen Berkshire-Rückkäufe sind der Anlass für eine rein hypothetische Rechenaufgabe. Ein Unternehmen erzielt 1.000 Mio. € Jahresgewinn, hat 100 Mio. Aktien und kauft 10 Mio. Aktien für insgesamt 1.500 Mio. € zurück. Für die erste Rechnung bleibt der Jahresgewinn konstant; Zins- und Steuereffekte werden ignoriert.",
+      "question": "Berechne Gewinn je Aktie vor und nach dem Rückkauf sowie die prozentuale Veränderung. Erkläre, warum höherer Gewinn je Aktie nicht automatisch Wertschöpfung bedeutet. Welche Rolle spielen Kaufpreis, entgangene Zinsen und Finanzierungsrisiken? Formuliere eine Gegenhypothese und ein messbares Widerlegungskriterium.",
       "rubric": [
-        "Exakte reale Vorsteuerrendite 1,06/1,03−1≈2,9126 %",
-        "Nominale Nachsteuerrendite 6 %×0,75=4,5 % unter Modellannahmen",
-        "Reale Nachsteuerrendite 1,045/1,03−1≈1,4563 %",
-        "Fisher-Verhältnis und Unterschied zu bloßer Prozentpunktdifferenz erklären",
-        "Inflations-, Steuer-, Volatilitäts- und Zeithorizontunsicherheit mit Gegenargument benennen"
+        "EPS vorher 1.000/100=10 €",
+        "EPS nachher 1.000/90≈11,11 €, Zuwachs ≈11,11 %",
+        "Kaufpreis 150 € je Aktie; EPS-Steigerung allein kein Wertbeleg",
+        "Liquiditätsabfluss, Opportunitätskosten und möglicher Schuldendienst berücksichtigt",
+        "Gegenhypothese: Überzahlung oder Verlust von finanzieller Flexibilität mit überprüfbarem Signal"
       ],
-      "source": "Destatis – Verbraucherpreise Oktober 2026, vorläufig",
-      "source_url": "https://www.destatis.de/EN/Press/2026/10/PE26_382_611.html",
-      "source_date": "2026-10-30",
-      "symbol": ""
+      "source": "Berkshire Hathaway – Third Quarter 2026 Earnings Release, 07.11.2026",
+      "source_url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
+      "source_date": "2026-11-07",
+      "symbol": "BRK.B"
     }
   ]
 }
