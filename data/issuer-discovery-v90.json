@@ -8,7 +8,11 @@
       "ticker": "TWLO",
       "company": "Twilio",
       "sector": "Information Technology",
-      "cik": "0001447669"
+      "cik": "0001447669",
+      "primary_source_url": "https://www.twilio.com/en-us/press/releases/twilio-announces-third-quarter-2026-results",
+      "primary_source_date": "2026-10-29",
+      "primary_source_verified": "issuer_q3_2026_release",
+      "research_note": "Q3 2026 Umsatz 1.559,536 Mio. USD (+20 % berichtet, +16 % organisch); operativer GAAP-Gewinn 148,630 Mio. USD; CFO 389,164 Mio. USD; FCF 369,6 Mio. USD. Q4-Prognose organisches Wachstum 11–12 %: Wachstumsverlangsamung trotz starkem Q3 als Gegenhypothese prüfen. Kursbasis weiterhin unbestätigt; keine Fair-Value-Aussage."
     },
     {
       "ticker": "VEEV",
