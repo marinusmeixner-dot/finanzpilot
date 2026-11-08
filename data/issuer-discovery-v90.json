@@ -3,63 +3,14 @@
   "last_checked_date": "2026-11-08",
   "index_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "index_rows": 500,
-  "new_companies": [
-    {
-      "ticker": "ECHO",
-      "company": "EchoStar",
-      "sector": "Communication Services",
-      "cik": "0001415404"
-    },
-    {
-      "ticker": "HOOD",
-      "company": "Robinhood Markets",
-      "sector": "Financials",
-      "cik": "0001783879"
-    }
-  ],
-  "already_known": 57,
+  "new_companies": [],
+  "already_known": 59,
   "total_universe": 59,
-  "quote_checks": 2,
-  "quote_failures": [
-    "ECHO",
-    "HOOD"
-  ],
+  "quote_checks": 0,
+  "quote_failures": [],
   "quote_crosschecked_added": 0,
-  "quote_pending_added": 2,
+  "quote_pending_added": 0,
   "total_quote_pending": 12,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
-  "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil.",
-  "primary_source_research": [
-    {
-      "ticker": "HOOD",
-      "company": "Robinhood Markets",
-      "report_date": "2026-10-27",
-      "period": "Q3 2026",
-      "primary_source": "https://investors.robinhood.com/news-releases/news-release-details/robinhood-reports-third-quarter-2026-results",
-      "exchange": "NASDAQ",
-      "source_verified": true,
-      "financials_usd_million": {
-        "revenue": 1424,
-        "transaction_revenue": 867,
-        "net_interest_revenue": 415,
-        "other_revenue": 142,
-        "net_income": 476,
-        "options_revenue": 399,
-        "crypto_revenue": 120,
-        "event_contract_revenue": 173
-      },
-      "yoy_percent": {
-        "revenue": 12,
-        "transaction_revenue": 19,
-        "net_interest_revenue": -9,
-        "net_income": -14,
-        "crypto_revenue": -55
-      },
-      "research_thesis": "Umsatzwachstum wird stärker von Optionshandel und Event-Kontrakten getragen; Kryptoumsätze und Nettozinserträge schwächen sich ab.",
-      "counterhypothesis": "Event-Kontrakt-Volumen und Optionsaktivität könnten zyklisch oder regulatorisch anfällig sein; Gewinn sank trotz Umsatzwachstum.",
-      "valuation_limit": "Kein unabhängig verifizierter Kurs oder normalisierter Cashflow; keine Fair-Value- oder Kaufempfehlung.",
-      "quote_status": "pending",
-      "reviewed_on": "2026-11-08"
-    }
-  ]
+  "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }

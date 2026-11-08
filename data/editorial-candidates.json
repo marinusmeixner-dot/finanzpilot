@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T10:18:41.243905Z",
+  "updated_at": "2026-11-08T13:39:21.925283Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -370,24 +370,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/konjunktur/knot-nominierung-ezb-100.html",
       "published_at": "2026-11-04T14:30:36Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-48df61b42530d9dbd9",
-      "title": "Marktbericht: Demokraten-Sieg gibt DAX Rückenwind",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/reaktionen-midterms-102.html",
-      "published_at": "2026-11-04T13:11:29Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-4fa7f6ee28b85440c8",
-      "title": "Inflation im Euroraum steigt auf 4,0 Prozent",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html",
-      "published_at": "2026-11-04T11:12:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
