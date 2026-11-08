@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T17:02:30.193485Z",
+  "updated_at": "2026-11-08T21:09:46.834522Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -352,15 +352,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html",
       "published_at": "2026-11-05T06:54:52Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c956b7a44ae64daa4c",
-      "title": "Wirtschaft vor acht vom 04.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1678250.html",
-      "published_at": "2026-11-04T18:58:13Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
