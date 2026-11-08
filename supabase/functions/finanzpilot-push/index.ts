@@ -6,7 +6,16 @@ const projectUrl = Deno.env.get("SUPABASE_URL") || "";
 const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
 const admin = createClient(projectUrl, serviceKey, { auth: { persistSession: false, autoRefreshToken: false } });
 const origin = "https://marinusmeixner-dot.github.io";
-const cors = { "Access-Control-Allow-Origin": origin, "Access-Control-Allow-Headers": "authorization,apikey,content-type,x-fp-dispatch", "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Vary": "Origin" };
+async function verifyDispatch(req:Request,cfg:Config):Promise<boolean>{
+ const stamp=req.headers.get("x-fp-ts")||"";
+ const signature=req.headers.get("x-fp-sig")||"";
+ if(!/^\\d{10}$/.test(stamp)||!/^[0-9a-f]{64}$/.test(signature))return false;
+ if(Math.abs(Date.now()/1000-Number(stamp))>120)return false;
+ const key=await crypto.subtle.importKey("raw",new TextEncoder().encode(cfg.dispatch_secret),{name:"HMAC",hash:"SHA-256"},false,["verify"]);
+ const signatureBytes=Uint8Array.from(signature.match(/.{2}/g)!.map(pair=>parseInt(pair,16)));
+ return crypto.subtle.verify("HMAC",key,signatureBytes,new TextEncoder().encode(stamp));
+}
+const cors = { "Access-Control-Allow-Origin": origin, "Access-Control-Allow-Headers": "authorization,apikey,content-type,x-fp-ts,x-fp-sig", "Access-Control-Allow-Methods": "GET,POST,OPTIONS", "Vary": "Origin" };
 const reply = (data: unknown, status = 200) => new Response(JSON.stringify(data), {status, headers: {...cors,"content-type":"application/json; charset=utf-8","cache-control":"no-store"}});
 const errorMessage = (e: unknown) => e instanceof Error ? e.message : String(e);
 type Config = { vapid_public: string; vapid_private: string; dispatch_secret: string };
@@ -81,7 +90,7 @@ Deno.serve(async req=>{
     const data=await req.json().catch(()=>({})) as {action?:string};
     if(data.action==="dispatch") {
       const cfg=await config();
-      if(!req.headers.get("x-fp-dispatch") || req.headers.get("x-fp-dispatch")!==cfg.dispatch_secret) return reply({error:"Nicht autorisiert"},401);
+      if(!await verifyDispatch(req,cfg)) return reply({error:"Nicht autorisiert"},401);
       return reply({ok:true,...await dispatch(cfg)});
     }
     if(data.action==="test") {
