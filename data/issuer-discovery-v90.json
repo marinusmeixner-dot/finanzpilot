@@ -5,42 +5,28 @@
   "index_rows": 500,
   "new_companies": [
     {
-      "ticker": "TWLO",
-      "company": "Twilio",
-      "sector": "Information Technology",
-      "cik": "0001447669",
-      "primary_source_url": "https://www.twilio.com/en-us/press/releases/twilio-announces-third-quarter-2026-results",
-      "primary_source_date": "2026-10-29",
-      "primary_source_verified": "issuer_q3_2026_release",
-      "research_note": "Q3 2026 Umsatz 1.559,536 Mio. USD (+20 % berichtet, +16 % organisch); operativer GAAP-Gewinn 148,630 Mio. USD; CFO 389,164 Mio. USD; FCF 369,6 Mio. USD. Q4-Prognose organisches Wachstum 11–12 %: Wachstumsverlangsamung trotz starkem Q3 als Gegenhypothese prüfen. Kursbasis weiterhin unbestätigt; keine Fair-Value-Aussage."
+      "ticker": "ECHO",
+      "company": "EchoStar",
+      "sector": "Communication Services",
+      "cik": "0001415404"
     },
     {
-      "ticker": "VEEV",
-      "company": "Veeva Systems",
-      "sector": "Health Care",
-      "cik": "0001393052",
-      "primary_source_url": "https://ir.veeva.com/news/news-details/2026/Veeva-Announces-Fiscal-2027-Second-Quarter-Results/default.aspx",
-      "primary_source_date": "2026-08-26",
-      "primary_source_verified": "issuer_fy2027_q2_release",
-      "research_note": "FY2027 Q2 (bis 31.07.2026): Umsatz 927,963 Mio. USD (+18 % YoY), Subscription 766,764 Mio. USD (+16 %), GAAP-Betriebsergebnis rund 275,0 Mio. USD (+40 %). FY2027-Umsatzguidance 3.682–3.687 Mio. USD (Stand 26.08.2026). Gegenhypothese: hohe Erwartungen an CRM-Migration und KI könnten bei Verzögerung enttäuscht werden; Non-GAAP-Bewertung nur nach Prüfung von aktienbasierter Vergütung, Verwässerung und Cashflow. Investor Day 05.11.2026 als zusätzlicher noch nicht ausgewerteter Primärquellen-Gap. Keine verifizierte Kursbasis, kein Fair Value. Ergänzende verifizierte Originalmeldung vom 13.10.2026: IQVIA wählte Veeva CTMS, eTMF, Study Startup und Site Connect als Enterprise-Standard für klinische Studien; die Partnerschaft erweitert eine bestehende EDC-Zusammenarbeit. Das stützt die Vertriebs-/Integrationshypothese, belegt aber weder Vertragswert noch zusätzlichen realisierten Umsatz oder FCF. Gegenprüfung: Rollout, tatsächliche Nutzung, Umsatzrealisierung und mögliche Abhängigkeit vom Partner; keine Hochrechnung aus bloßer Auswahlentscheidung. Quelle: https://ir.veeva.com/news/news-details/2026/IQVIA-Selects-Veeva-Clinical-Operations-Applications/default.aspx (13.10.2026). Ergänzender Primärquellen-Check (Q2 FY2027, 26.08.2026): Veeva meldete 12 verbindliche Vault-CRM-Zusagen unter den 20 größten Biopharmaunternehmen weltweit, nachdem im August zwei weitere Top-20-Unternehmen und ein großes Biopharmaunternehmen zugesagt hatten. Eine Top-20-Firma setzte Vault CRM und Agentic Call Report im US-Außendienst ein. Dies ist ein konkreter Adoptionsindikator, aber weder gleichbedeutend mit vollständig realisiertem Umsatz noch mit zusätzlichen KI-Cashflows. Zu prüfen: Go-live-Quote, Vertragslaufzeiten, tatsächliche Subscription-Umsätze und Kosten der Migration. Primärquelle: https://ir.veeva.com/financials/quarterly-results/default.aspx (Q2 FY2027, 26.08.2026)."
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "sector": "Financials",
+      "cik": "0001783879"
     }
   ],
-  "already_known": 55,
-  "total_universe": 57,
-  "quote_checks": 8,
+  "already_known": 57,
+  "total_universe": 59,
+  "quote_checks": 2,
   "quote_failures": [
-    "TWLO",
-    "VEEV",
     "ECHO",
-    "APP",
-    "HOOD",
-    "IBKR",
-    "XYZ",
-    "COIN"
+    "HOOD"
   ],
   "quote_crosschecked_added": 0,
   "quote_pending_added": 2,
-  "total_quote_pending": 10,
+  "total_quote_pending": 12,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }

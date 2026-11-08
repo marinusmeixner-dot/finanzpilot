@@ -4,8 +4,8 @@
   "methodology_version": 1,
   "methodology": "Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und maximal 35 Tage alten redaktionellen Anlässen (RSS nie als Beleg). A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
-  "total_issuers": 64,
-  "with_price_history": 63,
+  "total_issuers": 66,
+  "with_price_history": 65,
   "research_priority_count": 6,
   "missing_quote_count": 1,
   "front_page_candidate_ids": [
@@ -2285,6 +2285,85 @@
       }
     },
     {
+      "id": "index-echo",
+      "ticker": "ECHO",
+      "company": "EchoStar",
+      "sector": "Communication Services",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 47,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-06",
+        "sessions": 251,
+        "adjusted_close": 94.62,
+        "return_21d_pct": 1.35,
+        "return_63d_pct": 6.14,
+        "return_126d_pct": -25.58,
+        "benchmark_63d_pct": -5.42,
+        "relative_63d_pp": 11.56,
+        "ma50": 92.004,
+        "ma200": 106.0722,
+        "above_ma50": true,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -33.27,
+        "volatility_21d_annualized_pct": 64.4,
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": 11.56,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": 10.79,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 15.03,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-08",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-06",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "siemens",
       "ticker": "SIE.DE",
       "company": "Siemens AG",
@@ -4174,6 +4253,85 @@
         "relative_to_benchmark_pp": 0.6,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "index-hood",
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "sector": "Financials",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 6,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-06",
+        "sessions": 251,
+        "adjusted_close": 80.91,
+        "return_21d_pct": -24.39,
+        "return_63d_pct": -14.4,
+        "return_126d_pct": 5.04,
+        "benchmark_63d_pct": -5.42,
+        "relative_63d_pp": -8.98,
+        "ma50": 105.9714,
+        "ma200": 91.9864,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -40.98,
+        "volatility_21d_annualized_pct": 65.4,
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -8.98,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -9.75,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -5.51,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-08",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-06",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
       }
     },
     {

@@ -2,11 +2,11 @@
   "schema_version": 1,
   "asof": "2026-11-06",
   "selection_method": "Source-first research queue",
-  "total_issuers": 64,
+  "total_issuers": 66,
   "curated_dossiers": 10,
   "bucket_counts": {
     "review_now": 21,
-    "watch_and_verify": 42,
+    "watch_and_verify": 44,
     "source_gap": 1
   },
   "spotlight_ids": [
@@ -1810,6 +1810,44 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
+      "id": "index-echo",
+      "ticker": "ECHO",
+      "company": "EchoStar",
+      "sector": "Communication Services",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-06",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
       "id": "index-exe",
       "ticker": "EXE",
       "company": "Expand Energy",
@@ -2223,6 +2261,44 @@
         "benchmark_names": [
           "Vanguard FTSE All-World UCITS ETF",
           "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "index-hood",
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "sector": "Financials",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-06",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"

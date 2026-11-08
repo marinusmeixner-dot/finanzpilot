@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-07T19:04:16.415798Z",
+  "updated_at": "2026-11-08T10:18:41.243905Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-d19b543f6845c6a51d",
+      "title": "Wie der Aktienkauf rund um die Uhr funktionieren soll",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/aktien-kauf-nachts-100.html",
+      "published_at": "2026-11-08T07:35:33Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-bd9bc62fa2c3a5c6e4",
       "title": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
@@ -379,69 +388,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-eurozone-oktober-102.html",
       "published_at": "2026-11-04T11:12:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-dd47410b5fa8e29f69",
-      "title": "Marktbericht: DAX-Anleger reagieren gelassen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-boerse-118.html",
-      "published_at": "2026-11-04T09:46:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-53911198a1768a4e81",
-      "title": "Update Wirtschaft vom 04.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1677864.html",
-      "published_at": "2026-11-04T09:29:34Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f91dfcaa4547357839",
-      "title": "BMW erwirtschaftet noch weniger Gewinn",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/bmw-gewinnwarnung-100.html",
-      "published_at": "2026-11-04T08:21:37Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e343c360012fa761ee",
-      "title": "Schuljahr 2025/2026: Knapp 9 Millionen Schülerinnen und Schüler an allgemeinbildenden Schulen",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_384_213.html",
-      "published_at": "2026-11-04T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-48396ec34af6bd5e63",
-      "title": "4,4 % aller Erwerbstätigen in Deutschland sind Führungskräfte",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N076_13.html",
-      "published_at": "2026-11-04T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-275c3c70f931403b1e",
-      "title": "Airlines streichen Flüge: Verliert Deutschland den Anschluss?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/luftfahrt-lufthansa-wirtschaftsstandort-100.html",
-      "published_at": "2026-11-04T05:23:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-62f2dfedb9a53daf1b",
-      "title": "Treasury yields fall as investors crowd into bonds for safety amid election stock sell-off",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/03/treasury-yields-fall-as-democrats-win-big-in-us-midterm-elections.html",
-      "published_at": "2026-11-04T03:24:03Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

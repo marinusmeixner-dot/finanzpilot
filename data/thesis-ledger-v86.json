@@ -1279,6 +1279,42 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-2c7e30bd739197b",
+      "ticker": "ECHO",
+      "company": "EchoStar",
+      "date": "2026-11-06",
+      "event_type": "entered_radar",
+      "signal_signature": "C_screen_only||active",
+      "from_priority": null,
+      "priority": "C_screen_only",
+      "adjusted_close": 94.62,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -5.42,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-92fa54bf79c7b2b",
+      "ticker": "HOOD",
+      "company": "Robinhood Markets",
+      "date": "2026-11-06",
+      "event_type": "entered_radar",
+      "signal_signature": "C_screen_only||active",
+      "from_priority": null,
+      "priority": "C_screen_only",
+      "adjusted_close": 80.91,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -5.42,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }
