@@ -47,6 +47,7 @@ function render(){
  btn('learningstats','Lernstatistik','Abgeschlossene Grundlagen, Skills und Entwicklung im Detail','◫')+
  '</div></section>'+
  (window.FinanzPilotFeedback?.settingsHtml?.()||'')+
+ (window.FinanzPilotPush?.settingsHtml?.()||'')+
  '<section class="fp42-profile-account"><span class="eyebrow">KONTO & SICHERUNG</span><h2>Konto</h2><p>'+(v.hasUser?'Angemeldet · Lernstände und Skillkäufe werden geräteübergreifend gesichert.':'Ohne Anmeldung bleiben manche Fortschritte nur auf diesem Gerät. Für Skillkäufe und Belohnungen brauchst du ein kostenloses Konto.')+'</p>'+
  '<div class="fp42-profile-links">'+btn('account','Konto & Synchronisierung','Anmeldung, Fortschrittssicherung, Export und Einstellungen','⚙')+'</div>'+ (v.hasUser?'<details class="fp43-reset"><summary>Meinen Lern- und Belohnungsfortschritt neu starten</summary><p>Das setzt die XP, Forschungspunkte, Streak, Skills, Lektionen, alte Kursabschlüsse, Artefaktscherben und Artefakte dieses angemeldeten Kontos zurück. Das virtuelle Depot, bestehende Kauf-/Verkaufstransaktionen und deine Watchlist bleiben bestehen.</p><button type="button" class="btn secondary" data-fp43-reset>Mein Lernkonto zurücksetzen</button></details>':'')+'</section></div>';
 }
@@ -63,6 +64,7 @@ function stats(){
 }
 function bind(root=document){
  window.FinanzPilotFeedback?.bindSettings?.(root);
+ window.FinanzPilotPush?.bind?.(root);
  root.querySelector('[data-fp42-streak]')?.addEventListener('click',()=>window.FinanzPilotStreak?.open?.());
  root.querySelector('[data-fp43-reset]')?.addEventListener('click',async e=>{
   const answer=window.prompt('Nur dein angemeldetes Lernkonto wird zurückgesetzt. Depot und Watchlist bleiben erhalten. Tippe NEUSTART zur Bestätigung:');

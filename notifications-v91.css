@@ -1,0 +1,11 @@
+.fp-push-panel{border:1px solid rgba(117,161,193,.24);border-radius:18px;background:rgba(24,41,60,.55);padding:20px;margin:20px 0}
+.fp-push-panel h2{margin:0 0 8px;font-size:1.15rem}
+.fp-push-panel p{line-height:1.5}
+.fp-push-panel>small{display:block;margin-top:12px;color:#a8b6c7;line-height:1.5}
+.fp-push-option{display:flex;align-items:center;justify-content:space-between;gap:18px;border-bottom:1px solid rgba(143,160,180,.15);padding:13px 0;cursor:pointer}
+.fp-push-option input{min-width:20px;width:20px;height:20px;accent-color:#63bbdb}
+.fp-push-status{font-size:.91rem;color:#bdd9e5;min-height:24px;margin:15px 0}
+.fp-push-actions{display:flex;flex-wrap:wrap;gap:9px}
+.fp-push-actions .btn{white-space:normal}
+.fp-push-actions [hidden]{display:none!important}
+@media(max-width:520px){.fp-push-panel{padding:16px}.fp-push-actions>.btn{flex:1 1 100%}}

@@ -1,5 +1,5 @@
 {
-  "version": 90,
-  "release": "2026-11-06-v90",
-  "notes": "Marktradarsuche jetzt über unabhängiges S&P-500-Firmenverzeichnis plus SEC-CIK und eigene Kursprüfung, mit klar gekennzeichneten quote-pending Neuzugängen; neue Rubrik Neu entdeckt. Reparierter Destatis-RSS-Feed, stündliche Quote-Frischeprüfung mit begrenzten Provider-Retries, bestehende stündliche FinanzPilot-Redaktion ergänzt. Keine automatische Kaufwertung, keinerlei Änderungen an privaten Depots oder Lernständen."
+  "version": 91,
+  "release": "2026-11-08-v91",
+  "notes": "iOS Web-Push mit Opt-in im Profil, Themenauswahl und Test-Push. Sichere Supabase-Subscriptions, Edge-Versand und vorhandene stündliche Redaktion als Quelle. Keine Änderungen an Depot oder Lernständen."
 }
