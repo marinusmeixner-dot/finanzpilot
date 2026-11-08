@@ -39,7 +39,7 @@ const ui=w.FinanzPilotFinancialReports;
 const stocks=['BAYN.DE','BYW.MU','NVDA','SIE.DE','GOOG'].map(symbol=>({symbol}));
 let first=ui.render({watch:stocks,reports:data.companies,loggedIn:true,nameOf:s=>company[s]?.name,verifiedAt:data.verified_at});
 assert(first.includes('Q3 2026')&&first.includes('Q2 2026'),'Current Q3 and explicitly archived Q2 sections must both be presented.');
-assert(first.includes('84 verifizierte Datenpositionen'),'Q3 + historical Q2 source metrics must remain visible.');
+assert(first.includes(counts['BAYN.DE']+' verifizierte Datenpositionen'),'All currently sourced Q3 and archived Q2 metrics must remain visible, without a stale hard-coded count.');
 assert((first.match(/data-fp47-section=/g)||[]).length>=6);
 assert(first.includes('Berichtszahlen im Detail'));
 assert(first.includes('data-fp47-search'));
