@@ -2,9 +2,9 @@
   "schema_version": 1,
   "date": "2026-11-08",
   "source_updated_at": "2026-11-07",
-  "title": "Wochenend-Briefing: Berkshire-Cashflow geprüft, Industrie und Einmaleffekte",
-  "summary": "Stand Sonntag, 08.11.2026: Berkshires am 07.11. vorgelegter Q3-Form-10-Q erlaubt nun eine konkrete Neunmonats-Cashflow-Gegenprüfung: 33,914 Mrd. USD operativer Cashflow minus 16,137 Mrd. USD Sachanlage- und Leasingausrüstungsinvestitionen ergeben rechnerisch 17,777 Mrd. USD vor weiteren Bewertungsanpassungen. Aktienrückkäufe der ersten neun Monate: 13,757 Mrd. USD, davon 9,647 Mrd. USD im Q3. Kein Quartals-FCF aus Neunmonatswerten ableiten. Destatis meldete am 06.11. +0,7 % Industrieproduktion im September, aber −0,4 % für Q3. Kein Live-Kursbericht.",
-  "interpretation": "Berkshires 10-Q für den Zeitraum bis 30.09.2026 zeigt 33,914 Mrd. USD CFO (Vorjahr 34,777 Mrd.) und 16,137 Mrd. USD Ausgaben für Sachanlagen und zur Vermietung gehaltene Ausrüstung (Vorjahr 14,725 Mrd.). Der einfache CFO-minus-Capex-Rest beträgt 17,777 Mrd. USD (Vorjahr 20,052 Mrd.), ein Rückgang von 2,275 Mrd. USD; keine vollständig normalisierte FCFE/FCFF-Kennzahl, insbesondere wegen Versicherungs-, Leasing-, Finanzierungs- und Akquisitionsbesonderheiten. Rückkäufe von 13,757 Mrd. USD in neun Monaten sind eine Finanzierungs-Cashflow-Position, keine operative Ausgabe. Versicherungs-Float von 178,5 Mrd. USD bleibt Verpflichtungsfinanzierung und keine frei ausschüttbare Kasse. Die Monatsverbesserung der deutschen Industrie beweist keine dauerhafte Erholung; Daimler Trucks Einmalzuflüsse aus Beteiligungsverkäufen nicht fortschreiben.",
+  "title": "Wochenend-Briefing: Berkshire-Cashflow geprüft, Produzierendes Gewerbe und Einmaleffekte",
+  "summary": "Stand Sonntag, 08.11.2026: Berkshires am 07.11. vorgelegter Q3-Form-10-Q erlaubt nun eine konkrete Neunmonats-Cashflow-Gegenprüfung: 33,914 Mrd. USD operativer Cashflow minus 16,137 Mrd. USD Sachanlage- und Leasingausrüstungsinvestitionen ergeben rechnerisch 17,777 Mrd. USD vor weiteren Bewertungsanpassungen. Aktienrückkäufe der ersten neun Monate: 13,757 Mrd. USD, davon 9,647 Mrd. USD im Q3. Kein Quartals-FCF aus Neunmonatswerten ableiten. Destatis meldete am 06.11. +0,7 % Produktion im Produzierenden Gewerbe im September, aber −0,4 % für Q3. Kein Live-Kursbericht.",
+  "interpretation": "Berkshires 10-Q für den Zeitraum bis 30.09.2026 zeigt 33,914 Mrd. USD CFO (Vorjahr 34,777 Mrd.) und 16,137 Mrd. USD Ausgaben für Sachanlagen und zur Vermietung gehaltene Ausrüstung (Vorjahr 14,725 Mrd.). Der einfache CFO-minus-Capex-Rest beträgt 17,777 Mrd. USD (Vorjahr 20,052 Mrd.), ein Rückgang von 2,275 Mrd. USD; keine vollständig normalisierte FCFE/FCFF-Kennzahl, insbesondere wegen Versicherungs-, Leasing-, Finanzierungs- und Akquisitionsbesonderheiten. Rückkäufe von 13,757 Mrd. USD in neun Monaten sind eine Finanzierungs-Cashflow-Position, keine operative Ausgabe. Versicherungs-Float von 178,5 Mrd. USD bleibt Verpflichtungsfinanzierung und keine frei ausschüttbare Kasse. Die Monatsverbesserung im Produzierenden Gewerbe beweist keine dauerhafte Erholung; Daimler Trucks Einmalzuflüsse aus Beteiligungsverkäufen nicht fortschreiben.",
   "highlights": [
     {
       "story_id": "2026-11-07-berkshire-q3-insurance-buybacks",
@@ -14,8 +14,8 @@
     },
     {
       "story_id": "2026-11-06-destatis-industrial-production-september",
-      "title": "Industrieproduktion: Septemberplus ist noch keine Trendwende",
-      "why": "+0,7 % im Monat stehen einem rückläufigen Quartal gegenüber.",
+      "title": "Produzierendes Gewerbe: Septemberplus ist noch keine Trendwende",
+      "why": "+0,7 % Produktion im Produzierenden Gewerbe gegenüber August stehen −0,4 % im dritten Quartal gegenüber dem Vorquartal gegenüber; nicht mit reiner Industrieproduktion verwechseln.",
       "watch": "Auftragseingänge, Revisionen und Margenentwicklung"
     },
     {
@@ -26,5 +26,5 @@
     }
   ],
   "next_watch": "Berkshires 17,777-Mrd.-USD-Neunmonats-CFO-minus-Capex-Rest nach Segmenten und Leasing/Versicherung auf normalisierten freien Cashflow prüfen; Q3-Einzel-CFO nicht aus dem Neunmonatswert behaupten. Veevas Investor-Day-Aussagen erst mit offizieller Präsentation verifizieren.",
-  "methodology": "Primärquelle: Berkshire Hathaway Form 10-Q für neun Monate bis 30.09.2026, veröffentlicht 07.11.2026, konsolidierte Kapitalflussrechnung S. 7 (https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf), CFO 33.914 Mio. USD, Sachanlagen und Leasingausrüstung 16.137 Mio. USD, Rückkäufe 13.757 Mio. USD; Differenz 17.777 Mio. USD. Keine Quartals- oder normalisierte FCFE-Behauptung. Destatis 06.11. und Daimler Truck 06.11. bleiben getrennt datierte Quellen. Drei stabile Story-IDs, keine ungeprüften Kurse."
+  "methodology": "Primärquelle: Berkshire Hathaway Form 10-Q für neun Monate bis 30.09.2026, veröffentlicht 07.11.2026, konsolidierte Kapitalflussrechnung S. 7 (https://www.berkshirehathaway.com/qtrly/3rdqtr26.pdf), CFO 33.914 Mio. USD, Sachanlagen und Leasingausrüstung 16.137 Mio. USD, Rückkäufe 13.757 Mio. USD; Differenz 17.777 Mio. USD. Keine Quartals- oder normalisierte FCFE-Behauptung. Destatis-Pressemitteilung vom 06.11.2026 zur Produktion im Produzierenden Gewerbe (September +0,7 % zum Vormonat, Q3 −0,4 % zum Vorquartal) und Daimler Truck 06.11. bleiben getrennt datierte Quellen. Drei stabile Story-IDs, keine ungeprüften Kurse."
 }
