@@ -9,7 +9,7 @@ const origin = "https://marinusmeixner-dot.github.io";
 async function verifyDispatch(req:Request,cfg:Config):Promise<boolean>{
  const stamp=req.headers.get("x-fp-ts")||"";
  const signature=req.headers.get("x-fp-sig")||"";
- if(!/^\\d{10}$/.test(stamp)||!/^[0-9a-f]{64}$/.test(signature))return false;
+ if(!/^[0-9]{10}$/.test(stamp)||!/^[0-9a-f]{64}$/.test(signature))return false;
  if(Math.abs(Date.now()/1000-Number(stamp))>120)return false;
  const key=await crypto.subtle.importKey("raw",new TextEncoder().encode(cfg.dispatch_secret),{name:"HMAC",hash:"SHA-256"},false,["verify"]);
  const signatureBytes=Uint8Array.from(signature.match(/.{2}/g)!.map(pair=>parseInt(pair,16)));
