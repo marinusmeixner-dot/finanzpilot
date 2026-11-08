@@ -10,7 +10,7 @@
       "kind": "market",
       "date": "2026-11-08",
       "title": "Monatsplus und Quartalsminus gleichzeitig?",
-      "context": "Destatis meldete am 06.11.2026 für die deutsche Industrieproduktion im September +0,7 % gegenüber August, für das dritte Quartal jedoch −0,4 % gegenüber dem Vorquartal. Die folgenden Indexwerte sind ausdrücklich fiktiv: Juli 99, August 100, September 100,7.",
+      "context": "Destatis meldete am 06.11.2026 für die Produktion im Produzierenden Gewerbe im September +0,7 % gegenüber August, für das dritte Quartal jedoch −0,4 % gegenüber dem Vorquartal. Die folgenden Indexwerte sind ausdrücklich fiktiv: Juli 99, August 100, September 100,7.",
       "question": "Berechne den Durchschnitt der drei fiktiven Monatsindizes. Welchen Durchschnitt müsste das Vorquartal bei einer Quartalsänderung von −0,4 % gehabt haben? Erkläre, warum ein positiver Septemberwert keine Quartalserholung beweist. Nenne zwei konkurrierende Ursachen und je ein überprüfbares Signal.",
       "rubric": [
         "Q3-Durchschnitt (99+100+100,7)/3=99,9",
@@ -20,7 +20,7 @@
         "Keine direkten Rückschlüsse auf Gewinne, Aktienkurse oder nachhaltige Trendwende"
       ],
       "source": "Destatis – Produktion im Produzierenden Gewerbe September 2026 (06.11.2026)",
-      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/_inhalt.html",
+      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_389_421.html",
       "source_date": "2026-11-06",
       "symbol": ""
     },
