@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T13:39:21.925283Z",
+  "updated_at": "2026-11-08T17:02:30.193485Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-6c223d8b23c67f3978",
+      "title": "Viele Gebäude weiterhin ohne Elementarschadenversicherung",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/klimaschaeden-versicherungen-100.html",
+      "published_at": "2026-11-08T15:28:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-d19b543f6845c6a51d",
       "title": "Wie der Aktienkauf rund um die Uhr funktionieren soll",
@@ -46,6 +55,15 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
       "published_at": "2026-11-07T02:54:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e8b95cab8bf33094b0",
+      "title": "ISHARES € INFLATION LINKED GOVT BOND ETF Kurs | A0HGV1 | IE00B0M62X26 - Finanzen.net",
+      "source": "Google News: Finanzen",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPT3pHY1RhUmozRzl6M1ZTMTZtdWlTejYzWTA3XzNhaURIUDhlMHkwbF9adG1JdUJPZDl5WUlpN2V2NVFzR2lXR2Y4RWQ2VUpVU096b21pTDFyUi03UFlKVDh3N2VwWlVBOVJDM1k0T2wyQWpfX0lIbzkzWjZsbjBCeG1mU2N2akU?oc=5",
+      "published_at": "2026-11-06T20:55:26Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -343,33 +361,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1678250.html",
       "published_at": "2026-11-04T18:58:13Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-32d2a66c31cb7aabfd",
-      "title": "Deutsche verbrauchen 2026 weniger Energie - das hat einen Grund",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/energie/energiebilanz-heizoel-100.html",
-      "published_at": "2026-11-04T16:05:31Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-870c8bee1b90608d0b",
-      "title": "Weitere Fälle von gehackten Kühlanlagen bekannt geworden",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/cyberangriff-kuehlanlagen-100.html",
-      "published_at": "2026-11-04T14:42:11Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f14e696ca92fc57619",
-      "title": "Neuer EZB-Chef: Niederlande nominieren Ex-Zentralbanker Knot",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/knot-nominierung-ezb-100.html",
-      "published_at": "2026-11-04T14:30:36Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
