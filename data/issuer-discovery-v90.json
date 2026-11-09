@@ -5,34 +5,28 @@
   "index_rows": 500,
   "new_companies": [
     {
-      "ticker": "DASH",
-      "company": "DoorDash",
-      "sector": "Consumer Discretionary",
-      "cik": "0001792789"
+      "ticker": "SW",
+      "company": "Smurfit Westrock",
+      "sector": "Materials",
+      "cik": "0002005951"
     },
     {
-      "ticker": "TPL",
-      "company": "Texas Pacific Land Corporation",
-      "sector": "Energy",
-      "cik": "0001811074"
+      "ticker": "VST",
+      "company": "Vistra Corp.",
+      "sector": "Utilities",
+      "cik": "0001692819"
     }
   ],
-  "already_known": 59,
-  "total_universe": 61,
-  "quote_checks": 8,
+  "already_known": 61,
+  "total_universe": 63,
+  "quote_checks": 2,
   "quote_failures": [
-    "DASH",
-    "TPL",
     "SW",
-    "VST",
-    "STLD",
-    "PCG",
-    "INVH",
-    "VICI"
+    "VST"
   ],
   "quote_crosschecked_added": 0,
   "quote_pending_added": 2,
-  "total_quote_pending": 14,
+  "total_quote_pending": 16,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }

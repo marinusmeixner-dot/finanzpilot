@@ -2,11 +2,11 @@
   "schema_version": 1,
   "asof": "2026-11-06",
   "selection_method": "Source-first research queue",
-  "total_issuers": 68,
+  "total_issuers": 70,
   "curated_dossiers": 10,
   "bucket_counts": {
     "review_now": 21,
-    "watch_and_verify": 46,
+    "watch_and_verify": 48,
     "source_gap": 1
   },
   "spotlight_ids": [
@@ -1278,6 +1278,44 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
+      "id": "index-sw",
+      "ticker": "SW",
+      "company": "Smurfit Westrock",
+      "sector": "Materials",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-06",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
       "id": "unitedhealth",
       "ticker": "UNH",
       "company": "UnitedHealth Group",
@@ -2536,6 +2574,44 @@
       "ticker": "UBER",
       "company": "Uber",
       "sector": "Mobility Platform",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-06",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "index-vst",
+      "ticker": "VST",
+      "company": "Vistra Corp.",
+      "sector": "Utilities",
       "bucket": "watch_and_verify",
       "review_kind": "technical_only",
       "radar_priority": "C_screen_only",

@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-08T21:09:46.834522Z",
+  "updated_at": "2026-11-09T07:57:07.840773Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-d990808b00296d806c",
+      "title": "Exporte im September 2026: +2,0 % zum August 2026",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
+      "published_at": "2026-11-09T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-c54091c3876f36a725",
+      "title": "41 % weniger Zuzüge syrischer Staatsangehöriger von Januar bis September 2026 als im Vorjahreszeitraum",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD25_N077_12.html",
+      "published_at": "2026-11-09T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8b06809101626965fd",
+      "title": "Lkw-Maut-Fahrleistungsindex im Oktober 2026: -1,6 % zum Vormonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_391_421.html",
+      "published_at": "2026-11-09T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b8fbc71ab16f537750",
+      "title": "Marktbericht: Kurserholung bleibt vorerst wohl aus",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-170.html",
+      "published_at": "2026-11-09T06:34:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e10df1e13c2f8e1e68",
+      "title": "Untersuchung gegen Nvidia-Chef Huang wegen möglicher Spionin aus China",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/amerika/nvidia-spionage-pruefung-100.html",
+      "published_at": "2026-11-09T03:32:51Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-680871d9a5e6689a6e",
+      "title": "Unionsfraktionschef erteilt Plastiksteuer eine Absage",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/plastiksteuer-absage-100.html",
+      "published_at": "2026-11-08T20:38:04Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-6c223d8b23c67f3978",
       "title": "Viele Gebäude weiterhin ohne Elementarschadenversicherung",
@@ -307,51 +361,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1678462.html",
       "published_at": "2026-11-05T09:08:58Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c478381a4e0b221c7f",
-      "title": "Arbeitskosten im Jahr 2024 in Hamburg am höchsten, in Mecklenburg-Vorpommern am niedrigsten",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_388_624.html",
-      "published_at": "2026-11-05T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a832c11b2efdb9affa",
-      "title": "Zahl der Privathaushalte kann bis zum Jahr 2050 um bis zu 5 % zurückgehen",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_386_122.html",
-      "published_at": "2026-11-05T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3dc4238693b84b7817",
-      "title": "Umsatz im Dienstleistungsbereich im August 2026 um 0,9 % höher als im Vormonat",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_387_474.html",
-      "published_at": "2026-11-05T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-22a43ea5df9db0f4ef",
-      "title": "Auftragseingang im Verarbeitenden Gewerbe im September 2026: +4,4 % zum Vormonat",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_385_421.html",
-      "published_at": "2026-11-05T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0a86663498f22db194",
-      "title": "What the Democratic midterms sweep changes for U.S.-China relations",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/05/what-the-democrat-midterms-sweep-changes-for-us-china-tech-rivalry.html",
-      "published_at": "2026-11-05T06:54:52Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

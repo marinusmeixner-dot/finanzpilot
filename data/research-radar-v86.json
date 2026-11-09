@@ -4,8 +4,8 @@
   "methodology_version": 1,
   "methodology": "Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und maximal 35 Tage alten redaktionellen Anlässen (RSS nie als Beleg). A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
-  "total_issuers": 68,
-  "with_price_history": 67,
+  "total_issuers": 70,
+  "with_price_history": 69,
   "research_priority_count": 6,
   "missing_quote_count": 1,
   "front_page_candidate_ids": [
@@ -1894,6 +1894,85 @@
       }
     },
     {
+      "id": "index-sw",
+      "ticker": "SW",
+      "company": "Smurfit Westrock",
+      "sector": "Materials",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "B_watchlist",
+      "technical_research_score": 57,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-06",
+        "sessions": 251,
+        "adjusted_close": 44.09,
+        "return_21d_pct": 6.37,
+        "return_63d_pct": -6.51,
+        "return_126d_pct": 8.3,
+        "benchmark_63d_pct": -5.42,
+        "relative_63d_pp": -1.09,
+        "ma50": 43.4862,
+        "ma200": 43.0101,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -13.19,
+        "volatility_21d_annualized_pct": 34.0,
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -1.09,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -1.86,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 2.38,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-09",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-06",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "index-cvna",
       "ticker": "CVNA",
       "company": "Carvana",
@@ -3265,7 +3344,11 @@
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
       "editorial_age_days": 12,
-      "unverified_discovery_hint": null,
+      "unverified_discovery_hint": {
+        "id": "rss-e10df1e13c2f8e1e68",
+        "date": "2026-11-09",
+        "status": "unverified_headline_only"
+      },
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
@@ -4253,6 +4336,85 @@
         "relative_to_benchmark_pp": 0.6,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "index-vst",
+      "ticker": "VST",
+      "company": "Vistra Corp.",
+      "sector": "Utilities",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 8,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-06",
+        "sessions": 251,
+        "adjusted_close": 124.8,
+        "return_21d_pct": -20.07,
+        "return_63d_pct": -12.5,
+        "return_126d_pct": -15.26,
+        "benchmark_63d_pct": -5.42,
+        "relative_63d_pp": -7.08,
+        "ma50": 143.8323,
+        "ma200": 152.2821,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -34.28,
+        "volatility_21d_annualized_pct": 84.0,
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -7.08,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -7.85,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": -3.61,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-09",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-06",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
       }
     },
     {
