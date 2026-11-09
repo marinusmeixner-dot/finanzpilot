@@ -1,11 +1,17 @@
 {
   "schema_version": 1,
   "date": "2026-11-09",
-  "source_updated_at": "2026-11-07",
-  "title": "Montags-Briefing: Berkshire-Cashflow, Industrieproduktion und offene Bewertungsfragen",
-  "summary": "Stand Montag, 09.11.2026, vor neuer bestätigter Montags-Marktdatenlage: Der am 07.11. veröffentlichte Berkshire-Q3-Form-10-Q bleibt die jüngste hier belegte Unternehmensprimärquelle. Neunmonats-CFO 33,914 Mrd. USD minus 16,137 Mrd. USD Sachanlage- und Leasingausrüstungsinvestitionen ergeben 17,777 Mrd. USD einfache Differenz, nicht normalisierten freien Cashflow. Destatis meldete am 06.11. für September +0,7 % Monatsproduktion, während Q3 −0,4 % aufwies. Keine heutigen Kurse, Ereignisse oder Öffnungszeiten behauptet; neue Montagsmeldungen sind separat zu verifizieren.",
-  "interpretation": "Berkshires 10-Q für den Zeitraum bis 30.09.2026 zeigt 33,914 Mrd. USD CFO (Vorjahr 34,777 Mrd.) und 16,137 Mrd. USD Ausgaben für Sachanlagen und zur Vermietung gehaltene Ausrüstung (Vorjahr 14,725 Mrd.). Der einfache CFO-minus-Capex-Rest beträgt 17,777 Mrd. USD (Vorjahr 20,052 Mrd.), ein Rückgang von 2,275 Mrd. USD; keine vollständig normalisierte FCFE/FCFF-Kennzahl, insbesondere wegen Versicherungs-, Leasing-, Finanzierungs- und Akquisitionsbesonderheiten. Rückkäufe von 13,757 Mrd. USD in neun Monaten sind eine Finanzierungs-Cashflow-Position, keine operative Ausgabe. Versicherungs-Float von 178,5 Mrd. USD bleibt Verpflichtungsfinanzierung und keine frei ausschüttbare Kasse. Die Monatsverbesserung im Produzierenden Gewerbe beweist keine dauerhafte Erholung; Daimler Trucks Einmalzuflüsse aus Beteiligungsverkäufen nicht fortschreiben. Zusätzliche Kapitalallokationsprüfung aus dem 10-Q vom 07.11.: 16,205 Mrd. USD Unternehmensübernahmen (netto erworbener Liquidität) stehen in der Investitionsrechnung separat neben den 16,137 Mrd. USD Sachanlagen-/Leasingausrüstungsinvestitionen. Darunter fällt die im Januar 2026 abgeschlossene OxyChem-Übernahme für rund 9,4 Mrd. USD; Übernahmekosten sind nicht laufender Capex, aber realer Kapitalabfluss. Zudem waren am 30.09. 20,489 Mrd. USD noch nicht abgewickelte Treasury-Bill-Käufe als Verbindlichkeit erfasst; Bruttoliquidität nicht ohne Settlement-Verpflichtungen als frei verfügbar behandeln. Quelle: Berkshire Hathaway Form 10-Q, Seiten 3, 4, 8 und 9 (07.11.2026).",
+  "source_updated_at": "2026-11-09",
+  "title": "Montags-Briefing: Außenhandel, Berkshire-Cashflow und Industrieproduktion",
+  "summary": "Destatis meldete am 09.11.2026 vorläufige kalender- und saisonbereinigte September-Warenexporte von 141,1 Mrd. EUR (+2,0 % zum August) und Importe von 125,5 Mrd. EUR (+4,2 %). Der Überschuss sank gegenüber August von 17,9 auf 15,6 Mrd. EUR. Der stärkere Importanstieg ist keine unmittelbare Gewinnprognose. Daneben bleiben der Berkshire-Q3-Form-10-Q vom 07.11. und Destatis-Produktionsdaten vom 06.11. relevant. Keine aktuellen Börsenkurse behauptet.",
+  "interpretation": "Neu verifizierte Destatis-Primärquelle vom 09.11.2026: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html. Exporte September +2,0 % zum Vormonat auf 141,1 Mrd. EUR; Importe +4,2 % auf 125,5 Mrd. EUR; bereinigter Handelsüberschuss 15,6 Mrd. EUR nach 17,9 Mrd. EUR im August. EU-Exporte +3,5 %, Exporte in Drittstaaten nur +0,1 %, nach China −5,2 % und in die USA −0,5 %. Die Werte sind vorläufig und nominal; Preis-, Mengen- und Wechselkurseffekte sind nicht getrennt. Einzelne Unternehmensumsätze, Margen oder Aktienkurse daraus nicht ableiten. Berkshire: Neunmonats-CFO 33,914 Mrd. USD minus 16,137 Mrd. USD Sachanlage-/Leasingausrüstungsinvestitionen = 17,777 Mrd. USD einfache Differenz, nicht normalisierter FCFE/FCFF; 16,205 Mrd. USD Akquisitionen separat, Float kein freies Eigenkapital. Destatis-Produktion September +0,7 % zum Vormonat, Q3 −0,4 % zum Vorquartal: keine bestätigte Trendwende.",
   "highlights": [
+    {
+      "story_id": "2026-11-09-destatis-exports-september",
+      "title": "Außenhandel: Importe steigen stärker als Exporte",
+      "why": "Destatis-Originalmeldung vom 09.11.: Exporte +2,0 %, Importe +4,2 %; saisonbereinigter Überschuss fällt auf 15,6 Mrd. EUR. Vorläufige nominale Werte, keine unternehmensspezifische Gewinnprognose.",
+      "watch": "Detaildaten am 20.11., Preis-/Volumeneffekte, Regionen und Unternehmensberichte"
+    },
     {
       "story_id": "2026-11-07-berkshire-q3-insurance-buybacks",
       "title": "Berkshire: schwächeres operatives Ergebnis trotz hoher Rückkäufe",
@@ -17,12 +23,6 @@
       "title": "Produzierendes Gewerbe: Septemberplus ist noch keine Trendwende",
       "why": "+0,7 % Produktion im Produzierenden Gewerbe gegenüber August stehen −0,4 % im dritten Quartal gegenüber dem Vorquartal gegenüber; nicht mit reiner Industrieproduktion verwechseln.",
       "watch": "Auftragseingänge, Revisionen und Margenentwicklung"
-    },
-    {
-      "story_id": "2026-11-06-daimler-truck-q3-margin-cashflow",
-      "title": "Daimler Truck: Cashflow durch Einmaleffekt verzerrt",
-      "why": "Der am 06.11. veröffentlichte Bericht enthält einen Beteiligungsverkauf, der nicht als laufender Cashflow behandelt werden darf.",
-      "watch": "Cashflow ohne Beteiligungsveräußerung, Nachfrage und Aufträge"
     }
   ],
   "next_watch": "Neu geprüfter Research-Gap: Parrot SA (Euronext Paris PARRO, ISIN FR0004038263). Die Emittenten-Veröffentlichung vom 28.10.2026 zur Q3-Geschäftsentwicklung ist vor Aufnahme einer neuen Story vollständig auszuwerten; der Halbjahresbericht vom 31.07.2026 meldete 57,3 Mio. EUR Umsatz (+71 %), 42,1 Mio. EUR Mikro-Drohnenumsatz (+134 %), aber -2,2 Mio. EUR operativen Cashflow. Die 2,6 Mio. EUR laufendes Betriebsergebnis enthalten 2,5 Mio. EUR einmaligen Versicherungsbeitrag. Kein Fair Value ohne Q3-Bericht, Kurszeitstempel, Aktienzahl, Leasing und normalisierten Cashflow. Originalquellen: https://www.parrot.com/en/corporate/financial-publications und https://www.parrot.com/en/corporate/financial-publications (28.10. und 31.07.2026). Berkshire-Segment-Cashflow bleibt separat offen.",
