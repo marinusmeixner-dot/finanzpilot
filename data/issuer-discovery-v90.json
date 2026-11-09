@@ -1,16 +1,38 @@
 {
   "schema_version": 1,
-  "last_checked_date": "2026-11-08",
+  "last_checked_date": "2026-11-09",
   "index_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "index_rows": 500,
-  "new_companies": [],
+  "new_companies": [
+    {
+      "ticker": "DASH",
+      "company": "DoorDash",
+      "sector": "Consumer Discretionary",
+      "cik": "0001792789"
+    },
+    {
+      "ticker": "TPL",
+      "company": "Texas Pacific Land Corporation",
+      "sector": "Energy",
+      "cik": "0001811074"
+    }
+  ],
   "already_known": 59,
-  "total_universe": 59,
-  "quote_checks": 0,
-  "quote_failures": [],
+  "total_universe": 61,
+  "quote_checks": 8,
+  "quote_failures": [
+    "DASH",
+    "TPL",
+    "SW",
+    "VST",
+    "STLD",
+    "PCG",
+    "INVH",
+    "VICI"
+  ],
   "quote_crosschecked_added": 0,
-  "quote_pending_added": 0,
-  "total_quote_pending": 12,
+  "quote_pending_added": 2,
+  "total_quote_pending": 14,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }
