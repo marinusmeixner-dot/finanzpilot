@@ -3,29 +3,13 @@
   "last_checked_date": "2026-11-09",
   "index_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "index_rows": 500,
-  "new_companies": [
-    {
-      "ticker": "SW",
-      "company": "Smurfit Westrock",
-      "sector": "Materials",
-      "cik": "0002005951"
-    },
-    {
-      "ticker": "VST",
-      "company": "Vistra Corp.",
-      "sector": "Utilities",
-      "cik": "0001692819"
-    }
-  ],
-  "already_known": 61,
+  "new_companies": [],
+  "already_known": 63,
   "total_universe": 63,
-  "quote_checks": 2,
-  "quote_failures": [
-    "SW",
-    "VST"
-  ],
+  "quote_checks": 0,
+  "quote_failures": [],
   "quote_crosschecked_added": 0,
-  "quote_pending_added": 2,
+  "quote_pending_added": 0,
   "total_quote_pending": 16,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."

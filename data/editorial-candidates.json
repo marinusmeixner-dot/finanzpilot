@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09T07:57:07.840773Z",
+  "updated_at": "2026-11-09T16:40:02.744788Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-de4a07cdc74c7a8ca8",
+      "title": "Affäre von Nvidia-Chef Huang: Darum geht es beim Spionage-Verdacht",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/faq-nvidia-spionage-100.html",
+      "published_at": "2026-11-09T13:58:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-89a191fb9ea1a603f1",
+      "title": "Nvidia-Affäre lässt Aktie einbrechen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-nvidia-ki-huang-100.html",
+      "published_at": "2026-11-09T13:44:48Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-788e196614fb12ebab",
+      "title": "Commerzbank-Übernahme soll Anfang 2027 durch sein",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/commerzbank-uebernahme-unicredit-100.html",
+      "published_at": "2026-11-09T12:52:38Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5746f2fe1d9f562f52",
+      "title": "Streiks und neue Gespräche in Bayerns Metall- und Elektroindustrie",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/streiks-tarifgespraeche-ig-metall-100.html",
+      "published_at": "2026-11-09T10:52:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5a43a6b87180d77b17",
+      "title": "Hoffen auf Ende des Iran-Krieges: Ölpreise deutlich gesunken",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/oelpreise-gesunken-100.html",
+      "published_at": "2026-11-09T08:52:19Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f5b1e9dad05189ef87",
+      "title": "Update Wirtschaft vom 09.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1680600.html",
+      "published_at": "2026-11-09T08:48:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-d990808b00296d806c",
       "title": "Exporte im September 2026: +2,0 % zum August 2026",
@@ -45,6 +99,15 @@
       "title": "Untersuchung gegen Nvidia-Chef Huang wegen möglicher Spionin aus China",
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/ausland/amerika/nvidia-spionage-pruefung-100.html",
+      "published_at": "2026-11-09T03:32:51Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d129d1af608b336a78",
+      "title": "Untersuchung gegen Nvidia-Chef Huang wegen möglicher Spionin aus China",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-spionage-pruefung-100.html",
       "published_at": "2026-11-09T03:32:51Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
@@ -298,69 +361,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/energie/elektromobilitaetsgesetz-100.html",
       "published_at": "2026-11-05T17:27:08Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-959dee7dcb4c58e1cb",
-      "title": "Barkin sees interest rate hikes ahead, but at a gradual pace",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/05/barkin-sees-interest-rate-hikes-ahead-but-at-a-gradual-pace.html",
-      "published_at": "2026-11-05T14:38:28Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e7aede63543ab6424c",
-      "title": "Bund und Eigentümerfamilien einigen sich auf Kaufpreis bei KNDS",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/knds-bundesregierung-100.html",
-      "published_at": "2026-11-05T14:11:59Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bf9c0df3ebd473a632",
-      "title": "Wie sich der Wahlsieg der Demokraten auf Big Tech auswirkt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/digitales/midterms-bigtech-reaktionen-100.html",
-      "published_at": "2026-11-05T14:04:42Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-92c9eaa9ec02ce6fe0",
-      "title": "Ölpreise fallen weiter, DAX steigt auf Rekordhoch",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/oelpreise-sinken-100.html",
-      "published_at": "2026-11-05T13:18:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-83d5d5b635e3c84d89",
-      "title": "Bankenpleite stürzt Paraguay in eine Krise",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bankenkrise-paraguay-100.html",
-      "published_at": "2026-11-05T10:18:28Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c1fb5bdbe2afdefe95",
-      "title": "Marktbericht: DAX springt auf Rekordhoch",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-zwischenwahlen-100.html",
-      "published_at": "2026-11-05T09:20:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-af204101f6ebd3a303",
-      "title": "Update Wirtschaft vom 05.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1678462.html",
-      "published_at": "2026-11-05T09:08:58Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
