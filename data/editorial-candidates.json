@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-09T16:40:02.744788Z",
+  "updated_at": "2026-11-09T18:46:57.965584Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-44e44219e30944fe08",
+      "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
+      "published_at": "2026-11-09T18:14:47Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-3c81339125d5b68100",
+      "title": "Mobilfunkunternehmen Vodafone plant Abbau von 2.300 Stellen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/vodafone-stellenabbau-102.html",
+      "published_at": "2026-11-09T16:09:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-de4a07cdc74c7a8ca8",
       "title": "Affäre von Nvidia-Chef Huang: Darum geht es beim Spionage-Verdacht",
@@ -343,24 +361,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/hacker-kuehlsysteme-supermaerkte-100.html",
       "published_at": "2026-11-05T19:11:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-40c3c244a2921c6fc9",
-      "title": "Investor Benko wegen Millionenbetrugs zu weiterer Haftstrafe verurteilt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/europa/benko-prozess-neue-strafe-100.html",
-      "published_at": "2026-11-05T17:56:47Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1871a374225539c6ef",
-      "title": "Bundestags-Votum: Mehr Vorteile für E-Autos im Stadtverkehr möglich",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/energie/elektromobilitaetsgesetz-100.html",
-      "published_at": "2026-11-05T17:27:08Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
