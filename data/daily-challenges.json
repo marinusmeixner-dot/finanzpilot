@@ -1,42 +1,42 @@
 {
   "schema_version": 1,
-  "date": "2026-11-09",
-  "updated_at": "2026-11-09T00:04:00+01:00",
+  "date": "2026-11-10",
+  "updated_at": "2026-11-10T00:03:52+01:00",
   "editor": "FinanzPilot Tagesredaktion – datierte Originalquellen und ausdrücklich hypothetische Szenarien",
-  "explanation": "Drei eigenständige offene Aufgaben für Montag, 09.11.2026; datierte Primärquellen aus den zuletzt geprüften Veröffentlichungen, sämtliche Modellzahlen ausdrücklich hypothetisch.",
+  "explanation": "Drei eigenständige offene Aufgaben für Dienstag, 10.11.2026. Quellenanlässe sind datiert; hypothetische Modellannahmen ausdrücklich gekennzeichnet.",
   "tasks": [
     {
-      "id": "2026-11-09:market:base-effects",
+      "id": "2026-11-10:market:trade-balance",
       "kind": "market",
-      "date": "2026-11-09",
-      "title": "Industrieproduktion: Basiseffekt und Niveau",
-      "context": "Destatis meldete am 06.11.2026 für September eine monatliche Produktionsänderung von +0,7 %. Die folgenden Indexwerte sind ausschließlich hypothetisch: August des Vorjahres 104, September des Vorjahres 103, August aktuell 98. Der aktuelle Septemberwert ergibt sich ausschließlich aus dem gemeldeten Monatsprozentsatz auf dem fiktiven Augustwert.",
-      "question": "Berechne den fiktiven aktuellen Septemberindex und die Veränderung gegenüber dem fiktiven September des Vorjahres. Warum kann eine positive Monatsrate mit einem negativen Jahresvergleich zusammenfallen? Entwickle zwei unterschiedliche Erklärungen und nenne je eine weitere Primärstatistik, die sie stützen oder widerlegen könnte.",
+      "date": "2026-11-10",
+      "title": "Handelsbilanz: Nominalwerte und Mengen auseinanderhalten",
+      "context": "Destatis veröffentlichte am 09.11.2026 vorläufige saison- und kalenderbereinigte Septemberwerte: Exporte 141,1 Mrd. €, Importe 125,5 Mrd. €. Die folgende Preisannahme ist rein hypothetisch: Exportpreise steigen gegenüber einem Vergleichsmonat um 5 %, Exportwert steigt um 2 %. Die Zeiträume sind nur für das Rechenbeispiel identisch gesetzt.",
+      "question": "Berechne den gemeldeten nominalen Handelsüberschuss. Wie verändert sich unter den hypothetischen Preis- und Wertänderungen die Exportmenge näherungsweise exakt über einen Mengenindex? Erkläre, weshalb der Handelsüberschuss keine Aussage über den realen Außenbeitrag zum BIP oder die Gewinne einzelner Exporteure erlaubt. Formuliere eine alternative Deutung mit zwei überprüfbaren Primärdaten.",
       "rubric": [
-        "September aktuell 98×1,007=98,686",
-        "Jahresvergleich (98,686/103−1)×100≈−4,19 %",
-        "Unterschiedliche Bezugszeiträume und Basiseffekte korrekt erklären",
-        "Zwei getrennte Hypothesen mit konkret überprüfbaren Daten",
-        "Keine direkte Gewinn- oder Kursprognose aus Produktionsindex"
+        "Nominaler Überschuss 141,1−125,5=15,6 Mrd. €",
+        "Mengenindex 1,02/1,05≈0,97143, also etwa −2,86 %",
+        "Nominal- und Realgrößen sowie Saisonbereinigung unterscheiden",
+        "Außenbeitrag benötigt reale Exporte und Importe und volkswirtschaftliche Abgrenzung",
+        "Gegenhypothese mit mindestens zwei konkret benannten Primärindikatoren"
       ],
-      "source": "Destatis – Produktion im Produzierenden Gewerbe September 2026",
-      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_389_421.html",
-      "source_date": "2026-11-06",
+      "source": "Destatis – Deutsche Exporte im September 2026",
+      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
+      "source_date": "2026-11-09",
       "symbol": ""
     },
     {
-      "id": "2026-11-09:research:float-stress",
+      "id": "2026-11-10:research:cashflow-acquisitions",
       "kind": "research",
-      "date": "2026-11-09",
-      "title": "Versicherungs-Float unter Schadenstress",
-      "context": "Anlass ist der am 07.11.2026 veröffentlichte Quartalsbericht von Berkshire Hathaway. Alle folgenden Beträge sind hypothetisch und keine Berkshire-Kennzahlen: 120 Mrd. USD investierbarer Float, 30 Mrd. USD liquide Mittel, 12 Mrd. USD Liquiditätsreserve, 8 Mrd. USD fällige Zahlungen; ein Schadenstress erhöht die Zahlungen um weitere 15 Mrd. USD.",
-      "question": "Berechne die frei verbleibende Liquidität vor und nach dem Stress. Erläutere, warum Float und liquide Mittel nicht addiert werden dürfen. Welche Annahmen über Schadenabwicklung, Asset-Liquidität und regulatorisches Kapital wären zu prüfen, bevor ein Rückkauf empfohlen werden könnte? Formuliere eine Gegenhypothese mit Falsifikationssignal.",
+      "date": "2026-11-10",
+      "title": "Cashflow, Investitionen und Akquisitionen richtig abgrenzen",
+      "context": "Anlass: Berkshire Hathaways Quartalsunterlagen vom 07.11.2026. Für die neun Monate werden in der zuletzt geprüften Originalquelle CFO 33,914 Mrd. USD und Sachanlage-/Leasingausrüstungsinvestitionen 16,137 Mrd. USD ausgewiesen; Akquisitionen von 16,205 Mrd. USD sind separat zu behandeln. Die Zahlen sind historische Berichtsgrößen, keine Prognose.",
+      "question": "Berechne CFO minus ausgewiesene Investitionen und zusätzlich eine rein rechnerische Differenz nach Abzug der Akquisitionen. Warum ist keine dieser Größen automatisch nachhaltiger FCFE? Diskutiere zwei gegensätzliche Bewertungen der Kapitalallokation und benenne jeweils die notwendigen Primärdaten, die die Hypothese widerlegen könnten.",
       "rubric": [
-        "Vor Stress 30−12−8=10 Mrd. USD",
-        "Nach Stress 30−12−8−15=−5 Mrd. USD; rechnerische Lücke",
-        "Float ist keine zusätzliche frei verfügbare Kasse",
-        "Mindestens drei relevante Bilanz-/Liquiditätsprüfungen",
-        "Gegenhypothese und messbares Widerlegungssignal"
+        "CFO minus Capex = 17,777 Mrd. USD",
+        "Zusätzliche rechnerische Differenz nach Akquisitionen = 1,572 Mrd. USD",
+        "Akquisitionen nicht als regulären Capex umetikettieren",
+        "Leasing-/Finanzierungsgeschäft, Working Capital, Schulden und Eigentümercashflow berücksichtigen",
+        "Zwei prüfbare Gegenhypothesen mit Kennzahlen und Zeithorizont"
       ],
       "source": "Berkshire Hathaway – Third Quarter 2026 Earnings Release",
       "source_url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
@@ -44,23 +44,23 @@
       "symbol": "BRK.B"
     },
     {
-      "id": "2026-11-09:learning:buyback-financing",
+      "id": "2026-11-10:learning:margin-bridge",
       "kind": "learning",
-      "date": "2026-11-09",
-      "title": "Rückkauf mit Finanzierungskosten",
-      "context": "Die Rückkaufberichterstattung von Berkshire Hathaway ist lediglich der Lernanlass. Vollständig hypothetisches Unternehmen: 600 Mio. € Jahresgewinn, 60 Mio. Aktien; Rückkauf von 6 Mio. Aktien zu 80 € pro Stück vollständig kreditfinanziert zu 6 % Jahreszins. Vereinfachend 25 % Steuersatz, volle Jahreszinswirkung und sonst unverändertes Ergebnis.",
-      "question": "Berechne Rückkaufvolumen, jährliche Nachsteuer-Zinsbelastung, Gewinn je Aktie vor und nach Rückkauf. Ist die EPS-Steigerung ein Beleg für höheren inneren Wert? Stelle eine optimistische und eine pessimistische These mit jeweils einer überprüfbaren Kennzahl gegenüber.",
+      "date": "2026-11-10",
+      "title": "Umsatzwachstum ist nicht gleich Cashflowwachstum",
+      "context": "Lernanlass: Destatis meldete am 09.11.2026 steigende nominale Exporte. Das folgende Unternehmen ist vollständig fiktiv: Umsatz Vorjahr 200 Mio. €, EBIT-Marge 12 %; Umsatz aktuell 220 Mio. €, EBIT-Marge 9 %. Abschreibungen aktuell 8 Mio. €, Investitionen aktuell 18 Mio. €, Aufbau operatives Nettoumlaufvermögen 6 Mio. €, Barsteuern 5 Mio. €. Vereinfachend keine Zinsen und sonstige Cashflow-Positionen.",
+      "question": "Berechne Vorjahres- und aktuelles EBIT, die EBIT-Veränderung und den vereinfachten aktuellen operativen Free Cashflow (EBIT + Abschreibungen − Barsteuern − Investitionen − Aufbau Nettoumlaufvermögen). Warum könnte ein Umsatzplus trotzdem mit fallendem Unternehmenswert einhergehen? Entwickle eine optimistische Gegenhypothese und zwei messbare Widerlegungskriterien.",
       "rubric": [
-        "Rückkauf 480 Mio. €",
-        "Nachsteuerzins 480×0,06×0,75=21,6 Mio. €",
-        "EPS vorher 600/60=10 €",
-        "EPS nachher (600−21,6)/54≈10,71 €",
-        "EPS-Effekt und Wertschöpfung unterscheiden; Schuldenrisiko und Kapitalrendite mit Gegenhypothesen"
+        "Vorjahres-EBIT 24 Mio. €, aktuelles EBIT 19,8 Mio. €",
+        "EBIT-Veränderung −4,2 Mio. € bzw. −17,5 %",
+        "Vereinfachter Free Cashflow 19,8+8−5−18−6=−1,2 Mio. €",
+        "Margendruck, Kapitalbindung und Capex getrennt erklären",
+        "Optimistische Gegenhypothese und zwei überprüfbare Kennzahlen"
       ],
-      "source": "Berkshire Hathaway – Third Quarter 2026 Earnings Release",
-      "source_url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
-      "source_date": "2026-11-07",
-      "symbol": "BRK.B"
+      "source": "Destatis – Deutsche Exporte im September 2026",
+      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
+      "source_date": "2026-11-09",
+      "symbol": ""
     }
   ]
 }
