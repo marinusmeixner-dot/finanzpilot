@@ -1549,6 +1549,42 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-e4b4ca444e7a395",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "date": "2026-11-09",
+      "event_type": "entered_radar",
+      "signal_signature": "B_watchlist||active",
+      "from_priority": null,
+      "priority": "B_watchlist",
+      "adjusted_close": 410.0,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -2.82,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-49d3c5bc2c64860",
+      "ticker": "IBKR",
+      "company": "Interactive Brokers",
+      "date": "2026-11-09",
+      "event_type": "entered_radar",
+      "signal_signature": "C_screen_only||active",
+      "from_priority": null,
+      "priority": "C_screen_only",
+      "adjusted_close": 77.57,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -2.82,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

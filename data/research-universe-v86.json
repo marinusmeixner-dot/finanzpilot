@@ -946,6 +946,42 @@
       "evidence_date": "2026-11-04",
       "research_gap": "Q3 order intake +50% YoY per issuer release; reconcile with interim financials, operating cash flow, dilution, market liquidity and cross-listing ISIN before valuation; no verified current Frankfurt quote.",
       "investment_readiness": "screening_only_no_fair_value"
+    },
+    {
+      "id": "index-app",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "sector": "Communication Services",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001751008",
+      "index_added": "2025-09-22",
+      "discovery_date": "2026-11-11",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-ibkr",
+      "ticker": "IBKR",
+      "company": "Interactive Brokers",
+      "sector": "Financials",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001381197",
+      "index_added": "2025-08-28",
+      "discovery_date": "2026-11-11",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
     }
   ],
   "benchmarks": [

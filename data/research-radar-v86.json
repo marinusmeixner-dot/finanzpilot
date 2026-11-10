@@ -4,8 +4,8 @@
   "methodology_version": 1,
   "methodology": "Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und maximal 35 Tage alten redaktionellen Anlässen (RSS nie als Beleg). A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
-  "total_issuers": 75,
-  "with_price_history": 73,
+  "total_issuers": 77,
+  "with_price_history": 75,
   "research_priority_count": 9,
   "missing_quote_count": 2,
   "front_page_candidate_ids": [
@@ -32,7 +32,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-09",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -44,7 +44,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-09",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -56,7 +56,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-09",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -178,7 +178,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 350.69,
         "return_21d_pct": 4.17,
         "return_63d_pct": 15.01,
@@ -418,7 +418,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 545.18,
         "return_21d_pct": 1.89,
         "return_63d_pct": 8.42,
@@ -658,7 +658,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 266.93,
         "return_21d_pct": 1.71,
         "return_63d_pct": -1.96,
@@ -821,7 +821,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 1066.18,
         "return_21d_pct": 12.76,
         "return_63d_pct": 13.07,
@@ -900,7 +900,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 691.28,
         "return_21d_pct": 11.33,
         "return_63d_pct": 12.13,
@@ -1049,7 +1049,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 422.16,
         "return_21d_pct": 9.52,
         "return_63d_pct": 16.36,
@@ -1128,7 +1128,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 655.81,
         "return_21d_pct": 11.32,
         "return_63d_pct": 16.99,
@@ -1207,7 +1207,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 306.4,
         "return_21d_pct": 3.47,
         "return_63d_pct": 29.51,
@@ -1286,7 +1286,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 125.66,
         "return_21d_pct": 12.85,
         "return_63d_pct": 11.21,
@@ -1435,7 +1435,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 1411.9499,
         "return_21d_pct": 19.73,
         "return_63d_pct": 16.37,
@@ -1514,7 +1514,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 282.11,
         "return_21d_pct": 7.91,
         "return_63d_pct": 9.12,
@@ -1648,6 +1648,85 @@
       }
     },
     {
+      "id": "index-app",
+      "ticker": "APP",
+      "company": "AppLovin",
+      "sector": "Communication Services",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "B_watchlist",
+      "technical_research_score": 65,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-09",
+        "sessions": 250,
+        "adjusted_close": 410.0,
+        "return_21d_pct": 47.99,
+        "return_63d_pct": 28.66,
+        "return_126d_pct": -14.3,
+        "benchmark_63d_pct": -2.82,
+        "relative_63d_pp": 31.48,
+        "ma50": 295.2,
+        "ma200": 408.7321,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -44.11,
+        "volatility_21d_annualized_pct": 118.8,
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -2.82,
+          "excess_return_pp": 31.48,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -2.08,
+          "excess_return_pp": 30.74,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -5.34,
+          "excess_return_pp": 34.0,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-11",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-09",
+        "last_session": "2026-11-09",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "corero-network-security",
       "ticker": "NYA1.F",
       "company": "Corero Network Security plc",
@@ -1733,7 +1812,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 86.86,
         "return_21d_pct": 12.25,
         "return_63d_pct": 2.07,
@@ -1812,7 +1891,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 28.38,
         "return_21d_pct": 4.76,
         "return_63d_pct": -11.09,
@@ -1898,7 +1977,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 397.62,
         "return_21d_pct": 4.83,
         "return_63d_pct": -0.53,
@@ -1977,7 +2056,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 76.26,
         "return_21d_pct": 19.66,
         "return_63d_pct": 5.92,
@@ -2056,7 +2135,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 342.08,
         "return_21d_pct": 2.73,
         "return_63d_pct": -5.04,
@@ -2135,7 +2214,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 139.58,
         "return_21d_pct": 19.08,
         "return_63d_pct": -1.44,
@@ -2361,7 +2440,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 97.73,
         "return_21d_pct": 19.86,
         "return_63d_pct": -3.13,
@@ -2447,7 +2526,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 44.19,
         "return_21d_pct": 7.02,
         "return_63d_pct": -10.13,
@@ -2526,7 +2605,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 101.19,
         "return_21d_pct": 6.7,
         "return_63d_pct": 15.01,
@@ -2605,7 +2684,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 378.05,
         "return_21d_pct": -1.22,
         "return_63d_pct": 13.59,
@@ -2684,7 +2763,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 214.94,
         "return_21d_pct": -6.19,
         "return_63d_pct": 9.04,
@@ -2763,7 +2842,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 220.78,
         "return_21d_pct": -20.63,
         "return_63d_pct": 14.49,
@@ -2842,7 +2921,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 641.37,
         "return_21d_pct": -10.76,
         "return_63d_pct": 7.14,
@@ -2921,7 +3000,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 177.57,
         "return_21d_pct": -23.5,
         "return_63d_pct": 18.12,
@@ -3000,7 +3079,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 27.2,
         "return_21d_pct": 1.53,
         "return_63d_pct": -7.67,
@@ -3079,7 +3158,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 508.58,
         "return_21d_pct": -16.37,
         "return_63d_pct": 7.22,
@@ -3158,7 +3237,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 31.24,
         "return_21d_pct": 5.29,
         "return_63d_pct": 0.39,
@@ -3237,7 +3316,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 71.17,
         "return_21d_pct": -0.48,
         "return_63d_pct": -9.38,
@@ -3248,7 +3327,7 @@
         "ma200": 72.8857,
         "above_ma50": true,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -24.37,
+        "drawdown_from_252d_high_pct": -23.96,
         "volatility_21d_annualized_pct": 33.2,
         "currency": "USD"
       },
@@ -3316,7 +3395,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 228.58,
         "return_21d_pct": -16.89,
         "return_63d_pct": 3.01,
@@ -3465,7 +3544,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 169.2,
         "return_21d_pct": -19.06,
         "return_63d_pct": -3.28,
@@ -3544,7 +3623,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 102.84,
         "return_21d_pct": -33.43,
         "return_63d_pct": -5.98,
@@ -3697,7 +3776,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 330.89,
         "return_21d_pct": -20.99,
         "return_63d_pct": -13.79,
@@ -3853,7 +3932,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 288.15,
         "return_21d_pct": -18.06,
         "return_63d_pct": -16.13,
@@ -3939,7 +4018,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 85.96,
         "return_21d_pct": -2.56,
         "return_63d_pct": -11.97,
@@ -4018,7 +4097,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 178.67,
         "return_21d_pct": -22.07,
         "return_63d_pct": -17.76,
@@ -4108,7 +4187,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 206.64,
         "return_21d_pct": -28.61,
         "return_63d_pct": -19.27,
@@ -4187,7 +4266,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 237.32,
         "return_21d_pct": -2.04,
         "return_63d_pct": -10.01,
@@ -4266,7 +4345,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 100.79,
         "return_21d_pct": -36.97,
         "return_63d_pct": -35.47,
@@ -4429,7 +4508,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 193.88,
         "return_21d_pct": -30.88,
         "return_63d_pct": -8.21,
@@ -4508,7 +4587,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 388.62,
         "return_21d_pct": -14.27,
         "return_63d_pct": -7.68,
@@ -4587,7 +4666,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 133.92,
         "return_21d_pct": -17.07,
         "return_63d_pct": -7.44,
@@ -4598,7 +4677,7 @@
         "ma200": 152.1546,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -28.46,
+        "drawdown_from_252d_high_pct": -25.35,
         "volatility_21d_annualized_pct": 88.7,
         "currency": "USD"
       },
@@ -4721,6 +4800,85 @@
       }
     },
     {
+      "id": "index-ibkr",
+      "ticker": "IBKR",
+      "company": "Interactive Brokers",
+      "sector": "Financials",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 7,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-09",
+        "sessions": 250,
+        "adjusted_close": 77.57,
+        "return_21d_pct": -11.72,
+        "return_63d_pct": -13.52,
+        "return_126d_pct": -8.47,
+        "benchmark_63d_pct": -2.82,
+        "relative_63d_pp": -10.7,
+        "ma50": 86.0324,
+        "ma200": 82.9172,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -20.93,
+        "volatility_21d_annualized_pct": 50.2,
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -2.82,
+          "excess_return_pp": -10.7,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -2.08,
+          "excess_return_pp": -11.44,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -5.34,
+          "excess_return_pp": -8.18,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-11",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-09",
+        "last_session": "2026-11-09",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "index-hood",
       "ticker": "HOOD",
       "company": "Robinhood Markets",
@@ -4736,7 +4894,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 83.32,
         "return_21d_pct": -23.57,
         "return_63d_pct": -11.72,
@@ -4889,7 +5047,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 180.96,
         "return_21d_pct": -7.91,
         "return_63d_pct": -14.64,
@@ -5038,7 +5196,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 370.55,
         "return_21d_pct": -26.92,
         "return_63d_pct": -29.43,
@@ -5117,7 +5275,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 319.48,
         "return_21d_pct": -11.63,
         "return_63d_pct": -23.08,
@@ -5196,7 +5354,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 598.88,
         "return_21d_pct": -25.01,
         "return_63d_pct": -28.82,
@@ -5275,7 +5433,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 50.34,
         "return_21d_pct": -19.99,
         "return_63d_pct": -19.86,
@@ -5354,7 +5512,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 359.3,
         "return_21d_pct": -16.37,
         "return_63d_pct": -21.77,
@@ -5433,7 +5591,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 829.34,
         "return_21d_pct": -17.41,
         "return_63d_pct": -17.99,
@@ -5586,7 +5744,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 119.79,
         "return_21d_pct": -15.28,
         "return_63d_pct": -17.35,
@@ -5735,7 +5893,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-09",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 278.28,
         "return_21d_pct": -22.91,
         "return_63d_pct": -23.63,

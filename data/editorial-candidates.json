@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T17:49:06.385877Z",
+  "updated_at": "2026-11-10T23:18:01.796954Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-3632ed7ff19dbf6456",
+      "title": "Wirtschaft vor acht vom 10.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1681634.html",
+      "published_at": "2026-11-10T18:52:27Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-18afe3e40dd5bc8daa",
       "title": "U.S. gas prices fall below $4 for the first time since July",
@@ -370,33 +379,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/bahn-berlin-hannover-bauarbeiten-pendler-100.html",
       "published_at": "2026-11-07T02:54:24Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e8b95cab8bf33094b0",
-      "title": "ISHARES € INFLATION LINKED GOVT BOND ETF Kurs | A0HGV1 | IE00B0M62X26 - Finanzen.net",
-      "source": "Google News: Finanzen",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPT3pHY1RhUmozRzl6M1ZTMTZtdWlTejYzWTA3XzNhaURIUDhlMHkwbF9adG1JdUJPZDl5WUlpN2V2NVFzR2lXR2Y4RWQ2VUpVU096b21pTDFyUi03UFlKVDh3N2VwWlVBOVJDM1k0T2wyQWpfX0lIbzkzWjZsbjBCeG1mU2N2akU?oc=5",
-      "published_at": "2026-11-06T20:55:26Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-8b08b339afc056b3ea",
-      "title": "Americans are on a 'treadmill of high inflation' and more rate hikes are likely, Fed's Daly says",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/06/fed-daly-interest-rates-inflation.html",
-      "published_at": "2026-11-06T19:05:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7f82e783d35720910f",
-      "title": "Wirtschaft vor acht vom 06.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1679460.html",
-      "published_at": "2026-11-06T18:51:48Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
