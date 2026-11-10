@@ -1,23 +1,24 @@
 {
   "schema_version": 1,
-  "date": "2026-11-10",
-  "updated_at": "2026-11-10T00:03:52+01:00",
+  "date": "2026-11-11",
+  "updated_at": "2026-11-11T00:03:53+01:00",
   "editor": "FinanzPilot Tagesredaktion – datierte Originalquellen und ausdrücklich hypothetische Szenarien",
-  "explanation": "Drei eigenständige offene Aufgaben für Dienstag, 10.11.2026. Quellenanlässe sind datiert; hypothetische Modellannahmen ausdrücklich gekennzeichnet.",
+  "explanation": "Drei neue, voneinander unabhängige offene Aufgaben für Mittwoch, 11.11.2026. Primärquellen vom 07. und 09.11. sind als datierte Lernanlässe gekennzeichnet; Rechenfälle sind hypothetisch.",
   "tasks": [
     {
-      "id": "2026-11-10:market:trade-balance",
+      "id": "2026-11-11:market:import-export-sensitivity",
       "kind": "market",
-      "date": "2026-11-10",
-      "title": "Handelsbilanz: Nominalwerte und Mengen auseinanderhalten",
-      "context": "Destatis veröffentlichte am 09.11.2026 vorläufige saison- und kalenderbereinigte Septemberwerte: Exporte 141,1 Mrd. €, Importe 125,5 Mrd. €. Die folgende Preisannahme ist rein hypothetisch: Exportpreise steigen gegenüber einem Vergleichsmonat um 5 %, Exportwert steigt um 2 %. Die Zeiträume sind nur für das Rechenbeispiel identisch gesetzt.",
-      "question": "Berechne den gemeldeten nominalen Handelsüberschuss. Wie verändert sich unter den hypothetischen Preis- und Wertänderungen die Exportmenge näherungsweise exakt über einen Mengenindex? Erkläre, weshalb der Handelsüberschuss keine Aussage über den realen Außenbeitrag zum BIP oder die Gewinne einzelner Exporteure erlaubt. Formuliere eine alternative Deutung mit zwei überprüfbaren Primärdaten.",
+      "date": "2026-11-11",
+      "title": "Handelsüberschuss und Importpreisschock",
+      "context": "Destatis meldete am 09.11.2026 für September saison- und kalenderbereinigte Exporte von 141,1 Mrd. € und Importe von 125,5 Mrd. €. Rechenfall (hypothetisch): Importpreise steigen um 8 %, die Importmenge sinkt um 3 %; Exportwert bleibt konstant.",
+      "question": "Berechne den Ausgangsüberschuss und den neuen nominalen Importwert mit Preis- und Mengeneffekt multiplikativ. Bestimme den neuen Überschuss. Warum ist daraus weder die reale BIP-Wirkung noch die Margenwirkung eines Importeurs unmittelbar ableitbar? Nenne zwei prüfbare Gegenhypothesen.",
       "rubric": [
-        "Nominaler Überschuss 141,1−125,5=15,6 Mrd. €",
-        "Mengenindex 1,02/1,05≈0,97143, also etwa −2,86 %",
-        "Nominal- und Realgrößen sowie Saisonbereinigung unterscheiden",
-        "Außenbeitrag benötigt reale Exporte und Importe und volkswirtschaftliche Abgrenzung",
-        "Gegenhypothese mit mindestens zwei konkret benannten Primärindikatoren"
+        "Ausgangsüberschuss 15,6 Mrd. €",
+        "Neuer Importwert 125,5×1,08×0,97=131,4738 Mrd. €",
+        "Neuer Überschuss 141,1−131,4738=9,6262 Mrd. €",
+        "Preis-/Mengeneffekt nicht addieren; saisonbereinigte Nominalwerte korrekt kennzeichnen",
+        "Realer Außenbeitrag, Währungs- und Vertrags-/Absicherungseffekte unterscheiden",
+        "Zwei falsifizierbare Gegenhypothesen samt benötigter Primärdaten"
       ],
       "source": "Destatis – Deutsche Exporte im September 2026",
       "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
@@ -25,18 +26,19 @@
       "symbol": ""
     },
     {
-      "id": "2026-11-10:research:cashflow-acquisitions",
+      "id": "2026-11-11:research:berkshire-fcf-quality",
       "kind": "research",
-      "date": "2026-11-10",
-      "title": "Cashflow, Investitionen und Akquisitionen richtig abgrenzen",
-      "context": "Anlass: Berkshire Hathaways Quartalsunterlagen vom 07.11.2026. Für die neun Monate werden in der zuletzt geprüften Originalquelle CFO 33,914 Mrd. USD und Sachanlage-/Leasingausrüstungsinvestitionen 16,137 Mrd. USD ausgewiesen; Akquisitionen von 16,205 Mrd. USD sind separat zu behandeln. Die Zahlen sind historische Berichtsgrößen, keine Prognose.",
-      "question": "Berechne CFO minus ausgewiesene Investitionen und zusätzlich eine rein rechnerische Differenz nach Abzug der Akquisitionen. Warum ist keine dieser Größen automatisch nachhaltiger FCFE? Diskutiere zwei gegensätzliche Bewertungen der Kapitalallokation und benenne jeweils die notwendigen Primärdaten, die die Hypothese widerlegen könnten.",
+      "date": "2026-11-11",
+      "title": "Berkshire: Free Cashflow ist nicht gleich frei ausschüttbares Geld",
+      "context": "Berkshire Hathaway veröffentlichte am 07.11.2026 Quartalsunterlagen. Für neun Monate: operativer Cashflow 33,914 Mrd. USD, Investitionen in Sachanlagen/Leasingausrüstung 16,137 Mrd. USD, Akquisitionen 16,205 Mrd. USD. Hypothetische Annahme: 40 % der Sachinvestitionen seien Erhaltungsinvestitionen.",
+      "question": "Berechne einen einfachen CFO-minus-Capex-FCF und einen nur modellhaft um Erhaltungsinvestitionen bereinigten Betrag. Erläutere, warum beide weder ausschüttbarer FCFE noch Unternehmenswert sind. Behandle Akquisitionen, Versicherungsfloat und Finanzierungsverpflichtungen separat. Formuliere eine Gegenhypothese zur Cashflowqualität.",
       "rubric": [
-        "CFO minus Capex = 17,777 Mrd. USD",
-        "Zusätzliche rechnerische Differenz nach Akquisitionen = 1,572 Mrd. USD",
-        "Akquisitionen nicht als regulären Capex umetikettieren",
-        "Leasing-/Finanzierungsgeschäft, Working Capital, Schulden und Eigentümercashflow berücksichtigen",
-        "Zwei prüfbare Gegenhypothesen mit Kennzahlen und Zeithorizont"
+        "Einfacher FCF 17,777 Mrd. USD",
+        "Hypothetischer CFO minus 40 % Capex = 27,4592 Mrd. USD",
+        "40-%-Annahme ausdrücklich nicht als berichtete Erhaltungsquote ausgeben",
+        "Akquisitionen 16,205 Mrd. USD nicht stillschweigend als reguläre Sachinvestition behandeln",
+        "Versicherungsfloat, Finanzierungs- und Leasingverpflichtungen und verfügbare Liquidität differenzieren",
+        "Gegenhypothese mit mindestens zwei überprüfbaren Datenpunkten"
       ],
       "source": "Berkshire Hathaway – Third Quarter 2026 Earnings Release",
       "source_url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
@@ -44,18 +46,19 @@
       "symbol": "BRK.B"
     },
     {
-      "id": "2026-11-10:learning:margin-bridge",
+      "id": "2026-11-11:learning:operating-leverage",
       "kind": "learning",
-      "date": "2026-11-10",
-      "title": "Umsatzwachstum ist nicht gleich Cashflowwachstum",
-      "context": "Lernanlass: Destatis meldete am 09.11.2026 steigende nominale Exporte. Das folgende Unternehmen ist vollständig fiktiv: Umsatz Vorjahr 200 Mio. €, EBIT-Marge 12 %; Umsatz aktuell 220 Mio. €, EBIT-Marge 9 %. Abschreibungen aktuell 8 Mio. €, Investitionen aktuell 18 Mio. €, Aufbau operatives Nettoumlaufvermögen 6 Mio. €, Barsteuern 5 Mio. €. Vereinfachend keine Zinsen und sonstige Cashflow-Positionen.",
-      "question": "Berechne Vorjahres- und aktuelles EBIT, die EBIT-Veränderung und den vereinfachten aktuellen operativen Free Cashflow (EBIT + Abschreibungen − Barsteuern − Investitionen − Aufbau Nettoumlaufvermögen). Warum könnte ein Umsatzplus trotzdem mit fallendem Unternehmenswert einhergehen? Entwickle eine optimistische Gegenhypothese und zwei messbare Widerlegungskriterien.",
+      "date": "2026-11-11",
+      "title": "Operativer Hebel und Cash Conversion",
+      "context": "Lernanlass: Destatis-Meldung vom 09.11.2026 über nominale Exporte; alle Unternehmenswerte hier sind fiktiv. Vorjahr: Umsatz 120 Mio. €, EBIT 18 Mio. €. Aktuelles Jahr: Umsatz 132 Mio. €, EBIT 15,84 Mio. €, Abschreibungen 6 Mio. €, Capex 14 Mio. €, Aufbau Nettoumlaufvermögen 5 Mio. €, Steuerzahlungen 3 Mio. €; keine weiteren zahlungswirksamen Überleitungen.",
+      "question": "Berechne beide EBIT-Margen und den Umsatz-/EBIT-Wachstumsvergleich. Schätze unter den vereinfachten Annahmen CFO und CFO-minus-Capex. Erkläre, weshalb die Exporte-Meldung die Zahlen des fiktiven Unternehmens nicht belegt, und nenne zwei mögliche Ursachen für die sinkende Marge sowie eine überprüfbare Gegenhypothese.",
       "rubric": [
-        "Vorjahres-EBIT 24 Mio. €, aktuelles EBIT 19,8 Mio. €",
-        "EBIT-Veränderung −4,2 Mio. € bzw. −17,5 %",
-        "Vereinfachter Free Cashflow 19,8+8−5−18−6=−1,2 Mio. €",
-        "Margendruck, Kapitalbindung und Capex getrennt erklären",
-        "Optimistische Gegenhypothese und zwei überprüfbare Kennzahlen"
+        "Vorjahresmarge 15 %, aktuelle Marge 12 %",
+        "Umsatz +10 %, EBIT −12 %",
+        "Vereinfachter CFO 15,84+6−5−3=13,84 Mio. €",
+        "Vereinfachter FCF −0,16 Mio. €",
+        "EBIT, CFO und FCF sowie Annahmegrenzen trennen",
+        "Zwei plausible Margentreiber und eine anhand echter Daten falsifizierbare Gegenhypothese"
       ],
       "source": "Destatis – Deutsche Exporte im September 2026",
       "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
