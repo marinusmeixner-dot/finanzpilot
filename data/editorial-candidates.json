@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T15:03:22.837265Z",
+  "updated_at": "2026-11-10T17:49:06.385877Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-18afe3e40dd5bc8daa",
+      "title": "U.S. gas prices fall below $4 for the first time since July",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/10/us-gas-prices-below-four-dollars.html",
+      "published_at": "2026-11-10T16:29:09Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-90028b9cdeff7c475f",
+      "title": "Anthropic peilt Börsen-Bewertung von über einer Billion Dollar an",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boerse-kuenstliche-intelligenz-100.html",
+      "published_at": "2026-11-10T15:37:43Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-d978914f2e787c8b1d",
       "title": "KI-Boom: Deutscher Chipkonzern Infineon will weiter zweistellig wachsen",
@@ -379,15 +397,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1679460.html",
       "published_at": "2026-11-06T18:51:48Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6c9a3818345f596bb5",
-      "title": "The AI ‘credit card’ is getting costlier as CoreWeave bond yield tops 16%",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/06/coreweave-bond-yield-tops-16percent-as-ai-credit-stress-rises.html",
-      "published_at": "2026-11-06T17:09:53Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
