@@ -1,5 +1,10 @@
 /* FinanzPilot Start: focused mobile-first newsroom, native editorial stories and research leads. */
-.fp81-home{display:grid;gap:27px;max-width:1100px;margin:0 auto 68px;color:var(--text,#e4f1eb)}
+.fp81-home{display:grid;grid-template-columns:minmax(0,1fr);gap:27px;width:100%;min-width:0;max-width:1100px;margin:0 auto 68px;color:var(--text,#e4f1eb)}
+/* Keep all homepage cards within the same content column as the other views. */
+.fp81-home>*,.fp81-home :is(.fp81-brief,.fp81-radar,.fp81-watchlist,.fp81-movers,.fp81-ideas,.fp81-watch-grid){min-width:0;max-width:100%}
+.fp81-home :is(.fp81-mover,.fp81-idea,.fp81-watch-item){width:100%;min-width:0;max-width:100%;overflow-wrap:anywhere}
+.fp81-home :is(.fp81-heading,.fp81-hero-body,.fp81-readout,.fp81-bottom){min-width:0;overflow-wrap:anywhere}
+.fp81-home :is(.fp81-mover-top,.fp81-idea-meta,.fp81-heading)>*{min-width:0}
 .fp81-home button{font:inherit;cursor:pointer}
 .fp81-home button:focus-visible,.fp81-home summary:focus-visible{outline:3px solid #a3efd0;outline-offset:3px}
 .fp81-hero{border:1px solid #56776f;border-radius:22px;background:linear-gradient(122deg,#183c36 0%,#19343c 63%,#1d3147 100%);overflow:hidden}
@@ -14,7 +19,7 @@
 .fp81-heading{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:13px}
 .fp81-heading h2{font-size:clamp(22px,2.7vw,29px);letter-spacing:-.02em;margin:7px 0 5px;line-height:1.2}
 .fp81-heading p{font-size:13px;line-height:1.6;color:#bcd1cb;max-width:680px}
-.fp81-brief,.fp81-radar,.fp81-watchlist{display:grid;gap:16px}
+.fp81-brief,.fp81-radar,.fp81-watchlist{display:grid;grid-template-columns:minmax(0,1fr);gap:16px;min-width:0}
 .fp81-movers{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
 .fp81-mover{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-width:0;padding:18px;border-radius:16px;border:1px solid #4f6e6c;background:#19313d}
 .fp81-mover-top{display:flex;align-items:center;gap:10px;font-size:11px;line-height:1.45;color:#abc8c2}
@@ -25,7 +30,7 @@
 .fp81-mover .fp81-watch{font-size:12px;color:#b2d6c6}
 .fp81-story-link{background:transparent;color:#a6eac2;border:0;text-align:left;padding:0;font-size:12px;font-weight:760;line-height:1.55;margin-top:auto}
 .fp81-story-link:hover{text-decoration:underline;color:#dcffe9}
-.fp81-readout{display:grid;grid-template-columns:1.45fr .9fr;gap:16px;padding:18px 21px;background:rgba(37,79,68,.40);border:1px solid #4c736b;border-radius:16px}
+.fp81-readout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(0,.9fr);gap:16px;padding:18px 21px;background:rgba(37,79,68,.40);border:1px solid #4c736b;border-radius:16px}
 .fp81-readout h3{font-size:18px;margin:8px 0}
 .fp81-readout p{font-size:13px;color:#c6ded3;line-height:1.7}
 .fp81-next{border-left:1px solid #63877c;padding-left:19px}
@@ -55,6 +60,6 @@
 .fp81-bottom .btn{flex:none}
 .fp81-disclaimer{color:#9fb8b0;font-size:11px;line-height:1.6}
 .fp81-empty{border:1px dashed #537c6c;border-radius:13px;padding:20px;font-size:13px;color:#c8ddd4;line-height:1.6}
-@media(max-width:880px){.fp81-movers{grid-template-columns:1fr}.fp81-mover{gap:9px}.fp81-readout{grid-template-columns:1fr}.fp81-next{border-left:0;border-top:1px solid #567c71;padding:12px 0 0}}
+@media(max-width:880px){.fp81-movers{grid-template-columns:minmax(0,1fr).fp81-mover{gap:9px}.fp81-readout{grid-template-columns:minmax(0,1fr)}.fp81-next{border-left:0;border-top:1px solid #567c71;padding:12px 0 0}}
 @media(max-width:640px){.fp81-home{gap:23px}.fp81-hero-body{padding:23px 18px}.fp81-hero h1{font-size:clamp(25px,6.2vw,32px)}.fp81-hero p{font-size:13px;line-height:1.65}.fp81-hero-actions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.fp81-hero-actions .btn{white-space:normal;padding:10px 6px}.fp81-ideas,.fp81-watch-grid{grid-template-columns:1fr}.fp81-heading{align-items:flex-start}.fp81-heading .btn{font-size:11px}.fp81-bottom{display:grid;gap:12px}.fp81-bottom .btn{justify-self:start}.fp81-readout{padding:16px}.fp81-mover,.fp81-idea,.fp81-watch-item{padding:16px}}
 @media(max-width:355px){.fp81-hero-actions{grid-template-columns:1fr}.fp81-hero h1{font-size:25px}.fp81-idea-meta{font-size:10px}}
