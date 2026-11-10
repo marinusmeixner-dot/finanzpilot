@@ -2475,11 +2475,7 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": {
-        "id": "rss-563346ed37b6a6d88c",
-        "date": "2026-11-06",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
@@ -3654,8 +3650,8 @@
       "editorial_evidence": null,
       "editorial_age_days": null,
       "unverified_discovery_hint": {
-        "id": "rss-517bc30b2013bac24f",
-        "date": "2026-11-06",
+        "id": "rss-86425170e4979fcd96",
+        "date": "2026-11-10",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
@@ -4919,7 +4915,11 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": null,
+      "unverified_discovery_hint": {
+        "id": "rss-d978914f2e787c8b1d",
+        "date": "2026-11-10",
+        "status": "unverified_headline_only"
+      },
       "benchmarks": [
         {
           "benchmark_id": "VWCE",
@@ -5682,11 +5682,7 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": {
-        "id": "rss-563346ed37b6a6d88c",
-        "date": "2026-11-06",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
