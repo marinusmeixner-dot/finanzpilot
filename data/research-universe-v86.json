@@ -856,6 +856,42 @@
       "discovery_date": "2026-11-09",
       "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
       "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-invh",
+      "ticker": "INVH",
+      "company": "Invitation Homes",
+      "sector": "Real Estate",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001687229",
+      "index_added": "2022-09-19",
+      "discovery_date": "2026-11-10",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-vylr",
+      "ticker": "VYLR",
+      "company": "Vylor",
+      "sector": "Consumer Staples",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0002128626",
+      "index_added": "2026-10-01",
+      "discovery_date": "2026-11-10",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
     }
   ],
   "benchmarks": [

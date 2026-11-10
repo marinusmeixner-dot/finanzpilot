@@ -4,10 +4,10 @@
   "methodology_version": 1,
   "methodology": "Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und maximal 35 Tage alten redaktionellen Anlässen (RSS nie als Beleg). A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
-  "total_issuers": 70,
-  "with_price_history": 69,
+  "total_issuers": 72,
+  "with_price_history": 70,
   "research_priority_count": 6,
-  "missing_quote_count": 1,
+  "missing_quote_count": 2,
   "front_page_candidate_ids": [
     "profile-evk-de",
     "apple",
@@ -32,7 +32,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-06",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -44,7 +44,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-06",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -56,7 +56,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-06",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -68,7 +68,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-06",
-      "sessions": 253,
+      "sessions": 251,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -80,7 +80,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-06",
-      "sessions": 254,
+      "sessions": 252,
       "source": "Yahoo Finance (über yfinance)"
     }
   ],
@@ -101,7 +101,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 21.12,
         "return_21d_pct": 0.67,
         "return_63d_pct": 17.2,
@@ -124,7 +124,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -178,7 +178,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 342.37,
         "return_21d_pct": 0.57,
         "return_63d_pct": 11.07,
@@ -201,7 +201,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 7,
+      "editorial_age_days": 8,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -264,7 +264,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 55.58,
         "return_21d_pct": 30.5,
         "return_63d_pct": 13.54,
@@ -287,7 +287,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -341,7 +341,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 54.28,
         "return_21d_pct": 4.85,
         "return_63d_pct": 5.89,
@@ -364,7 +364,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -418,7 +418,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 530.61,
         "return_21d_pct": 1.53,
         "return_63d_pct": 5.05,
@@ -441,7 +441,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -504,7 +504,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 19.085,
         "return_21d_pct": 12.5,
         "return_63d_pct": 0.34,
@@ -527,7 +527,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -581,7 +581,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 1053.5601,
         "return_21d_pct": 11.31,
         "return_63d_pct": 10.74,
@@ -660,7 +660,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 671.65,
         "return_21d_pct": 2.92,
         "return_63d_pct": 10.5,
@@ -739,7 +739,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 210.75,
         "return_21d_pct": 14.15,
         "return_63d_pct": 16.63,
@@ -809,7 +809,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 422.65,
         "return_21d_pct": 12.68,
         "return_63d_pct": 17.19,
@@ -888,7 +888,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 652.7,
         "return_21d_pct": 13.73,
         "return_63d_pct": 16.07,
@@ -967,7 +967,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 569.2,
         "return_21d_pct": 9.67,
         "return_63d_pct": 10.61,
@@ -1037,7 +1037,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 303.73,
         "return_21d_pct": 6.63,
         "return_63d_pct": 29.42,
@@ -1116,7 +1116,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 125.52,
         "return_21d_pct": 13.53,
         "return_63d_pct": 11.68,
@@ -1195,7 +1195,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 1354.0,
         "return_21d_pct": 15.77,
         "return_63d_pct": 10.07,
@@ -1274,7 +1274,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 276.22,
         "return_21d_pct": 7.7,
         "return_63d_pct": 6.02,
@@ -1353,7 +1353,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 86.95,
         "return_21d_pct": 12.38,
         "return_63d_pct": 3.43,
@@ -1432,7 +1432,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 451.1,
         "return_21d_pct": 9.12,
         "return_63d_pct": 3.53,
@@ -1502,7 +1502,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 259.3,
         "return_21d_pct": 2.06,
         "return_63d_pct": -6.76,
@@ -1525,7 +1525,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1588,7 +1588,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 29.11,
         "return_21d_pct": 8.18,
         "return_63d_pct": -13.03,
@@ -1611,7 +1611,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1674,7 +1674,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 394.15,
         "return_21d_pct": 6.25,
         "return_63d_pct": -2.98,
@@ -1753,7 +1753,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 133.98,
         "return_21d_pct": 15.24,
         "return_63d_pct": -1.64,
@@ -1832,7 +1832,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 59.36,
         "return_21d_pct": 13.76,
         "return_63d_pct": -1.26,
@@ -1855,7 +1855,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 5,
+      "editorial_age_days": 6,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1909,7 +1909,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 44.09,
         "return_21d_pct": 6.37,
         "return_63d_pct": -6.51,
@@ -1988,7 +1988,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 73.57,
         "return_21d_pct": 16.41,
         "return_63d_pct": -0.8,
@@ -2067,7 +2067,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 57.64,
         "return_21d_pct": 0.7,
         "return_63d_pct": 0.21,
@@ -2090,7 +2090,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2144,7 +2144,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 256,
+        "sessions": 254,
         "adjusted_close": 196.4,
         "return_21d_pct": 4.88,
         "return_63d_pct": -7.58,
@@ -2214,7 +2214,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 94.81,
         "return_21d_pct": 15.79,
         "return_63d_pct": -5.38,
@@ -2237,7 +2237,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 3,
+      "editorial_age_days": 4,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2300,7 +2300,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 213.65,
         "return_21d_pct": -6.21,
         "return_63d_pct": 8.36,
@@ -2379,7 +2379,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 94.62,
         "return_21d_pct": 1.35,
         "return_63d_pct": 6.14,
@@ -2458,7 +2458,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 263.65,
         "return_21d_pct": -0.23,
         "return_63d_pct": -5.92,
@@ -2481,7 +2481,7 @@
         "source": "Siemens Mobility – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2535,7 +2535,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 213.13,
         "return_21d_pct": -19.44,
         "return_63d_pct": 11.13,
@@ -2599,6 +2599,85 @@
       }
     },
     {
+      "id": "index-invh",
+      "ticker": "INVH",
+      "company": "Invitation Homes",
+      "sector": "Real Estate",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 45,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-06",
+        "sessions": 250,
+        "adjusted_close": 27.1,
+        "return_21d_pct": 2.34,
+        "return_63d_pct": -8.31,
+        "return_126d_pct": -3.64,
+        "benchmark_63d_pct": -5.42,
+        "relative_63d_pp": -2.89,
+        "ma50": 27.0593,
+        "ma200": 27.3345,
+        "above_ma50": true,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -10.41,
+        "volatility_21d_annualized_pct": 21.0,
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.42,
+          "excess_return_pp": -2.89,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.65,
+          "excess_return_pp": -3.66,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -8.89,
+          "excess_return_pp": 0.58,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-10",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-06",
+        "last_session": "2026-11-06",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "index-okta",
       "ticker": "OKTA",
       "company": "Okta, Inc.",
@@ -2614,7 +2693,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 168.69,
         "return_21d_pct": -23.4,
         "return_63d_pct": 11.89,
@@ -2693,7 +2772,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 334.49,
         "return_21d_pct": 0.93,
         "return_63d_pct": -6.57,
@@ -2772,7 +2851,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 30.55,
         "return_21d_pct": 2.48,
         "return_63d_pct": -2.95,
@@ -2851,7 +2930,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 256,
+        "sessions": 254,
         "adjusted_close": 408.75,
         "return_21d_pct": 7.31,
         "return_63d_pct": -14.63,
@@ -2921,7 +3000,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 216.9,
         "return_21d_pct": -17.53,
         "return_63d_pct": -3.67,
@@ -3000,7 +3079,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 449.04,
         "return_21d_pct": -27.65,
         "return_63d_pct": -4.37,
@@ -3079,7 +3158,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 610.15,
         "return_21d_pct": -15.36,
         "return_63d_pct": 2.64,
@@ -3158,7 +3237,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 358.22,
         "return_21d_pct": -4.47,
         "return_63d_pct": 8.26,
@@ -3241,7 +3320,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 160.38,
         "return_21d_pct": -19.32,
         "return_63d_pct": -8.47,
@@ -3320,7 +3399,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 186.64,
         "return_21d_pct": -19.02,
         "return_63d_pct": -14.11,
@@ -3343,9 +3422,9 @@
         "source": "NVIDIA Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": {
-        "id": "rss-de4a07cdc74c7a8ca8",
+        "id": "rss-5164fb4b0a64a76f43",
         "date": "2026-11-09",
         "status": "unverified_headline_only"
       },
@@ -3410,7 +3489,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 25.91,
         "return_21d_pct": -3.43,
         "return_63d_pct": -9.28,
@@ -3484,7 +3563,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 84.6,
         "return_21d_pct": -4.79,
         "return_63d_pct": -12.76,
@@ -3563,7 +3642,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 68.59,
         "return_21d_pct": -2.35,
         "return_63d_pct": -12.1,
@@ -3642,7 +3721,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 313.84,
         "return_21d_pct": -21.24,
         "return_63d_pct": -18.49,
@@ -3721,7 +3800,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 5.5,
         "return_21d_pct": -8.49,
         "return_63d_pct": -25.17,
@@ -3744,7 +3823,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3798,7 +3877,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 202.02,
         "return_21d_pct": -26.74,
         "return_63d_pct": -19.21,
@@ -3877,7 +3956,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 239.3,
         "return_21d_pct": -0.73,
         "return_63d_pct": -12.33,
@@ -3956,7 +4035,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 284.78,
         "return_21d_pct": -18.23,
         "return_63d_pct": -20.29,
@@ -3979,7 +4058,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4042,7 +4121,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 95.1,
         "return_21d_pct": -39.22,
         "return_63d_pct": -40.08,
@@ -4065,7 +4144,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 3,
+      "editorial_age_days": 4,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4128,7 +4207,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 118.1,
         "return_21d_pct": -17.12,
         "return_63d_pct": -25.52,
@@ -4151,7 +4230,7 @@
         "source": "FinanzPilot-Redaktion · Deutsche Börse Terminvorschau",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4205,7 +4284,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 375.44,
         "return_21d_pct": -18.02,
         "return_63d_pct": -10.04,
@@ -4284,7 +4363,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 34.32,
         "return_21d_pct": 2.45,
         "return_63d_pct": -16.6,
@@ -4354,7 +4433,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 124.8,
         "return_21d_pct": -20.07,
         "return_63d_pct": -12.5,
@@ -4365,7 +4444,7 @@
         "ma200": 152.2821,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -34.28,
+        "drawdown_from_252d_high_pct": -33.33,
         "volatility_21d_annualized_pct": 84.0,
         "currency": "USD"
       },
@@ -4433,7 +4512,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 179.67,
         "return_21d_pct": -6.28,
         "return_63d_pct": -14.39,
@@ -4512,7 +4591,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 80.91,
         "return_21d_pct": -24.39,
         "return_63d_pct": -14.4,
@@ -4529,7 +4608,11 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": null,
+      "unverified_discovery_hint": {
+        "id": "rss-5164fb4b0a64a76f43",
+        "date": "2026-11-09",
+        "status": "unverified_headline_only"
+      },
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
@@ -4591,7 +4674,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 256,
+        "sessions": 254,
         "adjusted_close": 1283.6,
         "return_21d_pct": -21.18,
         "return_63d_pct": -17.29,
@@ -4661,7 +4744,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 558.63,
         "return_21d_pct": -29.67,
         "return_63d_pct": -33.15,
@@ -4740,7 +4823,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 293.69,
         "return_21d_pct": -18.45,
         "return_63d_pct": -30.34,
@@ -4819,7 +4902,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 45.755,
         "return_21d_pct": -22.32,
         "return_63d_pct": -27.2,
@@ -4889,7 +4972,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 272.36,
         "return_21d_pct": -23.88,
         "return_63d_pct": -22.16,
@@ -4972,7 +5055,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 30.41,
         "return_21d_pct": -16.68,
         "return_63d_pct": -27.72,
@@ -5042,7 +5125,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 332.72,
         "return_21d_pct": -34.71,
         "return_63d_pct": -36.21,
@@ -5121,7 +5204,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 47.78,
         "return_21d_pct": -21.56,
         "return_63d_pct": -25.66,
@@ -5200,7 +5283,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 341.72,
         "return_21d_pct": -19.5,
         "return_63d_pct": -23.2,
@@ -5279,7 +5362,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 774.11,
         "return_21d_pct": -22.49,
         "return_63d_pct": -21.83,
@@ -5358,7 +5441,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 116.1,
         "return_21d_pct": -14.12,
         "return_63d_pct": -22.85,
@@ -5437,7 +5520,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-06",
-        "sessions": 254,
+        "sessions": 252,
         "adjusted_close": 812.7,
         "return_21d_pct": -13.07,
         "return_63d_pct": -28.85,
@@ -5518,7 +5601,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 54,
+      "editorial_age_days": 55,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
@@ -5526,6 +5609,37 @@
       "discovery_source_url": null,
       "discovery_date": null,
       "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": null
+    },
+    {
+      "id": "index-vylr",
+      "ticker": "VYLR",
+      "company": "Vylor",
+      "sector": "Consumer Staples",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_pending",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "insufficient_data",
+      "technical_research_score": null,
+      "signals": {
+        "status": "needs_price_history",
+        "available_sessions": 27,
+        "asof": "2026-11-06",
+        "currency": "USD"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [],
+      "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-10",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": null
     }

@@ -2,12 +2,12 @@
   "schema_version": 1,
   "asof": "2026-11-06",
   "selection_method": "Source-first research queue",
-  "total_issuers": 70,
+  "total_issuers": 72,
   "curated_dossiers": 10,
   "bucket_counts": {
     "review_now": 21,
-    "watch_and_verify": 48,
-    "source_gap": 1
+    "watch_and_verify": 49,
+    "source_gap": 2
   },
   "spotlight_ids": [
     "bayer",
@@ -2076,6 +2076,44 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
+      "id": "index-invh",
+      "ticker": "INVH",
+      "company": "Invitation Homes",
+      "sector": "Real Estate",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-06",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
       "id": "jpmorgan",
       "ticker": "JPM",
       "company": "JPMorgan Chase",
@@ -2660,6 +2698,41 @@
       "evidence_age_days": 51,
       "evidence_url": "https://www.eqs-news.com/company/baywa-ag/news/5b74ed9f-ea7c-11e8-902f-2c44fd856d8c",
       "evidence_title": "BayWa: Warum eine Sanierungsvereinbarung noch keine abgeschlossene Rettung ist",
+      "why_now": "Verifizierte, ausreichend lange Kurshistorie fehlt",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 0,
+        "benchmark_names": []
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "index-vylr",
+      "ticker": "VYLR",
+      "company": "Vylor",
+      "sector": "Consumer Staples",
+      "bucket": "source_gap",
+      "review_kind": "source_gap",
+      "radar_priority": "insufficient_data",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-06",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
       "why_now": "Verifizierte, ausreichend lange Kurshistorie fehlt",
       "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
       "needs_before_investment": [

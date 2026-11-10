@@ -1,16 +1,38 @@
 {
   "schema_version": 1,
-  "last_checked_date": "2026-11-09",
+  "last_checked_date": "2026-11-10",
   "index_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "index_rows": 500,
-  "new_companies": [],
+  "new_companies": [
+    {
+      "ticker": "INVH",
+      "company": "Invitation Homes",
+      "sector": "Real Estate",
+      "cik": "0001687229"
+    },
+    {
+      "ticker": "VYLR",
+      "company": "Vylor",
+      "sector": "Consumer Staples",
+      "cik": "0002128626"
+    }
+  ],
   "already_known": 63,
-  "total_universe": 63,
-  "quote_checks": 0,
-  "quote_failures": [],
+  "total_universe": 65,
+  "quote_checks": 8,
+  "quote_failures": [
+    "INVH",
+    "VYLR",
+    "BE",
+    "P",
+    "FERG",
+    "HONA",
+    "FLEX",
+    "MRVL"
+  ],
   "quote_crosschecked_added": 0,
-  "quote_pending_added": 0,
-  "total_quote_pending": 16,
+  "quote_pending_added": 2,
+  "total_quote_pending": 18,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }
