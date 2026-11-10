@@ -2,20 +2,20 @@
   "schema_version": 1,
   "asof": "2026-11-09",
   "selection_method": "Source-first research queue",
-  "total_issuers": 74,
+  "total_issuers": 75,
   "curated_dossiers": 10,
   "bucket_counts": {
     "review_now": 21,
-    "watch_and_verify": 51,
+    "watch_and_verify": 52,
     "source_gap": 2
   },
   "spotlight_ids": [
     "bayer",
+    "siemens",
     "apple",
     "amazon",
     "profile-eoan-de",
-    "microsoft",
-    "basf"
+    "microsoft"
   ],
   "methodology": "Neue belegte Unternehmensanlässe (0–21 Kalendertage vor Kursstichtag) zuerst; laufende Fundamentalthesen als separate Nachprüfung; technische Signale ohne geprüften Geschäftsbeleg nur in Beobachtung. Klassifizierung auf Beleg- und Forschungsreife, nicht auf erwarteter Rendite oder Unterbewertung. Peer-/ETF-Daten nur bei identischer Vergleichswährung aus vorherigem Audit.",
   "readiness_warning": "Hier steht kein Kaufurteil. Nur Primärbericht, nachhaltiger Cashflow, Kapitalstruktur, Bewertung, Zeitstempel und Widerlegungskriterien können ein Investmenturteil rechtfertigen.",
@@ -30,7 +30,7 @@
       "radar_priority": "A_research_first",
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": "2026-11-03",
       "evidence_age_days": 6,
       "evidence_url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
@@ -50,6 +50,44 @@
       ],
       "alternatives": {
         "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "siemens",
+      "ticker": "SIE.DE",
+      "company": "Siemens AG",
+      "sector": "Industrial Automation",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "financial_audit_pending",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-09",
+      "evidence_date": "2026-11-03",
+      "evidence_age_days": 6,
+      "evidence_url": "https://press.siemens.com/global/en/pressrelease/siemens-and-lufthansa-technik-defense-develop-medical-evacuation-train",
+      "evidence_title": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
+      "why_now": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
+      "first_rejection": "Zyklische Fabrikinvestitionen und ein komplexes Portfolio; Umsatz und Ergebnis industrielles Geschäft sind nicht dieselbe Margenbasis.",
+      "needs_before_investment": [
+        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex",
+        "Separate Schulden/Leasing der Finanzierungssparte aus industrieller EV-Bridge herausrechnen",
+        "Beteiligungen und Sonderergebnisse gegenüber normalisiertem EBIT trennen",
+        "Aktuelle verwässerte Aktien, Kapitalstruktur und Segment-Multiples bestätigen"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex"
+      ],
+      "alternatives": {
+        "peer_count": 1,
         "etf_count": 2,
         "benchmark_names": [
           "Vanguard FTSE All-World UCITS ETF",
@@ -144,7 +182,7 @@
       "radar_priority": "A_research_first",
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": "2026-11-01",
       "evidence_age_days": 8,
       "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
@@ -211,6 +249,44 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
+      "id": "profile-rwe-de",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "sector": "Energieversorgung",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-09",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 8,
+      "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "evidence_title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
       "id": "basf",
       "ticker": "BAS.DE",
       "company": "BASF",
@@ -220,7 +296,7 @@
       "radar_priority": "A_research_first",
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": "2026-10-30",
       "evidence_age_days": 10,
       "evidence_url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
@@ -258,7 +334,7 @@
       "radar_priority": "A_research_first",
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": "2026-10-30",
       "evidence_age_days": 10,
       "evidence_url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
@@ -334,7 +410,7 @@
       "radar_priority": "B_watchlist",
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": "2026-11-04",
       "evidence_age_days": 5,
       "evidence_url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
@@ -401,44 +477,6 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
-      "id": "profile-rwe-de",
-      "ticker": "RWE.DE",
-      "company": "RWE AG",
-      "sector": "Energieversorgung",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "B_watchlist",
-      "decision_stage": "editorial_screen",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
-      "evidence_date": "2026-11-01",
-      "evidence_age_days": 8,
-      "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-      "evidence_title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "needs_before_investment": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "Primärbericht/Cashflow"
-      ],
-      "alternatives": {
-        "peer_count": 0,
-        "etf_count": 2,
-        "benchmark_names": [
-          "Vanguard FTSE All-World UCITS ETF",
-          "iShares STOXX Europe 600 UCITS ETF (DE)"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
       "id": "index-rddt",
       "ticker": "RDDT",
       "company": "Reddit",
@@ -486,7 +524,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": "2026-11-03",
       "evidence_age_days": 6,
       "evidence_url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
@@ -506,44 +544,6 @@
       ],
       "alternatives": {
         "peer_count": 0,
-        "etf_count": 2,
-        "benchmark_names": [
-          "Vanguard FTSE All-World UCITS ETF",
-          "iShares STOXX Europe 600 UCITS ETF (DE)"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
-      "id": "siemens",
-      "ticker": "SIE.DE",
-      "company": "Siemens AG",
-      "sector": "Industrial Automation",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "C_screen_only",
-      "decision_stage": "financial_audit_pending",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
-      "evidence_date": "2026-11-03",
-      "evidence_age_days": 6,
-      "evidence_url": "https://press.siemens.com/global/en/pressrelease/siemens-and-lufthansa-technik-defense-develop-medical-evacuation-train",
-      "evidence_title": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
-      "why_now": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
-      "first_rejection": "Zyklische Fabrikinvestitionen und ein komplexes Portfolio; Umsatz und Ergebnis industrielles Geschäft sind nicht dieselbe Margenbasis.",
-      "needs_before_investment": [
-        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex",
-        "Separate Schulden/Leasing der Finanzierungssparte aus industrieller EV-Bridge herausrechnen",
-        "Beteiligungen und Sonderergebnisse gegenüber normalisiertem EBIT trennen",
-        "Aktuelle verwässerte Aktien, Kapitalstruktur und Segment-Multiples bestätigen"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex"
-      ],
-      "alternatives": {
-        "peer_count": 1,
         "etf_count": 2,
         "benchmark_names": [
           "Vanguard FTSE All-World UCITS ETF",
@@ -601,7 +601,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": "2026-11-01",
       "evidence_age_days": 8,
       "evidence_url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
@@ -678,7 +678,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "financial_data_review",
       "primary_cashflow_ready": true,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -755,7 +755,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "financial_audit_pending",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -831,7 +831,7 @@
       "radar_priority": "B_watchlist",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -869,7 +869,7 @@
       "radar_priority": "B_watchlist",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -969,6 +969,44 @@
         "benchmark_names": [
           "iShares MSCI ACWI ETF",
           "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "corero-network-security",
+      "ticker": "NYA1.F",
+      "company": "Corero Network Security plc",
+      "sector": "Cybersecurity / DDoS Protection",
+      "bucket": "watch_and_verify",
+      "review_kind": "technical_only",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "technical_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-09",
+      "evidence_date": null,
+      "evidence_age_days": null,
+      "evidence_url": null,
+      "evidence_title": null,
+      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
@@ -1211,7 +1249,7 @@
       "radar_priority": "B_watchlist",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -1287,7 +1325,7 @@
       "radar_priority": "B_watchlist",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -1591,7 +1629,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -1819,7 +1857,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -2123,7 +2161,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -2199,7 +2237,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
@@ -2389,7 +2427,7 @@
       "radar_priority": "C_screen_only",
       "decision_stage": "technical_screen",
       "primary_cashflow_ready": false,
-      "price_asof": "2026-11-06",
+      "price_asof": "2026-11-09",
       "evidence_date": null,
       "evidence_age_days": null,
       "evidence_url": null,
