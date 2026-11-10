@@ -5,34 +5,28 @@
   "index_rows": 500,
   "new_companies": [
     {
-      "ticker": "INVH",
-      "company": "Invitation Homes",
-      "sector": "Real Estate",
-      "cik": "0001687229"
+      "ticker": "BE",
+      "company": "Bloom Energy",
+      "sector": "Industrials",
+      "cik": "0001664703"
     },
     {
-      "ticker": "VYLR",
-      "company": "Vylor",
-      "sector": "Consumer Staples",
-      "cik": "0002128626"
+      "ticker": "P",
+      "company": "Everpure",
+      "sector": "Information Technology",
+      "cik": "0001474432"
     }
   ],
-  "already_known": 63,
-  "total_universe": 65,
-  "quote_checks": 8,
+  "already_known": 65,
+  "total_universe": 67,
+  "quote_checks": 2,
   "quote_failures": [
-    "INVH",
-    "VYLR",
     "BE",
-    "P",
-    "FERG",
-    "HONA",
-    "FLEX",
-    "MRVL"
+    "P"
   ],
   "quote_crosschecked_added": 0,
   "quote_pending_added": 2,
-  "total_quote_pending": 18,
+  "total_quote_pending": 20,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }

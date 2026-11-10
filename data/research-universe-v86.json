@@ -892,6 +892,42 @@
       "discovery_date": "2026-11-10",
       "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
       "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-be",
+      "ticker": "BE",
+      "company": "Bloom Energy",
+      "sector": "Industrials",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001664703",
+      "index_added": "2026-09-21",
+      "discovery_date": "2026-11-10",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
+    },
+    {
+      "id": "index-p",
+      "ticker": "P",
+      "company": "Everpure",
+      "sector": "Information Technology",
+      "currency": "USD",
+      "country": "US",
+      "market": "US",
+      "benchmark_id": "ACWI",
+      "discovery_class": "secondary_index_quote_pending",
+      "verification": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "quote_crosschecked": false,
+      "cik": "0001474432",
+      "index_added": "2026-09-21",
+      "discovery_date": "2026-11-10",
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "editorial_status": "new_screening_only"
     }
   ],
   "benchmarks": [

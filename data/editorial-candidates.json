@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T02:06:20.275777Z",
+  "updated_at": "2026-11-10T07:57:52.489544Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-ad66f4c56177053acb",
+      "title": "Kalifornier lehnen Milliardärssteuer ab",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/amerika/kalifornien-milliardaerssteuer-abgelehnt-100.html",
+      "published_at": "2026-11-10T07:15:02Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d3b736a02218013db2",
+      "title": "13,2 Millionen Behandlungen in Notfallambulanzen im Jahr 2025",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_46_p002.html",
+      "published_at": "2026-11-10T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1bb2c2415f2eb10d92",
+      "title": "Klimakonferenz COP31: Warum alle über Elektrifizierung reden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/klimaschutz-elektrifizierung-100.html",
+      "published_at": "2026-11-10T06:34:14Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8bc0dcc3758f13245a",
+      "title": "Marktbericht: DAX nähert sich wieder dem Rekordhoch",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
+      "published_at": "2026-11-10T06:26:27Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-88d58b204fd6631d1b",
+      "title": "Forschungsbericht: Fossile CO2-Emissionen gehen leicht zurück",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wissen/klima/emissionen-klimawandel-global-carbon-budget-100.html",
+      "published_at": "2026-11-10T04:01:04Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-831dc8846455eaf5d4",
       "title": "Wirtschaft vor acht vom 09.11.2026",
@@ -325,33 +370,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/boerse/tech-einbruch-ki-100.html",
       "published_at": "2026-11-06T08:09:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3af1e14f8a2fd750c5",
-      "title": "Produktion im September 2026: +0,7 % zum Vormonat",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_389_421.html",
-      "published_at": "2026-11-06T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-392dbb70a2d999375d",
-      "title": "Marktbericht: Aus Wahleuphorie wird Wahlkater",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-ki-nasdaq-wall-street-100.html",
-      "published_at": "2026-11-06T06:26:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-54cb439d2eeae5244e",
-      "title": "Ressourcenverbrauch vieler Rechenzentren nicht öffentlich einsehbar",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/investigativ/swr/rechenzentren-transparenz-wasserverbrauch-stromverbrauch-100.html",
-      "published_at": "2026-11-06T05:04:19Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
