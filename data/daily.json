@@ -1,10 +1,58 @@
 {
-  "date": "2026-11-07",
-  "updated_at": "2026-11-07",
+  "date": "2026-11-10",
+  "updated_at": "2026-11-10",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Berkshire Hathaway meldet am 7. November schwächere operative Gewinne bei deutlich höheren Aktienrückkäufen. Die Wirkung hängt vom Versicherungsgeschäft und dem Preis der Rückkäufe ab; ältere Industrie- und Konjunkturdaten bleiben als datierte Einordnung erhalten.",
+  "intro": "Neu geprüft: Parrots professionelles Drohnengeschäft wächst stark, doch die Cashflow-Tragfähigkeit bleibt offen. Ältere datierte Berichte bleiben als Kontext erhalten.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-10-28-parrot-q3-microdrones-growth",
+      "title": "Parrot: Drohnenumsatz wächst stark, nachhaltiger Cashflow noch offen",
+      "published": "2026-11-10",
+      "date": "2026-10-28",
+      "category": "Unternehmen",
+      "symbols": [
+        "PARRO.PA"
+      ],
+      "source": "Parrot SA, Q3-Geschäftsmitteilung vom 28.10.2026",
+      "url": "https://www.parrot.com/fr/corporate/publications-financieres",
+      "why": "Neue Prüfung der am 28. Oktober veröffentlichten Q3-Zahlen wegen eines neu aufgenommenen europäischen Unternehmens im Research-Screening.",
+      "impact": "Starkes Umsatzwachstum bei professionellen Mikrodrohnen, aber schwächere Softwareentwicklung, schwankende Aufträge und bislang keine belastbare nachhaltige Free-Cashflow-Basis.",
+      "article": {
+        "lead": "Parrot SA (Euronext Paris: PARRO, ISIN FR0004038263) verkauft professionelle Mikrodrohnen für Behörden, Sicherheits- und Infrastrukturaufgaben und über PIX4D Software für Vermessung und 3D-Modellierung. Die Erlöse stammen aus Drohnenlieferungen und Softwarelizenzen beziehungsweise Abonnements. Der Unternehmensbericht vom 28. Oktober 2026 zeigt einen starken, aber ungleichmäßigen Wachstumsschub.",
+        "sections": [
+          {
+            "heading": "Umsatz und Auftragstreiber",
+            "paragraphs": [
+              "Im dritten Quartal 2026 erzielte Parrot 23,7 Mio. Euro Konzernumsatz, 40 % mehr als ein Jahr zuvor. In den ersten neun Monaten stieg der Umsatz um 60 % auf 81,0 Mio. Euro. Das Geschäft mit professionellen Mikrodrohnen wuchs im Quartal um 68 % auf 16,6 Mio. Euro und in neun Monaten um 110 % auf 58,7 Mio. Euro.",
+              "Als Treiber nennt Parrot Auslieferungen und neue Programme für die ANAFI-UKR-Drohnen, unter anderem bei staatlichen Kunden in Europa und Nordamerika. Auswahlverfahren und Qualifizierungen sind jedoch nicht gleichbedeutend mit garantierten zukünftigen Umsätzen."
+            ]
+          },
+          {
+            "heading": "Software und Margen: Gegenläufige Entwicklungen",
+            "paragraphs": [
+              "Die Sparte für Infrastruktur-Software und -Lösungen erzielte im dritten Quartal 7,0 Mio. Euro, nach 7,1 Mio. Euro im Vorjahr. Der Übergang von Einmallizenzen zu Abonnements kann Einnahmen verstetigen, erschwert aber kurzfristige Umsatzvergleiche.",
+              "Parrot meldet für das Mikrodrohnengeschäft erstmals ein ausgeglichenes kumuliertes laufendes operatives Ergebnis über zwölf Monate bis September; im einzelnen dritten Quartal blieb dieses Segment operativ negativ. Eine ausgeglichene Sparte ist kein Beleg für dauerhaft positive Konzern-Cashflows."
+            ]
+          },
+          {
+            "heading": "Ausblick und Kapitalbedarf",
+            "paragraphs": [
+              "Das Management erwartet für 2026 rund 110 Mio. Euro Konzernumsatz und für Mikrodrohnen etwa 80 Mio. Euro. Dies ist eine Unternehmensprognose, keine gesicherte Nachfrage oder Gewinnzusage.",
+              "Der Halbjahresbericht vom 31. Juli nennt 18,8 Mio. Euro Liquidität zum 30. Juni, 2,2 Mio. Euro operativen Mittelabfluss im ersten Halbjahr und einen einmaligen positiven Versicherungseffekt von netto 2,5 Mio. Euro im operativen Ergebnis. Für einen fairen Wert fehlen hier eine aktualisierte Q3-Bilanz, nachhaltiger Investitionsbedarf, Finanzierungs- und Leasingverpflichtungen sowie die verwässerte Aktienzahl."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Bewertungsgrenze",
+            "paragraphs": [
+              "Die positive These: Wiederkehrende öffentliche Beschaffungen und höhere Stückzahlen könnten Fixkosten decken; Softwareabonnements könnten den Umsatz stabilisieren. Die Gegenhypothese: verzögerte Ausschreibungen, harte Preisverhandlungen, Konkurrenz und Produktentwicklungsaufwand drücken Margen und Mittelzufluss.",
+              "Eine Bewertung müsste normalisierten freien Cashflow, mögliche Verwässerung, Nettoverschuldung einschließlich Leasing, einen belastbaren Diskontsatz und Szenarien für volatile staatliche Aufträge prüfen. Ein aktueller Börsenkurs und ein währungsgleicher ETF-Vergleich wurden für diesen Beitrag nicht unabhängig auditiert; daher weder Kursziel noch Kaufurteil."
+            ]
+          }
+        ],
+        "conclusion": "Parrot ist ein überprüfbarer neuer europäischer Research-Kandidat mit starkem Mikrodrohnenwachstum. Die nächste entscheidende Prüfung ist, ob die Umsätze ohne Einmaleffekte und mit angemessenem Kapitalbedarf zu nachhaltigem Konzern-Cashflow werden. Originalquellen: Parrot Q3-Geschäftsmitteilung 28.10.2026 und Halbjahresergebnis 31.07.2026, abrufbar über die verlinkte Finanzpublikationsseite."
+      }
+    },
     {
       "id": "2026-11-07-berkshire-q3-insurance-buybacks",
       "title": "Berkshire Hathaway: Rückkäufe steigen, Versicherungsergebnis sinkt",
