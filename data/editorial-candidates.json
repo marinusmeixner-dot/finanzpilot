@@ -1,9 +1,45 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-10T07:57:52.489544Z",
+  "updated_at": "2026-11-10T09:46:51.198979Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-01716da7e1d5aa2df0",
+      "title": "Börsengang von Anthropic - umstrittener Goldrausch in San Francisco",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/amerika/goldrausch-san-fransisco-anthropic-vor-boersengang-100.html",
+      "published_at": "2026-11-10T09:42:31Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-018a25cd0d5fb6450f",
+      "title": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
+      "published_at": "2026-11-10T09:00:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e5c35938d6c92d9c46",
+      "title": "Update Wirtschaft vom 10.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1681258.html",
+      "published_at": "2026-11-10T08:57:37Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a24f1110c7f0cafade",
+      "title": "Chinas Handelsüberschuss überschreitet erneut die Billionenmarke",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/china-export-handel-100.html",
+      "published_at": "2026-11-10T08:53:53Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-ad66f4c56177053acb",
       "title": "Kalifornier lehnen Milliardärssteuer ab",
@@ -334,42 +370,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/konjunktur/industrieproduktion-wachstum-deutschland-100.html",
       "published_at": "2026-11-06T10:42:54Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-63646e57298fbf9d8f",
-      "title": "Paraguay: Die Bankenkrise wird zur Staatskrise",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/amerika/paraguay-pena-ruecktritt-ueno-bank-100.html",
-      "published_at": "2026-11-06T09:29:54Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d76938ffcacf8e4d34",
-      "title": "Daimler Truck meldet deutlichen Gewinnsprung wegen USA-Geschäft",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/daimlertruck-100.html",
-      "published_at": "2026-11-06T09:13:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-662c34acfe67fa5c3d",
-      "title": "Update Wirtschaft vom 06.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1679068.html",
-      "published_at": "2026-11-06T08:52:22Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3817788aed839cf7c6",
-      "title": "Chipaktien an den internationalen Börsen im freien Fall",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/boerse/tech-einbruch-ki-100.html",
-      "published_at": "2026-11-06T08:09:57Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
