@@ -1,9 +1,90 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T10:00:46.146879Z",
+  "updated_at": "2026-11-11T14:23:34.650260Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-5bda0f36deb41c475d",
+      "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
+      "published_at": "2026-11-11T14:16:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-93faf95ea9f34fa71c",
+      "title": "Wirtschaftsweise korrigieren Wachstumsprognose deutlich nach oben",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftsweise-jahresgutachten-2026-100.html",
+      "published_at": "2026-11-11T13:30:06Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-01699dc9128c91a4d4",
+      "title": "Digital Fairness Act - EU will digitalen Verbraucherschutz stärken",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/eu-digital-fairness-act-100.html",
+      "published_at": "2026-11-11T12:40:59Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-13eec05d4992dddce1",
+      "title": "Marktbericht: Der DAX-Rally geht die Puste aus",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/dax-rally-geht-puste-aus-100.html",
+      "published_at": "2026-11-11T12:40:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f3423b4b25507df977",
+      "title": "Bundeskartellamt kritisiert Gebührenpolitik von PayPal",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/paypal-bundeskartellamt-gebuehren-100.html",
+      "published_at": "2026-11-11T12:34:37Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d7650b7f63c1fccc49",
+      "title": "Wie trotz Blockade der Straße von Hormus Öl aus der Region fließt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/energie/iran-krieg-oel-golfstaaten-100.html",
+      "published_at": "2026-11-11T12:21:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1de091d4fa447ba5f0",
+      "title": "70 % der Eingewanderten sind erwerbstätig",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N078_13.html",
+      "published_at": "2026-11-11T12:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-fe794a02d8b6c6f0be",
+      "title": "\"Tankrabatt\" drückt Inflation im Oktober",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/inflation-tankrabatt-spritpreise-oktober-100.html",
+      "published_at": "2026-11-11T11:00:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-258c02d188bc2f1d80",
+      "title": "Zahl der arbeitslosen Akademiker auf Höchststand",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/arbeitslosigkeit-akademiker-rekord-100.html",
+      "published_at": "2026-11-11T10:07:28Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-cd2e79c480bd2eb574",
       "title": "Update Wirtschaft vom 11.11.2026",
