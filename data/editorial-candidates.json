@@ -1,9 +1,36 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T18:05:39.202719Z",
+  "updated_at": "2026-11-11T21:56:25.285316Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-4529e843c93cec23f9",
+      "title": "Wirtschaft vor acht vom 11.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1682292.html",
+      "published_at": "2026-11-11T20:15:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-bc386a0cb813ef24df",
+      "title": "Prediction markets tied to clinical trials and drug approvals draw lawmakers' ire",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/11/kalsi-polymarket-prediction-market-senators-hhs-drug-approval.html",
+      "published_at": "2026-11-11T19:16:23Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d875cdbc90f8aa31d3",
+      "title": "Urteil: BGH nimmt Rechtsschutzversicherungen in die Pflicht",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/bgh-urteil-rechtsschutzversicherung-100.html",
+      "published_at": "2026-11-11T18:46:53Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-c01f8f773e96b67fc5",
       "title": "Metall- und Elektroindustrie: 24-Stunden-Streiks rücken näher",
