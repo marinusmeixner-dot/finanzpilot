@@ -1693,6 +1693,24 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-47fdde13e514126",
+      "ticker": "ENR.DE",
+      "company": "Siemens Energy AG",
+      "date": "2026-11-09",
+      "event_type": "new_editorial_evidence",
+      "signal_signature": "C_screen_only|2026-11-11-siemens-energy-fy2026-results|active",
+      "from_priority": "C_screen_only",
+      "priority": "C_screen_only",
+      "adjusted_close": 124.1,
+      "currency": "EUR",
+      "benchmark_id": "VWCE",
+      "benchmark_adjusted_return_63d_pct": -0.82,
+      "editorial_story_id": "2026-11-11-siemens-energy-fy2026-results",
+      "evidence_url": "https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

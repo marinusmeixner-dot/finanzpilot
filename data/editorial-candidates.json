@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T09:00:28.698856Z",
+  "updated_at": "2026-11-11T10:00:46.146879Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-cd2e79c480bd2eb574",
+      "title": "Update Wirtschaft vom 11.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1681826.html",
+      "published_at": "2026-11-11T09:09:42Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-a173368eb27cdbd802",
       "title": "Boom bei Windkraft und Rechenzentren beschert Siemens Energy Rekordjahr",

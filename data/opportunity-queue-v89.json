@@ -5,8 +5,8 @@
   "total_issuers": 79,
   "curated_dossiers": 10,
   "bucket_counts": {
-    "review_now": 21,
-    "watch_and_verify": 56,
+    "review_now": 20,
+    "watch_and_verify": 57,
     "source_gap": 2
   },
   "spotlight_ids": [
@@ -592,44 +592,6 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
-      "id": "profile-enr-de",
-      "ticker": "ENR.DE",
-      "company": "Siemens Energy AG",
-      "sector": "Energietechnik",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "C_screen_only",
-      "decision_stage": "editorial_screen",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-09",
-      "evidence_date": "2026-11-01",
-      "evidence_age_days": 9,
-      "evidence_url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
-      "evidence_title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
-      "why_now": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
-      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "needs_before_investment": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "Primärbericht/Cashflow"
-      ],
-      "alternatives": {
-        "peer_count": 0,
-        "etf_count": 2,
-        "benchmark_names": [
-          "Vanguard FTSE All-World UCITS ETF",
-          "iShares STOXX Europe 600 UCITS ETF (DE)"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
       "id": "nvidia",
       "ticker": "NVDA",
       "company": "NVIDIA",
@@ -817,6 +779,44 @@
         "benchmark_names": [
           "iShares MSCI ACWI ETF",
           "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-enr-de",
+      "ticker": "ENR.DE",
+      "company": "Siemens Energy AG",
+      "sector": "Energietechnik",
+      "bucket": "watch_and_verify",
+      "review_kind": "old_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-09",
+      "evidence_date": "2026-11-11",
+      "evidence_age_days": null,
+      "evidence_url": "https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
+      "evidence_title": "Siemens Energy: Rekordjahr, Windgeschäft an Gewinnschwelle – 2030-Ziele bleiben ambitioniert",
+      "why_now": "Älterer Unternehmensanlass – nach neueren Fakten suchen",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"

@@ -4617,14 +4617,14 @@
         "currency": "EUR"
       },
       "editorial_evidence": {
-        "id": "siemens-energy-year-end-2026-preview",
-        "title": "Siemens Energy vor den Jahreszahlen: Welche Kennzahlen wirklich zählen",
-        "date": "2026-11-01",
-        "url": "https://live.deutsche-boerse.com/nachrichten/WOCHENVORSCHAU-Termine-bis-13-November-2026-8f37e740-d665-411b-b47a-bfdf89be2552",
-        "source": "FinanzPilot-Redaktion · Deutsche Börse Terminvorschau",
+        "id": "2026-11-11-siemens-energy-fy2026-results",
+        "title": "Siemens Energy: Rekordjahr, Windgeschäft an Gewinnschwelle – 2030-Ziele bleiben ambitioniert",
+        "date": "2026-11-11",
+        "url": "https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
+        "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 0,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",
