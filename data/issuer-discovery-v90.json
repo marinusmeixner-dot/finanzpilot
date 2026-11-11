@@ -5,34 +5,28 @@
   "index_rows": 500,
   "new_companies": [
     {
-      "ticker": "APP",
-      "company": "AppLovin",
-      "sector": "Communication Services",
-      "cik": "0001751008"
+      "ticker": "WSM",
+      "company": "Williams-Sonoma, Inc.",
+      "sector": "Consumer Discretionary",
+      "cik": "0000719955"
     },
     {
-      "ticker": "IBKR",
-      "company": "Interactive Brokers",
-      "sector": "Financials",
-      "cik": "0001381197"
+      "ticker": "SOLV",
+      "company": "Solventum",
+      "sector": "Health Care",
+      "cik": "0001964738"
     }
   ],
-  "already_known": 68,
-  "total_universe": 70,
-  "quote_checks": 8,
+  "already_known": 70,
+  "total_universe": 72,
+  "quote_checks": 2,
   "quote_failures": [
-    "APP",
-    "IBKR",
     "WSM",
-    "SOLV",
-    "DECK",
-    "LULU",
-    "ABNB",
-    "PODD"
+    "SOLV"
   ],
   "quote_crosschecked_added": 0,
   "quote_pending_added": 2,
-  "total_quote_pending": 22,
+  "total_quote_pending": 24,
   "source_status": "secondary_index_with_explicit_quote_audit_status",
   "warning": "Sekundäre Indexmitgliedschaft und CIK belegen noch KEINEN unabhängig geprüften Börsenkurs. Ohne Preisprüfung nur unbewerteter Kandidat ohne Kaufurteil."
 }
