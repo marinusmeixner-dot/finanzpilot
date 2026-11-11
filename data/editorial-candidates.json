@@ -1,9 +1,72 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T06:13:33.984319Z",
+  "updated_at": "2026-11-11T09:00:28.698856Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-a173368eb27cdbd802",
+      "title": "Boom bei Windkraft und Rechenzentren beschert Siemens Energy Rekordjahr",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/siemens-bilanz-energie-strom-ki-100.html",
+      "published_at": "2026-11-11T08:23:39Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-62a7a280571ed39894",
+      "title": "Zahl der Schulanfängerinnen und -anfänger 2026 um 0,7 % gesunken",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_393_211.html",
+      "published_at": "2026-11-11T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-09c5844dd9e67f167f",
+      "title": "Tourismus in Deutschland im September 2026: 0,8 % mehr Übernachtungen als im Vorjahresmonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_394_45412.html",
+      "published_at": "2026-11-11T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-04e8c68f3759ce602f",
+      "title": "Inflationsrate im Oktober 2026 bei +2,8 %",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_392_611.html",
+      "published_at": "2026-11-11T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f1068a1ba09ab3b6be",
+      "title": "Medienbericht: Ältere Beschäftigte doppelt so häufig krankgeschrieben",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/krankenstand-aeltere-beschaeftigte-100.html",
+      "published_at": "2026-11-11T06:51:52Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5933595f2ddb97aa72",
+      "title": "Marktbericht: DAX-Rekord bleibt in Sichtweite",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nasdaq-eon-nvidia-100.html",
+      "published_at": "2026-11-11T06:38:55Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1dfb1505839fa389be",
+      "title": "\"Digital Fairness Act\": Neue EU-Regeln für Influencer und Onlineshops?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/digital-fairness-act-100.html",
+      "published_at": "2026-11-11T05:28:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-63f1aecb76e812253a",
       "title": "Alibaba announces plans to list T-Head, its Nvidia chip rival",
