@@ -6,6 +6,54 @@
   "lesson_id": "valuation",
   "stories": [
     {
+      "id": "2026-11-11-corero-watchlist-source-audit",
+      "title": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
+      "published": "2026-11-11",
+      "date": "2026-11-11",
+      "category": "Unternehmen",
+      "symbols": [
+        "NYA1.F"
+      ],
+      "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
+      "url": "https://www.corero.com/corero-accelerates-international-growth-with-regional-leadership-and-partnerships/",
+      "why": "Neu eingereichter Watchlist-Titel wurde mit ISIN, Börsenplatz und Originalberichten abgeglichen; aktueller Auftragsimpuls ist zu prüfen.",
+      "impact": "Wachsender Auftragseingang kann künftige Erlöse stützen, sagt allein jedoch nichts über die Höhe des freien Cashflows oder die Attraktivität des Börsenkurses.",
+      "article": {
+        "lead": "Corero Network Security plc (London: CNS; Frankfurt: NYA1, ISIN GB00B54X0432) entwickelt Schutz vor DDoS-Angriffen, die Webseiten und digitale Dienste durch massenhafte Anfragen lahmlegen. Geld verdient das Unternehmen mit Sicherheitssoftware, Geräten, Abonnements und Schutz als Dienstleistung. Die jüngste Unternehmensmeldung liefert einen Wachstumsanlass, aber noch kein Kaufargument.",
+        "sections": [
+          {
+            "heading": "Was tatsächlich neu berichtet wurde",
+            "paragraphs": [
+              "Corero teilte am 4. November 2026 mit, dass der Auftragseingang im dritten Quartal gegenüber dem Vorjahresquartal um 50 % gestiegen sei. Außerdem investiert das Unternehmen in Vertriebspartner und regionale Führung in EMEA und Asien-Pazifik. Die Mitteilung nennt keinen entsprechend gestiegenen Quartalsumsatz oder freien Cashflow.",
+              "Originalquelle (04.11.2026): https://www.corero.com/corero-accelerates-international-growth-with-regional-leadership-and-partnerships/"
+            ]
+          },
+          {
+            "heading": "Erlösqualität und frühere Kennzahlen",
+            "paragraphs": [
+              "Im geprüften Geschäftsjahr 2025 stiegen laut Unternehmensmeldung die jährlich wiederkehrenden Erlöse (ARR) um 23 % auf 23,9 Mio. US-Dollar; der Auftragseingang betrug 33,8 Mio. US-Dollar, die Kundenbindung laut Unternehmen 98 %. ARR ist ein Vertragsindikator und nicht identisch mit bilanziertem Umsatz, operativem Cashflow oder Gewinn.",
+              "Originalquelle (24.03.2026): https://www.corero.com/corero-network-security-accelerates-arr-growth/"
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Risiken",
+            "paragraphs": [
+              "Die Aufträge könnten ungleichmäßig abgerufen werden, Vertriebsausgaben könnten den operativen Gewinn aufzehren und große Kunden beziehungsweise Partner könnten eine hohe Verhandlungsmacht besitzen. Zudem ist die Aktie ein vergleichsweise kleiner Titel; Geld-Brief-Spannen und geringe Handelsliquidität können den tatsächlichen Einstieg deutlich verteuern.",
+              "Eine Widerlegung der Wachstumsthese wäre etwa ein Rückgang der Kundenbindung, schwacher Cashflow trotz steigendem ARR oder eine deutliche Verlangsamung des Auftragseingangs in den nächsten veröffentlichten Berichten."
+            ]
+          },
+          {
+            "heading": "Bewertung, Börsenplatz und offene Prüfungen",
+            "paragraphs": [
+              "Die Deutsche Börse identifiziert das Frankfurter Kürzel NYA1 eindeutig mit der ISIN GB00B54X0432. Die Londoner Heimatnotierung CNS handelt in Pence, die Frankfurter Zweitnotierung in Euro; Kurs- und Benchmarkvergleiche müssen Währung, Datum, Spread und Liquidität berücksichtigen.",
+              "Vor einer Fair-Value-Spanne fehlen ein vollständig auditierter Halbjahres-Cashflow 2026, normalisierte Investitionen, Nettofinanzposition, Verwässerung und ein aktueller ausführbarer Kurs. Auch ein 50-prozentiges Auftragswachstum begründet ohne diese Daten keinen Zielkurs. Berichtsarchiv: https://www.corero.com/about/investor-relations/financial-reports/ ; Börsenidentität: https://live.deutsche-boerse.com/aktie/corero-network-sec-ls-01"
+            ]
+          }
+        ],
+        "conclusion": "Corero ist ein quellenbestätigter neuer Research-Kandidat mit messbarem Auftragsimpuls, aber kein belegtes Schnäppchen. Nächster Schritt ist die Cashflow- und Kapitalstrukturprüfung anhand des Halbjahresberichts 2026 und ein währungskonsistenter Vergleich mit einer breit gestreuten Alternative."
+      }
+    },
+    {
       "id": "2026-11-11-siemens-energy-fy2026-results",
       "title": "Siemens Energy: Rekordjahr, Windgeschäft an Gewinnschwelle – 2030-Ziele bleiben ambitioniert",
       "published": "2026-11-11",
