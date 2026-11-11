@@ -6,6 +6,54 @@
   "lesson_id": "valuation",
   "stories": [
     {
+      "id": "2026-11-11-siemens-energy-fy2026-results",
+      "title": "Siemens Energy: Rekordjahr, Windgeschäft an Gewinnschwelle – 2030-Ziele bleiben ambitioniert",
+      "published": "2026-11-11",
+      "date": "2026-11-11",
+      "category": "Unternehmen",
+      "symbols": [
+        "ENR.DE"
+      ],
+      "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
+      "url": "https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
+      "why": "Neuer testierter beziehungsweise veröffentlichter Jahresergebnisstand und neue langfristige Margenziele verändern die Cashflow- und Ausführungsannahmen.",
+      "impact": "Starkes Auftragsvolumen und höhere operative Marge verbessern die Ertragsperspektive; die künftige Umsetzung, Kapitalbindung und Bewertung bleiben offen.",
+      "article": {
+        "lead": "Siemens Energy (Börsenkürzel ENR, Xetra) baut und wartet Gasturbinen, Stromnetztechnik und industrielle Energielösungen; die Tochter Siemens Gamesa verkauft Windkraftanlagen und Serviceleistungen. Am 11. November meldete der Konzern für das am 30. September beendete Geschäftsjahr 2026 einen Umsatz von 44,2 Milliarden Euro und eine deutlich verbesserte Profitabilität.",
+        "sections": [
+          {
+            "heading": "Ergebnisse und Auftragseingang",
+            "paragraphs": [
+              "Der vergleichbare Umsatz stieg um 15,5 Prozent. Die Marge vor Sondereffekten erreichte 12,4 Prozent; das entsprechende Ergebnis betrug 5,486 Milliarden Euro nach 2,355 Milliarden Euro im Vorjahr.",
+              "Neue Aufträge von 68,1 Milliarden Euro und ein Verhältnis von Auftragseingang zu Umsatz von 1,54 stützen die Auslastung. Aufträge sind jedoch noch keine verdienten Umsätze oder garantierten Gewinne."
+            ]
+          },
+          {
+            "heading": "Was die Verbesserung treibt",
+            "paragraphs": [
+              "Besonders Gas Services und Grid Technologies profitierten von Nachfrage nach Erzeugungs- und Netzkapazität. Siemens Gamesa erreichte beim Ergebnis vor Sondereffekten knapp die Gewinnschwelle; das ist noch kein Beleg dauerhaft hoher Windmargen.",
+              "Siemens Energy verkauft sowohl neue Anlagen als auch Wartungs- und Servicedienstleistungen. Die Ertragsqualität hängt daher vom Projektmix, der Vertragsausführung und den langfristigen Serviceverpflichtungen ab."
+            ]
+          },
+          {
+            "heading": "Cashflow und Kapitalrückführung",
+            "paragraphs": [
+              "Der Free Cashflow vor Steuern lag laut Konzern bei rund 8,8 Milliarden Euro. Diese unternehmensspezifische Kennzahl ist nicht mit nach Steuern frei an Aktionäre ausschüttbarem Cashflow gleichzusetzen; insbesondere Kundenanzahlungen und Investitionen müssen über mehrere Perioden geprüft werden.",
+              "Der Vorstand schlägt 2,30 Euro Dividende je Aktie vor und kündigt zusätzliche Rückkäufe von bis zu 9 Milliarden Euro bis 2030 an. Die tatsächlichen Rückkäufe hängen von Finanzierung, Marktpreis und Umsetzung ab."
+            ]
+          },
+          {
+            "heading": "2030-Ziele, Gegenhypothese und Bewertung",
+            "paragraphs": [
+              "Bis 2030 strebt Siemens Energy 12 bis 14 Prozent jährliches Umsatzwachstum und 20 bis 22 Prozent Ergebnismarge vor Sondereffekten an. Diese Ziele sind Prognosen, keine bereits erzielten Werte.",
+              "Eine Gegenhypothese lautet, dass Projektverzögerungen, Qualitätskosten im Windgeschäft, höhere Investitionen oder geringere Rechenzentrumsnachfrage die Margenausweitung bremsen. Ohne aktuelle Aktienzahl, Nettofinanzposition, normalisierte Nachsteuer-Cashflows und belastbare Kapitalkosten lässt sich aus den Rekordzahlen kein seriöser fairer Aktienwert ableiten."
+            ]
+          }
+        ],
+        "conclusion": "Die Veröffentlichung bestätigt operative Fortschritte und einen starken Auftragsbestand. Entscheidend für eine Bewertung sind nun die nachhaltige Umwandlung von Aufträgen in Nachsteuer-Cashflow, die Investitionsintensität und der tatsächlich im Aktienkurs bereits eingepreiste Wachstumspfad."
+      }
+    },
+    {
       "id": "2026-11-10-alibaba-thead-proposed-hk-listing",
       "title": "Alibaba: T-Head-Börsengang geplant – Wert bleibt noch unbestimmt",
       "published": "2026-11-11",
