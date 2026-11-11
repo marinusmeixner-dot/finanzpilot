@@ -1,24 +1,24 @@
 {
   "schema_version": 1,
-  "date": "2026-11-11",
-  "updated_at": "2026-11-11T00:03:53+01:00",
-  "editor": "FinanzPilot Tagesredaktion – datierte Originalquellen und ausdrücklich hypothetische Szenarien",
-  "explanation": "Drei neue, voneinander unabhängige offene Aufgaben für Mittwoch, 11.11.2026. Primärquellen vom 07. und 09.11. sind als datierte Lernanlässe gekennzeichnet; Rechenfälle sind hypothetisch.",
+  "date": "2026-11-12",
+  "updated_at": "2026-11-12T00:04:00+01:00",
+  "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
+  "explanation": "Drei eigenständige offene Aufgaben für Donnerstag, 12.11.2026. Datierte Originalveröffentlichungen sind Lernanlässe; Szenariozahlen sind ausdrücklich fiktiv.",
   "tasks": [
     {
-      "id": "2026-11-11:market:import-export-sensitivity",
+      "id": "2026-11-12:market:trade-fx-pass-through",
       "kind": "market",
-      "date": "2026-11-11",
-      "title": "Handelsüberschuss und Importpreisschock",
-      "context": "Destatis meldete am 09.11.2026 für September saison- und kalenderbereinigte Exporte von 141,1 Mrd. € und Importe von 125,5 Mrd. €. Rechenfall (hypothetisch): Importpreise steigen um 8 %, die Importmenge sinkt um 3 %; Exportwert bleibt konstant.",
-      "question": "Berechne den Ausgangsüberschuss und den neuen nominalen Importwert mit Preis- und Mengeneffekt multiplikativ. Bestimme den neuen Überschuss. Warum ist daraus weder die reale BIP-Wirkung noch die Margenwirkung eines Importeurs unmittelbar ableitbar? Nenne zwei prüfbare Gegenhypothesen.",
+      "date": "2026-11-12",
+      "title": "Außenhandel: Wechselkurs und Preisdurchgabe",
+      "context": "Destatis meldete am 09.11.2026 saisonbereinigte September-Exporte von 141,1 Mrd. € und Importe von 125,5 Mrd. €. Hypothetisch: 30 % des Importwerts sind in USD fakturiert; der Euro verliert gegenüber dem USD 10 % seines USD-Wertes, USD-Preise und Mengen bleiben unverändert.",
+      "question": "Berechne den ursprünglichen Handelsüberschuss, den neuen Euro-Wert des USD-fakturierten Importanteils und den resultierenden Überschuss. Warum darf man eine 10-%-Euro-Abwertung nicht als bloß 10-%-Importverteuerung rechnen? Formuliere zwei Gegenhypothesen zur tatsächlichen Wirkung auf Importeursmargen.",
       "rubric": [
-        "Ausgangsüberschuss 15,6 Mrd. €",
-        "Neuer Importwert 125,5×1,08×0,97=131,4738 Mrd. €",
-        "Neuer Überschuss 141,1−131,4738=9,6262 Mrd. €",
-        "Preis-/Mengeneffekt nicht addieren; saisonbereinigte Nominalwerte korrekt kennzeichnen",
-        "Realer Außenbeitrag, Währungs- und Vertrags-/Absicherungseffekte unterscheiden",
-        "Zwei falsifizierbare Gegenhypothesen samt benötigter Primärdaten"
+        "Ursprünglicher Überschuss 15,6 Mrd. €",
+        "USD-Anteil 37,65 Mrd. €, übrige Importe 87,85 Mrd. €",
+        "Eurokosten des USD-Anteils steigen um Faktor 1/0,9: 41,8333 Mrd. €",
+        "Neuer Gesamtimportwert 129,6833 Mrd. €, Überschuss 11,4167 Mrd. €",
+        "Wechselkursrichtung, Preis-/Mengenkonstanz und ungesicherte Exposition erläutern",
+        "Zwei überprüfbare Gegenhypothesen, z. B. Hedging und Vertragswährung"
       ],
       "source": "Destatis – Deutsche Exporte im September 2026",
       "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
@@ -26,44 +26,44 @@
       "symbol": ""
     },
     {
-      "id": "2026-11-11:research:berkshire-fcf-quality",
+      "id": "2026-11-12:research:energy-advance-payments",
       "kind": "research",
-      "date": "2026-11-11",
-      "title": "Berkshire: Free Cashflow ist nicht gleich frei ausschüttbares Geld",
-      "context": "Berkshire Hathaway veröffentlichte am 07.11.2026 Quartalsunterlagen. Für neun Monate: operativer Cashflow 33,914 Mrd. USD, Investitionen in Sachanlagen/Leasingausrüstung 16,137 Mrd. USD, Akquisitionen 16,205 Mrd. USD. Hypothetische Annahme: 40 % der Sachinvestitionen seien Erhaltungsinvestitionen.",
-      "question": "Berechne einen einfachen CFO-minus-Capex-FCF und einen nur modellhaft um Erhaltungsinvestitionen bereinigten Betrag. Erläutere, warum beide weder ausschüttbarer FCFE noch Unternehmenswert sind. Behandle Akquisitionen, Versicherungsfloat und Finanzierungsverpflichtungen separat. Formuliere eine Gegenhypothese zur Cashflowqualität.",
+      "date": "2026-11-12",
+      "title": "Siemens Energy: Anzahlungen und Cashflow-Qualität",
+      "context": "Siemens Energy berichtete am 11.11.2026 für das Geschäftsjahr 2026 einen Free Cashflow vor Steuern von rund 8,8 Mrd. € und verwies unter anderem auf Kundenanzahlungen. Hypothetisches Stressszenario: 25 % dieses Cashflows sind zeitlich vorgezogene Anzahlungen; die Hälfte davon kehrt im Folgejahr als Working-Capital-Abfluss zurück.",
+      "question": "Berechne die hypothetisch durch Anzahlungen beeinflusste Summe und den Rückflusseffekt im Folgejahr. Erkläre, warum weder der verbleibende Betrag noch die berichtete Kennzahl automatisch normalisierter FCFE ist. Welche zwei Bilanz- oder Cashflowpositionen und welche Gegenhypothese würdest du im Originalbericht prüfen?",
       "rubric": [
-        "Einfacher FCF 17,777 Mrd. USD",
-        "Hypothetischer CFO minus 40 % Capex = 27,4592 Mrd. USD",
-        "40-%-Annahme ausdrücklich nicht als berichtete Erhaltungsquote ausgeben",
-        "Akquisitionen 16,205 Mrd. USD nicht stillschweigend als reguläre Sachinvestition behandeln",
-        "Versicherungsfloat, Finanzierungs- und Leasingverpflichtungen und verfügbare Liquidität differenzieren",
-        "Gegenhypothese mit mindestens zwei überprüfbaren Datenpunkten"
+        "25 % von 8,8 Mrd. € = 2,2 Mrd. €",
+        "50 % Rückabfluss = 1,1 Mrd. €",
+        "Zeitpunktverschiebung nicht als sicherer Verlust ausgeben",
+        "Steuern, Capex, Finanzierung, Leasing und Kundenverpflichtungen für FCFE gesondert prüfen",
+        "Mindestens zwei überprüfbare Primärberichtpositionen nennen",
+        "Gegenhypothese: wiederkehrende Anzahlungen aus nachhaltig wachsendem Auftragseingang mit belegbarem Auftragsprofil"
+      ],
+      "source": "Siemens Energy – Earnings Release Q4 FY 2026",
+      "source_url": "https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
+      "source_date": "2026-11-11",
+      "symbol": "ENR.DE"
+    },
+    {
+      "id": "2026-11-12:learning:fcf-reinvestment",
+      "kind": "learning",
+      "date": "2026-11-12",
+      "title": "Wachstum kostet Kapital: EBIT, CFO und FCFF",
+      "context": "Lernanlass ist der Berkshire-Hathaway-Quartalsbericht vom 07.11.2026; alle folgenden Modellwerte sind fiktiv: EBIT 100 Mio. €, effektiver Steuersatz 25 %, Abschreibungen 20 Mio. €, Capex 45 Mio. €, Aufbau des Nettoumlaufvermögens 15 Mio. €. Keine weiteren Anpassungen.",
+      "question": "Berechne NOPAT, vereinfachten operativen unverschuldeten Cashflow und FCFF. Vergleiche FCFF mit EBIT und erkläre, weshalb ein höherer Gewinn nicht zwingend mehr verfügbares Geld bedeutet. Wie verändern sich die Ergebnisse, wenn der Working-Capital-Aufbau doppelt so hoch ausfällt? Nenne eine falsifizierbare Gegenhypothese.",
+      "rubric": [
+        "NOPAT = 100×0,75 = 75 Mio. €",
+        "Vereinfachter unverschuldeter operativer Cashflow = 75+20−15 = 80 Mio. €",
+        "FCFF = 80−45 = 35 Mio. €",
+        "Bei Working-Capital-Aufbau 30 Mio. €: FCFF 20 Mio. €",
+        "FCFF, FCFE und berichteten CFO nicht verwechseln",
+        "Kapitalbindung und Erhaltungs-/Wachstumscapex differenzieren; konkrete Gegenhypothese formulieren"
       ],
       "source": "Berkshire Hathaway – Third Quarter 2026 Earnings Release",
       "source_url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
       "source_date": "2026-11-07",
       "symbol": "BRK.B"
-    },
-    {
-      "id": "2026-11-11:learning:operating-leverage",
-      "kind": "learning",
-      "date": "2026-11-11",
-      "title": "Operativer Hebel und Cash Conversion",
-      "context": "Lernanlass: Destatis-Meldung vom 09.11.2026 über nominale Exporte; alle Unternehmenswerte hier sind fiktiv. Vorjahr: Umsatz 120 Mio. €, EBIT 18 Mio. €. Aktuelles Jahr: Umsatz 132 Mio. €, EBIT 15,84 Mio. €, Abschreibungen 6 Mio. €, Capex 14 Mio. €, Aufbau Nettoumlaufvermögen 5 Mio. €, Steuerzahlungen 3 Mio. €; keine weiteren zahlungswirksamen Überleitungen.",
-      "question": "Berechne beide EBIT-Margen und den Umsatz-/EBIT-Wachstumsvergleich. Schätze unter den vereinfachten Annahmen CFO und CFO-minus-Capex. Erkläre, weshalb die Exporte-Meldung die Zahlen des fiktiven Unternehmens nicht belegt, und nenne zwei mögliche Ursachen für die sinkende Marge sowie eine überprüfbare Gegenhypothese.",
-      "rubric": [
-        "Vorjahresmarge 15 %, aktuelle Marge 12 %",
-        "Umsatz +10 %, EBIT −12 %",
-        "Vereinfachter CFO 15,84+6−5−3=13,84 Mio. €",
-        "Vereinfachter FCF −0,16 Mio. €",
-        "EBIT, CFO und FCF sowie Annahmegrenzen trennen",
-        "Zwei plausible Margentreiber und eine anhand echter Daten falsifizierbare Gegenhypothese"
-      ],
-      "source": "Destatis – Deutsche Exporte im September 2026",
-      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
-      "source_date": "2026-11-09",
-      "symbol": ""
     }
   ]
 }
