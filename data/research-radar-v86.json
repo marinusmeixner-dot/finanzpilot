@@ -6,7 +6,7 @@
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
   "total_issuers": 79,
   "with_price_history": 77,
-  "research_priority_count": 9,
+  "research_priority_count": 10,
   "missing_quote_count": 2,
   "front_page_candidate_ids": [
     "profile-evk-de",
@@ -15,12 +15,12 @@
     "microsoft",
     "basf",
     "profile-eoan-de",
+    "corero-network-security",
     "profile-rwe-de",
     "amazon",
     "siemens",
     "costco",
-    "deere",
-    "sap"
+    "deere"
   ],
   "benchmark_universe": [
     {
@@ -561,6 +561,83 @@
         "adjusted_return_pct": 1.46,
         "benchmark_return_pct": -1.44,
         "relative_to_benchmark_pp": 2.9,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "corero-network-security",
+      "ticker": "NYA1.F",
+      "company": "Corero Network Security plc",
+      "sector": "Cybersecurity / DDoS Protection",
+      "country": "GB",
+      "currency": "EUR",
+      "origin": "verified_issuer_screening_only",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "A_research_first",
+      "technical_research_score": 77,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-09",
+        "sessions": 253,
+        "adjusted_close": 0.165,
+        "return_21d_pct": 47.32,
+        "return_63d_pct": 115.69,
+        "return_126d_pct": 43.48,
+        "benchmark_63d_pct": -3.28,
+        "relative_63d_pp": 118.97,
+        "ma50": 0.1277,
+        "ma200": 0.1121,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -6.78,
+        "volatility_21d_annualized_pct": 86.6,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-11-corero-watchlist-source-audit",
+        "title": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
+        "date": "2026-11-11",
+        "url": "https://www.corero.com/corero-accelerates-international-growth-with-regional-leadership-and-partnerships/",
+        "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 0,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.82,
+          "excess_return_pp": 116.51,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -0.31,
+          "excess_return_pp": 116.0,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "issuer_confirmed_AIM_CNS; Frankfurt_symbol_secondary_unverified_primary_exchange; quote_pending",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-09",
+        "last_session": "2026-11-09",
+        "adjusted_return_pct": 0.0,
+        "benchmark_return_pct": 0.0,
+        "relative_to_benchmark_pp": 0.0,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -1807,76 +1884,6 @@
         "relative_to_benchmark_pp": 0.0,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
-      }
-    },
-    {
-      "id": "corero-network-security",
-      "ticker": "NYA1.F",
-      "company": "Corero Network Security plc",
-      "sector": "Cybersecurity / DDoS Protection",
-      "country": "GB",
-      "currency": "EUR",
-      "origin": "verified_issuer_screening_only",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "B_watchlist",
-      "technical_research_score": 65,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-09",
-        "sessions": 253,
-        "adjusted_close": 0.165,
-        "return_21d_pct": 47.32,
-        "return_63d_pct": 115.69,
-        "return_126d_pct": 43.48,
-        "benchmark_63d_pct": -3.28,
-        "relative_63d_pp": 118.97,
-        "ma50": 0.1277,
-        "ma200": 0.1121,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -6.78,
-        "volatility_21d_annualized_pct": 86.6,
-        "currency": "EUR"
-      },
-      "editorial_evidence": null,
-      "editorial_age_days": null,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.82,
-          "excess_return_pp": 116.51,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -0.31,
-          "excess_return_pp": 116.0,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "issuer_confirmed_AIM_CNS; Frankfurt_symbol_secondary_unverified_primary_exchange; quote_pending",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-09",
-        "last_session": "2026-11-09",
-        "adjusted_return_pct": 0.0,
-        "benchmark_return_pct": 0.0,
-        "relative_to_benchmark_pp": 0.0,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
     },
     {

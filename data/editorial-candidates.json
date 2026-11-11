@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T14:23:34.650260Z",
+  "updated_at": "2026-11-11T18:05:39.202719Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-c01f8f773e96b67fc5",
+      "title": "Metall- und Elektroindustrie: 24-Stunden-Streiks rücken näher",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/warnstreik-ig-metall-122.html",
+      "published_at": "2026-11-11T15:23:22Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-5bda0f36deb41c475d",
       "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
@@ -505,33 +514,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/aktien-kauf-nachts-100.html",
       "published_at": "2026-11-08T07:35:33Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bd9bc62fa2c3a5c6e4",
-      "title": "Why the prognosis for healthcare stocks is uncertain ahead of Congress’ new makeup",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/07/healthcare-stocks-may-face-trouble-due-to-midterm-results.html",
-      "published_at": "2026-11-07T16:02:33Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-872e2f3b600bcf7a03",
-      "title": "Millionen junge Menschen ohne Berufsausbildung in Deutschland",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/junge-menschen-keine-berufsausbildung-100.html",
-      "published_at": "2026-11-07T15:59:36Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-eed3916150116b5953",
-      "title": "Berkshire Hathaway more than doubles buybacks in third quarter as earnings decline",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/07/berkshire-hathaway-q3-2026-earnings-buybacks.html",
-      "published_at": "2026-11-07T15:23:46Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

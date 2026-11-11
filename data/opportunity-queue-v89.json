@@ -784,6 +784,44 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
+      "id": "corero-network-security",
+      "ticker": "NYA1.F",
+      "company": "Corero Network Security plc",
+      "sector": "Cybersecurity / DDoS Protection",
+      "bucket": "watch_and_verify",
+      "review_kind": "old_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-09",
+      "evidence_date": "2026-11-11",
+      "evidence_age_days": null,
+      "evidence_url": "https://www.corero.com/corero-accelerates-international-growth-with-regional-leadership-and-partnerships/",
+      "evidence_title": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
+      "why_now": "Älterer Unternehmensanlass – nach neueren Fakten suchen",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
       "id": "profile-enr-de",
       "ticker": "ENR.DE",
       "company": "Siemens Energy AG",
@@ -969,44 +1007,6 @@
         "benchmark_names": [
           "iShares MSCI ACWI ETF",
           "SPDR S&P 500 ETF"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
-      "id": "corero-network-security",
-      "ticker": "NYA1.F",
-      "company": "Corero Network Security plc",
-      "sector": "Cybersecurity / DDoS Protection",
-      "bucket": "watch_and_verify",
-      "review_kind": "technical_only",
-      "radar_priority": "B_watchlist",
-      "decision_stage": "technical_screen",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-09",
-      "evidence_date": null,
-      "evidence_age_days": null,
-      "evidence_url": null,
-      "evidence_title": null,
-      "why_now": "Reines Kurs-/Branchensignal – kein belegter Geschäftskatalysator",
-      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "needs_before_investment": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "next_checks": [
-        "Originalbericht/Emittentenzuordnung zum Signal und mögliche Umsatzwirkung prüfen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "Primärbericht/Cashflow"
-      ],
-      "alternatives": {
-        "peer_count": 0,
-        "etf_count": 2,
-        "benchmark_names": [
-          "Vanguard FTSE All-World UCITS ETF",
-          "iShares STOXX Europe 600 UCITS ETF (DE)"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"

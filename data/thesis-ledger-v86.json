@@ -1711,6 +1711,24 @@
       "evidence_url": "https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-dbe2ad70f7dce55",
+      "ticker": "NYA1.F",
+      "company": "Corero Network Security plc",
+      "date": "2026-11-09",
+      "event_type": "new_editorial_evidence",
+      "signal_signature": "A_research_first|2026-11-11-corero-watchlist-source-audit|active",
+      "from_priority": "B_watchlist",
+      "priority": "A_research_first",
+      "adjusted_close": 0.165,
+      "currency": "EUR",
+      "benchmark_id": "VWCE",
+      "benchmark_adjusted_return_63d_pct": -0.82,
+      "editorial_story_id": "2026-11-11-corero-watchlist-source-audit",
+      "evidence_url": "https://www.corero.com/corero-accelerates-international-growth-with-regional-leadership-and-partnerships/",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }
