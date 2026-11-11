@@ -1,10 +1,59 @@
 {
-  "date": "2026-11-10",
-  "updated_at": "2026-11-10",
+  "date": "2026-11-11",
+  "updated_at": "2026-11-11",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Neu geprüft: Parrots professionelles Drohnengeschäft wächst stark, doch die Cashflow-Tragfähigkeit bleibt offen. Ältere datierte Berichte bleiben als Kontext erhalten.",
+  "intro": "Neu verifiziert: Alibaba bestätigt den geplanten T-Head-Spin-off. Ein Börsenwert ist mangels Emissions- und Cashflowdaten noch nicht bestimmbar.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-10-alibaba-thead-proposed-hk-listing",
+      "title": "Alibaba: T-Head-Börsengang geplant – Wert bleibt noch unbestimmt",
+      "published": "2026-11-11",
+      "date": "2026-11-10",
+      "category": "Unternehmen",
+      "symbols": [
+        "BABA",
+        "9988.HK"
+      ],
+      "source": "Alibaba Group, HKEX-Mitteilung vom 10.11.2026, über SEC Form 6-K, Anlage 99.1",
+      "url": "https://www.sec.gov/Archives/edgar/data/1577552/000110465926124859/tm2629456d1_ex99-1.htm",
+      "why": "Alibaba bestätigt erstmals offiziell den vertraulich eingereichten Börsenantrag der Chiptochter T-Head und die Freigabe zur Fortführung des geplanten Spin-offs.",
+      "impact": "Eine separate Notierung könnte Finanzierung und Transparenz des Chipgeschäfts verbessern; Emissionsvolumen, Anteil nach Börsengang und Bewertung sind noch unbekannt.",
+      "article": {
+        "lead": "Alibaba Group (NYSE: BABA; Hongkong: 9988) betreibt unter anderem Onlinehandel und Cloud-Dienste. Die hundertprozentige Tochter T-Head entwickelt Rechenzentrumschips und Systemlösungen für KI-Rechenleistung. In einer Börsenmitteilung vom 10. November 2026 bestätigt Alibaba, dass T-Head bereits am 11. September vertraulich einen Antrag für eine eigenständige Börsennotierung in Hongkong eingereicht hat.",
+        "sections": [
+          {
+            "heading": "Was tatsächlich beschlossen wurde",
+            "paragraphs": [
+              "Die Hongkonger Börse hat bestätigt, dass Alibaba den vorgeschlagenen Spin-off weiterverfolgen darf. Das ist noch keine endgültige Genehmigung der Aktiennotierung: Die zuständigen Börsen- und chinesischen Regulierungsverfahren sowie Unternehmensentscheidungen stehen aus.",
+              "Alibaba sieht ein öffentliches Angebot in Hongkong und eine Platzierung bei institutionellen Anlegern vor. Zeitpunkt, Größe und Struktur der Emission sind nicht festgelegt."
+            ]
+          },
+          {
+            "heading": "Geschäftsmodell und wirtschaftlicher Anlass",
+            "paragraphs": [
+              "Alibaba verdient Geld unter anderem durch Handelsplattformen, Dienstleistungen für Händler und Cloud-Infrastruktur. T-Head entwickelt Chips für Rechenzentren; eine gesonderte Notierung könnte dem Chipgeschäft Zugang zu Eigen- und Fremdkapital sowie eigenständige Sichtbarkeit gegenüber Kunden und Zulieferern verschaffen.",
+              "Die mögliche Trennung schafft nicht automatisch zusätzliche Konzernumsätze: Verkäufe innerhalb der Alibaba-Gruppe und externe Chipumsätze müssen in künftigen Unterlagen getrennt nachvollziehbar sein."
+            ]
+          },
+          {
+            "heading": "Bewertung, Cashflow und Verwässerung",
+            "paragraphs": [
+              "Eine Bewertung der Tochter oder ein fairer Wert je Alibaba-Aktie lässt sich aus der Ankündigung nicht seriös berechnen. Es fehlen Emissionspreis, Aktienzahl, verbleibender Alibaba-Anteil, eigenständige Umsätze, Margen, Investitionsbedarf und belastbare Cashflows von T-Head.",
+              "Neue T-Head-Aktien könnten Kapital für Entwicklung und Fertigung bereitstellen, zugleich aber Alibabas prozentualen Anteil verwässern. Entscheidend wären Mittelzufluss, Kapitalbedarf, konzerninterne Verträge und die künftige Konsolidierung."
+            ]
+          },
+          {
+            "heading": "Risiken und Gegenhypothese",
+            "paragraphs": [
+              "Der Börsengang kann verzögert werden oder ausfallen. Technologischer Wettbewerb, Exportkontrollen, hohe Entwicklungskosten und mögliche Abhängigkeit von wenigen Abnehmern begrenzen die Planbarkeit.",
+              "Die Gegenhypothese zur Wertfreisetzung lautet: Ein Börsenpreis könnte hohe Erwartungen sichtbar machen, ohne die Kapitalrendite zu verbessern. Anleger sollten den späteren Prospekt und die tatsächliche Ergebnis- und Cashflow-Trennung prüfen, statt die Ankündigung als Kaufsignal zu behandeln."
+            ]
+          }
+        ],
+        "conclusion": "Die Originalmitteilung belegt einen konkreten Verfahrensschritt, keinen abgeschlossenen Börsengang. Nächste Prüfsteine sind Prospekt, regulatorische Freigaben, Emissionskonditionen und T-Heads eigenständige Finanzzahlen. Primärquelle: https://www.sec.gov/Archives/edgar/data/1577552/000110465926124859/tm2629456d1_ex99-1.htm."
+      }
+    },
     {
       "id": "2026-10-28-parrot-q3-microdrones-growth",
       "title": "Parrot: Drohnenumsatz wächst stark, nachhaltiger Cashflow noch offen",
