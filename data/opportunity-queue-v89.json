@@ -5,8 +5,8 @@
   "total_issuers": 79,
   "curated_dossiers": 10,
   "bucket_counts": {
-    "review_now": 22,
-    "watch_and_verify": 55,
+    "review_now": 21,
+    "watch_and_verify": 56,
     "source_gap": 2
   },
   "spotlight_ids": [
@@ -439,44 +439,6 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
-      "id": "siemens",
-      "ticker": "SIE.DE",
-      "company": "Siemens AG",
-      "sector": "Industrial Automation",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "B_watchlist",
-      "decision_stage": "financial_audit_pending",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-11",
-      "evidence_date": "2026-11-03",
-      "evidence_age_days": 8,
-      "evidence_url": "https://press.siemens.com/global/en/pressrelease/siemens-and-lufthansa-technik-defense-develop-medical-evacuation-train",
-      "evidence_title": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
-      "why_now": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
-      "first_rejection": "Zyklische Fabrikinvestitionen und ein komplexes Portfolio; Umsatz und Ergebnis industrielles Geschäft sind nicht dieselbe Margenbasis.",
-      "needs_before_investment": [
-        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex",
-        "Separate Schulden/Leasing der Finanzierungssparte aus industrieller EV-Bridge herausrechnen",
-        "Beteiligungen und Sonderergebnisse gegenüber normalisiertem EBIT trennen",
-        "Aktuelle verwässerte Aktien, Kapitalstruktur und Segment-Multiples bestätigen"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex"
-      ],
-      "alternatives": {
-        "peer_count": 1,
-        "etf_count": 2,
-        "benchmark_names": [
-          "Vanguard FTSE All-World UCITS ETF",
-          "iShares STOXX Europe 600 UCITS ETF (DE)"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
       "id": "profile-enr-de",
       "ticker": "ENR.DE",
       "company": "Siemens Energy AG",
@@ -855,6 +817,44 @@
         "benchmark_names": [
           "iShares MSCI ACWI ETF",
           "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "siemens",
+      "ticker": "SIE.DE",
+      "company": "Siemens AG",
+      "sector": "Industrial Automation",
+      "bucket": "watch_and_verify",
+      "review_kind": "old_catalyst",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "financial_audit_pending",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-11",
+      "evidence_date": "2026-11-12",
+      "evidence_age_days": null,
+      "evidence_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "evidence_title": "Siemens: Rekordaufträge und 12,1 Milliarden Euro Cashflow – wie belastbar ist das KI-Wachstum?",
+      "why_now": "Älterer Unternehmensanlass – nach neueren Fakten suchen",
+      "first_rejection": "Zyklische Fabrikinvestitionen und ein komplexes Portfolio; Umsatz und Ergebnis industrielles Geschäft sind nicht dieselbe Margenbasis.",
+      "needs_before_investment": [
+        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex",
+        "Separate Schulden/Leasing der Finanzierungssparte aus industrieller EV-Bridge herausrechnen",
+        "Beteiligungen und Sonderergebnisse gegenüber normalisiertem EBIT trennen",
+        "Aktuelle verwässerte Aktien, Kapitalstruktur und Segment-Multiples bestätigen"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "FY2026-Abschluss und echter industrieller FCF vs Konzern-CFO−Capex"
+      ],
+      "alternatives": {
+        "peer_count": 1,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"

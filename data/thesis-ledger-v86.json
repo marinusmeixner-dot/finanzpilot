@@ -1837,6 +1837,24 @@
       "evidence_url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-0114af2efb90cee",
+      "ticker": "SIE.DE",
+      "company": "Siemens AG",
+      "date": "2026-11-11",
+      "event_type": "new_editorial_evidence",
+      "signal_signature": "B_watchlist|2026-11-12-siemens-fy2026-orders-digital-cashflow|active",
+      "from_priority": "B_watchlist",
+      "priority": "B_watchlist",
+      "adjusted_close": 277.0,
+      "currency": "EUR",
+      "benchmark_id": "VWCE",
+      "benchmark_adjusted_return_63d_pct": 1.21,
+      "editorial_story_id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
+      "evidence_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

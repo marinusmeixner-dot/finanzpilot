@@ -1613,14 +1613,14 @@
         "currency": "EUR"
       },
       "editorial_evidence": {
-        "id": "2026-11-03-siemens-medevac-mou",
-        "title": "Siemens plant MedEvac-Zug mit Lufthansa Technik – noch kein bestätigter Großauftrag",
-        "date": "2026-11-03",
-        "url": "https://press.siemens.com/global/en/pressrelease/siemens-and-lufthansa-technik-defense-develop-medical-evacuation-train",
-        "source": "Siemens Mobility – Pressemitteilung vom 3. November 2026",
+        "id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
+        "title": "Siemens: Rekordaufträge und 12,1 Milliarden Euro Cashflow – wie belastbar ist das KI-Wachstum?",
+        "date": "2026-11-12",
+        "url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+        "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 0,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",

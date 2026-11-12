@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T15:26:41.167422Z",
+  "updated_at": "2026-11-12T16:05:03.875029Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -649,15 +649,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/inland/innenpolitik/plastiksteuer-absage-100.html",
       "published_at": "2026-11-08T20:38:04Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6c223d8b23c67f3978",
-      "title": "Viele Gebäude weiterhin ohne Elementarschadenversicherung",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/klimaschaeden-versicherungen-100.html",
-      "published_at": "2026-11-08T15:28:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
