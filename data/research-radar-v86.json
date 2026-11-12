@@ -4450,8 +4450,8 @@
       "editorial_evidence": null,
       "editorial_age_days": null,
       "unverified_discovery_hint": {
-        "id": "rss-86425170e4979fcd96",
-        "date": "2026-11-10",
+        "id": "rss-b201c195fe68e8ff09",
+        "date": "2026-11-12",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
@@ -4935,7 +4935,7 @@
       },
       "editorial_age_days": 15,
       "unverified_discovery_hint": {
-        "id": "rss-5f8264b8de7431e097",
+        "id": "rss-23105f466732821b9b",
         "date": "2026-11-12",
         "status": "unverified_headline_only"
       },

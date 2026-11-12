@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T16:05:03.875029Z",
+  "updated_at": "2026-11-12T18:54:58.925092Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-f3044d4a055c676df8",
+      "title": "Mercedes stoppt Investitionen in Deutschland - und prüft Schließungen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/mercedes-stopp-investitionen-100.html",
+      "published_at": "2026-11-12T18:44:38Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9cf31c2fd034703557",
+      "title": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
+      "published_at": "2026-11-12T18:26:52Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b201c195fe68e8ff09",
+      "title": "Bundesbank warnt vor erhöhten Risiken für das deutsche Finanzsystem",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/risiken-finanzsystem-bundesbank-100.html",
+      "published_at": "2026-11-12T17:31:15Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-23105f466732821b9b",
+      "title": "Nvidia-Chef Huang tritt nach Spionageaffäre zurück",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-ruecktritt-100.html",
+      "published_at": "2026-11-12T17:20:04Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-faa034cdebff51d606",
+      "title": "Rücktritt von Nvidia-Chef Huang: Vom Sympathieträger zum Sicherheitsrisiko",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rolle-100.html",
+      "published_at": "2026-11-12T16:17:54Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-e81e7723853761f026",
       "title": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
