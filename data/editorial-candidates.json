@@ -1,9 +1,90 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-11T21:56:25.285316Z",
+  "updated_at": "2026-11-12T11:03:43.091393Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-5bdde1d32c8d48c73e",
+      "title": "Marktbericht: DAX knackt 27.000 Punkte-Marke",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html",
+      "published_at": "2026-11-12T09:55:48Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f0b46b1cd609ed8bc1",
+      "title": "IG Metall beschließt erstmals seit acht Jahren ganztägige Streiks",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/ig-metall-streiks-100.html",
+      "published_at": "2026-11-12T09:48:25Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5f8264b8de7431e097",
+      "title": "Nvidia-Chef Huang verliert wegen Affären wohl seinen Job",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-beratung-chefwechsel-kursrueckgang-100.html",
+      "published_at": "2026-11-12T09:38:52Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-02ef4dd60771379ec1",
+      "title": "Update Wirtschaft vom 12.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1682464.html",
+      "published_at": "2026-11-12T08:59:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9cdddb97da68f3143f",
+      "title": "Worauf sich die Bundesregierung beim Haushalt geeinigt hat",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/bundesregierung-haushalt-kompromisse-100.html",
+      "published_at": "2026-11-12T08:12:13Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9e06ddda318fc16e72",
+      "title": "Was Experten raten: Wie es mit dem Jobwechsel klappen kann",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/jobwechsel-beruf-neuorientierung-100.html",
+      "published_at": "2026-11-12T07:29:46Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e092c037dae289dccb",
+      "title": "China's Ministry of State Security thrust into the spotlight by Nvidia CEO affair",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/12/china-ministry-state-security-nvidia-ceo.html",
+      "published_at": "2026-11-12T07:28:48Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-4b76ee14b592b80da9",
+      "title": "Statistik der Grundsteuerwerte zeigt strukturelle Unterschiede in der Verteilung des Grundbesitzes in Deutschland",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_395_73.html",
+      "published_at": "2026-11-12T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-0883aeaca359f1a631",
+      "title": "Pflege: 10 % der Erwerbstätigen von 25 bis 64 Jahren betreuen Angehörige",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N079_23.html",
+      "published_at": "2026-11-12T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-4529e843c93cec23f9",
       "title": "Wirtschaft vor acht vom 11.11.2026",
@@ -28,6 +109,24 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/bgh-urteil-rechtsschutzversicherung-100.html",
       "published_at": "2026-11-11T18:46:53Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-faf486f663957aace7",
+      "title": "Bundeskabinett beschließt Aufbau einer Gasreserve",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/gasreserve-126.html",
+      "published_at": "2026-11-11T16:38:02Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-fb79bf1c27d269bbc1",
+      "title": "Vorstoß des Finanzministeriums: Was sich bei Steuerklassen für Paare ändern könnte",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/steuerklassen-klingbeil-100.html",
+      "published_at": "2026-11-11T15:24:38Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -532,15 +631,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/klimaschaeden-versicherungen-100.html",
       "published_at": "2026-11-08T15:28:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d19b543f6845c6a51d",
-      "title": "Wie der Aktienkauf rund um die Uhr funktionieren soll",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/aktien-kauf-nachts-100.html",
-      "published_at": "2026-11-08T07:35:33Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
