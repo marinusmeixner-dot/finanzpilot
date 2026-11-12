@@ -6,6 +6,54 @@
   "lesson_id": "valuation",
   "stories": [
     {
+      "id": "2026-11-12-bundesbank-financial-stability-2026",
+      "title": "Bundesbank 2026: Hohe Bewertungen und Kreditrisiken – warum Stabilität nicht Sicherheit bedeutet",
+      "published": "2026-11-12",
+      "date": "2026-11-12",
+      "category": "Makroökonomie",
+      "symbols": [],
+      "source": "Deutsche Bundesbank, Finanzstabilitätsbericht 2026 und Pressemitteilung vom 12.11.2026",
+      "url": "https://www.bundesbank.de/de/presse/pressemitteilungen/bundesbank-risiken-fuer-die-finanzstabilitaet-bleiben-erhoeht-1014712",
+      "why": "Der am 12. November veröffentlichte Finanzstabilitätsbericht dokumentiert erhöhte Bewertungs-, Kredit-, Staatsfinanzierungs- und operationelle Risiken.",
+      "impact": "Eine Neubewertung von Risikoaufschlägen kann Aktien- und Anleihekurse sowie Refinanzierungskosten beeinflussen; der Bericht ist ausdrücklich keine Vorhersage eines Crashs.",
+      "article": {
+        "lead": "Die Deutsche Bundesbank überwacht Risiken für das gesamte Finanzsystem, nicht den fairen Wert einzelner Aktien. Ihr Finanzstabilitätsbericht vom 12. November 2026 warnt vor erhöhten Risiken trotz bisher widerstandsfähiger Banken, Versicherer und Fonds.",
+        "sections": [
+          {
+            "heading": "Was die Bundesbank tatsächlich meldet",
+            "paragraphs": [
+              "Hohe Bewertungen an Aktien- und Anleihemärkten, wachsende Kreditrisiken, hohe Staatsschulden und wenig transparente Private-Credit-Finanzierungen erhöhen laut Bundesbank die Verwundbarkeit. Das ist eine Risikoeinschätzung, keine Prognose eines unmittelbar bevorstehenden Einbruchs. Originalquelle (12.11.2026): https://www.bundesbank.de/de/presse/pressemitteilungen/bundesbank-risiken-fuer-die-finanzstabilitaet-bleiben-erhoeht-1014712"
+            ]
+          },
+          {
+            "heading": "Wie sich ein Schock übertragen könnte",
+            "paragraphs": [
+              "Wenn Anleger plötzlich höhere Risikoprämien verlangen, fallen bei sonst gleichen Annahmen die Barwerte künftiger Unternehmens-Cashflows. Zugleich können steigende Finanzierungskosten und Kreditausfälle Bankbilanzen belasten. Bei Staaten mit hohen Schulden können höhere Renditen von Staatsanleihen zusätzlich auf Banken und Fonds durchschlagen. Das sind mögliche Übertragungswege, keine bereits gemessenen Verluste."
+            ]
+          },
+          {
+            "heading": "Immobilien und private Kreditmärkte",
+            "paragraphs": [
+              "Die Bundesbank nennt Verwundbarkeiten bei hoch beliehenen neuen Wohnimmobilienkrediten sowie Transparenzdefizite im Private-Credit-Markt. Hohe Beleihung bedeutet bei einem Preisrückgang geringere Verlustpuffer, aber nicht automatisch einen Kreditausfall. Fonds mit Liquiditätsengpässen können Verkäufe verstärken."
+            ]
+          },
+          {
+            "heading": "Gegenargument und Grenzen der Interpretation",
+            "paragraphs": [
+              "Die Institute haben Belastungen bislang insgesamt verkraftet; Kapital- und Liquiditätspuffer stärken die Widerstandsfähigkeit. Eine hohe Marktbewertung kann bei robustem Gewinnwachstum länger bestehen bleiben. Der Bericht erlaubt weder eine seriöse Crash-Uhrzeit noch Kursziele für Banken oder Indizes."
+            ]
+          },
+          {
+            "heading": "Konsequenz für Unternehmensbewertungen",
+            "paragraphs": [
+              "Bei einer Bank wären Kreditqualität, Risikovorsorge, Kapitalquote und Einlagenfinanzierung zu prüfen; bei hoch verschuldeten Firmen Zinsbindung, Fälligkeiten und freier Cashflow. Für eine belastbare Fair-Value-Spanne fehlen hier unternehmensspezifische Cashflows, Kapitalstruktur, Diskontsatz und aktuelle Kurse. Ein breit gestreuter ETF reduziert Einzeltitelrisiken, beseitigt aber systematische Marktrisiken nicht."
+            ]
+          }
+        ],
+        "conclusion": "Der neue Bericht begründet eine sorgfältigere Prüfung von Verschuldung und Bewertung, aber keine pauschale Verkaufs- oder Kaufempfehlung. Wichtig ist die Unterscheidung zwischen möglichen Stressszenarien und bereits eingetretenen Verlusten."
+      }
+    },
+    {
       "id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
       "title": "Siemens: Rekordaufträge und 12,1 Milliarden Euro Cashflow – wie belastbar ist das KI-Wachstum?",
       "published": "2026-11-12",
