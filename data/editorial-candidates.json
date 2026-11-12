@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T18:54:58.925092Z",
+  "updated_at": "2026-11-12T20:58:55.448042Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -685,15 +685,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-spionage-pruefung-100.html",
       "published_at": "2026-11-09T03:32:51Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-680871d9a5e6689a6e",
-      "title": "Unionsfraktionschef erteilt Plastiksteuer eine Absage",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/plastiksteuer-absage-100.html",
-      "published_at": "2026-11-08T20:38:04Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
