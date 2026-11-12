@@ -124,7 +124,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -201,7 +201,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -287,7 +287,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -364,7 +364,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -450,7 +450,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -527,7 +527,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -604,7 +604,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 0,
+      "editorial_age_days": 1,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -681,7 +681,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -758,7 +758,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -844,7 +844,7 @@
         "source": "Siemens Mobility – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",
@@ -1925,7 +1925,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2248,7 +2248,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 7,
+      "editorial_age_days": 8,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2395,7 +2395,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 5,
+      "editorial_age_days": 6,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4213,7 +4213,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4369,7 +4369,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4417,96 +4417,6 @@
       }
     },
     {
-      "id": "nvidia",
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "sector": "Semiconductors",
-      "country": "US",
-      "currency": "USD",
-      "origin": "liquid_research_universe",
-      "curated_id": "nvidia",
-      "has_curated_dossier": true,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 15,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-10",
-        "sessions": 251,
-        "adjusted_close": 168.89,
-        "return_21d_pct": -25.38,
-        "return_63d_pct": -24.55,
-        "return_126d_pct": -23.33,
-        "benchmark_63d_pct": -3.73,
-        "relative_63d_pp": -20.82,
-        "ma50": 217.9676,
-        "ma200": 204.2624,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -29.41,
-        "volatility_21d_annualized_pct": 49.7,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "nvidia-upcoming-nov-2026-results",
-        "title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
-        "date": "2026-10-28",
-        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
-        "source": "NVIDIA Investor Relations",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": {
-        "id": "rss-63f1aecb76e812253a",
-        "date": "2026-11-11",
-        "status": "unverified_headline_only"
-      },
-      "benchmarks": [
-        {
-          "benchmark_id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -3.73,
-          "excess_return_pp": -20.82,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -2.68,
-          "excess_return_pp": -21.87,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -6.67,
-          "excess_return_pp": -17.88,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
-      "risks": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-10",
-        "adjusted_return_pct": -18.15,
-        "benchmark_return_pct": -1.8,
-        "relative_to_benchmark_pp": -16.35,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      }
-    },
-    {
       "id": "index-rddt",
       "ticker": "RDDT",
       "company": "Reddit",
@@ -4545,7 +4455,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 5,
+      "editorial_age_days": 6,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4631,7 +4541,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 0,
+      "editorial_age_days": 1,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",
@@ -4820,6 +4730,96 @@
         "relative_to_benchmark_pp": 2.41,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "Semiconductors",
+      "country": "US",
+      "currency": "USD",
+      "origin": "liquid_research_universe",
+      "curated_id": "nvidia",
+      "has_curated_dossier": true,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 9,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-10",
+        "sessions": 251,
+        "adjusted_close": 168.89,
+        "return_21d_pct": -25.38,
+        "return_63d_pct": -24.55,
+        "return_126d_pct": -23.33,
+        "benchmark_63d_pct": -3.73,
+        "relative_63d_pp": -20.82,
+        "ma50": 217.9676,
+        "ma200": 204.2624,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -29.41,
+        "volatility_21d_annualized_pct": 49.7,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "nvidia-upcoming-nov-2026-results",
+        "title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
+        "date": "2026-10-28",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
+        "source": "NVIDIA Investor Relations",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": {
+        "id": "rss-63f1aecb76e812253a",
+        "date": "2026-11-11",
+        "status": "unverified_headline_only"
+      },
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -3.73,
+          "excess_return_pp": -20.82,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -2.68,
+          "excess_return_pp": -21.87,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -6.67,
+          "excess_return_pp": -17.88,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
+      "risks": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-10",
+        "adjusted_return_pct": -18.15,
+        "benchmark_return_pct": -1.8,
+        "relative_to_benchmark_pp": -16.35,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
       }
     },
     {
@@ -6168,7 +6168,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 56,
+      "editorial_age_days": 57,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",

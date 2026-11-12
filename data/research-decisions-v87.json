@@ -6142,141 +6142,6 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "nvidia",
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "sector": "Semiconductors",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "C_screen_only",
-      "research_stage": "source_based_watch",
-      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 100,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": true,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": true,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": true,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": "Hohe Nachfrage nach KI-Infrastruktur unterstützt Umsatz und Gewinne; Bewertungsrisiken steigen, wenn die Nachfrage früher als erwartet abflacht.",
-      "counter_thesis": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
-      "thesis_invalidated": false,
-      "why_now": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
-      "what_would_confirm": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
-      "what_would_invalidate": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
-      "financials": {
-        "price": 168.89,
-        "price_date": "2026-11-10",
-        "currency": "USD",
-        "exchange": "NASDAQ",
-        "market_cap_m": 4078186.83,
-        "ttm_pe": 21.35,
-        "ttm_fcf_yield_pct": 3.11,
-        "ttm_fcf_m": 127006.0,
-        "eps_ttm": 7.91,
-        "fundamental_observed_date": "2026-11-05",
-        "source_price": "https://finance.yahoo.com/quote/NVDA/history/",
-        "source_fundamentals": "https://stockanalysis.com/stocks/nvda/statistics/",
-        "primary_verified_fields": [
-          "operating_cf_m",
-          "capex_m",
-          "free_cf_m"
-        ],
-        "cash_flow_method_warning": "Ausgesprochen hohe KI-Nachfrage und Gewinnmargen; Normalisierung und Kunden-Capex können TTM-EPS/FCF schnell verändern. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
-        "date_alignment_warning": false
-      },
-      "primary_financial_status": "primary_ttm_reconciled",
-      "valuation_status": "audited_cashflow_no_fair_value",
-      "valuation_gaps": [
-        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
-        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
-        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
-        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
-        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
-      ],
-      "editorial_source": {
-        "title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
-        "date": "2026-10-28",
-        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
-      },
-      "primary_source_urls": [
-        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
-        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
-      ],
-      "original_idea_source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
-      "comparison_family": "Halbleiter- und KI-Lieferkette",
-      "peer_valuations": [],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -3.73,
-          "excess_return_pp": -20.82
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -2.68,
-          "excess_return_pp": -21.87
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -6.67,
-          "excess_return_pp": -17.88
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-10",
-        "adjusted_return_pct": -18.15,
-        "benchmark_return_pct": -1.8,
-        "relative_to_benchmark_pp": -16.35,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-10",
-      "next_review": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
       "id": "index-rddt",
       "ticker": "RDDT",
       "company": "Reddit",
@@ -6725,6 +6590,141 @@
       },
       "radar_asof": "2026-11-09",
       "next_review": "Nächste Quartale: neuer Auftragseingang ITS, IAS-Marge, Working Capital und Finanzierungs-Bridge.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "Semiconductors",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "source_based_watch",
+      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 100,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": true,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": true,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": true,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": "Hohe Nachfrage nach KI-Infrastruktur unterstützt Umsatz und Gewinne; Bewertungsrisiken steigen, wenn die Nachfrage früher als erwartet abflacht.",
+      "counter_thesis": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "thesis_invalidated": false,
+      "why_now": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
+      "what_would_confirm": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
+      "what_would_invalidate": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "financials": {
+        "price": 168.89,
+        "price_date": "2026-11-10",
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "market_cap_m": 4078186.83,
+        "ttm_pe": 21.35,
+        "ttm_fcf_yield_pct": 3.11,
+        "ttm_fcf_m": 127006.0,
+        "eps_ttm": 7.91,
+        "fundamental_observed_date": "2026-11-05",
+        "source_price": "https://finance.yahoo.com/quote/NVDA/history/",
+        "source_fundamentals": "https://stockanalysis.com/stocks/nvda/statistics/",
+        "primary_verified_fields": [
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "cash_flow_method_warning": "Ausgesprochen hohe KI-Nachfrage und Gewinnmargen; Normalisierung und Kunden-Capex können TTM-EPS/FCF schnell verändern. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
+        "date_alignment_warning": false
+      },
+      "primary_financial_status": "primary_ttm_reconciled",
+      "valuation_status": "audited_cashflow_no_fair_value",
+      "valuation_gaps": [
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
+        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
+        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
+        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
+        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
+      ],
+      "editorial_source": {
+        "title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
+        "date": "2026-10-28",
+        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx"
+      },
+      "primary_source_urls": [
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Fourth-Quarter-and-Fiscal-2026/",
+        "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/"
+      ],
+      "original_idea_source": "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027",
+      "comparison_family": "Halbleiter- und KI-Lieferkette",
+      "peer_valuations": [],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -3.73,
+          "excess_return_pp": -20.82
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -2.68,
+          "excess_return_pp": -21.87
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -6.67,
+          "excess_return_pp": -17.88
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-10",
+        "adjusted_return_pct": -18.15,
+        "benchmark_return_pct": -1.8,
+        "relative_to_benchmark_pp": -16.35,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-10",
+      "next_review": "Q2 GJ27 EBIT, Bruttomarge, Kundeninvestitionen und Bewertungsmultiple prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
