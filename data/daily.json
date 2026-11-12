@@ -1,10 +1,58 @@
 {
-  "date": "2026-11-11",
-  "updated_at": "2026-11-11",
+  "date": "2026-11-12",
+  "updated_at": "2026-11-12",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Neu verifiziert: Alibaba bestätigt den geplanten T-Head-Spin-off. Ein Börsenwert ist mangels Emissions- und Cashflowdaten noch nicht bestimmbar.",
+  "intro": "Neu verifiziert: Siemens meldet am 12.11.2026 Rekordaufträge und 12,1 Mrd. Euro Konzern-Free-Cashflow. Bewertungsbasis nach Healthineers-Abspaltung gesondert prüfen.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
+      "title": "Siemens: Rekordaufträge und 12,1 Milliarden Euro Cashflow – wie belastbar ist das KI-Wachstum?",
+      "published": "2026-11-12",
+      "date": "2026-11-12",
+      "category": "Unternehmen",
+      "symbols": [
+        "SIE.DE"
+      ],
+      "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
+      "url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "why": "Der heute veröffentlichte Originalbericht meldet neue Auftrags-, Ergebnis- und Cashflowrekorde sowie angehobene mittelfristige Wachstumsziele.",
+      "impact": "Auftragsbestand und digitales Geschäft verbessern die Visibilität, aber die Umwandlung in nachhaltigen Aktionärscashflow und die Healthineers-Abspaltung verändern die Bewertungsbasis.",
+      "article": {
+        "lead": "Siemens AG (Xetra: SIE) verkauft Automatisierung, Industriesoftware, Elektrifizierungs- und Gebäudetechnik sowie Mobilitätslösungen. Am 12. November 2026 veröffentlichte der Konzern Rekordzahlen. Für Anleger ist entscheidend, wie viel des starken Auftragseingangs später als nachhaltig verfügbarer Cashflow ankommt.",
+        "sections": [
+          {
+            "heading": "Geschäftsmodell und Originalzahlen",
+            "paragraphs": [
+              "Digital Industries erzielt Erlöse mit Automatisierungstechnik, Software und wiederkehrenden Softwareverträgen; Smart Infrastructure liefert Elektrifizierungs- und Gebäudetechnik, Mobility Bahn- und Verkehrslösungen. Das digitale Geschäft erzielte 10,9 Mrd. Euro Umsatz (+16 %), der Softwarebereich von Digital Industries 7,2 Mrd. Euro (+13 % vergleichbar).",
+              "Für das Geschäftsjahr 2026 meldete Siemens 83,4 Mrd. Euro Umsatz (+8 % vergleichbar), 108,2 Mrd. Euro Auftragseingang (+25 % vergleichbar) und 143 Mrd. Euro Auftragsbestand. Der Auftragseingang übertraf damit den Umsatz deutlich. Quelle: Siemens AG, 12.11.2026: https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer"
+            ]
+          },
+          {
+            "heading": "Margen, Ergebnis und Cashflow",
+            "paragraphs": [
+              "Das Ergebnis des Industriellen Geschäfts stieg auf 13,3 Mrd. Euro, die entsprechende Marge auf 16,3 % (Vorjahr 15,4 %). Der Konzern-Free-Cashflow stieg von 10,8 auf 12,1 Mrd. Euro. Dies ist ein berichteter Cashflow, nicht automatisch normalisierter FCFE je Aktie.",
+              "Der Nettogewinn sank von 10,4 auf 9,5 Mrd. Euro; das Vorjahr enthielt 2,1 Mrd. Euro Veräußerungsgewinn aus Innomotics. Ein isolierter Vergleich des Nettogewinns ohne diesen Sondereffekt wäre irreführend."
+            ]
+          },
+          {
+            "heading": "Katalysatoren und Managementausblick",
+            "paragraphs": [
+              "Siemens hebt die mittelfristige Erwartung für vergleichbares Umsatzwachstum auf 7–11 % von 6–9 % an. Für 2027 prognostiziert das Unternehmen 9–11 % vergleichbares Wachstum; die EPS-pre-PPA-Spanne von 10,20–10,80 Euro bezieht sich auf eine veränderte Konzernabgrenzung ohne Siemens Healthineers und ist nicht direkt mit dem unbereinigten 2026er Konzern-EPS vergleichbar.",
+              "Siemens plant die Ausschüttung von 34,1 % seiner Siemens-Healthineers-Beteiligung an Aktionäre. Dadurch ändern sich Vermögensstruktur, konsolidierte Gewinne und die Vergleichsbasis künftiger Kennzahlen. Der Dividendenvorschlag beträgt 5,50 Euro je Siemens-Aktie; beschlossen ist er noch nicht."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Bewertungsgrenzen",
+            "paragraphs": [
+              "Der hohe Auftragsbestand ist noch kein Umsatz oder Gewinn: Lieferkapazitäten, Projektkosten, Ausführung und Kundennachfrage entscheiden über die spätere Marge. KI- und Rechenzentrumsinvestitionen können sich verlangsamen; Softwarewachstum ist nicht automatisch mit gleich hohem freien Cashflow verbunden.",
+              "Vor einem fairen Wert fehlen ein konsistent abgegrenzter, normalisierter FCFF/FCFE nach der Healthineers-Transaktion, Nettoschulden und Leasing, aktuelle Aktienzahl, Kapitalkosten, Terminalannahmen und ein zeitgestempelter Börsenkurs. Auch ein währungsgleicher ETF- und Peer-Vergleich ist gesondert erforderlich. Daher keine Kauf- oder Unterbewertungsaussage."
+            ]
+          }
+        ],
+        "conclusion": "Der heutige Bericht bestätigt operative Stärke und neue Wachstumsziele. Die offene Investmentfrage lautet, wie viel der Rekordaufträge bei normalisierten Margen und nach der Healthineers-Neuordnung dauerhaft für Siemens-Aktionäre übrig bleibt. Originalquelle: https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer"
+      }
+    },
     {
       "id": "2026-11-11-corero-watchlist-source-audit",
       "title": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
