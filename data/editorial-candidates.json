@@ -1,9 +1,36 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T11:03:43.091393Z",
+  "updated_at": "2026-11-12T15:26:41.167422Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-e81e7723853761f026",
+      "title": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
+      "published_at": "2026-11-12T15:08:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1bc41b7fccda174c4b",
+      "title": "DAX auf Rekordhoch - Anleger vertrauen deutscher Wachstumsstory",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-dax-rekord-siemens-ki-100.html",
+      "published_at": "2026-11-12T13:29:26Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6c724acb512a0519dd",
+      "title": "Warum immer mehr Menschen in die Schuldenfalle rutschen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/mehr-menschen-ueberschuldet-schuldneratlas-100.html",
+      "published_at": "2026-11-12T11:31:51Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-5bdde1d32c8d48c73e",
       "title": "Marktbericht: DAX knackt 27.000 Punkte-Marke",
