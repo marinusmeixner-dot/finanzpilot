@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
   "date": "2026-11-12",
-  "source_updated_at": "2026-11-11",
-  "title": "Donnerstags-Briefing: Siemens Energy – Prognose und Cashflow-Qualität",
-  "summary": "Der am 11.11. veröffentlichte Siemens-Energy-Jahresberichtsauszug bestätigt 44,2 Mrd. EUR Umsatz, 12,4 % Ergebnismarge vor Sondereffekten und 8,799 Mrd. EUR Free Cashflow vor Steuern für GJ 2026. Für 2027 erwartet das Unternehmen 14–16 % vergleichbares Umsatzwachstum, 14–16 % Marge und rund 10 Mrd. EUR Free Cashflow vor Steuern. Dies sind Managementprognosen, keine garantierten Ergebnisse. Die am 09.11. publizierten Destatis-Handelsdaten und die Fed-Rede vom 10.11. bleiben Hintergrund, keine neuen Tagesereignisse.",
-  "interpretation": "Originalquelle Siemens Energy, 11.11.2026: https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html. Gegenhypothese: Kundenanzahlungen können den Cashflow zeitweise erhöhen, ohne dauerhaft frei verfügbaren Aktionärscashflow zu schaffen; zudem bleiben Gamesa-Projektrisiken und die Umwandlung des Auftragsbestands in Margen entscheidend. Für einen fairen Wert fehlen normalisierter FCFE/FCFF, Nettofinanzposition inklusive Leasing, aktuelle Aktienzahl und ein zeitgestempelter Kurs. Keine neue Kaufbewertung. Destatis 09.11.: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html; Fed-Rede 10.11.: https://www.federalreserve.gov/newsevents/speech/waller20261110a.htm.",
+  "source_updated_at": "2026-11-12",
+  "title": "Donnerstags-Briefing: Siemens AG mit Rekordaufträgen und Cashflow",
+  "summary": "Siemens AG meldete am 12.11. für GJ 2026 108,2 Mrd. Euro Auftragseingang, 83,4 Mrd. Euro Umsatz, 13,3 Mrd. Euro Ergebnis im Industriellen Geschäft und 12,1 Mrd. Euro Konzern-Free-Cashflow. Die mittelfristigen Wachstumsziele wurden angehoben. Siemens Energy (Bericht 11.11.) bleibt zweites Thema; ältere Außenhandelsdaten sind Hintergrund.",
+  "interpretation": "Siemens AG Originalquelle 12.11.: https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer . Aufträge sind keine garantierten Margen. Die geplante Healthineers-Abgabe verändert die Vergleichsbasis für EPS, Cashflow und Unternehmenswert; kein Fair-Value-Urteil ohne normalisierte Cashflows, Nettoschulden, Aktienzahl und Kurszeitpunkt.",
   "highlights": [
+    {
+      "story_id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
+      "title": "Siemens AG: Rekordaufträge, digitales Wachstum und Cashflow",
+      "why": "Originalbericht 12.11.; Auftragsbestand 143 Mrd. Euro und angehobene Mittelfristziele, jedoch offene Bewertung nach Healthineers-Neuordnung."
+    },
     {
       "story_id": "2026-11-11-siemens-energy-fy2026-results",
       "title": "Siemens Energy: Rekordjahr, Windgeschäft an Gewinnschwelle – 2030-Ziele bleiben ambitioniert",
