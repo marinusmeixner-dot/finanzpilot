@@ -1,69 +1,66 @@
 {
   "schema_version": 1,
-  "date": "2026-11-12",
-  "updated_at": "2026-11-12T00:04:00+01:00",
+  "date": "2026-11-13",
+  "updated_at": "2026-11-13T00:55:00+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
-  "explanation": "Drei eigenständige offene Aufgaben für Donnerstag, 12.11.2026. Datierte Originalveröffentlichungen sind Lernanlässe; Szenariozahlen sind ausdrücklich fiktiv.",
+  "explanation": "Drei eigenständige offene Aufgaben für Freitag, 13.11.2026. Originalmeldungen sind datierte Lernanlässe; Szenariowerte ausdrücklich fiktiv.",
   "tasks": [
     {
-      "id": "2026-11-12:market:trade-fx-pass-through",
+      "id": "2026-11-13:market:order-conversion",
       "kind": "market",
-      "date": "2026-11-12",
-      "title": "Außenhandel: Wechselkurs und Preisdurchgabe",
-      "context": "Destatis meldete am 09.11.2026 saisonbereinigte September-Exporte von 141,1 Mrd. € und Importe von 125,5 Mrd. €. Hypothetisch: 30 % des Importwerts sind in USD fakturiert; der Euro verliert gegenüber dem USD 10 % seines USD-Wertes, USD-Preise und Mengen bleiben unverändert.",
-      "question": "Berechne den ursprünglichen Handelsüberschuss, den neuen Euro-Wert des USD-fakturierten Importanteils und den resultierenden Überschuss. Warum darf man eine 10-%-Euro-Abwertung nicht als bloß 10-%-Importverteuerung rechnen? Formuliere zwei Gegenhypothesen zur tatsächlichen Wirkung auf Importeursmargen.",
+      "date": "2026-11-13",
+      "title": "Siemens: Aufträge sind noch kein Umsatz",
+      "context": "Siemens AG meldete am 12.11.2026 für das Geschäftsjahr 2026 108,2 Mrd. EUR Auftragseingang und 83,4 Mrd. EUR Umsatz. Hypothetisch werden 65 % des aktuellen Auftragseingangs innerhalb von zwölf Monaten umsatzwirksam; 8 % dieses umgesetzten Betrags bleiben wegen Abnahmeverzögerungen zunächst unbezahlt.",
+      "question": "Berechne das Verhältnis Auftragseingang/Umsatz, den hypothetisch umgesetzten Betrag und die zunächst nicht vereinnahmten Kundenzahlungen. Erkläre, weshalb Auftragseingang weder Umsatz noch operativer Cashflow ist. Nenne zwei überprüfbare Gegenhypothesen zu einem vermeintlichen Cashflow-Boom.",
       "rubric": [
-        "Ursprünglicher Überschuss 15,6 Mrd. €",
-        "USD-Anteil 37,65 Mrd. €, übrige Importe 87,85 Mrd. €",
-        "Eurokosten des USD-Anteils steigen um Faktor 1/0,9: 41,8333 Mrd. €",
-        "Neuer Gesamtimportwert 129,6833 Mrd. €, Überschuss 11,4167 Mrd. €",
-        "Wechselkursrichtung, Preis-/Mengenkonstanz und ungesicherte Exposition erläutern",
-        "Zwei überprüfbare Gegenhypothesen, z. B. Hedging und Vertragswährung"
+        "Auftragseingang/Umsatz = 108,2/83,4 ≈ 1,297",
+        "65 % von 108,2 = 70,33 Mrd. EUR hypothetischer Umsatz",
+        "8 % von 70,33 = 5,6264 Mrd. EUR zunächst nicht vereinnahmt",
+        "Zeitliche und bilanzielle Trennung von Bestellung, Leistung, Fakturierung und Zahlung",
+        "Zwei plausible Gegenhypothesen wie Stornierungen, Anzahlungen oder längere Zahlungsziele mit Prüfbelegen"
       ],
-      "source": "Destatis – Deutsche Exporte im September 2026",
-      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
-      "source_date": "2026-11-09",
-      "symbol": ""
+      "source": "Siemens AG – Geschäftsjahr 2026, 12.11.2026",
+      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "source_date": "2026-11-12",
+      "symbol": "SIE.DE"
     },
     {
-      "id": "2026-11-12:research:energy-advance-payments",
+      "id": "2026-11-13:research:cashflow-quality",
       "kind": "research",
-      "date": "2026-11-12",
-      "title": "Siemens Energy: Anzahlungen und Cashflow-Qualität",
-      "context": "Siemens Energy berichtete am 11.11.2026 für das Geschäftsjahr 2026 einen Free Cashflow vor Steuern von rund 8,8 Mrd. € und verwies unter anderem auf Kundenanzahlungen. Hypothetisches Stressszenario: 25 % dieses Cashflows sind zeitlich vorgezogene Anzahlungen; die Hälfte davon kehrt im Folgejahr als Working-Capital-Abfluss zurück.",
-      "question": "Berechne die hypothetisch durch Anzahlungen beeinflusste Summe und den Rückflusseffekt im Folgejahr. Erkläre, warum weder der verbleibende Betrag noch die berichtete Kennzahl automatisch normalisierter FCFE ist. Welche zwei Bilanz- oder Cashflowpositionen und welche Gegenhypothese würdest du im Originalbericht prüfen?",
+      "date": "2026-11-13",
+      "title": "Siemens Energy: Cashflow-Qualität stressen",
+      "context": "Siemens Energy berichtete am 11.11.2026 für das Geschäftsjahr 2026 einen Free Cashflow vor Steuern von rund 8,8 Mrd. EUR, begünstigt auch durch Kundenanzahlungen. Hypothetisch fallen im Folgejahr 1,5 Mrd. EUR dieser zeitlichen Vorfinanzierung weg; zugleich steigen notwendige Investitionen um 0,6 Mrd. EUR.",
+      "question": "Berechne einen rein hypothetischen angepassten Betrag. Warum ist dieser Betrag weder eine Gewinnprognose noch ein normalisierter FCFE? Welche Bilanz- und Kapitalflusspositionen würdest du aus dem Originalbericht zur Falsifikation prüfen, und was spricht gegen eine pauschal negative Interpretation der Anzahlungen?",
       "rubric": [
-        "25 % von 8,8 Mrd. € = 2,2 Mrd. €",
-        "50 % Rückabfluss = 1,1 Mrd. €",
-        "Zeitpunktverschiebung nicht als sicherer Verlust ausgeben",
-        "Steuern, Capex, Finanzierung, Leasing und Kundenverpflichtungen für FCFE gesondert prüfen",
-        "Mindestens zwei überprüfbare Primärberichtpositionen nennen",
-        "Gegenhypothese: wiederkehrende Anzahlungen aus nachhaltig wachsendem Auftragseingang mit belegbarem Auftragsprofil"
+        "8,8 − 1,5 − 0,6 = 6,7 Mrd. EUR als hypothetische Sensitivität",
+        "Vorsteuer-Cashflow ist nicht FCFE; Steuern, Finanzierung, Leasing und Definition der Investitionen beachten",
+        "Anzahlungen als Working-Capital- und Leistungsverpflichtungsposition prüfen",
+        "Gegenhypothese: nachhaltiger Auftragseingang erneuert Anzahlungen",
+        "Keine Doppelzählung von Capex, falls schon im berichteten FCF enthalten; dann nur inkrementelle 0,6 abziehen"
       ],
-      "source": "Siemens Energy – Earnings Release Q4 FY 2026",
+      "source": "Siemens Energy – FY2026-Ergebnisse, 11.11.2026",
       "source_url": "https://www.siemens-energy.com/de/de/home/press-releases/earnings-release-q4-fy-2026--siemens-energy-reports-a-record-yea.html",
       "source_date": "2026-11-11",
       "symbol": "ENR.DE"
     },
     {
-      "id": "2026-11-12:learning:fcf-reinvestment",
+      "id": "2026-11-13:learning:terminal-value",
       "kind": "learning",
-      "date": "2026-11-12",
-      "title": "Wachstum kostet Kapital: EBIT, CFO und FCFF",
-      "context": "Lernanlass ist der Berkshire-Hathaway-Quartalsbericht vom 07.11.2026; alle folgenden Modellwerte sind fiktiv: EBIT 100 Mio. €, effektiver Steuersatz 25 %, Abschreibungen 20 Mio. €, Capex 45 Mio. €, Aufbau des Nettoumlaufvermögens 15 Mio. €. Keine weiteren Anpassungen.",
-      "question": "Berechne NOPAT, vereinfachten operativen unverschuldeten Cashflow und FCFF. Vergleiche FCFF mit EBIT und erkläre, weshalb ein höherer Gewinn nicht zwingend mehr verfügbares Geld bedeutet. Wie verändern sich die Ergebnisse, wenn der Working-Capital-Aufbau doppelt so hoch ausfällt? Nenne eine falsifizierbare Gegenhypothese.",
+      "date": "2026-11-13",
+      "title": "DCF: Wann der Terminalwert dominiert",
+      "context": "Hypothetisches Modell, keine Unternehmensbewertung: Der FCFF im Jahr 5 beträgt 120 Mio. EUR; langfristiges Wachstum g=2 %, WACC=8 %, Nettoschulden=300 Mio. EUR, Aktienzahl=100 Mio. Stück. Der Barwert der FCFF aus Jahren 1–5 sei 400 Mio. EUR.",
+      "question": "Berechne Terminalwert am Ende von Jahr 5, seinen Barwert und den modellierten Eigenkapitalwert je Aktie. Wiederhole die Terminalwert-Rechnung mit WACC=9 % und diskutiere die Sensitivität. Nenne mindestens zwei Gründe, weshalb ein rechnerischer DCF-Wert noch kein belastbarer fairer Wert ist.",
       "rubric": [
-        "NOPAT = 100×0,75 = 75 Mio. €",
-        "Vereinfachter unverschuldeter operativer Cashflow = 75+20−15 = 80 Mio. €",
-        "FCFF = 80−45 = 35 Mio. €",
-        "Bei Working-Capital-Aufbau 30 Mio. €: FCFF 20 Mio. €",
-        "FCFF, FCFE und berichteten CFO nicht verwechseln",
-        "Kapitalbindung und Erhaltungs-/Wachstumscapex differenzieren; konkrete Gegenhypothese formulieren"
+        "TV5 = 120×1,02/(0,08−0,02)=2.040 Mio. EUR",
+        "Barwert TV = 2.040/1,08^5 ≈ 1.388,4 Mio. EUR",
+        "Eigenkapitalwert ≈ (400+1.388,4−300)/100 = 14,88 EUR/Aktie",
+        "Bei WACC 9 % TV5 = 1.748,57 Mio. EUR; neuer Barwert bei 9 % neu diskontieren",
+        "Sensitivität gegenüber WACC/g und Unsicherheit über normalisierten FCFF, Kapitalstruktur und Aktienverwässerung erläutern"
       ],
-      "source": "Berkshire Hathaway – Third Quarter 2026 Earnings Release",
-      "source_url": "https://www.berkshirehathaway.com/news/nov0726.pdf",
-      "source_date": "2026-11-07",
-      "symbol": "BRK.B"
+      "source": "Siemens AG – Geschäftsjahr 2026 als Lernanlass; sämtliche DCF-Zahlen fiktiv",
+      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "source_date": "2026-11-12",
+      "symbol": ""
     }
   ]
 }
