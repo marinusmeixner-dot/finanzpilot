@@ -5,8 +5,8 @@
   "total_issuers": 79,
   "curated_dossiers": 10,
   "bucket_counts": {
-    "review_now": 22,
-    "watch_and_verify": 55,
+    "review_now": 21,
+    "watch_and_verify": 56,
     "source_gap": 2
   },
   "spotlight_ids": [
@@ -15,7 +15,7 @@
     "apple",
     "amazon",
     "profile-eoan-de",
-    "microsoft"
+    "profile-rwe-de"
   ],
   "methodology": "Neue belegte Unternehmensanlässe (0–21 Kalendertage vor Kursstichtag) zuerst; laufende Fundamentalthesen als separate Nachprüfung; technische Signale ohne geprüften Geschäftsbeleg nur in Beobachtung. Klassifizierung auf Beleg- und Forschungsreife, nicht auf erwarteter Rendite oder Unterbewertung. Peer-/ETF-Daten nur bei identischer Vergleichswährung aus vorherigem Audit.",
   "readiness_warning": "Hier steht kein Kaufurteil. Nur Primärbericht, nachhaltiger Cashflow, Kapitalstruktur, Bewertung, Zeitstempel und Widerlegungskriterien können ein Investmenturteil rechtfertigen.",
@@ -206,44 +206,6 @@
         "benchmark_names": [
           "Vanguard FTSE All-World UCITS ETF",
           "iShares STOXX Europe 600 UCITS ETF (DE)"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
-      "id": "microsoft",
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "sector": "Software & Cloud",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "A_research_first",
-      "decision_stage": "source_based_watch",
-      "primary_cashflow_ready": true,
-      "price_asof": "2026-11-12",
-      "evidence_date": "2026-11-01",
-      "evidence_age_days": 11,
-      "evidence_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-      "evidence_title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-      "first_rejection": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
-      "needs_before_investment": [
-        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
-        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
-        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
-        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
-        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre"
-      ],
-      "alternatives": {
-        "peer_count": 3,
-        "etf_count": 3,
-        "benchmark_names": [
-          "iShares MSCI ACWI ETF",
-          "SPDR S&P 500 ETF"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
@@ -848,6 +810,44 @@
         "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
         "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
         "Q3-Rechtsrückstellung von wiederkehrenden Rechts-/Cashkosten abgrenzen"
+      ],
+      "alternatives": {
+        "peer_count": 3,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "microsoft",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "sector": "Software & Cloud",
+      "bucket": "watch_and_verify",
+      "review_kind": "old_catalyst",
+      "radar_priority": "A_research_first",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-12",
+      "evidence_date": "2026-11-13",
+      "evidence_age_days": null,
+      "evidence_url": "https://status.cloud.microsoft/",
+      "evidence_title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+      "why_now": "Älterer Unternehmensanlass – nach neueren Fakten suchen",
+      "first_rejection": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
+      "needs_before_investment": [
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
+        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
+        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
+        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre"
       ],
       "alternatives": {
         "peer_count": 3,

@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T10:55:47.509492Z",
+  "updated_at": "2026-11-13T14:03:04.372019Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-4a489f7a6861a0df54",
+      "title": "Marktbericht: Mehr Pleiten, aber auch mehr Gründungen in Deutschland",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/firmenpleiten-deutschland-bundesamt-100.html",
+      "published_at": "2026-11-13T13:00:43Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-4b08d84d5c07f2167d",
+      "title": "DHL erhöht Preise für Pakete und Päckchen für Privatkunden ab 2027",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/post-hebt-paketpreise-privatkunden-an-2027-100.html",
+      "published_at": "2026-11-13T12:20:30Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-591d99c43b7953ebd4",
       "title": "Was über den Ausfall von Microsoft-Diensten bekannt ist",
@@ -712,33 +730,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/vodafone-stellenabbau-102.html",
       "published_at": "2026-11-09T16:09:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-de4a07cdc74c7a8ca8",
-      "title": "Affäre von Nvidia-Chef Huang: Darum geht es beim Spionage-Verdacht",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/faq-nvidia-spionage-100.html",
-      "published_at": "2026-11-09T13:58:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-89a191fb9ea1a603f1",
-      "title": "Nvidia-Affäre lässt Aktie einbrechen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-nvidia-ki-huang-100.html",
-      "published_at": "2026-11-09T13:44:48Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-788e196614fb12ebab",
-      "title": "Commerzbank-Übernahme soll Anfang 2027 durch sein",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/commerzbank-uebernahme-unicredit-100.html",
-      "published_at": "2026-11-09T12:52:38Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

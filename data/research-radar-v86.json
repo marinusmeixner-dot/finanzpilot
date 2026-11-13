@@ -511,14 +511,14 @@
         "currency": "USD"
       },
       "editorial_evidence": {
-        "id": "tech-ai-capex-story-2026",
-        "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-        "date": "2026-11-01",
-        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-        "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
+        "id": "2026-11-13-microsoft-365-outage-service-resilience",
+        "title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+        "date": "2026-11-13",
+        "url": "https://status.cloud.microsoft/",
+        "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 0,
       "unverified_discovery_hint": {
         "id": "rss-591d99c43b7953ebd4",
         "date": "2026-11-13",

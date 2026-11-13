@@ -1891,6 +1891,24 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-e2f15aa90ad897c",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "date": "2026-11-12",
+      "event_type": "new_editorial_evidence",
+      "signal_signature": "A_research_first|2026-11-13-microsoft-365-outage-service-resilience|active",
+      "from_priority": "A_research_first",
+      "priority": "A_research_first",
+      "adjusted_close": 523.0,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -3.55,
+      "editorial_story_id": "2026-11-13-microsoft-365-outage-service-resilience",
+      "evidence_url": "https://status.cloud.microsoft/",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }
