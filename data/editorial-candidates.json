@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T10:04:46.605338Z",
+  "updated_at": "2026-11-13T10:55:47.509492Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-591d99c43b7953ebd4",
+      "title": "Was über den Ausfall von Microsoft-Diensten bekannt ist",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/faq-ausfall-microsoft-dienste-weltweit-100.html",
+      "published_at": "2026-11-13T10:15:39Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-e7cc1e3c5e9c6ad812",
       "title": "Weltweit mehr Urlaubsanträge vor Start des Videospiels \"GTA VI\"",
@@ -730,15 +739,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/commerzbank-uebernahme-unicredit-100.html",
       "published_at": "2026-11-09T12:52:38Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5746f2fe1d9f562f52",
-      "title": "Streiks und neue Gespräche in Bayerns Metall- und Elektroindustrie",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/streiks-tarifgespraeche-ig-metall-100.html",
-      "published_at": "2026-11-09T10:52:08Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
