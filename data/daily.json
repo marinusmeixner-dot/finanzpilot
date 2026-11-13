@@ -6,6 +6,56 @@
   "lesson_id": "valuation",
   "stories": [
     {
+      "id": "2026-11-13-microsoft-365-outage-service-resilience",
+      "title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+      "published": "2026-11-13",
+      "date": "2026-11-13",
+      "category": "Technologie",
+      "symbols": [
+        "MSFT"
+      ],
+      "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
+      "url": "https://status.cloud.microsoft/",
+      "why": "Weltweite Microsoft-365-Dienststörungen seit 12.11. mit Auswirkungen auf geschäftskritische Kommunikation; offizielle Statusanzeige und Vorfallkennungen überprüft.",
+      "impact": "Mögliche Kosten durch Produktivitätsausfälle, Support, Kompensationen und Investitionen in Ausfallsicherheit; ohne bestätigte Finanzangaben keine quantifizierbare Ergebnis- oder Bewertungsänderung.",
+      "article": {
+        "lead": "Microsoft 365 umfasst unter anderem Outlook-E-Mail, Teams-Zusammenarbeit und weitere Cloud-Anwendungen. Seit dem 12. November 2026 berichteten Nutzer und Organisationen über internationale Verbindungs- und Zustellprobleme. Die öffentliche Microsoft-Service-Health-Anzeige ist eine Momentaufnahme und ersetzt keine abgeschlossene Ursachenanalyse.",
+        "sections": [
+          {
+            "heading": "Was durch Originalstatus belegt ist",
+            "paragraphs": [
+              "Microsofts öffentliche Statusseite dokumentierte am 13. November Beeinträchtigungen von Microsoft-365-Diensten; die Vorfälle wurden unter EX1550543 und MO1550821 verfolgt. Statusseiten können sich während der Wiederherstellung ändern und zeigen nicht zuverlässig die vollständige historische Dauer. Primärquelle: https://status.cloud.microsoft/"
+            ]
+          },
+          {
+            "heading": "Geschäftsmodell und wirtschaftliche Abhängigkeit",
+            "paragraphs": [
+              "Microsoft (NASDAQ: MSFT) verdient unter anderem durch Abonnements für Microsoft 365, Azure-Cloudleistungen, Unternehmenssoftware und weitere Produkte. Bei einem Cloudabonnement kaufen Kunden nicht nur Funktionen, sondern erwarten Verfügbarkeit, Sicherheit und Support. Ausfälle können Geschäftsprozesse von Kunden verzögern und das Vertrauen in die Dienstqualität belasten."
+            ]
+          },
+          {
+            "heading": "Mögliche Folgen für Umsatz und Cashflow",
+            "paragraphs": [
+              "Aus einer mehrstündigen oder mehrtägigen Störung folgt nicht automatisch ein entsprechend hoher Umsatzverlust: laufende Abonnements bleiben zunächst bestehen. Denkbar sind vertragliche Servicegutschriften, höhere Supportkosten, zusätzliche Infrastrukturinvestitionen oder später veränderte Verlängerungsquoten. Für eine seriöse Cashflow-Schätzung fehlen hier bestätigte Ausfallminuten je Kundengruppe, Vertragsbedingungen, tatsächlich gewährte Gutschriften und zusätzliche Kosten."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Wettbewerb",
+            "paragraphs": [
+              "Ein zeitlich begrenzter Ausfall kann wirtschaftlich gering bleiben, wenn die Wiederherstellung gelingt und Kunden wegen Integration und Wechselkosten nicht abwandern. Andererseits kann der Vorfall die Nachfrage nach Mehranbieter-Strategien, Backups und Alternativen wie Google Workspace oder selbst betriebenen Lösungen verstärken. Welche Wirkung überwiegt, ist derzeit nicht belegt."
+            ]
+          },
+          {
+            "heading": "Bewertungsgrenzen und nächste Prüfungen",
+            "paragraphs": [
+              "Ein Kursziel oder fairer Aktienwert lässt sich aus dem Vorfall allein nicht ableiten. Zu prüfen sind Microsofts spätere Post-Incident-Analyse, etwaige Service-Level-Gutschriften, wiederkehrende Cloudumsätze, normalisierter Free Cashflow, Investitionsausgaben und die aktuelle Bewertung. Ein Vergleich mit anderen Softwareanbietern oder einem Welt-ETF erfordert denselben Kursstichtag und dieselbe Währung."
+            ]
+          }
+        ],
+        "conclusion": "Der Vorfall ist ein belegter Anlass, Microsofts operative Resilienz und Kundenbindung zu untersuchen, aber kein Nachweis einer dauerhaften Ertragseinbuße oder einer günstigen beziehungsweise teuren Aktie."
+      }
+    },
+    {
       "id": "2026-11-13-destatis-insolvencies-august",
       "title": "Unternehmensinsolvenzen steigen: Was die neuen Destatis-Zahlen wirklich über Kreditrisiken sagen",
       "published": "2026-11-13",
