@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T14:43:34.001351Z",
+  "updated_at": "2026-11-13T16:20:17.400641Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-337249edda3449fb77",
+      "title": "Cyberangriff auf Quantum Systems: Wie wurde der Drohnenhersteller zum Ziel?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/quantum-systems-cyberangriff-102.html",
+      "published_at": "2026-11-13T16:02:19Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5b90e5099266aaae8f",
+      "title": "IT-Störungen: Microsoft sieht \"deutliche Verbesserung\" der Lage",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-stoerung-100.html",
+      "published_at": "2026-11-13T15:40:27Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-63a1bad120d29c36e1",
       "title": "EU-Emissionshandel: Mehr kostenlose Verschmutzungsrechte für die Industrie",
@@ -14,11 +32,29 @@
       "status": "needs_primary_source"
     },
     {
+      "id": "rss-ae6d30f8be4528aef6",
+      "title": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
+      "published_at": "2026-11-13T14:22:07Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
       "id": "rss-4a489f7a6861a0df54",
       "title": "Marktbericht: Mehr Pleiten, aber auch mehr Gründungen in Deutschland",
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/firmenpleiten-deutschland-bundesamt-100.html",
       "published_at": "2026-11-13T13:00:43Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-211a0d3e348fca4096",
+      "title": "Microsoft-Ausfälle: \"Für viele Unternehmen digitaler Hirntod\"",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/sicherheitsexperte-abhaengigkeit-microsoft-outlook-teams-risiken-100.html",
+      "published_at": "2026-11-13T12:28:28Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -730,15 +766,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
       "published_at": "2026-11-09T18:14:47Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3c81339125d5b68100",
-      "title": "Mobilfunkunternehmen Vodafone plant Abbau von 2.300 Stellen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/vodafone-stellenabbau-102.html",
-      "published_at": "2026-11-09T16:09:03Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

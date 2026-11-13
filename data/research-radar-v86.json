@@ -520,7 +520,7 @@
       },
       "editorial_age_days": 0,
       "unverified_discovery_hint": {
-        "id": "rss-591d99c43b7953ebd4",
+        "id": "rss-5b90e5099266aaae8f",
         "date": "2026-11-13",
         "status": "unverified_headline_only"
       },
@@ -846,7 +846,11 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": null,
+      "unverified_discovery_hint": {
+        "id": "rss-337249edda3449fb77",
+        "date": "2026-11-13",
+        "status": "unverified_headline_only"
+      },
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
