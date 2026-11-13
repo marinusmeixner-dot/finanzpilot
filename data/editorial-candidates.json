@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T14:03:04.372019Z",
+  "updated_at": "2026-11-13T14:43:34.001351Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-63a1bad120d29c36e1",
+      "title": "EU-Emissionshandel: Mehr kostenlose Verschmutzungsrechte für die Industrie",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/industrie-emissionen-co2-zertifikate-100.html",
+      "published_at": "2026-11-13T14:35:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-4a489f7a6861a0df54",
       "title": "Marktbericht: Mehr Pleiten, aber auch mehr Gründungen in Deutschland",
