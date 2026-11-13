@@ -124,7 +124,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 13,
+      "editorial_age_days": 14,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -201,7 +201,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -287,7 +287,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -364,7 +364,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -441,7 +441,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 13,
+      "editorial_age_days": 14,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -518,7 +518,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 1,
+      "editorial_age_days": 2,
       "unverified_discovery_hint": {
         "id": "rss-e092c037dae289dccb",
         "date": "2026-11-12",
@@ -599,8 +599,12 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
-      "unverified_discovery_hint": null,
+      "editorial_age_days": 12,
+      "unverified_discovery_hint": {
+        "id": "rss-8c7dff935fca867db5",
+        "date": "2026-11-12",
+        "status": "unverified_headline_only"
+      },
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
@@ -685,7 +689,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -762,7 +766,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1620,7 +1624,7 @@
         "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 0,
+      "editorial_age_days": 1,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",
@@ -2315,7 +2319,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2401,7 +2405,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3430,7 +3434,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4292,7 +4296,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4369,7 +4373,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4608,7 +4612,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4694,7 +4698,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 1,
+      "editorial_age_days": 2,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",
@@ -4933,7 +4937,7 @@
         "source": "NVIDIA Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 15,
+      "editorial_age_days": 16,
       "unverified_discovery_hint": {
         "id": "rss-23105f466732821b9b",
         "date": "2026-11-12",
@@ -6172,7 +6176,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 57,
+      "editorial_age_days": 58,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",

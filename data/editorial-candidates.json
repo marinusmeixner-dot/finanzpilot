@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-12T20:58:55.448042Z",
+  "updated_at": "2026-11-13T00:21:17.743945Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-8c7dff935fca867db5",
+      "title": "Auch Outlook betroffen: Microsoft-Dienste weltweit mit Störungen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-ausfall-100.html",
+      "published_at": "2026-11-12T23:08:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-f3044d4a055c676df8",
       "title": "Mercedes stoppt Investitionen in Deutschland - und prüft Schließungen",
