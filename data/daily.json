@@ -1,10 +1,58 @@
 {
-  "date": "2026-11-12",
-  "updated_at": "2026-11-12",
+  "date": "2026-11-13",
+  "updated_at": "2026-11-13",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Neu verifiziert: Siemens meldet am 12.11.2026 Rekordaufträge und 12,1 Mrd. Euro Konzern-Free-Cashflow. Bewertungsbasis nach Healthineers-Abspaltung gesondert prüfen.",
+  "intro": "Destatis meldet 2.067 Unternehmensinsolvenzen im August 2026 (+4,4 % zum Vorjahr). Die zeitverzögerte Statistik ist ein Kreditrisikoindikator, keine unmittelbare Börsenprognose.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-13-destatis-insolvencies-august",
+      "title": "Unternehmensinsolvenzen steigen: Was die neuen Destatis-Zahlen wirklich über Kreditrisiken sagen",
+      "published": "2026-11-13",
+      "date": "2026-11-13",
+      "category": "Makroökonomie",
+      "symbols": [],
+      "source": "Statistisches Bundesamt (Destatis), Pressemitteilung Nr. 398 vom 13.11.2026",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_398_52411.html",
+      "why": "Neue endgültige amtliche Insolvenzstatistik für August 2026 mit Branchen- und Vorjahresvergleich.",
+      "impact": "Mehr Insolvenzen können Ausfallrisiken bei Kreditgebern und Forderungsausfälle bei Lieferanten erhöhen. Ohne Expositions- und Bilanzdaten lässt sich daraus kein individueller Aktienwert ableiten.",
+      "article": {
+        "lead": "Am 13. November 2026 veröffentlichte Destatis die endgültige Statistik für August: 2.067 beantragte Unternehmensinsolvenzen, 4,4 % mehr als ein Jahr zuvor. Die Zahl beschreibt gerichtliche Verfahren, nicht sämtliche Geschäftsaufgaben und auch keinen aktuellen November-Trend.",
+        "sections": [
+          {
+            "heading": "Neue Zahlen und Vergleichsbasis",
+            "paragraphs": [
+              "Für Januar bis August wurden 17.252 Unternehmensinsolvenzen erfasst, 6,6 % mehr als im entsprechenden Vorjahreszeitraum. Die Zahl der Verbraucherinsolvenzen lag im August bei 6.301 (+2,8 %). Originalquelle vom 13.11.2026: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_398_52411.html"
+            ]
+          },
+          {
+            "heading": "Welche Branchen besonders betroffen sind",
+            "paragraphs": [
+              "Gemessen an je 10.000 Unternehmen wurden im Zeitraum Januar bis August in Verkehr und Lagerei 97,6 Insolvenzen registriert, im Gastgewerbe 80,1 und im Baugewerbe 71,9. Das sind Branchenhäufigkeiten und keine Ausfallwahrscheinlichkeiten eines bestimmten börsennotierten Unternehmens."
+            ]
+          },
+          {
+            "heading": "Warum mehr Fälle nicht automatisch höhere Verluste bedeuten",
+            "paragraphs": [
+              "Die angemeldeten Gläubigerforderungen beliefen sich von Januar bis August 2026 auf rund 25,9 Milliarden Euro gegenüber 37,2 Milliarden Euro im Vorjahreszeitraum. Die geringere Forderungssumme trotz mehr Verfahren verweist auf Unterschiede in der Größe der betroffenen Schuldner; sie ist kein Nachweis einer generell verbesserten Zahlungsfähigkeit."
+            ]
+          },
+          {
+            "heading": "Übertragung auf Geschäftsmodelle und Cashflows",
+            "paragraphs": [
+              "Bei Banken sind Kreditausfälle, Sicherheiten und Risikovorsorge relevant. Bei Lieferanten können unbezahlte Rechnungen Working Capital und operativen Cashflow belasten. Bei Versicherern und Anleihegläubigern hängen Auswirkungen von Vertragsbedingungen und tatsächlichen Engagements ab. Eine belastbare Bewertung braucht konkrete Expositionsdaten, Margen, Bilanzpuffer und Marktbewertungen."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Grenzen der Statistik",
+            "paragraphs": [
+              "Ein Anstieg der Fallzahlen kann teilweise von kleineren Unternehmen stammen, während die aggregierte Forderungssumme sinkt. Zudem fließen Verfahren laut Destatis erst nach der ersten gerichtlichen Entscheidung in die Statistik ein; Anträge liegen häufig annähernd drei Monate zurück. Die Statistik misst nicht jede Geschäftsaufgabe und erlaubt keine Aussage über unmittelbar bevorstehende Börsenverluste."
+            ]
+          }
+        ],
+        "conclusion": "Die Insolvenzzahlen begründen eine gezielte Prüfung von Kredit- und Forderungsrisiken, aber keine pauschale Verkaufs- oder Kaufentscheidung. Entscheidend sind tatsächliche Forderungsausfälle und ihre Wirkung auf nachhaltige Cashflows."
+      }
+    },
     {
       "id": "2026-11-12-bundesbank-financial-stability-2026",
       "title": "Bundesbank 2026: Hohe Bewertungen und Kreditrisiken – warum Stabilität nicht Sicherheit bedeutet",
