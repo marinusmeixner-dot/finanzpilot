@@ -1855,6 +1855,42 @@
       "evidence_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-4ac25b752a7cb69",
+      "ticker": "CRM",
+      "company": "Salesforce",
+      "date": "2026-11-12",
+      "event_type": "priority_changed",
+      "signal_signature": "B_watchlist||active",
+      "from_priority": "C_screen_only",
+      "priority": "B_watchlist",
+      "adjusted_close": 217.57,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -3.55,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-832683f895a8f15",
+      "ticker": "CVNA",
+      "company": "Carvana",
+      "date": "2026-11-12",
+      "event_type": "priority_changed",
+      "signal_signature": "C_screen_only||active",
+      "from_priority": "B_watchlist",
+      "priority": "C_screen_only",
+      "adjusted_close": 70.84,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -3.55,
+      "editorial_story_id": null,
+      "evidence_url": null,
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

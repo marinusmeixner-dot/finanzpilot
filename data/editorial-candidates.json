@@ -1,9 +1,72 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T00:21:17.743945Z",
+  "updated_at": "2026-11-13T07:55:27.087111Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-4f2b9d84f459523ffe",
+      "title": "Unternehmensinsolvenzen im August 2026: +4,4 % gegenüber August 2025",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_398_52411.html",
+      "published_at": "2026-11-13T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-236158e8edf82b8992",
+      "title": "Erzeugerpreise landwirtschaftlicher Produkte im September 2026: -4,6 % gegenüber September 2025",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_397_61211.html",
+      "published_at": "2026-11-13T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-20369f90c267b2e508",
+      "title": "Großhandelspreise im Oktober 2026: +8,8 % gegenüber Oktober 2025",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_396_61281.html",
+      "published_at": "2026-11-13T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-125616dbf73b95c9e4",
+      "title": "4,5 % mehr Gründungen größerer Betriebe im 1. bis 3. Quartal 2026 als im Vorjahreszeitraum",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_399_52311.html",
+      "published_at": "2026-11-13T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9a9830a025bd2bb1bc",
+      "title": "Marktbericht: Atempause nach dem DAX-Rekord",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-100.html",
+      "published_at": "2026-11-13T06:35:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-dad9f7b2e0b7a8a0ff",
+      "title": "Auch Outlook betroffen: Weltweite Störungen bei Microsoft-Diensten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/digitales/microsoft-outlook-ausfall-100.html",
+      "published_at": "2026-11-13T06:30:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-723925370db0363b5d",
+      "title": "How the Jensen Huang affair changes the outlook for U.S.-China relations",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/13/jensen-huang-nvidia-us-china-relations.html",
+      "published_at": "2026-11-13T02:56:35Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-8c7dff935fca867db5",
       "title": "Auch Outlook betroffen: Microsoft-Dienste weltweit mit Störungen",
@@ -640,60 +703,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1680600.html",
       "published_at": "2026-11-09T08:48:08Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d990808b00296d806c",
-      "title": "Exporte im September 2026: +2,0 % zum August 2026",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_390_51.html",
-      "published_at": "2026-11-09T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c54091c3876f36a725",
-      "title": "41 % weniger Zuzüge syrischer Staatsangehöriger von Januar bis September 2026 als im Vorjahreszeitraum",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD25_N077_12.html",
-      "published_at": "2026-11-09T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-8b06809101626965fd",
-      "title": "Lkw-Maut-Fahrleistungsindex im Oktober 2026: -1,6 % zum Vormonat",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_391_421.html",
-      "published_at": "2026-11-09T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b8fbc71ab16f537750",
-      "title": "Marktbericht: Kurserholung bleibt vorerst wohl aus",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-170.html",
-      "published_at": "2026-11-09T06:34:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e10df1e13c2f8e1e68",
-      "title": "Untersuchung gegen Nvidia-Chef Huang wegen möglicher Spionin aus China",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/amerika/nvidia-spionage-pruefung-100.html",
-      "published_at": "2026-11-09T03:32:51Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d129d1af608b336a78",
-      "title": "Untersuchung gegen Nvidia-Chef Huang wegen möglicher Spionin aus China",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-spionage-pruefung-100.html",
-      "published_at": "2026-11-09T03:32:51Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
