@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T16:20:17.400641Z",
+  "updated_at": "2026-11-13T20:04:13.956454Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-0839ee352b71d85604",
+      "title": "Lutnick faces questions over Nvidia spy scandal. His sons’ firm has deep ties to the chipmaker",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+      "published_at": "2026-11-13T19:11:13Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-080f2d466175c559ec",
+      "title": "Wirtschaft vor acht vom 13.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1683484.html",
+      "published_at": "2026-11-13T19:05:55Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-337249edda3449fb77",
       "title": "Cyberangriff auf Quantum Systems: Wie wurde der Drohnenhersteller zum Ziel?",
@@ -739,33 +757,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wissen/klima/emissionen-klimawandel-global-carbon-budget-100.html",
       "published_at": "2026-11-10T04:01:04Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-831dc8846455eaf5d4",
-      "title": "Wirtschaft vor acht vom 09.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1680998.html",
-      "published_at": "2026-11-09T18:54:48Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5164fb4b0a64a76f43",
-      "title": "Jensen Huang exit odds are low on prediction markets after Nvidia probe",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/09/jensen-huang-nvidia-exit-prediction-markets.html",
-      "published_at": "2026-11-09T18:46:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-44e44219e30944fe08",
-      "title": "Goldman CEO Solomon says AI financing remains strong despite market jitters",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/09/goldman-ceo-ai-financing-market.html",
-      "published_at": "2026-11-09T18:14:47Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
