@@ -31,8 +31,8 @@
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
       "price_asof": "2026-11-11",
-      "evidence_date": "2026-11-11",
-      "evidence_age_days": 1,
+      "evidence_date": "2026-11-04",
+      "evidence_age_days": 8,
       "evidence_url": "https://www.corero.com/corero-accelerates-international-growth-with-regional-leadership-and-partnerships/",
       "evidence_title": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
       "why_now": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
@@ -46,7 +46,8 @@
       "next_checks": [
         "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
         "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "Primärbericht/Cashflow"
+        "Primärbericht/Cashflow",
+        "Primärmeldung vom 04.11.2026: Q3-Auftragseingang +50 % YoY; Umsatzkonversion und Cashflow im Finanzbericht unabhängig nachprüfen"
       ],
       "alternatives": {
         "peer_count": 0,
