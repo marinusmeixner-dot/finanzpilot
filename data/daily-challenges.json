@@ -1,66 +1,66 @@
 {
   "schema_version": 1,
-  "date": "2026-11-14",
-  "updated_at": "2026-11-14T00:04:00+01:00",
+  "date": "2026-11-15",
+  "updated_at": "2026-11-15T00:56:00+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
-  "explanation": "Drei neue offene, unabhängig voneinander lösbare Aufgaben für Samstag, 14.11.2026. Siemens-Meldung vom 12.11. dient als datierter Originalquellen-Anlass; alle Rechenparameter sind ausdrücklich hypothetisch.",
+  "explanation": "Drei eigenständige offene Aufgaben für Sonntag, 15.11.2026. Primärquellenanlass ist die Siemens-Geschäftsjahresmeldung vom 12.11.; sämtliche Zahlen in den Aufgaben sind ausdrücklich hypothetische Rechenfälle.",
   "tasks": [
     {
-      "id": "2026-11-14:market:auftragseingang-und-working-capital",
+      "id": "2026-11-15:market:working-capital",
       "kind": "market",
-      "date": "2026-11-14",
-      "title": "Auftragseingang und Working Capital",
-      "context": "Siemens meldete für FY2026 108,2 Mrd. EUR Auftragseingang und 83,4 Mrd. EUR Umsatz. Rein hypothetisch werden 20 % des Umsatzes als Forderungen gebucht und Kunden zahlen davon 75 % bis zum Bilanzstichtag.",
-      "question": "Berechne Book-to-Bill und den offenen Forderungsbetrag. Erkläre, warum der Auftragseingang keine Cashflow-Prognose ist. Nenne zwei konkrete Primärbericht-Positionen, mit denen sich die These höherer Liquidität widerlegen ließe.",
+      "date": "2026-11-15",
+      "title": "Umsatzwachstum versus Liquidität",
+      "context": "Ein Industrieunternehmen meldet neue Aufträge. Für eine ausdrücklich hypothetische Modellrechnung steigen die Forderungen aus Lieferungen und Leistungen von 12 auf 17 Mio. EUR, die Vorräte von 8 auf 11 Mio. EUR und die Lieferantenverbindlichkeiten von 6 auf 9 Mio. EUR. Alle übrigen Positionen bleiben konstant.",
+      "question": "Berechne die Veränderung des operativen Working Capital und die isolierte Wirkung auf den operativen Cashflow. Erkläre, warum ein positiver Auftragseingang die Liquidität nicht automatisch verbessert. Welche zwei Bilanz- oder Cashflow-Positionen würdest du im Originalbericht zur Gegenprüfung suchen?",
       "rubric": [
-        "Book-to-Bill 108,2/83,4 ≈ 1,297",
-        "Hypothetische Forderungen 16,68 Mrd. EUR; davon offen 25 % = 4,17 Mrd. EUR",
-        "Auftrag, Umsatzrealisierung und Zahlung unterscheiden",
-        "Forderungsentwicklung und erhaltene Anzahlungen/CFO aus Geschäftsbericht prüfen",
-        "Risiko von Stornierungen und Margenmix benennen"
+        "Forderungen +5 Mio. EUR, Vorräte +3 Mio. EUR, Lieferantenverbindlichkeiten +3 Mio. EUR",
+        "Operatives Net Working Capital steigt um 5 Mio. EUR",
+        "Isolierter operativer Cashflow-Effekt −5 Mio. EUR, ohne andere Effekte",
+        "Auftrag, Umsatz und Zahlung sauber trennen",
+        "Gegenhypothese: Anzahlungen, Forderungslaufzeiten und Cashflow-Überleitung prüfen"
       ],
       "source": "Siemens AG – Geschäftsjahr 2026, Pressemitteilung vom 12.11.2026",
       "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
       "source_date": "2026-11-12",
-      "symbol": "SIE.DE"
+      "symbol": "SIE"
     },
     {
-      "id": "2026-11-14:research:wachstum-gegen-verw-sserung",
+      "id": "2026-11-15:research:verwaesserung-eps",
       "kind": "research",
-      "date": "2026-11-14",
-      "title": "Wachstum gegen Verwässerung",
-      "context": "Hypothetische börsennotierte Firma: operativer Free Cashflow 900 Mio. EUR, Aktienzahl 300 Mio.; im Folgejahr steigt FCF um 12 %, die Aktienzahl wegen Aktienvergütung um 18 %. Kein Bezug zu tatsächlichen Siemens-Zahlen.",
-      "question": "Berechne den Free Cashflow je Aktie vor und nach der Veränderung. Beurteile, ob ein positiver FCF-Trend automatisch einen besseren Wert je Aktie bedeutet, und nenne zwei Primärquellen-Prüfungen zu Aktienvergütung und Rückkäufen.",
+      "date": "2026-11-15",
+      "title": "Wachstum, Verwässerung und Gewinn je Aktie",
+      "context": "Hypothetischer Fall: Der Jahresüberschuss steigt von 100 auf 120 Mio. EUR, während die gewichtete durchschnittliche Aktienzahl von 50 auf 65 Mio. steigt. Es handelt sich nicht um tatsächliche Siemens-Zahlen.",
+      "question": "Berechne den Gewinn je Aktie in beiden Jahren und die prozentuale Veränderung. Diskutiere, weshalb steigender Gesamtgewinn für Altaktionäre nicht zwingend steigenden Gewinn je Aktie bedeutet und welche Primärquellenangaben die Verwässerungsthese prüfen.",
       "rubric": [
-        "Anfangs-FCF/Aktie 900/300 = 3,00 EUR",
-        "Neuer FCF 1.008 Mio. EUR, neue Aktienzahl 354 Mio.",
-        "Neuer FCF/Aktie ≈ 2,85 EUR, Rückgang trotz FCF-Wachstum",
-        "Verwässerte gewichtete Aktienzahl und Aktienvergütung im Anhang prüfen",
-        "Aktienrückkäufe, Nettoverschuldung und Investitionsbedarf als Gegenhypothesen diskutieren"
+        "EPS Vorjahr 100/50 = 2,00 EUR",
+        "EPS Folgejahr 120/65 ≈ 1,846 EUR",
+        "EPS-Veränderung ≈ −7,69 % trotz 20 % höherem Jahresüberschuss",
+        "Gewichtete durchschnittliche verwässerte und unverwässerte Aktienzahl unterscheiden",
+        "Aktienbasierte Vergütung, Kapitalmaßnahmen und Rückkäufe aus Notes prüfen"
       ],
       "source": "Siemens AG – Geschäftsjahr 2026, Pressemitteilung vom 12.11.2026",
       "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
       "source_date": "2026-11-12",
-      "symbol": ""
+      "symbol": "SIE"
     },
     {
-      "id": "2026-11-14:learning:dcf-mit-negativer-sicherheitsmarge",
+      "id": "2026-11-15:learning:capex-fcf",
       "kind": "learning",
-      "date": "2026-11-14",
-      "title": "DCF mit negativer Sicherheitsmarge",
-      "context": "Rein hypothetische Bewertung: FCFF im Jahr 1 = 100 Mio. EUR, ewiges Wachstum 2 %, WACC 8 %, Nettoschulden 400 Mio. EUR, 100 Mio. Aktien. Vereinfachend wird ab Jahr 1 eine ewige wachsende Zahlungsreihe angenommen. Aktueller hypothetischer Kurs: 15 EUR.",
-      "question": "Berechne Enterprise Value und Eigenkapitalwert je Aktie. Berechne den Abschlag des Modellwerts gegenüber dem angenommenen Börsenkurs. Wie verändert sich die Aussage bei WACC 10 %? Nenne zwei Gründe, warum die vereinfachte Ewigrente keine belastbare Kaufempfehlung ist.",
+      "date": "2026-11-15",
+      "title": "Investitionsausgaben und Unternehmenswert",
+      "context": "Hypothetisches Unternehmen: operativer Cashflow 40 Mio. EUR, Erhaltungsinvestitionen 15 Mio. EUR, zusätzliche Wachstumsinvestitionen 20 Mio. EUR. Ein Analyst setzt den nachhaltig freien Cashflow pauschal mit 40 Mio. EUR an. Keine dieser Zahlen beschreibt Siemens.",
+      "question": "Berechne den berichtsnahen vereinfachten Free Cashflow. Stelle dar, unter welchen Voraussetzungen eine Normalisierung der Wachstumsinvestitionen zulässig wäre. Formuliere eine Gegenhypothese gegen die These, die Aktie sei allein wegen des operativen Cashflows günstig.",
       "rubric": [
-        "EV = 100/(0,08−0,02) = 1.666,67 Mio. EUR",
-        "Eigenkapitalwert je Aktie = (1.666,67−400)/100 ≈ 12,67 EUR",
-        "Modellwert liegt rund 15,6 % unter 15 EUR",
-        "Bei WACC 10 % EV = 1.250 Mio. EUR; Eigenkapitalwert 8,50 EUR/Aktie",
-        "FCFF-Normalisierung, Capex, WACC, langfristiges Wachstum und Kapitalstruktur kritisch prüfen"
+        "Vereinfachter FCF 40−15−20 = 5 Mio. EUR",
+        "CFO ist nicht gleich FCF, Investitionen sind abzuziehen",
+        "Erhaltungs- und Wachstums-Capex nur anhand nachvollziehbarer Unternehmensangaben trennen",
+        "Normalisierung nicht ohne Zyklus- und Wiederholungsprüfung",
+        "Bewertung erfordert Nettofinanzschulden, Aktienzahl, Diskontierung, Terminalannahmen und Bandbreite"
       ],
       "source": "Siemens AG – Geschäftsjahr 2026, Pressemitteilung vom 12.11.2026",
       "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
       "source_date": "2026-11-12",
-      "symbol": ""
+      "symbol": "SIE"
     }
   ]
 }
