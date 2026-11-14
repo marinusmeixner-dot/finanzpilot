@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T10:25:56.547954Z",
+  "updated_at": "2026-11-14T13:40:27.660289Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-ee86d6aa03c386fbf8",
+      "title": "Die neue Gefahr durch Künstliche Intelligenz",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/digitales/ki-mehr-angriffe-banken-kunden-100.html",
+      "published_at": "2026-11-14T13:31:48Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9e0063a22e0fca3395",
+      "title": "Eric Trump-backed robot soldier startup can't pay staff after founder borrowed $4.6 million from company to buy home",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
+      "published_at": "2026-11-14T12:00:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-5f10cf4539b471f046",
       "title": "Microsoft: Systeme nach Störung komplett wiederhergestellt",
@@ -631,60 +649,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boerse-kuenstliche-intelligenz-100.html",
       "published_at": "2026-11-10T15:37:43Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d978914f2e787c8b1d",
-      "title": "KI-Boom: Deutscher Chipkonzern Infineon will weiter zweistellig wachsen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-infineon-ki-100.html",
-      "published_at": "2026-11-10T13:33:44Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6d5bb6d208ef9a6acd",
-      "title": "Polymarket says annualized revenue has topped $1.8 billion",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/10/polymarket-annualized-revenue-us-growth.html",
-      "published_at": "2026-11-10T13:00:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-05d9ff2527b2bf7f31",
-      "title": "Bund will offenbar E-Auto-Prämie um 917 Millionen Euro aufstocken",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/e-autos-kaufpraemie-bundesregierung-100.html",
-      "published_at": "2026-11-10T12:11:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5f03c7fa650281762e",
-      "title": "Australien will nach Hackerangriff strengere Regeln für KI-Firmen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/australien-ki-regulieren-100.html",
-      "published_at": "2026-11-10T12:00:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ac3a27cdcc542a6b6d",
-      "title": "Maschinenbau will mit Künstlicher Intelligenz aus der Krise",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/maschinenbauer-boom-kuenstliche-intelligenz-100.html",
-      "published_at": "2026-11-10T10:36:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-86425170e4979fcd96",
-      "title": "Viele deutsche Unternehmen bauen die KI-Infrastruktur mit auf",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-milliarden-investitionen-profiteure-100.html",
-      "published_at": "2026-11-10T10:35:49Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
