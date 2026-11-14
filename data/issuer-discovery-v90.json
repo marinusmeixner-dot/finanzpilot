@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "last_checked_date": "2026-11-13",
+  "last_checked_date": "2026-11-14",
   "index_source": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
   "index_rows": 500,
   "new_companies": [],

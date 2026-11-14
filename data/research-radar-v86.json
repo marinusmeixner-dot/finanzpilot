@@ -9,13 +9,13 @@
   "research_priority_count": 9,
   "missing_quote_count": 2,
   "front_page_candidate_ids": [
-    "profile-evk-de",
     "apple",
+    "profile-evk-de",
     "bayer",
     "profile-eoan-de",
-    "basf",
     "microsoft",
     "corero-network-security",
+    "basf",
     "amazon",
     "profile-rwe-de",
     "index-veev",
@@ -86,83 +86,6 @@
   ],
   "candidates": [
     {
-      "id": "profile-evk-de",
-      "ticker": "EVK.DE",
-      "company": "Evonik Industries AG",
-      "sector": "Spezialchemie",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "A_research_first",
-      "technical_research_score": 91,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-11",
-        "sessions": 253,
-        "adjusted_close": 20.96,
-        "return_21d_pct": -2.15,
-        "return_63d_pct": 16.19,
-        "return_126d_pct": 28.46,
-        "benchmark_63d_pct": 1.21,
-        "relative_63d_pp": 14.98,
-        "ma50": 19.9752,
-        "ma200": 16.936,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -2.6,
-        "volatility_21d_annualized_pct": 18.4,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
-        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-        "date": "2026-10-30",
-        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
-        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.21,
-          "excess_return_pp": 14.98,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.93,
-          "excess_return_pp": 15.26,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "published_profile_needs_ticker_recheck",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-11",
-        "adjusted_return_pct": -1.87,
-        "benchmark_return_pct": 0.62,
-        "relative_to_benchmark_pp": -2.49,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "apple",
       "ticker": "AAPL",
       "company": "Apple",
@@ -201,7 +124,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -249,6 +172,83 @@
       }
     },
     {
+      "id": "profile-evk-de",
+      "ticker": "EVK.DE",
+      "company": "Evonik Industries AG",
+      "sector": "Spezialchemie",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "A_research_first",
+      "technical_research_score": 85,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-11",
+        "sessions": 253,
+        "adjusted_close": 20.96,
+        "return_21d_pct": -2.15,
+        "return_63d_pct": 16.19,
+        "return_126d_pct": 28.46,
+        "benchmark_63d_pct": 1.21,
+        "relative_63d_pp": 14.98,
+        "ma50": 19.9752,
+        "ma200": 16.936,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -2.6,
+        "volatility_21d_annualized_pct": 18.4,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
+        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+        "date": "2026-10-30",
+        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.21,
+          "excess_return_pp": 14.98,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.93,
+          "excess_return_pp": 15.26,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-11",
+        "adjusted_return_pct": -1.87,
+        "benchmark_return_pct": 0.62,
+        "relative_to_benchmark_pp": -2.49,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "bayer",
       "ticker": "BAYN.DE",
       "company": "Bayer",
@@ -287,7 +287,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -364,7 +364,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -398,83 +398,6 @@
         "adjusted_return_pct": -0.32,
         "benchmark_return_pct": 0.62,
         "relative_to_benchmark_pp": -0.94,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
-      "id": "basf",
-      "ticker": "BAS.DE",
-      "company": "BASF",
-      "sector": "Chemicals",
-      "country": "DE",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "A_research_first",
-      "technical_research_score": 80,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-11",
-        "sessions": 253,
-        "adjusted_close": 54.48,
-        "return_21d_pct": 5.95,
-        "return_63d_pct": 6.51,
-        "return_126d_pct": 4.17,
-        "benchmark_63d_pct": 1.21,
-        "relative_63d_pp": 5.3,
-        "ma50": 52.3525,
-        "ma200": 50.1356,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -2.87,
-        "volatility_21d_annualized_pct": 20.1,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
-        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-        "date": "2026-10-30",
-        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
-        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.21,
-          "excess_return_pp": 5.3,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": 0.93,
-          "excess_return_pp": 5.58,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-11",
-        "adjusted_return_pct": 0.33,
-        "benchmark_return_pct": 0.62,
-        "relative_to_benchmark_pp": -0.29,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -518,7 +441,7 @@
         "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 0,
+      "editorial_age_days": 1,
       "unverified_discovery_hint": {
         "id": "rss-5b90e5099266aaae8f",
         "date": "2026-11-13",
@@ -608,7 +531,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 2,
+      "editorial_age_days": 3,
       "unverified_discovery_hint": {
         "id": "rss-e092c037dae289dccb",
         "date": "2026-11-12",
@@ -646,6 +569,83 @@
         "adjusted_return_pct": 6.67,
         "benchmark_return_pct": 2.09,
         "relative_to_benchmark_pp": 4.58,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "basf",
+      "ticker": "BAS.DE",
+      "company": "BASF",
+      "sector": "Chemicals",
+      "country": "DE",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "A_research_first",
+      "technical_research_score": 74,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-11",
+        "sessions": 253,
+        "adjusted_close": 54.48,
+        "return_21d_pct": 5.95,
+        "return_63d_pct": 6.51,
+        "return_126d_pct": 4.17,
+        "benchmark_63d_pct": 1.21,
+        "relative_63d_pp": 5.3,
+        "ma50": 52.3525,
+        "ma200": 50.1356,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -2.87,
+        "volatility_21d_annualized_pct": 20.1,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
+        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+        "date": "2026-10-30",
+        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.21,
+          "excess_return_pp": 5.3,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": 0.93,
+          "excess_return_pp": 5.58,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-11",
+        "adjusted_return_pct": 0.33,
+        "benchmark_return_pct": 0.62,
+        "relative_to_benchmark_pp": -0.29,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -689,7 +689,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -775,7 +775,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1628,7 +1628,7 @@
         "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 1,
+      "editorial_age_days": 2,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",
@@ -2323,7 +2323,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2567,7 +2567,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 7,
+      "editorial_age_days": 8,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3280,7 +3280,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4142,7 +4142,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4386,7 +4386,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 10,
+      "editorial_age_days": 11,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4695,7 +4695,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 7,
+      "editorial_age_days": 8,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4781,7 +4781,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 2,
+      "editorial_age_days": 3,
       "unverified_discovery_hint": {
         "id": "rss-a173368eb27cdbd802",
         "date": "2026-11-11",
@@ -5020,7 +5020,7 @@
         "source": "NVIDIA Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": {
         "id": "rss-0839ee352b71d85604",
         "date": "2026-11-13",
@@ -6180,7 +6180,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 58,
+      "editorial_age_days": 59,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
