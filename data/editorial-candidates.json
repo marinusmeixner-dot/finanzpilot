@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-13T20:04:13.956454Z",
+  "updated_at": "2026-11-14T06:05:31.472271Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -748,15 +748,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
       "published_at": "2026-11-10T06:26:27Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-88d58b204fd6631d1b",
-      "title": "Forschungsbericht: Fossile CO2-Emissionen gehen leicht zurück",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wissen/klima/emissionen-klimawandel-global-carbon-budget-100.html",
-      "published_at": "2026-11-10T04:01:04Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
