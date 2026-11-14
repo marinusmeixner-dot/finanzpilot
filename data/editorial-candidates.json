@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-14T06:05:31.472271Z",
+  "updated_at": "2026-11-14T10:25:56.547954Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-5f10cf4539b471f046",
+      "title": "Microsoft: Systeme nach Störung komplett wiederhergestellt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-stoerung-behoben-100.html",
+      "published_at": "2026-11-14T10:17:44Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e845ed87c58b415334",
+      "title": "Warum in Polen schneller gebaut wird als in Deutschland",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bauen-polen-100.html",
+      "published_at": "2026-11-14T07:24:30Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-0839ee352b71d85604",
       "title": "Lutnick faces questions over Nvidia spy scandal. His sons’ firm has deep ties to the chipmaker",
@@ -667,87 +685,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-milliarden-investitionen-profiteure-100.html",
       "published_at": "2026-11-10T10:35:49Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c5e98388282e467e64",
-      "title": "Börsengang von Anthropic - umstrittener Goldrausch in San Francisco",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/digitales/goldrausch-san-fransisco-anthropic-vor-boersengang-100.html",
-      "published_at": "2026-11-10T09:42:31Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-01716da7e1d5aa2df0",
-      "title": "Börsengang von Anthropic - umstrittener Goldrausch in San Francisco",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/amerika/goldrausch-san-fransisco-anthropic-vor-boersengang-100.html",
-      "published_at": "2026-11-10T09:42:31Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-018a25cd0d5fb6450f",
-      "title": "Fed Governor Waller sees December hike likely, opens door to possible half-point increase",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/10/fed-governor-waller-sees-december-hike-likely.html",
-      "published_at": "2026-11-10T09:00:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e5c35938d6c92d9c46",
-      "title": "Update Wirtschaft vom 10.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1681258.html",
-      "published_at": "2026-11-10T08:57:37Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a24f1110c7f0cafade",
-      "title": "Chinas Handelsüberschuss überschreitet erneut die Billionenmarke",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/china-export-handel-100.html",
-      "published_at": "2026-11-10T08:53:53Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ad66f4c56177053acb",
-      "title": "Kalifornier lehnen Milliardärssteuer ab",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/amerika/kalifornien-milliardaerssteuer-abgelehnt-100.html",
-      "published_at": "2026-11-10T07:15:02Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d3b736a02218013db2",
-      "title": "13,2 Millionen Behandlungen in Notfallambulanzen im Jahr 2025",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_46_p002.html",
-      "published_at": "2026-11-10T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1bb2c2415f2eb10d92",
-      "title": "Klimakonferenz COP31: Warum alle über Elektrifizierung reden",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/klimaschutz-elektrifizierung-100.html",
-      "published_at": "2026-11-10T06:34:14Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-8bc0dcc3758f13245a",
-      "title": "Marktbericht: DAX nähert sich wieder dem Rekordhoch",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-104.html",
-      "published_at": "2026-11-10T06:26:27Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
