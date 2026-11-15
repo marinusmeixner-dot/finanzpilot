@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T14:07:48.900766Z",
+  "updated_at": "2026-11-15T17:08:05.780583Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-91a2c0512ce83e021e",
+      "title": "Quallenzucht: Ein Geschäftsmodell, das sich lohnt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/quallenzucht-100.html",
+      "published_at": "2026-11-15T14:58:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-ff63305a99ce043a36",
       "title": "Krise im Handwerk: \"Stilles Sterben der Betriebe\"",
@@ -469,42 +478,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/bgh-urteil-rechtsschutzversicherung-100.html",
       "published_at": "2026-11-11T18:46:53Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-faf486f663957aace7",
-      "title": "Bundeskabinett beschließt Aufbau einer Gasreserve",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/gasreserve-126.html",
-      "published_at": "2026-11-11T16:38:02Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-fb79bf1c27d269bbc1",
-      "title": "Vorstoß des Finanzministeriums: Was sich bei Steuerklassen für Paare ändern könnte",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/steuerklassen-klingbeil-100.html",
-      "published_at": "2026-11-11T15:24:38Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c01f8f773e96b67fc5",
-      "title": "Metall- und Elektroindustrie: 24-Stunden-Streiks rücken näher",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/warnstreik-ig-metall-122.html",
-      "published_at": "2026-11-11T15:23:22Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5bda0f36deb41c475d",
-      "title": "Fed's Goolsbee calls inflation report 'borderline disturbing' as central bank weighs more hikes",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/11/goolsbee-october-inflation-fed-rates-disturbing-distressing.html",
-      "published_at": "2026-11-11T14:16:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
