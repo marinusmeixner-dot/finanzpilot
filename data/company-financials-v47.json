@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "generated_at": "2026-11-03",
-  "verified_at": "2026-11-06",
+  "verified_at": "2026-11-15",
   "coverage_policy": "Zahlen ausschließlich aus tatsächlich publizierten Finanzberichten/Investor-Relations-Primärquellen; Berichtsperioden getrennt; alle im Stand überprüften Kennzahlen nach Kategorien. Nicht verifizierte Positionen bleiben unbekannt. Vollständige Berichte enthalten zudem Anhangs-/Detailpositionen; die App erfindet keine Zahlen.",
   "companies": [
     {
@@ -312,14 +312,33 @@
           "Wachstum und Profitabilität der industriellen Segmente können unterschiedlich ausfallen."
         ],
         "watch": [
-          "Geschäftsjahresabschluss Q4 2026 wird am 12.11.2026 erwartet.",
+          "Der Jahresabschluss FY2026 wurde am 12.11.2026 veröffentlicht; vollständige Bilanz- und Segmentüberleitung zum Q3-Bericht steht noch aus.",
           "Marge und Cashflow je Geschäftsbereich sowie Auftragseingang vergleichen."
         ]
       },
       "data_limitations": [
         "Dies ist eine umfangreiche Presse-/Ergebnisdarstellung, nicht jede Bilanzposition des vollständigen Earnings-Release-PDFs wurde geprüft.",
         "Für vollständige Bilanz und Segmentdetails den Original-Earnings-Release verwenden."
-      ]
+      ],
+      "latest_fy2026_primary_source_audit": {
+        "published": "2026-11-12",
+        "period_end": "2026-09-30",
+        "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+        "scope": "Vorläufige Original-Pressemitteilung, kein vollständiger Jahresabschluss; Q3-Detaildaten bleiben unverändert.",
+        "revenue_eur_bn": 83.4,
+        "orders_eur_bn": 108.2,
+        "industrial_profit_eur_bn": 13.3,
+        "industrial_margin_pct": 16.3,
+        "group_fcf_all_in_eur_bn": 12.1,
+        "group_fcf_all_in_prior_eur_bn": 10.8,
+        "eps_pre_ppa_fy2026_eur": 11.76,
+        "eps_pre_ppa_fy2026_comparable_ex_healthineers_eur": 9.27,
+        "eps_pre_ppa_fy2027_guidance_eur": [
+          10.2,
+          10.8
+        ],
+        "audit_note": "2027-Ausblick ist auf 9,27 EUR vergleichbares EPS ohne Healthineers bezogen, nicht auf 11,76 EUR; FCF all-in umfasst fortgeführte und nicht fortgeführte Aktivitäten. Normalisierter Cashflow, Capex, Nettoschulden und Segment-Bilanzdaten hier noch nicht vollständig geprüft."
+      }
     },
     {
       "symbol": "BAYN.DE",
