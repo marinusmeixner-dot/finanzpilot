@@ -366,8 +366,8 @@
       },
       "editorial_age_days": 3,
       "unverified_discovery_hint": {
-        "id": "rss-5f10cf4539b471f046",
-        "date": "2026-11-14",
+        "id": "rss-7426ba3b484fc23a5b",
+        "date": "2026-11-16",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
@@ -1931,7 +1931,11 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": null,
+      "unverified_discovery_hint": {
+        "id": "rss-cf9aea636c5e322fb4",
+        "date": "2026-11-16",
+        "status": "unverified_headline_only"
+      },
       "benchmarks": [
         {
           "benchmark_id": "ACWI",

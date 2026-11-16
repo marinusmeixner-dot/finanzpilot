@@ -1,9 +1,81 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-16T10:40:42.066526Z",
+  "updated_at": "2026-11-16T16:06:52.122639Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-cf9aea636c5e322fb4",
+      "title": "Tesla kündigt Milliarden-Investition in Werk in Brandenburg an",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/regional/brandenburg/tesla-investitionen-brandenburg-100.html",
+      "published_at": "2026-11-16T15:10:41Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d58771cd897205473c",
+      "title": "Die EU will europäischen Stahl konkurrenzfähig machen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/stahl-eu-china-massnahmen-100.html",
+      "published_at": "2026-11-16T14:53:07Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1282a41c25502e97a8",
+      "title": "Stahlgipfel in Salzgitter: Unternehmen fordern Entlastung beim Strompreis",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/stahlgipfel-klimawandel-produktion-100.html",
+      "published_at": "2026-11-16T14:52:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7426ba3b484fc23a5b",
+      "title": "Älterer Programmfehler löste Ausfall von Microsoft-Diensten aus",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-stoerung-fehler-100.html",
+      "published_at": "2026-11-16T14:22:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8d1cd2dbafc5e003b5",
+      "title": "EU gibt UniCredit grünes Licht für Commerzbank-Übernahme",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/commerzbank-unicredit-eu-genehmigung-100.html",
+      "published_at": "2026-11-16T11:50:50Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-26fbed8018235c7d3a",
+      "title": "Energieverbrauch der Industrie sinkt wegen hoher Preise",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/energie/energieverbrauch-deutsche-industrie-100.html",
+      "published_at": "2026-11-16T11:49:07Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-70f9f60fd64016d00c",
+      "title": "Zinsängste belasten Edelmetalle und Krypto-Währungen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/gold-und-bitcoin-fallen-zinssorgen-100.html",
+      "published_at": "2026-11-16T11:22:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-57bd9e5361714f7243",
+      "title": "Offshore-Windparks: Bundesregierung macht millionenschweres Angebot",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/investigativ/ndr/offshore-bundesregierung-100.html",
+      "published_at": "2026-11-16T11:08:19Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-4c4eb7f430fa33b2d7",
       "title": "Update Wirtschaft vom 16.11.2026",
@@ -424,33 +496,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rolle-100.html",
       "published_at": "2026-11-12T16:17:54Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e81e7723853761f026",
-      "title": "Oil prices mixed after Trump says no Iran deal needed: 'We've got their Strait'",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/12/oil-prices-jump-after-trump-says-no-iran-deal-needed-weve-got-their-strait.html",
-      "published_at": "2026-11-12T15:08:45Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1bc41b7fccda174c4b",
-      "title": "DAX auf Rekordhoch - Anleger vertrauen deutscher Wachstumsstory",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-dax-rekord-siemens-ki-100.html",
-      "published_at": "2026-11-12T13:29:26Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6c724acb512a0519dd",
-      "title": "Warum immer mehr Menschen in die Schuldenfalle rutschen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/mehr-menschen-ueberschuldet-schuldneratlas-100.html",
-      "published_at": "2026-11-12T11:31:51Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
