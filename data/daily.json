@@ -1,10 +1,58 @@
 {
   "date": "2026-11-13",
-  "updated_at": "2026-11-16T11:39:50+01:00",
+  "updated_at": "2026-11-16T17:57:44+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
   "intro": "Destatis meldet 2.067 Unternehmensinsolvenzen im August 2026 (+4,4 % zum Vorjahr). Die zeitverzögerte Statistik ist ein Kreditrisikoindikator, keine unmittelbare Börsenprognose.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-16-eu-cold-rolled-steel-antidumping",
+      "title": "EU verhängt neue Antidumpingzölle auf kaltgewalzten Stahl",
+      "published": "2026-11-16",
+      "date": "2026-11-16",
+      "category": "Industrie",
+      "symbols": [],
+      "source": "Europäische Kommission, Generaldirektion Handel, Mitteilung vom 16.11.2026",
+      "url": "https://policy.trade.ec.europa.eu/news/commission-imposes-anti-dumping-duties-certain-cold-rolled-flat-steel-products-2026-11-16_en",
+      "why": "Neue endgültige Antidumpingzölle auf bestimmte kaltgewalzte Flachstahlerzeugnisse aus fünf Herkunftsländern verändern die Wettbewerbsbedingungen europäischer Stahlhersteller und ihrer Abnehmer.",
+      "impact": "EU-Hersteller können weniger Importpreisdruck erfahren; verarbeitende Unternehmen könnten höhere Beschaffungskosten tragen. Der tatsächliche Effekt auf Margen und Cashflows ist ohne Produktmix, Vertragslaufzeiten und Preisdaten nicht quantifizierbar.",
+      "article": {
+        "lead": "Die Europäische Kommission hat am 16. November 2026 endgültige Antidumpingzölle auf bestimmte kaltgewalzte Flachstahlerzeugnisse aus Indien, Japan, Taiwan, der Türkei und Vietnam bekannt gegeben. Das betrifft einen industriellen Vorleistungsmarkt und nicht automatisch alle Stahlprodukte.",
+        "sections": [
+          {
+            "heading": "Was beschlossen wurde",
+            "paragraphs": [
+              "Die Kommission nennt Zollsätze von 9,5 % für Indien, 27,9 % für Japan, 20,7–27 % für Taiwan, 3–7,8 % für die Türkei und 16 % für Vietnam. Grundlage ist eine Untersuchung zu nach Auffassung der Behörde gedumpten Einfuhren. Der konkrete Anwendungsbereich richtet sich nach der rechtsverbindlichen Warenabgrenzung; aus den Prozentsätzen folgt keine pauschale Verteuerung sämtlicher Stahlimporte. Originalquelle (16.11.2026): https://policy.trade.ec.europa.eu/news/commission-imposes-anti-dumping-duties-certain-cold-rolled-flat-steel-products-2026-11-16_en"
+            ]
+          },
+          {
+            "heading": "Warum kaltgewalzter Stahl wichtig ist",
+            "paragraphs": [
+              "Kaltgewalzte Flachstahlerzeugnisse werden in vielen industriellen Fertigungsprozessen eingesetzt. Stahlproduzenten verdienen an verkauften Mengen und realisierten Preisen, müssen aber Erz, Energie, Personal und Anlagen finanzieren. Maschinenbauer und andere Verarbeiter nutzen Stahl als Vorprodukt: Für sie ist ein niedriger Einkaufspreis häufig ein Vorteil, für konkurrierende europäische Produzenten kann er Margen belasten."
+            ]
+          },
+          {
+            "heading": "Übertragung auf Gewinn und Cashflow",
+            "paragraphs": [
+              "Ein Zoll kann die Preisuntergrenze betroffener Importe erhöhen und europäischen Produzenten Verhandlungsspielraum verschaffen. Das verbessert aber nur dann den operativen Cashflow, wenn erzielbare Verkaufspreise oder Mengen tatsächlich steigen und zusätzliche Kosten nicht überwiegen. Für Abnehmer können höhere Materialkosten Margen drücken, sofern diese nicht an Kunden weitergereicht werden. Bestehende Lieferverträge und Lagerbestände verzögern Effekte."
+            ]
+          },
+          {
+            "heading": "Risiken und Gegenhypothese",
+            "paragraphs": [
+              "Die Zölle könnten Lieferströme in andere Herkunftsländer verlagern oder Verarbeiter zur Substitution bewegen. Europäische Stahlproduzenten bleiben außerdem Energiepreisen, Konjunktur und hohen Investitionskosten ausgesetzt. Die Gegenhypothese zur positiven Produzentenwirkung lautet, dass schwache Nachfrage und Überkapazitäten den Preisspielraum trotz Zoll begrenzen. Auch mögliche handelspolitische Reaktionen sind zu beobachten."
+            ]
+          },
+          {
+            "heading": "Was vor einer Aktienbewertung fehlt",
+            "paragraphs": [
+              "Aus einer Branchenmaßnahme lässt sich kein verlässliches Kursziel ableiten. Erforderlich sind der nachweisbare Anteil der betroffenen Stahlgüten am Umsatz eines konkreten Unternehmens, dessen Liefer- und Absatzmärkte, normalisierte operative Cashflows, Investitionsbedarf, Nettoverschuldung, Aktienzahl und ein zeitlich passender Börsenkurs. Ebenso wichtig ist ein Vergleich mit einem geeigneten Branchenunternehmen und einem gleichwährungsbasierten breiten ETF. Ohne diese Prüfung bleibt die Meldung ein Research-Anlass, keine Kaufempfehlung."
+            ]
+          }
+        ],
+        "conclusion": "Die neuen Zölle sind ein überprüfbarer handelspolitischer Eingriff mit gegensätzlichen möglichen Wirkungen auf Produzenten und Abnehmer. Welche Unternehmen wirtschaftlich profitieren, muss erst anhand ihres Produktmixes und ihrer künftigen Ergebnisberichte geprüft werden."
+      }
+    },
     {
       "id": "2026-11-12-nvidia-ceo-transition",
       "title": "NVIDIA: Jensen Huang tritt zurück – Führungswechsel vor Quartalszahlen",
