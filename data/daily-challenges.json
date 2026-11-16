@@ -1,66 +1,66 @@
 {
   "schema_version": 1,
-  "date": "2026-11-15",
-  "updated_at": "2026-11-15T00:56:00+01:00",
+  "date": "2026-11-16",
+  "updated_at": "2026-11-16T01:03:00+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
-  "explanation": "Drei eigenständige offene Aufgaben für Sonntag, 15.11.2026. Primärquellenanlass ist die Siemens-Geschäftsjahresmeldung vom 12.11.; sämtliche Zahlen in den Aufgaben sind ausdrücklich hypothetische Rechenfälle.",
+  "explanation": "Drei neue offene, quellenbezogene Aufgaben für Montag. Zahlen in Rechenbeispielen sind hypothetisch; Originalanlass ist Siemens-Geschäftsjahresmeldung vom 12.11.2026.",
   "tasks": [
     {
-      "id": "2026-11-15:market:working-capital",
+      "date": "2026-11-16",
+      "source": "Siemens AG – Geschäftsjahresmeldung vom 12.11.2026",
+      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "source_date": "2026-11-12",
+      "symbol": "SIE",
+      "id": "2026-11-16:market:orders-conversion",
       "kind": "market",
-      "date": "2026-11-15",
-      "title": "Umsatzwachstum versus Liquidität",
-      "context": "Ein Industrieunternehmen meldet neue Aufträge. Für eine ausdrücklich hypothetische Modellrechnung steigen die Forderungen aus Lieferungen und Leistungen von 12 auf 17 Mio. EUR, die Vorräte von 8 auf 11 Mio. EUR und die Lieferantenverbindlichkeiten von 6 auf 9 Mio. EUR. Alle übrigen Positionen bleiben konstant.",
-      "question": "Berechne die Veränderung des operativen Working Capital und die isolierte Wirkung auf den operativen Cashflow. Erkläre, warum ein positiver Auftragseingang die Liquidität nicht automatisch verbessert. Welche zwei Bilanz- oder Cashflow-Positionen würdest du im Originalbericht zur Gegenprüfung suchen?",
+      "title": "Auftragsbestand ist kein Umsatz",
+      "context": "Ein Industrieunternehmen hat hypothetisch 40 Mrd. EUR Auftragsbestand. Im kommenden Jahr werden 60 % davon ausgeführt, 5 % der geplanten Ausführungen verschieben sich und 2 Mrd. EUR neue kurzfristige Aufträge werden zusätzlich ausgeführt.",
+      "question": "Berechne den Umsatzbeitrag aus dem alten Auftragsbestand und aus neuen Aufträgen. Erläutere zwei Gründe, warum die Umsatzrealisierung noch keine Zahlung garantiert. Welche Angabe im Originalbericht würdest du zur Plausibilisierung prüfen?",
       "rubric": [
-        "Forderungen +5 Mio. EUR, Vorräte +3 Mio. EUR, Lieferantenverbindlichkeiten +3 Mio. EUR",
-        "Operatives Net Working Capital steigt um 5 Mio. EUR",
-        "Isolierter operativer Cashflow-Effekt −5 Mio. EUR, ohne andere Effekte",
-        "Auftrag, Umsatz und Zahlung sauber trennen",
-        "Gegenhypothese: Anzahlungen, Forderungslaufzeiten und Cashflow-Überleitung prüfen"
-      ],
-      "source": "Siemens AG – Geschäftsjahr 2026, Pressemitteilung vom 12.11.2026",
-      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
-      "source_date": "2026-11-12",
-      "symbol": "SIE"
+        "40 × 0,60 × 0,95 = 22,8 Mrd. EUR aus Altbestand",
+        "Mit neuen kurzfristigen Aufträgen 24,8 Mrd. EUR",
+        "Umsatzrealisierung von Auftragseingang und Zahlung trennen",
+        "Abnahme-/Leistungsfortschritt und Forderungs-/Anzahlungseffekt erläutern",
+        "Gegenhypothese: Stornierung, Wechselkurse und tatsächliche Konversionsrate prüfen"
+      ]
     },
     {
-      "id": "2026-11-15:research:verwaesserung-eps",
+      "date": "2026-11-16",
+      "source": "Siemens AG – Geschäftsjahresmeldung vom 12.11.2026",
+      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "source_date": "2026-11-12",
+      "symbol": "SIE",
+      "id": "2026-11-16:research:fcf-normalization",
       "kind": "research",
-      "date": "2026-11-15",
-      "title": "Wachstum, Verwässerung und Gewinn je Aktie",
-      "context": "Hypothetischer Fall: Der Jahresüberschuss steigt von 100 auf 120 Mio. EUR, während die gewichtete durchschnittliche Aktienzahl von 50 auf 65 Mio. steigt. Es handelt sich nicht um tatsächliche Siemens-Zahlen.",
-      "question": "Berechne den Gewinn je Aktie in beiden Jahren und die prozentuale Veränderung. Diskutiere, weshalb steigender Gesamtgewinn für Altaktionäre nicht zwingend steigenden Gewinn je Aktie bedeutet und welche Primärquellenangaben die Verwässerungsthese prüfen.",
+      "title": "Ist der Free Cashflow wiederholbar?",
+      "context": "Hypothetisch erzielt eine Firma 12 Mrd. EUR Free Cashflow; darin enthalten sind 3 Mrd. EUR einmalige Working-Capital-Freisetzung und 1 Mrd. EUR unterlassene, künftig nachzuholende Investitionen.",
+      "question": "Leite einen grob normalisierten Free Cashflow ab. Warum ist das kein fertiger fairer Unternehmenswert? Nenne mindestens drei zusätzliche Bewertungsgrößen und eine Gegenhypothese.",
       "rubric": [
-        "EPS Vorjahr 100/50 = 2,00 EUR",
-        "EPS Folgejahr 120/65 ≈ 1,846 EUR",
-        "EPS-Veränderung ≈ −7,69 % trotz 20 % höherem Jahresüberschuss",
-        "Gewichtete durchschnittliche verwässerte und unverwässerte Aktienzahl unterscheiden",
-        "Aktienbasierte Vergütung, Kapitalmaßnahmen und Rückkäufe aus Notes prüfen"
-      ],
-      "source": "Siemens AG – Geschäftsjahr 2026, Pressemitteilung vom 12.11.2026",
-      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
-      "source_date": "2026-11-12",
-      "symbol": "SIE"
+        "12 − 3 − 1 = 8 Mrd. EUR grober normalisierter FCF",
+        "Einmaligkeit der Working-Capital-Freisetzung begründen",
+        "Investitionsnachholeffekt berücksichtigen",
+        "Nettoschulden, Aktienzahl, Wachstumsrate und Diskontsatz nennen",
+        "Gegenhypothese: dauerhafte strukturelle Effizienz statt Einmaleffekt untersuchen"
+      ]
     },
     {
-      "id": "2026-11-15:learning:capex-fcf",
-      "kind": "learning",
-      "date": "2026-11-15",
-      "title": "Investitionsausgaben und Unternehmenswert",
-      "context": "Hypothetisches Unternehmen: operativer Cashflow 40 Mio. EUR, Erhaltungsinvestitionen 15 Mio. EUR, zusätzliche Wachstumsinvestitionen 20 Mio. EUR. Ein Analyst setzt den nachhaltig freien Cashflow pauschal mit 40 Mio. EUR an. Keine dieser Zahlen beschreibt Siemens.",
-      "question": "Berechne den berichtsnahen vereinfachten Free Cashflow. Stelle dar, unter welchen Voraussetzungen eine Normalisierung der Wachstumsinvestitionen zulässig wäre. Formuliere eine Gegenhypothese gegen die These, die Aktie sei allein wegen des operativen Cashflows günstig.",
-      "rubric": [
-        "Vereinfachter FCF 40−15−20 = 5 Mio. EUR",
-        "CFO ist nicht gleich FCF, Investitionen sind abzuziehen",
-        "Erhaltungs- und Wachstums-Capex nur anhand nachvollziehbarer Unternehmensangaben trennen",
-        "Normalisierung nicht ohne Zyklus- und Wiederholungsprüfung",
-        "Bewertung erfordert Nettofinanzschulden, Aktienzahl, Diskontierung, Terminalannahmen und Bandbreite"
-      ],
-      "source": "Siemens AG – Geschäftsjahr 2026, Pressemitteilung vom 12.11.2026",
+      "date": "2026-11-16",
+      "source": "Siemens AG – Geschäftsjahresmeldung vom 12.11.2026",
       "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
       "source_date": "2026-11-12",
-      "symbol": "SIE"
+      "symbol": "SIE",
+      "id": "2026-11-16:learning:eps-scope",
+      "kind": "learning",
+      "title": "Gewinnprognosen richtig vergleichen",
+      "context": "Ein Konzern nennt hypothetisch 11,50 EUR Ergebnis je Aktie inklusive einer künftig entkonsolidierten Beteiligung; die vergleichbare Basis ohne diese Beteiligung liegt bei 9,20 EUR. Die Prognose im nächsten Jahr beträgt 10,10 bis 10,60 EUR auf neuer Basis.",
+      "question": "Berechne das prognostizierte EPS-Wachstumsintervall auf vergleichbarer Basis. Zeige, wie ein Vergleich mit 11,50 EUR irreführt. Welche Primärbericht-Fußnote und welchen Verwässerungseffekt würdest du kontrollieren?",
+      "rubric": [
+        "(10,10/9,20−1) ≈ 9,8 %",
+        "(10,60/9,20−1) ≈ 15,2 %",
+        "Vergleich mit 11,50 EUR suggeriert fälschlich einen Rückgang",
+        "Konsolidierungskreis und bereinigtes EPS sauber kennzeichnen",
+        "Verwässerte Aktienzahl und Sondereffekte als Gegenprüfung benennen"
+      ]
     }
   ]
 }
