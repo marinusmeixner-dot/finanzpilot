@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-16T09:40:20.946476Z",
+  "updated_at": "2026-11-16T10:40:42.066526Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -451,24 +451,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/mehr-menschen-ueberschuldet-schuldneratlas-100.html",
       "published_at": "2026-11-12T11:31:51Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5bdde1d32c8d48c73e",
-      "title": "Marktbericht: DAX knackt 27.000 Punkte-Marke",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-106.html",
-      "published_at": "2026-11-12T09:55:48Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f0b46b1cd609ed8bc1",
-      "title": "IG Metall beschließt erstmals seit acht Jahren ganztägige Streiks",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/ig-metall-streiks-100.html",
-      "published_at": "2026-11-12T09:48:25Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

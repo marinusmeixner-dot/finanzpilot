@@ -2017,6 +2017,24 @@
       "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-1152fe05d900e4d",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "date": "2026-11-13",
+      "event_type": "new_editorial_evidence",
+      "signal_signature": "C_screen_only|2026-11-12-nvidia-ceo-transition|active",
+      "from_priority": "C_screen_only",
+      "priority": "C_screen_only",
+      "adjusted_close": 162.85,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -3.54,
+      "editorial_story_id": "2026-11-12-nvidia-ceo-transition",
+      "evidence_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

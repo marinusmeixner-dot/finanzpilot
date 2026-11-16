@@ -477,6 +477,45 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "Semiconductors",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-13",
+      "evidence_date": "2026-11-12",
+      "evidence_age_days": 1,
+      "evidence_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "evidence_title": "NVIDIA: Jensen Huang tritt zurück – Führungswechsel vor Quartalszahlen",
+      "why_now": "NVIDIA: Jensen Huang tritt zurück – Führungswechsel vor Quartalszahlen",
+      "first_rejection": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "needs_before_investment": [
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
+        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
+        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
+        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
+        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
       "id": "profile-enr-de",
       "ticker": "ENR.DE",
       "company": "Siemens Energy AG",
@@ -659,45 +698,6 @@
       ],
       "alternatives": {
         "peer_count": 3,
-        "etf_count": 3,
-        "benchmark_names": [
-          "iShares MSCI ACWI ETF",
-          "SPDR S&P 500 ETF"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
-      "id": "nvidia",
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "sector": "Semiconductors",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "C_screen_only",
-      "decision_stage": "source_based_watch",
-      "primary_cashflow_ready": true,
-      "price_asof": "2026-11-13",
-      "evidence_date": "2026-10-28",
-      "evidence_age_days": 16,
-      "evidence_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Sets-Conference-Call-for-Third-Quarter-Financial-Results/default.aspx",
-      "evidence_title": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
-      "why_now": "NVIDIA kündigt Quartalszahlen für den 17. November an: Was Anleger vorher prüfen können",
-      "first_rejection": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
-      "needs_before_investment": [
-        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
-        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
-        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
-        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
-        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
-        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen"
-      ],
-      "alternatives": {
-        "peer_count": 0,
         "etf_count": 3,
         "benchmark_names": [
           "iShares MSCI ACWI ETF",
