@@ -1,10 +1,60 @@
 {
   "date": "2026-11-13",
-  "updated_at": "2026-11-13",
+  "updated_at": "2026-11-16T11:39:50+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
   "intro": "Destatis meldet 2.067 Unternehmensinsolvenzen im August 2026 (+4,4 % zum Vorjahr). Die zeitverzögerte Statistik ist ein Kreditrisikoindikator, keine unmittelbare Börsenprognose.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-12-nvidia-ceo-transition",
+      "title": "NVIDIA: Jensen Huang tritt zurück – Führungswechsel vor Quartalszahlen",
+      "published": "2026-11-12",
+      "date": "2026-11-12",
+      "category": "Technologie",
+      "symbols": [
+        "NVDA"
+      ],
+      "source": "NVIDIA Investor Relations, Pressemitteilung vom 12.11.2026",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx",
+      "why": "NVIDIA bestätigt den sofortigen Rücktritt von Jensen Huang als CEO und Verwaltungsratsmitglied; Colette Kress übernimmt interimistisch. Am 17. November stehen Quartalszahlen an.",
+      "impact": "Führungs- und Ausführungsrisiko erhöht die Unsicherheit über Strategie und Kapitalallokation; ohne neue Finanzprognose ist keine belastbare Cashflow- oder Fair-Value-Änderung quantifizierbar.",
+      "article": {
+        "lead": "Der Chip- und KI-Infrastrukturanbieter NVIDIA (NASDAQ: NVDA) hat am 12. November 2026 einen überraschenden Führungswechsel bekannt gegeben: Gründer Jensen Huang trat mit sofortiger Wirkung als Vorstandschef und Mitglied des Boards zurück. Finanzchefin Colette Kress führt das Unternehmen vorläufig.",
+        "sections": [
+          {
+            "heading": "Was die Originalquelle bestätigt",
+            "paragraphs": [
+              "Laut NVIDIA Investor Relations vom 12.11.2026 übernahm Colette Kress zusätzlich zu ihrer CFO-Rolle die Position der Interims-CEO. Das Board begann die Suche nach einer dauerhaften Nachfolge; Harvey C. Jones wurde zum Board Chair ernannt. NVIDIA nennt in dieser Mitteilung keinen konkreten Grund für Huangs Rücktritt. Quelle: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-CEO-Transition/default.aspx"
+            ]
+          },
+          {
+            "heading": "Wie NVIDIA Geld verdient",
+            "paragraphs": [
+              "NVIDIA entwickelt unter anderem Grafikprozessoren, Netzwerktechnik, komplette KI-Rechensysteme und dazugehörige Software. Rechenzentren und Cloudbetreiber kaufen diese Infrastruktur, um KI-Modelle zu trainieren und auszuführen; weitere Erlöse entstehen etwa mit Gaming- und professionellen Grafiklösungen. NVIDIA ist bei der Herstellung auf externe Fertigungs- und Zulieferpartner angewiesen."
+            ]
+          },
+          {
+            "heading": "Warum der Zeitpunkt wichtig ist",
+            "paragraphs": [
+              "Der Konzern kündigte die Veröffentlichung seiner Zahlen für das dritte Quartal des Geschäftsjahres 2027 am 17.11.2026 an. Der Führungswechsel fällt damit unmittelbar vor einen regulären Berichtstermin. Anleger müssen zwischen bereits bestätigten personellen Änderungen und noch unbekannten Aussagen zu Umsatz, Margen, Lieferfähigkeit und Ausblick unterscheiden."
+            ]
+          },
+          {
+            "heading": "Risiken und Gegenhypothese",
+            "paragraphs": [
+              "Ein Gründerwechsel kann Kundenbeziehungen, Produktentscheidungen, Führungskräftebindung und die Umsetzung großer Investitionsprogramme belasten. Die Gegenhypothese: Kress ist seit 2013 im Unternehmen und kennt Finanzplanung und operative Entwicklung; die bestehende Führung kann den Betrieb und die Produkt-Roadmap ohne wesentliche Unterbrechung fortführen. NVIDIA erklärt diese Kontinuität als Ziel, nicht als garantierten Ausgang."
+            ]
+          },
+          {
+            "heading": "Cashflow, Bewertung und nächste Belege",
+            "paragraphs": [
+              "Der Personalwechsel allein ändert weder gemeldete Umsätze noch bereits erwirtschafteten Cashflow. Eine faire Neubewertung verlangt zunächst den kommenden Quartalsbericht, die Nachfrage- und Margenentwicklung, Investitions- und Lieferkettenrisiken, Aktienzahl sowie einen aktuellen Kursstichtag. Ohne überprüfbare Änderungen dieser Größen wäre ein numerischer Kursabschlag spekulativ. Als Gegencheck dienen vergleichbare Halbleiterunternehmen oder ein gleichwähriger breiter ETF; kurzfristige Kursreaktionen sind kein Bewertungsmodell."
+            ]
+          }
+        ],
+        "conclusion": "Der bestätigte Führungswechsel ist eine wichtige neue Unsicherheitsquelle, aber weder automatisch ein Verkaufssignal noch ein Beweis für eine dauerhafte Schwächung. Entscheidend sind die Nachfolge, die operativen Kennzahlen am 17. November und die folgenden Quartale."
+      }
+    },
     {
       "id": "2026-11-13-microsoft-365-outage-service-resilience",
       "title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
