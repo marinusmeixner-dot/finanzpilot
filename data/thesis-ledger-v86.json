@@ -1981,6 +1981,42 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-f5708c0dae1a2f4",
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "date": "2026-11-13",
+      "event_type": "priority_changed",
+      "signal_signature": "B_watchlist|tech-ai-capex-story-2026|active",
+      "from_priority": "A_research_first",
+      "priority": "B_watchlist",
+      "adjusted_close": 266.66,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -3.54,
+      "editorial_story_id": "tech-ai-capex-story-2026",
+      "evidence_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-8ee59d8cd00aaa4",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "date": "2026-11-12",
+      "event_type": "priority_changed",
+      "signal_signature": "B_watchlist|gas-storage-winter-2026|active",
+      "from_priority": "A_research_first",
+      "priority": "B_watchlist",
+      "adjusted_close": 59.24,
+      "currency": "EUR",
+      "benchmark_id": "VWCE",
+      "benchmark_adjusted_return_63d_pct": 1.4,
+      "editorial_story_id": "gas-storage-winter-2026",
+      "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

@@ -6,21 +6,21 @@
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
   "total_issuers": 79,
   "with_price_history": 77,
-  "research_priority_count": 10,
+  "research_priority_count": 8,
   "missing_quote_count": 2,
   "front_page_candidate_ids": [
     "apple",
     "bayer",
     "profile-evk-de",
-    "profile-eoan-de",
     "microsoft",
     "corero-network-security",
+    "profile-eoan-de",
     "basf",
-    "amazon",
-    "profile-rwe-de",
     "siemens",
     "index-veev",
-    "costco"
+    "costco",
+    "deere",
+    "sap"
   ],
   "benchmark_universe": [
     {
@@ -124,7 +124,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 13,
+      "editorial_age_days": 14,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -210,7 +210,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -287,7 +287,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -321,83 +321,6 @@
         "adjusted_return_pct": -1.69,
         "benchmark_return_pct": 0.92,
         "relative_to_benchmark_pp": -2.61,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
-      "id": "profile-eoan-de",
-      "ticker": "EOAN.DE",
-      "company": "E.ON SE",
-      "sector": "Energienetze und Kundenlösungen",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "A_research_first",
-      "technical_research_score": 83,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-12",
-        "sessions": 253,
-        "adjusted_close": 19.15,
-        "return_21d_pct": 10.85,
-        "return_63d_pct": 10.15,
-        "return_126d_pct": 4.45,
-        "benchmark_63d_pct": 1.4,
-        "relative_63d_pp": 8.75,
-        "ma50": 17.8316,
-        "ma200": 18.246,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -2.81,
-        "volatility_21d_annualized_pct": 21.9,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "gas-storage-winter-2026",
-        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-        "date": "2026-11-01",
-        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.4,
-          "excess_return_pp": 8.75,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.24,
-          "excess_return_pp": 8.91,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "published_profile_needs_ticker_recheck",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-12",
-        "adjusted_return_pct": 1.43,
-        "benchmark_return_pct": 0.92,
-        "relative_to_benchmark_pp": 0.51,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -441,7 +364,7 @@
         "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 2,
+      "editorial_age_days": 3,
       "unverified_discovery_hint": {
         "id": "rss-5f10cf4539b471f046",
         "date": "2026-11-14",
@@ -531,7 +454,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 4,
+      "editorial_age_days": 5,
       "unverified_discovery_hint": {
         "id": "rss-e092c037dae289dccb",
         "date": "2026-11-12",
@@ -569,6 +492,83 @@
         "adjusted_return_pct": 7.88,
         "benchmark_return_pct": 2.39,
         "relative_to_benchmark_pp": 5.49,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "profile-eoan-de",
+      "ticker": "EOAN.DE",
+      "company": "E.ON SE",
+      "sector": "Energienetze und Kundenlösungen",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "A_research_first",
+      "technical_research_score": 77,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-12",
+        "sessions": 253,
+        "adjusted_close": 19.15,
+        "return_21d_pct": 10.85,
+        "return_63d_pct": 10.15,
+        "return_126d_pct": 4.45,
+        "benchmark_63d_pct": 1.4,
+        "relative_63d_pp": 8.75,
+        "ma50": 17.8316,
+        "ma200": 18.246,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -2.81,
+        "volatility_21d_annualized_pct": 21.9,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "gas-storage-winter-2026",
+        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+        "date": "2026-11-01",
+        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.4,
+          "excess_return_pp": 8.75,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.24,
+          "excess_return_pp": 8.91,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-12",
+        "adjusted_return_pct": 1.43,
+        "benchmark_return_pct": 0.92,
+        "relative_to_benchmark_pp": 0.51,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -612,7 +612,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -646,169 +646,6 @@
         "adjusted_return_pct": 0.28,
         "benchmark_return_pct": 0.92,
         "relative_to_benchmark_pp": -0.64,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
-      "id": "amazon",
-      "ticker": "AMZN",
-      "company": "Amazon",
-      "sector": "Retail & Cloud",
-      "country": "US",
-      "currency": "USD",
-      "origin": "liquid_research_universe",
-      "curated_id": "amazon",
-      "has_curated_dossier": true,
-      "lifecycle": "active",
-      "research_priority": "A_research_first",
-      "technical_research_score": 73,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-13",
-        "sessions": 251,
-        "adjusted_close": 266.66,
-        "return_21d_pct": 4.67,
-        "return_63d_pct": 2.05,
-        "return_126d_pct": 0.95,
-        "benchmark_63d_pct": -3.54,
-        "relative_63d_pp": 5.59,
-        "ma50": 254.8116,
-        "ma200": 244.5955,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -6.11,
-        "volatility_21d_annualized_pct": 40.7,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "tech-ai-capex-story-2026",
-        "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-        "date": "2026-11-01",
-        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-        "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -3.54,
-          "excess_return_pp": 5.59,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -2.13,
-          "excess_return_pp": 4.18,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -6.75,
-          "excess_return_pp": 8.8,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "AWS-Wachstum, Free Cashflow, Capex und aktuelle Bewertung prüfen.",
-      "risks": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-13",
-        "adjusted_return_pct": -0.75,
-        "benchmark_return_pct": -1.5,
-        "relative_to_benchmark_pp": 0.75,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      }
-    },
-    {
-      "id": "profile-rwe-de",
-      "ticker": "RWE.DE",
-      "company": "RWE AG",
-      "sector": "Energieversorgung",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "A_research_first",
-      "technical_research_score": 72,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-12",
-        "sessions": 253,
-        "adjusted_close": 59.24,
-        "return_21d_pct": 0.41,
-        "return_63d_pct": 0.27,
-        "return_126d_pct": 4.63,
-        "benchmark_63d_pct": 1.4,
-        "relative_63d_pp": -1.13,
-        "ma50": 58.5296,
-        "ma200": 56.6555,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -2.53,
-        "volatility_21d_annualized_pct": 25.6,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "gas-storage-winter-2026",
-        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-        "date": "2026-11-01",
-        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.4,
-          "excess_return_pp": -1.13,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.24,
-          "excess_return_pp": -0.97,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "published_profile_needs_ticker_recheck",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-12",
-        "adjusted_return_pct": 3.39,
-        "benchmark_return_pct": 0.92,
-        "relative_to_benchmark_pp": 2.47,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -852,7 +689,7 @@
         "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 3,
+      "editorial_age_days": 4,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1820,6 +1657,169 @@
       }
     },
     {
+      "id": "amazon",
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "sector": "Retail & Cloud",
+      "country": "US",
+      "currency": "USD",
+      "origin": "liquid_research_universe",
+      "curated_id": "amazon",
+      "has_curated_dossier": true,
+      "lifecycle": "active",
+      "research_priority": "B_watchlist",
+      "technical_research_score": 67,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-13",
+        "sessions": 251,
+        "adjusted_close": 266.66,
+        "return_21d_pct": 4.67,
+        "return_63d_pct": 2.05,
+        "return_126d_pct": 0.95,
+        "benchmark_63d_pct": -3.54,
+        "relative_63d_pp": 5.59,
+        "ma50": 254.8116,
+        "ma200": 244.5955,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -6.11,
+        "volatility_21d_annualized_pct": 40.7,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "tech-ai-capex-story-2026",
+        "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+        "date": "2026-11-01",
+        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+        "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -3.54,
+          "excess_return_pp": 5.59,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -2.13,
+          "excess_return_pp": 4.18,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -6.75,
+          "excess_return_pp": 8.8,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "AWS-Wachstum, Free Cashflow, Capex und aktuelle Bewertung prüfen.",
+      "risks": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-13",
+        "adjusted_return_pct": -0.75,
+        "benchmark_return_pct": -1.5,
+        "relative_to_benchmark_pp": 0.75,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
+      "id": "profile-rwe-de",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "sector": "Energieversorgung",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "B_watchlist",
+      "technical_research_score": 66,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-12",
+        "sessions": 253,
+        "adjusted_close": 59.24,
+        "return_21d_pct": 0.41,
+        "return_63d_pct": 0.27,
+        "return_126d_pct": 4.63,
+        "benchmark_63d_pct": 1.4,
+        "relative_63d_pp": -1.13,
+        "ma50": 58.5296,
+        "ma200": 56.6555,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -2.53,
+        "volatility_21d_annualized_pct": 25.6,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "gas-storage-winter-2026",
+        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+        "date": "2026-11-01",
+        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.4,
+          "excess_return_pp": -1.13,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.24,
+          "excess_return_pp": -0.97,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-12",
+        "adjusted_return_pct": 3.39,
+        "benchmark_return_pct": 0.92,
+        "relative_to_benchmark_pp": 2.47,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "index-app",
       "ticker": "APP",
       "company": "AppLovin",
@@ -2253,7 +2253,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2567,7 +2567,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3513,7 +3513,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4184,92 +4184,6 @@
       }
     },
     {
-      "id": "alphabet",
-      "ticker": "GOOGL",
-      "company": "Alphabet",
-      "sector": "Advertising & Cloud",
-      "country": "US",
-      "currency": "USD",
-      "origin": "liquid_research_universe",
-      "curated_id": "alphabet",
-      "has_curated_dossier": true,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 18,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-13",
-        "sessions": 251,
-        "adjusted_close": 295.77,
-        "return_21d_pct": -15.31,
-        "return_63d_pct": -13.97,
-        "return_126d_pct": -25.36,
-        "benchmark_63d_pct": -3.54,
-        "relative_63d_pp": -10.43,
-        "ma50": 328.1858,
-        "ma200": 338.1999,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -26.45,
-        "volatility_21d_annualized_pct": 52.8,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "tech-ai-capex-story-2026",
-        "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-        "date": "2026-11-01",
-        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-        "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -3.54,
-          "excess_return_pp": -10.43,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -2.13,
-          "excess_return_pp": -11.84,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -6.75,
-          "excess_return_pp": -7.22,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen.",
-      "risks": "Cloud-Wachstum ist nicht gleich Free Cashflow. 51,355 Mrd. USD Quartals-Capex und regulatorische Risiken sind materiell.",
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-13",
-        "adjusted_return_pct": 2.37,
-        "benchmark_return_pct": -1.5,
-        "relative_to_benchmark_pp": 3.87,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      }
-    },
-    {
       "id": "telekom",
       "ticker": "DTE.DE",
       "company": "Deutsche Telekom",
@@ -4382,7 +4296,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4500,6 +4414,92 @@
       }
     },
     {
+      "id": "alphabet",
+      "ticker": "GOOGL",
+      "company": "Alphabet",
+      "sector": "Advertising & Cloud",
+      "country": "US",
+      "currency": "USD",
+      "origin": "liquid_research_universe",
+      "curated_id": "alphabet",
+      "has_curated_dossier": true,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 12,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-13",
+        "sessions": 251,
+        "adjusted_close": 295.77,
+        "return_21d_pct": -15.31,
+        "return_63d_pct": -13.97,
+        "return_126d_pct": -25.36,
+        "benchmark_63d_pct": -3.54,
+        "relative_63d_pp": -10.43,
+        "ma50": 328.1858,
+        "ma200": 338.1999,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -26.45,
+        "volatility_21d_annualized_pct": 52.8,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "tech-ai-capex-story-2026",
+        "title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+        "date": "2026-11-01",
+        "url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+        "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -3.54,
+          "excess_return_pp": -10.43,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -2.13,
+          "excess_return_pp": -11.84,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -6.75,
+          "excess_return_pp": -7.22,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "TTM-FCF, Cloud-Margen, KI-Suche und Bewertung mit realem Aktienkurs prüfen.",
+      "risks": "Cloud-Wachstum ist nicht gleich Free Cashflow. 51,355 Mrd. USD Quartals-Capex und regulatorische Risiken sind materiell.",
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-13",
+        "adjusted_return_pct": 2.37,
+        "benchmark_return_pct": -1.5,
+        "relative_to_benchmark_pp": 3.87,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "index-rddt",
       "ticker": "RDDT",
       "company": "Reddit",
@@ -4538,7 +4538,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4624,7 +4624,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 4,
+      "editorial_age_days": 5,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4859,7 +4859,7 @@
         "source": "NVIDIA Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 18,
+      "editorial_age_days": 19,
       "unverified_discovery_hint": {
         "id": "rss-da685c538926ac6e85",
         "date": "2026-11-14",
@@ -6156,7 +6156,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 60,
+      "editorial_age_days": 61,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",

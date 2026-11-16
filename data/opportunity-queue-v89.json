@@ -15,7 +15,7 @@
     "corero-network-security",
     "bayer",
     "apple",
-    "amazon"
+    "profile-eoan-de"
   ],
   "methodology": "Neue belegte Unternehmensanlässe (0–21 Kalendertage vor Kursstichtag) zuerst; laufende Fundamentalthesen als separate Nachprüfung; technische Signale ohne geprüften Geschäftsbeleg nur in Beobachtung. Klassifizierung auf Beleg- und Forschungsreife, nicht auf erwarteter Rendite oder Unterbewertung. Peer-/ETF-Daten nur bei identischer Vergleichswährung aus vorherigem Audit.",
   "readiness_warning": "Hier steht kein Kaufurteil. Nur Primärbericht, nachhaltiger Cashflow, Kapitalstruktur, Bewertung, Zeitstempel und Widerlegungskriterien können ein Investmenturteil rechtfertigen.",
@@ -211,86 +211,10 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
-      "id": "amazon",
-      "ticker": "AMZN",
-      "company": "Amazon",
-      "sector": "Retail & Cloud",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "A_research_first",
-      "decision_stage": "source_based_watch",
-      "primary_cashflow_ready": true,
-      "price_asof": "2026-11-13",
-      "evidence_date": "2026-11-01",
-      "evidence_age_days": 12,
-      "evidence_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
-      "evidence_title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
-      "first_rejection": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
-      "needs_before_investment": [
-        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten",
-        "Trennung von AWS/Handel, Finanzierung und IT-Immobilienverpflichtungen",
-        "Nettoschulden/Leases, verwässerte Aktienzahl, nachhaltiger Cashflow und DCF-WACC",
-        "Nachhaltig finanzierbares Capex-Niveau bei AWS-Wachstum und 2027-Guidance prüfen"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
-        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten"
-      ],
-      "alternatives": {
-        "peer_count": 3,
-        "etf_count": 3,
-        "benchmark_names": [
-          "iShares MSCI ACWI ETF",
-          "SPDR S&P 500 ETF"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
       "id": "profile-eoan-de",
       "ticker": "EOAN.DE",
       "company": "E.ON SE",
       "sector": "Energienetze und Kundenlösungen",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "A_research_first",
-      "decision_stage": "editorial_screen",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-12",
-      "evidence_date": "2026-11-01",
-      "evidence_age_days": 12,
-      "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-      "evidence_title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "needs_before_investment": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "Primärbericht/Cashflow"
-      ],
-      "alternatives": {
-        "peer_count": 0,
-        "etf_count": 2,
-        "benchmark_names": [
-          "Vanguard FTSE All-World UCITS ETF",
-          "iShares STOXX Europe 600 UCITS ETF (DE)"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
-      "id": "profile-rwe-de",
-      "ticker": "RWE.DE",
-      "company": "RWE AG",
-      "sector": "Energieversorgung",
       "bucket": "review_now",
       "review_kind": "news_catalyst",
       "radar_priority": "A_research_first",
@@ -472,6 +396,82 @@
         "benchmark_names": [
           "iShares MSCI ACWI ETF",
           "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "amazon",
+      "ticker": "AMZN",
+      "company": "Amazon",
+      "sector": "Retail & Cloud",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-13",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 12,
+      "evidence_url": "https://ir.aboutamazon.com/news-release/news-release-details/2026/Amazon-com-Announces-Third-Quarter-Results/default.aspx",
+      "evidence_title": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "why_now": "KI-Boom trifft auf Investitionskosten: Warum Umsatzwachstum allein nicht reicht",
+      "first_rejection": "Kapitalintensive KI-Rechenzentren drücken den Free Cashflow trotz steigenden operativen Gewinns.",
+      "needs_before_investment": [
+        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten",
+        "Trennung von AWS/Handel, Finanzierung und IT-Immobilienverpflichtungen",
+        "Nettoschulden/Leases, verwässerte Aktienzahl, nachhaltiger Cashflow und DCF-WACC",
+        "Nachhaltig finanzierbares Capex-Niveau bei AWS-Wachstum und 2027-Guidance prüfen"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "FCF als CFO minus Capex (auch Leases/Finanzierungsanteile) überleiten"
+      ],
+      "alternatives": {
+        "peer_count": 3,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-rwe-de",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "sector": "Energieversorgung",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "B_watchlist",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-12",
+      "evidence_date": "2026-11-01",
+      "evidence_age_days": 12,
+      "evidence_url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+      "evidence_title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "why_now": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 2,
+        "benchmark_names": [
+          "Vanguard FTSE All-World UCITS ETF",
+          "iShares STOXX Europe 600 UCITS ETF (DE)"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
