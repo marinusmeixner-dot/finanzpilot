@@ -2,10 +2,15 @@
   "schema_version": 1,
   "date": "2026-11-16",
   "source_updated_at": "2026-11-12",
-  "title": "Montags-Briefing: Siemens-Ausblick vergleichbar lesen, Cashflow-Qualität prüfen",
-  "summary": "Montag, 16.11.2026: Einordnung der bereits veröffentlichten Siemens-Originalmeldung vom 12.11. und des Siemens-Energy-Berichts vom 11.11.; keine neue Montagsmeldung oder neuen Handelskurse unterstellt. Siemens AG meldete 108,2 Mrd. EUR Aufträge, 83,4 Mrd. EUR Umsatz und 12,1 Mrd. EUR Free Cashflow. Die EPS-pre-PPA-Prognose 2027 von 10,20–10,80 EUR ist mit der vergleichbaren FY2026-Basis von 9,27 EUR ohne Siemens Healthineers zu vergleichen, nicht mit 11,76 EUR der bisherigen Abgrenzung. Vor einer fairen Bewertung sind Cashflow-Normalisierung, Capex, Nettoschulden, Aktienzahl und die neue Konzernabgrenzung offen.",
-  "interpretation": "Montag, 16.11.2026: Der letzte im Briefing belegte Siemens-Originalbericht datiert vom 12.11.2026 (https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer). Aufträge sind keine Zahlungseingänge. Siemens-Energy-Ergebnisse vom 11.11. getrennt beurteilen: Kundenanzahlungen können den berichteten Free Cashflow erhöhen, ohne dauerhaften FCFE zu beweisen. Die FY2027-EPS-Spanne von Siemens entspricht gegenüber der vergleichbaren FY2026-Basis von 9,27 EUR rechnerisch etwa +10,0 % bis +16,5 %, nicht einem Rückgang gegenüber der nicht vergleichbaren Basis von 11,76 EUR. Keine neuen Montagskurse, Ereignisse oder Bewertungsurteile behauptet.",
+  "title": "Montags-Briefing: NVIDIA-Führungswechsel, Siemens-Ausblick und Cashflow-Qualität",
+  "summary": "16.11.2026: NVIDIA bestätigte am 12.11. den sofortigen Rücktritt von Jensen Huang; CFO Colette Kress führt interimistisch, die Ergebnisse für Q3 FY2027 sind für 17.11. angekündigt. Das ist ein Governance- und Ausführungsrisiko, aber noch keine quantifizierte Änderung des nachhaltigen Cashflows. Siemens meldete am 12.11. 108,2 Mrd. EUR Aufträge, 83,4 Mrd. EUR Umsatz und 12,1 Mrd. EUR Free Cashflow; die FY2027-EPS-pre-PPA-Spanne 10,20–10,80 EUR ist mit der vergleichbaren Basis 9,27 EUR zu messen. Keine aktuellen Börsenkurse oder neuen Montagszahlen unterstellt.",
+  "interpretation": "NVIDIA-Originalmitteilung 12.11.2026: https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition. Der Vorstand bestätigt den Führungswechsel, nicht die in Medien diskutierten persönlichen Vorwürfe; diese werden nicht als Unternehmensfakten übernommen. Für die Investmentthese sind Q3-Umsatz, Guidance, Kundenkonzentration, Exportbeschränkungen, Kapitalallokation und Nachfolgeprozess zu prüfen. Siemens-Originalbericht 12.11.: https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer. Aufträge sind keine Zahlungen; FY2027-EPS gegenüber vergleichbarer FY2026-Basis 9,27 EUR impliziert rechnerisch etwa +10,0 % bis +16,5 %. Siemens Energy bleibt als getrenntes Unternehmen mit besonderem Anzahlungs-/Cashflow-Risiko zu betrachten. Keine Fair-Value-Aussage ohne Kurszeitpunkt, normalisierten Cashflow und Kapitalstruktur.",
   "highlights": [
+    {
+      "story_id": "2026-11-12-nvidia-ceo-transition",
+      "title": "NVIDIA: bestätigter CEO-Wechsel vor Q3-Zahlen",
+      "why": "NVIDIA-Pressemitteilung 12.11.; Colette Kress interimistisch, Quartalszahlen für 17.11. angekündigt. Governance-Risiko belegt, Ertragseffekt noch offen."
+    },
     {
       "story_id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
       "title": "Siemens AG: Rekordaufträge, digitales Wachstum und Cashflow",
