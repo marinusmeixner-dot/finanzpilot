@@ -1,9 +1,90 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-15T21:47:14.867803Z",
+  "updated_at": "2026-11-16T09:40:20.946476Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-4c4eb7f430fa33b2d7",
+      "title": "Update Wirtschaft vom 16.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1684508.html",
+      "published_at": "2026-11-16T08:54:49Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d4e9668d680d2dab43",
+      "title": "Ex-Nvidia-Chef Huang arbeitet offenbar bereits an seinem Comeback",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-chefposten-100.html",
+      "published_at": "2026-11-16T08:07:28Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5662ded9f6cd25855a",
+      "title": "Altersvorsorgedepot: Wie aus Sparern Anleger werden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-rente-aktienmarkt-sparplan-100.html",
+      "published_at": "2026-11-16T08:02:35Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a5fad4248beff2da33",
+      "title": "1,4 % weniger wissenschaftliches Hochschulpersonal im Jahr 2025",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_401_213.html",
+      "published_at": "2026-11-16T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7f94243867004f9d63",
+      "title": "Energieverbrauch der Industrie 2025 um 2,9 % gesunken",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_400_435.html",
+      "published_at": "2026-11-16T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-533eba559715cd8f5d",
+      "title": "Missglückter Raketenstart: Amazon verliert 40 Satelliten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/technologie/rakete-amazon-satelliten-100.html",
+      "published_at": "2026-11-16T06:48:12Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-425647ea52e1056bca",
+      "title": "Marktbericht: Setzt der DAX die Rekordjagd fort?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-rekordhoch-100.html",
+      "published_at": "2026-11-16T06:18:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d4533a1fa461509692",
+      "title": "Pläne der Bundesregierung: Juristen zweifeln an Gesetz gegen Vergesellschaftung",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/investitionsschutzgesetz-dobrindt-gutachten-verfassungswidrig-100.html",
+      "published_at": "2026-11-16T05:03:11Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-af572055b67df64dad",
+      "title": "China’s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
+      "published_at": "2026-11-16T03:53:59Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-91a2c0512ce83e021e",
       "title": "Quallenzucht: Ein Geschäftsmodell, das sich lohnt",
@@ -388,69 +469,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/ig-metall-streiks-100.html",
       "published_at": "2026-11-12T09:48:25Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5f8264b8de7431e097",
-      "title": "Nvidia-Chef Huang verliert wegen Affären wohl seinen Job",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-beratung-chefwechsel-kursrueckgang-100.html",
-      "published_at": "2026-11-12T09:38:52Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-02ef4dd60771379ec1",
-      "title": "Update Wirtschaft vom 12.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1682464.html",
-      "published_at": "2026-11-12T08:59:56Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-9cdddb97da68f3143f",
-      "title": "Worauf sich die Bundesregierung beim Haushalt geeinigt hat",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/bundesregierung-haushalt-kompromisse-100.html",
-      "published_at": "2026-11-12T08:12:13Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-9e06ddda318fc16e72",
-      "title": "Was Experten raten: Wie es mit dem Jobwechsel klappen kann",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/jobwechsel-beruf-neuorientierung-100.html",
-      "published_at": "2026-11-12T07:29:46Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e092c037dae289dccb",
-      "title": "China's Ministry of State Security thrust into the spotlight by Nvidia CEO affair",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/12/china-ministry-state-security-nvidia-ceo.html",
-      "published_at": "2026-11-12T07:28:48Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-4b76ee14b592b80da9",
-      "title": "Statistik der Grundsteuerwerte zeigt strukturelle Unterschiede in der Verteilung des Grundbesitzes in Deutschland",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_395_73.html",
-      "published_at": "2026-11-12T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0883aeaca359f1a631",
-      "title": "Pflege: 10 % der Erwerbstätigen von 25 bis 64 Jahren betreuen Angehörige",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N079_23.html",
-      "published_at": "2026-11-12T07:00:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

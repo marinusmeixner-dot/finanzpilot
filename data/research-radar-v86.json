@@ -455,11 +455,7 @@
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
       "editorial_age_days": 5,
-      "unverified_discovery_hint": {
-        "id": "rss-e092c037dae289dccb",
-        "date": "2026-11-12",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "VWCE",
@@ -1696,7 +1692,11 @@
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
       "editorial_age_days": 15,
-      "unverified_discovery_hint": null,
+      "unverified_discovery_hint": {
+        "id": "rss-533eba559715cd8f5d",
+        "date": "2026-11-16",
+        "status": "unverified_headline_only"
+      },
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
@@ -4861,8 +4861,8 @@
       },
       "editorial_age_days": 19,
       "unverified_discovery_hint": {
-        "id": "rss-da685c538926ac6e85",
-        "date": "2026-11-14",
+        "id": "rss-d4e9668d680d2dab43",
+        "date": "2026-11-16",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
