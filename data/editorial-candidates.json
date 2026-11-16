@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-16T16:58:49.191906Z",
+  "updated_at": "2026-11-16T20:27:40.047857Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-ec0c2c0de9ed55b55b",
+      "title": "Wirtschaft vor acht vom 16.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1684932.html",
+      "published_at": "2026-11-16T18:56:47Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-653d4ebbdd60764e13",
+      "title": "Fed Chairman Kevin Warsh stresses importance of AI to economy, but says it could ‘disappoint’",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/16/fed-ai-task-force-kevin-warsh.html",
+      "published_at": "2026-11-16T18:46:07Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-ddb73a3b4c8975357a",
       "title": "Deutschland will die eigene Stahlindustrie erhalten - zu welchem Preis?",
@@ -469,42 +487,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-ausfall-100.html",
       "published_at": "2026-11-12T23:08:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f3044d4a055c676df8",
-      "title": "Mercedes stoppt Investitionen in Deutschland - und prüft Schließungen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/mercedes-stopp-investitionen-100.html",
-      "published_at": "2026-11-12T18:44:38Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-9cf31c2fd034703557",
-      "title": "In a policy switch, the Fed says its October 2027 meeting will not see a vote on interest rates",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/12/in-policy-switch-fed-says-its-october-2027-meeting-will-not-see-a-vote-on-interest-rates.html",
-      "published_at": "2026-11-12T18:26:52Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b201c195fe68e8ff09",
-      "title": "Bundesbank warnt vor erhöhten Risiken für das deutsche Finanzsystem",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/risiken-finanzsystem-bundesbank-100.html",
-      "published_at": "2026-11-12T17:31:15Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-23105f466732821b9b",
-      "title": "Nvidia-Chef Huang tritt nach Spionageaffäre zurück",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-ruecktritt-100.html",
-      "published_at": "2026-11-12T17:20:04Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
