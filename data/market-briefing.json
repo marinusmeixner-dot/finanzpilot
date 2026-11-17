@@ -1,15 +1,15 @@
 {
   "schema_version": 1,
   "date": "2026-11-17",
-  "source_updated_at": "2026-11-12",
-  "title": "Dienstags-Briefing: Siemens-Cashflow richtig abgrenzen, NVIDIA-Bericht abwarten",
-  "summary": "17.11.2026: Siemens veröffentlichte am 12.11. für FY2026 108,2 Mrd. EUR Auftragseingang, 83,4 Mrd. EUR Umsatz und 12,1 Mrd. EUR Free Cashflow „all-in“ aus fortgeführten und nicht fortgeführten Aktivitäten. Die 2027-Prognose von 10,20–10,80 EUR EPS pre PPA ist mit 9,27 EUR vergleichbarem FY2026-EPS ohne Siemens Healthineers zu vergleichen, nicht mit 11,76 EUR berichteten FY2026-EPS pre PPA. Für NVIDIA sind Q3-Zahlen am 17.11. angekündigt, nicht als veröffentlicht behandelt. Keine aktuellen Kurse unterstellt.",
-  "interpretation": "Siemens-Primärquelle vom 12.11.2026: https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer. Der Free Cashflow „all-in“ von 12,1 Mrd. EUR umfasst fortgeführte und nicht fortgeführte Aktivitäten und ist daher nicht ohne Bereinigung als dauerhaftes FCFE des nach Healthineers-Abspaltung verbleibenden Konzerns verwendbar. Die 2027-EPS-Spanne entspricht gegenüber vergleichbaren 9,27 EUR rechnerisch etwa +10,0 bis +16,5 %, jedoch keiner Bewertung ohne Aktienkurs, Verschuldung, Capex und Aktienzahl. NVIDIA-Originalmitteilung vom 12.11.: https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition; angekündigte Quartalszahlen und Governance-Folgen getrennt prüfen. Keine neue Kaufempfehlung.",
+  "source_updated_at": "2026-11-17",
+  "title": "Dienstags-Briefing: EU-Herbstprognose, Siemens-Cashflow und NVIDIA-Bericht",
+  "summary": "17.11.2026: Die EU-Kommission prognostiziert für den Euroraum 2026 und 2027 jeweils 1,2 % reales BIP-Wachstum und Inflation von 3,2 % bzw. 3,1 %. Die Prognose ist kein realisierter Messwert. Siemens meldete am 12.11. für FY2026 108,2 Mrd. EUR Auftragseingang und 12,1 Mrd. EUR Free Cashflow all-in einschließlich nicht fortgeführter Aktivitäten; der Wert ist nicht ungeprüft als nachhaltiger Aktionärs-Cashflow anzusetzen. NVIDIA-Q3-Zahlen nicht ohne Originalveröffentlichung als bekannt behandeln.",
+  "interpretation": "EU-Kommission, Herbstprognose vom 17.11.2026: https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/autumn-2026-economic-forecast-shows-continued-growth-amid-higher-inflation_en. Der Euroraum-Ausblick 2026 von 1,2 % liegt über der Frühjahrsprognose von 0,9 %; zugleich bleibt die Inflationsprognose von 3,2 % ein Risiko für Diskontierungszinsen und reale Nachfrage. Kein unmittelbarer Nachweis steigender Gewinne einzelner Unternehmen. Siemens-Primärquelle vom 12.11.2026: https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer. FY2027-EPS pre PPA 10,20–10,80 EUR gegenüber vergleichbaren 9,27 EUR ohne Healthineers; 12,1 Mrd. EUR all-in FCF enthält nicht fortgeführte Aktivitäten. Keine Kaufempfehlung.",
   "highlights": [
     {
-      "story_id": "2026-11-12-nvidia-ceo-transition",
-      "title": "NVIDIA: bestätigter CEO-Wechsel vor Q3-Zahlen",
-      "why": "NVIDIA-Pressemitteilung 12.11.; Colette Kress interimistisch, Quartalszahlen für 17.11. angekündigt. Governance-Risiko belegt, Ertragseffekt noch offen."
+      "story_id": "2026-11-17-eu-autumn-forecast",
+      "title": "EU-Herbstprognose: moderates Wachstum bei hartnäckiger Inflation",
+      "why": "Originalprognose vom 17.11.: Euroraum-BIP 2026/2027 je +1,2 %, Inflation 2026 3,2 % und 2027 3,1 %; Prognoseunsicherheit und Energiepreise beachten."
     },
     {
       "story_id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
