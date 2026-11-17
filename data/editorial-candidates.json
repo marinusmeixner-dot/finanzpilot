@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T13:22:49.621187Z",
+  "updated_at": "2026-11-17T16:15:51.494554Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-4d2b814d0351413c2e",
+      "title": "EU wirft Temu mangelnden Einsatz gegen illegale Produkte vor",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/eu-temu-illegale-produkte-100.html",
+      "published_at": "2026-11-17T13:24:48Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-b022979f6a02c546d8",
       "title": "Marktbericht: Deutsche-Bank-Aktien nach neuen Vorwürfen unter Druck",
@@ -415,42 +424,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1683484.html",
       "published_at": "2026-11-13T19:05:55Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-337249edda3449fb77",
-      "title": "Cyberangriff auf Quantum Systems: Wie wurde der Drohnenhersteller zum Ziel?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/quantum-systems-cyberangriff-102.html",
-      "published_at": "2026-11-13T16:02:19Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5b90e5099266aaae8f",
-      "title": "IT-Störungen: Microsoft sieht \"deutliche Verbesserung\" der Lage",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-outlook-stoerung-100.html",
-      "published_at": "2026-11-13T15:40:27Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-63a1bad120d29c36e1",
-      "title": "EU-Emissionshandel: Mehr kostenlose Verschmutzungsrechte für die Industrie",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/industrie-emissionen-co2-zertifikate-100.html",
-      "published_at": "2026-11-13T14:35:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ae6d30f8be4528aef6",
-      "title": "Chicago Fed's Goolsbee says central bank 'has definitely got work to do' on inflation",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/13/chicago-feds-goolsbee-says-central-bank-has-definitely-got-work-to-do-on-inflation.html",
-      "published_at": "2026-11-13T14:22:07Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

@@ -670,11 +670,7 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": {
-        "id": "rss-337249edda3449fb77",
-        "date": "2026-11-13",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
