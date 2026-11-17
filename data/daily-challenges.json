@@ -1,63 +1,63 @@
 {
   "schema_version": 1,
-  "date": "2026-11-17",
-  "updated_at": "2026-11-17T01:03:44+01:00",
+  "date": "2026-11-18",
+  "updated_at": "2026-11-18T00:04:17+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
-  "explanation": "Drei neue offene Aufgaben für Dienstag. Sämtliche Fallzahlen sind ausdrücklich hypothetisch; Originalquellenbezug ist die Siemens-Geschäftsjahresmeldung vom 12.11.2026.",
+  "explanation": "Drei eigenständige hypothetische Rechenfälle; der Emittentenbericht dient nur als thematischer Primärquellenbezug, nicht als Beleg für die Übungszahlen.",
   "tasks": [
     {
-      "date": "2026-11-17",
-      "source": "Siemens AG – Geschäftsjahresmeldung",
-      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
-      "source_date": "2026-11-12",
-      "symbol": "SIE",
-      "id": "2026-11-17:market:backlog-risk",
       "kind": "market",
-      "title": "Auftragswachstum gegen Stornorisiko testen",
-      "context": "Hypothetischer Industriekonzern: Anfangsbestand 50 Mrd. €, Neuaufträge 30 Mrd. €, Umsatzrealisierung aus Bestand 25 Mrd. €, Stornierungen 3 Mrd. €. Alle Zahlen sind Übungsannahmen, nicht Siemens-Zahlen.",
-      "question": "Berechne den Endauftragsbestand und die Book-to-Bill-Ratio. Warum kann trotz steigenden Bestands die kurzfristige Liquidität schlechter werden? Nenne zwei im Geschäftsbericht zu prüfende Belege und eine Gegenhypothese.",
+      "id": "2026-11-18:market:orders-cash",
+      "title": "Auftragsbestand gegen Cash Conversion",
+      "context": "Hypothetische Werte: Aufträge 120 Mio. €, Umsatz 100 Mio. €, EBITDA 18 Mio. €, operativer Cashflow 7 Mio. €, Capex 9 Mio. €. Keine Siemens-Kennzahlen.",
+      "question": "Berechne Book-to-Bill, vereinfachten Free Cashflow und Cash Conversion (CFO/EBITDA). Erkläre zwei mögliche Ursachen der Diskrepanz und eine Gegenhypothese.",
       "rubric": [
-        "Endbestand 50+30−25−3 = 52 Mrd. €",
-        "Book-to-Bill = 30/25 = 1,20 unter der expliziten Annahme, dass die 25 Mrd. € den gesamten Periodenumsatz darstellen",
-        "Working Capital, Anzahlungen und Forderungslaufzeiten als mögliche Liquiditätskanäle trennen",
-        "Auftragsstornierungen und Kundenkonzentration anhand Primärbericht überprüfen; Gegenhypothese: margenschwache oder verschobene Aufträge"
-      ]
-    },
-    {
-      "date": "2026-11-17",
-      "source": "Siemens AG – Geschäftsjahresmeldung",
+        "Book-to-Bill 1,20",
+        "FCF CFO minus Capex = −2 Mio. €",
+        "CFO/EBITDA = 38,9 %; kein identischer Gewinn-/Cashflow-Begriff",
+        "Forderungsanstieg und Vorratsaufbau als Hypothesen, Kundenanzahlungen als Gegenhypothese; anhand Cashflow und Bilanz prüfen"
+      ],
+      "date": "2026-11-18",
+      "source": "Siemens AG – Geschäftsjahresmeldung als thematischer Primärquellenbezug; Zahlen hypothetisch",
       "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
       "source_date": "2026-11-12",
-      "symbol": "SIE",
-      "id": "2026-11-17:research:fcff-equity",
+      "symbol": "SIE"
+    },
+    {
       "kind": "research",
-      "title": "Unternehmenswert ist nicht Aktienwert",
-      "context": "Hypothetisches Unternehmen: normalisierter FCFF 6 Mrd. €, WACC 9 %, ewiges Wachstum 2 %, Nettoschulden einschließlich Leasing 18 Mrd. €, 1,2 Mrd. verwässerte Aktien. Vereinfachte ewige Rente ohne explizite Wachstumsphase.",
-      "question": "Berechne Unternehmenswert, Eigenkapitalwert und rechnerischen Wert je Aktie. Erkläre, weshalb dieser Wert keine belastbare Kaufempfehlung ist und welche drei Eingaben anhand des Originalberichts zu auditieren wären.",
+      "id": "2026-11-18:research:valuation-sensitivity",
+      "title": "Terminalwert-Sensitivität statt Scheingenauigkeit",
+      "context": "Hypothetischer stabiler FCFF nächstes Jahr 5 Mio. €, WACC 10 %, ewiges Wachstum 2 %, Nettoschulden 20 Mio. €, 10 Mio. verwässerte Aktien. Keine Siemens-Kennzahlen.",
+      "question": "Berechne Enterprise Value, Equity Value und Wert je Aktie; wiederhole bei WACC 11 %. Warum ist die Veränderung keine kurzfristige Kursprognose?",
       "rubric": [
-        "EV = 6/(0,09−0,02) = 85,71 Mrd. €",
-        "Eigenkapitalwert = 85,71−18 = 67,71 Mrd. €; je Aktie rund 56,43 €",
-        "WACC, terminales Wachstum und nachhaltiger FCFF dominieren das Modell; Sensitivität erforderlich",
-        "Leasing/Nettoschulden, verwässerte Aktienzahl und Capex-/Working-Capital-Normalisierung anhand Originalunterlagen prüfen"
-      ]
-    },
-    {
-      "date": "2026-11-17",
-      "source": "Siemens AG – Geschäftsjahresmeldung",
+        "EV bei 10 %: 5/(0,10−0,02)=62,5 Mio. €",
+        "Equity Value 42,5 Mio. €, 4,25 € je Aktie",
+        "Bei 11 %: EV 55,56 Mio. €, Equity 35,56 Mio. €, 3,56 € je Aktie",
+        "WACC-/Terminalannahmen, Schulden/Leasing und nachhaltigen FCFF prüfen; Marktpreis kann abweichen"
+      ],
+      "date": "2026-11-18",
+      "source": "Siemens AG – Geschäftsjahresmeldung als thematischer Primärquellenbezug; Zahlen hypothetisch",
       "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
       "source_date": "2026-11-12",
-      "symbol": "SIE",
-      "id": "2026-11-17:learning:margin-mix",
+      "symbol": "SIE"
+    },
+    {
       "kind": "learning",
-      "title": "Wachstum ohne Margenillusion",
-      "context": "Hypothetischer Konzern mit zwei Segmenten: A 12 Mrd. € Umsatz bei 20 % EBIT-Marge, B 8 Mrd. € bei 5 %. Im Folgejahr wächst B um 25 %, A bleibt unverändert. Segmentmargen bleiben gleich.",
-      "question": "Berechne beide Konzern-EBIT-Margen. Begründe, warum der Umsatz steigt, die Gesamtmarge aber sinkt, und formuliere eine prüfbare Gegenhypothese anhand der Segmentberichterstattung.",
+      "id": "2026-11-18:learning:margin-volume",
+      "title": "Umsatzmix und operative Hebelwirkung",
+      "context": "Hypothetisch: Produkt A Umsatz 60 Mio. € mit 25 % Deckungsbeitrag; Produkt B Umsatz 40 Mio. € mit 10 %. Fixkosten 12 Mio. €. Danach A −10 %, B +15 %, unveränderte Deckungsbeitragssätze.",
+      "question": "Berechne Ausgangs- und neues operatives Ergebnis, die prozentuale Ergebnisänderung und erläutere, weshalb Umsatzwachstum kein sicherer Gewinnindikator ist.",
       "rubric": [
-        "Ausgangs-EBIT = 2,4+0,4 = 2,8 Mrd. €; Marge 14,0 %",
-        "Folge-EBIT = 2,4+0,5 = 2,9 Mrd. € bei 22 Mrd. € Umsatz; Marge rund 13,18 %",
-        "Gewicht des margenschwächeren Segments steigt; EBIT absolut dennoch höher",
-        "Gegenhypothese: Skaleneffekte oder Preis-/Produktmix könnten B-Marge erhöhen; Segmentdefinitionen und Bereinigungen im Originalbericht kontrollieren"
-      ]
+        "Ausgangs-DB 15+4=19 Mio. €, Ergebnis 7 Mio. €",
+        "Neuer Umsatz A 54 und B 46 Mio. €, Gesamtumsatz unverändert 100 Mio. €",
+        "Neuer DB 13,5+4,6=18,1 Mio. €, Ergebnis 6,1 Mio. €, Veränderung −12,86 %",
+        "Mixeffekt und unveränderte Fixkosten erklären; Preis-, Kosten- und Volumenannahmen als Gegenhypothese prüfen"
+      ],
+      "date": "2026-11-18",
+      "source": "Siemens AG – Geschäftsjahresmeldung als thematischer Primärquellenbezug; Zahlen hypothetisch",
+      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
+      "source_date": "2026-11-12",
+      "symbol": "SIE"
     }
   ]
 }
