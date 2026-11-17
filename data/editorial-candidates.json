@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T19:02:17.559505Z",
+  "updated_at": "2026-11-17T22:21:11.622404Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-1107bed5d8477b9f6b",
+      "title": "Wirtschaft vor acht vom 17.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1685530.html",
+      "published_at": "2026-11-17T19:01:16Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-99ea3c0f408579d892",
       "title": "Jensen Huang kann sich Rückkehr an Nvidia-Spitze vorstellen",
@@ -230,6 +239,15 @@
       "status": "needs_primary_source"
     },
     {
+      "id": "rss-0839ee352b71d85604",
+      "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
+      "published_at": "2026-11-16T12:14:46Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
       "id": "rss-8d1cd2dbafc5e003b5",
       "title": "EU gibt UniCredit grünes Licht für Commerzbank-Übernahme",
       "source": "Tagesschau Wirtschaft",
@@ -424,24 +442,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bauen-polen-100.html",
       "published_at": "2026-11-14T07:24:30Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0839ee352b71d85604",
-      "title": "Lutnick faces questions over Nvidia spy scandal. His sons’ firm has deep ties to the chipmaker",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-      "published_at": "2026-11-13T19:11:13Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-080f2d466175c559ec",
-      "title": "Wirtschaft vor acht vom 13.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1683484.html",
-      "published_at": "2026-11-13T19:05:55Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
