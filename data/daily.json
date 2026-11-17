@@ -1,10 +1,58 @@
 {
-  "date": "2026-11-13",
-  "updated_at": "2026-11-16T17:57:44+01:00",
+  "date": "2026-11-17",
+  "updated_at": "2026-11-17T17:56:56+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Destatis meldet 2.067 Unternehmensinsolvenzen im August 2026 (+4,4 % zum Vorjahr). Die zeitverzögerte Statistik ist ein Kreditrisikoindikator, keine unmittelbare Börsenprognose.",
+  "intro": "Die EU-Kommission erwartet für Deutschland 2026 nun 1,3 % reales Wachstum statt 0,6 % im Frühjahr; die Prognose für 2027 beträgt 1,0 %. Höhere Inflation und schwache private Investitionen begrenzen die Aussagekraft für Aktien.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-17-ec-germany-autumn-growth-inflation",
+      "title": "EU-Herbstprognose für Deutschland: Wachstum revidiert, Inflationsrisiko bleibt",
+      "published": "2026-11-17",
+      "date": "2026-11-17",
+      "category": "Konjunktur",
+      "symbols": [],
+      "source": "Europäische Kommission, Herbstprognose Deutschland, 17.11.2026",
+      "url": "https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/germany/economic-forecast-germany_en",
+      "why": "Die Kommission hebt ihre deutsche BIP-Prognose für 2026 gegenüber Mai von 0,6 auf 1,3 Prozent an; für 2027 werden 1,0 Prozent erwartet.",
+      "impact": "Export- und Investitionsimpulse können Unternehmensumsätze stützen; gleichzeitig belasten Energiepreise, Finanzierungskosten und schwache private Investitionen die Margen. Daraus folgt kein pauschales Aktienkaufsignal.",
+      "article": {
+        "lead": "Die Europäische Kommission erwartet für Deutschland am 17. November 2026 ein reales Wirtschaftswachstum von 1,3 Prozent im laufenden Jahr, 1,0 Prozent 2027 und 0,7 Prozent 2028. Die Werte sind Prognosen, keine gemessenen Jahresergebnisse.",
+        "sections": [
+          {
+            "heading": "Was sich gegenüber dem Frühjahr geändert hat",
+            "paragraphs": [
+              "Im Mai erwartete die Kommission 0,6 Prozent Wachstum für 2026 und 0,9 Prozent für 2027. Die neue Einschätzung ist vor allem durch stärkere Exporte Anfang 2026, KI-bezogene internationale Nachfrage sowie Verteidigungs- und Infrastrukturaufträge geprägt. Die Prognose vom 17.11.2026 ist unter der Originalquelle nachprüfbar: https://economy-finance.ec.europa.eu/economic-surveillance-eu-member-states/country-pages-including-country-reports/germany/economic-forecast-germany_en"
+            ]
+          },
+          {
+            "heading": "Welche Unternehmen profitieren könnten",
+            "paragraphs": [
+              "Hersteller von Strom-, Kühl-, Industrie- und Rechenzentrumsausrüstung können von Investitionsprojekten profitieren. Umsatz entsteht aber erst durch tatsächliche Lieferungen und Abnahmen; Aufträge sind nicht automatisch Gewinn oder freier Cashflow. Für einen konkreten Emittenten müssen Segmentumsätze, Auftragseingang, Auftragsbestand und Margen separat belegt werden."
+            ]
+          },
+          {
+            "heading": "Inflation, Finanzierung und Staatshaushalt",
+            "paragraphs": [
+              "Die Kommission erwartet für Deutschland 2,9 Prozent Inflation 2026, 3,2 Prozent 2027 und 2,0 Prozent 2028. Steigende Energie- und Finanzierungskosten können Investitionen verzögern und den Gegenwartswert künftiger Gewinne verringern. Die Schuldenquote könnte von 62,8 Prozent 2025 auf 68,9 Prozent 2028 steigen; dies ist eine Projektion unter politischen und wirtschaftlichen Annahmen."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Prognoserisiko",
+            "paragraphs": [
+              "Ein stärkerer Exportauftakt muss nicht dauerhaft anhalten. Hohe Energiepreise, Arbeitskosten und geringe Kapazitätsauslastung können die Erholung dämpfen; 2028 erwartet die Kommission bereits schwächeres Wachstum. Verzögerte Infrastrukturprojekte begrenzen den kurzfristigen Nachfrageimpuls. Sinkende Energiepreise oder raschere Investitionen wären dagegen positive Abweichungen."
+            ]
+          },
+          {
+            "heading": "Was für eine Aktienbewertung noch fehlt",
+            "paragraphs": [
+              "Ein Makroausblick allein liefert keinen fairen Wert. Für eine Bewertung braucht es je Unternehmen belastbare Umsatz- und Margenannahmen, normalisierte Cashflows nach Investitionen, Kapitalstruktur, Aktienzahl, Währung und einen datierten Börsenkurs. Szenarien sollten prüfen, wie viel Wachstum bereits eingepreist ist, und mit einem passenden Branchenwert sowie einem währungsgleichen breiten ETF verglichen werden."
+            ]
+          }
+        ],
+        "conclusion": "Die neue EU-Prognose verbessert das kurzfristige Bild für Deutschlands Wirtschaft, bestätigt aber keine automatische Gewinnsteigerung einzelner Aktien. Inflations- und Umsetzungsrisiken bleiben entscheidend."
+      }
+    },
     {
       "id": "2026-11-16-eu-cold-rolled-steel-antidumping",
       "title": "EU verhängt neue Antidumpingzölle auf kaltgewalzten Stahl",
