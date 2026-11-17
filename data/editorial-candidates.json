@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T16:15:51.494554Z",
+  "updated_at": "2026-11-17T19:02:17.559505Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-99ea3c0f408579d892",
+      "title": "Jensen Huang kann sich Rückkehr an Nvidia-Spitze vorstellen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rueckkehr-100.html",
+      "published_at": "2026-11-17T18:03:42Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7126f463d54a8321ec",
+      "title": "Warum eine Konjunkturerholung noch kein Ende der Jobkrise bedeutet",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/industrie-aufschwung-jobabbau-100.html",
+      "published_at": "2026-11-17T16:47:06Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-4d2b814d0351413c2e",
       "title": "EU wirft Temu mangelnden Einsatz gegen illegale Produkte vor",
