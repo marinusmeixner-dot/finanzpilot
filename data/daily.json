@@ -1,10 +1,58 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T15:04:00+01:00",
+  "updated_at": "2026-11-18T23:00:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "NVIDIA hat am 17.11. neue Quartalszahlen veröffentlicht: 115,8 Mrd. USD Umsatz (+103 % zum Vorjahr); die Q4-Umsatzprognose beträgt 130 Mrd. USD bei erwarteter Bruttomarge von 71–72 %. Die zusätzlichen Quartalswoche und der Cashflow sind gesondert zu prüfen.",
+  "intro": "Neu: Das am 18.11. veröffentlichte Fed-Protokoll zeigt Inflations- und Finanzierungsrisiken des KI-Ausbaus. Daneben bleiben die NVIDIA-Quartalszahlen vom 17.11. für Margen und Cashflow zentral.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-18-fed-october-minutes-inflation-ai-financing",
+      "title": "Fed-Protokoll: Inflationsdruck und KI-Finanzierung verändern die Risikorechnung",
+      "published": "2026-11-18",
+      "date": "2026-11-18",
+      "category": "Geldpolitik",
+      "symbols": [],
+      "source": "Federal Reserve, FOMC-Protokoll der Sitzung vom 27.–28. Oktober 2026, veröffentlicht 18.11.2026",
+      "url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "why": "Erst heute veröffentlichte Sitzungsniederschrift dokumentiert die geldpolitische Abwägung und konkrete Finanzstabilitätsrisiken der KI-Investitionswelle.",
+      "impact": "Länger hohe Zinsen erhöhen Diskontierungs- und Refinanzierungskosten; KI-Leasing und verschachtelte Finanzierungen können Verluste bei enttäuschender Auslastung verstärken, ohne einen Kursrückgang zu beweisen.",
+      "article": {
+        "lead": "Die US-Notenbank Federal Reserve hat am 18. November das Protokoll ihrer Sitzung vom 27.–28. Oktober 2026 veröffentlicht. Damals beließ der Offenmarktausschuss FOMC den Leitzinskorridor bei 3,75–4,00 %. Das Protokoll zeigt, weshalb Inflation und Risiken der KI-Finanzierung getrennt analysiert werden müssen.",
+        "sections": [
+          {
+            "heading": "Was tatsächlich entschieden wurde",
+            "paragraphs": [
+              "Der FOMC hielt im Oktober den Zielkorridor von 3,75–4,00 % unverändert. Lisa Cook und Beth Hammack stimmten dagegen und bevorzugten eine Erhöhung um 0,25 Prozentpunkte. Das heute veröffentlichte Protokoll dokumentiert damalige Einschätzungen, nicht bereits eine Entscheidung für Dezember."
+            ]
+          },
+          {
+            "heading": "Inflationsrisiko und Zinskanal",
+            "paragraphs": [
+              "Die Teilnehmer diskutierten anhaltenden Inflationsdruck und die Möglichkeit weiterer Straffung. Steigende risikofreie Zinsen verteuern neue Finanzierung und erhöhen bei unveränderten Cashflow-Erwartungen den Abzinsungsfaktor. Besonders langlaufende Wachstumserwartungen reagieren empfindlich; der tatsächliche Effekt hängt auch von Gewinnen und Risikoprämien ab."
+            ]
+          },
+          {
+            "heading": "KI-Investitionen und versteckte Verpflichtungen",
+            "paragraphs": [
+              "Der Fed-Stab verwies auf rasch wachsende Schulden im KI-Ausbau, außerbilanzielle Leasingverpflichtungen und zirkuläre Finanzierungsstrukturen. Wenn Rechenzentren weniger verdienen als erwartet, können solche Verpflichtungen Verluste verstärken. Die Aussage ist eine Systemrisikowarnung und keine Feststellung, dass jedes KI-Unternehmen überschuldet ist."
+            ]
+          },
+          {
+            "heading": "Gegenargument und Grenzen",
+            "paragraphs": [
+              "Die Fed betrachtete das Finanzsystem zugleich als widerstandsfähig; die beschriebenen Stressszenarien sind keine Basisprognosen. Produktivitätsfortschritte durch KI können mittelfristig Erträge und Kapazitäten steigern. Das Protokoll beruht auf dem Informationsstand Ende Oktober und ist kein Live-Indikator für heutige Zinserwartungen."
+            ]
+          },
+          {
+            "heading": "Folgen für Unternehmensbewertungen",
+            "paragraphs": [
+              "Bei KI-Infrastrukturbetreibern sind tatsächliche zahlungswirksame Investitionen, Leasinglaufzeiten, vertraglich zugesagte Zahlungen, Verschuldung und Auslastung getrennt zu prüfen. Bei Software- und Chipanbietern zählt, wie viel der Kundennachfrage in dauerhaft freien Cashflow mündet. Ohne unternehmensspezifische Zahlen, aktuelle Kurse und Szenarien ergibt sich aus dem Fed-Protokoll kein seriöses Kursziel."
+            ]
+          }
+        ],
+        "conclusion": "Das neue Primärdokument ist ein Anlass, Zins- und KI-Finanzierungsrisiken in Bewertungsmodellen zu überprüfen, nicht pauschal Technologieaktien zu verkaufen. Originalquelle: https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm"
+      }
+    },
     {
       "id": "2026-11-17-nvidia-q3-fy27-results",
       "title": "NVIDIA verdoppelt Quartalsumsatz – doch der Ausblick bringt Margen- und Führungsrisiken",
