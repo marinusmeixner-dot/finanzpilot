@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T15:57:46.630425Z",
+  "updated_at": "2026-11-18T17:58:31.361410Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-c78e46bb21004e3fd8",
+      "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
+      "published_at": "2026-11-18T16:14:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-38faf5099c2ee8c041",
       "title": "Deutscher Ökonom Brunnermeier als EZB-Chefvolkswirt nominiert",
