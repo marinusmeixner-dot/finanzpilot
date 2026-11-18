@@ -2,10 +2,15 @@
   "schema_version": 1,
   "date": "2026-11-18",
   "source_updated_at": "2026-11-17",
-  "title": "Mittwochs-Briefing: EU-Prognose und Cashflow-Prüfung vor neuen Quartalszahlen",
-  "summary": "Stand 18.11.2026, 02:00 Europe/Berlin: Weiterhin relevant sind die EU-Herbstprognose vom 17.11. und die bereits veröffentlichten Siemens- und Siemens-Energy-Geschäftsjahreszahlen. Dies ist eine erneute Einordnung vorhandener Originalmeldungen, keine neue Unternehmensmeldung. Für noch nicht originalveröffentlichte NVIDIA-Quartalszahlen werden keine Ergebnisse unterstellt.",
-  "interpretation": "EU-Kommission, Herbstprognose vom 17.11.2026: https://economy-finance.ec.europa.eu/economic-forecast-and-surveys/economic-forecasts/autumn-2026-economic-forecast-shows-continued-growth-amid-higher-inflation_en. Die Prognose für den Euroraum ist keine Ist-Zahl. Siemens AG, Geschäftsjahresmeldung vom 12.11.2026: https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer. Der berichtete all-in Free Cashflow von 12,1 Mrd. EUR schließt nicht fortgeführte Aktivitäten ein und darf nicht ohne Bereinigung als normalisierter Aktionärs-Cashflow dienen. Keine neue Bewertung oder Kaufempfehlung.",
+  "title": "NVIDIA veröffentlicht Q3-Zahlen: Rekordumsatz trifft niedrigeren Margenausblick",
+  "summary": "NVIDIA meldete am 17.11.2026 für Q3 FY2027 115,8 Mrd. USD Umsatz (+103 % zum Vorjahr), davon 107,6 Mrd. USD Data Center. Für Q4 werden 130 Mrd. USD Umsatz (±3 %) bei 71–72 % GAAP-Bruttomarge erwartet; Q4 enthält eine zusätzliche Woche. Keine Aussage über fairen Aktienwert ohne Cashflow- und Bilanzprüfung.",
+  "interpretation": "Primärquelle NVIDIA Investor Relations, 17.11.2026: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/. Die Q4-Marge liegt unter den 74,8 % des Q3; der Umsatzausblick ist keine garantierte Ist-Zahl. Governance- und Exportkontrollrisiken gesondert prüfen.",
   "highlights": [
+    {
+      "story_id": "2026-11-17-nvidia-q3-fy27-results",
+      "title": "NVIDIA: Umsatz +103 %, Q4-Margenausblick schwächer",
+      "why": "Neuer Originalbericht vom 17.11.; Data Center 107,6 Mrd. USD, Q4-Prognose mit zusätzlicher Woche und 71–72 % Bruttomarge."
+    },
     {
       "story_id": "2026-11-17-eu-autumn-forecast",
       "title": "EU-Herbstprognose: moderates Wachstum bei hartnäckiger Inflation",
@@ -15,12 +20,6 @@
       "story_id": "2026-11-12-siemens-fy2026-orders-digital-cashflow",
       "title": "Siemens AG: Rekordaufträge, digitales Wachstum und Cashflow",
       "why": "Originalbericht 12.11.; Auftragsbestand 143 Mrd. Euro und angehobene Mittelfristziele, jedoch offene Bewertung nach Healthineers-Neuordnung."
-    },
-    {
-      "story_id": "2026-11-11-siemens-energy-fy2026-results",
-      "title": "Siemens Energy: Rekordjahr, Windgeschäft an Gewinnschwelle – 2030-Ziele bleiben ambitioniert",
-      "why": "Emittentenbericht vom 11.11.: 44,2 Mrd. EUR Umsatz, 12,4 % Marge vor Sondereffekten, 68,1 Mrd. EUR Auftragseingang. 2027-Prognose 14–16 % Umsatzwachstum und Marge; 8,799 Mrd. EUR Free Cashflow vor Steuern 2026 sind wegen Kundenanzahlungen nicht als normalisierter FCFE zu interpretieren.",
-      "watch": "Cashflow-Umsetzung der Aufträge, Gamesa, Kapitalbindung und aktuelle Bewertung"
     }
   ],
   "next_watch": "Parrot SA (Euronext Paris: PARRO; ISIN FR0004038263) – Q3-Mitteilung vom 28.10.2026 anhand des Original-PDF geprüft: Q3-Umsatz 23,7 Mio. EUR (+40 %), Neunmonatsumsatz 81,0 Mio. EUR (+60 %); professionelle Mikrodrohnen Q3 16,6 Mio. EUR (+68 %), 9M 58,7 Mio. EUR (+110 %), Infrastruktursoftware Q3 7,0 Mio. EUR (−1 %), 9M 22,1 Mio. EUR (−2 %). Management erwartet rund 110 Mio. EUR Jahresumsatz. Die Mikrodrohnen-Sparte erreichte nur auf rollierender Zwölfmonatsbasis operativen Break-even, Q3 allein war negativ. Q3-Meldung enthält keine vollständige Konzern-Kapitalflussrechnung, Bilanz oder belastbaren normalisierten FCFE; der ältere H1-CFO von −2,2 Mio. EUR bleibt ein Warnsignal. Vor einer neuen Bewertungsstory: H1-Bilanz/Leasing, Aktienzahl, Börsenkurs und Ausführungsrisiko institutioneller Aufträge verifizieren. Originalquelle 28.10.2026: https://www.parrot.com/assets/s3fs-public/media-public/2026/PARROT_CP_T3-2026_20261028_EN_DEF.pdf. Redaktionsstatus der privaten Watchlist-Queue wird ausschließlich in Supabase geführt und nicht als dauerhafte Aussage im öffentlichen Marktbriefing veröffentlicht.",
