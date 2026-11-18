@@ -1,6 +1,6 @@
 {
   "date": "2026-11-18",
-  "updated_at": "2026-11-18T08:03:00+01:00",
+  "updated_at": "2026-11-18T15:04:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
   "intro": "NVIDIA hat am 17.11. neue Quartalszahlen veröffentlicht: 115,8 Mrd. USD Umsatz (+103 % zum Vorjahr); die Q4-Umsatzprognose beträgt 130 Mrd. USD bei erwarteter Bruttomarge von 71–72 %. Die zusätzlichen Quartalswoche und der Cashflow sind gesondert zu prüfen.",
   "lesson_id": "valuation",
@@ -36,7 +36,7 @@
           {
             "heading": "Ausblick und mögliche Cashflow-Folgen",
             "paragraphs": [
-              "Für Q4 FY2027 prognostiziert NVIDIA 130,0 Milliarden US-Dollar Umsatz mit einer Bandbreite von ±3 %. Die GAAP-Bruttomarge soll 71–72 % betragen. Das Quartal enthält eine zusätzliche Woche, weshalb ein einfacher sequenzieller Wachstumsvergleich verzerrt wäre. Höhere Erlöse und operative Gewinne können den Cashflow stärken; die Pressemeldung allein reicht jedoch nicht, um normalisierten Free Cashflow, Working Capital, Aktienrückkäufe und langfristige Investitionsrenditen belastbar zu modellieren."
+              "Für Q4 FY2027 prognostiziert NVIDIA 130,0 Milliarden US-Dollar Umsatz (±3 %) und 71–72 % GAAP-Bruttomarge; das Quartal enthält eine zusätzliche Woche. Die veröffentlichte Q3-Cashflow-Rechnung belegt 48,253 Mrd. USD operativen Mittelzufluss, 4,422 Mrd. USD Käufe von Sachanlagen und immateriellen Werten sowie 0,054 Mrd. USD entsprechende Tilgungen. Daraus ergibt sich der vom Unternehmen ausgewiesene Free Cashflow von 43,777 Mrd. USD (Vorjahresquartal: 22,089 Mrd. USD). Forderungen belasteten den Q3-Cashflow um 18,052 Mrd. USD und Vorräte um 8,148 Mrd. USD; der operative Cashflow bleibt damit deutlich unter dem Nettogewinn von 65,287 Mrd. USD. Diese Quartalswerte sind keine normalisierte nachhaltige Jahresprognose. Quelle: NVIDIA Q3 FY2027, 17.11.2026, konsolidierte Cashflow-Rechnung und FCF-Überleitung."
             ]
           },
           {
@@ -48,7 +48,7 @@
           {
             "heading": "Was vor einer Bewertung fehlt",
             "paragraphs": [
-              "Für einen fairen Aktienwert müssen die jüngsten Cashflow-Rechnungen und Bilanzpositionen, verwässerte Aktienzahl, mögliche Verpflichtungen, ein normalisierter Investitionsbedarf und ein zeitgleicher Aktienkurs ausgewertet werden. Sensitivitäten für Umsatzwachstum, Marge, Diskontsatz und Terminalwert sowie ein Vergleich mit Alternativen oder einem breit gestreuten ETF sind erforderlich. Ohne diese Prüfung folgt aus den Quartalszahlen weder ein Kursziel noch eine Kaufempfehlung. Originalquelle vom 17.11.2026: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+              "Die Primärquelle vom 17.11.2026 weist für den 25.10.2026 29,089 Mrd. USD Zahlungsmittel, 24,423 Mrd. USD handelbare Schuldpapiere, 32,371 Mrd. USD langfristige Finanzschulden und 5,777 Mrd. USD langfristige operative Leasingverbindlichkeiten aus. Zusätzlich stehen 44,219 Mrd. USD börsennotierte Beteiligungen und 65,528 Mrd. USD nicht börsennotierte Wertpapiere in der Bilanz; deren Wert- und Liquiditätsrisiko darf nicht wie Bargeld behandelt werden. Verwässerte gewichtete Quartalsaktienzahl: 24,186 Mrd. Aktien. Vor einer Fair-Value-Aussage fehlen aktuelle Kurs-/Währungsbasis, nachhaltige Working-Capital- und Capex-Normalisierung, vollständige Schuld-/Leasingfälligkeiten und ein sensitivitätsgeprüftes DCF samt ETF-/Peer-Vergleich. Originalquelle: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
             ]
           }
         ],
