@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T04:05:26.871570Z",
+  "updated_at": "2026-11-18T07:04:35.051501Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-ab466bf51949b628c8",
+      "title": "Baugenehmigungen für Wohnungen im September 2026: -14,8 % zum Vorjahresmonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_402_3111.html",
+      "published_at": "2026-11-18T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a4603d168fc8060671",
+      "title": "Auftragsbestand im Verarbeitenden Gewerbe im September 2026: +0,8 % zum Vormonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_403_421.html",
+      "published_at": "2026-11-18T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8121834d57388796c5",
+      "title": "Erwerbstätigkeit im 3. Quartal 2026 saisonbereinigt gegenüber dem Vorquartal gesunken",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_404_13321.html",
+      "published_at": "2026-11-18T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-923514921329fae943",
+      "title": "Wenig Bewegung beim DAX erwartet",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nvidia-100.html",
+      "published_at": "2026-11-18T06:17:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5b8ef678648749d6fa",
+      "title": "Zinsalarm: Bundesbank-Chef Nagel will „nochmal an der Zinsschraube drehen“ – was die drohende EZB-Zinserhöhung für DAX, Banken und Sparer bedeutet - AktienCheck.de",
+      "source": "Google News: EU/Deutschland",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSEpiZlBGUUJ1ZUotTnNvZGJVUzlIcVhXdVIyNndUakNNLVNOeWdRbXNITUVuQzVoZzZYeVAtTmxYekxqMW1XQktHek1HckNZdVZrdzc5NnRucGdCTmFVUnFGS1BvaElsSUp0Y21WUkRBWDZmVERCWUV2S2dJY21rSUVxMEY4RURFTzZqT2RGTWZER0JJVmJ3OVY3X1U3SUJ1aHpRRGZob1RzbjdNUFE4?oc=5",
+      "published_at": "2026-11-18T04:49:53Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-db4a5e6e7462714458",
+      "title": "Putin says EU is losing industry, falling behind competition ahead of meeting with Trump, Xi",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
+      "published_at": "2026-11-18T04:27:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-7cbf236433d190bbe7",
       "title": "\"An der Zinsschraube drehen\", um die Inflation zu bekämpfen",
