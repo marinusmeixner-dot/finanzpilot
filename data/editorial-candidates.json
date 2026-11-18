@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T15:49:54.915411Z",
+  "updated_at": "2026-11-18T15:57:46.630425Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -464,6 +464,15 @@
       "status": "needs_primary_source"
     },
     {
+      "id": "rss-da685c538926ac6e85",
+      "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
+      "published_at": "2026-11-16T12:13:23Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
       "id": "rss-8d1cd2dbafc5e003b5",
       "title": "EU gibt UniCredit grünes Licht für Commerzbank-Übernahme",
       "source": "Tagesschau Wirtschaft",
@@ -613,15 +622,6 @@
       "source": "Google News: EU/Deutschland",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOanhyc1BCM3hGaFBBb1g0ZnQ4X1VPUkphVTlsNjEtclFIZWx2czNaaUZISTlNMmNPaktLYlVKNXhkRzk2aGFqRGhtMkcyS1ZvYU1KakFiNkIxTUduNks2X1dQWXFNdlA0UG5FUzBTUUFuSmVZNm1DNUFmLUNlVnFPTlNpdDVCTjRlbnhxZW81aVE1LXc?oc=5",
       "published_at": "2026-11-15T02:43:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-da685c538926ac6e85",
-      "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
-      "published_at": "2026-11-14T15:50:43Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
