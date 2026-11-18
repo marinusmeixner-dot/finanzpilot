@@ -1,63 +1,63 @@
 {
   "schema_version": 1,
-  "date": "2026-11-18",
-  "updated_at": "2026-11-18T00:04:17+01:00",
+  "date": "2026-11-19",
+  "updated_at": "2026-11-19T00:56:54+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
-  "explanation": "Drei eigenständige hypothetische Rechenfälle; der Emittentenbericht dient nur als thematischer Primärquellenbezug, nicht als Beleg für die Übungszahlen.",
+  "explanation": "Drei neue, voneinander unabhängige hypothetische Prüfungsfälle. Die verlinkten Primärquellen liefern den Anlass, nicht die frei erfundenen Übungszahlen.",
   "tasks": [
     {
       "kind": "market",
-      "id": "2026-11-18:market:orders-cash",
-      "title": "Auftragsbestand gegen Cash Conversion",
-      "context": "Hypothetische Werte: Aufträge 120 Mio. €, Umsatz 100 Mio. €, EBITDA 18 Mio. €, operativer Cashflow 7 Mio. €, Capex 9 Mio. €. Keine Siemens-Kennzahlen.",
-      "question": "Berechne Book-to-Bill, vereinfachten Free Cashflow und Cash Conversion (CFO/EBITDA). Erkläre zwei mögliche Ursachen der Diskrepanz und eine Gegenhypothese.",
+      "id": "2026-11-19:market:discount-rate",
+      "title": "Zinsanstieg und Barwert: Wie empfindlich ist eine Aktie?",
+      "context": "Hypothetischer Zahlungsstrom von 100 Mio. € am Ende von Jahr 5; sonst keine Cashflows. Diskontierungszins zunächst 8 %, anschließend 10 %. Keine Fed-Prognose.",
+      "question": "Berechne beide Barwerte, absolute und prozentuale Differenz. Erkläre, warum daraus kein pauschaler Rückgang aller Aktien um denselben Prozentsatz folgt, und nenne zwei Gegenkräfte.",
       "rubric": [
-        "Book-to-Bill 1,20",
-        "FCF CFO minus Capex = −2 Mio. €",
-        "CFO/EBITDA = 38,9 %; kein identischer Gewinn-/Cashflow-Begriff",
-        "Forderungsanstieg und Vorratsaufbau als Hypothesen, Kundenanzahlungen als Gegenhypothese; anhand Cashflow und Bilanz prüfen"
+        "Barwert bei 8 %: 100/1,08^5 = 68,06 Mio. €",
+        "Barwert bei 10 %: 100/1,10^5 = 62,09 Mio. €",
+        "Differenz −5,97 Mio. € bzw. −8,77 % bezogen auf den ursprünglichen Barwert",
+        "Unterschiedliche Laufzeiten und Risikoprämien; höhere künftige Cashflows oder niedrigere Risikoprämie als Gegenkräfte"
       ],
-      "date": "2026-11-18",
-      "source": "Siemens AG – Geschäftsjahresmeldung als thematischer Primärquellenbezug; Zahlen hypothetisch",
-      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
-      "source_date": "2026-11-12",
-      "symbol": "SIE"
+      "date": "2026-11-19",
+      "source": "Federal Reserve – FOMC Minutes Oktober 2026; Beispielzahlen hypothetisch",
+      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "source_date": "2026-11-18",
+      "symbol": ""
     },
     {
       "kind": "research",
-      "id": "2026-11-18:research:valuation-sensitivity",
-      "title": "Terminalwert-Sensitivität statt Scheingenauigkeit",
-      "context": "Hypothetischer stabiler FCFF nächstes Jahr 5 Mio. €, WACC 10 %, ewiges Wachstum 2 %, Nettoschulden 20 Mio. €, 10 Mio. verwässerte Aktien. Keine Siemens-Kennzahlen.",
-      "question": "Berechne Enterprise Value, Equity Value und Wert je Aktie; wiederhole bei WACC 11 %. Warum ist die Veränderung keine kurzfristige Kursprognose?",
+      "id": "2026-11-19:research:ai-capex",
+      "title": "KI-Wachstum: Gewinn ist nicht Free Cashflow",
+      "context": "Hypothetischer KI-Infrastrukturanbieter: CFO 24 Mrd. USD, zahlungswirksamer Capex 31 Mrd. USD, neue Leasingverpflichtungen 8 Mrd. USD, Umsatzwachstum 45 %. Keine NVIDIA-Unternehmenszahlen.",
+      "question": "Berechne vereinfachten Free Cashflow, erkläre die separate Behandlung der Leasingverpflichtungen und formuliere ein überprüfbares Gegenargument zur These, hohes Umsatzwachstum belege einen günstigen Aktienkurs.",
       "rubric": [
-        "EV bei 10 %: 5/(0,10−0,02)=62,5 Mio. €",
-        "Equity Value 42,5 Mio. €, 4,25 € je Aktie",
-        "Bei 11 %: EV 55,56 Mio. €, Equity 35,56 Mio. €, 3,56 € je Aktie",
-        "WACC-/Terminalannahmen, Schulden/Leasing und nachhaltigen FCFF prüfen; Marktpreis kann abweichen"
+        "FCF = CFO − Capex = −7 Mrd. USD",
+        "Leasingverpflichtungen nicht nochmals pauschal als sofortiger Capex abziehen; Zahlungszeitpunkt, Bilanzierung und FCF-Definition prüfen",
+        "Umsatzwachstum ist weder positive Cash-Conversion noch faire Bewertung",
+        "Gegenhypothese: spätere Auslastung verbessert Cashflows; prüfen über Vertragslaufzeiten, tatsächliche Cashflows und Kapitalbedarf"
       ],
-      "date": "2026-11-18",
-      "source": "Siemens AG – Geschäftsjahresmeldung als thematischer Primärquellenbezug; Zahlen hypothetisch",
-      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
-      "source_date": "2026-11-12",
-      "symbol": "SIE"
+      "date": "2026-11-19",
+      "source": "Federal Reserve – FOMC Minutes Oktober 2026; Beispielzahlen hypothetisch",
+      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "source_date": "2026-11-18",
+      "symbol": ""
     },
     {
       "kind": "learning",
-      "id": "2026-11-18:learning:margin-volume",
-      "title": "Umsatzmix und operative Hebelwirkung",
-      "context": "Hypothetisch: Produkt A Umsatz 60 Mio. € mit 25 % Deckungsbeitrag; Produkt B Umsatz 40 Mio. € mit 10 %. Fixkosten 12 Mio. €. Danach A −10 %, B +15 %, unveränderte Deckungsbeitragssätze.",
-      "question": "Berechne Ausgangs- und neues operatives Ergebnis, die prozentuale Ergebnisänderung und erläutere, weshalb Umsatzwachstum kein sicherer Gewinnindikator ist.",
+      "id": "2026-11-19:learning:margin-sensitivity",
+      "title": "Bruttomarge: Wachstum kann sinkende Rentabilität verdecken",
+      "context": "Hypothetischer Chiphersteller: alter Umsatz 80 Mrd. USD, Bruttomarge 75 %; neuer Umsatz 100 Mrd. USD, Bruttomarge 70 %. Operative Kosten jeweils 35 Mrd. USD. Keine NVIDIA-Istzahlen.",
+      "question": "Berechne Bruttogewinn und vereinfachtes operatives Ergebnis für beide Perioden sowie die jeweilige operative Marge. Erläutere eine plausible Ursache sinkender Bruttomarge und eine Gegenhypothese.",
       "rubric": [
-        "Ausgangs-DB 15+4=19 Mio. €, Ergebnis 7 Mio. €",
-        "Neuer Umsatz A 54 und B 46 Mio. €, Gesamtumsatz unverändert 100 Mio. €",
-        "Neuer DB 13,5+4,6=18,1 Mio. €, Ergebnis 6,1 Mio. €, Veränderung −12,86 %",
-        "Mixeffekt und unveränderte Fixkosten erklären; Preis-, Kosten- und Volumenannahmen als Gegenhypothese prüfen"
+        "Bruttogewinn alt 60 Mrd. USD, neu 70 Mrd. USD",
+        "Operatives Ergebnis alt 25 Mrd. USD, neu 35 Mrd. USD",
+        "Operative Marge alt 31,25 %, neu 35 %",
+        "Sinkende Produktpreise oder teurerer Mix als Hypothese; Skaleneffekte oder günstigere Fertigung als Gegenhypothese, durch Segmentdaten prüfen"
       ],
-      "date": "2026-11-18",
-      "source": "Siemens AG – Geschäftsjahresmeldung als thematischer Primärquellenbezug; Zahlen hypothetisch",
-      "source_url": "https://press.siemens.com/global/de/pressemitteilung/herausragende-leistung-im-geschaeftsjahr-2026-industrielle-ki-als-motor-fuer",
-      "source_date": "2026-11-12",
-      "symbol": "SIE"
+      "date": "2026-11-19",
+      "source": "NVIDIA Investor Relations – Q3 FY2027; Beispielzahlen hypothetisch",
+      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/",
+      "source_date": "2026-11-17",
+      "symbol": "NVDA"
     }
   ]
 }
