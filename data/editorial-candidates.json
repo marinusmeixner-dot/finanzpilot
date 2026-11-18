@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T07:04:35.051501Z",
+  "updated_at": "2026-11-18T11:56:49.944097Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-a63631dc7d907029ea",
+      "title": "Wie riskant ist Nvidias Kurssturz für ETF-Sparer?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/nvidia-kurssturz-etf-sparer-risiken-100.html",
+      "published_at": "2026-11-18T10:17:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-ec65e6b6f59c91f784",
+      "title": "Update Wirtschaft vom 18.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1685746.html",
+      "published_at": "2026-11-18T09:20:58Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a0b7fd9274bf7a4677",
+      "title": "Baugenehmigungen von Wohnungen brechen nach starkem Anstieg ein",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/wohnungsbau-september-100.html",
+      "published_at": "2026-11-18T09:01:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-fe20f2a92eb2eba2ab",
+      "title": "Stromsteuersenkung und Spritpreisdeckel - zeitlich begrenzt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-einigung-stromsteuer-spritpreisdeckel-100.html",
+      "published_at": "2026-11-18T08:55:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f9dabe42543e9455c2",
+      "title": "Stromsteuersenkung und Spritpreisdeckel: Was die Entlastungen im Alltag bringen könnten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/was-bringt-stromsteuer-senkung-koalitionsausschuss-100.html",
+      "published_at": "2026-11-18T08:26:33Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-ab466bf51949b628c8",
       "title": "Baugenehmigungen für Wohnungen im September 2026: -14,8 % zum Vorjahresmonat",
@@ -37,6 +82,24 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nvidia-100.html",
       "published_at": "2026-11-18T06:17:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-bbb73433617de168df",
+      "title": "Welche Fortschritte beim Klimaschutz erreicht wurden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wissen/klima/erneuerbare-energien-fortschritte-100.html",
+      "published_at": "2026-11-18T05:16:11Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-afc85b97619005ca3a",
+      "title": "Deutsche-Bank-Tochter DWS: Zwölf Milliarden Euro ohne Geldwäsche-Aufsicht",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/dws-118.html",
+      "published_at": "2026-11-18T05:00:42Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -514,24 +577,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/14/foundation-payroll-ceo-loan.html",
       "published_at": "2026-11-14T12:00:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5f10cf4539b471f046",
-      "title": "Microsoft: Systeme nach Störung komplett wiederhergestellt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-stoerung-behoben-100.html",
-      "published_at": "2026-11-14T10:17:44Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e845ed87c58b415334",
-      "title": "Warum in Polen schneller gebaut wird als in Deutschland",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bauen-polen-100.html",
-      "published_at": "2026-11-14T07:24:30Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
