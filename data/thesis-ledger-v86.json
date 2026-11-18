@@ -2125,6 +2125,24 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-28f3a4c770ccc18",
+      "ticker": "JD",
+      "company": "JD.com Inc.",
+      "date": "2026-11-16",
+      "event_type": "priority_changed",
+      "signal_signature": "C_screen_only|2026-11-03-eu-jd-ceconomy-conditional-clearance|active",
+      "from_priority": "B_watchlist",
+      "priority": "C_screen_only",
+      "adjusted_close": 27.54,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -4.42,
+      "editorial_story_id": "2026-11-03-eu-jd-ceconomy-conditional-clearance",
+      "evidence_url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

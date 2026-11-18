@@ -1,9 +1,45 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-17T22:21:11.622404Z",
+  "updated_at": "2026-11-18T04:05:26.871570Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-7cbf236433d190bbe7",
+      "title": "\"An der Zinsschraube drehen\", um die Inflation zu bekämpfen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/inflation-interview-bundesbankpraesident-nagel-100.html",
+      "published_at": "2026-11-18T04:02:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1616097b2f7a4a13f9",
+      "title": "Three things to watch as Trump, Xi and Putin meet in China",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
+      "published_at": "2026-11-18T03:25:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-502a360021d92c6234",
+      "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
+      "published_at": "2026-11-18T03:17:55Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-60e357965032723a8d",
+      "title": "Neue Quartalszahlen: Nvidia verdoppelt Umsatz und Gewinn",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-quartalsergebnisse-100.html",
+      "published_at": "2026-11-18T00:59:30Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-1107bed5d8477b9f6b",
       "title": "Wirtschaft vor acht vom 17.11.2026",

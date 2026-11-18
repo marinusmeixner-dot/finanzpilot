@@ -31,12 +31,12 @@
       "decision_stage": "editorial_screen",
       "primary_cashflow_ready": false,
       "price_asof": "2026-11-16",
-      "evidence_date": "2026-11-04",
-      "evidence_age_days": 12,
+      "evidence_date": "2026-11-11",
+      "evidence_age_days": 5,
       "evidence_url": "https://www.corero.com/corero-accelerates-international-growth-with-regional-leadership-and-partnerships/",
-      "evidence_title": "Corero erweitert EMEA/APAC-Vertrieb und Partnerschaften (Unternehmensmeldung vom 04.11.2026)",
-      "why_now": "Neue regionale Führungs- und Vertriebskapazitäten sind bestätigt; ein daraus resultierender Auftragseingang oder Cashflow ist in dieser Meldung nicht quantifiziert.",
-      "first_rejection": "Falls zusätzliche Vertriebskosten nicht durch belegte Neukundenumsätze und Cashflows gedeckt werden, trägt die Expansion die Wachstumsthese nicht.",
+      "evidence_title": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
+      "why_now": "Corero Network Security: starkes Auftragswachstum, aber noch kein belegter fairer Aktienwert",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
       "needs_before_investment": [
         "Primärbericht/Cashflow",
         "Aktuelle Aktienzahl und Bilanz",
@@ -44,9 +44,9 @@
         "Bewertung mit Sicherheitsspanne"
       ],
       "next_checks": [
-        "Geschäftsbericht 2025 (24.03.2026) auf CFO, kapitalisierte Entwicklungskosten, Cash und Aktienzahl prüfen",
-        "Neuere H1-2026-Zahlen mit ARR und Cashflow vergleichen",
-        "Börsenkurs NYA1.F und Handelswährung unabhängig verifizieren"
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
       ],
       "alternatives": {
         "peer_count": 0,
@@ -401,44 +401,6 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
-      "id": "profile-jd",
-      "ticker": "JD",
-      "company": "JD.com Inc.",
-      "sector": "Onlinehandel und Logistik",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "B_watchlist",
-      "decision_stage": "editorial_screen",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-16",
-      "evidence_date": "2026-11-03",
-      "evidence_age_days": 13,
-      "evidence_url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
-      "evidence_title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
-      "why_now": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
-      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "needs_before_investment": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "Primärbericht/Cashflow"
-      ],
-      "alternatives": {
-        "peer_count": 0,
-        "etf_count": 3,
-        "benchmark_names": [
-          "iShares MSCI ACWI ETF",
-          "SPDR S&P 500 ETF"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
       "id": "amazon",
       "ticker": "AMZN",
       "company": "Amazon",
@@ -625,6 +587,44 @@
         "benchmark_names": [
           "Vanguard FTSE All-World UCITS ETF",
           "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "profile-jd",
+      "ticker": "JD",
+      "company": "JD.com Inc.",
+      "sector": "Onlinehandel und Logistik",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-16",
+      "evidence_date": "2026-11-03",
+      "evidence_age_days": 13,
+      "evidence_url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
+      "evidence_title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+      "why_now": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"

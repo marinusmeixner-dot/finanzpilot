@@ -9,9 +9,9 @@
   "research_priority_count": 7,
   "missing_quote_count": 2,
   "front_page_candidate_ids": [
-    "bayer",
     "apple",
     "profile-evk-de",
+    "bayer",
     "profile-eoan-de",
     "corero-network-security",
     "basf",
@@ -86,83 +86,6 @@
   ],
   "candidates": [
     {
-      "id": "bayer",
-      "ticker": "BAYN.DE",
-      "company": "Bayer",
-      "sector": "Healthcare & Agriculture",
-      "country": "DE",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "A_research_first",
-      "technical_research_score": 85,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-16",
-        "sessions": 253,
-        "adjusted_close": 57.0,
-        "return_21d_pct": 28.21,
-        "return_63d_pct": 16.3,
-        "return_126d_pct": 48.01,
-        "benchmark_63d_pct": 1.55,
-        "relative_63d_pp": 14.75,
-        "ma50": 48.6004,
-        "ma200": 44.1234,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -0.14,
-        "volatility_21d_annualized_pct": 32.6,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-03-bayer-q3-cashflow",
-        "title": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
-        "date": "2026-11-03",
-        "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
-        "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.55,
-          "excess_return_pp": 14.75,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.83,
-          "excess_return_pp": 14.47,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-16",
-        "adjusted_return_pct": 5.09,
-        "benchmark_return_pct": -0.46,
-        "relative_to_benchmark_pp": 5.55,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "apple",
       "ticker": "AAPL",
       "company": "Apple",
@@ -201,7 +124,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 15,
+      "editorial_age_days": 16,
       "unverified_discovery_hint": {
         "id": "rss-e519a4e6927a447aa6",
         "date": "2026-11-17",
@@ -291,7 +214,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 18,
+      "editorial_age_days": 19,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -325,6 +248,83 @@
         "adjusted_return_pct": -0.75,
         "benchmark_return_pct": -0.46,
         "relative_to_benchmark_pp": -0.29,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "bayer",
+      "ticker": "BAYN.DE",
+      "company": "Bayer",
+      "sector": "Healthcare & Agriculture",
+      "country": "DE",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "A_research_first",
+      "technical_research_score": 79,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-16",
+        "sessions": 253,
+        "adjusted_close": 57.0,
+        "return_21d_pct": 28.21,
+        "return_63d_pct": 16.3,
+        "return_126d_pct": 48.01,
+        "benchmark_63d_pct": 1.55,
+        "relative_63d_pp": 14.75,
+        "ma50": 48.6004,
+        "ma200": 44.1234,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -0.14,
+        "volatility_21d_annualized_pct": 32.6,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-03-bayer-q3-cashflow",
+        "title": "Bayer Q3: Umsatz und operatives Ergebnis steigen – der Free Cashflow bleibt negativ",
+        "date": "2026-11-03",
+        "url": "https://www.bayer.com/media/bayer-steigert-umsatz-und-ebitda-vor-sondereinfluessen-im-3-quartal--jahresausblick-verbessert/",
+        "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.55,
+          "excess_return_pp": 14.75,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.83,
+          "excess_return_pp": 14.47,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-16",
+        "adjusted_return_pct": 5.09,
+        "benchmark_return_pct": -0.46,
+        "relative_to_benchmark_pp": 5.55,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -368,7 +368,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -445,7 +445,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -522,7 +522,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 18,
+      "editorial_age_days": 19,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -599,7 +599,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1518,7 +1518,7 @@
         "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 5,
+      "editorial_age_days": 6,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1595,7 +1595,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": {
         "id": "rss-533eba559715cd8f5d",
         "date": "2026-11-16",
@@ -2001,7 +2001,7 @@
         "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 4,
+      "editorial_age_days": 5,
       "unverified_discovery_hint": {
         "id": "rss-7426ba3b484fc23a5b",
         "date": "2026-11-16",
@@ -2048,92 +2048,6 @@
         "adjusted_return_pct": -5.78,
         "benchmark_return_pct": -3.46,
         "relative_to_benchmark_pp": -2.32,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      }
-    },
-    {
-      "id": "profile-jd",
-      "ticker": "JD",
-      "company": "JD.com Inc.",
-      "sector": "Onlinehandel und Logistik",
-      "country": "US",
-      "currency": "USD",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "B_watchlist",
-      "technical_research_score": 57,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-16",
-        "sessions": 251,
-        "adjusted_close": 27.54,
-        "return_21d_pct": 1.96,
-        "return_63d_pct": -4.44,
-        "return_126d_pct": -12.85,
-        "benchmark_63d_pct": -4.42,
-        "relative_63d_pp": -0.02,
-        "ma50": 26.8578,
-        "ma200": 28.2905,
-        "above_ma50": true,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -18.45,
-        "volatility_21d_annualized_pct": 28.8,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-03-eu-jd-ceconomy-conditional-clearance",
-        "title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
-        "date": "2026-11-03",
-        "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
-        "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -4.42,
-          "excess_return_pp": -0.02,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -3.34,
-          "excess_return_pp": -1.1,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -7.68,
-          "excess_return_pp": 3.24,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "published_profile_needs_ticker_recheck",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-16",
-        "adjusted_return_pct": -0.69,
-        "benchmark_return_pct": -3.46,
-        "relative_to_benchmark_pp": 2.77,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       }
@@ -2247,7 +2161,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2531,6 +2445,92 @@
         "adjusted_return_pct": -5.41,
         "benchmark_return_pct": -3.46,
         "relative_to_benchmark_pp": -1.95,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
+      "id": "profile-jd",
+      "ticker": "JD",
+      "company": "JD.com Inc.",
+      "sector": "Onlinehandel und Logistik",
+      "country": "US",
+      "currency": "USD",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 51,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-16",
+        "sessions": 251,
+        "adjusted_close": 27.54,
+        "return_21d_pct": 1.96,
+        "return_63d_pct": -4.44,
+        "return_126d_pct": -12.85,
+        "benchmark_63d_pct": -4.42,
+        "relative_63d_pp": -0.02,
+        "ma50": 26.8578,
+        "ma200": 28.2905,
+        "above_ma50": true,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -18.45,
+        "volatility_21d_annualized_pct": 28.8,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-03-eu-jd-ceconomy-conditional-clearance",
+        "title": "EU genehmigt JD.coms Ceconomy-Übernahme unter Auflagen: Was das für MediaMarktSaturn bedeutet",
+        "date": "2026-11-03",
+        "url": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-von-ceconomy-durch-jdcom-unter-bedingungen-2026-11-03_de",
+        "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -4.42,
+          "excess_return_pp": -0.02,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -3.34,
+          "excess_return_pp": -1.1,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -7.68,
+          "excess_return_pp": 3.24,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-16",
+        "adjusted_return_pct": -0.69,
+        "benchmark_return_pct": -3.46,
+        "relative_to_benchmark_pp": 2.77,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       }
@@ -3442,8 +3442,8 @@
       "editorial_evidence": null,
       "editorial_age_days": null,
       "unverified_discovery_hint": {
-        "id": "rss-7bd6a00b749767a0fd",
-        "date": "2026-11-16",
+        "id": "rss-502a360021d92c6234",
+        "date": "2026-11-18",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
@@ -3753,7 +3753,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 13,
+      "editorial_age_days": 14,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4187,83 +4187,6 @@
       }
     },
     {
-      "id": "profile-sha0-de",
-      "ticker": "SHA0.DE",
-      "company": "Schaeffler AG",
-      "sector": "Industrie- und Automobilzulieferer",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 17,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-16",
-        "sessions": 253,
-        "adjusted_close": 5.47,
-        "return_21d_pct": -6.17,
-        "return_63d_pct": -25.48,
-        "return_126d_pct": -42.66,
-        "benchmark_63d_pct": 1.55,
-        "relative_63d_pp": -27.03,
-        "ma50": 6.1868,
-        "ma200": 7.844,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -52.31,
-        "volatility_21d_annualized_pct": 42.1,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-03-schaeffler-restructuring-3460",
-        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
-        "date": "2026-11-03",
-        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
-        "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.55,
-          "excess_return_pp": -27.03,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.83,
-          "excess_return_pp": -27.31,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "published_profile_needs_ticker_recheck",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-16",
-        "adjusted_return_pct": -3.53,
-        "benchmark_return_pct": -0.46,
-        "relative_to_benchmark_pp": -3.07,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "index-sw",
       "ticker": "SW",
       "company": "Smurfit Westrock",
@@ -4381,10 +4304,10 @@
         "source": "NVIDIA Investor Relations, Pressemitteilung vom 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 5,
+      "editorial_age_days": 6,
       "unverified_discovery_hint": {
-        "id": "rss-99ea3c0f408579d892",
-        "date": "2026-11-17",
+        "id": "rss-60e357965032723a8d",
+        "date": "2026-11-18",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
@@ -4471,7 +4394,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 11,
+      "editorial_age_days": 12,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4557,7 +4480,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4672,6 +4595,83 @@
         "relative_to_benchmark_pp": 3.88,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
+      "id": "profile-sha0-de",
+      "ticker": "SHA0.DE",
+      "company": "Schaeffler AG",
+      "sector": "Industrie- und Automobilzulieferer",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 11,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-16",
+        "sessions": 253,
+        "adjusted_close": 5.47,
+        "return_21d_pct": -6.17,
+        "return_63d_pct": -25.48,
+        "return_126d_pct": -42.66,
+        "benchmark_63d_pct": 1.55,
+        "relative_63d_pp": -27.03,
+        "ma50": 6.1868,
+        "ma200": 7.844,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -52.31,
+        "volatility_21d_annualized_pct": 42.1,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-03-schaeffler-restructuring-3460",
+        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+        "date": "2026-11-03",
+        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
+        "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.55,
+          "excess_return_pp": -27.03,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.83,
+          "excess_return_pp": -27.31,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-16",
+        "adjusted_return_pct": -3.53,
+        "benchmark_return_pct": -0.46,
+        "relative_to_benchmark_pp": -3.07,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
     },
     {
@@ -4792,7 +4792,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -6164,7 +6164,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 62,
+      "editorial_age_days": 63,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
