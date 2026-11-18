@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T13:56:32.810559Z",
+  "updated_at": "2026-11-18T15:49:54.915411Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-38faf5099c2ee8c041",
+      "title": "Deutscher Ökonom Brunnermeier als EZB-Chefvolkswirt nominiert",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/bundesregierung-ezb-chefvolkswirt-100.html",
+      "published_at": "2026-11-18T15:36:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-3046a3e05ebb5378cb",
+      "title": "Tech outages are causing people to panic buy. Costco is benefitting",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
+      "published_at": "2026-11-18T15:22:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-53c47062519c81bfcd",
       "title": "Nach Datenleak: Deutsche-Bank-Papiere weiter unter Druck",
