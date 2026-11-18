@@ -1,10 +1,60 @@
 {
-  "date": "2026-11-17",
-  "updated_at": "2026-11-17T20:01:00+01:00",
+  "date": "2026-11-18",
+  "updated_at": "2026-11-18T08:03:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Die EU-Kommission erwartet für Deutschland 2026 nun 1,3 % reales Wachstum statt 0,6 % im Frühjahr; die Prognose für 2027 beträgt 1,0 %. Höhere Inflation und schwache private Investitionen begrenzen die Aussagekraft für Aktien.",
+  "intro": "NVIDIA hat am 17.11. neue Quartalszahlen veröffentlicht: 115,8 Mrd. USD Umsatz (+103 % zum Vorjahr); die Q4-Umsatzprognose beträgt 130 Mrd. USD bei erwarteter Bruttomarge von 71–72 %. Die zusätzlichen Quartalswoche und der Cashflow sind gesondert zu prüfen.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-17-nvidia-q3-fy27-results",
+      "title": "NVIDIA verdoppelt Quartalsumsatz – doch der Ausblick bringt Margen- und Führungsrisiken",
+      "published": "2026-11-17",
+      "date": "2026-11-17",
+      "category": "Unternehmenszahlen",
+      "symbols": [
+        "NVDA"
+      ],
+      "source": "NVIDIA Investor Relations, Q3 FY2027, 17.11.2026",
+      "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/",
+      "why": "Neuer veröffentlichter Quartalsbericht: 115,8 Mrd. USD Umsatz, 103 % mehr als im Vorjahr, mit 130 Mrd. USD Umsatzprognose für Q4.",
+      "impact": "Starker Rechenzentrumsabsatz stützt Umsatz und operative Erträge; die erwartete Bruttomarge von 71–72 % gegenüber 74,8 % im Q3 und hohe Erwartungen begrenzen die Bewertungsaussage.",
+      "article": {
+        "lead": "NVIDIA (NASDAQ: NVDA) meldete am 17. November für das am 25. Oktober 2026 beendete dritte Quartal des Geschäftsjahres 2027 einen Umsatz von 115,8 Milliarden US-Dollar. Das sind 103 % mehr als ein Jahr zuvor. Die Zahlen sind veröffentlicht, nicht mehr nur eine Terminerwartung.",
+        "sections": [
+          {
+            "heading": "Geschäft und Umsatztreiber",
+            "paragraphs": [
+              "NVIDIA entwickelt und verkauft vor allem Chips, komplette Rechensysteme, Netzwerktechnik und zugehörige Software für KI-Rechenzentren. Kunden sind unter anderem Cloud-Anbieter und Betreiber großer KI-Infrastrukturen. Das Segment Data Center erzielte 107,6 Milliarden US-Dollar Umsatz, 110 % mehr als im Vorjahr. Das Geschäft mit Edge Computing erzielte 8,2 Milliarden US-Dollar, plus 42 %. Die Nachfrage konzentriert sich damit stark auf KI-Infrastruktur."
+            ]
+          },
+          {
+            "heading": "Gewinn, Margen und Vergleich",
+            "paragraphs": [
+              "Der GAAP-Betriebsgewinn betrug 77,5 Milliarden US-Dollar gegenüber 36,0 Milliarden US-Dollar im Vorjahresquartal. Der GAAP-Nettogewinn lag bei 65,3 Milliarden US-Dollar, das verwässerte Ergebnis je Aktie bei 2,70 US-Dollar. Die GAAP-Bruttomarge von 74,8 % liegt über den 73,4 % im Vorjahr, aber leicht unter den 75,0 % im Vorquartal. GAAP und bereinigte Non-GAAP-Zahlen sind nicht austauschbar."
+            ]
+          },
+          {
+            "heading": "Ausblick und mögliche Cashflow-Folgen",
+            "paragraphs": [
+              "Für Q4 FY2027 prognostiziert NVIDIA 130,0 Milliarden US-Dollar Umsatz mit einer Bandbreite von ±3 %. Die GAAP-Bruttomarge soll 71–72 % betragen. Das Quartal enthält eine zusätzliche Woche, weshalb ein einfacher sequenzieller Wachstumsvergleich verzerrt wäre. Höhere Erlöse und operative Gewinne können den Cashflow stärken; die Pressemeldung allein reicht jedoch nicht, um normalisierten Free Cashflow, Working Capital, Aktienrückkäufe und langfristige Investitionsrenditen belastbar zu modellieren."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Risiken",
+            "paragraphs": [
+              "Das Wachstum könnte sich abschwächen, wenn große Cloud-Kunden ihre Investitionsbudgets reduzieren, eigene Beschleuniger einsetzen oder Exportbeschränkungen greifen. NVIDIA setzt in der Q4-Prognose keinen Data-Center-Compute-Umsatz aus China an. Der Wechsel an der Unternehmensspitze und laufende Untersuchungen sind zusätzliche Governance-Risiken, die nicht aus der Umsatzentwicklung verschwinden. Eine hohe Umsatzsteigerung allein beweist keine Unterbewertung."
+            ]
+          },
+          {
+            "heading": "Was vor einer Bewertung fehlt",
+            "paragraphs": [
+              "Für einen fairen Aktienwert müssen die jüngsten Cashflow-Rechnungen und Bilanzpositionen, verwässerte Aktienzahl, mögliche Verpflichtungen, ein normalisierter Investitionsbedarf und ein zeitgleicher Aktienkurs ausgewertet werden. Sensitivitäten für Umsatzwachstum, Marge, Diskontsatz und Terminalwert sowie ein Vergleich mit Alternativen oder einem breit gestreuten ETF sind erforderlich. Ohne diese Prüfung folgt aus den Quartalszahlen weder ein Kursziel noch eine Kaufempfehlung. Originalquelle vom 17.11.2026: https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/"
+            ]
+          }
+        ],
+        "conclusion": "NVIDIAs veröffentlichtes Quartal belegt außergewöhnlich starkes KI-Rechenzentrumswachstum. Der niedrigere Margenausblick, die zusätzliche Quartalswoche, Governance-Fragen und offene Cashflow-Bewertungsannahmen verhindern ein vorschnelles Kaufurteil."
+      }
+    },
     {
       "id": "2026-11-17-eu-temu-dsa-preliminary-product-controls",
       "title": "EU-Kommission beanstandet Temus Produktkontrollen vorläufig",
