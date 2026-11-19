@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T13:01:57.818553Z",
+  "updated_at": "2026-11-19T15:54:16.513517Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-61d6ba48e86fbe6d9d",
+      "title": "Rekord an der Börse: Lehren aus dem Anthropic-Börsengang",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/anthropic-boersengang-ki-boom-100.html",
+      "published_at": "2026-11-19T15:34:22Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-828e2bf10eccc7a696",
+      "title": "KI-gestützter Cyberangriff auf EU-Kommission",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/cyberangriff-eu-kommission-100.html",
+      "published_at": "2026-11-19T13:56:39Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-847dc9cf546da67a6d",
+      "title": "Gebrauchte Spielekonsolen so teuer wie noch nie",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/digitales/gta-vi-konsolen-preise-gaming-100.html",
+      "published_at": "2026-11-19T13:33:49Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a425dde14653db728d",
+      "title": "Firmenporträt: Anthropics halsbrecherischer Aufstieg",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-firmenportrait-claude-boersengang-100.html",
+      "published_at": "2026-11-19T13:30:31Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-3374a42979fde482d7",
+      "title": "Warnstreiks der IG Metall",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/warnstreik-ig-metall-124.html",
+      "published_at": "2026-11-19T12:58:34Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7e1c04e8835362d0d6",
+      "title": "Marktbericht: Deutsche Telekom steigt bei KI-Start-up Mistral ein",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/mistral-telekom-ki-anthropic-marktbericht-100.html",
+      "published_at": "2026-11-19T12:57:07Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-a433b6d8d78ddc4282",
       "title": "Heizen wird wegen steigender Energiepreise immer teurer",
@@ -712,15 +766,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
       "published_at": "2026-11-16T03:53:59Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-91a2c0512ce83e021e",
-      "title": "Quallenzucht: Ein Geschäftsmodell, das sich lohnt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/quallenzucht-100.html",
-      "published_at": "2026-11-15T14:58:36Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
