@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T03:24:59.052324Z",
+  "updated_at": "2026-11-19T05:10:00Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -19,8 +19,11 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html",
       "published_at": "2026-11-19T01:06:22Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
+      "verification": "secondary_corroborated_primary_statement_pending",
+      "status": "needs_original_government_or_issuer_statement",
+      "editorial_note": "19.11.2026: Reuters/Tagesschau berichten unter Berufung auf Bundesfinanzminister Klingbeil über politische Einigung; kein Originalwortlaut des neuen Briefs oder amtliche Erklärung unabhängig geprüft. Nicht als vollständig primärquellenbestätigte neue Vereinbarung publizieren. Separat primärbelegt: EU-Kommission genehmigte die Übernahme am 16.11.2026 vorbehaltlos; dies bestätigt NICHT die politischen Zusagen vom 19.11.",
+      "verified_context_source": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-der-commerzbank-durch-unicredit-2026-11-16_de",
+      "verified_context_date": "2026-11-16"
     },
     {
       "id": "rss-e87edcf11a01c3ba68",
