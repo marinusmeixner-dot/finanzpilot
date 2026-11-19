@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-18T20:56:36.120440Z",
+  "updated_at": "2026-11-19T03:24:59.052324Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-2d9f6e5ee12cc63cd1",
+      "title": "Anthropic-Ausgabepreis bei Börsengang bei 83 Dollar je Aktie",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boersengang-aktie-100.html",
+      "published_at": "2026-11-19T03:14:09Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-272eed543a237e98dc",
+      "title": "Commerzbank-Übernahme: Bundesregierung und UniCredit einigen sich",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html",
+      "published_at": "2026-11-19T01:06:22Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-e87edcf11a01c3ba68",
       "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
@@ -640,15 +658,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ausbildung-volkswagen-trotz-krise-100.html",
       "published_at": "2026-11-15T07:41:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-8f697f3b7dc76a6219",
-      "title": "Mehr Pleiten, aber auch mehr Gründungen - Börsen-Zeitung",
-      "source": "Google News: EU/Deutschland",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOanhyc1BCM3hGaFBBb1g0ZnQ4X1VPUkphVTlsNjEtclFIZWx2czNaaUZISTlNMmNPaktLYlVKNXhkRzk2aGFqRGhtMkcyS1ZvYU1KakFiNkIxTUduNks2X1dQWXFNdlA0UG5FUzBTUUFuSmVZNm1DNUFmLUNlVnFPTlNpdDVCTjRlbnhxZW81aVE1LXc?oc=5",
-      "published_at": "2026-11-15T02:43:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

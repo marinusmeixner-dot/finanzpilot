@@ -124,7 +124,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": {
         "id": "rss-e519a4e6927a447aa6",
         "date": "2026-11-17",
@@ -214,7 +214,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 19,
+      "editorial_age_days": 20,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -291,7 +291,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 15,
+      "editorial_age_days": 16,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -368,7 +368,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 17,
+      "editorial_age_days": 18,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -445,7 +445,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 7,
+      "editorial_age_days": 8,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -522,7 +522,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 19,
+      "editorial_age_days": 20,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -599,7 +599,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 17,
+      "editorial_age_days": 18,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1364,7 +1364,7 @@
         "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 7,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1441,7 +1441,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 17,
+      "editorial_age_days": 18,
       "unverified_discovery_hint": {
         "id": "rss-533eba559715cd8f5d",
         "date": "2026-11-16",
@@ -1610,7 +1610,7 @@
         "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 5,
+      "editorial_age_days": 6,
       "unverified_discovery_hint": {
         "id": "rss-7426ba3b484fc23a5b",
         "date": "2026-11-16",
@@ -2011,7 +2011,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3238,83 +3238,6 @@
       }
     },
     {
-      "id": "bmw",
-      "ticker": "BMW.DE",
-      "company": "BMW",
-      "sector": "Automotive",
-      "country": "DE",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 33,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-16",
-        "sessions": 253,
-        "adjusted_close": 56.98,
-        "return_21d_pct": -0.14,
-        "return_63d_pct": -2.36,
-        "return_126d_pct": -23.5,
-        "benchmark_63d_pct": 1.55,
-        "relative_63d_pp": -3.91,
-        "ma50": 57.7696,
-        "ma200": 66.7709,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -38.14,
-        "volatility_21d_annualized_pct": 27.7,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-04-bmw-q3-guidance-realignment",
-        "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
-        "date": "2026-11-04",
-        "url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
-        "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.55,
-          "excess_return_pp": -3.91,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": 1.83,
-          "excess_return_pp": -4.19,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-16",
-        "adjusted_return_pct": -6.56,
-        "benchmark_return_pct": -0.46,
-        "relative_to_benchmark_pp": -6.1,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "index-csgp",
       "ticker": "CSGP",
       "company": "CoStar Group",
@@ -3391,6 +3314,83 @@
         "relative_to_benchmark_pp": 0.81,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
+      "id": "bmw",
+      "ticker": "BMW.DE",
+      "company": "BMW",
+      "sector": "Automotive",
+      "country": "DE",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 27,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-16",
+        "sessions": 253,
+        "adjusted_close": 56.98,
+        "return_21d_pct": -0.14,
+        "return_63d_pct": -2.36,
+        "return_126d_pct": -23.5,
+        "benchmark_63d_pct": 1.55,
+        "relative_63d_pp": -3.91,
+        "ma50": 57.7696,
+        "ma200": 66.7709,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -38.14,
+        "volatility_21d_annualized_pct": 27.7,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-04-bmw-q3-guidance-realignment",
+        "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+        "date": "2026-11-04",
+        "url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
+        "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.55,
+          "excess_return_pp": -3.91,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": 1.83,
+          "excess_return_pp": -4.19,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-16",
+        "adjusted_return_pct": -6.56,
+        "benchmark_return_pct": -0.46,
+        "relative_to_benchmark_pp": -6.1,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
     },
     {
@@ -3985,7 +3985,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 15,
+      "editorial_age_days": 16,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4308,7 +4308,7 @@
         "source": "NVIDIA Investor Relations, Q3 FY2027, 17.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 1,
+      "editorial_age_days": 2,
       "unverified_discovery_hint": {
         "id": "rss-60e357965032723a8d",
         "date": "2026-11-18",
@@ -4398,7 +4398,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 12,
+      "editorial_age_days": 13,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4484,7 +4484,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 7,
+      "editorial_age_days": 8,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4561,7 +4561,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 15,
+      "editorial_age_days": 16,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4796,7 +4796,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 17,
+      "editorial_age_days": 18,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -6168,7 +6168,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 63,
+      "editorial_age_days": 64,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
