@@ -1,9 +1,81 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T05:10:00Z",
+  "updated_at": "2026-11-19T13:01:57.818553Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-a433b6d8d78ddc4282",
+      "title": "Heizen wird wegen steigender Energiepreise immer teurer",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/heizkosten-anstieg-100.html",
+      "published_at": "2026-11-19T10:10:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6ed00f516c3739aa61",
+      "title": "Marktbericht: Anthropic-Börsengang schiebt DAX an",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-100.html",
+      "published_at": "2026-11-19T09:31:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-906a85fd2d0a5b7c9c",
+      "title": "Trump praises ‘great relationship’ with Putin after meeting, as Ukraine war takes center stage",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html",
+      "published_at": "2026-11-19T09:02:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-699bddf078ea5c25ad",
+      "title": "Update Wirtschaft vom 19.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1686324.html",
+      "published_at": "2026-11-19T08:47:19Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-94d239bb11a616397c",
+      "title": "11KM-Podcast: \"Superintelligenz\" - was hinter der KI-Vision steckt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/podcast/11km/podcast-11km-ki-vision-100.html",
+      "published_at": "2026-11-19T07:49:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d5bb5941aaaa62e15b",
+      "title": "KORREKTUR: Gastgewerbeumsatz im September 2026 real 1,2 % höher als im Vormonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_405_45213.html",
+      "published_at": "2026-11-19T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7bd36bf35687a6a2b2",
+      "title": "5,7 % der Bevölkerung konnten 2025 aus Geldmangel ihre Wohnung nicht angemessen warmhalten",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N081_61_63.html",
+      "published_at": "2026-11-19T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-3f2d3c20454470bb88",
+      "title": "Welche Erwartungen die Gaming-Branche mit GTA VI verbindet",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/digitales/gta-rockstar-games-100.html",
+      "published_at": "2026-11-19T05:09:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-2d9f6e5ee12cc63cd1",
       "title": "Anthropic-Ausgabepreis bei Börsengang bei 83 Dollar je Aktie",
@@ -19,11 +91,8 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html",
       "published_at": "2026-11-19T01:06:22Z",
-      "verification": "secondary_corroborated_primary_statement_pending",
-      "status": "needs_original_government_or_issuer_statement",
-      "editorial_note": "19.11.2026: Reuters/Tagesschau berichten unter Berufung auf Bundesfinanzminister Klingbeil über politische Einigung; kein Originalwortlaut des neuen Briefs oder amtliche Erklärung unabhängig geprüft. Nicht als vollständig primärquellenbestätigte neue Vereinbarung publizieren. Separat primärbelegt: EU-Kommission genehmigte die Übernahme am 16.11.2026 vorbehaltlos; dies bestätigt NICHT die politischen Zusagen vom 19.11.",
-      "verified_context_source": "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/eu-kommission-genehmigt-ubernahme-der-commerzbank-durch-unicredit-2026-11-16_de",
-      "verified_context_date": "2026-11-16"
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
     },
     {
       "id": "rss-e87edcf11a01c3ba68",
@@ -40,6 +109,15 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1686102.html",
       "published_at": "2026-11-18T18:59:41Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7c363e083b8cc63a90",
+      "title": "\"Grand Theft Auto VI: Was hinter dem weltweiten Hype um GTA steckt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/spiele-gta-sechs-neuerscheinung-100.html",
+      "published_at": "2026-11-18T17:55:38Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -643,24 +721,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/quallenzucht-100.html",
       "published_at": "2026-11-15T14:58:36Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ff63305a99ce043a36",
-      "title": "Krise im Handwerk: \"Stilles Sterben der Betriebe\"",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/handwerk-krise-100.html",
-      "published_at": "2026-11-15T11:15:26Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-abf52c19f32884f616",
-      "title": "Warum Azubis in der Autoindustrie anfangen - trotz Krisenstimmung",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ausbildung-volkswagen-trotz-krise-100.html",
-      "published_at": "2026-11-15T07:41:03Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
