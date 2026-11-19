@@ -1,10 +1,60 @@
 {
-  "date": "2026-11-18",
-  "updated_at": "2026-11-18T23:00:00+01:00",
+  "date": "2026-11-19",
+  "updated_at": "2026-11-19T05:03:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Neu: Das am 18.11. veröffentlichte Fed-Protokoll zeigt Inflations- und Finanzierungsrisiken des KI-Ausbaus. Daneben bleiben die NVIDIA-Quartalszahlen vom 17.11. für Margen und Cashflow zentral.",
+  "intro": "Neu: Anthropic hat den IPO-Preis von 83 US-Dollar und 980 Millionen angebotene Aktien bestätigt. Handelsbeginn am 19.11. ist geplant, nicht als vollzogen gemeldet. Das Fed-Protokoll und die NVIDIA-Zahlen bleiben weitere wichtige Anlässe.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-18-anthropic-ipo-priced-83",
+      "title": "Anthropic setzt IPO-Preis auf 83 US-Dollar – Bewertung braucht mehr als Wachstum",
+      "published": "2026-11-18",
+      "date": "2026-11-18",
+      "category": "Börsengang",
+      "symbols": [
+        "ANT"
+      ],
+      "source": "Anthropic, offizielle IPO-Preisfestsetzung vom 18.11.2026",
+      "url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+      "why": "Erstmals bestätigter Emissionspreis und endgültige Angebotsgröße vor dem geplanten Nasdaq-Handelsstart am 19. November.",
+      "impact": "980 Millionen angebotene Aktien zu 83 USD ergeben rechnerisch 81,34 Mrd. USD Bruttoangebotsvolumen; davon verkauft Anthropic 956.351.354 Aktien selbst. Emissionsvolumen ist weder Gewinn noch Free Cashflow.",
+      "article": {
+        "lead": "Anthropic, Entwickler der KI-Modelle Claude und der Programmierhilfe Claude Code, hat am 18. November 2026 den Ausgabepreis seines Börsengangs auf 83 US-Dollar je Aktie festgelegt. Das Unternehmen verkauft KI-Dienste und Modellzugang an Privat- und Geschäftskunden. Der geplante Handelsstart an der Nasdaq unter ANT ist der 19. November; er ist zum Zeitpunkt dieser Meldung noch kein bestätigter Börsenhandel.",
+        "sections": [
+          {
+            "heading": "Was die Originalmeldung belegt",
+            "paragraphs": [
+              "Das Angebot umfasst 980 Millionen Class-A-Aktien, darunter 956.351.354 neue Aktien von Anthropic und 23.648.646 Aktien verkaufender Altaktionäre. Das rechnerische Bruttoangebotsvolumen beträgt 81,34 Milliarden US-Dollar. Die 30-Tage-Mehrzuteilungsoption über bis zu 147 Millionen weitere Aktien ist darin nicht enthalten. Der Abschluss ist für den 20. November vorgesehen, vorbehaltlich der Bedingungen."
+            ]
+          },
+          {
+            "heading": "Geschäftsmodell und Ertragshebel",
+            "paragraphs": [
+              "Anthropic monetarisiert seine Claude-Modelle über Nutzungsgebühren, Abonnements und Unternehmenszugänge. Wachsende Nutzung kann Umsatz bringen, erfordert aber Rechenkapazität, Forschung, Modelltraining und Betrieb. Der Ausgabepreis allein zeigt weder die operative Profitabilität noch den frei verfügbaren Cashflow."
+            ]
+          },
+          {
+            "heading": "Wohin das Geld fließt",
+            "paragraphs": [
+              "Nur der Verkauf der neuen Aktien bringt Anthropic Emissionserlöse; Erlöse aus den Aktien der Altaktionäre fließen nicht an das Unternehmen. Emissionserlöse sind Finanzierungsmittel und dürfen nicht als operativer Umsatz oder Gewinn behandelt werden. Für die Liquiditätsbewertung müssen Emissionskosten, künftiger Kapitalbedarf und verbindliche Infrastrukturzahlungen zusätzlich geprüft werden."
+            ]
+          },
+          {
+            "heading": "Gegenhypothese und Risiken",
+            "paragraphs": [
+              "Steigende Kundennachfrage und Skaleneffekte könnten die Wirtschaftlichkeit verbessern. Dagegen stehen Modellwettbewerb, hohe Rechenkosten, technologische Sprünge, regulatorische Risiken und mögliche Verwässerung. Eine hohe Emissionsnachfrage beweist keine dauerhaft attraktive Rendite für spätere Käufer."
+            ]
+          },
+          {
+            "heading": "Was für einen fairen Wert fehlt",
+            "paragraphs": [
+              "Aus 83 US-Dollar je Aktie und dem Angebotsvolumen folgt keine belastbare Gesamtbewertung: Dafür werden die vollständig verwässerte Aktienzahl, alle Aktienklassen, Schulden, liquide Mittel und die Kapitalstruktur benötigt. Anschließend wären normalisierte Cashflows, Capex, Leasing, Szenarien und angemessene Kapitalkosten zu modellieren. Ein aktueller Börsenkurs ist vor dem ersten Handel nicht verfügbar; deshalb gibt es hier kein Kursziel und keine Kaufempfehlung."
+            ]
+          }
+        ],
+        "conclusion": "Der Börsengang ist ein bedeutendes neues, primärquellenbestätigtes Ereignis. Die Emissionsdaten sind belastbar, aber eine Investitionsentscheidung erfordert den endgültigen Prospekt und eine eigenständige Cashflow-Bewertung. Originalquelle: https://www.anthropic.com/news/anthropic-prices-initial-public-offering"
+      }
+    },
     {
       "id": "2026-11-18-fed-october-minutes-inflation-ai-financing",
       "title": "Fed-Protokoll: Inflationsdruck und KI-Finanzierung verändern die Risikorechnung",
