@@ -3197,11 +3197,7 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": {
-        "id": "rss-cf9aea636c5e322fb4",
-        "date": "2026-11-16",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "ACWI",

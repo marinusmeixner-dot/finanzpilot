@@ -1,9 +1,36 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T14:57:34.881522Z",
+  "updated_at": "2026-11-20T15:37:56.528055Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-13bba302707cf2c593",
+      "title": "Warsh wants Fed officials to talk less. Instead, they’re talking more",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/20/warsh-fed-forward-guidance-rate-hikes.html",
+      "published_at": "2026-11-20T15:20:54Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-900981d27b88b66f2f",
+      "title": "Nach Anthropic-Börsengang: Warum die KI-Euphorie bröckelt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/boerse/anthropic-ki-tech-werte-boersen-100.html",
+      "published_at": "2026-11-20T15:12:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-dffac5f5cbbbb67415",
+      "title": "Kritik an Ausnahmen bei Erbschaftsteuer nach Recherchen über Döpfner-Schenkung",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/doepfner-erbschaftssteuer-100.html",
+      "published_at": "2026-11-20T14:58:12Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-68aeffcfcc8e5b6ca3",
       "title": "The bull market has a new problem. The 'smart money' is selling",
@@ -775,15 +802,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html",
       "published_at": "2026-11-16T16:17:39Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-cf9aea636c5e322fb4",
-      "title": "Tesla kündigt Milliarden-Investition in Werk in Brandenburg an",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/regional/brandenburg/tesla-investitionen-brandenburg-100.html",
-      "published_at": "2026-11-16T15:10:41Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
