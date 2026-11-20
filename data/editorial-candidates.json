@@ -1,9 +1,90 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T05:03:18.529526Z",
+  "updated_at": "2026-11-20T09:01:14.674405Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-97027f8d878b6b4b95",
+      "title": "Update Wirtschaft vom 20.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1686922.html",
+      "published_at": "2026-11-20T08:48:20Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-046f6f5fa2537edf55",
+      "title": "Deutliches Kursplus: So lief der erste Handelstag von Anthropic",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boersenstart-ipo-100.html",
+      "published_at": "2026-11-20T08:16:20Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7dc3cf1bcc520c92a6",
+      "title": "Gender Pay Gap: Frauen arbeiten den Rest des Jahres kostenlos",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/gender-pay-gap-140.html",
+      "published_at": "2026-11-20T08:12:38Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-eb42126f23ddeede70",
+      "title": "Kaliforniens Justiz erhöht wegen China-Geschäft Druck auf Nvidia",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/kalifornien-justiz-aufklaerung-nvidia-chips-china-100.html",
+      "published_at": "2026-11-20T07:47:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9f7b3b2dfb5d613129",
+      "title": "Erzeugerpreise im Oktober 2026: +8,1 % gegenüber Oktober 2025",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html",
+      "published_at": "2026-11-20T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-11fd6ec97f4776e077",
+      "title": "Elektrischer Strom im Wert von 4,3 Milliarden Euro im 1. bis 3. Quartal 2026 exportiert",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_406_51.html",
+      "published_at": "2026-11-20T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b7e5070f66bfe02238",
+      "title": "Neue EU-Regeln ab heute: Mehr Schutz vor Verschuldung bei Kleinkrediten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/kleinkredite-neue-regeln-verschuldung-100.html",
+      "published_at": "2026-11-20T06:51:30Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-acc948716c2ff38fe4",
+      "title": "WG-Mieten steigen stark: Kann sich die Gen Z Wohnen noch leisten?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/gesellschaft/wg-zimmer-gen-z-proteste-wohnungskrise-100.html",
+      "published_at": "2026-11-20T06:48:37Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-74653a14aaf75bb2a5",
+      "title": "Marktbericht: DAX dürfte trotz Anthropic-Hype weiter fallen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html",
+      "published_at": "2026-11-20T06:30:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-b0eacc219c0c0c69b0",
       "title": "Medienberichte: Lufthansa will 1.000 Stellen streichen",
@@ -730,69 +811,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/investigativ/ndr/offshore-bundesregierung-100.html",
       "published_at": "2026-11-16T11:08:19Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-4c4eb7f430fa33b2d7",
-      "title": "Update Wirtschaft vom 16.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1684508.html",
-      "published_at": "2026-11-16T08:54:49Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d4e9668d680d2dab43",
-      "title": "Ex-Nvidia-Chef Huang arbeitet offenbar bereits an seinem Comeback",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-chefposten-100.html",
-      "published_at": "2026-11-16T08:07:28Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5662ded9f6cd25855a",
-      "title": "Altersvorsorgedepot: Wie aus Sparern Anleger werden",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-rente-aktienmarkt-sparplan-100.html",
-      "published_at": "2026-11-16T08:02:35Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a5fad4248beff2da33",
-      "title": "1,4 % weniger wissenschaftliches Hochschulpersonal im Jahr 2025",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_401_213.html",
-      "published_at": "2026-11-16T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7f94243867004f9d63",
-      "title": "Energieverbrauch der Industrie 2025 um 2,9 % gesunken",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_400_435.html",
-      "published_at": "2026-11-16T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-533eba559715cd8f5d",
-      "title": "Missglückter Raketenstart: Amazon verliert 40 Satelliten",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/technologie/rakete-amazon-satelliten-100.html",
-      "published_at": "2026-11-16T06:48:12Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-425647ea52e1056bca",
-      "title": "Marktbericht: Setzt der DAX die Rekordjagd fort?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-rekordhoch-100.html",
-      "published_at": "2026-11-16T06:18:40Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
