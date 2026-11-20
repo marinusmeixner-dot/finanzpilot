@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T03:12:07.223999Z",
+  "updated_at": "2026-11-20T05:03:18.529526Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -793,24 +793,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-rekordhoch-100.html",
       "published_at": "2026-11-16T06:18:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d4533a1fa461509692",
-      "title": "Pläne der Bundesregierung: Juristen zweifeln an Gesetz gegen Vergesellschaftung",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/investitionsschutzgesetz-dobrindt-gutachten-verfassungswidrig-100.html",
-      "published_at": "2026-11-16T05:03:11Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-af572055b67df64dad",
-      "title": "China’s slowdown deepens in October as industrial output, retail sales, investment miss estimates",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/16/china-retail-sales-october-industrial-output-investment.html",
-      "published_at": "2026-11-16T03:53:59Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
