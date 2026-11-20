@@ -1,63 +1,63 @@
 {
   "schema_version": 1,
-  "date": "2026-11-20",
-  "updated_at": "2026-11-20T00:04:00+01:00",
+  "date": "2026-11-21",
+  "updated_at": "2026-11-21T00:04:00+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
-  "explanation": "Drei neue, unabhängige hypothetische Rechen- und Entscheidungsfälle. Die Primärquellen liefern den Anlass; Beispielzahlen sind keine berichteten Unternehmenswerte.",
+  "explanation": "Drei unabhängige hypothetische Finanzfälle; Originalquellen begründen den Kontext, nicht die erfundenen Rechenwerte.",
   "tasks": [
     {
       "kind": "market",
-      "id": "2026-11-20:market:duration",
-      "title": "Zinsänderung: zwei Cashflow-Profile vergleichen",
-      "context": "Zwei hypothetische Anlagen zahlen jeweils genau 120 €: A am Ende von Jahr 1, B am Ende von Jahr 8. Diskontierung zunächst 5 %, danach 7 %. Keine Marktprognose.",
-      "question": "Berechne für A und B die Barwerte bei beiden Zinssätzen und die jeweilige prozentuale Veränderung. Erkläre den unterschiedlichen Zinseffekt und eine Grenze dieses Modells.",
+      "id": "2026-11-21:market:input-cost",
+      "title": "Erzeugerpreise: Margenwirkung statt Inflationsschluss",
+      "context": "Destatis meldete am 20.11.2026 für Oktober 2026 einen Anstieg der Erzeugerpreise gegenüber Vorjahr. Hypothetischer Hersteller: Umsatz 10 Mio. €, Materialaufwand 4 Mio. €, sonstige operative Kosten 4 Mio. €. Material verteuert sich um 6 %, Verkaufspreise und Mengen bleiben zunächst konstant.",
+      "question": "Berechne operatives Ergebnis und operative Marge vor und nach dem Kostenschock. Welche prozentuale Umsatzpreiserhöhung würde den absoluten Ergebnisverlust bei unveränderter Menge ausgleichen? Begründe zwei Grenzen der Übertragung des Erzeugerpreisindex auf diese Firma.",
       "rubric": [
-        "A: 114,29 € bei 5 % und 112,15 € bei 7 %, Rückgang rund 1,87 %",
-        "B: 81,22 € bei 5 % und 69,84 € bei 7 %, Rückgang rund 14,01 %",
-        "Späterer Cashflow ist bei gleicher Zinsänderung stärker betroffen",
-        "Konstante sichere Zahlungen und einheitlicher Diskontsatz ignorieren Risiko- und Cashflow-Änderungen"
+        "Ausgangsergebnis 2,00 Mio. € und Marge 20 %",
+        "Neuer Materialaufwand 4,24 Mio. €, Ergebnis 1,76 Mio. € und Marge 17,6 %",
+        "Erforderlicher Mehrumsatz 0,24 Mio. €, also 2,4 % auf 10 Mio. € bei unveränderter Menge und sonstigen Kosten",
+        "Index ist kein unternehmensspezifischer Einkaufskorb; Verträge, Absicherung und Preissetzung verändern den Effekt"
       ],
-      "date": "2026-11-20",
-      "source": "Federal Reserve, FOMC Minutes vom 18.11.2026; alle Fallzahlen hypothetisch",
-      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
-      "source_date": "2026-11-18",
+      "date": "2026-11-21",
+      "source": "Destatis, Pressemitteilung Nr. 407 vom 20.11.2026; Rechenfall hypothetisch",
+      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html",
+      "source_date": "2026-11-20",
       "symbol": ""
     },
     {
       "kind": "research",
-      "id": "2026-11-20:research:ipo-dilution",
-      "title": "IPO: frisches Firmenkapital von Altaktionärsverkauf trennen",
-      "context": "Hypothetischer Börsengang zu 25 € je Aktie: 12 Mio. neu ausgegebene Aktien, 3 Mio. von Altaktionären verkauft, 60 Mio. Altaktien vor IPO. Gebühren und Optionen zunächst ignorieren. Keine Anthropic-Istzahlen.",
-      "question": "Berechne Bruttoemissionserlös der Firma, Verkaufserlös der Altaktionäre, Aktienzahl nach IPO und Anteil der neuen Aktien. Nenne zwei zusätzliche Daten für eine faire Bewertung.",
+      "id": "2026-11-21:research:capex-fcf",
+      "title": "Wachstum gegen Cashflow testen",
+      "context": "Hypothetischer Softwareanbieter: CFO 300 Mio. €, Investitionen in Sachanlagen 220 Mio. €, aktienbasierte Vergütung im CFO bereits als nicht zahlungswirksamer Aufwand zurückgerechnet: 70 Mio. €. Im Vorjahr CFO 260 Mio. € und Capex 120 Mio. €. Keine Ist-Zahlen eines Emittenten.",
+      "question": "Berechne einfachen FCF für beide Jahre und dessen Veränderung. Erkläre, warum positiver CFO bei steigender aktienbasierter Vergütung keine vollständige Aktionärsrendite belegt. Nenne zwei notwendige Prüfungen vor einem fairen Aktienwert.",
       "rubric": [
-        "Firma erhält brutto 300 Mio. €; Altaktionäre 75 Mio. €",
-        "Nach Emission 72 Mio. Aktien, sofern keine weiteren Veränderungen",
-        "Neue Aktien 16,67 % der nach IPO ausstehenden Aktien",
-        "Cashflows, Schulden/Netto-Cash, Optionen und Verwässerung sowie IPO-Kosten prüfen; Altaktionärserlös ist kein Firmen-Cashflow"
+        "FCF aktuell 80 Mio. €, Vorjahr 140 Mio. €",
+        "FCF-Veränderung minus 60 Mio. € bzw. rund minus 42,9 %",
+        "Aktienbasierte Vergütung kann Verwässerung verursachen; Rückrechnung im CFO ist keine wirtschaftliche Kostenlosigkeit",
+        "Wachstums- versus Erhaltungs-Capex und Aktienzahl/Verwässerung sowie Nettoschulden prüfen"
       ],
-      "date": "2026-11-20",
-      "source": "Anthropic IPO-Preisfestsetzung vom 18.11.2026; Fallzahlen hypothetisch",
-      "source_url": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
-      "source_date": "2026-11-18",
+      "date": "2026-11-21",
+      "source": "SEC, Form 10-K Reporting Framework (Cashflows und Aktienvergütung); Zahlen hypothetisch",
+      "source_url": "https://www.sec.gov/edgar/search/",
+      "source_date": "2026-11-21",
       "symbol": ""
     },
     {
       "kind": "learning",
-      "id": "2026-11-20:learning:fcf-lease",
-      "title": "Free Cashflow: Investitionen und Leasing sauber unterscheiden",
-      "context": "Hypothetisches Technologieunternehmen: operativer Cashflow 18 Mrd. USD, zahlungswirksame Sachinvestitionen 12 Mrd. USD, neu eingegangene Leasingverpflichtungen 5 Mrd. USD. Im CFO enthaltene Leasingzahlungen dürfen nicht nochmals abgezogen werden.",
-      "question": "Berechne vereinfachten FCF. Erkläre, warum neue Leasingverpflichtungen nicht pauschal nochmals als heutiger Cashabfluss abzuziehen sind. Formuliere eine pessimistische und eine optimistische Prüfungsthese.",
+      "id": "2026-11-21:learning:duration",
+      "title": "Barwert und Zinsrisiko mit Gegenhypothese",
+      "context": "Zwei hypothetische sichere Einmalzahlungen von je 1.000 €: A in einem Jahr, B in fünf Jahren. Der Diskontsatz steigt von 4 % auf 6 %; keine laufenden Ausschüttungen.",
+      "question": "Berechne beide Barwerte bei 4 % und 6 % sowie die relativen Rückgänge. Warum reagiert B stärker? Nenne einen Grund, warum die Rechnung nicht als Kursprognose für eine echte Aktie taugt.",
       "rubric": [
-        "Vereinfachter FCF 6 Mrd. USD",
-        "Neue Leasingverpflichtungen sind Finanzierung bzw. künftige Verpflichtungen, nicht automatisch heutiger Capex-Cashabfluss",
-        "Pessimistisch: künftige Leasingzahlungen belasten Cashflows; Fälligkeiten und Verträge prüfen",
-        "Optimistisch: produktive Investitionen erhöhen spätere CFO; Auslastung, Margen und Rendite auf investiertes Kapital prüfen"
+        "A: 961,54 € bei 4 % und 943,40 € bei 6 %, Rückgang rund 1,89 %",
+        "B: 821,93 € bei 4 % und 747,26 € bei 6 %, Rückgang rund 9,08 %",
+        "Spätere Zahlung wird über mehr Perioden diskontiert",
+        "Aktien haben unsichere, veränderliche Cashflows und Risikoprämien"
       ],
-      "date": "2026-11-20",
-      "source": "NVIDIA Investor Relations, Quartalszahlen vom 17.11.2026; Fallzahlen hypothetisch",
-      "source_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/",
-      "source_date": "2026-11-17",
-      "symbol": "NVDA"
+      "date": "2026-11-21",
+      "source": "Federal Reserve, FOMC Minutes vom 18.11.2026; Zahlen hypothetisch",
+      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
+      "source_date": "2026-11-18",
+      "symbol": ""
     }
   ]
 }
