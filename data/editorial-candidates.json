@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T09:56:24.695362Z",
+  "updated_at": "2026-11-20T11:35:46.680292Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-321d7d0703596f5228",
+      "title": "Was die Volkswagen-Forderungen für Beschäftigte bedeuten könnten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/volkswagen-tarifstreit-ig-metall-100.html",
+      "published_at": "2026-11-20T09:55:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-97027f8d878b6b4b95",
       "title": "Update Wirtschaft vom 20.11.2026",
@@ -802,24 +811,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/energie/energieverbrauch-deutsche-industrie-100.html",
       "published_at": "2026-11-16T11:49:07Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-70f9f60fd64016d00c",
-      "title": "Zinsängste belasten Edelmetalle und Krypto-Währungen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/gold-und-bitcoin-fallen-zinssorgen-100.html",
-      "published_at": "2026-11-16T11:22:36Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-57bd9e5361714f7243",
-      "title": "Offshore-Windparks: Bundesregierung macht millionenschweres Angebot",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/investigativ/ndr/offshore-bundesregierung-100.html",
-      "published_at": "2026-11-16T11:08:19Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
