@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T09:01:14.674405Z",
+  "updated_at": "2026-11-20T09:56:24.695362Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -37,6 +37,15 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/kalifornien-justiz-aufklaerung-nvidia-chips-china-100.html",
       "published_at": "2026-11-20T07:47:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5b58dc71f39c4a4966",
+      "title": "Erzeugerpreise Oktober: Konsens +7,4 Prozent nach +6,7 Prozent, Großhandel +8,8 Prozent – wie viel Preisdruck erreicht Verbraucher, BASF Aktie und DAX? - AktienCheck.de",
+      "source": "Google News: EU/Deutschland",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX1lDLUlFU1AtdkNkZENrYTljZGhvb3pUYzhlXy1QLUI1aEp6ZkhFc0wzZzlCRW5HNklSOF9IYUdaWWkwNFZzQlVncWZJNDZCbGRTMVVLSEhTVG1hQlF4QU9aZTd6MUE0ajZYMkV0YjhzOGxnVnFPck4weExBdVVWR3dkanlmajZrYmVwTE9Sa2xBbkU5VGNnbFpBeXNrZFpEVUNVdlRlZEZZMC1lOWhlTQ?oc=5",
+      "published_at": "2026-11-20T07:16:28Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
