@@ -1,9 +1,45 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T11:35:46.680292Z",
+  "updated_at": "2026-11-20T14:57:34.881522Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-68aeffcfcc8e5b6ca3",
+      "title": "The bull market has a new problem. The 'smart money' is selling",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/20/equity-issuance-bull-market-problem.html",
+      "published_at": "2026-11-20T14:15:29Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-3f6a54ab13972e5169",
+      "title": "Galeria schließt drei Filialen - und noch viele mehr?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/galerie-schliessung-filialen-100.html",
+      "published_at": "2026-11-20T13:47:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-32fccc4d8efc95d1a4",
+      "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
+      "published_at": "2026-11-20T13:29:50Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9221feaeaae38d48dd",
+      "title": "Marktbericht: KI-Kater nach dem Anthropic-Börsengang",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/boerse/ki-kater-100.html",
+      "published_at": "2026-11-20T13:19:33Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-321d7d0703596f5228",
       "title": "Was die Volkswagen-Forderungen für Beschäftigte bedeuten könnten",
@@ -748,69 +784,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/inland/regional/brandenburg/tesla-investitionen-brandenburg-100.html",
       "published_at": "2026-11-16T15:10:41Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d58771cd897205473c",
-      "title": "Die EU will europäischen Stahl konkurrenzfähig machen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/stahl-eu-china-massnahmen-100.html",
-      "published_at": "2026-11-16T14:53:07Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1282a41c25502e97a8",
-      "title": "Stahlgipfel in Salzgitter: Unternehmen fordern Entlastung beim Strompreis",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/stahlgipfel-klimawandel-produktion-100.html",
-      "published_at": "2026-11-16T14:52:36Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7426ba3b484fc23a5b",
-      "title": "Älterer Programmfehler löste Ausfall von Microsoft-Diensten aus",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/microsoft-stoerung-fehler-100.html",
-      "published_at": "2026-11-16T14:22:45Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0839ee352b71d85604",
-      "title": "Lutnick faces questions over Nvidia spy scandal. His sons' firm has ties to the chipmaker",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/13/howard-lutnick-nvidia-jensen-huang-china-cantor-fitzgerald.html",
-      "published_at": "2026-11-16T12:14:46Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-da685c538926ac6e85",
-      "title": "How Nvidia turmoil and a Democratic Congress could reshape the AI trade, according to ETF experts",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/14/nvidia-ai-trade-data-centers-congress.html",
-      "published_at": "2026-11-16T12:13:23Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-8d1cd2dbafc5e003b5",
-      "title": "EU gibt UniCredit grünes Licht für Commerzbank-Übernahme",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/commerzbank-unicredit-eu-genehmigung-100.html",
-      "published_at": "2026-11-16T11:50:50Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-26fbed8018235c7d3a",
-      "title": "Energieverbrauch der Industrie sinkt wegen hoher Preise",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/energie/energieverbrauch-deutsche-industrie-100.html",
-      "published_at": "2026-11-16T11:49:07Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
