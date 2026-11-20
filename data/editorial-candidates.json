@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T21:05:20.338674Z",
+  "updated_at": "2026-11-20T03:12:07.223999Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-b0eacc219c0c0c69b0",
+      "title": "Medienberichte: Lufthansa will 1.000 Stellen streichen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/lufthansa-1000-stellen-100.html",
+      "published_at": "2026-11-20T01:56:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a91fb1865ec5d47b13",
+      "title": "Arbeitskampf: IG Metall startet 24-Stunden-Warnstreiks",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/warnstreik-ig-metall-126.html",
+      "published_at": "2026-11-20T00:41:04Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-c73edd8ebfba75b339",
       "title": "Wirtschaft vor acht vom 19.11.2026",
