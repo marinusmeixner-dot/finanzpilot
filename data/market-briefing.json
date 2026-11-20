@@ -1,11 +1,16 @@
 {
   "schema_version": 1,
-  "date": "2026-11-19",
-  "source_updated_at": "2026-11-19",
-  "title": "Anthropic handelt erstmals an Nasdaq – IPO-Aufschlag ist kein fairer Wert",
-  "summary": "Anthropic (ANT) hat am 19.11.2026 seinen Nasdaq-Börsenstart vollzogen. Die Nasdaq dokumentiert die Börsenglocke und die Notierung; AP und Reuters melden einen ersten Handel bei 111,50 USD, rund 34,3 % über dem Emissionspreis von 83 USD vom 18.11. Der erste Handel ist kein Schlusskurs. Der hohe Aufschlag beweist weder nachhaltige Gewinne noch einen fairen Wert. Fed-Protokoll (18.11.) und NVIDIA-Zahlen (17.11.) bleiben getrennte Bewertungsthemen.",
-  "interpretation": "Originalquellen: Anthropic IPO-Preisfestsetzung vom 18.11.2026, https://www.anthropic.com/news/anthropic-prices-initial-public-offering ; Federal Reserve FOMC-Protokoll vom 18.11.2026, https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm ; NVIDIA Quartalsbericht vom 17.11.2026, https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/ . Aktualisierung 19.11.2026: Nasdaq bestätigt den Börsengang mit eigener Bell-Ceremony (https://www.nasdaq.com/events/anthropic-pbc-rings-opening-bell); AP (https://apnews.com/article/b6a74b8949021207dc162fcc876c4649) und Reuters (https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/) berichten den tatsächlich erfolgten Handelsstart bei 111,50 USD. Dieser Eröffnungskurs ist sekundär berichtet, kein verifizierter aktueller Schlusskurs. 980 Mio. angebotene Aktien mal 83 USD ergeben 81,34 Mrd. USD Bruttoangebotsvolumen, nicht Cashflow oder Gesamtbörsenwert. Laut Anthropic entfallen 956.351.354 Aktien (79,377 Mrd. USD brutto vor Gebühren) auf die Emission durch Anthropic und 23.648.646 Aktien (1,963 Mrd. USD brutto) auf verkaufende Altaktionäre; deren Erlös fließt Anthropic ausdrücklich nicht zu. Die zusätzliche 30-Tage-Mehrzuteilungsoption über bis zu 147 Mio. Aktien ist nicht als bereits ausgeübt zu behandeln. Für einen fairen Wert fehlen eine geprüfte voll verwässerte Aktienzahl, Kapitalstruktur und belastbare Cashflow-Szenarien. Ergänzender SEC-Primärbeleg vom 18.11.2026: https://www.sec.gov/Archives/edgar/data/2130357/000162828026074937/anthropicpbc-fwppricing.htm . Das Pricing-Termsheet nennt zusätzlich ein gleichzeitiges privates Class-N-Platzierungsvolumen von 26,0 Mrd. USD (313.253.007 Aktien zu 83 USD). Diese Privatplatzierung ist NICHT Teil der 980 Mio. öffentlich angebotenen Class-A-Aktien; beide Finanzierungswege müssen bei Kapitalstruktur, Mittelzufluss und Verwässerung getrennt berücksichtigt werden. Aus dem Gesamtfinanzierungsvolumen folgt ohne vollständige Aktienzahl und Cashflow-Modell kein belastbarer fairer Aktienwert.",
+  "date": "2026-11-20",
+  "source_updated_at": "2026-11-20",
+  "title": "Destatis: Erzeugerpreise +8,1 % – Energie- und Vorleistungskosten im Fokus",
+  "summary": "Destatis meldet am 20.11.2026 für Oktober +8,1 % Erzeugerpreise zum Vorjahr und +1,4 % zum Vormonat. Energie +18,7 %, Vorleistungsgüter +6,8 %, ohne Energie +3,6 % zum Vorjahr. Das ist ein Kostendrucksignal, kein automatischer Beleg für steigende Verbraucherpreise oder sinkende Firmengewinne. Anthropic-Börsenstart (19.11.) und Fed-Protokoll (18.11.) bleiben eigenständig datierte Themen.",
+  "interpretation": "Primärquelle: Statistisches Bundesamt, Pressemitteilung Nr. 407 vom 20.11.2026, https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html . Oktober 2026: gewerbliche Erzeugerpreise Inland +8,1 % zum Oktober 2025, +1,4 % zum September 2026. Energie +18,7 % zum Vorjahr; Vorleistungsgüter +6,8 %, darunter chemische Grundstoffe +12,5 % und Metalle +12,9 %. Ohne Energie +3,6 %. Ein höherer Einkaufspreis belastet Margen nur bei nicht ausreichend durchsetzbaren Verkaufspreisen; langfristige Verträge, Hedging, Lager und Branchenmix können Wirkung verzögern oder abfedern. Erzeugerpreisindex misst weder direkt Verbraucherpreise noch einzelne Unternehmensgewinne. Anthropic-IPO und Fed-Protokoll weiterhin gesondert anhand der Originalquellen vom 18.11.2026 einordnen.",
   "highlights": [
+    {
+      "story_id": "2026-11-20-destatis-producer-prices-october",
+      "title": "Erzeugerpreise Oktober: +8,1 % gegenüber Vorjahr",
+      "why": "Destatis-Originalmeldung vom 20.11.: Energie +18,7 %, Vorleistungsgüter +6,8 %; Margenwirkung branchen- und vertragsspezifisch, keine automatische Verbraucherpreisprognose."
+    },
     {
       "story_id": "2026-11-18-anthropic-ipo-priced-83",
       "title": "Anthropic: Nasdaq-Debüt mit Eröffnung bei 111,50 USD",
@@ -15,11 +20,6 @@
       "story_id": "2026-11-18-fed-october-minutes-inflation-ai-financing",
       "title": "Fed-Protokoll: Zinsen und KI-Finanzierungsrisiken",
       "why": "Originalprotokoll vom 18.11.; Diskontierungs- und Refinanzierungsrisiken prüfen, keine neue Zinsentscheidung."
-    },
-    {
-      "story_id": "2026-11-17-nvidia-q3-fy27-results",
-      "title": "NVIDIA: Umsatz +103 %, Q4-Margenausblick schwächer",
-      "why": "Neuer Originalbericht vom 17.11.; Data Center 107,6 Mrd. USD, Q4-Prognose mit zusätzlicher Woche und 71–72 % Bruttomarge."
     }
   ],
   "next_watch": "Parrot SA (Euronext Paris: PARRO; ISIN FR0004038263) – Q3-Mitteilung vom 28.10.2026 anhand des Original-PDF geprüft: Q3-Umsatz 23,7 Mio. EUR (+40 %), Neunmonatsumsatz 81,0 Mio. EUR (+60 %); professionelle Mikrodrohnen Q3 16,6 Mio. EUR (+68 %), 9M 58,7 Mio. EUR (+110 %), Infrastruktursoftware Q3 7,0 Mio. EUR (−1 %), 9M 22,1 Mio. EUR (−2 %). Management erwartet rund 110 Mio. EUR Jahresumsatz. Die Mikrodrohnen-Sparte erreichte nur auf rollierender Zwölfmonatsbasis operativen Break-even, Q3 allein war negativ. Q3-Meldung enthält keine vollständige Konzern-Kapitalflussrechnung, Bilanz oder belastbaren normalisierten FCFE; der ältere H1-CFO von −2,2 Mio. EUR bleibt ein Warnsignal. Vor einer neuen Bewertungsstory: H1-Bilanz/Leasing, Aktienzahl, Börsenkurs und Ausführungsrisiko institutioneller Aufträge verifizieren. Originalquelle 28.10.2026: https://www.parrot.com/assets/s3fs-public/media-public/2026/PARROT_CP_T3-2026_20261028_EN_DEF.pdf. Redaktionsstatus der privaten Watchlist-Queue wird ausschließlich in Supabase geführt und nicht als dauerhafte Aussage im öffentlichen Marktbriefing veröffentlicht.",
