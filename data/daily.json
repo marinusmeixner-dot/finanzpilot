@@ -1,10 +1,46 @@
 {
   "date": "2026-11-19",
-  "updated_at": "2026-11-19T22:04:44+01:00",
+  "updated_at": "2026-11-21T12:02:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
   "intro": "Anthropic (ANT) hat am 19.11.2026 den Nasdaq-Handel aufgenommen. Der erste gemeldete Handel zu 111,50 USD lag rund 34,3 % über dem Emissionspreis von 83 USD; dies ist ausdrücklich kein bestätigter Schlusskurs. Das Fed-Protokoll vom 18.11. und die NVIDIA-Zahlen vom 17.11. bleiben eigenständige Bewertungsthemen.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-20-take-two-gta6-day-one-retail-sales",
+      "title": "GTA VI erzielt 3,79 Mrd. USD Ersttagsumsatz im Handel – nicht gleich Take-Two-Umsatz",
+      "published": "2026-11-20",
+      "date": "2026-11-20",
+      "category": "Unternehmenszahlen",
+      "symbols": [
+        "TTWO"
+      ],
+      "source": "Take-Two Interactive / Rockstar Games, Originalmitteilung vom 20.11.2026",
+      "url": "https://ir.take2games.com/node/32701/pdf",
+      "why": "Take-Two bestätigt erstmals den weltweiten Einzelhandelsumsatz am Veröffentlichungstag von Grand Theft Auto VI.",
+      "impact": "Die 3,79 Mrd. USD sind Retail Sales, nicht der verbuchte Nettoumsatz oder Free Cashflow von Take-Two; Plattformanteile, Vertrieb, Rückgaben und zeitliche Umsatzrealisierung sind für die Bewertung separat zu prüfen.",
+      "article": {
+        "lead": "Take-Two Interactive (NASDAQ: TTWO) verdient mit Videospielen und laufenden digitalen Inhalten Geld. Seine Marke Rockstar Games meldete am 20. November 2026 für Grand Theft Auto VI einen Einzelhandelsumsatz von 3,79 Milliarden US-Dollar am ersten Verkaufstag. Das ist ein außergewöhnlich starker Absatzindikator, aber kein Beleg für einen ebenso hohen Gewinn.",
+        "sections": [
+          {
+            "heading": "Was bestätigt ist",
+            "text": "Die offizielle Take-Two-Mitteilung vom 20.11.2026 nennt ausdrücklich 3,79 Mrd. USD day-one retail sales. GTA VI erschien am 19. November für PlayStation 5 und Xbox Series X|S. Der Betrag ist eine vom Unternehmen gemeldete Verkaufsgröße und noch kein testierter Quartalsabschluss."
+          },
+          {
+            "heading": "Geschäftsmodell und wirtschaftlicher Übertragungsweg",
+            "text": "Take-Two veröffentlicht und vermarktet Spiele über Rockstar Games, 2K und weitere Marken. Einnahmen entstehen durch Spieleverkäufe, digitale Zusatzinhalte und wiederkehrende Ausgaben von Spielern. Vom Endkundenverkaufspreis bleiben nach Plattform- und Vertriebspartneranteilen, Steuern und weiteren Kosten nicht automatisch 100 Prozent beim Publisher. Auch Entwicklung, Marketing und Lizenzkosten belasten die Profitabilität."
+          },
+          {
+            "heading": "Katalysatoren und Risiken",
+            "text": "Der Start belegt hohe Nachfrage. Entscheidend für den längerfristigen Wert sind jedoch weitere Verkaufswochen, Spielerbindung, Monetarisierung digitaler Inhalte und die tatsächlich realisierten Nettobuchungen. Gegenhypothese: Ein außergewöhnlich hoher Start bündelt Vorbestellungen und verschiebt Nachfrage nach vorn; hohe Kosten und geringere Anschlussumsätze könnten die Gewinnwirkung begrenzen."
+          },
+          {
+            "heading": "Bewertung: Was noch fehlt",
+            "text": "Für einen belastbaren fairen Wert sind die später ausgewiesenen Net Bookings, Nettoumsätze, Cashflows, Entwicklungsausgaben, Aktienzahl und Nettofinanzposition erforderlich. Der am 20.11. gemeldete Retail-Umsatz darf nicht als Free Cashflow oder direkt als Unternehmensumsatz in ein Bewertungsmodell übernommen werden. Ohne diese Brücke ist kein seriöses Kursziel ableitbar."
+          }
+        ],
+        "conclusion": "Die Originalquelle bestätigt einen rekordstarken Verkaufsstart. Ob daraus ein entsprechend großer Wertzuwachs für TTWO-Aktionäre entsteht, bleibt bis zu belastbaren Nettoerlös-, Kosten- und Cashflowdaten offen. Primärquelle: https://ir.take2games.com/node/32701/pdf"
+      }
+    },
     {
       "id": "2026-11-18-anthropic-ipo-priced-83",
       "title": "Anthropic setzt IPO-Preis auf 83 US-Dollar – Bewertung braucht mehr als Wachstum",
