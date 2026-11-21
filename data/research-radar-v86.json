@@ -202,11 +202,7 @@
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
       "editorial_age_days": 19,
-      "unverified_discovery_hint": {
-        "id": "rss-e519a4e6927a447aa6",
-        "date": "2026-11-17",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "ACWI",

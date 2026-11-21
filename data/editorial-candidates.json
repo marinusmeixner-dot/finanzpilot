@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T07:56:54.248847Z",
+  "updated_at": "2026-11-21T09:47:27.350800Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-4750d27d94fbf1adfd",
+      "title": "GTA VI spielt laut Konzern fast vier Milliarden Dollar am ersten Tag ein",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/milliardengewinn-gta-100.html",
+      "published_at": "2026-11-21T09:39:17Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-e52f101b8328dc6503",
       "title": "How China is using summits to expand its global influence",
@@ -730,51 +739,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/ausland/asien/trump-asien-reise-100.html",
       "published_at": "2026-11-17T09:49:58Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-58914250c611b12254",
-      "title": "Datenleck: Interne Dokumente belasten die Deutsche Bank",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/deutsche-bank-datenleak-100.html",
-      "published_at": "2026-11-17T09:42:53Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-9e64d1d47b4bf8a1da",
-      "title": "Update Wirtschaft vom 17.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1685166.html",
-      "published_at": "2026-11-17T09:11:26Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e519a4e6927a447aa6",
-      "title": "U.S. companies from Nvidia to Apple face a growing China dilemma",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/17/us-tech-firms-china-ties-political-pressure.html",
-      "published_at": "2026-11-17T08:52:45Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c2c0959d5ab2101778",
-      "title": "US-Regierung verhängt neue Exportbeschränkungen für KI-Chips",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/usa-einschraenkungen-export-ki-chips-nvidia-100.html",
-      "published_at": "2026-11-17T07:59:32Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-caf6dfdee4f325cd8c",
-      "title": "Tag der Wohnungswirtschaft: Bauen verteuert sich weiter - trotz aller Versprechen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/tag-der-wohnungswirtschaft-100.html",
-      "published_at": "2026-11-17T07:57:10Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
