@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T09:47:27.350800Z",
+  "updated_at": "2026-11-21T11:03:03.802966Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-d79e3888d461f99865",
+      "title": "\"Altersvorsorgedepot für nahezu alle Riester-Sparer interessant\"",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-tipps-riester-100.html",
+      "published_at": "2026-11-21T10:20:52Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a7633041be35c26bcb",
+      "title": "Altersvorsorgedepot: Staatlich organisierter Fonds nicht startklar",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-staatlicher-fonds-nicht-startklar-100.html",
+      "published_at": "2026-11-21T10:16:17Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-4750d27d94fbf1adfd",
       "title": "GTA VI spielt laut Konzern fast vier Milliarden Dollar am ersten Tag ein",
@@ -721,24 +739,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/konjunktur/eu-kommission-wachstumsprognose-deutschland-100.html",
       "published_at": "2026-11-17T12:42:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f2b90149b584c4b5ec",
-      "title": "Marktbericht: DAX-Rückschlag vor Nvidia-Zahlen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-ki-dow-nvidia-100.html",
-      "published_at": "2026-11-17T09:57:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b6097aed78d2991394",
-      "title": "Trump auf Gipfel-Marathon in Asien - Symbolik statt Substanz?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/asien/trump-asien-reise-100.html",
-      "published_at": "2026-11-17T09:49:58Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
