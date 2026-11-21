@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T01:31:59.542537Z",
+  "updated_at": "2026-11-21T07:56:54.248847Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-e52f101b8328dc6503",
+      "title": "How China is using summits to expand its global influence",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
+      "published_at": "2026-11-21T06:00:02Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-80f68b94e40142d723",
+      "title": "US-Gericht billigt Vergleich von Bayer mit Glyphosat-Klägern",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/bayer-glyphosat-vergleich-usa-100.html",
+      "published_at": "2026-11-21T03:50:50Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-def82df2aa1c82e8d4",
       "title": "Deutsche Konjunktur: Wachstum auf Pump? Berenberg sieht 1 % in drei Quartalen, Tariflöhne +2,57 % – trägt das den DAX? - AktienCheck.de",
@@ -757,33 +775,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/tag-der-wohnungswirtschaft-100.html",
       "published_at": "2026-11-17T07:57:10Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-83c9f8dbde9df1fe2c",
-      "title": "7,7 % der im Jahr 2025 neu zugelassenen Lkw in der EU fahren rein elektrisch",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_47_p002.html",
-      "published_at": "2026-11-17T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-81c26580d5948bc66a",
-      "title": "Dichte gestiegen: Eine Kinderärztin oder ein Kinderarzt versorgt im Schnitt 1 603 Kinder und Jugendliche",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N080_23.html",
-      "published_at": "2026-11-17T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-21784749bbf39ca602",
-      "title": "Nach Huang-Affäre: Bald alles neu in der KI-Chipindustrie?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/digitales/ki-chipindustrie-nvidia-100.html",
-      "published_at": "2026-11-17T03:16:17Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
