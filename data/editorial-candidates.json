@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T17:29:33.922571Z",
+  "updated_at": "2026-11-21T20:04:58.328534Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -721,24 +721,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-quartalsergebnisse-100.html",
       "published_at": "2026-11-18T00:59:30Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1107bed5d8477b9f6b",
-      "title": "Wirtschaft vor acht vom 17.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1685530.html",
-      "published_at": "2026-11-17T19:01:16Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-99ea3c0f408579d892",
-      "title": "Jensen Huang kann sich Rückkehr an Nvidia-Spitze vorstellen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rueckkehr-100.html",
-      "published_at": "2026-11-17T18:03:42Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
