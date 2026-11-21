@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T11:03:03.802966Z",
+  "updated_at": "2026-11-21T14:47:57.033510Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-d4858c02a9cae27d77",
+      "title": "Nach Kühnes Tod: Kontinuität und Aufarbeitung bei Kühne+Nagel",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/klaus-michael-kuehne-unternehmer-vergangenheit-schindellegi-schweiz-100.html",
+      "published_at": "2026-11-21T12:36:54Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-d79e3888d461f99865",
       "title": "\"Altersvorsorgedepot für nahezu alle Riester-Sparer interessant\"",
@@ -712,33 +721,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/industrie-aufschwung-jobabbau-100.html",
       "published_at": "2026-11-17T16:47:06Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-4d2b814d0351413c2e",
-      "title": "EU wirft Temu mangelnden Einsatz gegen illegale Produkte vor",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/eu-temu-illegale-produkte-100.html",
-      "published_at": "2026-11-17T13:24:48Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b022979f6a02c546d8",
-      "title": "Marktbericht: Deutsche-Bank-Aktien nach neuen Vorwürfen unter Druck",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/deutschebank-226.html",
-      "published_at": "2026-11-17T13:08:30Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-97990cdbd84b870401",
-      "title": "EU-Kommission verdoppelt Prognose für Deutschland",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/eu-kommission-wachstumsprognose-deutschland-100.html",
-      "published_at": "2026-11-17T12:42:17Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
