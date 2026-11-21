@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-21T20:04:58.328534Z",
+  "updated_at": "2026-11-21T23:13:52.716440Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-8e98c84bbceac16279",
+      "title": "EU und Indonesien unterzeichnen Freihandelsabkommen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
+      "published_at": "2026-11-21T20:17:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-a1bf56ec6d0926a2e6",
       "title": "Scheitert die UN-Klimakonferenz in Antalya?",
