@@ -124,7 +124,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 21,
+      "editorial_age_days": 22,
       "unverified_discovery_hint": {
         "id": "rss-7c5036b1a9adca3edd",
         "date": "2026-11-19",
@@ -205,7 +205,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 18,
+      "editorial_age_days": 19,
       "unverified_discovery_hint": {
         "id": "rss-e519a4e6927a447aa6",
         "date": "2026-11-17",
@@ -295,7 +295,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -372,7 +372,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 17,
+      "editorial_age_days": 18,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -449,7 +449,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 19,
+      "editorial_age_days": 20,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -526,7 +526,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 19,
+      "editorial_age_days": 20,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1151,7 +1151,7 @@
         "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 7,
+      "editorial_age_days": 8,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1266,92 +1266,6 @@
         "relative_to_benchmark_pp": 1.51,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
-      "id": "index-crh",
-      "ticker": "CRH",
-      "company": "CRH plc",
-      "sector": "Materials",
-      "country": "US",
-      "currency": "USD",
-      "origin": "secondary_index_quote_crosscheck",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "B_watchlist",
-      "technical_research_score": 56,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-19",
-        "sessions": 251,
-        "adjusted_close": 90.54,
-        "return_21d_pct": 5.68,
-        "return_63d_pct": -4.37,
-        "return_126d_pct": -9.65,
-        "benchmark_63d_pct": -8.13,
-        "relative_63d_pp": 3.76,
-        "ma50": 87.165,
-        "ma200": 101.2383,
-        "above_ma50": true,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -30.02,
-        "volatility_21d_annualized_pct": 42.9,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-06-crh-q3-guidance-cut-arcosa",
-        "title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
-        "date": "2026-11-06",
-        "url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
-        "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -8.13,
-          "excess_return_pp": 3.76,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -6.28,
-          "excess_return_pp": 1.91,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -9.49,
-          "excess_return_pp": 5.12,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
-      "discovery_date": "2026-11-06",
-      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-05",
-        "last_session": "2026-11-19",
-        "adjusted_return_pct": -5.14,
-        "benchmark_return_pct": -3.08,
-        "relative_to_benchmark_pp": -2.06,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
       }
     },
     {
@@ -1750,6 +1664,92 @@
       }
     },
     {
+      "id": "index-crh",
+      "ticker": "CRH",
+      "company": "CRH plc",
+      "sector": "Materials",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 50,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-19",
+        "sessions": 251,
+        "adjusted_close": 90.54,
+        "return_21d_pct": 5.68,
+        "return_63d_pct": -4.37,
+        "return_126d_pct": -9.65,
+        "benchmark_63d_pct": -8.13,
+        "relative_63d_pp": 3.76,
+        "ma50": 87.165,
+        "ma200": 101.2383,
+        "above_ma50": true,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -30.02,
+        "volatility_21d_annualized_pct": 42.9,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-06-crh-q3-guidance-cut-arcosa",
+        "title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
+        "date": "2026-11-06",
+        "url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
+        "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -8.13,
+          "excess_return_pp": 3.76,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -6.28,
+          "excess_return_pp": 1.91,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -9.49,
+          "excess_return_pp": 5.12,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-06",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-05",
+        "last_session": "2026-11-19",
+        "adjusted_return_pct": -5.14,
+        "benchmark_return_pct": -3.08,
+        "relative_to_benchmark_pp": -2.06,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "jnj",
       "ticker": "JNJ",
       "company": "Johnson & Johnson",
@@ -1867,7 +1867,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 19,
+      "editorial_age_days": 20,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1944,7 +1944,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 21,
+      "editorial_age_days": 22,
       "unverified_discovery_hint": {
         "id": "rss-5b58dc71f39c4a4966",
         "date": "2026-11-20",
@@ -2104,7 +2104,7 @@
         "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 8,
+      "editorial_age_days": 9,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3278,7 +3278,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3675,7 +3675,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 17,
+      "editorial_age_days": 18,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3835,8 +3835,8 @@
       "editorial_evidence": null,
       "editorial_age_days": null,
       "unverified_discovery_hint": {
-        "id": "rss-7e1c04e8835362d0d6",
-        "date": "2026-11-19",
+        "id": "rss-def82df2aa1c82e8d4",
+        "date": "2026-11-20",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
@@ -3993,7 +3993,7 @@
         "source": "NVIDIA Investor Relations, Q3 FY2027, 17.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 3,
+      "editorial_age_days": 4,
       "unverified_discovery_hint": {
         "id": "rss-eb42126f23ddeede70",
         "date": "2026-11-20",
@@ -4273,92 +4273,6 @@
       }
     },
     {
-      "id": "index-rddt",
-      "ticker": "RDDT",
-      "company": "Reddit",
-      "sector": "Communication Services",
-      "country": "US",
-      "currency": "USD",
-      "origin": "secondary_index_quote_crosscheck",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 12,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-18",
-        "sessions": 250,
-        "adjusted_close": 94.09,
-        "return_21d_pct": -39.55,
-        "return_63d_pct": -37.4,
-        "return_126d_pct": -35.87,
-        "benchmark_63d_pct": -5.81,
-        "relative_63d_pp": -31.59,
-        "ma50": 135.8678,
-        "ma200": 152.4595,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -63.66,
-        "volatility_21d_annualized_pct": 134.0,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-06-reddit-q3-advertising-search-risk",
-        "title": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
-        "date": "2026-11-06",
-        "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
-        "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -5.81,
-          "excess_return_pp": -31.59,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -4.01,
-          "excess_return_pp": -33.39,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -7.14,
-          "excess_return_pp": -30.26,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
-      "discovery_date": "2026-11-06",
-      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-05",
-        "last_session": "2026-11-18",
-        "adjusted_return_pct": 0.3,
-        "benchmark_return_pct": -1.15,
-        "relative_to_benchmark_pp": 1.45,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      }
-    },
-    {
       "id": "profile-enr-de",
       "ticker": "ENR.DE",
       "company": "Siemens Energy AG",
@@ -4397,7 +4311,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 9,
+      "editorial_age_days": 10,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4632,7 +4546,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 17,
+      "editorial_age_days": 18,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4788,7 +4702,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 19,
+      "editorial_age_days": 20,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -5059,6 +4973,92 @@
         "adjusted_return_pct": -2.48,
         "benchmark_return_pct": -5.51,
         "relative_to_benchmark_pp": 3.03,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
+      "id": "index-rddt",
+      "ticker": "RDDT",
+      "company": "Reddit",
+      "sector": "Communication Services",
+      "country": "US",
+      "currency": "USD",
+      "origin": "secondary_index_quote_crosscheck",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 6,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-18",
+        "sessions": 250,
+        "adjusted_close": 94.09,
+        "return_21d_pct": -39.55,
+        "return_63d_pct": -37.4,
+        "return_126d_pct": -35.87,
+        "benchmark_63d_pct": -5.81,
+        "relative_63d_pp": -31.59,
+        "ma50": 135.8678,
+        "ma200": 152.4595,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -63.66,
+        "volatility_21d_annualized_pct": 134.0,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-06-reddit-q3-advertising-search-risk",
+        "title": "Reddit wächst im dritten Quartal um 53 % – wie abhängig ist das Werbegeschäft von Suchmaschinen?",
+        "date": "2026-11-06",
+        "url": "https://investor.redditinc.com/news-events/news-releases/news-details/2026/Reddit-Reports-Third-Quarter-2026-Results/default.aspx",
+        "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -5.81,
+          "excess_return_pp": -31.59,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -4.01,
+          "excess_return_pp": -33.39,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -7.14,
+          "excess_return_pp": -30.26,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/main/data/constituents.csv",
+      "discovery_date": "2026-11-06",
+      "issuer_identity_status": "S&P 500 secondary catalogue with SEC CIK ONLY; independent ticker quotation NOT confirmed, do not claim a live listing, liquidity, valuation or investment thesis",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-05",
+        "last_session": "2026-11-18",
+        "adjusted_return_pct": 0.3,
+        "benchmark_return_pct": -1.15,
+        "relative_to_benchmark_pp": 1.45,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       }
@@ -6164,7 +6164,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 65,
+      "editorial_age_days": 66,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",

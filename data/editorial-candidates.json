@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T20:14:16.078653Z",
+  "updated_at": "2026-11-21T01:31:59.542537Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-def82df2aa1c82e8d4",
+      "title": "Deutsche Konjunktur: Wachstum auf Pump? Berenberg sieht 1 % in drei Quartalen, Tariflöhne +2,57 % – trägt das den DAX? - AktienCheck.de",
+      "source": "Google News: EU/Deutschland",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSFFxQ2JjY0xLTzdKZjkyam9GaEZFSENYZlNJWnhMb25wMDhPd0pibDJyVHlGa0c1Nkg5LWdacVRid1QtMkNDeVFjdnF0ZEJYVEFEVjd1R0VSXzlZdVV6X2dsY1kteTAwdWVocEYzaTZueHNQbXVuVTY3Sk40ckpNOThWOEpROGVTTjJuX2s1R0NyUm9CTExTcHgtNzFUQTlnSUs1R2VtTQ?oc=5",
+      "published_at": "2026-11-20T23:01:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-668be8a86a37b2f1aa",
       "title": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
@@ -775,24 +784,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/digitales/ki-chipindustrie-nvidia-100.html",
       "published_at": "2026-11-17T03:16:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b5b3fa1c891647aa48",
-      "title": "Berkshire Hathaway raised its stake in Delta in the third quarter. It also trimmed a key bank holding",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/16/berkshire-hathaway-raised-its-stake-in-delta-air-in-the-third-quarter.html",
-      "published_at": "2026-11-16T23:01:19Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7bd6a00b749767a0fd",
-      "title": "JPMorgan Chase says temporary software bug is affecting consumer banking",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/16/jpmorgan-chase-technical-issue.html",
-      "published_at": "2026-11-16T22:14:47Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

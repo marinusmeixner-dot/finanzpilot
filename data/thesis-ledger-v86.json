@@ -2467,6 +2467,24 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-3376d6271fb2390",
+      "ticker": "CRH",
+      "company": "CRH plc",
+      "date": "2026-11-19",
+      "event_type": "priority_changed",
+      "signal_signature": "C_screen_only|2026-11-06-crh-q3-guidance-cut-arcosa|active",
+      "from_priority": "B_watchlist",
+      "priority": "C_screen_only",
+      "adjusted_close": 90.54,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -8.13,
+      "editorial_story_id": "2026-11-06-crh-q3-guidance-cut-arcosa",
+      "evidence_url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

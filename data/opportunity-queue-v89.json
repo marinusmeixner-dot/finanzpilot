@@ -287,44 +287,6 @@
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
     },
     {
-      "id": "index-crh",
-      "ticker": "CRH",
-      "company": "CRH plc",
-      "sector": "Materials",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "B_watchlist",
-      "decision_stage": "editorial_screen",
-      "primary_cashflow_ready": false,
-      "price_asof": "2026-11-19",
-      "evidence_date": "2026-11-06",
-      "evidence_age_days": 13,
-      "evidence_url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
-      "evidence_title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
-      "why_now": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
-      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
-      "needs_before_investment": [
-        "Primärbericht/Cashflow",
-        "Aktuelle Aktienzahl und Bilanz",
-        "Nachvollziehbare künftige Cashflows",
-        "Bewertung mit Sicherheitsspanne"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
-        "Primärbericht/Cashflow"
-      ],
-      "alternatives": {
-        "peer_count": 0,
-        "etf_count": 3,
-        "benchmark_names": [
-          "iShares MSCI ACWI ETF",
-          "SPDR S&P 500 ETF"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
       "id": "nvidia",
       "ticker": "NVDA",
       "company": "NVIDIA",
@@ -435,6 +397,44 @@
         "benchmark_names": [
           "Vanguard FTSE All-World UCITS ETF",
           "iShares STOXX Europe 600 UCITS ETF (DE)"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "index-crh",
+      "ticker": "CRH",
+      "company": "CRH plc",
+      "sector": "Materials",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "editorial_screen",
+      "primary_cashflow_ready": false,
+      "price_asof": "2026-11-19",
+      "evidence_date": "2026-11-06",
+      "evidence_age_days": 13,
+      "evidence_url": "https://www.sec.gov/Archives/edgar/data/849395/000084939526000012/q3resultsannouncement2026.htm",
+      "evidence_title": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
+      "why_now": "CRH wächst beim Umsatz, senkt aber den Ausblick – was die Arcosa-Übernahme verändert",
+      "first_rejection": "Ohne Primärquellen kann noch keine Investmentthese widerlegt werden.",
+      "needs_before_investment": [
+        "Primärbericht/Cashflow",
+        "Aktuelle Aktienzahl und Bilanz",
+        "Nachvollziehbare künftige Cashflows",
+        "Bewertung mit Sicherheitsspanne"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "CFO, Capex, Free Cashflow und Verschuldung aus Primärberichten belegen",
+        "Primärbericht/Cashflow"
+      ],
+      "alternatives": {
+        "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
