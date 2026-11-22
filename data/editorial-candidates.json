@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T03:11:32.177399Z",
+  "updated_at": "2026-11-22T11:20:23.559294Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-0b4bace73ec3ef861f",
+      "title": "Sind Einzelaktien eine Kostenfalle oder eine Goldgrube?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/boerse-investment-einzelaktien-etf-100.html",
+      "published_at": "2026-11-22T10:25:29Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6793f1504c82adb164",
+      "title": "IG Metall weitet Warnstreiks in norddeutscher Metall- und Elektroindustrie aus",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/ig-metall-warnstreik-102.html",
+      "published_at": "2026-11-22T03:50:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-8e98c84bbceac16279",
       "title": "EU und Indonesien unterzeichnen Freihandelsabkommen",
@@ -577,150 +595,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
       "published_at": "2026-11-18T13:32:33Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a63631dc7d907029ea",
-      "title": "Wie riskant ist Nvidias Kurssturz für ETF-Sparer?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/nvidia-kurssturz-etf-sparer-risiken-100.html",
-      "published_at": "2026-11-18T10:17:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ec65e6b6f59c91f784",
-      "title": "Update Wirtschaft vom 18.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1685746.html",
-      "published_at": "2026-11-18T09:20:58Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a0b7fd9274bf7a4677",
-      "title": "Baugenehmigungen von Wohnungen brechen nach starkem Anstieg ein",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/wohnungsbau-september-100.html",
-      "published_at": "2026-11-18T09:01:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-fe20f2a92eb2eba2ab",
-      "title": "Stromsteuersenkung und Spritpreisdeckel - zeitlich begrenzt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/koalitionsausschuss-einigung-stromsteuer-spritpreisdeckel-100.html",
-      "published_at": "2026-11-18T08:55:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f9dabe42543e9455c2",
-      "title": "Stromsteuersenkung und Spritpreisdeckel: Was die Entlastungen im Alltag bringen könnten",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/was-bringt-stromsteuer-senkung-koalitionsausschuss-100.html",
-      "published_at": "2026-11-18T08:26:33Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ab466bf51949b628c8",
-      "title": "Baugenehmigungen für Wohnungen im September 2026: -14,8 % zum Vorjahresmonat",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_402_3111.html",
-      "published_at": "2026-11-18T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a4603d168fc8060671",
-      "title": "Auftragsbestand im Verarbeitenden Gewerbe im September 2026: +0,8 % zum Vormonat",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_403_421.html",
-      "published_at": "2026-11-18T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-8121834d57388796c5",
-      "title": "Erwerbstätigkeit im 3. Quartal 2026 saisonbereinigt gegenüber dem Vorquartal gesunken",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_404_13321.html",
-      "published_at": "2026-11-18T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-923514921329fae943",
-      "title": "Wenig Bewegung beim DAX erwartet",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-nvidia-100.html",
-      "published_at": "2026-11-18T06:17:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bbb73433617de168df",
-      "title": "Welche Fortschritte beim Klimaschutz erreicht wurden",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wissen/klima/erneuerbare-energien-fortschritte-100.html",
-      "published_at": "2026-11-18T05:16:11Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-afc85b97619005ca3a",
-      "title": "Deutsche-Bank-Tochter DWS: Zwölf Milliarden Euro ohne Geldwäsche-Aufsicht",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/dws-118.html",
-      "published_at": "2026-11-18T05:00:42Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5b8ef678648749d6fa",
-      "title": "Zinsalarm: Bundesbank-Chef Nagel will „nochmal an der Zinsschraube drehen“ – was die drohende EZB-Zinserhöhung für DAX, Banken und Sparer bedeutet - AktienCheck.de",
-      "source": "Google News: EU/Deutschland",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOSEpiZlBGUUJ1ZUotTnNvZGJVUzlIcVhXdVIyNndUakNNLVNOeWdRbXNITUVuQzVoZzZYeVAtTmxYekxqMW1XQktHek1HckNZdVZrdzc5NnRucGdCTmFVUnFGS1BvaElsSUp0Y21WUkRBWDZmVERCWUV2S2dJY21rSUVxMEY4RURFTzZqT2RGTWZER0JJVmJ3OVY3X1U3SUJ1aHpRRGZob1RzbjdNUFE4?oc=5",
-      "published_at": "2026-11-18T04:49:53Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-db4a5e6e7462714458",
-      "title": "Putin says EU is losing industry, falling behind competition ahead of meeting with Trump, Xi",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/putin-apec-eu-trump-xi-meeting.html",
-      "published_at": "2026-11-18T04:27:45Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7cbf236433d190bbe7",
-      "title": "\"An der Zinsschraube drehen\", um die Inflation zu bekämpfen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/inflation-interview-bundesbankpraesident-nagel-100.html",
-      "published_at": "2026-11-18T04:02:36Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1616097b2f7a4a13f9",
-      "title": "Three things to watch as Trump, Xi and Putin meet in China",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/apec-trump-xi-putin-shenzhen.html",
-      "published_at": "2026-11-18T03:25:32Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-502a360021d92c6234",
-      "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
-      "published_at": "2026-11-18T03:17:55Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
