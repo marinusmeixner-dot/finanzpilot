@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T14:44:18.671514Z",
+  "updated_at": "2026-11-22T17:56:23.299562Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-ec91fb298f0fc81547",
+      "title": "Gebrauchte Elektroautos: Alternative oder Schrott?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/gebrauchte-elektroautos-100.html",
+      "published_at": "2026-11-22T15:36:15Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-0b4bace73ec3ef861f",
       "title": "Sind Einzelaktien eine Kostenfalle oder eine Goldgrube?",
@@ -523,42 +532,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1686102.html",
       "published_at": "2026-11-18T18:59:41Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7c363e083b8cc63a90",
-      "title": "\"Grand Theft Auto VI: Was hinter dem weltweiten Hype um GTA steckt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/spiele-gta-sechs-neuerscheinung-100.html",
-      "published_at": "2026-11-18T17:55:38Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c78e46bb21004e3fd8",
-      "title": "I watched Trump, Xi and Putin gather in China. Here are my top takeaways",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/trump-xi-putin-apec-shenzhen-china.html",
-      "published_at": "2026-11-18T16:14:10Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-38faf5099c2ee8c041",
-      "title": "Deutscher Ökonom Brunnermeier als EZB-Chefvolkswirt nominiert",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/bundesregierung-ezb-chefvolkswirt-100.html",
-      "published_at": "2026-11-18T15:36:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3046a3e05ebb5378cb",
-      "title": "Tech outages are causing people to panic buy. Costco is benefitting",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
-      "published_at": "2026-11-18T15:22:24Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
