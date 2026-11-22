@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T11:20:23.559294Z",
+  "updated_at": "2026-11-22T14:44:18.671514Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -559,42 +559,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/18/tech-outage-costco-panic-buying.html",
       "published_at": "2026-11-18T15:22:24Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-53c47062519c81bfcd",
-      "title": "Nach Datenleak: Deutsche-Bank-Papiere weiter unter Druck",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-146.html",
-      "published_at": "2026-11-18T13:48:13Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-2ba6219f8c18603c21",
-      "title": "Regierung erleichtert Befristungen von Jobs",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/jobbefristungen-kabinett-100.html",
-      "published_at": "2026-11-18T13:44:31Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ff10bf4f40dda6ed8c",
-      "title": "VW-Chef Blume: \"Komplett verändertes Umfeld\" zwingt zum Sparkurs",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-volkswagen-blume-zukunftsstrategie-100.html",
-      "published_at": "2026-11-18T13:43:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5bc27599484223cdcd",
-      "title": "Fed’s Waller says central bank may need to ‘shock people’ with half-point rate hike",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html",
-      "published_at": "2026-11-18T13:32:33Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
