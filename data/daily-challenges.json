@@ -1,62 +1,62 @@
 {
   "schema_version": 1,
-  "date": "2026-11-22",
-  "updated_at": "2026-11-22T00:04:00+01:00",
+  "date": "2026-11-23",
+  "updated_at": "2026-11-23T00:03:00+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
   "explanation": "Drei eigenständige hypothetische Fälle. Verlinkte Originalquellen dienen der Methodik und dem wirtschaftlichen Kontext; Rechenwerte sind ausdrücklich erfunden.",
   "tasks": [
     {
       "kind": "market",
-      "id": "2026-11-22:market:cost-pass-through",
-      "title": "Preisschock: Umsatzwachstum oder Margenverlust?",
-      "context": "Hypothetischer Industriebetrieb: Umsatz 25 Mio. €, variable Kosten 15 Mio. €, Fixkosten 6 Mio. €. Die variablen Stückkosten steigen um 8 %, Absatzmenge bleibt zunächst gleich. Der Destatis-Erzeugerpreisindex dient nur als Branchenkontext, nicht als firmenbezogener Kostennachweis.",
-      "question": "Berechne Ergebnis und operative Marge vorher und nachher. Wie stark müsste der Umsatzpreis prozentual steigen, um den ursprünglichen absoluten Gewinn wiederherzustellen (unveränderte Menge, unveränderte Fixkosten)? Nenne zwei Gründe, weshalb ein allgemeiner Index dafür keine sichere Prognose liefert.",
+      "id": "2026-11-23:market:pricing-power",
+      "title": "Preissetzungsmacht und Absatzrückgang",
+      "context": "Hypothetischer Hersteller: 40 Mio. € Umsatz, 24 Mio. € variable Kosten, 10 Mio. € Fixkosten. Er erhöht den Verkaufspreis um 6 %, verliert dadurch 5 % Absatz. Variable Kosten je Einheit bleiben konstant. Der Destatis-Erzeugerpreisindex ist nur makroökonomischer Kontext, kein Beleg für diese Modellfirma.",
+      "question": "Berechne neuen Umsatz, variable Kosten, Gewinn und Marge. Ist die Preiserhöhung wirtschaftlich erfolgreich? Nenne zwei Gegenhypothesen zur Dauerhaftigkeit.",
       "rubric": [
-        "Vorher 4,0 Mio. € Ergebnis und 16 % Marge",
-        "Danach variable Kosten 16,2 Mio. €, Ergebnis 2,8 Mio. €, Marge 11,2 %",
-        "Erforderlicher Umsatzaufschlag 1,2/25 = 4,8 %, bei gleichbleibender Menge",
-        "Einkaufsmix, Vertragslaufzeiten, Hedging und Wettbewerbsdruck als Grenzen"
+        "Umsatz = 40 × 1,06 × 0,95 = 40,28 Mio. €",
+        "Variable Kosten = 24 × 0,95 = 22,8 Mio. €",
+        "Gewinn = 40,28 − 22,8 − 10 = 7,48 Mio. € statt 6 Mio. €; Marge ≈ 18,57 % statt 15 %",
+        "Gegenargumente: weitere Nachfrageverluste, Wettbewerb, Kundenbindung und Preiselastizität"
       ],
-      "date": "2026-11-22",
-      "source": "Destatis, Erzeugerpreisindex, Pressemitteilung 20.11.2026; sämtliche Unternehmenszahlen hypothetisch",
+      "date": "2026-11-23",
+      "source": "Destatis, Erzeugerpreisindex, Pressemitteilung vom 20.11.2026; Modellwerte hypothetisch",
       "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html",
       "source_date": "2026-11-20",
       "symbol": ""
     },
     {
       "kind": "research",
-      "id": "2026-11-22:research:cash-conversion",
-      "title": "Gewinnqualität: Cashflow gegen Investitionen",
-      "context": "Hypothetisches Software-/Infrastrukturunternehmen: Jahresüberschuss 90 Mio. €, CFO 110 Mio. €, Capex 75 Mio. €, aktienbasierte Vergütung 25 Mio. €, Aktienzahl steigt von 100 auf 105 Mio. Stück. SEC EDGAR dient als Primärquellen-Ort für reale Geschäftsberichte; hier werden keine realen Firmendaten behauptet.",
-      "question": "Berechne einfachen FCF und FCF je Aktie nach Verwässerung. Erkläre, warum aktienbasierte Vergütung nicht kostenlos ist und welche zwei zusätzlichen Daten für einen belastbaren fairen Wert fehlen.",
+      "id": "2026-11-23:research:enterprise-equity",
+      "title": "Unternehmenswert ist nicht Eigenkapitalwert",
+      "context": "Hypothetische Firma: Enterprise Value 900 Mio. €, Finanzschulden 260 Mio. €, liquide Mittel 80 Mio. €, Leasingverbindlichkeiten 40 Mio. €, 50 Mio. Aktien. Annahme: Leasing ist noch nicht im genannten EV enthalten. SEC EDGAR liefert für reale Unternehmen die Bilanzdaten.",
+      "question": "Berechne den modellhaften Eigenkapitalwert je Aktie unter Berücksichtigung des Leasings. Was ändert sich, wenn Leasing bereits im EV berücksichtigt ist? Nenne zwei Bewertungsrisiken.",
       "rubric": [
-        "FCF = CFO − Capex = 35 Mio. €",
-        "FCF je aktueller Aktie = 35/105 = 0,333 €",
-        "Aktienbasierte Vergütung führt zu wirtschaftlicher Verwässerung; Cashflow-Addback nicht mit Nullkosten verwechseln",
-        "Normalisierte Reinvestitionen, Nettoverschuldung/Leasing, Kapitalkosten oder Wachstumsannahmen als Datenlücken"
+        "Nettofinanzschulden inklusive Leasing = 260 + 40 − 80 = 220 Mio. €",
+        "Eigenkapitalwert = 900 − 220 = 680 Mio. €, je Aktie 13,60 €",
+        "Bei bereits berücksichtigtem Leasing keine doppelte Subtraktion; dann 720 Mio. € beziehungsweise 14,40 €",
+        "Risiken: EV-Schätzung, Minderheiten/Pensionen, Verwässerung, Cashflow-Normalisierung"
       ],
-      "date": "2026-11-22",
-      "source": "US SEC EDGAR, Originalberichte und Kapitalflussrechnungen; Rechenfall hypothetisch",
+      "date": "2026-11-23",
+      "source": "US SEC EDGAR, Unternehmensberichte; sämtliche Modellwerte hypothetisch",
       "source_url": "https://www.sec.gov/edgar/search/",
-      "source_date": "2026-11-22",
+      "source_date": "2026-11-23",
       "symbol": ""
     },
     {
       "kind": "learning",
-      "id": "2026-11-22:learning:duration",
-      "title": "Zinsänderung: Barwert und Gegenargument",
-      "context": "Hypothetische Nullkuponanleihe zahlt in genau drei Jahren 1.000 €; Diskontsatz zunächst 3 %, anschließend 5 %. Der Fed-Protokoll-Link ist geldpolitischer Hintergrund, keine Prognose für diese Anleihe.",
-      "question": "Berechne beide Barwerte auf Cent und die prozentuale Veränderung. Erkläre, warum eine höhere Rendite den heutigen Wert senkt und warum die Rechnung keinen tatsächlichen Marktpreis garantiert.",
+      "id": "2026-11-23:learning:real-return",
+      "title": "Nominale und reale Rendite auseinanderhalten",
+      "context": "Hypothetische Einjahresanlage erzielt nominal 7 % Rendite, während das allgemeine Preisniveau um 3 % steigt. Inflationsdaten werden üblicherweise anhand amtlicher Preisindizes gemessen; die Zahlen sind hier Modellannahmen.",
+      "question": "Berechne die exakte reale Rendite nach Fisher-Näherung und nach der exakten Formel. Warum ist die einfache Differenz nur eine Näherung? Welche zwei persönlichen Risiken bleiben?",
       "rubric": [
-        "Barwert bei 3 % = 1000/1,03³ ≈ 915,14 €",
-        "Barwert bei 5 % = 1000/1,05³ ≈ 863,84 €",
-        "Veränderung ≈ −5,61 % bezogen auf den Anfangsbarwert",
-        "Bonitätsrisiko, Liquidität, tatsächliche Zinsstruktur und Marktpreisabweichungen nennen"
+        "Einfache Näherung: 7 % − 3 % = 4 %",
+        "Exakt: 1,07/1,03 − 1 ≈ 3,8835 %",
+        "Differenz durch multiplikative Preis- und Vermögensentwicklung",
+        "Individueller Warenkorb, Steuern, Gebühren und Volatilität als Grenzen"
       ],
-      "date": "2026-11-22",
-      "source": "Federal Reserve, FOMC-Protokolle; hypothetischer Barwertfall",
-      "source_url": "https://www.federalreserve.gov/monetarypolicy/fomcminutes20261028.htm",
-      "source_date": "2026-10-28",
+      "date": "2026-11-23",
+      "source": "Destatis, Verbraucherpreisindex; Modellwerte hypothetisch",
+      "source_url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html",
+      "source_date": "2026-11-23",
       "symbol": ""
     }
   ]
