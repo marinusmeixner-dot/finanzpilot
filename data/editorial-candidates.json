@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T17:56:23.299562Z",
+  "updated_at": "2026-11-22T19:36:46.367861Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-d4b0bd38c120278c55",
+      "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
+      "published_at": "2026-11-22T18:55:05Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-ec91fb298f0fc81547",
       "title": "Gebrauchte Elektroautos: Alternative oder Schrott?",
@@ -523,15 +532,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
       "published_at": "2026-11-18T19:41:59Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a1cc42e40b9efd6291",
-      "title": "Wirtschaft vor acht vom 18.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1686102.html",
-      "published_at": "2026-11-18T18:59:41Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
