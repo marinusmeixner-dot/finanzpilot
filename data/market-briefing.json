@@ -2,10 +2,15 @@
   "schema_version": 1,
   "date": "2026-11-23",
   "source_updated_at": "2026-11-23",
-  "title": "EU und Indonesien unterzeichnen Handelsabkommen – Inkrafttreten noch ausstehend",
-  "summary": "Die EU-Kommission bestätigt die Unterzeichnung des Handelsabkommens CEPA und des Investitionsschutzabkommens am 21.11.2026. Die Verhandlungen waren am 23.09.2025 abgeschlossen worden. Unterzeichnung ist noch kein Inkrafttreten: die parlamentarische Zustimmung und weitere Verfahren stehen aus. Potenzielle Zolleinsparungen sind keine belegten Gewinnsteigerungen einzelner Aktien.",
-  "interpretation": "Primärquelle: Europäische Kommission, EU-Indonesia Agreements, https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/indonesia/eu-indonesia-agreements_en (Ereignisdatum 21.11.2026). Zweite Primärquelle: Rat der EU, Beschluss zur Unterzeichnung vom 18.11.2026, https://www.consilium.europa.eu/en/press/press-releases/2026/11/18/eu-indonesia-council-greenlights-signature-of-landmark-trade-and-investment-agreements/ . Prüffrage: Welche konkreten Zollpositionen und Umsatzanteile eines Unternehmens wären nach tatsächlichem Inkrafttreten betroffen? Vorher keine unternehmensspezifische Gewinn- oder Fair-Value-Prognose. Das zuvor behandelte Destatis-Ereignis vom 20.11.2026 bleibt historisch relevant. Redaktionelle Gegenprüfung am 23.11.2026: Die EU-Kommission führt weiterhin die Unterzeichnung am 21.11. auf, nicht ein Inkrafttreten. Primärquellenstatus bestätigt; ohne belastbare firmenbezogene Zoll-/Umsatzdaten bleibt eine Gewinnquantifizierung offen.",
+  "title": "NVIDIA: Jensen Huang wieder CEO – Auswirkungen auf Cashflow offen",
+  "summary": "NVIDIA bestätigt am 23.11.2026 die sofortige Wiedereinsetzung von Jensen Huang als Präsident, CEO und Verwaltungsratsmitglied. Der Verwaltungsrat beschloss dies einstimmig. Eine neue Finanzprognose oder ein quantifizierbarer Cashflow-Effekt ist damit nicht belegt.",
+  "interpretation": "Originalquelle NVIDIA Newsroom, 23.11.2026: https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director . Führungsunsicherheit kann abnehmen; Governance-Risiko, Nachfrage, Exportregeln und Bewertung müssen separat geprüft werden. Kein Kaufurteil und kein bestätigter neuer Börsenkurs.",
   "highlights": [
+    {
+      "story_id": "2026-11-23-nvidia-huang-reinstated",
+      "title": "NVIDIA: CEO-Wiedereinsetzung bestätigt",
+      "why": "Originalmitteilung vom 23.11.; die Governance-Änderung ist belegt, eine neue Cashflow-Prognose nicht."
+    },
     {
       "story_id": "2026-11-20-destatis-producer-prices-october",
       "title": "Erzeugerpreise Oktober: +8,1 % gegenüber Vorjahr",
@@ -15,11 +20,6 @@
       "story_id": "2026-11-18-anthropic-ipo-priced-83",
       "title": "Anthropic: Nasdaq-Debüt mit Eröffnung bei 111,50 USD",
       "why": "Nasdaq dokumentiert das Listing am 19.11.; AP und Reuters melden 111,50 USD Eröffnung gegenüber 83 USD IPO-Preis (18.11.). Kein geprüfter Schlusskurs und keine Fair-Value-Aussage."
-    },
-    {
-      "story_id": "2026-11-18-fed-october-minutes-inflation-ai-financing",
-      "title": "Fed-Protokoll: Zinsen und KI-Finanzierungsrisiken",
-      "why": "Originalprotokoll vom 18.11.; Diskontierungs- und Refinanzierungsrisiken prüfen, keine neue Zinsentscheidung."
     }
   ],
   "next_watch": "Parrot SA (Euronext Paris: PARRO; ISIN FR0004038263) – Q3-Mitteilung vom 28.10.2026 anhand des Original-PDF geprüft: Q3-Umsatz 23,7 Mio. EUR (+40 %), Neunmonatsumsatz 81,0 Mio. EUR (+60 %); professionelle Mikrodrohnen Q3 16,6 Mio. EUR (+68 %), 9M 58,7 Mio. EUR (+110 %), Infrastruktursoftware Q3 7,0 Mio. EUR (−1 %), 9M 22,1 Mio. EUR (−2 %). Management erwartet rund 110 Mio. EUR Jahresumsatz. Die Mikrodrohnen-Sparte erreichte nur auf rollierender Zwölfmonatsbasis operativen Break-even, Q3 allein war negativ. Q3-Meldung enthält keine vollständige Konzern-Kapitalflussrechnung, Bilanz oder belastbaren normalisierten FCFE; der ältere H1-CFO von −2,2 Mio. EUR bleibt ein Warnsignal. Vor einer neuen Bewertungsstory: H1-Bilanz/Leasing, Aktienzahl, Börsenkurs und Ausführungsrisiko institutioneller Aufträge verifizieren. Originalquelle 28.10.2026: https://www.parrot.com/assets/s3fs-public/media-public/2026/PARROT_CP_T3-2026_20261028_EN_DEF.pdf. Redaktionsstatus der privaten Watchlist-Queue wird ausschließlich in Supabase geführt und nicht als dauerhafte Aussage im öffentlichen Marktbriefing veröffentlicht.",
