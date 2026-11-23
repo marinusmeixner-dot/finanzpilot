@@ -1,10 +1,46 @@
 {
-  "date": "2026-11-19",
-  "updated_at": "2026-11-21T12:02:00+01:00",
+  "date": "2026-11-23",
+  "updated_at": "2026-11-23T21:56:00+01:00",
   "editor": "ChatGPT: Primärquellen verifizierte FinanzPilot-Redaktion",
-  "intro": "Anthropic (ANT) hat am 19.11.2026 den Nasdaq-Handel aufgenommen. Der erste gemeldete Handel zu 111,50 USD lag rund 34,3 % über dem Emissionspreis von 83 USD; dies ist ausdrücklich kein bestätigter Schlusskurs. Das Fed-Protokoll vom 18.11. und die NVIDIA-Zahlen vom 17.11. bleiben eigenständige Bewertungsthemen.",
+  "intro": "NVIDIA bestätigt am 23.11.2026 die sofortige Wiedereinsetzung von Jensen Huang als CEO und Präsident sowie als Verwaltungsratsmitglied. Die Rückkehr reduziert eine Führungsunsicherheit, beweist aber weder zusätzliche Umsätze noch eine günstigere Bewertung.",
   "lesson_id": "valuation",
   "stories": [
+    {
+      "id": "2026-11-23-nvidia-huang-reinstated",
+      "title": "NVIDIA setzt Jensen Huang wieder als CEO ein – Führungsrisiko verändert, Bewertung bleibt offen",
+      "published": "2026-11-23",
+      "date": "2026-11-23",
+      "category": "Unternehmensführung",
+      "symbols": [
+        "NVDA"
+      ],
+      "source": "NVIDIA Newsroom, offizielle Mitteilung vom 23.11.2026",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "why": "Der NVIDIA-Verwaltungsrat bestätigt die sofortige Wiedereinsetzung von Jensen Huang als Präsident, CEO und Verwaltungsratsmitglied.",
+      "impact": "Die Personalentscheidung kann Unsicherheit über die Führung und strategische Kontinuität reduzieren, ist aber kein neuer Auftrag, Umsatz oder Cashflow und rechtfertigt für sich allein keinen höheren fairen Wert.",
+      "article": {
+        "lead": "NVIDIA (NASDAQ: NVDA) entwickelt Grafikprozessoren und KI-Beschleuniger sowie zugehörige Systeme, Software und Netzwerktechnik. Kunden bezahlen vor allem für Recheninfrastruktur in Rechenzentren sowie Produkte für Gaming und weitere Märkte. Am 23. November 2026 meldet das Unternehmen, dass Jensen Huang mit sofortiger Wirkung wieder Präsident und CEO sowie Mitglied des Verwaltungsrats ist.",
+        "sections": [
+          {
+            "heading": "Was die Primärquelle tatsächlich bestätigt",
+            "text": "Laut NVIDIA beschloss der Verwaltungsrat die Wiedereinsetzung einstimmig nach Gesprächen mit Huang. Das Unternehmen erklärt, der Verwaltungsrat habe auch Rückmeldungen aus hohen Ebenen der US-Regierung berücksichtigt und sehe kein nationales Sicherheitsrisiko durch seine Rückkehr. Dies sind Aussagen des Unternehmens; eine unabhängige regulatorische Freigabe oder eine neue Finanzprognose wird damit nicht belegt."
+          },
+          {
+            "heading": "Geschäftsmodell und mögliche wirtschaftliche Wirkung",
+            "text": "NVIDIA erzielt Erlöse durch den Verkauf von Chips, Systemen und zugehörigen Technologien. Eine stabile Führung kann Produktplanung, Kundenbeziehungen und Investitionsentscheidungen erleichtern. Aus der Personalentscheidung allein folgt jedoch keine quantifizierbare Änderung von Liefermengen, Verkaufspreisen, Bruttomarge oder operativem Cashflow."
+          },
+          {
+            "heading": "Gegenhypothese und Risiken",
+            "text": "Die Rückkehr kann zwar die kurzfristige Unsicherheit mindern. Dennoch bleiben Abhängigkeiten von großen Rechenzentrumskunden, Exportregeln, Wettbewerb, Lieferketten und hohen KI-Investitionen bestehen. Zudem kann eine stark auf eine Führungsperson konzentrierte Strategie ein eigenes Governance- und Nachfolgerisiko darstellen. Die Erklärung des Boards ersetzt keine unabhängige Prüfung der Hintergründe."
+          },
+          {
+            "heading": "Bewertung und nächster überprüfbarer Katalysator",
+            "text": "Für einen fairen Aktienwert müssen die neuesten berichteten Umsätze, operative Margen, Investitionen, Free Cashflows, Aktienzahl und die erwartete Wachstumsdauer mit dem aktuellen, zeitgestempelten Börsenkurs verglichen werden. Ein möglicher Rückgang des Governance-Risikoaufschlags ist ohne Markt- und Kapitalflussdaten nicht belastbar zu beziffern. Entscheidend werden bestätigte Kundenbestellungen, Quartalsberichte und regulatorische Entwicklungen sein."
+          }
+        ],
+        "conclusion": "Die Wiedereinsetzung ist ein bedeutendes, durch NVIDIA selbst bestätigtes Governance-Ereignis, aber keine belegte Verbesserung der Ertragskraft. Ohne neue Cashflow- und Bewertungsprüfung bleibt ein Kauf- oder Kurszielurteil offen. Originalquelle: https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director"
+      }
+    },
     {
       "id": "2026-11-20-take-two-gta6-day-one-retail-sales",
       "title": "GTA VI erzielt 3,79 Mrd. USD Ersttagsumsatz im Handel – nicht gleich Take-Two-Umsatz",
