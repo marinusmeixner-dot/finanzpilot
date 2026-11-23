@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T00:50:41.560240Z",
+  "updated_at": "2026-11-23T09:01:13.037769Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-f399a450d5d742fd4e",
+      "title": "14,7 % mehr Spenden im Jahr 2022 als im Vorjahr",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N082_73.html",
+      "published_at": "2026-11-23T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-4787dab2531f7d43d7",
+      "title": "Neue Warnstreiks in Metall- und Elektroindustrie angelaufen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/streiks-ig-metall-norden-100.html",
+      "published_at": "2026-11-23T06:48:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-ac5422536e0187b3ce",
+      "title": "Marktbericht: DAX-Ausverkauf wohl gestoppt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-172.html",
+      "published_at": "2026-11-23T06:36:17Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-502a360021d92c6234",
+      "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
+      "published_at": "2026-11-23T06:06:55Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-77e8efaddd60a93717",
+      "title": "Welche Chancen und Risiken KI bei Bewerbungen bietet",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/bewerbung-mit-ki-chancen-risiken-100.html",
+      "published_at": "2026-11-23T05:31:19Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-d4b0bd38c120278c55",
       "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
@@ -14,11 +59,38 @@
       "status": "needs_primary_source"
     },
     {
+      "id": "rss-eb99aec6a2b103ea19",
+      "title": "Scheitern der COP31-Abschlusserklärung: \"Ein fatales Ergebnis\"",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/weltklimakonferenz-reaktionen-100.html",
+      "published_at": "2026-11-22T16:56:52Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b05758ab17ddd725be",
+      "title": "Kommentar zur COP31: Großes Versagen - vielleicht auch ein Anfang",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/kommentar/weltklimakonferenz-cop31-scheitern-100.html",
+      "published_at": "2026-11-22T16:08:20Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
       "id": "rss-ec91fb298f0fc81547",
       "title": "Gebrauchte Elektroautos: Alternative oder Schrott?",
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/verbraucher/gebrauchte-elektroautos-100.html",
       "published_at": "2026-11-22T15:36:15Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-85ea6a255065a293f3",
+      "title": "Weltklimakonferenz COP31: Keine Einigung auf Abschlusserklärung",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/weltklimakonferenz-cop31-antalya-kein-abschlussdokument-100.html",
+      "published_at": "2026-11-22T15:30:18Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -460,69 +532,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html",
       "published_at": "2026-11-19T09:02:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-699bddf078ea5c25ad",
-      "title": "Update Wirtschaft vom 19.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1686324.html",
-      "published_at": "2026-11-19T08:47:19Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-94d239bb11a616397c",
-      "title": "11KM-Podcast: \"Superintelligenz\" - was hinter der KI-Vision steckt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/podcast/11km/podcast-11km-ki-vision-100.html",
-      "published_at": "2026-11-19T07:49:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d5bb5941aaaa62e15b",
-      "title": "KORREKTUR: Gastgewerbeumsatz im September 2026 real 1,2 % höher als im Vormonat",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_405_45213.html",
-      "published_at": "2026-11-19T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7bd36bf35687a6a2b2",
-      "title": "5,7 % der Bevölkerung konnten 2025 aus Geldmangel ihre Wohnung nicht angemessen warmhalten",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N081_61_63.html",
-      "published_at": "2026-11-19T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3f2d3c20454470bb88",
-      "title": "Welche Erwartungen die Gaming-Branche mit GTA VI verbindet",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/digitales/gta-rockstar-games-100.html",
-      "published_at": "2026-11-19T05:09:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-2d9f6e5ee12cc63cd1",
-      "title": "Anthropic-Ausgabepreis bei Börsengang bei 83 Dollar je Aktie",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boersengang-aktie-100.html",
-      "published_at": "2026-11-19T03:14:09Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-272eed543a237e98dc",
-      "title": "Commerzbank-Übernahme: Bundesregierung und UniCredit einigen sich",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html",
-      "published_at": "2026-11-19T01:06:22Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
