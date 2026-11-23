@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T20:57:08.931641Z",
+  "updated_at": "2026-11-23T21:20:06.435876Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-70c261817ae6e0a550",
+      "title": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html",
+      "published_at": "2026-11-23T21:02:17Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-e21eaba82792c17d82",
       "title": "Mehr Stromspar-Checks für Haushalte mit wenig Geld geplant",
