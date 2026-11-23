@@ -5,8 +5,8 @@
   "total_issuers": 79,
   "curated_dossiers": 10,
   "bucket_counts": {
-    "review_now": 22,
-    "watch_and_verify": 55,
+    "review_now": 21,
+    "watch_and_verify": 56,
     "source_gap": 2
   },
   "spotlight_ids": [
@@ -15,7 +15,7 @@
     "apple",
     "profile-eoan-de",
     "microsoft",
-    "nvidia"
+    "siemens"
   ],
   "methodology": "Neue belegte Unternehmensanlässe (0–21 Kalendertage vor Kursstichtag) zuerst; laufende Fundamentalthesen als separate Nachprüfung; technische Signale ohne geprüften Geschäftsbeleg nur in Beobachtung. Klassifizierung auf Beleg- und Forschungsreife, nicht auf erwarteter Rendite oder Unterbewertung. Peer-/ETF-Daten nur bei identischer Vergleichswährung aus vorherigem Audit.",
   "readiness_warning": "Hier steht kein Kaufurteil. Nur Primärbericht, nachhaltiger Cashflow, Kapitalstruktur, Bewertung, Zeitstempel und Widerlegungskriterien können ein Investmenturteil rechtfertigen.",
@@ -202,45 +202,6 @@
       ],
       "alternatives": {
         "peer_count": 3,
-        "etf_count": 3,
-        "benchmark_names": [
-          "iShares MSCI ACWI ETF",
-          "SPDR S&P 500 ETF"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
-      "id": "nvidia",
-      "ticker": "NVDA",
-      "company": "NVIDIA",
-      "sector": "Semiconductors",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "C_screen_only",
-      "decision_stage": "source_based_watch",
-      "primary_cashflow_ready": true,
-      "price_asof": "2026-11-20",
-      "evidence_date": "2026-11-17",
-      "evidence_age_days": 3,
-      "evidence_url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/",
-      "evidence_title": "NVIDIA verdoppelt Quartalsumsatz – doch der Ausblick bringt Margen- und Führungsrisiken",
-      "why_now": "NVIDIA verdoppelt Quartalsumsatz – doch der Ausblick bringt Margen- und Führungsrisiken",
-      "first_rejection": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
-      "needs_before_investment": [
-        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
-        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
-        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
-        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
-        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
-        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen"
-      ],
-      "alternatives": {
-        "peer_count": 0,
         "etf_count": 3,
         "benchmark_names": [
           "iShares MSCI ACWI ETF",
@@ -851,6 +812,45 @@
       ],
       "alternatives": {
         "peer_count": 3,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "nvidia",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "sector": "Semiconductors",
+      "bucket": "watch_and_verify",
+      "review_kind": "old_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-20",
+      "evidence_date": "2026-11-23",
+      "evidence_age_days": null,
+      "evidence_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "evidence_title": "NVIDIA setzt Jensen Huang wieder als CEO ein – Führungsrisiko verändert, Bewertung bleibt offen",
+      "why_now": "Älterer Unternehmensanlass – nach neueren Fakten suchen",
+      "first_rejection": "KI-Großkunden können eigene Chips verwenden; Exportregeln und schwächere Wachstumsraten könnten hohe Multiples belasten.",
+      "needs_before_investment": [
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen",
+        "Cash, marktfähige Investments und zinstragende Schulden einschließlich neuer Schuldtitel trennen",
+        "Berechnung der FCF-Variante mit zusätzlichen Principal Payments gegen NVIDIA-Definition abstimmen",
+        "Rechenzentrumszyklen, Auslandsbeschränkungen und nachhaltige Gewinn-/Capex-Prognosen modellieren",
+        "WACC und EV-to-Equity-Bridge prüfen, bevor ein Kursziel erscheint"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Verwässerte Aktienzahl und aktienbasierte Vergütung je aktueller Berichtsperiode gegen SEC abgleichen"
+      ],
+      "alternatives": {
+        "peer_count": 0,
         "etf_count": 3,
         "benchmark_names": [
           "iShares MSCI ACWI ETF",

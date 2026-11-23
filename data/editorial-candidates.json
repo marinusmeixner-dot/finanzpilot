@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T18:29:32.757872Z",
+  "updated_at": "2026-11-23T20:57:08.931641Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-e21eaba82792c17d82",
+      "title": "Mehr Stromspar-Checks für Haushalte mit wenig Geld geplant",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/stromspar-checks-kostenlose-energieberatung-bundesumweltministerium-100.html",
+      "published_at": "2026-11-23T20:11:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7a798b79c5df603061",
+      "title": "Nvidia setzt Jensen Huang wieder als Chef ein - auf Druck Trumps?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/huang-nvidia-chef-trump-demokraten-100.html",
+      "published_at": "2026-11-23T19:07:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-68db69d2c0831150b3",
       "title": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
@@ -532,15 +550,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/warnstreik-ig-metall-126.html",
       "published_at": "2026-11-20T00:41:04Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-c73edd8ebfba75b339",
-      "title": "Wirtschaft vor acht vom 19.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1686732.html",
-      "published_at": "2026-11-19T19:05:09Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }

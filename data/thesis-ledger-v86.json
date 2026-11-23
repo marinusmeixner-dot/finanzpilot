@@ -2575,6 +2575,24 @@
       "evidence_url": null,
       "classification": "public_research_queue_change_not_investment_decision",
       "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
+    },
+    {
+      "id": "radar-7d8a943ac5ea5c8",
+      "ticker": "NVDA",
+      "company": "NVIDIA",
+      "date": "2026-11-20",
+      "event_type": "new_editorial_evidence",
+      "signal_signature": "C_screen_only|2026-11-23-nvidia-huang-reinstated|active",
+      "from_priority": "C_screen_only",
+      "priority": "C_screen_only",
+      "adjusted_close": 125.53,
+      "currency": "USD",
+      "benchmark_id": "ACWI",
+      "benchmark_adjusted_return_63d_pct": -10.99,
+      "editorial_story_id": "2026-11-23-nvidia-huang-reinstated",
+      "evidence_url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+      "classification": "public_research_queue_change_not_investment_decision",
+      "note": "Automatically observed price/source-driven research priority. No personal portfolio change."
     }
   ]
 }

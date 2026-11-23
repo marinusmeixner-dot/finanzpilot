@@ -4133,16 +4133,16 @@
         "currency": "USD"
       },
       "editorial_evidence": {
-        "id": "2026-11-17-nvidia-q3-fy27-results",
-        "title": "NVIDIA verdoppelt Quartalsumsatz – doch der Ausblick bringt Margen- und Führungsrisiken",
-        "date": "2026-11-17",
-        "url": "https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Third-Quarter-Fiscal-2027/",
-        "source": "NVIDIA Investor Relations, Q3 FY2027, 17.11.2026",
+        "id": "2026-11-23-nvidia-huang-reinstated",
+        "title": "NVIDIA setzt Jensen Huang wieder als CEO ein – Führungsrisiko verändert, Bewertung bleibt offen",
+        "date": "2026-11-23",
+        "url": "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+        "source": "NVIDIA Newsroom, offizielle Mitteilung vom 23.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 6,
+      "editorial_age_days": 0,
       "unverified_discovery_hint": {
-        "id": "rss-7701d1a5133e86786c",
+        "id": "rss-7a798b79c5df603061",
         "date": "2026-11-23",
         "status": "unverified_headline_only"
       },
