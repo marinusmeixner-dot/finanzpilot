@@ -1,9 +1,117 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-23T09:01:13.037769Z",
+  "updated_at": "2026-11-23T18:29:32.757872Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-68db69d2c0831150b3",
+      "title": "‘This establishes a bottom’: Jensen Huang’s return seen as likely to stop market sell-off, for now",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
+      "published_at": "2026-11-23T18:00:47Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b05be1a15d0a5bf044",
+      "title": "Erzeugerpreise: +8,1 % im Oktober, stärkster Anstieg seit 2023 – bremst der Preisschub jetzt Industrie und DAX? - AktienCheck.de",
+      "source": "Google News: EU/Deutschland",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVFlwMi14VEJ1YjI5UlBRdWFaRjAtS1ZEZjBqOGZNTmRrQXM2X1BQRnRsTk1Cbk5VbGlOWXNoclpvTWlJaUVpLTlSaHM4YVRQWnNseG41cFNRM2xIQjloTFBsQmV5bUhTd1hIazFranhhcGRFRnZNLThrLW5fVXV5MG8yaTAyNTduRU52VmR5Wi0yN0V1SmVZZDZ4OGM1M0I1UWJ2VGJybzZ6VXpxYzVZ?oc=5",
+      "published_at": "2026-11-23T15:26:15Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7701d1a5133e86786c",
+      "title": "Nvidia setzt Jensen Huang wieder als Chef ein",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/huang-wieder-nvidia-chef-100.html",
+      "published_at": "2026-11-23T15:18:29Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-711486dd87513683b0",
+      "title": "OBI und Toom wollen fusionieren",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/obi-toom-fusion-100.html",
+      "published_at": "2026-11-23T15:09:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-50f71a78f52b9c975b",
+      "title": "KI-Pioniere streiten über die Risiken",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wissen/ki-letzte-erfindung-der-menschheit-100.html",
+      "published_at": "2026-11-23T14:42:41Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-0c766c479fcc1da8b6",
+      "title": "Nachfrage nach MINT-Fachkräften steigt wieder",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/mint-fachkraefte-steigende-nachfrage-100.html",
+      "published_at": "2026-11-23T14:41:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-16d0586f7929a4616f",
+      "title": "Wer ist schuld am Scheitern des Klimagipfels?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/klimakonferenz-scheitern-verantwortung-100.html",
+      "published_at": "2026-11-23T10:42:23Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-335fbc5eae807a1fdb",
+      "title": "Affäre von Ex-Nvidia-Chef wohl in Kontakt zu Chinas Geheimdienst",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-skandal-kontakt-chinesischer-geheimdienst-100.html",
+      "published_at": "2026-11-23T09:56:20Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-e16ce00f78bd70e401",
+      "title": "Verbraucherschützer warnen zur Black Week vor Betrugsmaschen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/blackweek-preisfallen-100.html",
+      "published_at": "2026-11-23T09:33:43Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9d4ee15f7ac89e9890",
+      "title": "Umweltminister Schneider: Scheitern der COP31 kein Rückschlag für Klimaschutz",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/klimakonferenz-scheitern-schneider-100.html",
+      "published_at": "2026-11-23T09:29:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-953e1b599540e14ed6",
+      "title": "Update Wirtschaft vom 23.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1688296.html",
+      "published_at": "2026-11-23T09:17:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d3b46c3efc8f14f401",
+      "title": "Im Rentenstreit deutet sich ein Kompromiss an",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/rente-koalition-soeder-100.html",
+      "published_at": "2026-11-23T07:11:48Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-f399a450d5d742fd4e",
       "title": "14,7 % mehr Spenden im Jahr 2022 als im Vorjahr",
@@ -433,105 +541,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1686732.html",
       "published_at": "2026-11-19T19:05:09Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bd43ea19ba733da527",
-      "title": "Volkswagen will Nullrunden für zwei Jahre",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-nullrunde-100.html",
-      "published_at": "2026-11-19T16:11:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7c5036b1a9adca3edd",
-      "title": "BASF bläst Evonik-Übernahme ab",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/basf-evonik-uebernahme-absage-100.html",
-      "published_at": "2026-11-19T15:55:43Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-61d6ba48e86fbe6d9d",
-      "title": "Rekord an der Börse: Lehren aus dem Anthropic-Börsengang",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/anthropic-boersengang-ki-boom-100.html",
-      "published_at": "2026-11-19T15:34:22Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-828e2bf10eccc7a696",
-      "title": "KI-gestützter Cyberangriff auf EU-Kommission",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/europa/cyberangriff-eu-kommission-100.html",
-      "published_at": "2026-11-19T13:56:39Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-847dc9cf546da67a6d",
-      "title": "Gebrauchte Spielekonsolen so teuer wie noch nie",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/digitales/gta-vi-konsolen-preise-gaming-100.html",
-      "published_at": "2026-11-19T13:33:49Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a425dde14653db728d",
-      "title": "Firmenporträt: Anthropics halsbrecherischer Aufstieg",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-firmenportrait-claude-boersengang-100.html",
-      "published_at": "2026-11-19T13:30:31Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3374a42979fde482d7",
-      "title": "Warnstreiks der IG Metall",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/warnstreik-ig-metall-124.html",
-      "published_at": "2026-11-19T12:58:34Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7e1c04e8835362d0d6",
-      "title": "Marktbericht: Deutsche Telekom steigt bei KI-Start-up Mistral ein",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/mistral-telekom-ki-anthropic-marktbericht-100.html",
-      "published_at": "2026-11-19T12:57:07Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a433b6d8d78ddc4282",
-      "title": "Heizen wird wegen steigender Energiepreise immer teurer",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/heizkosten-anstieg-100.html",
-      "published_at": "2026-11-19T10:10:08Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6ed00f516c3739aa61",
-      "title": "Marktbericht: Anthropic-Börsengang schiebt DAX an",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-100.html",
-      "published_at": "2026-11-19T09:31:32Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-906a85fd2d0a5b7c9c",
-      "title": "Trump praises ‘great relationship’ with Putin after meeting, as Ukraine war takes center stage",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html",
-      "published_at": "2026-11-19T09:02:00Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
