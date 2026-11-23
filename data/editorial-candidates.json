@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-22T19:36:46.367861Z",
+  "updated_at": "2026-11-23T00:50:41.560240Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -523,15 +523,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-bundesregierung-100.html",
       "published_at": "2026-11-19T01:06:22Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e87edcf11a01c3ba68",
-      "title": "Fed officials expect more rate hikes, worry about AI impact on inflation, minutes show",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/fed-minutes-october-2026.html",
-      "published_at": "2026-11-18T19:41:59Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
