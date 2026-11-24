@@ -2643,11 +2643,7 @@
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
       "editorial_age_days": 25,
-      "unverified_discovery_hint": {
-        "id": "rss-5b58dc71f39c4a4966",
-        "date": "2026-11-20",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "VWCE",
@@ -3990,8 +3986,8 @@
       },
       "editorial_age_days": 1,
       "unverified_discovery_hint": {
-        "id": "rss-7a798b79c5df603061",
-        "date": "2026-11-23",
+        "id": "rss-b29486f5bf22aec75a",
+        "date": "2026-11-24",
         "status": "unverified_headline_only"
       },
       "benchmarks": [

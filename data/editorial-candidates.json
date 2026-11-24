@@ -1,9 +1,126 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-24T06:00:12.482654Z",
+  "updated_at": "2026-11-24T17:41:14.221686Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-67a9abcf3ecb6b1fff",
+      "title": "Marktbericht: DAX fällt zurück, Tech-Aktien sinken",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html",
+      "published_at": "2026-11-24T17:36:29Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b29486f5bf22aec75a",
+      "title": "Wie Trump an Huangs Rückkehr zu Nvidia verdiente",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/trump-nvidia-aktien-100.html",
+      "published_at": "2026-11-24T14:51:13Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b4071206b9b6495fbb",
+      "title": "Nvidia hält die Märkte in Atem",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-nvidia-102.html",
+      "published_at": "2026-11-24T14:01:35Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-60ee58ab5628da0217",
+      "title": "\"GTA VI\": Arbeitskampf hinter dem größten Videospiel der Welt",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/gta-6-104.html",
+      "published_at": "2026-11-24T13:42:43Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-0f5a0d710a980d012f",
+      "title": "Wie das VW-Vorzeigewerk Zwickau in die Krise geriet",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-werk-zwickau-zukunft-100.html",
+      "published_at": "2026-11-24T11:49:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-bbda0b6f6e87a72bf6",
+      "title": "Inflation Deutschland November 2026: Termin & Prognose - Admirals",
+      "source": "Google News: EU/Deutschland",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMkx4TmRNWXJURzZybnNMU2JianJJTHFDSHBVU0FOTmVJVGtVZjZTWXpvTW1kV3dIWVo4RlZ6aWYwdTVDV1psdHB4eFNfNEN4dklPOEtVZjNpRE1OU1ZZMVNTZXFrU1NJUHljN2dPZld3Y0FGdDBKRkFSVnZ0Y3kyQUhWQTNpY3dlVFNmdzgxYjlRNEd6SVltUDVGbzlwV2ttOVFR?oc=5",
+      "published_at": "2026-11-24T11:28:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1a00ba4b919e5302de",
+      "title": "Ifo-Index steigt: \"Erholung der deutschen Wirtschaft kommt voran\"",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-geschaeftsklima-110.html",
+      "published_at": "2026-11-24T10:28:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-134bb66fbc9651e925",
+      "title": "Update Wirtschaft vom 24.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1688878.html",
+      "published_at": "2026-11-24T08:47:49Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a3e99e7b431b5d37b7",
+      "title": "Rückkehr von Nvidia-Chef: \"Nie dagewesenes Verwischen von Grenzen\"",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rueckkehr-trump-100.html",
+      "published_at": "2026-11-24T07:55:06Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a6d3b56034785d09f3",
+      "title": "Nvidia-Skandal: US-Regierung setzt Megaspeed auf schwarze Liste",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/megaspeed-us-regierung-sperrliste-100.html",
+      "published_at": "2026-11-24T07:42:34Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7765fcc65dd506a446",
+      "title": "Mehr als jedes dritte Unternehmen nutzt 2026 künstliche Intelligenz",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_408_52911.html",
+      "published_at": "2026-11-24T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-6e732dbb4ddc117775",
+      "title": "Computer und Spielekonsolen im Oktober 2026 deutlich teurer als ein Jahr zuvor",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N083_61.html",
+      "published_at": "2026-11-24T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1df3e4684941c5abdc",
+      "title": "98 % der Feuerwerk-Importe im Jahr 2025 kamen aus China",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_48_p002.html",
+      "published_at": "2026-11-24T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-bc94b29936c1d494e0",
       "title": "VW-Tarifrunde beginnt in Emden - wo die Streitpunkte liegen",
@@ -379,177 +496,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1687280.html",
       "published_at": "2026-11-20T19:10:55Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bb081e7742832fb415",
-      "title": "Weltgrößtes Windrad in Betrieb: Sind Höhenwindräder die Zukunft?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/energie/groesstes-windrad-lausitz-100.html",
-      "published_at": "2026-11-20T16:25:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-13bba302707cf2c593",
-      "title": "Warsh wants Fed officials to talk less. Instead, they’re talking more",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/20/warsh-fed-forward-guidance-rate-hikes.html",
-      "published_at": "2026-11-20T15:20:54Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-900981d27b88b66f2f",
-      "title": "Nach Anthropic-Börsengang: Warum die KI-Euphorie bröckelt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/boerse/anthropic-ki-tech-werte-boersen-100.html",
-      "published_at": "2026-11-20T15:12:32Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-dffac5f5cbbbb67415",
-      "title": "Kritik an Ausnahmen bei Erbschaftsteuer nach Recherchen über Döpfner-Schenkung",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/doepfner-erbschaftssteuer-100.html",
-      "published_at": "2026-11-20T14:58:12Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-68aeffcfcc8e5b6ca3",
-      "title": "The bull market has a new problem. The 'smart money' is selling",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/20/equity-issuance-bull-market-problem.html",
-      "published_at": "2026-11-20T14:15:29Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-3f6a54ab13972e5169",
-      "title": "Galeria schließt drei Filialen - und noch viele mehr?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/galerie-schliessung-filialen-100.html",
-      "published_at": "2026-11-20T13:47:08Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-32fccc4d8efc95d1a4",
-      "title": "U.S.-China trade, Taiwan and tech tensions remain unresolved as Trump returns from Asia",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/20/apec-summit-trump-xi-china-trade-taiwan.html",
-      "published_at": "2026-11-20T13:29:50Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-9221feaeaae38d48dd",
-      "title": "Marktbericht: KI-Kater nach dem Anthropic-Börsengang",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/boerse/ki-kater-100.html",
-      "published_at": "2026-11-20T13:19:33Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-321d7d0703596f5228",
-      "title": "Was die Volkswagen-Forderungen für Beschäftigte bedeuten könnten",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/volkswagen-tarifstreit-ig-metall-100.html",
-      "published_at": "2026-11-20T09:55:01Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-97027f8d878b6b4b95",
-      "title": "Update Wirtschaft vom 20.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1686922.html",
-      "published_at": "2026-11-20T08:48:20Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-046f6f5fa2537edf55",
-      "title": "Deutliches Kursplus: So lief der erste Handelstag von Anthropic",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/anthropic-boersenstart-ipo-100.html",
-      "published_at": "2026-11-20T08:16:20Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7dc3cf1bcc520c92a6",
-      "title": "Gender Pay Gap: Frauen arbeiten den Rest des Jahres kostenlos",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/gender-pay-gap-140.html",
-      "published_at": "2026-11-20T08:12:38Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-eb42126f23ddeede70",
-      "title": "Kaliforniens Justiz erhöht wegen China-Geschäft Druck auf Nvidia",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/kalifornien-justiz-aufklaerung-nvidia-chips-china-100.html",
-      "published_at": "2026-11-20T07:47:56Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-5b58dc71f39c4a4966",
-      "title": "Erzeugerpreise Oktober: Konsens +7,4 Prozent nach +6,7 Prozent, Großhandel +8,8 Prozent – wie viel Preisdruck erreicht Verbraucher, BASF Aktie und DAX? - AktienCheck.de",
-      "source": "Google News: EU/Deutschland",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPX1lDLUlFU1AtdkNkZENrYTljZGhvb3pUYzhlXy1QLUI1aEp6ZkhFc0wzZzlCRW5HNklSOF9IYUdaWWkwNFZzQlVncWZJNDZCbGRTMVVLSEhTVG1hQlF4QU9aZTd6MUE0ajZYMkV0YjhzOGxnVnFPck4weExBdVVWR3dkanlmajZrYmVwTE9Sa2xBbkU5VGNnbFpBeXNrZFpEVUNVdlRlZEZZMC1lOWhlTQ?oc=5",
-      "published_at": "2026-11-20T07:16:28Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-9f7b3b2dfb5d613129",
-      "title": "Erzeugerpreise im Oktober 2026: +8,1 % gegenüber Oktober 2025",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html",
-      "published_at": "2026-11-20T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-11fd6ec97f4776e077",
-      "title": "Elektrischer Strom im Wert von 4,3 Milliarden Euro im 1. bis 3. Quartal 2026 exportiert",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_406_51.html",
-      "published_at": "2026-11-20T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b7e5070f66bfe02238",
-      "title": "Neue EU-Regeln ab heute: Mehr Schutz vor Verschuldung bei Kleinkrediten",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/kleinkredite-neue-regeln-verschuldung-100.html",
-      "published_at": "2026-11-20T06:51:30Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-acc948716c2ff38fe4",
-      "title": "WG-Mieten steigen stark: Kann sich die Gen Z Wohnen noch leisten?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/gesellschaft/wg-zimmer-gen-z-proteste-wohnungskrise-100.html",
-      "published_at": "2026-11-20T06:48:37Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-74653a14aaf75bb2a5",
-      "title": "Marktbericht: DAX dürfte trotz Anthropic-Hype weiter fallen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-anthropic-102.html",
-      "published_at": "2026-11-20T06:30:24Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
