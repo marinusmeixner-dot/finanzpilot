@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "asof": "2026-11-20",
+  "asof": "2026-11-23",
   "price_policy": "Datierte, reguläre, unbereinigte Schlusskurse der zuletzt vollständig abgeschlossenen Handelssitzung von einem Drittanbieter (Yahoo Finance via yfinance). Keine börsenbetreiber-beglaubigten Preise, kein Echtzeitkurs und kein Split-/Dividenden-adjusted Preis. Währung und Handelsplatz je Datensatz angegeben. Fundamentalzahlen können einen anderen Stichtag haben; Kursupdate verändert diese Daten niemals. Bei Splits >40% Preisänderung innerhalb von 8 Kalendertagen aktualisiert nur ein gesonderter Finanz-Audit die Aktie.",
   "fundamental_policy": "TTM-EPS, Aktienanzahl, Schulden, Cash, OCF und Capex aus datierten S&P-Global-Market-Intelligence-Aggregaten über StockAnalysis. Stand der abgerufenen Anzeige 05.11.2026. Diese Sekundärdaten werden nicht als vollständig gegen IR/SEC abgestimmte Primärdaten ausgegeben; Einzelwerte, Bilanz- und Aktienzahldefinitionen vor DCF/EV-to-Equity auf Originalbericht abgleichen. Zusätzlich 05.11.2026: Originalberichts-TTM-Bridges für Microsoft, NVIDIA und Alphabet in data/fair-value-audit-v85.json dokumentiert; die dort markierten Cashflow-Felder wurden abgestimmt. Microsoft-Kapitalisierung: 7.427 Mio. tatsächlich ausstehende Aktien zum 30.09.2026; für DCF-Rechnung getrennt 7.446 Mio. verwässerte durchschnittliche Aktien, übrige Titel teils sekundär. Amazon und Meta: TTM-Flow-Daten nun ebenfalls aus veröffentlichten SEC-/IR-Unterlagen bestätigt; Meta non-GAAP-FCF zusätzlich unter Berücksichtigung von Finance-Lease-Tilgungen. Keine primär vollständig validierte Equity-Bridge.",
   "valuation_policy": "KGV und FCF-Rendite sind Momentaufnahmen und weder Kursziel noch fairer Wert. Reverse-EPS-Modell ist nur die mathematische Wachstumsanforderung unter offen hypothetischem End-KGV/Abzinsung, ohne Dividenden/Verwässerung. Keine automatischen Kaufempfehlungen. Für negative oder nicht nachhaltig normalisierte Cashflows kein DCF-Kursziel.",
@@ -10,14 +10,14 @@
       "ticker": "MSFT",
       "name": "Microsoft",
       "quote": {
-        "close": 484.51999,
+        "close": 492.5,
         "exchange": "NASDAQ",
         "currency": "USD",
         "price_type": "regular_session_close",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "source_url": "https://finance.yahoo.com/quote/MSFT/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-21T07:57:14.458166Z",
+        "observed_at": "2026-11-24T06:00:35.156421Z",
         "provider_ticker": "MSFT",
         "exchange_verified_by_operator": false
       },
@@ -55,14 +55,14 @@
       "ticker": "NVDA",
       "name": "NVIDIA",
       "quote": {
-        "close": 125.53,
+        "close": 165.05,
         "exchange": "NASDAQ",
         "currency": "USD",
         "price_type": "regular_session_close",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "source_url": "https://finance.yahoo.com/quote/NVDA/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-21T07:57:14.458166Z",
+        "observed_at": "2026-11-24T06:00:35.156421Z",
         "provider_ticker": "NVDA",
         "exchange_verified_by_operator": false
       },
@@ -95,14 +95,14 @@
       "ticker": "AMZN",
       "name": "Amazon",
       "quote": {
-        "close": 246.82001,
+        "close": 255.39,
         "exchange": "NASDAQ",
         "currency": "USD",
         "price_type": "regular_session_close",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "source_url": "https://finance.yahoo.com/quote/AMZN/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-21T07:57:14.458166Z",
+        "observed_at": "2026-11-24T06:00:35.156421Z",
         "provider_ticker": "AMZN",
         "exchange_verified_by_operator": false
       },
@@ -135,14 +135,14 @@
       "ticker": "META",
       "name": "Meta Platforms",
       "quote": {
-        "close": 560.84003,
+        "close": 597.59998,
         "exchange": "NASDAQ",
         "currency": "USD",
         "price_type": "regular_session_close",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "source_url": "https://finance.yahoo.com/quote/META/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-21T07:57:14.458166Z",
+        "observed_at": "2026-11-24T06:00:35.156421Z",
         "provider_ticker": "META",
         "exchange_verified_by_operator": false
       },
@@ -177,14 +177,14 @@
       "ticker": "GOOGL",
       "name": "Alphabet (Class A)",
       "quote": {
-        "close": 265.29001,
+        "close": 282.10001,
         "exchange": "NASDAQ",
         "currency": "USD",
         "price_type": "regular_session_close",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "source_url": "https://finance.yahoo.com/quote/GOOGL/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-21T07:57:14.458166Z",
+        "observed_at": "2026-11-24T06:00:35.156421Z",
         "provider_ticker": "GOOGL",
         "exchange_verified_by_operator": false
       },
@@ -217,14 +217,14 @@
       "ticker": "CGNX",
       "name": "Cognex",
       "quote": {
-        "close": 44.36,
+        "close": 48.47,
         "exchange": "NASDAQ",
         "currency": "USD",
         "price_type": "regular_session_close",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "source_url": "https://finance.yahoo.com/quote/CGNX/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-21T07:57:14.458166Z",
+        "observed_at": "2026-11-24T06:00:35.156421Z",
         "provider_ticker": "CGNX",
         "exchange_verified_by_operator": false
       },
@@ -350,14 +350,14 @@
       "ticker": "AAPL",
       "name": "Apple",
       "quote": {
-        "close": 342.56,
+        "close": 349.07999,
         "exchange": "NASDAQ",
         "currency": "USD",
         "price_type": "regular_session_close",
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "source_url": "https://finance.yahoo.com/quote/AAPL/history/",
         "source_kind": "third_party_yahoo_unadjusted_close",
-        "observed_at": "2026-11-21T07:57:14.458166Z",
+        "observed_at": "2026-11-24T06:00:35.156421Z",
         "provider_ticker": "AAPL",
         "exchange_verified_by_operator": false
       },
@@ -390,5 +390,5 @@
       }
     }
   ],
-  "last_quote_refresh_at": "2026-11-21T09:47:46.129291Z"
+  "last_quote_refresh_at": "2026-11-24T06:00:35.156421Z"
 }
