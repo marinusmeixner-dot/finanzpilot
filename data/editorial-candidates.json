@@ -1,9 +1,126 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T02:25:19.628125Z",
+  "updated_at": "2026-11-25T12:51:13.969304Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-0f8a99c3a986fa1d48",
+      "title": "Nach Apple-Absprung: Samsung steigt bei AMS-Osram ein",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/samsung-einstieg-osram-100.html",
+      "published_at": "2026-11-25T12:45:06Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-202c820f8cf5e599c5",
+      "title": "Liesman: Nvidia whiplash tests Kevin Warsh’s push to read market signals",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/25/nvidia-kevin-warsh-fed-market-signals.html",
+      "published_at": "2026-11-25T12:26:41Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a7e0d2ef5efa8ff5d3",
+      "title": "Euro-Schwäche: Was der \"KI-Dollar\" für Firmen und Sparer bedeutet",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/euro-dollar-ki-etf-sparer-100.html",
+      "published_at": "2026-11-25T11:47:38Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1edce4334a1a8ac6c9",
+      "title": "Viele offene Fragen bei Chipkonzern Nvidia",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-offene-fragen-100.html",
+      "published_at": "2026-11-25T11:32:09Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-bdec6f11eb048e3477",
+      "title": "Flixtrain-Tickets bald auch bei Deutscher Bahn buchbar",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/flixtrain-deutsche-bahn-ticketverkauf-100.html",
+      "published_at": "2026-11-25T11:01:33Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f1d9f7e48a83849040",
+      "title": "Update Wirtschaft vom 25.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1689580.html",
+      "published_at": "2026-11-25T09:43:37Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5c586a52e1bfbb1ac3",
+      "title": "Kerzen dürften deutlich teurer werden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/kerzen-preise-wachs-zoelle-100.html",
+      "published_at": "2026-11-25T09:40:38Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-57d03fc84938ec7b50",
+      "title": "Deutsche Wirtschaft wächst im dritten Quartal nur um 0,1 Prozent",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/bip-deutschland-wirtschaftsleistung-100.html",
+      "published_at": "2026-11-25T08:49:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1fbc4912651f406f97",
+      "title": "US-Gericht spricht Huawei wegen Betrugs schuldig",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/huawei-geldwaesche-us-gericht-urteil-100.html",
+      "published_at": "2026-11-25T08:25:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-b8387e101bf606801a",
+      "title": "Bruttoinlandsprodukt: Ausführliche Ergebnisse zur Wirtschaftsleistung im 3. Quartal 2026",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_409_811.html",
+      "published_at": "2026-11-25T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-2abdf585cb4512b4a8",
+      "title": "Auftragseingang im Bauhauptgewerbe im September 2026: -16,1 % zum Vormonat",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_410_441.html",
+      "published_at": "2026-11-25T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-58ed186927c18c5ac3",
+      "title": "Deutsche Industrie: Wo es hakt und wo es rund läuft",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/wirtschaftswachstum-branchen-100.html",
+      "published_at": "2026-11-25T05:28:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f6eb5981759a1e5f28",
+      "title": "US-Medienberichte: Trump plant wohl neue Zölle - auch gegen die EU",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-122.html",
+      "published_at": "2026-11-25T04:08:29Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-1e85faf390b8bb1b43",
       "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
@@ -41,6 +158,15 @@
       "status": "needs_primary_source"
     },
     {
+      "id": "rss-6e156beda0a97a4dd3",
+      "title": "Verbraucherschützer haben die smarte Brille im Blick",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/smart-glasses-klage-verbraucherschutz-100.html",
+      "published_at": "2026-11-24T19:06:34Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
       "id": "rss-deaf690dffab66a6bc",
       "title": "Wirtschaft vor acht vom 24.11.2026",
       "source": "Tagesschau Wirtschaft",
@@ -55,6 +181,15 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html",
       "published_at": "2026-11-24T17:36:29Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8b90390e5399a43c85",
+      "title": "Steinmeier appelliert an Wirtschaft: Chancen in Afrika nutzen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/steinmeier-deutsch-afrikanischer-wirtschaftsgipfel-100.html",
+      "published_at": "2026-11-24T17:21:31Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -451,60 +586,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/digitales/digitalsteuer-streit-eu-deutschland-100.html",
       "published_at": "2026-11-21T15:01:28Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d4858c02a9cae27d77",
-      "title": "Nach Kühnes Tod: Kontinuität und Aufarbeitung bei Kühne+Nagel",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/klaus-michael-kuehne-unternehmer-vergangenheit-schindellegi-schweiz-100.html",
-      "published_at": "2026-11-21T12:36:54Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d79e3888d461f99865",
-      "title": "\"Altersvorsorgedepot für nahezu alle Riester-Sparer interessant\"",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-tipps-riester-100.html",
-      "published_at": "2026-11-21T10:20:52Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a7633041be35c26bcb",
-      "title": "Altersvorsorgedepot: Staatlich organisierter Fonds nicht startklar",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/altersvorsorgedepot-staatlicher-fonds-nicht-startklar-100.html",
-      "published_at": "2026-11-21T10:16:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-4750d27d94fbf1adfd",
-      "title": "GTA VI spielt laut Konzern fast vier Milliarden Dollar am ersten Tag ein",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/milliardengewinn-gta-100.html",
-      "published_at": "2026-11-21T09:39:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e52f101b8328dc6503",
-      "title": "How China is using summits to expand its global influence",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/21/china-xi-trump-putin-global-diplomacy-shenzhen.html",
-      "published_at": "2026-11-21T06:00:02Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-80f68b94e40142d723",
-      "title": "US-Gericht billigt Vergleich von Bayer mit Glyphosat-Klägern",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/bayer-glyphosat-vergleich-usa-100.html",
-      "published_at": "2026-11-21T03:50:50Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
