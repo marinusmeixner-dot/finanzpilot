@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-24T17:41:14.221686Z",
+  "updated_at": "2026-11-25T02:25:19.628125Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-1e85faf390b8bb1b43",
+      "title": "Jensen Huang's Nvidia return shows the U.S.-China AI race is about more than chips",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/25/jensen-huang-nvidia-ai-talent-race.html",
+      "published_at": "2026-11-25T01:13:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-aa322450599f02d4fc",
+      "title": "Kalshi daily volume of ‘perps’ trading begins to top its prediction markets",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/24/kalshi-perps-volume-prediction-markets.html",
+      "published_at": "2026-11-24T23:03:24Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9ba4cdb6584769f356",
+      "title": "Utah drops criminal charges against Kalshi founders after company suspended operations in state",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/24/utah-drops-charges-against-kalshi-after-it-halted-operations-in-state.html",
+      "published_at": "2026-11-24T20:45:57Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-4ea5089c5b5e5366ee",
+      "title": "Nvidia-Chef Huang ist zurück, doch wie hoch ist der Preis?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/huang-folgen-nvidia-rueckkehr-100.html",
+      "published_at": "2026-11-24T20:17:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-deaf690dffab66a6bc",
+      "title": "Wirtschaft vor acht vom 24.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1689280.html",
+      "published_at": "2026-11-24T19:04:41Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-67a9abcf3ecb6b1fff",
       "title": "Marktbericht: DAX fällt zurück, Tech-Aktien sinken",
@@ -460,42 +505,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/bayer-glyphosat-vergleich-usa-100.html",
       "published_at": "2026-11-21T03:50:50Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-def82df2aa1c82e8d4",
-      "title": "Deutsche Konjunktur: Wachstum auf Pump? Berenberg sieht 1 % in drei Quartalen, Tariflöhne +2,57 % – trägt das den DAX? - AktienCheck.de",
-      "source": "Google News: EU/Deutschland",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNSFFxQ2JjY0xLTzdKZjkyam9GaEZFSENYZlNJWnhMb25wMDhPd0pibDJyVHlGa0c1Nkg5LWdacVRid1QtMkNDeVFjdnF0ZEJYVEFEVjd1R0VSXzlZdVV6X2dsY1kteTAwdWVocEYzaTZueHNQbXVuVTY3Sk40ckpNOThWOEpROGVTTjJuX2s1R0NyUm9CTExTcHgtNzFUQTlnSUs1R2VtTQ?oc=5",
-      "published_at": "2026-11-20T23:01:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-668be8a86a37b2f1aa",
-      "title": "Prediction markets outlook for stocks in 2026 dims amid AI sell-off",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/20/sp-500-8000-kalshi-odds-ai-selloff.html",
-      "published_at": "2026-11-20T19:59:03Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-32837b51f9d481a7bb",
-      "title": "Mehr als 100 Betriebe beteiligt: IG Metall setzt weiter auf ganztätige Warnstreiks",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/ig-metall-streik-112.html",
-      "published_at": "2026-11-20T19:58:08Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0e81ed08993729db1c",
-      "title": "Wirtschaft vor acht vom 20.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/video/video-1687280.html",
-      "published_at": "2026-11-20T19:10:55Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
