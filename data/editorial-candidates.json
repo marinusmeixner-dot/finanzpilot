@@ -1,9 +1,54 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T12:51:13.969304Z",
+  "updated_at": "2026-11-25T17:26:03.483839Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-3210e6c78e77373851",
+      "title": "Prediction markets push OpenAI IPO expectations later into 2027",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/25/openai-ipo-odds-2027-prediction-markets.html",
+      "published_at": "2026-11-25T17:08:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-39bd65e54c4802af4c",
+      "title": "KI-Ernüchterung an den Börsen greift um sich",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/technologie/nvidia-rueckkehr-huang-boersen-100.html",
+      "published_at": "2026-11-25T16:28:08Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-467c7fedf8abed335f",
+      "title": "USA kündigen neue Zölle an - auch gegen EU und China",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/amerika/usa-zoelle-124.html",
+      "published_at": "2026-11-25T15:18:25Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-2351340c792ca0f998",
+      "title": "Discounter senken Butterpreis unter einen Euro",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/butter-preis-preiskampf-discounter-bauern-100.html",
+      "published_at": "2026-11-25T14:01:31Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-5939692dc7f21f664b",
+      "title": "Kartenzahlung überholt erstmals Bargeld in Geschäften",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/ezb-zahlungsverhalten-bargeld-kartenzahlung-100.html",
+      "published_at": "2026-11-25T13:32:13Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-0f8a99c3a986fa1d48",
       "title": "Nach Apple-Absprung: Samsung steigt bei AMS-Osram ein",
@@ -559,33 +604,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/eu-indonesien-handelsabkommen-102.html",
       "published_at": "2026-11-21T20:17:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a1bf56ec6d0926a2e6",
-      "title": "Scheitert die UN-Klimakonferenz in Antalya?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/cop31-haengepartie-abschlusserklaerung-100.html",
-      "published_at": "2026-11-21T16:29:15Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-2303c374765206a790",
-      "title": "Ministerium will Autobahntankstellen vom Spritpreisdeckel ausnehmen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/spritpreis-autobahntankstellen-ausnahme-100.html",
-      "published_at": "2026-11-21T15:55:59Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-fc7550b87540870b6b",
-      "title": "Im Streit über EU-Budget legt Costa Kompromiss vor",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/digitales/digitalsteuer-streit-eu-deutschland-100.html",
-      "published_at": "2026-11-21T15:01:28Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
