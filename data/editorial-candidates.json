@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-25T22:29:48.646841Z",
+  "updated_at": "2026-11-26T05:01:29.340001Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-b88312da416e3628ae",
+      "title": "SpaceX darf eine Million Satelliten für KI-Rechenzentren ins All schicken",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/spacex-eine-million-satelliten-100.html",
+      "published_at": "2026-11-26T01:58:55Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-0506573367f2ae50fe",
+      "title": "Where the market may be mispricing risk most: AI boom, volatility, high-yield bonds",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/26/mispricing-risk-fund-managers-ai-volatility.html",
+      "published_at": "2026-11-26T01:34:58Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-09940dc94586768eb5",
       "title": "Wirtschaft vor acht vom 25.11.2026",
@@ -604,15 +622,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/boerse-investment-einzelaktien-etf-100.html",
       "published_at": "2026-11-22T10:25:29Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6793f1504c82adb164",
-      "title": "IG Metall weitet Warnstreiks in norddeutscher Metall- und Elektroindustrie aus",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/ig-metall-warnstreik-102.html",
-      "published_at": "2026-11-22T03:50:01Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
