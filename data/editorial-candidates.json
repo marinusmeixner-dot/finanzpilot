@@ -1,9 +1,45 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T15:12:20.504600Z",
+  "updated_at": "2026-11-26T17:06:37.126754Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-9568bb79a00bc913a0",
+      "title": "Spanier Hernández de Cos soll Nachfolger von EZB-Chefin Lagarde werden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/ezb-chef-de-cos-100.html",
+      "published_at": "2026-11-26T16:53:06Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-ca86c8c30c3744223c",
+      "title": "Einigung im Tarifstreit der Metall- und Elektroindustrie",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/tarifabschluss-metall-elektroindustrie-100.html",
+      "published_at": "2026-11-26T16:43:33Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-adfcb80f6911e1d00f",
+      "title": "Wofür steht der designierte EZB-Präsident Pablo Hernández de Cos?",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/nachfolger-ezb-de-cos-portrait-100.html",
+      "published_at": "2026-11-26T16:12:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-582b9badf8c4779ddc",
+      "title": "Buyer beware? Nvidia's volatile swings expose risks of single-stock ETFs",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/26/nvidias-volatile-swings-expose-risks-of-single-stock-etfs.html",
+      "published_at": "2026-11-26T16:00:01Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-38dfb149cbc62db923",
       "title": "Spanier Hernández de Cos soll laut Medien Nachfolger von EZB-Chefin Lagarde werden",
@@ -748,42 +784,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
       "published_at": "2026-11-22T18:55:05Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-eb99aec6a2b103ea19",
-      "title": "Scheitern der COP31-Abschlusserklärung: \"Ein fatales Ergebnis\"",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/weltklimakonferenz-reaktionen-100.html",
-      "published_at": "2026-11-22T16:56:52Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b05758ab17ddd725be",
-      "title": "Kommentar zur COP31: Großes Versagen - vielleicht auch ein Anfang",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/kommentar/weltklimakonferenz-cop31-scheitern-100.html",
-      "published_at": "2026-11-22T16:08:20Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ec91fb298f0fc81547",
-      "title": "Gebrauchte Elektroautos: Alternative oder Schrott?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/gebrauchte-elektroautos-100.html",
-      "published_at": "2026-11-22T15:36:15Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-85ea6a255065a293f3",
-      "title": "Weltklimakonferenz COP31: Keine Einigung auf Abschlusserklärung",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/weltklimakonferenz-cop31-antalya-kein-abschlussdokument-100.html",
-      "published_at": "2026-11-22T15:30:18Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
