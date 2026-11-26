@@ -1,62 +1,62 @@
 {
   "schema_version": 1,
-  "date": "2026-11-23",
-  "updated_at": "2026-11-23T00:03:00+01:00",
+  "date": "2026-11-26",
+  "updated_at": "2026-11-26T10:03:22+01:00",
   "editor": "FinanzPilot Tagesredaktion – Primärquellen und hypothetische Rechenfälle",
-  "explanation": "Drei eigenständige hypothetische Fälle. Verlinkte Originalquellen dienen der Methodik und dem wirtschaftlichen Kontext; Rechenwerte sind ausdrücklich erfunden.",
+  "explanation": "Originalquellen und ausdrücklich hypothetische Modellwerte.",
   "tasks": [
     {
       "kind": "market",
-      "id": "2026-11-23:market:pricing-power",
-      "title": "Preissetzungsmacht und Absatzrückgang",
-      "context": "Hypothetischer Hersteller: 40 Mio. € Umsatz, 24 Mio. € variable Kosten, 10 Mio. € Fixkosten. Er erhöht den Verkaufspreis um 6 %, verliert dadurch 5 % Absatz. Variable Kosten je Einheit bleiben konstant. Der Destatis-Erzeugerpreisindex ist nur makroökonomischer Kontext, kein Beleg für diese Modellfirma.",
-      "question": "Berechne neuen Umsatz, variable Kosten, Gewinn und Marge. Ist die Preiserhöhung wirtschaftlich erfolgreich? Nenne zwei Gegenhypothesen zur Dauerhaftigkeit.",
+      "id": "2026-11-26:market:collateral",
+      "title": "Sicherheiten und Liquidität",
+      "context": "Hypothetische Bank: 80 Mio. € Sicherheiten, Abschlag steigt von 10 auf 15 %. Die EZB kündigte Änderungen ihres Sicherheitenrahmens ab 30.11. an; die Modellabschläge sind keine tatsächlichen EZB-Sätze.",
+      "question": "Berechne den beleihbaren Wert vorher und nachher. Warum folgt daraus keine automatische Kreditklemme?",
       "rubric": [
-        "Umsatz = 40 × 1,06 × 0,95 = 40,28 Mio. €",
-        "Variable Kosten = 24 × 0,95 = 22,8 Mio. €",
-        "Gewinn = 40,28 − 22,8 − 10 = 7,48 Mio. € statt 6 Mio. €; Marge ≈ 18,57 % statt 15 %",
-        "Gegenargumente: weitere Nachfrageverluste, Wettbewerb, Kundenbindung und Preiselastizität"
+        "72 Mio. € vorher",
+        "68 Mio. € nachher; 4 Mio. € weniger",
+        "Alternative Sicherheiten oder Finanzierung",
+        "Gegenargument: tatsächlicher Liquiditätsbedarf entscheidend"
       ],
-      "date": "2026-11-23",
-      "source": "Destatis, Erzeugerpreisindex, Pressemitteilung vom 20.11.2026; Modellwerte hypothetisch",
-      "source_url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_407_61241.html",
-      "source_date": "2026-11-20",
+      "date": "2026-11-26",
+      "source": "EZB, Sicherheitenrahmen, 29.09.2026",
+      "source_url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260929~050089e922.en.html",
+      "source_date": "2026-09-29",
       "symbol": ""
     },
     {
       "kind": "research",
-      "id": "2026-11-23:research:enterprise-equity",
-      "title": "Unternehmenswert ist nicht Eigenkapitalwert",
-      "context": "Hypothetische Firma: Enterprise Value 900 Mio. €, Finanzschulden 260 Mio. €, liquide Mittel 80 Mio. €, Leasingverbindlichkeiten 40 Mio. €, 50 Mio. Aktien. Annahme: Leasing ist noch nicht im genannten EV enthalten. SEC EDGAR liefert für reale Unternehmen die Bilanzdaten.",
-      "question": "Berechne den modellhaften Eigenkapitalwert je Aktie unter Berücksichtigung des Leasings. Was ändert sich, wenn Leasing bereits im EV berücksichtigt ist? Nenne zwei Bewertungsrisiken.",
+      "id": "2026-11-26:research:arr",
+      "title": "Wiederkehrende Erlöse und Cashflow",
+      "context": "Corero meldete für 2025 ARR von 23,9 Mio. USD (+23 %). Hypothetisches Folgejahr: CFO 5 Mio., Sachinvestitionen 2 Mio., separat aktivierte Entwicklung 1 Mio. USD.",
+      "question": "Berechne Vorjahres-ARR und vereinfachten FCF. Welche Risiken bleiben?",
       "rubric": [
-        "Nettofinanzschulden inklusive Leasing = 260 + 40 − 80 = 220 Mio. €",
-        "Eigenkapitalwert = 900 − 220 = 680 Mio. €, je Aktie 13,60 €",
-        "Bei bereits berücksichtigtem Leasing keine doppelte Subtraktion; dann 720 Mio. € beziehungsweise 14,40 €",
-        "Risiken: EV-Schätzung, Minderheiten/Pensionen, Verwässerung, Cashflow-Normalisierung"
+        "23,9 / 1,23 ≈ 19,43 Mio. USD",
+        "5 − 2 − 1 = 2 Mio. USD",
+        "ARR ist kein vereinnahmter Cashflow",
+        "Gegenhypothese: Kundenabwanderung oder steigender Investitionsbedarf"
       ],
-      "date": "2026-11-23",
-      "source": "US SEC EDGAR, Unternehmensberichte; sämtliche Modellwerte hypothetisch",
-      "source_url": "https://www.sec.gov/edgar/search/",
-      "source_date": "2026-11-23",
-      "symbol": ""
+      "date": "2026-11-26",
+      "source": "Corero, Jahresergebnisse 2025, 24.03.2026",
+      "source_url": "https://www.corero.com/corero-network-security-accelerates-arr-growth/",
+      "source_date": "2026-03-24",
+      "symbol": "CNS"
     },
     {
       "kind": "learning",
-      "id": "2026-11-23:learning:real-return",
-      "title": "Nominale und reale Rendite auseinanderhalten",
-      "context": "Hypothetische Einjahresanlage erzielt nominal 7 % Rendite, während das allgemeine Preisniveau um 3 % steigt. Inflationsdaten werden üblicherweise anhand amtlicher Preisindizes gemessen; die Zahlen sind hier Modellannahmen.",
-      "question": "Berechne die exakte reale Rendite nach Fisher-Näherung und nach der exakten Formel. Warum ist die einfache Differenz nur eine Näherung? Welche zwei persönlichen Risiken bleiben?",
+      "id": "2026-11-26:learning:rating",
+      "title": "Rating und Abschlag",
+      "context": "Die EZB kündigte die Nutzung des zweitbesten Ratings für private Sicherheiten an. Modell: AAA, A, BBB; 250.000 € Marktwert und 12 % hypothetischer Abschlag.",
+      "question": "Bestimme das Rating und den Sicherheitenwert. Warum ist der Abschlag keine Ausfallwahrscheinlichkeit?",
       "rubric": [
-        "Einfache Näherung: 7 % − 3 % = 4 %",
-        "Exakt: 1,07/1,03 − 1 ≈ 3,8835 %",
-        "Differenz durch multiplikative Preis- und Vermögensentwicklung",
-        "Individueller Warenkorb, Steuern, Gebühren und Volatilität als Grenzen"
+        "A",
+        "220.000 €",
+        "Abschlag berücksichtigt Wert- und Verwertungsrisiken",
+        "Weitere Zulässigkeitsbedingungen und Risikofaktoren beachten"
       ],
-      "date": "2026-11-23",
-      "source": "Destatis, Verbraucherpreisindex; Modellwerte hypothetisch",
-      "source_url": "https://www.destatis.de/DE/Themen/Wirtschaft/Preise/Verbraucherpreisindex/_inhalt.html",
-      "source_date": "2026-11-23",
+      "date": "2026-11-26",
+      "source": "EZB, Sicherheitenrahmen, 29.09.2026",
+      "source_url": "https://www.ecb.europa.eu/press/pr/date/2026/html/ecb.pr260929~050089e922.en.html",
+      "source_date": "2026-09-29",
       "symbol": ""
     }
   ]
