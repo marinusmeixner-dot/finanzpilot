@@ -1,9 +1,180 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T05:01:29.340001Z",
+  "updated_at": "2026-11-26T15:12:20.504600Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-38dfb149cbc62db923",
+      "title": "Spanier Hernández de Cos soll laut Medien Nachfolger von EZB-Chefin Lagarde werden",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/eilmeldung/ezb-chef-de-cos-100.html",
+      "published_at": "2026-11-26T15:00:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-094abeb7ce73bc8afb",
+      "title": "Chinesischer Online-Händler Temu sagt mehr Verbraucherschutz zu",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/temu-eu-verfahren-verbraucherschutz-100.html",
+      "published_at": "2026-11-26T14:38:50Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-c01c73a046242a2335",
+      "title": "BGH stärkt Rechte von Mietern bei Balkonkraftwerken",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/mietrecht-balkonkraftwerke-bgh-100.html",
+      "published_at": "2026-11-26T13:29:47Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-20d5d9176f037a9937",
+      "title": "Semiconductor chips are the new oil. Here's why",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/26/semiconductor-chips-are-the-new-oil-heres-why.html",
+      "published_at": "2026-11-26T13:19:25Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7be2f4ded7fee8ac06",
+      "title": "Marktbericht: Aktieninvestoren blicken vorsichtig nach vorn",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/dax-erholung-chancen-risiken-100.html",
+      "published_at": "2026-11-26T12:04:38Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-4f04645ef54130e073",
+      "title": "Streit um EU-Haushalt: Warum die Slowakei blockieren will",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/slowakei-blockiert-eu-haushalt-100.html",
+      "published_at": "2026-11-26T11:04:32Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a4ed4ca066e18531a6",
+      "title": "Reallöhne sind im Sommer langsamer gewachsen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/loehne-wachstum-inflation-100.html",
+      "published_at": "2026-11-26T10:59:34Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-696dd99888f264d9a9",
+      "title": "Black Weeks: Wie die Rabattschlacht Handel und Kunden verändert",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/black-friday-schnaeppchen-wahnsinn-100.html",
+      "published_at": "2026-11-26T10:54:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-de100b164c8850fb49",
+      "title": "SPD reagiert verhalten auf CDU-Vorstoß zur Rente",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/innenpolitik/rente-diskussion-104.html",
+      "published_at": "2026-11-26T10:41:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8ddaeb80cc44aee1f3",
+      "title": "UniCredit beantragt Hauptversammlung bei Commerzbank",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/unicredit-commerzbank-hauptversammlung-100.html",
+      "published_at": "2026-11-26T08:54:54Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a3c952bff8e55527f0",
+      "title": "Update Wirtschaft vom 26.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1690152.html",
+      "published_at": "2026-11-26T08:47:36Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-691854eea20af2f9f8",
+      "title": "EU-Geld für die Ukraine - wie gegen Korruption vorgegangen wird",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/ukraine-korruption-118.html",
+      "published_at": "2026-11-26T07:53:31Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a7467742751d259562",
+      "title": "Robots could be doing household chores in just 1-2 years, Chinese EV firm says",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/26/china-ev-xpeng-humanoid-robots-household-chores.html",
+      "published_at": "2026-11-26T07:30:11Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-30f1f2b36f170728a2",
+      "title": "Digitaler Führerschein startet ab Mitte Dezember",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/digitaler-fuehrerschein-verspaetung-start-mitte-dezember-100.html",
+      "published_at": "2026-11-26T07:10:45Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-1b7e8157ad44432fdb",
+      "title": "Zahlen zum Advent: Heimische Produktion von Schokolade geht zurück",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N084_51_42.html",
+      "published_at": "2026-11-26T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-0a8bc173e84951fcdd",
+      "title": "Reallöhne im 3. Quartal 2026 um 1,3 % höher als im Vorjahresquartal",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_411_62321.html",
+      "published_at": "2026-11-26T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-97f4b55b536a69aa19",
+      "title": "Schlauchboote im Ärmelkanal: Deutscher Firmenchef soll Schleuser beliefert haben",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/investigativ/ndr-wdr/schleuser-aermelkanal-deutschland-100.html",
+      "published_at": "2026-11-26T05:00:30Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-2f1684caebdfab068d",
+      "title": "Deutschland verfehlt EU-Frist für besseren Schutz von Lieferfahrern",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/investigativ/rbb/lieferdienste-subunternehmer-100.html",
+      "published_at": "2026-11-26T05:00:09Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f697beeb8057380423",
+      "title": "EU-Haushalt: Kampf um bis zu zwei Billionen Euro",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/eu-haushalt-digitalsteuer-100.html",
+      "published_at": "2026-11-26T04:00:53Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-b88312da416e3628ae",
       "title": "SpaceX darf eine Million Satelliten für KI-Rechenzentren ins All schicken",
@@ -613,15 +784,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wissen/klima/klimakonferenz/weltklimakonferenz-cop31-antalya-kein-abschlussdokument-100.html",
       "published_at": "2026-11-22T15:30:18Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0b4bace73ec3ef861f",
-      "title": "Sind Einzelaktien eine Kostenfalle oder eine Goldgrube?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/boerse-investment-einzelaktien-etf-100.html",
-      "published_at": "2026-11-22T10:25:29Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
