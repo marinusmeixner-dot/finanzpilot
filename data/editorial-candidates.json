@@ -1,9 +1,27 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T17:06:37.126754Z",
+  "updated_at": "2026-11-26T23:51:16.145682Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-b75c631d879da84b02",
+      "title": "Wirtschaft vor acht vom 26.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/video/video-1690646.html",
+      "published_at": "2026-11-26T19:23:55Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-34fc905cc4aa513713",
+      "title": "Marktbericht: DAX macht einen Sprung nach vorn",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-174.html",
+      "published_at": "2026-11-26T17:23:20Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-9568bb79a00bc913a0",
       "title": "Spanier Hernández de Cos soll Nachfolger von EZB-Chefin Lagarde werden",
@@ -775,15 +793,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/bewerbung-mit-ki-chancen-risiken-100.html",
       "published_at": "2026-11-23T05:31:19Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d4b0bd38c120278c55",
-      "title": "Employees at Eric Trump-backed robot startup lose health benefits as company's cash crunch deepens",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/22/foundation-future-industries-health-benefits-payroll-base-group.html",
-      "published_at": "2026-11-22T18:55:05Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
