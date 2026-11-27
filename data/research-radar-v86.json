@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "asof": "2026-11-25",
+  "asof": "2026-11-26",
   "methodology_version": 1,
   "methodology": "Openes Startuniversum + veröffentlichte Unternehmensprofile/Artikel; technisches Suchsignal aus 50/200-Tage-Trend, 63-Tage-Relativperformance, 21-Tage-Volatilität und maximal 35 Tage alten redaktionellen Anlässen (RSS nie als Beleg). A/B/C = RESEARCHPRIORITÄT, niemals Renditeprognose oder Kaufrating. Vor Annahme einer Investmentthese: Cashflow, Bilanz, Bewertung und Primärquellen separat prüfen.",
   "quote_method": "Anbieterbereinigte Tageskurse nur zum Vergleich der Performance. Nicht mit regulären Schlusskursen aus data/market-valuations-v84.json oder anderen Handelsplätzen vermischen. Währungsgleiche Vergleichspaare; FX-Effekt und ETF-Kosten gesondert zu bewerten.",
@@ -20,7 +20,7 @@
     "mastercard",
     "jnj",
     "lilly",
-    "allianz"
+    "index-invh"
   ],
   "benchmark_universe": [
     {
@@ -32,7 +32,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-25",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -44,7 +44,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-25",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -56,7 +56,7 @@
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
       "last_price_date": "2026-11-25",
-      "sessions": 251,
+      "sessions": 250,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -67,8 +67,8 @@
       "description": "Global equities, EUR",
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
-      "last_price_date": "2026-11-25",
-      "sessions": 251,
+      "last_price_date": "2026-11-26",
+      "sessions": 252,
       "source": "Yahoo Finance (über yfinance)"
     },
     {
@@ -79,8 +79,8 @@
       "description": "Europe equities, EUR",
       "asset_type": "ETF",
       "provider_status": "historical_prices_only",
-      "last_price_date": "2026-11-25",
-      "sessions": 252,
+      "last_price_date": "2026-11-26",
+      "sessions": 253,
       "source": "Yahoo Finance (über yfinance)"
     }
   ],
@@ -101,7 +101,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 355.58,
         "return_21d_pct": 2.52,
         "return_63d_pct": 13.12,
@@ -187,23 +187,23 @@
       "has_curated_dossier": false,
       "lifecycle": "active",
       "research_priority": "A_research_first",
-      "technical_research_score": 79,
+      "technical_research_score": 77,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 18.61,
-        "return_21d_pct": 0.24,
-        "return_63d_pct": 4.37,
-        "return_126d_pct": 4.58,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": 10.2,
-        "ma50": 18.0597,
-        "ma200": 18.3068,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 18.86,
+        "return_21d_pct": 0.4,
+        "return_63d_pct": 5.96,
+        "return_126d_pct": 4.17,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": 7.88,
+        "ma50": 18.0814,
+        "ma200": 18.3105,
         "above_ma50": true,
         "above_ma200": true,
-        "drawdown_from_252d_high_pct": -5.55,
-        "volatility_21d_annualized_pct": 20.4,
+        "drawdown_from_252d_high_pct": -4.28,
+        "volatility_21d_annualized_pct": 20.7,
         "currency": "EUR"
       },
       "editorial_evidence": {
@@ -222,8 +222,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": 10.2,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 7.88,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -231,8 +231,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": 8.62,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": 7.64,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -244,10 +244,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -1.43,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 5.13,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -0.11,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 3.66,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -267,20 +267,20 @@
       "technical_research_score": 76,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 0.158,
-        "return_21d_pct": -0.63,
-        "return_63d_pct": 144.96,
-        "return_126d_pct": 51.92,
-        "benchmark_63d_pct": -8.13,
-        "relative_63d_pp": 153.09,
-        "ma50": 0.1462,
-        "ma200": 0.1144,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 0.153,
+        "return_21d_pct": -5.56,
+        "return_63d_pct": 135.38,
+        "return_126d_pct": 47.12,
+        "benchmark_63d_pct": -7.89,
+        "relative_63d_pp": 143.27,
+        "ma50": 0.1468,
+        "ma200": 0.1145,
         "above_ma50": true,
         "above_ma200": true,
-        "drawdown_from_252d_high_pct": -11.24,
-        "volatility_21d_annualized_pct": 42.0,
+        "drawdown_from_252d_high_pct": -14.04,
+        "volatility_21d_annualized_pct": 42.2,
         "currency": "EUR"
       },
       "editorial_evidence": {
@@ -299,8 +299,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": 150.79,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 137.3,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -308,8 +308,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": 149.21,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": 137.06,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -321,10 +321,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-09",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -4.24,
-        "benchmark_return_pct": -5.2,
-        "relative_to_benchmark_pp": 0.96,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -7.27,
+        "benchmark_return_pct": -2.37,
+        "relative_to_benchmark_pp": -4.9,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -344,19 +344,19 @@
       "technical_research_score": 72,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 50.68,
-        "return_21d_pct": 9.82,
-        "return_63d_pct": 4.13,
-        "return_126d_pct": 48.62,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": 9.96,
-        "ma50": 49.2656,
-        "ma200": 44.4028,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 52.82,
+        "return_21d_pct": 14.75,
+        "return_63d_pct": 7.71,
+        "return_126d_pct": 52.22,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": 9.63,
+        "ma50": 49.3412,
+        "ma200": 44.4379,
         "above_ma50": true,
         "above_ma200": true,
-        "drawdown_from_252d_high_pct": -11.21,
+        "drawdown_from_252d_high_pct": -7.46,
         "volatility_21d_annualized_pct": 38.7,
         "currency": "EUR"
       },
@@ -376,8 +376,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": 9.96,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 9.63,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -385,8 +385,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": 8.38,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": 9.39,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -398,10 +398,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -6.56,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 0.0,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -2.62,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 1.15,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -422,7 +422,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 1086.8101,
         "return_21d_pct": 12.79,
         "return_63d_pct": 19.72,
@@ -501,7 +501,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 131.94,
         "return_21d_pct": 10.58,
         "return_63d_pct": 28.56,
@@ -579,20 +579,20 @@
       "technical_research_score": 76,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 585.0,
-        "return_21d_pct": 5.63,
-        "return_63d_pct": 12.93,
-        "return_126d_pct": 32.23,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": 18.76,
-        "ma50": 546.64,
-        "ma200": 513.7765,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 589.2,
+        "return_21d_pct": 6.2,
+        "return_63d_pct": 13.57,
+        "return_126d_pct": 34.21,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": 15.49,
+        "ma50": 548.212,
+        "ma200": 514.1895,
         "above_ma50": true,
         "above_ma200": true,
-        "drawdown_from_252d_high_pct": -1.61,
-        "volatility_21d_annualized_pct": 25.0,
+        "drawdown_from_252d_high_pct": -0.91,
+        "volatility_21d_annualized_pct": 25.1,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -604,8 +604,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": 18.76,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 15.49,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -613,8 +613,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": 17.18,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": 15.25,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -626,10 +626,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": 0.1,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 6.66,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": 0.82,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 4.59,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -650,7 +650,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 424.39,
         "return_21d_pct": 5.8,
         "return_63d_pct": 11.99,
@@ -729,7 +729,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 659.97,
         "return_21d_pct": 8.22,
         "return_63d_pct": 11.7,
@@ -808,7 +808,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 273.94,
         "return_21d_pct": 2.45,
         "return_63d_pct": 3.59,
@@ -887,7 +887,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 1392.22,
         "return_21d_pct": 8.74,
         "return_63d_pct": 18.52,
@@ -951,76 +951,6 @@
       }
     },
     {
-      "id": "allianz",
-      "ticker": "ALV.DE",
-      "company": "Allianz",
-      "sector": "Insurance",
-      "country": "DE",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "B_watchlist",
-      "technical_research_score": 68,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 453.5,
-        "return_21d_pct": 4.3,
-        "return_63d_pct": 0.11,
-        "return_126d_pct": 20.39,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": 5.94,
-        "ma50": 438.844,
-        "ma200": 404.3239,
-        "above_ma50": true,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -4.97,
-        "volatility_21d_annualized_pct": 23.5,
-        "currency": "EUR"
-      },
-      "editorial_evidence": null,
-      "editorial_age_days": null,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": 5.94,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": 4.36,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -1.07,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 5.49,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "index-invh",
       "ticker": "INVH",
       "company": "Invitation Homes",
@@ -1036,7 +966,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 27.82,
         "return_21d_pct": 2.32,
         "return_63d_pct": -3.75,
@@ -1100,6 +1030,76 @@
       }
     },
     {
+      "id": "allianz",
+      "ticker": "ALV.DE",
+      "company": "Allianz",
+      "sector": "Insurance",
+      "country": "DE",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "B_watchlist",
+      "technical_research_score": 66,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 459.4,
+        "return_21d_pct": 5.54,
+        "return_63d_pct": 1.91,
+        "return_126d_pct": 24.63,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": 3.83,
+        "ma50": 439.01,
+        "ma200": 404.8561,
+        "above_ma50": true,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -3.73,
+        "volatility_21d_annualized_pct": 23.7,
+        "currency": "EUR"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 3.83,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.68,
+          "excess_return_pp": 3.59,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": 0.22,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 3.99,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "index-okta",
       "ticker": "OKTA",
       "company": "Okta, Inc.",
@@ -1115,7 +1115,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 201.77,
         "return_21d_pct": -10.75,
         "return_63d_pct": 16.69,
@@ -1194,7 +1194,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 87.16,
         "return_21d_pct": 5.04,
         "return_63d_pct": -4.15,
@@ -1273,7 +1273,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 85.41,
         "return_21d_pct": 3.63,
         "return_63d_pct": 3.09,
@@ -1352,7 +1352,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 133.94,
         "return_21d_pct": 9.62,
         "return_63d_pct": -4.95,
@@ -1431,7 +1431,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 97.3,
         "return_21d_pct": 13.92,
         "return_63d_pct": 2.22,
@@ -1517,7 +1517,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 489.93,
         "return_21d_pct": -7.61,
         "return_63d_pct": -2.81,
@@ -1603,7 +1603,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 34.02,
         "return_21d_pct": 6.28,
         "return_63d_pct": 8.55,
@@ -1682,7 +1682,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 378.95,
         "return_21d_pct": 44.19,
         "return_63d_pct": 21.21,
@@ -1761,7 +1761,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 67.84,
         "return_21d_pct": 14.54,
         "return_63d_pct": -8.44,
@@ -1840,7 +1840,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 380.14,
         "return_21d_pct": -6.7,
         "return_63d_pct": 7.14,
@@ -1919,7 +1919,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 641.02,
         "return_21d_pct": 0.23,
         "return_63d_pct": 3.19,
@@ -1987,6 +1987,83 @@
       }
     },
     {
+      "id": "bmw",
+      "ticker": "BMW.DE",
+      "company": "BMW",
+      "sector": "Automotive",
+      "country": "DE",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 44,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 57.72,
+        "return_21d_pct": 0.59,
+        "return_63d_pct": -6.87,
+        "return_126d_pct": -19.07,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -4.95,
+        "ma50": 56.4816,
+        "ma200": 65.6053,
+        "above_ma50": true,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -37.33,
+        "volatility_21d_annualized_pct": 34.6,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-04-bmw-q3-guidance-realignment",
+        "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
+        "date": "2026-11-04",
+        "url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
+        "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 23,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -4.95,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -5.19,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -5.35,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -1.58,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "telekom",
       "ticker": "DTE.DE",
       "company": "Deutsche Telekom",
@@ -1998,23 +2075,23 @@
       "has_curated_dossier": false,
       "lifecycle": "active",
       "research_priority": "C_screen_only",
-      "technical_research_score": 46,
+      "technical_research_score": 44,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 26.83,
-        "return_21d_pct": 6.72,
-        "return_63d_pct": -5.93,
-        "return_126d_pct": -7.1,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -0.1,
-        "ma50": 26.218,
-        "ma200": 28.0888,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 27.15,
+        "return_21d_pct": 8.0,
+        "return_63d_pct": -4.33,
+        "return_126d_pct": -3.38,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -2.41,
+        "ma50": 26.195,
+        "ma200": 28.0649,
         "above_ma50": true,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -18.74,
-        "volatility_21d_annualized_pct": 24.3,
+        "drawdown_from_252d_high_pct": -17.78,
+        "volatility_21d_annualized_pct": 23.8,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -2030,8 +2107,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -0.1,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -2.41,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -2039,8 +2116,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -1.68,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -2.65,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -2052,10 +2129,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": 0.26,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 6.82,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": 1.46,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 5.23,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -2076,7 +2153,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 271.9,
         "return_21d_pct": -13.26,
         "return_63d_pct": -3.63,
@@ -2151,23 +2228,23 @@
       "has_curated_dossier": false,
       "lifecycle": "active",
       "research_priority": "C_screen_only",
-      "technical_research_score": 43,
+      "technical_research_score": 41,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 189.82,
-        "return_21d_pct": -10.95,
-        "return_63d_pct": -0.78,
-        "return_126d_pct": 16.55,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": 5.05,
-        "ma50": 198.0762,
-        "ma200": 166.7468,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 194.14,
+        "return_21d_pct": -8.08,
+        "return_63d_pct": 1.7,
+        "return_126d_pct": 24.5,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": 3.62,
+        "ma50": 198.199,
+        "ma200": 166.8898,
         "above_ma50": false,
         "above_ma200": true,
-        "drawdown_from_252d_high_pct": -12.02,
-        "volatility_21d_annualized_pct": 33.9,
+        "drawdown_from_252d_high_pct": -10.02,
+        "volatility_21d_annualized_pct": 35.2,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -2179,8 +2256,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": 5.05,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 3.62,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -2188,8 +2265,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": 3.47,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": 3.38,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -2201,10 +2278,80 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -11.42,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -4.86,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -9.41,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -5.64,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "airbus",
+      "ticker": "AIR.PA",
+      "company": "Airbus",
+      "sector": "Aerospace",
+      "country": "FR",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 38,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-26",
+        "sessions": 255,
+        "adjusted_close": 193.84,
+        "return_21d_pct": 1.0,
+        "return_63d_pct": -1.72,
+        "return_126d_pct": 14.49,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": 0.2,
+        "ma50": 194.828,
+        "ma200": 187.7922,
+        "above_ma50": false,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -10.34,
+        "volatility_21d_annualized_pct": 34.2,
+        "currency": "EUR"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 0.2,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -0.04,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -3.13,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 0.64,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -2221,23 +2368,23 @@
       "has_curated_dossier": false,
       "lifecycle": "active",
       "research_priority": "C_screen_only",
-      "technical_research_score": 40,
+      "technical_research_score": 36,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 18.51,
-        "return_21d_pct": -13.18,
-        "return_63d_pct": -1.49,
-        "return_126d_pct": 16.12,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": 4.34,
-        "ma50": 20.3376,
-        "ma200": 17.2316,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 18.65,
+        "return_21d_pct": -12.28,
+        "return_63d_pct": -1.89,
+        "return_126d_pct": 18.11,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": 0.03,
+        "ma50": 20.3596,
+        "ma200": 17.2517,
         "above_ma50": false,
         "above_ma200": true,
-        "drawdown_from_252d_high_pct": -16.17,
-        "volatility_21d_annualized_pct": 65.3,
+        "drawdown_from_252d_high_pct": -15.53,
+        "volatility_21d_annualized_pct": 65.5,
         "currency": "EUR"
       },
       "editorial_evidence": {
@@ -2256,8 +2403,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": 4.34,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": 0.03,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -2265,8 +2412,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": 2.76,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -0.21,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -2278,19 +2425,19 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -13.34,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -6.78,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -12.69,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -8.92,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
     },
     {
-      "id": "airbus",
-      "ticker": "AIR.PA",
-      "company": "Airbus",
-      "sector": "Aerospace",
+      "id": "lvmh",
+      "ticker": "MC.PA",
+      "company": "LVMH",
+      "sector": "Luxury",
       "country": "FR",
       "currency": "EUR",
       "origin": "liquid_research_universe",
@@ -2298,23 +2445,23 @@
       "has_curated_dossier": false,
       "lifecycle": "active",
       "research_priority": "C_screen_only",
-      "technical_research_score": 37,
+      "technical_research_score": 36,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 254,
-        "adjusted_close": 190.0,
-        "return_21d_pct": -1.42,
-        "return_63d_pct": -6.43,
-        "return_126d_pct": 10.03,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -0.6,
-        "ma50": 194.8612,
-        "ma200": 187.7911,
-        "above_ma50": false,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -12.12,
-        "volatility_21d_annualized_pct": 34.4,
+        "asof": "2026-11-26",
+        "sessions": 255,
+        "adjusted_close": 401.05,
+        "return_21d_pct": 4.17,
+        "return_63d_pct": -11.53,
+        "return_126d_pct": -12.98,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -9.61,
+        "ma50": 393.309,
+        "ma200": 453.6655,
+        "above_ma50": true,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -37.5,
+        "volatility_21d_annualized_pct": 27.1,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -2326,8 +2473,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -0.6,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -9.61,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -2335,8 +2482,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -2.18,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -9.85,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -2348,10 +2495,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -5.05,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 1.51,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -3.65,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 0.12,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -2372,7 +2519,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 94.69,
         "return_21d_pct": -31.75,
         "return_63d_pct": -4.58,
@@ -2451,7 +2598,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 609.89,
         "return_21d_pct": -1.66,
         "return_63d_pct": 6.88,
@@ -2515,160 +2662,6 @@
       }
     },
     {
-      "id": "profile-rwe-de",
-      "ticker": "RWE.DE",
-      "company": "RWE AG",
-      "sector": "Energieversorgung",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 33,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 55.44,
-        "return_21d_pct": -3.68,
-        "return_63d_pct": -6.19,
-        "return_126d_pct": 0.58,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -0.36,
-        "ma50": 58.1956,
-        "ma200": 56.8993,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -8.79,
-        "volatility_21d_annualized_pct": 23.1,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "gas-storage-winter-2026",
-        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
-        "date": "2026-11-01",
-        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
-        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 26,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -0.36,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -1.94,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "published_profile_needs_ticker_recheck",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -3.25,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 3.31,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
-      "id": "basf",
-      "ticker": "BAS.DE",
-      "company": "BASF",
-      "sector": "Chemicals",
-      "country": "DE",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 32,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 49.2,
-        "return_21d_pct": -5.6,
-        "return_63d_pct": -6.32,
-        "return_126d_pct": -3.66,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -0.49,
-        "ma50": 52.0816,
-        "ma200": 50.335,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -12.28,
-        "volatility_21d_annualized_pct": 25.3,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
-        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
-        "date": "2026-10-30",
-        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
-        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 28,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -0.49,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -2.07,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -9.39,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -2.83,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "paloalto",
       "ticker": "PANW",
       "company": "Palo Alto Networks",
@@ -2684,7 +2677,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 356.14,
         "return_21d_pct": -11.34,
         "return_63d_pct": -6.98,
@@ -2748,6 +2741,83 @@
       }
     },
     {
+      "id": "profile-rwe-de",
+      "ticker": "RWE.DE",
+      "company": "RWE AG",
+      "sector": "Energieversorgung",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 31,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 56.76,
+        "return_21d_pct": -2.57,
+        "return_63d_pct": -3.21,
+        "return_126d_pct": -0.67,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -1.29,
+        "ma50": 58.1184,
+        "ma200": 56.9354,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -6.61,
+        "volatility_21d_annualized_pct": 24.6,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "gas-storage-winter-2026",
+        "title": "Deutsche Gasspeicher starten mit niedrigem Füllstand in den Winter",
+        "date": "2026-11-01",
+        "url": "https://www.reuters.com/business/energy/germany-must-do-more-boost-gas-reserves-storage-levels-hit-record-low-lobby-2026-11-01/",
+        "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 26,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -1.29,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -1.53,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -0.94,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 2.83,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "crowdstrike",
       "ticker": "CRWD",
       "company": "CrowdStrike",
@@ -2763,7 +2833,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 209.3,
         "return_21d_pct": -21.91,
         "return_63d_pct": -8.19,
@@ -2842,7 +2912,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 244.43,
         "return_21d_pct": -3.43,
         "return_63d_pct": -4.62,
@@ -2913,6 +2983,83 @@
       }
     },
     {
+      "id": "basf",
+      "ticker": "BAS.DE",
+      "company": "BASF",
+      "sector": "Chemicals",
+      "country": "DE",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 28,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 50.14,
+        "return_21d_pct": -5.11,
+        "return_63d_pct": -5.36,
+        "return_126d_pct": -1.26,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -3.44,
+        "ma50": 52.037,
+        "ma200": 50.3423,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -10.61,
+        "volatility_21d_annualized_pct": 26.1,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-10-30-evonik-basf-takeover-talks-rejected",
+        "title": "Evonik lehnt Verhandlungen mit BASF ab: Warum Übernahmeinteresse noch kein Angebot ist",
+        "date": "2026-10-30",
+        "url": "https://www.evonik.com/de/news/press-releases/2026/10/ad-hoc-statement-board-evonik.html",
+        "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 28,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -3.44,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -3.68,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -7.66,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -3.89,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "profile-jd",
       "ticker": "JD",
       "company": "JD.com Inc.",
@@ -2928,7 +3075,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 26.38,
         "return_21d_pct": 3.17,
         "return_63d_pct": -7.41,
@@ -3014,7 +3161,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 200.39,
         "return_21d_pct": -28.3,
         "return_63d_pct": -11.99,
@@ -3093,7 +3240,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 163.59,
         "return_21d_pct": -17.68,
         "return_63d_pct": -12.02,
@@ -3157,83 +3304,6 @@
       }
     },
     {
-      "id": "bmw",
-      "ticker": "BMW.DE",
-      "company": "BMW",
-      "sector": "Automotive",
-      "country": "DE",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 24,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 55.24,
-        "return_21d_pct": -2.61,
-        "return_63d_pct": -11.81,
-        "return_126d_pct": -24.31,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -5.98,
-        "ma50": 56.5916,
-        "ma200": 65.7397,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -40.03,
-        "volatility_21d_annualized_pct": 30.8,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-04-bmw-q3-guidance-realignment",
-        "title": "BMW senkt Margenausblick trotz robustem Quartalsgewinn: Wie teuer wird der Umbau?",
-        "date": "2026-11-04",
-        "url": "https://newsroom.bmwgroup.com/global/de/bmw-group-beschleunigt-neuausrichtung/",
-        "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 23,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -5.98,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -7.56,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -9.41,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -2.85,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "index-echo",
       "ticker": "ECHO",
       "company": "EchoStar",
@@ -3249,7 +3319,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 85.74,
         "return_21d_pct": -5.14,
         "return_63d_pct": -0.84,
@@ -3328,7 +3398,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 86.77,
         "return_21d_pct": -7.7,
         "return_63d_pct": -10.88,
@@ -3407,7 +3477,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 316.74,
         "return_21d_pct": -5.67,
         "return_63d_pct": -10.13,
@@ -3486,7 +3556,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 197.21,
         "return_21d_pct": -18.13,
         "return_63d_pct": -21.62,
@@ -3561,23 +3631,23 @@
       "has_curated_dossier": true,
       "lifecycle": "active",
       "research_priority": "C_screen_only",
-      "technical_research_score": 18,
+      "technical_research_score": 17,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 245.5,
-        "return_21d_pct": -7.78,
-        "return_63d_pct": -15.3,
-        "return_126d_pct": -11.91,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -9.47,
-        "ma50": 269.767,
-        "ma200": 260.6785,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 250.3,
+        "return_21d_pct": -7.31,
+        "return_63d_pct": -12.36,
+        "return_126d_pct": -8.98,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -10.44,
+        "ma50": 269.441,
+        "ma200": 260.7552,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -15.3,
-        "volatility_21d_annualized_pct": 38.9,
+        "drawdown_from_252d_high_pct": -13.64,
+        "volatility_21d_annualized_pct": 39.3,
         "currency": "EUR"
       },
       "editorial_evidence": {
@@ -3596,8 +3666,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -9.47,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -10.44,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -3605,8 +3675,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -11.05,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -10.68,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -3618,80 +3688,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -10.94,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -4.38,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
-      "id": "lvmh",
-      "ticker": "MC.PA",
-      "company": "LVMH",
-      "sector": "Luxury",
-      "country": "FR",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 17,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 254,
-        "adjusted_close": 391.0,
-        "return_21d_pct": 0.71,
-        "return_63d_pct": -14.66,
-        "return_126d_pct": -17.68,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -8.83,
-        "ma50": 393.534,
-        "ma200": 454.2101,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -39.06,
-        "volatility_21d_annualized_pct": 25.8,
-        "currency": "EUR"
-      },
-      "editorial_evidence": null,
-      "editorial_age_days": null,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -8.83,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -10.41,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -6.07,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 0.49,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -9.2,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -5.43,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -3712,7 +3712,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 66.35,
         "return_21d_pct": 0.87,
         "return_63d_pct": -13.78,
@@ -3791,7 +3791,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 41.65,
         "return_21d_pct": -1.06,
         "return_63d_pct": -13.45,
@@ -3870,7 +3870,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 346.19,
         "return_21d_pct": -15.64,
         "return_63d_pct": -11.83,
@@ -3949,7 +3949,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 232.83,
         "return_21d_pct": -6.25,
         "return_63d_pct": -19.48,
@@ -4028,7 +4028,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 212.39,
         "return_21d_pct": -15.2,
         "return_63d_pct": -10.64,
@@ -4111,7 +4111,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 149.3,
         "return_21d_pct": -31.49,
         "return_63d_pct": -34.44,
@@ -4186,83 +4186,6 @@
       }
     },
     {
-      "id": "profile-sha0-de",
-      "ticker": "SHA0.DE",
-      "company": "Schaeffler AG",
-      "sector": "Industrie- und Automobilzulieferer",
-      "country": "EU",
-      "currency": "EUR",
-      "origin": "published_business_profile",
-      "curated_id": null,
-      "has_curated_dossier": false,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 11,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 4.965,
-        "return_21d_pct": -14.69,
-        "return_63d_pct": -34.06,
-        "return_126d_pct": -54.11,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -28.23,
-        "ma50": 5.8988,
-        "ma200": 7.6637,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -56.71,
-        "volatility_21d_annualized_pct": 43.4,
-        "currency": "EUR"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-03-schaeffler-restructuring-3460",
-        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
-        "date": "2026-11-03",
-        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
-        "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 24,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -28.23,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -29.81,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
-      "risks": null,
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "published_profile_needs_ticker_recheck",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -12.43,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -5.87,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "alphabet",
       "ticker": "GOOGL",
       "company": "Alphabet",
@@ -4278,7 +4201,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 273.1,
         "return_21d_pct": -14.81,
         "return_63d_pct": -19.78,
@@ -4364,7 +4287,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 121.32,
         "return_21d_pct": -17.28,
         "return_63d_pct": -13.08,
@@ -4443,7 +4366,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 406.03,
         "return_21d_pct": -27.53,
         "return_63d_pct": -14.82,
@@ -4507,6 +4430,83 @@
       }
     },
     {
+      "id": "profile-sha0-de",
+      "ticker": "SHA0.DE",
+      "company": "Schaeffler AG",
+      "sector": "Industrie- und Automobilzulieferer",
+      "country": "EU",
+      "currency": "EUR",
+      "origin": "published_business_profile",
+      "curated_id": null,
+      "has_curated_dossier": false,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 9,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 5.25,
+        "return_21d_pct": -11.47,
+        "return_63d_pct": -28.86,
+        "return_126d_pct": -49.52,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -26.94,
+        "ma50": 5.8624,
+        "ma200": 7.6382,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -54.22,
+        "volatility_21d_annualized_pct": 48.1,
+        "currency": "EUR"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-03-schaeffler-restructuring-3460",
+        "title": "Schaeffler streicht 3.460 Stellen: 300 Millionen Euro jährliche Einsparung erst ab 2030 geplant",
+        "date": "2026-11-03",
+        "url": "https://www.schaeffler.com/de/medien/pressemitteilungen/pressemitteilung-details.jsp?id=88224640",
+        "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 24,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -26.94,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -27.18,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "risks": null,
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "published_profile_needs_ticker_recheck",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -7.41,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -3.64,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
       "id": "index-rddt",
       "ticker": "RDDT",
       "company": "Reddit",
@@ -4522,7 +4522,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 91.51,
         "return_21d_pct": -32.94,
         "return_63d_pct": -40.56,
@@ -4607,20 +4607,20 @@
       "technical_research_score": 6,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 112.46,
-        "return_21d_pct": -12.54,
-        "return_63d_pct": -24.88,
-        "return_126d_pct": -29.06,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -19.05,
-        "ma50": 133.0928,
-        "ma200": 152.1645,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 117.0,
+        "return_21d_pct": -12.2,
+        "return_63d_pct": -17.71,
+        "return_126d_pct": -26.95,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -15.79,
+        "ma50": 132.5968,
+        "ma200": 151.936,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -40.06,
-        "volatility_21d_annualized_pct": 77.1,
+        "drawdown_from_252d_high_pct": -37.64,
+        "volatility_21d_annualized_pct": 78.2,
         "currency": "EUR"
       },
       "editorial_evidence": {
@@ -4639,8 +4639,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -19.05,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -15.79,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -4648,8 +4648,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -20.63,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -16.03,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -4661,10 +4661,80 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -5.86,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": 0.7,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -2.06,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": 1.71,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
+      }
+    },
+    {
+      "id": "kion",
+      "ticker": "KGX.DE",
+      "company": "KION Group",
+      "sector": "Warehouse Automation",
+      "country": "DE",
+      "currency": "EUR",
+      "origin": "liquid_research_universe",
+      "curated_id": "kion",
+      "has_curated_dossier": true,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 5,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 30.06,
+        "return_21d_pct": -10.54,
+        "return_63d_pct": -32.18,
+        "return_126d_pct": -26.5,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -30.26,
+        "ma50": 34.8004,
+        "ma200": 41.8554,
+        "above_ma50": false,
+        "above_ma200": false,
+        "drawdown_from_252d_high_pct": -56.6,
+        "volatility_21d_annualized_pct": 43.8,
+        "currency": "EUR"
+      },
+      "editorial_evidence": null,
+      "editorial_age_days": null,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "VWCE",
+          "name": "Vanguard FTSE All-World UCITS ETF",
+          "ticker": "VWCE.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -30.26,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "EXSA",
+          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
+          "ticker": "EXSA.DE",
+          "currency": "EUR",
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -30.5,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Nächste Quartale: neuer Auftragseingang ITS, IAS-Marge, Working Capital und Finanzierungs-Bridge.",
+      "risks": "FCF-Definition 2026, Schulden und zyklische Auftragslage erschweren einen robusten fairen Wert.",
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -13.97,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -10.2,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -4685,7 +4755,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 300.86,
         "return_21d_pct": -12.11,
         "return_63d_pct": -18.88,
@@ -4749,76 +4819,6 @@
       }
     },
     {
-      "id": "kion",
-      "ticker": "KGX.DE",
-      "company": "KION Group",
-      "sector": "Warehouse Automation",
-      "country": "DE",
-      "currency": "EUR",
-      "origin": "liquid_research_universe",
-      "curated_id": "kion",
-      "has_curated_dossier": true,
-      "lifecycle": "active",
-      "research_priority": "C_screen_only",
-      "technical_research_score": 4,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 29.44,
-        "return_21d_pct": -13.18,
-        "return_63d_pct": -34.69,
-        "return_126d_pct": -30.91,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -28.86,
-        "ma50": 35.0346,
-        "ma200": 42.0275,
-        "above_ma50": false,
-        "above_ma200": false,
-        "drawdown_from_252d_high_pct": -57.49,
-        "volatility_21d_annualized_pct": 44.7,
-        "currency": "EUR"
-      },
-      "editorial_evidence": null,
-      "editorial_age_days": null,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "VWCE",
-          "name": "Vanguard FTSE All-World UCITS ETF",
-          "ticker": "VWCE.DE",
-          "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -28.86,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "EXSA",
-          "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
-          "ticker": "EXSA.DE",
-          "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -30.44,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Nächste Quartale: neuer Auftragseingang ITS, IAS-Marge, Working Capital und Finanzierungs-Bridge.",
-      "risks": "FCF-Definition 2026, Schulden und zyklische Auftragslage erschweren einen robusten fairen Wert.",
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -15.74,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -9.18,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
-      }
-    },
-    {
       "id": "tsmc",
       "ticker": "TSM",
       "company": "TSMC ADR",
@@ -4834,7 +4834,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 342.34,
         "return_21d_pct": -21.64,
         "return_63d_pct": -19.67,
@@ -4913,7 +4913,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 74.74,
         "return_21d_pct": -9.13,
         "return_63d_pct": -22.52,
@@ -4991,20 +4991,20 @@
       "technical_research_score": 0,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 25.51,
-        "return_21d_pct": -16.22,
-        "return_63d_pct": -30.3,
-        "return_126d_pct": -55.96,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -24.47,
-        "ma50": 33.357,
-        "ma200": 39.6115,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 26.02,
+        "return_21d_pct": -17.32,
+        "return_63d_pct": -27.3,
+        "return_126d_pct": -56.86,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -25.38,
+        "ma50": 33.1942,
+        "ma200": 39.6261,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -57.78,
-        "volatility_21d_annualized_pct": 106.4,
+        "drawdown_from_252d_high_pct": -56.93,
+        "volatility_21d_annualized_pct": 101.7,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -5016,8 +5016,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -24.47,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -25.38,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -5025,8 +5025,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -26.05,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -25.62,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -5038,10 +5038,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -20.26,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -13.7,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -18.66,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -14.89,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -5061,20 +5061,20 @@
       "technical_research_score": 0,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 254,
-        "adjusted_close": 1131.6,
-        "return_21d_pct": -23.02,
-        "return_63d_pct": -24.18,
-        "return_126d_pct": -22.39,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -18.35,
-        "ma50": 1438.9434,
-        "ma200": 1397.8375,
+        "asof": "2026-11-26",
+        "sessions": 255,
+        "adjusted_close": 1168.1999,
+        "return_21d_pct": -21.58,
+        "return_63d_pct": -19.43,
+        "return_126d_pct": -21.14,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -17.51,
+        "ma50": 1433.9853,
+        "ma200": 1397.7319,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -34.1,
-        "volatility_21d_annualized_pct": 70.7,
+        "drawdown_from_252d_high_pct": -31.96,
+        "volatility_21d_annualized_pct": 72.0,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -5086,8 +5086,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -18.35,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -17.51,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -5095,8 +5095,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -19.93,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -17.75,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -5108,10 +5108,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -15.4,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -8.84,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -12.66,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -8.89,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -5132,7 +5132,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 311.18,
         "return_21d_pct": -21.29,
         "return_63d_pct": -35.39,
@@ -5211,7 +5211,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 152.89,
         "return_21d_pct": -30.03,
         "return_63d_pct": -29.81,
@@ -5290,7 +5290,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 543.69,
         "return_21d_pct": -23.78,
         "return_63d_pct": -33.29,
@@ -5369,7 +5369,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 46.91,
         "return_21d_pct": -19.28,
         "return_63d_pct": -25.37,
@@ -5448,7 +5448,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 166.4,
         "return_21d_pct": -2.44,
         "return_63d_pct": -28.24,
@@ -5527,7 +5527,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 317.81,
         "return_21d_pct": -17.03,
         "return_63d_pct": -23.38,
@@ -5606,7 +5606,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 715.0,
         "return_21d_pct": -20.12,
         "return_63d_pct": -25.0,
@@ -5684,20 +5684,20 @@
       "technical_research_score": 0,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 40.895,
-        "return_21d_pct": -22.24,
-        "return_63d_pct": -28.35,
-        "return_126d_pct": -53.53,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -22.52,
-        "ma50": 53.4007,
-        "ma200": 57.7184,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 42.355,
+        "return_21d_pct": -20.74,
+        "return_63d_pct": -24.76,
+        "return_126d_pct": -51.87,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -22.84,
+        "ma50": 53.1598,
+        "ma200": 57.7158,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -53.53,
-        "volatility_21d_annualized_pct": 76.9,
+        "drawdown_from_252d_high_pct": -51.87,
+        "volatility_21d_annualized_pct": 78.4,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -5709,8 +5709,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -22.52,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -22.84,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -5718,8 +5718,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -24.1,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -23.08,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -5731,10 +5731,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -18.6,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -12.04,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -15.69,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -11.92,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -5755,7 +5755,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 103.88,
         "return_21d_pct": -20.42,
         "return_63d_pct": -31.38,
@@ -5833,20 +5833,20 @@
       "technical_research_score": 0,
       "signals": {
         "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 252,
-        "adjusted_close": 735.8,
-        "return_21d_pct": -28.23,
-        "return_63d_pct": -36.27,
-        "return_126d_pct": -38.17,
-        "benchmark_63d_pct": -5.83,
-        "relative_63d_pp": -30.44,
-        "ma50": 929.386,
-        "ma200": 1182.2557,
+        "asof": "2026-11-26",
+        "sessions": 253,
+        "adjusted_close": 765.7,
+        "return_21d_pct": -24.34,
+        "return_63d_pct": -31.07,
+        "return_126d_pct": -36.21,
+        "benchmark_63d_pct": -1.92,
+        "relative_63d_pp": -29.15,
+        "ma50": 924.376,
+        "ma200": 1178.0644,
         "above_ma50": false,
         "above_ma200": false,
-        "drawdown_from_252d_high_pct": -61.29,
-        "volatility_21d_annualized_pct": 73.6,
+        "drawdown_from_252d_high_pct": -59.72,
+        "volatility_21d_annualized_pct": 74.0,
         "currency": "EUR"
       },
       "editorial_evidence": null,
@@ -5858,8 +5858,8 @@
           "name": "Vanguard FTSE All-World UCITS ETF",
           "ticker": "VWCE.DE",
           "currency": "EUR",
-          "return_63d_pct": -5.83,
-          "excess_return_pp": -30.44,
+          "return_63d_pct": -1.92,
+          "excess_return_pp": -29.15,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         },
         {
@@ -5867,8 +5867,8 @@
           "name": "iShares STOXX Europe 600 UCITS ETF (DE)",
           "ticker": "EXSA.DE",
           "currency": "EUR",
-          "return_63d_pct": -4.25,
-          "excess_return_pp": -32.02,
+          "return_63d_pct": -1.68,
+          "excess_return_pp": -29.39,
           "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
         }
       ],
@@ -5880,10 +5880,10 @@
       "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
       "since_first_screen": {
         "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -26.67,
-        "benchmark_return_pct": -6.56,
-        "relative_to_benchmark_pp": -20.11,
+        "last_session": "2026-11-26",
+        "adjusted_return_pct": -23.69,
+        "benchmark_return_pct": -3.77,
+        "relative_to_benchmark_pp": -19.92,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "Vanguard FTSE All-World UCITS ETF"
       }
@@ -5904,7 +5904,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 65.78,
         "return_21d_pct": -30.44,
         "return_63d_pct": -40.07,
@@ -5922,8 +5922,8 @@
       "editorial_evidence": null,
       "editorial_age_days": null,
       "unverified_discovery_hint": {
-        "id": "rss-3210e6c78e77373851",
-        "date": "2026-11-25",
+        "id": "rss-9d16f83552b0159c98",
+        "date": "2026-11-27",
         "status": "unverified_headline_only"
       },
       "benchmarks": [
@@ -5987,7 +5987,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 261.37,
         "return_21d_pct": -20.9,
         "return_63d_pct": -29.19,
@@ -6066,7 +6066,7 @@
       "signals": {
         "status": "history_available",
         "asof": "2026-11-25",
-        "sessions": 251,
+        "sessions": 250,
         "adjusted_close": 180.79,
         "return_21d_pct": -28.98,
         "return_63d_pct": -25.09,

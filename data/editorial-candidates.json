@@ -1,9 +1,90 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-27T08:27:15.682327Z",
+  "updated_at": "2026-11-27T16:50:21.913341Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-436e53da45c3589770",
+      "title": "Anthropics wilde erste Börsenwoche",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-anthropic-ipo-ki-100.html",
+      "published_at": "2026-11-27T13:44:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9d16f83552b0159c98",
+      "title": "The S&P 500 is in a correction. Bear markets and recessions don't always follow",
+      "source": "CNBC Markets",
+      "url": "https://www.cnbc.com/2026/11/27/the-sp-500-is-in-a-correction-bear-markets-and-recessions-dont-always-follow.html",
+      "published_at": "2026-11-27T13:21:56Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-87c53eff66c16de057",
+      "title": "Kommentar: Hernández de Cos - ein EZB-Chef im Sinne Frankreichs",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/neuer-ezb-chef-de-cos-geldpolitik-100.html",
+      "published_at": "2026-11-27T13:20:03Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-90d069ae19db375238",
+      "title": "Inflation Deutschland: Energie 12,2 Prozent teurer, Kernrate nur 2,1 Prozent – was heißt das für EZB und DAX? - AktienCheck.de",
+      "source": "Google News: EU/Deutschland",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNbmM3MnpjZGtMN1lmZ1dCWGRKczJySjhYZTl3dFoyNWlneUtYU2RPbVk4RmtPX1N5cWpfeDNaaXBSaUhDWVFaLWNURll2Ty1zSW1Tamp0cWdjblJhM3JHQ3RiYi14QzRBaC1UWHpqclZFU2t2Sk9tUlF3SllxckVnNlJxU2tOQ3pEREE1enRmRU4tZE1ueVczaVl3Y196Y3hHV0s2ZFBoMkdOb2c?oc=5",
+      "published_at": "2026-11-27T13:10:16Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-f550f60f1ab384a30d",
+      "title": "SAP erwägt offenbar Abbau von Tausenden Stellen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/sap-stellenabbau-geplant-100.html",
+      "published_at": "2026-11-27T11:09:46Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-9679d51d6f1b021abb",
+      "title": "Wie Firmen mit Weiterbildung gegen Fachkräftemangel vorbeugen",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/demografie-fachkraefte-weiterbildung-100.html",
+      "published_at": "2026-11-27T09:57:51Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-7e84ac5e7b8a9d0a0e",
+      "title": "Arbeitslosenzahl sinkt im November nur leicht - wenig Herbstbelebung",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/arbeitslosenzahlen-november-108.html",
+      "published_at": "2026-11-27T09:57:19Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-95e45bbc6dece985f0",
+      "title": "Shopping: KI-Agenten werden beliebter",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/ki-agenten-einkaufen-handel-100.html",
+      "published_at": "2026-11-27T09:32:49Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-0926989bd94c7fe448",
+      "title": "Update Wirtschaft vom 27.11.2026",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1690782.html",
+      "published_at": "2026-11-27T08:54:06Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-b2f8157d968a445647",
       "title": "Textilbranche: Einigung auf Mindestlohn-Erhöhung in Bangladesch",
@@ -55,6 +136,24 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-176.html",
       "published_at": "2026-11-27T06:28:35Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-a2d015cc74b0a6dbd9",
+      "title": "Rekordhohe Arbeitslosigkeit bei Menschen mit Schwerbehinderung",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/inland/gesellschaft/schwerbehinderung-arbeitslose-100.html",
+      "published_at": "2026-11-27T04:13:07Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-d5b6c43028e1fddabe",
+      "title": "Merz verkündet vorzeitiges Ende des EU-Sondergipfels",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/ausland/europa/eu-haushalt-vorzeitig-beendet-100.html",
+      "published_at": "2026-11-27T00:02:22Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     },
@@ -703,96 +802,6 @@
       "source": "CNBC Markets",
       "url": "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo-market-rally.html",
       "published_at": "2026-11-23T18:00:47Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b05be1a15d0a5bf044",
-      "title": "Erzeugerpreise: +8,1 % im Oktober, stärkster Anstieg seit 2023 – bremst der Preisschub jetzt Industrie und DAX? - AktienCheck.de",
-      "source": "Google News: EU/Deutschland",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPVFlwMi14VEJ1YjI5UlBRdWFaRjAtS1ZEZjBqOGZNTmRrQXM2X1BQRnRsTk1Cbk5VbGlOWXNoclpvTWlJaUVpLTlSaHM4YVRQWnNseG41cFNRM2xIQjloTFBsQmV5bUhTd1hIazFranhhcGRFRnZNLThrLW5fVXV5MG8yaTAyNTduRU52VmR5Wi0yN0V1SmVZZDZ4OGM1M0I1UWJ2VGJybzZ6VXpxYzVZ?oc=5",
-      "published_at": "2026-11-23T15:26:15Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7701d1a5133e86786c",
-      "title": "Nvidia setzt Jensen Huang wieder als Chef ein",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/huang-wieder-nvidia-chef-100.html",
-      "published_at": "2026-11-23T15:18:29Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-711486dd87513683b0",
-      "title": "OBI und Toom wollen fusionieren",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/obi-toom-fusion-100.html",
-      "published_at": "2026-11-23T15:09:32Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-50f71a78f52b9c975b",
-      "title": "KI-Pioniere streiten über die Risiken",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wissen/ki-letzte-erfindung-der-menschheit-100.html",
-      "published_at": "2026-11-23T14:42:41Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0c766c479fcc1da8b6",
-      "title": "Nachfrage nach MINT-Fachkräften steigt wieder",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/mint-fachkraefte-steigende-nachfrage-100.html",
-      "published_at": "2026-11-23T14:41:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-16d0586f7929a4616f",
-      "title": "Wer ist schuld am Scheitern des Klimagipfels?",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/europa/klimakonferenz-scheitern-verantwortung-100.html",
-      "published_at": "2026-11-23T10:42:23Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-335fbc5eae807a1fdb",
-      "title": "Affäre von Ex-Nvidia-Chef wohl in Kontakt zu Chinas Geheimdienst",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-skandal-kontakt-chinesischer-geheimdienst-100.html",
-      "published_at": "2026-11-23T09:56:20Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-e16ce00f78bd70e401",
-      "title": "Verbraucherschützer warnen zur Black Week vor Betrugsmaschen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/blackweek-preisfallen-100.html",
-      "published_at": "2026-11-23T09:33:43Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-9d4ee15f7ac89e9890",
-      "title": "Umweltminister Schneider: Scheitern der COP31 kein Rückschlag für Klimaschutz",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/ausland/europa/klimakonferenz-scheitern-schneider-100.html",
-      "published_at": "2026-11-23T09:29:40Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-953e1b599540e14ed6",
-      "title": "Update Wirtschaft vom 23.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1688296.html",
-      "published_at": "2026-11-23T09:17:45Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
