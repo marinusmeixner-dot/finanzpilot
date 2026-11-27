@@ -1,9 +1,63 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-26T23:51:16.145682Z",
+  "updated_at": "2026-11-27T08:27:15.682327Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-b2f8157d968a445647",
+      "title": "Textilbranche: Einigung auf Mindestlohn-Erhöhung in Bangladesch",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/bangladesch-fast-fashion-100.html",
+      "published_at": "2026-11-27T07:59:40Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-31adbd372944591584",
+      "title": "Bundesregierung will KI-Anbieter zur Kasse bitten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/technologie/ki-urheberrecht-verguetung-100.html",
+      "published_at": "2026-11-27T07:48:12Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-86c1e34c032db9e705",
+      "title": "Wintersemester 2026/2027: 0,2 % weniger Studierende als im Vorjahr",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_413_21.html",
+      "published_at": "2026-11-27T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-24596aca405b915c83",
+      "title": "Erwerbstätigkeit im Oktober 2026 saisonbereinigt gegenüber dem Vormonat leicht gesunken",
+      "source": "Destatis",
+      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_412_132.html",
+      "published_at": "2026-11-27T07:00:00Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8a2f517c629ec22fc1",
+      "title": "SAP meldet verdächtige Aktivitäten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/sap-hacker-angriff-100.html",
+      "published_at": "2026-11-27T06:48:30Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
+    {
+      "id": "rss-8475fa6c5ec9f03da5",
+      "title": "Marktbericht: Anleger bleiben risikofreudig",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-176.html",
+      "published_at": "2026-11-27T06:28:35Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-b75c631d879da84b02",
       "title": "Wirtschaft vor acht vom 26.11.2026",
@@ -739,60 +793,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1688296.html",
       "published_at": "2026-11-23T09:17:45Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-d3b46c3efc8f14f401",
-      "title": "Im Rentenstreit deutet sich ein Kompromiss an",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/inland/innenpolitik/rente-koalition-soeder-100.html",
-      "published_at": "2026-11-23T07:11:48Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-f399a450d5d742fd4e",
-      "title": "14,7 % mehr Spenden im Jahr 2022 als im Vorjahr",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N082_73.html",
-      "published_at": "2026-11-23T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-4787dab2531f7d43d7",
-      "title": "Neue Warnstreiks in Metall- und Elektroindustrie angelaufen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/streiks-ig-metall-norden-100.html",
-      "published_at": "2026-11-23T06:48:24Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-ac5422536e0187b3ce",
-      "title": "Marktbericht: DAX-Ausverkauf wohl gestoppt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-geldanlage-172.html",
-      "published_at": "2026-11-23T06:36:17Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-502a360021d92c6234",
-      "title": "JPMorgan is working on AI agent transactions that don’t involve humans",
-      "source": "CNBC Markets",
-      "url": "https://www.cnbc.com/2026/11/18/jpmorgan-hyundai-card-ai-agents-payments.html",
-      "published_at": "2026-11-23T06:06:55Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-77e8efaddd60a93717",
-      "title": "Welche Chancen und Risiken KI bei Bewerbungen bietet",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/arbeitsmarkt/bewerbung-mit-ki-chancen-risiken-100.html",
-      "published_at": "2026-11-23T05:31:19Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
