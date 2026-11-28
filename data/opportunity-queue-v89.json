@@ -11,9 +11,9 @@
   },
   "spotlight_ids": [
     "corero-network-security",
-    "microsoft",
     "index-crh",
     "nvidia",
+    "microsoft",
     "siemens",
     "profile-enr-de"
   ],
@@ -54,44 +54,6 @@
         "benchmark_names": [
           "Vanguard FTSE All-World UCITS ETF",
           "iShares STOXX Europe 600 UCITS ETF (DE)"
-        ]
-      },
-      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
-    },
-    {
-      "id": "microsoft",
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "sector": "Software & Cloud",
-      "bucket": "review_now",
-      "review_kind": "news_catalyst",
-      "radar_priority": "B_watchlist",
-      "decision_stage": "source_based_watch",
-      "primary_cashflow_ready": true,
-      "price_asof": "2026-11-25",
-      "evidence_date": "2026-11-13",
-      "evidence_age_days": 13,
-      "evidence_url": "https://status.cloud.microsoft/",
-      "evidence_title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
-      "why_now": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
-      "first_rejection": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
-      "needs_before_investment": [
-        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
-        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
-        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
-        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
-      ],
-      "next_checks": [
-        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
-        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
-        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre"
-      ],
-      "alternatives": {
-        "peer_count": 3,
-        "etf_count": 3,
-        "benchmark_names": [
-          "iShares MSCI ACWI ETF",
-          "SPDR S&P 500 ETF"
         ]
       },
       "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
@@ -165,6 +127,44 @@
       ],
       "alternatives": {
         "peer_count": 0,
+        "etf_count": 3,
+        "benchmark_names": [
+          "iShares MSCI ACWI ETF",
+          "SPDR S&P 500 ETF"
+        ]
+      },
+      "diligence_posture": "Recherchepriorität; ausdrücklich keine Kauf-, Short- oder fairer-Wert-Aussage"
+    },
+    {
+      "id": "microsoft",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "sector": "Software & Cloud",
+      "bucket": "review_now",
+      "review_kind": "news_catalyst",
+      "radar_priority": "C_screen_only",
+      "decision_stage": "source_based_watch",
+      "primary_cashflow_ready": true,
+      "price_asof": "2026-11-25",
+      "evidence_date": "2026-11-13",
+      "evidence_age_days": 13,
+      "evidence_url": "https://status.cloud.microsoft/",
+      "evidence_title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+      "why_now": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+      "first_rejection": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
+      "needs_before_investment": [
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
+        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
+        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
+        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
+      ],
+      "next_checks": [
+        "Unternehmensmeldung mit neuerem Geschäftsbericht und Markterwartung abgleichen",
+        "Vorliegende TTM-Cashflows und Kapitalbindung auf Nachhaltigkeit testen",
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre"
+      ],
+      "alternatives": {
+        "peer_count": 3,
         "etf_count": 3,
         "benchmark_names": [
           "iShares MSCI ACWI ETF",

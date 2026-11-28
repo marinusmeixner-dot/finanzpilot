@@ -1947,181 +1947,6 @@
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {
-      "id": "microsoft",
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "sector": "Software & Cloud",
-      "currency": "USD",
-      "lifecycle": "active",
-      "radar_priority": "B_watchlist",
-      "research_stage": "source_based_watch",
-      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
-      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
-      "evidence_readiness": {
-        "value": 100,
-        "max": 100,
-        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
-        "criteria": [
-          {
-            "label": "Identifizierter Börsentitel",
-            "ready": true,
-            "points": 10
-          },
-          {
-            "label": "Veröffentlichte Quellenmeldung",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Begründete These und Gegenargument",
-            "ready": true,
-            "points": 20
-          },
-          {
-            "label": "Primär-Cashflow abgeglichen",
-            "ready": true,
-            "points": 25
-          },
-          {
-            "label": "Datierter Börsenkurs und TTM-Kennzahl",
-            "ready": true,
-            "points": 15
-          },
-          {
-            "label": "Drei offengelegte operative Szenarien",
-            "ready": true,
-            "points": 15
-          }
-        ]
-      },
-      "thesis": "Cloud-Wachstum und wiederkehrende Verträge können zukünftige Cashflows unterstützen; der Kurs kann dieses Wachstum jedoch schon vorwegnehmen.",
-      "counter_thesis": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
-      "thesis_invalidated": false,
-      "why_now": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
-      "what_would_confirm": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
-      "what_would_invalidate": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
-      "financials": {
-        "price": 489.92999,
-        "price_date": "2026-11-25",
-        "currency": "USD",
-        "exchange": "NASDAQ",
-        "market_cap_m": 3638710.04,
-        "ttm_pe": 25.58,
-        "ttm_fcf_yield_pct": 1.65,
-        "ttm_fcf_m": 59957.0,
-        "eps_ttm": 19.15,
-        "fundamental_observed_date": "2026-11-05",
-        "source_price": "https://finance.yahoo.com/quote/MSFT/history/",
-        "source_fundamentals": "https://stockanalysis.com/stocks/msft/statistics/",
-        "primary_verified_fields": [
-          "shares_m",
-          "eps_ttm",
-          "cash_m",
-          "debt_m",
-          "operating_cf_m",
-          "capex_m",
-          "free_cf_m"
-        ],
-        "cash_flow_method_warning": "Annual FY2026 EPS non-GAAP 17,28 USD separat vom aktuellen GAAP-TTM-EPS 19,15 USD beurteilen. Hohe KI-Capex, FCF nicht automatisch dauerhaft. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
-        "date_alignment_warning": false
-      },
-      "primary_financial_status": "primary_ttm_reconciled",
-      "valuation_status": "illustrative_model_not_fair_value",
-      "valuation_gaps": [
-        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
-        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
-        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
-        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
-      ],
-      "editorial_source": {
-        "title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
-        "date": "2026-11-13",
-        "url": "https://status.cloud.microsoft/"
-      },
-      "primary_source_urls": [
-        "https://www.microsoft.com/investor/reports/ar26/",
-        "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
-      ],
-      "original_idea_source": "https://www.microsoft.com/investor/reports/ar26/",
-      "comparison_family": "Große Software-, Cloud- und Plattformanbieter",
-      "peer_valuations": [
-        {
-          "id": "alphabet",
-          "ticker": "GOOGL",
-          "company": "Alphabet",
-          "sector": "Advertising & Cloud",
-          "currency": "USD",
-          "price_date": "2026-11-25",
-          "ttm_pe": 14.26,
-          "ttm_fcf_yield_pct": 0.59,
-          "price_source": "https://finance.yahoo.com/quote/GOOGL/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        },
-        {
-          "id": "amazon",
-          "ticker": "AMZN",
-          "company": "Amazon",
-          "sector": "Retail & Cloud",
-          "currency": "USD",
-          "price_date": "2026-11-25",
-          "ttm_pe": 19.76,
-          "ttm_fcf_yield_pct": -1.6,
-          "price_source": "https://finance.yahoo.com/quote/AMZN/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        },
-        {
-          "id": "meta",
-          "ticker": "META",
-          "company": "Meta Platforms",
-          "sector": "Advertising & Platforms",
-          "currency": "USD",
-          "price_date": "2026-11-25",
-          "ttm_pe": 20.79,
-          "ttm_fcf_yield_pct": 1.83,
-          "price_source": "https://finance.yahoo.com/quote/META/history/",
-          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
-        }
-      ],
-      "etf_alternatives": [
-        {
-          "id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -8.38,
-          "excess_return_pp": 5.57
-        },
-        {
-          "id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -6.82,
-          "excess_return_pp": 4.01
-        },
-        {
-          "id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -12.0,
-          "excess_return_pp": 9.19
-        }
-      ],
-      "relative_performance": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -10.88,
-        "benchmark_return_pct": -6.61,
-        "relative_to_benchmark_pp": -4.27,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      },
-      "radar_asof": "2026-11-25",
-      "next_review": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
-      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
-    },
-    {
       "id": "index-csgp",
       "ticker": "CSGP",
       "company": "CoStar Group",
@@ -2654,6 +2479,181 @@
       },
       "radar_asof": "2026-11-25",
       "next_review": "Originalbericht, belastbaren Gewinn/Cashflow, aktuelle Bewertung und Risiken prüfen.",
+      "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
+    },
+    {
+      "id": "microsoft",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "sector": "Software & Cloud",
+      "currency": "USD",
+      "lifecycle": "active",
+      "radar_priority": "C_screen_only",
+      "research_stage": "source_based_watch",
+      "decision": "Unternehmens- und Cashflowdaten teilweise geprüft. Der faire Wert und die Sicherheitsmarge sind noch nicht unabhängig bestätigt.",
+      "conclusion": "Kein belegtes Kaufurteil. Weiter recherchieren / abwarten.",
+      "evidence_readiness": {
+        "value": 100,
+        "max": 100,
+        "kind": "quellen_vollstaendigkeit_nicht_rendite_score",
+        "criteria": [
+          {
+            "label": "Identifizierter Börsentitel",
+            "ready": true,
+            "points": 10
+          },
+          {
+            "label": "Veröffentlichte Quellenmeldung",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Begründete These und Gegenargument",
+            "ready": true,
+            "points": 20
+          },
+          {
+            "label": "Primär-Cashflow abgeglichen",
+            "ready": true,
+            "points": 25
+          },
+          {
+            "label": "Datierter Börsenkurs und TTM-Kennzahl",
+            "ready": true,
+            "points": 15
+          },
+          {
+            "label": "Drei offengelegte operative Szenarien",
+            "ready": true,
+            "points": 15
+          }
+        ]
+      },
+      "thesis": "Cloud-Wachstum und wiederkehrende Verträge können zukünftige Cashflows unterstützen; der Kurs kann dieses Wachstum jedoch schon vorwegnehmen.",
+      "counter_thesis": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
+      "thesis_invalidated": false,
+      "why_now": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+      "what_would_confirm": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
+      "what_would_invalidate": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
+      "financials": {
+        "price": 489.92999,
+        "price_date": "2026-11-25",
+        "currency": "USD",
+        "exchange": "NASDAQ",
+        "market_cap_m": 3638710.04,
+        "ttm_pe": 25.58,
+        "ttm_fcf_yield_pct": 1.65,
+        "ttm_fcf_m": 59957.0,
+        "eps_ttm": 19.15,
+        "fundamental_observed_date": "2026-11-05",
+        "source_price": "https://finance.yahoo.com/quote/MSFT/history/",
+        "source_fundamentals": "https://stockanalysis.com/stocks/msft/statistics/",
+        "primary_verified_fields": [
+          "shares_m",
+          "eps_ttm",
+          "cash_m",
+          "debt_m",
+          "operating_cf_m",
+          "capex_m",
+          "free_cf_m"
+        ],
+        "cash_flow_method_warning": "Annual FY2026 EPS non-GAAP 17,28 USD separat vom aktuellen GAAP-TTM-EPS 19,15 USD beurteilen. Hohe KI-Capex, FCF nicht automatisch dauerhaft. Verifizierte TTM-Cashflow-Felder wurden 05.11.2026 anhand datierter Originalberichte abgeglichen; restliche Felder können aus Sekundärdaten stammen. FCF = CFO minus dokumentierte Sachanlagenkäufe (separate Finanzierungszahlungen/Leasing können abweichen).",
+        "date_alignment_warning": false
+      },
+      "primary_financial_status": "primary_ttm_reconciled",
+      "valuation_status": "illustrative_model_not_fair_value",
+      "valuation_gaps": [
+        "Nachhaltige Capex- und Working-Capital-Normalisierung für mindestens fünf Geschäftsjahre",
+        "Belastbare Ableitung des Eigenkapitalkostensatzes aus aktuellem Zins, Beta und Risikoprämie",
+        "Prognostizierte Vergütung in Aktien, Aktienrückkäufe und möglicher Zins-/Finanzierungseffekt",
+        "Peer-Multiples und unabhängiger fairer-Wert-Gegencheck vor jeglichem Kaufurteil"
+      ],
+      "editorial_source": {
+        "title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+        "date": "2026-11-13",
+        "url": "https://status.cloud.microsoft/"
+      },
+      "primary_source_urls": [
+        "https://www.microsoft.com/investor/reports/ar26/",
+        "https://www.microsoft.com/en-us/investor/earnings/fy-2027-q1/press-release-webcast"
+      ],
+      "original_idea_source": "https://www.microsoft.com/investor/reports/ar26/",
+      "comparison_family": "Große Software-, Cloud- und Plattformanbieter",
+      "peer_valuations": [
+        {
+          "id": "alphabet",
+          "ticker": "GOOGL",
+          "company": "Alphabet",
+          "sector": "Advertising & Cloud",
+          "currency": "USD",
+          "price_date": "2026-11-25",
+          "ttm_pe": 14.26,
+          "ttm_fcf_yield_pct": 0.59,
+          "price_source": "https://finance.yahoo.com/quote/GOOGL/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        },
+        {
+          "id": "amazon",
+          "ticker": "AMZN",
+          "company": "Amazon",
+          "sector": "Retail & Cloud",
+          "currency": "USD",
+          "price_date": "2026-11-25",
+          "ttm_pe": 19.76,
+          "ttm_fcf_yield_pct": -1.6,
+          "price_source": "https://finance.yahoo.com/quote/AMZN/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        },
+        {
+          "id": "meta",
+          "ticker": "META",
+          "company": "Meta Platforms",
+          "sector": "Advertising & Platforms",
+          "currency": "USD",
+          "price_date": "2026-11-25",
+          "ttm_pe": 20.79,
+          "ttm_fcf_yield_pct": 1.83,
+          "price_source": "https://finance.yahoo.com/quote/META/history/",
+          "limitations": "Nur indikative Vergleichsgruppe, kein validierter Peer-Multiple-Fair-Value."
+        }
+      ],
+      "etf_alternatives": [
+        {
+          "id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -8.38,
+          "excess_return_pp": 5.57
+        },
+        {
+          "id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -6.82,
+          "excess_return_pp": 4.01
+        },
+        {
+          "id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -12.0,
+          "excess_return_pp": 9.19
+        }
+      ],
+      "relative_performance": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-25",
+        "adjusted_return_pct": -10.88,
+        "benchmark_return_pct": -6.61,
+        "relative_to_benchmark_pp": -4.27,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      },
+      "radar_asof": "2026-11-25",
+      "next_review": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
       "methodology": "Research-Reife, nicht Anlageattraktivität. Kein Kauf-/Verkaufssignal ohne dokumentierten fairen Wert und Margin of Safety."
     },
     {

@@ -124,7 +124,7 @@
         "source": "Apple Inc., Pressemitteilung zu Q4 des Geschäftsjahres 2026, 2. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 25,
+      "editorial_age_days": 26,
       "unverified_discovery_hint": {
         "id": "rss-0f8a99c3a986fa1d48",
         "date": "2026-11-25",
@@ -214,7 +214,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 26,
+      "editorial_age_days": 27,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -291,7 +291,7 @@
         "source": "Corero Network Security, Unternehmensmitteilung vom 04.11.2026; Geschäftsbericht 2025 vom 24.03.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -368,7 +368,7 @@
         "source": "Bayer AG – Quartalsmitteilung Q3 2026, 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 24,
+      "editorial_age_days": 25,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1454,7 +1454,7 @@
         "source": "CRH plc – Q3-2026-Ergebnisbericht vom 29. Oktober 2026, bei der SEC eingereicht",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 21,
+      "editorial_age_days": 22,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -1497,92 +1497,6 @@
         "adjusted_return_pct": 1.94,
         "benchmark_return_pct": -2.91,
         "relative_to_benchmark_pp": 4.85,
-        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
-        "benchmark_name": "iShares MSCI ACWI ETF"
-      }
-    },
-    {
-      "id": "microsoft",
-      "ticker": "MSFT",
-      "company": "Microsoft",
-      "sector": "Software & Cloud",
-      "country": "US",
-      "currency": "USD",
-      "origin": "liquid_research_universe",
-      "curated_id": "microsoft",
-      "has_curated_dossier": true,
-      "lifecycle": "active",
-      "research_priority": "B_watchlist",
-      "technical_research_score": 54,
-      "signals": {
-        "status": "history_available",
-        "asof": "2026-11-25",
-        "sessions": 250,
-        "adjusted_close": 489.93,
-        "return_21d_pct": -7.61,
-        "return_63d_pct": -2.81,
-        "return_126d_pct": 15.18,
-        "benchmark_63d_pct": -8.38,
-        "relative_63d_pp": 5.57,
-        "ma50": 518.6444,
-        "ma200": 443.2291,
-        "above_ma50": false,
-        "above_ma200": true,
-        "drawdown_from_252d_high_pct": -11.68,
-        "volatility_21d_annualized_pct": 37.4,
-        "currency": "USD"
-      },
-      "editorial_evidence": {
-        "id": "2026-11-13-microsoft-365-outage-service-resilience",
-        "title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
-        "date": "2026-11-13",
-        "url": "https://status.cloud.microsoft/",
-        "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
-        "evidence_status": "published_editorial_not_independent_primary_audit"
-      },
-      "editorial_age_days": 14,
-      "unverified_discovery_hint": null,
-      "benchmarks": [
-        {
-          "benchmark_id": "ACWI",
-          "name": "iShares MSCI ACWI ETF",
-          "ticker": "ACWI",
-          "currency": "USD",
-          "return_63d_pct": -8.38,
-          "excess_return_pp": 5.57,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "SPY",
-          "name": "SPDR S&P 500 ETF",
-          "ticker": "SPY",
-          "currency": "USD",
-          "return_63d_pct": -6.82,
-          "excess_return_pp": 4.01,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        },
-        {
-          "benchmark_id": "QQQ",
-          "name": "Invesco Nasdaq-100 ETF",
-          "ticker": "QQQ",
-          "currency": "USD",
-          "return_63d_pct": -12.0,
-          "excess_return_pp": 9.19,
-          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
-        }
-      ],
-      "next_review": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
-      "risks": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
-      "discovery_source_url": null,
-      "discovery_date": null,
-      "issuer_identity_status": "ticker_from_editorial_universe",
-      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
-      "since_first_screen": {
-        "first_seen": "2026-11-04",
-        "last_session": "2026-11-25",
-        "adjusted_return_pct": -10.88,
-        "benchmark_return_pct": -6.61,
-        "relative_to_benchmark_pp": -4.27,
         "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
         "benchmark_name": "iShares MSCI ACWI ETF"
       }
@@ -1987,6 +1901,92 @@
       }
     },
     {
+      "id": "microsoft",
+      "ticker": "MSFT",
+      "company": "Microsoft",
+      "sector": "Software & Cloud",
+      "country": "US",
+      "currency": "USD",
+      "origin": "liquid_research_universe",
+      "curated_id": "microsoft",
+      "has_curated_dossier": true,
+      "lifecycle": "active",
+      "research_priority": "C_screen_only",
+      "technical_research_score": 48,
+      "signals": {
+        "status": "history_available",
+        "asof": "2026-11-25",
+        "sessions": 250,
+        "adjusted_close": 489.93,
+        "return_21d_pct": -7.61,
+        "return_63d_pct": -2.81,
+        "return_126d_pct": 15.18,
+        "benchmark_63d_pct": -8.38,
+        "relative_63d_pp": 5.57,
+        "ma50": 518.6444,
+        "ma200": 443.2291,
+        "above_ma50": false,
+        "above_ma200": true,
+        "drawdown_from_252d_high_pct": -11.68,
+        "volatility_21d_annualized_pct": 37.4,
+        "currency": "USD"
+      },
+      "editorial_evidence": {
+        "id": "2026-11-13-microsoft-365-outage-service-resilience",
+        "title": "Microsoft-365-Störung: Warum Cloud-Ausfälle ein Geschäftsrisiko sind",
+        "date": "2026-11-13",
+        "url": "https://status.cloud.microsoft/",
+        "source": "Microsoft Service Health, Statusabfrage 13.11.2026; Microsoft-Statusmeldungen zum Vorfall EX1550543/MO1550821",
+        "evidence_status": "published_editorial_not_independent_primary_audit"
+      },
+      "editorial_age_days": 15,
+      "unverified_discovery_hint": null,
+      "benchmarks": [
+        {
+          "benchmark_id": "ACWI",
+          "name": "iShares MSCI ACWI ETF",
+          "ticker": "ACWI",
+          "currency": "USD",
+          "return_63d_pct": -8.38,
+          "excess_return_pp": 5.57,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "SPY",
+          "name": "SPDR S&P 500 ETF",
+          "ticker": "SPY",
+          "currency": "USD",
+          "return_63d_pct": -6.82,
+          "excess_return_pp": 4.01,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        },
+        {
+          "benchmark_id": "QQQ",
+          "name": "Invesco Nasdaq-100 ETF",
+          "ticker": "QQQ",
+          "currency": "USD",
+          "return_63d_pct": -12.0,
+          "excess_return_pp": 9.19,
+          "source": "Split-/Ausschüttungs-bereinigte Historie desselben Datenanbieters, keine direkte Kaufvergleichsstudie"
+        }
+      ],
+      "next_review": "Azure-Wachstum, Aktienkurs und bereinigtes Gewinnwachstum gegenüber KI-Capex prüfen.",
+      "risks": "Der KI-Ausbau bindet erheblich Kapital, während der Kurs hohe Cloud-Wachstumserwartungen bereits widerspiegeln kann.",
+      "discovery_source_url": null,
+      "discovery_date": null,
+      "issuer_identity_status": "ticker_from_editorial_universe",
+      "research_disclaimer": "Technische Suchpriorität, keine geprüfte Unterbewertung oder Kaufempfehlung.",
+      "since_first_screen": {
+        "first_seen": "2026-11-04",
+        "last_session": "2026-11-25",
+        "adjusted_return_pct": -10.88,
+        "benchmark_return_pct": -6.61,
+        "relative_to_benchmark_pp": -4.27,
+        "interpretation": "Beobachtungsperformance seit Erstaufnahme; kein Trade, keine Rendite auf einen realen Kaufkurs.",
+        "benchmark_name": "iShares MSCI ACWI ETF"
+      }
+    },
+    {
       "id": "bmw",
       "ticker": "BMW.DE",
       "company": "BMW",
@@ -2025,7 +2025,7 @@
         "source": "BMW Group – Pressemitteilung zur Quartalsmitteilung vom 4. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 23,
+      "editorial_age_days": 24,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2395,7 +2395,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 28,
+      "editorial_age_days": 29,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2779,7 +2779,7 @@
         "source": "FinanzPilot-Redaktion · auf Basis der Branchenmeldung von INES und Reuters",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 26,
+      "editorial_age_days": 27,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -2935,7 +2935,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 26,
+      "editorial_age_days": 27,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3021,7 +3021,7 @@
         "source": "Evonik Industries AG – Ad-hoc-Stellungnahme des Vorstands vom 30. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 28,
+      "editorial_age_days": 29,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3098,7 +3098,7 @@
         "source": "Europäische Kommission – Vertretung in Deutschland, Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 24,
+      "editorial_age_days": 25,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -3658,7 +3658,7 @@
         "source": "Siemens AG, Jahresergebnisse und Ausblick, 12.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 15,
+      "editorial_age_days": 16,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4045,11 +4045,7 @@
       },
       "editorial_evidence": null,
       "editorial_age_days": null,
-      "unverified_discovery_hint": {
-        "id": "rss-70c261817ae6e0a550",
-        "date": "2026-11-23",
-        "status": "unverified_headline_only"
-      },
+      "unverified_discovery_hint": null,
       "benchmarks": [
         {
           "benchmark_id": "ACWI",
@@ -4134,7 +4130,7 @@
         "source": "NVIDIA Newsroom, offizielle Mitteilung vom 23.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 4,
+      "editorial_age_days": 5,
       "unverified_discovery_hint": {
         "id": "rss-582b9badf8c4779ddc",
         "date": "2026-11-26",
@@ -4224,7 +4220,7 @@
         "source": "FinanzPilot-Redaktion · Amazon und Microsoft Investor Relations",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 26,
+      "editorial_age_days": 27,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4468,7 +4464,7 @@
         "source": "Schaeffler Gruppe – Pressemitteilung vom 3. November 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 24,
+      "editorial_age_days": 25,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4545,7 +4541,7 @@
         "source": "Reddit Inc., Q3-2026-Ergebnisveröffentlichung vom 29. Oktober 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 21,
+      "editorial_age_days": 22,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -4631,7 +4627,7 @@
         "source": "Siemens Energy, Ergebnisveröffentlichung Q4/GJ 2026 vom 11.11.2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 16,
+      "editorial_age_days": 17,
       "unverified_discovery_hint": null,
       "benchmarks": [
         {
@@ -6156,7 +6152,7 @@
         "source": "BayWa AG – Ad-hoc-Mitteilung vom 16. September 2026",
         "evidence_status": "published_editorial_not_independent_primary_audit"
       },
-      "editorial_age_days": 72,
+      "editorial_age_days": 73,
       "unverified_discovery_hint": null,
       "benchmarks": [],
       "next_review": "Historische Kursreihe und originalen Emittentenbericht für diesen Ticker prüfen.",
