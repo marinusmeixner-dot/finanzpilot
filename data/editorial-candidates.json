@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T15:41:56.702019Z",
+  "updated_at": "2026-11-28T18:56:13.665363Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-33eabd0c11152ac14c",
+      "title": "Warum die Preise wieder stärker steigen könnten",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/verbraucher/inflation-preisanstieg-ausblick-2027-100.html",
+      "published_at": "2026-11-28T17:46:10Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-88ed79ed3bff502bf3",
       "title": "So einfach kann man schlüssellose Autos mit Keyless Go knacken",
@@ -640,24 +649,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/video/video-1689280.html",
       "published_at": "2026-11-24T19:04:41Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-67a9abcf3ecb6b1fff",
-      "title": "Marktbericht: DAX fällt zurück, Tech-Aktien sinken",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktberichte/marktbericht-dax-dow-nvidia-geldanlage-102.html",
-      "published_at": "2026-11-24T17:36:29Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-8b90390e5399a43c85",
-      "title": "Steinmeier appelliert an Wirtschaft: Chancen in Afrika nutzen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/steinmeier-deutsch-afrikanischer-wirtschaftsgipfel-100.html",
-      "published_at": "2026-11-24T17:21:31Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
