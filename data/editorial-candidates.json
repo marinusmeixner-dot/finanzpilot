@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T10:24:14.743182Z",
+  "updated_at": "2026-11-28T15:41:56.702019Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
@@ -658,60 +658,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/steinmeier-deutsch-afrikanischer-wirtschaftsgipfel-100.html",
       "published_at": "2026-11-24T17:21:31Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b29486f5bf22aec75a",
-      "title": "Wie Trump an Huangs Rückkehr zu Nvidia verdiente",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/trump-nvidia-aktien-100.html",
-      "published_at": "2026-11-24T14:51:13Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-b4071206b9b6495fbb",
-      "title": "Nvidia hält die Märkte in Atem",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/finanzen/marktbericht-nvidia-102.html",
-      "published_at": "2026-11-24T14:01:35Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-60ee58ab5628da0217",
-      "title": "\"GTA VI\": Arbeitskampf hinter dem größten Videospiel der Welt",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/gta-6-104.html",
-      "published_at": "2026-11-24T13:42:43Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-0f5a0d710a980d012f",
-      "title": "Wie das VW-Vorzeigewerk Zwickau in die Krise geriet",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/vw-werk-zwickau-zukunft-100.html",
-      "published_at": "2026-11-24T11:49:57Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bbda0b6f6e87a72bf6",
-      "title": "Inflation Deutschland November 2026: Termin & Prognose - Admirals",
-      "source": "Google News: EU/Deutschland",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOMkx4TmRNWXJURzZybnNMU2JianJJTHFDSHBVU0FOTmVJVGtVZjZTWXpvTW1kV3dIWVo4RlZ6aWYwdTVDV1psdHB4eFNfNEN4dklPOEtVZjNpRE1OU1ZZMVNTZXFrU1NJUHljN2dPZld3Y0FGdDBKRkFSVnZ0Y3kyQUhWQTNpY3dlVFNmdzgxYjlRNEd6SVltUDVGbzlwV2ttOVFR?oc=5",
-      "published_at": "2026-11-24T11:28:08Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1a00ba4b919e5302de",
-      "title": "Ifo-Index steigt: \"Erholung der deutschen Wirtschaft kommt voran\"",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-geschaeftsklima-110.html",
-      "published_at": "2026-11-24T10:28:45Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
