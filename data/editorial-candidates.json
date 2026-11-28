@@ -1,9 +1,18 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-28T01:57:45.359040Z",
+  "updated_at": "2026-11-28T10:24:14.743182Z",
   "editorial_status": "unverified_candidates_only",
   "note": "Not FinanzPilot articles. Verify issuer/regulator primary sources before writing and publishing full in-app editorial.",
   "candidates": [
+    {
+      "id": "rss-88ed79ed3bff502bf3",
+      "title": "So einfach kann man schlüssellose Autos mit Keyless Go knacken",
+      "source": "Tagesschau Wirtschaft",
+      "url": "https://www.tagesschau.de/wirtschaft/digitales/keyless-cars-sicherheitsluecke-100.html",
+      "published_at": "2026-11-28T07:21:53Z",
+      "verification": "unverified_candidate",
+      "status": "needs_primary_source"
+    },
     {
       "id": "rss-436e53da45c3589770",
       "title": "Anthropics wilde erste Börsenwoche",
@@ -703,69 +712,6 @@
       "source": "Tagesschau Wirtschaft",
       "url": "https://www.tagesschau.de/wirtschaft/konjunktur/ifo-geschaeftsklima-110.html",
       "published_at": "2026-11-24T10:28:45Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-134bb66fbc9651e925",
-      "title": "Update Wirtschaft vom 24.11.2026",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/multimedia/sendung/tagesschau24/boerselive/video-1688878.html",
-      "published_at": "2026-11-24T08:47:49Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a3e99e7b431b5d37b7",
-      "title": "Rückkehr von Nvidia-Chef: \"Nie dagewesenes Verwischen von Grenzen\"",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/nvidia-huang-rueckkehr-trump-100.html",
-      "published_at": "2026-11-24T07:55:06Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-a6d3b56034785d09f3",
-      "title": "Nvidia-Skandal: US-Regierung setzt Megaspeed auf schwarze Liste",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/megaspeed-us-regierung-sperrliste-100.html",
-      "published_at": "2026-11-24T07:42:34Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-7765fcc65dd506a446",
-      "title": "Mehr als jedes dritte Unternehmen nutzt 2026 künstliche Intelligenz",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_408_52911.html",
-      "published_at": "2026-11-24T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-6e732dbb4ddc117775",
-      "title": "Computer und Spielekonsolen im Oktober 2026 deutlich teurer als ein Jahr zuvor",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/11/PD26_N083_61.html",
-      "published_at": "2026-11-24T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-1df3e4684941c5abdc",
-      "title": "98 % der Feuerwerk-Importe im Jahr 2025 kamen aus China",
-      "source": "Destatis",
-      "url": "https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2026/PD26_48_p002.html",
-      "published_at": "2026-11-24T07:00:00Z",
-      "verification": "unverified_candidate",
-      "status": "needs_primary_source"
-    },
-    {
-      "id": "rss-bc94b29936c1d494e0",
-      "title": "VW-Tarifrunde beginnt in Emden - wo die Streitpunkte liegen",
-      "source": "Tagesschau Wirtschaft",
-      "url": "https://www.tagesschau.de/wirtschaft/unternehmen/volkswagen-tarifrunde-emden-auftakt-100.html",
-      "published_at": "2026-11-24T05:04:12Z",
       "verification": "unverified_candidate",
       "status": "needs_primary_source"
     }
